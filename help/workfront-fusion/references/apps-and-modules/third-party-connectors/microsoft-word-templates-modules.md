@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion 시나리오에서는 Microsoft Word 템플�
 author: Becky
 feature: Workfront Fusion
 exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
-source-git-commit: 3ba5d67806e0d495bd4a91589d06cfb9adb25c0c
+source-git-commit: 9e560995ff9f58a76bbecc521f7d2eef9d47fa48
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1228'
 ht-degree: 0%
 
 ---
@@ -21,42 +21,46 @@ ht-degree: 0%
 
 ## 액세스 요구 사항
 
++++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
+
 이 문서의 기능을 사용하려면 다음 액세스 권한이 있어야 합니다.
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 플랜*</td>
-  <td> <p>[!UICONTROL Pro] 이상</p> </td>
+   <td role="rowheader">Adobe Workfront 패키지</td> 
+   <td> <p>임의</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 라이센스*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront 라이선스</td> 
+   <td> <p>새로운 기능: 표준</p><p>또는</p><p>현재: 작업 시간 이상</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td> 
-   <td> <p>[!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p> </td> 
+   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
+   <td>
+   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>또는</p>
+   <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
+   </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
-   <td>조직에서 이 문서에 설명된 기능을 사용하려면 [!DNL Adobe Workfront Fusion]과(와) [!DNL Adobe Workfront]을(를) 구입해야 합니다.</td> 
-  </tr> <!--
-   <tr> 
-    <td role="rowheader">Access level configurations*</td> 
-    <td> 
-      <p>You must be a Workfront Fusion administrator for your organization.</p>
-     --> <!--
-      <p>You must be a Workfront Fusion administrator for your team.</p>
-     --> </td> 
-   </tr>
+   <td>
+   <p>신규:</p> <ul><li>또는 Prime Workfront 패키지 선택: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</li><li>Ultimate Workfront 패키지: Workfront Fusion이 포함됩니다.</li></ul>
+   <p>또는</p>
+   <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
+   </td> 
+  </tr>
  </tbody> 
 </table>
 
-보유 중인 플랜, 라이선스 유형 또는 액세스 권한을 확인하려면 [!DNL Workfront] 관리자에게 문의하세요.
+이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 [!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+
++++
 
 ## 전제 조건
 
@@ -133,11 +137,6 @@ ht-degree: 0%
 
 루프 태그(섹션 태그)를 사용하여 텍스트 섹션을 반복할 수 있습니다. 열기 및 닫기 루프 태그 사이에 텍스트를 배치하여 텍스트를 줄바꿈합니다. 여는 태그의 이름 앞에는 # 해시 기호가 붙고, 닫는 태그의 이름 앞에는 슬래시 / 기호가 붙습니다.
 
-* [문서 모듈 채우기로 태그 반복](#loop-tag-with-fill-out-a-document-module)
-  <!-- [Loop tag with Fill a document with a batch of data module](#loop-tag-with-fill-a-document-with-a-batch-of-data-module)-->
-
-#### 문서 모듈 채우기로 태그 반복 {#loop-tag-with-fill-out-a-document-module}
-
 **예:** 고객 목록에 있는 각 연락처의 이름과 전화 번호가 나열된 문서를 만들려면 [!DNL Microsoft Word Template] 모듈을 사용하여 다음 템플릿을 만들 수 있습니다.
 
 ```
@@ -158,29 +157,6 @@ ht-degree: 0%
 > Eduard Salo, 4445552345
 ```
 
-<!--
-
-#### Loop tag with Fill a document with a batch of data module {#loop-tag-with-fill-a-document-with-a-batch-of-data-module}
-
-**Example:** You can export Google contacts into a table that you create using loop tags.
-
-The first module loads the template. The next module retrieves all contacts from the group you specify in [!DNL Google Contacts]. The aggregator module aggregates all values retrieved from Google Contacts and merges them into the template. And the last module saves the filled template to the desired location.
-
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-batch-scenario-350x124.png)
-
-You could use this scenario with the following template:
-
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-batch-template-350x26.png)
-
-To do this, you would set up the module as follows:
-
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-batch-module-setup-350x323.png)
-
-The module would create the following document:
-
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-batch-document-350x46.png)
--->
-
 ## [!DNL Microsoft Word Template]개 모듈
 
 이러한 모듈은 연결할 필요가 없습니다.
@@ -198,15 +174,15 @@ The module would create the following document:
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Start delimiter of the text being replaced]</td> 
-   <td> <p>바꿀 텍스트의 시작 부분을 표시할 문자를 입력합니다. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>예: </b></span></span>다음 텍스트와 유사한 텍스트를 바꾸려면 <code>&#91;&#91;</code>을(를) 입력하십시오. <code>[[replace_me]]</code></p> </td> 
+   <td> <p>바꿀 텍스트의 시작 부분을 표시할 문자를 입력합니다. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>예: </b></span></span><code>[[replace_me]]</code>을(를) 바꾸려면 <code>&#91;&#91;</code>을(를) 입력하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL End delimiter of the text being replaced]</p> </td> 
-   <td> <p>바꿀 텍스트의 끝을 표시할 문자를 입력합니다. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>예: </b></span></span>다음 텍스트와 유사한 텍스트를 바꾸려면 <code>&#93;&#93;</code>을(를) 입력하십시오. <code>[[replace_me]]</code></p> </td> 
+   <td> <p>바꿀 텍스트의 끝을 표시할 문자를 입력합니다. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>예: </b></span></span>바꿀 <code>&#93;&#93;</code>을(를) 입력하십시오. <code>[[replace_me]]</code></p>. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td> <p> 이전 모듈에서 업로드할 파일을 매핑합니다(예: HTTP &gt; 파일 가져오기 또는 Dropbox &gt; 파일 모듈 가져오기). 또는 데이터 파일을 수동으로 입력합니다.</p> </td> 
+   <td> <p> 이전 모듈에서 소스 파일을 선택하거나 소스 파일의 데이터를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Name of filled out file]</td> 
@@ -260,11 +236,11 @@ The module would create the following document:
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Start delimiter of the text being replaced]</td> 
-   <td> <p>바꿀 텍스트의 시작 부분을 표시할 문자를 입력합니다. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>예: </b></span></span>다음 텍스트와 유사한 텍스트를 바꾸려면 <code>&#91;&#91;</code>을(를) 입력하십시오. <code>[[replace_me]]</code></p> </td> 
+   <td> <p>바꿀 텍스트의 시작 부분을 표시할 문자를 입력합니다. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>예: </b></span></span><code>[[replace_me]]</code>을(를) 바꾸려면 <code>&#91;&#91;</code>을(를) 입력하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL End delimiter of the text being replaced]</p> </td> 
-   <td> <p>바꿀 텍스트의 끝을 표시할 문자를 입력합니다. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>예: </b></span></span>다음 텍스트와 유사한 텍스트를 바꾸려면 <code>&#93;&#93;</code>을(를) 입력하십시오. <code>[[replace_me]]</code></p> </td> 
+   <td> <p>바꿀 텍스트의 끝을 표시할 문자를 입력합니다. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>예: </b></span></span><code>[[replace_me]]</code>을(를) 바꾸려면 <code>&#93;&#93;</code>을(를) 입력하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Group by]</td> 
@@ -276,15 +252,11 @@ The module would create the following document:
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td> <p> 이전 모듈에서 업로드할 파일을 매핑합니다(예: HTTP &gt; 파일 가져오기 또는 Dropbox &gt; 파일 모듈 가져오기). 또는 데이터 파일을 수동으로 입력합니다.</p> </td> 
+   <td> <p> 이전 모듈에서 소스 파일을 선택하거나 소스 파일의 데이터를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Name of filled out file]</td> 
    <td>대상 출력 파일의 파일 이름(확장명 포함)을 입력합니다.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Data source]</td> 
-   <td> <p>사용 중인 데이터가 양식에서 생성되었는지 원시 데이터 수집(처리되지 않은 컴퓨터 데이터)에서 생성되었는지 여부를 나타내는 옵션을 선택합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Values]</td> 

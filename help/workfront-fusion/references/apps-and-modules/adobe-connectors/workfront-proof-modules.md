@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는  [!DNL Workfr
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: b1b206a0554832aadc9c42ce0b4f952301474086
+source-git-commit: 27c1d38d4c9e4b47d2d9da094b005a0e72ce9bd0
 workflow-type: tm+mt
-source-wordcount: '2727'
+source-wordcount: '2664'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,8 @@ ht-degree: 0%
 
 ## 액세스 요구 사항
 
++++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
+
 이 문서의 기능을 사용하려면 다음 액세스 권한이 있어야 합니다.
 
 <table style="table-layout:auto">
@@ -32,35 +34,37 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 플랜*</td>
-  <td> <p>[!UICONTROL Pro] 이상</p> </td>
+   <td role="rowheader">Adobe Workfront 패키지</td> 
+   <td> <p>임의</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 라이센스*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront 라이선스</td> 
+   <td> <p>새로운 기능: 표준</p><p>또는</p><p>현재: 작업 시간 이상</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td> 
+   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재 라이선스 요구 사항: [!DNL Workfront Fusion] 라이선스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
    <p>또는</p>
-   <p>레거시 라이선스 요구 사항: 작업 자동화 및 통합의 경우 [!UICONTROL [!DNL Workfront Fusion], 작업 자동화의 경우 [!UICONTROL [!DNL Workfront Fusion]]</p>
+   <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>현재 제품 요구 사항: [!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Adobe Workfront] 플랜이 있는 경우 조직에서 이 문서에 설명된 기능을 사용하려면 [!DNL Adobe Workfront Fusion]과(와) [!DNL Adobe Workfront]을(를) 구매해야 합니다. [!DNL Workfront Fusion]이(가) [!UICONTROL Ultimate] [!DNL Workfront] 계획에 포함되어 있습니다.</p>
+   <p>신규:</p> <ul><li>또는 Prime Workfront 패키지 선택: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</li><li>Ultimate Workfront 패키지: Workfront Fusion이 포함됩니다.</li></ul>
    <p>또는</p>
-   <p>레거시 제품 요구 사항: 이 문서에 설명된 기능을 사용하려면 조직에서 [!DNL Adobe Workfront Fusion]과(와) [!DNL Adobe Workfront]을(를) 구매해야 합니다.</p>
+   <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-보유 중인 플랜, 라이선스 유형 또는 액세스 권한을 확인하려면 [!DNL Workfront] 관리자에게 문의하세요.
+이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 [!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+
++++
 
 ## Workfront Proof 정보
 
@@ -100,11 +104,11 @@ Workfront Proof 커넥터는 다음을 사용합니다.
                 <td>연결 이름 입력</td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL connections.environmentType]</td>
+                <td  role="rowheader">[!UICONTROL Environment]</td>
                 <td>프로덕션 환경인지 미리 보기 또는 샌드박스와 같은 비프로덕션 환경인지 선택합니다.</td>
             </tr>
             <tr>
-                <td role="rowheader">[!UICONTROL connections.authenticationType]</td>
+                <td role="rowheader">[!UICONTROL Type]</td>
                 <td>서비스 계정인지 개인 계정인지 선택합니다.</td>
             </tr>
             <tr>
@@ -125,7 +129,7 @@ Workfront Proof 커넥터는 다음을 사용합니다.
             </tr>
             <tr>
                 <td  role="rowheader">[!UICONTROL Production, Preview, or Custom Environment]</td>
-                <td>프로덕션, 미리보기 또는 사용자 지정 환경에 대한 연결을 선택합니다.</td>
+                <td>연결할 프로덕션, 미리보기 또는 사용자 지정 환경입니다.</td>
             </tr>
         </tbody>
     </table>
@@ -147,9 +151,61 @@ Workfront Proof 커넥터는 다음을 사용합니다.
 
 ### 트리거
 
-* [증명 보기](#watch-proofs)
 * [PDF 요약 보기](#watch-for-pdf-summary)
 * [[!UICONTROL Watch Proof Activity]](#watch-proof-activity)
+* [증명 보기](#watch-proofs)
+
+#### [!UICONTROL Watch for PDF Summary]
+
+이 즉시 트리거 모듈은 누군가가 증명에 대한 PDF 요약을 만들 때 시나리오를 실행합니다.
+
+이 모듈에는 웹후크가 필요합니다.
+
+모듈은 증명과 연결된 모든 표준 필드와 연결이 액세스하는 모든 사용자 지정 필드 및 값을 반환합니다. 또한 PDF 요약에 대한 새 이벤트 구독을 만들고 페이로드로 전송된 `pdf_url` 특성에서 콘텐츠를 출력합니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
+
+이 모듈을 구성할 때 다음 필드가 표시됩니다.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Webhook name]</td> 
+   <td>새 웹후크의 이름을 입력하거나 매핑합니다.</td> 
+  </tr> 
+  <tr> 
+   <td>[!DNL Connection]</td> 
+   <td> <p>[!DNL Workfront Proof] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Watch Proof Activity]
+
+이 트리거 모듈은 증명 증명 시 지정된 활동이 발생하는 경우 시나리오를 실행합니다.
+
+모듈은 증명과 연결된 모든 표준 필드와 연결이 액세스하는 모든 사용자 지정 필드 및 값을 반환합니다. 또한 PDF 요약에 대한 새 이벤트 구독을 만들고 페이로드로 전송된 `pdf_url` 특성에서 콘텐츠를 출력합니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
+
+이 모듈을 구성할 때 다음 필드가 표시됩니다.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!DNL Connection]</td> 
+   <td> <p>[!DNL Workfront Proof] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Activity type]</td> 
+   <td>새 결정(증명 상태 변경 포함)을 감시할지 또는 전체 증명 상태 변경만 감시할지 여부를 선택합니다.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Limit]</td> 
+   <td>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL Watch Proofs]
 
@@ -173,71 +229,15 @@ Workfront Proof 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">레코드 유형</td> 
-   <td>모듈을 감시할 [!DNL Workfront Proof] 레코드 형식을 선택하십시오.</td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">출력</td> 
-   <td> <p>이 모듈에 대한 출력 번들에 포함할 정보를 선택합니다.</p> </td> 
+   <td>새 증명을 감시할지 또는 전체 증명 결정을 새로 감시할지 선택합니다.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">제한</td> 
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Watch for PDF Summary]
-
-이 즉시 트리거 모듈은 누군가가 증명에 대한 PDF 요약을 만들 때 시나리오를 실행합니다.
-
-이 모듈에는 웹후크가 필요합니다.
-
-모듈은 증명과 연결된 모든 표준 필드와 연결이 액세스하는 모든 사용자 지정 필드 및 값을 반환합니다. 또한 PDF 요약에 대한 새 이벤트 구독을 만들고 페이로드에서 전송된 &quot;pdf_url&quot; 속성의 콘텐츠를 출력합니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
-
-이 모듈을 구성할 때 다음 필드가 표시됩니다.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!DNL Connection]</td> 
-   <td> <p>[!DNL Workfront Proof] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Webhook]</td> 
-   <td>기존 웹후크를 선택하거나 새 웹후크를 만들 수 있습니다. 자세한 내용은 [!DNL Adobe Workfront Fusion]</a>의 <!--<a href="For instructions, see [Instant triggers (webhooks) in Adobe Workfront Fusion](/help/workfront-fusion/).-->" class="MCXref xref"&gt;인스턴스 트리거(웹후크)를 참조하십시오. </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Limit]</td> 
-   <td>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Watch Proof Activity]
-
-이 트리거 모듈은 증명 증명 시 지정된 활동이 발생하는 경우 시나리오를 실행합니다.
-
-모듈은 증명과 연결된 모든 표준 필드와 연결이 액세스하는 모든 사용자 지정 필드 및 값을 반환합니다. 또한 PDF 요약에 대한 새 이벤트 구독을 만들고 페이로드로 전송된 `pdf_url` 특성에서 콘텐츠를 출력합니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
-
-이 모듈을 구성할 때 다음 필드가 표시됩니다.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!DNL Connection]</td> 
-   <td> <p>[!DNL Workfront Proof] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Activity type]</td> 
-   <td>새 결정([!UICONTROL proof] 상태 변경 포함) 또는 전체 증명 상태 변경만 감시할지 여부를 선택합니다.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Limit]</td> 
-   <td>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</td> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">페이지당 항목 수</td> 
+   <td> <p>결과의 페이지에 페이지를 매기려면 결과의 각 페이지에 표시되어야 하는 반환된 결과 수를 입력하거나 매핑합니다. 이 숫자는 100보다 작거나 같아야 합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -254,11 +254,13 @@ Workfront Proof 커넥터는 다음을 사용합니다.
 
 #### [!UICONTROL Create Proof]
 
+<!--Cannot test Jan 2025-->
+
 이 작업 모듈은 [!DNL Workfront Proof]에 새 증명 또는 새 증명 버전을 만듭니다.
 
-새 버전을 만드는 경우 새 증명 및 소스 증명에 대한 매개 변수를 지정합니다.
+새 버전을 만드는 경우에는 새 증명에 대한 매개 변수를 지정하고 소스 증명에 대한 매개 변수를 지정합니다.
 
-모듈이 새 증명 또는 증명 버전의 ID를 반환합니다. 시나리오의 후속 모듈에서 이 정보를 매핑할 수 있습니다.
+모듈이 새 증명 또는 증명 버전의 ID를 반환합니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
 
 이 모듈을 구성할 때 다음 필드가 표시됩니다.
 
@@ -372,7 +374,7 @@ Workfront Proof 커넥터는 다음을 사용합니다.
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Require login]</td> 
-   <td> <p>생성된 증명에 로그인이 필요한지 여부를 지정합니다. </p> <!--<p>This is the same as the [!UICONTROL Login Required] setting explained in <a href="workfront-proof/wp-work-proofsfiles/manage-your-work/configure-proof-settings.md" class="MCXref xref">[!UICONTROL Configure Proof Settings] in [!DNL Workfront Proof]</a></p>--> </td> 
+   <td> <p>생성된 증명에 로그인이 필요한지 여부를 지정합니다. </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Resolution ID]</td> 
@@ -400,6 +402,8 @@ Workfront Proof 커넥터는 다음을 사용합니다.
   </tr> 
  </tbody> 
 </table>
+
+
 
 #### [!UICONTROL Custom API Call]
 
@@ -459,7 +463,7 @@ Workfront Proof 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>[!UICONTROL Proof Details] 페이지에 있는 증명의 고유 ID를 입력하십시오. <!--For more information, see <a href="workfront-proof/wp-work-proofsfiles/manage-your-work/manage-proof-details.md" class="MCXref xref" data-mc-variable-override="">Manage Proof Details in [!DNL Workfront Proof]</a>.</p>--> </td> 
+   <td> <p>[!UICONTROL Proof Details] 페이지에 있는 증명의 고유 ID를 입력하십시오.  </td> 
   </tr> 
  </tbody> 
 </table>
@@ -557,11 +561,11 @@ Workfront Proof 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>[!UICONTROL Proof Details] 페이지에 있는 증명의 고유 ID를 입력하십시오. <!--For more information, see <a href="workfront-proof/wp-work-proofsfiles/manage-your-work/manage-proof-details.md" class="MCXref xref" data-mc-variable-override="">Manage Proof Details in [!DNL Workfront Proof]</a>.</p> --></td> 
+   <td> <p>[!UICONTROL Proof Details] 페이지에 있는 증명의 고유 ID를 입력하십시오. </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Deadline]</td> 
-   <td> <p>생성된 증명에 대해 원하는 기한을 지정합니다. 다음 날짜 형식을 사용하십시오.</p> <p><code>YYYY-MM-DD hh:mm</code></p> </td> 
+   <td> <p>생성된 증명에 대해 원하는 기한을 지정합니다. 날짜 형식 <code>YYYY-MM-DD hh:mm</code>을(를) 사용합니다.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Default email notifications for subscribers]</td> 
@@ -585,7 +589,7 @@ Workfront Proof 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td>[!UICONTROL Enable Subscriptions]</td> 
-   <td>참여자가 아닌 사람이 증명 구독을 허용할지 여부를 선택합니다.<br>이 옵션을 선택하면 이 표에 설명된 대로 구독자에 대해 [!UICONTROL Default Role]을(를) 선택할 수도 있습니다.</td> 
+   <td>참여자가 아닌 사람이 증명 구독을 허용할지 여부를 선택합니다.<br>이 옵션을 선택하면 [!UICONTROL Default Role] 필드에서도 옵션을 선택할 수 있습니다.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Enable Subscriptions Validation]</td> 
@@ -613,7 +617,7 @@ Workfront Proof 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td>[!UICONTROL Require login]</td> 
-   <td> <p>생성된 증명에 로그인이 필요한지 여부를 지정합니다. </p> <!--<p>This is the same as the [!UICONTROL Login Required] setting explained in <a href="workfront-proof/wp-work-proofsfiles/manage-your-work/configure-proof-settings.md" class="MCXref xref">[!UICONTROL Configure Proof Settings] in [!DNL Workfront Proof]</a></p>--> </td> 
+   <td> <p>생성된 증명에 로그인이 필요한지 여부를 지정합니다. </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Show Versions Like]</td> 
@@ -718,25 +722,3 @@ Workfront Proof 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL List Workflow Templates]
-
-이 검색 모듈에는 사용 가능한 모든 워크플로우 템플릿이 나열됩니다.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!DNL Connection]</td> 
-   <td> <p>[!DNL Workfront Proof] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Outputs]</td> 
-   <td> <p>이 모듈에 대한 출력 번들에 포함할 정보를 선택합니다.</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Limit]</td> 
-   <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 템플릿 수를 입력하거나 매핑합니다.</p> </td> 
-  </tr> 
- </tbody> 
-</table>

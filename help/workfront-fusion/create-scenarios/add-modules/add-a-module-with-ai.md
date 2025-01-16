@@ -1,0 +1,150 @@
+---
+title: AI를 사용하여 시나리오 세그먼트 생성
+description: AI를 사용하여 시나리오의 세그먼트가 수행해야 할 작업을 설명하는 텍스트 프롬프트를 입력할 수 있습니다. 그런 다음 Fusion은 해당 작업을 수행하는 하나 이상의 모듈을 생성하며, 이 모듈은 시나리오에서 사용할 수 있습니다.
+author: Becky
+feature: Workfront Fusion
+exl-id: d231e33a-6033-4e3c-b1d4-7034797c45a5
+source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+workflow-type: tm+mt
+source-wordcount: '593'
+ht-degree: 1%
+
+---
+
+# AI를 사용하여 시나리오 세그먼트 생성
+
+<!--DO NOT DELETE - linked through CSH-->
+
+<!--Check if this is in GA before repo goes live. If not, hide this article.-->
+
+<!--Check if they need to have signed the rider and stuff-->
+
+AI를 사용하여 시나리오의 세그먼트가 수행해야 할 작업을 설명하는 텍스트 프롬프트를 입력할 수 있습니다. 그런 다음 Fusion은 해당 작업을 수행하는 하나 이상의 모듈을 생성하며, 이 모듈은 시나리오에서 사용할 수 있습니다.
+
+생성된 시나리오 세그먼트에는 단일 커넥터에 대한 모듈이 포함되어 있습니다. 다른 커넥터에 대한 모듈을 생성하려면 별도의 프롬프트를 생성한 다음 시나리오에서 시나리오 세그먼트를 조인합니다.
+
+AI에서 생성된 모든 것과 마찬가지로 생성된 모듈을 두 번 확인하고 테스트하여 의도한 대로 작동하는지 확인하는 것이 좋습니다.
+
+## 액세스 요구 사항
+
++++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
+
+이 문서의 기능을 사용하려면 다음 액세스 권한이 있어야 합니다.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!DNL Adobe Workfront] 패키지</td> 
+   <td> <p>임의</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">[!DNL Adobe Workfront] 라이센스</td> 
+   <td> <p>신규: [!UICONTROL Standard]</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td> 
+   <td>
+   <p>현재: [!DNL Workfront Fusion] 라이선스 요구 사항이 없습니다.</p>
+   <p>또는</p>
+   <p>레거시: 모두 </p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">제품</td> 
+   <td>
+   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Workfront] 플랜: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 플랜: [!DNL Workfront Fusion]이(가) 포함되어 있습니다.</li></ul>
+   <p>또는</p>
+   <p>현재: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</p>
+   </td> 
+  </tr>
+ </tbody> 
+</table>
+
+이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+
+[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+
++++
+
+## 현재 지원되는 AI 모듈 애플리케이션
+
+Fusion AI는 현재 다음 애플리케이션에 연결하는 모듈을 생성할 수 있습니다.
+
+* Adobe Firefly
+* Azure OpenAI
+* Microsoft 그래프
+* Adobe Workfront 계획
+* Adobe Analytics
+* Adobe PDF 서비스
+* Marketo Adobe
+* Adobe Frame.io
+* Dropbox
+* NetSuite
+* Google 캘린더
+* 아틀라시안 지라
+* GitLab
+* 스포티파이
+* Bitbucket
+* 오픈에이아이
+* Slack
+
+## 모듈 생성
+
+1. 왼쪽 패널의 **[!UICONTROL Scenarios]** 탭을 클릭합니다.
+1. 모듈을 추가할 시나리오를 선택합니다.
+1. 시나리오의 아무 곳이나 클릭하여 시나리오 편집기를 입력합니다.
+1. 시나리오 편집기 페이지 하단 근처에 있는 AI로 생성 아이콘 ![AI로 생성](assets/generate-with-ai-icon-beta.png)을 클릭합니다.
+
+   또는
+
+   모듈 추가를 시작하고 응용 프로그램 목록에서 **AI로 생성**&#x200B;을 선택합니다. 이 옵션은 시나리오에 첫 번째 (트리거) 모듈을 추가할 때 나타나지 않습니다.
+
+   AI 지원 패널이 열립니다.
+1. (조건부) AI를 사용하여 시나리오 세그먼트를 처음 추가하는 경우 표시되는 계약을 읽고 **동의**&#x200B;를 클릭합니다.
+1. 상자에 텍스트 프롬프트를 입력합니다.
+
+   프롬프트에 대한 팁은 이 문서에서 [시나리오 세그먼트에 대한 프롬프트 작성 팁](#tips-for-creating-prompts-for-scenario-segments)을 참조하십시오.
+
+   AI Assistant는 모듈 또는 모듈 세트를 생성합니다.
+1. (조건부) 필요한 경우 애플리케이션에 대한 API 토큰을 모듈에 추가합니다.
+1. 모듈을 확인하여 적절한 애플리케이션 및 작업에 맞게 구성되었는지 확인하십시오.
+1. (조건부) 생성된 시나리오 섹션이 시나리오에 첨부되지 않은 경우 시나리오에 적절히 드래그합니다.
+
+모듈을 테스트하여 의도한 대로 작동하는지 확인하는 것이 좋습니다.
+
+## 시나리오 세그먼트에 대한 프롬프트를 만들기 위한 팁
+
+텍스트 프롬프트에 최소한 다음 정보가 포함되어야 합니다.
+
+* 연결 중인 응용 프로그램
+* 수행할 작업
+
+>[!IMPORTANT]
+>
+>한 번에 두 개 이상의 모듈을 생성할 수 있지만 한 번에 한 애플리케이션에 대한 모듈만 생성할 수 있습니다.
+
+>[!BEGINSHADEBOX]
+
+**예**:
+
+* `Delete the records 'xyz-123', 'xyz-456', 'xyz-789' from Adobe Workfront Planning`
+여기에는 `Workfront Planning` 응용 프로그램과 `delete records` 작업이 포함됩니다. 이 프롬프트는 삭제할 각 레코드에 대해 하나씩, 세 개의 모듈을 만듭니다.
+* `Change campaign summary of the record 'xyz-123' from Adobe Workfront Planning`
+여기에는 `Workfront Planning` 응용 프로그램과 `change campaign summary` 작업이 포함됩니다.
+* `Get all field details in the record type with ID 'test-record' from Adobe Workfront Planning`
+여기에는 `Workfront Planning` 응용 프로그램과 `get field details` 작업이 포함됩니다.
+
+다음 예는 올바르지 않습니다.
+
+* `Generate an image in Adobe Firefly and upload it to Dropbox`
+
+  이 예제는 두 개 이상의 애플리케이션을 포함하므로 올바르지 않습니다
+
+>[!ENDSHADEBOX]
+
+텍스트 프롬프트를 생성할 때 다음 사항을 고려하십시오.
+
+* 직접적이고 간단한 언어를 사용하십시오.
+* 시나리오 세그먼트를 확인하고 테스트합니다. 예상대로 수행되지 않으면 프롬프트를 세분화하고 다시 시도하십시오.

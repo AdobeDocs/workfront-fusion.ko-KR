@@ -1,0 +1,962 @@
+---
+title: Adobe Target 모듈
+description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는  [!DNL Adobe Target], as well as connect it to multiple third-party applications and services. [!DNL Adobe Target] 모듈을 사용하는 워크플로를 자동화하여 레코드를 만들거나, 읽거나, 업데이트하거나, 삭제할 수 있으며, 지정된 유형의 모든 레코드를 나열하거나, 지정한 기준에 따라 레코드를 검색하거나,  [!DNL Adobe Target] API에 대한 사용자 지정 API 호출을 수행할 수 있습니다.'
+author: Becky
+feature: Workfront Fusion
+exl-id: f3c1ed7b-b69b-478a-8240-1a2ab89e11e5
+source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+workflow-type: tm+mt
+source-wordcount: '1923'
+ht-degree: 0%
+
+---
+
+# [!DNL Adobe Target]개 모듈
+
+[!DNL Adobe Workfront Fusion] 시나리오에서는 [!DNL Adobe Target]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다. [!DNL Adobe Target] 모듈을 사용하면 레코드를 만들거나, 만들거나, 읽거나, 업데이트하거나, 삭제하고, 지정된 형식의 모든 레코드를 나열하거나, 지정한 조건에 따라 레코드를 검색하거나, [!DNL Adobe Target] API에 대한 사용자 지정 API 호출을 수행할 수 있습니다.
+
+
+시나리오를 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 인덱스](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
+
+모듈에 대한 자세한 내용은 [모듈: 문서 인덱스](/help/workfront-fusion/references/modules/modules-toc.md)의 문서를 참조하십시오.
+
+## 액세스 요구 사항
+
+이 문서의 기능을 사용하려면 다음 액세스 권한이 있어야 합니다.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!DNL Adobe Workfront] 플랜*</td>
+      <td>
+        <p>[!UICONTROL Pro] 이상</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!DNL Adobe Workfront] 라이센스*</td>
+      <td>
+        <p>[!UICONTROL Plan], [!UICONTROL Work]</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td>
+      <td>
+   <p>현재 라이선스 요구 사항: [!DNL Workfront Fusion] 라이선스 요구 사항이 없습니다.</p>
+   <p>또는</p>
+   <p>레거시 라이선스 요구 사항: 작업 자동화 및 통합을 위한 [!UICONTROL [!DNL Workfront Fusion]] </p>
+   </td>
+    </tr>
+    <tr>
+      <td role="rowheader">제품</td>
+      <td>
+   <p>현재 제품 요구 사항: [!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Adobe Workfront] 플랜이 있는 경우 조직에서 이 문서에 설명된 기능을 사용하려면 [!DNL Adobe Workfront Fusion]과(와) [!DNL Adobe Workfront]을(를) 구매해야 합니다. [!DNL Workfront Fusion]이(가) [!UICONTROL Ultimate] [!DNL Workfront] 계획에 포함되어 있습니다.</p>
+   <p>또는</p>
+   <p>레거시 제품 요구 사항: 이 문서에 설명된 기능을 사용하려면 조직에서 [!DNL Adobe Workfront Fusion]과(와) [!DNL Adobe Workfront]을(를) 구매해야 합니다.</p>
+   </td>
+    </tr>
+    </tr>
+  </tbody>
+</table>
+
+
+보유 중인 플랜, 라이선스 유형 또는 액세스 권한을 확인하려면 [!DNL Workfront] 관리자에게 문의하세요.
+
+[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+
+## 전제 조건
+
+[!DNL Adobe Target] 커넥터를 사용하려면 먼저 다음 전제 조건을 충족하는지 확인해야 합니다.
+
+* 활성 [!DNL Adobe Target] 계정이 있어야 합니다.
+
+## Adobe Target API 정보
+
+Adobe Target 커넥터는 다음을 사용합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">API 태그</td> 
+   <td>v1.7.33</td> 
+  </tr>
+ </tbody> 
+ </table>
+
+## [!DNL Adobe Target]에 연결 만들기
+
+>[!IMPORTANT]
+>
+>2024년 6월 3일 이후에 생성된 연결에는 Adobe Target 서버 간 연결이 필요합니다.
+>
+>* 기존 서비스 계정 연결은 2025년 1월까지 계속 작동합니다. 2024년 1월까지는 서비스 계정 연결을 Adobe Target 서버 간 연결로 대체해야 합니다.
+>* Adobe Target 서버 간 연결을 만들려면 조직의 개발자여야 합니다. 개발자 역할은 Adobe Admin Console에서 설정합니다.
+
+[!DNL Adobe Target] 모듈에 대한 연결을 만들려면:
+
+1. 연결 상자 옆의 **[!UICONTROL Add]**&#x200B;을(를) 클릭합니다.
+
+1. 다음 필드를 채웁니다.
+
+   <table style="table-layout:auto"> 
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+    </col>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+    </col>
+    <tbody>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td>
+          <p>이 연결의 이름을 입력하십시오.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection type]</td>
+        <td>서비스 계정 연결을 만드는지 아니면 Adobe Target 서버 간 연결을 만드는지 선택합니다.<p><b>중요</b>: 2024년 6월 3일 이후에 만든 연결에는 Adobe Target 서버 간 연결이 필요합니다. 기존 서비스 계정 연결은 2025년 1월까지 계속 작동합니다. 2024년 1월까지는 서비스 계정 연결을 Adobe Target 서버 간 연결로 대체해야 합니다.
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Environment]</td>
+        <td>프로덕션 환경에 연결할지 아니면 비프로덕션 환경에 연결할지 선택합니다.
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Type]</td>
+        <td>서비스 계정에 연결할지 또는 개인 계정에 연결할지 선택합니다.
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td>[!DNL Adobe] 클라이언트 ID를 입력하십시오. [!DNL Adobe Developer Console]의 [!UICONTROL Credentials details] 섹션에서 찾을 수 있습니다.
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td>[!DNL Adobe] 클라이언트 암호를 입력하십시오. [!DNL Adobe Developer Console]의 [!UICONTROL Credentials details] 섹션에서 찾을 수 있습니다.
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Technical account ID]</td>
+        <td>[!DNL Adobe] 기술 계정 ID를 입력하십시오. [!DNL Adobe Developer Console]의 [!UICONTROL Credentials details] 섹션에서 찾을 수 있습니다.
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Organization ID]</td>
+        <td>[!DNL Adobe] 조직 ID를 입력하십시오. [!DNL Adobe Developer Console]의 [!UICONTROL Credentials details] 섹션에서 찾을 수 있습니다.
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Tenant]</td>
+        <td>
+          <p> 테넌트를 찾으려면 [!DNL Adobe Experience Cloud]에 로그인하여 [!DNL Target]을(를) 열고 [!DNL Target] 카드를 클릭하십시오. URL 하위 도메인에 언급된 대로 테넌트 ID 값을 사용합니다.</p>
+          <p>예를 들어 [!DNL Adobe Target]에 로그인할 때 URL이 <code>&lt;https://mycompany.experiencecloud.adobe.com/...></code>이면 테넌트 ID는 "mycompany"입니다.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Meta Scopes]</td>
+        <td><code>ent_marketing_sdk</code> 입력       </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Private key]</td>
+        <td>
+          <p>[!DNL Adobe Developer Console]에서 자격 증명을 만들 때 생성된 개인 키를 입력하십시오. </p>
+          <p>개인 키 또는 인증서를 추출하려면 다음을 수행하십시오.</p>
+          <ol>
+            <li value="1">
+              <p><b>[!UICONTROL Extract]</b>을(를) 클릭합니다.</p>
+            </li>
+            <li value="2">
+              <p>추출 중인 파일 유형을 선택합니다.</p>
+            </li>
+            <li value="3">
+              <p>개인 키 또는 인증서가 포함된 파일을 선택합니다.</p>
+            </li>
+            <li value="4">
+              <p>파일의 암호를 입력합니다.</p>
+            </li>
+            <li value="5">
+              <p><b>[!UICONTROL Save]</b>을(를) 클릭하여 파일을 추출하고 연결 설정으로 돌아갑니다.</p>
+            </li>
+          </ol>
+        </td>
+      </tr>
+    </tbody>
+    </table>
+
+1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL Continue]**&#x200B;을(를) 클릭하십시오.
+
+## [!DNL Adobe Target]개 모듈 및 해당 필드
+
+[!DNL Adobe Target] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Adobe Target] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+
+필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
+
+![맵 전환](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+
+* [액션](#actions)
+
+* [검색 결과](#searches)
+
+
+### 액션
+
+* [[!UICONTROL Create a record]](#create-a-record)
+
+* [[!UICONTROL Make a custom API call]](#make-a-custom-api-call)
+
+* [[!UICONTROL Delete a record]](#delete-a-record)
+
+* [[!UICONTROL Read a record]](#read-a-record)
+
+* [[!UICONTROL Update a record]](#update-a-record)
+
+
+#### [!UICONTROL Create a record]
+
+이 작업 모듈은 AB 또는 XT 활동, 오퍼 또는 대상을 만듭니다.
+
+<table style="table-layout:auto"> 
+<col/>
+<col/>
+<tbody>
+  <tr>
+    <td role="rowheader">[!UICONTROL Connection]</td>
+    <td>[!DNL Adobe Target]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >[!DNL Adobe Target]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+  </tr>
+  <tr>
+    <td role="rowheader">[!UICONTROL Record type]</td>
+    <td>
+      <p>만들려는 레코드 유형을 선택합니다.</p>
+      <ul>
+        <li>
+        <b>속성</b><p>필드에 대한 자세한 내용은 Adobe Target API 설명서의 <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Properties/operation/createProperty">속성 만들기</a>를 참조하십시오.</p>
+        </li>
+        <li>
+        <b>오퍼 추천</b><p>필드에 대한 자세한 내용은 Adobe Target API 설명서에서 <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Offers/operation/createOffer">새 recs 오퍼 만들기</a>를 참조하십시오.</p>
+        </li>
+        <li>
+          <b>[!UICONTROL Offer JSON]</b>
+          <p><a href="#offer-fields" class="MCXref xref" >오퍼 필드</a>를 계속 진행합니다.</p>
+        </li>
+        <li>
+          <b>[!UICONTROL Offer Content]</b>
+          <p><a href="#offer-fields" class="MCXref xref" >오퍼 필드</a>를 계속 진행합니다.</p>
+        </li>
+        <li>
+        <b>환경</b><p>필드에 대한 자세한 내용은 Adobe Target API 설명서의 <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Environments/operation/createEnvironment">환경 만들기</a>를 참조하십시오.</p>
+        </li>
+        <li>
+          <b>[!UICONTROL Audience]</b>
+          <p>필드에 대한 자세한 내용은 Adobe Target API 설명서의 <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Audiences/operation/createAudience_1_1">대상 만들기</a>를 참조하십시오.</p>
+        </li>
+        <li>
+          <b>[!UICONTROL AB Activity]</b>
+          <p>필드에 대한 자세한 내용은 Adobe Target API 설명서의 <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Activities/operation/createActivity_4_1">AB 활동 만들기</a>를 참조하십시오.</p>
+        </li>
+        <li>
+          <b>[!UICONTROL XT Activity]</b>
+          <p><a href="#xt-activity-fields" class="MCXref xref" >XT 활동 필드</a>를 계속합니다.</p>
+        </li>
+        <li>
+          <b>[!UICONTROL AP Activity]</b>
+          <p>필드에 대한 자세한 내용은 Adobe Target API 설명서의 <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Activities/operation/createActivity_2">AP 활동 만들기</a>를 참조하십시오.</p>
+        </li>
+        <li>
+          <b>[!UICONTROL Response Token]</b>
+          <p>필드에 대한 자세한 내용은 Adobe Target API 설명서의 <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Response-tokens/operation/createResponseToken">응답 토큰 만들기</a>를 참조하십시오.</p>
+        </li>
+      </ul>
+    </td>
+  </tr>
+</tbody>
+</table>
+
+<!--
+
+##### AB Activity fields
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Name]</td>
+      <td>Enter or map a name for this activity. The name can be no more than 250 characters.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Options]</td>
+      <td>
+        <p>For each option that you want to add to the activity, click <b>[!UICONTROL Add item]</b> and fill in the following fields:</p>
+        <ul>
+          <li>
+            <p><b>[!UICONTROL Option local ID]</b>
+            </p>
+            <p>Enter or map a string to be used to track the option across API requests.</p>
+          </li>
+          <li>
+            <p><b>[!UICONTROL Name]</b>
+            </p>
+            <p>Enter or map a name for the option. The name must be no more than 250 characters.</p>
+          </li>
+          <li>
+            <p><b>[!UICONTROL Offer ID]</b>
+            </p>
+          </li>
+          <li>
+            <p>Select or map the Offer associated with the option.</p>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Mboxes]</td>
+      <td>
+        <p>For each Mbox that you want to add to the activity, click <b>[!UICONTROL Add item]</b> and fill in the following fields:</p>
+        <ul>
+          <li>
+            <p>[!UICONTROL Audience IDs]</p>
+            <p>For each audience that you want to add to the Mbox, click <b>[!UICONTROL Add item]</b> and select the Audience ID.</p>
+          </li>
+          <li>
+            <p><b>[!UICONTROL Location local ID]</b>
+            </p>
+            <p>Enter or map a string to be used to track the location across API requests.</p>
+          </li>
+          <li>
+            <p><b>[!UICONTROL Name]</b>
+            </p>
+            <p>Enter or map a name for the Location. The name must be no more than 250 characters.</p>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Selectors]</td>
+      <td>
+        <p>For each selector that you want to add to the activity, click <b>[!UICONTROL Add item]</b> and fill in the following fields:</p>
+        <ul>
+          <li>
+            <p>[!UICONTROL Audience IDs]</p>
+            <p>For each audience that you want to add to the Mbox, click <b>[!UICONTROL Add item]</b> and select the Audience ID.</p>
+          </li>
+          <li>
+            <p><b>[!UICONTROL Location local ID]</b>
+            </p>
+            <p>Enter or map a string to be used to track the location across API requests.</p>
+          </li>
+          <li>
+            <p><b>[!UICONTROL Selector]</b>
+            </p>
+            <p>Enter or map a string to be used to track the location across API requests.</p>
+          </li>
+          <li>
+            <p><b>[!UICONTROL Name]</b>
+            </p>
+            <p>Enter or map a name for the Location. The name must be no more than 250 characters.</p>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Experiences]</td>
+      <td>
+        <p>A list of locations on the page where the content offer is served. A location contains the following:
+</p>
+        <ul>
+          <li>
+            <p><b>[!UICONTROL Experience local ID]</b>
+            </p>
+            <p>Enter or map the ID of the experience</p>
+          </li>
+          <li>
+            <p><b>[!UICONTROL Name]</b>
+            </p>
+            <p>Enter or map the name of the experience
+</p>
+          </li>
+          <li>
+            <p><b>[!DNL Audience IDs]</b>
+            </p>
+            <p>For each audience that you want to see the experience, click <b>[!UICONTROL Add item]</b> and enter the Audience ID.
+</p>
+          </li>
+          <li>
+            <p><b>[!UICONTROL Visitor Percentage]</b>
+            </p>
+            <p>Enter or map the percentage of visitors that is allocated to the experience</p>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Metrics]</td>
+      <td><p>For details on metrics, see <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Activities/operation/createActivity_4_1">Create AB activity</a> in the Adobe Target API documentation.</p> </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Third Party ID]</td>
+      <td>Enter or map an ID to identify this activity. You can choose this ID. This ID must not be the same as another activity, and can be no more than 250 characters.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Starts at]</td>
+      <td>Enter or map the date and time to start the activity in the format <code>YYYY-MM-DD hh:mm:ss.z</code>.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Ends at]</td>
+      <td>Enter or map the date and time to end the activity in the format <code>YYYY-MM-DD hh:mm:ss.z</code>.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL State]</td>
+      <td>
+        <p>Enter or map the state of the activity.</p>
+        <ul>
+          <li>
+            <p>[!UICONTROL Approved]</p>
+          </li>
+          <li>
+            <p>[!UICONTROL Deactivated]</p>
+          </li>
+          <li>
+            <p>[!UICONTROL Paused]</p>
+          </li>
+          <li>
+            <p>[!UICONTROL Saved] </p>
+          </li>
+          <li>
+            <p>[!UICONTROL Deleted]</p>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Priority]</td>
+      <td>Enter a number that defines the priority of the activity. Higher numbers have higher priority. This value must be between 0 and 999. The default value is 5.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Auto-allocate traffic]</td>
+      <td>
+        <p>Enable this option to auto-allocate traffic. Auto-allocating sends more traffic to the more successful experience.</p>
+        <p>Select or map the evaluation criteria by which to judge which experience is more successful.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Workspace]</td>
+      <td>Enter or map the workspace that the activity is associated with</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Property IDs] </td>
+      <td>For each property that you want to add to the activity, click <b>[!UICONTROL Add item]</b> and select or map the property's ID.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Reporting audiences]</td>
+      <td>
+        <p>For each reporting audience that you want to add to the activity, click [!UICONTROL Add item] and enter the following information:</p>
+        <ul>
+          <li>
+            <p><b>[!UICONTROL Reporting Audience local ID]</b>
+            </p>
+            <p>Enter or map a string to be used to track the Reporting Audience across API requests.</p>
+          </li>
+          <li>
+            <p><b>[!UICONTROL Audience ID]</b>
+            </p>
+            <p>Enter or map the Segment to be used in reporting</p>
+          </li>
+          <li>
+            <p><b>[!UICONTROL Metric local ID]</b>
+            </p>
+            <p>Enter or map a string to be used to track the metric across API requests.</p>
+          </li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+-->
+
+##### XT 활동 필드
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Name]</td>
+      <td>이 활동의 이름을 입력하거나 매핑합니다. 이름은 250자를 초과할 수 없습니다.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Options]</td>
+      <td>
+        <p>활동에 추가할 각 옵션에 대해 <b>[!UICONTROL Add item]</b>을(를) 클릭하고 다음 필드를 채우십시오.</p>
+        <ul>
+          <li>
+            <p><b>[!UICONTROL Option local ID]</b>
+            </p>
+            <p>API 요청 전반에서 옵션을 추적하는 데 사용할 문자열을 입력하거나 매핑합니다.</p>
+          </li>
+          <li>
+            <p><b>[!UICONTROL Name]</b>
+            </p>
+            <p>옵션 이름을 입력하거나 매핑합니다. 이름은 250자 이하여야 합니다.</p>
+          </li>
+          <li>
+            <p><b>[!UICONTROL Offer ID]</b>
+            </p>
+          </li>
+          <li>
+            <p>옵션과 연결된 오퍼를 선택하거나 매핑합니다.</p>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Locations]</td>
+      <td>
+        <p>활동에 추가할 각 Mbox에 대해 <b>[!UICONTROL Add item]</b>을(를) 클릭하고 다음 필드를 채우십시오.</p>
+        <ul>
+          <li>
+            <p>[!UICONTROL Audience IDs]</p>
+            <p>Mbox에 추가할 각 대상에 대해 <b>[!UICONTROL Add item]</b>을(를) 클릭하고 대상 ID를 선택합니다.</p>
+          </li>
+          <li>
+            <p><b>[!UICONTROL Location local ID]</b>
+            </p>
+            <p>API 요청에서 위치를 추적하는 데 사용할 문자열을 입력하거나 매핑합니다.</p>
+          </li>
+          <li>
+            <p><b>[!UICONTROL Name]</b>
+            </p>
+            <p>위치의 이름을 입력하거나 매핑합니다. 이름은 250자 이하여야 합니다.</p>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Experiences]</td>
+      <td>
+        <p>컨텐츠 오퍼가 제공되는 페이지의 위치 목록입니다. 위치에는 다음 항목이 포함됩니다.
+</p>
+        <ul>
+          <li>
+            <p><b>[!UICONTROL Experience local ID]</b>
+            </p>
+            <p>경험의 ID 입력 또는 매핑</p>
+          </li>
+          <li>
+            <p><b>[!UICONTROL Name]</b>
+            </p>
+            <p>경험 이름 입력 또는 매핑
+
+</p>
+          </li>
+          <li>
+            <p><b>[!DNL Audience IDs]</b>
+            </p>
+            <p>경험을 보려는 각 대상에 대해 <b>[!UICONTROL Add item]</b>을(를) 클릭하고 대상 ID를 입력합니다.
+
+</p>
+          </li>
+          <li>
+            <p><b>[!UICONTROL Visitor Percentage]</b>
+            </p>
+            <p>경험에 할당된 방문자 비율을 입력하거나 매핑합니다</p>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Metrics]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Third Party ID]</td>
+      <td>이 활동을 식별하려면 ID를 입력하거나 매핑하십시오. 이 ID를 선택할 수 있습니다. 이 ID는 다른 활동과 같을 수 없으며 250자를 초과할 수 없습니다.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Starts at]</td>
+      <td>활동을 시작할 날짜 및 시간을 <code>YYYY-MM-DD hh:mm:ss.z</code> 형식으로 입력하거나 매핑하십시오.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Ends at]</td>
+      <td><code>YYYY-MM-DD hh:mm:ss.z</code> 형식으로 활동을 종료할 날짜 및 시간을 입력하거나 매핑합니다.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL State]</td>
+      <td>
+        <p>활동의 상태를 입력하거나 매핑합니다.</p>
+        <ul>
+          <li>
+            <p>[!UICONTROL Approved]</p>
+          </li>
+          <li>
+            <p>[!UICONTROL Deactivated]</p>
+          </li>
+          <li>
+            <p>[!UICONTROL Paused]</p>
+          </li>
+          <li>
+            <p>[!UICONTROL Saved] </p>
+          </li>
+          <li>
+            <p>[!UICONTROL Deleted]</p>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Priority]</td>
+      <td>활동의 우선 순위를 정의하는 숫자를 입력합니다. 숫자가 높을수록 우선 순위가 높습니다. 이 값은 0에서 999 사이여야 합니다. 기본값은 5입니다.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Auto-allocate traffic]</td>
+      <td>
+        <p>트래픽을 자동으로 할당하려면 이 옵션을 활성화합니다. 자동 할당은 더 성공적인 경험으로 더 많은 트래픽을 전송합니다.</p>
+        <p>어떤 경험이 더 성공적인지를 판단할 평가 기준을 선택하거나 매핑합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Workspace]</td>
+      <td>활동이 연관된 작업 영역 입력 또는 매핑</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Property IDs] </td>
+      <td>활동에 추가할 각 속성에 대해 <b>[!UICONTROL Add item]</b>을(를) 클릭하고 속성의 ID를 선택하거나 매핑합니다.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Reporting audiences]</td>
+      <td>
+        <p>활동에 추가하려는 각 보고 대상에 대해 [!UICONTROL Add item]을(를) 클릭하고 다음 정보를 입력하십시오.</p>
+        <ul>
+          <li>
+            <p><b>[!UICONTROL Reporting Audience local ID]</b>
+            </p>
+            <p>API 요청에서 보고 대상을 추적하는 데 사용할 문자열을 입력하거나 매핑합니다.</p>
+          </li>
+          <li>
+            <p><b>[!UICONTROL Audience ID]</b>
+            </p>
+            <p>보고에 사용할 세그먼트 입력 또는 매핑</p>
+          </li>
+          <li>
+            <p><b>[!UICONTROL Metric local ID]</b>
+            </p>
+            <p>API 요청에서 지표를 추적하는 데 사용할 문자열을 입력하거나 매핑합니다.</p>
+          </li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+##### 오퍼 필드
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Name]</td>
+      <td>이 활동의 이름을 입력하거나 매핑합니다. 이름은 250자를 초과할 수 없습니다.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Content]</td>
+      <td>
+        <p>사용자에게 표시될 오퍼의 콘텐츠를 입력하거나 매핑합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Workspace]</td>
+      <td>
+        <p>오퍼와 연결된 작업 공간 ID를 입력하거나 매핑합니다. 비워 두면 오퍼가 계정의 기본 작업 영역과 연결됩니다. 이 기능은 [!DNL Target]개의 Premium 계정에만 적용됩니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Workspace]</td>
+      <td>
+        <p>이 오퍼가 수정된 날짜와 시간을 입력하거나 매핑합니다.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!--
+
+##### Audience fields
+
+>[!NOTE]
+>
+>Audiences created through Workfront Fusion can only be edit in Fusion or through the API. They cannot be edited from within Target.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Name]</td>
+      <td>Enter or map a name for this audience. The name can be no more than 250 characters.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Description]</td>
+      <td>
+        <p>Enter or map a description of this audience.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Origin]</td>
+      <td>
+        <p>Select whether this audience's origin is from Target or from the cloud.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Target Rule]</td>
+      <td>
+        <p>Enable the toggle to make rules AND, that is, all rules must be applied.</p>
+        <p>For each rule that you want to apply to the audience, click <b>[!UICONTROL Add item]</b> and enter the JSON of the rule you want to apply. </p>
+        <div class="example"><span class="autonumber"><span><b>Example: </b></span></span>
+          <p>Example 1:</p>
+          <p ><code>&lbrace;</code></p>
+                    <p ><code>                "page": "url",</code>
+                    </p>
+                    <p><code>                "equals":&lbrack;</code>
+                    </p>
+                    <p ><code>                    "http://www.myhomepage.com/"</code>
+                    </p>
+                    <p><code>                &rbrack;</code>
+                    </p>
+                    <p ><code>            &rbrace;,</code>
+                    </p>
+                    <p>Example 2</p>
+                    <p ><code>            &lbrace;</code>
+                    </p>
+                    <p><code>                "geo": "region",</code>
+                    </p>
+                    <p><code>                "matches": &lbrack;</code>
+                    </p>
+                    <p ><code>                    "california"</code>
+                    </p>
+                    <p ><code>                &rbrack;</code>
+                    </p>
+                    <p ><code>            &rbrace;</code>
+                    </p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Workspace]</td>
+      <td>
+        <p>Enter or map the ID of the workspace associated with the audience. If left blank, the offer is associated with the default workspace of the account. This functionality applies only to [!DNL Target Premium] accounts.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+-->
+
+#### [!UICONTROL Make a custom API call]
+
+이 모듈은 [!DNL Adobe Target] API에 대한 사용자 지정 API 호출을 만듭니다.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>[!DNL Adobe Target]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >[!DNL Adobe Target]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL [!DNL Target] 기본 URL]</td>
+      <td>[!DNL Target] 기본 URL을 입력하거나 매핑합니다.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Path]</p>
+      </td>
+      <td>
+        <p>{baseURL}/ 상대 경로 입력</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Method]</p>
+      </td>
+   <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 [!DNL Adobe Workfront Fusion]</a>에서 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 요청 메서드를 참조하십시오.</p> </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Headers]</td>
+      <td>
+        <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p>
+        <p>For example, <code>{"Content-type":"application/json"}</code></p>
+        <p>[!DNL Workfront Fusion] 인증 헤더 및 x-api-key 헤더를 자동으로 추가합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Query String]  </td>
+      <td>
+        <p>요청 쿼리 문자열을 입력합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Body]</td>
+   <td> <p>표준 JSON 개체의 형태로 API 호출에 대한 본문 콘텐츠를 추가합니다.</p> <p>참고:  <p>JSON에서 <code>if</code>과(와) 같은 조건문을 사용할 때 따옴표를 조건문 외부에 넣으십시오.</p> 
+     <div class="example" data-mc-autonum="<b>Example: </b>"> 
+      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+     </div> </p> </td>     </tr>
+  </tbody>
+</table>
+
+#### [!UICONTROL Delete a record]
+
+이 작업 모듈은 단일 AB 활동, XT 활동, 오퍼 또는 대상을 삭제합니다.
+
+<table style="table-layout:auto"> 
+<col/>
+<col/>
+<tbody>
+  <tr>
+    <td role="rowheader">[!UICONTROL Connection]</td>
+    <td>[!DNL Adobe Target]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >[!DNL Adobe Target]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+  </tr>
+  <tr>
+    <td role="rowheader">[!UICONTROL Record type]</td>
+    <td>삭제할 레코드 유형을 선택합니다.</td>
+  </tr>
+  <tr>
+    <td role="rowheader">[!UICONTROL Record ID]</td>
+    <td>삭제할 레코드의 ID를 입력하거나 매핑합니다.</td>
+  </tr>
+</tbody>
+</table>
+
+#### [!UICONTROL Read a record]
+
+이 작업 모듈은 단일 활동, 오퍼, 대상, 속성 또는 보고서에 대한 데이터를 검색합니다.
+
+<table style="table-layout:auto"> 
+<col/>
+<col/>
+<tbody>
+  <tr>
+    <td role="rowheader">[!UICONTROL Connection]</td>
+    <td>[!DNL Adobe Target]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >[!DNL Adobe Target]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+  </tr>
+  <tr>
+    <td role="rowheader">[!UICONTROL Record type]</td>
+    <td>읽으려는 레코드 유형을 선택합니다.</td>
+  </tr>
+  <tr>
+    <td role="rowheader">[!UICONTROL Record ID]</td>
+    <td>읽으려는 레코드의 ID를 입력하거나 매핑합니다.</td>
+  </tr>
+</tbody>
+</table>
+
+#### [!UICONTROL Update a record]
+
+이 작업 모듈은 Target의 레코드를 업데이트합니다.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>[!DNL Adobe Target]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >[!DNL Adobe Target]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Record type]</td>
+      <td>
+        <p>업데이트할 레코드 유형을 선택합니다.</p>
+       </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Field names]</td>
+      <td>업데이트할 필드를 선택합니다. 아래에 필드가 표시됩니다.
+          <p>필드에 대한 자세한 내용은 <a href="https://developer.adobe.com/target/administer/admin-api/">Adobe Target API 설명서</a>를 참조하십시오.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+### 검색 결과
+
+* [[!UICONTROL Get records]](#get-records)
+
+* [[!UICONTROL Search]](#search)
+
+
+#### [!UICONTROL Get records]
+
+이 검색 모듈은 선택한 유형의 레코드 목록을 검색합니다.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>[!DNL Adobe Target]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >[!DNL Adobe Target]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Record type]</td>
+      <td>업데이트할 레코드 유형을 선택합니다.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Sort by]</td>
+      <td>정렬할 각 필드에 대해 <b>[!UICONTROL Add item]</b>을(를) 클릭하고 필드를 선택한 다음 반환된 결과가 오름차순인지 내림차순인지 여부를 선택합니다.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Starts At]</td>
+      <td>
+        <p>레코드를 검색할 가장 빠른 일자를 입력합니다. </p>
+        <p>지원되는 날짜 및 시간 형식 목록을 보려면 [!DNL Adobe Workfront Fusion]</a>의 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 변환을 참조하십시오.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Ends At]</td>
+      <td>
+        <p>레코드를 검색할 최신 날짜를 입력합니다. </p>
+        <p>지원되는 날짜 및 시간 형식 목록을 보려면 [!DNL Adobe Workfront Fusion]</a>의 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 변환을 참조하십시오.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+#### [!UICONTROL Search]
+
+이 검색 모듈은 지정한 기준에 따라 활동, 오퍼 또는 대상을 검색합니다.
+
+<table style="table-layout:auto"> 
+<col/>
+<col/>
+<tbody>
+  <tr>
+    <td role="rowheader">[!UICONTROL Connection]</td>
+    <td>[!DNL Adobe Target]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >[!DNL Adobe Target]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+  </tr>
+  <tr>
+    <td role="rowheader">[!UICONTROL Record type]</td>
+    <td>업데이트할 레코드 유형을 선택합니다.</td>
+  </tr>
+  <tr>
+    <td role="rowheader">[!UICONTROL Sort by]</td>
+    <td>정렬할 각 필드에 대해 <b>[!UICONTROL Add item]</b>을(를) 클릭하고 필드를 선택한 다음 반환된 결과가 오름차순인지 내림차순인지 여부를 선택합니다.</td>
+  </tr>
+  <tr>
+    <td role="rowheader">[!UICONTROL Search criteria]</td>
+    <td>설정하려는 각 규칙에 대해 필드, 연산자 및 값을 선택합니다. 추가 규칙을 만들려면 <b>[!UICONTROL Add AND rule]</b>을(를) 클릭합니다.</td>
+  </tr>
+  <tr>
+    <td role="rowheader">[!UICONTROL Offset]</td>
+    <td>
+      <p>모듈이 반환하려는 첫 번째 응답의 번호를 입력합니다. 처음 반환된 응답의 오프셋은 <code>0</code>입니다. 이 필드를 [!UICONTROL Maximum number of returned results] 필드와 함께 사용하여 응답에 페이지를 매깁니다.</p>
+      <p>예를 들어 응답의 세 번째 페이지를 보려면 각 페이지에 응답이 10개인 경우 [!UICONTROL Offset]을(를) 20으로 설정하고 [!UICONTROL Maximum number of returned]개의 결과를 10으로 설정합니다.</p>
+    </td>
+  </tr>
+  <tr>
+    <td role="rowheader">[!UICONTROL Limit]</td>
+    <td>
+      <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다. 이 필드를 [!UICONTROL Offset] 필드와 함께 사용하여 응답에 페이지를 매깁니다.</p>
+      <p>예를 들어 응답의 세 번째 페이지를 보려면 각 페이지에 응답이 10개인 경우 [!UICONTROL Offset]을(를) 20으로 설정하고 [!UICONTROL Maximum number of returned]개의 결과를 10으로 설정합니다.</p>
+    </td>
+  </tr>
+</tbody>
+</table>

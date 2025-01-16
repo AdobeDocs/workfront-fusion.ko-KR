@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion 시나리오에서는 Salesforce을 사용�
 author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: c4696ad91dd0a2cf753147bffbb6e7b74bb99b02
 workflow-type: tm+mt
-source-wordcount: '2457'
+source-wordcount: '2604'
 ht-degree: 0%
 
 ---
@@ -234,6 +234,7 @@ Salesforce 커넥터는 다음을 사용합니다.
 * [[!UICONTROL Custom API Call]](#custom-api-call)
 * [[!UICONTROL Upload Attachment/Document]](#upload-attachmentdocument)
 * [[!UICONTROL Download Attachment/Document]](#download-attachmentdocument)
+* [파일 업로드](#upload-file)
 
 #### [!UICONTROL Create a Record]
 
@@ -498,6 +499,41 @@ Salesforce 커넥터는 다음을 사용합니다.
   </tr> 
  </tbody> 
 </table>
+
+#### 파일 업로드
+
+이 작업 모듈은 단일 파일을 Salesforce에 업로드합니다.
+
+
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>[!DNL Salesforce] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">연결 만들기[!DNL  Adobe Workfront Fusion] - 기본 지침</a>을 참조하세요.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td> <p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 이름과 데이터를 매핑합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Document linking]</td> 
+   <td>콘텐츠 문서 링크를 적용할지 여부를 선택합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL linkedEntityId]</td> 
+   <td>문서 연결을 사용하는 경우 연결된 개체의 ID를 입력하거나 매핑합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ShareType]</td> 
+   <td>문서 연결을 사용하는 경우 파일에 대한 권한을 선택합니다.<ul><li><b>뷰어 권한</b><p>사용자는 파일을 볼 수 있습니다.</p></li><li><b>공동 작업자 권한</b><p>사용자는 파일을 보고 편집할 수 있습니다.</p></li><li><b>권한 유추</b><p>권한은 라이브러리와 같은 관련 레코드에 대한 사용자의 권한을 기반으로 합니다.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Visibility]</td> 
+   <td>문서 연결을 사용하는 경우 문서의 가시성을 입력하거나 매핑합니다.<ul><li><b>모든 사용자</b><p>권한이 있는 모든 사용자가 사용할 수 있습니다.</p></li><li><b>내부 사용자</b><p>권한이 있는 내부 사용자가 사용할 수 있습니다.</p></li><li><b>공유 사용자</b><p>파일이 게시된 피드를 볼 수 있는 사용자가 사용할 수 있습니다.</p></li></ul></td> 
+  </tr>
 
 ### 검색 결과
 

@@ -4,9 +4,9 @@ description: 현재 Workfront 및 HTTP 커넥터에서 대용량 파일을 지�
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: 4422a0d9236c4fe783b3b8d2757a86c91bcca748
+source-git-commit: c4696ad91dd0a2cf753147bffbb6e7b74bb99b02
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '1042'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,9 @@ ht-degree: 0%
 * Adobe Experience Manager Assets > 문서 업로드
 * Workfront Proof > 파일 업로드
 * Adobe Authenticator > 사용자 지정 API 호출 만들기
+* SharePoint > 파일 만들기 및 SharePoint > 파일 가져오기
+* Salesforce > 파일 업로드
+* AWS S3 > 파일 업로드 및 AWS S3 > 파일 가져오기
 * HTTP
 
 다른 커넥터는 향후 릴리스에서 지원됩니다.

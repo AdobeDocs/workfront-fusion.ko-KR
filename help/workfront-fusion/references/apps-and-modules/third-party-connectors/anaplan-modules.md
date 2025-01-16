@@ -3,9 +3,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Anaplan을 �
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 81c9b141-4e40-430f-99f1-c44b7a833bcd
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 99f2e558db3d2b126adf748d7e013a4a39735bcd
 workflow-type: tm+mt
-source-wordcount: '1619'
+source-wordcount: '1617'
 ht-degree: 0%
 
 ---
@@ -456,8 +456,8 @@ Anaplan 커넥터는 다음을 사용합니다.
        <li> <p><b>[!UICONTROL Line items]</b> </p> <p>검색할 [!DNL line] 항목이 포함된 모델의 ID를 선택하거나 매핑합니다.</p> </li> 
        <li> <p><b>[!UICONTROL Model lists]</b> </p> <p>검색할 모델 목록이 포함된 Workspace의 ID와 모델 ID를 선택하거나 매핑합니다.</p> </li> 
        <li> <p><b>[!UICONTROL Model calendar]</b> </p> <p>검색할 모델 캘린더가 포함된 Workspace의 ID를 선택하거나 매핑합니다.</p> </li> 
-       <li> <p><b>모델 버전</b> </p> </li> 
-       <li> <p>검색할 모델 버전이 포함된 모델의 ID를 [!UICONTROL ]선택하거나 매핑합니다.</p> </li> 
+       <li> <p><b>[!UICONTROL Model versions]</b> </p> </li> 
+       <li> <p>검색할 모델 버전이 포함된 모델 ID를 선택하거나 매핑합니다.</p> </li> 
        <li> <p><b>[!UICONTROL Users]</b> </p> </li> 
        <li> <p><b>[!UICONTROL Views]</b> </p> <p>모듈별 뷰를 선택할지 모델별 뷰를 선택할지 선택한 다음 검색할 뷰가 포함된 모듈이나 모델의 ID를 선택하거나 매핑합니다.</p> </li> 
       </ul> 

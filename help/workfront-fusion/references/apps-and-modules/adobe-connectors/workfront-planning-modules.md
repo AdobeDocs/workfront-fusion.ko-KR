@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Workfront Planning] 모듈을 사용하면  [!DNL Ado
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: cf2a4515ecd5e239e3370a6a0a3ffe70ecce3770
+source-git-commit: 1972e445e7d4d3e4441feeda72ba9523fd1d9ff4
 workflow-type: tm+mt
 source-wordcount: '1100'
 ht-degree: 0%
@@ -73,7 +73,7 @@ Adobe Workfront Planning 커넥터는 다음을 사용합니다.
  </tbody> 
  </table>
 
-## [!DNL Adobe Workfront Planning]에 연결 만들기
+## [!DNL Adobe Workfront Planning]에 연결 만들기 {#create-a-connection-to-adobe-workfront-planning}
 
 [!DNL Workfront Fusion] 모듈 내에서 직접 [!DNL Workfront Planning] 계정에 연결할 수 있습니다.
 
@@ -139,7 +139,7 @@ Adobe Workfront Planning 커넥터는 다음을 사용합니다.
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Object type]</td>
@@ -193,7 +193,7 @@ Adobe Workfront Planning 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
     </tr>
      <tr>
       <td role="rowheader">
@@ -214,7 +214,7 @@ Adobe Workfront Planning 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
     </tr>
      <tr>
       <td role="rowheader">
@@ -275,7 +275,7 @@ This action module retrieves a list of records based on criteria you specify.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
     </tr>
      <tr>
       <td role="rowheader">
@@ -303,7 +303,7 @@ This action module retrieves a list of records based on criteria you specify.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
     </tr>
      <tr>
       <td role="rowheader">
@@ -326,7 +326,7 @@ This action module retrieves all records from an [!DNL Adobe Workfront Planning]
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
     </tr>
      <tr>
       <td role="rowheader">
@@ -349,7 +349,7 @@ This action module retrieves all records from an [!DNL Adobe Workfront Planning]
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Record ID]</td>
@@ -368,7 +368,7 @@ This action module retrieves all records from an [!DNL Adobe Workfront Planning]
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Workspace]</td>
@@ -396,7 +396,7 @@ This action module retrieves all records from an [!DNL Adobe Workfront Planning]
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
     </tr>
   </tbody>
 </table>
@@ -411,7 +411,7 @@ This action module retrieves all records from an [!DNL Adobe Workfront Planning]
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
     </tr>
      <tr>
       <td role="rowheader">

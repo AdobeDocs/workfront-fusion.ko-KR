@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는  [!DNL Workfr
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: b1b206a0554832aadc9c42ce0b4f952301474086
 workflow-type: tm+mt
-source-wordcount: '2730'
+source-wordcount: '2727'
 ht-degree: 0%
 
 ---
@@ -696,8 +696,8 @@ Workfront Proof 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Workfront Proof] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>검색</td> 
-   <td> <p>모듈을 검색할 레코드 종류를 [!UICONTROL ]선택하십시오.</p> 
+   <td>[!UICONTROL Search for]</td> 
+   <td> <p>모듈에서 검색할 레코드 유형을 선택합니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Proof]</strong> </p> <p>검색할 증명의 증명 이름을 입력합니다.</p> </li> 
      <li> <p><strong>[!UICONTROL Recipient]</strong> </p> <p>검색할 수신자의 이메일 주소를 입력합니다.</p> </li> 

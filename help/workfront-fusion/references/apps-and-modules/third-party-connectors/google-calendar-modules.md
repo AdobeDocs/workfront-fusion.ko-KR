@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Google 캘린
 author: Becky
 feature: Workfront Fusion
 exl-id: 6e514204-cd8e-4f30-bbbb-b8fbe48fc670
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 9cf9ccb282514efc0de7a836f0433f2db2f9caf1
 workflow-type: tm+mt
-source-wordcount: '3312'
+source-wordcount: '3307'
 ht-degree: 0%
 
 ---
@@ -747,7 +747,7 @@ Google Calendar 커넥터는 다음을 사용합니다.
 
 ### 반복기(더 이상 사용되지 않음)
 
-[!UICONTROL iterate attachments] 및 [!UICONTROL iterate attendees] 모듈은 더 이상 사용되지 않습니다. 첨부 파일 또는 참석자를 반복하려면 [!UICONTROL Flow Control] > [!UICONTROL Iterator] 모듈을 사용하십시오. 자세한 내용은 [반복자 모듈](/help/workfront-fusion/references/modules/iterator-module.md)을 참조하십시오.
+[!UICONTROL iterate attachments] 및 [!UICONTROL iterate attendees] 모듈은 더 이상 사용되지 않습니다. 첨부 파일 또는 참석자를 반복하려면 [!UICONTROL Flow Control] > [!UICONTROL Iterator] 모듈을 사용하십시오. 자세한 내용은 [반복자 모듈](/help/workfront-fusion/references/modules/iterator-module.md)을 참조하세요.
 
 ### 기타
 

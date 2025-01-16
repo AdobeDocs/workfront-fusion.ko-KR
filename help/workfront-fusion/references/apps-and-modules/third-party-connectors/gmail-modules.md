@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Gmail을 사�
 author: Becky
 feature: Workfront Fusion
 exl-id: 62269eca-c3cf-42fe-a866-fb66d2363b8d
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 0581601a254a9492f4166d78eb0f11868d390f24
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1527'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 ### [!DNL  Google Workspace]을(를) 사용하여 [!DNL Gmail]을(를) [!DNL Workfront Fusion]에 연결 {#connect-gmail-to-workfront-fusion-using-g-suite}
 
-[!DNL Google Workspace] 계정을 [!UICONTROL Workfront Fusion]에 연결하는 방법에 대한 지침은 [연결 만들기 - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)을 참조하십시오.
+[!DNL Google Workspace] 계정을 [!UICONTROL Workfront Fusion]에 연결하는 방법에 대한 지침은 [연결 만들기 - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)을 참조하세요.
 
 ### [!DNL gmail.com] 또는 [!DNL googlemail].com을 사용하여 [!DNL Gmail]을(를) [!DNL Workfront Fusion]에 연결 {#connect-gmail-to-workfront-fusion-using-gmail-com-or-googlemail-com}
 

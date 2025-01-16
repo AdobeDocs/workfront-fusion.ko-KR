@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Markdown 모�
 author: Becky
 feature: Workfront Fusion
 exl-id: f1134bbf-c244-4f52-8744-f97453b2ce8a
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 1e95c93213c48aea9297a82669fb2012dbb27601
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '262'
 ht-degree: 1%
 
 ---
@@ -74,7 +74,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL GitHub Flavored Markdown] </td> 
-   <td> <p>HTML GitHub 버전의 Markdown을 Markdown으로 변환하려면 이 옵션을 활성화하십시오.</p> <p>자세한 내용은 [!DNL GitHub] 설명서의 3월[!DNL ]다운 치트시트를 참조하십시오.</p> </td> 
+   <td> <p>HTML GitHub 버전의 Markdown을 Markdown으로 변환하려면 이 옵션을 활성화하십시오.</p> <p>자세한 내용은 [!DNL GitHub] 설명서에서 Markdown 치트시트를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Sanitize]</td> 

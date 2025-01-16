@@ -4,9 +4,9 @@ description: Adobe Photoshop 모듈을 사용하면 Adobe Photoshop 계정의 �
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 371adb5a5558674ecb8aa38b503b8a958c9fc5f5
 workflow-type: tm+mt
-source-wordcount: '3715'
+source-wordcount: '3714'
 ht-degree: 0%
 
 ---
@@ -143,7 +143,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
               <p>파일의 암호를 입력합니다.</p>
             </li>
             <li value="5">
-              <p><b>저장</b>을 클릭하여 파일을 추출하고 [!UICONTROL ]e 연결 설정으로 돌아갑니다.</p>
+              <p><b>저장</b>을 클릭하여 파일을 추출하고 연결 설정으로 돌아갑니다.</p>
             </li>
           </ol>
         </td>

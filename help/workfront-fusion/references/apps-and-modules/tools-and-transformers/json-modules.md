@@ -81,10 +81,9 @@ JSON 문자열 필드에 컬렉션 `{ ... }`이(가) 포함된 경우 출력은 
 >
 >```
 >{
->       "name" : "Peter",
+>    "name" : "Peter",
 >
->    
-   "ID" : 1
+>    "ID" : 1
 >}
 >```
 >
@@ -98,16 +97,15 @@ JSON 문자열 필드에 배열 `[ ... ]`이(가) 포함된 경우 출력은 일
 >
 >```
 >[
->   {
->       "name" : "Peter",
->       "ID" : 1
->   },
+>  {
+>    "name" : "Peter",
+>    "ID" : 1
+>  },
 >
->  
- {
->       "name" : "Mike",
->       "ID" : 2
->   }
+>  {
+>    "name" : "Mike",
+>    "ID" : 2
+>  }
 >]
 >```
 >
@@ -238,48 +236,49 @@ JSON 문자열 필드에 배열 `[ ... ]`이(가) 포함된 경우 출력은 일
 >
 >1. 시나리오에 [!DNL Google Sheets] > [!UICONTROL Select rows] 모듈을 배치하여 데이터를 가져옵니다. [!DNL Google] 스프레드시트에서 행을 검색하도록 모듈을 설정합니다. 테스트 목적으로 {&#x200B;0}을(를) 작은 수로 설정하십시오(예: 3개). **[!UICONTROL Maximum number of returned rows]** [!DNL Google Sheets] 모듈을 마우스 오른쪽 단추로 클릭하고 &quot;**[!UICONTROL Run this module only]**&quot;을(를) 선택하여 실행합니다. 모듈의 출력을 확인합니다.
 >
-1. [!DNL Google Sheets] 모듈 뒤에 [!UICONTROL Array Aggregator] 모듈을 연결합니다. 모듈의 설정에서 **[!UICONTROL Source node]** 필드의 [!DNL Google Sheets] 모듈을 선택합니다. 다른 필드는 현재 상태로 두십시오.
+>1. [!DNL Google Sheets] 모듈 뒤에 [!UICONTROL Array Aggregator] 모듈을 연결합니다. 모듈의 설정에서 **[!UICONTROL Source node]** 필드의 [!DNL Google Sheets] 모듈을 선택합니다. 다른 필드는 현재 상태로 두십시오.
 >
-1. [!UICONTROL Array Aggregator] 모듈 뒤에 [!UICONTROL JSON] > [!UICONTROL Create JSON] 모듈을 연결합니다. 모듈의 설정에는 JSON 형식을 설명하는 데이터 구조가 필요합니다. 데이터 구조 설정을 열려면 **[!UICONTROL Add]**&#x200B;을(를) 클릭하십시오. 이 데이터 구조를 만드는 가장 쉬운 방법은 JSON 샘플에서 자동으로 생성하는 것입니다. **[!UICONTROL Generator]**&#x200B;을(를) 클릭하고 JSON 샘플을 **[!UICONTROL Sample data]** 필드에 붙여 넣습니다.
+>1. [!UICONTROL Array Aggregator] 모듈 뒤에 [!UICONTROL JSON] > [!UICONTROL Create JSON] 모듈을 연결합니다. 모듈의 설정에는 JSON 형식을 설명하는 데이터 구조가 필요합니다. 데이터 구조 설정을 열려면 **[!UICONTROL Add]**&#x200B;을(를) 클릭하십시오. 이 데이터 구조를 만드는 가장 쉬운 방법은 JSON 샘플에서 자동으로 생성하는 것입니다. **[!UICONTROL Generator]**&#x200B;을(를) 클릭하고 JSON 샘플을 **[!UICONTROL Sample data]** 필드에 붙여 넣습니다.
 >
-**예:**
+>     **예:**
 >
-```
-{
-
-"books": [
-
-{
-
-"id": "ID",
-
-"title": "Title",
-
-"author": "Author"
-
-}
-
-]
-
-}
-```
+>     ```
+>     {
+>     
+>     "books": [
+>     
+>     {
+>     
+>     "id": "ID",
+>     
+>     "title": "Title",
+>     
+>     "author": "Author"
+>     
+>     }
+>     
+>     ]
+>     
+>     }
+>     
+>     ```
 >
-1. **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다. 이제 데이터 구조의 [!UICONTROL Specification] 필드에 생성된 구조가 포함됩니다.
-1. 데이터 구조의 이름을 보다 구체적으로 변경하고 **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다. 루트 배열 속성에 해당하는 필드는 JSON 모듈의 설정에서 매핑 가능한 필드로 표시됩니다.
+>1. **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다. 이제 데이터 구조의 [!UICONTROL Specification] 필드에 생성된 구조가 포함됩니다.
+>1. 데이터 구조의 이름을 보다 구체적으로 변경하고 **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다. 루트 배열 속성에 해당하는 필드는 JSON 모듈의 설정에서 매핑 가능한 필드로 표시됩니다.
 >
-1. 필드 옆에 있는 **[!UICONTROL Map]** 단추를 클릭하고 배열 집계 출력의 `Array[]` 항목을 해당 필드에 매핑합니다.
+>1. 필드 옆에 있는 **[!UICONTROL Map]** 단추를 클릭하고 배열 집계 출력의 `Array[]` 항목을 해당 필드에 매핑합니다.
 >
-1. [!UICONTROL JSON] 모듈의 설정을 닫으려면 **[!UICONTROL OK]**&#x200B;을(를) 클릭하십시오.
+>1. [!UICONTROL JSON] 모듈의 설정을 닫으려면 **[!UICONTROL OK]**&#x200B;을(를) 클릭하십시오.
 >
-1. [!UICONTROL Array Aggregator] 모듈의 설정을 엽니다. **[!UICONTROL Target structure]**&#x200B;을(를) [!UICONTROL Custom]에서 루트 배열 특성에 해당하는 [!UICONTROL JSON] 모듈의 필드로 변경합니다. [!DNL Google Sheets] 모듈의 항목을 적절한 필드에 매핑합니다.
+>1. [!UICONTROL Array Aggregator] 모듈의 설정을 엽니다. **[!UICONTROL Target structure]**&#x200B;을(를) [!UICONTROL Custom]에서 루트 배열 특성에 해당하는 [!UICONTROL JSON] 모듈의 필드로 변경합니다. [!DNL Google Sheets] 모듈의 항목을 적절한 필드에 매핑합니다.
 >
-1. [!UICONTROL Array Aggregator] 모듈의 설정을 닫으려면 **[!UICONTROL OK]**&#x200B;을(를) 클릭하십시오.
+>1. [!UICONTROL Array Aggregator] 모듈의 설정을 닫으려면 **[!UICONTROL OK]**&#x200B;을(를) 클릭하십시오.
 >
-1. 시나리오를 실행합니다.
+>1. 시나리오를 실행합니다.
 >
-[!UICONTROL JSON] 모듈이 올바른 JSON 형식을 출력합니다.
+>[!UICONTROL JSON] 모듈이 올바른 JSON 형식을 출력합니다.
 >
-1. [!DNL Google Sheets] 모듈의 설정을 열고 [!UICONTROL Maximum number of returned rows] 숫자를 스프레드시트의 행 수보다 크게 늘려 모든 데이터를 처리합니다.
+>1. [!DNL Google Sheets] 모듈의 설정을 열고 [!UICONTROL Maximum number of returned rows] 숫자를 스프레드시트의 행 수보다 크게 늘려 모든 데이터를 처리합니다.
 
 ## 문제 해결
 
@@ -293,6 +292,6 @@ JSON에서 `if`과(와) 같은 조건문을 사용할 때 따옴표를 조건문
 
 >[!INFO]
 >
-**예:**
+>**예:**
 >
-![](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)
+>![](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)

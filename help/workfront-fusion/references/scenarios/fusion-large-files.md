@@ -4,10 +4,10 @@ description: 현재 Workfront 및 HTTP 커넥터에서 대용량 파일을 지�
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: c4696ad91dd0a2cf753147bffbb6e7b74bb99b02
+source-git-commit: 12620e137d2e536b90eb322de93fd39bb8374e51
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 0%
+source-wordcount: '1021'
+ht-degree: 1%
 
 ---
 
@@ -27,15 +27,26 @@ ht-degree: 0%
 
 ## 대용량 파일을 지원하는 커넥터
 
-초기 릴리스의 경우 다음 커넥터가 대용량 파일을 지원합니다.
+현재, 다음 커넥터가 대형 파일을 지원합니다.
 
-* Workfront > 문서 업로드
-* Adobe Experience Manager Assets > 문서 업로드
-* Workfront Proof > 파일 업로드
-* Adobe Authenticator > 사용자 지정 API 호출 만들기
-* SharePoint > 파일 만들기 및 SharePoint > 파일 가져오기
-* Salesforce > 파일 업로드
-* AWS S3 > 파일 업로드 및 AWS S3 > 파일 가져오기
+* Workfront
+   * 문서 업로드
+   * 문서 다운로드
+* Adobe Experience Manager Assets
+   * 문서 업로드
+* Workfront Proof
+   * 파일 업로드
+   * 증명 다운로드
+* Adobe Authenticator
+   * 사용자 지정 API 호출 만들기
+* SharePoint
+   * 파일 만들기
+   * 파일 가져오기
+* Salesforce
+   * 파일 업로드
+* AWS
+   * 파일 업로드
+   * 파일 가져오기
 * HTTP
 
 다른 커넥터는 향후 릴리스에서 지원됩니다.
@@ -74,7 +85,7 @@ Fusion이 파일을 처리하면 더 큰 파일이 영구 저장소(S3 버킷 �
 
 ### 파일 전송 데이터를 표시하도록 Fusion의 UI는 언제 업데이트됩니까?
 
-대시보드 및 시나리오 실행 세부 정보 페이지에서 파일 전송을 위한 Fusion의 UI에 대한 업데이트 작업을 진행 중이며 2025년 1분기를 타깃팅했습니다.
+이 기능은 이미 완료되어 프로덕션에 배포되었습니다.
 
 ### 시나리오를 디자인하는 데 도움이 되는 새로운 파일 처리 제한에 대해 생각할 수 있는 몇 가지 방법은 무엇입니까?
 

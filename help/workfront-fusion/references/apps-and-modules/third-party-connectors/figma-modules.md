@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] Figma 모듈을 사용하면 주석
 author: Becky
 feature: Workfront Fusion
 exl-id: 1220460b-1957-4dfc-b7c1-4c97b36ea061
-source-git-commit: a509fb54c5143945b873b2d8b146b6543107ae03
+source-git-commit: 200907bb8d80f874227493b489ef1ea450198dc6
 workflow-type: tm+mt
-source-wordcount: '2108'
+source-wordcount: '2247'
 ht-degree: 0%
 
 ---
@@ -89,6 +89,55 @@ Figma 커넥터는 다음을 사용합니다.
  </tbody> 
  </table>
 
+## Figma에 대한 연결 만들기
+
+Figure 모듈에 대한 연결을 만들려면:
+
+1. Figure 모듈에서 연결 상자 옆의 **[!UICONTROL Add]**&#x200B;을(를) 클릭합니다.
+
+1. 다음 필드를 채웁니다.
+
+   <table style="table-layout:auto"> 
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+      </col>
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+      </col>
+      <tbody>
+        <tr>
+        <td role="rowheader">[!UICONTROL Connection type]</td>
+        <td>
+          <p> 새 연결의 경우 기존 태그 없이 <code>Figma</code>을(를) 선택하십시오. </p><p>Figma는 2025년 1월에 인증 요구 사항을 변경했습니다. <code>Figma</code> 연결 유형이 새 요구 사항을 충족합니다. <code>Figma (Legacy)</code> 연결 형식은 나중에 제거됩니다.</p>
+        </td>
+        </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td>
+          <p>이 연결의 이름을 입력하십시오.</p>
+        </td>
+        </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td>[!UICONTROL Figme] [!UICONTROL Client ID]을(를) 입력하십시오.</td>
+        </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td>그림 [!UICONTROL Client Secret]을(를) 입력하십시오.</td>
+        </tr>
+        <tr>
+        <td role="rowheader">사용자 지정 범위</td>
+        <td>이 연결에 필요한 사용자 지정 범위를 입력하십시오.</td>
+        </tr>
+        <tr>
+        <td role="rowheader">사용자 지정 연결 확인 URL</td>
+        <td>연결을 성공적으로 만들었는지 확인하기 위한 기본 끝점은 <code>https://api.figma.com/v1/me</code>입니다. 이 URL이 사용자 지정 범위에 대해 지원되지 않는 경우 사용자 지정 확인 URL을 제공하십시오.</td>
+        </tr>
+      </tbody>
+    </table>
+
+1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL Continue]**&#x200B;을(를) 클릭하십시오.
+
+
+
 ## [!DNL Figma]개 모듈 및 해당 필드
 
 [!DNL Figma] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Figma] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
@@ -125,7 +174,7 @@ Figma 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p>
+      <td> <p>[!DNL Figma] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figure에 연결 만들기</a>를 참조하십시오.</p>
       </td>
     </tr>
     <tr>
@@ -149,7 +198,7 @@ Figma 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p>
+      <td> <p>[!DNL Figma] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figure에 연결 만들기</a>를 참조하십시오.</p>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL File ID]</td>
@@ -183,7 +232,7 @@ Figma 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p>
+      <td> <p>[!DNL Figma] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figure에 연결 만들기</a>를 참조하십시오.</p>
     </tr>
     <tr>
       <td  role="rowheader">[!UICONTROL File ID]</td>
@@ -228,7 +277,7 @@ Figma 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p>
+      <td> <p>[!DNL Figma] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figure에 연결 만들기</a>를 참조하십시오.</p>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Object type]</td>
@@ -451,7 +500,7 @@ Figma 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p>
+      <td> <p>[!DNL Figma] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figure에 연결 만들기</a>를 참조하십시오.</p>
     <tr>
       <td role="rowheader">[!UICONTROL File ID]</td>
       <td>
@@ -483,7 +532,7 @@ Figma 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p>
+      <td> <p>[!DNL Figma] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figure에 연결 만들기</a>를 참조하십시오.</p>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL File ID]</td>
@@ -513,7 +562,7 @@ Figma 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p>
+      <td> <p>[!DNL Figma] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figure에 연결 만들기</a>를 참조하십시오.</p>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Team ID]</td>
@@ -539,7 +588,7 @@ Figma 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p>
+      <td> <p>[!DNL Figma] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figure에 연결 만들기</a>를 참조하십시오.</p>
     </tr>
     <tr>
       <td role="rowheader">개체&gt; 유형</td>
@@ -594,7 +643,7 @@ Figma 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p>
+      <td> <p>[!DNL Figma] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figure에 연결 만들기</a>를 참조하십시오.</p>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL URL]</td>

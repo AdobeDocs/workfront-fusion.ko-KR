@@ -4,7 +4,7 @@ content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: product-releases
 title: Adobe Workfront Fusion 릴리스 활동 개요
-description: Adobe Workfront Fusion은 앱과 웹 서비스를 원활하게 연결하여 동일한 작업을 반복하지 않고 새로운 작업에 집중할 수 있도록 합니다.
+description: Adobe Workfront Fusion은 동일한 작업을 계속해서 반복하는 대신 새로운 작업에 집중할 수 있도록 앱과 웹 서비스를 원활하게 연결하여 줍니다.
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
@@ -12,13 +12,13 @@ exl-id: c37aea95-7cc3-4939-a4d7-9a6a75557b85
 source-git-commit: cf2a4515ecd5e239e3370a6a0a3ffe70ecce3770
 workflow-type: tm+mt
 source-wordcount: '829'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
 # Adobe Workfront Fusion 릴리스 활동 개요
 
-Adobe Workfront Fusion은 앱과 웹 서비스를 원활하게 연결하여 동일한 작업을 반복하지 않고 새로운 작업에 집중할 수 있도록 합니다.
+Adobe Workfront Fusion은 동일한 작업을 계속해서 반복하는 대신 새로운 작업에 집중할 수 있도록 앱과 웹 서비스를 원활하게 연결하여 줍니다.
 
 ## 2025년 Fusion 릴리스
 

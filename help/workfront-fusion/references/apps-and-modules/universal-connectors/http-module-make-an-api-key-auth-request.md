@@ -4,9 +4,9 @@ description: 이 [!DNL Adobe Workfront Fusion] 작업 모듈은 API 키 인증 �
 author: Becky
 feature: Workfront Fusion
 exl-id: 362b80b5-42f4-4b82-b06c-39c7c5a1eb1a
-source-git-commit: 6398261775584e33515c546de4e7a72d5830ebe0
+source-git-commit: c7309422b44b3804a233bcf09443e24808dbffd8
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '844'
 ht-degree: 0%
 
 ---
@@ -69,6 +69,8 @@ ht-degree: 0%
 [!UICONTROL HTTP] >[!UICONTROL Make an API Key Authorization request] 모듈을 구성할 때 [!DNL Adobe Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보를 매핑 [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
+
+![맵 전환](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 <table style="table-layout:auto"> 
  <col> 

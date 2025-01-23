@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion에는 Adobe Workfront 라이센스 외에 Ad
 author: Becky
 feature: Workfront Fusion
 exl-id: 3b445b50-5812-4ded-9788-f467991e0b52
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
 workflow-type: tm+mt
-source-wordcount: '1859'
+source-wordcount: '1858'
 ht-degree: 2%
 
 ---
@@ -447,7 +447,7 @@ Airtable 커넥터는 다음을 사용합니다.
 1. Workfront Fusion 시나리오에 새 응답 보기 모듈을 추가합니다.
 1. 웹후크 URL을 생성하고 복사합니다.
 
-   <!--For instructions, see [Instant triggers (webhooks) in Adobe Workfront Fusion](/help/workfront-fusion/).-->
+   <!--For instructions, see [ (webhooks) in Adobe Workfront Fusion](/help/workfront-fusion/).-->
 
 1. Airtable 계정에 로그인합니다.
 1. 폼에 사용할 기본 및 표를 열고 폼 보기를 만듭니다.
@@ -486,7 +486,7 @@ Airtable 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">메서드</td> 
-   <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 [!DNL Adobe Workfront Fusion]</a>에서 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 요청 메서드를 참조하십시오.</p> </td> 
+   <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">헤더</td> 

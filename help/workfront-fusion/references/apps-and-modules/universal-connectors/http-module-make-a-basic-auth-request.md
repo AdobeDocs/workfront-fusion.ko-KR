@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion에는 Adobe Workfront 라이센스 외에 Ad
 author: Becky
 feature: Workfront Fusion
 exl-id: e544768e-7023-473f-8d51-631b04183743
-source-git-commit: 6398261775584e33515c546de4e7a72d5830ebe0
+source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '770'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
-   <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 [!DNL Adobe Workfront Fusion]</a>에서 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP 요청 메서드를 참조하십시오.</p> </td> 
+   <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers] </td> 

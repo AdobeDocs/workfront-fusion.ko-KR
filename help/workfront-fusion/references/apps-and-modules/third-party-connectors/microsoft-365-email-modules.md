@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Microsoft Off
 author: Becky
 feature: Workfront Fusion
 exl-id: 5d4072ba-c598-4347-a42f-c59c7add0a1b
-source-git-commit: ee3a79a30f20f6ff852fd7f5e7c7e0b43cb25e9e
+source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
 workflow-type: tm+mt
-source-wordcount: '2354'
+source-wordcount: '2353'
 ht-degree: 0%
 
 ---
@@ -705,7 +705,7 @@ Microsoft Office 365 이메일 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
-   td&gt; <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 [!DNL Adobe Workfront Fusion]</a>에서 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 요청 메서드를 참조하십시오.</p> </td> 
+   td&gt; <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 

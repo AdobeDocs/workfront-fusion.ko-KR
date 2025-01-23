@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는  [!DNL Market
 author: Becky
 feature: Workfront Fusion
 exl-id: da417ac7-e532-45f7-86d9-3643b5f9f203
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
 workflow-type: tm+mt
-source-wordcount: '1740'
+source-wordcount: '1814'
 ht-degree: 0%
 
 ---
@@ -25,42 +25,46 @@ Marketo 커넥터에 대한 비디오 소개는 다음을 참조하십시오.
 
 ## 액세스 요구 사항
 
++++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
+
 이 문서의 기능을 사용하려면 다음 액세스 권한이 있어야 합니다.
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 플랜*</td>
-  <td> <p>[!UICONTROL Pro] 이상</p> </td>
+   <td role="rowheader">Adobe Workfront 패키지</td> 
+   <td> <p>임의</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 라이센스*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront 라이선스</td> 
+   <td> <p>새로운 기능: 표준</p><p>또는</p><p>현재: 작업 시간 이상</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td> 
+   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재 라이선스 요구 사항: [!DNL Workfront Fusion] 라이선스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
    <p>또는</p>
-   <p>레거시 라이선스 요구 사항: 작업 자동화 및 통합을 위한 [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>현재 제품 요구 사항: [!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Adobe Workfront] 플랜이 있는 경우 조직에서 이 문서에 설명된 기능을 사용하려면 [!DNL Adobe Workfront Fusion]과(와) [!DNL Adobe Workfront]을(를) 구매해야 합니다. [!DNL Workfront Fusion]이(가) [!UICONTROL Ultimate] [!DNL Workfront] 계획에 포함되어 있습니다.</p>
+   <p>신규:</p> <ul><li>또는 Prime Workfront 패키지 선택: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</li><li>Ultimate Workfront 패키지: Workfront Fusion이 포함됩니다.</li></ul>
    <p>또는</p>
-   <p>레거시 제품 요구 사항: 이 문서에 설명된 기능을 사용하려면 조직에서 [!DNL Adobe Workfront Fusion]과(와) [!DNL Adobe Workfront]을(를) 구매해야 합니다.</p>
+   <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-보유 중인 플랜, 라이선스 유형 또는 액세스 권한을 확인하려면 [!DNL Workfront] 관리자에게 문의하세요.
+이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 [!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+
++++
 
 ## 전제 조건
 
@@ -89,9 +93,49 @@ Marketo 커넥터는 다음을 사용합니다.
 
 [!DNL Marketo] 모듈 내에서 직접 [!DNL Marketo] 계정에 연결할 수 있습니다.
 
-1. [!DNL Marketo] 모듈에서 [!UICONTROL Connection] 필드 옆의 **[!UICONTROL Add]**&#x200B;을(를) 클릭합니다.
-1. [!DNL Marketo] 계정 또는 [!DNL Marketo] [!UICONTROL Munchkin] ID를 입력하십시오. 계정에 할당된 기본 URL 또는 끝점의 고유한 부분이며, 해당 [!UICONTROL REST] API를 통해 [!DNL Marketo]에 액세스하는 데 사용합니다. 찾는 방법에 대한 지침은 [!DNL Marketo] 설명서의 [기본 URL](https://developers.marketo.com/rest-api/base-url/)을 참조하십시오.
-1. [!UICONTROL Client ID] 및 [!UICONTROL Client secret]을(를) 입력하십시오. 찾는 방법에 대한 지침은 [!DNL Marketo] 설명서의 [인증](https://developers.marketo.com/rest-api/authentication/)을 참조하십시오.
+1. 모든 Marketo 모듈에서 연결 필드 옆에 있는 **추가**&#x200B;를 클릭합니다.
+1. 다음 필드를 채웁니다.
+
+   <table style="table-layout:auto"> 
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+    </col>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+    </col>
+    <tbody>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td>
+          <p>새 연결의 이름을 입력합니다.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Environment]</td>
+        <td>
+          <p>프로덕션 환경에 연결할지 아니면 비프로덕션 환경에 연결할지 선택합니다.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Type]</td>
+        <td>
+          <p>서비스 계정에 연결할지 또는 개인 계정에 연결할지 선택합니다.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Account / Munchkin ID]</td>
+        <td>
+          <p>[!DNL Marketo] 계정 또는 [!DNL Marketo] [!UICONTROL Munchkin] ID를 입력하십시오. 계정에 할당된 기본 URL 또는 끝점의 고유한 부분이며, 해당 [!UICONTROL REST] API를 통해 [!DNL Marketo]에 액세스하는 데 사용합니다. 찾는 방법에 대한 지침은 [!DNL Marketo] 설명서의 [기본 URL](https://developers.marketo.com/rest-api/base-url/)을 참조하십시오.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td>Marketo 클라이언트 ID를 입력합니다. 찾는 방법에 대한 지침은 [!DNL Marketo] 설명서의 [Authentication](https://developers.marketo.com/rest-api/authentication/)을 참조하십시오.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td>Marketo 클라이언트 암호를 입력합니다. 찾는 방법에 대한 지침은 [!DNL Marketo] 설명서의 [Authentication](https://developers.marketo.com/rest-api/authentication/)을 참조하십시오.</td>
+      </tr>
+     </tbody>
+    </table>
 1. 연결을 만들고 모듈로 돌아가려면 **[!UICONTROL Continue]**&#x200B;을(를) 클릭하십시오.
 
 ## [!DNL Marketo] 모듈 및 해당 필드
@@ -121,7 +165,7 @@ Marketo 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Webhook]</p> </td> 
-   <td> <p>모듈에서 사용할 웹후크를 입력합니다.</p> <p>웹후크에 대한 자세한 내용은 [!DNL Adobe Workfront Fusion]</a>의 <!--<a href="For instructions, see [Instant triggers (webhooks) in Adobe Workfront Fusion](/help/workfront-fusion/).-->" class="MCXref xref"&gt;인스턴트 트리거(웹후크)를 참조하십시오.</p> </td> 
+   <td> <p>모듈에서 사용할 웹후크를 입력합니다.</p> <p>웹후크에 대한 자세한 내용은 <a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md" class="MCXref xref">웹후크</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
@@ -147,13 +191,13 @@ Marketo 커넥터는 다음을 사용합니다.
    <td> <p>만들려는 레코드 유형을 선택합니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Activity]</strong> </p> <p>보려는 활동 유형을 선택합니다. </p> <p>모듈은 새 활동만 감시합니다.<br></p> </li> 
-     <li> <p><strong>[!UICONTROL Lead]</strong> </p> <p>새 레코드, 업데이트된 레코드, 새 레코드와 업데이트된 레코드 모두 또는 특정 필드 업데이트를 감시할지 여부를 선택합니다. 특정 필드 업데이트를 시청하도록 선택하는 경우 모듈에서 시청하려는 필드를 선택합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL Program]</strong> </p> <p>새 레코드, 업데이트된 레코드 또는 새 레코드와 업데이트된 레코드를 모두 감시할지 여부를 선택합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL Lead]</strong> </p> <p><b>이벤트 유형</b> 필드에서 새 레코드, 업데이트된 레코드, 새 레코드와 업데이트된 레코드 모두 또는 특정 필드 업데이트를 감시할지 여부를 선택합니다. 특정 필드 업데이트를 시청하도록 선택하는 경우 모듈에서 시청하려는 필드를 선택합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL Program]</strong> </p> <p><b>이벤트 유형</b> 필드에서 새 레코드, 업데이트된 레코드 또는 새 레코드와 업데이트된 레코드를 모두 감시할지 여부를 선택합니다.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Outputs]</td> 
-   <td> <p>이 모듈에 대한 출력 번들에 포함할 정보를 선택합니다.</p> </td> 
+   <td> <p>이 모듈의 출력 번들에 포함할 필드를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
@@ -177,7 +221,7 @@ Marketo 커넥터는 다음을 사용합니다.
 
 #### [!UICONTROL Add Leads to a List]
 
-이 작업 모듈은 리드 ID를 사용하여 하나 이상의 리드를 목록에 추가합니다.
+이 작업 모듈은 리드 ID를 사용하여 하나 이상의 리드를 목록에 추가합니다. 한 번에 최대 300개의 리드를 추가할 수 있습니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -300,7 +344,7 @@ Marketo 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 [!DNL Adobe Workfront Fusion]</a>에서 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP 요청 메서드를 참조하십시오.</p> </td> 
+   <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -311,15 +355,8 @@ Marketo 커넥터는 다음을 사용합니다.
    <td> <p>표준 JSON 개체 형식으로 API 호출에 대한 쿼리를 추가합니다.</p> <p>For example: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>표준 JSON 개체의 형태로 API 호출에 대한 본문 콘텐츠를 추가합니다.</p> <p>참고:  <p>JSON에서 <code>if</code>과(와) 같은 조건문을 사용할 때 따옴표를 조건문 외부에 넣으십시오.</p> 
-     <div class="example" data-mc-autonum="<b>Example: </b>"> 
-      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
-     </div> </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td> <p>각 시나리오 실행 주기 동안 모듈이 사용할 최대 레코드 수를 입력하거나 매핑합니다.</p> </td> 
+   <td role="rowheader">[!UICONTROL Fields]</td> 
+   <td> <p>API 호출에 추가할 각 필드에 대해 <b>항목 추가</b>를 클릭하고 필드의 키와 값을 입력하십시오.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -338,7 +375,7 @@ Marketo 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL File ID]</td> 
-   <td>다운로드할 파일의 ID를 매핑합니다.</td> 
+   <td>다운로드할 파일의 ID를 입력하거나 매핑합니다.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -379,7 +416,7 @@ Marketo 커넥터는 다음을 사용합니다.
 
 #### [!UICONTROL Remove Leads from a List]
 
-이 작업 모듈은 리드 ID를 사용하여 목록에서 하나 이상의 리드를 제거합니다.
+이 작업 모듈은 리드 ID를 사용하여 목록에서 하나 이상의 리드를 제거합니다. 한 번에 최대 300개의 리드를 제거할 수 있습니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -395,7 +432,7 @@ Marketo 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Lead IDs]</td> 
-   <td> <p>목록에서 제거할 각 잠재 고객에 대해 <b>[!UICONTROL Add]</b>을(를) 클릭한 다음 제거할 잠재 고객의 ID를 입력하거나 매핑합니다. 목록에서 제거할 모듈에 대해 최대 300개의 리드를 추가할 수 있습니다. </p> <p>맵 토글을 클릭하여 목록에서 제거할 기존 리드 컬렉션을 매핑합니다.</p> </td> 
+   <td> <p>목록에서 제거할 각 잠재 고객에 대해 <b>[!UICONTROL Add item]</b>을(를) 클릭한 다음 제거할 잠재 고객의 ID를 입력하거나 매핑합니다. 목록에서 제거할 모듈에 대해 최대 300개의 리드를 추가할 수 있습니다. </p> <p>맵 토글을 클릭하여 목록에서 제거할 기존 리드 컬렉션을 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -570,11 +607,11 @@ Marketo 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Field]</p> </td> 
-   <td> <p>이름, 프로그램 이름 또는 작업 영역 이름으로 검색할지 여부를 선택합니다.</p> </td> 
+   <td> <p>검색할 필드를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Values]</td> 
-   <td>검색할 각 값에 대해 <b>[!UICONTROL Add item]</b>을(를) 클릭하고 값을 입력합니다.</td> 
+   <td role="rowheader">[!UICONTROL Value / values]</td> 
+   <td>검색할 필드의 값을 입력합니다. 필드에서 여러 값을 검색할 수 있는 경우 검색할 각 값에 대해 <b>[!UICONTROL Add item]</b>을(를) 클릭하고 값을 입력합니다.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Output]</td> 

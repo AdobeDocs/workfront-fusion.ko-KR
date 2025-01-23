@@ -4,7 +4,7 @@ description: Adobe Workfront Fusion Adobe Workfront 커넥터를 사용하여 Wo
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 3ba5d67806e0d495bd4a91589d06cfb9adb25c0c
+source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
 workflow-type: tm+mt
 source-wordcount: '6208'
 ht-degree: 3%
@@ -104,7 +104,7 @@ Workfront Fusion 모듈 내에서 직접 Workfront 계정에 대한 연결을 �
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Workfront 클라이언트 ID를 입력합니다. 이 정보는 Workfront의 설정 영역에 있는 OAuth2 애플리케이션 영역에서 찾을 수 있습니다. Workfront에 OAuth2 애플리케이션용 클라이언트 암호가 없는 경우 다른 클라이언트 암호를 생성할 수 있습니다. 자세한 내용은 Workfront 설명서를 참조하십시오.</td>
+        <td>Workfront 클라이언트 암호를 입력합니다. 이 정보는 Workfront의 설정 영역에 있는 OAuth2 애플리케이션 영역에서 찾을 수 있습니다. Workfront에 OAuth2 애플리케이션용 클라이언트 암호가 없는 경우 다른 클라이언트 암호를 생성할 수 있습니다. 자세한 내용은 Workfront 설명서를 참조하십시오.</td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Authentication URL]</td>
@@ -2040,7 +2040,7 @@ Fusion 사용자는 이벤트 구독 필터를 사용하여 자신의 사용 사
 
 Workfront > 이벤트 보기 필터에서 다음 연산자를 사용할 수 있습니다.
 
-* 다음과 같음
+* 같음
 * 같지 않음
 * 보다 큼
 * 보다 작음

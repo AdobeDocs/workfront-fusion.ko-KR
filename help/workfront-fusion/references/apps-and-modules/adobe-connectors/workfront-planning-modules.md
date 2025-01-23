@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Planning] 모듈을 사용하면  [!DNL Ado
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 1972e445e7d4d3e4441feeda72ba9523fd1d9ff4
+source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1099'
 ht-degree: 0%
 
 ---
@@ -228,7 +228,7 @@ Adobe Workfront Planning 커넥터는 다음을 사용합니다.
       <td role="rowheader">
         <p>[!UICONTROL Method]</p>
       </td>
-   <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 [!DNL Adobe Workfront Fusion]</a>에서 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 요청 메서드를 참조하십시오.</p> </td> 
+   <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Headers]</td>

@@ -4,9 +4,9 @@ description: 현재 Workfront 및 HTTP 커넥터에서 대용량 파일을 지�
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: 12620e137d2e536b90eb322de93fd39bb8374e51
+source-git-commit: 0e69dfa23fc12cb20c3fed772d72ef348536ea24
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '991'
 ht-degree: 1%
 
 ---
@@ -15,15 +15,11 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->대용량 파일 기능은 Workfront Ultimate 고객만 사용할 수 있으며 단계별 롤아웃입니다. Workfront Ultimate 플랜을 보유한 모든 Fusion 조직은 2025년 1월까지 대용량 파일 기능을 보유하게 됩니다.
+>대용량 파일 기능은 Workfront Ultimate 패키지의 조직에서만 사용할 수 있습니다.
 
 이제 Workfront Fusion에서 향상된 데이터 전송 기능을 사용할 수 있으므로 훨씬 더 큰 파일을 시나리오에서 처리할 수 있습니다.
 
 더 큰 파일을 처리하려면 시나리오를 업데이트해야 합니다.
-
->[!NOTE]
->
->이 기능은 Ultimate Workfront 패키지의 사용자만 사용할 수 있습니다.
 
 ## 대용량 파일을 지원하는 커넥터
 

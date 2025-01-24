@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion 시나리오에서는 Salesforce을 사용�
 author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 17ac09a19562839a9fdfc11bd274a6ed11f6d8f5
 workflow-type: tm+mt
-source-wordcount: '2603'
+source-wordcount: '2704'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Salesforce 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">API 버전</td> 
-   <td> v46.0 </td> 
+   <td> v62.0 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">API 태그</td> 
@@ -104,6 +104,60 @@ Salesforce 커넥터는 다음을 사용합니다.
 * 따옴표 연산자(&quot; &quot;)를 사용하여 정확한 구문 일치를 찾습니다. 예: &quot;Monday meeting&quot;
 
 검색 가능성에 대한 자세한 내용은 SOQL 및 SOSL에 대한 [!DNL Salesforce] 개발자 설명서를 참조하십시오.
+
+## [!DNL Salesforce]에 연결 만들기
+
+[!DNL Salesforce] 모듈에 대한 연결을 만들려면:
+
+1. [!DNL Salesforce] 모듈에서 연결 상자 옆의 **[!UICONTROL Add]**&#x200B;을(를) 클릭합니다.
+
+1. 다음 필드를 채웁니다.
+
+   <table style="table-layout:auto"> 
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+    </col>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+    </col>
+    <tbody>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td>
+          <p>새 연결의 이름을 입력합니다.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Environment]</td>
+        <td>
+          <p>프로덕션 환경에 연결할지 아니면 비프로덕션 환경에 연결할지 선택합니다.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Type]</td>
+        <td>
+          <p>서비스 계정에 연결할지 또는 개인 계정에 연결할지 선택합니다.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td>Salesforce 클라이언트 ID를 입력합니다.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td>Salesforce 클라이언트 암호를 입력합니다. </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Sandbox]</td>
+        <td>샌드박스 환경인 경우 이 옵션을 활성화합니다.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL API Version]</td>
+        <td>사용할 Salesforce API 버전을 입력합니다. 기본 버전은 62.0입니다.</td>
+      </tr>
+    </tbody>
+    </table>
+
+1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL Continue]**&#x200B;을(를) 클릭하십시오.
+
 
 ## [!DNL Salesforce]개 모듈 및 해당 필드
 

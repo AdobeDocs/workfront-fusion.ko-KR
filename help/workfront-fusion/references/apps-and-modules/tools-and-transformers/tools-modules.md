@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion Tools] 섹션에는 시나리오를 
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: 757580687ff5d1617f83432952d9870bd697925e
+source-git-commit: 7d5188d1ee4e40f74c750e3ce3dcbd0e08bc6606
 workflow-type: tm+mt
-source-wordcount: '1962'
+source-wordcount: '1994'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Bundle]</td> 
-   <td> <p>배열 항목을 추가하여 사용자 지정 번들을 만듭니다. 이 배열은 이름 - 값 쌍으로 구성됩니다.</p> </td> 
+   <td> <p>배열 항목을 추가하여 사용자 지정 번들을 만듭니다. 번들에 추가할 각 항목에 대해 <b>항목 추가</b>를 클릭하고 항목의 이름과 값을 입력합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -97,32 +97,30 @@ ht-degree: 0%
 
 이 모듈은 [!UICONTROL Set Variable] 또는 [!UICONTROL Set Multiple Variables] 모듈에서 이전에 만든 값을 검색합니다.
 
-이 모듈은 변수가 [!UICONTROL Get Multiple Variables] 모듈이 있는 경로가 아닌 다른 경로에 설정된 경우에도 시나리오의 어느 위치에나 설정된 변수를 읽을 수 있습니다. [!UICONTROL Tools] > [!UICONTROL Set Variable] 또는 [!UICONTROL Tools] > [!UICONTROL Set Multiple Variable] 모듈이 [!UICONTROL Tools] > [!UICONTROL Get Multiple Variables] 모듈 전에 실행되어야 합니다. 모듈 실행 순서에 대한 자세한 내용은 [의 라우터 모듈 [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)을 참조하세요.
+이 모듈은 변수가 [!UICONTROL Get Multiple Variables] 모듈이 있는 경로가 아닌 다른 경로에 설정된 경우에도 시나리오의 어느 위치에나 설정된 변수를 읽을 수 있습니다. [!UICONTROL Tools] > [!UICONTROL Set Variable] 또는 [!UICONTROL Tools] > [!UICONTROL Set Multiple Variable] 모듈이 [!UICONTROL Tools] > [!UICONTROL Get Multiple Variables] 모듈 전에 실행되어야 합니다. 모듈이 실행되는 순서에 대한 자세한 내용은 [라우터 모듈 추가 및 경로 구성](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)을 참조하십시오.
 
 <table style="table-layout:auto">
     <tr>
         <td>[!UICONTROL Variables]</td>
-        <td>모듈에서 가져올 변수를 추가합니다.</td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL Variable name]</td>
-        <td>추가하는 각 변수에 대해 가져올 변수의 이름을 매핑합니다.</td>
+        <td>모듈을 가져올 각 변수에 대해 <b>항목 추가</b>를 클릭하고 변수 이름을 입력하십시오.</td>
     </tr>
 </table>
 
->[!INFO]
->
->**예:** [!UICONTROL Set]/[!UICONTROL Get (multiple) variable(s)] 모듈을 다음과 같이 사용할 수 있습니다.
->
->* 다른 경로에서도 나중에 사용할 수 있도록 계산된 값을 저장합니다. 이 기능은 값이 여러 모듈에 사용되고 값을 계산하는 수식이 너무 복잡한 경우에 유용합니다.
->* 수식을 디버깅합니다. 모듈에 사용된 수식이 올바른 결과를 제공하지 않는 경우 수식을 복사하여 관련 모듈 앞에 삽입하는 [!UICONTROL Set Variable] 모듈에 붙여넣습니다. [!UICONTROL Set Variable] 모듈 뒤에 있는 모듈의 연결을 끊고 시나리오를 실행합니다. [!UICONTROL Set Variable] 모듈의 출력을 확인하고 수식을 조정하거나 단순화한 후 시나리오를 다시 실행한 다음 문제가 해결될 때까지 계속 실행합니다.
+>[!BEGINSHADEBOX]
+
+**예:** [!UICONTROL Set]/[!UICONTROL Get (multiple) variable(s)] 모듈을 다음과 같이 사용할 수 있습니다.
+
+* 다른 경로에서도 나중에 사용할 수 있도록 계산된 값을 저장합니다. 이 기능은 값이 여러 모듈에 사용되고 값을 계산하는 수식이 너무 복잡한 경우에 유용합니다.
+* 수식을 디버깅합니다. 모듈에 사용된 수식이 올바른 결과를 제공하지 않는 경우 수식을 복사하여 관련 모듈 앞에 삽입하는 [!UICONTROL Set Variable] 모듈에 붙여넣습니다. [!UICONTROL Set Variable] 모듈 뒤에 있는 모듈의 연결을 끊고 시나리오를 실행합니다. [!UICONTROL Set Variable] 모듈의 출력을 확인하고 수식을 조정하거나 단순화한 후 시나리오를 다시 실행한 다음 문제가 해결될 때까지 계속 실행합니다.
+
+>[!ENDSHADEBOX]
 
 
 #### [!UICONTROL Get Variable]
 
 이 모듈은 [!UICONTROL Set Variable] 또는 [!UICONTROL Set Multiple Variables] 모듈에서 이전에 만든 값을 검색합니다.
 
-이 모듈은 변수가 [!UICONTROL Get Variable] 모듈이 있는 경로가 아닌 다른 경로에 설정된 경우에도 시나리오의 어느 위치에나 설정된 변수를 읽을 수 있습니다. [!UICONTROL Tools] > [!UICONTROL Set Variable] 또는 [!UICONTROL Tools] > [!UICONTROL Set Multiple Variables] 모듈이 [!UICONTROL Tools] > [!UICONTROL Get Variable] 모듈 전에 실행되어야 합니다. 모듈 실행 순서에 대한 자세한 내용은 [의 라우터 모듈 [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)을 참조하세요.
+이 모듈은 변수가 [!UICONTROL Get Variable] 모듈이 있는 경로가 아닌 다른 경로에 설정된 경우에도 시나리오의 어느 위치에나 설정된 변수를 읽을 수 있습니다. [!UICONTROL Tools] > [!UICONTROL Set Variable] 또는 [!UICONTROL Tools] > [!UICONTROL Set Multiple Variables] 모듈이 [!UICONTROL Tools] > [!UICONTROL Get Variable] 모듈 전에 실행되어야 합니다. 모듈이 실행되는 순서에 대한 자세한 내용은 [라우터 모듈 추가 및 경로 구성](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)을 참조하십시오.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -137,7 +135,7 @@ ht-degree: 0%
 
 #### [!UICONTROL Increment function]
 
-이 모듈은 각 모듈의 작업 후 1씩 증가하는 값을 반환합니다.
+이 모듈은 각 주기 또는 각 시나리오 실행 후 1씩 증가하는 값을 반환합니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -145,7 +143,7 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reset a value]</td> 
-   <td> <p>모듈에서 값을 증가시키려는 경우 선택합니다. </p> 
+   <td> <p>모듈에서 값을 재설정하려는 경우 선택합니다. 이는 값이 첫 번째 값에서 다시 시작하도록 하는 경우입니다.</p> 
     <ul> 
      <li>[!UICONTROL After one cycle]</li> 
      <li>[!UICONTROL After one scenario run]</li> 
@@ -155,27 +153,30 @@ ht-degree: 0%
  </tbody> 
 </table>
 
->[!INFO]
->
->**예:**
->
->모듈의 용도 중 하나는 작업, 리드, 이메일 등을 그룹의 사용자에게 &quot;라운드 로빈&quot; 할당하는 것입니다. 알고리즘은 보통 목록의 맨 위에서 맨 아래로 가면서 그룹에서 피할당자를 몇 가지 합리적인 순서로 선택합니다. 알고리즘이 목록 끝에 도달하면 목록의 맨 위에 있는 사용자에게 다음 할당을 부여하고 목록 아래로 계속 할당합니다.
->
->다음 시나리오는 홀수 시나리오가 실행될 때마다 첫 번째 수신자에게 이메일을 보내고, 짝수 시나리오가 실행될 때마다 두 번째 수신자에게 이메일을 보냅니다.
->
->![](/help/workfront-fusion/references/apps-and-modules/assets/example-email-350x246.gif)
->
->1. 이 시나리오를 만들려면 다음 작업을 수행하십시오.
->1. 모듈의 **[!UICONTROL Reset a value]** 필드를 Never로 설정하십시오.
->1. 홀수 값에 대한 경로를 설정합니다. `1`과(와) 같은 계수 계산 함수를 사용하여 이 경로에 대한 필터를 설정하십시오.
->
->   ![](/help/workfront-fusion/references/apps-and-modules/assets/odd-350x459.png)
->
->  **참고**: [!UICONTROL Equal to] 연산자를 기본 [!UICONTROL Text] 연산자에서 [!UICONTROL Numeric] 연산자로 변경하는 것을 잊지 마십시오.
->
->1. `0`과(와) 같은 계수 계산 함수를 사용하여 짝수 값의 경로를 설정하십시오.
->
->증가 함수는 시나리오가 실행될 때마다 1을 추가합니다. 필터는 증가를 확인하고 해당 값에 따라 작동하여 이메일이 균일하게 배포되도록 합니다.
+>[!BEGINSHADEBOX]
+
+**예:**
+
+이 모듈은 그룹의 사용자에게 작업, 리드, 이메일 등의 &quot;라운드 로빈&quot; 할당을 구현하는 데 사용할 수 있습니다. 알고리즘은 보통 목록의 맨 위에서 맨 아래로 가면서 그룹에서 피할당자를 몇 가지 합리적인 순서로 선택합니다. 알고리즘이 목록 끝에 도달하면 목록의 맨 위에 있는 사용자에게 다음 할당을 부여하고 목록 아래로 계속 할당합니다.
+
+다음 시나리오는 홀수 시나리오가 실행될 때마다 첫 번째 수신자에게 이메일을 보내고, 짝수 시나리오가 실행될 때마다 두 번째 수신자에게 이메일을 보냅니다.
+
+![](/help/workfront-fusion/references/apps-and-modules/assets/example-email.png)
+
+이 시나리오를 만들려면 다음 작업을 수행하십시오.
+
+1. 모듈의 **[!UICONTROL Reset a value]** 필드를 Never로 설정하십시오.
+1. 홀수 값에 대한 경로를 설정합니다. `1`과(와) 같은 계수 계산 함수를 사용하여 이 경로에 대한 필터를 설정하십시오.
+
+   ![](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
+
+**참고**: [!UICONTROL Equal to] 연산자를 기본 [!UICONTROL Text] 연산자에서 [!UICONTROL Numeric] 연산자로 변경하는 것을 잊지 마십시오.
+
+1. `0`과(와) 같은 계수 계산 함수를 사용하여 짝수 값의 경로를 설정하십시오.
+
+증가 함수는 시나리오가 실행될 때마다 1을 추가합니다. 필터는 증가를 확인하고 해당 값에 따라 작동하여 이메일이 균일하게 배포되도록 합니다.
+
+>[!ENDSHADEBOX]
 
 #### [!UICONTROL Set Multiple Variables]
 
@@ -187,21 +188,13 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td>[!UICONTROL Variables]</td> 
-   <td>모듈에서 설정할 변수를 추가합니다.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Variable name] </td> 
-   <td>각 변수에 대해 변수 이름을 입력합니다. 이 이름은 다른 모듈에서 변수를 매핑할 때 표시됩니다. </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Variable value] </td> 
-   <td>각 변수에 대해 변수 값을 입력합니다. </td> 
+   <td>추가할 각 변수에 대해 <b>항목 추가</b>를 클릭하고 변수의 이름과 값을 입력합니다.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Variable lifetime] </td> 
    <td> <p>변수를 유효한 상태로 유지할 기간을 선택합니다(동일한 값 유지).</p> 
     <ul> 
-     <li><strong>[!UICONTROL One cycle]</strong>: 변수가 한 주기에 유효합니다. 한 시나리오 실행에서 여러 개의 웹후크를 받을 때 유용합니다(더 많은 웹후크 = 더 많은 주기). </li> 
+     <li><strong>[!UICONTROL One cycle]</strong>: 변수가 한 주기에 유효합니다. 이 기능은 더 많은 웹후크가 더 많은 사이클을 생성하기 때문에 한 시나리오 실행에서 여러 웹후크를 수신할 때 유용합니다. </li> 
      <li><strong>[!UICONTROL One execution]</strong>: 변수가 한 시나리오 실행에 대해 유효합니다. 하나의 실행에는 하나 이상의 사이클이 포함될 수 있습니다.</li> 
     </ul> </td> 
   </tr> 
@@ -254,7 +247,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->더 긴 시간 동안 흐름을 일시 중지하려면 시나리오를 두 개의 시나리오로 분할하는 것이 좋습니다.
+>흐름을 더 오랫동안 일시 중지하려면 시나리오를 두 개의 시나리오로 분할하는 것이 좋습니다.
 >
 >* 첫 번째 시나리오에는 일시 정지 전에 해당 부분이 포함됩니다.
 >* 두 번째 시나리오에서는 그 뒤에 부분이 포함됩니다.
@@ -358,19 +351,21 @@ ht-degree: 0%
    <td> <p>하나 이상의 매핑된 항목을 포함하는 표현식을 정의합니다. 집계된 데이터는 동일한 표현식 값을 가진 그룹 아래에 구분됩니다. 각 그룹은 평가된 표현식 및 집계된 텍스트가 있는 키가 포함된 별도의 번들로 출력됩니다. 이렇게 하면 키를 이후 모듈에서 필터로 사용할 수 있습니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Text]</td> 
-   <td> <p> 모듈을 집계할 텍스트를 입력하거나 매핑합니다.</p> </td> 
-  </tr> 
-  <tr> 
    <td>[!UICONTROL Stop processing after an empty aggregation]</td> 
    <td>결과가 없을 때 시나리오를 중지하려면 이 옵션을 선택합니다.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Text]</td> 
+   <td> <p> 모듈을 집계할 텍스트를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!INFO]
->
->**예:** 텍스트 집계기를 사용하여 단일 번들에 더 많은 값(예: 고객 이름 또는 메모)을 삽입하고 전자 메일 본문 또는 전자 메일 제목에 있는 모든 값이 들어 있는 전자 메일을 보낼 수 있습니다.
+>[!BEGINSHADEBOX]
+
+**예:** 텍스트 집계기를 사용하여 단일 번들에 더 많은 값(예: 고객 이름 또는 메모)을 삽입하고 전자 메일 본문 또는 전자 메일 제목에 있는 모든 값이 들어 있는 전자 메일을 보낼 수 있습니다.
+
+>[!ENDSHADEBOX]
 
 ### 트랜스포머
 
@@ -380,7 +375,7 @@ ht-degree: 0%
 
 #### [!UICONTROL Compose a string]
 
-모든 값을 문자열 데이터 형식(텍스트)으로 변환합니다. 이진 데이터 등의 매핑 시 매핑이 더 쉬워집니다.
+모든 값을 문자열 데이터 형식(텍스트)으로 변환합니다. 이를 통해 이진 데이터 등의 매핑 시 매핑이 보다 쉬워집니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -443,7 +438,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td>[!UICONTROL Cases] </td> 
-   <td> <p>입력에 [!UICONTROL Pattern] 필드에 입력한 값이 포함되어 있으면 [!UICONTROL Output] 필드에 입력한 값이 반환됩니다.</p> <p>입력이 [!UICONTROL Pattern] 필드에 설정한 값과 일치하지 않으면 다음 중 하나가 발생합니다.</p> 
+   <td> 추가할 각 서비스 케이스에 대해 <b>항목 추가</b>를 클릭하고 항목의 패턴과 출력을 입력하십시오. <p>입력에 [!UICONTROL Pattern] 필드에 입력한 값이 포함되어 있으면 [!UICONTROL Output] 필드에 입력한 값이 반환됩니다.</p> <p>입력이 [!UICONTROL Pattern] 필드에 설정한 값과 일치하지 않으면 다음 중 하나가 발생합니다.</p> 
     <ul> 
      <li>[!UICONTROL Else] 필드의 값이 반환됨</li> 
      <li>[!UICONTROL Else] 필드에 값이 없으면 출력이 반환되지 않습니다.</li> 

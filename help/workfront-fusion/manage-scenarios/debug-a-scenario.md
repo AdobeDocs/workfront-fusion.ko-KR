@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion Devtool을 사용하면 시나리오를 이�
 author: Becky
 feature: Workfront Fusion
 exl-id: 34215370-27e3-4c28-8bd1-a16268900b86
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1324'
 ht-degree: 0%
 
 ---
@@ -103,7 +103,7 @@ Workfront Fusion Devtool은 3개의 기본 섹션으로 나뉩니다. Devtool �
 
 시나리오에서 한 번 실행 을 클릭하면 백그라운드에서 발생하는 상황이 라이브 스트림에 표시됩니다.
 
-1. **[!UICONTROL Live Stream]** 아이콘 ![](assets/live-stream-icon.png)을(를) 클릭하여 라이브 스트림 섹션을 엽니다.
+1. **[!UICONTROL Live Stream]** 아이콘 ![라이브 스트림 아이콘](assets/live-stream-icon.png)을 클릭하여 라이브 스트림 섹션을 엽니다.
 1. 다음 중 하나를 수행합니다.
 
    <table style="table-layout:auto"> 
@@ -153,7 +153,7 @@ Workfront Fusion Devtool은 3개의 기본 섹션으로 나뉩니다. Devtool �
 
 시나리오 디버거는 보다 복잡한 시나리오에 유용합니다. 시나리오 실행 기록이 표시되며, 이를 사용하여 모듈 이름이나 ID로 모듈을 검색할 수 있습니다.
 
-1. **[!UICONTROL Scenario Debugger]** 아이콘 ![](assets/scenario-debugger-icon.png)을(를) 클릭하여 시나리오 디버거를 엽니다.
+1. **[!UICONTROL Scenario Debugger]** 아이콘 ![디버거 아이콘](assets/scenario-debugger-icon.png)을 클릭하여 시나리오 디버거를 엽니다.
 1. (선택 사항) 검색 필드에 검색어(이름 또는 모듈 ID)를 입력합니다.
 1. 모듈 이름을 클릭합니다.
 1. 요청 세부 사항을 보려면 작업을 클릭합니다.
@@ -162,7 +162,7 @@ Workfront Fusion Devtool은 3개의 기본 섹션으로 나뉩니다. Devtool �
 
 [!DNL Workfront Fusion] Devtool에는 시나리오를 더 쉽게 설정할 수 있는 도구가 있습니다.
 
-1. **[!UICONTROL Tools]** 아이콘 ![](assets/console-tools-icon.png)을(를) 클릭하여 도구를 엽니다.
+1. **[!UICONTROL Tools]** 아이콘 ![콘솔 도구 아이콘](assets/console-tools-icon.png)을 클릭하여 도구를 엽니다.
 1. 사용할 도구를 선택합니다
 1. 아래에 자세히 설명된 대로 필드를 구성합니다.
 1. **[!UICONTROL Run]**&#x200B;을(를) 클릭합니다.

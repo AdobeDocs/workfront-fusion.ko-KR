@@ -4,10 +4,10 @@ description: 이 문서에서는 활성 또는 비활성화된 시나리오가 �
 author: Becky
 feature: Workfront Fusion
 exl-id: ecfcab45-5492-4e20-af8d-63ec9d233046
-source-git-commit: d79f8ac6d678a874e05e606d7b9ff7c812d93db1
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 2%
+source-wordcount: '303'
+ht-degree: 1%
 
 ---
 
@@ -87,7 +87,7 @@ ht-degree: 2%
 
 ## 시나리오를 활성화하거나 비활성화합니다.
 
-1. 왼쪽 패널에서 **[!UICONTROL Scenarios]** ![](assets/scenarios-icon.png)을(를) 클릭한 다음 시나리오를 클릭하여 엽니다.
+1. 왼쪽 패널에서 **[!UICONTROL Scenarios]** ![시나리오 아이콘](assets/scenarios-icon.png)을 클릭한 다음 시나리오를 클릭하여 엽니다.
 1. 시나리오 세부 정보 페이지의 오른쪽 위 모서리에 있는 켜기/끄기 토글을 클릭합니다.
 
    ![세부 정보 활성화 전환](assets/active-toggle-details-page.png)
@@ -96,4 +96,4 @@ ht-degree: 2%
 
    다이어그램을 클릭하여 시나리오 편집기를 입력한 다음 창의 왼쪽 아래 모서리에서 **[!UICONTROL On/Off]** 전환을 클릭합니다.
 
-   ![](assets/on-off-switch.jpg)
+   ![스위치 끄기](assets/on-off-switch.jpg)

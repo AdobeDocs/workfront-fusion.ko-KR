@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion 매핑 패널에서 다음 문자열 함수�
 author: Becky
 feature: Workfront Fusion
 exl-id: d3e49fce-85bc-4ee6-9a94-497a306e0c74
-source-git-commit: 2c732659f3f3e81e13b7b12a5df5bde19c0e0928
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ ht-degree: 0%
 
 **예:**
 
-![](assets/replace---1-350x31.png)
+![바꾸기](assets/replace---1-350x31.png)
 
 X X X X는 모두 X로 대체된다
 
@@ -121,11 +121,11 @@ X X X X는 모두 X로 대체된다
 
 **예:**
 
-![](assets/variable-value-350x63.png)
+![변수 값](assets/variable-value-350x63.png)
 
 반환: 전화 번호 `+420777111222`
 
-![](assets/variable-value---2-350x55.png)
+![변수 반환](assets/variable-value---2-350x55.png)
 
 반환: 전화 번호: `+420777111222`
 

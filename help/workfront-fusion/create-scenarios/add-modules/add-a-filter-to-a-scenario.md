@@ -4,9 +4,9 @@ description: 일부 시나리오에서는 특정 기준을 충족하는 번들�
 author: Becky
 feature: Workfront Fusion
 exl-id: b507dca0-0e85-4ab7-8310-b6e6bcb7ae12
-source-git-commit: 839f6edf93df8a935b2c5d0a520bdc125fe60288
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '564'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ ht-degree: 0%
 
    예를 들어 필터가 XML로 끝나는 [!DNL Adobe Workfront]의 파일을 전달하게 하려면 첫 번째 상자에 **[!UICONTROL File name]**&#x200B;을(를) 입력하고&#x200B;**[!UICONTROL xml]**&#x200B;을(를) 두 번째 상자에 넣었습니다. 이 두 메뉴 사이의 드롭다운 메뉴에서 **[!UICONTROL Ends with (case insensitive)]**&#x200B;을(를) 선택합니다. 이 필터는 첫 번째 모듈(Workfront)에서 들어오는 번들에 적용됩니다. XML 파일이 포함된 번들만 다음 모듈로 전달됩니다.
 
-   ![](assets/set-up-filter-box.png)
+   ![필터 설정](assets/set-up-filter-box.png)
 
 1. **[!DNL OK]**&#x200B;을(를) 클릭합니다.
 
@@ -110,7 +110,7 @@ ht-degree: 0%
 
    DevTool 아이콘이 보이지 않으면 [시나리오 디버그](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)에서 DevTool을 여는 방법을 참조하십시오.
 
-1. 왼쪽 막대에서 **[!UICONTROL Tools]** 아이콘 ![](assets/devtools-tools-icon.png)을(를) 클릭합니다.
+1. 왼쪽 막대에서 **[!UICONTROL Tools]** 아이콘 ![DevTool 도구](assets/devtools-tools-icon.png)을 클릭합니다.
 
 1. **[!UICONTROL Copy Filter]**&#x200B;을(를) 클릭한 다음 오른쪽 패널에서 **[!UICONTROL Copy Filter]** 도구를 구성합니다.
 

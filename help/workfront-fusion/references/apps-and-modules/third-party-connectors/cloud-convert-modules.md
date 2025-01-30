@@ -4,9 +4,9 @@ description: CloudConverter 모듈
 author: Becky
 feature: Workfront Fusion
 exl-id: 52c4d18a-8bee-44d6-9a2c-cc9e157e1dde
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '2486'
+source-wordcount: '2498'
 ht-degree: 0%
 
 ---
@@ -541,7 +541,7 @@ ZIP, RAR, 7Z, TAR, TAR.GZ 또는 TAR.BZ2 아카이브에 하나 이상의 파일
 >* Array Aggregator를 사용하여 작업하는 경우(예: 변환할 다양한 형식의 파일이 있는 경우) [!UICONTROL Add a task] 대화 상자의 **[!UICONTROL I don't know the input format]** 옵션을 사용합니다. 그렇지 않으면 오류가 반환됩니다.
 >* 작업 내 작업 연결(이름 > 입력, 이름 > 입력 등):
 >
->  ![](/help/workfront-fusion/references/apps-and-modules/assets/linking-name-across-jobs-350x808.png)>
+>  ![작업 간 이름 연결](/help/workfront-fusion/references/apps-and-modules/assets/linking-name-across-jobs-350x808.png)>
 
 ### 작업
 
@@ -745,13 +745,13 @@ URL: `/v2/tasks`
 
 메서드: `GET`
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-input.png)
+![API 예제 입력](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-input.png)
 
 검색 일치 항목은 모듈의 출력에서 [!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL data] 아래에 있습니다.
 
 이 예에서는 6개의 작업이 반환되었습니다.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-output.png)
+![API 예제 출력](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-output.png)
 
 ## 문제 해결 {#troubleshooting}
 
@@ -817,6 +817,6 @@ URL: `/v2/tasks`
 >1. 모듈의 설정을 엽니다.
 >1. 아래와 같이 모듈을 구성합니다.
 >
->   ![](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-mp4-example.png)
+>   ![CloudConvert 예제](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-mp4-example.png)
 >
 >1. 변환 및 엔진 특정 옵션 필드에 모든 설정을 포함해야 합니다. 5단계의 각 설정에 대해 13단계의 해당 매개 변수와 해당 값을 찾습니다.

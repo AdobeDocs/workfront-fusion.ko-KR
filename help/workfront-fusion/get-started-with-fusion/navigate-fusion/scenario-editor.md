@@ -4,9 +4,9 @@ description: 시나리오 편집기를 사용하면 시각적 인터페이스에
 author: Becky
 feature: Workfront Fusion
 exl-id: 47ccecf0-751c-4026-96a9-329c33cb6801
-source-git-commit: 190bfe5992fb21b789a7246c4ae732a5dc7672fa
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '547'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 시나리오 편집기를 사용하면 시각적 인터페이스에서 시나리오를 만들고 편집할 수 있습니다.
 
-![](assets/scenario-editor.jpg)
+![시나리오 편집기](assets/scenario-editor.jpg)
 
 ## 액세스 요구 사항
 
@@ -71,14 +71,14 @@ ht-degree: 3%
 
 ## 시나리오 편집기를 열고 모듈을 추가합니다.
 
-1. 왼쪽 패널에서 **[!UICONTROL Scenarios]** ![](assets/scenarios-icon.png)을(를) 클릭합니다.
+1. 왼쪽 패널에서 **[!UICONTROL Scenarios]** ![시나리오 아이콘](assets/scenarios-icon.png)을 클릭합니다.
 1. 물음표 아이콘 ![물음표 아이콘](assets/question-mark-full-size.png)을 클릭한 다음 시작할 앱 또는 서비스를 찾아 클릭합니다. 모듈 구성에 대한 자세한 내용은 [모듈 구성](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)을 참조하십시오.
 
 ## 사용 가능한 시나리오 편집기 작업
 
 ### 시나리오 실행
 
-| 액션 | 세부 정보 |
+| 액션 | 세부 사항 |
 |----------|----------|
 | 시나리오 테스트 실행 | 활성화하기 전에 시나리오가 예상대로 실행되는지 확인하십시오. 활성화되면 시나리오는 일정에 따라 실행됩니다. 모든 것이 예상대로 실행되지 않으면 [오류 처리 추가](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md)를 참조하여 오류를 처리하는 방법을 알아보십시오. |
 
@@ -86,7 +86,7 @@ ht-degree: 3%
 
 ### 일정 조정
 
-| 액션 | 세부 정보 |
+| 액션 | 세부 사항 |
 |----------|----------|
 | 시나리오 예약 | 기본적으로 시나리오는 15분마다 실행됩니다. 활성화된 시나리오가 실행되는 시기와 빈도를 정의하여 이를 변경할 수 있습니다. Fusion 시나리오는 5분마다 실행되도록 예약할 수 있습니다. 자세한 내용은 [시나리오 예약](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)을 참조하십시오. |
 
@@ -94,7 +94,7 @@ ht-degree: 3%
 
 ### 컨트롤
 
-| 액션 | 세부 정보 |
+| 액션 | 세부 사항 |
 |----------|----------|
 | 저장 | 시나리오를 저장하면 나중에 액세스해야 하는 경우 3점 메뉴 아래에서 새 버전을 사용할 수 있습니다. 이전에 저장한 시나리오 버전은 60일 동안만 사용할 수 있습니다. |
 | 시나리오 설정 | 시나리오 설정 패널에는 시나리오에 대한 고급 설정이 포함되어 있습니다. 사용 가능한 설정에 대한 자세한 내용은 [시나리오 설정 구성](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)을 참조하십시오. |
@@ -108,7 +108,7 @@ ht-degree: 3%
 
 ### 도구
 
-| 액션 | 세부 정보 |
+| 액션 | 세부 사항 |
 |----------|----------|
 | 흐름 제어 | 설정을 구성하여 데이터가 이동하는 방식을 제어합니다. 자세한 내용은 [링크 필요]를 참조하세요. |
 | 도구 | 도구 섹션에는 시나리오를 향상시킬 수 있는 몇 가지 유용한 모듈이 포함되어 있습니다. 자세한 내용은 [링크 필요]를 참조하세요. |

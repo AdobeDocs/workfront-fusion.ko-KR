@@ -4,9 +4,9 @@ description: Text 파서 도구를 사용하여 다른 [!DNL Adobe Workfront Fus
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 4fa892b7875af2fcabaf26b375925af7a8cad2a0
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1156'
 ht-degree: 0%
 
 ---
@@ -267,21 +267,21 @@ HTML 코드에서 원하는 요소를 검색합니다.
 
 그러나 텍스트 파서에서 이 표현식을 구현해도 다음과 일치하지는 않습니다.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-you-dont-get-a-match-350x365.png)
+![일치 항목 없음](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-you-dont-get-a-match-350x365.png)
 
 그 이유는 &quot;i&quot;가 일치 항목 당 일치 항목 수만 표시하므로 이 경우 2개의 일치 항목이 있으므로 &quot;i&quot; 다음에 숫자 값 1과 2가 있습니다. 이 사용 사례에서는 두 번째 일치하는 값만 필터를 통해 데이터를 일치시키거나 전달해야 하는 경우 숫자 값으로 표현되는 값을 지정할 수 있습니다.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-matches-350x355.png)
+![일치](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-matches-350x355.png)
 
 구문 분석할 부분에 대괄호를 추가하는 데 필요한 일치 값을 가져올 수 있으려면(예: &quot;filename.docx&quot; - &quot;docx&quot;에서만 추출) 이 경우 시나리오에서 사용 중인 정규 표현식에 따라 대괄호를 \에 적용해야 합니다.(.+)
 
 이렇게 하면 DOCX를 캡처하고 그룹에 지정한 다음 &quot;.&quot; 빠지라고
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-get-matches-350x592.png)
+![일치 항목 가져오기](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-get-matches-350x592.png)
 
 아래 그림에 표시된 출력에서 캡처 그룹은 모든 문자와 일치합니다(줄 종결자 제외).
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-output-350x389.png)
+![출력](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-output-350x389.png)
 
 정규 표현식도 통합하는 또 다른 해결 방법은 바꾸기 기능을 사용하는 것입니다
 

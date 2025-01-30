@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion Tools] 섹션에는 시나리오를 
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: 7d5188d1ee4e40f74c750e3ce3dcbd0e08bc6606
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1994'
+source-wordcount: '2000'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Adobe Workfront Fusion Tools] 섹션에는 시나리오를 향상시킬 수 있는 몇 가지 유용한 모듈이 포함되어 있습니다.
 
-[!UICONTROL Tools] 모듈은 앱 목록 또는 화면 하단의 [!UICONTROL Tools] 아이콘 ![](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png)에서 사용할 수 있습니다.
+[!UICONTROL Tools] 모듈은 앱 목록 또는 화면 하단의 [!UICONTROL Tools] 아이콘 ![도구 아이콘](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png)에서 사용할 수 있습니다.
 
 ## 액세스 요구 사항
 
@@ -161,14 +161,14 @@ ht-degree: 0%
 
 다음 시나리오는 홀수 시나리오가 실행될 때마다 첫 번째 수신자에게 이메일을 보내고, 짝수 시나리오가 실행될 때마다 두 번째 수신자에게 이메일을 보냅니다.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/example-email.png)
+![전자 메일 예제](/help/workfront-fusion/references/apps-and-modules/assets/example-email.png)
 
 이 시나리오를 만들려면 다음 작업을 수행하십시오.
 
 1. 모듈의 **[!UICONTROL Reset a value]** 필드를 Never로 설정하십시오.
 1. 홀수 값에 대한 경로를 설정합니다. `1`과(와) 같은 계수 계산 함수를 사용하여 이 경로에 대한 필터를 설정하십시오.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
+   ![홀수](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
 
 **참고**: [!UICONTROL Equal to] 연산자를 기본 [!UICONTROL Text] 연산자에서 [!UICONTROL Numeric] 연산자로 변경하는 것을 잊지 마십시오.
 

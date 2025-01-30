@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion Google 슬라이드 모듈을 사용하면 �
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 6f5f97b9-b06a-4336-b349-ee9e2606d4bf
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1243'
 ht-degree: 0%
 
 ---
@@ -457,17 +457,17 @@ ID로 지정된 프레젠테이션에 저장된 차트 데이터를 새로 고�
 >
 >**예:** API 호출을 사용하면 입력한 프레젠테이션 ID에 대한 프레젠테이션 세부 정보를 가져올 수 있습니다. [!DNL Google Slides]에서 프레젠테이션을 열면 URL에서 프레젠테이션 ID를 찾을 수 있습니다.
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/api-call-350x13.png)
+>![API 호출 예](/help/workfront-fusion/references/apps-and-modules/assets/api-call-350x13.png)
 >
 >다음 API 호출은 프레젠테이션 세부 정보를 반환합니다.
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details.png)
+>![프레젠테이션 세부 정보](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details.png)
 >
 >검색 일치 항목은 모듈의 출력에서 [!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL presentationId] 아래에 있습니다.
 >
 >이 예제에서 요청된 프레젠테이션 세부 사항이 반환되었습니다.
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details-2.png)
+>![프레젠테이션 세부 정보](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details-2.png)
 
 #### [!UICONTROL Insert Links in a Presentation]
 

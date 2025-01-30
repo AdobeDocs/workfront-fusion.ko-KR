@@ -4,9 +4,9 @@ description: 필터링 및 중첩을 포함하여 오류 처리 경로에 고급
 author: Becky
 feature: Workfront Fusion
 exl-id: 745bfdc4-1327-4a28-a863-c217f15a7fc5
-source-git-commit: 0668441df8405610488e3e33658635e4cc7db270
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
@@ -89,11 +89,11 @@ Fusion에서 다양한 데이터 형식을 평가하고 처리하는 방법에 �
 
 Dropbox > 폴더 모듈 만들기를 사용하는 경우 동일한 이름의 폴더가 이미 있으면 모듈에 DataError 가 발생합니다.
 
-![](assets/dropbox.png)
+![Dropbox 오류](assets/dropbox.png)
 
 전체 시나리오는 다음과 같이 작동합니다.
 
-![](assets/dropbox-scenario.png)
+![Dropbox 시나리오](assets/dropbox-scenario.png)
 
 1. 도구 > 변수 설정 모듈에는 폴더 이름이 포함되어 있습니다
 1. HTTP > 파일 가져오기 모듈은 폴더에 업로드해야 하는 파일을 가져옵니다
@@ -111,19 +111,19 @@ Dropbox > 폴더 모듈 만들기를 사용하는 경우 동일한 이름의 폴
 
 파일 업로드와 같은 후속 모듈의 기존 폴더를 사용하려면 모듈에 오류 처리기 경로를 추가하고 다음에 나오는 Resume 지시문 모듈에 매핑할 폴더 경로를 가져와야 합니다.
 
-![](assets/add-error-handler-route.png)
+![오류 처리기 경로 추가](assets/add-error-handler-route.png)
 
 첫 번째 경로의 필터는 이름이 같은 폴더가 이미 있을 때 나타나는 특정 오류(DataError)만 처리하도록 설정됩니다.
 
-![](assets/condition.png)
+![조건](assets/condition.png)
 
 Dropbox > 폴더 모듈의 모든 파일 나열 모듈은 대상 폴더의 모든 폴더를 반환하도록 구성됩니다. 다음 필터는 원래 만들려고 했던 필터만 전달합니다. 폴더 이름은 33에 저장됩니다. 폴더 이름 항목.)
 
-![](assets/condition2.png)
+![조건](assets/condition2.png)
 
 그런 다음 Resume 지시문은 폴더 경로를 실패한 모듈에 대한 출력으로 제공합니다. 파일 업로드 모듈에서 폴더 ID가 필요하지 않으므로 이 ID를 비워 두었습니다.
 
-![](assets/flow-control.png)
+![흐름 제어](assets/flow-control.png)
 
 >[!ENDSHADEBOX]
 
@@ -137,7 +137,7 @@ Dropbox > 폴더 모듈의 모든 파일 나열 모듈은 대상 폴더의 모�
 
 필터를 사용한 중첩 오류 처리기 경로:
 
-![](assets/nested-error-handling-route.png)
+![중첩 오류 처리 경로](assets/nested-error-handling-route.png)
 
 이 시나리오에서, 제2 오류 핸들러 경로는 제1 오류 핸들러 경로 아래에 중첩된다.
 

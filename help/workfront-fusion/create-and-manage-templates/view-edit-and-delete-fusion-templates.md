@@ -7,9 +7,9 @@ description: Adobe Workfront Fusion에는 Adobe Workfront 라이센스 외에 Ad
 author: Becky
 feature: Workfront Fusion
 exl-id: 97e3402c-d1d0-44f6-9752-11b0f5abee22
-source-git-commit: a252de430a3c712c48c1677433ce6176292bc6ce
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '839'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ ht-degree: 0%
 
 [!UICONTROL Team templates] 탭에서 사용할 수 있는 모든 템플릿을 편집할 수 있습니다.
 
-1. 측면 탐색 메뉴에서 **[!UICONTROL Templates]** 아이콘 ![](assets/templates-icon.png)을(를) 클릭합니다.
+1. 측면 탐색 메뉴에서 **[!UICONTROL Templates]** 아이콘 ![템플릿 아이콘](assets/templates-icon.png)을 클릭합니다.
 1. **[!UICONTROL Team templates]** 탭을 클릭합니다.
 1. **[!UICONTROL Private]** 탭을 클릭합니다.
 1. 편집할 템플릿을 클릭합니다.
@@ -128,7 +128,7 @@ ht-degree: 0%
    템플릿 다이어그램을 클릭합니다.
 
 1. 템플릿을 변경합니다. 템플릿을 만들 때 사용할 수 있었던 모든 옵션에 액세스할 수 있습니다. 이러한 옵션을 보려면 [새 템플릿 만들기](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md)를 참조하세요.
-1. **[!UICONTROL Save]** 아이콘 ![](assets/save-icon.png)을(를) 클릭합니다.
+1. **[!UICONTROL Save]** 아이콘 ![저장 아이콘](assets/save-icon.png)을 클릭합니다.
 
 >[!NOTE]
 >
@@ -140,7 +140,7 @@ ht-degree: 0%
 
 템플릿을 삭제한 후에는 복원할 수 없습니다. 팀 템플릿은 팀의 모든 멤버가 사용할 수 있으므로 템플릿을 삭제하기 전에 팀에 확인하여 템플릿이 필요하지 않은지 확인하는 것이 좋습니다.
 
-1. 측면 탐색 메뉴에서 **[!UICONTROL Templates]** 아이콘 ![](assets/templates-icon.png)을(를) 클릭합니다.
+1. 측면 탐색 메뉴에서 **[!UICONTROL Templates]** 아이콘 ![템플릿 아이콘](assets/templates-icon.png)을 클릭합니다.
 1. **[!UICONTROL Team templates]** 탭을 클릭합니다.
 1. 템플릿 이름 옆에 있는 **[!UICONTROL Delete]**&#x200B;을(를) 클릭합니다
 

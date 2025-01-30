@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion JSON 앱은 Adobe Workfront Fusion이 데이
 author: Becky
 feature: Workfront Fusion
 exl-id: f8b281c5-bb63-4412-98c5-d82f45f8eafc
-source-git-commit: c895d496de66b475f907effaaf43fe2f7b7b457e
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1129'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ JSON 문자열 필드에 컬렉션 `{ ... }`이(가) 포함된 경우 출력은 
 ```
 
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/json-collection.png)
+![JSON 컬렉션](/help/workfront-fusion/references/apps-and-modules/assets/json-collection.png)
 
 >[!ENDSHADEBOX]
 
@@ -115,7 +115,7 @@ JSON 문자열 필드에 배열 `[ ... ]`이(가) 포함된 경우 출력은 일
 ]
 ```
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/json-array.png)
+![JSON 배열](/help/workfront-fusion/references/apps-and-modules/assets/json-array.png)
 
 >[!ENDSHADEBOX]
 
@@ -303,6 +303,6 @@ JSON에서 `if`과(와) 같은 조건문을 사용할 때 따옴표를 조건문
 
 **예:**
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)
+JSON의 ![따옴표](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)
 
 >[!ENDSHADEBOX]

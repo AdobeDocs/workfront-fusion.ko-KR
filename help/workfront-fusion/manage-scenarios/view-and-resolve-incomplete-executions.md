@@ -4,9 +4,9 @@ description: 오류로 인해 [!UICONTROL Incomplete executions] 폴더가 완�
 author: Becky
 feature: Workfront Fusion
 exl-id: 8891b4d7-a39a-4f14-8521-8c2ca186ca6e
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '602'
 ht-degree: 6%
 
 ---
@@ -79,7 +79,7 @@ ht-degree: 6%
 
 <!--
 
-![](assets/incomplete-executions-tab-350x102.png)
+![Incomplete executions tab](assets/incomplete-executions-tab-350x102.png)
 
 -->
 
@@ -113,7 +113,7 @@ ht-degree: 6%
 1. 모든 모듈의 작업이 표시되는 모듈의 로그를 엽니다.
 1. 실패한 작업을 찾아 **[!UICONTROL Resolve]**&#x200B;을(를) 클릭합니다.
 
-   ![](assets/resolve-btn-350x188.png)
+   ![확인 단추](assets/resolve-btn-350x188.png)
 
 ## 불완전한 실행과 관련된 옵션
 

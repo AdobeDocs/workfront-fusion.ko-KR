@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는  [!DNL Jira] 
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1880'
+source-wordcount: '1883'
 ht-degree: 1%
 
 ---
@@ -186,7 +186,7 @@ Jira 커넥터는 다음을 사용합니다.
 #### [!DNL Jira]에서 클라이언트 앱을 소비자로 구성
 
 1. [!DNL Jira] 인스턴스에 로그인합니다.
-1. 왼쪽 탐색 패널에서 **[!UICONTROL [!DNL Jira] Settings]** ![](/help/workfront-fusion/references/apps-and-modules/assets/jira-settings-icon.png) > **[!UICONTROL Applications]**> **[!UICONTROL Application links]**&#x200B;을(를) 클릭합니다.
+1. 왼쪽 탐색 패널에서 **[!UICONTROL [!DNL Jira] Settings]** ![Jira 설정 아이콘](/help/workfront-fusion/references/apps-and-modules/assets/jira-settings-icon.png) > **[!UICONTROL Applications]**> **[!UICONTROL Application links]**&#x200B;을(를) 클릭합니다.
 1. **[!UICONTROL Enter the URL of the application you want to link]** 필드에 다음을 입력하십시오.
 
    ```

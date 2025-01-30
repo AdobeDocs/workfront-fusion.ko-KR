@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion Adobe Workfront 커넥터를 사용하여 Wo
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '6208'
+source-wordcount: '6213'
 ht-degree: 3%
 
 ---
@@ -2068,7 +2068,7 @@ Workfront > 이벤트 보기 필터에서 다음 연산자를 사용할 수 있�
 >
 >이벤트 필터를 사용하여 문제가 생성될 때 문제가 Ana에 할당될 때 시나리오를 트리거하도록 웹후크를 설정할 수 있습니다. Ana에 userID b378489d8f7cd3cee0539260720a84b7이 있습니다.
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/event-filter-watch-events-350x277.png)
+>![이벤트 필터](/help/workfront-fusion/references/apps-and-modules/assets/event-filter-watch-events-350x277.png)
 >
 >하루에 100개의 문제가 만들어지지만 이 중 두 개의 문제만 Ana에 할당되면 시나리오는 두 번 실행됩니다.
 >
@@ -2076,7 +2076,7 @@ Workfront > 이벤트 보기 필터에서 다음 연산자를 사용할 수 있�
 >
 >Ana에 할당된 문제만 처리되도록 이벤트를 필터링하려면 [!UICONTROL Watch Events] 모듈 뒤에 필터를 만들 수 있습니다.
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/watch-events-non-event-filter-350x206.png)
+>![이벤트 필터 없음](/help/workfront-fusion/references/apps-and-modules/assets/watch-events-non-event-filter-350x206.png)
 >
 >하루에 100개의 문제가 만들어지지만 이 중 두 개의 문제만 Ana에 할당되면 시나리오는 100번 실행됩니다. 98개의 실행이 필터에서 중지되지만 트리거 모듈은 여전히 데이터를 소비하고 모든 실행에서 작업을 수행합니다.
 

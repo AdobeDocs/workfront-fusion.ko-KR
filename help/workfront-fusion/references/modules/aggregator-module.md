@@ -4,9 +4,9 @@ description: 집계 모듈은 여러 데이터 번들을 단일 번들로 병합
 author: Becky
 feature: Workfront Fusion
 exl-id: 93cde0d0-4013-463a-b19c-d58180632739
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '717'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [[!DNL Adobe W
 
 다음 이미지는 [!UICONTROL Aggregator] 모듈의 일반적인 설정을 보여 줍니다.
 
-![](assets/array-aggregator.png)
+![배열 집계](assets/array-aggregator.png)
 
 <table style="table-layout:auto">
  <col> 
@@ -113,7 +113,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [[!DNL Adobe W
 
 이 예제 시나리오는 모든 이메일 첨부 파일을 압축하고 ZIP을 [!DNL Dropbox]에 업로드하는 방법을 보여 줍니다.
 
-![](assets/dropbox-archive.png)
+![Dropbox 보관 예제](assets/dropbox-archive.png)
 
 아래 시나리오는 다음 방법을 보여 줍니다.
 
@@ -129,4 +129,4 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [[!DNL Adobe W
 
 다음은 [!UICONTROL Archive] > [!UICONTROL Create an archive] 집계의 샘플 설정입니다.
 
-![](assets/archive-create-an-archive.png)
+![보관 만들기](assets/archive-create-an-archive.png)

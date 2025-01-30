@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Dropbox을 �
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '2868'
+source-wordcount: '2876'
 ht-degree: 0%
 
 ---
@@ -744,15 +744,15 @@ URL을 자동으로 수정하려면 `replace()` 함수를 두 번 사용합니�
 
 * www를 dl로 바꾸기
 
-  ![](/help/workfront-fusion/references/apps-and-modules/assets/www-to-dl-350x32.png)
+  ![www를 dl로 바꾸기](/help/workfront-fusion/references/apps-and-modules/assets/www-to-dl-350x32.png)
 
 * ?dl=0 제거
 
-  ![](/help/workfront-fusion/references/apps-and-modules/assets/remove-dl0-350x33.png)
+  ![DL 제거](/help/workfront-fusion/references/apps-and-modules/assets/remove-dl0-350x33.png)
 
 한 단계로 진행하려면 다음 함수를 결합합니다.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/replace-both-350x47.png)
+![둘 다 바꾸기](/help/workfront-fusion/references/apps-and-modules/assets/replace-both-350x47.png)
 
 복사하여 필드에 붙여넣을 수도 있습니다. `1.url`을(를) URL로 바꾸십시오.
 

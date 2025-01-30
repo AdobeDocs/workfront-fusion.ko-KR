@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Trello를 사
 author: Becky
 feature: Workfront Fusion
 exl-id: 5df5cd2b-ad4c-4a02-9d0c-7cee35232f93
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '4256'
+source-wordcount: '4259'
 ht-degree: 0%
 
 ---
@@ -1212,7 +1212,7 @@ Trello 커넥터는 다음을 사용합니다.
 
 카드를 편집하거나 새 주석을 만들려면 카드의 ID나 바로 가기 링크를 알고 있어야 합니다. [!UICONTROL New Card] 트리거의 출력에서 이 정보를 가져올 수 있습니다. 카드를 열고 [!UICONTROL Share] 단추를 클릭하면 카드에 대한 바로 가기 링크를 얻을 수도 있습니다. 바로 가기 링크는 URL 끝에 있는 [!UICONTROL Link to this card] 상자에서 `https://trello.com/c/` 다음에 찾을 수 있습니다.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/share-and-more-350x575.png)
+![외 항목 공유](/help/workfront-fusion/references/apps-and-modules/assets/share-and-more-350x575.png)
 
 ### [!DNL Trello]에서 다른 개체의 ID를 찾는 방법
 

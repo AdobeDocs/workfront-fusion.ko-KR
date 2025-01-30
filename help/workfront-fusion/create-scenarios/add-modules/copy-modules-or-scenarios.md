@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion에서 모듈, 모듈 그룹 또는 전체 �
 author: Becky
 feature: Workfront Fusion
 exl-id: 5cece7d4-b2c7-4276-8a6f-f65bad799c7a
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '848'
 ht-degree: 0%
 
 ---
@@ -103,7 +103,7 @@ Adobe Workfront Fusion에서 모듈, 모듈 그룹 또는 전체 시나리오를
 
       또는
 
-      시나리오 편집기에서 시나리오 작업을 수행하는 경우 창의 왼쪽 위 모서리 근처에 있는 왼쪽 화살표 ![](assets/exit-editing-arrow.png)을(를) 클릭합니다.
+      시나리오 편집기에서 시나리오 작업을 수행하는 경우 창의 왼쪽 상단 모서리 근처에 있는 왼쪽 화살표 ![편집 종료 화살표](assets/exit-editing-arrow.png)를 클릭합니다.
 
 1. 페이지 오른쪽 상단의 **[!UICONTROL Options]**&#x200B;을(를) 마우스 오른쪽 단추로 클릭합니다.
 1. **[!UICONTROL Clone]**&#x200B;을(를) 선택합니다.

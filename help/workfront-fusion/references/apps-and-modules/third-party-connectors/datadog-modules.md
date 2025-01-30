@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Datadog를 �
 author: Becky
 feature: Workfront Fusion
 exl-id: c8c5f2e3-5af1-4957-bb6f-6c19c35102c5
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '795'
 ht-degree: 1%
 
 ---
@@ -213,10 +213,10 @@ URL: `/v1/dashboard`
 
 메서드: `GET`
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-example.png)
+![Datadog API 호출 예](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-example.png)
 
 결과는 번들 > 본문 > 대시보드 아래에 있는 모듈의 출력에서 찾을 수 있습니다.
 
 이 예에서는 3개의 대시보드가 반환되었습니다.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-response-example.png)
+![Datadog API 응답](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-response-example.png)

@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion]의 시나리오 세부 정보'
 author: Becky
 feature: Workfront Fusion
 exl-id: a6d07ed9-aa55-4993-9f78-7e691aa61049
-source-git-commit: 190bfe5992fb21b789a7246c4ae732a5dc7672fa
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '539'
 ht-degree: 1%
 
 ---
@@ -77,11 +77,11 @@ ht-degree: 1%
 
    또는
 
-   시나리오 편집기에서 시나리오 작업을 수행하는 경우 창의 왼쪽 위 모서리 근처에 있는 왼쪽 화살표 ![](assets/exit-editing-arrow.png)을(를) 클릭합니다.
+   시나리오 편집기에서 시나리오 작업을 수행하는 경우 창의 왼쪽 상단 모서리 근처에 있는 왼쪽 화살표 ![편집 종료 화살표](assets/exit-editing-arrow.png)를 클릭합니다.
 
 1. 표시되는 페이지에서 아래 표에 나열된 요소를 검토할 수 있습니다.
 
-   ![](assets/scenario-detail-350x207.png)
+   ![시나리오 세부 정보](assets/scenario-detail-350x207.png)
 
    <table style="table-layout:auto"> 
     <col> 

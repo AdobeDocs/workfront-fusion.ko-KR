@@ -4,9 +4,9 @@ description: 시나리오를 만들거나 편집할 때 설정을 구성하여 �
 author: Becky
 feature: Workfront Fusion
 exl-id: b3aed366-c399-44fa-8967-54ecb8647d96
-source-git-commit: ce2f13866fef97b5687991dfcf5d9579a5e539e4
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -62,13 +62,13 @@ ht-degree: 0%
 
 [!UICONTROL Repeater] 모듈을 사용하려면:
 
-1. 화면 하단의 [!UICONTROL Flow Control] 아이콘 ![](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif)을(를) 클릭한 다음 표시되는 메뉴에서 **[!UICONTROL Repeater]**&#x200B;을(를) 클릭합니다.
+1. 화면 하단의 [!UICONTROL Flow Control] 아이콘 ![흐름 제어 아이콘](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif)을 클릭한 다음 표시되는 메뉴에서 **[!UICONTROL Repeater]**&#x200B;을(를) 클릭합니다.
 1. [!UICONTROL Repeater] 번들을 클릭한 다음 표시되는 상자에서 **[!UICONTROL Connect automatically]**&#x200B;을(를) 클릭합니다.
 1. 표시되는 [!UICONTROL Flow Control] 상자에 원하는 반복 횟수(출력 번들)를 **[!UICONTROL Repeats]** 상자에 입력합니다.
 
    이메일 예제에서 5를 입력합니다.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/repeater-2-350x207.png)
+   ![반복](/help/workfront-fusion/references/apps-and-modules/assets/repeater-2-350x207.png)
 
    항목의 값이 각 반복에서 **[!UICONTROL Show advanced settings]**&#x200B;을(를) 선택하여 볼 수 있는 **[!UICONTROL Step]** 필드에 지정된 값만큼 증가합니다. 이 숫자는 기본적으로 1입니다.
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
    전자 메일 예제에서는 [!UICONTROL Subject] 상자에 Hello를 입력한 다음 반복 모듈에서 `i`을(를) 매핑합니다.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/repeater-3-350x207.png)
+   ![반복](/help/workfront-fusion/references/apps-and-modules/assets/repeater-3-350x207.png)
 
 | 항목 | 설명 |
 |---|---|

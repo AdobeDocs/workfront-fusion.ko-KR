@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] HTTP 앱은 HTTP(Hypertext Transfer
 author: Becky
 feature: Workfront Fusion
 exl-id: 7db97e6e-262d-4be2-823b-423f56a7d886
-source-git-commit: 6398261775584e33515c546de4e7a72d5830ebe0
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '394'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ ht-degree: 0%
 
 헤더:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/jwt-header-350x19.png)
+![JWT 헤더](/help/workfront-fusion/references/apps-and-modules/assets/jwt-header-350x19.png)
 
 복사 및 붙여넣기용 코드:
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 
 페이로드:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/jwt-payload-350x17.png)
+![JWT 페이로드](/help/workfront-fusion/references/apps-and-modules/assets/jwt-payload-350x17.png)
 
 복사 및 붙여넣기용 코드:
 
@@ -125,7 +125,7 @@ ht-degree: 0%
 
 토큰:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/jwt-token-350x15.png)
+![JWT 토큰](/help/workfront-fusion/references/apps-and-modules/assets/jwt-token-350x15.png)
 
 복사 및 붙여넣기용 코드:
 

@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion 시나리오에서는 Salesforce을 사용�
 author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
-source-git-commit: 17ac09a19562839a9fdfc11bd274a6ed11f6d8f5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '2704'
+source-wordcount: '2708'
 ht-degree: 0%
 
 ---
@@ -448,7 +448,7 @@ Salesforce 커넥터는 다음을 사용합니다.
 >
 >이 예에서는 6명의 사용자가 반환되었습니다.
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/matches-of-the-search-350x573.png)
+>![검색 일치](/help/workfront-fusion/references/apps-and-modules/assets/matches-of-the-search-350x573.png)
 
 
 #### [!UICONTROL Upload Attachment/Document]

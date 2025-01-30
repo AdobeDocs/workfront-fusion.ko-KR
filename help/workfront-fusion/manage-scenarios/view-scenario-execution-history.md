@@ -4,9 +4,9 @@ description: 오류로 인해 [!UICONTROL Incomplete executions] 폴더가 완�
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ ht-degree: 0%
 
    또는
 
-   시나리오 편집기에서 시나리오 작업을 수행하는 경우 창의 왼쪽 위 모서리 근처에 있는 왼쪽 화살표 ![](assets/exit-editing-arrow.png)을(를) 클릭합니다.
+   시나리오 편집기에서 시나리오 작업을 수행하는 경우 창의 왼쪽 상단 모서리 근처에 있는 왼쪽 화살표 ![편집 종료 화살표](assets/exit-editing-arrow.png)를 클릭합니다.
 
 1. 시나리오 이름 근처에 있는 **기록**을 클릭합니다.
    ![기록 탭](assets/history-tab.png)
@@ -115,7 +115,7 @@ ht-degree: 0%
 
    또는
 
-   시나리오 편집기에서 시나리오 작업을 수행하는 경우 창의 왼쪽 위 모서리 근처에 있는 왼쪽 화살표 ![](assets/exit-editing-arrow.png)을(를) 클릭합니다.
+   시나리오 편집기에서 시나리오 작업을 수행하는 경우 창의 왼쪽 상단 모서리 근처에 있는 왼쪽 화살표 ![편집 종료 화살표](assets/exit-editing-arrow.png)를 클릭합니다.
 
 1. 오른쪽 패널의 **[!UICONTROL History]** 탭을 클릭합니다.
 1. (선택 사항) 선택한 시나리오 실행에 대한 자세한 내용을 보려면 오른쪽 패널에서 실행을 누릅니다.
@@ -133,7 +133,7 @@ ht-degree: 0%
 실행 기록을 필터링하여 지정된 값이 있는 실행만 볼 수 있습니다.
 
 1. 이 문서의 [!UICONTROL History] 탭에서 [시나리오 실행 기록 보기](#view-scenario-history-on-the-history-tab)에 설명된 대로 시나리오에 대한 전체 페이지 기록을 엽니다.
-1. 필터링할 열의 머리글에서 [!UICONTROL filter] 아이콘 ![](assets/fusion-scenario-filter-icon.png)을(를) 클릭합니다.
+1. 필터링할 열의 헤더에서 [!UICONTROL filter] 아이콘 ![시나리오 필터 아이콘](assets/fusion-scenario-filter-icon.png)을 클릭합니다.
 1. [!UICONTROL filter] 대화 상자에서 필터링할 값을 입력합니다.
 1. **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.
 

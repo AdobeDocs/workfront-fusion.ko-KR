@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 을 사용하여 Microsoft SQL Serv
 author: Becky
 feature: Workfront Fusion
 exl-id: 8f3293f7-8b45-4e42-8ad8-f9d4969b63fd
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
@@ -92,6 +92,6 @@ SQL 모듈이 실행되면 트랜잭션이 시작됩니다. 시나리오가 완�
 
 자동 커밋을 켭니다. 자동 커밋은 모듈 실행이 완료된 직후 모든 트랜잭션을 완료(커밋)합니다.
 
-1. 화면 하단의 [!UICONTROL Scenario settings] 아이콘 ![](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png)을(를) 클릭합니다.
+1. 화면 하단의 [!UICONTROL Scenario settings] 아이콘 ![시나리오 설정 아이콘](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png)을 클릭합니다.
 1. **[!UICONTROL Auto commit]** 확인란을 클릭합니다.
 1. 시나리오 설정을 저장하려면 **[!UICONTROL OK]**&#x200B;을(를) 클릭합니다.

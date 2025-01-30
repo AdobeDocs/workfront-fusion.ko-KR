@@ -5,9 +5,9 @@ description: 이 문서에서는 시나리오가 실행되는 방식과 이를 �
 author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
-source-git-commit: fe503c27bc4e3beb5645f0efa7c2097297f19190
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 첫 번째 모듈이 번들을 반환하는 경우 번들은 나머지 시나리오를 통과합니다. 이 예에서 번들은 요청을 프로젝트로 변환하는 두 번째 모듈로 이동합니다.
 
-![](assets/example-execution-flow-wf-only.png)
+![Workfront 시나리오의 실행 흐름](assets/example-execution-flow-wf-only.png)
 
 >[!ENDSHADEBOX]
 
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 번들이 반환되면 번들은 나머지 시나리오를 통과합니다. 이 예제에서 나머지 시나리오는 [!DNL Dropbox] 폴더에 번들을 업로드하는 두 번째 모듈로 구성됩니다.
 
-![](assets/example-execution-flow-wf-dropbox.png)
+![통합 시나리오의 실행 흐름](assets/example-execution-flow-wf-dropbox.png)
 
 첫 번째 모듈이 여러 번들을 반환하는 경우 두 번째 번들을 업로드하기 전에 첫 번째 번들이 [!DNL Dropbox]에 업로드됩니다. 그런 다음 두 번째 번들이 업로드되고, 세 번째 번들이 업로드되는 방식입니다.
 
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 시나리오 실행이 완료되면 각 모듈에 수행된 작업 수를 보여 주는 아이콘이 표시됩니다. 이 아이콘을 클릭하면 프로세스의 각 단계에 대해 처리된 번들에 대한 세부 정보가 표시됩니다. 사용된 모듈 설정과 각 모듈에서 반환된 번들을 확인할 수 있습니다.
 
-![](assets/Info-processed-bundles.png)
+![처리된 번들](assets/Info-processed-bundles.png)
 
 이 예에서 모듈은 다음과 같은 입력 정보를 수신했습니다.
 

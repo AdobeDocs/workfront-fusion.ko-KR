@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion 시나리오에서는 Microsoft Word 템플�
 author: Becky
 feature: Workfront Fusion
 exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
-source-git-commit: 9e560995ff9f58a76bbecc521f7d2eef9d47fa48
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1245'
 ht-degree: 0%
 
 ---
@@ -84,11 +84,11 @@ ht-degree: 0%
 
 예를 들어 이 [!DNL Microsoft Word] 템플릿을 사용할 수 있습니다.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-before-filled-350x62.png)
+![다음 Word 서식 파일](/help/workfront-fusion/references/apps-and-modules/assets/word-template-before-filled-350x62.png)
 
 이 문서를 만들려면 다음 작업을 수행하십시오.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-exampled-filled-350x85.png)
+![채워진 Word 템플릿](/help/workfront-fusion/references/apps-and-modules/assets/word-template-exampled-filled-350x85.png)
 
 ## 값 태그 정보
 
@@ -110,7 +110,7 @@ ht-degree: 0%
 
 이렇게 하려면 다음과 같이 모듈을 설정합니다.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-simple-value-350x286.png)
+![Word 템플릿 단순 값](/help/workfront-fusion/references/apps-and-modules/assets/word-template-simple-value-350x286.png)
 
 ### 조건 태그 {#condition-tag}
 
@@ -125,7 +125,7 @@ ht-degree: 0%
 
 이렇게 하려면 다음과 같이 모듈을 설정합니다.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-conditional-350x501.png)
+![Word 템플릿 조건부](/help/workfront-fusion/references/apps-and-modules/assets/word-template-conditional-350x501.png)
 
 이 문서에서 전화 번호는 다음과 같이 표시됩니다.
 
@@ -148,7 +148,7 @@ ht-degree: 0%
 이렇게 하려면 다음과 같이 모듈을 설정합니다.
 
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-fill-out-a-document-350x732.png)
+![문서 작성](/help/workfront-fusion/references/apps-and-modules/assets/word-template-fill-out-a-document-350x732.png)
 
 모듈은 다음 문서를 만듭니다.
 

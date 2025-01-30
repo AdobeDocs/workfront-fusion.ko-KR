@@ -4,9 +4,9 @@ description: 반복자 모듈은 배열을 일련의 번들로 변환하는 특�
 author: Becky
 feature: Workfront Fusion
 exl-id: 43d39955-3dd7-453d-8eb0-3253a768e114
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '570'
 ht-degree: 1%
 
 ---
@@ -63,11 +63,11 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [[!DNL Adobe W
 
 일반 반복자 모듈에는 단일 필드인 [!UICONTROL Array] 필드가 있습니다. 이 필드에는 별도의 번들로 변환하거나 분할할 배열이 포함됩니다.
 
-![](assets/set-up-iterator.jpg)
+![반복자 설정](assets/set-up-iterator.jpg)
 
 다른 커넥터들은 그 반복기에 특정한 반복기 모듈들을 포함할 수 있다. 여기에는 반복할 배열을 출력하는 모듈을 선택할 수 있는 Source 모듈 필드가 포함되어 있습니다.
 
-![](assets/specialized-iterators.jpg)
+![전문 반복자](assets/specialized-iterators.jpg)
 
 자세한 내용은 [모듈 구성](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)을 참조하세요.
 
@@ -79,7 +79,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [[!DNL Adobe W
 
   이메일에는 여러 첨부 파일이 포함될 수 있습니다. 첫 번째 모듈 다음의 [!UICONTROL Iterator] 모듈을 사용하면 시나리오가 각 첨부 파일을 개별적으로 처리할 수 있습니다. [!UICONTROL Iterator] 모듈은 첨부 파일 배열을 단일 번들로 분할합니다. 첨부 파일이 한 개 있는 각 번들은 선택한 [!DNL Dropbox] 폴더에 한 번에 하나씩 저장됩니다. 반복자 모듈의 [!UICONTROL Array] 필드는 `Attachments` 배열을 포함해야 합니다.
 
-  ![](assets/attachments-array.jpg)
+  ![첨부 파일 배열](assets/attachments-array.jpg)
 
 >[!ENDSHADEBOX]
 
@@ -90,7 +90,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [[!DNL Adobe W
 
 [!UICONTROL Iterator] 모듈에 배열 항목의 구조에 대한 정보가 없는 경우 [!UICONTROL Iterator] 모듈 다음에 있는 모듈의 매핑 패널에 [!UICONTROL Iterator] 모듈 아래에 있는 두 개 항목(`Total number of bundles` 및 `Bundle order position`)만 표시됩니다.
 
-![](assets/mapping-panel-doesnt-display.png)
+![매핑 패널이 표시되지 않음](assets/mapping-panel-doesnt-display.png)
 
 이는 각 모듈이 출력하는 항목에 대한 정보를 제공해야 하므로 이러한 항목이 후속 모듈의 매핑 패널에 제대로 표시될 수 있기 때문입니다. 그러나 일부 모듈에서 이 정보를 제공하지 못할 수도 있습니다. 예를 들어 데이터 구조가 없는 [!UICONTROL JSON] > [!UICONTROL Parse JSON] 또는 [!UICONTROL Webhooks] > [!UICONTROL Custom Webhook] 모듈은 정보를 제공하지 않습니다.
 
@@ -100,11 +100,11 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [[!DNL Adobe W
 
 예를 들어 시나리오에는 데이터 구조가 없는 [!UICONTROL JSON] > [!UICONTROL Parse JSON] 모듈이 포함되어 있습니다.
 
-![](assets/json-parse-json.png)
+![JSON 구문 분석](assets/json-parse-json.png)
 
 이 JSON 모듈에 연결된 [!UICONTROL Iterator] 모듈이 모듈의 출력을 [!UICONTROL Iterator] 모듈의 설치 패널에 있는 배열 필드에 매핑할 수 없습니다.
 
-![](assets/connect-iterator-module.png)
+![반복자 모듈 연결](assets/connect-iterator-module.png)
 
 이 문제를 해결하려면
 
@@ -120,8 +120,8 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [[!DNL Adobe W
 
 [!UICONTROL JSON] > [!UICONTROL Parse JSON]이(가) 실행되면 반복자 모듈을 포함하여 모든 후속 모듈에 출력 정보를 제공할 수 있습니다. 그러면 반복자 설정의 매핑 패널에 다음 항목이 표시됩니다.
 
-![](assets/mapping-panel-displays-items.png)
+![매핑 패널에 항목이 표시됨](assets/mapping-panel-displays-items.png)
 
 또한 [!UICONTROL Iterator] 모듈 뒤에 연결된 모듈의 매핑 패널에는 배열에 포함된 항목이 표시됩니다.
 
-![](assets/items-contained-in-array.png)
+![항목이 배열에 포함됨](assets/items-contained-in-array.png)

@@ -4,9 +4,9 @@ description: XML 앱을 사용하면 XML &gt; Parse XML 모듈을 통해 XML 형
 author: Becky
 feature: Workfront Fusion
 exl-id: ab323361-cd04-4dcc-ab02-0fb468334fdb
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1302'
 ht-degree: 2%
 
 ---
@@ -95,7 +95,7 @@ ht-degree: 2%
 >
 >   **URL**: XML 파일의 URL(예: `https://siftrss.com/f/rqLy05ayMBJ`)
 >
->   ![](/help/workfront-fusion/references/apps-and-modules/assets/url-of-xml-file-350x184.png)
+>   ![XML 파일 예제](/help/workfront-fusion/references/apps-and-modules/assets/url-of-xml-file-350x184.png)
 >
 >1. **[!UICONTROL OK]**&#x200B;을(를) 클릭하여 모듈의 구성을 저장하고 닫습니다.
 1. [!UICONTROL XML] > [!UICONTROL Parse XML] 모듈을 추가하고 [!UICONTROL HTTP] > [!UICONTROL Get a file] 모듈 뒤에 연결한 후 다음과 같이 구성합니다.
@@ -143,7 +143,7 @@ ht-degree: 2%
 
 이 번들로 변환됩니다.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/xml-converted-to-bundle.png)
+![번들로 변환된 XML](/help/workfront-fusion/references/apps-and-modules/assets/xml-converted-to-bundle.png)
 
 ## XML 만들기
 
@@ -198,7 +198,7 @@ ht-degree: 2%
 >
 1. **[!UICONTROL Generator]** 단추를 클릭하고 XML 샘플을 [!UICONTROL Sample data] 필드에 붙여 넣습니다.
 >
-![](/help/workfront-fusion/references/apps-and-modules/assets/sample-data-field-350x146.png)
+![샘플 데이터 필드](/help/workfront-fusion/references/apps-and-modules/assets/sample-data-field-350x146.png)
 >
 1. **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다. 이제 데이터 구조의 사양 필드에 생성된 구조가 포함됩니다.
 1. 데이터 구조의 이름을 보다 구체적으로 변경하고 **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다. 루트 배열 속성에 해당하는 필드는 JSON 모듈의 설정에서 매핑 가능한 필드로 표시됩니다.

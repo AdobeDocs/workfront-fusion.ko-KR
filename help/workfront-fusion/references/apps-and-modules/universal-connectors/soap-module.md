@@ -4,7 +4,7 @@ description: SOAP 모듈을 사용하여 Adobe Workfront Fusion의 SOAP API에 �
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: bf9af473f08463c00578a1a8b07c800239225f09
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 1%
@@ -119,7 +119,7 @@ ht-degree: 1%
     </tbody> 
    </table>
 
-   <!--![](/help/workfront-fusion/references/apps-and-modules/assets/workaround-350x443.png)-->
+   <!--![Workaround](/help/workfront-fusion/references/apps-and-modules/assets/workaround-350x443.png)-->
 
 1. 새 웹 브라우저 창 또는 탭을 엽니다.
 1. 웹 브라우저의 주소 표시줄에 WSDL URL을 붙여 넣고 XML 파일을 가져옵니다.
@@ -129,7 +129,7 @@ ht-degree: 1%
 1. WSDL 파일이 웹 브라우저에 직접 표시되지 않으면 다운로드한 파일을 텍스트 편집기에서 엽니다.
 1. `<service>` 또는 `<wsdl:service>` 태그 검색:
 
-   <!--![](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
+   <!--![Service](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
 
 1. 찾으면 `location` 특성에서 URL을 복사합니다.
 1. [!DNL Workfront Fusion]에서 HTTP 모듈의 URL 필드에 URL을 붙여 넣습니다.
@@ -141,7 +141,7 @@ ht-degree: 1%
 1. [!UICONTROL Workfront Fusion]에서 복사한 콘텐츠를 모듈의 URL 필드에 붙여넣습니다.
 1. 물음표를 실제 값으로 대체하여 선택한 매개 변수의 값을 제공합니다.
 
-   <!--![](/help/workfront-fusion/references/apps-and-modules/assets/request-xml-350x172.png)-->
+   <!--![Request](/help/workfront-fusion/references/apps-and-modules/assets/request-xml-350x172.png)-->
 
 1. **[!UICONTROL OK]**&#x200B;을(를) 클릭하여 모듈의 구성을 닫습니다.
 1. 시나리오 또는 모듈을 실행합니다.

@@ -4,9 +4,9 @@ description: 항목을 매핑할 때 함수를 사용하여 단순 또는 복합
 author: Becky
 feature: Workfront Fusion
 exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
-source-git-commit: 839f6edf93df8a935b2c5d0a520bdc125fe60288
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '620'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ ht-degree: 0%
 
 이 예에서 하위 문자열 함수는 프로젝트 이름을 50자로 제한합니다.
 
-![](assets/example-meet-length-restriction-350x184.png)
+![모임 길이 제한 예시](assets/example-meet-length-restriction-350x184.png)
 
 >[!ENDSHADEBOX]
 
@@ -119,7 +119,7 @@ ht-degree: 0%
 
 이 예에서 하위 문자열 함수는 트리밍된 프로젝트 이름을 50자로 제한합니다.
 
-![](assets/trimmed-name-under-50.png)
+![트리밍된 이름](assets/trimmed-name-under-50.png)
 
 >[!ENDSHADEBOX]
 
@@ -150,9 +150,9 @@ ht-degree: 0%
 
       이전 모듈의 출력을 평소대로 사용할 수 있습니다.
 
-      ![](assets/exploit-google-sheet-functions-350x218.png)
+      ![Google Sheets 함수 사용](assets/exploit-google-sheet-functions-350x218.png)
 
 1. 계산된 결과를 얻으려면 **[!UICONTROL Google Sheets]>[!UICONTROL Get a cell]** 모듈을 삽입하십시오.
 1. 4단계에서 사용한 것과 동일한 셀 ID를 사용하여 모듈을 구성합니다.
 
-   ![](assets/exploit-google-sheet-functions-2-350x187.png)
+   ![Google Sheets 함수 사용](assets/exploit-google-sheet-functions-2-350x187.png)

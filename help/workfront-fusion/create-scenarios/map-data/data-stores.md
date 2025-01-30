@@ -4,9 +4,9 @@ description: 데이터베이스 또는 간단한 테이블과 유사한 데이�
 author: Becky
 feature: Workfront Fusion
 exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1215'
 ht-degree: 1%
 
 ---
@@ -197,8 +197,8 @@ Select 또는 Prime 패키지의 Fusion 인스턴스는 다음 항목을 수신�
 
 데이터 저장소의 속성에는 데이터 저장소에서 사용하는 데이터 구조와 데이터 저장소의 크기가 포함됩니다.
 
-1. 왼쪽 탐색 패널에서 **[!UICONTROL Data stores]** ![](assets/data-store-icon.png)을(를) 클릭하여 [!UICONTROL Data stores] 영역을 엽니다.
-1. 편집할 데이터 저장소 옆의 **[!UICONTROL Edit]** ![](assets/data-store-edit.png)을(를) 클릭합니다.
+1. 왼쪽 탐색 패널에서 **[!UICONTROL Data stores]** ![데이터 저장소 아이콘](assets/data-store-icon.png)을 클릭하여 [!UICONTROL Data stores] 영역을 엽니다.
+1. 편집할 데이터 저장소 옆에 있는 **[!UICONTROL Edit]** ![데이터 저장소 편집](assets/data-store-edit.png)을 클릭합니다.
 1. (선택 사항) 이 데이터 저장소에서 사용하는 데이터 구조를 다른 기존 데이터 구조로 변경하려면 **[!UICONTROL Data structure]** 드롭다운에서 선택합니다.
 
    또는
@@ -210,7 +210,7 @@ Select 또는 Prime 패키지의 Fusion 인스턴스는 다음 항목을 수신�
 
 ### 데이터 저장소의 콘텐츠 편집
 
-1. 왼쪽 탐색 패널에서 **[!UICONTROL Data Store]** 아이콘 ![](assets/data-store-icon.png)을(를) 클릭하여 [!UICONTROL Data Store] 영역을 엽니다.
+1. 왼쪽 탐색 패널에서 **[!UICONTROL Data Store]** 아이콘 ![데이터 저장소 아이콘](assets/data-store-icon.png)을 클릭하여 [!UICONTROL Data Store] 영역을 엽니다.
 1. 편집할 데이터 저장소 옆의 **[!UICONTROL Browse]**&#x200B;을(를) 클릭합니다.
 1. (선택 사항) 열을 원하는 위치로 끌어 열 순서를 변경합니다.
 1. (선택 사항) 해당 셀에서 **[!UICONTROL Edit]** 아이콘을 클릭한 다음 원하는 값을 입력하여 단일 셀을 [!UICONTROL Edit]합니다.

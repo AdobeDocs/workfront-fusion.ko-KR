@@ -4,9 +4,9 @@ description: 일부 트리거 모듈을 사용하면 번들 검색을 시작할 
 author: Becky
 feature: Workfront Fusion
 exl-id: 83628fa5-82e2-4f67-bfed-70a4c3c19f7f
-source-git-commit: 9ec972ef7677874965d6b4cb646e87c0b2240214
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '325'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 1%
 
    트리거 모듈의 아이콘을 마우스 오른쪽 단추로 클릭하고 **시작할 위치 선택**&#x200B;을 선택합니다.
 
-   ![](assets/choose-where-to-start.png)
+   ![시작할 위치 선택](assets/choose-where-to-start.png)
 
 1. 표시되는 **[!UICONTROL Choose where to start]** 상자에서 옵션을 선택하십시오.
 

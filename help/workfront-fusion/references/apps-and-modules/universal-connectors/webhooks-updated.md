@@ -4,9 +4,9 @@ description: 웹후크는 이벤트에 의해 트리거되는 HTTP 호출입니�
 author: Becky
 feature: Workfront Fusion
 exl-id: 8e415378-e9c1-4b49-874b-6d38aba0c303
-source-git-commit: d5ab7dc135206a7269ad4fa0b5c02bf77b97d873
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1331'
 ht-degree: 0%
 
 ---
@@ -120,7 +120,7 @@ ht-degree: 0%
     </tbody> 
    </table>
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/new-scenario-set-up-like-this-350x446.png)
+   ![새 시나리오 설정](/help/workfront-fusion/references/apps-and-modules/assets/new-scenario-set-up-like-this-350x446.png)
 
 1. 별도의 브라우저 탭 또는 창에서 [!UICONTROL Webhooks] 모듈을 사용하여 시나리오를 엽니다.
 1. Webhooks 모듈에서 **[!UICONTROL Redetermine data structure]**&#x200B;을(를) 클릭합니다.
@@ -132,7 +132,7 @@ ht-degree: 0%
 
    &quot;[!UICONTROL Successfully determined]&quot; 메시지는 모듈이 데이터 구조를 성공적으로 확인했음을 의미합니다.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/successfully-determined-350x175.png)
+   ![확인됨](/help/workfront-fusion/references/apps-and-modules/assets/successfully-determined-350x175.png)
 
 1. 데이터 구조를 저장하려면 **[!UICONTROL OK]**&#x200B;을(를) 클릭합니다.
 
@@ -241,7 +241,7 @@ Webhook의 헤더에 액세스하려면 Webhook을 설정할 때 요청 헤더 �
 >
 >아래 예제는 `Headers[]` 배열에서 `authorization` 헤더의 값을 추출하는 수식을 보여 줍니다. 공식은 추출된 값과 지정된 텍스트를 비교하여 일치하는 항목이 있는 경우 웹후크만 전달하는 필터에 사용됩니다.
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/set-up-a-filter-350x169.png)
+>![필터 설정](/help/workfront-fusion/references/apps-and-modules/assets/set-up-a-filter-350x169.png)
 >
 >지정된 키로 배열의 요소를 가져오는 방법에 대한 자세한 내용은 문서 배열 매핑](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md#map-an-arrays-element-with-a-given-key)에서 [지정된 키로 배열의 요소 매핑을 참조하십시오.
 
@@ -311,11 +311,11 @@ Webhook 응답을 사용자 정의하려면 Webhook 응답 모듈을 사용합�
 &gt; </tbody> 
 &gt;</table>
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
+>![사용자 지정 헤더](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
 >이렇게 하면 웹 브라우저에 표시되는 HTML 응답이 생성됩니다.
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/html-response-350x70.png)
+>![HEML 응답](/help/workfront-fusion/references/apps-and-modules/assets/html-response-350x70.png)
 
 ### 리디렉션 예
 
@@ -342,7 +342,7 @@ Webhook 응답을 사용자 정의하려면 Webhook 응답 모듈을 사용합�
 &gt; </tbody> 
 &gt;</table>
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
+>![Webhook 응답](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 
 ## Webhook 비활성화
 
@@ -360,6 +360,6 @@ Webhook 응답을 사용자 정의하려면 Webhook 응답 모듈을 사용합�
 
 [!UICONTROL Webhooks] > [!UICONTROL Custom Webhook] 모듈 다음에 있는 모듈 설정의 매핑 패널에서 일부 항목이 누락된 경우 **[!UICONTROL Webhooks]>[!UICONTROL Custom Webhook]** 모듈을 클릭하여 설정을 열고 **[!UICONTROL Re-determine data structure]**&#x200B;을(를) 클릭합니다.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
+![데이터 구조 다시 결정](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
 
 그런 다음 이 문서의 [웹후크의 데이터 구조 구성](#configure-the-webhook-s-data-structure) 섹션에 설명된 단계를 수행합니다.

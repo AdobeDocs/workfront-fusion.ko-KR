@@ -4,9 +4,9 @@ description: 이 문서에서는 초기화, 작업, 커밋 및 롤백과 같이 
 author: Becky
 feature: Workfront Fusion
 exl-id: abf41be5-df32-4eaf-b3f4-93ddf005bfe3
-source-git-commit: fe503c27bc4e3beb5645f0efa7c2097297f19190
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '462'
 ht-degree: 1%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 1%
 >
 >롤백을 지원하는 모든 [!DNL Workfront Fusion] 모듈(트랜잭션이라고도 함)은 ACID 태그로 표시됩니다.
 >
->![](assets/acid-modules.png)
+>![Acid 모듈](assets/acid-modules.png)
 >
 >이 태그로 표시되지 않은 모듈은 다른 모듈에서 오류가 발생할 때 초기 상태로 되돌릴 수 없습니다. ACID가 아닌 모듈의 일반적인 예로는 [!UICONTROL Email] >[!UICONTROL Send an Email] 작업이 있습니다. 이메일을 보낸 후에는 전송을 실행 취소할 수 없습니다.
 

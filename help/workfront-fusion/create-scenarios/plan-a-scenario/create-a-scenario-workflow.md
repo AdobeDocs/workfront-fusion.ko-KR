@@ -4,9 +4,9 @@ description: 시나리오를 만들려면 이 일반 워크플로를 따르십�
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: f190217891c1d583e49cacb820e2076b995f6a3d
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
@@ -34,19 +34,19 @@ ht-degree: 0%
 ## 시나리오 만들기 및 이름 지정
 
 1. [!DNL Workfront Fusion] 계정에 로그인합니다.
-1. 왼쪽 패널에서 **[!UICONTROL Scenarios]** ![](assets/scenarios-icon.png)을(를) 클릭합니다.
+1. 왼쪽 패널에서 **[!UICONTROL Scenarios]** ![시나리오 아이콘](assets/scenarios-icon.png)을 클릭합니다.
 
    >[!NOTE]
    >
    >왼쪽 탐색 패널이나 해당 아이콘이 보이지 않으면 메뉴 ![메뉴](assets/main-menu-icon-left-nav.png) 아이콘을 클릭합니다.
 
-1. (선택 사항)[!UICONTROL **폴더**] 패널에서 **[!UICONTROL Add folder]** 아이콘 ![](assets/add-folder-icon.png)을(를) 클릭한 다음 첫 번째 폴더의 이름을 &quot;연습 시나리오&quot;와 같이 입력합니다.
+1. (선택 사항)[!UICONTROL **폴더**] 패널에서 **[!UICONTROL Add folder]** 아이콘 ![폴더 추가 아이콘](assets/add-folder-icon.png)을 클릭한 다음 첫 번째 폴더의 이름을 &quot;연습 시나리오&quot;와 같이 입력합니다.
 
 1. (선택 사항) 폴더를 연 다음 페이지의 오른쪽 상단에 있는 **[!UICONTROL Create a new scenario]**&#x200B;을(를) 클릭합니다.
 
 1. 왼쪽 상단 모서리에서 **[!UICONTROL New scenario]** 자리 표시자 이름을 선택한 다음 &quot;연습 시나리오 1&quot;과 같은 이름을 입력하십시오.
 
-   ![](assets/name-the-scenario.png)
+   ![시나리오 이름 지정](assets/name-the-scenario.png)
 
 1. 아래의 [첫 번째 모듈에 연결](#2-connect-the-first-module)을 사용하여 계속합니다.
 
@@ -106,7 +106,7 @@ Google, Microsoft 또는 전용 커넥터가 없는 응용 프로그램과 관�
    * 시나리오 실행 정보를 읽는 방법에 대한 일반 정보는 [시나리오 실행 흐름](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md)을 참조하십시오.
    * 처리된 번들에 대한 자세한 내용은  [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md)의 [시나리오 실행, 주기 및 단계를 참조하십시오.
 
-1. [!DNL Workfront Fusion]에서 왼쪽 아래 모서리 근처의 **[!UICONTROL Save]** ![](assets/save-icon.png)을(를) 클릭하여 시나리오에 대한 진행 상황을 저장합니다.
+1. [!DNL Workfront Fusion]에서 왼쪽 아래 모서리 근처에 있는 **[!UICONTROL Save]** ![저장 아이콘](assets/save-icon.png)을 클릭하여 시나리오에 대한 진행률을 저장합니다.
 
    >[!IMPORTANT]
    >

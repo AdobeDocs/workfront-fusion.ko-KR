@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 압축 파일
 author: Becky
 feature: Workfront Fusion
 exl-id: 4b5ff3d5-601c-4119-ad70-3612ad5ba1ab
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 0%
 >
 >**예:** 정의된 [!DNL Dropbox] 폴더(예: 보관 파일)에서 ZIP 파일을 가져온 다음 [!UICONTROL Archive] 모듈을 사용하여 압축을 풀고 [!UICONTROL Email] 또는 [!DNL Gmail] 모듈을 통해 추출된 파일을 원하는 전자 메일 주소에 첨부 파일로 보냅니다.
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/example-dropbox-350x134.png)
+>![예제 Dropbox](/help/workfront-fusion/references/apps-and-modules/assets/example-dropbox-350x134.png)
 
 ## [!UICONTROL Create an archive]
 
@@ -98,7 +98,7 @@ ht-degree: 0%
 >
 >**예:** [!DNL Gmail] >[!UICONTROL Watch emails] 모듈을 사용하여 수신 전자 메일을 봅니다. 전자 메일을 받으면 해당 첨부 파일이 개별 번들로 반복된 다음 [!DNL ZIP] 파일에 보관되고 정의된 Dropbox 폴더에 저장됩니다.
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/example-gmail-350x102.png)
+>![Gmail 예제](/help/workfront-fusion/references/apps-and-modules/assets/example-gmail-350x102.png)
 
 ## [!UICONTROL Inflate]
 

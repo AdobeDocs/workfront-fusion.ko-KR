@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion [!DNL Google Docs] 모듈을 사용하면  [
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: cd44250d-c2cd-46b2-8773-15b30472a8d8
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '3215'
+source-wordcount: '3221'
 ht-degree: 0%
 
 ---
@@ -609,11 +609,11 @@ Google Docs 커넥터는 다음을 사용합니다.
 
 [!UICONTROL GET]
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/api-call-example.png)
+![API 호출 예](/help/workfront-fusion/references/apps-and-modules/assets/api-call-example.png)
 
 검색된 문서에 대한 자세한 내용은 [!UICONTROL Bundle] > [!UICONTROL Body] 아래 모듈의 출력에서 확인할 수 있습니다.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/api-output.png)
+![API 호출 출력](/help/workfront-fusion/references/apps-and-modules/assets/api-output.png)
 
 #### [!UICONTROL Make All Links in a Document Clickable]
 

@@ -4,9 +4,9 @@ description: 이전 버전의 시나리오를 복원할 수 있습니다. 이렇
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '199'
 ht-degree: 2%
 
 ---
@@ -68,7 +68,7 @@ ht-degree: 2%
 ## 시나리오 버전 복원
 
 1. 시나리오를 엽니다.
-1. 화면 하단의 [!UICONTROL More] 아이콘 ![](assets/more-icon.png)을(를) 클릭한 다음 **[!UICONTROL Previous Versions]**&#x200B;을(를) 클릭합니다.
+1. 화면 하단의 [!UICONTROL More] 아이콘 ![자세히 아이콘](assets/more-icon.png)을 클릭한 다음 **[!UICONTROL Previous Versions]**&#x200B;을(를) 클릭합니다.
 
 1. **[!UICONTROL Pick the version]**&#x200B;을(를) 클릭한 다음 복원할 버전을 클릭합니다.
 1. **[!UICONTROL OK]**&#x200B;을(를) 클릭합니다.

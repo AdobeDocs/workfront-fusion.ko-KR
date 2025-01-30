@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Acrobat Sign] 모듈을 사용하면  [!DNL Adobe] Ac
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '5488'
+source-wordcount: '5501'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
 
 [!DNL Adobe Sign] 계약에는 작업할 필드가 필요합니다. 이를 위한 몇 가지 옵션이 있지만 가장 쉽고 일반적인 방법은 임시 문서를 업로드한 다음 해당 문서를 계약에 매핑하는 것입니다.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/adobe-sign-recommendations-350x168.png)
+![Adobe Sign 권장 사항](/help/workfront-fusion/references/apps-and-modules/assets/adobe-sign-recommendations-350x168.png)
 
 ## [!DNL Adobe Acrobat Sign]개 모듈 및 해당 필드
 
@@ -941,11 +941,11 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
 
 **예:** 이 워크플로에서는 서명할 문서(Workfront에서 이전에 다운로드함)가 임시 문서로 업로드됩니다.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/sign-example-1-350x308.png)
+(/help/workfront-fusion/references/apps-and-modules/assets/sign-example-1-350x308.png)
 
 [!UICONTROL Upload document] 모듈이 문서에 이후 모듈에서 참조할 수 있는 [!DNL Adobe Acrobat Sign] ID를 제공합니다. 계약을 만들면 업로드된 문서의 ID가 [!UICONTROL Files to send] 필드에 포함됩니다.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/sign-example-2-350x356.png)
+![서명 예제](/help/workfront-fusion/references/apps-and-modules/assets/sign-example-2-350x356.png)
 
 +++
 

@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion Google Forms] 모듈을 사용하면
 author: Becky
 feature: Workfront Fusion
 exl-id: dc017957-c0f8-4206-916f-21ccda346fb9
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1185'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ Google Forms 커넥터는 다음을 사용합니다.
 
 1. 양식을 엽니다.
 1. **[!UICONTROL Responses]** 탭으로 이동합니다.
-1. **[!UICONTROL Create Spreadsheet]** 아이콘 ![](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png)을(를) 클릭합니다.
+1. **[!UICONTROL Create Spreadsheet]** 아이콘 ![스프레드시트 아이콘](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png)을 클릭합니다.
 
 1. 새 스프레드시트를 만들지 기존 스프레드시트를 만들지 선택합니다.
 1. **[!UICONTROL Create]**&#x200B;을(를) 클릭합니다.

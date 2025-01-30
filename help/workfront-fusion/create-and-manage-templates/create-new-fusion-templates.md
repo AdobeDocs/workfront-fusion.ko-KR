@@ -4,9 +4,9 @@ description: ' [!DNL Adobe] Workfront Fusion에서 새 시나리오 템플릿을
 author: Becky
 feature: Workfront Fusion
 exl-id: 9cb9bd04-e9ae-4162-a1b9-d71566582b7a
-source-git-commit: 7acc27ab2ce80b964b7f9fbb302816aa75964ab5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '745'
 ht-degree: 0%
 
 ---
@@ -71,16 +71,16 @@ ht-degree: 0%
 
 ### 템플릿 작성
 
-1. 왼쪽 탐색 패널에서 **[!UICONTROL Templates]** ![](assets/templates-icon.png)을(를) 클릭합니다.
+1. 왼쪽 탐색 패널에서 **[!UICONTROL Templates]** ![템플릿 아이콘](assets/templates-icon.png)을 클릭합니다.
 1. 오른쪽 상단의 **[!UICONTROL Create a new template]**&#x200B;을(를) 클릭합니다.
 1. (선택 사항) 왼쪽 위 모서리에서 기본 **[!UICONTROL New template name]**&#x200B;을(를) 바꾸어 템플릿 이름을 변경합니다.
-1. (선택 사항) 템플릿의 언어를 변경하려면 **[!UICONTROL Set up a template]** ![](assets/scenario-settings-icon.png)을(를) 클릭하고 언어 드롭다운에서 언어를 선택합니다.
+1. (선택 사항) 템플릿의 언어를 변경하려면 **[!UICONTROL Set up a template]** ![시나리오 설정 아이콘](assets/scenario-settings-icon.png)을 클릭하고 언어 드롭다운에서 언어를 선택합니다.
 
    >[!IMPORTANT]
    >
    >언어 선택은 시스템 설정에서 사용할 수 있는 언어에 해당하며 공개 템플릿의 이름과 설명만 고려합니다. 템플릿이 저장되면 템플릿 언어를 변경할 수 없습니다.
 
-1. (선택 사항) 템플릿에 대한 설명을 입력하려면 **[!UICONTROL Set up a template]** ![](assets/scenario-settings-icon.png)을(를) 클릭하고 설명을 입력하십시오.
+1. (선택 사항) 템플릿에 대한 설명을 입력하려면 **[!UICONTROL Set up a template]** ![시나리오 설정 아이콘](assets/scenario-settings-icon.png)을 클릭하고 설명을 입력하십시오.
 1. 시나리오에 모듈을 추가하는 것과 동일한 프로세스를 사용하여 앱, 모듈 및 도구를 추가합니다.
 
    자세한 내용은 [모듈 추가](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)의 문서를 참조하십시오.
@@ -94,7 +94,7 @@ ht-degree: 0%
    >템플릿에 연결, 자격 증명 또는 기타 개인 정보에 민감한 정보를 추가해야 하는 모듈이 포함된 경우 이 정보는 템플릿 사용자와 공유되지 않습니다.
 
 1. (선택 사항) 템플릿을 테스트하려면 **[!UICONTROL Run once]**&#x200B;을(를) 클릭합니다.
-1. **[!UICONTROL Save]** 아이콘 ![](assets/save-icon.png)을(를) 클릭하여 템플릿을 저장합니다.
+1. 템플릿을 저장하려면 **[!UICONTROL Save]** 아이콘 ![저장 아이콘](assets/save-icon.png)을 클릭합니다.
 
 템플릿을 저장하면 팀 구성원이 볼 수 있게 됩니다. 팀 외부에서 템플릿에 액세스할 수 있게 하려면 요청을 제출하여 템플릿을 승인 및 게시해야 합니다. 승인을 위해 Adobe Workfront Fusion 팀으로 요청이 전송됩니다. 승인된 템플릿은 팀 외부의 다른 사용자가 액세스할 수 있습니다.
 
@@ -113,13 +113,13 @@ ht-degree: 0%
 
    시나리오가 새 템플릿 페이지에 복사됩니다.
 1. (선택 사항) 왼쪽 위 모서리에서 기본 **[!UICONTROL New template name]**&#x200B;을(를) 바꾸어 템플릿 이름을 변경합니다.
-1. (선택 사항) 템플릿의 언어를 변경하려면 **[!UICONTROL Set up a template]** ![](assets/scenario-settings-icon.png)을(를) 클릭하고 언어 드롭다운에서 언어를 선택합니다.
+1. (선택 사항) 템플릿의 언어를 변경하려면 **[!UICONTROL Set up a template]** ![시나리오 설정 아이콘](assets/scenario-settings-icon.png)을 클릭하고 언어 드롭다운에서 언어를 선택합니다.
 
    >[!IMPORTANT]
    >
    >언어 선택은 시스템 설정에서 사용할 수 있는 언어에 해당하며 공개 템플릿의 이름과 설명만 고려합니다. 템플릿이 저장되면 템플릿 언어를 변경할 수 없습니다.
 
-1. (선택 사항) 템플릿에 대한 설명을 입력하려면 **[!UICONTROL Set up a template]** ![](assets/scenario-settings-icon.png)을(를) 클릭하고 설명을 입력하십시오.
+1. (선택 사항) 템플릿에 대한 설명을 입력하려면 **[!UICONTROL Set up a template]** ![시나리오 설정 아이콘](assets/scenario-settings-icon.png)을 클릭하고 설명을 입력하십시오.
 1. 시나리오에 모듈을 추가하는 것과 동일한 프로세스를 사용하여 앱, 모듈 및 도구를 원하는 대로 편집합니다.
 
    자세한 내용은 [모듈 추가](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)의 문서를 참조하십시오.
@@ -131,7 +131,7 @@ ht-degree: 0%
    >템플릿에 연결, 자격 증명 또는 기타 개인 정보에 민감한 정보를 추가해야 하는 모듈이 포함된 경우 이 정보는 템플릿 사용자와 공유되지 않습니다.
 
 1. (선택 사항) 템플릿을 테스트하려면 **[!UICONTROL Run once]**&#x200B;을(를) 클릭합니다.
-1. **[!UICONTROL Save]** 아이콘 ![](assets/save-icon.png)을(를) 클릭합니다.
+1. **[!UICONTROL Save]** 아이콘 ![저장 아이콘](assets/save-icon.png)을 클릭합니다.
 
 ## [!UICONTROL Wizard] 기능 설정 {#set-up-wizard-functionality}
 

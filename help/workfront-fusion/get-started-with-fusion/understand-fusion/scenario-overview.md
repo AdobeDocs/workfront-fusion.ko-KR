@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion에는 Adobe Workfront 라이센스 외에 Ad
 author: Becky
 feature: Workfront Fusion
 exl-id: de81ad4c-27e5-4b6c-acf0-f01a8c85922e
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Workfront Fusion을 사용하면 Workfront 내에서 간단하거나 복잡한 �
 
 이 예제에서는 [!DNL Workfront]의 작업 또는 문제에서 지정된 필드가 변경되면 시나리오가 트리거됩니다. 시나리오가 트리거되면 관련 프로젝트에서 정보를 가져오고 프로젝트의 특정 역할에 할당된 사용자에 대해 맞춤 업데이트를 만듭니다.
 
-![](assets/fusion-template-example.png)
+![템플릿 예제](assets/fusion-template-example.png)
 
 +++
 
@@ -90,7 +90,7 @@ Workfront Fusion을 다른 애플리케이션 및 웹 서비스에 연결할 수
 
 이 예제에서는 사용자가 [!DNL Excel] 스프레드시트에 추가되면 시나리오가 트리거됩니다. 시나리오에서는 사용자가 [!DNL Workfront]에 있는지 확인합니다. 그렇지 않으면 시나리오에서는 [!DNL Workfront]에 사용자를 만들고 해당 Workfront 사용자 ID를 스프레드시트에 다시 추가합니다.
 
-![](assets/fusion-integration-example.png)
+![통합 예](assets/fusion-integration-example.png)
 
 전용 커넥터 목록을 보려면 [Fusion 응용 프로그램 및 해당 모듈 참조: 문서 인덱스](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)를 참조하십시오.
 

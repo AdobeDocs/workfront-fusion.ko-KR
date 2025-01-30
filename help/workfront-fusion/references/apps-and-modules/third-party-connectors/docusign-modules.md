@@ -5,9 +5,9 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 94a823a6-3c70-42a1-b6cf-298591dbca15
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1631'
+source-wordcount: '1637'
 ht-degree: 0%
 
 ---
@@ -229,13 +229,13 @@ DocuSign 커넥터는 다음을 사용합니다.
 >
 >요청에서 계정의 봉투 상태 변경 확인을 시작하는 시기를 지정합니다.
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/example-docusign-setup-350x770.png)
+>![Docusign 설정 예](/help/workfront-fusion/references/apps-and-modules/assets/example-docusign-setup-350x770.png)
 >
 >결과는 번들 > 본문 > 봉투에 있는 모듈의 출력에서 찾을 수 있습니다.
 >
 >이 예에서는 6개의 봉투가 반환되었습니다.
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/docusign-example-output-350x677.png)
+>![문서 출력 예](/help/workfront-fusion/references/apps-and-modules/assets/docusign-example-output-350x677.png)
 
 #### [!UICONTROL Download a document]
 

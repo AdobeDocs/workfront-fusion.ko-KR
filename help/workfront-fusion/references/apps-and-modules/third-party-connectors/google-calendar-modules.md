@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Google 캘린
 author: Becky
 feature: Workfront Fusion
 exl-id: 6e514204-cd8e-4f30-bbbb-b8fbe48fc670
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '3306'
+source-wordcount: '3314'
 ht-degree: 0%
 
 ---
@@ -829,7 +829,7 @@ Google Calendar 커넥터는 다음을 사용합니다.
 
 1. [!UICONTROL Google Calendar] >[!UICONTROL Update an event] 모듈을 사용하여 전자 메일 미리 알림을 이벤트에 추가하십시오.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/trigger-scen-before-event-350x209.png)
+   ![이벤트 전에 시나리오 트리거](/help/workfront-fusion/references/apps-and-modules/assets/trigger-scen-before-event-350x209.png)
 
 1. [!UICONTROL Webhooks] >[!UICONTROL Custom mailhook] 모듈로 시작하는 새 시나리오를 만듭니다.
 
@@ -847,11 +847,11 @@ Google Calendar 커넥터는 다음을 사용합니다.
    1. 모듈 위의 버블을 클릭하여 모듈의 출력을 검사합니다.
    1. `Text` 항목을 확장하고 확인 코드를 복사합니다.
 
-      ![](/help/workfront-fusion/references/apps-and-modules/assets/confirmation-code-350x252.png)
+      ![확인 코드](/help/workfront-fusion/references/apps-and-modules/assets/confirmation-code-350x252.png)
 
    1. Gmail에서 편집 상자에 확인 코드를 붙여 넣고 {0&#x200B;}을(를) 클릭합니다.**[!UICONTROL Verify]**
 
-      ![](/help/workfront-fusion/references/apps-and-modules/assets/paste-code-350x46.png)
+      ![코드 붙여넣기](/help/workfront-fusion/references/apps-and-modules/assets/paste-code-350x46.png)
 
    1. **[!UICONTROL Filters and Blocked Addresses]** 탭을 엽니다.
    1. **[!UICONTROL Create a new filter]**&#x200B;을(를) 클릭합니다.

@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion 템플릿 기능을 사용하면 기존 템�
 author: Becky
 feature: Workfront Fusion
 exl-id: 9bc5f195-c406-45e9-9a1e-5c8a2a0e0ded
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '433'
 ht-degree: 1%
 
 ---
@@ -66,7 +66,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 ## 템플릿에서 시나리오 만들기
 
-1. 왼쪽 탐색 패널에서 **템플릿** 탭 ![](assets/templates-icon.png)을(를) 클릭합니다.
+1. 왼쪽 탐색 패널에서 **템플릿** 탭 ![템플릿 아이콘](assets/templates-icon.png)을 클릭합니다.
 1. 사용할 서식 파일이 포함된 탭을 클릭합니다(**공개 서식 파일** 또는 **팀 서식 파일**).
 1. 화면 왼쪽 상단 모서리 근처에 있는 검색 막대를 사용하여 특정 템플릿을 검색합니다. 템플릿 이름 또는 포함된 애플리케이션별로 검색할 수 있습니다.
 1. 시나리오를 만드는 데 사용할 템플릿을 클릭합니다.
@@ -84,6 +84,6 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 1. 템플릿에 필요한 모든 설정을 구성한 경우 템플릿을 이동할 준비가 되었다는 알림이 표시되고 화면 하단에 표준 시나리오 옵션이 나타납니다. 이제 시나리오 빌드를 계속할 수 있습니다.
 
-1. 화면 하단 근처에 있는 **저장** 아이콘 ![](assets/save-icon.png)을(를) 클릭하여 시나리오를 저장합니다.
+1. 화면 하단 근처에 있는 **저장** 아이콘 ![저장 아이콘](assets/save-icon.png)을 클릭하여 시나리오를 저장합니다.
 
    시나리오는 Workfront Fusion의 시나리오 영역에 저장됩니다.

@@ -5,9 +5,9 @@ description: 시나리오 설정 패널에서 시나리오에 대한 특정 설�
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 3afa631a44c6dae8b1e6def6f842a9ced9de741e
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1198'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ ht-degree: 0%
 1. 시나리오의 아무 곳이나 클릭하여 시나리오 편집기를 입력합니다.
 1. 페이지의 왼쪽 아래 모서리 근처에 있는 톱니바퀴 아이콘을 클릭합니다.
 
-   ![](assets/scenario-settings-350x221.png)
+   ![시나리오 설정](assets/scenario-settings-350x221.png)
 
    표시되는 [!UICONTROL Scenario settings] 패널에서 시나리오에 대한 다양한 고급 설정을 구성할 수 있습니다.
 1. 필요에 따라 시나리오 설정을 활성화하거나 비활성화합니다. 아래의 [시나리오 설정 옵션](#scenario-settings-options)을 참조하세요.
@@ -162,13 +162,13 @@ ht-degree: 0%
 
 **예:** [!DNL Workfront] > [!UICONTROL Watch record]에서 들어오는 새 문제를 감시하고 [!DNL Workfront] >[!UICONTROL Convert object]에서 새 요청을 프로젝트로 변환하고 적절한 템플릿을 할당합니다.
 
-![](assets/scenario-settings-ex-1-350x157.png)
+![시나리오 설정](assets/scenario-settings-ex-1-350x157.png)
 
 시나리오 실행을 예약하는 경우에만 [!UICONTROL more cycles] 설정이 적용됩니다. [!UICONTROL Run once] 단추를 사용하면 주기 설정이 고려됩니다.
 
 #### 최대 주기 수가 1(기본값)로 설정됩니다.
 
-![](assets/max-number-cycles-1-350x201.png)
+![최대 주기 수](assets/max-number-cycles-1-350x201.png)
 
 Workfront > 레코드 보기 모듈의 최대 주기 수가 `10`(으)로 설정되어 있습니다.
 100개의 요청이 [!DNL Workfront]에 제출되고 [최대 주기 수] 필드가 10으로 설정된 경우 시나리오 실행 후 90개의 파일이 처리되지 않은 상태로 남습니다. 다음 10개의 파일이 다음에 예약된 시나리오 실행에서 처리됩니다.
@@ -183,7 +183,7 @@ Dropbox 폴더에 100개의 파일이 추가되고 최대 주기 옵션이 10으
 
 시나리오 세부 정보에서 이미 실행된 주기를 확인할 수 있습니다.
 
-![](assets/scenario-detail-350x207.png)
+![시나리오 세부 정보](assets/scenario-detail-350x207.png)
 
 이 페이지에 대한 자세한 내용은 [시나리오 세부 정보](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md)를 참조하세요.
 

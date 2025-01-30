@@ -4,9 +4,9 @@ description: 많은 서비스는 서비스에서 특정 변경 사항이 발생�
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: 4c0f050e40d28f236d6086e7dccea53d49252aa8
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '848'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 많은 서비스는 서비스에서 특정 변경(이벤트)이 발생할 때마다 즉각적인 알림을 전달하기 위해 웹후크를 제공합니다. 이러한 이벤트를 처리하려면 인스턴트 트리거를 사용하는 것이 좋습니다. 인스턴스 트리거는 지정된 커넥터의 모듈 목록에 `Instant` 태그를 표시합니다.
 
-![](assets/instant.png)
+![즉시](assets/instant.png)
 
 >[!TIP]
 >
@@ -39,7 +39,7 @@ Workfront Fusion의 Webhooks에 대한 비디오 소개는 다음을 참조하�
 
 인스턴트 트리거를 구성할 때 트리거 실행 시기를 선택하라는 메시지가 표시됩니다.
 
-![](assets/schedule-setting.png)
+![일정 설정](assets/schedule-setting.png)
 
 [!DNL Workfront Fusion]이(가) 서비스에서 새 이벤트를 받을 때 즉시 시나리오를 실행하려면 `Immediately`을(를) 선택하십시오. 이러한 이벤트는 즉시 대기열로 전송되며 데이터가 수신되는 순서로 한 번에 하나씩 시나리오에서 처리됩니다.
 
@@ -62,7 +62,7 @@ Workfront Fusion의 Webhooks에 대한 비디오 소개는 다음을 참조하�
 
 [!UICONTROL Immediately] 이외의 다른 일정 설정을 사용하는 경우 지정한 간격으로 시나리오가 실행됩니다. 간격 동안 큐에 여러 개의 웹 후크를 수집할 수 있으므로 한 시나리오 실행에서 더 많은 웹 후크를 처리하려면 [!UICONTROL Maximum number of cycles] 옵션을 기본 1보다 높은 값으로 설정하는 것이 좋습니다.
 
-1. 시나리오 하단의 [!UICONTROL Scenario settings] 아이콘 ![](assets/scenario-settings-icon.png)을(를) 클릭합니다.
+1. 시나리오 하단의 [!UICONTROL Scenario settings] 아이콘 ![시나리오 설정 아이콘](assets/scenario-settings-icon.png)을 클릭합니다.
 1. 표시되는 **[!UICONTROL Scenario settings]** 패널에서 **[!UICONTROL Max number of cycles]** 필드에 숫자를 입력하여 시나리오를 실행할 때마다 실행할 큐의 이벤트 수를 나타냅니다.
 
 다음에 시나리오를 실행할 때 큐에 남아 있는 이벤트는 최대 주기 필드에 설정된 수까지 처리됩니다.

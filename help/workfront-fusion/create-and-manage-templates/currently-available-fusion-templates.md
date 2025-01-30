@@ -4,9 +4,9 @@ description: 현재 Adobe Workfront Fusion에서 사용할 수 있는 공용 템
 author: Becky
 feature: Workfront Fusion
 exl-id: b14bed4d-3503-42cf-a8c3-618d3b2448b4
-source-git-commit: ba205314949f2b061ba483efa8b972367928f8fe
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1279'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 팀이나 조직에 다른 팀에서 만든 템플릿을 사용할 수 있습니다.
 
-사용 가능한 템플릿을 보려면 Fusion의 측면 탐색 메뉴에서 **템플릿** 아이콘 ![](assets/templates-icon.png)을(를) 클릭하십시오.
+사용 가능한 템플릿을 보려면 Fusion의 측면 탐색 메뉴에서 **템플릿** 아이콘 ![템플릿 아이콘](assets/templates-icon.png)을 클릭하십시오.
 
 ## Workfront 템플릿
 

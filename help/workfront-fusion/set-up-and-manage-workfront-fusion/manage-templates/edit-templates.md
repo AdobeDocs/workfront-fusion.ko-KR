@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 473dba8b-faa4-432f-9357-c2146e86b261
-source-git-commit: 86b0d7b16a4ed7e15888f6ee1a58f0279e96fb70
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
@@ -73,13 +73,13 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 1. 왼쪽 탐색 패널에서 **[!UICONTROL All Templates]**&#x200B;을(를) 클릭합니다.
 1. 편집할 템플릿의 오른쪽에 있는 **[!UICONTROL Detail]**&#x200B;을(를) 클릭합니다.
 1. (선택 사항) 오른쪽 상단의 **옵션**&#x200B;을 클릭하고 **이름 바꾸기**&#x200B;를 선택하여 템플릿의 이름을 변경합니다.
-1. (선택 사항) 템플릿의 언어를 변경하려면 **[!UICONTROL Create a new template]** ![](assets/fusion-scenario-settings-icon.png)을(를) 클릭하고 언어 드롭다운에서 언어를 선택합니다.
+1. (선택 사항) 템플릿의 언어를 변경하려면 **[!UICONTROL Create a new template]** ![시나리오 설정 아이콘](assets/fusion-scenario-settings-icon.png)을 클릭하고 언어 드롭다운에서 언어를 선택합니다.
 
    >[!IMPORTANT]
    >
    >언어 선택은 시스템 설정에서 사용할 수 있는 언어에 해당하며 공개 템플릿의 이름과 설명만 고려합니다. 템플릿이 저장되면 템플릿 언어를 변경할 수 없습니다.
 
-1. (선택 사항) 템플릿 설명을 편집하려면 **[!UICONTROL Set up a template]** ![](assets/fusion-scenario-settings-icon.png)을(를) 클릭하고 설명을 입력하십시오.
+1. (선택 사항) 템플릿 설명을 편집하려면 **[!UICONTROL Set up a template]** ![시나리오 설정 아이콘](assets/fusion-scenario-settings-icon.png)을 클릭하고 설명을 입력하십시오.
 1. 표준 시나리오를 만들 때와 동일한 방식으로 앱, 모듈 및 도구를 추가하거나 편집합니다.
 
    모듈에 상황별 도움말을 추가하려면 이 문서에서 [[!UICONTROL Wizard] 기능 설정](#set-up-wizard-functionality)을(를) 참조하십시오.
@@ -91,7 +91,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
    >템플릿에 연결, 자격 증명 또는 기타 개인 정보에 민감한 정보를 추가해야 하는 모듈이 포함된 경우 이 정보는 템플릿 사용자와 공유되지 않습니다.
 
 1. (선택 사항) 템플릿을 테스트하려면 **[!UICONTROL Run once]**&#x200B;을(를) 클릭합니다.
-1. **[!UICONTROL Save]** 아이콘 ![](assets/save-icon.png)을(를) 클릭합니다.
+1. **[!UICONTROL Save]** 아이콘 ![저장 아이콘](assets/save-icon.png)을 클릭합니다.
 
 
 ## [!UICONTROL Wizard] 기능 설정

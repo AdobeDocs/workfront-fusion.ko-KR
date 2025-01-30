@@ -8,9 +8,9 @@ description: 롤백 또는 커밋 단계 다음에 나오는 시나리오 실행
 author: Becky
 feature: Workfront Fusion
 exl-id: 4bf2a6c7-16b2-4545-9adf-be3947a7017d
-source-git-commit: 0668441df8405610488e3e33658635e4cc7db270
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '380'
 ht-degree: 1%
 
 ---
@@ -85,4 +85,4 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 다음 예제에서는 [!DNL Rollback] 지시문을 사용하는 방법을 보여 줍니다.
 
-![](assets/rollback-directive.png)
+![Rollback 지시문](assets/rollback-directive.png)

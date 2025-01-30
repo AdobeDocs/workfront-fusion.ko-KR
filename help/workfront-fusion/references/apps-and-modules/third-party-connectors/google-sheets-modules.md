@@ -4,9 +4,9 @@ description: ' [!DNL Google Sheets] with [!DNL Adobe Workfront Fusion],you need 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 80965570-2937-4ac8-97c0-54f7a813ec50
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '3366'
+source-wordcount: '3372'
 ht-degree: 0%
 
 ---
@@ -726,7 +726,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
 1. 시나리오를 실행합니다.
 1. Google Sheets의 메인 메뉴 모음에서 **[!UICONTROL Insert]** > **[!UICONTROL Drawing]**...을 선택합니다.
 
-1. [!UICONTROL Drawing] 창에서 창 위쪽에 있는 **[!UICONTROL Text box]** 아이콘 ![](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png)을(를) 클릭합니다.
+1. [!UICONTROL Drawing] 창에서 창 위쪽에 있는 **[!UICONTROL Text box]** 아이콘 ![텍스트 상자](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png)를 클릭합니다.
 1. 단추를 디자인하고 오른쪽 상단의 **[!UICONTROL Save and Close]** 단추를 클릭합니다.
 1. 단추가 워크시트에 배치됩니다. 단추의 오른쪽 위 모서리에 있는 세 개의 세로 점을 클릭합니다.
 1. **[!UICONTROL Assign script..]을(를) 선택하십시오.메뉴에서**.
@@ -750,7 +750,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
 
 날짜 값을 포맷하지 않고 스프레드시트에 저장하면 스프레드시트에 ISO 8601 형식의 텍스트로 표시됩니다. 그러나 이 텍스트를 이해하지 못하는 날짜에 작동하는 [!DNL Google Sheets]개의 수식 또는 함수(예: 수식 `=A1+10`)에 다음 오류가 표시됩니다.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/mceclip6-350x87.png)
+![오류](/help/workfront-fusion/references/apps-and-modules/assets/mceclip6-350x87.png)
 
 [!DNL Google Sheets]이(가) 날짜를 이해할 수 있도록 하려면 [[!UICONTROL formatDate](date; format; [timezone])](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md#formatda) 함수로 형식을 지정하십시오. 두 번째 인수로 함수에 전달되는 올바른 형식은 스프레드시트의 로케일 설정에 따라 다릅니다.
 
@@ -764,7 +764,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
 
 **예:** 미국 로케일에 `MM/DD/YYYY HH:mm:ss` 형식을 사용합니다.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/locale-time-350x83.png)
+![로케일 시간 수식](/help/workfront-fusion/references/apps-and-modules/assets/locale-time-350x83.png)
 
 ## [!DNL Google Sheets]개 함수 활용 중
 

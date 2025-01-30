@@ -7,9 +7,9 @@ description: ' [!DNL Adobe Workfront Fusion]에서 잠긴 시나리오 관리'
 author: Becky
 feature: Workfront Fusion
 exl-id: b5e92bdc-cc1d-4b22-8c5f-42cc279d5590
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '324'
 ht-degree: 1%
 
 ---
@@ -92,4 +92,4 @@ ht-degree: 1%
 1. 화면 오른쪽 상단의 **[!UICONTROL Options]**&#x200B;을(를) 클릭합니다.
 1. **[!UICONTROL Unlock execution]**&#x200B;을(를) 선택합니다.
 1. **[!UICONTROL Unlock]**을(를) 클릭합니다.
-   ![](assets/unlock-scenario.png)
+   ![시나리오 잠금 해제](assets/unlock-scenario.png)

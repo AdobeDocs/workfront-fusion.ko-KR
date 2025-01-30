@@ -4,9 +4,9 @@ description: 항목을 매핑할 때 함수를 사용하여 단순 또는 복합
 author: Becky
 feature: Workfront Fusion
 exl-id: e07730cb-52be-46db-a365-93cdbed1021c
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '181'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,11 @@ ht-degree: 0%
 
 | 함수 유형 | 자세한 내용은 다음을 참조하십시오. |
 |---|---|
-| **다른 모듈에서 매핑**<br>![](assets/toolbar-icon-functions-you-map-from-other-modules.png) | [한 모듈에서 다른 모듈로 정보를 매핑합니다](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) |
-| **일반 함수**<br>![](assets/toolbar-icon-general-function.png) | [일반 함수](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md) |
-| **계산 함수**<br>![](assets/toolbar-icon-math-functions.png) | [계산 함수](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md) |
-| **텍스트 및 이진 함수**<br>![](assets/toolbar-icon-text&binary-functions.png) | [문자열 함수](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md) |
-| **날짜 및 시간** <br> ![](assets/toolbar-icon-date&time-functions.png) | <ul><li>[날짜 및 시간 함수](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)</li><li>[날짜 및 시간 형식에 대한 토큰](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)</li><li> [날짜 및 시간 구문 분석용 토큰](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)</li></ul> |
-| **배열 작업용 함수**<br> ![](assets/toolbar-icon-functions-for-arrays.png) | [배열 함수](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md) |
+| **다른 모듈에서 매핑**<br>![&#x200B;다른 모듈에서 매핑](assets/toolbar-icon-functions-you-map-from-other-modules.png) | [한 모듈에서 다른 모듈로 정보를 매핑합니다](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) |
+| **일반 함수**<br>![&#x200B;일반 함수](assets/toolbar-icon-general-function.png) | [일반 함수](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md) |
+| **연산 함수**<br>![&#x200B;연산 함수](assets/toolbar-icon-math-functions.png) | [계산 함수](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md) |
+| **텍스트 및 이진 함수**<br>![&#x200B;문자열 함수](assets/toolbar-icon-text&binary-functions.png) | [문자열 함수](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md) |
+| **날짜 및 시간** <br> ![날짜 및 시간 함수](assets/toolbar-icon-date&time-functions.png) | <ul><li>[날짜 및 시간 함수](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)</li><li>[날짜 및 시간 형식에 대한 토큰](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)</li><li> [날짜 및 시간 구문 분석용 토큰](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)</li></ul> |
+| **배열 작업용 함수**<br> ![배열 함수](assets/toolbar-icon-functions-for-arrays.png) | [배열 함수](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md) |
 
-![](assets/functions-toolbar-350x189.png)
+![함수 도구 모음](assets/functions-toolbar-350x189.png)

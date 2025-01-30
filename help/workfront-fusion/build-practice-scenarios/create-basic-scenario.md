@@ -7,9 +7,9 @@ description: Adobe Workfront Fusion을 사용하여 간단한 자동화 시나�
 author: Becky
 feature: Workfront Fusion
 exl-id: 5284dee1-e890-4357-a28d-29e09ac02822
-source-git-commit: 8884aef2237ad358c774110b81ac17b9efb386d4
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1315'
 ht-degree: 1%
 
 ---
@@ -124,7 +124,7 @@ ht-degree: 1%
 
    모듈 바로 아래에 이름이 표시됩니다. 그 아래에 [!DNL Workfront Fusion]에 모듈에서 수행되는 작업 유형에 대한 간단한 설명이 포함되어 있습니다.
 
-   ![](assets/module-renamed-wf.png)
+   ![이름이 변경된 모듈](assets/module-renamed-wf.png)
 
 1. [두 번째 모듈 추가 및 구성](#add-and-configure-the-second-module)을 계속합니다.
 
@@ -191,9 +191,9 @@ ht-degree: 1%
 >
 >1. **[!UICONTROL Notes]** 영역을 닫습니다.
 >
->     시나리오에 메모를 추가하면 시나리오 편집기 하단의 **[!UICONTROL Notes]** 아이콘 ![](assets/notes-icon-w-dot.png)에 주황색 점이 표시됩니다.
+>     시나리오에 메모를 추가하면 시나리오 편집기 아래쪽에 있는 **[!UICONTROL Notes]** 아이콘 ![점이 있는 메모 아이콘](assets/notes-icon-w-dot.png)에 주황색 점이 표시됩니다.
 >
->1. 메모를 보려면 **[!UICONTROL Notes]** 아이콘 ![](assets/notes-icon-w-dot.png)을(를) 클릭하십시오.
+>1. **[!UICONTROL Notes]** 아이콘 ![점이 있는 메모 아이콘](assets/notes-icon-w-dot.png)을 클릭하여 메모를 봅니다.
 >
 
 ## 시나리오 활성화

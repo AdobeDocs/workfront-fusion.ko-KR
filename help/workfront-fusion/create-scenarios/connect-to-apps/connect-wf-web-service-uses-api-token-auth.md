@@ -4,9 +4,9 @@ description: 일부 서비스에서는 Adobe Workfront Fusion과 같은 통합 �
 author: Becky
 feature: Workfront Fusion
 exl-id: 4a8ac816-52de-41e8-96d7-1c8cde2ebe32
-source-git-commit: 362952ec85b0df2306ba117ba530e95201330cca
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '958'
 ht-degree: 1%
 
 ---
@@ -185,7 +185,7 @@ JSON 모듈에 대한 자세한 내용은 [JSON 모듈](/help/workfront-fusion/r
 
 1. JSON을 생성할 값을 입력하거나 매핑합니다.
 
-   ![](/help/workfront-fusion/create-scenarios/connect-to-apps/assets/json-values-350x288.png)
+   ![JSON 값](/help/workfront-fusion/create-scenarios/connect-to-apps/assets/json-values-350x288.png)
 
 1. JSON > JSON 만들기 모듈을 HTTP > 요청 모듈에 연결합니다.
 1. JSON 만들기 모듈의 JSON 문자열을 HTTP > 요청 모듈 만들기의 요청 콘텐츠 필드에 매핑합니다.

@@ -4,9 +4,9 @@ description: 일부 모듈에는 파일을 처리하는 기능이 있습니다. 
 author: Becky
 feature: Workfront Fusion
 exl-id: 25c632f4-169e-4d3c-989a-f57b398bd3f0
-source-git-commit: 839f6edf93df8a935b2c5d0a520bdc125fe60288
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '419'
 ht-degree: 1%
 
 ---
@@ -92,10 +92,10 @@ ht-degree: 1%
 1. 매핑할 대상인 대상 모듈에서 **Source 파일** 영역을 찾습니다.
 1. 이전 모듈에서 출력한 파일을 매핑하려면 파일을 출력하는 모듈을 선택합니다.
 
-   ![](assets/wf-download-document.png)
+   ![Workfront 다운로드 문서](assets/wf-download-document.png)
 
 1. 이름과 데이터를 수동으로 매핑하려면 맵을 선택한 다음 파일 이름과 데이터를 입력하거나 매핑합니다.
 
-   ![](assets/use-the-map-option.png)
+   ![맵 옵션 사용](assets/use-the-map-option.png)
 
 1. 모듈 구성을 계속하거나 **확인**&#x200B;을 클릭합니다.

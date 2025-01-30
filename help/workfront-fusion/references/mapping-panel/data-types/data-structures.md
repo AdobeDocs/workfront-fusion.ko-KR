@@ -4,9 +4,9 @@ description: 데이터 구조는 Adobe Workfront Fusion으로 전송되는 데�
 author: Becky
 feature: Workfront Fusion
 exl-id: 93abf8a5-a3a1-448e-834b-1cc81b88036b
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '216'
 ht-degree: 1%
 
 ---
@@ -24,4 +24,4 @@ ht-degree: 1%
 
 데이터 구조를 항상 만들 필요는 없습니다. 기본 제공 생성기의 템플릿을 사용하면 보다 쉽게 만들 수 있습니다. 데이터 샘플을 제공하면 생성기가 입력한 데이터 샘플을 기반으로 데이터 구조를 자동으로 만듭니다. 그런 다음 생성된 데이터 구조를 수동으로 수정할 수 있습니다.
 
-![](assets/data-structure-generator-350x341.jpg)
+![데이터 구조 생성기](assets/data-structure-generator-350x341.jpg)

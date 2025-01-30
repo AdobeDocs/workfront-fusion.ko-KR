@@ -4,9 +4,9 @@ description: 시나리오 실행 중에 오류가 발생하면 일반적으로 �
 author: Becky
 feature: Workfront Fusion
 exl-id: 82ddaf73-ecf9-4fd6-8f8e-909351023c77
-source-git-commit: 0668441df8405610488e3e33658635e4cc7db270
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '659'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 1. 시나리오의 아무 곳이나 클릭하여 시나리오 편집기를 입력합니다.
 1. 오류 처리기 경로를 추가할 모듈을 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL Add error handler]**&#x200B;을(를) 선택합니다.
 
-   ![](assets/error-handler-route.png)
+   ![오류 처리기 경로](assets/error-handler-route.png)
 
    오류 처리기 경로가 모듈에 추가됩니다. 모듈이 경로의 마지막 모듈인 경우 오류 핸들러는 모듈을 바로 따릅니다. 모듈 뒤에 모듈이 더 있으면 별도의 오류 핸들러 경로가 추가됩니다.
 

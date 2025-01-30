@@ -4,9 +4,9 @@ description: 배열 또는 개별 배열 요소를 Adobe Workfront Fusion의 모
 author: Becky
 feature: Workfront Fusion
 exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Workfront Fusion의 일부 필드를 사용하면 요소를 배열에 매핑할 
 
 배열 요소는 배열 이름 뒤에 대괄호로 숫자로 표시됩니다. 이 인덱스 번호를 사용하여 배열의 개별 요소를 필드에 매핑할 수 있습니다.
 
-![](assets/map-array-1st-element.png)
+![첫 번째 요소 매핑](assets/map-array-1st-element.png)
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Workfront Fusion의 일부 필드를 사용하면 요소를 배열에 매핑할 
 
 1. 배열의 다른 요소를 매핑하려면 [1]을(를) 클릭하고 매핑할 배열 요소의 인덱스 번호를 입력하십시오.
 
-   ![](assets/access-another-element.png)
+   ![다른 요소에 액세스](assets/access-another-element.png)
 
 ### 지정된 키로 배열의 요소 매핑
 
@@ -138,13 +138,13 @@ Workfront Fusion의 일부 필드를 사용하면 요소를 배열에 매핑할 
 
 다음 예제에서는 [!DNL Jira] 앱의 출력을 보여 줍니다.
 
-![](assets/output-of-jira-app-350x100.png)
+![Jira 모듈 출력](assets/output-of-jira-app-350x100.png)
 
 이 예제는 ID가 10108인 특정 첨부 파일에 대한 첨부 파일 배열에서 파일 이름을 가져옵니다.
 
 이 예는 다음 출력을 생성합니다.
 
-![](assets/output-from-jira-350x261.png)
+![Jira 모듈 출력](assets/output-from-jira-350x261.png)
 
 공식은 다음과 같이 설명할 수 있습니다.
 
@@ -153,7 +153,7 @@ Workfront Fusion의 일부 필드를 사용하면 요소를 배열에 매핑할 
    1. `map()` 함수의 첫 번째 매개 변수는 전체 배열 항목입니다.
    1. 두 번째 매개 변수는 값 항목의 원시 이름입니다. 원시 이름을 얻으려면 [!UICONTROL mapping] 패널의 항목 위로 마우스를 가져갑니다.
 
-      ![](assets/obtain-raw-name-350x124.png)
+      ![원시 이름 가져오기](assets/obtain-raw-name-350x124.png)
 
       >[!NOTE]
       >
@@ -161,7 +161,7 @@ Workfront Fusion의 일부 필드를 사용하면 요소를 배열에 매핑할 
 
    1. 세 번째 매개 변수는 키 항목의 원시 이름입니다.
 
-      ![](assets/3rd-parameter-350x166.png)
+      ![세 번째 매개 변수](assets/3rd-parameter-350x166.png)
 
    1. 네 번째 매개 변수는 지정된 키 값입니다.
 
@@ -175,7 +175,7 @@ Workfront Fusion의 일부 필드를 사용하면 요소를 배열에 매핑할 
 
 이 예는 다음 출력을 생성합니다.
 
-![](assets/output-from-jira-350x261.png)
+![Jira 모듈에서 출력](assets/output-from-jira-350x261.png)
 
 >[!ENDSHADEBOX]
 
@@ -187,4 +187,4 @@ Workfront Fusion의 일부 필드를 사용하면 요소를 배열에 매핑할 
 
 배열은 [!UICONTROL Iterator] 모듈을 사용하여 일련의 번들로 변환할 수 있습니다. 자세한 내용은 [[!UICONTROL Iterator] 모듈](/help/workfront-fusion/references/modules/iterator-module.md)을 참조하세요.
 
-![](assets/series-of-bundles.png)
+![일련의 번들](assets/series-of-bundles.png)

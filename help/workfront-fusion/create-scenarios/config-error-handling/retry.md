@@ -4,9 +4,9 @@ description: 경우에 따라 실패 사유가 빠르게 해결될 가능성이 
 author: Becky
 feature: Workfront Fusion
 exl-id: 08e19a1a-7ca9-4c79-a165-f200048a5cda
-source-git-commit: 0668441df8405610488e3e33658635e4cc7db270
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '717'
 ht-degree: 0%
 
 ---
@@ -124,7 +124,7 @@ Break 지시문이 실행되면 시나리오 실행 상태가 불완전한 실�
 
 이 샘플 시나리오에서는 [!UICONTROL HTTP] > [!UICONTROL Make a request] 모듈이 실패할 수 있는 모듈을 나타냅니다.
 
-![](assets/http-make-request.png)
+![HTTP 요청 만들기](assets/http-make-request.png)
 
 >[!ENDSHADEBOX]
 

@@ -4,9 +4,9 @@ description: Adobe Workfront FusionTemplates 기능을 사용하면 기존 템�
 author: Becky
 feature: Workfront Fusion
 exl-id: 560c20b7-155c-40db-9018-5a51b40d6fb0
-source-git-commit: 7acc27ab2ce80b964b7f9fbb302816aa75964ab5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '338'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,7 @@ ht-degree: 1%
 
 ## 템플릿에서 시나리오 만들기
 
-1. 왼쪽 탐색 패널에서 **[!UICONTROL Templates]** 아이콘 ![](assets/templates-icon.png)을(를) 클릭합니다.
+1. 왼쪽 탐색 패널에서 **[!UICONTROL Templates]** 아이콘 ![템플릿 아이콘](assets/templates-icon.png)을 클릭합니다.
 1. 사용할 템플릿(공개 템플릿 또는 팀 템플릿)이 포함된 탭을 클릭합니다.
 1. 시나리오 작성을 시작하는 데 사용할 템플릿을 클릭합니다. 오른쪽 상단 모서리의 검색 상자를 사용하여 템플릿 이름 또는 템플릿에 포함된 앱 이름으로 템플릿을 찾을 수 있습니다.
 1. (조건부) 둘 이상의 조직 또는 팀의 구성원일 경우 시나리오를 만들 조직 또는 팀을 선택하고 **[!UICONTROL Continue]**&#x200B;을(를) 클릭합니다.
@@ -78,4 +78,4 @@ ht-degree: 1%
 
    시나리오 작성에 대한 자세한 내용은 [시나리오 작성을 위한 워크플로우](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md)를 참조하십시오.
 
-1. 시나리오를 저장하려면 **[!UICONTROL Save]** 아이콘 ![](assets/save-icon.png)을(를) 클릭하십시오. 시나리오는 Workfront Fusion의 시나리오 영역에 저장됩니다.
+1. 시나리오를 저장하려면 **[!UICONTROL Save]** 아이콘 ![저장 아이콘](assets/save-icon.png)을 클릭하십시오. 시나리오는 Workfront Fusion의 시나리오 영역에 저장됩니다.

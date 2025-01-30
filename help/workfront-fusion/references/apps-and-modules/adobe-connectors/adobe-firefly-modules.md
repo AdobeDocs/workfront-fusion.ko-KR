@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는  [!DNL Adobe 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 1219642306c03cb0aa6037493ce2f02ced80b99d
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1269'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,8 @@ ht-degree: 0%
 
 ## 액세스 요구 사항
 
++++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
+
 이 문서의 기능을 사용하려면 다음 액세스 권한이 있어야 합니다.
 
 <table style="table-layout:auto">
@@ -28,27 +30,27 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 패키지</td> 
+   <td role="rowheader">Adobe Workfront 패키지</td> 
    <td> <p>임의</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 라이센스</td> 
-   <td> <p>신규: [!UICONTROL Standard]</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
+   <td role="rowheader">Adobe Workfront 라이선스</td> 
+   <td> <p>새로운 기능: 표준</p><p>또는</p><p>현재: 작업 시간 이상</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td> 
+   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: [!DNL Workfront Fusion] 라이선스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
    <p>또는</p>
-   <p>레거시: 모두 </p>
+   <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Workfront] 플랜: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 플랜 [!DNL Workfront Fusion]이(가) 포함되어 있습니다.</li></ul>
+   <p>신규:</p> <ul><li>또는 Prime Workfront 패키지 선택: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</li><li>Ultimate Workfront 패키지: Workfront Fusion이 포함됩니다.</li></ul>
    <p>또는</p>
-   <p>현재: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</p>
+   <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
    </td> 
   </tr>
  </tbody> 
@@ -57,6 +59,8 @@ ht-degree: 0%
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 [!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+
++++
 
 ## 전제 조건
 
@@ -128,49 +132,6 @@ Adobe Firefly 커넥터는 다음을 사용합니다.
 
 ![맵 전환](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-### 사용자 지정 API 호출 만들기
-
-이 작업 모듈은 Firefly API에 대한 사용자 지정 호출을 만듭니다.
-
-사용 가능한 특정 API에 대해서는 Adobe Developer 설명서에서 [Adobe Firefly API](https://developer.adobe.com/firefly-services/docs/firefly-api/)를 참조하십시오.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Firefly]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >[!DNL Adobe Firefly]</a>에 대한 연결 만들기 를 참조하십시오.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL URL]</td>
-      <td>
-        <p><code>https://firefly-api-enterprise-stage.adobe.io/</code>과(와) 관련된 경로를 입력하십시오.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Method]</p>
-      </td>
-   <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Headers]</td>
-      <td>
-        <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p>
-        <p>For example, <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] 인증 헤더를 자동으로 추가합니다.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>표준 JSON 개체의 형태로 API 호출에 대한 본문 콘텐츠를 추가합니다.</p> <p>참고:  <p>JSON에서 <code>if</code>과(와) 같은 조건문을 사용할 때 따옴표를 조건문 외부에 넣으십시오.</p> 
-     <div class="example" data-mc-autonum="<b>Example: </b>"> 
-      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
-     </div> </p> </td>     </tr>
-  </tbody>
-</table>
-
 ### 이미지 확장
 
 이 작업 모듈은 선택적으로 사용자가 제공하는 프롬프트의 콘텐츠로 이미지를 확장합니다.
@@ -206,7 +167,7 @@ Adobe Firefly 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Seed]</td> 
-   <td>정수를 입력하거나 매핑합니다. 다른 이미지 모듈 확장에서 이와 동일한 시드를 사용하여 스타일이 다른 유사한 이미지를 생성할 수 있습니다. </td> 
+   <td>사용하려는 각 시드에 대해 <b>항목 추가</b>를 클릭하고 정수를 입력하거나 매핑합니다. 다른 이미지 모듈 확장에서 이와 동일한 시드를 사용하여 스타일이 다른 유사한 이미지를 생성할 수 있습니다. </td> 
   </tr> 
  </tbody> 
 </table>
@@ -238,12 +199,12 @@ Adobe Firefly 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Image]</td> 
-   <td>  <p> <b>이미지 추가</b>를 클릭합니다. 이전 모듈에서 소스 파일을 선택하거나 소스 파일의 이미지 파일 이름과 이미지 데이터를 매핑합니다.</p> </td> 
+   <td>  <p> 채우려는 각 이미지에 대해 <b>이미지 추가</b>를 클릭한 다음 이전 모듈에서 소스 파일을 선택하거나 소스 파일의 이미지 파일 이름과 이미지 데이터를 매핑합니다.</p> </td> 
 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Mask]</td> 
-   <td>  <p> <b>마스크 추가</b>를 클릭합니다. 이전 모듈에서 소스 파일을 선택하거나 소스 파일의 마스크 파일 이름과 마스크 데이터를 매핑합니다. 마스크 파일은 생성된 콘텐츠로 채워질 사용자 지정 마스크를 나타냅니다.</p> </td> 
+   <td>  <p>  사용하려는 각 마스크에 대해 <b>마스크 추가</b>를 클릭합니다. 이전 모듈에서 소스 파일을 선택하거나 소스 파일의 마스크 파일 이름과 마스크 데이터를 매핑합니다. 마스크 파일은 생성된 콘텐츠로 채워질 사용자 지정 마스크를 나타냅니다.</p> </td> 
 </td> 
   </tr> 
   <tr> 
@@ -320,3 +281,49 @@ Adobe Firefly 커넥터는 다음을 사용합니다.
   </tr> 
  </tbody> 
 </table>
+
+
+
+### 사용자 지정 API 호출 만들기
+
+이 작업 모듈은 Firefly API에 대한 사용자 지정 호출을 만듭니다.
+
+사용 가능한 특정 API에 대해서는 Adobe Developer 설명서에서 [Adobe Firefly API](https://developer.adobe.com/firefly-services/docs/firefly-api/)를 참조하십시오.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>[!DNL Adobe Firefly]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >[!DNL Adobe Firefly]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL URL]</td>
+      <td>
+        <p><code>https://firefly-api.adobe.io/</code>과(와) 관련된 경로를 입력하십시오.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Method]</p>
+      </td>
+   <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Headers]</td>
+      <td>
+        <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p>
+        <p>For example, <code>{"Content-type":"application/json"}</code></p>
+        <p>[!DNL Workfront Fusion] 인증 헤더를 자동으로 추가합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Body]</td>
+   <td> <p>표준 JSON 개체의 형태로 API 호출에 대한 본문 콘텐츠를 추가합니다.</p> <p>참고:  <p>JSON에서 <code>if</code>과(와) 같은 조건문을 사용할 때 따옴표를 조건문 외부에 넣으십시오.</p> 
+     <div class="example" data-mc-autonum="<b>Example: </b>"> 
+      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+     </div> </p> </td>     </tr>
+  </tbody>
+</table>
+

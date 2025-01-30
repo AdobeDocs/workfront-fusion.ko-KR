@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: 91b65888e082d56bf510d0df522f405ff74384d8
+source-git-commit: e3ec0cf05665559790e4ae96c875e181a1ee36ff
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '415'
 ht-degree: 0%
 
 ---
@@ -98,6 +98,7 @@ Fusion은 다양한 타사 응용 프로그램을 위한 커넥터를 제공합�
 * [Microsoft Dynamics 재무 및 운영 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/dynamics-finance-operations-modules.md)
 * [Microsoft OneDrive 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-onedrive-modules.md)
 * [비즈니스용 Microsoft OneDrive 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-onedrive-for-business-modules.md)
+* [Microsoft SharePoint Online 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sharepoint-modules.md)
 * [Microsoft Server 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-sql-server-modules.md)
 * [Microsoft Word 템플릿 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-word-templates-modules.md)
 * [NetSuite 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/netsuite.md)
@@ -108,7 +109,6 @@ Fusion은 다양한 타사 응용 프로그램을 위한 커넥터를 제공합�
 * [Salesforce 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/salesforce-modules.md)
 * [SDL 관리 번역 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sdl-managed-translation-modules.md)
 * [ServiceNow 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/servicenow-modules.md)
-* [SharePoint 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sharepoint-modules.md)
 * [Slack 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
 * [Split.io 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/split-io-modules.md)
 * [Trello 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)

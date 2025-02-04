@@ -4,14 +4,18 @@ description: 시나리오 채점 전문가는 모범 사례를 따르는 방식�
 author: Becky
 feature: Workfront Fusion
 exl-id: b668e7f6-dac5-4ac9-b3f3-109f70eaa2c4
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 1ac1c4358901ef81bb7375c24fcdf1a44119af13
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '349'
 ht-degree: 1%
 
 ---
 
 # 시나리오 채점 전문가 실행
+
+>[!IMPORTANT]
+>
+>시나리오 채점 전문가가 일시적으로 비활성화되었습니다.
 
 시나리오 채점 전문가는 모범 사례를 따르는 방식으로 시나리오가 구성되도록 하는 데 도움이 될 수 있습니다. 시나리오를 확인하고 구조 및 조직에 대한 권장 사항을 제공합니다.
 

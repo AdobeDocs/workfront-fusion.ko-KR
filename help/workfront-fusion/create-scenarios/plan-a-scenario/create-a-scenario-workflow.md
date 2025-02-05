@@ -4,9 +4,9 @@ description: 시나리오를 만들려면 이 일반 워크플로를 따르십�
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 0029e6a79c6fb7479ddd0948c773349efa075403
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
@@ -145,6 +145,26 @@ Google, Microsoft 또는 전용 커넥터가 없는 응용 프로그램과 관�
    <td role="rowheader">[!UICONTROL Run Once]</td> 
    <td>Ctrl+Shift+Enter</td> 
    <td><span style="font-weight: normal;">Cmd+Shift+Enter</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Open the DevTool]</td> 
+   <td>F12</td> 
+   <td><span style="font-weight: normal;">Ctrl+Fn+F12</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Copy]</td> 
+   <td>Ctrl+C</td> 
+   <td><span style="font-weight: normal;">Cmd+C</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Paste]</td> 
+   <td>Ctrl+V</td> 
+   <td><span style="font-weight: normal;">Cmd+V</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Select multiple modules]</td> 
+   <td>Shift+드래그</td> 
+   <td><span style="font-weight: normal;">Shift+드래그</span> </td> 
   </tr> 
  </tbody> 
 </table>

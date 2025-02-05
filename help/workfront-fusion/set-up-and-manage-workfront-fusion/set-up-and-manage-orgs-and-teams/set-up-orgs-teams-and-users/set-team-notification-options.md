@@ -4,9 +4,9 @@ description: 이메일 알림 옵션은 팀 수준에서 설정됩니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: 570a09fc-01a9-4952-8a2b-8bfdd86d0bd8
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 410676b7def1e36de12fee9d6df79feba566d741
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '240'
 ht-degree: 1%
 
 ---
@@ -89,7 +89,7 @@ Workfront Fusion에서는 Adobe 알림 영역을 통해 알림을 받습니다. 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Scenario deactivation]</p> </td> 
-      <td><p>시나리오가 비활성화되면 이메일을 받습니다.</p><p><b>참고:</b> 시나리오가 오류로 인해 자동으로 비활성화되는 경우에만 시나리오 비활성화에 대한 알림을 받습니다. 수동으로 비활성화된 시나리오에 대한 알림은 받지 않습니다.</p><p>시나리오가 성능 또는 다른 문제를 일으키므로 [!DNL Workfront Fusion] 엔지니어링 팀에서 시나리오를 비활성화하는 경우가 있습니다. 이러한 경우 [!DNL Workfront Fusion]에서 알림을 받지 않습니다. </p></td>
+      <td><p>시나리오가 비활성화되면 이메일을 받습니다.</p><p>시나리오가 성능 또는 다른 문제를 일으키므로 [!DNL Workfront Fusion] 엔지니어링 팀에서 시나리오를 비활성화하는 경우가 있습니다. 이러한 경우 [!DNL Workfront Fusion]에서 알림을 받지 않습니다. </p></td>
 
 </tr>
 </tbody>

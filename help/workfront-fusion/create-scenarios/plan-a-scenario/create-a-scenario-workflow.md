@@ -4,9 +4,9 @@ description: 시나리오를 만들려면 이 일반 워크플로를 따르십�
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: c34adf455ce01da52c321d3f997a58f8251d97bf
+source-git-commit: 394f80a2d7c124bbd00e1a5b51ad3dc6e73a996b
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '772'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,7 @@ ht-degree: 0%
 * [시나리오 설정 구성](#onfigure-scenario-settings)
 * [테스트 및 개정](#test-and-revise)
 * [시나리오 활성화](#activate-the-scenario)
+* [Workfront Fusion 시나리오 키보드 단축키](#workfront-fusion-scenario-keyboard-shortcuts)
 
 키보드 단축키
 

@@ -4,7 +4,7 @@ description: Adobe Workfront Fusion을 사용하여 사용자 지정 OAuth 클�
 author: Becky
 feature: Workfront Fusion
 exl-id: 2f0bc289-4ecf-4a31-9d7b-641bbca6fc95
-source-git-commit: 362952ec85b0df2306ba117ba530e95201330cca
+source-git-commit: 5971b2210eaac8f8a75fd7a4aac5a9f7954d27ef
 workflow-type: tm+mt
 source-wordcount: '964'
 ht-degree: 1%
@@ -84,7 +84,7 @@ Google Cloud Platform에서 프로젝트를 생성하려면:
 
 1. Google Cloud Platform에서 프로젝트 만들기를 시작합니다.
 
-   지침은 Google 설명서에서 [Google Cloud 프로젝트 만들기](https://developers.google.com/workspace/guides/create-project)를 참조하십시오.
+   자세한 내용은 Google 설명서에서 [Google Cloud 프로젝트 만들기](https://developers.google.com/workspace/guides/create-project)를 참조하십시오.
 1. API를 활성화할 때, Google Drive API와 사용하려는 모든 Google 앱의 API(예: Google Sheets API)를 활성화해야 합니다.
 1. 프로젝트 작성을 완료합니다.
 1. 이 문서의 [OAuth 동의 설정 구성](#configure-oauth-consent-settings) 섹션을 계속합니다.

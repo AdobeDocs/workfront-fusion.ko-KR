@@ -4,9 +4,9 @@ description: AI를 사용하여 시나리오의 세그먼트가 수행해야 할
 author: Becky
 feature: Workfront Fusion
 exl-id: d231e33a-6033-4e3c-b1d4-7034797c45a5
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 9d29abc82a3bb09affc4d17d7ea214d7bb850294
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '600'
 ht-degree: 1%
 
 ---
@@ -68,6 +68,15 @@ AI에서 생성된 모든 것과 마찬가지로 생성된 모듈을 두 번 확
 
 +++
 
+## 전제 조건
+
+이 기능을 사용하려면 조직에서 다음 전제 조건을 충족해야 합니다.
+
+* 귀사는 Workfront AI Assistant Beta 프로그램에 참여했어야 합니다.
+* Adobe은 조직의 파일에 대해 서명된 Adobe Gen AI 계약이 있어야 합니다.
+
+  계약 서명에 대한 자세한 내용은 Workfront 설명서의 AI Assistant 개요에서 [Adobe Gen AI 계약 서명](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement)을 참조하십시오.
+
 ## 현재 지원되는 AI 모듈 애플리케이션
 
 Fusion AI는 현재 다음 애플리케이션에 연결하는 모듈을 생성할 수 있습니다.
@@ -95,15 +104,8 @@ Fusion AI는 현재 다음 애플리케이션에 연결하는 모듈을 생성�
 1. 왼쪽 패널의 **[!UICONTROL Scenarios]** 탭을 클릭합니다.
 1. 모듈을 추가할 시나리오를 선택합니다.
 1. 시나리오의 아무 곳이나 클릭하여 시나리오 편집기를 입력합니다.
-1. 시나리오 편집기 페이지 하단 근처에 있는 AI로 생성 아이콘 ![AI로 생성](assets/generate-with-ai-icon-beta.png)을 클릭합니다.
-
-   또는
-
-   모듈 추가를 시작하고 응용 프로그램 목록에서 **AI로 생성**&#x200B;을 선택합니다. 이 옵션은 시나리오에 첫 번째 (트리거) 모듈을 추가할 때 나타나지 않습니다.
-
-   AI 지원 패널이 열립니다.
-1. (조건부) AI를 사용하여 시나리오 세그먼트를 처음 추가하는 경우 표시되는 계약을 읽고 **동의**&#x200B;를 클릭합니다.
-1. 상자에 텍스트 프롬프트를 입력합니다.
+1. 화면 오른쪽 상단 근처에 있는 **AI Assistant** 아이콘 ![AI Assistant 아이콘](assets/ai-assistant-icon.png)을 클릭합니다.
+1. AI 지원 패널에 텍스트 프롬프트를 입력합니다.
 
    프롬프트에 대한 팁은 이 문서에서 [시나리오 세그먼트에 대한 프롬프트 작성 팁](#tips-for-creating-prompts-for-scenario-segments)을 참조하십시오.
 

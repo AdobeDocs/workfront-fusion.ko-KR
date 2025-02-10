@@ -4,7 +4,7 @@ description: OAuth 2.0 인증이 필요한 서버에  [!DNL Adobe Workfront Fusi
 author: Becky
 feature: Workfront Fusion
 exl-id: a302a1d4-fddf-4a71-adda-6b87ff7dba4b
-source-git-commit: d9d3f21279ba89f544adc0ffa9345543907aa777
+source-git-commit: 1a42567e93b4fae67c92720b7642186919e4c93d
 workflow-type: tm+mt
 source-wordcount: '1980'
 ht-degree: 0%
@@ -80,7 +80,7 @@ OAuth 2.0 인증에 대한 자세한 내용은 [OAuth 2.0 권한 부여 프레�
 ## [!DNL OAuth] 요청에 대한 연결 만들기
 
 * [HTTP > OAuth 2.0 요청 모듈 만들기에서 연결을 만드는 일반적인 지침](#general-instructions-for-creating-a-connection-in-the-http--make-an-oauth-20-request-module)
-* [HTTP >[!UICONTROL Make] 및 OAuth 2.0 요청 모듈에서 Google에 대한 연결을 만들기 위한 지침](#instructions-for-creating-a-connection-to-google-in-the-http-make-an-oauth-20-request-module)
+* [http > [!UICONTROL Make] 및 OAuth 2.0 요청 모듈에서 Google에 대한 연결을 만들기 위한 지침](#instructions-for-creating-a-connection-to-google-in-the-http-make-an-oauth-20-request-module)
 * [HTTP > OAuth 2.0 요청 모듈 만들기를 통해 Microsoft Graph API에 연결하기 위한 지침](#instructions-for-connecting-to-microsoft-graph-api-via-the-http--make-an-oauth-20-request-module)
 
 ### [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] 모듈에서 연결을 만들기 위한 일반적인 지침

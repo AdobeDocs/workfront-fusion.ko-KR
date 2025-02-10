@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는  [!DNL Servic
 author: Becky
 feature: Workfront Fusion
 exl-id: 7b236869-bd83-4db5-a363-d6570f6e4aff
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 7357044d19f93a91d22cede81e7316ff86733fdf
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1340'
 ht-degree: 0%
 
 ---
@@ -21,42 +21,46 @@ ht-degree: 0%
 
 ## 액세스 요구 사항
 
++++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
+
 이 문서의 기능을 사용하려면 다음 액세스 권한이 있어야 합니다.
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 플랜*</td>
-  <td> <p>[!UICONTROL Pro] 이상</p> </td>
+   <td role="rowheader">Adobe Workfront 패키지</td> 
+   <td> <p>임의</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 라이센스*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront 라이선스</td> 
+   <td> <p>새로운 기능: 표준</p><p>또는</p><p>현재: 작업 시간 이상</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td> 
+   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재 라이선스 요구 사항: [!DNL Workfront Fusion] 라이선스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
    <p>또는</p>
-   <p>레거시 라이선스 요구 사항: 작업 자동화 및 통합을 위한 [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>현재 제품 요구 사항: [!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Adobe Workfront] 플랜이 있는 경우 조직에서 이 문서에 설명된 기능을 사용하려면 [!DNL Adobe Workfront Fusion]과(와) [!DNL Adobe Workfront]을(를) 구매해야 합니다. [!DNL Workfront Fusion]이(가) [!UICONTROL Ultimate] [!DNL Workfront] 계획에 포함되어 있습니다.</p>
+   <p>신규:</p> <ul><li>또는 Prime Workfront 패키지 선택: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</li><li>Ultimate Workfront 패키지: Workfront Fusion이 포함됩니다.</li></ul>
    <p>또는</p>
-   <p>레거시 제품 요구 사항: 이 문서에 설명된 기능을 사용하려면 조직에서 [!DNL Adobe Workfront Fusion]과(와) [!DNL Adobe Workfront]을(를) 구매해야 합니다.</p>
+   <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-보유 중인 플랜, 라이선스 유형 또는 액세스 권한을 확인하려면 [!DNL Workfront] 관리자에게 문의하세요.
+이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 [!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+
++++
 
 ## 전제 조건
 
@@ -97,6 +101,14 @@ ServiceNow 커넥터는 다음을 사용합니다.
       <td>새 [!DNL ServiceNow] 연결의 이름 입력</td> 
      </tr> 
      <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Environment]</p> </td> 
+      <td>프로덕션 환경에 연결할지 아니면 비프로덕션 환경에 연결할지 선택합니다.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Password]</p> </td> 
+      <td>서비스 계정에 연결할지 또는 개인 계정에 연결할지 선택합니다. </td> 
+     </tr> 
+     <tr> 
       <td role="rowheader"> <p>[!UICONTROL Username]</p> </td> 
       <td>[!DNL ServiceNow] 사용자 이름을 입력하십시오.</td> 
      </tr> 
@@ -123,22 +135,13 @@ ServiceNow 커넥터는 다음을 사용합니다.
 
 >[!NOTE]
 >
->&quot;[!UICONTROL Record type]&quot; 필드에서 사용자 지정 레코드를 선택한 경우 사용자 지정 필드를 로드하는 데 시간이 걸릴 수 있습니다.
+>* &quot;[!UICONTROL Record type]&quot; 필드에서 사용자 지정 레코드를 선택한 경우 사용자 지정 필드를 로드하는 데 시간이 걸릴 수 있습니다.
 >
->사용자 지정 레코드가 없으면 드롭다운이 비어 있습니다.
+>* 사용자 지정 레코드가 없으면 &quot;레코드 유형&quot; 필드 드롭다운이 비어 있습니다.
 
-* [[!UICONTROL Watch records]](#watch-records)
-* [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Read a record]](#read-a-record)
-* [[!UICONTROL Deactivate a User]](#deactivate-a-user)
-* [[!UICONTROL Download an attachment]](#download-an-attachment)
-* [[!UICONTROL Upload an attachment]](#upload-an-attachment)
-* [[!UICONTROL Create a record]](#create-a-record)
-* [[!UICONTROL Update a record]](#update-a-record)
-* [[!UICONTROL Delete a record]](#delete-a-record)
-* [[!UICONTROL Search for records]](#search-for-records)
+### 트리거
 
-### [!UICONTROL Watch records]
+#### [!UICONTROL Watch records]
 
 이 트리거 모듈은 레코드가 생성되거나 업데이트될 때 시나리오를 활성화합니다.
 
@@ -177,7 +180,43 @@ ServiceNow 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-### [!UICONTROL Custom API Call]
+### 액션
+
+* [[!UICONTROL Create a record]](#create-a-record)
+* [[!UICONTROL Custom API Call]](#custom-api-call)
+* [[!UICONTROL Deactivate a User]](#deactivate-a-user)
+* [[!UICONTROL Delete a record]](#delete-a-record)
+* [[!UICONTROL Download an attachment]](#download-an-attachment)
+* [[!UICONTROL Read a record]](#read-a-record)
+* [[!UICONTROL Upload an attachment]](#upload-an-attachment)
+* [[!UICONTROL Update a record]](#update-a-record)
+
+#### [!UICONTROL Create a record]
+
+이 작업 모듈은 새 [!DNL ServiceNow] 레코드를 만듭니다.
+
+이 모듈을 구성할 때 다음 필드가 표시됩니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>ServiceNow 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">[!DNL ServiceNow]을(를) [!UICONTROL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Table type]</td> 
+   <td>사용자 지정 테이블에 레코드를 만들지 아니면 표준 테이블에 레코드를 만들지 선택합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Record Type]</td> 
+   <td>모듈을 만들 [!DNL ServiceNow] 레코드 형식을 선택하십시오. 그런 다음 이 레코드 종류에 사용 가능한 필드를 채울 수 있습니다.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Custom API Call]
 
 이 작업 모듈을 사용하면 [!DNL ServiceNow] API에 대해 사용자 지정 인증된 호출을 수행할 수 있습니다. 이렇게 하면 다른 [!DNL ServiceNow] 모듈에서 수행할 수 없는 데이터 흐름 자동화를 만들 수 있습니다.
 
@@ -193,11 +232,11 @@ ServiceNow 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Relative URL]</td> 
-   <td> <p>모듈이 상호 작용할 웹 서버의 주소를 입력합니다.</p> <p>상대 URL을 입력할 수 있습니다. 즉, 처음부터 프로토콜을 포함할 필요가 없습니다(예: <code>http://</code>). 이것은 상호작용이 서버에서 발생하고 있음을 웹 서버에 시사한다.</p> <p>For example: <code>[!DNL /api/conversations].create</code></p> </td> 
+   <td> <code>https://&ltinstance_url&gt/api/</code>과(와) 관련된 경로를 입력하십시오. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   td&gt; <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
+   <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -217,7 +256,70 @@ ServiceNow 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-### [!UICONTROL Read a record]
+#### [!UICONTROL Deactivate a User]
+
+이 작업 모듈은 시스템 ID를 사용하여 [!DNL ServiceNow]의 사용자를 비활성화합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>ServiceNow 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">[!DNL ServiceNow]을(를) [!UICONTROL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL User System ID]</td> 
+   <td> 모듈을 비활성화하려는 사용자의 고유한 [!DNL ServiceNow] ID를 입력하거나 매핑합니다.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Delete a record]
+
+이 작업 모듈은 문제 또는 사용자를 삭제합니다.
+
+이 모듈을 구성할 때 다음 필드가 표시됩니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>ServiceNow 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">[!DNL ServiceNow]을(를) [!UICONTROL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Record Type]</td> 
+   <td>인시던트를 삭제할지 사용자를 삭제할지 선택합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL System ID]</td> 
+   <td>모듈에서 삭제할 레코드의 고유 [!DNL ServiceNow] ID를 입력하거나 매핑합니다.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Download an attachment]
+
+이 작업 모듈은 [!DNL ServiceNow] 레코드의 첨부 파일을 다운로드합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>ServiceNow 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">[!DNL ServiceNow]을(를) [!UICONTROL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Attachment System ID]</td> 
+   <td> 모듈에서 다운로드할 첨부 파일의 고유 [!DNL ServiceNow] ID를 입력하거나 매핑합니다.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Read a record]
 
 이 작업 모듈은 시스템 ID를 사용하여 [!DNL ServiceNow] 레코드를 읽습니다.
 
@@ -256,101 +358,7 @@ ServiceNow 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-### [!UICONTROL Deactivate a User]
-
-이 작업 모듈은 시스템 ID를 사용하여 [!DNL ServiceNow]의 사용자를 비활성화합니다.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>ServiceNow 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">[!DNL ServiceNow]을(를) [!UICONTROL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL User System ID]</td> 
-   <td> 모듈을 비활성화하려는 사용자의 고유한 [!DNL ServiceNow] ID를 입력하거나 매핑합니다.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Download an attachment]
-
-이 작업 모듈은 [!DNL ServiceNow] 레코드의 첨부 파일을 다운로드합니다.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>ServiceNow 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">[!DNL ServiceNow]을(를) [!UICONTROL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Attachment System ID]</td> 
-   <td> 모듈에서 다운로드할 첨부 파일의 고유 [!DNL ServiceNow] ID를 입력하거나 매핑합니다.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Upload an attachment]
-
-이 작업 모듈은 첨부 파일을 [!DNL ServiceNow] 레코드로 업로드합니다.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>ServiceNow 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">[!DNL ServiceNow]을(를) [!UICONTROL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Table name]</td> 
-   <td>첨부 파일을 업로드할 테이블의 이름을 입력하거나 매핑합니다.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL System ID]</td> 
-   <td>첨부 파일을 업로드할 시스템의 고유한 [!DNL ServiceNow] ID를 입력하거나 매핑하십시오.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL File name]</td> 
-   <td>첨부 파일 이름 입력 또는 매핑</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL File content]</td> 
-   <td>[!DNL ServiceNow]에 업로드할 파일을 입력하거나 매핑합니다.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Create a record]
-
-이 작업 모듈은 새 [!DNL ServiceNow] 레코드를 만듭니다.
-
-이 모듈을 구성할 때 다음 필드가 표시됩니다.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>ServiceNow 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">[!DNL ServiceNow]을(를) [!UICONTROL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Table type]</td> 
-   <td>사용자 지정 테이블에 레코드를 만들지 아니면 표준 테이블에 레코드를 만들지 선택합니다.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Record Type]</td> 
-   <td>모듈을 만들 [!DNL ServiceNow] 레코드 형식을 선택하십시오. 그런 다음 이 레코드 종류에 사용 가능한 필드를 채울 수 있습니다.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Update a record]
+#### [!UICONTROL Update a record]
 
 이 작업 모듈은 새 [!DNL ServiceNow] 레코드를 만듭니다.
 
@@ -379,11 +387,9 @@ ServiceNow 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-### [!UICONTROL Delete a record]
+#### [!UICONTROL Upload an attachment]
 
-이 작업 모듈은 문제 또는 사용자를 삭제합니다.
-
-이 모듈을 구성할 때 다음 필드가 표시됩니다.
+이 작업 모듈은 첨부 파일을 [!DNL ServiceNow] 레코드로 업로드합니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -394,17 +400,23 @@ ServiceNow 커넥터는 다음을 사용합니다.
    <td> <p>ServiceNow 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">[!DNL ServiceNow]을(를) [!UICONTROL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record Type]</td> 
-   <td>인시던트를 삭제할지 사용자를 삭제할지 선택합니다.</td> 
+   <td role="rowheader">[!UICONTROL Table name]</td> 
+   <td>첨부 파일을 업로드할 테이블의 이름을 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL System ID]</td> 
-   <td>모듈에서 삭제할 레코드의 고유 [!DNL ServiceNow] ID를 입력하거나 매핑합니다.</td> 
+   <td>첨부 파일을 업로드할 항목의 고유한 [!DNL ServiceNow] ID를 입력하거나 매핑합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td> <p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 이름과 데이터를 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Search for records]
+### 검색 결과
+
+#### [!UICONTROL Search for records]
 
 이 모듈은 사용자가 선택한 기준을 사용하여 레코드를 검색합니다.
 
@@ -444,7 +456,7 @@ ServiceNow 커넥터는 다음을 사용합니다.
       </ul> </li> 
      <li> <p><strong>[!UICONTROL Simple]</strong> </p> 
       <ul> 
-       <li> <p>[!UICONTROL Search Criteria]</p> <p>모듈에서 검색할 기준을 입력합니다. <!--For more information on setting up search filters, see <a href="." class="MCXref xref">Add a filter to a scenario in Adobe Workfront Fusion</a>.</p>--> </li> 
+       <li> <p>[!UICONTROL Search Criteria]</p> <p>모듈에서 검색할 기준을 입력합니다. </li> 
        <li> <p>[!UICONTROL Sort by]</p> <p>모듈에서 결과를 정렬할 기준 필드와 오름차순 또는 내림차순 정렬 여부를 나타냅니다.</p> </li> 
       </ul> </li> 
     </ul> <p> </p> </td> 

@@ -1,12 +1,12 @@
 ---
-title: HTTP &gt; API 키 인증 요청 만들기
+title: HTTP > API 키 인증 요청 만들기
 description: 이 [!DNL Adobe Workfront Fusion] 작업 모듈은 API 키 인증 권한이 필요한 지정된 URL에 HTTPS 요청을 보내고 응답을 처리합니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: 362b80b5-42f4-4b82-b06c-39c7c5a1eb1a
-source-git-commit: 1a42567e93b4fae67c92720b7642186919e4c93d
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '862'
 ht-degree: 1%
 
 ---
@@ -120,7 +120,7 @@ ht-degree: 1%
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data]은(는) 파일 및 데이터를 보내는 데 사용되는 HTTP 다중 파트 요청입니다. 일반적으로 서버에 파일을 업로드하는 데 사용됩니다.</p> <p>요청에 전송할 필드를 추가합니다. 각 필드에는 키-값 쌍이 포함되어야 합니다.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>요청 본문 내에 보낼 키와 값을 입력합니다.</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>키를 입력하고 요청 본문에 보낼 소스 파일을 지정합니다.</p> <p>이전 모듈에서 업로드할 파일을 매핑하거나([!UICONTROL HTTP] &gt;[!UICONTROL Get a File] 또는 [!UICONTROL Google Drive] &gt;[!UICONTROL Download a File)]) 파일 이름과 파일 데이터를 수동으로 입력합니다.</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>키를 입력하고 요청 본문에 보낼 소스 파일을 지정합니다.</p> <p>이전 모듈에서 업로드할 파일을 매핑하거나([!UICONTROL HTTP] &gt; [!UICONTROL Get a File] 또는 [!UICONTROL Google Drive] &gt;[!UICONTROL Download a File]) 파일 이름과 파일 데이터를 수동으로 입력합니다.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 

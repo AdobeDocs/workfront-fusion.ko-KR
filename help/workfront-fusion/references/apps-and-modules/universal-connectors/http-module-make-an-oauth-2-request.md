@@ -1,12 +1,12 @@
 ---
-title: HTTP &gt; OAuth 2.0 요청 모듈 만들기
+title: HTTP > OAuth 2.0 요청 모듈 만들기
 description: OAuth 2.0 인증이 필요한 서버에  [!DNL Adobe Workfront Fusion] HTTP(S) 요청을 하려면 먼저 OAuth 연결을 만들어야 합니다. [!DNL Adobe Workfront Fusion] 이 연결을 사용하여 만든 모든 호출에 적절한 인증 헤더가 있는지 확인하고 필요한 경우 관련 토큰을 자동으로 새로 고칩니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: a302a1d4-fddf-4a71-adda-6b87ff7dba4b
-source-git-commit: 1a42567e93b4fae67c92720b7642186919e4c93d
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '1980'
+source-wordcount: '1978'
 ht-degree: 0%
 
 ---
@@ -227,7 +227,7 @@ OAuth 2.0 인증에 대한 자세한 내용은 [OAuth 2.0 권한 부여 프레�
 1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL Continue]**&#x200B;을(를) 클릭하십시오.
 1. [OAuth 2.0 요청 모듈 만들기](#configure-the-make-an-oauth-20-request-module)를 계속 진행합니다.
 
-### [!UICONTROL HTTP] >[!UICONTROL Make an OAuth 2.0 request module]에서 [!DNL Google]에 대한 연결을 만드는 방법
+### [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request module]에서 [!DNL Google]에 대한 연결을 만드는 방법
 
 다음 예제에서는 [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0] 요청 모듈을 사용하여 [!DNL Google]에 연결하는 방법을 보여 줍니다.
 
@@ -333,7 +333,7 @@ OAuth 2.0 연결을 설정한 후 원하는 대로 모듈을 계속 설정합니
    <td> <p>HTTP Body는 사용할 데이터 바이트가 있는 경우 헤더 바로 다음에 오는 HTTP 트랜잭션 메시지로 전송됩니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p>원시 본문 유형은 일반적으로 개발자 설명서에서 전송할 데이터를 지정하지 않는 경우에도 대부분의 HTTP 본문 요청에 적합합니다.</p> <p>[!UICONTROL Content type] 필드의 데이터를 구문 분석하는 형식을 지정하십시오.</p> <p>선택한 콘텐츠 유형에도 불구하고 데이터는 개발자 설명서에서 규정하거나 요구하는 모든 형식으로 입력됩니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>이 본문 형식은 <code>[!UICONTROL application/x-www-form-urlencoded]</code>을(를) 사용하여 데이터를 POST 하는 것입니다.</p> <p><code>[!UICONTROL application/x-www-form-urlencoded]</code>의 경우 서버로 전송된 HTTP 메시지의 본문은 기본적으로 하나의 쿼리 문자열입니다. 키와 값은 키와 값 사이에 <code>=</code>이(가) 있고 <code>&amp;</code>(으)로 구분된 키-값 쌍으로 인코딩됩니다. </p> <p>이진 데이터의 경우 대신 <code>use [!UICONTROL multipart/form-data]</code>을(를) 사용합니다.</p> 
+     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>이 본문 형식은 <code>[!UICONTROL application/x-www-form-urlencoded]</code>을(를) 사용하여 데이터를 게시하는 것입니다.</p> <p><code>[!UICONTROL application/x-www-form-urlencoded]</code>의 경우 서버로 전송된 HTTP 메시지의 본문은 기본적으로 하나의 쿼리 문자열입니다. 키와 값은 키와 값 사이에 <code>=</code>이(가) 있고 <code>&amp;</code>(으)로 구분된 키-값 쌍으로 인코딩됩니다. </p> <p>이진 데이터의 경우 대신 <code>use [!UICONTROL multipart/form-data]</code>을(를) 사용합니다.</p> 
       <div class="example" data-mc-autonum="<b>Example: </b>">
        <span class="autonumber"><span><b>예: </b></span></span> 
        <p>결과 HTTP 요청 형식의 예:</p> 
@@ -342,7 +342,7 @@ OAuth 2.0 연결을 설정한 후 원하는 대로 모듈을 계속 설정합니
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data]은(는) 파일 및 데이터를 보내는 데 사용되는 HTTP 다중 파트 요청입니다. 일반적으로 서버에 파일을 업로드하는 데 사용됩니다.</p> <p>요청에 전송할 필드를 추가합니다. 각 필드에는 키-값 쌍이 포함되어야 합니다.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>요청 본문 내에 보낼 키와 값을 입력합니다.</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>키를 입력하고 요청 본문에 보낼 소스 파일을 지정합니다.</p> <p>이전 모듈에서 업로드할 파일을 매핑하거나([!UICONTROL HTTP] &gt;[!UICONTROL Get a File] 등) 파일 이름과 파일 데이터를 수동으로 입력하십시오.</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>키를 입력하고 요청 본문에 보낼 소스 파일을 지정합니다.</p> <p>이전 모듈에서 업로드할 파일을 매핑하거나([!UICONTROL HTTP] &gt; [!UICONTROL Get a File]) 파일 이름과 파일 데이터를 수동으로 입력하십시오.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 

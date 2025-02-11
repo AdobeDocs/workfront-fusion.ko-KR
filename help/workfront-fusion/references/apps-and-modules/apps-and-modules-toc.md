@@ -6,7 +6,7 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: 1a42567e93b4fae67c92720b7642186919e4c93d
+source-git-commit: cca7aa6e15df0fd313e9d4ca391994a8ef4c974a
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%
@@ -24,10 +24,10 @@ ht-degree: 0%
 이러한 커넥터를 사용하면 공개 API가 있는 모든 앱 또는 웹 서비스에 연결할 수 있습니다.
 
 * [http > [!UICONTROL Make a request] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
-* [[!UICONTROL HTTP] >[!UICONTROL Make a Basic Authorization request] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Make a Basic Authorization request] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
 * [[!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
-* [[!UICONTROL HTTP] >[!UICONTROL Make a Client Certificate Authorization request] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
-* [[!UICONTROL HTTP] >[!UICONTROL Make an API Key Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Make a Client Certificate Authorization request] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Make an API Key Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
 * [[!UICONTROL HTTP] > 기타 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-modules.md)
 * [SOAP 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/soap-module.md)
 * [FTP 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/ftp-modules.md)
@@ -46,10 +46,10 @@ Fusion은 Adobe의 많은 제품 및 서비스를 위한 커넥터를 제공합�
 * [Adobe Experience Manager Forms 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
 * [Adobe Firefly 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
 * [Adobe Frame.io 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
-* [Adobe I/O 이벤트 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
+* [Adobe I/O Events 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
 * [Adobe Journey Optimizer 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-journey-optimizer-modules.md)
 * [Adobe Lightroom 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-lightroom-modules.md)
-* [Marketo 모듈 Adobe](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-modules.md)
+* [Adobe Marketo 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-modules.md)
 * [Adobe PDF 서비스 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/pdf-modules.md)
 * [Adobe Photoshop 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-photoshop-modules.md)
 * [Adobe Target 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
@@ -82,7 +82,7 @@ Fusion은 다양한 타사 응용 프로그램을 위한 커넥터를 제공합�
 * [GitLab 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/gitlab-modules.md)
 * [Gmail 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/gmail-modules.md)
 * [Google 달력 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-calendar-modules.md)
-* [Google 문서 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-docs-modules.md)
+* [Google Docs 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-docs-modules.md)
 * [Google 드라이브 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-drive-modules.md)
 * [Google Forms 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-forms-modules.md)
 * [Google Sheets 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-sheets-modules.md)

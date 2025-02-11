@@ -1,12 +1,12 @@
 ---
-title: HTTP &gt; 클라이언트 인증서 인증 요청 모듈 만들기
+title: HTTP > 클라이언트 인증서 인증 요청 모듈 만들기
 description: 이 [!DNL Adobe Workfront Fusion] 모듈을 사용하면 HTTP 클라이언트 인증서 인증을 사용하여 HTTP 요청을 구성하고 서버에 제출할 수 있습니다. 그러면 수신된 HTTP 응답이 출력 번들에 포함됩니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: cc33530c-3010-4955-8819-5eb8373a0e10
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '804'
 ht-degree: 0%
 
 ---
@@ -64,9 +64,9 @@ ht-degree: 0%
 
 [!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
 
-## [!UICONTROL HTTP] >[!UICONTROL Make a Client Certificate Authorization request] 모듈 구성
+## [!UICONTROL HTTP] > [!UICONTROL Make a Client Certificate Authorization request] 모듈 구성
 
-[!UICONTROL HTTP] >[!UICONTROL Make a Client Certificate Authorization request] 모듈을 구성할 때 [!DNL Adobe Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!UICONTROL HTTP] > [!UICONTROL Make a Client Certificate Authorization request] 모듈을 구성할 때 [!DNL Adobe Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보를 매핑 [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
@@ -114,7 +114,7 @@ ht-degree: 0%
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data]은(는) 파일 및 데이터를 보내는 데 사용되는 HTTP 다중 파트 요청입니다. 일반적으로 서버에 파일을 업로드하는 데 사용됩니다.</p> <p>요청에 전송할 필드를 추가합니다. 각 필드에는 키-값 쌍이 포함되어야 합니다.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>요청 본문 내에 보낼 키와 값을 입력합니다.</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>키를 입력하고 요청 본문에 보낼 소스 파일을 지정합니다.</p> <p>이전 모듈에서 업로드할 파일을 매핑하거나([!UICONTROL HTTP] &gt;[!UICONTROL Get a File] 또는 [!UICONTROL Google Drive] &gt;[!UICONTROL Download a File)]) 파일 이름과 파일 데이터를 수동으로 입력합니다.</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>키를 입력하고 요청 본문에 보낼 소스 파일을 지정합니다.</p> <p>이전 모듈에서 업로드할 파일을 매핑하거나([!UICONTROL HTTP] &gt; [!UICONTROL Get a File] 또는 [!UICONTROL Google Drive] &gt;[!UICONTROL Download a File)]) 파일 이름과 파일 데이터를 수동으로 입력합니다.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 

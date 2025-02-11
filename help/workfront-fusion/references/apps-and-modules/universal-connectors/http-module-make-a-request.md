@@ -1,12 +1,12 @@
 ---
-title: HTTP &gt; 요청 모듈 만들기
-description: Adobe Workfront Fusion HTTP &gt; 요청 만들기 모듈은 HTTP 요청을 구성하고 서버에 제출할 수 있는 범용 모듈입니다. 그러면 수신된 HTTP 응답이 출력 번들에 포함됩니다.
+title: HTTP > 요청 모듈 만들기
+description: Adobe Workfront Fusion HTTP > 요청 만들기 모듈은 HTTP 요청을 구성하고 서버에 제출할 수 있는 범용 모듈입니다. 그러면 수신된 HTTP 응답이 출력 번들에 포함됩니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: 42f6176e-86e0-489e-868b-66823a932daf
-source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '815'
 ht-degree: 1%
 
 ---
@@ -104,7 +104,7 @@ ht-degree: 1%
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL  Multipart/form-data]은(는) 파일 및 데이터를 전송하는 데 사용되는 HTTP 다중 파트 요청입니다. 일반적으로 서버에 파일을 업로드하는 데 사용됩니다.</p> <p>요청에 전송할 필드를 추가합니다. 각 필드에는 키-값 쌍이 포함되어야 합니다.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>요청 본문 내에 보낼 키와 값을 입력합니다.</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>키를 입력하고 요청 본문에 보낼 소스 파일을 지정합니다.</p> <p>이전 모듈에서 업로드할 파일을 매핑하거나([!UICONTROL HTTP] &gt;[!UICONTROL Get a File] 또는 [!UICONTROL Google Drive] &gt; 파일 다운로드) 파일 이름과 파일 데이터를 수동으로 입력합니다.</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>키를 입력하고 요청 본문에 보낼 소스 파일을 지정합니다.</p> <p>이전 모듈에서 업로드할 파일을 매핑하거나([!UICONTROL HTTP] &gt; [!UICONTROL Get a File] 또는 [!UICONTROL Google Drive] &gt; 파일 다운로드) 파일 이름과 파일 데이터를 수동으로 입력합니다.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 

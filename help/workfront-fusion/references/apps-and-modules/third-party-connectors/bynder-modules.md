@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는  [!DNL Bynder
 author: Becky
 feature: Workfront Fusion
 exl-id: 0a45f8a7-12cc-41cc-9135-92f4779afac0
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 024176956d5ca9c88112a67c6948d6297f53810e
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1467'
 ht-degree: 0%
 
 ---
@@ -83,6 +83,10 @@ Bynder 커넥터는 다음을 사용합니다.
 
 ## Workfront Fusion에 [!DNL Bynder] 연결  {#connect-bynder-to-workfront-fusion}
 
+>[!NOTE]
+>
+>Byender는 인증 코드/새로 고침 토큰 부여 유형을 사용합니다. 이는 Fusion Byender 커넥터가 사용하는 유일한 권한 부여 유형입니다.
+
 * [ [!DNL Workfront Fusion]에서  [!DNL Bynder] 에 연결 만들기](#create-a-connection-to-bynder-from-workfront-fusion)
 * [ [!DNL Bynder] 에서 [!UICONTROL Client ID] 및 [!UICONTROL Client Secret] 생성(선택 사항)](#generate-a-client-id-and-client-secret-in-bynder-optional)
 
@@ -107,9 +111,10 @@ Bynder 커넥터는 다음을 사용합니다.
 
 >[!NOTE]
 >
->[!DNL Bynder]에서 앱을 만들 때 `redirect uri`(으)로 다음을 입력하십시오.
+>* [!DNL Bynder]에서 앱을 만들 때 `redirect uri`(으)로 다음을 입력하십시오.
 >
->`https://app.workfrontfusion.com/oauth/cb/workfront-bynder`
+>   `https://app.workfrontfusion.com/oauth/cb/workfront-bynder`
+>* Byender는 인증 코드/새로 고침 토큰 부여 유형을 사용합니다. 이는 Fusion Byender 커넥터가 사용하는 유일한 권한 부여 유형입니다.
 
 ## [!DNL Bynder]개 모듈 및 해당 필드
 

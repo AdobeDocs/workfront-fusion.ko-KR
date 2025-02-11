@@ -4,9 +4,9 @@ description: 데이터베이스 또는 간단한 테이블과 유사한  [!DNL A
 author: Becky
 feature: Workfront Fusion
 exl-id: 0338b822-b345-429e-850d-3978b692231d
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 7404dafc0b368a8f1785be7b6a65fe45c0f12172
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1028'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,8 @@ Workfront Fusion의 데이터 저장소에 대한 비디오 소개는 다음을 
 
 ## 액세스 요구 사항
 
++++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
+
 이 문서의 기능을 사용하려면 다음 액세스 권한이 있어야 합니다.
 
 <table style="table-layout:auto">
@@ -32,60 +34,61 @@ Workfront Fusion의 데이터 저장소에 대한 비디오 소개는 다음을 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 플랜*</td>
-  <td> <p>[!UICONTROL Pro] 이상</p> </td>
+   <td role="rowheader">Adobe Workfront 패키지</td> 
+   <td> <p>임의</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 라이센스*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront 라이선스</td> 
+   <td> <p>새로운 기능: 표준</p><p>또는</p><p>현재: 작업 시간 이상</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td> 
+   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재 라이선스 요구 사항: [!DNL Workfront Fusion] 라이선스 요구 사항이 없습니다.</p>
-   <p>또는</p>
-   <p>레거시 라이선스 요구 사항: 작업 자동화 및 통합의 경우 [!UICONTROL [!DNL Workfront Fusion], 작업 자동화의 경우 [!UICONTROL [!DNL Workfront Fusion]]</p>
+   <p>Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>현재 제품 요구 사항: [!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Adobe Workfront] 플랜이 있는 경우 조직에서 이 문서에 설명된 기능을 사용하려면 [!DNL Adobe Workfront Fusion]과(와) [!DNL Adobe Workfront]을(를) 구매해야 합니다. [!DNL Workfront Fusion]이(가) [!UICONTROL Ultimate] [!DNL Workfront] 계획에 포함되어 있습니다.</p>
+   <p>신규:</p> <ul><li>또는 Prime Workfront 패키지 선택: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</li><li>Ultimate Workfront 패키지: Workfront Fusion이 포함됩니다.</li></ul>
    <p>또는</p>
-   <p>레거시 제품 요구 사항: 이 문서에 설명된 기능을 사용하려면 조직에서 [!DNL Adobe Workfront Fusion]과(와) [!DNL Adobe Workfront]을(를) 구매해야 합니다.</p>
+   <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-보유 중인 플랜, 라이선스 유형 또는 액세스 권한을 확인하려면 [!DNL Workfront] 관리자에게 문의하세요.
+이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 [!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+
++++
 
 ## 전제 조건
 
 [!UICONTROL Data Store] 모듈을 사용하려면 먼저 데이터 저장소를 만들어야 합니다.
 
-<!--For information on creating data stores, see [Data Stores in [!UICONTROL Adobe Workfront Fusion]]()-->
+데이터 저장소 만들기에 대한 자세한 내용은 [데이터 저장소 만들기 및 관리](/help/workfront-fusion/create-scenarios/map-data/data-stores.md)를 참조하십시오.
 
-## [!UICONTROL Data Store]개 모듈 및 해당 필드
+## [!UICONTROL Data store]개 모듈 및 해당 필드
 
 데이터 저장소 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 이러한 필드와 함께 앱이나 서비스의 액세스 수준 등의 요소에 따라 추가 데이터 스토어 필드가 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+
+데이터 저장소를 사용하기 위해 연결을 만들 필요는 없습니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
 ![맵 전환](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-모든 [!UICONTROL Data Store] 모듈은 작업 유형 모듈입니다.
 
 * [레코드 추가/바꾸기](#addreplace-a-record)
-* [레코드 업데이트](#update-a-record)
-* [레코드 가져오기](#get-a-record)
 * [레코드 존재 확인](#check-the-existence-of-a-record)
+* [레코드 수](#count-records)
 * [레코드 삭제](#delete-a-record)
 * [모든 레코드 삭제](#delete-all-records)
+* [레코드 가져오기](#get-a-record)
 * [레코드 검색](#search-records)
-* [레코드 수](#count-records)
+* [레코드 업데이트](#update-a-record)
 
 ### [!UICONTROL Add/Replace a Record]
 
@@ -124,62 +127,6 @@ Workfront Fusion의 데이터 저장소에 대한 비디오 소개는 다음을 
  </tbody> 
 </table>
 
-### [!UICONTROL Update a Record]
-
-이 작업 모듈은 레코드를 업데이트합니다.
-
-데이터 저장소 및 레코드 키를 지정합니다.
-
-모듈은 연결에서 액세스하는 사용자 지정 필드 및 값과 함께 레코드 및 관련 필드의 ID를 반환합니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
-
-이 모듈을 구성할 때 다음 필드가 표시됩니다.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Data store]</td> 
-   <td> <p> 레코드를 만들 데이터 저장소를 선택하거나 추가합니다. </p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Key] </td> 
-   <td> <p>모듈을 업데이트할 레코드의 고유 키를 입력합니다.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Insert missing record] </td> 
-   <td> <p>지정된 키가 있는 레코드가 없는 경우 새 레코드를 만들려면 이 옵션을 활성화합니다.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Record]</td> 
-   <td> <p> 갱신할 레코드의 필드에 원하는 값을 입력합니다.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Get a Record]
-
-이 작업 모듈은 레코드를 검색합니다.
-
-데이터 저장소 및 레코드 키를 지정합니다.
-
-모듈은 연결에서 액세스하는 사용자 지정 필드 및 값과 함께 레코드 및 관련 필드의 ID를 반환합니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Data store]</td> 
-   <td> <p> 레코드를 검색할 데이터 저장소를 선택합니다.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Key] </td> 
-   <td> <p>모듈을 검색할 레코드의 고유 키를 입력합니다.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
 ### [!UICONTROL Check the Existence of a Record]
 
 이 작업 모듈은 특정 레코드가 존재하는지 여부를 지정합니다.
@@ -197,6 +144,25 @@ Workfront Fusion의 데이터 저장소에 대한 비디오 소개는 다음을 
   <tr> 
    <td>[!UICONTROL Key] </td> 
    <td> <p>모듈이 존재하는지 확인할 레코드의 고유 키를 입력합니다.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### [!UICONTROL Count Records]
+
+이 작업 모듈은 데이터 저장소의 레코드에 번호를 지정합니다.
+
+데이터 저장소를 지정합니다.
+
+이 모듈을 구성할 때 다음 필드가 표시됩니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Data store] </td> 
+   <td> <p>계산할 레코드가 포함된 데이터 저장소를 선택합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -241,6 +207,29 @@ Workfront Fusion의 데이터 저장소에 대한 비디오 소개는 다음을 
  </tbody> 
 </table>
 
+### [!UICONTROL Get a Record]
+
+이 작업 모듈은 레코드를 검색합니다.
+
+데이터 저장소 및 레코드 키를 지정합니다.
+
+모듈은 연결에서 액세스하는 사용자 지정 필드 및 값과 함께 레코드 및 관련 필드의 ID를 반환합니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Data store]</td> 
+   <td> <p> 레코드를 검색할 데이터 저장소를 선택합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Key] </td> 
+   <td> <p>모듈을 검색할 레코드의 고유 키를 입력합니다.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 ### [!UICONTROL Search Records]
 
 이 검색 모듈은 데이터 저장소의 개체에서 지정한 검색 쿼리와 일치하는 레코드를 찾습니다.
@@ -276,21 +265,35 @@ Workfront Fusion의 데이터 저장소에 대한 비디오 소개는 다음을 
  </tbody> 
 </table>
 
-### [!UICONTROL Count Records]
+### [!UICONTROL Update a Record]
 
-이 작업 모듈은 데이터 저장소의 레코드에 번호를 지정합니다.
+이 작업 모듈은 레코드를 업데이트합니다.
 
-데이터 저장소를 지정합니다.
+데이터 저장소 및 레코드 키를 지정합니다.
+
+모듈은 연결에서 액세스하는 사용자 지정 필드 및 값과 함께 레코드 및 관련 필드의 ID를 반환합니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
 
 이 모듈을 구성할 때 다음 필드가 표시됩니다.
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Data store] </td> 
-   <td> <p>계산할 레코드가 포함된 데이터 저장소를 선택합니다.</p> </td> 
+   <td>[!UICONTROL Data store]</td> 
+   <td> <p> 레코드를 만들 데이터 저장소를 선택하거나 추가합니다. </p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Key] </td> 
+   <td> <p>모듈을 업데이트할 레코드의 고유 키를 입력합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Insert missing record] </td> 
+   <td> <p>지정된 키가 있는 레코드가 없는 경우 새 레코드를 만들려면 이 옵션을 활성화합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Record]</td> 
+   <td> <p> 갱신할 레코드의 필드에 원하는 값을 입력합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>

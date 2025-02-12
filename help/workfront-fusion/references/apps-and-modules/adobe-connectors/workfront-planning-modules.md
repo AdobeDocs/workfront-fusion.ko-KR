@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Planning] 모듈을 사용하면  [!DNL Ado
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 06ba97ec4245f9620f013711df9a77b76abb20be
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1395'
 ht-degree: 0%
 
 ---
@@ -17,42 +17,54 @@ ht-degree: 0%
 
 ## 액세스 요구 사항
 
++++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
+
 이 문서의 기능을 사용하려면 다음 액세스 권한이 있어야 합니다.
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 플랜*</td>
-  <td> <p>[!UICONTROL Pro] 이상</p> </td>
+   <td role="rowheader">Adobe Workfront 패키지</td> 
+   <td> <p>임의</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 라이센스*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront 라이선스</td> 
+   <td> <p>새로운 기능: 표준</p><p>또는</p><p>현재: 작업 시간 이상</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td> 
+   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재 라이선스 요구 사항: [!DNL Workfront Fusion] 라이선스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
    <p>또는</p>
-   <p>레거시 라이선스 요구 사항: 작업 자동화 및 통합을 위한 [!UICONTROL [!DNL Workfront Fusion]] </p>
-   </td>  
+   <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
+   </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>현재 제품 요구 사항: [!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Adobe Workfront] 플랜이 있는 경우 조직에서 이 문서에 설명된 기능을 사용하려면 [!DNL Adobe Workfront Fusion]과(와) [!DNL Adobe Workfront]을(를) 구매해야 합니다. [!DNL Workfront Fusion]이(가) [!UICONTROL Ultimate] [!DNL Workfront] 계획에 포함되어 있습니다.</p>
+   <p>신규:</p> <ul><li>또는 Prime Workfront 패키지 선택: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</li><li>Ultimate Workfront 패키지: Workfront Fusion이 포함됩니다.</li></ul>
    <p>또는</p>
-   <p>레거시 제품 요구 사항: 이 문서에 설명된 기능을 사용하려면 조직에서 [!DNL Adobe Workfront Fusion]과(와) [!DNL Adobe Workfront]을(를) 구매해야 합니다.</p>
+   <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-보유 중인 플랜, 라이선스 유형 또는 액세스 권한을 확인하려면 [!DNL Workfront] 관리자에게 문의하세요.
+이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 [!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+
++++
+
+## 전제 조건
+
+Workfront Planning에 액세스하려면 다음 항목이 있어야 합니다.
+
+* 새로운 Workfront 패키지 및 라이선스. 기존 Workfront 패키지 또는 라이선스에는 Workfront Planning을 사용할 수 없습니다.
+* Workfront Planning 패키지
+* 조직의 Workfront 인스턴스는 Adobe 통합 경험에 온보딩되어야 합니다.
 
 ## Adobe Workfront Planning API 정보
 
@@ -110,7 +122,7 @@ Adobe Workfront Planning 커넥터는 다음을 사용합니다.
           <td>[!DNL Adobe] [!UICONTROL Client Secret]을(를) 입력하십시오. [!DNL Adobe Developer Console]의 [!UICONTROL Credentials details] 섹션에서 찾을 수 있습니다.
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Authentication URL]<p>(선택 사항)</p></td>
+          <td role="rowheader">[!UICONTROL Authentication URL]</td>
           <td>Workfront 인스턴스가 이 연결을 인증하는 데 사용할 URL을 입력하십시오. <p>기본값은 <code>https://oauth.my.workfront.com/integrations/oauth2</code>입니다.</p>
         </tr>
         <tr>
@@ -119,9 +131,22 @@ Adobe Workfront Planning 커넥터는 다음을 사용합니다.
         </tr>
       </tbody>
     </table>
+
 1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL Continue]**&#x200B;을(를) 클릭하십시오.
 
 ## [!DNL Adobe Workfront Planning]개 모듈 및 해당 필드
+
+Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 이러한 필드와 함께 앱이나 서비스의 액세스 수준 등의 요소에 따라 추가 Workfront 필드가 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+
+필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
+
+
+![맵 전환](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+
+* [트리거](#triggers)
+* [액션](#actions)
+* [검색 결과](#searches)
+* [미분류](#uncategorized)
 
 ### 트리거
 
@@ -199,7 +224,7 @@ Adobe Workfront Planning 커넥터는 다음을 사용합니다.
       <td role="rowheader">
         <p>[!UICONTROL Record type ID]</p>
       </td>
-      <td>삭제할 필드의 ID를 입력하거나 매핑합니다.</td> 
+      <td>삭제하려는 레코드 유형의 ID를 입력하거나 매핑합니다.</td> 
       </tr>
   </tbody>
 </table>
@@ -253,14 +278,54 @@ Adobe Workfront Planning 커넥터는 다음을 사용합니다.
   </tbody>
 </table>
 
-<!--
-### Searches
 
-#### Search records
+### 검색 결과
 
-This action module retrieves a list of records based on criteria you specify.
+#### 레코드 검색
 
--->
+이 작업 모듈은 지정한 조건에 따라 레코드 목록을 검색합니다.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+    </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>검색할 레코드가 포함된 Workspace을 입력하거나 매핑합니다.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type]</p>
+      </td>
+      <td>검색할 레코드 유형을 선택합니다.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record Fields]</p>
+      </td>
+      <td>검색할 각 필드에 대해 해당 필드를 찾은 다음 연산자를 선택하고 검색할 값을 입력하거나 매핑합니다. 필드는 선택한 레코드 유형에 따라 사용할 수 있습니다.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Condition for filters]</p>
+      </td>
+      <td>필터 조건 선택:<ul><li><b>및</b><p>모듈이 사용자가 선택한 필드 값의 <b>모두</b>를 충족하는 레코드를 반환합니다.</p></li><li><b>또는</b><p>모듈은 선택한 필드 값의 <b>any</b>을(를) 충족하는 레코드를 반환합니다.</p></li></ul></td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Limit]</p>
+      </td>
+   <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</p> </td> 
+      </tr>
+  </tbody>
+</table>
+
 
 ### 미분류
 
@@ -287,7 +352,7 @@ This action module retrieves a list of records based on criteria you specify.
       <td role="rowheader">
         <p>기타 필드</p>
       </td>
-      <td>이 필드는 선택한 레코드 종류를 기반으로 합니다.</td> 
+      <td>새 레코드에 보유할 값을 입력합니다. 이 필드는 선택한 레코드 종류를 기반으로 합니다.</td> 
       </tr>
      <tr>
   </tbody>
@@ -313,31 +378,6 @@ This action module retrieves a list of records based on criteria you specify.
       </tr>
   </tbody>
 </table>
-
-<!--
-
-### Get all records
-
-This action module retrieves all records from an [!DNL Adobe Workfront Planning] account.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-     <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Maximum number of returned records]</p>
-      </td>
-      <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
-      </tr>
-  </tbody>
-</table>
-
--->
 
 ### 레코드 가져오기
 
@@ -378,11 +418,11 @@ This action module retrieves all records from an [!DNL Adobe Workfront Planning]
       <td role="rowheader">[!UICONTROL Record type]</td>
       <td>검색할 레코드 유형을 선택합니다.</td>
     </tr>
-     <tr>
+     <!--<tr>
       <td role="rowheader">
         <p>[!UICONTROL Maximum number of returned records]</p>
       </td>
-      <td>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</td> 
+      <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> -->
   </tbody>
 </table>
 
@@ -397,6 +437,10 @@ This action module retrieves all records from an [!DNL Adobe Workfront Planning]
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
       <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Workspace]</td>
+      <td>검색할 레코드 유형이 포함된 작업 영역을 선택하거나 매핑합니다.</td>
     </tr>
   </tbody>
 </table>
@@ -423,7 +467,7 @@ This action module retrieves all records from an [!DNL Adobe Workfront Planning]
       <td role="rowheader">
         <p>기타 필드</p>
       </td>
-      <td>이 필드는 선택한 레코드 종류를 기반으로 합니다.</td> 
+      <td>레코드에 보유할 새 값을 입력합니다. 이 필드는 선택한 레코드 종류를 기반으로 합니다.</td> 
       </tr>
      <tr>
   </tbody>

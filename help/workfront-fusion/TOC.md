@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 설명서
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 문서, 튜토리얼 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
-source-git-commit: 1a42567e93b4fae67c92720b7642186919e4c93d
+source-git-commit: da0c82d66bcd90a9e676f54c93252218f9b1de99
 workflow-type: tm+mt
-source-wordcount: '1641'
+source-wordcount: '1648'
 ht-degree: 3%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 3%
 * Fusion 릴리스 활동 {#fusion-release-activity}
    * [Adobe Workfront Fusion 릴리스 활동](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Fusion 릴리스 - 2025년 {#fusion-releases-2025}
+      * [Workfront Fusion 릴리스 활동: 2025년 2월 10일이 있는 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-2-10.md)
       * [Workfront Fusion 릴리스 활동: 2025년 1월 20일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-20.md)
       * [Workfront Fusion 릴리스 활동: 2025년 1월 13일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-13.md)
       * [Workfront Fusion 릴리스 활동: 2025년 1월 6일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-6.md)
@@ -229,7 +230,7 @@ ht-degree: 3%
    * [새 템플릿 만들기](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md)
    * [템플릿을 사용하여 시나리오 만들기](/help/workfront-fusion/create-and-manage-templates/create-scenarios-with-fusion-templates.md)
    * [템플릿 보기, 편집 및 삭제](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)
-   * [Publish 및 공유 템플릿](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)
+   * [템플릿 게시 및 공유](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)
    * [현재 사용 가능한 Adobe Workfront Fusion 템플릿](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md)
    * [[!DNL Adobe Workfront Fusion]개 템플릿 FAQ](/help/workfront-fusion/create-and-manage-templates/fusion-templates-faqs.md)
 * 참조: {#references}
@@ -298,10 +299,10 @@ ht-degree: 3%
          * [Adobe Experience Manager Forms 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
          * [Adobe Firefly 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
          * [Adobe Frame.io 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
-         * [Adobe I/O 이벤트 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
+         * [Adobe I/O Events 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
          * [Adobe Journey Optimizer 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-journey-optimizer-modules.md)
          * [Adobe Lightroom 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-lightroom-modules.md)
-         * [Marketo 모듈 Adobe](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-modules.md)
+         * [Adobe Marketo 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-modules.md)
          * [Adobe PDF 서비스 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/pdf-modules.md)
          * [Adobe Photoshop 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-photoshop-modules.md)
          * [Adobe Target 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
@@ -330,7 +331,7 @@ ht-degree: 3%
          * [GitLab 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/gitlab-modules.md)
          * [Gmail 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/gmail-modules.md)
          * [Google 달력 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-calendar-modules.md)
-         * [Google 문서 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-docs-modules.md)
+         * [Google Docs 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-docs-modules.md)
          * [Google 드라이브 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-drive-modules.md)
          * [Google Forms 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-forms-modules.md)
          * [Google Sheets 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-sheets-modules.md)

@@ -4,9 +4,9 @@ description: 연결을 만들 때 대부분의  [!DNL Adobe Workfront Fusion] �
 author: Becky
 feature: Workfront Fusion
 exl-id: e47ab4d9-6612-4d9a-a024-da508a8bbfb2
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: ef1a96d9ef4c2c82eaf376c84188e3ed6ea7b2cf
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,8 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 1. [!UICONTROL Connection] 상자 옆의 **[!UICONTROL Add]**&#x200B;을(를) 클릭하여 **[!UICONTROL Create a connection]** 패널을 엽니다.
 1. (선택 사항) 기본 **[!UICONTROL Connection name]**&#x200B;을(를) 변경합니다.
+1. 환경 필드에서 프로덕션 환경인지 비프로덕션 환경인지 선택합니다. 이 정보는 Fusion의 연결 영역에 표시됩니다.
+1. 유형 필드에서 서비스 또는 개인 계정인지 선택합니다. 이 정보는 Fusion의 연결 영역에 표시됩니다.
 1. (조건부) 앱에 ID, 키 또는 [!UICONTROL secret]과(와) 같은 고급 연결 설정이 필요한 경우 해당 정보를 입력하십시오.
 
    이러한 정보를 입력할 수 있는 필드를 표시하려면 **[!UICONTROL Show advanced settings]**&#x200B;을(를) 클릭해야 할 수 있습니다.

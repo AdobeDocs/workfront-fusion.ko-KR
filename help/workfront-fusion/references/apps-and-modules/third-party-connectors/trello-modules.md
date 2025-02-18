@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Trello를 사
 author: Becky
 feature: Workfront Fusion
 exl-id: 5df5cd2b-ad4c-4a02-9d0c-7cee35232f93
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: a0a53d5c5af0956635f5026bbf8f8ee681946d86
 workflow-type: tm+mt
-source-wordcount: '4259'
+source-wordcount: '4320'
 ht-degree: 0%
 
 ---
@@ -21,42 +21,46 @@ ht-degree: 0%
 
 ## 액세스 요구 사항
 
++++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
+
 이 문서의 기능을 사용하려면 다음 액세스 권한이 있어야 합니다.
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 플랜*</td>
-  <td> <p>[!UICONTROL Pro] 이상</p> </td>
+   <td role="rowheader">Adobe Workfront 패키지</td> 
+   <td> <p>임의</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 라이센스*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront 라이선스</td> 
+   <td> <p>새로운 기능: 표준</p><p>또는</p><p>현재: 작업 시간 이상</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td> 
+   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재 라이선스 요구 사항: [!DNL Workfront Fusion] 라이선스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
    <p>또는</p>
-   <p>레거시 라이선스 요구 사항: 작업 자동화 및 통합을 위한 [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>현재 제품 요구 사항: [!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Adobe Workfront] 플랜이 있는 경우 조직에서 이 문서에 설명된 기능을 사용하려면 [!DNL Adobe Workfront Fusion]과(와) [!DNL Adobe Workfront]을(를) 구매해야 합니다. [!DNL Workfront Fusion]이(가) [!UICONTROL Ultimate] [!DNL Workfront] 계획에 포함되어 있습니다.</p>
+   <p>신규:</p> <ul><li>또는 Prime Workfront 패키지 선택: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</li><li>Ultimate Workfront 패키지: Workfront Fusion이 포함됩니다.</li></ul>
    <p>또는</p>
-   <p>레거시 제품 요구 사항: 이 문서에 설명된 기능을 사용하려면 조직에서 [!DNL Adobe Workfront Fusion]과(와) [!DNL Adobe Workfront]을(를) 구매해야 합니다.</p>
+   <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-보유 중인 플랜, 라이선스 유형 또는 액세스 권한을 확인하려면 [!DNL Workfront] 관리자에게 문의하세요.
+이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 [!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+
++++
 
 ## 전제 조건
 
@@ -107,9 +111,9 @@ Trello 커넥터는 다음을 사용합니다.
 
 ### 보드
 
-+++ **[!UICONTROL Watch Boards]**
++++ **[!UICONTROL Archive or Unarchive a Board]**
 
-이 트리거 모듈은 새 보드가 추가되면 시나리오를 시작합니다.
+이 작업 모듈은 지정한 보드를 닫거나(보관) 다시 열거나(보관 해제).
 
 <table style="table-layout:auto"> 
  <col> 
@@ -120,8 +124,50 @@ Trello 커넥터는 다음을 사용합니다.
    <td> <p>[!UICONTROL Trello] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>한 실행 주기 동안 최대 [!DNL Workfront Fusion] 보드 수가 반환됩니다.</p> </td> 
+   <td role="rowheader">[!UICONTROL Board ID]</td> 
+   <td> <p> 닫거나 다시 열 보드의 ID를 입력하거나 매핑합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Archive or unarchive]</td> 
+   <td> <p> 보드를 닫을지(보관) 또는 다시 열지(보관 해제) 여부를 선택합니다.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
+
++++ **[!UICONTROL Assign a Member to a Board]**
+
+이 작업 모듈은 사용자가 지정하는 보드에 구성원을 지정합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Board ID]</td> 
+   <td> <p> 구성원을 추가할 게시판을 선택합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Email address]</td> 
+   <td> <p> 보드에 추가할 구성원의 이메일 주소를 입력하거나 매핑합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Member type]</p> </td> 
+   <td> <p>새 멤버를 지정할 멤버 유형을 선택합니다.</p> 
+    <ul> 
+     <li><strong>[!UICONTROL Admin]</strong>: 보드 관리자는 보드에서 모든 보드 작업을 수행할 수 있습니다.</li> 
+     <li><strong>[!UICONTROL Normal]</strong>: 일반 멤버는 단순히 보드의 멤버입니다.</li> 
+     <li><strong>[!UICONTROL Observer]</strong>: 관찰자는 보드에 대한 읽기 전용 액세스 권한을 가진 멤버입니다. <br>관찰자는 [!UICONTROL Trello Business Class]이(가) 있는 팀에서만 사용할 수 있습니다.</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Full name]</td> 
+   <td> <p> 보드에 추가할 사용자의 전체 이름을 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -150,18 +196,18 @@ Trello 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Organization ID]</p> </td> 
-   <td> <p>조직의 ID를 입력하거나 매핑합니다. 조직 ID는 활동 보기 모듈과 같은 다른 모듈을 사용하여 검색할 수 있습니다.</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/id-of-org.png"> </p> </td> 
+   <td> <p>조직의 ID를 입력하거나 매핑합니다. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Permission level]</p> </td> 
    <td> <p>게시판은 권한 수준별로 투표 및 주석 달기 규칙이 다릅니다. 예를 들어 게시판이 [!UICONTROL Private]이고 투표 및 주석 달기 규칙을 [!UICONTROL All](으)로 설정하면 오류가 발생합니다. </p> <p>투표 및 댓글은 각 권한 수준에 대해 다음 그룹으로 제한됩니다.</p> 
     <ul> 
      <li><strong>[!UICONTROL Private]</strong>: 
-      —&gt;구성원, 구성원 및 관찰자</li> 
+      구성원, 구성원 및 옵저버</li> 
      <li><strong>[!UICONTROL For organization]</strong>: 
-      —&gt;구성원, 구성원 및 관찰자, 조직 구성원</li> 
+      회원, 회원 및 옵저버, 조직 회원</li> 
      <li><strong>[!UICONTROL Public]</strong>: 
-      —&gt;구성원, 구성원 및 관찰자, 조직 구성원, 모두</li> 
+      구성원, 구성원 및 관찰자, 조직 구성원, 모두</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -201,11 +247,15 @@ Trello 커넥터는 다음을 사용합니다.
    <td> <p>배경색 또는 사용자 지정 배경을 선택합니다.</p> <p>참고: 사용자 지정 배경은 [!UICONTROL Trello Gold and Business Class] 구독자만 사용할 수 있습니다.</p> </td> 
   </tr> 
   <tr> 
+   <td role="rowheader">[!UICONTROL Background ID]</td> 
+   <td> <p> [!UICONTROL Background] 필드에서 사용자 지정 배경을 사용하도록 선택한 경우 사용할 배경의 ID를 입력하거나 매핑합니다.</p> </td> 
+  </tr> 
+  <tr> 
    <td role="rowheader"> <p>[!UICONTROL Card aging]</p> </td> 
    <td> <p>두 가지 카드 에이징 모드 중에서 선택합니다. </p> 
     <ul> 
-     <li><strong>[!UICONTROL Regular]</strong>: 카드는 노후화될수록 점점 더 투명해집니다. </li> 
-     <li><strong>[!UICONTROL Pirate]</strong>: 카드는 오래되면 오래된 해적 지도처럼 찢어지고, 노랗게 되고 갈라집니다.</li> 
+     <li><strong>[!UICONTROL Pirate mode]</strong>: 카드는 오래되면 오래된 해적 지도처럼 찢어지고, 노랗게 되고 갈라집니다.</li> 
+     <li><strong>[!UICONTROL Regular mode ]</strong>: 카드는 노후화될수록 점점 더 투명해집니다. </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -217,8 +267,10 @@ Trello 커넥터는 다음을 사용합니다.
 
 이 작업 모듈은 기존 보드의 설정을 편집합니다.
 
-<table style="table-layout:auto"> 
- <col> 
+>[!SUCCESS]
+>
+><table style="table-layout:auto">
+<col> 
  <col> 
  <tbody> 
   <tr> 
@@ -235,26 +287,26 @@ Trello 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL New description]</td> 
-   <td> <p> 필요한 경우 새 게시판 설명을 입력하거나 매핑합니다.</p> </td> 
+   <td> <p> 새 게시판 설명을 입력하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Organization ID]</p> </td> 
-   <td> <p>모듈에서 편집할 보드의 고유한 [!UICONTROL Trello] ID를 입력하거나 매핑합니다. [!DNL Watch Activities] 모듈과 같은 다른 모듈을 사용하여 보드 ID를 검색할 수 있습니다.</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/org-id.png"> </p> </td> 
+   <td> <p>모듈에서 편집할 보드의 고유한 [!UICONTROL Trello] ID를 입력하거나 매핑합니다.  </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Subscribe] </td> 
-   <td> <p>동작 사용자가 보드를 구독하는지 여부를 지정하려면 옵션을 선택합니다.</p> </td> 
+   <td> <p>옵션을 선택하여 이 모듈에서 사용하는 연결을 소유한 사용자가 보드에 가입되어 있는지 여부를 지정합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Permission level]</p> </td> 
    <td> <p>게시판은 권한 수준별로 투표 및 주석 달기 규칙이 다릅니다. 예를 들어 게시판이 [!UICONTROL Private]이고 투표 및 주석 달기 규칙을 [!UICONTROL All](으)로 설정하면 오류가 발생합니다. </p> <p>투표 및 댓글은 각 권한 수준에 대해 다음 그룹으로 제한됩니다.</p> 
     <ul> 
      <li><strong>[!UICONTROL Private]</strong>: 
-      —&gt;구성원, 구성원 및 관찰자</li> 
+      구성원, 구성원 및 옵저버</li> 
      <li><strong>[!UICONTROL For organization]</strong>: 
-      —&gt;구성원, 구성원 및 관찰자, 조직 구성원</li> 
+      회원, 회원 및 옵저버, 조직 회원</li> 
      <li><strong>[!UICONTROL Public]</strong>: 
-      —&gt;구성원, 구성원 및 관찰자, 조직 구성원, 모두</li> 
+      구성원, 구성원 및 관찰자, 조직 구성원, 모두</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -289,8 +341,8 @@ Trello 커넥터는 다음을 사용합니다.
    <td role="rowheader"> <p>[!UICONTROL Card aging]</p> </td> 
    <td> <p>두 가지 카드 에이징 모드 중에서 선택합니다. </p> 
     <ul> 
-     <li><strong>[!UICONTROL Regular]</strong>: 카드는 노후화될수록 점점 더 투명해집니다. </li> 
-     <li><strong>[!UICONTROL Pirate]</strong>: 카드는 오래되면 오래된 해적 지도처럼 찢어지고, 노랗게 되고 갈라집니다.</li> 
+     <li><strong>[!UICONTROL Pirate mode]</strong>: 카드는 오래되면 오래된 해적 지도처럼 찢어지고, 노랗게 되고 갈라집니다.</li> 
+     <li><strong>[!UICONTROL Regular mode]</strong>: 카드는 노후화될수록 점점 더 투명해집니다. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -307,6 +359,7 @@ Trello 커넥터는 다음을 사용합니다.
   </tr> 
  </tbody> 
 </table>
+
 
 +++
 
@@ -364,69 +417,6 @@ Trello 커넥터는 다음을 사용합니다.
 
 +++
 
-+++ **[!UICONTROL Archive or Unarchive a Board]**
-
-이 작업 모듈은 사용자가 지정한 보드를 닫거나 다시 엽니다.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!UICONTROL Trello] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Board ID]</td> 
-   <td> <p> 닫거나 다시 열 보드의 ID를 입력하거나 매핑합니다.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Archive or unarchive]</td> 
-   <td> <p> 보드를 닫을지(보관) 또는 다시 열지(보관 해제) 여부를 선택합니다.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-+++
-
-+++ **[!UICONTROL Assign a Member to a Board]**
-
-이 작업 모듈은 사용자가 지정하는 보드에 구성원을 지정합니다.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!UICONTROL Trello] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Board ID]</td> 
-   <td> <p> 구성원을 추가할 게시판을 선택합니다.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Email address]</td> 
-   <td> <p> 보드에 추가할 구성원의 이메일 주소를 입력하거나 매핑합니다.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Member type]</p> </td> 
-   <td> <p>보드에 추가할 멤버 유형을 선택합니다.</p> 
-    <ul> 
-     <li><strong>[!UICONTROL Admin]</strong>: 보드 관리자는 보드에서 모든 보드 작업을 수행할 수 있습니다.</li> 
-     <li><strong>[!UICONTROL Normal]</strong>: 일반 멤버는 단순히 보드의 멤버입니다.</li> 
-     <li><strong>[!UICONTROL Observer]</strong>: 관찰자는 보드에 대한 읽기 전용 액세스 권한을 가진 멤버입니다. <br>관찰자는 [!UICONTROL Trello Business Class]이(가) 있는 팀에서만 사용할 수 있습니다.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Full name]</td> 
-   <td> <p> 보드에 추가할 사용자의 전체 이름을 입력합니다.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-+++
-
 +++ **[!UICONTROL Unassign a Member from a Board]**
 
 이 작업 모듈은 보드에서 멤버를 제거합니다.
@@ -452,11 +442,9 @@ Trello 커넥터는 다음을 사용합니다.
 
 +++
 
-### 목록
++++ **[!UICONTROL Watch Boards]**
 
-+++ **[!UICONTROL Watch cards moved to a list]**
-
-이 트리거 모듈은 카드가 특정 목록으로 이동될 때 활성화됩니다.
+이 트리거 모듈은 새 보드가 추가되면 시나리오를 시작합니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -467,21 +455,15 @@ Trello 커넥터는 다음을 사용합니다.
    <td> <p>[!UICONTROL Trello] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Board]</td> 
-   <td>카드를 확인할 목록이 포함된 보드를 선택합니다.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL List]</td> 
-   <td>카드 확인을 위해 조사할 목록을 선택합니다.</td> 
-  </tr> 
-  <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>한 실행 주기 동안 최대 카드 수 [!DNL Workfront Fusion]이(가) 반환됩니다.</p>  </td> 
+   <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 보드 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 +++
+
+### 목록
 
 +++ **[!UICONTROL Create a List]**
 
@@ -509,7 +491,7 @@ Trello 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Copy list]</td> 
-   <td> <p> 복사할 목록의 ID를 입력하는 방법을 선택합니다.</p> 
+   <td> <p> 목록을 복사하는 경우 복사할 목록의 ID를 입력할 방법을 선택합니다.</p> 
     <ul> 
      <li> <p><strong>수동으로 입력</strong> </p> <p><strong>[!UICONTROL List ID]</strong> 필드에 복사할 목록의 ID를 입력하거나 매핑합니다.<br></p> </li> 
      <li> <p><strong>선택</strong> </p> <p>복사할 목록이 포함된 보드를 선택한 다음 목록을 선택합니다.</p> </li> 
@@ -578,11 +560,9 @@ Trello 커넥터는 다음을 사용합니다.
 
 +++
 
-### 카드
++++ **[!UICONTROL Watch cards moved to a list]**
 
-+++ **[!UICONTROL Watch cards]**
-
-새 카드가 추가되면 이 트리거 모듈이 활성화됩니다.
+이 트리거 모듈은 카드가 특정 목록으로 이동될 때 활성화됩니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -593,17 +573,76 @@ Trello 커넥터는 다음을 사용합니다.
    <td> <p>[!UICONTROL Trello] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Watched object]</td> 
-   <td> <p>카드 위치를 선택하십시오.</p> 
-    <ul> 
-     <li><strong>[!UICONTROL All cards]</strong> </li> 
-     <li> <p><strong>특정 보드에 있는 카드</strong> </p> <p>카드를 확인할 보드를 선택합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL Cards on specific list]</strong> </p> <p>카드를 검사할 목록이 들어 있는 보드를 선택한 다음 목록을 선택합니다.</p> </li> 
-    </ul> </td> 
+   <td role="rowheader">[!UICONTROL Board]</td> 
+   <td>카드를 확인할 목록이 포함된 보드를 선택합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL List]</td> 
+   <td>카드 확인을 위해 조사할 목록을 선택합니다.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>한 실행 주기 동안 최대 카드 수 [!DNL Workfront Fusion]이(가) 반환됩니다.</p> </td> 
+   <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
+
+### 카드
+
++++ **[!UICONTROL Add an Attachment]**
+
+이 작업 모듈은 선택한 카드에 첨부 파일을 추가합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Enter card ID]</td> 
+   <td> <p> 첨부 파일을 추가할 카드의 ID를 입력하는 방법을 선택합니다.</p> 
+    <ul> 
+     <li> <p><strong>수동으로 입력</strong> </p> <p><strong>[!UICONTROL Card ID]</strong> 필드에 첨부 파일을 추가할 카드의 ID를 입력하거나 매핑합니다.<br></p> </li> 
+     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>첨부 파일을 추가할 카드가 들어 있는 보드를 선택한 다음 카드가 들어 있는 목록을 선택하고 카드를 선택합니다.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Attachment type]</p> </td> 
+   <td> <p>파일을 직접 업로드할지 또는 파일에 URL을 제공할지 여부를 선택합니다.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL File]</strong> </p> <p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 이름과 데이터를 매핑합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL URL]</strong> </p> <p>파일의 URL을 입력하고 첨부 파일의 이름을 입력합니다.</p> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
+
++++ **[!UICONTROL Archive or Unarchive a Card]**
+
+이 작업 모듈은 카드를 보관하거나 보드에 다시 전송합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Card ID]</td> 
+   <td> <p> 보관하거나 보드에 다시 보낼 카드의 ID를 입력하거나 매핑합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Archive or unarchive]</td> 
+   <td> <p> 카드를 닫을지(보관), 보드에 다시 보낼지(보관 해제) 선택합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -627,16 +666,16 @@ Trello 커넥터는 다음을 사용합니다.
    <td> <p> 카드를 추가할 목록의 ID를 입력하는 방법을 선택합니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p><strong>[!UICONTROL List ID]</strong> 필드에 카드를 추가할 목록의 ID를 입력하거나 매핑합니다.<br></p> </li> 
-     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>복사할 목록이 포함된 보드를 선택한 다음 목록을 선택합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>카드를 추가할 목록이 포함된 보드를 선택한 다음 목록을 선택합니다.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Labels] </td> 
-   <td> <p>카드에 추가할 각 레이블에 대해 레이블의 ID를 입력합니다. [!UICONTROL Retrieve Labels] 모듈을 사용하는 등의 방법으로 ID를 검색할 수 있습니다.</p> </td> 
+   <td> <p>카드에 추가할 각 레이블에 대해 <b>항목 추가</b>를 클릭하고 레이블의 ID를 입력합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Members]</td> 
-   <td>카드에 추가할 각 멤버에 대해 멤버의 ID를 입력합니다. </td> 
+   <td>카드에 추가하려는 각 구성원에 대해 <b>항목 추가</b>를 클릭하고 구성원의 ID를 입력하십시오. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Name] </td> 
@@ -648,7 +687,7 @@ Trello 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Position] </td> 
-   <td> <p>목록의 맨 위에 카드를 추가할지 또는 맨 아래에 카드를 [!UICONTROL append]할지 선택합니다.</p> </td> 
+   <td> <p>카드를 맨 위에 추가할지 또는 목록의 맨 아래에 추가할지 선택합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due date]</td> 
@@ -656,7 +695,7 @@ Trello 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due complete]</td> 
-   <td> <p> 이 옵션을 활성화하여 카드가 기한 일자에 완료되었음을 표시하십시오.</p> </td> 
+   <td> <p> 이 옵션을 활성화하여 만기일에 카드를 완료로 표시하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL File URL]</td> 
@@ -664,18 +703,14 @@ Trello 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Source file]</p> </td> 
-   <td> <p>카드에 첨부 파일로 추가할 파일에 대한 정보를 입력하거나 매핑합니다.</p> 
-    <ul> 
-     <li>[!UICONTROL File name]: 파일 확장자를 포함하여 파일 이름을 입력하거나 매핑합니다.</li> 
-     <li> 
-     <p>이전 모듈에서 파일을 선택하거나 파일의 이름과 데이터를 매핑합니다</p> 
+   <td> <p>카드에 첨부 파일로 추가할 파일에 대한 정보를 입력하거나 매핑합니다. 이전 모듈에서 파일을 선택하거나 파일의 이름과 데이터를 매핑합니다</p> 
      <p>참고: 첨부 파일당 10MB의 파일 업로드 제한이 있습니다. 그러나 [!UICONTROL Business Class] 및 [!UICONTROL Trello Gold] 구성원의 첨부 파일당 파일 업로드 제한은 250MB입니다.</p> 
      </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Copy card]</td> 
-   <td> <p> 복사할 카드의 ID를 입력하는 방법을 선택합니다.</p> 
+   <td> <p> 기존 카드의 사본으로 새 카드를 만드는 경우 복사할 카드의 ID를 입력할 방법을 선택합니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p><strong>[!UICONTROL Card ID]</strong> 필드에 복사할 카드의 ID를 입력하거나 매핑합니다.<br></p> </li> 
      <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>복사할 카드가 들어 있는 보드를 선택한 다음 카드가 들어 있는 목록을 선택하고 카드를 선택합니다.</p> </li> 
@@ -720,7 +755,7 @@ Trello 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Labels] </td> 
-   <td> <p>카드에 추가할 레이블의 ID를 추가합니다. </p> </td> 
+   <td> <p>카드에 추가할 각 레이블에 대해 <b>항목 추가</b>를 클릭하고 레이블의 ID를 입력합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Position] </td> 
@@ -732,11 +767,11 @@ Trello 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due complete]</td> 
-   <td> <p> 이 옵션을 활성화하면 카드가 기한에 완료로 표시됩니다.</p> </td> 
+   <td> <p> 이 옵션을 활성화하여 만기일에 카드를 완료로 표시하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Members] </td> 
-   <td> <p>카드에 추가하려는 멤버의 ID를 추가하거나 매핑합니다.</p> </td> 
+   <td> <p>카드에 추가하려는 각 구성원에 대해 <b>항목 추가</b>를 클릭하고 해당 구성원의 ID를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Attachment cover ID]</p> </td> 
@@ -813,14 +848,14 @@ Trello 커넥터는 다음을 사용합니다.
      <li><code><strong>due:day</strong></code> <p>24시간 이내에 카드를 반환합니다. <code>due:</code> 연산자는 <code>due:week</code>, <code>due:month</code> 또는 <code>due:overdue</code>과(와) 같은 다른 기간에 사용할 수도 있습니다. 특정 날짜 범위를 검색할 수도 있습니다. 예를 들어 <code>due:14</code>을(를) 검색에 추가하면 향후 14일 이내에 만기가 도래하는 카드가 포함됩니다.</p> </li> 
      <li><code><strong>created:day</strong></code> <p>지난 24시간 동안 만든 카드를 반환합니다. <code> created:</code> 연산자는 <code>created:week</code> 또는 <code>created:month</code>과(와) 같은 다른 일정에 사용할 수도 있습니다. 특정 날짜 범위를 검색할 수도 있습니다. 예를 들어 검색에 <code>created:14</code>을(를) 추가하면 지난 14일 동안 만들어진 카드가 포함됩니다.</p> </li> 
      <li><code><strong>edited:day</strong></code> <p>지난 24시간 동안 편집된 카드를 반환합니다. <code>edited:</code> 연산자는 <code>edited:week</code> 또는 <code>edited:month</code>과(와) 같은 다른 기간에 사용할 수도 있습니다. 특정 날짜 범위를 검색할 수도 있습니다. 예를 들어 <code>edited:21</code>을(를) 검색에 추가하면 지난 21일 동안 편집된 카드가 포함됩니다.</p> </li> 
-     <li><code><strong>description:</strong>, <strong>checklist:</strong>, <strong>comment:</strong>, and <strong>name:</strong></code> <p>카드 설명, 체크리스트, 주석 또는 이름의 텍스트와 일치하는 카드를 반환합니다. 예를 들어 comment:"FIX IT"은 댓글에 "FIX IT"가 있는 카드를 반환합니다.</p> </li> 
+     <li><code><strong>description:</strong>, <strong>checklist:</strong>, <strong>comment:</strong>, and <strong>name:</strong></code> <p>카드 설명, 체크리스트, 주석 또는 이름의 텍스트와 일치하는 카드를 반환합니다. 예를 들어 <code>comment:"FIX IT"</code>은(는) 댓글에 "FIX IT"이 포함된 카드를 반환합니다.</p> </li> 
      <li><code><strong>is:open</strong> and <strong>is:archived</strong></code> <p>열려 있거나 보관된 카드를 반환합니다. 둘 다 지정하지 않으면 [!UICONTROL Trello]에서 두 형식을 모두 반환합니다.</p> </li> 
      <li><code><strong>is:starred</strong> </code> <p>별표가 표시된 보드에만 카드가 포함됩니다.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned cards]</td> 
-   <td> <p> 한 실행 주기 동안 최대 카드 수 [!DNL Workfront Fusion]이(가) 반환됩니다. 이 값은 1000보다 작거나 같아야 합니다.</p> </td> 
+   <td> <p> 한 실행 주기 동안 [!DNL Workfront Fusion]에서 반환할 최대 카드 수를 입력하거나 매핑합니다. 이 값은 1000보다 작거나 같아야 합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Partial] </td> 
@@ -828,16 +863,16 @@ Trello 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Cards] </td> 
-   <td> <p>특별히 검색할 카드를 추가합니다.</p> </td> 
+   <td> <p>특정 카드를 검색하려면 <b>항목 추가</b>를 클릭하고 카드 ID를 추가하십시오.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 +++
 
-+++ **[!UICONTROL Archive or Unarchive a Card]**
++++ **[!UICONTROL Watch cards]**
 
-이 작업 모듈은 카드를 보관하거나 보드에 다시 전송합니다.
+새 카드가 추가되면 이 트리거 모듈이 활성화됩니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -848,45 +883,17 @@ Trello 커넥터는 다음을 사용합니다.
    <td> <p>[!UICONTROL Trello] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Card ID]</td> 
-   <td> <p> 보관하거나 보드에 다시 보낼 카드의 ID를 입력하거나 매핑합니다.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Archive or unarchive]</td> 
-   <td> <p> 카드를 닫을지(보관), 보드에 다시 보낼지(보관 해제) 선택합니다.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-+++
-
-+++ **[!UICONTROL Add an Attachment]**
-
-이 작업 모듈은 선택한 카드에 첨부 파일을 추가합니다.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!UICONTROL Trello] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Enter card ID]</td> 
-   <td> <p> 세부 정보를 검색할 카드의 ID를 입력하는 방법을 선택합니다.</p> 
+   <td role="rowheader">[!UICONTROL Watched object]</td> 
+   <td> <p>카드 위치를 선택하십시오.</p> 
     <ul> 
-     <li> <p><strong>수동으로 입력</strong> </p> <p><strong>[!UICONTROL Card ID]</strong> 필드에 세부 정보를 검색할 카드의 ID를 입력하거나 매핑합니다.<br></p> </li> 
-     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>세부 정보를 검색할 카드가 포함된 보드를 선택한 다음 카드가 포함된 목록을 선택하고 카드를 선택합니다.</p> </li> 
+     <li><strong>[!UICONTROL All cards]</strong> </li> 
+     <li> <p><strong>특정 보드에 있는 카드</strong> </p> <p>카드를 확인할 보드를 선택합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL Cards on specific list]</strong> </p> <p>카드를 검사할 목록이 들어 있는 보드를 선택한 다음 목록을 선택합니다.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Attachment type]</p> </td> 
-   <td> <p>파일을 직접 업로드할지 또는 파일에 URL을 제공할지 여부를 선택합니다.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL File]</strong> </p> <p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 이름과 데이터를 매핑합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL URL]</strong> </p> <p>파일의 URL을 입력하고 첨부 파일의 이름을 입력합니다.</p> </li> 
-    </ul> </td> 
+   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td> <p>한 실행 주기 동안 최대 카드 수 [!DNL Workfront Fusion]이(가) 반환됩니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -894,18 +901,6 @@ Trello 커넥터는 다음을 사용합니다.
 +++
 
 ### 멤버
-
-+++ **[!UICONTROL Assign a Member to a Board]**
-
-[게시판](#boards) 아래의 &quot;[!UICONTROL Assign a Member to a Board]&quot;을(를) 참조하십시오.
-
-+++
-
-+++ **[!UICONTROL Unassign a Member from a Board]**
-
-[게시판](#boards) 아래의 &quot;[!UICONTROL Unassign a Member from a Board]&quot;을(를) 참조하십시오.
-
-+++
 
 +++ **[!UICONTROL Add a Member to a Card]**
 
@@ -929,6 +924,12 @@ Trello 커넥터는 다음을 사용합니다.
   </tr> 
  </tbody> 
 </table>
+
++++
+
++++ **[!UICONTROL Assign a Member to a Board]**
+
+[게시판](#boards) 아래의 &quot;[!UICONTROL Assign a Member to a Board]&quot;을(를) 참조하십시오.
 
 +++
 
@@ -958,6 +959,12 @@ Trello 커넥터는 다음을 사용합니다.
   </tr> 
  </tbody> 
 </table>
+
++++
+
++++ **[!UICONTROL Unassign a Member from a Board]**
+
+[게시판](#boards) 아래의 &quot;[!UICONTROL Unassign a Member from a Board]&quot;을(를) 참조하십시오.
 
 +++
 
@@ -1107,38 +1114,6 @@ Trello 커넥터는 다음을 사용합니다.
 
 ### 댓글
 
-+++ **[!UICONTROL Watch Comments]**
-
-지정된 위치에 새 주석이 있으면 주석 세부 정보를 검색합니다.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!UICONTROL Trello] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Watched object]</td> 
-   <td> <p>댓글을 감시할 위치를 선택합니다.</p> 
-    <ul> 
-     <li>모든 곳에서 <strong>[!UICONTROL All cards]개</strong> </li> 
-     <li> <p><strong>[!UICONTROL Board]</strong> </p> <p>댓글을 확인할 게시판을 선택합니다</p> </li> 
-     <li> <p><strong>[!UICONTROL List]</strong> </p> <p>주석을 감시할 목록이 포함된 보드를 선택한 다음 목록을 선택합니다.</p> </li> 
-     <li><strong>[!UICONTROL Card]</strong> </li> 
-     <li>댓글을 확인할 카드가 들어 있는 보드를 선택한 다음 카드가 들어 있는 목록을 선택한 다음 카드를 선택합니다.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>한 실행 주기 동안 최대 댓글 수 [!DNL Workfront Fusion]이(가) 반환됩니다.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-+++
-
 +++ **[!UICONTROL Create a Comment in a Card]**
 
 이 작업 모듈은 선택한 카드에 주석을 추가합니다.
@@ -1197,6 +1172,38 @@ Trello 커넥터는 다음을 사용합니다.
   <tr> 
    <td role="rowheader">[!UICONTROL Before] </td> 
    <td> <p>댓글이 생성된 기간의 종료 날짜를 설정합니다. 지원되는 날짜 및 시간 형식 목록을 보려면 [!DNL Adobe Workfront Fusion]</a>의 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 변환을 참조하십시오.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
+
++++ **[!UICONTROL Watch Comments]**
+
+지정된 위치에 새 주석이 있으면 주석 세부 정보를 검색합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Watched object]</td> 
+   <td> <p>댓글을 감시할 위치를 선택합니다.</p> 
+    <ul> 
+     <li>모든 곳에서 <strong>[!UICONTROL All cards]개</strong> </li> 
+     <li> <p><strong>[!UICONTROL Board]</strong> </p> <p>댓글을 확인할 게시판을 선택합니다</p> </li> 
+     <li> <p><strong>[!UICONTROL List]</strong> </p> <p>주석을 감시할 목록이 포함된 보드를 선택한 다음 목록을 선택합니다.</p> </li> 
+     <li><strong>[!UICONTROL Card]</strong> </li> 
+     <li>댓글을 확인할 카드가 들어 있는 보드를 선택한 다음 카드가 들어 있는 목록을 선택한 다음 카드를 선택합니다.</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td> <p>한 실행 주기 동안 최대 댓글 수 [!DNL Workfront Fusion]이(가) 반환됩니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -4,7 +4,7 @@ description: Fusion을 열면 작업에 대한 다양한 옵션이 제공됩니�
 author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
-source-git-commit: 45775149d8e4e8c2c25b4ebf0b5392f56a04633c
+source-git-commit: 6817565ec2a6a06a26033bb51a080b619a0d211d
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 0%
@@ -32,3 +32,4 @@ ht-degree: 0%
 >[!NOTE]
 >
 >팀 제목 아래의 모든 영역은 개별 팀이 소유합니다. 다른 팀에 속한 페이지(예: 다른 팀의 시나리오 페이지)를 보려면 페이지 상단 근처에 있는 팀 드롭다운을 클릭하고 다른 팀을 선택합니다.
+

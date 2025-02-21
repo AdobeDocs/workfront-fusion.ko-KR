@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion Google Forms] 모듈을 사용하면
 author: Becky
 feature: Workfront Fusion
 exl-id: dc017957-c0f8-4206-916f-21ccda346fb9
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ca8cee58b6586dbcd1a7ff7bffb0131b59dbb897
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1199'
 ht-degree: 0%
 
 ---
@@ -23,42 +23,46 @@ ht-degree: 0%
 
 ## 액세스 요구 사항
 
++++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
+
 이 문서의 기능을 사용하려면 다음 액세스 권한이 있어야 합니다.
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 플랜*</td>
-  <td> <p>[!UICONTROL Pro] 이상</p> </td>
+   <td role="rowheader">Adobe Workfront 패키지</td> 
+   <td> <p>임의</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 라이센스*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront 라이선스</td> 
+   <td> <p>새로운 기능: 표준</p><p>또는</p><p>현재: 작업 시간 이상</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td> 
+   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재 라이선스 요구 사항: [!DNL Workfront Fusion] 라이선스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
    <p>또는</p>
-   <p>레거시 라이선스 요구 사항: 작업 자동화 및 통합을 위한 [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>현재 제품 요구 사항: [!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Adobe Workfront] 플랜이 있는 경우 조직에서 이 문서에 설명된 기능을 사용하려면 [!DNL Adobe Workfront Fusion]과(와) [!DNL Adobe Workfront]을(를) 구매해야 합니다. [!DNL Workfront Fusion]이(가) [!UICONTROL Ultimate] [!DNL Workfront] 계획에 포함되어 있습니다.</p>
+   <p>신규:</p> <ul><li>또는 Prime Workfront 패키지 선택: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</li><li>Ultimate Workfront 패키지: Workfront Fusion이 포함됩니다.</li></ul>
    <p>또는</p>
-   <p>레거시 제품 요구 사항: 이 문서에 설명된 기능을 사용하려면 조직에서 [!DNL Adobe Workfront Fusion]과(와) [!DNL Adobe Workfront]을(를) 구매해야 합니다.</p>
+   <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-보유 중인 플랜, 라이선스 유형 또는 액세스 권한을 확인하려면 [!DNL Workfront] 관리자에게 문의하세요.
+이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 [!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+
++++
 
 ## 전제 조건
 
@@ -81,7 +85,7 @@ Google Forms 커넥터는 다음을 사용합니다.
 
 ## 양식에서 스프레드시트 만들기
 
-양식 응답으로 작업하려면 응답의 스프레드시트를 만들어야 합니다.
+양식 응답 작업을 수행하려면 먼저 응답 스프레드시트를 만들어야 합니다.
 
 1. 양식을 엽니다.
 1. **[!UICONTROL Responses]** 탭으로 이동합니다.
@@ -151,8 +155,8 @@ Google Forms 커넥터는 다음을 사용합니다.
 ### 액션
 
 * [[!UICONTROL Add a Response]](#add-a-response)
-* [[!UICONTROL Update a Response]](#update-a-response)
 * [[!UICONTROL Delete a Response]](#delete-a-response)
+* [[!UICONTROL Update a Response]](#update-a-response)
 
 #### [!UICONTROL Add a Response]
 
@@ -178,7 +182,7 @@ Google Forms 커넥터는 다음을 사용합니다.
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader"> <p>[!UICONTROL Values]</p> </td> 
-   <td> <p>시트 열에 원하는 값을 입력합니다.</p> <p>올바른 형식의 [!UICONTROL Timestamp] 열에 대해 다음 값을 사용하십시오.</p><pre>formatDate(now;DD/MM/YYYY HH:mm;UTC)</pre> </td> 
+   <td> <p>시트 열에 원하는 값을 입력합니다. 열은 시트를 기준으로 사용할 수 있습니다.</p> <p>[!UICONTROL Timestamp] 열의 경우 다음 값을 사용하십시오.</p><pre>formatDate(now;DD/MM/YYYY HH:mm;UTC)</pre> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL Value input option]</td> 
@@ -195,6 +199,33 @@ Google Forms 커넥터는 다음을 사용합니다.
      <li> <p><strong>[!UICONTROL Overwrite]</strong> </p> <p>새 데이터는 작성된 영역의 기존 데이터를 덮어씁니다. 시트 끝에 데이터를 추가하면 데이터를 쓸 수 있도록 새 행이나 열이 삽입됩니다.</p> </li> 
      <li> <p><strong>[!UICONTROL Insert rows]</strong></p> <p>새 데이터에 대한 행이 삽입됩니다.</p> </li> 
     </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Delete a Response]
+
+이 모듈은 선택한 응답을 삭제합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>[!DNL Google] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Spreadsheet]</td> 
+   <td> <p>응답을 삭제할 시트가 포함된 스프레드시트를 선택합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Sheet]</td> 
+   <td> <p> 양식 응답이 포함된 시트를 선택합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Row number]</p> </td> 
+   <td> <p>삭제할 행 번호를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -227,7 +258,7 @@ Google Forms 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Values]</p> </td> 
-   <td> <p>원하는 열에 새 값을 입력합니다.</p> </td> 
+   <td> <p>원하는 열에 대한 새 값을 입력합니다. 열은 시트를 기준으로 사용할 수 있습니다.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL Value input option]</td> 
@@ -236,33 +267,6 @@ Google Forms 커넥터는 다음을 사용합니다.
      <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p> 사용자가 입력하는 값은 구문 분석되지 않고 그대로 저장됩니다. </p> </li> 
      <li> <p><strong>[!UICONTROL User entered]</strong></p> <p>값은 사용자가 UI에 입력한 것처럼 구문 분석됩니다. 숫자는 그대로 유지되지만 문자열은 [!DNL Google Sheets] UI를 통해 셀에 텍스트를 입력할 때 적용되는 규칙과 동일한 규칙에 따라 숫자, 날짜 또는 다른 형식으로 변환될 수 있습니다.</p> </li> 
     </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Delete a Response]
-
-이 모듈은 선택한 응답을 삭제합니다.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Google] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Spreadsheet]</td> 
-   <td> <p>응답을 삭제할 시트가 포함된 스프레드시트를 선택합니다.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Sheet]</td> 
-   <td> <p> 양식 응답이 포함된 시트를 선택합니다.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Row number]</p> </td> 
-   <td> <p>삭제할 행 번호를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -348,7 +352,7 @@ Google Forms 커넥터는 다음을 사용합니다.
    <td> <p> 양식 응답이 포함된 시트를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Filter]</td> 
+   <td role="rowheader">[!UICONTROL Query]</td> 
    <td> <p><a href="https://developers.google.com/chart/interactive/docs/querylanguage">[!DNL Google Charts Query Language]</a>을(를) 사용하여 검색 쿼리를 정의합니다.</p> <p>예: <code>select * where C = "John"</code>은(는) C 열이 "John"인 행의 모든 값을 검색합니다.</p> </td> 
   </tr> 
   <tr>

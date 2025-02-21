@@ -1,60 +1,72 @@
 ---
-title: Adobe I/O 이벤트 모듈
-description: Adobe I/O 이벤트 모듈을 사용하면 Adobe 애플리케이션의 이벤트를 기반으로 Adobe Workfront Fusion 시나리오를 시작할 수 있습니다.
+title: Adobe I/O Events 모듈
+description: Adobe I/O Events 모듈을 사용하면 Adobe 애플리케이션의 이벤트를 기반으로 Adobe Workfront Fusion 시나리오를 시작할 수 있습니다.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 9cea5de748873720247db39161cea12c7e9c7186
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '901'
 ht-degree: 1%
 
 ---
 
-# Adobe I/O 이벤트 모듈
+# Adobe I/O Events 모듈
 
-Adobe I/O 이벤트 모듈을 사용하면 전용 Adobe Workfront Fusion 커넥터가 없는 Adobe 계정 및 서비스의 이벤트를 기반으로 Workfront Fusion 시나리오를 시작할 수 있습니다.
+Adobe I/O Events 모듈을 사용하면 전용 Adobe Workfront Fusion 커넥터가 없는 Adobe 계정 및 서비스의 이벤트를 기반으로 Workfront Fusion 시나리오를 시작할 수 있습니다.
 
 ## 액세스 요구 사항
 
++++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
+
 이 문서의 기능을 사용하려면 다음 액세스 권한이 있어야 합니다.
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront 플랜*</td> 
-   <td> <p>Pro 이상</p> </td> 
+   <td role="rowheader">Adobe Workfront 패키지</td> 
+   <td> <p>임의</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront 라이센스*</td> 
-   <td> <p>계획, 작업</p> </td> 
+   <td role="rowheader">Adobe Workfront 라이선스</td> 
+   <td> <p>새로운 기능: 표준</p><p>또는</p><p>현재: 작업 시간 이상</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
-   <td> <p>작업 자동화 및 통합을 위한 Workfront Fusion </p>  </td> 
+   <td>
+   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>또는</p>
+   <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
+   </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
-   <td>이 문서에 설명된 기능을 사용하려면 조직에서 Adobe Workfront Fusion과 Adobe Workfront을 구매해야 합니다.</td> 
-  </tr> 
+   <td>
+   <p>신규:</p> <ul><li>또는 Prime Workfront 패키지 선택: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</li><li>Ultimate Workfront 패키지: Workfront Fusion이 포함됩니다.</li></ul>
+   <p>또는</p>
+   <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
+   </td> 
+  </tr>
  </tbody> 
 </table>
 
-&#42;보유 중인 플랜, 라이선스 유형 또는 액세스 권한을 확인하려면 Workfront 관리자에게 문의하십시오.
+이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-&#42;&#42;Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
+[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+
++++
 
 ## 전제 조건
 
-Adobe I/O 이벤트 커넥터를 사용하려면 먼저 다음 전제 조건을 충족하는지 확인해야 합니다.
+Adobe I/O Events 커넥터를 사용하려면 먼저 다음 전제 조건을 충족하는지 확인해야 합니다.
 
 * 활성 Adobe 계정이 있어야 합니다.
 
-## Adobe I/O 이벤트 API 정보
+## Adobe I/O Events API 정보
 
-Adobe I/O 이벤트 커넥터는 다음을 사용합니다.
+Adobe I/O Events 커넥터는 다음을 사용합니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -71,9 +83,9 @@ Adobe I/O 이벤트 커넥터는 다음을 사용합니다.
  </tbody> 
  </table>
 
-## Adobe I/O 이벤트에 대한 연결 만들기
+## Adobe I/O Events에 대한 연결 만들기
 
-Adobe I/O 이벤트 모듈에 대한 연결을 만들려면 다음 작업을 수행하십시오.
+Adobe I/O Events 모듈에 대한 연결을 만들려면 다음 작업을 수행하십시오.
 
 1. 연결 상자 옆에 있는 추가 를 클릭합니다.
 
@@ -135,7 +147,7 @@ Adobe I/O 이벤트 모듈에 대한 연결을 만들려면 다음 작업을 수
 
 1. 연결을 저장하고 모듈로 돌아가려면 **계속**&#x200B;을 클릭하세요.
 
-## Adobe I/O 이벤트 모듈 및 해당 필드
+## Adobe I/O Events 모듈 및 해당 필드
 
 [!DNL Adobe I/O Events] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Adobe I/O Events] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
@@ -309,7 +321,7 @@ Adobe I/O 이벤트 모듈에 대한 연결을 만들려면 다음 작업을 수
 
 #### 공급자 및 이벤트 ID 가져오기
 
-이 검색 모듈은 지정된 공급자 및 이벤트에 대한 Adobe I/O 이벤트 ID를 가져옵니다.
+이 검색 모듈은 지정된 공급자 및 이벤트에 대한 Adobe I/O Events ID를 가져옵니다.
 
 <table>
      <col/>

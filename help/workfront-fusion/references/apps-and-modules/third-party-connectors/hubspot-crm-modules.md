@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] HubSpot CRM 모듈을 사용하면 
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 9cea5de748873720247db39161cea12c7e9c7186
 workflow-type: tm+mt
-source-wordcount: '5661'
+source-wordcount: '5530'
 ht-degree: 0%
 
 ---
@@ -17,42 +17,46 @@ ht-degree: 0%
 
 ## 액세스 요구 사항
 
++++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
+
 이 문서의 기능을 사용하려면 다음 액세스 권한이 있어야 합니다.
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 플랜*</td>
-  <td> <p>[!UICONTROL Pro] 이상</p> </td>
+   <td role="rowheader">Adobe Workfront 패키지</td> 
+   <td> <p>임의</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 라이센스*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront 라이선스</td> 
+   <td> <p>새로운 기능: 표준</p><p>또는</p><p>현재: 작업 시간 이상</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td> 
+   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재 라이선스 요구 사항: [!DNL Workfront Fusion] 라이선스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
    <p>또는</p>
-   <p>레거시 라이선스 요구 사항: 작업 자동화 및 통합을 위한 [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>현재 제품 요구 사항: [!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Adobe Workfront] 플랜이 있는 경우 조직에서 이 문서에 설명된 기능을 사용하려면 [!DNL Adobe Workfront Fusion]과(와) [!DNL Adobe Workfront]을(를) 구매해야 합니다. [!DNL Workfront Fusion]이(가) [!UICONTROL Ultimate] [!DNL Workfront] 계획에 포함되어 있습니다.</p>
+   <p>신규:</p> <ul><li>또는 Prime Workfront 패키지 선택: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</li><li>Ultimate Workfront 패키지: Workfront Fusion이 포함됩니다.</li></ul>
    <p>또는</p>
-   <p>레거시 제품 요구 사항: 이 문서에 설명된 기능을 사용하려면 조직에서 [!DNL Adobe Workfront Fusion]과(와) [!DNL Adobe Workfront]을(를) 구매해야 합니다.</p>
+   <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-보유 중인 플랜, 라이선스 유형 또는 액세스 권한을 확인하려면 [!DNL Workfront] 관리자에게 문의하세요.
+이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 [!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+
++++
 
 ## 전제 조건
 
@@ -107,19 +111,17 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 * [양식](#forms)
 * [소셜 미디어(브로드캐스트)](#social-media-broadcast)
 * [블로그 게시물](#blog-posts)
-  <!--* [Workflows]-->
+  <!--* [Workflows]()-->
 * [구독](#subscriptions)
-  <!--* [Associations](#associations)-->
+  <!--* [Associations]()-->
 * [기타](#other)
-
-+++**CRM 개체**
 
 ### CRM 오브젝트
 
-* [CRM 오브젝트 검색](#search-for-crm-objects)
-* [CRM 오브젝트 보기](#watch-crm-objects)
+<!--* [Search for CRM objects](#search-for-crm-objects)
+* [Watch CRM objects](#watch-crm-objects)-->
 
-#### [!UICONTROL Search for CRM Objects]
++++ **[!UICONTROL Search for CRM Objects]**
 
 이 검색 모듈은 사용자 지정 속성 또는 쿼리별로 CRM 개체를 검색합니다. 제품 또는 라인 항목을 검색하려면 필수 사용자 지정 범위의 특수 연결을 사용하십시오.
 
@@ -166,7 +168,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### CRM 오브젝트 보기
++++
+
++++ **CRM 개체 보기**
 
 이 트리거 모듈은 CRM 개체가 생성되거나 업데이트될 때 시나리오를 시작합니다.
 
@@ -203,20 +207,18 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 +++
 
-+++**거래, 연락처 및 회사 기록**
-
 ### 기록(거래, 연락처 및 회사)
 
-* [레코드 만들기](#create-a-record)
+<!--* [Create a Record](#create-a-record)
 * [[!UICONTROL Create a Record (Legacy)]](#create-a-record-legacy)
 * [[!UICONTROL Delete a Record]](#delete-a-record)
 * [[!UICONTROL Get a Record]](#get-a-record)
 * [[!UICONTROL Get a Record Property]](#get-a-record-property)
-* [목록 레코드](#list-records)
+* [List Records](#list-records)
 * [[!UICONTROL Update a Record]](#update-a-record)
-* [[!UICONTROL Watch Records]](#watch-records)
+* [[!UICONTROL Watch Records]](#watch-records)-->
 
-#### 레코드 만들기
++++ **레코드 만들기**
 
 이 작업 모듈은 연락처, 회사 또는 거래를 만듭니다.
 
@@ -239,7 +241,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL Create a Record (Legacy)]
++++
+
++++ **[!UICONTROL Create a Record (Legacy)]**
 
 이 작업 모듈은 연락처, 회사 또는 거래를 만듭니다.
 
@@ -262,7 +266,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Record]
++++
+
++++ **[!UICONTROL Delete a Record]**
 
 이 작업 모듈은 연락처, 회사 또는 거래를 삭제합니다.
 
@@ -285,7 +291,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Record]
++++
+
++++ [!UICONTROL Get a Record]
 
 이 작업 모듈은 연락처, 회사 또는 거래의 세부 정보를 가져옵니다.
 
@@ -321,7 +329,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Record Property]
++++
+
++++ **[!UICONTROL Get a Record Property]**
 
 이 작업 모듈은 (내부) 이름으로 특정 레코드 속성에 대한 메타데이터를 가져옵니다.
 
@@ -348,7 +358,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### 목록 레코드
++++
+
++++ **레코드 나열**
 
 이 검색 모듈은 연락처, 회사 또는 거래 목록을 반환합니다. 출력은 5000개의 연락처, 12,500개의 회사 또는 12,500개의 거래로 제한됩니다.
 
@@ -371,12 +383,13 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
     <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</p> </td> 
-  </tr>
-
-</tbody> 
+  </tr> 
+ </tbody> 
 </table>
 
-#### [!UICONTROL Update a Record]
++++
+
++++ **[!UICONTROL Update a Record]**
 
 이 작업 모듈은 연락처, 회사 또는 거래를 업데이트합니다.
 
@@ -415,7 +428,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Records]
++++
+
++++ **[!UICONTROL Watch Records]**
 
 이 트리거 모듈은 지난 30일 내에 연락처, 회사 또는 거래가 수정되거나 만들어진 경우 시나리오를 시작합니다. 출력은 10,000개의 레코드로 제한됩니다.
 
@@ -448,12 +463,10 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 +++
 
-+++**연락처**
-
 ### 연락처
 
-* [[!UICONTROL Add Contacts to a List]](#add-contacts-to-a-list)
-* [연락처 만들기/업데이트](#createupdate-a-contact)
+<!--* [[!UICONTROL Add Contacts to a List]](#add-contacts-to-a-list)
+* [Create/Update a contact](#createupdate-a-contact)
 * [[!UICONTROL Create/Update a Contact (Legacy)]](#createupdate-a-contact-legacy)
 * [[!UICONTROL Create/Update a Group of Contacts]](#createupdate-a-group-of-contacts)
 * [[!UICONTROL List Contacts]](#list-contacts)
@@ -461,9 +474,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 * [[!UICONTROL Merge contacts]](#merge-contacts)
 * [[!UICONTROL Remove a Contact from a List]](#remove-a-contact-from-a-list)
 * [[!UICONTROL Search for Contacts]](#search-for-contacts)
-* [목록에 추가된 연락처 보기](#watch-contacts-added-to-a-list)
+* [Watch Contacts Added to a List](#watch-contacts-added-to-a-list)-->
 
-#### [!UICONTROL Add Contacts to a List]
++++ **[!UICONTROL Add Contacts to a List]**
 
 이 모듈은 시스템에서 이미 생성된 연락처 레코드를 연락처 목록에 추가합니다.
 
@@ -490,7 +503,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### 연락처 만들기/업데이트
++++
+
++++ **연락처 만들기/업데이트**
 
 이 작업 모듈은 포털에 존재하지 않는 연락처를 만듭니다. 포털에 연락처가 있으면 이 모듈은 제공된 값으로 연락처를 업데이트합니다.
 
@@ -509,7 +524,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL Create/Update a Contact (Legacy)]
++++
+
++++ **[!UICONTROL Create/Update a Contact (Legacy)]**
 
 포털에 이미 존재하지 않는 연락처를 만들거나, 포털에 존재하는 연락처를 최신 속성 값으로 업데이트합니다.
 
@@ -528,7 +545,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL Create/Update a Group of Contacts]
++++
+
++++ **[!UICONTROL Create/Update a Group of Contacts]**
 
 대화 상대 그룹을 만들거나 대화 상대가 이미 있는 경우 업데이트합니다. 일괄 처리 크기가 연락처 100개 이하로 제한된 경우 성능이 가장 좋습니다. 이 끝점을 통해 수행된 변경 사항은 비동기적으로 처리되므로 변경 사항이 연락처 레코드에 적용되는 데 몇 분이 걸릴 수 있습니다.
 
@@ -555,7 +574,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL List Contacts]
++++
+
++++ **[!UICONTROL List Contacts]**
 
 포털에서 만든 모든 연락처를 반환합니다. 출력은 5000개의 연락처로 제한됩니다. 이전 또는 다음 연락처를 나열하려면 [!UICONTROL advanced] 매개 변수를 사용하여 목록을 오프셋할 수 있습니다.
 
@@ -582,7 +603,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL List Contacts of a Company]
++++
+
++++ **[!UICONTROL List Contacts of a Company]**
 
 회사 연락처 목록을 검색합니다. 출력은 5000개의 연락처로 제한됩니다. 이전 또는 다음 연락처를 나열하려면 [!UICONTROL advanced] 매개 변수를 사용하여 목록을 오프셋할 수 있습니다.
 
@@ -609,7 +632,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL Merge contacts]
++++
+
++++ **[!UICONTROL Merge contacts]**
 
 이 작업 모듈은 연락처를 병합합니다.
 
@@ -632,7 +657,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL Remove a Contact from a List]
++++
+
++++ **[!UICONTROL Remove a Contact from a List]**
 
 연락처 목록에서 연락처를 제거합니다.
 
@@ -659,7 +686,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL Search for Contacts]
++++
+
++++ **[!UICONTROL Search for Contacts]**
 
 검색 쿼리를 사용하여 연락처 목록을 검색합니다.
 
@@ -682,7 +711,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch contacts added to a list]
++++
+
++++ **[!UICONTROL Watch contacts added to a list]**
 
 이 트리거 모듈은 새 연락처가 목록에 추가되면 시나리오를 시작합니다. 이 기능은 유료 마케팅 계정이 있는 사용자만 사용할 수 있습니다.
 
@@ -711,14 +742,12 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 +++
 
-+++**거래**
-
 ### 거래
 
-* [[!UICONTROL Get a Deal's CRM Pipeline]](#get-a-deals-crm-pipeline)
-* [[!UICONTROL List Deal/Ticket Pipelines]](#list-dealticket-pipelines)
+<!--* [[!UICONTROL Get a Deal's CRM Pipeline]](#get-a-deals-crm-pipeline)
+* [[!UICONTROL List Deal/Ticket Pipelines]](#list-dealticket-pipelines)-->
 
-#### [!UICONTROL Get a Deal's CRM Pipeline]
++++ **[!UICONTROL Get a Deal's CRM Pipeline]**
 
 특정 거래 파이프라인을 반환합니다.
 
@@ -741,7 +770,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL List Deal/Ticket Pipelines]
++++
+
++++ **[!UICONTROL List Deal/Ticket Pipelines]**
 
 지정된 포털에 대한 모든 거래 및 티켓 파이프라인을 반환합니다.
 
@@ -762,11 +793,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 +++
 
-+++**회사**
-
 ### 회사
 
-#### [!UICONTROL Search for Companies by domain]
++++ **[!UICONTROL Search for Companies by domain]**
 
 도메인 속성에 정확히 일치하는 항목을 기반으로 회사 목록을 검색합니다.
 
@@ -795,16 +824,14 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 +++
 
-+++**참여**
-
 ### 참여 횟수
 
-* [CRM 개체와 참여 연결](#associate-an-engagement-with-a-crm-object)
-* [참여 만들기](#create-an-engagement)
-* [참여 삭제](#delete-an-engagement)
-* [참여 보기](#watch-engagements)
+<!--* [Associate an Engagement with a CRM object](#associate-an-engagement-with-a-crm-object)
+* [Create an Engagement](#create-an-engagement)
+* [Delete an Engagement](#delete-an-engagement)
+* [Watch Engagements](#watch-engagements)-->
 
-#### CRM 개체와 참여 연결
++++ **참여를 CRM 개체와 연결**
 
 이 작업 모듈은 계약을 연락처, 회사 또는 거래와 연결합니다.
 
@@ -831,7 +858,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### 참여 만들기
++++
+
++++ **참여 만들기**
 
 이 작업 모듈은 HubSpot의 CRM 오브젝트와 참여(예: 메모, 작업 또는 활동)를 만듭니다. 참여는 CRM에 기록해야 하는 연락처와의 모든 상호 작용입니다.
 
@@ -898,7 +927,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-##### 이메일 메타데이터
+#### 이메일 메타데이터
 
 <table style="table-layout:auto"> 
  <col> 
@@ -944,7 +973,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-##### 메타데이터 호출
+#### 메타데이터 호출
 
 <table style="table-layout:auto"> 
  <col> 
@@ -986,7 +1015,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-##### 모임 필드
+#### 모임 필드
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1012,7 +1041,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-##### 작업 필드
+#### 작업 필드
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1038,7 +1067,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### 참여 삭제
++++
+
++++ **참여 삭제**
 
 이 작업 모듈은 해당 ID로 계약을 삭제합니다.
 
@@ -1057,7 +1088,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### 참여 보기
++++
+
++++ **참여 보기**
 
 이 트리거 모듈은 포털에 새 참여가 생성되면 시나리오를 시작합니다. 이 모듈은 지난 30일 동안 생성된 레코드 또는 가장 최근에 생성된 레코드 10,000개만 반환합니다.
 
@@ -1082,16 +1115,14 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 +++
 
-+++**이벤트 및 알림**
-
 ### 이벤트 및 알림
 
-* [타임라인 이벤트 만들기/업데이트](#create--update-a-timeline-event)
-* [타임라인 이벤트 유형 나열](#list-timeline-event-types)
-* [달력 이벤트 보기](#watch-calendar-events)
-* [알림 보기](#watch-notifications)
+<!--* [Create / Update a Timeline Event](#create--update-a-timeline-event)
+* [List Timeline Event Types](#list-timeline-event-types)
+* [Watch Calendar Events](#watch-calendar-events)
+* [Watch Notifications](#watch-notifications)-->
 
-#### 타임라인 이벤트 만들기/업데이트
++++ **타임라인 이벤트 만들기/업데이트**
 
 이 작업 모듈은 타임라인 이벤트를 만들거나 업데이트합니다. 이 모듈은 사용자 식별자, HubSpot API 키, 클라이언트 ID 및 클라이언트 암호를 포함하는 개발자 연결에서만 사용할 수 있습니다.
 
@@ -1134,7 +1165,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### 타임라인 이벤트 유형 나열
++++
+
++++ **타임라인 이벤트 유형 나열**
 
 이 검색 모듈은 특정 애플리케이션에 대한 모든 타임라인 이벤트 목록을 반환합니다. 이 모듈은 사용자 식별자, HubSpot API 키, 클라이언트 ID 및 클라이언트 암호를 포함하는 개발자 연결에서만 사용할 수 있습니다.
 
@@ -1153,7 +1186,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### 달력 이벤트 보기
++++
+
++++ **일정 이벤트 보기**
 
 이 트리거 모듈은 새 이벤트가 캘린더에 추가되면 시나리오를 시작합니다. 시작 날짜와 종료 날짜 사이에 최대 500개의 작업이 포함됩니다. 이 모듈은 사용자 식별자, HubSpot API 키, 클라이언트 ID 및 클라이언트 암호를 포함하는 개발자 연결에서만 사용할 수 있습니다.
 
@@ -1184,7 +1219,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### 알림 보기
++++
+
++++ **알림 보기**
 
 이 트리거 모듈은 변경 사항에 대한 새 알림이 전송될 때 시나리오를 시작합니다.  시작 날짜와 종료 날짜 사이에 최대 500개의 작업이 포함됩니다. 이 모듈은 사용자 식별자, HubSpot API 키, 클라이언트 ID 및 클라이언트 암호를 포함하는 개발자 연결에서만 사용할 수 있습니다. HubSpot에는 개발자 애플리케이션당 하나의 웹후크 URL만 있을 수 있습니다.
 
@@ -1215,19 +1252,17 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 +++
 
-+++**파일**
-
 ### 파일
 
-* [[!UICONTROL Create a Folder]](#create-a-folder)
-* [파일 삭제](#delete-a-file)
+<!--* [[!UICONTROL Create a Folder]](#create-a-folder)
+* [Delete a File](#delete-a-file)
 * [[!UICONTROL Delete a Folder]](#delete-a-folder)
-* [목록 파일](#list-files)
+* [List Files](#list-files)
 * [[!UICONTROL Move a File]](#move-a-file)
-* [파일 업로드](#upload-a-file)
-* [파일 보기](#watch-files)
+* [Upload a file](#upload-a-file)
+* [Watch files](#watch-files)-->
 
-#### [!UICONTROL Create a Folder]
++++ **[!UICONTROL Create a Folder]**
 
 이 모듈은 폴더를 생성합니다.
 
@@ -1250,7 +1285,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### 파일 삭제
++++
+
++++ **파일 삭제**
 
 이 작업 모듈은 파일 관리자에서 파일 및 모든 관련 데이터와 썸네일을 영구적으로 삭제합니다.
 
@@ -1269,7 +1306,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Folder]
++++
+
++++ **[!UICONTROL Delete a Folder]**
 
 폴더를 삭제된 것으로 표시합니다.
 
@@ -1288,7 +1327,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### 목록 파일
++++
+
++++ **목록 파일**
 
 이 검색 모듈은 파일 관리자에 저장된 파일 목록을 반환합니다.
 
@@ -1315,7 +1356,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL Move a File]
++++
+
++++ **[!UICONTROL Move a File]**
 
 파일을 다른 폴더로 이동합니다.
 
@@ -1342,7 +1385,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### 파일 업로드
++++
+
++++ **파일 업로드**
 
 이 작업 모듈은 파일을 파일 관리자에 업로드합니다.
 
@@ -1373,7 +1418,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-### 파일 보기
++++
+
++++ **파일 보기**
 
 이 트리거 모듈은 새 파일이 파일 관리자에 저장될 때 시나리오를 시작합니다.
 
@@ -1402,15 +1449,13 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 +++
 
-+++**작업**
-
 ### 작업
 
-* [캘린더 작업 만들기](#create-a-calendar-task)
-* [캘린더 작업 삭제](#create-a-calendar-task)
-* [작업 이벤트 보기](#watch-task-events)
+<!--* [Create a Calendar Task](#create-a-calendar-task)
+* [Delete a Calendar Task](#create-a-calendar-task)
+* [Watch Task Events](#watch-task-events)-->
 
-#### 캘린더 작업 만들기
++++ **일정 작업 만들기**
 
 이 작업 모듈은 캘린더에 대한 새 작업을 만듭니다. 이 모듈에서 사용되는 연결은 유료 마케팅 계정이 있는 사용자의 자격 증명을 사용해야 합니다.
 
@@ -1453,7 +1498,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### 캘린더 작업 삭제
++++
+
++++ **일정 작업 삭제**
 
 이 작업 모듈은 캘린더 작업을 삭제합니다. 이 모듈에서 사용되는 연결은 유료 마케팅 계정이 있는 사용자의 자격 증명을 사용해야 합니다.
 
@@ -1472,7 +1519,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### 작업 이벤트 보기
++++
+
++++ **작업 이벤트 보기**
 
 이 트리거 모듈은 캘린더에 새 작업 이벤트가 있을 때 시나리오를 시작합니다. 이 모듈에서 사용되는 연결은 유료 마케팅 계정이 있는 사용자의 자격 증명을 사용해야 합니다. 모듈은 최대 500개의 이벤트를 반환합니다.
 
@@ -1501,14 +1550,12 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 +++
 
-+++**사용자**
-
 ### 사용자
 
-* [소유자 가져오기](#get-an-owner)
-* [목록 소유자](#list-owners)
+<!--* [Get an Owner](#get-an-owner)
+* [List Owners](#list-owners)-->
 
-#### 소유자 가져오기
++++ **소유자 가져오기**
 
 이 작업 모듈은 소유자에 대한 세부 정보를 반환합니다.
 
@@ -1527,7 +1574,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### 목록 소유자
++++
+
++++ **소유자 목록**
 
 이 검색 모듈은 HubSpot 계정에 있는 모든 소유자 목록을 반환합니다.
 
@@ -1544,20 +1593,18 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 +++
 
-+++**티켓**
-
 ### 티켓
 
 <!--* [Create a Ticket]-->
-* [티켓 삭제](#delete-a-ticket)
-  <!--* [Create a Ticket]-->
-  <!--* [Create a Ticket]-->
-  <!--* [Create a Ticket]-->
-  <!--* [Create a Ticket]-->
+<!--* [Delete a Ticket](#delete-a-ticket)-->
+<!--* [Create a Ticket]-->
+<!--* [Create a Ticket]-->
+<!--* [Create a Ticket]-->
+<!--* [Create a Ticket]-->
 
 <!-- Create a Ticket Need to find a working connection-->
 
-#### [!UICONTROL Delete a Ticket]
++++ **[!UICONTROL Delete a Ticket]**
 
 ID로 기존 티켓을 삭제합니다.
 
@@ -1576,6 +1623,8 @@ ID로 기존 티켓을 삭제합니다.
  </tbody> 
 </table>
 
++++
+
 <!-- Get a Ticket  Need to find a working connection-->
 
 <!-- List Tickets  Need to find a working connection-->
@@ -1584,18 +1633,14 @@ ID로 기존 티켓을 삭제합니다.
 
 <!-- Watch Tickets Need to find a working connection-->
 
-+++
-
-+++**Forms**
-
 ### 양식
 
-* [양식을 통해 업로드된 파일 가져오기](#get-a-file-uploaded-via-form)
-* [Forms 나열](#list-forms)
-  <!--* [Submit Data to a Form]-->
-  <!--* [Watch Submissions for a Form]-->
+<!--* [Get a File Uploaded via Form](#get-a-file-uploaded-via-form)
+* [List Forms](#list-forms)-->
+<!--* [Submit Data to a Form]-->
+<!--* [Watch Submissions for a Form]-->
 
-#### 양식을 통해 업로드된 파일 가져오기
++++ **양식을 통해 업로드된 파일 가져오기**
 
 이 작업 모듈은 양식을 통해 업로드된 파일을 반환합니다.
 
@@ -1614,7 +1659,9 @@ ID로 기존 티켓을 삭제합니다.
  </tbody> 
 </table>
 
-#### 목록 Forms
++++
+
++++ **Forms 나열**
 
 이 작업 모듈은 이 모듈에 사용된 연결과 연결된 계정에서 만든 모든 양식을 반환합니다.
 
@@ -1633,23 +1680,21 @@ ID로 기존 티켓을 삭제합니다.
  </tbody> 
 </table>
 
++++
+
 <!--#### Submit Data to a Form Need to find a working connection-->
 
 
 
 &lt;!—#### 양식에 대한 제출 보기 — 작업 연결을 찾아야 합니다.>—>
 
-+++
-
-+++**소셜 미디어(브로드캐스트)**
-
 ### 소셜 미디어(브로드캐스트)
 
-* [브로드캐스트 메시지 취소](#cancel-a-broadcast-message)
-* [브로드캐스트 메시지 만들기](#create-a-broadcast-message)
-* [브로드캐스트 메시지 보기](#watch-broadcast-messages)
+<!--* [Cancel a Broadcast Message](#cancel-a-broadcast-message)
+* [Create a Broadcast Message](#create-a-broadcast-message)
+* [Watch Broadcast Messages](#watch-broadcast-messages)-->
 
-#### 브로드캐스트 메시지 취소
++++ **브로드캐스트 메시지 취소**
 
 이 작업 모듈은 트윗 또는 Facebook 게시물과 같은 예약된 브로드캐스트를 취소합니다.
 
@@ -1668,7 +1713,9 @@ ID로 기존 티켓을 삭제합니다.
  </tbody> 
 </table>
 
-#### 브로드캐스트 메시지 만들기
++++
+
++++ **브로드캐스트 메시지 만들기**
 
 이 작업 모듈은 지정된 소셜 미디어 채널에 메시지를 만들고 즉시 게시합니다.
 
@@ -1707,7 +1754,9 @@ ID로 기존 티켓을 삭제합니다.
  </tbody> 
 </table>
 
-#### 브로드캐스트 메시지 보기
++++
+
++++ **브로드캐스트 메시지 보기**
 
 이 트리거 모듈은 메시지가 HubSpot에서 지정된 소셜 미디어 채널로 게시되면 시나리오를 시작합니다.
 
@@ -1740,22 +1789,20 @@ ID로 기존 티켓을 삭제합니다.
 
 +++
 
-+++**블로그 게시물**
-
 ### 블로그 게시물
 
 <!--* [Create a Blog Post]-->
-* [블로그 게시물 삭제](#delete-a-blog-post)
-  <!--* [List Blog Posts]-->
-* [블로그 게시물 Publish/게시 취소](#publish--unpublish-a-blog-post)
-  <!--* [Watch Blog Posts]-->
+<!--* [Delete a Blog Post](#delete-a-blog-post)-->
+<!--* [List Blog Posts]-->
+&lt;!—* [블로그 게시물 게시/게시 취소](#publish--unpublish-a-blog-post)—>
+<!--* [Watch Blog Posts]-->
 
 <!--
 #### Create a Blog Post May need connection
 -->
 
 
-#### 블로그 게시물 삭제
++++ **블로그 게시물 삭제**
 
 이 작업 모듈은 단일 블로그 게시물을 삭제합니다.
 
@@ -1774,11 +1821,13 @@ ID로 기존 티켓을 삭제합니다.
  </tbody> 
 </table>
 
++++
+
 <!--#### List Blog Posts May need connection
 
 This search module retrieves posts from a HubSpot blog.-->
 
-#### Publish / 블로그 게시물 게시 취소
++++ **블로그 게시물 게시/게시 취소**
 
 이 작업 모듈은 블로그 게시물 게시를 예약하거나 취소합니다.
 
@@ -1801,9 +1850,9 @@ This search module retrieves posts from a HubSpot blog.-->
  </tbody> 
 </table>
 
-<!--#### Watch Blog PostsMay need connection-->
-
 +++
+
+<!--#### Watch Blog PostsMay need connection-->
 
 <!--+++**Workflows**>
 
@@ -1818,14 +1867,12 @@ This search module retrieves posts from a HubSpot blog.-->
 
 <!--+++-->
 
-+++**구독**
-
 ### 구독수
 
-* [이메일 구독 업데이트](#update-email-subscription)
-* [포털에 대한 구독 타임라인 보기](#watch-subscriptions-timeline-for-a-portal)
+<!--* [Update Email Subscription](#update-email-subscription)
+* [Watch Subscriptions Timeline for a Portal](#watch-subscriptions-timeline-for-a-portal)-->
 
-#### 이메일 구독 업데이트
++++ **이메일 구독 업데이트**
 
 이 작업 모듈은 HubSpot의 이메일 구독을 업데이트합니다.
 
@@ -1856,7 +1903,9 @@ This search module retrieves posts from a HubSpot blog.-->
  </tbody> 
 </table>
 
-#### 포털에 대한 구독 타임라인 보기
++++
+
++++ **포털에 대한 구독 타임라인 보기**
 
 이 트리거 모듈은 새 이메일 타임라인 구독이 포털에 추가되면 시나리오를 시작합니다.
 
@@ -1909,11 +1958,9 @@ This action module associates two CRM objects.-->
 
 <!--+++-->
 
-+++**기타**
-
 ### 기타
 
-#### [!UICONTROL Make an API Call]
++++ **[!UICONTROL Make an API Call]**
 
 사용자 지정 API 호출을 수행할 수 있습니다.
 

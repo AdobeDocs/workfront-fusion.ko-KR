@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion Google 슬라이드 모듈을 사용하면 �
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 6f5f97b9-b06a-4336-b349-ee9e2606d4bf
-source-git-commit: 5b88faa7fc3d501e543c1791eac02cbf2a690382
+source-git-commit: c9c2957aad4c885a622a80b9f25303517db0c506
 workflow-type: tm+mt
-source-wordcount: '1250'
+source-wordcount: '1552'
 ht-degree: 0%
 
 ---
@@ -102,18 +102,18 @@ Google 슬라이드 커넥터는 다음을 사용합니다.
 
 ### 프레젠테이션
 
-* [[!UICONTROL Watch Presentations]](#watch-presentations)
-* [[!UICONTROL List Presentations]](#list-presentations)
-* [[!UICONTROL Get a Presentation]](#get-a-presentation)
-* [[!UICONTROL Get a Page/Thumbnail]](#get-a-pagethumbnail)
-* [[!UICONTROL Create a Presentation From a Template]](#create-a-presentation-from-a-template)
-* [[!UICONTROL Upload an Image To a Presentation]](#upload-an-image-to-a-presentation)
-* [[!UICONTROL Refresh a Chart]](#refresh-a-chart)
 * [[!UICONTROL Add/Delete a Slide]](#adddelete-a-slide)
+* [[!UICONTROL Create a Presentation From a Template]](#create-a-presentation-from-a-template)
+* [[!UICONTROL Get a Page/Thumbnail]](#get-a-pagethumbnail)
+* [[!UICONTROL Get a Presentation]](#get-a-presentation)
+* [[!UICONTROL List Presentations]](#list-presentations)
+* [[!UICONTROL Refresh a Chart]](#refresh-a-chart)
+* [[!UICONTROL Upload an Image To a Presentation]](#upload-an-image-to-a-presentation)
+* [[!UICONTROL Watch Presentations]](#watch-presentations)
 
-#### [!UICONTROL Watch Presentations]
+#### [!UICONTROL Add/Delete a Slide]
 
-새 프레젠테이션을 만들거나 업데이트할 때 트리거됩니다.
+이 작업 모듈은 지정된 프레젠테이션에서 슬라이드를 만들거나 기존 슬라이드를 삭제합니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -124,110 +124,48 @@ Google 슬라이드 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Google Slides] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Watch] </td> 
-   <td> <p>프레젠테이션을 시청하려면 다음 옵션을 선택합니다.</p> 
+   <td role="rowheader">[!UICONTROL Select the method]</td> 
+   <td> <p>새 슬라이드를 추가할지 또는 슬라이드를 삭제할지 선택합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!DNL Enter a Slide ID]</td> 
+   <td> <p>슬라이드를 삭제하는 경우 슬라이드 ID를 수동으로 입력할지 목록에서 슬라이드를 선택할지를 선택합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!DNL Presentation ID]</td> 
+   <td> <p>프레젠테이션을 선택하거나 슬라이드를 추가하거나 삭제할 프레젠테이션의 프레젠테이션 ID를 매핑합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!DNL Slide Object ID]</td> 
+   <td> <p>슬라이드를 삭제하고 슬라이드를 수동으로 입력하도록 선택한 경우 슬라이드 ID를 입력하거나 매핑합니다. </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Predefined layout type]</td> 
+   <td> <p> 추가된 슬라이드에서 사용할 미리 정의된 슬라이드 레이아웃을 선택합니다. 추가 필드(예: [!UICONTROL Title])에 대한 값을 지정하십시오.</p> 
     <ul> 
-     <li> <p>[!UICONTROL Created Date]</p> </li> 
-     <li> <p>[!UICONTROL Modified Date]</p> </li> 
-    </ul> </td> 
+     <li>[!UICONTROL Blank layout, with no placeholders]</li> 
+     <li>[!UICONTROL Layout with a caption at the bottom]</li> 
+     <li>[!UICONTROL Layout with a title and subtitle]</li> 
+     <li>[!UICONTROL Layout with a title and body]</li> 
+     <li>[!UICONTROL Layout with a title and two columns]</li> 
+     <li>[!UICONTROL Layout with only a title]</li> 
+     <li>[!UICONTROL Layout with a section title]</li> 
+     <li>[!UICONTROL Layout with a title and subtitle on one side and description on the other]</li> 
+     <li>[!UICONTROL Layout with one title and one body, arranged in a single column]</li> 
+     <li>[!UICONTROL Layout with a main point]</li> 
+     <li>[!DNL Layout with a big number heading]</li> 
+    </ul> <p>이 필드는 슬라이드를 추가하도록 선택한 경우 사용할 수 있습니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td> <p>한 시나리오 실행 주기 동안 Workfront Fusion이 반환해야 하는 최대 프레젠테이션 수입니다.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL List Presentations]
-
-모든 프레젠테이션 목록을 검색합니다.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Slides] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Choose a drive location]</td> 
-   <td> <p>나열할 프레젠테이션이 있는 [!DNL Google Drive]을(를) 선택하십시오.</p> 
-    <ul> 
-     <li>[!UICONTROL My Drive]</li> 
-     <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] 공유 드라이브]</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Folder ID]</td> 
-   <td> <p>나열할 프레젠테이션의 폴더 위치를 선택합니다.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td> <p>한 시나리오 실행 주기 동안 최대 프레젠테이션 수 [!DNL Workfront Fusion]이(가) 반환되어야 합니다.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Get a Presentation]
-
-지정된 프레젠테이션의 최신 버전을 가져옵니다.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Slides] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Choose a drive]</td> 
-   <td> <p>나열할 프레젠테이션이 있는 [!DNL Google Drive]을(를) 선택하십시오.</p> 
-    <ul> 
-     <li>[!UICONTROL My Drive]</li> 
-     <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] 공유 드라이브]</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Presentation ID]</td> 
-   <td> <p> 검색할 프레젠테이션을 선택합니다.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Get a Page/Thumbnail]
-
-프레젠테이션에 있는 페이지의 축소판 또는 지정된 페이지의 최신 버전을 가져옵니다.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Slides] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Presentation ID]</td> 
-   <td> <p> 검색할 프레젠테이션 ID를 선택합니다.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Page Object ID]</td> 
-   <td> <p> 페이지 개체 세부 사항을 보려는 슬라이드를 선택합니다.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Show Page Thumbnail]</td> 
-   <td> <p> 페이지 썸네일 정보를 보려면 확인란을 선택합니다.</p> </td> 
+   <td role="rowheader">[!DNL Content]</td> 
+   <td> <p>슬라이드의 텍스트 내용을 입력하거나 매핑합니다. 필드는 선택한 템플릿을 기반으로 사용할 수 있습니다.</p> <p>이 필드는 슬라이드를 추가하도록 선택한 경우 사용할 수 있습니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### [!UICONTROL Create a Presentation From a Template]
 
-템플릿의 `{{Name}}`, `{{Email}}`과(와) 같은 모든 태그를 제공된 데이터로 바꾸어 새 프레젠테이션을 만듭니다.
+이 작업 모듈은 프레젠테이션을 복사하고 의 `{{Name}}`, `{{Email}}`과(와) 같은 모든 태그를 제공된 데이터로 교체하여 새 프레젠테이션을 만듭니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -264,36 +202,163 @@ Google 슬라이드 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Presentation ID]</td> 
-   <td> <p> 템플릿으로 사용할 프레젠테이션의 프레젠테이션 ID를 선택합니다.</p> </td> 
+   <td> <p> 프레젠테이션을 선택하거나 템플릿으로 사용할 프레젠테이션의 프레젠테이션 ID를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Values] </td> 
    <td> <p>값을 추가합니다.</p> 
     <ul> 
      <li><strong>[!UICONTROL Tag]</strong>: 프레젠테이션에서 바꿀 태그를 입력합니다. For example, <code>&#123;&#123;Name&#125;&#125;</code></li> 
-     <li><strong>[!UICONTROL Replaced Value]</strong>: 기존 태그를 대체할 값을 입력합니다. 예를 들어 문자열을 나타내는 경우 <tr><ul><tr><tr><tr><code>&#123;&#123;Name&#125;&#125;/code> in the presentation and the replaced value is Sample, then the <code>&#123;&#123;Name&#125;&#125;</code> will be replaced by <code>Sample</code>.</li> 
+     <li><strong>[!UICONTROL Replaced Value]</strong>: 기존 태그를 대체할 값을 입력합니다. 예를 들어 프레젠테이션의 문자열 <code>&#123;&#123;Name&#125;&#125;</code>이(가) 있고 대체된 값이 샘플이면 <code>&#123;&#123;Name&#125;&#125;</code>은(는) <code>Sample</code>(으)로 대체됩니다.</li> 
     </ul> </td> 
   </tr> 
-   
+  <tr> 
    <td role="rowheader">[!UICONTROL New Drive Location]</td> 
-   <td> <p>Select the [!DNL Google Drive] where you want to store or add the new presentation:</p> 
-     
+   <td> <p>새 프레젠테이션을 저장하거나 추가할 [!DNL Google Drive]을(를) 선택하십시오.</p> 
+    <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
+     <li>[!UICONTROL [!DNL Google] 공유 드라이브]</li> 
     </ul> </td> 
   </tr> 
-   
+  <tr> 
    <td role="rowheader"> <p>[!UICONTROL New Document's Location]</p> </td> 
-   <td> <p>Select the folder where you want to store or add the presentation.</p> </td> 
+   <td> <p>프레젠테이션을 저장하거나 추가할 폴더를 선택합니다.</p> </td> 
   </tr> 
-   
+  <tr> 
    <td role="rowheader">[!UICONTROL Shared] </td> 
-   <td> <p>Select if you want to share the presentation.</p> </td> 
+   <td> <p>프레젠테이션을 공유하려면 선택하십시오.</p> </td> 
   </tr> 
-   
+  <tr> 
    <td role="rowheader">[!UICONTROL Sharing with Other's Email Address]</td> 
-   <td> <p> Enter the email address with whom you want to share the presentation. If you are not entering an email address and selecting only shared field, the presentation is shareable to anyone.</p> </td> 
+   <td> <p> 프레젠테이션을 공유할 전자 메일 주소를 입력하십시오. 이 필드에 이메일을 입력하지 않고 공유 옵션을 활성화하면 프레젠테이션을 모든 사람이 공유할 수 있습니다.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Get a Page/Thumbnail]
+
+이 작업 모듈은 프레젠테이션에 있는 페이지의 축소판 또는 지정된 페이지의 최신 버전을 가져옵니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>[!DNL Google Slides] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Enter a Presentation and Page ID]</td> 
+   <td> <p> 프레젠테이션 및 페이지 ID를 수동으로 입력할지, 목록에서 선택할지 선택합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Presentation ID]</td> 
+   <td> <p> 검색할 프레젠테이션 ID를 선택합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Page Object ID]</td> 
+   <td> <p> 페이지 개체 세부 사항을 보려는 슬라이드를 선택합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Show Page Thumbnail]</td> 
+   <td> <p> 페이지 썸네일 정보를 보려면 확인란을 선택합니다.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Get a Presentation]
+
+이 작업 모듈은 지정된 프레젠테이션의 최신 버전을 가져옵니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>[!DNL Google Slides] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Choose a drive]</td> 
+   <td> <p>나열할 프레젠테이션이 있는 [!DNL Google Drive]을(를) 선택하십시오.</p> 
+    <ul> 
+     <li>[!UICONTROL My Drive]</li> 
+     <li>[!UICONTROL Shared With Me]</li> 
+     <li>[!UICONTROL [!DNL Google] 공유 드라이브]</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Presentation ID]</td> 
+   <td> <p> 검색할 프레젠테이션을 선택합니다.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL List Presentations]
+
+이 모듈은 지정된 위치에 있는 모든 프레젠테이션의 목록을 검색합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>[!DNL Google Slides] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Choose a drive location]</td> 
+   <td> <p>나열할 프레젠테이션이 있는 [!DNL Google Drive]을(를) 선택하십시오.</p> 
+    <ul> 
+     <li>[!UICONTROL My Drive]</li> 
+     <li>[!UICONTROL Shared With Me]</li> 
+     <li>[!UICONTROL [!DNL Google] 공유 드라이브]</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Folder ID]</td> 
+   <td> <p>나열할 프레젠테이션의 폴더 위치를 선택합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td> <p>한 시나리오 실행 주기 동안 모듈이 반환할 최대 프레젠테이션 수를 입력하거나 매핑합니다.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Refresh a Chart]
+
+IS 작업 모듈은 ID로 지정된 프레젠테이션에 저장된 차트 데이터를 새로 고칩니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>[!DNL Google Slides] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Enter a Presentation ID]</td> 
+   <td> <p> 프레젠테이션 ID를 수동으로 입력할지 목록에서 선택할지 선택합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Choose a drive]</td> 
+   <td> <p>목록에서 프레젠테이션을 선택하는 경우 나열할 프레젠테이션이 있는 [!DNL Google Drive]을(를) 선택합니다.</p> 
+    <ul> 
+     <li>[!UICONTROL My Drive]</li> 
+     <li>[!UICONTROL Shared With Me]</li> 
+     <li>[!UICONTROL [!DNL Google] 공유 드라이브]</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Presentation ID]</td> 
+   <td> <p>프레젠테이션을 선택하거나 새로 고침할 차트가 포함된 프레젠테이션의 프레젠테이션 ID를 입력하거나 매핑합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Chart Object ID]</td> 
+   <td> <p> 데이터를 수동으로 입력하는 경우 새로 고침할 차트의 ID를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -320,31 +385,32 @@ Google 슬라이드 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Choose a drive]</td> 
-   <td> <p>나열할 프레젠테이션이 있는 [!DNL Google Drive]을(를) 선택하십시오.</p> 
+   <td> <p>드롭다운에서 선택할 경우 이미지를 추가할 프레젠테이션이 있는 [!DNL Google Drive]을(를) 선택합니다.</p> 
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared With Me]</li> 
      <li>[!UICONTROL [!DNL Google] 공유 드라이브]</li> 
-    </ul> <p>이 필드는 프레젠테이션 [!UICONTROL By Dropdown]을(를) 만드는 경우 나타납니다.</p> </td> 
+    </ul>  </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Presentation ID]</td> 
    <td> <p> 이미지를 업로드할 프레젠테이션의 프레젠테이션 ID를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Values]</td> 
-   <td> <p>값 값을 추가합니다.</p> 
-    <ul> 
-     <li><strong>[!UICONTROL Tag]</strong>: URL을 추가할 태그를 입력합니다.</li> 
-     <li><strong>[!UICONTROL Image URL]</strong>: 업로드할 이미지의 경로 또는 URL을 입력합니다.</li> 
-    </ul> <p>참고: 이미지 크기는 50MB 미만이어야 하고, 2,500만 픽셀을 초과할 수 없으며, PNG, JPEG 또는 GIF 형식이어야 합니다.</p> </td> 
+   <td role="rowheader">[!UICONTROL Select the Method]</td> 
+   <td> <p> 이미지를 바꿀 방법을 선택합니다.</p>
+   <ul>
+   <li><p><b>텍스트 태그를 교체하여 이미지 업로드</b></p><p>값 필드에서 업로드할 각 이미지에 대해 <b>항목 추가</b>를 클릭하고 이미지의 태그와 새 이미지의 URL을 입력합니다.</p></li>
+   <li><p><b>이미지를 교체하여 이미지 업로드</b></p><p>값 필드에서 업로드할 각 이미지에 대해 <b>항목 추가</b>를 클릭하고 이미지의 개체 ID, 바꾸기 메서드 및 새 이미지의 URL을 입력합니다.</p></li>
+   </ul>
+  <p>참고: 이미지 크기는 50MB 미만이어야 하고, 2,500만 픽셀을 초과할 수 없으며, PNG, JPEG 또는 GIF 형식이어야 합니다.</p>   </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Refresh a Chart]
+#### [!UICONTROL Watch Presentations]
 
-ID로 지정된 프레젠테이션에 저장된 차트 데이터를 새로 고칩니다.
+이 트리거 모듈은 새 프레젠테이션을 만들거나 업데이트할 때 시나리오를 시작합니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -355,123 +421,24 @@ ID로 지정된 프레젠테이션에 저장된 차트 데이터를 새로 고�
    <td> <p>[!DNL Google Slides] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Choose a drive]</td> 
-   <td> <p>나열할 프레젠테이션이 있는 [!DNL Google Drive]을(를) 선택하십시오.</p> 
+   <td role="rowheader">[!UICONTROL Watch] </td> 
+   <td> <p>프레젠테이션을 시청하려면 다음 옵션을 선택합니다.</p> 
     <ul> 
-     <li>[!UICONTROL My Drive]</li> 
-     <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] 공유 드라이브]</li> 
+     <li> <p>[!UICONTROL Created Date]</p> </li> 
+     <li> <p>[!UICONTROL Modified Date]</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Presentation ID]</td> 
-   <td> <p>새로 고침할 차트가 포함된 프레젠테이션의 프레젠테이션 ID를 선택합니다.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Chart Object ID]</td> 
-   <td> <p> 새로 고침할 차트를 선택합니다.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Add/Delete a Slide]
-
-지정한 프레젠테이션에서 빈 슬라이드를 만들거나 기존 슬라이드를 삭제합니다.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Slides] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Select the method]</td> 
-   <td> <p>새 슬라이드를 추가할지 또는 슬라이드를 삭제할지 선택합니다.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!DNL Presentation ID]</td> 
-   <td> <p>슬라이드를 추가하거나 삭제할 프레젠테이션의 프레젠테이션 ID를 선택합니다.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Predefined layout type]</td> 
-   <td> <p> 추가된 슬라이드에서 사용할 미리 정의된 슬라이드 레이아웃을 선택합니다. 추가 필드(예: [!UICONTROL Title])에 대한 값을 지정하십시오.</p> 
-    <ul> 
-     <li>[!UICONTROL Blank layout, with no placeholders]</li> 
-     <li>[!UICONTROL Layout with a caption at the bottom]</li> 
-     <li>[!UICONTROL Layout with a title and subtitle]</li> 
-     <li>[!UICONTROL Layout with a title and body]</li> 
-     <li>[!UICONTROL Layout with a title and two columns]</li> 
-     <li>[!UICONTROL Layout with only a title]</li> 
-     <li>[!UICONTROL Layout with a section title]</li> 
-     <li>[!UICONTROL Layout with a title and subtitle on one side and description on the other]</li> 
-     <li>[!UICONTROL Layout with one title and one body, arranged in a single column]</li> 
-     <li>[!UICONTROL Layout with a main point]</li> 
-     <li>[!DNL Layout with a big number heading]</li> 
-    </ul> <p>이 필드는 슬라이드를 추가하도록 선택한 경우 사용할 수 있습니다.</p> </td> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td> <p>한 시나리오 실행 주기 동안 Workfront Fusion이 반환해야 하는 최대 프레젠테이션 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### 기타
 
-* [[!UICONTROL Make an API Call]](#make-an-api-call)
 * [[!UICONTROL Insert Links in a Presentation]](#insert-links-in-a-presentation)
-
-#### [!UICONTROL Make an API Call]
-
-임의의 승인된 API 호출을 수행합니다.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Slides] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL URL]</td> 
-   <td> <p>https://developers.google.com/slides/에 상대적인 경로를 입력합니다. 예: 프레젠테이션</p> <p>사용 가능한 끝점 목록은 <a href="https://developers.google.com/slides/reference/rest">[!DNL Google Slides] API 설명서</a>를 참조하세요.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>원하는 요청 헤더를 입력합니다. 인증 헤더를 추가할 필요가 없습니다.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
-   <td> <p> 요청 쿼리 문자열을 입력합니다.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>표준 JSON 개체의 형태로 API 호출에 대한 본문 콘텐츠를 추가합니다.</p> <p>참고:  <p>JSON에서 <code>if</code>과(와) 같은 조건문을 사용할 때 따옴표를 조건문 외부에 넣으십시오.</p> 
-     <div class="example" data-mc-autonum="<b>Example: </b>"> 
-      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
-     </div> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
->[!INFO]
->
->**예:** API 호출을 사용하면 입력한 프레젠테이션 ID에 대한 프레젠테이션 세부 정보를 가져올 수 있습니다. [!DNL Google Slides]에서 프레젠테이션을 열면 URL에서 프레젠테이션 ID를 찾을 수 있습니다.
->
->![API 호출 예](/help/workfront-fusion/references/apps-and-modules/assets/api-call-350x13.png)
->
->다음 API 호출은 프레젠테이션 세부 정보를 반환합니다.
->
->![프레젠테이션 세부 정보](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details.png)
->
->검색 일치 항목은 모듈의 출력에서 [!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL presentationId] 아래에 있습니다.
->
->이 예제에서 요청된 프레젠테이션 세부 사항이 반환되었습니다.
->
->![프레젠테이션 세부 정보](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details-2.png)
+* [[!UICONTROL Make an API Call]](#make-an-api-call)
 
 #### [!UICONTROL Insert Links in a Presentation]
 
@@ -512,7 +479,63 @@ ID로 지정된 프레젠테이션에 저장된 차트 데이터를 새로 고�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Text Inputs]</td> 
-   <td>링크를 추가할 각 텍스트 항목에 대해 항목과 관련 링크를 목록에 추가합니다. 항목이 프레젠테이션에 나타날 때마다 지정된 사이트에 자동으로 연결됩니다.</td> 
+   <td>링크를 삽입하는 경우 링크를 추가할 각 텍스트 항목에 대해 <b>항목 추가</b>를 클릭하고 텍스트와 연결된 링크를 입력합니다. 항목이 프레젠테이션에 나타날 때마다 지정된 사이트에 자동으로 연결됩니다.</td> 
   </tr> 
  </tbody> 
 </table>
+
+#### [!UICONTROL Make an API Call]
+
+임의의 승인된 API 호출을 수행합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>[!DNL Google Slides] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL URL]</td> 
+   <td> <p><code>https://developers.google.com/slides/</code>과(와) 관련된 경로를 입력하십시오. 예: 프레젠테이션</p> <p>사용 가능한 끝점 목록은 <a href="https://developers.google.com/slides/reference/rest">[!DNL Google Slides] API 설명서</a>를 참조하세요.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td> <p>원하는 요청 헤더를 입력합니다. 인증 헤더를 추가할 필요가 없습니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td> <p> 요청 쿼리 문자열을 입력합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td> <p>표준 JSON 개체의 형태로 API 호출에 대한 본문 콘텐츠를 추가합니다.</p> <p>참고:  <p>JSON에서 <code>if</code>과(와) 같은 조건문을 사용할 때 따옴표를 조건문 외부에 넣으십시오.</p> 
+     <div class="example" data-mc-autonum="<b>Example: </b>"> 
+      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+     </div> </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+>[!BEGINSHADEBOX]
+
+**예:** API 호출을 사용하면 입력한 프레젠테이션 ID에 대한 프레젠테이션 세부 정보를 가져올 수 있습니다. [!DNL Google Slides]에서 프레젠테이션을 열면 URL에서 프레젠테이션 ID를 찾을 수 있습니다.
+
+![API 호출 예](/help/workfront-fusion/references/apps-and-modules/assets/api-call-350x13.png)
+
+다음 API 호출은 프레젠테이션 세부 정보를 반환합니다.
+
+![프레젠테이션 세부 정보](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details.png)
+
+검색 일치 항목은 모듈의 출력에서 [!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL presentationId] 아래에 있습니다.
+
+이 예제에서 요청된 프레젠테이션 세부 사항이 반환되었습니다.
+
+![프레젠테이션 세부 정보](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details-2.png)
+
+>[!ENDSHADEBOX]

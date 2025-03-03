@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: cca7aa6e15df0fd313e9d4ca391994a8ef4c974a
+source-git-commit: 234a6a537718328e92eec13672a73bc43add17c1
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,7 @@ Fusion은 Adobe의 많은 제품 및 서비스를 위한 커넥터를 제공합�
 * [Adobe Marketo 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-modules.md)
 * [Adobe PDF 서비스 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/pdf-modules.md)
 * [Adobe Photoshop 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-photoshop-modules.md)
+* [Adobe 스토리지 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-storage-modules.md)
 * [Adobe Target 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
 * [Adobe 사용자 관리 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
 * [Adobe Workfront 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)

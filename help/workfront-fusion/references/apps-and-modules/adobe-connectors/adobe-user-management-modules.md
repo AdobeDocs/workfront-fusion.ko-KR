@@ -8,7 +8,7 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Adobe 계정�
 author: Becky
 feature: Workfront Fusion
 exl-id: e8fe8ec4-4b00-4c9a-81a5-acb2039b153b
-source-git-commit: 640fec2de63ad59ba89fae5373f85b8147d8dac0
+source-git-commit: 234a6a537718328e92eec13672a73bc43add17c1
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 2%
@@ -104,7 +104,7 @@ ht-degree: 2%
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL IMS Organization ID]</td>
-        <td>[!DNL Adobe] IMS 자격 증명을 입력하십시오. 조직의 고유 식별자입니다. @ 앞에 오는 접두사가 16진수인 A495E53@AdobeOrg 형식의 문자열입니다. 이 값은 Admin Console 또는 User Management 통합을 위한 adobe.io 콘솔에서 조직의 URL 경로의 일부로 찾을 수 있습니다.</td>
+        <td>[!DNL Adobe] IMS 자격 증명을 입력하십시오. 조직의 고유 식별자입니다. @ 앞에 오는 접두사가 16진수인 A495E53@AdobeOrg 형식의 문자열입니다. 이 값은 Admin Console 또는 사용자 관리 통합을 위한 adobe.io 콘솔에서 조직의 URL 경로의 일부로 찾을 수 있습니다.</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Additional scopes]</td>
@@ -148,7 +148,7 @@ Adobe 사용자 관리 모듈을 구성하면 Workfront Fusion에 아래 나열�
  <tbody> 
   <tr> 
    <td role="rowheader">연결</td> 
-   <td>Adobe 사용자 관리에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Adobe 사용자 관리에 연결 만들기</a>를 참조하십시오.</td> 
+   <td>Adobe User Management에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Adobe User Management에 연결 만들기</a>를 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">반환된 최대 결과 수</td> 
@@ -167,7 +167,7 @@ Adobe 사용자 관리 모듈을 구성하면 Workfront Fusion에 아래 나열�
  <tbody> 
   <tr> 
    <td role="rowheader">연결</td> 
-   <td>Adobe 사용자 관리에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Adobe 사용자 관리에 연결 만들기</a>를 참조하십시오.</td> 
+   <td>Adobe User Management에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Adobe User Management에 연결 만들기</a>를 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">이메일 주소</td> 
@@ -186,7 +186,7 @@ Adobe 사용자 관리 모듈을 구성하면 Workfront Fusion에 아래 나열�
  <tbody> 
   <tr> 
    <td role="rowheader">연결</td> 
-   <td>Adobe 사용자 관리에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Adobe 사용자 관리에 연결 만들기</a>를 참조하십시오.</td> 
+   <td>Adobe User Management에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Adobe User Management에 연결 만들기</a>를 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">그룹 이름</td> 
@@ -222,7 +222,7 @@ Adobe 사용자 관리 모듈을 구성하면 Workfront Fusion에 아래 나열�
  <tbody> 
   <tr> 
    <td role="rowheader">연결</td> 
-   <td>Adobe 사용자 관리에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Adobe 사용자 관리에 연결 만들기</a>를 참조하십시오.</td> 
+   <td>Adobe User Management에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Adobe User Management에 연결 만들기</a>를 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">반환된 최대 결과 수</td> 
@@ -248,7 +248,7 @@ Adobe 사용자 관리 모듈을 구성하면 Workfront Fusion에 아래 나열�
  <tbody> 
   <tr> 
    <td role="rowheader">연결</td> 
-   <td>Adobe 사용자 관리에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Adobe 사용자 관리에 연결 만들기</a>를 참조하십시오.</td> 
+   <td>Adobe User Management에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Adobe User Management에 연결 만들기</a>를 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">사용자</td> 
@@ -279,7 +279,7 @@ Adobe 사용자 관리 모듈을 구성하면 Workfront Fusion에 아래 나열�
  <tbody> 
   <tr> 
    <td role="rowheader">연결</td> 
-   <td>Adobe 사용자 관리에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Adobe 사용자 관리에 연결 만들기</a>를 참조하십시오.</td> 
+   <td>Adobe User Management에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Adobe User Management에 연결 만들기</a>를 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">ID 유형</td> 
@@ -287,7 +287,7 @@ Adobe 사용자 관리 모듈을 구성하면 Workfront Fusion에 아래 나열�
   </tr> 
   <tr> 
    <td role="rowheader">로그인</td> 
-   <td>Federated ID이 있는 사용자를 만드는 경우 로그인 유형을 선택합니다.</td> 
+   <td>Federated ID으로 사용자를 만드는 경우 로그인 유형을 선택합니다.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">이메일</td> 
@@ -295,11 +295,11 @@ Adobe 사용자 관리 모듈을 구성하면 Workfront Fusion에 아래 나열�
   </tr> 
   <tr> 
    <td role="rowheader">도메인</td> 
-   <td>도메인 기반 로그인이 있는 Federated ID으로 사용자를 만드는 경우 도메인을 입력하거나 매핑합니다.</td> 
+   <td>도메인 기반 로그인으로 Federated ID을 사용하는 사용자를 만드는 경우 도메인을 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">사용자</td> 
-   <td>도메인 기반 로그인이 있는 Federated ID을 사용하는 사용자를 만드는 경우 이 새 사용자가 나타낼 사용자를 입력하거나 매핑합니다.</td> 
+   <td>도메인 기반 로그인으로 Federated ID을 사용하는 사용자를 만드는 경우 이 새 사용자가 나타낼 사용자를 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">이름</td> 
@@ -319,7 +319,7 @@ Adobe 사용자 관리 모듈을 구성하면 Workfront Fusion에 아래 나열�
   </tr> 
   <tr> 
    <td role="rowheader">Adobe ID 사용</td> 
-   <td>true인 경우 사용자 ID는 동일한 이름의 Enterprise 또는 Federated ID이 있는 경우에도 기존 Adobe ID을 참조하는 것으로 해석됩니다.</td> 
+   <td>true인 경우 사용자 ID는 Enterprise 또는 Federated ID이 동일한 이름으로 존재하는 경우에도 기존 Adobe ID을 참조하는 것으로 해석됩니다.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -334,7 +334,7 @@ Adobe 사용자 관리 모듈을 구성하면 Workfront Fusion에 아래 나열�
  <tbody> 
   <tr> 
    <td role="rowheader">연결</td> 
-   <td>Adobe 사용자 관리에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Adobe 사용자 관리에 연결 만들기</a>를 참조하십시오.</td> 
+   <td>Adobe User Management에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Adobe User Management에 연결 만들기</a>를 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">사용자</td> 
@@ -367,7 +367,7 @@ Adobe 사용자 관리 모듈을 구성하면 Workfront Fusion에 아래 나열�
  <tbody> 
   <tr> 
    <td role="rowheader">연결</td> 
-   <td>Adobe 사용자 관리에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Adobe 사용자 관리에 연결 만들기</a>를 참조하십시오.</td> 
+   <td>Adobe User Management에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Adobe User Management에 연결 만들기</a>를 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">사용자</td> 
@@ -410,7 +410,7 @@ Adobe 사용자 관리 모듈을 구성하면 Workfront Fusion에 아래 나열�
  <tbody> 
   <tr> 
    <td role="rowheader">연결</td> 
-   <td>Adobe 사용자 관리에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Adobe 사용자 관리에 연결 만들기</a>를 참조하십시오.</td> 
+   <td>Adobe User Management에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Adobe User Management에 연결 만들기</a>를 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">그룹 이름</td> 
@@ -437,7 +437,7 @@ Adobe 사용자 관리 모듈을 구성하면 Workfront Fusion에 아래 나열�
  <tbody> 
   <tr> 
    <td role="rowheader">연결</td> 
-   <td>Adobe 사용자 관리에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Adobe 사용자 관리에 연결 만들기</a>를 참조하십시오.</td> 
+   <td>Adobe User Management에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Adobe User Management에 연결 만들기</a>를 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">그룹 이름</td> 
@@ -464,7 +464,7 @@ Adobe 사용자 관리 모듈을 구성하면 Workfront Fusion에 아래 나열�
  <tbody> 
   <tr> 
    <td role="rowheader">연결</td> 
-   <td>Adobe 사용자 관리에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Adobe 사용자 관리에 연결 만들기</a>를 참조하십시오.</td> 
+   <td>Adobe User Management에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Adobe User Management에 연결 만들기</a>를 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">그룹 이름</td> 
@@ -483,7 +483,7 @@ Adobe 사용자 관리 모듈을 구성하면 Workfront Fusion에 아래 나열�
  <tbody> 
   <tr> 
    <td role="rowheader">연결</td> 
-   <td>Adobe 사용자 관리에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Adobe 사용자 관리에 연결 만들기</a>를 참조하십시오.</td> 
+   <td>Adobe User Management에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Adobe User Management에 연결 만들기</a>를 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">그룹 이름</td> 
@@ -499,7 +499,7 @@ Adobe 사용자 관리 모듈을 구성하면 Workfront Fusion에 아래 나열�
   </tr> 
   <tr> 
    <td role="rowheader">Adobe ID 사용</td> 
-   <td>true인 경우 사용자 ID는 동일한 이름의 Enterprise 또는 Federated ID이 있는 경우에도 기존 Adobe ID을 참조하는 것으로 해석됩니다.</td> 
+   <td>true인 경우 사용자 ID는 Enterprise 또는 Federated ID이 동일한 이름으로 존재하는 경우에도 기존 Adobe ID을 참조하는 것으로 해석됩니다.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -514,7 +514,7 @@ Adobe 사용자 관리 모듈을 구성하면 Workfront Fusion에 아래 나열�
  <tbody> 
   <tr> 
    <td role="rowheader">연결</td> 
-   <td>Adobe 사용자 관리에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Adobe 사용자 관리에 연결 만들기</a>를 참조하십시오.</td> 
+   <td>Adobe User Management에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Adobe User Management에 연결 만들기</a>를 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">원래 그룹 이름</td> 
@@ -528,13 +528,15 @@ Adobe 사용자 관리 모듈을 구성하면 Workfront Fusion에 아래 나열�
    <td role="rowheader">원래 그룹 이름</td> 
    <td>업데이트된 그룹 설명을 입력하거나 매핑합니다.</td> 
   </tr> 
- </tbody>
+ </tbody> 
+ </table>
 
 ### 기타
 
-이 작업 모듈은 Adobe 사용자 관리 API에 대한 사용자 지정 호출을 만듭니다.
 
 #### 사용자 지정 API 호출 만들기
+
+이 작업 모듈은 Adobe 사용자 관리 API에 대한 사용자 지정 호출을 만듭니다.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -542,7 +544,7 @@ Adobe 사용자 관리 모듈을 구성하면 Workfront Fusion에 아래 나열�
   <tbody>
     <tr>
       <td role="rowheader">연결</td>
-      <td>Adobe 사용자 관리에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Adobe 사용자 관리에 연결 만들기</a>를 참조하십시오.</td> 
+      <td>Adobe User Management에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Adobe User Management에 연결 만들기</a>를 참조하십시오.</td> 
     </tr>
     <tr>
       <td role="rowheader">

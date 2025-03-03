@@ -7,10 +7,12 @@ title: Adobe 스토리지 모듈
 description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Adobe Admin Console에서 프로젝트를 만들고 관리할 수 있습니다.'
 author: Becky
 feature: Workfront Fusion
-source-git-commit: e027c93b77d825337b7fb2582c3de2a93c5c71f6
+hide: true
+hidefromtoc: true
+source-git-commit: 70a2d06da6be6c892df12faa3a168e66daef118e
 workflow-type: tm+mt
-source-wordcount: '1328'
-ht-degree: 3%
+source-wordcount: '1351'
+ht-degree: 2%
 
 ---
 
@@ -116,30 +118,25 @@ Adobe Admin Console 페이지에서 상단 탐색 막대의 제품 탭을 선택
       </col>
       <tbody>
         <tr>
+        <td role="rowheader">[!UICONTROL Connection type]</td>
+        <td><code>Server to server</code>을(를) 선택합니다.</td>
+        </tr>
+        <tr>
         <td role="rowheader">[!UICONTROL Connection name]</td>
         <td>
           <p>이 연결의 이름을 입력하십시오.</p>
         </td>
         </tr>
-        <tr>
-        <td role="rowheader">[!UICONTROL Environment]</td>
-        <td>프로덕션 환경에 연결할지 아니면 비프로덕션 환경에 연결할지 선택합니다.</td>
-        </tr>
-        <tr>
-        <td role="rowheader">[!UICONTROL Type]</td>
-        <td>서비스 계정에 연결할지 또는 개인 계정에 연결할지 선택합니다.</td>
-        </tr>
-        <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>[!UICONTROL Adobe] [!UICONTROL Client ID]을(를) 입력하십시오. 프로젝트의 [!UICONTROL Credential details] 섹션에서 찾을 수 있습니다. [!DNL Adobe Developer Console]</td>
+        <td>[!UICONTROL Adobe] [!UICONTROL Client ID]을(를) 입력하십시오. [!DNL Adobe Developer Console]에 있는 프로젝트의 [!UICONTROL Credential details] 섹션에서 찾을 수 있습니다.</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>[!DNL Adobe] [!UICONTROL Client Secret]을(를) 입력하십시오. 프로젝트의 [!UICONTROL Credential details] 섹션에서 찾을 수 있습니다. [!DNL Adobe Developer Console]</td>
+        <td>[!DNL Adobe] [!UICONTROL Client Secret]을(를) 입력하십시오. [!DNL Adobe Developer Console]에 있는 프로젝트의 [!UICONTROL Credential details] 섹션에서 찾을 수 있습니다.</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Authentication URL]</td>
-        <td>인증 URL을 입력합니다. 기본값은 <code>https://ims-na1.adobelogin.com</code>입니다. </td>
+        <td role="rowheader">[!UICONTROL IMS Organization ID]</td>
+        <td>Adobe IMS 조직 ID를 입력하거나 매핑합니다. <code> 123abc@AdobeOrg</code> 형식의 문자열입니다. 여기서 @ 앞의 섹션은 16진수입니다. 이 값은 Adobe Admin Console 또는 사용자 관리 통합을 위한 Adobe.IO 콘솔에서 조직의 URL 경로의 일부로 찾을 수 있습니다.</td>
         </tr>
       </tbody>
     </table>

@@ -4,9 +4,9 @@ description: Adobe Lightroom 모듈을 사용하면 Adobe Lightroom 계정의 �
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
 workflow-type: tm+mt
-source-wordcount: '2025'
+source-wordcount: '2019'
 ht-degree: 0%
 
 ---
@@ -500,7 +500,7 @@ Adobe Lightroom 커넥터는 다음을 사용합니다.
     <tr>
       <td role="rowheader">[!UICONTROL Maximum number of returned assets]</td>
       <td>
-        <p>한 실행 주기 동안 [!DNL Workfront Fusion]이(가) 반환할 최대 자산 수를 설정하십시오. 이 숫자는 100보다 작거나 같아야 합니다.</p>
+        <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력합니다.</p>
       </td>
     </tr>
     <tr>

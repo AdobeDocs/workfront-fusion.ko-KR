@@ -7,9 +7,8 @@ title: Adobe 스토리지 모듈
 description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Adobe Admin Console에서 프로젝트를 만들고 관리할 수 있습니다.'
 author: Becky
 feature: Workfront Fusion
-hide: true
-hidefromtoc: true
-source-git-commit: 70a2d06da6be6c892df12faa3a168e66daef118e
+exl-id: 78ee905f-4713-44a4-bffb-c64cdb3665c2
+source-git-commit: 284e5bda7fef82bac02f3200efe1662fd55586bf
 workflow-type: tm+mt
 source-wordcount: '1351'
 ht-degree: 2%
@@ -361,6 +360,3 @@ Adobe 사용자 관리 모듈을 구성하면 Workfront Fusion에 아래 나열�
      </div> </p> </td>     </tr>
   </tbody>
 </table>
-
-
-

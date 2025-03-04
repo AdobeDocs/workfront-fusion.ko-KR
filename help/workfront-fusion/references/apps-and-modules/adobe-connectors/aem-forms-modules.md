@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion], you can start a scenario based on 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: e0d7a655-1353-4d24-83d4-7da73d859a63
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '575'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ Adobe Experience Manager Assets 커넥터는 다음을 사용합니다.
 
 [!DNL Adobe Experience Manager Forms] 모듈에 대한 연결을 만들려면:
 
-1. 연결 상자 옆의 **[!UICONTROL Add]**&#x200B;을(를) 클릭합니다.
+1. 모든 모듈에서 연결 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 
 1. 다음 필드를 채웁니다.
 
@@ -90,57 +90,57 @@ Adobe Experience Manager Assets 커넥터는 다음을 사용합니다.
     </col>
     <tbody>
       <tr>
-        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td role="rowheader">[!UICONTROL 연결 이름]</td>
         <td>
           <p>이 연결의 이름을 입력하십시오.</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Environment]</td>
+        <td role="rowheader">[!UICONTROL 환경]</td>
         <td>
           <p>이 연결이 프로덕션 환경에 연결되는지 아니면 비프로덕션 환경에 연결되는지 선택합니다.</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Type]</td>
+        <td role="rowheader">[!UICONTROL 유형]</td>
         <td>
           <p>이 계정이 서비스 계정인지 개인 계정인지 선택합니다.</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Instance URL without a trailing slash]</td>
+        <td role="rowheader">뒤쪽 슬래시가 없는 [!UICONTROL 인스턴스 URL]</td>
         <td>
           <p>계정에 액세스하는 데 사용하는 URL을 최종 슬래시 없이 입력합니다.</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL IMS endpoint]</td>
+        <td role="rowheader">[!UICONTROL IMS 끝점]</td>
         <td>
           <p><code>https://ims-na1.adobelogin.com</code></p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>[!DNL Adobe] 클라이언트 ID를 입력하십시오. [!DNL Adobe Developer Console]의 [!UICONTROL Credentials details] 섹션에서 찾을 수 있습니다.
+        <td role="rowheader">[!UICONTROL 클라이언트 ID]</td>
+        <td>[!DNL Adobe] 클라이언트 ID를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>[!DNL Adobe] 클라이언트 암호를 입력하십시오. [!DNL Adobe Developer Console]의 [!UICONTROL Credentials details] 섹션에서 찾을 수 있습니다.
+        <td role="rowheader">[!UICONTROL 클라이언트 암호]</td>
+        <td>[!DNL Adobe] 클라이언트 암호를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Org ID]</td>
-        <td>[!DNL Adobe] 조직 ID를 입력하십시오. [!DNL Adobe Developer Console]의 [!UICONTROL Credentials details] 섹션에서 찾을 수 있습니다.
+        <td role="rowheader">[!UICONTROL 조직 ID]</td>
+        <td>[!DNL Adobe] 조직 ID를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Technical account ID]</td>
-        <td>[!DNL Adobe] 기술 계정 ID를 입력하십시오. [!DNL Adobe Developer Console]의 [!UICONTROL Credentials details] 섹션에서 찾을 수 있습니다.
+        <td role="rowheader">[!UICONTROL 기술 계정 ID]</td>
+        <td>[!DNL Adobe] 기술 계정 ID를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Meta Scopes]</td>
+        <td role="rowheader">[!UICONTROL 메타 범위]</td>
         <td>적절한 메타 범위를 입력하십시오.       </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Private key]</td>
+        <td role="rowheader">[!UICONTROL 개인 키]</td>
         <td>
           <p>[!DNL Adobe Developer Console]에서 자격 증명을 만들 때 생성된 개인 키를 입력하십시오. </p>
           <p>개인 키 또는 인증서를 추출하려면 다음을 수행하십시오.</p>
@@ -158,7 +158,7 @@ Adobe Experience Manager Assets 커넥터는 다음을 사용합니다.
               <p>파일의 암호를 입력합니다.</p>
             </li>
             <li value="5">
-              <p><b>[!UICONTROL Save]</b>을(를) 클릭하여 파일을 추출하고 연결 설정으로 돌아갑니다.</p>
+              <p><b>[!UICONTROL 저장]</b>을(를) 클릭하여 파일을 추출하고 연결 설정으로 돌아갑니다.</p>
             </li>
           </ol>
         </td>
@@ -166,7 +166,7 @@ Adobe Experience Manager Assets 커넥터는 다음을 사용합니다.
     </tbody>
     </table>
 
-1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL Continue]**&#x200B;을(를) 클릭하십시오.
+1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭하세요.
 
 ## Adobe Experience Manager Forms 모듈 및 해당 필드
 

@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는  [!DNL Adobe 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: 70038b21d9b486da23895533cad0fa1f58850e76
+source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
 workflow-type: tm+mt
-source-wordcount: '2248'
+source-wordcount: '2432'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Adobe Firefly 커넥터는 다음을 사용합니다.
 
 [!DNL Adobe Firefly] 모듈에 대한 연결을 만들려면:
 
-1. 연결 상자 옆의 **[!UICONTROL Add]**&#x200B;을(를) 클릭합니다.
+1. 모든 모듈에서 연결 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 
 1. 다음 필드를 채웁니다.
 
@@ -98,31 +98,31 @@ Adobe Firefly 커넥터는 다음을 사용합니다.
       </col>
       <tbody>
         <tr>
-        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td role="rowheader">[!UICONTROL 연결 이름]</td>
         <td>
           <p>이 연결의 이름을 입력하십시오.</p>
         </td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Environment]</td>
+        <td role="rowheader">[!UICONTROL 환경]</td>
         <td>프로덕션 환경에 연결할지 아니면 비프로덕션 환경에 연결할지 선택합니다.</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Type]</td>
+        <td role="rowheader">[!UICONTROL 유형]</td>
         <td>서비스 계정에 연결할지 또는 개인 계정에 연결할지 선택합니다.</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>[!UICONTROL Adobe] [!UICONTROL Client ID]을(를) 입력하십시오. [!DNL Adobe Developer Console]의 [!UICONTROL Credentials] 세부 정보 섹션에서 찾을 수 있습니다.</td>
+        <td role="rowheader">[!UICONTROL 클라이언트 ID]</td>
+        <td>[!UICONTROL Adobe] [!UICONTROL 클라이언트 ID]를 입력합니다. [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명] 세부 정보 섹션에서 찾을 수 있습니다.</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>[!DNL Adobe] [!UICONTROL Client Secret]을(를) 입력하십시오. [!DNL Adobe Developer Console]의 [!UICONTROL Credentials] 세부 정보 섹션에서 찾을 수 있습니다.</td>
+        <td role="rowheader">[!UICONTROL 클라이언트 암호]</td>
+        <td>[!DNL Adobe] [!UICONTROL 클라이언트 암호]를 입력하십시오. [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명] 세부 정보 섹션에서 찾을 수 있습니다.</td>
         </tr>
       </tbody>
     </table>
 
-1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL Continue]**&#x200B;을(를) 클릭하십시오.
+1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭하세요.
 
 ## [!DNL Adobe Firefly]개 모듈 및 해당 필드
 
@@ -147,11 +147,11 @@ Adobe Firefly 커넥터는 다음을 사용합니다.
    <td>[!DNL Adobe Campaign]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >[!DNL Adobe Firefly]</a>에 대한 연결 만들기 를 참조하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Prompt]</td> 
+   <td role="rowheader">[!UICONTROL 프롬프트]</td> 
    <td>이미지를 확장할 내용에 대한 프롬프트를 입력하거나 매핑합니다. 프롬프트가 제공되지 않으면 이미지가 원본 이미지와 일치하는 콘텐츠로 확장됩니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Number of variations]</td> 
+   <td role="rowheader">[!UICONTROL 변형 수]</td> 
    <td>1-4 사이의 숫자를 입력하십시오. 모듈은 이 수의 확장된 이미지 변형을 생성합니다.</td> 
   </tr> 
   <tr> 
@@ -159,7 +159,7 @@ Adobe Firefly 커넥터는 다음을 사용합니다.
    <td>소스 파일을 제공하는 방법을 선택하십시오.<ul><li><p><b>파일</b></p><p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 참조 이미지 파일 이름과 참조 이미지 파일을 매핑합니다.</p></li><li><p><b>사전 서명된 URL</b></p><p>소스 이미지의 URL을 입력하거나 매핑합니다.</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Expanded image format]</td> 
+   <td role="rowheader">[!UICONTROL 확장된 이미지 형식]</td> 
    <td>확장된 이미지를 저장할 파일 형식을 선택합니다.</td> 
   </tr> 
   <tr> 
@@ -202,23 +202,23 @@ Adobe Firefly 커넥터는 다음을 사용합니다.
    <td>[!DNL Adobe Campaign]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >[!DNL Adobe Firefly]</a>에 대한 연결 만들기 를 참조하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Image > Source]</td> 
+   <td role="rowheader">[!UICONTROL 이미지 &gt; Source]</td> 
    <td>이미지 소스 파일을 제공하는 방법을 선택합니다.<ul><li><p><b>파일</b></p><p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 참조 이미지 파일 이름과 참조 이미지 파일을 매핑합니다.</p></li><li><p><b>사전 서명된 URL</b></p><p>소스 이미지의 URL을 입력하거나 매핑합니다.</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Mask > Source]</td> 
+   <td role="rowheader">[!UICONTROL 마스크 &gt; Source]</td> 
    <td>마스크 소스 파일을 제공하는 방법을 선택합니다.<ul><li><p><b>파일</b></p><p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 참조 이미지 파일 이름과 참조 이미지 파일을 매핑합니다.</p></li><li><p><b>사전 서명된 URL</b></p><p>소스 이미지의 URL을 입력하거나 매핑합니다.</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Prompt]</td> 
+   <td role="rowheader">[!UICONTROL 프롬프트]</td> 
    <td>이미지를 채울 콘텐츠에 대한 프롬프트를 입력하거나 매핑합니다. 프롬프트가 제공되지 않으면 이미지는 원본 이미지와 일치하는 콘텐츠로 채워집니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Number of variations]</td> 
+   <td role="rowheader">[!UICONTROL 변형 수]</td> 
    <td>1-4 사이의 숫자를 입력하십시오. 모듈은 이 수의 채워진 이미지 변형을 생성합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Filled image format]</td> 
+   <td role="rowheader">[!UICONTROL 채워진 이미지 형식]</td> 
    <td>채워진 이미지를 저장할 파일 형식을 선택합니다.</td> 
   </tr> 
   </tr> 
@@ -256,47 +256,47 @@ Adobe Firefly 커넥터는 다음을 사용합니다.
    <td>[!DNL Adobe Campaign]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >[!DNL Adobe Firefly]</a>에 대한 연결 만들기 를 참조하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Prompt]</td> 
+   <td role="rowheader">[!UICONTROL 프롬프트]</td> 
    <td>생성할 이미지에 대한 프롬프트를 입력하거나 매핑합니다. 프롬프트에 자세히 설명되어 있으면 이미지에 나타나는 내용을 보다 세밀하게 제어할 수 있습니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Number of variations]</td> 
+   <td role="rowheader">[!UICONTROL 변형 수]</td> 
    <td>1-4 사이의 숫자를 입력하십시오. 모듈은 이 수의 이미지 변형을 생성합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Generated image format]</td> 
+   <td role="rowheader">[!UICONTROL 생성된 이미지 형식]</td> 
    <td>확장된 이미지를 저장할 파일 형식을 선택합니다. 기본값을 선택하면 참조 이미지가 제공되지 않는 경우 파일 형식은 JPEG이 됩니다. 기준 이미지가 제공된 경우, 생성된 이미지의 파일 포맷은 기준 이미지와 동일할 것이다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Structure > Image reference]</td> 
+   <td role="rowheader">[!UICONTROL 구조 &gt; 이미지 참조]</td> 
     <td>새 이미지 구조에 대한 소스 파일을 제공하는 방법을 선택합니다.<ul><li><p><b>파일</b></p><p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 참조 이미지 파일 이름과 참조 이미지 파일을 매핑합니다.</p></li><li><p><b>사전 서명된 URL</b></p><p>소스 이미지의 URL을 입력하거나 매핑합니다.</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Structure > Strength]</td> 
+   <td role="rowheader">[!UICONTROL 구조 &gt; 강도]</td> 
     <td>Firefly이 소스 이미지의 구조를 얼마나 엄격하게 따르는지 제어하려면 0에서 100 사이의 숫자를 입력합니다. 숫자가 높을수록 Firefly이 이미지를 더 엄격하게 따른다는 것을 의미합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Style > Image reference]</td> 
+   <td role="rowheader">[!UICONTROL 스타일 &gt; 이미지 참조]</td> 
     <td>새 이미지 스타일에 대한 소스 파일을 제공하는 방법을 선택합니다.<ul><li><p><b>파일</b></p><p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 참조 이미지 파일 이름과 참조 이미지 파일을 매핑합니다.</p></li><li><p><b>사전 서명된 URL</b></p><p>소스 이미지의 URL을 입력하거나 매핑합니다.</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Structure > Strength]</td> 
+   <td role="rowheader">[!UICONTROL 구조 &gt; 강도]</td> 
     <td>Firefly이 소스 이미지의 스타일을 얼마나 엄격하게 따르는지 제어하려면 0에서 100 사이의 숫자를 입력합니다. 숫자가 높을수록 Firefly이 이미지를 더 엄격하게 따른다는 것을 의미합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Style > Presets]</td> 
+   <td role="rowheader">[!UICONTROL 스타일 &gt; 사전 설정]</td> 
    <td>사전 설정 스타일을 사용하려면 항목 추가 를 클릭하고 사용할 스타일을 입력하거나 매핑합니다.<p>사전 설정된 스타일 목록을 보려면 Adobe 개발자 설명서에서 <a href="https://developer.adobe.com/firefly-services/docs/firefly-api/guides/concepts/style-presets//" >이미지 모델 스타일</a>을 참조하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Negative prompt]</td> 
+   <td role="rowheader">[!UICONTROL 음성 프롬프트]</td> 
    <td>생성된 콘텐츠에서 피하려는 단어를 입력하거나 매핑합니다. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Content class]</td> 
+   <td role="rowheader">[!UICONTROL Content 클래스]</td> 
    <td>생성된 이미지를 사진과 같은 이미지로 할지 또는 생성된 아트와 같은 이미지로 할지 선택합니다. <ul><li><b>사진</b><p>조리개, 셔터 속도(초) 및 시야(밀리미터)의 값을 입력합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Seed]</td> 
+   <td role="rowheader">[!UICONTROL 시드]</td> 
    <td>모듈에서 생성할 각 이미지에 대해 <b>항목 추가</b>를 클릭하고 정수를 입력하거나 매핑합니다. 다른 이미지 모듈 확장에서 이와 동일한 시드를 사용하여 스타일이 다른 유사한 이미지를 생성할 수 있습니다. 추가하는 시드 수는 변형 수 필드와 같아야 합니다.</td> 
   </tr> 
   <tr> 
@@ -304,7 +304,7 @@ Adobe Firefly 커넥터는 다음을 사용합니다.
    <td>생성된 이미지를 표시할 크기를 선택합니다.</td> 
   </tr> 
    <tr> 
-   <td role="rowheader">[!UICONTROL Visual intensity]</td> 
+   <td role="rowheader">[!UICONTROL 시각적 강도]</td> 
    <td>사진의 기존 시각적 특성의 전체 강도를 나타내는 정수를 입력하거나 매핑합니다. </td> 
   </tr> 
   <tr> 
@@ -335,35 +335,35 @@ Adobe Firefly 커넥터는 다음을 사용합니다.
    <td>[!DNL Adobe Campaign]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >[!DNL Adobe Firefly]</a>에 대한 연결 만들기 를 참조하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Prompt]</td> 
+   <td role="rowheader">[!UICONTROL 프롬프트]</td> 
    <td>생성할 이미지에 대한 프롬프트를 입력하거나 매핑합니다. 프롬프트에 자세히 설명되어 있으면 이미지에 나타나는 내용을 보다 세밀하게 제어할 수 있습니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Number of variations]</td> 
+   <td role="rowheader">[!UICONTROL 변형 수]</td> 
    <td>1-4 사이의 숫자를 입력하십시오. 모듈은 이 수의 이미지 변형을 생성합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Content classs]</td> 
+   <td role="rowheader">[!UICONTROL Content 클래스]</td> 
    <td>생성된 이미지를 사진과 비슷하게 할지 아니면 아트와 비슷하게 할지 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Image > Source]</td> 
+   <td role="rowheader">[!UICONTROL 이미지 &gt; Source]</td> 
     <td>새 이미지 구조에 대한 소스 파일을 제공하는 방법을 선택합니다.<ul><li><p><b>파일</b></p><p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 참조 이미지 파일 이름과 참조 이미지 파일을 매핑합니다.</p></li><li><p><b>사전 서명된 URL</b></p><p>소스 이미지의 URL을 입력하거나 매핑합니다.</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Generated image format]</td> 
+   <td role="rowheader">[!UICONTROL 생성된 이미지 형식]</td> 
    <td>확장된 이미지를 저장할 파일 형식을 선택합니다. 기본값을 선택하면 참조 이미지가 제공되지 않는 경우 파일 형식은 JPEG이 됩니다. 기준 이미지가 제공된 경우, 생성된 이미지의 파일 포맷은 기준 이미지와 동일할 것이다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Style > Image reference]</td> 
+   <td role="rowheader">[!UICONTROL 스타일 &gt; 이미지 참조]</td> 
     <td>새 이미지 스타일에 대한 소스 파일을 제공하는 방법을 선택합니다.<ul><li><p><b>파일</b></p><p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 참조 이미지 파일 이름과 참조 이미지 파일을 매핑합니다.</p></li><li><p><b>사전 서명된 URL</b></p><p>소스 이미지의 URL을 입력하거나 매핑합니다.</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Structure > Strength]</td> 
+   <td role="rowheader">[!UICONTROL 구조 &gt; 강도]</td> 
     <td>Firefly이 소스 이미지의 스타일을 얼마나 엄격하게 따르는지 제어하려면 0에서 100 사이의 숫자를 입력합니다. 숫자가 높을수록 Firefly이 이미지를 더 엄격하게 따른다는 것을 의미합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Style > Presets]</td> 
+   <td role="rowheader">[!UICONTROL 스타일 &gt; 사전 설정]</td> 
    <td>사전 설정 스타일을 사용하려면 항목 추가 를 클릭하고 사용할 스타일을 입력하거나 매핑합니다.<p>사전 설정된 스타일 목록을 보려면 Adobe 개발자 설명서에서 <a href="https://developer.adobe.com/firefly-services/docs/firefly-api/guides/concepts/style-presets//" >이미지 모델 스타일</a>을 참조하십시오.</td> 
   </tr> 
   <tr> 
@@ -386,19 +386,19 @@ Adobe Firefly 커넥터는 다음을 사용합니다.
    <td>[!DNL Adobe Campaign]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >[!DNL Adobe Firefly]</a>에 대한 연결 만들기 를 참조하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Number of variations]</td> 
+   <td role="rowheader">[!UICONTROL 변형 수]</td> 
    <td>1-4 사이의 숫자를 입력하십시오. 모듈은 이 수의 이미지 변형을 생성합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Generated image format]</td> 
+   <td role="rowheader">[!UICONTROL 생성된 이미지 형식]</td> 
    <td>확장된 이미지를 저장할 파일 형식을 선택합니다. 기본값을 선택하면 참조 이미지가 제공되지 않는 경우 파일 형식은 JPEG이 됩니다. 기준 이미지가 제공된 경우, 생성된 이미지의 파일 포맷은 기준 이미지와 동일할 것이다.</td> 
   </tr> 
    <tr> 
-   <td role="rowheader">[!UICONTROL Image > Source]</td> 
+   <td role="rowheader">[!UICONTROL 이미지 &gt; Source]</td> 
     <td>새 이미지 구조에 대한 소스 파일을 제공하는 방법을 선택합니다.<ul><li><p><b>파일</b></p><p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 참조 이미지 파일 이름과 참조 이미지 파일을 매핑합니다.</p></li><li><p><b>사전 서명된 URL</b></p><p>소스 이미지의 URL을 입력하거나 매핑합니다.</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Style > Image reference]</td> 
+   <td role="rowheader">[!UICONTROL 스타일 &gt; 이미지 참조]</td> 
     <td>새 이미지 스타일에 대한 소스 파일을 제공하는 방법을 선택합니다.<ul><li><p><b>파일</b></p><p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 참조 이미지 파일 이름과 참조 이미지 파일을 매핑합니다.</p></li><li><p><b>사전 서명된 URL</b></p><p>소스 이미지의 URL을 입력하거나 매핑합니다.</p></li></ul></td> 
   </tr> 
   <tr> 
@@ -439,7 +439,7 @@ Adobe Firefly 커넥터는 다음을 사용합니다.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Method]</p>
+        <p>[!UICONTROL 메서드]</p>
       </td>
    <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
     </tr>

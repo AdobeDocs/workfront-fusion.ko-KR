@@ -4,9 +4,9 @@ description: Adobe Lightroom 모듈을 사용하면 Adobe Lightroom 계정의 �
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
-source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
+source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
 workflow-type: tm+mt
-source-wordcount: '2019'
+source-wordcount: '2376'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 0%
     <tr>
       <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td>
       <td >
-        <p>[!UICONTROL Workfront Fusion for Work Automation and Integration]</p>
+        <p>작업 자동화 및 통합을 위한 [!UICONTROL Workfront Fusion]</p>
       </td>
     </tr>
     <tr>
@@ -89,7 +89,7 @@ Adobe Lightroom 커넥터는 다음을 사용합니다.
 
 [!DNL Adobe Lightroom] 모듈에 대한 연결을 만들려면:
 
-1. 연결 상자 옆의 **[!UICONTROL Add]**&#x200B;을(를) 클릭합니다.
+1. 모든 모듈에서 연결 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 
 1. 다음 필드를 채웁니다.
 
@@ -100,31 +100,31 @@ Adobe Lightroom 커넥터는 다음을 사용합니다.
       </col>
       <tbody>
         <tr>
-        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td role="rowheader">[!UICONTROL 연결 이름]</td>
         <td>
           <p>이 연결의 이름을 입력하십시오.</p>
         </td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Environment]</td>
+        <td role="rowheader">[!UICONTROL 환경]</td>
         <td>프로덕션 환경에 연결할지 아니면 비프로덕션 환경에 연결할지 선택합니다.</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Type]</td>
+        <td role="rowheader">[!UICONTROL 유형]</td>
         <td>서비스 계정에 연결할지 또는 개인 계정에 연결할지 선택합니다.</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>[!UICONTROL Adobe] [!UICONTROL Client ID]을(를) 입력하십시오. 이 정보는 [!UICONTROL Credentials] 세부 정보 섹션에서 찾을 수 있습니다. [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[!UICONTROL 클라이언트 ID]</td>
+        <td>[!UICONTROL Adobe] [!UICONTROL 클라이언트 ID]를 입력합니다. 이 로그는 의 [!UICONTROL 자격 증명] 세부 정보 섹션에서 찾을 수 있습니다. [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>[!DNL Adobe] [!UICONTROL Client Secret]을(를) 입력하십시오. 이 정보는 [!UICONTROL Credentials] 세부 정보 섹션에서 찾을 수 있습니다. [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[!UICONTROL 클라이언트 암호]</td>
+        <td>[!DNL Adobe] [!UICONTROL 클라이언트 암호]를 입력하십시오. 이 로그는 의 [!UICONTROL 자격 증명] 세부 정보 섹션에서 찾을 수 있습니다. [!DNL Adobe Developer Console]</td>
         </tr>
       </tbody>
     </table>
 
-1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL Continue]**&#x200B;을(를) 클릭하십시오.
+1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭하세요.
 
 
 
@@ -159,7 +159,7 @@ Adobe Lightroom 커넥터는 다음을 사용합니다.
       <td>[!DNL Adobe Lightroom]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >[!DNL Adobe Lightroom]</a>에 대한 연결 만들기 를 참조하십시오.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Credentials]</td>
+      <td role="rowheader">[!UICONTROL 자격 증명]</td>
       <td>
         <p>특정 서버가 실행 중인지 확인하기 위해 특정 인증서를 제공하려면 항목 추가를 누르고 인증서를 입력합니다.</p><p>인증 헤더가 자동으로 추가됩니다.</p>
       </td>
@@ -178,7 +178,7 @@ Adobe Lightroom 커넥터는 다음을 사용합니다.
       <td>[!DNL Adobe Lightroom]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >[!DNL Adobe Lightroom]</a>에 대한 연결 만들기 를 참조하십시오.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Credentials]</td>
+      <td role="rowheader">[!UICONTROL 자격 증명]</td>
       <td>
         <p>올바른 사용자 계정에 액세스할 수 있도록 특정 자격 증명을 제공하려면 항목 추가를 누르고 자격 증명을 입력합니다.</p><p>인증 헤더가 자동으로 추가됩니다.</p>
       </td>
@@ -211,31 +211,31 @@ Adobe Lightroom 커넥터는 다음을 사용합니다.
       <td>[!DNL Adobe Lightroom]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >[!DNL Adobe Lightroom]</a>에 대한 연결 만들기 를 참조하십시오.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL 카탈로그 ID]</td>
       <td>
         <p>자산이 포함된 카탈로그의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset ID]</td>
+      <td role="rowheader">[!UICONTROL 자산 ID]</td>
       <td>
         <p>파일을 만들고 업로드할 자산의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Length of content in bytes]</td>
+      <td role="rowheader">[!UICONTROL 콘텐츠의 길이(바이트)]</td>
       <td>
         <p>콘텐츠의 길이를 바이트 단위로 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Byte range]</td>
+      <td role="rowheader">[!UICONTROL 바이트 범위]</td>
       <td>
         <p>RFC 2616에서 정의한 첫 번째 바이트와 마지막 바이트 및 엔티티 길이를 포함하여 요청에 대한 바이트 범위를 입력하거나 매핑합니다. 데이터가 너무 커서 한 번의 호출로 업로드할 수 없는 경우에만 포함해야 합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Content type]</td>
+      <td role="rowheader">[!UICONTROL 컨텐츠 유형]</td>
       <td>
         <p>새 파일의 컨텐츠 유형을 선택합니다.</p>
       </td>
@@ -257,37 +257,37 @@ Adobe Lightroom 커넥터는 다음을 사용합니다.
       <td>[!DNL Adobe Lightroom]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >[!DNL Adobe Lightroom]</a>에 대한 연결 만들기 를 참조하십시오.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL 카탈로그 ID]</td>
       <td>
         <p>자산을 만들 카탈로그의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset ID]</td>
+      <td role="rowheader">[!UICONTROL 자산 ID]</td>
       <td>
         <p>새 에셋의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset type]</td>
+      <td role="rowheader">[!UICONTROL 자산 유형]</td>
       <td>
         <p>자산이 이미지인지 비디오인지를 선택합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Datetime user created]</td>
+      <td role="rowheader">[!UICONTROL 날짜/시간 사용자 생성됨]</td>
       <td>
         <p><code>YYYY-MM-DDT00:00:00-00:00</code> 형식으로 날짜를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Datetime user updated]</td>
+      <td role="rowheader">[!UICONTROL 날짜/시간 사용자 업데이트됨]</td>
       <td>
         <p><code>YYYY-MM-DDT00:00:00-00:00</code> 형식으로 날짜를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Date captured]</td>
+      <td role="rowheader">[!UICONTROL 날짜 캡처됨]</td>
       <td>
         <p><code>YYYY-MM-DDT00:00:00-00:00</code> 형식으로 날짜를 입력하거나 매핑합니다.</p>
       </td>
@@ -308,31 +308,31 @@ Adobe Lightroom 커넥터는 다음을 사용합니다.
       <td>[!DNL Adobe Lightroom]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >[!DNL Adobe Lightroom]</a>에 대한 연결 만들기 를 참조하십시오.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Length of content in bytes]</td>
+      <td role="rowheader">[!UICONTROL 콘텐츠의 길이(바이트)]</td>
       <td>
         <p>콘텐츠의 길이를 바이트 단위로 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Upload new or copy XMP/develop file]</td>
+      <td role="rowheader">[!UICONTROL 새 파일을 업로드하거나 XMP/개발 파일을 복사합니다.]</td>
       <td>
         <p>새 파일을 업로드할지 또는 기존 에셋에서 파일을 복사할지 여부를 선택합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL 카탈로그 ID]</td>
       <td>
         <p>자산이 포함된 카탈로그의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset ID]</td>
+      <td role="rowheader">[!UICONTROL 자산 ID]</td>
       <td>
         <p>파일을 업로드하거나 복사할 에셋의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Link to XMP/develop file]</td>
+      <td role="rowheader">XMP/개발 파일에 대한 [!UICONTROL 링크]</td>
       <td>
         <p>업로드하거나 복사할 파일에 대한 링크를 입력하거나 매핑합니다.</p><p>이 파일은 파일을 복사하는 경우 JSON이어야 하고, 파일을 업로드하는 경우 XML이어야 합니다.</p>
       </td>
@@ -353,25 +353,25 @@ Adobe Lightroom 커넥터는 다음을 사용합니다.
       <td>[!DNL Adobe Lightroom]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >[!DNL Adobe Lightroom]</a>에 대한 연결 만들기 를 참조하십시오.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Rendition Type(s) (semi-colon separated)]</td>
+      <td role="rowheader">[!UICONTROL 렌디션 유형(세미콜론으로 구분)]</td>
       <td>
         <p>만들려는 표현물의 표현물 유형을 입력합니다. 두 개 이상의 문자를 입력할 경우 세미콜론(;)으로 구분하십시오. <p>가능한 유형:</p><ul><li><code>fullsize</code></li><li><code>2560</code></li></ul></p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Length of content in bytes]</td>
+      <td role="rowheader">[!UICONTROL 콘텐츠의 길이(바이트)]</td>
       <td>
         <p>콘텐츠의 길이를 바이트 단위로 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL 카탈로그 ID]</td>
       <td>
         <p>자산이 포함된 카탈로그의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset ID]</td>
+      <td role="rowheader">[!UICONTROL 자산 ID]</td>
       <td>
         <p>파일의 렌디션을 만들려는 에셋의 ID를 입력하거나 매핑합니다.</p>
       </td>
@@ -392,13 +392,13 @@ Adobe Lightroom 커넥터는 다음을 사용합니다.
       <td>[!DNL Adobe Lightroom]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >[!DNL Adobe Lightroom]</a>에 대한 연결 만들기 를 참조하십시오.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL 카탈로그 ID]</td>
       <td>
         <p>자산이 포함된 카탈로그의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset ID]</td>
+      <td role="rowheader">[!UICONTROL 자산 ID]</td>
       <td>
         <p>정보를 검색할 에셋의 ID를 입력하거나 매핑합니다.</p>
       </td>
@@ -420,13 +420,13 @@ Adobe Lightroom 커넥터는 다음을 사용합니다.
       <td>[!DNL Adobe Lightroom]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >[!DNL Adobe Lightroom]</a>에 대한 연결 만들기 를 참조하십시오.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL 카탈로그 ID]</td>
       <td>
         <p>자산이 포함된 카탈로그의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset ID]</td>
+      <td role="rowheader">[!UICONTROL 자산 ID]</td>
       <td>
         <p>XMP 개발 설정 파일과 연결된 에셋의 ID를 입력하거나 매핑합니다.</p>
       </td>
@@ -447,19 +447,19 @@ Adobe Lightroom 커넥터는 다음을 사용합니다.
       <td>[!DNL Adobe Lightroom]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >[!DNL Adobe Lightroom]</a>에 대한 연결 만들기 를 참조하십시오.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL 카탈로그 ID]</td>
       <td>
         <p>자산이 포함된 카탈로그의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset ID]</td>
+      <td role="rowheader">[!UICONTROL 자산 ID]</td>
       <td>
         <p>XMP 개발 설정 파일과 연결된 에셋의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Rendition type]</td>
+      <td role="rowheader">[!UICONTROL 렌디션 유형]</td>
       <td>
         <p>검색할 렌디션 유형을 선택합니다.</p>
       </td>
@@ -480,72 +480,72 @@ Adobe Lightroom 커넥터는 다음을 사용합니다.
       <td>[!DNL Adobe Lightroom]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >[!DNL Adobe Lightroom]</a>에 대한 연결 만들기 를 참조하십시오.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL 카탈로그 ID]</td>
       <td>
         <p>자산이 포함된 카탈로그의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Starting timestamp]</td>
+      <td role="rowheader">[!UICONTROL 시작 타임스탬프]</td>
       <td>
         <p>타임스탬프를 입력하거나 매핑합니다. 모듈은 이 타임스탬프 후에 업데이트된 레코드를 반환합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Return assets captured before]</td>
+      <td role="rowheader">[!UICONTROL 전에 캡처된 자산 반환]</td>
       <td>
         <p><code>YYYY-MM-DDT00:00:00</code> 형식의 날짜를 입력하십시오. 모듈은 이 날짜 이전에 캡처된 결과를 반환합니다.</p><p> 이 필드는 필드 <code>Return assets captured after</code>과(와) 함께 사용할 수 없습니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Maximum number of returned assets]</td>
+      <td role="rowheader">[!UICONTROL 반환되는 최대 자산 수]</td>
       <td>
         <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL SHA256 Hash value of original file]</td>
+      <td role="rowheader">[!UICONTROL SHA256 원본 파일의 해시 값]</td>
       <td>
         <p></p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Hide assets that are inside stacks?"]</td>
+      <td role="rowheader">[!UICONTROL 스택 내에 있는 자산을 숨기시겠습니까?"]</td>
       <td>
         <p></p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset subtype values]</td>
+      <td role="rowheader">[!UICONTROL 자산 하위 유형 값]</td>
       <td>
         <p></p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset IDs]</td>
+      <td role="rowheader">[!UICONTROL 자산 ID]</td>
       <td>
         <p>쉼표로 구분하여 최대 100개의 자산 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Types of assets to exclude]</td>
+      <td role="rowheader">[!UICONTROL 제외할 자산 유형]</td>
       <td>
         <p>전체 또는 미완료 에셋을 제외하려면 을 선택합니다. 모든 에셋을 포함하려면 이 필드를 비워 둡니다.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Group values]</td>
+      <td role="rowheader">[!UICONTROL 그룹 값]</td>
       <td>
         <p></p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Name values]</td>
+      <td role="rowheader">[!UICONTROL 이름 값]</td>
       <td>
         <p></p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Favorite status]</td>
+      <td role="rowheader">[!UICONTROL 즐겨찾기 상태]</td>
       <td>
         <p></p>
       </td>
@@ -577,13 +577,13 @@ Adobe Lightroom 커넥터는 다음을 사용합니다.
       <td>[!DNL Adobe Lightroom]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >[!DNL Adobe Lightroom]</a>에 대한 연결 만들기 를 참조하십시오.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL 카탈로그 ID]</td>
       <td>
         <p>자산을 추가할 앨범이 포함된 카탈로그의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Album ID]</td>
+      <td role="rowheader">[!UICONTROL 앨범 ID]</td>
       <td>
         <p>에셋을 추가할 앨범의 ID를 입력하거나 매핑합니다.</p>
       </td>
@@ -594,12 +594,12 @@ Adobe Lightroom 커넥터는 다음을 사용합니다.
         <p>앨범에 추가할 각 에셋에 대해 <b>항목 추가</b>를 클릭하고 다음 필드를 입력하십시오.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset ID]</td>
+      <td role="rowheader">[!UICONTROL 자산 ID]</td>
       <td>
         <p>앨범에 추가할 자산의 ID를 입력하거나 매핑합니다.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Is this asset an album cover?]</td>
+      <td role="rowheader">[!UICONTROL 이 자산은 앨범 커버입니까?]</td>
       <td>
         <p>이 자산을 앨범을 나타내는 이미지로 표시할지 여부를 선택합니다.</p>
       </td>
@@ -609,7 +609,7 @@ Adobe Lightroom 커넥터는 다음을 사용합니다.
         <p></p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Metadata]</td>
+      <td role="rowheader">[!UICONTROL 메타데이터]</td>
       <td>
         <p>에셋에 포함할 메타데이터를 입력하거나 매핑합니다. 최대 길이가 1-24자인 단일 텍스트 문자열이어야 합니다.</p>
       </td>
@@ -635,35 +635,35 @@ Adobe Lightroom 커넥터는 다음을 사용합니다.
       <td>[!DNL Adobe Lightroom]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >[!DNL Adobe Lightroom]</a>에 대한 연결 만들기 를 참조하십시오.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL 카탈로그 ID]</td>
       <td>
         <p>앨범을 만들 카탈로그의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Album ID]</td>
+      <td role="rowheader">[!UICONTROL 앨범 ID]</td>
       <td>
         <p>새 앨범의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Subtype]</td>
+      <td role="rowheader">[!UICONTROL 하위 유형]</td>
       <td>
         <p>앨범의 하위 유형을 선택합니다.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL API key]</td>
+      <td role="rowheader">[!UICONTROL API 키]</td>
       <td>
         <p>앨범을 만드는 서비스의 API 키를 입력합니다.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Datetime user created]</td>
+      <td role="rowheader">[!UICONTROL 날짜/시간 사용자 생성됨]</td>
       <td>
         <p><code>YYYY-MM-DDT00:00:00-00:00Z</code> 형식으로 날짜를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Datetime user updated]</td>
+      <td role="rowheader">[!UICONTROL 날짜/시간 사용자 업데이트됨]</td>
       <td>
         <p><code>YYYY-MM-DDT00:00:00-00:00Z</code> 형식으로 날짜를 입력하거나 매핑합니다.</p>
       </td>
@@ -674,7 +674,7 @@ Adobe Lightroom 커넥터는 다음을 사용합니다.
         <p>새 앨범의 이름을 입력하거나 매핑합니다.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Cover ID]</td>
+      <td role="rowheader">[!UICONTROL 표지 ID]</td>
       <td>
         <p>이 앨범의 표지로 사용할 자산의 ID를 입력하거나 매핑합니다.</p>
       </td>
@@ -685,30 +685,30 @@ Adobe Lightroom 커넥터는 다음을 사용합니다.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Created date]</td>
+      <td role="rowheader">[!UICONTROL 만든 날짜]</td>
       <td>
         <p><code>YYYY-MM-DDT00:00:00-00:00Z</code> 형식으로 날짜를 입력하거나 매핑합니다.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Updated date]</td>
+      <td role="rowheader">[!UICONTROL 업데이트된 날짜]</td>
       <td>
         <p><code>YYYY-MM-DDT00:00:00-00:00Z</code> 형식으로 날짜를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Is the album deleted?]</td>
+      <td role="rowheader">[!UICONTROL 앨범이 삭제되었습니까?]</td>
       <td>
         <p>외부 제휴 콘텐츠가 삭제된 경우 이 옵션을 활성화합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL URL of location to edit affiliated content]</td>
+      <td role="rowheader">제휴 콘텐츠를 편집할 위치의 [!UICONTROL URL]</td>
       <td>
         <p>사용자가 이 앨범의 콘텐츠를 편집할 수 있는 URL이 있는 경우 여기에 URL을 입력하십시오.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL URL of location to view affiliated content]</td>
+      <td role="rowheader">제휴 콘텐츠를 볼 위치의 [!UICONTROL URL]</td>
       <td>
         <p>사용자가 이 앨범의 콘텐츠를 볼 수 있는 URL이 있는 경우 여기에 URL을 입력하십시오.</p>
       </td>
@@ -731,19 +731,19 @@ Adobe Lightroom 커넥터는 다음을 사용합니다.
       <td>[!DNL Adobe Lightroom]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >[!DNL Adobe Lightroom]</a>에 대한 연결 만들기 를 참조하십시오.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL 카탈로그 ID]</td>
       <td>
         <p>삭제할 앨범이 포함된 카탈로그의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Album ID]</td>
+      <td role="rowheader">[!UICONTROL 앨범 ID]</td>
       <td>
         <p>삭제할 앨범의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Delete child albums?]</td>
+      <td role="rowheader">[!UICONTROL 하위 앨범을 삭제하시겠습니까?]</td>
       <td>
         <p>삭제된 앨범의 하위 앨범을 삭제할지 여부를 선택합니다.</p>
       </td>
@@ -764,13 +764,13 @@ Adobe Lightroom 커넥터는 다음을 사용합니다.
       <td>[!DNL Adobe Lightroom]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >[!DNL Adobe Lightroom]</a>에 대한 연결 만들기 를 참조하십시오.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL 카탈로그 ID]</td>
       <td>
         <p>검색할 앨범이 포함된 카탈로그의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Album ID]</td>
+      <td role="rowheader">[!UICONTROL 앨범 ID]</td>
       <td>
         <p>검색할 앨범의 ID를 입력하거나 매핑합니다.</p>
       </td>
@@ -797,25 +797,25 @@ Adobe Lightroom 커넥터는 다음을 사용합니다.
       <td>[!DNL Adobe Lightroom]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >[!DNL Adobe Lightroom]</a>에 대한 연결 만들기 를 참조하십시오.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL 카탈로그 ID]</td>
       <td>
         <p>검색할 앨범이 포함된 카탈로그의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Subtypes]</td>
+      <td role="rowheader">[!UICONTROL 하위 유형]</td>
       <td>
         <p>검색할 앨범의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Name of album to precede current results]</td>
+      <td role="rowheader">[!UICONTROL 현재 결과 앞에 오는 앨범의 이름]</td>
       <td>
         <p>결과에 페이지를 매기려면 이전 페이지에서 마지막 앨범의 이름을 입력하거나 매핑하십시오.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Maximum number of returned albums]</td>
+      <td role="rowheader">[!UICONTROL 반환되는 최대 앨범 수]</td>
       <td>
         <p>한 실행 주기 동안 [!DNL Workfront Fusion]이(가) 반환할 최대 자산 수를 설정하십시오. 이 필드의 기본값은 100입니다. 제한 경계의 여러 앨범에 동일한 <code>name_after</code> 값이 있는 경우 이 모듈은 이 제한보다 더 많은 앨범을 반환할 수 있습니다.</p>
       </td>
@@ -838,13 +838,13 @@ Adobe Lightroom 커넥터는 다음을 사용합니다.
       <td>[!DNL Adobe Lightroom]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >[!DNL Adobe Lightroom]</a>에 대한 연결 만들기 를 참조하십시오.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL 카탈로그 ID]</td>
       <td>
         <p>업데이트할 앨범이 포함된 카탈로그의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Album ID]</td>
+      <td role="rowheader">[!UICONTROL 앨범 ID]</td>
       <td>
         <p>업데이트할 앨범의 ID를 입력하거나 매핑합니다.</p>
       </td>

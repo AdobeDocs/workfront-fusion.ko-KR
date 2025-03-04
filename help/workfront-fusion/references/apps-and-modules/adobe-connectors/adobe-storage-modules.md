@@ -8,9 +8,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Adobe Admin C
 author: Becky
 feature: Workfront Fusion
 exl-id: 78ee905f-4713-44a4-bffb-c64cdb3665c2
-source-git-commit: 284e5bda7fef82bac02f3200efe1662fd55586bf
+source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1386'
 ht-degree: 2%
 
 ---
@@ -106,7 +106,7 @@ Adobe Admin Console 페이지에서 상단 탐색 막대의 제품 탭을 선택
 
 [!DNL Adobe Storage] 모듈에 대한 연결을 만들려면:
 
-1. 연결 상자 옆의 **[!UICONTROL Add]**&#x200B;을(를) 클릭합니다.
+1. 모든 모듈에서 연결 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 
 1. 다음 필드를 채웁니다.
 
@@ -117,30 +117,30 @@ Adobe Admin Console 페이지에서 상단 탐색 막대의 제품 탭을 선택
       </col>
       <tbody>
         <tr>
-        <td role="rowheader">[!UICONTROL Connection type]</td>
+        <td role="rowheader">[!UICONTROL 연결 유형]</td>
         <td><code>Server to server</code>을(를) 선택합니다.</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td role="rowheader">[!UICONTROL 연결 이름]</td>
         <td>
           <p>이 연결의 이름을 입력하십시오.</p>
         </td>
         </tr>
-        <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>[!UICONTROL Adobe] [!UICONTROL Client ID]을(를) 입력하십시오. [!DNL Adobe Developer Console]에 있는 프로젝트의 [!UICONTROL Credential details] 섹션에서 찾을 수 있습니다.</td>
+        <td role="rowheader">[!UICONTROL 클라이언트 ID]</td>
+        <td>[!UICONTROL Adobe] [!UICONTROL 클라이언트 ID]를 입력합니다. [!DNL Adobe Developer Console]에 있는 프로젝트의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>[!DNL Adobe] [!UICONTROL Client Secret]을(를) 입력하십시오. [!DNL Adobe Developer Console]에 있는 프로젝트의 [!UICONTROL Credential details] 섹션에서 찾을 수 있습니다.</td>
+        <td role="rowheader">[!UICONTROL 클라이언트 암호]</td>
+        <td>[!DNL Adobe] [!UICONTROL 클라이언트 암호]를 입력하십시오. [!DNL Adobe Developer Console]에 있는 프로젝트의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL IMS Organization ID]</td>
+        <td role="rowheader">[!UICONTROL IMS 조직 ID]</td>
         <td>Adobe IMS 조직 ID를 입력하거나 매핑합니다. <code> 123abc@AdobeOrg</code> 형식의 문자열입니다. 여기서 @ 앞의 섹션은 16진수입니다. 이 값은 Adobe Admin Console 또는 사용자 관리 통합을 위한 Adobe.IO 콘솔에서 조직의 URL 경로의 일부로 찾을 수 있습니다.</td>
         </tr>
       </tbody>
     </table>
 
-1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL Continue]**&#x200B;을(를) 클릭하십시오.
+1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭하세요.
 
 ## Adobe 스토리지 모듈 및 해당 필드
 
@@ -264,7 +264,7 @@ Adobe 사용자 관리 모듈을 구성하면 Workfront Fusion에 아래 나열�
    <td>새로 초대된 사용자가 에셋에 대해 가질 역할을 선택합니다.<ul><li>소유자</li><li>편집자</li><li>뷰어</li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">댓글 가능</td> 
+   <td role="rowheader">댓글 작성 가능</td> 
    <td>이 옵션을 활성화하면 사용자가 에셋에 댓글을 달 수 있습니다.</td> 
   </tr> 
   <tr> 

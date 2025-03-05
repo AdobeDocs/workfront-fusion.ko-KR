@@ -4,9 +4,9 @@ description: CloudConverter 모듈
 author: Becky
 feature: Workfront Fusion
 exl-id: 52c4d18a-8bee-44d6-9a2c-cc9e157e1dde
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
 workflow-type: tm+mt
-source-wordcount: '2498'
+source-wordcount: '3037'
 ht-degree: 0%
 
 ---
@@ -73,16 +73,16 @@ CloudConvert 커넥터는 다음을 사용합니다.
 
 [!DNL CloudConvert] 계정을 [!DNL Workfront Fusion]에 연결하려면 [!DNL CloudConvert] 계정에서 API 키를 가져와야 합니다.
 
-1. [!DNL CloudConvert] 계정에 로그인하고 [!UICONTROL Dashboard]을(를) 엽니다.
-1. **[!UICONTROL Authorization]>[!UICONTROL API Keys]** 섹션을 엽니다.
-1. **[!UICONTROL Create New API key]**&#x200B;을(를) 클릭합니다.
-1. API 키의 이름을 입력하고 사용할 범위를 사용하도록 설정한 다음 **[!UICONTROL Create]**&#x200B;을(를) 클릭합니다.
+1. [!DNL CloudConvert] 계정에 로그인하고 [!UICONTROL 대시보드]를 엽니다.
+1. **[!UICONTROL 권한 부여] > [!UICONTROL API 키]** 섹션을 엽니다.
+1. **[!UICONTROL 새 API 키 만들기]**&#x200B;를 클릭합니다.
+1. API 키의 이름을 입력하고 사용할 범위를 사용하도록 설정한 다음 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 1. 제공된 토큰을 복사하여 안전한 장소에 보관합니다.
-1. [!DNL Workfront Fusion]에서 시나리오 만들기를 시작하고 [!DNL CloudConvert] 모듈의 **[!UICONTROL Create a connection]** 대화 상자를 엽니다.
+1. [!DNL Workfront Fusion]에서 시나리오 만들기를 시작하고 [!DNL CloudConvert] 모듈의 **[!UICONTROL 연결 만들기]** 대화 상자를 엽니다.
 
    지침은 [시나리오 만들기 [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)를 참조하십시오.
 
-1. 5단계에서 저장한 토큰을 입력한 다음 **[!UICONTROL Continue]**&#x200B;을(를) 클릭하여 연결을 설정합니다.
+1. 5단계에서 저장한 토큰을 입력한 다음 **[!UICONTROL 계속]**&#x200B;을 클릭하여 연결을 설정합니다.
 
 ## [!DNL CloudConvert]개 모듈 및 해당 필드 {#cloudconvert-modules-and-their-fields}
 
@@ -100,12 +100,12 @@ CloudConvert 커넥터는 다음을 사용합니다.
 ### 일반 작업
 
 * [웹 사이트 캡처](#capture-a-website)
-* [[!UICONTROL Convert a file]](#convert-a-file)
+* [[!UICONTROL 파일 변환]](#convert-a-file)
 * [보관 만들기](#create-an-archive)
 * [파일 병합](#merge-files)
 * [파일 최적화](#optimize-a-file)
 
-#### [!UICONTROL Capture a Website]
+#### [!UICONTROL 웹 사이트 캡처]
 
 이 작업 모듈은 지정된 웹 사이트를 캡처하여 PDF, JPG 또는 PNG 형식으로 저장합니다.
 
@@ -126,11 +126,11 @@ CloudConvert 커넥터는 다음을 사용합니다.
    <td>캡처할 웹 사이트의 URL을 입력합니다. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Output Format] </td> 
+   <td role="rowheader">[!UICONTROL 출력 형식] </td> 
    <td>캡처된 웹 사이트를 PNG, JPG 또는 PDF 형식으로 저장할지 여부를 선택합니다. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL File Name] </td> 
+   <td role="rowheader">[!UICONTROL 파일 이름] </td> 
    <td>대상 출력 파일의 파일 이름(확장명 포함)을 입력합니다.</td> 
   </tr> 
   <tr> 
@@ -138,17 +138,17 @@ CloudConvert 커넥터는 다음을 사용합니다.
    <td> <p>(선택 사항) 요청 헤더를 정의합니다. </p> <p>이 기능은 예를 들어 지정된 URL에 인증이 필요한 경우 유용합니다. </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Conversion and engine specific options] </p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 변환 및 엔진별 옵션] </p> </td> 
    <td>변환 및 엔진별 옵션을 지정합니다. 사용 가능한 옵션을 보려면 <code>input_format</code> 및 <code>output_format</code>에 대한 <a href="https://cloudconvert.com/api/v2/convert#convert-tasks">[!DNL CloudConvert] API</a> 설명서를 참조하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Download a file] </td> 
+   <td role="rowheader">[!UICONTROL 파일 다운로드] </td> 
    <td> <p>모듈의 출력에 파일 데이터를 포함하려면 이 옵션을 활성화합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Convert a file]
+#### [!UICONTROL 파일 변환]
 
 파일을 선택한 출력 형식으로 변환합니다.
 
@@ -161,15 +161,15 @@ CloudConvert 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL CloudConvert] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Input file]</td> 
+   <td role="rowheader">[!UICONTROL 입력 파일]</td> 
    <td>[!DNL Workfront Fusion]을(를) 사용하여 파일을 업로드할지 또는 파일을 업로드할 URL을 제공할지 선택하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Upload a file]</td> 
+   <td role="rowheader">[!UICONTROL 파일 업로드]</td> 
    <td> <p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 이름과 데이터를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Import a File from URL]</td> 
+   <td role="rowheader">[!UICONTROL URL에서 파일 가져오기]</td> 
    <td> 
     <ul> 
      <li> <p><strong>[!UICONTROL URL]</strong> </p> <p>변환할 파일의 URL을 입력합니다.</p> </li> 
@@ -177,7 +177,7 @@ CloudConvert 커넥터는 다음을 사용합니다.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Format]</td> 
+   <td role="rowheader">[!UICONTROL 형식]</td> 
    <td>변환할 파일의 입력 형식을 지정할지 여부를 선택합니다. 지정하지 않으면 입력 파일의 확장자가 입력 형식으로 사용됩니다.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -185,25 +185,25 @@ CloudConvert 커넥터는 다음을 사용합니다.
    <td>파일의 현재 형식을 선택합니다.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Output Format]</td> 
+   <td role="rowheader">[!UICONTROL 출력 형식]</td> 
    <td>파일을 변환할 대상 파일 형식을 선택합니다.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL File Name]</td> 
+   <td role="rowheader">[!UICONTROL 파일 이름]</td> 
    <td>대상 출력 파일의 파일 이름(확장명 포함)을 선택합니다.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader"> <p>[!UICONTROL Conversion and engine specific options] </p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 변환 및 엔진별 옵션] </p> </td> 
    <td>변환 및 엔진별 옵션을 지정합니다. 사용 가능한 옵션을 보려면 <code>input_format</code> 및 <code>output_format</code>에 대한 <a href="https://cloudconvert.com/api/v2/convert#convert-tasks">[!DNL CloudConvert] API</a> 설명서를 참조하십시오.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Download a file] </td> 
+   <td role="rowheader">[!UICONTROL 파일 다운로드] </td> 
    <td> <p>모듈의 출력에 파일 데이터를 포함하려면 이 옵션을 활성화합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Create an Archive]
+#### [!UICONTROL 보관 만들기]
 
 ZIP, RAR, 7Z, TAR, TAR.GZ 또는 TAR.BZ2 아카이브에 하나 이상의 파일을 추가할 수 있습니다.
 
@@ -216,39 +216,39 @@ ZIP, RAR, 7Z, TAR, TAR.GZ 또는 TAR.BZ2 아카이브에 하나 이상의 파일
    <td> <p>[!DNL CloudConvert] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Input Files]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 입력 파일]</p> </td> 
    <td> <p>아카이브에 추가할 파일을 지정합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Upload a File]</td> 
+   <td role="rowheader">[!UICONTROL 파일 업로드]</td> 
    <td> <p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 이름과 데이터를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Import a file from URL]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL URL에서 파일 가져오기]</p> </td> 
    <td> <p><strong>[!UICONTROL URL]</strong> </p> <p>보관하려는 파일의 URL을 입력합니다.</p> <p><strong>[!UICONTROL Headers]</strong> </p> <p>요청 헤더를 정의합니다(선택 사항). 이 기능은 예를 들어 지정된 URL에 인증이 필요한 경우 유용합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Output Format]</td> 
+   <td role="rowheader">[!UICONTROL 출력 형식]</td> 
    <td> <p> 보관된 파일의 대상 형식을 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL File name]</td> 
+   <td role="rowheader">[!UICONTROL 파일 이름]</td> 
    <td> <p> 대상 출력 파일의 파일 이름(확장명 포함)을 입력합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conversion and engine specific options] </td> 
+   <td role="rowheader">[!UICONTROL 변환 및 엔진별 옵션] </td> 
    <td> <p>변환 및 엔진별 옵션을 지정합니다. 사용 가능한 옵션을 보려면 <code>input_format</code> 및 <code>output_format</code>에 대한 <a href="https://cloudconvert.com/api/v2/convert#convert-tasks">[!DNL CloudConvert] API</a> 설명서를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Download a File]</td> 
+   <td role="rowheader">[!UICONTROL 파일 다운로드]</td> 
    <td> <p>모듈의 출력에 파일 데이터를 포함하려면 이 옵션을 활성화합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Merge Files]
+#### [!UICONTROL 파일 병합]
 
-두 개 이상의 파일을 하나의 PDF에 병합합니다. 입력 파일이 PDF이 아닌 경우 자동으로 PDF으로 변환됩니다.
+두 개 이상의 파일을 하나의 PDF에 병합합니다. 입력 파일이 PDF가 아닌 경우 자동으로 PDF으로 변환됩니다.
 
 <table style="table-layout:auto">
  <col> 
@@ -259,39 +259,39 @@ ZIP, RAR, 7Z, TAR, TAR.GZ 또는 TAR.BZ2 아카이브에 하나 이상의 파일
    <td> <p>[!DNL CloudConvert] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Input Files]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 입력 파일]</p> </td> 
    <td> <p>병합할 파일을 지정합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Upload a File]</td> 
+   <td role="rowheader">[!UICONTROL 파일 업로드]</td> 
    <td> <p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 이름과 데이터를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Import a file from URL]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL URL에서 파일 가져오기]</p> </td> 
    <td> <p><strong>[!UICONTROL URL]</strong> </p> <p>보관하려는 파일의 URL을 입력합니다.</p> <p><strong>[!UICONTROL Headers]</strong> </p> <p>요청 헤더를 정의합니다(선택 사항). 이 기능은 예를 들어 지정된 URL에 인증이 필요한 경우 유용합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Output Format]</td> 
+   <td role="rowheader">[!UICONTROL 출력 형식]</td> 
    <td> <p> 병합된 파일의 대상 형식을 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL File name]</td> 
+   <td role="rowheader">[!UICONTROL 파일 이름]</td> 
    <td> <p> 대상 출력 파일의 파일 이름(확장명 포함)을 입력합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conversion and engine specific options] </td> 
+   <td role="rowheader">[!UICONTROL 변환 및 엔진별 옵션] </td> 
    <td> <p>변환 및 엔진별 옵션을 지정합니다. 사용 가능한 옵션을 보려면 <code>input_format</code> 및 <code>output_format</code>에 대한 <a href="https://cloudconvert.com/api/v2/convert#convert-tasks">[!DNL CloudConvert] API</a> 설명서를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Download a File]</td> 
+   <td role="rowheader">[!UICONTROL 파일 다운로드]</td> 
    <td> <p>모듈의 출력에 파일 데이터를 포함하려면 이 옵션을 활성화합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Optimize a File]
+#### [!UICONTROL 파일 최적화]
 
-이 작업 모듈은 파일을 PDF, PNG 또는 JPG 형식으로 최적화 및 압축합니다.
+이 작업 모듈은 PDF, PNG 또는 JPG 형식의 파일을 최적화하고 압축합니다.
 
 최적화하고 저장하기 위한 파일 및 매개변수를 지정합니다.
 
@@ -308,15 +308,15 @@ ZIP, RAR, 7Z, TAR, TAR.GZ 또는 TAR.BZ2 아카이브에 하나 이상의 파일
    <td> <p>[!DNL CloudConvert] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Input File]</td> 
+   <td role="rowheader">[!UICONTROL 입력 파일]</td> 
    <td>Workfront Fusion을 사용하여 파일을 업로드할지 또는 파일을 업로드할 URL을 제공할지 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Upload a File]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 파일 업로드]</p> </td> 
    <td> <p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 이름과 데이터를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Import a file from URL] </td> 
+   <td role="rowheader">[!UICONTROL URL에서 파일 가져오기] </td> 
    <td> 
     <ul> 
      <li><strong>[!UICONTROL URL]</strong>: 변환할 파일의 URL을 입력합니다.</li> 
@@ -336,7 +336,7 @@ ZIP, RAR, 7Z, TAR, TAR.GZ 또는 TAR.BZ2 아카이브에 하나 이상의 파일
       </ul> </li> 
     </ul> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Print]</strong>: 인쇄 최적화</p> 
+     <li> <p><strong>[!UICONTROL Print]</strong>: 인쇄를 위한 최적화</p> 
       <ul> 
        <li> <p>인쇄를 위해 중복되고 불필요한 데이터 제거</p> </li> 
        <li> <p>이미지를 다운 샘플링, 클립 및 지능적으로 압축</p> </li> 
@@ -349,12 +349,12 @@ ZIP, RAR, 7Z, TAR, TAR.GZ 또는 TAR.BZ2 아카이브에 하나 이상의 파일
        <li> <p>이미지를 지능적으로 압축</p> </li> 
        <li> <p>글꼴 병합 및 하위 집합</p> </li> 
       </ul> </li> 
-     <li> <p><strong>[!UICONTROL Scanned images]</strong>: 스캔한 이미지에 대한 최적화</p> 
+     <li> <p><strong>[!UICONTROL 스캔한 이미지]</strong>: 스캔한 이미지에 대한 최적화</p> 
       <ul> 
-       <li> <p>주로 래스터 이미지로 구성된 PDF에 최적화된 프로필</p> </li> 
+       <li> <p>주로 래스터 이미지로 구성된 PDF에 최적화된 프로파일</p> </li> 
        <li> <p>시각적 품질을 크게 저하시키지 않고 이미지 압축</p> </li> 
       </ul> </li> 
-     <li> <p><strong>[!UICONTROL maximal size reduction]</strong>: 최대 크기 감소를 위한 최적화</p> 
+     <li> <p><strong>[!UICONTROL 최대 크기 감소]</strong>: 최대 크기 감소를 위한 최적화</p> 
       <ul> 
        <li> <p>가능한 최대 압축 사용</p> </li> 
        <li> <p>시각적 품질을 저하시킬 수 있음</p> </li> 
@@ -362,19 +362,19 @@ ZIP, RAR, 7Z, TAR, TAR.GZ 또는 TAR.BZ2 아카이브에 하나 이상의 파일
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Input format] </td> 
+   <td role="rowheader">[!UICONTROL 입력 형식] </td> 
    <td>최적화할 입력 파일의 형식을 선택합니다. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL File name]</td> 
+   <td role="rowheader">[!UICONTROL 파일 이름]</td> 
    <td> <p>대상 출력 파일의 파일 이름(확장명 포함)을 입력합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conversion and engine specific options]</td> 
+   <td role="rowheader">[!UICONTROL 변환 및 엔진별 옵션]</td> 
    <td> <p>변환 및 엔진별 옵션을 지정합니다. 사용 가능한 옵션을 보려면 <code>input_format</code> 및 <code>output_format</code>에 대한 <a href="https://cloudconvert.com/api/v2/convert#convert-tasks">[!DNL CloudConvert] API</a> 설명서를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Download a file]</td> 
+   <td role="rowheader">[!UICONTROL 파일 다운로드]</td> 
    <td> <p>모듈의 출력에 파일 데이터를 포함하려면 이 옵션을 활성화합니다.</p> </td> 
   </tr> 
  </tbody> 
@@ -382,15 +382,15 @@ ZIP, RAR, 7Z, TAR, TAR.GZ 또는 TAR.BZ2 아카이브에 하나 이상의 파일
 
 ### 작업
 
-* [[!UICONTROL Create a Job (advanced)]](#create-a-job-advanced)
-* [[!UICONTROL New Job Event]](#new-job-event)
-* [[!UICONTROL List Jobs]](#list-jobs)
-* [[!UICONTROL Get a Job]](#get-a-job)
-* [[!UICONTROL Delete a Job]](#delete-a-job)
+* [[!UICONTROL 작업 만들기(고급)]](#create-a-job-advanced)
+* [[!UICONTROL 새 작업 이벤트]](#new-job-event)
+* [[!UICONTROL 작업 나열]](#list-jobs)
+* [[!UICONTROL 작업 가져오기]](#get-a-job)
+* [[!UICONTROL 작업 삭제]](#delete-a-job)
 
-#### [!UICONTROL Create a Job (advanced)]
+#### [!UICONTROL 작업 만들기(고급)]
 
-이 모듈은 작업을 생성합니다. 작업은 [!UICONTROL Name] 필드에서 식별되고 [!UICONTROL Input] 필드를 사용하여 서로 연결된 하나 또는 여러 작업일 수 있습니다.
+이 모듈은 작업을 생성합니다. 작업은 [!UICONTROL 이름] 필드에서 식별되고 [!UICONTROL 입력] 필드를 사용하여 서로 연결되는 하나 이상의 작업일 수 있습니다.
 
 <table style="table-layout:auto">
  <col> 
@@ -401,44 +401,44 @@ ZIP, RAR, 7Z, TAR, TAR.GZ 또는 TAR.BZ2 아카이브에 하나 이상의 파일
    <td> <p>[!DNL CloudConvert] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Input Files]</td> 
+   <td role="rowheader">[!UICONTROL 입력 파일]</td> 
    <td> <p>[!DNL Workfront Fusion]을(를) 사용하여 파일을 업로드할지 또는 파일을 업로드할 URL을 제공할지 선택하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Upload a File]</td> 
+   <td role="rowheader">[!UICONTROL 파일 업로드]</td> 
    <td> <p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 이름과 데이터를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Import a File from URL]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL URL에서 파일 가져오기]</p> </td> 
    <td> 
     <ul> 
-     <li><strong>[!UICONTROL URL]</strong>: 처리할 파일의 URL을 입력합니다.</li> 
+     <li><strong>[!UICONTROL URL]</strong>: 처리할 파일의 URL을 입력하십시오.</li> 
      <li><strong>[!UICONTROL Headers]</strong>: (선택 사항) 요청 헤더를 정의합니다. 이 기능은 예를 들어 지정된 URL에 인증이 필요한 경우 유용합니다.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Tasks]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 작업]</p> </td> 
    <td> <p>작업 내에서 수행될 작업을 추가합니다.</p> <p>해당 섹션에서 작업 필드에 대한 설명을 확인하십시오.</p> 
     <ul> 
-     <li><a href="#convert-a-file" class="MCXref xref">[!UICONTROL Convert a file]</a> </li> 
-     <li><a href="#capture-a-website" class="MCXref xref">[!UICONTROL Capture a Websit]e</a> </li> 
-     <li><a href="#optimize-a-file" class="MCXref xref">[!UICONTROL Optimize a File]</a> </li> 
-     <li><a href="#create-an-archive" class="MCXref xref">[!UICONTROL Create an Archive]</a> </li> 
-     <li><a href="#merge-files" class="MCXref xref">[!UICONTROL Merge Files]</a> </li> 
+     <li><a href="#convert-a-file" class="MCXref xref">[!UICONTROL 파일 변환]</a> </li> 
+     <li><a href="#capture-a-website" class="MCXref xref">[!UICONTROL 웹 사이트 캡처]e</a> </li> 
+     <li><a href="#optimize-a-file" class="MCXref xref">[!UICONTROL 파일 최적화]</a> </li> 
+     <li><a href="#create-an-archive" class="MCXref xref">[!UICONTROL 보관 만들기]</a> </li> 
+     <li><a href="#merge-files" class="MCXref xref">[!UICONTROL 파일 병합]</a> </li> 
     </ul> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Execute a Command]</strong> </p> <p>명령 실행에 대한 자세한 내용은 <a href="https://cloudconvert.com/api/v2/command#command-tasks">[!DNL CloudConvert] API 설명서</a>를 참조하십시오.</p> </li> 
-     <li> <p><strong>[!UICONTROL Export a File to Temporary URL]</strong> </p> <p> 작업 이름 및 입력 작업 이름(예: 전환)을 지정합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 명령 실행]</strong> </p> <p>명령 실행에 대한 자세한 내용은 <a href="https://cloudconvert.com/api/v2/command#command-tasks">[!DNL CloudConvert] API 설명서</a>를 참조하십시오.</p> </li> 
+     <li> <p><strong>[!UICONTROL 임시 URL로 파일 내보내기]</strong> </p> <p> 작업 이름 및 입력 작업 이름(예: 전환)을 지정합니다.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Tag] </td> 
+   <td role="rowheader">[!UICONTROL 태그] </td> 
    <td> <p>태그를 입력합니다. 태그는 작업을 식별하는 임의의 문자열입니다. 효과가 없으며 작업을 ID와 연결하는 데 사용할 수 있습니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Job]
+#### [!UICONTROL 작업 삭제]
 
 이 모듈은 모든 작업 및 데이터를 포함한 작업을 삭제합니다.
 
@@ -455,13 +455,13 @@ ZIP, RAR, 7Z, TAR, TAR.GZ 또는 TAR.BZ2 아카이브에 하나 이상의 파일
    <td> <p>[!DNL CloudConvert] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Job ID]</td> 
+   <td role="rowheader">[!UICONTROL 작업 ID]</td> 
    <td> <p>삭제할 작업의 ID를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Job]
+#### [!UICONTROL 작업 가져오기]
 
 이 모듈은 작업 세부 정보를 검색합니다.
 
@@ -474,13 +474,13 @@ ZIP, RAR, 7Z, TAR, TAR.GZ 또는 TAR.BZ2 아카이브에 하나 이상의 파일
    <td> <p>[!DNL CloudConvert] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Job ID]</td> 
+   <td role="rowheader">[!UICONTROL 작업 ID]</td> 
    <td> <p>세부 정보를 검색할 작업의 ID를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL List Jobs]
+#### [!UICONTROL 작업 나열]
 
 이 모듈은 계정에서 실행된 모든 작업을 검색합니다.
 
@@ -493,24 +493,24 @@ ZIP, RAR, 7Z, TAR, TAR.GZ 또는 TAR.BZ2 아카이브에 하나 이상의 파일
    <td> <p>[!DNL CloudConvert] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Status] </td> 
+   <td role="rowheader">[!UICONTROL 상태] </td> 
    <td> <p>반환된 작업을 필터링할 작업 상태를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td role="rowheader">[!UICONTROL 제한] </td> 
    <td> <p>한 실행 주기 동안 Workfront Fusion 2.0이 반환할 작업 수를 설정합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL New Job Event]
+#### [!UICONTROL 새 작업 이벤트]
 
 계정 또는 작업의 작업이 생성되거나 완료되거나 실패하면 트리거됩니다.
 
 >[!NOTE]
 >
->* [!UICONTROL Create a Job (advanced)] 모듈에서 만든 작업은 *여러* 작업으로 구성됩니다.
->* *개인* 작업이 만들어지거나 완료되거나 실패한 경우에도 [!UICONTROL New Job Event] 트리거가 트리거됩니다.
+>* [!UICONTROL 작업 만들기(고급)] 모듈에서 만든 작업은 *여러*&#x200B;개의 작업으로 구성됩니다.
+>* [!UICONTROL 새 작업 이벤트] 트리거는 *개인* 작업이 만들어지거나 완료되거나 실패한 경우에도 트리거됩니다.
 >
 
 <table style="table-layout:auto">
@@ -518,7 +518,7 @@ ZIP, RAR, 7Z, TAR, TAR.GZ 또는 TAR.BZ2 아카이브에 하나 이상의 파일
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Webhhook name]</td> 
+   <td role="rowheader">[!UICONTROL Webhook name]</td> 
    <td>웹후크 이름을 입력합니다. </td> 
   </tr> 
   <tr> 
@@ -526,11 +526,11 @@ ZIP, RAR, 7Z, TAR, TAR.GZ 또는 TAR.BZ2 아카이브에 하나 이상의 파일
    <td> <p>[!DNL CloudConvert] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Output Format] </td> 
+   <td role="rowheader">[!UICONTROL 출력 형식] </td> 
    <td>캡처된 웹 사이트를 PNG, JPG 또는 PDF 형식으로 저장할지 여부를 선택합니다. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Event]</td> 
+   <td role="rowheader">[!UICONTROL 이벤트]</td> 
    <td>작업 또는 작업이 생성, 완료 또는 실패할 때 모듈을 트리거할지 여부를 선택합니다.</td> 
   </tr> 
  </tbody> 
@@ -538,21 +538,21 @@ ZIP, RAR, 7Z, TAR, TAR.GZ 또는 TAR.BZ2 아카이브에 하나 이상의 파일
 
 >[!NOTE]
 >
->* Array Aggregator를 사용하여 작업하는 경우(예: 변환할 다양한 형식의 파일이 있는 경우) [!UICONTROL Add a task] 대화 상자의 **[!UICONTROL I don't know the input format]** 옵션을 사용합니다. 그렇지 않으면 오류가 반환됩니다.
+>* Array Aggregator를 사용하여 작업하는 경우(예: 변환할 파일이 여러 개 있는 경우) [!UICONTROL 작업 추가] 대화 상자에서 **[!UICONTROL 입력 형식을 모릅니다]** 옵션을 사용하십시오. 그렇지 않으면 오류가 반환됩니다.
 >* 작업 내 작업 연결(이름 > 입력, 이름 > 입력 등):
 >
 >  ![작업 간 이름 연결](/help/workfront-fusion/references/apps-and-modules/assets/linking-name-across-jobs-350x808.png)>
 
 ### 작업
 
-* [[!UICONTROL Get a Task]](#get-a-task)
-* [[!UICONTROL Download a File]](#download-a-file)
-* [[!UICONTROL List Tasks]](#list-tasks)
-* [[!UICONTROL Retry a Task]](#retry-a-task)
-* [[!UICONTROL Cancel a Task]](#cancel-a-task)
-* [[!UICONTROL Delete a Task]](#delete-a-task)
+* [[!UICONTROL 작업 가져오기]](#get-a-task)
+* [[!UICONTROL 파일 다운로드]](#download-a-file)
+* [[!UICONTROL 작업 나열]](#list-tasks)
+* [[!UICONTROL 작업 다시 시도]](#retry-a-task)
+* [[!UICONTROL 작업 취소]](#cancel-a-task)
+* [[!UICONTROL 작업 삭제]](#delete-a-task)
 
-#### [!UICONTROL Cancel a Task]
+#### [!UICONTROL 작업 취소]
 
 이 모듈은 대기 또는 처리 상태의 작업을 취소합니다.
 
@@ -565,13 +565,13 @@ ZIP, RAR, 7Z, TAR, TAR.GZ 또는 TAR.BZ2 아카이브에 하나 이상의 파일
    <td> <p>[!DNL CloudConvert] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Task ID]</td> 
+   <td role="rowheader">[!UICONTROL 작업 ID]</td> 
    <td> <p> 취소할 작업의 ID를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Task]
+#### [!UICONTROL 작업 삭제]
 
 모든 데이터를 포함한 작업을 삭제합니다.
 
@@ -588,13 +588,13 @@ ZIP, RAR, 7Z, TAR, TAR.GZ 또는 TAR.BZ2 아카이브에 하나 이상의 파일
    <td> <p>[!DNL CloudConvert] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Task ID]</td> 
+   <td role="rowheader">[!UICONTROL 작업 ID]</td> 
    <td> <p> 삭제할 작업의 ID를 입력(매핑)합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Download a File]
+#### [!UICONTROL 파일 다운로드]
 
 이 모듈은 지정된 작업에서 파일 이름 및 파일 데이터를 검색합니다.
 
@@ -607,13 +607,13 @@ ZIP, RAR, 7Z, TAR, TAR.GZ 또는 TAR.BZ2 아카이브에 하나 이상의 파일
    <td> <p>[!DNL CloudConvert] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Task ID]</td> 
+   <td role="rowheader">[!UICONTROL 작업 ID]</td> 
    <td> <p> 파일을 다운로드할 작업의 ID를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Task]
+#### [!UICONTROL 작업 가져오기]
 
 이 모듈은 작업 세부 정보를 검색합니다.
 
@@ -626,13 +626,13 @@ ZIP, RAR, 7Z, TAR, TAR.GZ 또는 TAR.BZ2 아카이브에 하나 이상의 파일
    <td> <p>[!DNL CloudConvert] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Task ID]</td> 
+   <td role="rowheader">[!UICONTROL 작업 ID]</td> 
    <td> <p>세부 정보를 검색할 작업의 ID를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL List Tasks]
+#### [!UICONTROL 작업 나열]
 
 이 모듈은 필터 설정을 기반으로 계정의 모든 작업을 검색합니다.
 
@@ -645,25 +645,25 @@ ZIP, RAR, 7Z, TAR, TAR.GZ 또는 TAR.BZ2 아카이브에 하나 이상의 파일
    <td> <p>[!DNL CloudConvert] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Status] </td> 
+   <td role="rowheader">[!UICONTROL 상태] </td> 
    <td> <p>반환된 작업을 필터링할 작업 상태를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Job ID] </td> 
+   <td role="rowheader">[!UICONTROL 작업 ID] </td> 
    <td> <p>작업 ID를 입력하거나 매핑하여 지정된 작업 내의 작업만 반환합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Operation] </td> 
-   <td> <p>작업 유형을 입력하여 지정된 작업이 있는 작업만 반환합니다. </p> <p>참고: 작업을 검색하려면 [!UICONTROL List Possible Operations] 모듈을 사용하십시오.</p> </td> 
+   <td role="rowheader">[!UICONTROL 작업] </td> 
+   <td> <p>작업 유형을 입력하여 지정된 작업이 있는 작업만 반환합니다. </p> <p>참고: [!UICONTROL List Possible Operations] 모듈을 사용하여 작업을 검색합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td role="rowheader">[!UICONTROL 제한] </td> 
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Retry a Task]
+#### [!UICONTROL 작업 다시 시도]
 
 이 모듈은 다른 작업의 설정(페이로드)을 기반으로 새 작업을 만듭니다.
 
@@ -676,7 +676,7 @@ ZIP, RAR, 7Z, TAR, TAR.GZ 또는 TAR.BZ2 아카이브에 하나 이상의 파일
    <td> <p>[!DNL CloudConvert] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Task ID]</td> 
+   <td role="rowheader">[!UICONTROL 작업 ID]</td> 
    <td> <p> 새 작업을 만들 작업의 ID를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
@@ -684,10 +684,10 @@ ZIP, RAR, 7Z, TAR, TAR.GZ 또는 TAR.BZ2 아카이브에 하나 이상의 파일
 
 ### 기타
 
-* [[!UICONTROL Get My Info]](#get-my-info)
-* [[!UICONTROL Make an API Call]](#make-an-api-call)
+* [[!UICONTROL 내 정보 가져오기]](#get-my-info)
+* [[!UICONTROL API 호출 만들기]](#make-an-api-call)
 
-#### [!UICONTROL Get My Info]
+#### [!UICONTROL 내 정보 가져오기]
 
 현재 사용자에 대한 인증된 계정 세부 정보를 검색합니다.
 
@@ -702,7 +702,7 @@ ZIP, RAR, 7Z, TAR, TAR.GZ 또는 TAR.BZ2 아카이브에 하나 이상의 파일
  </tbody> 
 </table>
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL API 호출 만들기]
 
 사용자 지정 API 호출을 수행할 수 있습니다.
 
@@ -712,14 +712,14 @@ ZIP, RAR, 7Z, TAR, TAR.GZ 또는 TAR.BZ2 아카이브에 하나 이상의 파일
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[Fusion App] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
+   <td> <p>CloudConvert 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion에 연결 만들기 - 기본 지침</a>을 참조하십시오</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
    <td> <p><code>https://api.cloudconvert.com/</code>과(와) 관련된 경로를 입력하십시오. For example: <code>/v2/tasks</code></p> <p>사용 가능한 끝점 목록은 <a href="https://cloudconvert.com/api/v2">[!DNL CloudConvert] API v2 설명서</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td role="rowheader">[!UICONTROL 메서드]</td> 
    td&gt; <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -727,7 +727,7 @@ ZIP, RAR, 7Z, TAR, TAR.GZ 또는 TAR.BZ2 아카이브에 하나 이상의 파일
    <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion 2.0은 사용자에게 권한 부여 헤더를 추가합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td role="rowheader">[!UICONTROL 쿼리 문자열]</td> 
    <td> <p>표준 JSON 개체 형식으로 API 호출에 대한 쿼리를 추가합니다.</p> <p>For example: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
@@ -747,7 +747,7 @@ URL: `/v2/tasks`
 
 ![API 예제 입력](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-input.png)
 
-검색 일치 항목은 모듈의 출력에서 [!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL data] 아래에 있습니다.
+검색 일치 항목은 [!UICONTROL 번들] > [!UICONTROL 본문] > [!UICONTROL 데이터]의 모듈 출력에서 찾을 수 있습니다.
 
 이 예에서는 6개의 작업이 반환되었습니다.
 
@@ -768,23 +768,23 @@ URL: `/v2/tasks`
  </thead> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p><span style="font-weight: normal;">[!UICONTROL The output file size exceeds the limit allowed for your scenario.]</span> </p> </td> 
+   <td role="rowheader"> <p><span style="font-weight: normal;">[!UICONTROL 출력 파일 크기가 시나리오에 허용된 한도를 초과합니다.]</span> </p> </td> 
    <td> <p>파일 크기 제한을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p><span style="font-weight: normal;">[!UICONTROL You have exceeded the maximum conversion time.]</span> </p> </td> 
+   <td role="rowheader"> <p><span style="font-weight: normal;">[!UICONTROL 최대 전환 시간을 초과했습니다.]</span> </p> </td> 
    <td> <p>무료 [!DNL CloudConvert] 플랜은 매일 25분 전환을 제공합니다. 무료 요금제의 한도를 초과하면 (선불) 패키지 또는 구독으로 전환할 수 있습니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p><span style="font-weight: normal;">[!UICONTROL Failed to read frame size: Could not seek to 1508. �/output/JLIADSA00137P0.mp3: Invalid argument.]</span> </p> </td> 
+   <td role="rowheader"> <p><span style="font-weight: normal;">[!UICONTROL 프레임 크기를 읽지 못했습니다. 1508을 찾을 수 없습니다. /output/JLIADSA00137P0.mp3�: 인수가 잘못되었습니다.]</span> </p> </td> 
    <td> <p>이 오류는 MP3에서 WAV로 파일을 변환할 때 발생합니다. 파일에 대한 참조뿐만 아니라 올바른 파일에 대한 참조도 찾을 수 있으므로 올바른 영역을 선택했는지 확인하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL RuntimeError:] </p> <p><span style="font-weight: normal;">[!UICONTROL Maximum number of repeats exceeded.]</span> </p> </td> 
-   <td> <p>[!DNL CloudConvert] 대시보드의 작업 목록에서 해당 [!DNL CloudConvert] 작업을 찾아 작업 기간을 확인합니다.</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-duration-350x177.png" style="width: 350;height: 177;"> </p> <p>[!DNL CloudConvert] &gt; [!UICONTROL Convert a File] 모듈의 시간 제한이 3분으로 설정되어 있습니다. 작업 기간이 3분을 초과하는 경우([!DNL CloudConvert] 서비스의 일시적인 오버로드로 인해 발생 가능) 모듈에서 위에 언급된 오류가 발생합니다.</p> <p>이 경우 다음 옵션 중 하나를 고려하십시오.</p> 
+   <td role="rowheader"> <p>[!UICONTROL RuntimeError:] </p> <p><span style="font-weight: normal;">[!UICONTROL 최대 반복 횟수를 초과했습니다.]</span> </p> </td> 
+   <td> <p>[!DNL CloudConvert] 대시보드의 작업 목록에서 해당 [!DNL CloudConvert] 작업을 찾아 작업 기간을 확인합니다.</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-duration-350x177.png" style="width: 350;height: 177;"> </p> <p>[!DNL CloudConvert] &gt; [!UICONTROL 파일 변환] 모듈의 시간 제한이 3분으로 설정되어 있습니다. 작업 기간이 3분을 초과하는 경우([!DNL CloudConvert] 서비스의 일시적인 오버로드로 인해 발생 가능) 모듈에서 위에 언급된 오류가 발생합니다.</p> <p>이 경우 다음 옵션 중 하나를 고려하십시오.</p> 
     <ul> 
-     <li>시나리오 설정에서 <strong>[!UICONTROL Allow storing of Incomplete Executions]</strong> 옵션을 활성화하여 이후 수동 해결을 위해 불완전한 실행을 저장합니다. 선택적으로 [!UICONTROL Break] 지시문을 사용하여 [!DNL CloudConvert] 모듈에 오류 처리 경로를 연결하여 불완전한 실행을 자동으로 해결할 수 있습니다.</li> 
-     <li>[!DNL CloudConvert] &gt; [!UICONTROL Convert a file] 모듈에서 <strong>[!UICONTROL Download a file] 옵션</strong>을(를) 비활성화합니다. 이 경우 모듈은 변환 결과를 기다리지 않습니다. 변환 결과를 얻으려면 새 시나리오를 만들고 [!DNL CloudConvert] &gt; [!UICONTROL New Job Event] 트리거를 사용하십시오.</li> 
+     <li>시나리오 설정에서 <strong>[!UICONTROL 미완료 실행 저장 허용]</strong> 옵션을 활성화하여 이후 수동 해결을 위해 미완료 실행을 저장합니다. 필요한 경우 [!UICONTROL Break] 지시문을 사용하여 [!DNL CloudConvert] 모듈에 오류 처리 경로를 연결하여 불완전한 실행을 자동으로 해결할 수 있습니다.</li> 
+     <li>[!DNL CloudConvert] &gt; [!UICONTROL 파일 변환] 모듈에서 <strong>[!UICONTROL 파일 다운로드] 옵션</strong>을(를) 비활성화합니다. 이 경우 모듈은 변환 결과를 기다리지 않습니다. 변환 결과를 얻으려면 새 시나리오를 만들고 [!DNL CloudConvert] &gt; [!UICONTROL 새 작업 이벤트] 트리거를 사용하십시오.</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -797,22 +797,22 @@ URL: `/v2/tasks`
 >**예:** 비디오를 MOV에서 MP4 형식으로 변환
 >
 >1. [https://cloudconvert.com/video-converter](https://>cloudconvert.com/video-converter) 방문
->1. **[!UICONTROL Select File]**&#x200B;을(를) 클릭하고 샘플 MOV 파일을 선택합니다.
->1. **[!UICONTROL Convert to]** 옆의 드롭다운을 클릭하고 **[!UICONTROL MP4]**&#x200B;을(를) 선택합니다.
+>1. **[!UICONTROL 파일 선택]**&#x200B;을 클릭하고 샘플 MOV 파일을 선택합니다.
+>1. **[!UICONTROL 전환]** 옆의 드롭다운을 클릭하고 **[!UICONTROL MP4]**&#x200B;을(를) 선택합니다.
 >
->1. **[!UICONTROL wrench]** 아이콘을 클릭합니다.
+>1. **[!UICONTROL 렌치]** 아이콘을 클릭합니다.
 >1. 알맞은 MP4 압축 설정을 구성합니다.
->1. **[!UICONTROL Convert]**&#x200B;을(를) 클릭합니다.
->1. 변환이 완료되면 **[!UICONTROL Download]**&#x200B;을(를) 클릭합니다.
+>1. **[!UICONTROL 변환]**&#x200B;을 클릭합니다.
+>1. 전환이 완료되면 **[!UICONTROL 다운로드]**&#x200B;를 클릭합니다.
 >1. 변환된 비디오를 검토합니다.
 >1. 5단계에 대한 최적의 전환 설정을 찾을 때까지 1~8단계를 반복합니다.
 >1. [https://cloudconvert.com/api/v2/convert#convert-tasks](https://cloudconvert.com/api/v2/convert#convert-tasks) 방문
->1. **[!UICONTROL input_format]** 필드에 대해 **[!UICONTROL mov]**&#x200B;을(를) 선택합니다.
+>1. **[!UICONTROL input_format]** 필드에 대해 **[!UICONTROL mov]**&#x200B;을(를) 선택하십시오.
 >
->1. **[!UICONTROL output_format]** 필드에 대해 **[!UICONTROL mp4]**&#x200B;을(를) 선택합니다.
+>1. **[!UICONTROL output_format]** 필드에 대해 **[!UICONTROL mp4]**&#x200B;을(를) 선택하십시오.
 >
 >1. video_codec, crf 등과 같은 가능한 모든 매개 변수의 목록입니다. 가 표시됩니다.
->1. Workfront Fusion 2.0에서 시나리오에 **[!UICONTROL CloudConvert]** > **[!UICONTROL Convert a File]** 모듈을 삽입합니다.
+>1. Workfront Fusion 2.0에서 시나리오에 **[!UICONTROL CloudConvert]** > **[!UICONTROL 파일 변환]** 모듈을 삽입합니다.
 >
 >1. 모듈의 설정을 엽니다.
 >1. 아래와 같이 모듈을 구성합니다.

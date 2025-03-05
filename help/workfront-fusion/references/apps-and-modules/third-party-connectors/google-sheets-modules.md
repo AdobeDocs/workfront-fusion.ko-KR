@@ -4,9 +4,9 @@ description: ' [!DNL Google Sheets] with [!DNL Adobe Workfront Fusion],you need 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 80965570-2937-4ac8-97c0-54f7a813ec50
-source-git-commit: 994dffd83d5b7d8b72396f147df352dfb74d6219
+source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
 workflow-type: tm+mt
-source-wordcount: '3464'
+source-wordcount: '3957'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 ## 전제 조건
 
-[!UICONTROL Google Sheets] 모듈을 사용하려면 [!UICONTROL Google] 계정이 있어야 합니다.
+[!UICONTROL Google 시트] 모듈을 사용하려면 [!UICONTROL Google] 계정이 있어야 합니다.
 
 ## Google Sheets API 정보
 
@@ -97,7 +97,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
 
 ### 트리거
 
-#### [!UICONTROL Watch Rows]
+#### [!UICONTROL 행 보기]
 
 스프레드시트에서 새로 추가된 행에서 값을 검색합니다.
 
@@ -128,27 +128,27 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
    <td> <p> 스프레드시트에 머리글 행이 포함되어 있는지 여부를 선택합니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Yes]</strong> </p> <p>모듈은 헤더 행을 출력 데이터로 검색하지 않습니다. </p> <p>출력에서 변수 이름은 헤더에 의해 호출됩니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL No]</strong> </p> <p>모듈은 첫 번째 테이블 행도 검색합니다</p> <p>출력의 변수 이름은 A, B, C, D 등입니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 번호]</strong> </p> <p>모듈은 첫 번째 테이블 행도 검색합니다</p> <p>출력의 변수 이름은 A, B, C, D 등입니다.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Row with headers] </td> 
+   <td role="rowheader">헤더가 있는 [!UICONTROL 행] </td> 
    <td> <p>머리글 행의 범위를 입력합니다. 예: <code>A1:F1</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL First table row]</td> 
+   <td role="rowheader">[!UICONTROL 첫 번째 테이블 행]</td> 
    <td> <p>테이블의 첫 번째 행 범위를 입력합니다. 예: <code>A1:F1</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Value render option]</p> </td> 
-   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Formatted value]</p> <p>셀의 서식에 따라 회신에서 값이 계산되고 서식이 지정됩니다. 서식은 요청한 사용자의 로케일이 아니라 스프레드시트의 로케일을 기반으로 합니다. 예를 들어 <code>A1</code>이(가) <code>1.23</code>이고 <code>A2</code>이(가) <code>=A1</code>이고 통화 형식인 경우 <code>A2</code>은(는) <code>"$1.23"</code>을(를) 반환합니다.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Unformatted value]</p> <p>값이 계산되지만 회신에서 형식이 지정되지 않습니다. 예를 들어 <code>A1</code>이(가) <code>1.23</code>이고 <code>A2</code>이(가) <code>=A1</code>이고 통화 형식인 경우 <code>A2</code>은(는) 숫자 <code>"1.23"</code>을(를) 반환합니다.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Formula]</p> <p>값이 계산되지 않습니다. 답변에는 수식이 포함되어 있습니다. 예를 들어 <code>A1</code>이(가) <code>1.23</code>이고 <code>A2</code>이(가) <code>=A1</code>이고 통화 형식인 경우 <code>A2</code>은(는) <code>"=A1"</code>을(를) 반환합니다.</p> </li><ul></td> 
+   <td role="rowheader"> <p>[!UICONTROL 값 렌더링 옵션]</p> </td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL 형식의 값]</p> <p>셀의 서식에 따라 회신에서 값이 계산되고 서식이 지정됩니다. 서식은 요청한 사용자의 로케일이 아니라 스프레드시트의 로케일을 기반으로 합니다. 예를 들어 <code>A1</code>이(가) <code>1.23</code>이고 <code>A2</code>이(가) <code>=A1</code>이고 통화 형식인 경우 <code>A2</code>은(는) <code>"$1.23"</code>을(를) 반환합니다.</p></li><li> <p style="font-weight: bold;">[!UICONTROL 형식이 지정되지 않은 값]</p> <p>값이 계산되지만 회신에서 형식이 지정되지 않습니다. 예를 들어 <code>A1</code>이(가) <code>1.23</code>이고 <code>A2</code>이(가) <code>=A1</code>이고 통화 형식인 경우 <code>A2</code>은(는) 숫자 <code>"1.23"</code>을(를) 반환합니다.</p></li><li> <p style="font-weight: bold;">[!UICONTROL 공식]</p> <p>값이 계산되지 않습니다. 답변에는 수식이 포함되어 있습니다. 예를 들어 <code>A1</code>이(가) <code>1.23</code>이고 <code>A2</code>이(가) <code>=A1</code>이고 통화 형식인 경우 <code>A2</code>은(는) <code>"=A1"</code>을(를) 반환합니다.</p> </li><ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Date and time render option]</p> </td> 
-   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Serial number]</p> <p>날짜, 시간, 날짜/시간 및 기간 필드는 Lotus 1-2-3에서 대중화된 "일련 번호" 형식의 두 배로 출력됩니다. 값의 전체 숫자 부분(소수점 왼쪽)은 1899년 12월 30일 이후의 일을 계산합니다. 분수 부분(소수점의 오른쪽)은 시간을 하루의 분수로 계산합니다. 예를 들어, 1900년 1월 1일 정오가 2.5이고, 1899년 12월 30일 이후 2일이므로 2이고, 정오가 반나절이므로 .5입니다. 1900년 2월 1일 오후 3시 는 33.625가 됩니다. 이는 1900년을 윤년이 아닌 해로 올바르게 취급한다.</p> </li><li><p style="font-weight: bold;">[!UICONTROL Formatted string]</p> <p>날짜, 시간, 날짜/시간 및 기간 필드는 스프레드시트의 로케일에 따라 지정된 숫자 형식으로 문자열로 출력됩니다.</p></li><ul> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 날짜 및 시간 렌더링 옵션]</p> </td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL 일련 번호]</p> <p>날짜, 시간, 날짜/시간 및 기간 필드는 Lotus 1-2-3에서 대중화된 "일련 번호" 형식의 두 배로 출력됩니다. 값의 전체 숫자 부분(소수점 왼쪽)은 1899년 12월 30일 이후의 일을 계산합니다. 분수 부분(소수점의 오른쪽)은 시간을 하루의 분수로 계산합니다. 예를 들어, 1900년 1월 1일 정오가 2.5이고, 1899년 12월 30일 이후 2일이므로 2이고, 정오가 반나절이므로 .5입니다. 1900년 2월 1일 오후 3시 는 33.625가 됩니다. 이는 1900년을 윤년이 아닌 해로 올바르게 취급한다.</p> </li><li><p style="font-weight: bold;">[!UICONTROL 서식 있는 문자열]</p> <p>날짜, 시간, 날짜/시간 및 기간 필드는 스프레드시트의 로케일에 따라 지정된 숫자 형식으로 문자열로 출력됩니다.</p></li><ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td role="rowheader">[!UICONTROL 제한] </td> 
    <td> <p>한 실행 주기 동안 [!DNL Workfront Fusion]이(가) 사용할 최대 결과 수를 설정하십시오.</p> </td> 
   </tr> 
  </tbody> 
@@ -156,19 +156,19 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
 
 ### 액션
 
-* [[!UICONTROL Add a Row]](#add-a-row)
-* [[!UICONTROL Add a Sheet]](#add-a-sheet)
-* [[!UICONTROL Clear a Cell]](#clear-a-cell)
-* [[!UICONTROL Clear a Row]](#clear-a-row)
-* [[!UICONTROL Create a Spreadsheet]](#create-a-spreadsheet)
-* [[!UICONTROL Delete a Row]](#delete-a-row)
-* [[!UICONTROL Delete a Sheet]](#delete-a-sheet)
-* [[!UICONTROL Get a Cell]](#get-a-cell)
-* [[!UICONTROL Make an API Call]](#make-an-api-call)
-* [[!UICONTROL Update a Cell]](#update-a-cell)
-* [[!UICONTROL Update a Row]](#update-a-row)
+* [[!UICONTROL 행 추가]](#add-a-row)
+* [[!UICONTROL 시트 추가]](#add-a-sheet)
+* [[!UICONTROL 셀 지우기]](#clear-a-cell)
+* [[!UICONTROL 행 지우기]](#clear-a-row)
+* [[!UICONTROL 스프레드시트 만들기]](#create-a-spreadsheet)
+* [[!UICONTROL 행 삭제]](#delete-a-row)
+* [[!UICONTROL 시트 삭제]](#delete-a-sheet)
+* [[!UICONTROL 셀 가져오기]](#get-a-cell)
+* [[!UICONTROL API 호출 만들기]](#make-an-api-call)
+* [[!UICONTROL 셀 업데이트]](#update-a-cell)
+* [[!UICONTROL 행 업데이트]](#update-a-row)
 
-#### [!UICONTROL Add a Row]
+#### [!UICONTROL 행 추가]
 
 이 모듈은 시트에 행을 추가합니다.
 
@@ -187,7 +187,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
    <td> <p>[!DNL Google Sheets] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Mode]</td> 
+   <td>[!UICONTROL 모드]</td> 
    <td> <p>스프레드시트와 시트를 수동으로 선택할지 아니면 매핑으로 선택할지를 선택합니다.</p> <p>참고: 수동 매핑은 [!DNL Workfront Fusion] 시나리오에서 새 스프레드시트가 만들어지고 시나리오에서 직접 새로 생성된 스프레드시트에 데이터를 추가하려는 경우 유용합니다.</p> </td> 
   </tr> 
   <tr> 
@@ -199,7 +199,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
    <td> <p>행을 추가할 시트를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Column Range]</td> 
+   <td>[!UICONTROL 열 범위]</td> 
    <td>작업할 열 범위를 선택합니다.</td> 
   </tr> 
   <tr> 
@@ -207,33 +207,33 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
    <td> <p> 스프레드시트에 머리글 행이 포함되어 있는지 여부를 선택합니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Yes]</strong> </p> <p>모듈은 헤더 행을 출력 데이터로 검색하지 않습니다. </p> <p>출력에서 변수 이름은 헤더에 의해 호출됩니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL No]</strong> </p> <p>모듈은 첫 번째 테이블 행도 검색합니다</p> <p>출력의 변수 이름은 A, B, C, D 등입니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 번호]</strong> </p> <p>모듈은 첫 번째 테이블 행도 검색합니다</p> <p>출력의 변수 이름은 A, B, C, D 등입니다.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Values] </td> 
+   <td>[!UICONTROL 값] </td> 
    <td> <p>추가할 행의 원하는 셀을 입력하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Value input option]</td> 
+   <td>[!UICONTROL 값 입력 옵션]</td> 
    <td> 
     <ul> 
-     <li> <p><strong>[!UICONTROL User entered]</strong></p> <p>값은 사용자가 UI에 입력한 것처럼 구문 분석됩니다. 숫자는 그대로 유지되지만 문자열은 [!DNL Google Sheets] UI를 통해 셀에 텍스트를 입력할 때 적용되는 규칙과 동일한 규칙에 따라 숫자, 날짜 또는 다른 형식으로 변환될 수 있습니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 사용자가 입력됨]</strong></p> <p>값은 사용자가 UI에 입력한 것처럼 구문 분석됩니다. 숫자는 그대로 유지되지만 문자열은 [!DNL Google Sheets] UI를 통해 셀에 텍스트를 입력할 때 적용되는 규칙과 동일한 규칙에 따라 숫자, 날짜 또는 다른 형식으로 변환될 수 있습니다.</p> </li> 
      <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p> 사용자가 입력하는 값은 구문 분석되지 않고 입력된 대로 저장됩니다. </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Insert data option]</td> 
+   <td>[!UICONTROL 데이터 삽입 옵션]</td> 
    <td> <p>새 데이터를 입력할 때 기존 데이터가 변경되는 방법을 지정합니다. </p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Insert rows]</strong></p> <p>새 데이터에 대한 행이 삽입됩니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL Overwrite]</strong> </p> <p>새 데이터는 작성된 영역의 기존 데이터를 덮어씁니다. 시트 끝에 데이터를 추가하면 데이터를 쓸 수 있도록 새 행이나 열이 삽입됩니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 행 삽입]</strong></p> <p>새 데이터에 대한 행이 삽입됩니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 덮어쓰기]</strong> </p> <p>새 데이터는 작성된 영역의 기존 데이터를 덮어씁니다. 시트 끝에 데이터를 추가하면 데이터를 쓸 수 있도록 새 행이나 열이 삽입됩니다.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Add a Sheet]
+#### [!UICONTROL 시트 추가]
 
 선택한 스프레드시트에 새 시트를 만듭니다.
 
@@ -250,7 +250,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
    <td> <p>시트를 추가하려는 Google 스프레드시트를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Properties]</td> 
+   <td>[!UICONTROL 속성]</td> 
    <td> 
     <ul> 
      <li> <p style="font-weight: bold;">[!UICONTROL Title]</p> <p>새 시트의 이름을 입력합니다.</p> </li> 
@@ -260,7 +260,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL Clear a Cell]
+#### [!UICONTROL 셀 지우기]
 
 지정된 셀에서 값을 삭제합니다.
 
@@ -281,13 +281,13 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
    <td> <p>셀을 지울 시트를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Cell] </td> 
+   <td>[!UICONTROL 셀] </td> 
    <td> <p>지우려는 셀의 ID를 입력하거나 매핑합니다. 예: <code>A5</code></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Clear a Row]
+#### [!UICONTROL 행 지우기]
 
 지정된 행에서 값을 삭제합니다.
 
@@ -308,13 +308,13 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
    <td> <p> 데이터를 지우려는 시트를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Row number]</td> 
+   <td>[!UICONTROL 행 번호]</td> 
    <td> <p>데이터를 지우려는 행의 번호를 입력합니다. 예: <code> 23</code></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Create a Spreadsheet]
+#### [!UICONTROL 스프레드시트 만들기]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -338,25 +338,25 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Recalculation interval]</td> 
-   <td> <p>휘발성 함수가 다시 계산되기 전까지 대기할 시간:</p> <ul><li><p style="font-weight: bold;">[!UICONTROL On change]</p> <p>변동성 함수는 변경 시마다 업데이트됩니다.</p></li><li> <p style="font-weight: bold;">[!UICONTROL On change and every minute]</p> <p>변동성 함수는 변경 시마다 매 분마다 업데이트됩니다.</p></li> <li><p style="font-weight: bold;">[!UICONTROL On change and hourly]</p> <p>변동성 함수는 변경 시마다 업데이트됩니다.</p></li></ul> </td> 
+   <td>[!UICONTROL 재계산 간격]</td> 
+   <td> <p>휘발성 함수가 다시 계산되기 전까지 대기할 시간:</p> <ul><li><p style="font-weight: bold;">변경 시 [!UICONTROL]</p> <p>변동성 함수는 변경 시마다 업데이트됩니다.</p></li><li> <p style="font-weight: bold;">변경 시 및 매분 [!UICONTROL]</p> <p>변동성 함수는 변경 시마다 매 분마다 업데이트됩니다.</p></li> <li><p style="font-weight: bold;">변경 시 및 시간별 [!UICONTROL]</p> <p>변동성 함수는 변경 시마다 업데이트됩니다.</p></li></ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Time zone]</td> 
+   <td>[!UICONTROL 시간대]</td> 
    <td> <p> 스프레드시트의 시간대를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Number format]</td> 
-   <td> <p>스프레드시트에 있는 모든 셀의 기본 형식을 선택합니다.</p> <p><strong>[!UICONTROL Text]</strong>: 텍스트 서식. 예: <code>1000. 12</code></p> <p><strong>[!UICONTROL Number]</strong>: 숫자 서식. 예: <code>1,000.12</code></p> <p><strong>[!UICONTROL Percent]</strong>: 퍼센트 서식. 예: <code>10. 12%</code></p> <p><strong>[!UICONTROL Currency]</strong>: 통화 서식. 예: <code>$1,000.12</code></p> <p><strong>[!UICONTROL Date]</strong>: 날짜 형식 지정. 예: <code>9/26/2008</code></p> <p><strong>[!UICONTROL Time]</strong>: 시간 형식 지정. 예: <code>3:59:00 PM</code></p> <p><strong>[!UICONTROL Date time]</strong>: 날짜 및 시간 형식 지정. 예: <code>9/26/08 15:59:00</code> </p> <p><strong>[!UICONTROL Scientific]</strong>: 과학적 숫자 서식. 예: <code>1. 01E+03</code></p> </td> 
+   <td> <p>스프레드시트에 있는 모든 셀의 기본 형식을 선택합니다.</p> <p><strong>[!UICONTROL Text]</strong>: 텍스트 서식. 예: <code>1000. 12</code></p> <p><strong>[!UICONTROL Number]</strong>: 숫자 서식. 예: <code>1,000.12</code></p> <p><strong>[!UICONTROL Percent]</strong>: 서식 적용 비율입니다. 예: <code>10. 12%</code></p> <p><strong>[!UICONTROL Currency]</strong>: 통화 형식입니다. 예: <code>$1,000.12</code></p> <p><strong>[!UICONTROL Date]</strong>: 날짜 형식입니다. 예: <code>9/26/2008</code></p> <p><strong>[!UICONTROL 시간]</strong>: 시간 서식. 예: <code>3:59:00 PM</code></p> <p><strong>[!UICONTROL 날짜 시간]</strong>: 날짜 및 시간 서식. 예: <code>9/26/08 15:59:00</code> </p> <p><strong>[!UICONTROL Scientific]</strong>: 과학 숫자 서식. 예: <code>1. 01E+03</code></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Sheets] </td> 
-   <td> <p>스프레드시트에 추가할 각 시트에 대해 <strong>[!UICONTROL Add item]</strong>을(를) 클릭하고 시트 제목 및 시트 색인을 입력하거나 매핑합니다. 색인 0은 첫 번째 시트를 나타냅니다.</p> </td> 
+   <td> <p>스프레드시트에 추가할 각 시트에 대해 <strong>[!UICONTROL 항목 추가]</strong>를 클릭하고 시트 제목 및 시트 색인을 입력하거나 매핑합니다. 색인 0은 첫 번째 시트를 나타냅니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Row]
+#### [!UICONTROL 행 삭제]
 
 지정된 행을 삭제합니다.
 
@@ -383,7 +383,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Sheet]
+#### [!UICONTROL 시트 삭제]
 
 특정 시트를 삭제합니다.
 
@@ -406,7 +406,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Cell]
+#### [!UICONTROL 셀 가져오기]
 
 선택한 셀에서 값을 검색합니다.
 
@@ -427,12 +427,12 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
    <td> <p>데이터를 검색할 셀이 포함된 시트를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Cell] </td> 
+   <td>[!UICONTROL 셀] </td> 
    <td> <p>데이터를 검색할 셀의 ID를 입력합니다. 예: <code>A6</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Value render option]</td> 
-   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Formatted value]</p> <p>셀의 서식에 따라 회신에서 값이 계산되고 서식이 지정됩니다. 서식은 요청한 사용자의 로케일이 아니라 스프레드시트의 로케일을 기반으로 합니다. 예를 들어 <code>A1</code>이(가) <code>1.23</code>이고 <code>A2</code>이(가) <code>=A1</code>이고 통화 형식인 경우 <code>A2</code>은(는) <code>"$1.23"</code>을(를) 반환합니다.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Unformatted value]</p> <p>값이 계산되지만 회신에서 형식이 지정되지 않습니다. 예를 들어 <code>A1</code>이(가) <code>1.23</code>이고 <code>A2</code>이(가) <code>=A1</code>이고 통화 형식인 경우 <code>A2</code>은(는) 숫자 <code>"1.23"</code>을(를) 반환합니다.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Formula]</p> <p>값이 계산되지 않습니다. 답변에는 수식이 포함되어 있습니다. 예를 들어 <code>A1</code>이(가) <code>1.23</code>이고 <code>A2</code>이(가) <code>=A1</code>이고 통화 형식인 경우 <code>A2</code>은(는) <code>"=A1"</code>을(를) 반환합니다.</p> </li><ul></td> 
+   <td>[!UICONTROL 값 렌더링 옵션]</td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL 형식의 값]</p> <p>셀의 서식에 따라 회신에서 값이 계산되고 서식이 지정됩니다. 서식은 요청한 사용자의 로케일이 아니라 스프레드시트의 로케일을 기반으로 합니다. 예를 들어 <code>A1</code>이(가) <code>1.23</code>이고 <code>A2</code>이(가) <code>=A1</code>이고 통화 형식인 경우 <code>A2</code>은(는) <code>"$1.23"</code>을(를) 반환합니다.</p></li><li> <p style="font-weight: bold;">[!UICONTROL 형식이 지정되지 않은 값]</p> <p>값이 계산되지만 회신에서 형식이 지정되지 않습니다. 예를 들어 <code>A1</code>이(가) <code>1.23</code>이고 <code>A2</code>이(가) <code>=A1</code>이고 통화 형식인 경우 <code>A2</code>은(는) 숫자 <code>"1.23"</code>을(를) 반환합니다.</p></li><li> <p style="font-weight: bold;">[!UICONTROL 공식]</p> <p>값이 계산되지 않습니다. 답변에는 수식이 포함되어 있습니다. 예를 들어 <code>A1</code>이(가) <code>1.23</code>이고 <code>A2</code>이(가) <code>=A1</code>이고 통화 형식인 경우 <code>A2</code>은(는) <code>"=A1"</code>을(를) 반환합니다.</p> </li><ul></td> 
   </tr> 
   <tr> 
    <td>[!DNL Date and time render option]</td> 
@@ -441,7 +441,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL API 호출 만들기]
 
 이 작업 모듈을 사용하면 사용자 지정 API 호출을 수행할 수 있습니다.
 
@@ -451,14 +451,14 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Workfront Fusion]에 [Fusion App] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
+   <td> <p>Google Sheets 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
    <td><code>https://sheets.googleapis.com/v4/</code>과(와) 관련된 경로를 입력하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 메서드]</p> </td> 
    <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -466,7 +466,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
    <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다. 예: <code>{"Content-type":"application/json"}</code>. [!DNL Workfront Fusion]이(가) 권한 부여 헤더를 추가합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td role="rowheader">[!UICONTROL 쿼리 문자열]</td> 
    <td> <p> 표준 JSON 개체 형식으로 API 호출에 대한 쿼리를 추가합니다.</p> </td> 
   </tr> 
   <tr> 
@@ -479,7 +479,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a Cell]
+#### [!UICONTROL 셀 업데이트]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -498,25 +498,25 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
    <td> <p>셀을 업데이트할 시트를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Cell] </td> 
+   <td>[!UICONTROL 셀] </td> 
    <td> <p>업데이트할 셀의 ID를 입력합니다. 예: <code>A5</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Value]</td> 
+   <td>[!UICONTROL 값]</td> 
    <td> <p>셀의 새 값을 입력합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Value input option]</td> 
+   <td>[!UICONTROL 값 입력 옵션]</td> 
    <td> 
     <ul> 
-     <li> <p><strong>[!UICONTROL User entered]</strong></p> <p>값은 사용자가 UI에 입력한 것처럼 구문 분석됩니다. 숫자는 그대로 유지되지만 문자열은 [!DNL Google Sheets] UI를 통해 셀에 텍스트를 입력할 때 적용되는 규칙과 동일한 규칙에 따라 숫자, 날짜 또는 다른 형식으로 변환될 수 있습니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 사용자가 입력됨]</strong></p> <p>값은 사용자가 UI에 입력한 것처럼 구문 분석됩니다. 숫자는 그대로 유지되지만 문자열은 [!DNL Google Sheets] UI를 통해 셀에 텍스트를 입력할 때 적용되는 규칙과 동일한 규칙에 따라 숫자, 날짜 또는 다른 형식으로 변환될 수 있습니다.</p> </li> 
      <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p> 사용자가 입력하는 값은 구문 분석되지 않고 입력된 대로 저장됩니다. </p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a Row]
+#### [!UICONTROL 행 업데이트]
 
 이 모듈에서는 선택한 행의 셀 내용을 변경할 수 있습니다.
 
@@ -529,8 +529,8 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
    <td> <p>[!DNL Google Sheets] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Mode]</td> 
-   <td> <p>스프레드시트와 시트를 수동으로 선택할지 아니면 매핑으로 선택할지를 선택합니다.</p> <p>참고: 수동 매핑은 [!UICONTROL Workfront Fusion] 시나리오에서 새 스프레드시트가 만들어지고 시나리오에서 직접 새로 생성된 스프레드시트에 데이터를 추가하려는 경우 유용합니다.</p> </td> 
+   <td>[!UICONTROL 모드]</td> 
+   <td> <p>스프레드시트와 시트를 수동으로 선택할지 아니면 매핑으로 선택할지를 선택합니다.</p> <p>참고: 수동 매핑은 [!UICONTROL Workfront Fusion] 시나리오에서 새 스프레드시트가 생성되고 시나리오에서 직접 새로 생성된 스프레드시트에 데이터를 추가하려는 경우 유용합니다.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -541,7 +541,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
    <td> <p>행을 갱신할 시트를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Row number]</td> 
+   <td>[!UICONTROL 행 번호]</td> 
    <td> <p> 갱신할 행의 번호를 입력합니다.</p> </td> 
   </tr> 
   <tr> 
@@ -549,18 +549,18 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
    <td> <p> 스프레드시트에 머리글 행이 포함되어 있는지 여부를 선택합니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Yes]</strong> </p> <p>모듈은 헤더 행을 출력 데이터로 검색하지 않습니다. </p> <p>출력에서 변수 이름은 헤더에 의해 호출됩니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL No]</strong> </p> <p>모듈은 첫 번째 테이블 행도 검색합니다</p> <p>출력의 변수 이름은 A, B, C, D 등입니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 번호]</strong> </p> <p>모듈은 첫 번째 테이블 행도 검색합니다</p> <p>출력의 변수 이름은 A, B, C, D 등입니다.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Values] </td> 
+   <td>[!UICONTROL 값] </td> 
    <td> <p>변경(업데이트)하려는 행의 원하는 셀에 값을 입력하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Value input option]</td> 
+   <td>[!UICONTROL 값 입력 옵션]</td> 
    <td> 
     <ul> 
-     <li> <p><strong>[!UICONTROL User entered]</strong></p> <p>값은 사용자가 UI에 입력한 것처럼 구문 분석됩니다. 숫자는 그대로 유지되지만 문자열은 [!DNL Google Sheets] UI를 통해 셀에 텍스트를 입력할 때 적용되는 규칙과 동일한 규칙에 따라 숫자, 날짜 또는 다른 형식으로 변환될 수 있습니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 사용자가 입력됨]</strong></p> <p>값은 사용자가 UI에 입력한 것처럼 구문 분석됩니다. 숫자는 그대로 유지되지만 문자열은 [!DNL Google Sheets] UI를 통해 셀에 텍스트를 입력할 때 적용되는 규칙과 동일한 규칙에 따라 숫자, 날짜 또는 다른 형식으로 변환될 수 있습니다.</p> </li> 
      <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p> 사용자가 입력하는 값은 구문 분석되지 않고 입력된 대로 저장됩니다. </p> </li> 
     </ul> </td> 
   </tr> 
@@ -569,12 +569,12 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
 
 ### 검색 결과
 
-* [[!UICONTROL Get Range Values]](#get-range-values)
-* [[!UICONTROL List Sheets]](#list-sheets)
-* [[!UICONTROL Search Rows]](#search-rows)
-* [[!UICONTROL Search Rows (Advanced)]](#search-rows-advanced)
+* [[!UICONTROL 범위 값 가져오기]](#get-range-values)
+* [[!UICONTROL 목록 시트]](#list-sheets)
+* [[!UICONTROL 행 검색]](#search-rows)
+* [[!UICONTROL 행 검색(고급)]](#search-rows-advanced)
 
-#### [!UICONTROL Get Range Values]
+#### [!UICONTROL 범위 값 가져오기]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -593,7 +593,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
    <td> <p>범위 컨텐츠를 가져올 시트를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Range] </td> 
+   <td>[!UICONTROL 범위] </td> 
    <td> <p>가져올 범위를 입력하십시오. 예: <code>A1:D25</code></p> </td> 
   </tr> 
   <tr> 
@@ -601,21 +601,21 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
    <td> <p>시트에 머리글 행이 있는 경우 이 상자를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Row with headers]</td> 
+   <td>헤더가 있는 [!UICONTROL 행]</td> 
    <td>테이블 머리글의 범위를 입력합니다. 예 <code>A1:F1</code>. 필드를 비워 두면 [!DNL Workfront Fusion]에서 지정한 범위의 첫 행을 헤더로 처리합니다.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Value render option]</td> 
-   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Formatted value]</p> <p>셀의 서식에 따라 회신에서 값이 계산되고 서식이 지정됩니다. 서식은 요청한 사용자의 로케일이 아니라 스프레드시트의 로케일을 기반으로 합니다. 예를 들어 <code>A1</code>이(가) <code>1.23</code>이고 <code>A2</code>이(가) <code>=A1</code>이고 통화 형식인 경우 <code>A2</code>은(는) <code>"$1.23"</code>을(를) 반환합니다.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Unformatted value]</p> <p>값이 계산되지만 회신에서 형식이 지정되지 않습니다. 예를 들어 <code>A1</code>이(가) <code>1.23</code>이고 <code>A2</code>이(가) <code>=A1</code>이고 통화 형식인 경우 <code>A2</code>은(는) 숫자 <code>"1.23"</code>을(를) 반환합니다.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Formula]</p> <p>값이 계산되지 않습니다. 답변에는 수식이 포함되어 있습니다. 예를 들어 <code>A1</code>이(가) <code>1.23</code>이고 <code>A2</code>이(가) <code>=A1</code>이고 통화 형식인 경우 <code>A2</code>은(는) <code>"=A1"</code>을(를) 반환합니다.</p> </li><ul></td> 
+   <td>[!UICONTROL 값 렌더링 옵션]</td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL 형식의 값]</p> <p>셀의 서식에 따라 회신에서 값이 계산되고 서식이 지정됩니다. 서식은 요청한 사용자의 로케일이 아니라 스프레드시트의 로케일을 기반으로 합니다. 예를 들어 <code>A1</code>이(가) <code>1.23</code>이고 <code>A2</code>이(가) <code>=A1</code>이고 통화 형식인 경우 <code>A2</code>은(는) <code>"$1.23"</code>을(를) 반환합니다.</p></li><li> <p style="font-weight: bold;">[!UICONTROL 형식이 지정되지 않은 값]</p> <p>값이 계산되지만 회신에서 형식이 지정되지 않습니다. 예를 들어 <code>A1</code>이(가) <code>1.23</code>이고 <code>A2</code>이(가) <code>=A1</code>이고 통화 형식인 경우 <code>A2</code>은(는) 숫자 <code>"1.23"</code>을(를) 반환합니다.</p></li><li> <p style="font-weight: bold;">[!UICONTROL 공식]</p> <p>값이 계산되지 않습니다. 답변에는 수식이 포함되어 있습니다. 예를 들어 <code>A1</code>이(가) <code>1.23</code>이고 <code>A2</code>이(가) <code>=A1</code>이고 통화 형식인 경우 <code>A2</code>은(는) <code>"=A1"</code>을(를) 반환합니다.</p> </li><ul></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Date and time render option]</td> 
-   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Serial number]</p> <p>날짜, 시간, 날짜/시간 및 기간 필드는 Lotus 1-2-3에서 대중화된 "일련 번호" 형식의 두 배로 출력됩니다. 값의 전체 숫자 부분(소수점 왼쪽)은 1899년 12월 30일 이후의 일을 계산합니다. 분수 부분(소수점의 오른쪽)은 시간을 하루의 분수로 계산합니다. 예를 들어, 1900년 1월 1일 정오가 2.5이고, 1899년 12월 30일 이후 2일이므로 2이고, 정오가 반나절이므로 .5입니다. 1900년 2월 1일 오후 3시 는 33.625가 됩니다. 이는 1900년을 윤년이 아닌 해로 올바르게 취급한다.</p> </li><li><p style="font-weight: bold;">[!UICONTROL Formatted string]</p> <p>날짜, 시간, 날짜/시간 및 기간 필드는 스프레드시트의 로케일에 따라 지정된 숫자 형식으로 문자열로 출력됩니다.</p></li><ul> </td> 
+   <td>[!UICONTROL 날짜 및 시간 렌더링 옵션]</td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL 일련 번호]</p> <p>날짜, 시간, 날짜/시간 및 기간 필드는 Lotus 1-2-3에서 대중화된 "일련 번호" 형식의 두 배로 출력됩니다. 값의 전체 숫자 부분(소수점 왼쪽)은 1899년 12월 30일 이후의 일을 계산합니다. 분수 부분(소수점의 오른쪽)은 시간을 하루의 분수로 계산합니다. 예를 들어, 1900년 1월 1일 정오가 2.5이고, 1899년 12월 30일 이후 2일이므로 2이고, 정오가 반나절이므로 .5입니다. 1900년 2월 1일 오후 3시 는 33.625가 됩니다. 이는 1900년을 윤년이 아닌 해로 올바르게 취급한다.</p> </li><li><p style="font-weight: bold;">[!UICONTROL 서식 있는 문자열]</p> <p>날짜, 시간, 날짜/시간 및 기간 필드는 스프레드시트의 로케일에 따라 지정된 숫자 형식으로 문자열로 출력됩니다.</p></li><ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL List Sheets]
+#### [!UICONTROL 목록 시트]
 
 이 모듈은 스프레드시트에 있는 모든 시트 목록을 반환합니다.
 
@@ -634,7 +634,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL Search Rows]
+#### [!UICONTROL 행 검색]
 
 필터 옵션을 사용하여 행을 검색합니다.
 
@@ -644,7 +644,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Workfront Fusion]에 [Fusion App] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
+   <td> <p>Google Sheets 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -656,10 +656,10 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td>[!UICONTROL Table contains headers]</td> 
-   <td> <p> 스프레드시트에 머리글 행이 포함되어 있는지 여부를 선택합니다. [!UICONTROL Yes] 옵션을 선택하면 출력 데이터와 출력의 변수 이름이 헤더에 의해 호출되므로 모듈은 헤더 행을 검색하지 않습니다. [!UICONTROL No] 옵션이 선택된 경우 모듈은 첫 번째 테이블 행도 검색하고 출력의 변수 이름도 A, B, C, D 등으로 호출됩니다.</p> </td> 
+   <td> <p> 스프레드시트에 머리글 행이 포함되어 있는지 여부를 선택합니다. [!UICONTROL Yes] 옵션을 선택하면 출력 데이터와 출력의 변수 이름이 헤더에 의해 호출되므로 모듈은 헤더 행을 검색하지 않습니다. [!UICONTROL No] 옵션이 선택된 경우 모듈은 또한 첫 번째 테이블 행을 검색하고 출력의 변수 이름을 A, B, C, D 등으로만 호출합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Column range]</td> 
+   <td>[!UICONTROL 열 범위]</td> 
    <td>작업할 열 범위를 선택하십시오. 예: <code>A-F</code></td> 
   </tr> 
   <tr> 
@@ -667,7 +667,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
    <td> <p>행을 검색하는 데 사용할 필터를 설정합니다.</p> <!--<p>For more information about filters, see <a href="/help/workfront-fusion/create-scenarios/add-modules/" class="MCXref xref">Add a filter to a scenario in [!UICONTROL Adobe Workfront Fusion]</a>.</p>--> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Sort order]</td> 
+   <td>[!UICONTROL 정렬 순서]</td> 
    <td>오름차순 또는 내림차순 정렬 여부를 선택합니다.</td> 
   </tr> 
   <tr> 
@@ -675,21 +675,21 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
    <td>정렬 기준으로 사용할 열을 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Value render option]</td> 
-   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Formatted value]</p> <p>셀의 서식에 따라 회신에서 값이 계산되고 서식이 지정됩니다. 서식은 요청한 사용자의 로케일이 아니라 스프레드시트의 로케일을 기반으로 합니다. 예를 들어 <code>A1</code>이(가) <code>1.23</code>이고 <code>A2</code>이(가) <code>=A1</code>이고 통화 형식인 경우 <code>A2</code>은(는) <code>"$1.23"</code>을(를) 반환합니다.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Unformatted value]</p> <p>값이 계산되지만 회신에서 형식이 지정되지 않습니다. 예를 들어 <code>A1</code>이(가) <code>1.23</code>이고 <code>A2</code>이(가) <code>=A1</code>이고 통화 형식인 경우 <code>A2</code>은(는) 숫자 <code>"1.23"</code>을(를) 반환합니다.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Formula]</p> <p>값이 계산되지 않습니다. 답변에는 수식이 포함되어 있습니다. 예를 들어 <code>A1</code>이(가) <code>1.23</code>이고 <code>A2</code>이(가) <code>=A1</code>이고 통화 형식인 경우 <code>A2</code>은(는) <code>"=A1"</code>을(를) 반환합니다.</p> </li><ul></td> 
+   <td>[!UICONTROL 값 렌더링 옵션]</td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL 형식의 값]</p> <p>셀의 서식에 따라 회신에서 값이 계산되고 서식이 지정됩니다. 서식은 요청한 사용자의 로케일이 아니라 스프레드시트의 로케일을 기반으로 합니다. 예를 들어 <code>A1</code>이(가) <code>1.23</code>이고 <code>A2</code>이(가) <code>=A1</code>이고 통화 형식인 경우 <code>A2</code>은(는) <code>"$1.23"</code>을(를) 반환합니다.</p></li><li> <p style="font-weight: bold;">[!UICONTROL 형식이 지정되지 않은 값]</p> <p>값이 계산되지만 회신에서 형식이 지정되지 않습니다. 예를 들어 <code>A1</code>이(가) <code>1.23</code>이고 <code>A2</code>이(가) <code>=A1</code>이고 통화 형식인 경우 <code>A2</code>은(는) 숫자 <code>"1.23"</code>을(를) 반환합니다.</p></li><li> <p style="font-weight: bold;">[!UICONTROL 공식]</p> <p>값이 계산되지 않습니다. 답변에는 수식이 포함되어 있습니다. 예를 들어 <code>A1</code>이(가) <code>1.23</code>이고 <code>A2</code>이(가) <code>=A1</code>이고 통화 형식인 경우 <code>A2</code>은(는) <code>"=A1"</code>을(를) 반환합니다.</p> </li><ul></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Date and time render option]</td> 
-   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Serial number]</p> <p>날짜, 시간, 날짜/시간 및 기간 필드는 Lotus 1-2-3에서 대중화된 "일련 번호" 형식의 두 배로 출력됩니다. 값의 전체 숫자 부분(소수점 왼쪽)은 1899년 12월 30일 이후의 일을 계산합니다. 분수 부분(소수점의 오른쪽)은 시간을 하루의 분수로 계산합니다. 예를 들어, 1900년 1월 1일 정오가 2.5이고, 1899년 12월 30일 이후 2일이므로 2이고, 정오가 반나절이므로 .5입니다. 1900년 2월 1일 오후 3시 는 33.625가 됩니다. 이는 1900년을 윤년이 아닌 해로 올바르게 취급한다.</p> </li><li><p style="font-weight: bold;">[!UICONTROL Formatted string]</p> <p>날짜, 시간, 날짜/시간 및 기간 필드는 스프레드시트의 로케일에 따라 지정된 숫자 형식으로 문자열로 출력됩니다.</p></li><ul> </td> 
+   <td>[!UICONTROL 날짜 및 시간 렌더링 옵션]</td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL 일련 번호]</p> <p>날짜, 시간, 날짜/시간 및 기간 필드는 Lotus 1-2-3에서 대중화된 "일련 번호" 형식의 두 배로 출력됩니다. 값의 전체 숫자 부분(소수점 왼쪽)은 1899년 12월 30일 이후의 일을 계산합니다. 분수 부분(소수점의 오른쪽)은 시간을 하루의 분수로 계산합니다. 예를 들어, 1900년 1월 1일 정오가 2.5이고, 1899년 12월 30일 이후 2일이므로 2이고, 정오가 반나절이므로 .5입니다. 1900년 2월 1일 오후 3시 는 33.625가 됩니다. 이는 1900년을 윤년이 아닌 해로 올바르게 취급한다.</p> </li><li><p style="font-weight: bold;">[!UICONTROL 서식 있는 문자열]</p> <p>날짜, 시간, 날짜/시간 및 기간 필드는 스프레드시트의 로케일에 따라 지정된 숫자 형식으로 문자열로 출력됩니다.</p></li><ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of returned rows]</td> 
+   <td>[!UICONTROL 반환되는 최대 행 수]</td> 
    <td>한 실행 주기 동안 [!DNL Workfront Fusion]이(가) 반환할 최대 행 수를 설정하십시오.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Search Rows (Advanced)]
+#### [!UICONTROL 행 검색(고급)]
 
 지정된 기준과 일치하는 결과를 반환합니다.
 
@@ -731,7 +731,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
 
 ### [!DNL Google Sheet]에서 빈 셀 가져오기
 
-빈 셀을 가져오려면 [!UICONTROL Search Rows (Advanced)] 모듈을 사용합니다. 이 수식을 사용하여 빈 열을 가져옵니다.
+빈 셀을 가져오려면 [!UICONTROL 행 검색(고급)] 모듈을 사용합니다. 이 수식을 사용하여 빈 열을 가져옵니다.
 
 ```
 select * where E is null
@@ -741,18 +741,18 @@ select * where E is null
 
 ### 시트에 단추를 추가하여 시나리오 실행
 
-1. [!DNL Workfront Fusion]에서 시나리오에 **[!UICONTROL Webhook]** > **[!UICONTROL Custom webhooks]** 모듈을 삽입하고 구성합니다. 자세한 내용은 [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md)을(를) 참조하십시오.
+1. [!DNL Workfront Fusion]에서 시나리오에 **[!UICONTROL Webhook]** > **[!UICONTROL 사용자 지정 Webhooks]** 모듈을 삽입하고 구성합니다. 자세한 내용은 [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md)을(를) 참조하십시오.
 
 1. 웹후크의 URL을 복사합니다.
 1. 시나리오를 실행합니다.
-1. Google Sheets의 메인 메뉴 모음에서 **[!UICONTROL Insert]** > **[!UICONTROL Drawing]**...을 선택합니다.
+1. Google Sheets의 메인 메뉴 모음에서 **[!UICONTROL 삽입]** > **[!UICONTROL 그리기]**...을 선택합니다.
 
-1. [!UICONTROL Drawing] 창에서 창 위쪽에 있는 **[!UICONTROL Text box]** 아이콘 ![텍스트 상자](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png)를 클릭합니다.
-1. 단추를 디자인하고 오른쪽 상단의 **[!UICONTROL Save and Close]** 단추를 클릭합니다.
+1. [!UICONTROL 그리기] 창에서 창 위쪽에 있는 **[!UICONTROL 텍스트 상자]** 아이콘 ![텍스트 상자](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png)을 클릭합니다.
+1. 단추를 디자인하고 오른쪽 상단의 **[!UICONTROL 저장 및 닫기]** 단추를 클릭합니다.
 1. 단추가 워크시트에 있습니다. 단추의 오른쪽 위 모서리에 있는 세 개의 세로 점을 클릭합니다.
-1. **[!UICONTROL Assign script..]을(를) 선택하십시오.메뉴에서**.
-1. 스크립트(함수)의 이름을 입력하십시오(예: `runScenario`). **[!UICONTROL OK]**:
-1. 메인 메뉴 모음에서 **[!UICONTROL Tools]** > **[!UICONTROL Script editor]**&#x200B;을(를) 선택합니다.
+1. **[!UICONTROL 스크립트 할당 선택..].메뉴에서**.
+1. 스크립트(함수)의 이름(예: `runScenario`)을 입력하고 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
+1. 메인 메뉴 모음에서 **[!UICONTROL 도구]** > **[!UICONTROL 스크립트 편집기]**&#x200B;를 선택합니다.
 
 1. 다음 코드를 삽입합니다.
 
@@ -765,9 +765,9 @@ select * where E is null
      }
      ```
 
-1. 스크립트 파일을 저장하려면 **[!UICONTROL Ctrl+S]**&#x200B;을(를) 누르고 프로젝트 이름을 입력한 다음 **[!UICONTROL OK]**&#x200B;을(를) 클릭합니다.
+1. 스크립트 파일을 저장하려면 **[!UICONTROL Ctrl+S]**&#x200B;를 누르고 프로젝트 이름을 입력한 다음 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
-1. [!DNL Google Sheets](으)로 다시 전환하고 새 단추를 클릭하세요.
+1. [!DNL Google Sheets]&#x200B;(으)로 다시 전환하고 새 단추를 클릭하세요.
 1. 스크립트에 필요한 권한 부여:
 1. [!DNL Workfront Fusion]에서 시나리오가 성공적으로 실행되었는지 확인합니다.
 
@@ -783,9 +783,9 @@ select * where E is null
 
 올바른 형식을 확인하려면 다음을 수행하십시오.
 
-1. Google Sheets의 기본 메뉴에서 **[!UICONTROL File]** > **[!UICONTROL Spreadsheet]** 설정을 선택하여 로케일을 확인하고 설정합니다.
+1. Google Sheets의 기본 메뉴에서 **[!UICONTROL 파일]** > **[!UICONTROL 스프레드시트]** 설정을 선택하여 로케일을 확인하고 설정합니다.
 
-1. 올바른 로케일을 확인하거나 설정한 후 기본 메뉴에서 **[!UICONTROL Format]** > **[!UICONTROL Number]**&#x200B;을(를) 선택하여 해당 날짜 및 시간 형식을 결정합니다. 형식은 날짜 시간 메뉴 항목 옆에 표시됩니다.
+1. 올바른 로케일을 확인하거나 설정한 후 기본 메뉴에서 **[!UICONTROL 형식]** > **[!UICONTROL 숫자]**&#x200B;을(를) 선택하여 해당 날짜 및 시간 형식을 결정합니다. 형식은 날짜 시간 메뉴 항목 옆에 표시됩니다.
 
 1. [!UICONTROL formatDate()] 함수에 전달해야 하는 올바른 형식을 작성하려면 [날짜 및 시간 형식에 대한 토큰 목록](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)을 참조하세요.
 
@@ -808,6 +808,6 @@ Google Sheets에서 기본 제공 함수를 사용하려면 이를 활용할 수
 텍스트로 사용하는 숫자 문자열이 [!DNL Google] 워크시트에서 날짜로 해석되는 경우 이를 방지하기 위해 숫자를 일반 텍스트로 미리 서식을 지정할 수 있습니다. 예를 들어, 1-2019를 텍스트로 입력한다면, Google은 날짜로 해석할 수 있다.
 
 1. [!DNL Google Sheets]에서 숫자가 들어 있는 열 또는 셀을 강조 표시합니다.
-1. **[!UICONTROL Format]** > **[!UICONTROL Number]** > **[!UICONTROL Plain text]**&#x200B;을(를) 클릭합니다.
+1. **[!UICONTROL 서식]** > **[!UICONTROL 숫자]** > **[!UICONTROL 일반 텍스트]**&#x200B;를 클릭합니다.
 
 [!DNL Workfront Fusion]의 또 다른 해결 방법은 숫자 앞에 아포스트로피(&#39;)를 입력하는 것입니다(예: &#39;1-2019 또는 &#39;1/47). [!DNL Workfront Fusion]에서 데이터를 보낸 후에는 아포스트로피가 셀에 표시되지 않습니다.

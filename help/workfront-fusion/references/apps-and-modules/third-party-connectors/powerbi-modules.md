@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion에는 Adobe Workfront 라이센스 외에 Ad
 author: Becky
 feature: Workfront Fusion
 exl-id: 73eb70e1-3f3d-419d-9cde-3ec3cda224f8
-source-git-commit: 9e560995ff9f58a76bbecc521f7d2eef9d47fa48
+source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
 workflow-type: tm+mt
-source-wordcount: '2089'
+source-wordcount: '2494'
 ht-degree: 0%
 
 ---
@@ -108,7 +108,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
 * [목록 대시보드 타일](#list-dashboard-tiles)
 * [목록 대시보드](#list-dashboards)
 
-#### [!UICONTROL Create a Dashboard]
+#### [!UICONTROL 대시보드 만들기]
 
 이 작업 모듈은 새 대시보드를 만듭니다.
 
@@ -118,20 +118,20 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe [!DNL Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Name]</td>
+      <td role="rowheader">[!UICONTROL 이름]</td>
       <td>대시보드의 이름을 입력하거나 매핑합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Group ID]  </td>
+      <td role="rowheader">[!UICONTROL 그룹 ID]  </td>
       <td>새 대시보드를 소유할 그룹의 ID를 선택하거나 매핑합니다.</td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL Get a Dashboard]
+#### [!UICONTROL 대시보드 가져오기]
 
 이 작업 모듈은 지정된 대시보드의 메타데이터를 검색합니다.
 
@@ -141,28 +141,28 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe [!DNL Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Enter a Dashboard ID]</td>
+      <td role="rowheader">[!UICONTROL 대시보드 ID 입력]</td>
       <td>
         <p>옵션을 선택하거나 매핑하여 메타데이터를 검색할 대시보드를 선택합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Dashboard ID]</td>
+      <td role="rowheader">[!UICONTROL 대시보드 ID]</td>
       <td>
         <p>메타데이터를 검색할 대시보드의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Group ID]  </td>
+      <td role="rowheader">[!UICONTROL 그룹 ID]  </td>
       <td>메타데이터를 검색할 대시보드를 소유한 그룹의 ID를 선택하거나 매핑합니다.</td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL Get a Dashboard Tile]
+#### [!UICONTROL 대시보드 타일 가져오기]
 
 이 작업 모듈은 지정된 대시보드 타일의 메타데이터를 검색합니다.
 
@@ -172,32 +172,32 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe [!DNL Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Enter a Dashboard ID]</td>
+      <td role="rowheader">[!UICONTROL 대시보드 ID 입력]</td>
       <td>
         <p>옵션을 선택하거나 매핑하여 검색할 대시보드 세부 정보를 선택합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Dashboard ID]</td>
+      <td role="rowheader">[!UICONTROL 대시보드 ID]</td>
       <td>
         <p>세부 정보를 검색할 대시보드의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Tile ID]</td>
+      <td role="rowheader">[!UICONTROL 타일 ID]</td>
       <td>세부 정보를 검색할 [!DNL Power BI] 타일의 ID를 입력하거나 매핑합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Group ID]  </td>
+      <td role="rowheader">[!UICONTROL 그룹 ID]  </td>
       <td>검색할 타일을 소유한 그룹의 ID를 선택하거나 매핑합니다.</td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL List Dashboard Tiles]
+#### [!UICONTROL 대시보드 타일 나열]
 
 이 검색 모듈은 대시보드 타일 목록을 검색합니다.
 
@@ -207,26 +207,26 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
 <tbody>
   <tr>
     <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe [!DNL Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr>
   <tr>
-    <td role="rowheader">[!UICONTROL Enter a Dashboard ID]</td>
+    <td role="rowheader">[!UICONTROL 대시보드 ID 입력]</td>
     <td>
       <p>옵션을 선택하거나 매핑하여 타일을 나열할 대시보드를 선택합니다.</p>
     </td>
   </tr>
   <tr>
-    <td role="rowheader">[!UICONTROL Dashboard ID]</td>
+    <td role="rowheader">[!UICONTROL 대시보드 ID]</td>
     <td>
       <p>나열할 타일이 포함된 대시보드의 ID를 입력하거나 매핑합니다.</p>
     </td>
   </tr>
   <tr>
-    <td role="rowheader">[!UICONTROL Group ID]  </td>
+    <td role="rowheader">[!UICONTROL 그룹 ID]  </td>
     <td>나열할 타일이 포함된 대시보드를 소유한 그룹의 ID를 선택하거나 매핑합니다.</td>
   </tr>
   <tr>
-    <td role="rowheader">[!UICONTROL Limit]  </td>
+    <td role="rowheader">[!UICONTROL 제한]  </td>
     <td>
       <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</p>
     </td>
@@ -234,7 +234,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
 </tbody>
 </table>
 
-#### [!UICONTROL List Dashboards]
+#### [!UICONTROL 대시보드 나열]
 
 이 검색 모듈은 대시보드 목록을 검색합니다.
 
@@ -244,16 +244,16 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe [!DNL Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Group ID]  </td>
+      <td role="rowheader">[!UICONTROL 그룹 ID]  </td>
       <td>
         <p>나열할 대시보드를 소유한 그룹의 ID를 선택하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Limit]  </td>
+      <td role="rowheader">[!UICONTROL 제한]  </td>
       <td>
         <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</p>
       </td>
@@ -268,7 +268,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
 * [보고서 가져오기](#get-a-report)
 * [목록 보고서](#list-reports)
 
-#### [!UICONTROL Copy a Report]
+#### [!UICONTROL 보고서 복사]
 
 이 작업 모듈은 기존 보고서를 복사합니다.
 
@@ -278,32 +278,32 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe [!DNL Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Enter a Report ID]</td>
+      <td role="rowheader">[!UICONTROL 보고서 ID 입력]</td>
       <td>
         <p>옵션을 선택하거나 매핑하여 복사할 보고서를 선택합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Report ID]</td>
+      <td role="rowheader">[!UICONTROL 보고서 ID]</td>
       <td>
         <p>복사할 보고서의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Group ID]  </td>
+      <td role="rowheader">[!UICONTROL 그룹 ID]  </td>
       <td>복사할 보고서를 소유한 그룹의 ID를 선택하거나 매핑합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL New Copied Report Name]</td>
+      <td role="rowheader">[!UICONTROL 새로 복사된 보고서 이름]</td>
       <td>새 보고서의 이름을 입력하거나 매핑합니다.</td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL Delete a Report]
+#### [!UICONTROL 보고서 삭제]
 
 이 작업 모듈은 보고서를 삭제합니다.
 
@@ -313,28 +313,28 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe [!DNL Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Enter a Report ID]</td>
+      <td role="rowheader">[!UICONTROL 보고서 ID 입력]</td>
       <td>
         <p>옵션을 선택하거나 매핑하여 삭제할 보고서를 선택합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Report ID]</td>
+      <td role="rowheader">[!UICONTROL 보고서 ID]</td>
       <td>
         <p>삭제할 보고서의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Group ID]  </td>
+      <td role="rowheader">[!UICONTROL 그룹 ID]  </td>
       <td>삭제할 보고서를 소유한 그룹의 ID를 선택하거나 매핑합니다.</td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL Get a Report]
+#### [!UICONTROL 보고서 가져오기]
 
 이 작업 모듈은 지정된 보고서의 메타데이터를 검색합니다.
 
@@ -344,28 +344,28 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe [!DNL Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Enter a Report ID]</td>
+      <td role="rowheader">[!UICONTROL 보고서 ID 입력]</td>
       <td>
         <p>옵션을 선택하거나 매핑하여 메타데이터를 검색할 보고서를 선택합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Report ID]</td>
+      <td role="rowheader">[!UICONTROL 보고서 ID]</td>
       <td>
         <p>메타데이터를 검색할 보고서의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Group ID]  </td>
+      <td role="rowheader">[!UICONTROL 그룹 ID]  </td>
       <td>메타데이터를 검색할 보고서를 소유한 그룹의 ID를 선택하거나 매핑합니다.</td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL List Reports]
+#### [!UICONTROL 보고서 나열]
 
 이 검색 모듈은 보고서 목록을 검색합니다.
 
@@ -375,16 +375,16 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe [!DNL Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Group ID]  </td>
+      <td role="rowheader">[!UICONTROL 그룹 ID]  </td>
       <td>
         <p>나열할 보고서를 소유하는 그룹의 ID를 선택하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Limit]  </td>
+      <td role="rowheader">[!UICONTROL 제한]  </td>
       <td>
         <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</p>
       </td>
@@ -402,7 +402,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
 * [데이터 세트 나열](#list-datasets)
 * [데이터 세트 새로 고침](#refresh-a-dataset)
 
-#### [!UICONTROL Add or Delete Rows in a Dataset Table]
+#### [!UICONTROL 데이터 집합 테이블에서 행 추가 또는 삭제]
 
 이 작업 모듈은 지정된 푸시 데이터 세트 테이블의 행을 추가하거나 삭제합니다.
 
@@ -412,52 +412,52 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe [!DNL Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Enter a table]</td>
+      <td role="rowheader">[!UICONTROL 테이블 입력]</td>
       <td>옵션을 선택하거나 매핑하여 조정할 테이블이 포함된 데이터 세트를 선택합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Dataset ID]</td>
+      <td role="rowheader">[!UICONTROL 데이터 세트 ID]</td>
       <td>추가하거나 삭제할 행이 포함된 데이터 세트의 ID를 입력하거나 매핑합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Table Name]  </td>
+      <td role="rowheader">[!UICONTROL 테이블 이름]  </td>
       <td>
         <p>추가하거나 삭제할 행이 포함된 테이블의 이름을 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Group ID]  </td>
+      <td role="rowheader">[!UICONTROL 그룹 ID]  </td>
       <td>데이터 세트를 소유하는 그룹의 ID를 입력하거나 매핑합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Select the Action]</td>
+      <td role="rowheader">[!UICONTROL 작업 선택]</td>
       <td>
         <p>수행할 작업을 선택하거나 매핑합니다.</p>
         <ul>
           <li>
-            <p>[!UICONTROL Add rows]</p>
+            <p>[!UICONTROL 행 추가]</p>
           </li>
           <li>
-            <p>[!UICONTROL Delete All Rows]</p>
+            <p>[!UICONTROL 모든 행 삭제]</p>
           </li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Rows]</td>
+      <td role="rowheader">[!UICONTROL 행]</td>
       <td>
         <p>행 필드를 추가합니다.</p>
         <ul>
           <li>
-            <p><b>[!UICONTROL Key]</b>
+            <p><b>[!UICONTROL 키]</b>
             </p>
             <p>키 이름을 입력하거나 매핑합니다.</p>
           </li>
           <li>
-            <p><b>[!UICONTROL Field Type]</b>
+            <p><b>[!UICONTROL 필드 형식]</b>
             </p>
             <p>필드 유형을 선택하거나 매핑합니다.</p>
             <ul>
@@ -476,7 +476,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
             </ul>
           </li>
           <li>
-            <p>[!UICONTROL Value]</p>
+            <p>[!UICONTROL 값]</p>
             <p>키 값을 입력하거나 매핑합니다.</p>
           </li>
         </ul>
@@ -485,7 +485,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   </tbody>
 </table>
 
-#### [!UICONTROL Create a Dataset]
+#### [!UICONTROL 데이터 집합 만들기]
 
 이 작업 모듈은 새 데이터 세트를 만듭니다.
 
@@ -495,26 +495,26 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe [!DNL Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Name]</td>
+      <td role="rowheader">[!UICONTROL 이름]</td>
       <td>데이터 세트의 이름을 입력하거나 매핑합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Group ID]  </td>
+      <td role="rowheader">[!UICONTROL 그룹 ID]  </td>
       <td>새 데이터 세트를 소유할 그룹의 ID를 선택하거나 매핑합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Default Mode]</td>
+      <td role="rowheader">[!UICONTROL 기본 모드]</td>
       <td>
         <p>데이터 세트에 대한 기본 모드 선택 또는 매핑:</p>
         <ul>
           <li>
-            <p><b>[!UICONTROL As Azure]</b>: 의 라이브 연결이 있는 데이터 세트 [!DNL Azure Analysis Service]</p>
+            <p><b>[!UICONTROL As Azure]</b>: 다음에 대한 실시간 연결이 있는 데이터 집합 [!DNL Azure Analysis Service]</p>
           </li>
           <li>
-            <p><b>[!UICONTROL As on Prem]</b>: [!DNL On-premise Analysis] 서비스에 대한 실시간 연결이 있는 데이터 세트</p>
+            <p><b>[!UICONTROL As On Prem]</b>: [!DNL On-premise Analysis] 서비스에 대한 실시간 연결이 있는 데이터 집합입니다.</p>
           </li>
           <li>
             <p><b>[!DNL Push]</b>: 로 데이터를 푸시하기 위해 프로그래밍 방식으로 액세스할 수 있는 데이터 세트 [!DNL Power BI]</p>
@@ -529,7 +529,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Tables]</td>
+      <td role="rowheader">[!UICONTROL 테이블]</td>
       <td>데이터 세트에 테이블을 추가합니다. 필드의 경우 <a href="#Table" class="MCXref_0">테이블 필드</a>를 참조하십시오.</td>
     </tr>
     <tr>
@@ -542,10 +542,10 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
         <p>데이터 세트에 대한 의도적인 정책을 선택하거나 매핑합니다.</p>
         <ul>
           <li>
-            <p>[!UICONTROL None]</p>
+            <p>[!UICONTROL 없음]</p>
           </li>
           <li>
-            <p>[!UICONTROL Basic FIFO]</p>
+            <p>[!UICONTROL 기본 FIFO]</p>
           </li>
         </ul>
       </td>
@@ -560,23 +560,23 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Name]</td>
+      <td role="rowheader">[!UICONTROL 이름]</td>
       <td>
         <p>  테이블 이름을 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Columns]</td>
+      <td role="rowheader">[!UICONTROL 열]</td>
       <td>
         <p>열을 추가합니다.</p>
         <ul>
           <li>
-            <p><b>[!UICONTROL Name]</b>
+            <p><b>[!UICONTROL 이름]</b>
             </p>
             <p>열 이름을 입력(매핑)합니다.</p>
           </li>
           <li>
-            <p><b>[!UICONTROL Data Type]</b>
+            <p><b>[!UICONTROL 데이터 형식]</b>
             </p>
             <p>데이터 유형 선택 또는 매핑:</p>
             <ul>
@@ -584,10 +584,10 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
                 <p>[!UICONTROL String]</p>
               </li>
               <li>
-                <p>[!UICONTROL Integer]</p>
+                <p>[!UICONTROL 정수]</p>
               </li>
               <li>
-                <p>[!UICONTROL Boolean]</p>
+                <p>[!UICONTROL 부울]</p>
               </li>
               <li>
                 <p>[!UICONTROL Date Time]</p>
@@ -595,7 +595,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
             </ul>
           </li>
           <li>
-            <p><b>[!UICONTROL Format String]</b>
+            <p><b>[!UICONTROL 형식 문자열]</b>
             </p>
             <p>형식 문자열을 입력(매핑)합니다.</p>
           </li>
@@ -603,11 +603,11 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Rows]</td>
+      <td role="rowheader">[!UICONTROL 행]</td>
       <td>행 세부 정보를 입력하거나 매핑합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Measures]</td>
+      <td role="rowheader">[!UICONTROL 측정값]</td>
       <td>테이블에 대한 측정값을 추가합니다.</td>
     </tr>
   </tbody>
@@ -620,7 +620,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Database]  </td>
+      <td role="rowheader">[!UICONTROL 데이터베이스]  </td>
       <td>
         <p>사용할 데이터베이스를 입력하거나 매핑합니다.</p>
       </td>
@@ -638,25 +638,25 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Data source ID]</td>
+      <td role="rowheader">[!UICONTROL 데이터 소스 ID]</td>
       <td>
         <p>  데이터 소스의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Data source Type]  </td>
+      <td role="rowheader">[!UICONTROL 데이터 소스 유형]  </td>
       <td>
         <p>데이터 소스 유형을 선택하거나 매핑합니다. 예: SQL.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Gateway ID]  </td>
+      <td role="rowheader">[!UICONTROL 게이트웨이 ID]  </td>
       <td>사용할 게이트웨이의 ID를 입력하거나 매핑합니다.</td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL Delete a Dataset]
+#### [!UICONTROL 데이터 집합 삭제]
 
 이 작업 모듈은 데이터 세트를 삭제합니다.
 
@@ -666,28 +666,28 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe [!DNL Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Enter a Report ID]</td>
+      <td role="rowheader">[!UICONTROL 보고서 ID 입력]</td>
       <td>
         <p>옵션을 선택하거나 매핑하여 삭제할 데이터 세트를 선택합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Report ID]</td>
+      <td role="rowheader">[!UICONTROL 보고서 ID]</td>
       <td>
         <p>삭제할 데이터 세트의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Group ID]  </td>
+      <td role="rowheader">[!UICONTROL 그룹 ID]  </td>
       <td>삭제하려는 데이터 세트를 소유하는 그룹의 ID를 선택하거나 매핑합니다.</td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL Get a Dataset]
+#### [!UICONTROL 데이터 세트 가져오기]
 
 이 작업 모듈은 지정된 데이터 세트의 메타데이터를 검색합니다.
 
@@ -697,28 +697,28 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe [!DNL Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Enter a Report ID]</td>
+      <td role="rowheader">[!UICONTROL 보고서 ID 입력]</td>
       <td>
         <p>옵션을 선택하거나 매핑하여 메타데이터를 검색할 보고서를 선택합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Report ID]</td>
+      <td role="rowheader">[!UICONTROL 보고서 ID]</td>
       <td>
         <p>메타데이터를 검색할 데이터 세트의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Group ID]  </td>
+      <td role="rowheader">[!UICONTROL 그룹 ID]  </td>
       <td>메타데이터를 검색할 데이터 세트를 소유하는 그룹의 ID를 선택하거나 매핑합니다.</td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL List Datasets]
+#### [!UICONTROL 데이터 세트 나열]
 
 이 검색 모듈은 데이터 세트 목록을 검색합니다.
 
@@ -728,22 +728,22 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe [!DNL Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Group ID]  </td>
+      <td role="rowheader">[!UICONTROL 그룹 ID]  </td>
       <td>메타데이터를 검색할 보고서를 소유한 그룹의 ID를 선택하거나 매핑합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Limit]</td>
+      <td role="rowheader">[!UICONTROL 제한]</td>
       <td>
-        <p>각 시나리오 실행 주기 동안 모듈에 [action]으로 지정할 최대 레코드 수를 입력하거나 매핑합니다.</p>
+        <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL Refresh a Dataset]
+#### [!UICONTROL 데이터 집합 새로 고침]
 
 이 작업 모듈은 지정된 데이터 세트를 새로 고칩니다.
 
@@ -753,39 +753,39 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe [!DNL Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Enter a dataset]</td>
+      <td role="rowheader">[!UICONTROL 데이터 세트 입력]</td>
       <td>옵션을 선택하거나 매핑하여 새로 고칠 데이터 세트를 선택합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Dataset ID]</td>
+      <td role="rowheader">[!UICONTROL 데이터 세트 ID]</td>
       <td>새로 고침할 데이터 세트의 ID를 입력하거나 매핑합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Table Name]  </td>
+      <td role="rowheader">[!UICONTROL 테이블 이름]  </td>
       <td>
         <p>추가하거나 삭제할 행이 포함된 테이블의 이름을 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Group ID]  </td>
+      <td role="rowheader">[!UICONTROL 그룹 ID]  </td>
       <td>데이터 세트를 소유하는 그룹의 ID를 입력하거나 매핑합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Notify Option]  </td>
+      <td role="rowheader">[!UICONTROL 알림 옵션]  </td>
       <td>
         <p>알림 옵션을 선택하거나 매핑합니다.</p>
         <ul>
           <li>
-            <p>[!UICONTROL Mail on Completion]</p>
+            <p>완료 시 [!UICONTROL Mail]</p>
           </li>
           <li>
-            <p>[!UICONTROL Mail on Failure]</p>
+            <p>[!UICONTROL 실패 시 메일]</p>
           </li>
           <li>
-            <p>[!UICONTROL No Notification]</p>
+            <p>[!UICONTROL 알림 없음]</p>
           </li>
         </ul>
       </td>
@@ -803,7 +803,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
 * [목록 앱](#list-apps)
 * [앱 시청](#watch-apps)
 
-#### [!UICONTROL Get an App]
+#### [!UICONTROL 앱 가져오기]
 
 이 작업 모듈은 지정된 앱의 메타데이터를 검색합니다.
 
@@ -813,10 +813,10 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe [!DNL Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL App ID]  </td>
+      <td role="rowheader">[!UICONTROL 앱 ID]  </td>
       <td>
         <p>검색할 앱의 ID를 선택하거나 매핑합니다.</p>
       </td>
@@ -824,7 +824,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   </tbody>
 </table>
 
-#### [!UICONTROL Get an App's Dashboard]
+#### [!UICONTROL 앱의 대시보드 가져오기]
 
 이 작업 모듈은 지정된 앱 대시보드의 메타데이터를 검색합니다.
 
@@ -834,16 +834,16 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe [!DNL Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL App ID]  </td>
+      <td role="rowheader">[!UICONTROL 앱 ID]  </td>
       <td>
         <p>검색할 대시보드가 포함된 앱의 ID를 선택하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Report ID]</td>
+      <td role="rowheader">[!UICONTROL 보고서 ID]</td>
       <td>
         <p>  검색할 대시보드의 ID를 선택하거나 매핑합니다.</p>
       </td>
@@ -851,7 +851,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   </tbody>
 </table>
 
-#### [!UICONTROL Get an App's Report]
+#### [!UICONTROL 앱의 보고서 가져오기]
 
 이 작업 모듈은 지정된 앱 보고서의 메타데이터를 검색합니다.
 
@@ -861,16 +861,16 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe [!DNL Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL App ID]  </td>
+      <td role="rowheader">[!UICONTROL 앱 ID]  </td>
       <td>
         <p>검색할 보고서가 포함된 앱의 ID를 선택하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Report ID]</td>
+      <td role="rowheader">[!UICONTROL 보고서 ID]</td>
       <td>
         <p>  검색할 보고서의 ID를 선택하거나 매핑합니다.</p>
       </td>
@@ -878,7 +878,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   </tbody>
 </table>
 
-#### [!UICONTROL List Apps]
+#### [!UICONTROL 앱 나열]
 
 이 검색 모듈은 설치된 모든 앱 목록을 검색합니다.
 
@@ -888,10 +888,10 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe [!DNL Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Limit]  </td>
+      <td role="rowheader">[!UICONTROL 제한]  </td>
       <td>
         <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</p>
       </td>
@@ -899,7 +899,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   </tbody>
 </table>
 
-#### [!UICONTROL List App's Dashboards]
+#### [!UICONTROL 앱 대시보드 나열]
 
 이 검색 모듈은 지정된 앱에서 대시보드 목록을 검색합니다.
 
@@ -909,14 +909,14 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe [!DNL Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL App ID]</td>
+      <td role="rowheader">[!UICONTROL 앱 ID]</td>
       <td>대시보드를 나열할 앱의 ID를 선택하거나 매핑합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Limit]  </td>
+      <td role="rowheader">[!UICONTROL 제한]  </td>
       <td>
         <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</p>
       </td>
@@ -924,7 +924,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   </tbody>
 </table>
 
-#### [!UICONTROL List App's Reports]
+#### [!UICONTROL 앱 보고서 나열]
 
 이 검색 모듈은 지정된 앱에서 모든 보고서 목록을 검색합니다.
 
@@ -934,14 +934,14 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe [!DNL Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL App ID]</td>
+      <td role="rowheader">[!UICONTROL 앱 ID]</td>
       <td>보고서를 나열할 앱의 ID를 선택하거나 매핑합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Limit]  </td>
+      <td role="rowheader">[!UICONTROL 제한]  </td>
       <td>
         <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</p>
       </td>
@@ -949,7 +949,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   </tbody>
 </table>
 
-#### [!UICONTROL Watch Apps]
+#### [!UICONTROL 앱 시청]
 
 이 트리거 모듈은 앱이 업데이트될 때 시나리오를 시작합니다.
 
@@ -959,10 +959,10 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe [!DNL Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Limit]  </td>
+      <td role="rowheader">[!UICONTROL 제한]  </td>
       <td>
         <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</p>
       </td>
@@ -972,7 +972,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
 
 ### 기타
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL API 호출 만들기]
 
 이 작업 모듈은 [!DNL Power BI] API에 대한 API 호출을 수행합니다.
 
@@ -982,11 +982,11 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe [!DNL Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Path]</p>
+        <p>[!UICONTROL 경로]</p>
       </td>
       <td>
         <p><code>https://api.powerbi.com</code>과(와) 관련된 경로를 입력하십시오. 예: <code>/v1.0/myorg/datasets</code></p>
@@ -994,7 +994,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Method]</p>
+        <p>[!UICONTROL 메서드]</p>
       </td>
       <td>
         <p>API 호출을 구성하는 데 필요한 [!UICONTROL HTTP] 요청 메서드를 선택합니다. 자세한 내용은 [!UICONTROL HTTP] 요청 메서드를 참조하십시오.</p>
@@ -1009,7 +1009,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Query String]  </td>
+      <td role="rowheader">[!UICONTROL 쿼리 문자열]  </td>
       <td>
         <p>요청 쿼리 문자열을 입력합니다.</p>
       </td>

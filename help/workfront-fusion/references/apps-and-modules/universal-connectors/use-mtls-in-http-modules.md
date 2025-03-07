@@ -4,18 +4,14 @@ description: Adobe Workfront Fusion HTTP 모듈에서 Mutual TLS를 사용하여
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 1fa1ef68267d971a2769400a031b333de2f684ce
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
 
 # [!DNL Adobe Workfront Fusion]의 HTTP 모듈에서 Mutual TLS 사용
-
->[!NOTE]
->
->Adobe Workfront Fusion에는 Adobe Workfront 라이선스 외에 [!DNL Adobe Workfront Fusion] 라이선스가 필요합니다.
 
 ## 상호 TLS 개요
 
@@ -35,45 +31,48 @@ ht-degree: 0%
 
 ## 액세스 요구 사항
 
++++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
+
 이 문서의 기능을 사용하려면 다음 액세스 권한이 있어야 합니다.
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 플랜*</td> 
-   <td> <p>[!UICONTROL Pro] 이상</p> </td> 
+   <td role="rowheader">Adobe Workfront 패키지</td> 
+   <td> <p>임의</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 라이센스*</td> 
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront 라이선스</td> 
+   <td> <p>새로운 기능: 표준</p><p>또는</p><p>현재: 작업 시간 이상</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td> 
+   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재 라이선스 요구 사항: [!DNL Workfront Fusion] 라이선스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
    <p>또는</p>
-   <p>레거시 라이선스 요구 사항: 작업 자동화 및 통합을 위한 [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>현재 제품 요구 사항: [!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Adobe Workfront] 플랜이 있는 경우 조직에서 이 문서에 설명된 기능을 사용하려면 [!DNL Adobe Workfront Fusion]과(와) [!DNL Adobe Workfront]을(를) 구매해야 합니다. [!DNL Workfront Fusion]이(가) [!UICONTROL Ultimate] [!DNL Workfront] 계획에 포함되어 있습니다.</p>
+   <p>신규:</p> <ul><li>또는 Prime Workfront 패키지 선택: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</li><li>Ultimate Workfront 패키지: Workfront Fusion이 포함됩니다.</li></ul>
    <p>또는</p>
-   <p>레거시 제품 요구 사항: 이 문서에 설명된 기능을 사용하려면 조직에서 [!DNL Adobe Workfront Fusion]과(와) [!DNL Adobe Workfront]을(를) 구매해야 합니다.</p>
+   <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-&#42;플랜, 라이선스 유형 또는 액세스 권한을 확인하려면 [!DNL Workfront] 관리자에게 문의하세요.
+이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-&#42;&#42;라이선스 [!DNL Adobe Workfront Fusion]에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+
++++
 
 ## [!DNL Workfront Fusion] 공개 인증서 제공
-
 
 HTTP 요청을 사용하여 웹 서비스에 연결할 때 일반적으로 웹 서비스에는 확인을 위해 [!DNL Workfront Fusion] 공개 인증서가 필요합니다. 이렇게 하면 웹 서비스가 인증서가 웹 서비스의 허용 목록에 추가하다에 있는지 확인하는 방법으로 HTTP 요청에 표시된 인증서를 파일에 있는 인증서와 비교할 수 있습니다.
 
@@ -85,7 +84,7 @@ HTTP 요청을 사용하여 웹 서비스에 연결할 때 일반적으로 웹 �
 
 다음 링크를 사용하여 Workfront Fusion 공개 인증서를 다운로드할 수 있습니다.
 
-### 2023년 4월 23일 - 2024년 5월 7일 인증서
+### 2024년 4월 23일 - 2025년 5월 7일 인증서
 
 >[!IMPORTANT]
 >
@@ -101,21 +100,6 @@ HTTP 요청을 사용하여 웹 서비스에 연결할 때 일반적으로 웹 �
 
   유럽연합용
 
-<!--
-
-### Certificates for November 14, 2022 - July 15, 2023
-
->[!IMPORTANT]
->
->* These [!DNL Workfront Fusion] public certificates expire on July 15, 2023.
->* These are wildcard mTLS certificates.
-
-* [Download [!DNL Workfront Fusion] Certificate 2023](https://cdn.experience.workfront.com/Documentation/Workfront+Fusion+2.0+public+certificates/app_workfrontfusion_com-jul-15-2023+updated.cer)
-* [Download [!DNL Workfront Fusion] EU Certificate 2023](https://cdn.experience.workfront.com/Documentation/Workfront+Fusion/app-eu_workfrontfusion_com-jul-15-2023.cer)
-
-   For use in the EU 
-
-   -->
 
 ## [!DNL Workfront Fusion] HTTP 모듈에서 상호 TLS 활성화
 
@@ -126,7 +110,7 @@ HTTP 요청을 사용하여 웹 서비스에 연결할 때 일반적으로 웹 �
 1. 시나리오에 [!UICONTROL HTTP] 요청 모듈을 추가합니다.
 1. 모듈 구성을 시작합니다.
 
-   <!--For instructions on configuring an [!UICONTROL HTTP] request module, see the appropriate article under [[!UICONTROL Universal connectors] modules](/help/workfront-fusion/references/apps-and-modules/universal-connectors/).-->
+   [!UICONTROL HTTP] 요청 모듈을 구성하는 방법에 대한 지침은 [Universal connectors](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)의 해당 문서를 참조하십시오.
 
-1. 모듈 아래쪽에서 **[!UICONTROL Show advanced settings]**&#x200B;을(를) 사용하도록 설정합니다.
-1. **[!UICONTROL Use Mutual TLS]** 사용
+1. 모듈 아래쪽에서 **[!UICONTROL 고급 설정 표시]**&#x200B;를 사용하도록 설정합니다.
+1. **[!UICONTROL 상호 TLS 사용]**&#x200B;을 사용하도록 설정합니다.

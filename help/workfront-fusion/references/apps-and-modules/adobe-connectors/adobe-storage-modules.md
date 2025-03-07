@@ -8,7 +8,7 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Adobe Admin C
 author: Becky
 feature: Workfront Fusion
 exl-id: 78ee905f-4713-44a4-bffb-c64cdb3665c2
-source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
+source-git-commit: 61a523398f00a9d9439b9e74bfbd1ae3f94b0749
 workflow-type: tm+mt
 source-wordcount: '1386'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # Adobe 스토리지 모듈
 
-[!DNL Adobe Workfront Fusion] 시나리오에서는 Adobe Admin Console에서 프로젝트를 만들고 관리해야 합니다.
+[!DNL Adobe Workfront Fusion] 시나리오에서는 Adobe Admin Console에서 프로젝트를 만들고 관리할 수 있습니다.
 
 시나리오를 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 인덱스](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
 

@@ -3,9 +3,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Anaplan을 �
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 81c9b141-4e40-430f-99f1-c44b7a833bcd
-source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
+source-git-commit: defc5aa9b2e3ffa5c698c5a19dd8d9d8768d72c2
 workflow-type: tm+mt
-source-wordcount: '1859'
+source-wordcount: '1983'
 ht-degree: 1%
 
 ---
@@ -87,7 +87,7 @@ Anaplan 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">API 태그</td> 
-   <td>v1.11.5/td&gt; 
+   <td>v1.11.5</td> 
  </tbody> 
 </table>
 
@@ -96,7 +96,49 @@ Anaplan 커넥터는 다음을 사용합니다.
 [!DNL Anaplan] 모듈에 대한 연결을 만들려면:
 
 1. [!UICONTROL 연결] 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
-1. 연결 유형을 선택합니다.
+1. 다음 필드를 채웁니다.
+
+   <table style="table-layout:auto"> 
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+    </col>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+    </col>
+    <tbody>
+      <tr>
+        <td role="rowheader">[!UICONTROL 연결 이름]</td>
+        <td>
+          <p>새 연결의 이름을 입력합니다.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL 환경]</td>
+        <td>
+          <p>프로덕션 환경에 연결할지 아니면 비프로덕션 환경에 연결할지 선택합니다.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL 유형]</td>
+        <td>
+          <p>서비스 계정에 연결할지 또는 개인 계정에 연결할지 선택합니다.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL email]</td>
+        <td>
+          <p>이 Anaplan 계정의 이메일 주소를 입력하십시오.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Password]</td>
+        <td>이 Anaplan 계정의 암호를 입력합니다.</td>
+      </tr>
+     </tbody>
+    </table>
+
+1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭하세요.
+
+<!--1. Click **[!UICONTROL Add]** next to the [!UICONTROL Connection] box.
+1. Select the connection type.
 
    <table style="table-layout:auto">
     <col> 
@@ -104,16 +146,16 @@ Anaplan 커넥터는 다음을 사용합니다.
     <tbody> 
      <tr> 
       <td role="rowheader">[!DNL Anaplan] [!UICONTROL Basic]</td> 
-      <td> <p>[!DNL Anaplan] [!UICONTROL Basic] 연결을 만들려면 전자 메일 주소와 암호만 필요합니다. </p> <p>연결 이름을 입력한 다음 전자 메일 주소와 [!DNL Anaplan] 계정의 암호를 입력하십시오.</p> </td> 
+      <td> <p>An [!DNL Anaplan] [!UICONTROL Basic] connection requires only an email address and password to create the connection. </p> <p>Enter a name for the connection, then enter your email address and the password of your [!DNL Anaplan] account.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!DNL Anaplan] [!UICONTROL CA 인증서]</td> 
-      <td> <p>[!DNL Anaplan] [!UICONTROL CA Certificate] 연결에 [!UICONTROL Certificate Key], [!UICONTROL Encoded Data] 및 [!UICONTROL Encoded Signed Data]가 필요합니다. [!DNL Anaplan] 계정에서 생성할 수 있습니다. 자세한 내용은 [!DNL Anaplan] 설명서를 참조하십시오.</p> <p>연결 이름을 입력한 다음 [!DNL Anaplan] 계정에서 생성한 [!UICONTROL 인증서 키], [!UICONTROL 인코딩된 데이터] 및 [!UICONTROL 인코딩된 서명된 데이터]를 입력합니다.</p> </td> 
+      <td role="rowheader">[!DNL Anaplan] [!UICONTROL CA Certificate]</td> 
+      <td> <p>An [!DNL Anaplan] [!UICONTROL CA Certificate] connection requires a [!UICONTROL Certificate Key], [!UICONTROL Encoded Data], and [!UICONTROL Encoded Signed Data]. You can generate these in your [!DNL Anaplan] account. For instructions, see the [!DNL Anaplan] documentation.</p> <p>Enter a name for the connection, then enter the [!UICONTROL Certificate Key], [!UICONTROL Encoded Data], and [!UICONTROL Encoded Signed Data] that you generated in your [!DNL Anaplan] account.</p> </td> 
      </tr> 
     </tbody> 
    </table>
 
-1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭하세요.
+1. Click **[!UICONTROL Continue]** to save the connection and return to the module.-->
 
 ## [!DNL Anaplan]개 모듈 및 해당 필드
 
@@ -163,6 +205,9 @@ Anaplan 커넥터는 다음을 사용합니다.
 ### 액션
 
 * [[!UICONTROL 목록 항목 만들기]](#create-a-list-item)
+* [레코드 삭제](#delete-a-record)
+* [데이터 내보내기](#export-data)
+* [데이터 가져오기](#import-data)
 * [[!UICONTROL 사용자 지정 API 호출 만들기]](#make-a-custom-api-call)
 * [[!UICONTROL 레코드 읽기]](#read-a-record)
 * [[!UICONTROL 작업 실행]](#run-an-action)
@@ -208,8 +253,98 @@ Anaplan 커넥터는 다음을 사용합니다.
     </tr>
     <tr>
         <td>[!UICONTROL 하위 집합]</td>
-        <td>항목을 추가할 목록에 사용자 지정 하위 집합이 있는 경우 항목을 추가할 하위 집합을 선택한 다음 <b>[!UICONTROL 예]</b>를 선택하여 해당 하위 집합에 새 항목을 추가합니다.</td>
+        <td>항목을 추가할 목록에 사용자 정의 하위 집합이 있는 경우 항목을 추가할 하위 집합을 선택합니다.</td>
     </tr>
+</table>
+
+#### [!UICONTROL 레코드 삭제]
+
+이 작업 모듈은 기존 레코드를 삭제합니다.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>[!DNL Anaplan]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">[!DNL Anaplan]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID]</td> 
+   <td>삭제하려는 개체가 포함된 Anaplan Workspace의 ID를 선택하거나 매핑합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 모델 ID]</td> 
+   <td>삭제하려는 개체가 포함된 모델의 ID를 입력하거나 매핑합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">레코드 유형</td> 
+   <td> <p>삭제할 오브젝트의 유형을 선택합니다.</p> 
+    <ul> 
+     <li> <p><b>작업</b> </p> <p>삭제할 작업을 선택하거나 매핑합니다.</p> </li> 
+     <li> <p><b>목록 항목</b> </p> <p>항목을 삭제할 목록을 선택한 다음 삭제할 항목의 ID 또는 코드를 입력하거나 매핑합니다</p>  </li> 
+     <li> <p><b>[!UICONTROL 파일]</b> </p> <p>삭제할 파일을 선택하거나 매핑합니다.</p> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
+
+#### [!UICONTROL 데이터 내보내기]
+
+이 작업 모듈은 내보내기 정의 를 사용하여 Anaplan에서 데이터를 검색합니다.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>[!DNL Anaplan]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">[!DNL Anaplan]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID]</td> 
+   <td>내보내려는 데이터가 포함된 Anaplan Workspace의 ID를 선택하거나 매핑합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 모델 ID]</td> 
+   <td>내보낼 데이터가 포함된 모델의 ID를 입력하거나 매핑합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">내보내기 정의 ID</td> 
+   <td> <p>사용하려는 Anaplan 내보내기 정의의 ID를 입력하거나 매핑합니다.</p> 
+   </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 데이터 가져오기
+
+이 작업 모듈은 데이터를 Anaplan으로 가져옵니다.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>[!DNL Anaplan]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">[!DNL Anaplan]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID]</td> 
+   <td>데이터를 가져올 Anaplan Workspace의 ID를 선택하거나 매핑합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 모델 ID]</td> 
+   <td>데이터를 가져올 모델의 ID를 입력하거나 매핑합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">내보내기 정의 ID</td> 
+   <td> <p>사용하려는 Anaplan 가져오기 정의의 ID를 입력하거나 매핑합니다.</p> 
+   </td> 
+  </tr> 
+ </tbody> 
 </table>
 
 #### [!UICONTROL 사용자 지정 API 호출 만들기]
@@ -250,38 +385,6 @@ Anaplan 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL 레코드 삭제]
-
-이 작업 모듈은 기존 레코드를 삭제합니다.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Anaplan]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">[!DNL Anaplan]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Workspace ID]</td> 
-   <td>삭제하려는 개체가 포함된 Anaplan Workspace의 ID를 선택하거나 매핑합니다.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL 모델 ID]</td> 
-   <td>삭제하려는 개체가 포함된 모델의 ID를 입력하거나 매핑합니다.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">삭제</td> 
-   <td> <p>삭제할 오브젝트의 유형을 선택합니다.</p> 
-    <ul> 
-     <li> <p><b>작업</b> </p> <p>삭제할 작업을 선택하거나 매핑합니다.</p> </li> 
-     <li> <p><b>목록 항목</b> </p> <p>항목을 삭제할 목록을 선택한 다음 삭제할 항목의 ID 또는 코드를 입력하거나 매핑합니다</p>  </li> 
-     <li> <p><b>[!UICONTROL 파일]</b> </p> <p>삭제할 파일을 선택하거나 매핑합니다.</p> </li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
-
 #### [!UICONTROL 레코드 읽기]
 
 이 작업 모듈은 단일 레코드를 읽습니다.
@@ -303,6 +406,7 @@ Anaplan 커넥터는 다음을 사용합니다.
      <li> <p><b>모델 버전</b> </p> <p>읽으려는 모델의 ID를 선택하거나 매핑합니다.</p> </li> 
      <li> <p><b>사용자</b> </p> <p>사용 중인 계정 소유자에 대한 데이터를 반환할지 또는 다른 사용자에 대한 데이터를 반환할지 여부를 선택합니다. 다른 사용자를 선택하는 경우 해당 사용자의 이름을 선택합니다.</p> </li> 
      <li> <p><b>Workspace</b> </p> <p>읽으려는 Workspace의 ID를 선택하거나 매핑합니다.</p> </li> 
+     <li> <p><b>보기</b> </p> <p>읽으려는 뷰가 포함된 모델의 ID를 선택하거나 매핑합니다.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -410,9 +514,9 @@ Anaplan 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL 파일 업로드]
+#### [!UICONTROL 작업에 대한 파일 업로드]
 
-이 작업 모듈은 파일을 Anaplan에 업로드합니다. 파일이 이미 Anaplan에 업로드되어 있어야 합니다. 이 모듈을 사용하여 Anaplan 내의 추가 위치에 업로드할 수 있습니다.
+이 작업 모듈은 Anaplan의 기존 파일을 Anaplan 내의 추가 위치로 업로드합니다.
 <table style="table-layout:auto">
 <col>
 <col>

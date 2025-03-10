@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 OneDrive를 �
 author: Becky
 feature: Workfront Fusion
 exl-id: d21eafad-9c67-4f42-b718-0aa4223846e6
-source-git-commit: 632128bdcb6f8b8361f5a28e4a5fb527eb274d54
+source-git-commit: 337a6918dc20f2e7523438dea752393a1b3f50ee
 workflow-type: tm+mt
-source-wordcount: '4087'
+source-wordcount: '4088'
 ht-degree: 0%
 
 ---
@@ -207,8 +207,6 @@ OneDrive 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-<!-- Start audit here-->
-
 #### [!UICONTROL 폴더 만들기]
 
 이 작업 모듈은 지정된 드라이브에 새 폴더를 만듭니다.
@@ -255,7 +253,7 @@ OneDrive 커넥터는 다음을 사용합니다.
 
 #### [!UICONTROL 파일/폴더 삭제]
 
-이 작업 모듈은 선택한 파일을 삭제합니다.
+이 작업 모듈은 선택한 파일 또는 폴더를 삭제합니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -730,7 +728,7 @@ OneDrive 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 메서드]</td> 
-   td&gt; <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
+   <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 

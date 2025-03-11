@@ -4,16 +4,20 @@ description: 이러한 비디오는 시나리오를 계획할 때 유용할 수 
 author: Becky
 feature: Workfront Fusion
 exl-id: 875b4c9a-7065-4960-9fdc-85fb0a4bf146
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 914f108dc7e13e89806f233812a687cdc06cf1c8
 workflow-type: tm+mt
-source-wordcount: '52'
-ht-degree: 0%
+source-wordcount: '60'
+ht-degree: 1%
 
 ---
 
 # 비디오 개요
 
 이러한 비디오는 Adobe Workfront Fusion의 기능 중 일부를 숙지하는 데 도움이 됩니다.
+
+## 탐색
+
+* [Adobe 통합 셸의 Workfront Fusion](https://video.tv.adobe.com/v/3412392/){target=_blank}
 
 ## 기본 사항
 

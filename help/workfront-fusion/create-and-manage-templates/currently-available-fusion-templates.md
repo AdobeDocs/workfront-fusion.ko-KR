@@ -4,9 +4,9 @@ description: 현재 Adobe Workfront Fusion에서 사용할 수 있는 공용 템
 author: Becky
 feature: Workfront Fusion
 exl-id: b14bed4d-3503-42cf-a8c3-618d3b2448b4
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 47f1e2b6a812f4ac44e2daf08cb1937f1ef02981
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1351'
 ht-degree: 0%
 
 ---
@@ -25,17 +25,21 @@ ht-degree: 0%
 
 ### [!BADGE 새로 만들기!]{type=Informative}
 
+<!--New March 12, 2025-->
+
+온디맨드 지정 보드의 지정 열에서 보관된 카드를 삭제합니다.
+
+### Workfront 보드 > 보드 열을 기반으로 하는 표준 체크리스트 만들기
+
 이 Fusion 템플릿은 특정 보드에 특정 열을 시간 기준으로 입력하는 모든 카드에 대한 표준 검사 목록을 만듭니다.
 
-### [!BADGE 새로 만들기!]{type=Informative}
-
-<!--new Aug 1. 2024-->
+### Workfront > Workfront 보드 - 사용자 지정 구성의 보드 만들기
 
 이 시나리오는 새 프로젝트를 만들 때 트리거됩니다. 이 시나리오에서는 프로젝트 이름을 딴 보드를 만들고, 필요에 따라 열의 이름을 변경하거나 만들고, 사용자 지정 태그를 만들고, 접수 열 필터를 원래 프로젝트와 연결할 수 있습니다.  수천 개의 추가 변경 사항을 작성할 수 있지만, 여기에서 시작하면 조직의 보드 표준화를 위한 시작점을 만들 수 있는 가능성을 볼 수 있습니다.
 
 ### Workfront - CSV로 프로젝트 만들기
 
-이 자동화는 CSV로 지정한 이름, Portfolio, 상태, 계획된 시작 일자 및 템플릿 세부 사항을 기반으로 Workfront에서 새 프로젝트를 만듭니다.
+이 자동화는 이름, Portfolio, 상태, 계획된 시작 일자 및 CSV로 지정하는 템플릿 세부 사항을 기반으로 Workfront에서 새 프로젝트를 만듭니다.
 
 ### Workfront - 지난 30일 동안 새 메모 없이 요청 정리
 
@@ -97,6 +101,12 @@ ht-degree: 0%
 
 이러한 템플릿은 Workfront과 Workfront Proof을 결합하는 워크플로를 자동화합니다.
 
+### [!BADGE 새로 만들기!]{type=Informative}
+
+<!--New March 12, 2025-->
+
+이 템플릿은 프로젝트가 거부됨, 완료됨 또는 정지됨 상태와 같은 상태로 업데이트되는지 감시합니다. 그런 다음 보류 중인 증명 결정을 가진 모든 사용자가 읽기 전용으로 변경됩니다. 마지막으로 증명을 잠그고 문서에 대한 업데이트를 전송합니다.
+
 ### Workfront Proof > Workfront - 증명 결정 시 프로젝트 업데이트
 
 프로젝트에 직접 추가된 Proof에 대한 결정이 내려지면 이 자동화는 결정 주체 등 Proof 결정에 대한 정보를 수집한 다음 해당 Workfront 프로젝트에 이 진행 상황을 업데이트로 반영합니다.
@@ -131,15 +141,15 @@ ht-degree: 0%
 
 ### Workfront 승인 워크플로우로 Marketo Engage 이메일 초안 승인
 
-이는 Workfront과 Marketo Engage 간의 검토 및 승인 통합의 일부입니다. 이 템플릿은 Workfront의 이메일 증명이 승인되었는지 감지한 다음, Marketo Engage에서 해당 이메일을 승인됨으로 업데이트합니다.
+이는 Workfront과 Marketo Engage 간의 검토 및 승인 통합의 일부입니다. 이 템플릿은 Workfront의 이메일 증명이 승인되었는지 감지한 다음 Marketo Engage의 해당 이메일을 승인됨으로 업데이트합니다.
 
 ### Workfront에서 마케팅 캠페인 요청 접수 및 Marketo Engage에서 캠페인 생성 자동화
 
-이 시나리오는 Workfront에서 만든 요청으로 Marketo Engage에서 이메일 및 웨비나 캠페인을 만드는 프로그래밍 방식을 제공합니다. 자동화를 사용하여 캠페인을 만들고, 구성하고, 구성함으로써 팀은 효율성을 향상시킬 수 있습니다.
+이 시나리오는 Workfront에서 만든 요청으로 Marketo Engage에서 이메일 및 웨비나 캠페인을 만드는 프로그래밍 방법을 제공합니다. 자동화를 사용하여 캠페인을 만들고, 구성하고, 구성함으로써 팀은 효율성을 향상시킬 수 있습니다.
 
 ### Workfront에서 Marketo Engage 이메일 초안의 이메일 증명 검토
 
-이 템플릿은 Workfront 작업이 검토 준비됨 상태로 설정되어 있는지 감지한 다음, Marketo Engage에서 이메일 초안을 내보내어 Workfront의 증명으로 저장합니다.
+이 템플릿은 Workfront 작업이 검토 준비됨 상태로 설정되어 있는지 감지한 다음, Marketo Engage에서 이메일 초안을 내보내고 Workfront의 증명으로 저장합니다.
 
 ## Workfront-SharePoint 틀
 

@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 설명서
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 문서, 튜토리얼 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
-source-git-commit: af7ab967e789311f72c67cc12b93334146218449
+source-git-commit: d69c9f3661a9aee1f7f818a5bd729aea387ad85b
 workflow-type: tm+mt
-source-wordcount: '1672'
+source-wordcount: '1709'
 ht-degree: 2%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 2%
 * Fusion 릴리스 활동 {#fusion-release-activity}
    * [Adobe Workfront Fusion 릴리스 활동](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Fusion 릴리스 - 2025년 {#fusion-releases-2025}
+      * [Workfront Fusion 릴리스 활동: 2025년 3월 10일이 있는 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-10.md)
       * [Workfront Fusion 릴리스 활동: 2025년 3월 3일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-3.md)
       * [Workfront Fusion 릴리스 활동: 2025년 2월 24일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-2-24.md)
       * [Workfront Fusion 릴리스 활동: 2025년 2월 17일이 있는 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-2-17.md)
@@ -282,11 +283,11 @@ ht-degree: 2%
    * 앱 및 해당 모듈 {#apps-and-their-modules}
       * [앱 및 해당 모듈](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)
       * 유니버설 커넥터 {#universal-connectors}
-         * [HTTP > [!UICONTROL Make a request] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
-         * [[!UICONTROL HTTP] > [!UICONTROL Make a Basic Authorization request] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
-         * [[!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
-         * [[!UICONTROL HTTP] > [!UICONTROL Make a Client Certificate Authorization request] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
-         * [[!UICONTROL HTTP] > [!UICONTROL Make an API Key Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
+         * [HTTP > [!UICONTROL 요청] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+         * [[!UICONTROL HTTP] > [!UICONTROL 기본 권한 부여 요청 만들기] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
+         * [[!UICONTROL HTTP] > [!UICONTROL OAuth 2.0 요청 만들기] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
+         * [[!UICONTROL HTTP] > [!UICONTROL 클라이언트 인증서 권한 부여 요청 만들기] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
+         * [[!UICONTROL HTTP] > [!UICONTROL API 키 권한 부여 요청 만들기]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
          * [[!UICONTROL HTTP] > 기타 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-modules.md)
          * [SOAP 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/soap-module.md)
          * [FTP 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/ftp-modules.md)

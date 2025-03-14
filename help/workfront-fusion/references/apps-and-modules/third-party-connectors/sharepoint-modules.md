@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Microsoft Sha
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2526'
+source-wordcount: '3124'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
    <p>또는</p>
    <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
@@ -102,15 +102,15 @@ SharePoint 커넥터는 다음을 사용합니다.
 
 [!DNL Microsoft] 계정 없이 Microsoft SharePoint Online을 [!DNL Workfront Fusion]에 연결하려면 클라이언트 ID, 클라이언트 암호 및 테넌트 ID가 필요합니다.
 
-1. **Microsoft SharePoint Online** 상자 위쪽의 **[!UICONTROL Add]**&#x200B;을(를) 클릭하여 **[!UICONTROL Create a connection]** 상자를 엽니다.
+1. **Microsoft SharePoint Online** 상자 위쪽에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭하여 **[!UICONTROL 연결 만들기]** 상자를 엽니다.
 
-1. (선택 사항) 기본 **[!UICONTROL Connection name]**&#x200B;을(를) 변경합니다.
-1. **[!UICONTROL Show advanced settings]**&#x200B;을(를) 클릭합니다.
-1. Microsoft SharePoint Online **[!UICONTROL Client ID]** 및 **[!UICONTROL Client Secret]**&#x200B;을(를) 입력하십시오.
+1. (선택 사항) 기본 **[!UICONTROL 연결 이름]**&#x200B;을 변경합니다.
+1. **[!UICONTROL 고급 설정 표시]**&#x200B;를 클릭합니다.
+1. Microsoft SharePoint Online **[!UICONTROL 클라이언트 ID]** 및 **[!UICONTROL 클라이언트 암호]**&#x200B;를 입력하십시오.
 
-1. **[!UICONTROL Continue]**&#x200B;을(를) 클릭합니다.
+1. **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
 1. 아직 로그인하지 않은 경우 표시되는 로그인 창에서 자격 증명을 입력하여 앱에 로그인합니다.
-1. (조건부) **[!UICONTROL Allow]** 단추가 표시되면 단추를 클릭하여 앱을 [!DNL Workfront Fusion]에 연결합니다.
+1. (조건부) **[!UICONTROL 허용]** 단추가 표시되면 단추를 클릭하여 앱을 [!DNL Workfront Fusion]에 연결합니다.
 
 ## Microsoft SharePoint Online 모듈 및 해당 필드
 
@@ -147,15 +147,15 @@ Microsoft SharePoint Online 모듈을 구성할 때 [!DNL Workfront Fusion]에 �
    <td> <p>Microsoft SharePoint Online 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Enter Site, Drive, and Folder IDs]</td> 
+   <td role="rowheader">[!UICONTROL 사이트, 드라이브 및 폴더 ID 입력]</td> 
    <td> <p>변경 사항을 검색할 폴더의 위치를 식별하는 방법을 선택합니다.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>파일을 만들 위치의 <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL Drive ID]</strong> 및 <strong>[!UICONTROL Folder ID]</strong>을(를) 입력하거나 매핑합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>파일을 만들 위치를 선택합니다. </p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>파일을 만들 위치의 <strong>[!UICONTROL 사이트 ID]</strong>, <strong>[!UICONTROL 드라이브 ID]</strong> 및 <strong>[!UICONTROL 폴더 ID]</strong>을(를) 입력하거나 매핑합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 팔로우하는 목록에서 선택]</strong> </p> <p>파일을 만들 위치를 선택합니다. </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td role="rowheader">[!UICONTROL Source 파일]</td> 
       <p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 이름과 데이터를 매핑합니다.</p>
   </tr>  </tbody> 
 </table>
@@ -173,15 +173,15 @@ Microsoft SharePoint Online 모듈을 구성할 때 [!DNL Workfront Fusion]에 �
    <td> <p>Microsoft SharePoint Online 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Enter Site, Drive, and Folder IDs]</td> 
+   <td role="rowheader">[!UICONTROL 사이트, 드라이브 및 폴더 ID 입력]</td> 
    <td> <p>만들려는 폴더의 위치를 식별하는 방법을 선택합니다.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>폴더를 만들 위치의 <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL Drive ID]</strong> 및 <strong>[!UICONTROL Folder ID]</strong>을(를) 입력하거나 매핑합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>폴더를 만들 위치를 선택합니다. </p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>폴더를 만들 위치의 <strong>[!UICONTROL 사이트 ID]</strong>, <strong>[!UICONTROL 드라이브 ID]</strong> 및 <strong>[!UICONTROL 폴더 ID]</strong>을(를) 입력하거나 매핑합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 팔로우하는 목록에서 선택]</strong> </p> <p>폴더를 만들 위치를 선택합니다. </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder name]</td> 
+   <td role="rowheader">[!UICONTROL 폴더 이름]</td> 
    <td>새 폴더의 이름을 입력하거나 매핑합니다.</td> 
   </tr>
   </tbody> 
@@ -200,11 +200,11 @@ Microsoft SharePoint Online 모듈을 구성할 때 [!DNL Workfront Fusion]에 �
    <td> <p>Microsoft SharePoint Online 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Enter Site, Drive, and Folder IDs]</td> 
+   <td role="rowheader">[!UICONTROL 사이트, 드라이브 및 폴더 ID 입력]</td> 
    <td> <p>가져올 파일의 위치를 식별하는 방법을 선택하십시오.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>검색할 파일의 <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL List ID]</strong> 및 <strong>[!UICONTROL File ID]</strong>을(를) 입력하거나 매핑하십시오.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>파일 위치를 선택합니다. </p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>검색할 파일의 <strong>[!UICONTROL 사이트 ID]</strong>, <strong>[!UICONTROL 목록 ID]</strong> 및 <strong>[!UICONTROL 파일 ID]</strong>을(를) 입력하거나 매핑하십시오.</p> </li> 
+     <li> <p><strong>[!UICONTROL 팔로우하는 목록에서 선택]</strong> </p> <p>파일 위치를 선택합니다. </p> </li> 
     </ul> </td> 
   </tr> 
 </tbody> 
@@ -223,14 +223,14 @@ Microsoft SharePoint Online 모듈을 구성할 때 [!DNL Workfront Fusion]에 �
    <td> <p>Microsoft SharePoint Online 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Enter Site, Drive, and Folder IDs]</td> 
+   <td role="rowheader">[!UICONTROL 사이트, 드라이브 및 폴더 ID 입력]</td> 
    <td> <p>가져올 파일의 위치를 식별하는 방법을 선택하십시오.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>표시되는 필드에 <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL List ID]</strong> 및 <strong>[!UICONTROL folder ID]</strong>을(를) 입력하거나 매핑합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>감시할 폴더의 위치를 선택합니다. </p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>표시되는 필드에 <strong>[!UICONTROL 사이트 ID]</strong>, <strong>[!UICONTROL 목록 ID]</strong> 및 <strong>[!UICONTROL 폴더 ID]</strong>을(를) 입력하거나 매핑합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 팔로우하는 목록에서 선택]</strong> </p> <p>감시할 폴더의 위치를 선택합니다. </p> </li> 
     </ul> </td> 
   </tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL 제한]</td> 
    <td>시나리오 실행 주기 동안 [!DNL Workfront Fusion]이(가) 반환해야 하는 최대 항목 수를 입력하십시오.</td> 
   <tr>
   </tr>
@@ -239,17 +239,17 @@ Microsoft SharePoint Online 모듈을 구성할 때 [!DNL Workfront Fusion]에 �
 
 ### 항목
 
-* [[!UICONTROL Copy an item]](#copy-an-item)
-* [[!UICONTROL Create an item]](#create-an-item)
-* [[!UICONTROL Delete an item]](#delete-an-item)
-* [[!UICONTROL Get an Item]](#get-an-item)
-* [[!UICONTROL List Items]](#list-items)
-* [[!UICONTROL Move Item]](#move-an-item)
-* [[!UICONTROL Update an item]](#update-an-item)
-* [[!UICONTROL Watch Items](예약됨)](#watch-items-scheduled)
+* [[!UICONTROL 항목 복사]](#copy-an-item)
+* [[!UICONTROL 항목 만들기]](#create-an-item)
+* [[!UICONTROL 항목 삭제]](#delete-an-item)
+* [[!UICONTROL 항목 가져오기]](#get-an-item)
+* [[!UICONTROL 목록 항목]](#list-items)
+* [[!UICONTROL 항목 이동]](#move-an-item)
+* [[!UICONTROL 항목 업데이트]](#update-an-item)
+* [[!UICONTROL 항목 보기]&#x200B;(예약됨)](#watch-items-scheduled)
 
 
-#### [!UICONTROL Copy an Item]
+#### [!UICONTROL 항목 복사]
 
 이 작업 모듈은 SharePoint 목록의 기존 항목을 복사합니다.
 
@@ -265,22 +265,22 @@ Microsoft SharePoint Online 모듈을 구성할 때 [!DNL Workfront Fusion]에 �
    <td role="rowheader">사이트, 드라이브 및 폴더 ID 입력</td> 
    <td> <p>복사할 항목이 들어 있는 사이트 및 드라이브를 식별하는 방법을 선택합니다.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>복사할 항목의 <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL Drive ID]</strong> 및 <strong>[!UICONTROL Item ID]</strong>을(를) 입력하거나 매핑하십시오.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from list that you follow]</strong> </p> <p>항목 유형 필드에서 필드를 이동할 것인지 폴더를 이동할 것인지 선택합니다.  복사할 항목이 들어 있는 사이트를 선택한 다음 목록을 선택하고 항목을 선택합니다. </p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>복사할 항목의 <strong>[!UICONTROL 사이트 ID]</strong>, <strong>[!UICONTROL 드라이브 ID]</strong> 및 <strong>[!UICONTROL 항목 ID]</strong>을(를) 입력하거나 매핑하십시오.</p> </li> 
+     <li> <p><strong>[!UICONTROL 팔로우하는 목록에서 선택]</strong> </p> <p>항목 유형 필드에서 필드를 이동할 것인지 폴더를 이동할 것인지 선택합니다.  복사할 항목이 들어 있는 사이트를 선택한 다음 목록을 선택하고 항목을 선택합니다. </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Destination ID]</td> 
+   <td role="rowheader">[!UICONTROL 대상 ID]</td> 
    <td> 항목을 복사할 폴더의 ID를 입력하거나 매핑합니다. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL New name]</td> 
+   <td role="rowheader">[!UICONTROL 새 이름]</td> 
    <td>항목의 새 복사본에 대한 이름을 입력하거나 매핑합니다. </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Create an item]
+#### [!UICONTROL 항목 만들기]
 
 이 작업 모듈은 SharePoint 목록에 새 항목을 만듭니다.
 
@@ -293,21 +293,21 @@ Microsoft SharePoint Online 모듈을 구성할 때 [!DNL Workfront Fusion]에 �
    <td> <p>Microsoft SharePoint Online 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Create an Item]</td> 
+   <td role="rowheader">[!UICONTROL 항목 만들기]</td> 
    <td> <p>항목을 만들 사이트 및 드라이브를 식별하는 방법을 선택합니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>항목을 만들 <strong>[!UICONTROL Site ID]</strong> 및 <strong>[!UICONTROL List ID]</strong>을(를) 입력하거나 매핑합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>항목을 만들 목록이 포함된 사이트를 선택한 다음 목록을 선택합니다. </p> </li> 
+     <li> <p><strong>[!UICONTROL 목록에서 선택]</strong> </p> <p>항목을 만들 목록이 포함된 사이트를 선택한 다음 목록을 선택합니다. </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Fields]</td> 
+   <td role="rowheader">[!UICONTROL 필드]</td> 
    <td>새 항목에 대해 설정할 각 필드에 대해 <b>항목 추가</b>를 클릭하고 필드의 키(필드를 식별함)와 해당 필드에 대해 새 항목에 사용할 값을 입력합니다.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete an item]
+#### [!UICONTROL 항목 삭제]
 
 이 작업 모듈은 SharePoint 목록의 기존 항목을 삭제합니다.
 
@@ -320,17 +320,17 @@ Microsoft SharePoint Online 모듈을 구성할 때 [!DNL Workfront Fusion]에 �
    <td> <p>Microsoft SharePoint Online 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Update an Item]</td> 
+   <td role="rowheader">[!UICONTROL 항목 업데이트]</td> 
    <td> <p>삭제하려는 항목이 포함된 사이트 및 목록을 식별하는 방법을 선택합니다.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>삭제할 항목의 <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL List ID]</strong> 및 <strong>[!UICONTROL Item ID]</strong>을(를) 입력하거나 매핑합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>삭제할 항목이 포함된 사이트를 선택한 다음 목록을 선택하고 항목을 선택합니다. </p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>삭제하려는 항목의 <strong>[!UICONTROL 사이트 ID]</strong>, <strong>[!UICONTROL 목록 ID]</strong> 및 <strong>[!UICONTROL 항목 ID]</strong>을(를) 입력하거나 매핑합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 목록에서 선택]</strong> </p> <p>삭제할 항목이 포함된 사이트를 선택한 다음 목록을 선택하고 항목을 선택합니다. </p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get an Item]
+#### [!UICONTROL 항목 가져오기]
 
 이 작업 모듈은 지정된 항목의 데이터를 반환합니다.
 
@@ -343,17 +343,17 @@ Microsoft SharePoint Online 모듈을 구성할 때 [!DNL Workfront Fusion]에 �
    <td> <p>Microsoft SharePoint Online 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Get an Item]</td> 
+   <td role="rowheader">[!UICONTROL 항목 가져오기]</td> 
    <td> <p>가져오려는 항목이 포함된 사이트 및 목록을 식별하는 방법을 선택합니다.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>데이터를 반환할 항목의 <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL List ID]</strong> 및 <strong>[!UICONTROL Item ID]</strong>을(를) 입력하거나 매핑합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>항목을 검색할 목록이 포함된 사이트를 선택한 다음 목록을 선택하고 항목을 선택합니다. </p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>데이터를 반환할 항목의 <strong>[!UICONTROL 사이트 ID]</strong>, <strong>[!UICONTROL 목록 ID]</strong> 및 <strong>[!UICONTROL 항목 ID]</strong>을(를) 입력하거나 매핑하십시오.</p> </li> 
+     <li> <p><strong>[!UICONTROL 목록에서 선택]</strong> </p> <p>항목을 검색할 목록이 포함된 사이트를 선택한 다음 목록을 선택하고 항목을 선택합니다. </p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL List Items]
+#### [!UICONTROL 목록 항목]
 
 이 작업 모듈은 지정된 목록의 모든 항목 목록을 검색합니다.
 
@@ -366,21 +366,21 @@ Microsoft SharePoint Online 모듈을 구성할 때 [!DNL Workfront Fusion]에 �
    <td> <p>Microsoft SharePoint Online 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL List Items]</td> 
+   <td role="rowheader">[!UICONTROL 목록 항목]</td> 
    <td> <p>항목을 검색할 목록을 식별하는 방법을 선택합니다.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>항목을 나열할 목록에 대해 <strong>[!UICONTROL Site ID]</strong> 및 <strong>[!UICONTROL List ID]</strong>을(를) 입력하거나 매핑합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>항목을 검색할 목록이 포함된 사이트를 선택한 다음 목록을 선택합니다. </p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>항목을 나열할 목록의 <strong>[!UICONTROL 사이트 ID]</strong> 및 <strong>[!UICONTROL 목록 ID]</strong>을(를) 입력하거나 매핑하십시오.</p> </li> 
+     <li> <p><strong>[!UICONTROL 목록에서 선택]</strong> </p> <p>항목을 검색할 목록이 포함된 사이트를 선택한 다음 목록을 선택합니다. </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL 제한]</td> 
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 항목 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Move an Item]
+#### [!UICONTROL 항목 이동]
 
 이 작업 모듈은 SharePoint 목록의 기존 항목을 복사합니다.
 
@@ -396,22 +396,22 @@ Microsoft SharePoint Online 모듈을 구성할 때 [!DNL Workfront Fusion]에 �
    <td role="rowheader">사이트, 드라이브 및 폴더 ID 입력</td> 
    <td> <p>이동할 항목이 포함된 사이트 및 목록을 식별하는 방법을 선택합니다.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>이동할 항목의 <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL List ID]</strong> 및 <strong>[!UICONTROL Item ID]</strong>을(를) 입력하거나 매핑합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from list that you follow]</strong> </p> <p>항목 유형 필드에서 필드를 이동할 것인지 폴더를 이동할 것인지 선택합니다. 복사할 항목이 들어 있는 사이트를 선택한 다음 목록을 선택하고 항목을 선택합니다. </p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>이동할 항목의 <strong>[!UICONTROL 사이트 ID]</strong>, <strong>[!UICONTROL 목록 ID]</strong> 및 <strong>[!UICONTROL 항목 ID]</strong>을(를) 입력하거나 매핑합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 팔로우하는 목록에서 선택]</strong> </p> <p>항목 유형 필드에서 필드를 이동할 것인지 폴더를 이동할 것인지 선택합니다. 복사할 항목이 들어 있는 사이트를 선택한 다음 목록을 선택하고 항목을 선택합니다. </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Destination ID]</td> 
+   <td role="rowheader">[!UICONTROL 대상 ID]</td> 
    <td> 항목을 이동할 폴더의 ID를 입력하거나 매핑합니다. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL New name]</td> 
+   <td role="rowheader">[!UICONTROL 새 이름]</td> 
    <td>이동된 항목의 이름을 입력하거나 매핑합니다. </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Update an item]
+#### [!UICONTROL 항목 업데이트]
 
 이 작업 모듈은 SharePoint 목록의 기존 항목을 업데이트합니다.
 
@@ -424,21 +424,21 @@ Microsoft SharePoint Online 모듈을 구성할 때 [!DNL Workfront Fusion]에 �
    <td> <p>Microsoft SharePoint Online 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Update an Item]</td> 
+   <td role="rowheader">[!UICONTROL 항목 업데이트]</td> 
    <td> <p>업데이트하려는 항목이 포함된 사이트 및 목록을 식별하는 방법을 선택합니다.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>업데이트할 항목의 <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL List ID]</strong> 및 <strong>[!UICONTROL Item ID]</strong>을(를) 입력하거나 매핑하십시오.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>업데이트할 항목이 들어 있는 사이트를 선택한 다음 목록을 선택하고 항목을 선택합니다. </p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>업데이트하려는 항목의 <strong>[!UICONTROL 사이트 ID]</strong>, <strong>[!UICONTROL 목록 ID]</strong> 및 <strong>[!UICONTROL 항목 ID]</strong>을(를) 입력하거나 매핑하십시오.</p> </li> 
+     <li> <p><strong>[!UICONTROL 목록에서 선택]</strong> </p> <p>업데이트할 항목이 들어 있는 사이트를 선택한 다음 목록을 선택하고 항목을 선택합니다. </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Fields]</td> 
+   <td role="rowheader">[!UICONTROL 필드]</td> 
    <td>새 항목에 대해 업데이트할 각 필드에 대해 <b>항목 추가</b>를 클릭하고 필드의 키(필드를 식별함)와 해당 필드에 대해 항목을 사용할 새 값을 입력합니다.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Items](예약됨)
+#### [!UICONTROL 항목 보기]&#x200B;(예약됨)
 
 이 트리거 모듈은 항목을 만들거나 수정할 때 시나리오를 시작합니다.
 
@@ -451,19 +451,19 @@ Microsoft SharePoint Online 모듈을 구성할 때 [!DNL Workfront Fusion]에 �
    <td> <p>Microsoft SharePoint Online 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Watch Lists]</td> 
+   <td role="rowheader">[!UICONTROL 감시 목록]</td> 
    <td>생성 시간(새 항목)별로 또는 수정 시간(업데이트된 항목)별로 목록을 시청할지 여부를 선택합니다.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter Site and List ID]</td> 
    <td> <p>보려는 사이트 및 목록을 식별하는 방법을 선택합니다.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>보려는 <strong>[!UICONTROL Site ID]</strong> 및 <strong>[!UICONTROL List ID]</strong>을(를) 입력하거나 매핑합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>보려는 사이트를 선택한 다음 목록을 선택합니다. 이러한 드롭다운은 팔로우한 사이트만 검색합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>보려는 <strong>[!UICONTROL 사이트 ID]</strong> 및 <strong>[!UICONTROL 목록 ID]</strong>을(를) 입력하거나 매핑하십시오.</p> </li> 
+     <li> <p><strong>[!UICONTROL 팔로우하는 목록에서 선택]</strong> </p> <p>보려는 사이트를 선택한 다음 목록을 선택합니다. 이러한 드롭다운은 팔로우한 사이트만 검색합니다.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL 제한]</td> 
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 항목 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
@@ -471,12 +471,12 @@ Microsoft SharePoint Online 모듈을 구성할 때 [!DNL Workfront Fusion]에 �
 
 ### 목록
 
-* [[!UICONTROL Create a List]](#create-a-list)
-* [[!UICONTROL Get a List]](#get-a-list)
-* [[!UICONTROL List Lists]](#list-lists)
-* [[!UICONTROL Watch Lists]](#watch-lists)
+* [[!UICONTROL 목록 만들기]](#create-a-list)
+* [[!UICONTROL 목록 가져오기]](#get-a-list)
+* [[!UICONTROL 목록]](#list-lists)
+* [[!UICONTROL 시청 목록]](#watch-lists)
 
-#### [!UICONTROL Create a List]
+#### [!UICONTROL 목록 만들기]
 
 이 작업 모듈은 SharePoint에 새 목록을 만듭니다.
 
@@ -489,11 +489,11 @@ Microsoft SharePoint Online 모듈을 구성할 때 [!DNL Workfront Fusion]에 �
    <td> <p>Microsoft SharePoint Online 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Enter a Site ID]</td> 
+   <td role="rowheader">[!UICONTROL 사이트 ID 입력]</td> 
    <td> <p>목록을 만들 사이트를 식별하는 방법을 선택합니다.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>목록을 만들 <strong>[!UICONTROL Site ID]</strong>을(를) 입력하거나 매핑합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>목록을 만들 사이트를 선택합니다. </p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>목록을 만들 <strong>[!UICONTROL 사이트 ID]</strong>을(를) 입력하거나 매핑합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 목록에서 선택]</strong> </p> <p>목록을 만들 사이트를 선택합니다. </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -501,17 +501,17 @@ Microsoft SharePoint Online 모듈을 구성할 때 [!DNL Workfront Fusion]에 �
    <td>새 목록의 이름을 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Description]</td> 
+   <td role="rowheader">[!UICONTROL 설명]</td> 
    <td>새 목록에 대한 설명을 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Add Columns]</td> 
-   <td>새 목록에 대해 설정할 각 열에 대해 <b>항목 </b> 추가를 클릭하고 필드에 <strong>[!UICONTROL Name]</strong>을(를) 입력한 다음 새 열에 사용할 값 <strong>[!UICONTROL Type]</strong>을(를) 선택합니다.</td> 
+   <td role="rowheader">[!UICONTROL 열 추가]</td> 
+   <td>새 목록에 설정할 각 열에 대해 <b>항목 </b> 추가를 클릭하고 필드에 <strong>[!UICONTROL 이름]</strong>을(를) 입력한 다음 새 열에 사용할 <strong>[!UICONTROL 유형]</strong> 값을 선택합니다.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a List]
+#### [!UICONTROL 목록 가져오기]
 
 이 작업 모듈은 지정된 목록의 데이터를 반환합니다.
 
@@ -524,17 +524,17 @@ Microsoft SharePoint Online 모듈을 구성할 때 [!DNL Workfront Fusion]에 �
    <td> <p>Microsoft SharePoint Online 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Get a List]</td> 
+   <td role="rowheader">[!UICONTROL 목록 가져오기]</td> 
    <td> <p>가져오려는 항목이 포함된 사이트 및 목록을 식별하는 방법을 선택합니다.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>반환할 <strong>[!UICONTROL Site ID]</strong> 및 <strong>목록 ID</strong>를 입력하거나 매핑하십시오.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>검색할 목록이 포함된 사이트를 선택한 다음 목록을 선택합니다. </p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>반환할 <strong>[!UICONTROL 사이트 ID]</strong> 및 <strong>목록 ID</strong>을(를) 입력하거나 매핑하십시오.</p> </li> 
+     <li> <p><strong>[!UICONTROL 목록에서 선택]</strong> </p> <p>검색할 목록이 포함된 사이트를 선택한 다음 목록을 선택합니다. </p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL List Lists]
+#### [!UICONTROL 목록]
 
 이 작업 모듈은 지정된 사이트의 모든 항목 목록을 검색합니다.
 
@@ -547,21 +547,21 @@ Microsoft SharePoint Online 모듈을 구성할 때 [!DNL Workfront Fusion]에 �
    <td> <p>Microsoft SharePoint Online 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL List Lists]</td> 
+   <td role="rowheader">[!UICONTROL 목록]</td> 
    <td> <p>목록을 검색할 사이트를 식별하는 방법을 선택합니다.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>반환할 목록을 포함하는 <strong>[!UICONTROL Site ID]</strong>을(를) 입력하거나 매핑합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>검색할 목록이 포함된 사이트를 선택합니다. 드롭다운은 팔로우하는 사이트만 검색합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>반환할 목록을 포함하는 <strong>[!UICONTROL 사이트 ID]</strong>을(를) 입력하거나 매핑하십시오.</p> </li> 
+     <li> <p><strong>[!UICONTROL 목록에서 선택]</strong> </p> <p>검색할 목록이 포함된 사이트를 선택합니다. 드롭다운은 팔로우하는 사이트만 검색합니다.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL 제한]</td> 
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 목록 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Lists]
+#### [!UICONTROL 시청 목록]
 
 이 트리거 모듈은 목록을 만들거나 수정할 때 시나리오를 시작합니다.
 
@@ -574,19 +574,19 @@ Microsoft SharePoint Online 모듈을 구성할 때 [!DNL Workfront Fusion]에 �
    <td> <p>Microsoft SharePoint Online 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Watch Lists]</td> 
+   <td role="rowheader">[!UICONTROL 감시 목록]</td> 
    <td>생성 시간(새 항목)별로 또는 수정 시간(업데이트된 항목)별로 목록을 시청할지 여부를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Enter Site ID]</td> 
+   <td role="rowheader">[!UICONTROL 사이트 ID 입력]</td> 
    <td> <p>목록을 보려는 사이트를 식별하는 방법을 선택합니다.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>목록을 보려는 <strong>[!UICONTROL Site ID]</strong>을(를) 입력하거나 매핑합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>보려는 사이트를 선택합니다. 드롭다운은 팔로우하는 사이트만 검색합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>목록을 보려는 <strong>[!UICONTROL 사이트 ID]</strong>을(를) 입력하거나 매핑합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 팔로우하는 목록에서 선택]</strong> </p> <p>보려는 사이트를 선택합니다. 드롭다운은 팔로우하는 사이트만 검색합니다.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL 제한]</td> 
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 목록 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
@@ -598,7 +598,7 @@ Microsoft SharePoint Online 모듈을 구성할 때 [!DNL Workfront Fusion]에 �
 >
 >[!DNL Microsoft Graph]에서 `beta` 버전의 API는 변경될 수 있습니다. 프로덕션 응용 프로그램에서는 이러한 API를 사용할 수 없습니다.
 
-#### [!UICONTROL Get a Page]
+#### [!UICONTROL 페이지 가져오기]
 
 이 작업 모듈은 지정된 페이지의 데이터를 반환합니다.
 
@@ -611,11 +611,11 @@ Microsoft SharePoint Online 모듈을 구성할 때 [!DNL Workfront Fusion]에 �
    <td> <p>Microsoft SharePoint Online 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Get a Page]</td> 
+   <td role="rowheader">[!UICONTROL 페이지 가져오기]</td> 
    <td> <p>검색할 페이지를 식별하는 방법을 선택합니다.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p><strong>[!UICONTROL Site ID]</strong>과(와) <strong>[!UICONTROL Page ID]</strong>을(를) 입력하거나 매핑합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>검색할 페이지가 포함된 사이트를 선택한 다음 페이지를 선택합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p><strong>[!UICONTROL 사이트 ID]</strong> 및 <strong>[!UICONTROL 페이지 ID]</strong>을(를) 입력하거나 매핑합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 목록에서 선택]</strong> </p> <p>검색할 페이지가 포함된 사이트를 선택한 다음 페이지를 선택합니다.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -623,10 +623,10 @@ Microsoft SharePoint Online 모듈을 구성할 때 [!DNL Workfront Fusion]에 �
 
 ### Site
 
-* [[!UICONTROL Get a Site]](#get-a-site)
-* [[!UICONTROL Search Sites]](#search-sites)
+* [[!UICONTROL 사이트 가져오기]](#get-a-site)
+* [[!UICONTROL 사이트 검색]](#search-sites)
 
-#### [!UICONTROL Get a Site]
+#### [!UICONTROL 사이트 가져오기]
 
 이 작업 모듈은 지정된 사이트의 데이터를 반환합니다.
 
@@ -639,17 +639,17 @@ Microsoft SharePoint Online 모듈을 구성할 때 [!DNL Workfront Fusion]에 �
    <td> <p>Microsoft SharePoint Online 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Get a Site]</td> 
+   <td role="rowheader">[!UICONTROL 사이트 가져오기]</td> 
    <td> <p>검색할 페이지를 식별하는 방법을 선택합니다.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p><strong>[!UICONTROL Site ID]</strong>을(를) 입력하거나 매핑합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>검색할 사이트를 선택합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p><strong>[!UICONTROL 사이트 ID]</strong>을(를) 입력하거나 매핑합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 목록에서 선택]</strong> </p> <p>검색할 사이트를 선택합니다.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Search Sites]
+#### [!UICONTROL 사이트 검색]
 
 이 작업 모듈은 지정한 매개 변수로 사이트를 검색합니다.
 
@@ -666,7 +666,7 @@ Microsoft SharePoint Online 모듈을 구성할 때 [!DNL Workfront Fusion]에 �
    <td> <p>사이트를 검색할 검색어를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL 제한]</td> 
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 사이트 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
@@ -691,11 +691,11 @@ Microsoft SharePoint Online 모듈을 구성할 때 [!DNL Workfront Fusion]에 �
    <td> <p>Microsoft SharePoint Online 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Enter Site, Drive, and Folder IDs]</td> 
+   <td role="rowheader">[!UICONTROL 사이트, 드라이브 및 폴더 ID 입력]</td> 
    <td> <p>업데이트할 항목이 들어 있는 사이트 및 드라이브를 식별하는 방법을 선택합니다.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>표시되는 필드에 <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL Drive ID]</strong> 및 <strong>[!UICONTROL Folder ID]</strong>을(를) 입력하거나 매핑합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>업데이트할 항목이 있는 사이트를 선택한 다음 드라이브를 선택하고 폴더를 선택합니다. </p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>표시되는 필드에 <strong>[!UICONTROL 사이트 ID]</strong>, <strong>[!UICONTROL 드라이브 ID]</strong> 및 <strong>[!UICONTROL 폴더 ID]</strong>을(를) 입력하거나 매핑합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 목록에서 선택]</strong> </p> <p>업데이트할 항목이 있는 사이트를 선택한 다음 드라이브를 선택하고 폴더를 선택합니다. </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -705,7 +705,7 @@ Microsoft SharePoint Online 모듈을 구성할 때 [!DNL Workfront Fusion]에 �
  </tbody> 
 </table>
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL API 호출 만들기]
 
 이 모듈에서는 사용자 지정 API 호출을 수행할 수 있습니다.
 
@@ -722,7 +722,7 @@ Microsoft SharePoint Online 모듈을 구성할 때 [!DNL Workfront Fusion]에 �
    <td> <p><code>https://graph.microsoft.com</code>과(와) 관련된 경로를 입력하십시오. 예:<code> /beta/sites</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 메서드]</p> </td> 
    <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -730,11 +730,11 @@ Microsoft SharePoint Online 모듈을 구성할 때 [!DNL Workfront Fusion]에 �
    <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다. 예: <code>{"Content-type":"application/json"}</code>. [!DNL Workfront Fusion]이(가) 권한 부여 헤더를 추가합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td role="rowheader">[!UICONTROL 쿼리 문자열]</td> 
    <td> <p> 표준 JSON 개체 형식으로 API 호출에 대한 쿼리를 추가합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Type]</td> 
+   <td role="rowheader">[!UICONTROL 유형]</td> 
    <td>API 호출에서 전송할 데이터 유형을 선택합니다.</td> 
   </tr> 
   <tr> 

@@ -4,7 +4,7 @@ description: 연결은 연결되는 앱 또는 웹 서비스의 API에 의해 �
 author: Becky
 feature: Workfront Fusion
 exl-id: 281403a6-6f88-4976-8a10-1d0848ef9b35
-source-git-commit: 362952ec85b0df2306ba117ba530e95201330cca
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 0%
@@ -36,7 +36,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
    <p>또는</p>
    <p>레거시: 모두 </p>
    </td> 
@@ -68,7 +68,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 Adobe 앱 또는 서비스에 연결하려면 조직 ID 또는 기술 계정 ID와 같은 Adobe Admin Console의 정보가 필요할 수 있습니다.
 
-Adobe Authenticator 모듈을 사용하여 단일 연결을 사용하여 모든 Adobe API에 연결할 수도 있습니다. 이렇게 하면 아직 전용 Fusion 커넥터가 없는 Adobe 제품에 보다 쉽게 연결할 수 있습니다.
+또한 Adobe Authenticator 모듈을 사용하여 단일 연결을 사용하여 모든 Adobe API에 연결할 수 있습니다. 이렇게 하면 아직 전용 Fusion 커넥터가 없는 Adobe 제품에 보다 쉽게 연결할 수 있습니다.
 
 자세한 지침은 [커넥터에 대한 문서](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#connectors-for-adobe-products)를 참조하십시오.
 

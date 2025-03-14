@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는  [!DNL Workfr
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2668'
+source-wordcount: '3050'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
    <p>또는</p>
    <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
@@ -89,7 +89,7 @@ Workfront Proof 커넥터는 다음을 사용합니다.
 
 [!DNL Workfront Fusion] 모듈 내에서 직접 [!DNL Workfront Proof] 계정에 연결할 수 있습니다.
 
-1. [!DNL Workfront Fusion] 모듈에서 [!UICONTROL Connection] 필드 옆에 있는 [!UICONTROL **추가**]&#x200B;를 클릭합니다
+1. [!DNL Workfront Fusion] 모듈에서 [!UICONTROL 연결] 필드 옆의 [!UICONTROL **추가**]&#x200B;를 클릭합니다
 
 2. 다음 필드를 채웁니다.
 
@@ -99,16 +99,16 @@ Workfront Proof 커넥터는 다음을 사용합니다.
         <tbody>
             <tr>
                 <td role="rowheader">
-                    <p role="rowheader">[!UICONTROL Connection name]</p>
+                    <p role="rowheader">[!UICONTROL 연결 이름]</p>
                 </td>
                 <td>연결 이름 입력</td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL Environment]</td>
+                <td  role="rowheader">[!UICONTROL 환경]</td>
                 <td>프로덕션 환경인지 미리 보기 또는 샌드박스와 같은 비프로덕션 환경인지 선택합니다.</td>
             </tr>
             <tr>
-                <td role="rowheader">[!UICONTROL Type]</td>
+                <td role="rowheader">[!UICONTROL 유형]</td>
                 <td>서비스 계정인지 개인 계정인지 선택합니다.</td>
             </tr>
             <tr>
@@ -120,7 +120,7 @@ Workfront Proof 커넥터는 다음을 사용합니다.
                 <td>[!DNL Workfront Proof] 계정의 암호를 입력하십시오.</td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL Tenant ID]</td>
+                <td  role="rowheader">[!UICONTROL 테넌트 ID]</td>
                 <td><strong>참고</strong>: BYOK를 사용하지 않는 고객은 이 필드를 비워 두어야 합니다. <p>이 계정의 테넌트 ID를 입력하십시오. 테넌트 ID를 찾는 데 도움이 필요한 경우 Workfront 고객 지원 센터에 문의하십시오.</p></td>
             </tr>
             <tr>
@@ -128,7 +128,7 @@ Workfront Proof 커넥터는 다음을 사용합니다.
                 <td>계정에 액세스하는 데 사용하는 URL의 확장을 입력합니다. <p>예: <code>com</code> 또는 <code>eu</code></p></td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL Production, Preview, or Custom Environment]</td>
+                <td  role="rowheader">[!UICONTROL Production, Preview 또는 Custom Environment]</td>
                 <td>연결할 프로덕션, 미리보기 또는 사용자 지정 환경입니다.</td>
             </tr>
         </tbody>
@@ -152,10 +152,10 @@ Workfront Proof 커넥터는 다음을 사용합니다.
 ### 트리거
 
 * [PDF 요약 보기](#watch-for-pdf-summary)
-* [[!UICONTROL Watch Proof Activity]](#watch-proof-activity)
+* [[!UICONTROL 증명 활동 보기]](#watch-proof-activity)
 * [증명 보기](#watch-proofs)
 
-#### [!UICONTROL Watch for PDF Summary]
+#### [!UICONTROL PDF 요약 보기]
 
 이 즉시 트리거 모듈은 누군가가 증명에 대한 PDF 요약을 만들 때 시나리오를 실행합니다.
 
@@ -180,7 +180,7 @@ Workfront Proof 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Proof Activity]
+#### [!UICONTROL 증명 활동 보기]
 
 이 트리거 모듈은 증명 증명 시 지정된 활동이 발생하는 경우 시나리오를 실행합니다.
 
@@ -197,17 +197,17 @@ Workfront Proof 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Workfront Proof] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Activity type]</td> 
+   <td>[!UICONTROL 활동 유형]</td> 
    <td>새 결정(증명 상태 변경 포함)을 감시할지 또는 전체 증명 상태 변경만 감시할지 여부를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Limit]</td> 
+   <td>[!UICONTROL 제한]</td> 
    <td>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Proofs]
+#### [!UICONTROL 증명 보기]
 
 이 예약된 트리거 모듈은 누군가가 증명을 만들거나 결정할 때 시나리오를 실행합니다.
 
@@ -244,15 +244,15 @@ Workfront Proof 커넥터는 다음을 사용합니다.
 
 ### 액션
 
-* [[!UICONTROL Create Proof]](#create-proof)
-* [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Download Proof]](#download-proof)
-* [[!UICONTROL Read a Record]](#read-a-record)
-* [[!UICONTROL Request PDF Summary]](#request-pdf-summary)
-* [[!UICONTROL Update Proof]](#update-proof)
-* [[!UICONTROL Upload File]](#upload-file)
+* [[!UICONTROL 증명 만들기]](#create-proof)
+* [[!UICONTROL 사용자 지정 API 호출]](#custom-api-call)
+* [[!UICONTROL 증명 다운로드]](#download-proof)
+* [[!UICONTROL 레코드 읽기]](#read-a-record)
+* [[!UICONTROL PDF 요약 요청]](#request-pdf-summary)
+* [[!UICONTROL 증명 업데이트]](#update-proof)
+* [[!UICONTROL 파일 업로드]](#upload-file)
 
-#### [!UICONTROL Create Proof]
+#### [!UICONTROL 증명 만들기]
 
 <!--Cannot test Jan 2025-->
 
@@ -273,11 +273,11 @@ Workfront Proof 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Workfront Proof] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Proof Type]</td> 
-   <td> <p>만들어진 증명에 기본 워크플로를 사용할지 [!UICONTROL Automated Workflow]을(를) 사용할지 지정합니다.</p> <p>그런 다음 선택한 증명 유형에 대해 표시되는 필드를 채웁니다. 예를 들어 [!UICONTROL Automated Workflow]을(를) 선택한 경우 <strong>[!UICONTROL Workflow Stages]</strong> 필드를 채워 단계를 구성합니다.</p></td> 
+   <td>[!UICONTROL 증명 유형]</td> 
+   <td> <p>증명을 만들 때 기본 워크플로를 포함할지 [!UICONTROL Automated Workflow]를 포함할지 지정합니다.</p> <p>그런 다음 선택한 증명 유형에 대해 표시되는 필드를 채웁니다. 예를 들어 [!UICONTROL Automated Workflow]를 선택한 경우 <strong>[!UICONTROL Workflow Stages]</strong> 필드를 채워 단계를 구성합니다.</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Allow original file to be downloaded]</td> 
+   <td>[!UICONTROL 원본 파일 다운로드 허용]</td> 
    <td>증명을 만든 원본 파일을 다운로드하도록 허용할지 여부를 선택합니다.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -285,23 +285,23 @@ Workfront Proof 커넥터는 다음을 사용합니다.
    <td>Classic Proof Viewer 사용 여부를 선택합니다.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Combine all files into single proof]</td> 
+   <td>[!UICONTROL 모든 파일을 하나의 증명으로 결합]</td> 
    <td>모든 파일을 하나의 다중 페이지 증명으로 결합하려면 이 옵션을 활성화합니다.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Create a new proof version]</td> 
-   <td>모듈이 기존 증명의 새 버전을 만들도록 하려면 이 옵션을 선택합니다. 그런 다음 표시되는 <strong>[!UICONTROL Existing Proof ID]</strong> 필드에 증명의 고유 ID를 매핑하거나 입력합니다.</td> 
+   <td>[!UICONTROL 새 증명 버전 만들기]</td> 
+   <td>모듈이 기존 증명의 새 버전을 만들도록 하려면 이 옵션을 선택합니다. 그런 다음 증명 고유 ID를 표시, 매핑 또는 입력하는 <strong>[!UICONTROL 기존 증명 ID]</strong> 필드에 입력합니다.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Custom Link Label]</td> 
+   <td>[!UICONTROL 사용자 지정 링크 레이블]</td> 
    <td>사용자 정의 증명 링크에 대한 레이블을 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Custom Link URL]</td> 
+   <td>[!UICONTROL 사용자 지정 링크 URL]</td> 
    <td>사용자 지정 링크에 대한 URL을 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Default email notifications for subscribers]</td> 
+   <td>[!UICONTROL 구독자에 대한 기본 이메일 알림]</td> 
    <td>다음 숫자 중 하나를 입력하여 생성된 증명에 사용할 다음 기본 이메일 알림 설정 중 하나를 지정합니다.
     <ul>
      <li><strong>1</strong> - 새 댓글 및 답글 모두</li>
@@ -313,15 +313,15 @@ Workfront Proof 커넥터는 다음을 사용합니다.
     </ul></td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Disable Excel Summary]</td> 
+   <td>[!UICONTROL Excel 요약 비활성화]</td> 
    <td>Excel 파일에 증명 설명을 다운로드하는 기능을 비활성화할지 여부를 선택합니다.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Disable PDF Summary]</td> 
+   <td>[!UICONTROL PDF 요약 비활성화]</td> 
    <td>PDF 파일에 증명 주석을 다운로드하는 기능을 비활성화할지 여부를 선택합니다.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Disable Subscription Email]</td> 
+   <td>[!UICONTROL 가입 이메일 비활성화]</td> 
    <td>이 증명에 대한 구독 이메일을 비활성화할지 여부를 선택합니다.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -329,51 +329,51 @@ Workfront Proof 커넥터는 다음을 사용합니다.
    <td>이 증명에 대해 포함된 플레이어를 사용할지 여부를 선택합니다.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Enable Subscriptions]</td> 
+   <td>[!UICONTROL 가입 활성화]</td> 
    <td>참여자가 아닌 사람이 증명 구독을 허용할지 여부를 선택합니다.<br>이 옵션을 선택하면 이 표에 설명된 대로 구독자에 대한 기본 역할을 선택할 수도 있습니다.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Enable Subscriptions Validation]</td> 
+   <td>[!UICONTROL 구독 유효성 검사 활성화]</td> 
    <td>구독 이메일 유효성 검사를 활성화할지 여부를 선택합니다. 활성화된 경우 구독자가 증명에 액세스하려면 이메일의 링크를 클릭해야 합니다.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Enable Team URL]</td> 
+   <td>[!UICONTROL 팀 URL 활성화]</td> 
    <td>만들어진 증명에서 팀 URL을 숨기거나 표시할지 여부를 선택합니다.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL File Hash] <span style="font-weight: normal;">또는</span> [!UICONTROL File Hashes]</td> 
+   <td>[!UICONTROL 파일 해시] <span style="font-weight: normal;">또는</span> [!UICONTROL 파일 해시]</td> 
    <td>증명 또는 증명을 만들 파일의 ID를 추가합니다.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL File Names]</td> 
+   <td>[!UICONTROL 파일 이름]</td> 
    <td>생성된 증명에 대한 파일 이름 추가 필수 필드입니다.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Lock proof when all required decisions are made]</td> 
+   <td>필요한 모든 결정을 내릴 때 [!UICONTROL 증명 잠금]</td> 
    <td>필요한 모든 결정을 수행한 후 만들어진 증명을 잠글 것인지 여부를 지정합니다.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Notify recipients about this proof]</td> 
+   <td>[!UICONTROL 이 증명에 대해 수신자에게 알림]</td> 
    <td>증명을 만들 때 수신자에게 알림을 보낼지 여부를 나타내는 옵션을 선택합니다.&gt;</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Proof name]</td> 
+   <td>[!UICONTROL 증명 이름]</td> 
    <td>생성된 증명의 이름을 입력합니다. 필수 필드입니다. 여러 증명에 대한 이름을 구분하려면 파이프 기호(|)를 사용하십시오.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Proof owner ID]</td> 
+   <td>[!UICONTROL 증명 소유자 ID]</td> 
    <td>증명 소유자의 ID를 입력하거나 매핑합니다. 이 필드를 비워 두면 증명 소유자가 현재 사용자로 설정됩니다.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Reference ID]</td> 
+   <td>[!UICONTROL 참조 ID]</td> 
    <td>증명에 대한 참조 ID를 입력합니다.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Require electronic signature]</td> 
+   <td>[!UICONTROL 전자 서명 필요]</td> 
    <td>증명에 대해 결정을 내리는 사람에게 전자 서명을 제출하도록 요구할지 여부를 선택합니다.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Require login]</td> 
+   <td>[!UICONTROL 로그인 필요]</td> 
    <td> <p>생성된 증명에 로그인이 필요한지 여부를 지정합니다. </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -397,7 +397,7 @@ Workfront Proof 커넥터는 다음을 사용합니다.
    <td>증명을 만들 수신자의 이메일 주소를 추가합니다 .</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Deadline]</td> 
+   <td>[!UICONTROL 기한]</td> 
    <td> <p>생성된 증명에 대해 원하는 기한을 지정합니다. 다음 날짜 형식을 사용하십시오.</p> <p><code>YYYY-MM-DD hh:mm</code></p> </td> 
   </tr> 
  </tbody> 
@@ -405,7 +405,7 @@ Workfront Proof 커넥터는 다음을 사용합니다.
 
 
 
-#### [!UICONTROL Custom API Call]
+#### [!UICONTROL 사용자 지정 API 호출]
 
 이 작업 모듈을 사용하면 [!DNL Workfront Proof] API에 대해 사용자 지정 인증된 호출을 수행할 수 있습니다. 이렇게 하면 다른 [!DNL Workfront Proof] 모듈에서 수행할 수 없는 데이터 흐름 자동화를 만들 수 있습니다.
 
@@ -422,7 +422,7 @@ Workfront Proof 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Workfront Proof] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Method]</td> 
+   <td>[!UICONTROL 메서드]</td> 
    <td>API 호출에 대한 작업을 설정합니다. 사용 가능한 작업은 <a href="https://api.proofhq.com/">증명 API 설명서</a>를 참조하십시오.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -441,7 +441,7 @@ Workfront Proof 커넥터는 다음을 사용합니다.
 >
 >![증명 API 모듈 예](/help/workfront-fusion/references/apps-and-modules/assets/wfp-api-module-example-350x586.png)
 
-#### [!UICONTROL Download Proof]
+#### [!UICONTROL 증명 다운로드]
 
 이 작업 모듈은 ID를 사용하여 식별하는 특정 증명의 소스 파일을 다운로드합니다.
 
@@ -462,13 +462,13 @@ Workfront Proof 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Workfront Proof] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>[!UICONTROL Proof Details] 페이지에 있는 증명의 고유 ID를 입력하십시오.  </td> 
+   <td>[!UICONTROL 증명 ID]</td> 
+   <td> <p>[!UICONTROL 증명 세부 정보] 페이지에 있는 증명의 고유 ID를 입력합니다.  </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Read a Record]
+#### [!UICONTROL 레코드 읽기]
 
 이 작업 모듈은 [!DNL Workfront Proof]의 단일 증명에서 데이터를 읽습니다.
 
@@ -489,11 +489,11 @@ Workfront Proof 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Workfront Proof] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Record Type]</td> 
+   <td>[!UICONTROL 레코드 유형]</td> 
    <td>증명, 증명 주석 또는 증명 검토자를 읽을지 여부를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Outputs]</td> 
+   <td>[!UICONTROL 출력]</td> 
    <td> <p>이 모듈에 대한 출력 번들에 포함할 정보를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
@@ -503,13 +503,13 @@ Workfront Proof 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL Request PDF Summary]
+#### [!UICONTROL PDF 요약 요청]
 
 이 작업 모듈은 [!DNL Workfront Proof]의 특정 증명에 대한 PDF 요약을 요청합니다.
 
 증명의 ID를 지정합니다.
 
-모듈은 PDF 요약 정보를 반환합니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
+모듈이 PDF 요약 정보를 반환합니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
 
 이 정보를 검색하려면 [!DNL Workfront Proof]의 레코드에 액세스할 수 있는 충분한 권한이 있어야 합니다.
 
@@ -524,11 +524,11 @@ Workfront Proof 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Workfront Proof] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Proof ID]</td> 
+   <td>[!UICONTROL 증명 ID]</td> 
    <td> <p>PDF 요약을 요청할 증명의 고유 [!DNL Workfront Proof] ID를 입력하십시오.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Callback URL]</td> 
+   <td>[!UICONTROL 콜백 URL]</td> 
    <td>PDF 요약을 전송할 URL을 입력하거나 매핑합니다.</td> 
   </tr> 
  </tbody> 
@@ -536,10 +536,10 @@ Workfront Proof 커넥터는 다음을 사용합니다.
 
 ##### 가능한 오류
 
-* **오류**: &quot;[!UICONTROL You do not have privilege to perform this request. The stage must contain at least one recipient.]&quot;
+* **오류**: &quot;[!UICONTROL 이 요청을 수행할 권한이 없습니다. 단계에 받는 사람이 하나 이상 있어야 합니다.]&quot;
 * **솔루션**: 워크플로우의 단계에 할당된 유일한 솔루션이 아닌지 확인하십시오. 워크플로우의 단계에 할당된 다른 사용자가 있어야 합니다.
 
-#### [!UICONTROL Update Proof]
+#### [!UICONTROL 증명 업데이트]
 
 이 작업 모듈은 [!DNL Workfront Proof]의 기존 증명을 업데이트합니다.
 
@@ -560,47 +560,47 @@ Workfront Proof 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Workfront Proof] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>[!UICONTROL Proof Details] 페이지에 있는 증명의 고유 ID를 입력하십시오. </td> 
+   <td>[!UICONTROL 증명 ID]</td> 
+   <td> <p>[!UICONTROL 증명 세부 정보] 페이지에 있는 증명의 고유 ID를 입력합니다. </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Deadline]</td> 
+   <td>[!UICONTROL 기한]</td> 
    <td> <p>생성된 증명에 대해 원하는 기한을 지정합니다. 날짜 형식 <code>YYYY-MM-DD hh:mm</code>을(를) 사용합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Default email notifications for subscribers]</td> 
+   <td>[!UICONTROL 구독자에 대한 기본 이메일 알림]</td> 
    <td>다음 기본 이메일 알림 설정 중 생성된 증명에 사용할 설정을 선택합니다.
     <ul>
-     <li> [!UICONTROL All new comments and replies]</li>
-     <li>[!UICONTROL Replies to my comments]</li>
-     <li>[!UICONTROL Daily summary]</li>
-     <li> [!UICONTROL Hourly summary]</li>
+     <li> [!UICONTROL 모든 새 댓글 및 답글]</li>
+     <li>[!UICONTROL 내 댓글에 답글 작성]</li>
+     <li>[!UICONTROL 일일 요약]</li>
+     <li> [!UICONTROL 시간별 요약]</li>
      <li> [!UICONTROL Decisions only]</li>
-     <li> [!UICONTROL Disabled]</li>
+     <li> [!UICONTROL 사용 안 함]</li>
     </ul></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Default Role]</td> 
+   <td>[!UICONTROL 기본 역할]</td> 
    <td>증명의 기본 역할을 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Disable Subscription Email]</td> 
+   <td>[!UICONTROL 가입 이메일 비활성화]</td> 
    <td>이 증명에 대한 구독 이메일을 비활성화할지 여부를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Enable Subscriptions]</td> 
-   <td>참여자가 아닌 사람이 증명 구독을 허용할지 여부를 선택합니다.<br>이 옵션을 선택하면 [!UICONTROL Default Role] 필드에서도 옵션을 선택할 수 있습니다.</td> 
+   <td>[!UICONTROL 가입 활성화]</td> 
+   <td>참여자가 아닌 사람이 증명 구독을 허용할지 여부를 선택합니다.<br>이 옵션을 선택하면 [!UICONTROL 기본 역할] 필드에서도 옵션을 선택할 수 있습니다.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Enable Subscriptions Validation]</td> 
+   <td>[!UICONTROL 구독 유효성 검사 활성화]</td> 
    <td>구독 이메일 유효성 검사를 활성화할지 여부를 선택합니다. 활성화된 경우 구독자가 증명에 액세스하려면 이메일의 링크를 클릭해야 합니다.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Enable Team URL]</td> 
+   <td>[!UICONTROL 팀 URL 활성화]</td> 
    <td>만들어진 증명에서 팀 URL을 숨기거나 표시할지 여부를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Lock proof when all required decisions are made]</td> 
+   <td>필요한 모든 결정을 내릴 때 [!UICONTROL 증명 잠금]</td> 
    <td>필요한 모든 결정을 수행한 후 만들어진 증명을 잠글 것인지 여부를 지정합니다.</td> 
   </tr> 
   <tr> 
@@ -608,19 +608,19 @@ Workfront Proof 커넥터는 다음을 사용합니다.
    <td>증명과 함께 표시할 메시지를 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Proof ID] </td> 
+   <td>[!UICONTROL 증명 ID] </td> 
    <td>업데이트할 증명의 ID를 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Proof Name]</td> 
+   <td>[!UICONTROL 증명 이름]</td> 
    <td>업데이트할 증명의 이름을 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Require login]</td> 
+   <td>[!UICONTROL 로그인 필요]</td> 
    <td> <p>생성된 증명에 로그인이 필요한지 여부를 지정합니다. </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Show Versions Like]</td> 
+   <td>[!UICONTROL 과(와) 같은 버전 표시]</td> 
    <td>이 증명의 다른 버전에 대한 링크를 표시할지 여부를 선택합니다.</td> 
   </tr> 
   <tr> 
@@ -630,9 +630,9 @@ Workfront Proof 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload File]
+#### [!UICONTROL 파일 업로드]
 
-이 작업 모듈은 [!DNL Workfront Proof]의 [!UICONTROL Create Proof] 모듈에서 사용할 파일을 업로드합니다.
+이 작업 모듈은 [!DNL Workfront Proof]의 [!UICONTROL 증명 만들기] 모듈에서 사용할 파일을 업로드합니다.
 
 모듈이 업로드된 파일에 대한 해시 ID를 반환합니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
 
@@ -647,7 +647,7 @@ Workfront Proof 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Workfront Proof] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source file]</td> 
+   <td>[!UICONTROL Source 파일]</td> 
    <td> <p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 이름과 데이터를 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
@@ -655,10 +655,10 @@ Workfront Proof 커넥터는 다음을 사용합니다.
 
 ### 검색 결과
 
-* [[!UICONTROL List Workflow Templates]](#list-workflow-templates)
-* [[!UICONTROL Search]](#search)
+* [[!UICONTROL 워크플로 템플릿 나열]](#list-workflow-templates)
+* [[!UICONTROL 검색]](#search)
 
-#### [!UICONTROL List Workflow Templates]
+#### [!UICONTROL 워크플로 템플릿 나열]
 
 이 검색 모듈에는 사용 가능한 모든 워크플로우 템플릿이 나열됩니다.
 
@@ -671,17 +671,17 @@ Workfront Proof 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Workfront Proof] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Outputs]</td> 
+   <td>[!UICONTROL 출력]</td> 
    <td> <p>이 모듈에 대한 출력 번들에 포함할 정보를 선택합니다.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Limit]</td> 
+   <td>[!UICONTROL 제한]</td> 
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 템플릿 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Search]
+#### [!UICONTROL 검색]
 
 이 검색 모듈은 지정한 검색 쿼리와 일치하는 [!DNL Workfront Proof]의 개체에서 레코드를 찾습니다.
 
@@ -703,20 +703,20 @@ Workfront Proof 커넥터는 다음을 사용합니다.
    <td>[!UICONTROL Search for]</td> 
    <td> <p>모듈에서 검색할 레코드 유형을 선택합니다.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Proof]</strong> </p> <p>검색할 증명의 증명 이름을 입력합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 증명]</strong> </p> <p>검색할 증명의 증명 이름을 입력합니다.</p> </li> 
      <li> <p><strong>[!UICONTROL Recipient]</strong> </p> <p>검색할 수신자의 이메일 주소를 입력합니다.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Result Set]</td> 
-   <td>모듈이 <strong>[!UICONTROL All Matching Records]</strong>을(를) 검색할지 <strong>[!UICONTROL First Matching Record]</strong>만 검색할지 여부를 나타냅니다.</td> 
+   <td>[!UICONTROL 결과 집합]</td> 
+   <td>모듈이 <strong>[!UICONTROL 일치하는 모든 레코드]</strong>을(를) 검색할지 또는 <strong>[!UICONTROL 일치하는 첫 번째 레코드]</strong>만 검색할지 여부를 나타냅니다.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Sort By]</td> 
+   <td>[!UICONTROL 정렬 기준]</td> 
    <td>결과를 정렬할 필드를 선택합니다.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Sorting Direction]</td> 
+   <td>[!UICONTROL 정렬 방향]</td> 
    <td> <p>결과를 오름차순으로 정렬할지 아니면 내림차순으로 정렬할지 선택합니다.</p> </td> 
   </tr> 
  </tbody> 

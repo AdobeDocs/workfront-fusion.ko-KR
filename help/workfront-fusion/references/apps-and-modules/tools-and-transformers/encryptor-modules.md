@@ -4,7 +4,7 @@ description: Adobe Workfront Fusion Encryptor 모듈을 사용하면 모든 텍�
 author: Becky
 feature: Workfront Fusion
 exl-id: 4b119efe-6762-445e-bbc7-c59437fd5060
-source-git-commit: 0689cfee7cf546a6c1f5f72c79a1e7be9df85a8c
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '867'
 ht-degree: 0%
@@ -38,7 +38,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>Workfront Fusion 라이센스 요구 사항 없음</p>
    </td> 
   </tr> 
   <tr> 

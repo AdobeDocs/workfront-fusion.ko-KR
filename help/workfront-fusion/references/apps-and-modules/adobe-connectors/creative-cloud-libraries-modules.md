@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion Adobe Creative Cloud] 라이브러�
 author: Becky
 feature: Workfront Fusion
 exl-id: 85607e4e-538a-427f-8a99-a0ab65a75ac2
-source-git-commit: fedf8f3f4031faaad9f81ed38fbc77e40e3a85b6
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1393'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
    <p>또는</p>
    <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
@@ -89,9 +89,9 @@ Adobe Creative Cloud 라이브러리 커넥터는 다음을 사용합니다.
  </tbody> 
  </table>
 
-## [!UICONTROL Adobe Creative Cloud Libraries]개 모듈 및 해당 필드
+## [!UICONTROL Adobe Creative Cloud 라이브러리] 모듈 및 해당 필드
 
-[!UICONTROL Adobe Creative Cloud Libraries] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Adobe Creative Cloud Libraries] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!UICONTROL Adobe Creative Cloud 라이브러리] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Adobe Creative Cloud Libraries] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
@@ -107,20 +107,20 @@ Adobe Creative Cloud 라이브러리 커넥터는 다음을 사용합니다.
 
 ### 요소
 
-* [[!UICONTROL Archive an Element]](#archive-an-element)
+* [[!UICONTROL 요소 보관]](#archive-an-element)
 
-* [[!UICONTROL Get an Element]](#get-an-element)
+* [[!UICONTROL 요소 가져오기]](#get-an-element)
 
-* [[!UICONTROL List Elements]](#list-elements)
+* [[!UICONTROL 요소 나열]](#list-elements)
 
-* [[!UICONTROL Upload an Element]](#upload-an-element)
+* [[!UICONTROL 요소 업로드]](#upload-an-element)
 
 * [!UICONTROL [라이브러리의 새 요소 보기]](#watch-new-element-in-library)
 
-* [[!UICONTROL Watch Updated Elements]](#watch-updated-elements)
+* [[!UICONTROL 업데이트된 요소 보기]](#watch-updated-elements)
 
 
-#### [!UICONTROL Archive an Element]
+#### [!UICONTROL 요소 보관]
 
 이 작업 모듈은 라이브러리의 요소를 보관합니다.
 
@@ -133,17 +133,17 @@ Adobe Creative Cloud 라이브러리 커넥터는 다음을 사용합니다.
       <td>기존 Creative Cloud Libraries 연결을 선택하십시오. 현재 Creative Cloud Libraries 커넥터에서는 연결을 만들 수 없습니다. 기존 연결이 예상대로 작동합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Library ID]</td>
+      <td role="rowheader">[!UICONTROL 라이브러리 ID]</td>
       <td >보관하려는 요소가 포함된 라이브러리를 선택하거나 매핑합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Element ID]</td>
+      <td role="rowheader">[!UICONTROL 요소 ID]</td>
       <td>보관하려는 요소를 선택하거나 매핑합니다.</td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL Get an Element]
+#### [!UICONTROL 요소 가져오기]
 
 이 작업 모듈은 라이브러리에서 단일 요소를 반환합니다.
 
@@ -156,11 +156,11 @@ Adobe Creative Cloud 라이브러리 커넥터는 다음을 사용합니다.
       <td>기존 Creative Cloud Libraries 연결을 선택하십시오. 현재 Creative Cloud Libraries 커넥터에서는 연결을 만들 수 없습니다. 기존 연결이 예상대로 작동합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Library ID]</td>
+      <td role="rowheader">[!UICONTROL 라이브러리 ID]</td>
       <td>검색할 요소가 포함된 라이브러리를 선택하거나 매핑합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Element ID]</td>
+      <td role="rowheader">[!UICONTROL 요소 ID]</td>
       <td>검색할 요소의 ID를 입력하거나 매핑합니다.</td>
     </tr>
     <tr>
@@ -169,17 +169,17 @@ Adobe Creative Cloud 라이브러리 커넥터는 다음을 사용합니다.
         <p>모듈이 반환하는 정보 유형을 선택합니다. </p>
         <ul>
           <li>
-            <p><b>[!UICONTROL Default]</b>
+            <p><b>[!UICONTROL 기본값]</b>
             </p>
             <p>기본 데이터</p>
           </li>
           <li>
-            <p><b>[!UICONTROL Details]</b>
+            <p><b>[!UICONTROL 세부 정보]</b>
             </p>
             <p>사용 가능한 모든 데이터</p>
           </li>
           <li>
-            <p><b>[!UICONTROL Representations]</b>
+            <p><b>[!UICONTROL 표시]</b>
             </p>
             <p>라이브러리 요소와 연결된 병합된 자산 목록</p>
           </li>
@@ -189,7 +189,7 @@ Adobe Creative Cloud 라이브러리 커넥터는 다음을 사용합니다.
   </tbody>
 </table>
 
-#### [!UICONTROL List Elements]
+#### [!UICONTROL 요소 나열]
 
 이 작업 모듈은 라이브러리의 요소 목록을 검색합니다.
 
@@ -202,7 +202,7 @@ Adobe Creative Cloud 라이브러리 커넥터는 다음을 사용합니다.
       <td>기존 Creative Cloud Libraries 연결을 선택하십시오. 현재 Creative Cloud Libraries 커넥터에서는 연결을 만들 수 없습니다. 기존 연결이 예상대로 작동합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Library ID]</td>
+      <td role="rowheader">[!UICONTROL 라이브러리 ID]</td>
       <td >요소를 나열할 라이브러리를 선택하거나 매핑합니다.</td>
     </tr>
     <tr>
@@ -210,7 +210,7 @@ Adobe Creative Cloud 라이브러리 커넥터는 다음을 사용합니다.
       <td>결과를 이름별로 정렬할지 아니면 요소가 수정된 마지막 날짜별로 정렬할지 선택합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Type]</td>
+      <td role="rowheader">[!UICONTROL 유형]</td>
       <td >MIME 유형을 입력하거나 매핑하여 지정된 MIME 유형으로 식별된 요소로 결과를 제한합니다. 예: <code>string</code></td>
     </tr>
     <tr>
@@ -219,17 +219,17 @@ Adobe Creative Cloud 라이브러리 커넥터는 다음을 사용합니다.
         <p>모듈이 반환하는 정보 유형을 선택합니다. </p>
         <ul>
           <li>
-            <p><b>[!UICONTROL Default]</b>
+            <p><b>[!UICONTROL 기본값]</b>
             </p>
             <p>기본 데이터</p>
           </li>
           <li>
-            <p><b>[!UICONTROL Details]</b>
+            <p><b>[!UICONTROL 세부 정보]</b>
             </p>
             <p>사용 가능한 모든 데이터</p>
           </li>
           <li>
-            <p><b>[!UICONTROL Representations]</b>
+            <p><b>[!UICONTROL 표시]</b>
             </p>
             <p>라이브러리 요소와 연결된 병합된 자산 목록</p>
           </li>
@@ -237,13 +237,13 @@ Adobe Creative Cloud 라이브러리 커넥터는 다음을 사용합니다.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Limit]</td>
+      <td role="rowheader">[!UICONTROL 제한]</td>
       <td>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL Watch New Element in Library]
+#### [!UICONTROL 라이브러리의 새 요소 보기]
 
 이 트리거 모듈은 요소가 라이브러리에 추가되면 시나리오를 시작합니다.
 
@@ -256,18 +256,18 @@ Adobe Creative Cloud 라이브러리 커넥터는 다음을 사용합니다.
       <td>기존 Creative Cloud Libraries 연결을 선택하십시오. 현재 Creative Cloud Libraries 커넥터에서는 연결을 만들 수 없습니다. 기존 연결이 예상대로 작동합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Library ID]</td>
+      <td role="rowheader">[!UICONTROL 라이브러리 ID]</td>
       <td >업데이트된 요소를 검사할 라이브러리를 선택합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Limit]</td>
+      <td role="rowheader">[!UICONTROL 제한]</td>
       <td>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</td>
     </tr>
   </tbody>
 </table>
 
 
-#### [!UICONTROL Watch Updated Elements]
+#### [!UICONTROL 업데이트된 요소 보기]
 
 이 트리거 모듈은 라이브러리의 요소가 업데이트될 때 시나리오를 시작합니다.
 
@@ -280,11 +280,11 @@ Adobe Creative Cloud 라이브러리 커넥터는 다음을 사용합니다.
       <td>기존 Creative Cloud Libraries 연결을 선택하십시오. 현재 Creative Cloud Libraries 커넥터에서는 연결을 만들 수 없습니다. 기존 연결이 예상대로 작동합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Library ID]</td>
+      <td role="rowheader">[!UICONTROL 라이브러리 ID]</td>
       <td >새 요소를 검사할 라이브러리를 선택합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Limit]</td>
+      <td role="rowheader">[!UICONTROL 제한]</td>
       <td>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</td>
     </tr>
   </tbody>
@@ -292,12 +292,12 @@ Adobe Creative Cloud 라이브러리 커넥터는 다음을 사용합니다.
 
 ### 라이브러리
 
-* [[!UICONTROL Watch New Libraries]](#watch-new-libraries)
+* [[!UICONTROL 새 라이브러리 보기]](#watch-new-libraries)
 
-* [[!UICONTROL Watch Updated Libraries]](#watch-updated-libraries)
+* [[!UICONTROL 업데이트된 라이브러리 보기]](#watch-updated-libraries)
 
 
-#### [!UICONTROL Watch New Libraries]
+#### [!UICONTROL 새 라이브러리 보기]
 
 이 트리거 모듈은 새 라이브러리가 생성될 때 시나리오를 시작합니다.
 
@@ -310,13 +310,13 @@ Adobe Creative Cloud 라이브러리 커넥터는 다음을 사용합니다.
       <td>기존 Creative Cloud Libraries 연결을 선택하십시오. 현재 Creative Cloud Libraries 커넥터에서는 연결을 만들 수 없습니다. 기존 연결이 예상대로 작동합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Limit]</td>
+      <td role="rowheader">[!UICONTROL 제한]</td>
       <td>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL Watch Updated Libraries]
+#### [!UICONTROL 업데이트된 라이브러리 보기]
 
 이 트리거 모듈은 기존 라이브러리가 업데이트될 때 시나리오를 시작합니다.
 
@@ -329,7 +329,7 @@ Adobe Creative Cloud 라이브러리 커넥터는 다음을 사용합니다.
       <td>기존 Creative Cloud Libraries 연결을 선택하십시오. 현재 Creative Cloud Libraries 커넥터에서는 연결을 만들 수 없습니다. 기존 연결이 예상대로 작동합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Limit]</td>
+      <td role="rowheader">[!UICONTROL 제한]</td>
       <td>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</td>
     </tr>
   </tbody>
@@ -340,7 +340,7 @@ Adobe Creative Cloud 라이브러리 커넥터는 다음을 사용합니다.
 * [API 호출 만들기](#make-an-api-call)
 * [자산 업로드](#upload-an-asset)
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL API 호출 만들기]
 
 이 모듈은 [!DNL Adobe Creative Cloud Libraries] API에 대한 사용자 지정 API 호출을 만듭니다.
 
@@ -365,7 +365,7 @@ Adobe Creative Cloud 라이브러리 커넥터는 다음을 사용합니다.
         <p>연결할 [!DNL Adobe Analytics] API의 버전을 선택하십시오.</p>
       </td>
     </tr>    <tr>
-      <td role="rowheader">[!UICONTROL Method]</td>
+      <td role="rowheader">[!UICONTROL 메서드]</td>
       <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
     </tr>
     <tr>
@@ -377,7 +377,7 @@ Adobe Creative Cloud 라이브러리 커넥터는 다음을 사용합니다.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Query String]</td>
+      <td role="rowheader">[!UICONTROL 쿼리 문자열]</td>
       <td>
         <p>표준 JSON 개체 형식으로 API 호출에 대한 쿼리를 추가합니다.</p>
         <p>For example: <code>{"name":"something-urgent"}</code></p>
@@ -390,7 +390,7 @@ Adobe Creative Cloud 라이브러리 커넥터는 다음을 사용합니다.
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
        <tr>
-      <td role="rowheader">[!UICONTROL Upload a transient document]</td>
+      <td role="rowheader">[!UICONTROL 임시 문서 업로드]</td>
       <td>
       <p>임시 문서를 업로드하려면 업로드할 문서의 소스 파일을 입력합니다.</p>
       <p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 이름과 데이터를 매핑합니다.</p>
@@ -400,7 +400,7 @@ Adobe Creative Cloud 라이브러리 커넥터는 다음을 사용합니다.
 </table>
 
 
-#### [!UICONTROL Upload an Asset]
+#### [!UICONTROL 자산 업로드]
 
 이 작업 모듈은 작은 파일 에셋을 기존 라이브러리에 업로드합니다. 최대 파일 크기는 1GB입니다.
 
@@ -413,16 +413,16 @@ Adobe Creative Cloud 라이브러리 커넥터는 다음을 사용합니다.
       <td>기존 Creative Cloud Libraries 연결을 선택하십시오. 현재 Creative Cloud Libraries 커넥터에서는 연결을 만들 수 없습니다. 기존 연결이 예상대로 작동합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Library ID]</td>
+      <td role="rowheader">[!UICONTROL 라이브러리 ID]</td>
       <td >에셋을 업로드할 라이브러리를 선택합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Invocation Mode]</td>
+      <td role="rowheader">[!UICONTROL 호출 모드]</td>
       <td>
         <p>이 요청 프로세스를 호출할 처리 모드를 선택하십시오.</p>
         <ul>
           <li>
-            <p><b>[!UICONTROL sync]</b>
+            <p><b>[!UICONTROL 동기화]</b>
             </p>
             <p>API 호출이 동기적으로 처리됩니다. 처리가 완료되면 응답이 전달됩니다(호출 제한 시간이 초과된 경우 제외).</p>
           </li>
@@ -432,22 +432,22 @@ Adobe Creative Cloud 라이브러리 커넥터는 다음을 사용합니다.
             <p>비동기 모니터 응답이 즉시 반환되고 요청 처리가 비동기적으로 발생합니다. 호출은 완료될 때까지 끝점을 폴링합니다.</p>
           </li>
           <li>
-            <p><b>[!UICONTROL sync,async]</b> (기본값)</p>
+            <p><b>[!UICONTROL sync,async]</b>(기본값)</p>
             <p>요청의 동기 처리를 시도했습니다. 처리가 5000ms를 초과할 경우 비동기 모니터 응답이 반환됩니다. 요청이 완료될 때까지 모니터 URL을 폴링해야 합니다.</p>
           </li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Element Type]</td>
+      <td role="rowheader">[!UICONTROL 요소 유형]</td>
       <td >업로드할 요소의 유형을 선택합니다</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL File Type]</td>
+      <td role="rowheader">[!UICONTROL 파일 유형]</td>
       <td >업로드한 파일의 MIME 유형을 입력하거나 매핑합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Source File]</td>
+      <td role="rowheader">[!UICONTROL Source 파일]</td>
       <td>
         <p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 이름과 데이터를 매핑합니다.</p>
       </td>

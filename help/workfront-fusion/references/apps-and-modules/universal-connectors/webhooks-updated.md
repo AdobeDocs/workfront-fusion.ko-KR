@@ -4,9 +4,9 @@ description: 웹후크는 이벤트에 의해 트리거되는 HTTP 호출입니�
 author: Becky
 feature: Workfront Fusion
 exl-id: 8e415378-e9c1-4b49-874b-6d38aba0c303
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1331'
+source-wordcount: '1445'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
    <p>또는</p>
    <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
@@ -70,12 +70,12 @@ ht-degree: 0%
 
 웹후크를 사용하여 앱을 [!DNL Workfront Fusion]에 연결하려면:
 
-1. **[!UICONTROL Webhooks]** >**[!UICONTROL Custom Webhook]** 인스턴트 트리거 모듈을 시나리오에 추가합니다.
+1. **[!UICONTROL Webhooks]** >**[!UICONTROL 사용자 지정 Webhook]** 인스턴트 트리거 모듈을 시나리오에 추가합니다.
 
-1. Webhook 필드 옆에 있는 **[!UICONTROL Add]**&#x200B;을(를) 클릭하고 새 Webhook의 이름을 입력합니다.
-1. (선택 사항) **[!UICONTROL Advanced Settings]**&#x200B;을(를) 클릭합니다.
-1. **[!UICONTROL IP restrictions]** 필드에 모듈에서 데이터를 허용할 수 있는 IP 주소를 쉼표로 구분한 목록을 입력합니다.
-1. **[!UICONTROL Save]** 클릭
+1. Webhook 필드 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭하고 새 Webhook의 이름을 입력합니다.
+1. (선택 사항) **[!UICONTROL 고급 설정]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL IP 제한]** 필드에 모듈에서 데이터를 허용할 수 있는 IP 주소의 쉼표로 구분된 목록을 입력하십시오.
+1. **[!UICONTROL 저장]** 클릭
 
 웹후크를 생성하면 고유한 URL이 표시됩니다. Webhook에서 데이터를 보내는 주소입니다. Workfront Fusion은 이 주소로 전송된 데이터의 유효성을 검사한 다음 시나리오에서 처리하기 위해 데이터를 전달합니다.
 
@@ -87,9 +87,9 @@ ht-degree: 0%
 
 들어오는 페이로드의 데이터 구조를 인식하기 위해 [!DNL Workfront Fusion]은(는) 표시된 주소로 보내는 샘플 데이터를 구문 분석합니다. 해당 서비스 또는 앱이 Webhook을 호출하도록 하는 서비스 또는 앱을 변경하여 샘플 데이터를 제공할 수 있습니다. 예를 들어 파일을 제거할 수 있습니다.
 
-또는 [!UICONTROL HTTP] > [!UICONTROL Make a request] 모듈을 통해 샘플 데이터를 보낼 수 있습니다.
+또는 [!UICONTROL HTTP] > [!UICONTROL 요청] 모듈을 통해 샘플 데이터를 보낼 수 있습니다.
 
-1. **[!UICONTROL HTTP]** > **[!UICONTROL Make a request]** 모듈로 새 시나리오 만들기
+1. **[!UICONTROL HTTP]** > **[!UICONTROL 요청]** 모듈로 새 시나리오를 만듭니다.
 
 1. 다음 값으로 모듈을 구성합니다.
 
@@ -99,10 +99,10 @@ ht-degree: 0%
     <tbody> 
      <tr> 
       <td role="rowheader"><p>[!UICONTROL URL] </p></td> 
-      <td>Webhook의 URL을 입력합니다. 웹후크를 설정하는 데 사용한 [!UICONTROL Webhooks] 모듈에서 이 URL을 찾을 수 있습니다.</td> 
+      <td>Webhook의 URL을 입력합니다. 이 URL은 웹후크를 설정하는 데 사용한 [!UICONTROL Webhooks] 모듈에서 찾을 수 있습니다.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Method] </td> 
+      <td role="rowheader">[!UICONTROL 메서드] </td> 
       <td><p>[!UICONTROL POST]</p></td> 
      </tr> 
      <tr> 
@@ -110,11 +110,11 @@ ht-degree: 0%
       <td><p> [!UICONTROL Raw]</p></td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Content type]</td> 
+      <td role="rowheader">[!UICONTROL 컨텐츠 유형]</td> 
       <td><p> JSON(application/json)</p></td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Request content]</td> 
+      <td role="rowheader">[!UICONTROL 요청 컨텐츠]</td> 
       <td><p>Webhook에 필요한 원시 JSON</p></td> 
      </tr> 
     </tbody> 
@@ -122,19 +122,19 @@ ht-degree: 0%
 
    ![새 시나리오 설정](/help/workfront-fusion/references/apps-and-modules/assets/new-scenario-set-up-like-this-350x446.png)
 
-1. 별도의 브라우저 탭 또는 창에서 [!UICONTROL Webhooks] 모듈을 사용하여 시나리오를 엽니다.
-1. Webhooks 모듈에서 **[!UICONTROL Redetermine data structure]**&#x200B;을(를) 클릭합니다.
+1. 별도의 브라우저 탭 또는 창에서 [!UICONTROL Webhooks] 모듈로 시나리오를 엽니다.
+1. Webhooks 모듈에서 **[!UICONTROL 데이터 구조 다시 결정]**&#x200B;을 클릭합니다.
 
    Webhooks 모듈에서 다른 모듈의 연결을 해제할 필요가 없습니다.
 
 1. [!UICONTROL HTTP] 모듈이 있는 시나리오로 전환한 다음 실행하십시오.
 1. Webhooks 모듈을 사용하여 시나리오로 다시 전환합니다.
 
-   &quot;[!UICONTROL Successfully determined]&quot; 메시지는 모듈이 데이터 구조를 성공적으로 확인했음을 의미합니다.
+   &quot;[!UICONTROL 확인되었습니다]&quot; 메시지는 모듈이 데이터 구조를 확인했음을 의미합니다.
 
    ![확인됨](/help/workfront-fusion/references/apps-and-modules/assets/successfully-determined-350x175.png)
 
-1. 데이터 구조를 저장하려면 **[!UICONTROL OK]**&#x200B;을(를) 클릭합니다.
+1. 데이터 구조를 저장하려면 **[!UICONTROL 확인]**&#x200B;을 클릭하세요.
 
    이제 웹후크의 항목을 매핑 패널에서 시나리오의 후속 모듈과 함께 사용할 수 있습니다.
 
@@ -148,23 +148,23 @@ ht-degree: 0%
 
 ## 지원되는 수신 데이터 형식
 
-[!DNL Workfront Fusion]은(는) 들어오는 데이터 형식 [!UICONTROL Query String], [!UICONTROL Form Data] 및 [!UICONTROL JSON]을(를) 3개 지원합니다.
+[!DNL Workfront Fusion]은(는) 들어오는 데이터 형식 [!UICONTROL 쿼리 문자열], [!UICONTROL 양식 데이터] 및 [!UICONTROL JSON]의 3가지 형식을 지원합니다.
 
 [!DNL Workfront Fusion]이(가) 선택한 데이터 구조에 대해 들어오는 모든 데이터의 유효성을 검사합니다. 그런 다음 시나리오의 설정에 따라 데이터가 처리를 위해 큐에 저장되거나 즉시 처리됩니다.
 
-데이터의 일부가 유효성 검사를 통과하지 못하면 [!DNL Workfront Fusion]은(는) 400 HTTP 상태 코드를 반환하고 HTTP 응답 본문에 들어오는 데이터가 유효성 검사에 실패한 이유를 지정합니다. 들어오는 데이터의 유효성 검사가 성공하면 Workfront Fusion에서 &quot;[!UICONTROL 200 Accepted]&quot; 상태를 반환합니다.
+데이터의 일부가 유효성 검사를 통과하지 못하면 [!DNL Workfront Fusion]은(는) 400 HTTP 상태 코드를 반환하고 HTTP 응답 본문에 들어오는 데이터가 유효성 검사에 실패한 이유를 지정합니다. 들어오는 데이터의 유효성 검사가 성공하면 Workfront Fusion은 &quot;[!UICONTROL 200 수락됨]&quot; 상태를 반환합니다.
 
-* [[!UICONTROL Query String]](#query-string)
-* [[!UICONTROL Form Data]](#form-data)
+* [[!UICONTROL 쿼리 문자열]](#query-string)
+* [[!UICONTROL 양식 데이터]](#form-data)
 * [[!UICONTROL JSON]](#json)
 
-### [!UICONTROL Query String]
+### [!UICONTROL 쿼리 문자열]
 
 ```
 GET https://app.workfrontfusion.com/wh/<yourunique32characterslongstring>?name=<yourname>&job=automate
 ```
 
-### [!UICONTROL Form Data]
+### [!UICONTROL 양식 데이터]
 
 ```
 POST https://app.workfrontfusion.com/wh/<yourunique32characterslongstring>
@@ -220,18 +220,18 @@ Content-Type: application/json
 >
 >원래 JSON에 액세스하려는 경우 웹후크를 설정할 때 JSON 패스스루를 활성화합니다.
 >
->1. 새 웹후크를 추가하려면 **[!UICONTROL Add]**&#x200B;을(를) 클릭하십시오.
->1. **[!UICONTROL Show advanced settings]**&#x200B;을(를) 클릭합니다.
->1. **[!UICONTROL JSON pass-through]**&#x200B;을(를) 클릭합니다.
+>1. 새 웹후크를 추가하려면 **[!UICONTROL 추가]**&#x200B;를 클릭하십시오.
+>1. **[!UICONTROL 고급 설정 표시]**&#x200B;를 클릭합니다.
+>1. **[!UICONTROL JSON 통과]**&#x200B;를 클릭합니다.
 >
 
 ## Webhook 헤더
 
 Webhook의 헤더에 액세스하려면 Webhook을 설정할 때 요청 헤더 가져오기 를 활성화합니다.
 
-1. 새 웹후크를 추가하려면 **[!UICONTROL Add]**&#x200B;을(를) 클릭하십시오.
-1. **[!UICONTROL Show advanced settings]**&#x200B;을(를) 클릭합니다.
-1. **[!UICONTROL Get request headers]**&#x200B;을(를) 클릭합니다.
+1. 새 웹후크를 추가하려면 **[!UICONTROL 추가]**&#x200B;를 클릭하십시오.
+1. **[!UICONTROL 고급 설정 표시]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 요청 헤더 가져오기]**&#x200B;를 클릭합니다.
 
 `map()` 및 `get()` 함수의 조합으로 특정 헤더 값을 추출할 수 있습니다.
 
@@ -255,22 +255,22 @@ Webhook 호출에 대한 기본 응답은 &quot;Accepted&quot;입니다. 사용�
 
 ### Webhook에 대한 응답 테스트
 
-1. 시나리오에 **[!UICONTROL Custom Webhook]** 모듈을 포함하십시오.
+1. 시나리오에 **[!UICONTROL 사용자 지정 Webhook]** 모듈을 포함하십시오.
 1. 새 웹후크를 모듈에 추가합니다.
 1. 웹후크 URL을 클립보드에 복사합니다.
 1. 시나리오를 실행합니다.
 
-   [!UICONTROL Custom Webhook] 모듈의 번개 아이콘이 회전하는 점으로 변경됩니다. 이는 모듈이 이제 Webhook 호출을 기다리고 있음을 보여줍니다.
+   [!UICONTROL 사용자 지정 Webhook] 모듈의 번개 아이콘이 회전하는 점으로 변경됩니다. 이는 모듈이 이제 Webhook 호출을 기다리고 있음을 보여줍니다.
 
-1. 새 브라우저 창을 열고 복사한 URL을 주소 표시줄에 붙여 넣은 다음 **[!UICONTROL Enter]**&#x200B;을 누릅니다.
+1. 새 브라우저 창을 열고 복사한 URL을 주소 표시줄에 붙여 넣은 다음 **[!UICONTROL Enter]**&#x200B;를 누릅니다.
 
-   [!UICONTROL Custom Webhook] 모듈이 트리거되고 브라우저에 새 페이지가 표시됩니다.
+   [!UICONTROL 사용자 지정 Webhook] 모듈이 트리거되고 브라우저에 새 페이지가 표시됩니다.
 
 Webhook 응답을 사용자 정의하려면 Webhook 응답 모듈을 사용합니다.
 
-모듈 구성에 두 개의 필드 [!UICONTROL Status] 및 [!UICONTROL Body]이(가) 있습니다.
+모듈 구성에 두 개의 필드가 있습니다. [!UICONTROL 상태] 및 [!UICONTROL 본문].
 
-* [!UICONTROL Status] 필드에는 성공에 대한 2xx(예: OK에 대한 `200`), 리디렉션에 대한 3xx(예: 임시 리디렉션에 대한 `307`), 클라이언트 오류에 대한 4xx(예: 잘못된 요청에 대한 `400`) 등의 HTTP 응답 상태 코드가 포함됩니다.
+* [!UICONTROL Status] 필드에는 성공(예: `200`)에 대한 2xx, 리디렉션에 대한 3xx(예: 임시 리디렉션에 대한 `307`), 클라이언트 오류에 대한 4xx(예: 잘못된 요청에 대한 `400`) 등의 HTTP 응답 상태 코드가 포함되어 있습니다.
 
 * [!UICONTROL Body] 필드에 Webhook의 호출에서 수락되는 모든 항목이 포함되어 있습니다. 간단한 텍스트, HTML, XML, JSON 등이 될 수 있습니다.
 
@@ -286,14 +286,14 @@ Webhook 응답을 사용자 정의하려면 Webhook 응답 모듈을 사용합�
 >
 >**예:**
 >
->다음과 같이 [!UICONTROL Webhook Response] 모듈을 구성합니다.
+>다음과 같이 [!UICONTROL Webhook 응답] 모듈을 구성합니다.
 >
 ><table style="table-layout:auto"> 
 &gt; <col> 
 &gt; <col> 
 &gt; <tbody> 
 &gt;  <tr> 
-&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
+&gt;   <td role="rowheader">[!UICONTROL 상태] </td> 
 &gt;   <td> <p>2xx 성공 HTTP 상태 코드(예: 200)</p> </td> 
 &gt;  </tr> 
 &gt;  <tr> 
@@ -301,7 +301,7 @@ Webhook 응답을 사용자 정의하려면 Webhook 응답 모듈을 사용합�
 &gt;   <td> <p>HTML 코드</p> </td> 
 &gt;  </tr> 
 &gt;  <tr> 
-&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL 사용자 지정 헤더]</p> </td> 
 &gt;   <td> 
 &gt;    <ul> 
 &gt;     <li><strong>키</strong>: Content-type</li> 
@@ -321,21 +321,21 @@ Webhook 응답을 사용자 정의하려면 Webhook 응답 모듈을 사용합�
 
 >[!INFO]
 >
->**예:** [!UICONTROL Webhook Response] 모듈을 다음과 같이 구성하십시오.
+>**예:** [!UICONTROL Webhook 응답] 모듈을 다음과 같이 구성합니다.
 >
 ><table style="table-layout:auto"> 
 &gt; <col> 
 &gt; <col> 
 &gt; <tbody> 
 &gt;  <tr> 
-&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
+&gt;   <td role="rowheader">[!UICONTROL 상태] </td> 
 &gt;   <td> <p>3xx 리디렉션 HTTP 상태 코드(예: 303)</p> </td> 
 &gt;  </tr> 
 &gt;  <tr> 
-&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL 사용자 지정 헤더]</p> </td> 
 &gt;   <td> 
 &gt;    <ul> 
-&gt;     <li><strong>[!UICONTROL Key]</strong>: 위치</li> 
+&gt;     <li><strong>[!UICONTROL 키]</strong>: 위치</li> 
 &gt;     <li><strong>[!UICONTROL Value]</strong>: 리디렉션할 URL입니다.</li> 
 &gt;    </ul> </td> 
 &gt;  </tr> 
@@ -358,7 +358,7 @@ Webhook 응답을 사용자 정의하려면 Webhook 응답 모듈을 사용합�
 
 ### 매핑 패널에 누락된 항목
 
-[!UICONTROL Webhooks] > [!UICONTROL Custom Webhook] 모듈 다음에 있는 모듈 설정의 매핑 패널에서 일부 항목이 누락된 경우 **[!UICONTROL Webhooks]>[!UICONTROL Custom Webhook]** 모듈을 클릭하여 설정을 열고 **[!UICONTROL Re-determine data structure]**&#x200B;을(를) 클릭합니다.
+[!UICONTROL Webhooks] > [!UICONTROL 사용자 지정 Webhook] 모듈 다음에 있는 모듈 설정의 매핑 패널에서 일부 항목이 누락된 경우 **[!UICONTROL Webhooks] > [!UICONTROL 사용자 지정 Webhook]** 모듈을 클릭하여 설정을 열고 **[!UICONTROL 데이터 구조 다시 확인]**&#x200B;을 클릭합니다.
 
 ![데이터 구조 다시 결정](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
 

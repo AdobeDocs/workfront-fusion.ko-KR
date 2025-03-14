@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Microsoft 365
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 059bc82b-f1bc-4b92-a44b-51c1daf14f08
-source-git-commit: 2ef98aa858c1459f214b12be3bf52f4f731012a2
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2260'
+source-wordcount: '2637'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
    <p>또는</p>
    <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
@@ -93,7 +93,7 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
 
 ## [!DNL Workfront Fusion]에 [!DNL Office 365 Excel] 서비스를 연결하는 중
 
-[!DNL Office 365 Excel] 계정을 [!UICONTROL Workfront Fusion]에 연결하는 방법에 대한 지침은 [[!UICONTROL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)을 참조하세요.
+[!DNL Office 365 Excel] 계정을 [!UICONTROL Workfront Fusion]에 연결하는 방법에 대한 지침은 [[!UICONTROL Adobe Workfront Fusion에 연결 만들기] - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)을 참조하십시오.
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
 * [통합 문서 검색](#search-workbooks)
 * [통합 문서 보기](#watch-workbooks)
 
-#### [!UICONTROL Download a Workbook]
+#### [!UICONTROL 통합 문서 다운로드]
 
 이 작업 모듈은 지정된 Excel 통합 문서의 콘텐츠를 다운로드합니다.
 
@@ -133,16 +133,16 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Office 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Download a workbook]</td> 
+   <td role="rowheader">[!UICONTROL 통합 문서 다운로드]</td> 
    <td> <p>모듈이 다운로드할 통합 문서를 식별하는 방법을 선택합니다.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL By entering an ID manually]</strong> </p> <p>[!UICONTROL Workbook ID] 필드에 모듈을 다운로드할 특정 통합 문서의 ID를 입력하거나 매핑합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL By selecting from the path]</strong> </p> <p>[!UICONTROL Workbook] 필드에서 루트 폴더에 없는 경우 경로를 포함하여 모듈이 다운로드할 통합 문서를 선택합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL ID를 수동으로 입력하여]</strong> </p> <p>[!UICONTROL 통합 문서 ID] 필드에 모듈을 다운로드할 특정 통합 문서의 ID를 입력하거나 매핑합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 경로]</strong>에서 선택 </p> <p>[!UICONTROL Workbook] 필드에서 루트 폴더에 없는 경우 경로를 포함하여 모듈이 다운로드할 통합 문서를 선택합니다.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody>
 
-#### [!UICONTROL Search Workbooks]
+#### [!UICONTROL 통합 문서 검색]
 
 이 작업 모듈은 [!DNL Excel]개의 통합 문서를 검색합니다.
 
@@ -155,7 +155,7 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Office 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td role="rowheader">[!UICONTROL 폴더]</td> 
    <td> <p>통합 문서를 검색할 폴더를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
@@ -163,14 +163,14 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
    <td> <p>선택한 기준을 충족하는 통합 문서만 검색하도록 필터를 설정할 수 있습니다.</p> <p>각 필터에 대해 필터를 평가할 필드, 연산자 및 필터를 허용할 값을 입력합니다. AND 또는 OR 규칙을 추가하여 두 개 이상의 필터를 사용할 수 있습니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL 제한]</td> 
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 워크시트 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 </table>
 
-#### [!UICONTROL Watch Workbooks]
+#### [!UICONTROL 통합 문서 보기]
 
 이 트리거 모듈은 통합 문서가 만들어질 때 시나리오를 시작합니다.
 
@@ -183,7 +183,7 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Office 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td role="rowheader">[!UICONTROL 폴더]</td> 
    <td> <p>새 통합 문서에 대해 감시할 폴더를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
@@ -191,7 +191,7 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
    <td> <p>선택한 기준을 충족하는 통합 문서만 보도록 필터를 설정할 수 있습니다.</p> <p>각 필터에 대해 필터를 평가할 필드, 연산자 및 필터를 허용할 값을 입력합니다. AND 또는 OR 규칙을 추가하여 두 개 이상의 필터를 사용할 수 있습니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL 제한]</td> 
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 통합 문서 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
@@ -199,15 +199,15 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
 
 ### 워크시트
 
-* [[!UICONTROL Add a Worksheet]](#add-a-worksheet)
-* [[!UICONTROL Add a Worksheet Row]](#add-a-worksheet-row)
-* [[!UICONTROL Delete a Worksheet Row]](#delete-a-worksheet-row)
-* [[!UICONTROL List Worksheet Rows]](#list-worksheet-rows)
-* [[!UICONTROL List Worksheets]](#list-worksheets)
-* [[!UICONTROL Update a Worksheet Row]](#update-a-worksheet-row)
-* [[!UICONTROL Watch Worksheet Rows]](#watch-worksheet-rows)
+* [[!UICONTROL 워크시트 추가]](#add-a-worksheet)
+* [[!UICONTROL 워크시트 행 추가]](#add-a-worksheet-row)
+* [[!UICONTROL 워크시트 행 삭제]](#delete-a-worksheet-row)
+* [[!UICONTROL 워크시트 행 나열]](#list-worksheet-rows)
+* [[!UICONTROL 워크시트 나열]](#list-worksheets)
+* [[!UICONTROL 워크시트 행 업데이트]](#update-a-worksheet-row)
+* [[!UICONTROL 워크시트 행 보기]](#watch-worksheet-rows)
 
-#### [!UICONTROL Add a Worksheet]
+#### [!UICONTROL 워크시트 추가]
 
 이 작업 모듈은 선택한 통합 문서 내에 새 워크시트를 만듭니다.
 
@@ -220,17 +220,17 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Office 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr>
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
+    <td role="rowheader" >[!UICONTROL 통합 문서] </td>
    <td> <p>통합 문서가 루트 디렉터리에 없는 경우 경로를 포함하여 워크시트를 추가할 통합 문서를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Name] </td>
+    <td role="rowheader" >[!UICONTROL 이름] </td>
    <td> <p>새 워크시트의 이름을 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Add a Worksheet Row]
+#### [!UICONTROL 워크시트 행 추가]
 
 이 작업 모듈은 선택한 워크시트에 새 행을 추가합니다.
 
@@ -243,30 +243,30 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Office 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
+    <td role="rowheader" >[!UICONTROL 통합 문서] </td>
    <td> <p>통합 문서가 루트 디렉터리에 없는 경우 경로를 포함하여 행을 추가할 워크시트가 포함된 통합 문서를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet] </td>
+    <td role="rowheader" >[!UICONTROL 워크시트] </td>
    <td> <p>행을 추가할 워크시트를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Type of values being entered]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 입력 중인 값의 유형]</p> </td> 
    <td> <p>워크시트에 입력할 값 유형을 선택합니다. </p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Formulas]</strong> </p> <p> Excel에서는 지정된 식을 평가하려고 합니다. 수식의 함수 이름은 영어로 되어 있다. 예: <code>[!DNL =SUM(A1:A10)]</code></p> </li> 
-     <li> <p><strong>[!UICONTROL Formulas local]</strong> </p> <p>Excel에서는 지정된 식을 평가하려고 합니다. 함수 이름은 Excel 응용 프로그램의 언어로 되어 있습니다. 예: <code>=SUM(A1, 1.5)</code> 및 <code>=SUMME(A1; 1,5)</code></p> </li> 
-     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>Excel에서는 값이 평가되지 않습니다. </p> </li> 
+     <li> <p><strong>[!UICONTROL 수식]</strong> </p> <p> Excel에서는 지정된 식을 평가하려고 합니다. 수식의 함수 이름은 영어로 되어 있다. 예: <code>[!DNL =SUM(A1:A10)]</code></p> </li> 
+     <li> <p><strong>[!UICONTROL Formula local]</strong> </p> <p>Excel에서는 지정된 식을 평가하려고 합니다. 함수 이름은 Excel 응용 프로그램의 언어로 되어 있습니다. 예: <code>=SUM(A1, 1.5)</code> 및 <code>=SUMME(A1; 1,5)</code></p> </li> 
+     <li> <p><strong>[!UICONTROL 값]</strong> </p> <p>Excel에서는 값이 평가되지 않습니다. </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Row]</td>
+    <td role="rowheader" >[!UICONTROL 행]</td>
     <td>각 열에 대해 열에 지정할 값을 새 행에 입력합니다.</td>
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Worksheet Row]
+#### [!UICONTROL 워크시트 행 삭제]
 
 이 작업 모듈은 워크시트에서 행을 삭제합니다.
 
@@ -279,21 +279,21 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Office 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
+    <td role="rowheader" >[!UICONTROL 통합 문서] </td>
    <td> <p>삭제할 행이 포함된 워크시트가 포함된 통합 문서를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet]</td>
+    <td role="rowheader" >[!UICONTROL 워크시트]</td>
    <td> <p> 삭제할 행이 포함된 워크시트를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Row ID]</td>
+    <td role="rowheader" >[!UICONTROL 행 ID]</td>
    <td>삭제할 행의 ID를 입력하거나 매핑합니다.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL List Worksheet Rows]
+#### [!UICONTROL 워크시트 행 나열]
 
 이 작업 모듈은 지정된 워크시트의 행 목록을 검색합니다.
 
@@ -306,21 +306,21 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Office 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr>
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
+    <td role="rowheader" >[!UICONTROL 통합 문서] </td>
    <td> <p>통합 문서가 루트 디렉터리에 없는 경우 경로를 포함하여 나열할 행이 포함된 워크시트가 포함된 통합 문서를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet] </td>
+    <td role="rowheader" >[!UICONTROL 워크시트] </td>
    <td> <p>나열할 행이 포함된 워크시트를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Limit]</td>
+    <td role="rowheader" >[!UICONTROL 제한]</td>
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 워크시트 행 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL List Worksheets]
+#### [!UICONTROL 워크시트 나열]
 
 이 작업 모듈은 지정된 통합 문서의 워크시트 목록을 검색합니다.
 
@@ -333,17 +333,17 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Office 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
+    <td role="rowheader" >[!UICONTROL 통합 문서] </td>
    <td> <p>모듈에 나열할 워크시트가 포함된 통합 문서를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Limit]</td>
+    <td role="rowheader" >[!UICONTROL 제한]</td>
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 워크시트 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a Worksheet Row]
+#### [!UICONTROL 워크시트 행 업데이트]
 
 이 작업 모듈은 기존 워크시트 행을 갱신합니다.
 
@@ -356,34 +356,34 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Office 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
+    <td role="rowheader" >[!UICONTROL 통합 문서] </td>
    <td> <p>갱신할 행이 포함된 워크시트가 포함된 통합 문서를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet] </td>
+    <td role="rowheader" >[!UICONTROL 워크시트] </td>
    <td> <p>갱신할 행이 포함된 워크시트를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Type of values being entered]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 입력 중인 값의 유형]</p> </td> 
    <td> <p>워크시트에 입력할 값 유형을 선택합니다. </p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Formulas]</strong> </p> <p> Excel에서는 지정된 식을 평가하려고 합니다. 수식의 함수 이름은 영어로 되어 있다. 예: <code>[!DNL =SUM(A1:A10)]</code></p> </li> 
-     <li> <p><strong>[!UICONTROL Formulas local]</strong> </p> <p>Excel에서는 지정된 식을 평가하려고 합니다. 함수 이름은 Excel 응용 프로그램의 언어로 되어 있습니다. 예: <code>=SUM(A1, 1.5)</code> 및 <code>=SUMME(A1; 1,5)</code></p> </li> 
-     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>Excel에서는 값이 평가되지 않습니다. </p> </li> 
+     <li> <p><strong>[!UICONTROL 수식]</strong> </p> <p> Excel에서는 지정된 식을 평가하려고 합니다. 수식의 함수 이름은 영어로 되어 있다. 예: <code>[!DNL =SUM(A1:A10)]</code></p> </li> 
+     <li> <p><strong>[!UICONTROL Formula local]</strong> </p> <p>Excel에서는 지정된 식을 평가하려고 합니다. 함수 이름은 Excel 응용 프로그램의 언어로 되어 있습니다. 예: <code>=SUM(A1, 1.5)</code> 및 <code>=SUMME(A1; 1,5)</code></p> </li> 
+     <li> <p><strong>[!UICONTROL 값]</strong> </p> <p>Excel에서는 값이 평가되지 않습니다. </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Row ID]</td> 
+   <td role="rowheader">[!UICONTROL 행 ID]</td> 
    <td>업데이트할 행의 번호를 선택합니다.</td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Row]</td>
+    <td role="rowheader" >[!UICONTROL 행]</td>
     <td>각 열에 대해 열에 지정할 값을 새 행에 입력합니다.</td>
     </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Worksheet Rows]
+#### [!UICONTROL 워크시트 행 보기]
 
 이 트리거 모듈은 새 행이 시트에 추가될 때 시나리오를 시작합니다.
 
@@ -396,19 +396,19 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Office 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
+    <td role="rowheader" >[!UICONTROL 통합 문서] </td>
    <td> <p>새 행을 조사할 워크시트가 포함된 통합 문서를 선택합니다.</p> </td> 
   </tr> 
   <tr>
-    <td role="rowheader" >[!UICONTROL Worksheet] </td>
+    <td role="rowheader" >[!UICONTROL 워크시트] </td>
    <td> <p>새 행에 대해 조사할 Excel 시트를 선택합니다.</p> </td> 
   </tr> 
   <tr>
-    <td role="rowheader" >[!UICONTROL Skip Empty Rows] </td>
+    <td role="rowheader" >[!UICONTROL 빈 행 건너뛰기] </td>
    <td> <p>워크시트에서 빈 행에 대한 번들을 반환하지 않으려면 이 옵션을 활성화합니다.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Limit]</td>
+    <td role="rowheader" >[!UICONTROL 제한]</td>
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 워크시트 행 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
@@ -416,16 +416,16 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
 
 ### 테이블
 
-* [[!UICONTROL Add a table]](#add-a-table)
-* [[!UICONTROL Add a table row]](#add-a-table-row)
-* [[!UICONTROL Delete a table]](#delete-a-table)
-* [[!UICONTROL Get a Table]](#get-a-table)
-* [[!UICONTROL List table rows]](#list-table-rows)
-* [[!UICONTROL List tables]](#list-tables)
-* [[!UICONTROL Update a table]](#update-a-table)
-* [[!UICONTROL Watch table rows]](#watch-table-rows)
+* [[!UICONTROL 테이블 추가]](#add-a-table)
+* [[!UICONTROL 테이블 행 추가]](#add-a-table-row)
+* [[!UICONTROL 테이블 삭제]](#delete-a-table)
+* [[!UICONTROL 테이블 가져오기]](#get-a-table)
+* [[!UICONTROL 테이블 행 나열]](#list-table-rows)
+* [[!UICONTROL 목록 테이블]](#list-tables)
+* [[!UICONTROL 테이블 업데이트]](#update-a-table)
+* [[!UICONTROL 테이블 행 보기]](#watch-table-rows)
 
-#### [!UICONTROL Add a table]
+#### [!UICONTROL 테이블 추가]
 
 이 작업 모듈은 Excel 워크시트 내에 테이블 요소를 만듭니다.
 
@@ -438,11 +438,11 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Office 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Workbook] </td> 
+   <td role="rowheader">[!UICONTROL 통합 문서] </td> 
    <td> <p>표를 추가할 워크시트가 포함된 통합 문서를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Worksheet] </td> 
+   <td role="rowheader">[!UICONTROL 워크시트] </td> 
    <td> <p>테이블을 추가할 워크시트를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
@@ -450,13 +450,13 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
    <td> <p>첫 번째 행을 테이블 머리글로 정의하려면 이 옵션을 활성화합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Address]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 주소]</p> </td> 
    <td> <p>왼쪽 위 셀과 오른쪽 아래 셀을 표시하여 표의 크기를 설정합니다. 예: <code>A1:C10</code>은(는) 3개의 열과 10개의 행으로 테이블을 만듭니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Add a table row]
+#### [!UICONTROL 테이블 행 추가]
 
 이 작업 모듈은 기존 테이블을 수정합니다.
 
@@ -469,29 +469,29 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Office 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
+    <td role="rowheader" >[!UICONTROL 통합 문서] </td>
    <td> <p>행을 추가할 표가 포함된 통합 문서를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet] </td>
+    <td role="rowheader" >[!UICONTROL 워크시트] </td>
    <td> <p>행을 추가할 테이블이 포함된 워크시트를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Table]</td>
+    <td role="rowheader" >[!UICONTROL 테이블]</td>
    <td>행을 추가할 테이블을 선택합니다.</td> 
   </tr> 
   <tr>
-    <td role="rowheader" >[!UICONTROL Row]</td>
+    <td role="rowheader" >[!UICONTROL 행]</td>
     <td>각 열에 대해 열에 지정할 값을 새 행에 입력합니다.</td>
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Row ID]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 행 ID]</p> </td> 
    <td> <p>테이블의 특정 위치에 행을 추가하려면 행 번호를 입력하거나 매핑합니다. 이 행 뒤에 새 행이 삽입됩니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a table]
+#### [!UICONTROL 테이블 삭제]
 
 이 작업 모듈은 [!DNL Excel] 워크시트에서 지정된 테이블을 삭제합니다.
 
@@ -504,17 +504,17 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Office 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Delete a table]</td> 
+   <td role="rowheader">[!UICONTROL 테이블 삭제]</td> 
    <td> <p>삭제할 테이블을 식별하는 방법을 선택합니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>삭제할 테이블이 포함된 통합 문서의 ID를 입력하거나 매핑한 다음 테이블이 포함된 워크시트의 ID를 입력하거나 매핑합니다.</p> <p>[!UICONTROL Table Name] 필드에 삭제할 테이블의 이름을 입력하거나 매핑합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>삭제할 테이블이 포함된 통합 문서와 워크시트를 선택한 다음 테이블을 선택합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 목록에서 선택]</strong> </p> <p>삭제할 테이블이 포함된 통합 문서와 워크시트를 선택한 다음 테이블을 선택합니다.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Table]
+#### [!UICONTROL 테이블 가져오기]
 
 이 작업 모듈은 지정된 테이블에 대한 메타데이터를 검색합니다.
 
@@ -531,17 +531,17 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
     —&gt; </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Get a table]</td> 
+   <td role="rowheader">[!UICONTROL 테이블 가져오기]</td> 
    <td> <p>검색할 테이블을 식별하는 방법을 선택합니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>검색할 테이블이 포함된 통합 문서의 ID를 입력하거나 매핑한 다음 테이블이 포함된 워크시트의 ID를 입력하거나 매핑합니다.</p> <p>[!UICONTROL Table Name] 필드에 검색할 테이블의 이름을 입력하거나 매핑합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>검색할 테이블이 포함된 통합 문서와 워크시트를 선택한 다음 테이블을 선택합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 목록에서 선택]</strong> </p> <p>검색할 테이블이 포함된 통합 문서와 워크시트를 선택한 다음 테이블을 선택합니다.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL List table rows]
+#### [!UICONTROL 테이블 행 나열]
 
 이 검색 모듈은 통합 문서의 모든 표 행 목록을 검색합니다.
 
@@ -554,25 +554,25 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Office 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
+    <td role="rowheader" >[!UICONTROL 통합 문서] </td>
    <td> <p>나열할 행이 포함된 표가 포함된 통합 문서를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet] </td>
+    <td role="rowheader" >[!UICONTROL 워크시트] </td>
    <td> <p>나열할 행이 포함된 테이블이 포함된 워크시트를 선택합니다</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Table] </td>
+    <td role="rowheader" >[!UICONTROL 테이블] </td>
    <td> <p>나열할 행이 포함된 테이블을 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Limit]</td>
+    <td role="rowheader" >[!UICONTROL 제한]</td>
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 테이블 행 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL List tables]
+#### [!UICONTROL 목록 테이블]
 
 이 검색 모듈은 모든 테이블 객체의 목록을 검색합니다.
 
@@ -585,21 +585,21 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Office 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr>
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
+    <td role="rowheader" >[!UICONTROL 통합 문서] </td>
    <td> <p>나열할 표가 포함된 통합 문서를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet] </td>
+    <td role="rowheader" >[!UICONTROL 워크시트] </td>
    <td> <p>나열할 테이블이 포함된 워크시트를 선택합니다</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Limit]</td>
+    <td role="rowheader" >[!UICONTROL 제한]</td>
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 테이블 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a table]
+#### [!UICONTROL 테이블 업데이트]
 
 이 작업 모듈은 기존 테이블을 업데이트합니다.
 
@@ -612,33 +612,33 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Office 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Update a table]</td> 
+   <td role="rowheader">[!UICONTROL 테이블 업데이트]</td> 
    <td> <p>갱신할 테이블을 식별하는 방법을 선택합니다.</p> 
     <ul> 
-     <li> <p><strong>수동으로 입력</strong> </p> <p>[!UICONTROL Workbook ID] 필드에 업데이트할 테이블이 포함된 통합 문서의 ID를 입력하거나 매핑합니다.</p> <p>[!UICONTROL Table Name] 필드에 업데이트할 테이블 이름을 입력하거나 매핑합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>업데이트할 테이블이 포함된 통합 문서와 워크시트를 선택한 다음 테이블을 선택합니다.</p> </li> 
+     <li> <p><strong>수동으로 입력</strong> </p> <p>[!UICONTROL 통합 문서 ID] 필드에 업데이트할 테이블이 포함된 통합 문서의 ID를 입력하거나 매핑합니다.</p> <p>[!UICONTROL Table Name] 필드에 업데이트할 테이블 이름을 입력하거나 매핑합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 목록에서 선택]</strong> </p> <p>업데이트할 테이블이 포함된 통합 문서와 워크시트를 선택한 다음 테이블을 선택합니다.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Name]</td> 
+   <td role="rowheader">[!UICONTROL 이름]</td> 
    <td> <p>표의 이름을 바꾸려면 표의 새 이름을 입력하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Show Headers]</td> 
+   <td role="rowheader">[!UICONTROL 머리글 표시]</td> 
    <td> <p>업데이트된 테이블의 헤더를 표시하려면 이 옵션을 활성화합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Show totals]</td> 
+   <td role="rowheader">[!UICONTROL 합계 표시]</td> 
    <td>이 옵션을 활성화하면 표의 총 값이 표시됩니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Style]</td> 
+   <td role="rowheader">[!UICONTROL 스타일]</td> 
    <td>새 테이블의 스타일을 선택합니다.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch table rows]
+#### [!UICONTROL 테이블 행 보기]
 
 이 트리거는 새 행이 테이블에 추가될 때 시나리오를 시작합니다.
 
@@ -657,19 +657,19 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Office 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Workbook]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 통합 문서]</p> </td> 
    <td> <p>보려는 테이블이 포함된 통합 문서를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet] </td>
+    <td role="rowheader" >[!UICONTROL 워크시트] </td>
    <td> <p> 보려는 테이블이 포함된 워크시트를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Table]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 테이블]</p> </td> 
    <td> <p>보려는 테이블을 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Limit]</td>
+    <td role="rowheader" >[!UICONTROL 제한]</td>
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 행 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
@@ -677,10 +677,10 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
 
 ### 기타
 
-* [[!UICONTROL Make an API Call]](#make-an-api-call)
-* [[!UICONTROL Retrieve data]](#retrieve-data)
+* [[!UICONTROL API 호출 만들기]](#make-an-api-call)
+* [[!UICONTROL 데이터 검색]](#retrieve-data)
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL API 호출 만들기]
 
 이 작업 모듈에서는 사용자 지정 API 호출을 수행할 수 있습니다.
 
@@ -697,7 +697,7 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
    <td><code>https://graph.microsoft.com</code>과(와) 관련된 경로를 입력하십시오. 예:<code> /v1.0/me/drive/root/children</code></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td role="rowheader">[!UICONTROL 메서드]</td> 
    td&gt; <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -705,7 +705,7 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
    <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion은 사용자에게 권한 부여 헤더를 추가합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td role="rowheader">[!UICONTROL 쿼리 문자열]</td> 
    <td> <p>표준 JSON 개체 형식으로 API 호출에 대한 쿼리를 추가합니다.</p> <p>For example: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
@@ -718,7 +718,7 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL Retrieve data]
+#### [!UICONTROL 데이터 검색]
 
 이 작업은 정의된 워크시트 범위에서 데이터를 검색하고 각 행에 대한 번들을 반환합니다.
 
@@ -731,15 +731,15 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Office 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Workbook] </td> 
+   <td role="rowheader">[!UICONTROL 통합 문서] </td> 
    <td> <p>검색할 데이터가 포함된 통합 문서를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Worksheet] </td> 
+   <td role="rowheader">[!UICONTROL 워크시트] </td> 
    <td> <p>검색할 데이터가 포함된 워크시트를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Range] </td> 
+   <td role="rowheader">[!UICONTROL 범위] </td> 
    <td> <p>왼쪽 상단 및 오른쪽 하단 셀을 표시하여 데이터를 검색할 시트의 영역을 지정합니다. 예: <code>A1:D10</code></p> </td> 
   </tr> 
  </tbody> 

@@ -4,9 +4,9 @@ description: Adobe Workfront Boards 커넥터를 사용하여 Workfront Boards �
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
-source-git-commit: 7895e65dd040f28e6028c24928abe2829b58d9db
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2659'
+source-wordcount: '2869'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Adobe Workfront 보드 모듈을 사용하여 레코드를 읽거나 업데이�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
    <p>또는</p>
    <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
@@ -93,7 +93,7 @@ Adobe Workfront 보드 커넥터는 다음을 사용합니다.
 
 Workfront 보드 연결을 만들려면 다음 작업을 수행하십시오.
 
-1. [!DNL Adobe Workfront Boards] 모듈에서 연결 상자 옆의 **[!UICONTROL Add]**&#x200B;을(를) 클릭합니다.
+1. [!DNL Adobe Workfront Boards] 모듈에서 [연결] 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 
 1. 다음 필드를 채웁니다.
 
@@ -104,38 +104,38 @@ Workfront 보드 연결을 만들려면 다음 작업을 수행하십시오.
       </col>
       <tbody>
         <tr>
-          <td role="rowheader">[!UICONTROL Connection name]</td>
+          <td role="rowheader">[!UICONTROL 연결 이름]</td>
           <td>
             <p>이 연결의 이름을 입력하십시오.</p>
           </td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Environment]</td>
+          <td role="rowheader">[!UICONTROL 환경]</td>
           <td>프로덕션 환경에 연결할지 아니면 비프로덕션 환경에 연결할지 선택합니다.</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Type]</td>
+          <td role="rowheader">[!UICONTROL 유형]</td>
           <td>서비스 계정에 연결할지 개인 계정에 연결할지 선택합니다.</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Client ID]<p>(선택 사항)</p></td>
-          <td>[!DNL Adobe] [!UICONTROL Client ID]을(를) 입력하십시오. [!DNL Adobe Developer Console]의 [!UICONTROL Credentials details] 섹션에서 찾을 수 있습니다.</td>
+          <td role="rowheader">[!UICONTROL 클라이언트 ID]<p>(선택 사항)</p></td>
+          <td>[!DNL Adobe] [!UICONTROL 클라이언트 ID]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Client Secret]<p>(선택 사항)</p></td>
-          <td>[!DNL Adobe] [!UICONTROL Client Secret]을(를) 입력하십시오. [!DNL Adobe Developer Console]의 [!UICONTROL Credentials details] 섹션에서 찾을 수 있습니다.
+          <td role="rowheader">[!UICONTROL 클라이언트 암호]<p>(선택 사항)</p></td>
+          <td>[!DNL Adobe] [!UICONTROL 클라이언트 암호]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Authentication URL]<p>(선택 사항)</p></td>
+          <td role="rowheader">[!UICONTROL 인증 URL]<p>(선택 사항)</p></td>
           <td>Workfront 인스턴스가 이 연결을 인증하는 데 사용할 URL을 입력하십시오. <p>기본값은 <code>https://oauth.my.workfront.com/integrations/oauth2</code>입니다.</p>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Host prefix]</td>
+          <td role="rowheader">[!UICONTROL 호스트 접두사]</td>
           <td>호스트 접두사를 입력합니다.<p>기본값은 <code>origin-</code>입니다.</p>
         </tr>
       </tbody>
     </table>
-1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL Continue]**&#x200B;을(를) 클릭하십시오.
+1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭하세요.
 
 ## Adobe Workfront 보드 모듈 및 해당 필드
 
@@ -178,7 +178,7 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
    <td>체크리스트 항목을 추가할 카드의 ID를 입력하거나 매핑합니다.<p>Workfront에서 카드를 볼 때 URL에서 카드 ID를 찾을 수 있습니다.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Checklist items]</td> 
+   <td>[!UICONTROL 체크리스트 항목]</td> 
    <td>추가하려는 각 체크리스트 항목에 대해 항목 추가를 누르고 체크리스트 항목의 이름을 입력한 다음 항목의 완료 여부를 선택합니다.</p></td> 
   </tr> 
  </tbody> 
@@ -197,15 +197,15 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
       <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>[!DNL Workfront] 앱을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Parent card ID]</td> 
+   <td>[!UICONTROL 상위 카드 ID]</td> 
    <td>하위 작업을 추가할 카드의 ID를 입력하거나 매핑합니다.<p>Workfront에서 카드를 볼 때 URL에서 카드 ID를 찾을 수 있습니다.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Board ID]</td> 
+   <td>[!UICONTROL 보드 ID]</td> 
    <td>하위 작업을 추가할 카드가 포함된 보드 ID를 입력하거나 매핑합니다.<p>Workfront에서 게시판을 볼 때 URL에서 게시판 ID를 찾을 수 있습니다.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Name]</td> 
+   <td>[!UICONTROL 이름]</td> 
    <td>새 하위 작업의 이름을 입력하거나 매핑합니다.</p></td> 
   </tr> 
  </tbody> 
@@ -224,15 +224,15 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
       <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>[!DNL Workfront] 앱을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Board ID]</td> 
+   <td>[!UICONTROL 보드 ID]</td> 
    <td>카드를 추가할 보드 ID를 입력하거나 매핑합니다.<p>Workfront에서 게시판을 볼 때 URL에서 게시판 ID를 찾을 수 있습니다.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Column ID]</td> 
+   <td>[!UICONTROL 열 ID]</td> 
    <td>하위 작업을 추가할 열의 ID를 입력하거나 매핑합니다.<p>보드 읽기 모듈에서 반환된 정보에서 열 ID를 찾을 수 있습니다.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Name]</td> 
+   <td>[!UICONTROL 이름]</td> 
    <td>새 카드의 이름을 입력하거나 매핑합니다.</p></td> 
   </tr> 
  </tbody> 
@@ -255,11 +255,11 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
    <td>이동할 카드의 ID를 입력하거나 매핑합니다.<p>Workfront에서 카드를 볼 때 URL에서 카드 ID를 찾을 수 있습니다.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Board ID]</td> 
+   <td>[!UICONTROL 보드 ID]</td> 
    <td>이동할 카드가 포함된 게시판의 ID를 입력하거나 매핑합니다.<p>Workfront에서 게시판을 볼 때 URL에서 게시판 ID를 찾을 수 있습니다.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Destination column ID]</td> 
+   <td>[!UICONTROL 대상 열 ID]</td> 
    <td>카드를 이동할 열의 ID를 입력하거나 매핑합니다.<p>보드 읽기 모듈에서 반환된 정보에서 열 ID를 찾을 수 있습니다.</p></td> 
   </tr> 
   <tr> 
@@ -309,15 +309,15 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
    <td>업데이트할 카드의 ID를 입력하거나 매핑합니다.<p>Workfront에서 카드를 볼 때 URL에서 카드 ID를 찾을 수 있습니다.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Board ID]</td> 
+   <td>[!UICONTROL 보드 ID]</td> 
    <td>업데이트하려는 카드가 포함된 게시판의 ID를 입력하거나 매핑합니다.<p>Workfront에서 게시판을 볼 때 URL에서 게시판 ID를 찾을 수 있습니다.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Name]</td> 
+   <td>[!UICONTROL 이름]</td> 
    <td>카드의 새 이름을 입력하거나 매핑합니다.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Description]</td> 
+   <td>[!UICONTROL 설명]</td> 
    <td>카드에 대한 새 설명을 입력하거나 매핑합니다.</p></td> 
   </tr> 
   <tr> 
@@ -325,13 +325,13 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
    <td>이 카드를 완료하는 데 필요한 예상 시간을 입력하거나 매핑합니다.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Due date]</td> 
+   <td>[!UICONTROL 기한]</td> 
    <td>이 카드의 기한을 입력하거나 매핑하십시오.</p>
    <p>지원되는 날짜 및 시간 형식 목록을 보려면 [!DNL Adobe Workfront Fusion]</a>의 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 변환을 참조하십시오.</p>
    </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Status]</td> 
+   <td>[!UICONTROL 상태]</td> 
    <td>카드에 대한 새 상태를 선택합니다.</p></td> 
   </tr> 
  </tbody> 
@@ -355,7 +355,7 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
       <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>[!DNL Workfront] 앱을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Board name]</td> 
+   <td>[!UICONTROL 보드 이름]</td> 
    <td>새 게시판의 이름을 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
@@ -378,7 +378,7 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
       <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>[!DNL Workfront] 앱을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Board ID]</td> 
+   <td>[!UICONTROL 보드 ID]</td> 
    <td>정보를 검색할 게시판의 ID를 입력하거나 매핑합니다.<p>Workfront에서 게시판을 볼 때 URL에서 게시판 ID를 찾을 수 있습니다.</p></td> 
   </tr> 
  </tbody> 
@@ -403,15 +403,15 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
       <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>[!DNL Workfront] 앱을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Board ID]</td> 
+   <td>[!UICONTROL 보드 ID]</td> 
    <td>열을 추가할 게시판의 ID를 입력하거나 매핑합니다.<p>Workfront에서 게시판을 볼 때 URL에서 게시판 ID를 찾을 수 있습니다.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Column ID]</td> 
+   <td>[!UICONTROL 열 ID]</td> 
    <td>업데이트할 열의 ID를 입력하거나 매핑합니다.<p>보드 읽기 모듈에서 반환된 정보에서 열 ID를 찾을 수 있습니다.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Column name]</td> 
+   <td>[!UICONTROL 열 이름]</td> 
    <td>열의 새 이름을 입력하거나 매핑합니다.</td> 
   </tr> 
  </tbody> 
@@ -430,11 +430,11 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
       <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>[!DNL Workfront] 앱을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Board ID]</td> 
+   <td>[!UICONTROL 보드 ID]</td> 
    <td>검색할 열이 포함된 보드의 ID를 입력하거나 매핑합니다.<p>Workfront에서 게시판을 볼 때 URL에서 게시판 ID를 찾을 수 있습니다.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Column Name]</td> 
+   <td>[!UICONTROL 열 이름]</td> 
    <td>검색할 열의 이름을 입력하거나 매핑합니다.</td> 
   </tr> 
  </tbody> 
@@ -453,15 +453,15 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
       <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>[!DNL Workfront] 앱을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Board ID]</td> 
+   <td>[!UICONTROL 보드 ID]</td> 
    <td>검색할 열이 포함된 보드의 ID를 입력하거나 매핑합니다.<p>Workfront에서 게시판을 볼 때 URL에서 게시판 ID를 찾을 수 있습니다.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Column Name]</td> 
+   <td>[!UICONTROL 열 이름]</td> 
    <td>검색할 열의 이름을 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL WIP Limit]</td> 
+   <td>[!UICONTROL WIP 제한]</td> 
    <td>열에 대한 신규 WIP 한도를 입력하거나 맵핑합니다.</td> 
   </tr> 
  </tbody> 
@@ -489,11 +489,11 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
    <td>태그를 추가할 카드의 ID를 입력하거나 매핑합니다.<p>Workfront에서 카드를 볼 때 URL에서 카드 ID를 찾을 수 있습니다.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Board ID]</td> 
+   <td>[!UICONTROL 보드 ID]</td> 
    <td>태그를 추가할 카드가 포함된 보드의 ID를 입력하거나 매핑합니다.<p>Workfront에서 게시판을 볼 때 URL에서 게시판 ID를 찾을 수 있습니다.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Tag ID]</td> 
+   <td>[!UICONTROL 태그 ID]</td> 
    <td>추가할 태그의 ID를 입력하거나 매핑합니다.<p>보드 읽기 모듈에서 반환된 정보에서 태그 ID를 찾을 수 있습니다.</p></td> 
   </tr> 
  </tbody> 
@@ -512,15 +512,15 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
       <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>[!DNL Workfront] 앱을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Board ID]</td> 
+   <td>[!UICONTROL 보드 ID]</td> 
    <td>태그를 만들 보드 ID를 입력하거나 매핑합니다.<p>Workfront에서 게시판을 볼 때 URL에서 게시판 ID를 찾을 수 있습니다.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Tag name]</td> 
+   <td>[!UICONTROL 태그 이름]</td> 
    <td>새 태그의 이름을 입력하거나 매핑합니다.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Tag Color]</td> 
+   <td>[!UICONTROL 태그 색상]</td> 
    <td>이 태그의 색상을 선택합니다.</td> 
   </tr> 
  </tbody> 
@@ -571,7 +571,7 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
    <td>댓글을 검색할 카드의 ID를 입력하거나 매핑합니다.<p>Workfront에서 카드를 볼 때 URL에서 카드 ID를 찾을 수 있습니다.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Limit]</td> 
+   <td>[!UICONTROL 제한]</td> 
    <td>한 실행 주기에서 모듈이 반환할 최대 주석 수를 입력합니다.</p></td> 
   </tr> 
  </tbody> 
@@ -596,7 +596,7 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
    <td> <p><code> https://&lt;WORKFRONT_DOMAIN&gt;/boards-service/graphql?</code>에 상대적인 경로를 입력하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td role="rowheader">[!UICONTROL 메서드]</td> 
    <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 요청 메서드</a>를 참조하십시오.</p><p>대부분의 보드에서 를 호출하는 방법은 POST입니다. </td> 
   </tr> 
   <tr> 
@@ -604,7 +604,7 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
    <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다. 요청의 콘텐츠 유형을 결정합니다.</p> <p>For example,<code> { "Content-type":"application/json-stringify()"}</code></p>  </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td role="rowheader">[!UICONTROL 쿼리 문자열]</td> 
    <td> <p>표준 JSON 개체 형식으로 API 호출에 대한 쿼리를 추가합니다.</p> <p>Workfront 보드의 경우 이 섹션은 일반적으로 비어 있습니다.</p>  </td> 
   </tr> 
   <tr> 
@@ -631,7 +631,7 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
       <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>[!DNL Workfront] 앱을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
    <tr> 
-   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td role="rowheader">[!UICONTROL 메서드]</td> 
    <td> <p>이 호출에 대한 메서드를 선택합니다. </td> 
   </tr> 
   <tr> 
@@ -639,7 +639,7 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
    <td> <p>표준 JSON 개체 형식으로 API 호출에 대한 쿼리를 추가합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Operation name]</td> 
+   <td role="rowheader">[!UICONTROL 작업 이름]</td> 
    <td> <p>이 작업의 이름을 입력하십시오. 이렇게 하면 호출을 더 쉽게 추적하고 디버깅할 수 있습니다.</p> </td> 
   </tr> 
   <tr> 
@@ -651,7 +651,7 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
    <td> <p>추가할 각 변수에 대해 <b>항목 추가</b>를 클릭하고 변수의 키와 값을 입력하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL 제한]</td> 
    <td>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</td> 
    </tr> 
  </tbody> 

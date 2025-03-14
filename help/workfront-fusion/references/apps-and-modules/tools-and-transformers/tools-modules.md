@@ -4,18 +4,18 @@ description: ' [!DNL Adobe Workfront Fusion Tools] 섹션에는 시나리오를 
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2000'
+source-wordcount: '2286'
 ht-degree: 0%
 
 ---
 
-# [!UICONTROL Tools]
+# [!UICONTROL 도구]
 
 [!DNL Adobe Workfront Fusion Tools] 섹션에는 시나리오를 향상시킬 수 있는 몇 가지 유용한 모듈이 포함되어 있습니다.
 
-[!UICONTROL Tools] 모듈은 앱 목록 또는 화면 하단의 [!UICONTROL Tools] 아이콘 ![도구 아이콘](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png)에서 사용할 수 있습니다.
+[!UICONTROL 도구] 모듈은 앱 목록 또는 화면 하단의 [!UICONTROL 도구] 아이콘 ![도구 아이콘](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png)에서 사용할 수 있습니다.
 
 ## 액세스 요구 사항
 
@@ -38,7 +38,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>Workfront Fusion 라이센스 요구 사항 없음</p>
    </td> 
   </tr> 
   <tr> 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 +++
 
-## [!UICONTROL Tools] 및 해당 필드
+## [!UICONTROL 도구] 및 해당 필드
 
 * [트리거](#triggers)
 * [액션](#actions)
@@ -67,11 +67,11 @@ ht-degree: 0%
 
 ### 트리거
 
-#### [!UICONTROL Basic trigger]
+#### [!UICONTROL 기본 트리거]
 
 이 모듈에서는 사용자 지정 트리거를 만들고 해당 입력 번들을 정의할 수 있습니다.
 
-예를 들어 연락처 또는 지정된 전자 메일 주소(예: [!UICONTROL Email] >[!UICONTROL Send an Email] 또는 [!DNL Gmail] >[!UICONTROL Send an Email] 모듈)로 보내도록 예약된 다른 목록에 대해 또는 원할 때마다 트리거되는 간단한 미리 알림으로 이 모듈을 사용할 수 있습니다.
+예를 들어, 연락처 또는 지정된 전자 메일 주소(예: [!UICONTROL 전자 메일] >[!UICONTROL 전자 메일 보내기] 또는 [!DNL Gmail] >[!UICONTROL 전자 메일 보내기] 모듈)로 보내도록 예약된 다른 목록에 대해 이 모듈을 사용하거나 원하는 때마다 트리거할 간단한 미리 알림으로 사용할 수 있습니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -86,18 +86,18 @@ ht-degree: 0%
 
 ### 액션
 
-* [[!UICONTROL Get Multiple Variables]](#get-multiple-variables)
-* [[!UICONTROL Get Variable]](#get-variable)
-* [[!UICONTROL Increment function]](#increment-function)
-* [[!UICONTROL Set Multiple Variables]](#set-multiple-variables)
-* [[!UICONTROL Set Variable]](#set-variable)
-* [[!UICONTROL Sleep]](#sleep)
+* [[!UICONTROL 여러 변수 가져오기]](#get-multiple-variables)
+* [[!UICONTROL 변수 가져오기]](#get-variable)
+* [[!UICONTROL 증가 함수]](#increment-function)
+* [[!UICONTROL 여러 변수 설정]](#set-multiple-variables)
+* [[!UICONTROL 변수 설정]](#set-variable)
+* [[!UICONTROL 절전 모드]](#sleep)
 
-#### [!UICONTROL Get Multiple Variables]
+#### [!UICONTROL 여러 변수 가져오기]
 
-이 모듈은 [!UICONTROL Set Variable] 또는 [!UICONTROL Set Multiple Variables] 모듈에서 이전에 만든 값을 검색합니다.
+이 모듈은 [!UICONTROL 변수 설정] 또는 [!UICONTROL 여러 변수 설정] 모듈에서 이전에 만든 값을 검색합니다.
 
-이 모듈은 변수가 [!UICONTROL Get Multiple Variables] 모듈이 있는 경로가 아닌 다른 경로에 설정된 경우에도 시나리오의 어느 위치에나 설정된 변수를 읽을 수 있습니다. [!UICONTROL Tools] > [!UICONTROL Set Variable] 또는 [!UICONTROL Tools] > [!UICONTROL Set Multiple Variable] 모듈이 [!UICONTROL Tools] > [!UICONTROL Get Multiple Variables] 모듈 전에 실행되어야 합니다. 모듈이 실행되는 순서에 대한 자세한 내용은 [라우터 모듈 추가 및 경로 구성](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)을 참조하십시오.
+이 모듈은 변수가 [!UICONTROL 여러 변수 가져오기] 모듈이 있는 위치와 다른 경로에 설정된 경우에도 시나리오의 어느 위치에나 설정된 변수를 읽을 수 있습니다. [!UICONTROL 도구] > [!UICONTROL 변수 설정] 또는 [!UICONTROL 도구] > [!UICONTROL 여러 변수 설정] 모듈이 [!UICONTROL 도구] > [!UICONTROL 여러 변수 가져오기] 모듈 전에 실행되어야 합니다. 모듈이 실행되는 순서에 대한 자세한 내용은 [라우터 모듈 추가 및 경로 구성](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)을 참조하십시오.
 
 <table style="table-layout:auto">
     <tr>
@@ -108,19 +108,19 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-**예:** [!UICONTROL Set]/[!UICONTROL Get (multiple) variable(s)] 모듈을 다음과 같이 사용할 수 있습니다.
+**예:** 다음은 [!UICONTROL Set]/[!UICONTROL 여러 변수 가져오기] 모듈을 사용할 수 있습니다.
 
 * 다른 경로에서도 나중에 사용할 수 있도록 계산된 값을 저장합니다. 이 기능은 값이 여러 모듈에 사용되고 값을 계산하는 수식이 너무 복잡한 경우에 유용합니다.
-* 수식을 디버깅합니다. 모듈에 사용된 수식이 올바른 결과를 제공하지 않는 경우 수식을 복사하여 관련 모듈 앞에 삽입하는 [!UICONTROL Set Variable] 모듈에 붙여넣습니다. [!UICONTROL Set Variable] 모듈 뒤에 있는 모듈의 연결을 끊고 시나리오를 실행합니다. [!UICONTROL Set Variable] 모듈의 출력을 확인하고 수식을 조정하거나 단순화한 후 시나리오를 다시 실행한 다음 문제가 해결될 때까지 계속 실행합니다.
+* 수식을 디버깅합니다. 모듈에 사용된 수식이 올바른 결과를 제공하지 않는 경우 수식을 복사하여 관련 모듈 앞에 삽입하는 [!UICONTROL 변수 설정] 모듈에 붙여 넣으십시오. [!UICONTROL 변수 설정] 모듈 뒤에 있는 모듈의 연결을 끊고 시나리오를 실행하십시오. [!UICONTROL 변수 설정] 모듈의 출력을 확인하고 수식을 조정하거나 단순화한 후 시나리오를 다시 실행한 다음 문제가 해결될 때까지 계속 진행하십시오.
 
 >[!ENDSHADEBOX]
 
 
-#### [!UICONTROL Get Variable]
+#### [!UICONTROL 변수 가져오기]
 
-이 모듈은 [!UICONTROL Set Variable] 또는 [!UICONTROL Set Multiple Variables] 모듈에서 이전에 만든 값을 검색합니다.
+이 모듈은 [!UICONTROL 변수 설정] 또는 [!UICONTROL 여러 변수 설정] 모듈에서 이전에 만든 값을 검색합니다.
 
-이 모듈은 변수가 [!UICONTROL Get Variable] 모듈이 있는 경로가 아닌 다른 경로에 설정된 경우에도 시나리오의 어느 위치에나 설정된 변수를 읽을 수 있습니다. [!UICONTROL Tools] > [!UICONTROL Set Variable] 또는 [!UICONTROL Tools] > [!UICONTROL Set Multiple Variables] 모듈이 [!UICONTROL Tools] > [!UICONTROL Get Variable] 모듈 전에 실행되어야 합니다. 모듈이 실행되는 순서에 대한 자세한 내용은 [라우터 모듈 추가 및 경로 구성](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)을 참조하십시오.
+이 모듈은 변수가 [!UICONTROL 변수 가져오기] 모듈이 있는 경로가 아닌 다른 경로에 설정된 경우에도 시나리오의 어느 위치에나 설정된 변수를 읽을 수 있습니다. [!UICONTROL 도구] > [!UICONTROL 변수 설정] 또는 [!UICONTROL 도구] > [!UICONTROL 여러 변수 설정] 모듈이 [!UICONTROL 도구] > [!UICONTROL 변수 가져오기] 모듈 전에 실행되어야 합니다. 모듈이 실행되는 순서에 대한 자세한 내용은 [라우터 모듈 추가 및 경로 구성](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)을 참조하십시오.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -133,7 +133,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-#### [!UICONTROL Increment function]
+#### [!UICONTROL 증가 함수]
 
 이 모듈은 각 주기 또는 각 시나리오 실행 후 1씩 증가하는 값을 반환합니다.
 
@@ -142,12 +142,12 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Reset a value]</td> 
+   <td role="rowheader">[!UICONTROL 값 재설정]</td> 
    <td> <p>모듈에서 값을 재설정하려는 경우 선택합니다. 이는 값이 첫 번째 값에서 다시 시작하도록 하는 경우입니다.</p> 
     <ul> 
-     <li>[!UICONTROL After one cycle]</li> 
-     <li>[!UICONTROL After one scenario run]</li> 
-     <li>[!UICONTROL Never]</li> 
+     <li>[!UICONTROL After 1 cycle]</li> 
+     <li>[!UICONTROL 한 시나리오 실행 후]</li> 
+     <li>[!UICONTROL 사용 안 함]</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -165,12 +165,12 @@ ht-degree: 0%
 
 이 시나리오를 만들려면 다음 작업을 수행하십시오.
 
-1. 모듈의 **[!UICONTROL Reset a value]** 필드를 Never로 설정하십시오.
+1. 모듈의 **[!UICONTROL 값 재설정]** 필드를 사용 안 함으로 설정합니다.
 1. 홀수 값에 대한 경로를 설정합니다. `1`과(와) 같은 계수 계산 함수를 사용하여 이 경로에 대한 필터를 설정하십시오.
 
    ![홀수](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
 
-**참고**: [!UICONTROL Equal to] 연산자를 기본 [!UICONTROL Text] 연산자에서 [!UICONTROL Numeric] 연산자로 변경하는 것을 잊지 마십시오.
+**참고**: [!UICONTROL 같음] 연산자를 기본 [!UICONTROL 텍스트] 연산자에서 [!UICONTROL 숫자] 연산자로 변경하는 것을 잊지 마십시오.
 
 1. `0`과(와) 같은 계수 계산 함수를 사용하여 짝수 값의 경로를 설정하십시오.
 
@@ -178,9 +178,9 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-#### [!UICONTROL Set Multiple Variables]
+#### [!UICONTROL 여러 변수 설정]
 
-이 모듈은 경로의 다른 모듈에서 매핑할 수 있는 변수를 만듭니다. 변수는 시나리오의 모든 경로에 대해 [!UICONTROL Get Variable] 또는 [!UICONTROL Get Multiple Variables] 모듈에 매핑될 수도 있습니다.
+이 모듈은 경로의 다른 모듈에서 매핑할 수 있는 변수를 만듭니다. 변수는 시나리오의 모든 경로에 대해 [!UICONTROL 변수 가져오기] 또는 [!UICONTROL 여러 변수 가져오기] 모듈에 매핑될 수도 있습니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -194,16 +194,16 @@ ht-degree: 0%
    <td>[!UICONTROL Variable lifetime] </td> 
    <td> <p>변수를 유효한 상태로 유지할 기간을 선택합니다(동일한 값 유지).</p> 
     <ul> 
-     <li><strong>[!UICONTROL One cycle]</strong>: 변수가 한 주기에 유효합니다. 이 기능은 더 많은 웹후크가 더 많은 사이클을 생성하기 때문에 한 시나리오 실행에서 여러 웹후크를 수신할 때 유용합니다. </li> 
-     <li><strong>[!UICONTROL One execution]</strong>: 변수가 한 시나리오 실행에 대해 유효합니다. 하나의 실행에는 하나 이상의 사이클이 포함될 수 있습니다.</li> 
+     <li><strong>[!UICONTROL One cycle]</strong>: 변수는 한 주기에 유효합니다. 이 기능은 더 많은 웹후크가 더 많은 사이클을 생성하기 때문에 한 시나리오 실행에서 여러 웹후크를 수신할 때 유용합니다. </li> 
+     <li><strong>[!UICONTROL One execution]</strong>: 변수는 하나의 시나리오 실행에 유효합니다. 하나의 실행에는 하나 이상의 사이클이 포함될 수 있습니다.</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Set Variable]
+#### [!UICONTROL 변수 설정]
 
-이 모듈은 경로의 다른 모듈에서 매핑할 수 있는 변수를 만듭니다. 변수는 시나리오의 모든 경로에 대해 [!UICONTROL Get Variable] 또는 [!UICONTROL Get Multiple Variables] 모듈에 매핑될 수도 있습니다.
+이 모듈은 경로의 다른 모듈에서 매핑할 수 있는 변수를 만듭니다. 변수는 시나리오의 모든 경로에 대해 [!UICONTROL 변수 가져오기] 또는 [!UICONTROL 여러 변수 가져오기] 모듈에 매핑될 수도 있습니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -217,18 +217,18 @@ ht-degree: 0%
    <td>[!UICONTROL Variable lifetime] </td> 
    <td> <p>변수를 유효한 상태로 유지할 기간을 선택합니다(동일한 값 유지).</p> 
     <ul> 
-     <li><strong>[!UICONTROL One cycle]</strong>: 변수가 한 주기에 유효합니다. 한 시나리오 실행에서 여러 개의 웹후크를 받을 때 유용합니다(더 많은 웹후크 = 더 많은 주기). </li> 
-     <li><strong>[!UICONTROL One execution]</strong>: 변수가 한 시나리오 실행에 대해 유효합니다. 하나의 실행에는 하나 이상의 사이클이 포함될 수 있습니다.</li> 
+     <li><strong>[!UICONTROL One cycle]</strong>: 변수는 한 주기에 유효합니다. 한 시나리오 실행에서 여러 개의 웹후크를 받을 때 유용합니다(더 많은 웹후크 = 더 많은 주기). </li> 
+     <li><strong>[!UICONTROL One execution]</strong>: 변수는 하나의 시나리오 실행에 유효합니다. 하나의 실행에는 하나 이상의 사이클이 포함될 수 있습니다.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Variable value] </td> 
+   <td>[!UICONTROL 변수 값] </td> 
    <td>변수에 대한 값을 입력하거나 매핑합니다. </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Sleep]
+#### [!UICONTROL 절전 모드]
 
 이 모듈에서는 시나리오 흐름을 최대 300초(5분) 동안 지연할 수 있습니다.
 
@@ -256,15 +256,15 @@ ht-degree: 0%
 >
 ><!--For more information on data stores, see [Data Stores in [!DNL Adobe Workfront Fusion]]().-->
 >
->특정 데이터 저장소 모듈에 대한 자세한 내용은 [[!UICONTROL Data store]개의 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md)을 참조하세요.
+>특정 데이터 저장소 모듈에 대한 자세한 내용은 [[!UICONTROL 데이터 저장소] 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md)을 참조하세요.
 
 ### 집계자
 
-* [[!UICONTROL Numeric aggregator]](#numeric-aggregator)
-* [[!UICONTROL Table aggregator]](#table-aggregator)
-* [[!UICONTROL Text aggregator]](#text-aggregator)
+* [[!UICONTROL 숫자 집계]](#numeric-aggregator)
+* [[!UICONTROL 테이블 집계]](#table-aggregator)
+* [[!UICONTROL 텍스트 집계]](#text-aggregator)
 
-#### [!UICONTROL Numeric aggregator]
+#### [!UICONTROL 숫자 집계]
 
 이 모듈에서는 숫자 값을 검색한 다음 선택한 함수(SUM, AVG, COUNT, MAX, MIN) 중 하나를 적용하고 결과를 하나의 번들로 반환할 수 있습니다.
 
@@ -273,7 +273,7 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td> <p>[!UICONTROL Source module]</p> </td> 
+   <td> <p>[!UICONTROL Source 모듈]</p> </td> 
    <td> <p>필드를 집계할 모듈을 선택합니다.</p> </td> 
   </tr> 
   <tr> 
@@ -285,17 +285,17 @@ ht-degree: 0%
    <td> <p>집계된 출력을 그룹화할 표현식을 정의합니다. 이 표현식은 하나 이상의 매핑된 항목을 포함할 수 있습니다. 그런 다음 집계된 데이터는 이 표현식의 값을 사용하여 그룹으로 구분됩니다. 각 그룹은 키(평가된 표현식)와 값(집계된 값)을 가진 별도의 번들로 출력합니다. 키는 후속 모듈에서 필터로 사용할 수 있습니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Stop processing after an empty aggregation]</td> 
+   <td>[!UICONTROL 빈 집계 후 처리 중지]</td> 
    <td>결과가 없을 때 시나리오를 중지하려면 이 옵션을 활성화하십시오.</td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Value]</p> </td> 
+   <td> <p>[!UICONTROL 값]</p> </td> 
    <td> <p>집계할 값을 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Table aggregator]
+#### [!UICONTROL 테이블 집계]
 
 이 모듈은 지정된 열 및 행 구분 기호(표를 만들 수 있음)를 사용하여 수신된 번들의 선택한 필드의 값을 단일 번들로 병합합니다.
 
@@ -304,33 +304,33 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td> <p>[!UICONTROL Source module]</p> </td> 
+   <td> <p>[!UICONTROL Source 모듈]</p> </td> 
    <td> <p>필드를 집계할 모듈을 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Aggregated fields]</td> 
+   <td>[!UICONTROL 집계된 필드]</td> 
    <td> <p> 위에서 선택한 모듈에서 하나의 번들로 집계할 값이 포함된 필드를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Column separator]</p> </td> 
-   <td> <p>결과 번들의 필드 값 열을 구분하는 구분 문자 유형을 선택하거나 입력합니다. [!UICONTROL Other]을(를) 선택하는 경우 구분 문자 필드에 값을 구분하는 데 사용할 문자를 입력합니다.</p> </td> 
+   <td> <p>[!UICONTROL 열 구분 기호]</p> </td> 
+   <td> <p>결과 번들의 필드 값 열을 구분하는 구분 문자 유형을 선택하거나 입력합니다. [!UICONTROL Other]를 선택하는 경우 구분 기호 필드에 값을 구분하는 데 사용할 문자를 입력합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Row separator]</p> </td> 
-   <td> <p>결과 번들에서 필드 값 행을 구분하는 구분 문자 유형을 선택하거나 입력합니다. [!UICONTROL Other]을(를) 선택하는 경우 구분 문자 필드에 값을 구분하는 데 사용할 문자를 입력합니다.</p> </td> 
+   <td> <p>[!UICONTROL 행 구분 기호]</p> </td> 
+   <td> <p>결과 번들에서 필드 값 행을 구분하는 구분 문자 유형을 선택하거나 입력합니다. [!UICONTROL Other]를 선택하는 경우 구분 기호 필드에 값을 구분하는 데 사용할 문자를 입력합니다.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Group by]</p> </td> 
    <td> <p>집계된 출력을 그룹화할 표현식을 정의합니다. 이 표현식은 하나 이상의 매핑된 항목을 포함할 수 있습니다. 그런 다음 이 표현식의 값을 사용하여 집계된 데이터가 그룹으로 분리됩니다. 각 그룹은 키(평가된 표현식)와 값(집계된 값)을 가진 별도의 번들로 출력합니다. 키는 후속 모듈에서 필터로 사용할 수 있습니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Stop processing after an empty aggregation]</td> 
+   <td>[!UICONTROL 빈 집계 후 처리 중지]</td> 
    <td>결과가 없을 때 시나리오를 중지하려면 이 옵션을 선택합니다.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Text aggregator]
+#### [!UICONTROL 텍스트 집계]
 
 이 모듈은 수신한 번들의 선택된 필드 값을 단일 번들로 병합합니다.
 
@@ -339,19 +339,19 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td> <p>[!UICONTROL Source module]</p> </td> 
+   <td> <p>[!UICONTROL Source 모듈]</p> </td> 
    <td> <p>필드를 집계할 모듈을 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Row separator]</p> </td> 
-   <td> <p>결과 번들에서 필드 값 행을 구분하는 구분 문자 유형을 선택하거나 입력합니다. [!UICONTROL Other]을(를) 선택하는 경우 구분 문자 필드에 값을 구분하는 데 사용할 문자를 입력합니다.</p> </td> 
+   <td> <p>[!UICONTROL 행 구분 기호]</p> </td> 
+   <td> <p>결과 번들에서 필드 값 행을 구분하는 구분 문자 유형을 선택하거나 입력합니다. [!UICONTROL Other]를 선택하는 경우 구분 기호 필드에 값을 구분하는 데 사용할 문자를 입력합니다.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Group by]</p> </td> 
    <td> <p>하나 이상의 매핑된 항목을 포함하는 표현식을 정의합니다. 집계된 데이터는 동일한 표현식 값을 가진 그룹 아래에 구분됩니다. 각 그룹은 평가된 표현식 및 집계된 텍스트가 있는 키가 포함된 별도의 번들로 출력됩니다. 이렇게 하면 키를 이후 모듈에서 필터로 사용할 수 있습니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Stop processing after an empty aggregation]</td> 
+   <td>[!UICONTROL 빈 집계 후 처리 중지]</td> 
    <td>결과가 없을 때 시나리오를 중지하려면 이 옵션을 선택합니다.</td> 
   </tr> 
   <tr> 
@@ -369,11 +369,11 @@ ht-degree: 0%
 
 ### 트랜스포머
 
-* [[!UICONTROL Compose a string]](#compose-a-string)
-* [[!UICONTROL Convert the encoding of the text]](#convert-the-encoding-of-the-text)
-* [[!UICONTROL Switch]](#switch)
+* [[!UICONTROL 문자열 작성]](#compose-a-string)
+* [[!UICONTROL 텍스트 인코딩 변환]](#convert-the-encoding-of-the-text)
+* [[!UICONTROL 전환]](#switch)
 
-#### [!UICONTROL Compose a string]
+#### [!UICONTROL 문자열 작성]
 
 모든 값을 문자열 데이터 형식(텍스트)으로 변환합니다. 이를 통해 이진 데이터 등의 매핑 시 매핑이 보다 쉬워집니다.
 
@@ -388,7 +388,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-#### [!UICONTROL Convert the encoding of the text]
+#### [!UICONTROL 텍스트 인코딩 변환]
 
 입력한 입력 텍스트(또는 이진 데이터)를 선택한 인코딩으로 변환합니다.
 
@@ -397,21 +397,21 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td> <p>[!UICONTROL Input data]</p> </td> 
+   <td> <p>[!UICONTROL 입력 데이터]</p> </td> 
    <td> <p>변환할 콘텐츠를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Input data codepage]</td> 
+   <td>[!UICONTROL 입력 데이터 코드 페이지]</td> 
    <td> <p>입력 데이터의 인코딩 유형을 선택합니다. </p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Output data codepage]</p> </td> 
+   <td> <p>[!UICONTROL 출력 데이터 코드 페이지]</p> </td> 
    <td> <p>대상(출력) 데이터의 인코딩 유형을 선택합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Switch]
+#### [!UICONTROL 전환]
 
 입력 값이 제공된 값 목록과 일치하는지 확인합니다. 결과를 기반으로 출력을 반환합니다.
 
@@ -424,7 +424,7 @@ ht-degree: 0%
    <td> <p>평가할 표현식을 입력하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Use regular expressions to match]</td> 
+   <td>[!UICONTROL 정규 표현식을 사용하여 일치]</td> 
    <td> <p>정규 표현식을 사용하려면 이 옵션을 활성화합니다. 모듈은 정확한 일치가 아닌 정규 표현식을 기반으로 사례를 결정합니다.</p> 
     <div> 
      <p>정규 표현식은 각 문자가 특별한 의미를 갖는 메타문자 또는 리터럴 의미를 갖는 정규 문자인 문자의 시퀀스입니다. 이러한 문자 및 메타문자는 텍스트 검색에 사용할 수 있는 패턴을 식별합니다. 예를 들어 이름을 검색하려면 정규 표현식을 설정하여 대문자로 시작하는 연속된 두 단어로 구성된 패턴을 검색할 수 있습니다. 정규 표현식은 텍스트를 검색하고 조작할 수 있는 강력한 도구입니다.</p> 
@@ -440,7 +440,7 @@ ht-degree: 0%
    <td>[!UICONTROL Cases] </td> 
    <td> 추가할 각 서비스 케이스에 대해 <b>항목 추가</b>를 클릭하고 항목의 패턴과 출력을 입력하십시오. <p>입력에 [!UICONTROL Pattern] 필드에 입력한 값이 포함되어 있으면 [!UICONTROL Output] 필드에 입력한 값이 반환됩니다.</p> <p>입력이 [!UICONTROL Pattern] 필드에 설정한 값과 일치하지 않으면 다음 중 하나가 발생합니다.</p> 
     <ul> 
-     <li>[!UICONTROL Else] 필드의 값이 반환됨</li> 
+     <li>[!UICONTROL Else] 필드의 값이 반환됩니다</li> 
      <li>[!UICONTROL Else] 필드에 값이 없으면 출력이 반환되지 않습니다.</li> 
     </ul> </td> 
   </tr> 

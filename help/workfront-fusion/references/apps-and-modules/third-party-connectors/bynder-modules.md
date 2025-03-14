@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는  [!DNL Bynder
 author: Becky
 feature: Workfront Fusion
 exl-id: 0a45f8a7-12cc-41cc-9135-92f4779afac0
-source-git-commit: 1861522827aa782877f612bf3f9dc522f6ca221e
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1779'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
    <p>또는</p>
    <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
@@ -92,22 +92,22 @@ Bynder 커넥터는 다음을 사용합니다.
 >Byender는 인증 코드/새로 고침 토큰 부여 유형을 사용합니다. 이는 Fusion Byender 커넥터가 사용하는 유일한 권한 부여 유형입니다.
 
 * [ [!DNL Workfront Fusion]에서  [!DNL Bynder] 에 연결 만들기](#create-a-connection-to-bynder-from-workfront-fusion)
-* [ [!DNL Bynder] 에서 [!UICONTROL Client ID] 및 [!UICONTROL Client Secret] 생성(선택 사항)](#generate-a-client-id-and-client-secret-in-bynder-optional)
+* [ [!DNL Bynder] 에서 [!UICONTROL 클라이언트 ID] 및 [!UICONTROL 클라이언트 암호] 생성(선택 사항)](#generate-a-client-id-and-client-secret-in-bynder-optional)
 
 ### [!DNL Workfront Fusion]에서 [!DNL Bynder]에 연결 만들기
 
 [!DNL Bynder] 모듈 내에서 직접 [!DNL Workfront Fusion]에서 [!DNL Bynder] 계정에 연결할 수 있습니다.
 
-1. [!DNL Bynder] 모듈에서 [!UICONTROL Connection] 필드 옆의 **[!UICONTROL Add]**&#x200B;을(를) 클릭합니다.
+1. [!DNL Bynder] 모듈에서 [!UICONTROL 연결] 필드 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 1. 연결할 [!DNL Bynder] 도메인을 선택하십시오.
-1. (선택 사항) **[!UICONTROL Advanced settings]**&#x200B;을(를) 클릭한 다음 [!UICONTROL Client ID] 및 [!UICONTROL Client Secret]을(를) 입력합니다.
+1. (선택 사항) **[!UICONTROL 고급 설정]**&#x200B;을 클릭한 다음 [!UICONTROL 클라이언트 ID] 및 [!UICONTROL 클라이언트 암호]를 입력하십시오.
 
    클라이언트 ID 및 클라이언트 암호를 생성하는 방법에 대한 지침은 이 문서의 [클라이언트 ID 및 클라이언트 암호 생성 [!DNL Bynder] (선택 사항)](#generate-a-client-id-and-client-secret-in-bynder-optional)을 참조하십시오.
 
-1. [!UICONTROL login] 창에서 사용자 이름(이메일 주소)과 암호를 입력합니다.
-1. 연결을 만들고 모듈로 돌아가려면 **[!UICONTROL Continue]**&#x200B;을(를) 클릭하십시오.
+1. [!UICONTROL 로그인] 창에서 사용자 이름(전자 메일 주소)과 암호를 입력합니다.
+1. 연결을 만들고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭하세요.
 
-### [!DNL Bynder]에서 [!UICONTROL Client ID] 및 [!UICONTROL Client Secret] 생성(선택 사항)
+### [!DNL Bynder]에서 [!UICONTROL 클라이언트 ID] 및 [!UICONTROL 클라이언트 암호] 생성(선택 사항)
 
 클라이언트 ID와 클라이언트 암호를 사용하여 연결을 만들려면 [!DNL Bynder] 계정에서 연결을 생성할 수 있습니다. 클라이언트 ID 및 클라이언트 암호는 [!DNL Bynder]에서 앱을 만들 때 생성됩니다.
 
@@ -136,17 +136,17 @@ Bynder 커넥터는 다음을 사용합니다.
 
 ### 액션
 
-* [[!UICONTROL Add a tag to assets]](#add-a-tag-to-assets)
-* [[!UICONTROL Add assets to a collection]](#add-assets-to-a-collection)
-* [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Download asset]](#download-asset)
-* [[!UICONTROL Read asset metadata]](#read-asset-metadata)
-* [자산의 [!UICONTROL Remove a tag]](#remove-a-tag-from-assets)
-* [[!UICONTROL Remove assets from collection]](#remove-assets-from-collection)
-* [[!UICONTROL Update asset metadata]](#update-asset-metadata)
-* [[!UICONTROL Upload asset]](#upload-asset)
+* [[!UICONTROL 자산에 태그 추가]](#add-a-tag-to-assets)
+* [[!UICONTROL 컬렉션에 에셋 추가]](#add-assets-to-a-collection)
+* [[!UICONTROL 사용자 지정 API 호출]](#custom-api-call)
+* [[!UICONTROL 에셋 다운로드]](#download-asset)
+* [[!UICONTROL 자산 메타데이터 읽기]](#read-asset-metadata)
+* [에셋에서 [!UICONTROL 태그 제거]](#remove-a-tag-from-assets)
+* [[!UICONTROL 컬렉션에서 에셋 제거]](#remove-assets-from-collection)
+* [[!UICONTROL 자산 메타데이터 업데이트]](#update-asset-metadata)
+* [[!UICONTROL 자산 업로드]](#upload-asset)
 
-#### [!UICONTROL Add a tag to assets]
+#### [!UICONTROL 자산에 태그 추가]
 
 이 작업 모듈은 하나 이상의 에셋에 태그를 추가합니다
 
@@ -159,17 +159,17 @@ Bynder 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Bynder] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder]을(를) [!DNL Workfront Fusion] </a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Tag ID]</td> 
+   <td role="rowheader">[!UICONTROL 태그 ID]</td> 
    <td> <p>에셋에 추가할 태그의 ID를 입력하거나 매핑합니다.</p> <p> </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
-   <td> <p>태깅할 각 에셋에 대해 <strong>[!UICONTROL Add item]</strong>을(를) 클릭한 다음 에셋 ID를 입력하거나 매핑합니다.</p> </td> 
+   <td role="rowheader">[!UICONTROL 자산 ID]</td> 
+   <td> <p>태깅할 각 에셋에 대해 <strong>[!UICONTROL 항목 추가]</strong>를 클릭한 다음 에셋 ID를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
  </table>
 
-#### [!UICONTROL Add assets to a collection]
+#### [!UICONTROL 컬렉션에 에셋 추가]
 
 이 작업 모듈은 하나 이상의 에셋을 컬렉션에 추가합니다.
 
@@ -182,17 +182,17 @@ Bynder 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Bynder] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder]을(를) [!DNL Workfront Fusion] </a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Collection ID]</td> 
+   <td role="rowheader">[!UICONTROL 컬렉션 ID]</td> 
    <td> <p>자산을 추가할 컬렉션의 ID를 입력하거나 매핑합니다.</p> <p> </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
-   <td> <p>컬렉션에 추가할 각 에셋에 대해 <strong>[!UICONTROL Add item]</strong>을(를) 클릭한 다음 에셋 ID를 입력하거나 매핑합니다.</p> </td> 
+   <td role="rowheader">[!UICONTROL 자산 ID]</td> 
+   <td> <p>컬렉션에 추가할 각 자산에 대해 <strong>[!UICONTROL 항목 추가]</strong>를 클릭한 다음 자산 ID를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Custom API Call]
+#### [!UICONTROL 사용자 지정 API 호출]
 
 이 작업 모듈을 사용하면 [!DNL Bynder] API에 대해 사용자 지정 인증된 호출을 수행할 수 있습니다. 이렇게 하면 다른 [!DNL Bynder] 모듈에서 수행할 수 없는 데이터 흐름 자동화를 만들 수 있습니다.
 
@@ -213,7 +213,7 @@ Bynder 커넥터는 다음을 사용합니다.
    <td><code>https://{your-bynder-domain}/api/{api-version}/</code>과(와) 관련된 경로를 입력하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td role="rowheader">[!UICONTROL 메서드]</td> 
    <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -221,7 +221,7 @@ Bynder 커넥터는 다음을 사용합니다.
    <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion은 사용자에게 권한 부여 헤더를 추가합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td role="rowheader">[!UICONTROL 쿼리 문자열]</td> 
    <td> <p>표준 JSON 개체 형식으로 API 호출에 대한 쿼리를 추가합니다.</p> <p>For example: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
@@ -234,7 +234,7 @@ Bynder 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL Download asset]
+#### [!UICONTROL 에셋 다운로드]
 
 이 작업 모듈은 단일 자산을 다운로드합니다.
 
@@ -247,17 +247,17 @@ Bynder 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Bynder] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder]을(를) [!DNL Workfront Fusion] </a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID]</td> 
+   <td role="rowheader">[!UICONTROL 자산 ID]</td> 
    <td>다운로드하려는 에셋의 ID를 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Asset version]</td> 
+   <td role="rowheader">[!UICONTROL 자산 버전]</td> 
    <td> <p>다운로드하려는 에셋의 버전을 입력하거나 매핑합니다. 최신 버전의 에셋을 다운로드하려면 필드를 비워 둡니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Read asset metadata]
+#### [!UICONTROL 자산 메타데이터 읽기]
 
 이 작업 모듈은 에셋의 메타데이터를 읽습니다.
 
@@ -270,17 +270,17 @@ Bynder 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Bynder] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder]을(를) [!DNL Workfront Fusion] </a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID]</td> 
+   <td role="rowheader">[!UICONTROL 자산 ID]</td> 
    <td>메타데이터를 검색할 에셋의 ID를 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
+   <td role="rowheader">[!UICONTROL 출력]</td> 
    <td> <p>이 모듈에 대한 출력 번들에 포함할 정보를 선택합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Remove a tag from assets]
+#### [!UICONTROL 에셋에서 태그 제거]
 
 이 작업 모듈은 하나 이상의 에셋에서 태그를 제거합니다
 
@@ -293,17 +293,17 @@ Bynder 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Bynder] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder]을(를) [!DNL Workfront Fusion] </a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Tag ID]</td> 
+   <td role="rowheader">[!UICONTROL 태그 ID]</td> 
    <td> <p>에셋에서 제거할 태그의 ID를 입력하거나 매핑합니다.</p> <p> </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
-   <td> <p>태그를 제거할 각 에셋에 대해 <strong>[!UICONTROL Add item]</strong>을(를) 클릭한 다음 에셋 ID를 입력하거나 매핑합니다.</p> </td> 
+   <td role="rowheader">[!UICONTROL 자산 ID]</td> 
+   <td> <p>태그를 제거할 각 에셋에 대해 <strong>[!UICONTROL 항목 추가]</strong>를 클릭한 다음 에셋 ID를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Remove assets from collection]
+#### [!UICONTROL 컬렉션에서 에셋 제거]
 
 이 작업 모듈은 컬렉션에서 하나 이상의 자산을 제거합니다.
 
@@ -316,17 +316,17 @@ Bynder 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Bynder] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder]을(를) [!DNL Workfront Fusion] </a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Collection ID]</td> 
+   <td role="rowheader">[!UICONTROL 컬렉션 ID]</td> 
    <td> <p>자산을 제거할 컬렉션의 ID를 입력하거나 매핑합니다.</p> <p> </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
-   <td> <p>컬렉션에서 제거할 각 에셋에 대해 <strong>[!UICONTROL Add item]</strong>을(를) 클릭한 다음 에셋 ID를 입력하거나 매핑합니다.</p> </td> 
+   <td role="rowheader">[!UICONTROL 자산 ID]</td> 
+   <td> <p>컬렉션에서 제거할 각 에셋에 대해 <strong>[!UICONTROL 항목 추가]</strong>를 클릭한 다음 에셋 ID를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Update asset metadata]
+#### [!UICONTROL 자산 메타데이터 업데이트]
 
 이 작업 모듈은 기존 에셋의 메타데이터를 업데이트합니다.
 
@@ -339,11 +339,11 @@ Bynder 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Bynder] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder]을(를) [!DNL Workfront Fusion] </a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID]</td> 
+   <td role="rowheader">[!UICONTROL 자산 ID]</td> 
    <td>메타데이터를 업데이트할 에셋의 ID를 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Fields]</td> 
+   <td role="rowheader">[!UICONTROL 필드]</td> 
    <td> <p>정보를 입력할 필드를 선택한 다음 메타데이터를 업데이트할 정보를 해당 필드에 입력하거나 매핑합니다. </p> </td> 
   </tr> 
   <tr> 
@@ -353,7 +353,7 @@ Bynder 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload asset]
+#### [!UICONTROL 자산 업로드]
 
 이 작업 모듈은 단일 자산을 업로드합니다.
 
@@ -366,19 +366,19 @@ Bynder 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Bynder] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder]을(를) [!DNL Workfront Fusion] </a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Save as]</td> 
+   <td role="rowheader">[!UICONTROL 다른 이름으로 저장]</td> 
    <td> <p>업로드할 파일을 저장할 방법을 선택하십시오.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL New asset]</strong> </p> <p>정보를 입력할 필드 및 메타속성을 선택한 다음 해당 필드에 정보를 입력합니다.</p> <p>업로드한 자산에 사용할 브랜드의 ID를 입력하거나 매핑합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL New asset version]</strong> </p> <p>새 버전을 업로드할 에셋의 ID를 입력합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 새 자산]</strong> </p> <p>정보를 입력할 필드 및 메타속성을 선택한 다음 해당 필드에 정보를 입력합니다.</p> <p>업로드한 자산에 사용할 브랜드의 ID를 입력하거나 매핑합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 새 자산 버전]</strong> </p> <p>새 버전을 업로드할 에셋의 ID를 입력합니다.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td role="rowheader">[!UICONTROL Source 파일]</td> 
    <td>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 이름과 데이터를 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Asynchronous file upload]</td> 
+   <td role="rowheader">[!UICONTROL 비동기 파일 업로드]</td> 
    <td>대용량 파일을 업로드할 때 이 옵션을 활성화하십시오. 이렇게 하면 큰 파일이 시나리오 실행을 차단하지 않습니다.</td> 
   </tr> 
  </tbody> 
@@ -386,10 +386,10 @@ Bynder 커넥터는 다음을 사용합니다.
 
 ### 검색 결과
 
-* [[!UICONTROL List record]](#list-record)
-* [[!UICONTROL Search Assets]](#search-assets)
+* [[!UICONTROL 레코드 나열]](#list-record)
+* [[!UICONTROL Assets 검색]](#search-assets)
 
-#### [!UICONTROL List record]
+#### [!UICONTROL 레코드 나열]
 
 이 검색 모듈은 특정 유형의 모든 항목을 검색합니다.
 
@@ -402,26 +402,26 @@ Bynder 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Bynder] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder]을(를) [!DNL Workfront Fusion] </a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record Type]</td> 
+   <td role="rowheader">[!UICONTROL 레코드 유형]</td> 
    <td> <p>나열할 레코드 유형을 선택합니다.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Read all collections]</strong> </p> </li> 
-     <li> <p><strong>[!UICONTROL Read information about all tags]</strong> </p> </li> 
-     <li> <p><strong>[!UICONTROL Read all assets of a collection]</strong> </p> <p>에셋을 나열할 컬렉션의 ID를 입력하거나 매핑합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 모든 컬렉션 읽기]</strong> </p> </li> 
+     <li> <p><strong>[!UICONTROL 모든 태그에 대한 정보 읽기]</strong> </p> </li> 
+     <li> <p><strong>[!UICONTROL 컬렉션의 모든 에셋 읽기]</strong> </p> <p>에셋을 나열할 컬렉션의 ID를 입력하거나 매핑합니다.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
+   <td role="rowheader">[!UICONTROL 출력]</td> 
    <td> <p>모듈의 출력에 포함할 필드를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL 제한]</td> 
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 자산 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Search Assets]
+#### [!UICONTROL Assets 검색]
 
 이 검색 모듈은 사용자가 제공한 기준에 따라 자산을 검색합니다.
 
@@ -434,32 +434,32 @@ Bynder 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL Bynder] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder]을(를) [!DNL Workfront Fusion] </a>에 연결 을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Search criteria]</td> 
+   <td role="rowheader">[!UICONTROL 검색 기준]</td> 
    <td> <p>검색 기준을 입력합니다. </p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Field]</strong> </p> <p>검색에 사용할 필드를 선택합니다</p> </li> 
-     <li> <p><strong>[!UICONTROL Logical Operator]</strong> </p> <p>검색에 사용할 연산자를 선택합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>선택한 필드에서 찾을 값을 입력하거나 매핑합니다. 값 유형은 선택한 필드의 데이터 유형과 동일해야 합니다. </p> <p>데이터 형식에 대한 자세한 내용은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">항목 데이터 형식</a>을 참조하세요.</p> </li> 
+     <li> <p><strong>[!UICONTROL 필드]</strong> </p> <p>검색에 사용할 필드를 선택합니다</p> </li> 
+     <li> <p><strong>[!UICONTROL 논리 연산자]</strong> </p> <p>검색에 사용할 연산자를 선택합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 값]</strong> </p> <p>선택한 필드에서 찾을 값을 입력하거나 매핑합니다. 값 유형은 선택한 필드의 데이터 유형과 동일해야 합니다. </p> <p>데이터 형식에 대한 자세한 내용은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">항목 데이터 형식</a>을 참조하세요.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Result set]</td> 
+   <td role="rowheader">[!UICONTROL 결과 집합]</td> 
    <td>첫 번째 일치하는 에셋을 반환할지 또는 모든 일치하는 에셋을 반환할지 여부를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Sort by]</td> 
+   <td role="rowheader">[!UICONTROL 정렬 기준]</td> 
    <td> <p>정렬할 필드를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Sort Direction]</td> 
+   <td role="rowheader">[!UICONTROL 정렬 방향]</td> 
    <td> <p>오름차순 또는 내림차순 정렬 여부를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
+   <td role="rowheader">[!UICONTROL 출력]</td> 
    <td> <p>모듈의 출력에 포함할 필드를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL 제한]</td> 
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 자산 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
@@ -467,7 +467,7 @@ Bynder 커넥터는 다음을 사용합니다.
 
 ### 트리거
 
-#### [!UICONTROL Watch assets]
+#### [!UICONTROL 자산 보기]
 
 이 트리거 모듈은 자산이 생성되거나 업데이트될 때 시나리오를 시작합니다.
 
@@ -492,7 +492,7 @@ Bynder 커넥터는 다음을 사용합니다.
     <td>출력에 포함할 필드를 선택합니다.</td>
   </tr> 
   <tr> 
-    <td role="rowheader">[!UICONTROL Limit]</td>
+    <td role="rowheader">[!UICONTROL 제한]</td>
 
 <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력합니다.</p> </td> 
   </tr> 

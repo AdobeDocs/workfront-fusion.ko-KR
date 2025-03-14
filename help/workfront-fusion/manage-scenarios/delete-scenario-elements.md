@@ -4,9 +4,9 @@ description: 연결 영역에서 팀 연결을 보고 관리할 수 있습니다
 author: Becky
 feature: Workfront Fusion
 exl-id: 7bedf002-061b-40fc-a0f8-c12d2930bcf9
-source-git-commit: 945fd574afef0cfdd8b36ba5a24f5262e772ed8b
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '224'
 ht-degree: 1%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 1%
 
 [!DNL Adobe Workfront Fusion] 계정의 다음 영역에서 시나리오 요소를 저장하고 삭제할 수 있습니다.
 
-* [!UICONTROL Scenario]
-* [!UICONTROL Connections]
-* [!UICONTROL Webhooks]
-* [!UICONTROL Keys]
-* [!UICONTROL Devices]
-* [!UICONTROL Data stores]
-* [!UICONTROL User profiles]
+* [!UICONTROL 시나리오]
+* [!UICONTROL 연결]
+* [!UICONTROL 웹후크]
+* [!UICONTROL 키]
+* [!UICONTROL 장치]
+* [!UICONTROL 데이터 저장소]
+* [!UICONTROL 사용자 프로필]
 
 
 ## 액세스 요구 사항
@@ -45,7 +45,7 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
    <p>또는</p>
    <p>레거시: 모두 </p>
    </td> 
@@ -82,7 +82,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 1. 왼쪽 패널에서 영역을 클릭합니다 .
 
-   예를 들어 시나리오를 삭제하려면 왼쪽 패널에서 **[!UICONTROL Scenario]**&#x200B;을(를) 클릭합니다.
+   예를 들어 시나리오를 삭제하려면 왼쪽 패널에서 **[!UICONTROL 시나리오]**&#x200B;를 클릭합니다.
 
-1. 삭제할 항목의 오른쪽에 있는 아래쪽 화살표를 클릭한 다음 **[!UICONTROL Delete]**&#x200B;을(를) 클릭합니다.
-1. **[!UICONTROL Really]**&#x200B;을(를) 클릭하여 확인합니다.
+1. 삭제할 항목의 오른쪽에 있는 아래쪽 화살표를 클릭한 다음 **[!UICONTROL 삭제]**&#x200B;를 클릭합니다.
+1. 확인하려면 **[!UICONTROL 실제로]**&#x200B;을 클릭하세요.

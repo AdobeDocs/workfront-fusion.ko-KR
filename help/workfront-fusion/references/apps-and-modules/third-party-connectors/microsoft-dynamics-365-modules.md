@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Microsoft Dyn
 author: Becky
 feature: Workfront Fusion
 exl-id: 16ae173b-10ce-481d-8f6c-1df0e65f7c0e
-source-git-commit: c377a24c2daeb25effffb28d9912d8c27ad0a08d
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1623'
-ht-degree: 1%
+source-wordcount: '1810'
+ht-degree: 0%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
    <p>또는</p>
    <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
@@ -82,7 +82,7 @@ ht-degree: 1%
 >
 >예를 들어 사용자가 Excel 커넥터를 통해 부여된 &quot;테이블 읽기&quot; 권한을 가지고 있는 다음 Outlook 커넥터에서 연결을 만들어 이메일을 읽은 경우 권한 동의 화면에 이미 부여된 &quot;테이블 읽기&quot; 권한과 새로 필요한 &quot;이메일 쓰기&quot; 권한이 모두 표시됩니다.
 
-1. [!DNL Microsoft Dynamics 365] 모듈에서 [!UICONTROL Connection] 필드 옆의 **[!UICONTROL Add]**&#x200B;을(를) 클릭합니다.
+1. [!DNL Microsoft Dynamics 365] 모듈에서 [!UICONTROL 연결] 필드 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 
 
 1. 다음 필드를 채웁니다.
@@ -94,29 +94,29 @@ ht-degree: 1%
       </col>
       <tbody>
         <tr>
-          <td role="rowheader">[!UICONTROL Connection name]</td>
+          <td role="rowheader">[!UICONTROL 연결 이름]</td>
           <td>
             <p>이 연결의 이름을 입력하십시오.</p>
           </td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Environment]</td>
+          <td role="rowheader">[!UICONTROL 환경]</td>
           <td>프로덕션 환경에 연결할지 아니면 비프로덕션 환경에 연결할지 선택합니다.</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Type]</td>
+          <td role="rowheader">[!UICONTROL 유형]</td>
           <td>서비스 계정에 연결할지 개인 계정에 연결할지 선택합니다.</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Client ID]<p>(선택 사항)</p></td>
-          <td>[!DNL Microsoft Dynamics] [!UICONTROL Client ID]을(를) 입력하십시오.</td>
+          <td role="rowheader">[!UICONTROL 클라이언트 ID]<p>(선택 사항)</p></td>
+          <td>[!DNL Microsoft Dynamics] [!UICONTROL 클라이언트 ID]를 입력하십시오.</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Client Secret]<p>(선택 사항)</p></td>
-          <td>[!DNL Microsoft Dynamics] [!UICONTROL Client Secret]을(를) 입력하십시오.
+          <td role="rowheader">[!UICONTROL 클라이언트 암호]<p>(선택 사항)</p></td>
+          <td>[!DNL Microsoft Dynamics] [!UICONTROL 클라이언트 암호]를 입력하십시오.
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Authentication URL]</td>
+          <td role="rowheader">[!UICONTROL 인증 URL]</td>
           <td>Workfront 인스턴스가 이 연결을 인증하는 데 사용할 URL을 입력하십시오. <p>기본값은 <code>https://oauth.my.workfront.com/integrations/oauth2</code>입니다.</p>
         </tr>
         <tr>
@@ -125,7 +125,7 @@ ht-degree: 1%
         </tr>
       </tbody>
     </table>
-1. 연결을 만들고 모듈로 돌아가려면 **[!UICONTROL Continue]**&#x200B;을(를) 클릭하십시오.
+1. 연결을 만들고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭하세요.
 
 >[!NOTE]
 >
@@ -148,10 +148,10 @@ ht-degree: 1%
 
 ### 트리거
 
-* [[!UICONTROL Watch Records (Real Time)]](#watch-records-real-time)
-* [[!UICONTROL Watch Records (Scheduled)]](#watch-records-scheduled)
+* [[!UICONTROL 레코드 보기(실시간)]](#watch-records-real-time)
+* [[!UICONTROL 레코드 보기(예약됨)]](#watch-records-scheduled)
 
-#### [!UICONTROL Watch Records (Real Time)]
+#### [!UICONTROL 레코드 보기(실시간)]
 
 이 인스턴트 트리거 모듈은 지정한 레코드(개체)가 [!DNL Dynamics 365]에서 만들어지거나 업데이트될 때 시나리오를 실행합니다.
 
@@ -166,15 +166,15 @@ ht-degree: 1%
    <td> <p>이 모듈에 사용할 웹후크를 선택합니다. </p> <p>새 Webhook를 추가하려면</p> 
     <ol> 
      <li value="1"> <p>Webhook 필드 오른쪽에 있는 <strong>[!UICONTROL Add]</strong>을(를) 클릭합니다.</p> </li> 
-     <li value="2"> <p><strong>[!UICONTROL Webhook]</strong> 이름 필드에 Webhook의 수사적 이름을 입력합니다.</p> </li> 
-     <li value="3"> <p><strong>[!UICONTROL Connection]</strong> 필드에서 선택한 연결을 선택합니다</p> <p>[!DNL Microsoft Dynamics 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">[!DNL Microsoft Dynamics 365]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오. </p> </li> 
-     <li value="4"> <p><strong>[!UICONTROL Save]</strong>을(를) 클릭하여 웹후크를 저장하고 모듈로 돌아갑니다.</p> </li> 
+     <li value="2"> <p><strong>[!UICONTROL Webhook]</strong> 이름 필드에 Webhook를 설명하는 이름을 입력합니다.</p> </li> 
+     <li value="3"> <p><strong>[!UICONTROL 연결]</strong> 필드에서 선택한 항목을 사용할 연결을 선택합니다</p> <p>[!DNL Microsoft Dynamics 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">[!DNL Microsoft Dynamics 365]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오. </p> </li> 
+     <li value="4"> <p>웹후크를 저장하고 모듈로 돌아가려면 <strong>[!UICONTROL 저장]</strong>을(를) 클릭합니다.</p> </li> 
     </ol> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Records (Scheduled)]
+#### [!UICONTROL 레코드 보기(예약됨)]
 
 이 예약된 트리거 모듈은 사용자가 지정한 개체의 레코드가 이 시나리오의 마지막 예약된 실행 이후에 만들어지거나 업데이트될 때 시나리오를 실행합니다.
 
@@ -194,18 +194,18 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Include]</td> 
-   <td>모듈에서 <strong>[!UICONTROL New Records Only]</strong>, <strong>[!UICONTROL Updated Records Only]</strong> 또는 <strong>[!UICONTROL New and Updated Records]</strong>을(를) 시청할지 여부를 선택합니다.</td> 
+   <td>모듈이 <strong>[!UICONTROL 새 레코드만]</strong>, <strong>[!UICONTROL 업데이트된 레코드만]</strong> 또는 <strong>[!UICONTROL 새 레코드 및 업데이트된 레코드]</strong>을(를) 시청할지 여부를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Entity Type]</td> 
-   <td>시나리오가 보려는 [!UICONTROL Microsoft Dynamics 365] 레코드 종류를 선택하십시오.</td> 
+   <td role="rowheader">[!UICONTROL 엔티티 유형]</td> 
+   <td>시나리오에서 보려는 [!UICONTROL Microsoft Dynamics 365] 레코드 유형을 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
+   <td role="rowheader">[!UICONTROL 출력]</td> 
    <td> <p>이 모듈에 대한 출력 번들에 포함할 정보를 선택합니다. 필드는 선택한 엔티티 유형에 따라 사용할 수 있습니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Max Records]</td> 
+   <td role="rowheader">[!UICONTROL 최대 레코드]</td> 
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
@@ -213,14 +213,14 @@ ht-degree: 1%
 
 ### 액션
 
-* [[!UICONTROL Create Record]](#create-record)
-* [[!UICONTROL Make an API Call]](#make-an-api-call)
-* [[!UICONTROL Delete Record]](#delete-record)
-* [[!UICONTROL Read Records]](#read-records)
-* [[!UICONTROL Update Record]](#update-record)
+* [[!UICONTROL 레코드 만들기]](#create-record)
+* [[!UICONTROL API 호출 만들기]](#make-an-api-call)
+* [[!UICONTROL 레코드 삭제]](#delete-record)
+* [[!UICONTROL 레코드 읽기]](#read-records)
+* [[!UICONTROL 레코드 업데이트]](#update-record)
 
 
-#### [!UICONTROL Create Record]
+#### [!UICONTROL 레코드 만들기]
 
 이 작업 모듈은 약속 또는 작업과 같은 엔터티를 만듭니다.
 
@@ -239,21 +239,21 @@ ht-degree: 1%
    <td> <p>[!DNL Microsoft Dynamics 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">[!DNL Microsoft Dynamics 365]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오. </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Entity Type]</td> 
+   <td role="rowheader">[!UICONTROL 엔티티 유형]</td> 
    <td>모듈에서 만들 엔티티 유형을 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select Fields to Map]</td> 
+   <td role="rowheader">[!UICONTROL 매핑할 필드 선택]</td> 
    <td>레코드를 만들 때 값을 포함할 필드를 선택합니다. 사용 가능한 필드는 엔티티 유형에 따라 다릅니다.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Property fields]</td> 
+   <td role="rowheader">[!UICONTROL 속성 필드]</td> 
    <td> 선택한 필드입니다. 주어진 속성에 대해 레코드에 보유할 값을 입력합니다. </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete Record]
+#### [!UICONTROL 레코드 삭제]
 
 이 작업 모듈은 엔티티를 삭제합니다.
 
@@ -272,7 +272,7 @@ ht-degree: 1%
   <td> <p>[!DNL Microsoft Dynamics 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">[!DNL Microsoft Dynamics 365]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오. </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Entity Type]</td> 
+   <td role="rowheader">[!UICONTROL 엔티티 유형]</td> 
    <td> <p>모듈에서 삭제할 엔티티 유형을 선택합니다.</p> </td> 
   </tr> 
   <tr> 
@@ -282,7 +282,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL API 호출 만들기]
 
 이 작업 모듈을 사용하면 [!DNL Microsoft Dynamics 365] API에 대해 사용자 지정 인증된 호출을 수행할 수 있습니다. 이렇게 하면 다른 [!DNL Microsoft Dynamics 365] 모듈에서 수행할 수 없는 데이터 흐름 자동화를 만들 수 있습니다.
 
@@ -305,7 +305,7 @@ ht-degree: 1%
    <td> <p><code>&lt;Instance URL>/api/data/v9.1/</code>과(와) 관련된 경로를 입력하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td role="rowheader">[!UICONTROL 메서드]</td> 
    <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 요청 메서드</a>를 참조하십시오.</p> <p>의 추가 정보</p> </td> 
   </tr> 
   <tr> 
@@ -313,7 +313,7 @@ ht-degree: 1%
    <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] 인증 헤더를 추가합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td role="rowheader">[!UICONTROL 쿼리 문자열]</td> 
    <td> <p>표준 JSON 개체 형식으로 API 호출에 대한 쿼리를 추가합니다.</p> <p>For example: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
@@ -326,7 +326,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-#### [!UICONTROL Read Records]
+#### [!UICONTROL 레코드 읽기]
 
 이 작업 모듈은 [!DNL Microsoft Dynamics 365]의 단일 엔터티에서 데이터를 읽습니다.
 
@@ -345,11 +345,11 @@ ht-degree: 1%
   <td> <p>[!DNL Microsoft Dynamics 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">[!DNL Microsoft Dynamics 365]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오. </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Entity Type]</td> 
+   <td role="rowheader">[!UICONTROL 엔티티 유형]</td> 
    <td>모듈에서 읽을 엔티티 유형을 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
+   <td role="rowheader">[!UICONTROL 출력]</td> 
    <td> <p>이 모듈에 대한 출력 번들에 포함할 정보를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
@@ -359,7 +359,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-#### [!UICONTROL Update Record]
+#### [!UICONTROL 레코드 업데이트]
 
 이 작업 모듈은 엔티티를 업데이트합니다.
 
@@ -378,15 +378,15 @@ ht-degree: 1%
   <td> <p>[!DNL Microsoft Dynamics 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">[!DNL Microsoft Dynamics 365]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오. </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Entity Type]</td> 
+   <td role="rowheader">[!UICONTROL 엔티티 유형]</td> 
    <td>모듈을 업데이트할 엔티티 유형을 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select Fields to Map]</td> 
+   <td role="rowheader">[!UICONTROL 매핑할 필드 선택]</td> 
    <td>레코드를 만들 때 값을 포함할 필드를 선택합니다. 사용 가능한 필드는 엔티티 유형에 따라 다릅니다.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Property fields]</td> 
+   <td role="rowheader">[!UICONTROL 속성 필드]</td> 
    <td>선택된 필드입니다. 주어진 속성에 대해 레코드에 보유할 값을 입력합니다.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -398,7 +398,7 @@ ht-degree: 1%
 
 ### 검색 결과
 
-#### [!UICONTROL Search Records]
+#### [!UICONTROL 레코드 검색]
 
 이 검색 모듈은 지정한 검색 쿼리와 일치하는 [!DNL Microsoft Dynamics 365]의 개체에서 레코드를 찾습니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
 
@@ -413,31 +413,31 @@ ht-degree: 1%
   <td> <p>[!DNL Microsoft Dynamics 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">[!DNL Microsoft Dynamics 365]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오. </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Entity Type]</td> 
+   <td role="rowheader">[!UICONTROL 엔티티 유형]</td> 
    <td>모듈을 업데이트할 엔티티 유형을 선택합니다.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Filters]</td> 
    <td> <p>이 검색에 사용할 필터를 선택합니다.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Standard Filters]</strong> </p> <p>필드 및 연산자를 선택하고 검색할 값을 입력하거나 매핑하여 필터를 설정합니다. 필터에 AND 또는 OR 규칙을 사용할 수 있습니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL Query Functions]</strong> </p> <p>검색할 [!DNL Dynamics 365] 웹 API 쿼리 함수를 입력하십시오. </p> <p>쿼리 함수에 대한 자세한 내용은 [!DNL Microsoft] 설명서의 <a href="https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/queryfunctions?view=dynamics-ce-odata-9">웹 API 쿼리 함수 참조</a>를 참조하십시오.</p> </li> 
+     <li> <p><strong>[!UICONTROL 표준 필터]</strong> </p> <p>필드 및 연산자를 선택하고 검색할 값을 입력하거나 매핑하여 필터를 설정합니다. 필터에 AND 또는 OR 규칙을 사용할 수 있습니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 쿼리 함수]</strong> </p> <p>검색할 [!DNL Dynamics 365] 웹 API 쿼리 함수를 입력하십시오. </p> <p>쿼리 함수에 대한 자세한 내용은 [!DNL Microsoft] 설명서의 <a href="https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/queryfunctions?view=dynamics-ce-odata-9">웹 API 쿼리 함수 참조</a>를 참조하십시오.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Sort]</td> 
    <td> <p>항목이 반환되는 순서를 지정합니다. 여러 정렬을 추가할 수 있습니다.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Field]</strong> </p> <p>결과를 정렬할 필드를 지정합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL Direction]</strong> </p> <p>정렬 방향(오름차순 또는 내림차순)을 지정합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 필드]</strong> </p> <p>결과를 정렬할 필드를 지정합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 방향]</strong> </p> <p>정렬 방향(오름차순 또는 내림차순)을 지정합니다.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Max Records]</td> 
+   <td role="rowheader">[!UICONTROL 최대 레코드]</td> 
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
+   <td role="rowheader">[!UICONTROL 출력]</td> 
    <td> <p>이 모듈에 대한 출력 번들에 포함할 정보를 선택합니다.</p> </td> 
   </tr> 
  </tbody> 

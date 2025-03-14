@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 전자 메일
 author: Becky
 feature: Workfront Fusion
 exl-id: 28a04bad-d3ef-4f3a-be93-8b04761a75e4
-source-git-commit: add63edf94cc430113bf2cfd0c389cca04aa92f8
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2023'
+source-wordcount: '2460'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
    <p>또는</p>
    <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
@@ -69,24 +69,24 @@ ht-degree: 0%
 
 전자 메일 모듈 내에서 직접 [!DNL Google] 계정에 연결할 수 있습니다.
 
-1. 전자 메일 모듈에서 [!UICONTROL Connection] 필드 옆의 **[!UICONTROL Add]**&#x200B;을(를) 클릭합니다.
+1. 전자 메일 모듈에서 [!UICONTROL 연결] 필드 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 1. 연결 유형으로 **[!DNL Google]**&#x200B;을(를) 선택하십시오.
 1. 연결의 이름을 입력합니다.
-1. (선택 사항) [!UICONTROL [!DNL Google] Client ID] 및 [!UICONTROL Client Secret]을(를) 입력합니다.
-1. 연결을 만들고 모듈로 돌아가려면 **[!UICONTROL Continue]**&#x200B;을(를) 클릭하십시오.
+1. (선택 사항) [!UICONTROL [!DNL Google] 클라이언트 ID] 및 [!UICONTROL 클라이언트 암호]를 입력합니다.
+1. 연결을 만들고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭하세요.
 
 ### 다른 전자 메일 서비스(IMAP)에 연결
 
 IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함에서 메시지를 읽거나 조작할 수 있습니다. 대부분의 이메일 모듈에서 IMAP 연결을 사용합니다.
 
-1. 전자 메일 모듈에서 [!UICONTROL Connection] 필드 옆의 **[!UICONTROL Add]**&#x200B;을(를) 클릭합니다.
-1. 연결 유형으로 **[!UICONTROL Others (SMTP)]**&#x200B;을(를) 선택하십시오.
-1. 연결을 위한 **[!UICONTROL Name]**&#x200B;을(를) 입력하십시오.
-1. 목록에서 **[!UICONTROL Email provider]**&#x200B;을(를) 선택합니다. 이메일 공급자가 목록에 없는 경우 기타를 선택합니다.
-1. 전자 메일 계정의 **[!UICONTROL User name]** 및 **[!UICONTROL Password]**&#x200B;을(를) 입력하십시오.
-1. (조건부) 공급자가 목록에 없으면 **[!UICONTROL SMTP server]** 및 **[!UICONTROL Port]**&#x200B;을(를) 입력하고 **[!UICONTROL Use a secure connection (TLS)]**&#x200B;을(를) 원하는지 지정하십시오. 이 정보를 찾으려면 사서함의 [!UICONTROL Help] 섹션을 확인하십시오. 이 정보를 사용할 수 없는 경우 이메일 서비스 공급자에게 문의하십시오.
+1. 전자 메일 모듈에서 [!UICONTROL 연결] 필드 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
+1. 연결 유형으로 **[!UICONTROL 기타(SMTP)]**&#x200B;을(를) 선택하십시오.
+1. 연결을 위한 **[!UICONTROL 이름]**&#x200B;을(를) 입력하십시오.
+1. 목록에서 **[!UICONTROL 전자 메일 공급자]**&#x200B;를 선택하십시오. 이메일 공급자가 목록에 없는 경우 기타를 선택합니다.
+1. 전자 메일 계정의 **[!UICONTROL 사용자 이름]** 및 **[!UICONTROL 암호]**&#x200B;를 입력하세요.
+1. (조건부) 공급자가 목록에 없으면 **[!UICONTROL SMTP 서버]** 및 **[!UICONTROL 포트]**&#x200B;를 입력하고 **[!UICONTROL TLS(보안 연결)를 사용할지 여부를 지정]**&#x200B;합니다. 이 정보를 찾으려면 사서함의 [!UICONTROL 도움말] 섹션을 확인하십시오. 이 정보를 사용할 수 없는 경우 이메일 서비스 공급자에게 문의하십시오.
 1. 자체 서명된 인증서를 사용하려면 **허가되지 않은 인증서 거부** 옵션을 활성화하고 자체 서명된 인증서를 업로드하십시오. 자세한 내용은 [자체 서명된 인증서 업로드](#upload-a-self-signed-certificate)를 참조하세요.
-1. 연결을 만들고 모듈로 돌아가려면 **[!UICONTROL Continue]**&#x200B;을(를) 클릭하십시오.
+1. 연결을 만들고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭하세요.
 
 #### 자체 서명된 인증서 업로드
 
@@ -98,9 +98,9 @@ IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함�
 1. 파일의 암호를 입력합니다.
 1. **저장**&#x200B;을 클릭하여 파일을 추출하고 모듈 설정으로 돌아갑니다.
 
-## [!UICONTROL Email]개 모듈 및 해당 필드
+## [!UICONTROL 전자 메일] 모듈 및 해당 필드
 
-[!UICONTROL Email] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 이러한 필드와 함께 앱이나 서비스의 액세스 수준과 같은 요소에 따라 추가 필드가 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!UICONTROL 전자 메일] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 이러한 필드와 함께 앱이나 서비스의 액세스 수준과 같은 요소에 따라 추가 필드가 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 시나리오의 다른 모듈에서 사용했으므로 일부 이메일 필드에 데이터가 이미 포함되어 있을 수 있습니다. 이에 대한 정보가 필요한 경우 이메일 도움말 설명서를 참조하십시오.
 
@@ -110,7 +110,7 @@ IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함�
 
 >[!NOTE]
 >
->&#39;[!UICONTROL Email ID (UID)]&#39;(으)로 알려진 고유 전자 메일 ID가 전자 메일 식별자입니다. 이메일 ID는 각 이메일 폴더에 대해 고유합니다.
+>&#39;[!UICONTROL 전자 메일 ID(UID)]&#39;(으)로 알려진 고유한 전자 메일 ID가 전자 메일의 식별자입니다. 이메일 ID는 각 이메일 폴더에 대해 고유합니다.
 
 * [트리거](#triggers)
 * [액션](#actions)
@@ -118,7 +118,7 @@ IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함�
 
 ### 트리거
 
-#### [!UICONTROL Watch Emails]
+#### [!UICONTROL 전자 메일 보기]
 
 이 트리거 모듈은 지정된 기준에 따라 처리를 위해 새 이메일이 수신되면 시나리오를 시작합니다.
 
@@ -128,23 +128,23 @@ IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>전자 메일 계정을 [!UICONTROL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">전자 메일을 [!UICONTROL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
+   <td> <p>[!UICONTROL Workfront Fusion]에 전자 메일 계정을 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 전자 메일 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder] </td> 
+   <td role="rowheader">[!UICONTROL 폴더] </td> 
    <td> <p>보려는 전자 메일이 포함된 폴더를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Criteria]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 기준]</p> </td> 
    <td> <p>전자 메일을 볼 기준을 선택하십시오.</p> 
     <ul> 
-     <li>[!UICONTROL All Emails]</li> 
-     <li>[!UICONTROL Only Read Emails]</li> 
-     <li>[!UICONTROL Only Unread Emails]</li> 
+     <li>[!UICONTROL 모든 이메일]</li> 
+     <li>[!UICONTROL 읽기 전용 이메일]</li> 
+     <li>[!UICONTROL 읽지 않은 이메일만]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Sender Email Address] </td> 
+   <td role="rowheader">[!UICONTROL 발신자 이메일 주소] </td> 
    <td> <p>보려는 이메일을 보낸 사람의 이메일 주소를 입력합니다.</p> </td> 
   </tr> 
   <tr> 
@@ -156,11 +156,11 @@ IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함�
    <td> <p>키워드를 입력하여 해당 키워드가 포함된 이메일만 시청합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Mark message(s) as read when fetched]</td> 
+   <td role="rowheader">[!UICONTROL 가져올 때 읽은 상태로 메시지 표시]</td> 
    <td> <p>세부 정보를 검색한 후 읽지 않은 이메일을 읽은 상태로 표시하려면 이 옵션을 활성화합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximum number of results]</td> 
+   <td role="rowheader">[!UICONTROL 최대 결과 수]</td> 
    <td> <p> 시나리오 실행 주기 동안 [!DNL Workfront Fusion]이(가) 반환해야 하는 최대 전자 메일 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
@@ -168,16 +168,16 @@ IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함�
 
 ### 액션
 
-* [[!UICONTROL Copy an Email]](#copy-an-email)
-* [[!UICONTROL Create a Draft]](#create-a-draft)
-* [[!UICONTROL Delete an Email]](#delete-an-email)
-* [[!UICONTROL Get Emails]](#get-emails)
-* [[!UICONTROL Mark an Email as Read]](#mark-an-email-as-read)
-* [[!UICONTROL Mark an Email as Unread]](#mark-an-email-as-unread)
-* [[!UICONTROL Move an Email]](#move-an-email)
-* [[!UICONTROL Send an Email]](#send-an-email)
+* [[!UICONTROL 전자 메일 복사]](#copy-an-email)
+* [[!UICONTROL 초안 만들기]](#create-a-draft)
+* [[!UICONTROL 전자 메일 삭제]](#delete-an-email)
+* [[!UICONTROL 전자 메일 가져오기]](#get-emails)
+* [[!UICONTROL 이메일을 읽은 상태로 표시]](#mark-an-email-as-read)
+* [[!UICONTROL 메일을 읽지 않음으로 표시]](#mark-an-email-as-unread)
+* [[!UICONTROL 전자 메일 이동]](#move-an-email)
+* [[!UICONTROL 전자 메일 보내기]](#send-an-email)
 
-#### [!UICONTROL Copy an Email]
+#### [!UICONTROL 전자 메일 복사]
 
 이 작업 모듈은 이메일 또는 초안을 선택한 폴더로 복사합니다.
 
@@ -187,24 +187,24 @@ IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>전자 메일 계정을 [!UICONTROL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">전자 메일을 [!UICONTROL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td>
+   <td> <p>[!UICONTROL Workfront Fusion]에 전자 메일 계정을 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 전자 메일 연결</a>을 참조하십시오.</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source Folder]</td> 
+   <td role="rowheader">[!UICONTROL Source 폴더]</td> 
    <td>이메일을 복사할 폴더를 선택합니다. 예: 기본.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Destination Folder]</td> 
+   <td role="rowheader">[!UICONTROL 대상 폴더]</td> 
    <td> <p> 이메일을 복사할 폴더를 선택합니다. 예: 작업.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
-   <td> <p>대상 폴더로 복사할 이메일의 이메일 UID을 입력합니다.</p> <p>[!UICONTROL Email] &gt; [!UICONTROL Watch Email] 모듈 또는 [!UICONTROL Search Email] 모듈을 사용하여 전자 메일의 UID을 가져올 수 있습니다.</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 이메일 ID (UID)]</p> </td> 
+   <td> <p>대상 폴더로 복사할 이메일의 이메일 UID을 입력합니다.</p> <p>[!UICONTROL Email] &gt; [!UICONTROL Watch Email] 모듈 또는 [!UICONTROL Search Email] 모듈을 사용하여 이메일의 UID을 가져올 수 있습니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Create a Draft]
+#### [!UICONTROL 초안 만들기]
 
 이 작업 모듈은 선택한 폴더에 새 초안을 만들어 추가합니다.
 
@@ -214,10 +214,10 @@ IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>전자 메일 계정을 [!UICONTROL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">전자 메일을 [!UICONTROL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td>
+   <td> <p>[!UICONTROL Workfront Fusion]에 전자 메일 계정을 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 전자 메일 연결</a>을 참조하십시오.</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td role="rowheader">[!UICONTROL 폴더]</td> 
    <td>초안 이메일을 만들 폴더를 선택합니다.</td> 
   </tr> 
   <tr> 
@@ -230,19 +230,19 @@ IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Content] </td> 
-   <td> <p>HTML 태그를 사용하여 이메일 콘텐츠를 HTML 형식이나 일반 텍스트로 입력하거나 매핑합니다.</p> </td> 
+   <td> <p>HTML 태그를 사용하여 HTML 형식 또는 일반 텍스트로 이메일 콘텐츠를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Attachments]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 첨부 파일]</p> </td> 
    <td> <p>추가할 각 첨부 파일에 대해 <b>항목 추가</b>를 클릭하고 다음을 입력하십시오.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL File name]</strong> </p> <p>확장자를 포함하여 파일 이름을 입력합니다. </p> </li> 
+     <li> <p><strong>[!UICONTROL 파일 이름]</strong> </p> <p>확장자를 포함하여 파일 이름을 입력합니다. </p> </li> 
      <li> <p><strong>[!UICONTROL Data]</strong> </p> <p>첨부 파일을 업로드할 폴더의 경로를 입력합니다.</p> </li> 
      <li> <p><strong>[!UICONTROL Content-ID]</strong> </p> <p>콘텐츠에 첨부 파일(이미지)을 삽입하려면 콘텐츠 ID를 입력합니다.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Copy Recipient] </td> 
+   <td role="rowheader">[!UICONTROL 사본 수신자] </td> 
    <td> <p>이 전자 메일의 복사본을 보낼 각 전자 메일 주소에 대해 <b>항목 추가</b>를 클릭하고 전자 메일 주소를 입력하십시오. </p> </td> 
   </tr> 
   <tr> 
@@ -289,7 +289,7 @@ IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함�
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete an Email]
+#### [!UICONTROL 전자 메일 삭제]
 
 이 작업 모듈은 선택한 폴더에서 이메일 또는 초안을 제거합니다.
 
@@ -299,24 +299,24 @@ IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>전자 메일 계정을 [!UICONTROL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">전자 메일을 [!UICONTROL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td>
+   <td> <p>[!UICONTROL Workfront Fusion]에 전자 메일 계정을 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 전자 메일 연결</a>을 참조하십시오.</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td role="rowheader">[!UICONTROL 폴더]</td> 
    <td>삭제하려는 이메일이 포함된 폴더를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
-   <td> <p>삭제하려는 이메일의 이메일 UID을 입력합니다.</p> <p>이메일 &gt; 이메일 보기 모듈 또는 [!UICONTROL Search Email] 모듈을 사용하여 이메일의 UID을 가져올 수 있습니다.</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 이메일 ID (UID)]</p> </td> 
+   <td> <p>삭제하려는 이메일의 이메일 UID을 입력합니다.</p> <p>이메일 &gt; 이메일 보기 모듈 또는 [!UICONTROL 검색 이메일] 모듈을 사용하여 이메일의 UID을 가져올 수 있습니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Expunge]</td> 
-   <td> <p>현재 열려 있는 사서함에서 [!UICONTROL Deleted](으)로 플래그가 지정된 모든 메시지를 영구적으로 제거하려면 이 옵션을 활성화하십시오.</p> <p>참고: [!DNL Gmail]에서 이 동작은 [!UICONTROL Settings] &gt;[!UICONTROL Forwarding POP/IMAP in IMAP access] 섹션의 설정에 의해 제어됩니다.</p> </td> 
+   <td role="rowheader">[!UICONTROL Exponge]</td> 
+   <td> <p>현재 열려 있는 사서함에서 [!UICONTROL Deleted](으)로 플래그가 지정된 모든 메시지를 영구적으로 제거하려면 이 옵션을 활성화합니다.</p> <p>참고: [!DNL Gmail]에서 이 동작은 [!UICONTROL 설정] &gt;[!UICONTROL Forwarding POP/IMAP in IMAP access] 섹션의 설정에 의해 결정됩니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get Emails]
+#### [!UICONTROL 전자 메일 가져오기]
 
 이 모듈은 지정된 기준과 일치하는 이메일을 반환합니다.
 
@@ -326,35 +326,35 @@ IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>전자 메일 계정을 [!UICONTROL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">전자 메일을 [!UICONTROL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td>
+   <td> <p>[!UICONTROL Workfront Fusion]에 전자 메일 계정을 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 전자 메일 연결</a>을 참조하십시오.</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder] </td> 
+   <td role="rowheader">[!UICONTROL 폴더] </td> 
    <td> <p>검색할 이메일이 포함된 폴더를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Mark message(s) as read when fetched] </td> 
+   <td role="rowheader">[!UICONTROL 가져올 때 읽은 상태로 메시지 표시] </td> 
    <td> <p>세부 정보를 검색한 후 읽지 않은 이메일을 읽은 상태로 표시하려면 이 옵션을 활성화합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Criteria]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 기준]</p> </td> 
    <td> <p>검색할 이메일의 기준을 선택합니다.</p> 
     <ul> 
-     <li>[!UICONTROL All Emails]</li> 
-     <li>[!UICONTROL Only Read Emails]</li> 
-     <li>[!UICONTROL Only Unread Emails]</li> 
+     <li>[!UICONTROL 모든 이메일]</li> 
+     <li>[!UICONTROL 읽기 전용 이메일]</li> 
+     <li>[!UICONTROL 읽지 않은 이메일만]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Sender Email Address] </td> 
+   <td role="rowheader">[!UICONTROL 발신자 이메일 주소] </td> 
    <td> <p>이메일을 검색할 발신자의 이메일 주소를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Recipient Email]</td> 
+   <td role="rowheader">[!UICONTROL 수신자 이메일]</td> 
    <td> <p> 검색할 이메일의 수신자 이메일 주소를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL From date] </td> 
+   <td role="rowheader">[!UICONTROL 시작 날짜] </td> 
    <td> <p>지정된 날짜 또는 그 이후에 처리된 이메일을 검색할 날짜를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
@@ -370,23 +370,23 @@ IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함�
    <td> <p>키워드를 입력하거나 매핑하여 해당 키워드가 포함된 이메일만 검색하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Email ID (UID)]</td> 
-   <td> <p> 세부 정보를 검색할 이메일의 이메일 ID(UID)를 입력합니다.</p> <p>[!DNL Workfront Fusion]의 [!UICONTROL  Watch Email] 모듈 또는 [!UICONTROL Search Email] 모듈을 사용하여 전자 메일의 UID을 가져올 수 있습니다.</p> </td> 
+   <td role="rowheader">[!UICONTROL 이메일 ID (UID)]</td> 
+   <td> <p> 세부 정보를 검색할 이메일의 이메일 ID(UID)를 입력합니다.</p> <p>[!DNL Workfront Fusion]의[!UICONTROL 시계 이메일] 모듈 또는 [!UICONTROL 검색 이메일] 모듈을 사용하여 이메일의 UID을 가져올 수 있습니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximum number of results]</td> 
+   <td role="rowheader">[!UICONTROL 최대 결과 수]</td> 
    <td> <p> 시나리오 실행 주기 동안 최대 [!DNL Workfront Fusion] 전자 메일 수가 반환되어야 합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Continue the execution of the route even if the module returns no results]</td> 
+   <td role="rowheader">[!UICONTROL 모듈이 결과를 반환하지 않더라도 라우트 실행을 계속합니다.]</td> 
    <td> <p> 반환된 결과가 없더라도 모듈을 계속 실행하려면 를 선택합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Mark an Email as Read]
+#### [!UICONTROL 이메일을 읽은 상태로 표시]
 
-이 작업 모듈은 [!UICONTROL Read] 플래그를 설정하여 선택한 폴더의 전자 메일 또는 초안을 읽은 것으로 표시합니다.
+이 작업 모듈은 [!UICONTROL 읽기] 플래그를 설정하여 선택한 폴더의 전자 메일 또는 초안을 읽은 것으로 표시합니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -394,20 +394,20 @@ IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>전자 메일 계정을 [!UICONTROL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">전자 메일을 [!UICONTROL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td>
+   <td> <p>[!UICONTROL Workfront Fusion]에 전자 메일 계정을 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 전자 메일 연결</a>을 참조하십시오.</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td role="rowheader">[!UICONTROL 폴더]</td> 
    <td>읽음으로 표시할 이메일이 포함된 폴더를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
-   <td> <p>읽음으로 표시할 이메일의 이메일 UID을 입력합니다.</p> <p>이메일 &gt; 이메일 보기 모듈 또는 [!UICONTROL Search Email] 모듈을 사용하여 이메일의 UID을 가져올 수 있습니다.</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 이메일 ID (UID)]</p> </td> 
+   <td> <p>읽음으로 표시할 이메일의 이메일 UID을 입력합니다.</p> <p>이메일 &gt; 이메일 보기 모듈 또는 [!UICONTROL 검색 이메일] 모듈을 사용하여 이메일의 UID을 가져올 수 있습니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Mark an Email as Unread]
+#### [!UICONTROL 메일을 읽지 않음으로 표시]
 
 읽지 않음 플래그를 설정하여 선택한 폴더의 전자 메일 또는 초안을 읽지 않음으로 표시합니다.
 
@@ -417,20 +417,20 @@ IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>전자 메일 계정을 [!UICONTROL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">전자 메일을 [!UICONTROL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td>
+   <td> <p>[!UICONTROL Workfront Fusion]에 전자 메일 계정을 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 전자 메일 연결</a>을 참조하십시오.</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td role="rowheader">[!UICONTROL 폴더]</td> 
    <td>읽지 않음으로 표시할 전자 메일이 포함된 폴더를 선택합니다. 예: 기본.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
-   <td> <p>읽지 않음으로 표시할 전자 메일의 전자 메일 UID을 입력합니다.</p> <p>이메일 &gt; 이메일 보기 모듈 또는 [!UICONTROL Search Email] 모듈을 사용하여 이메일의 UID을 가져올 수 있습니다.</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 이메일 ID (UID)]</p> </td> 
+   <td> <p>읽지 않음으로 표시할 전자 메일의 전자 메일 UID을 입력합니다.</p> <p>이메일 &gt; 이메일 보기 모듈 또는 [!UICONTROL 검색 이메일] 모듈을 사용하여 이메일의 UID을 가져올 수 있습니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Move an Email]
+#### [!UICONTROL 전자 메일 이동]
 
 선택한 이메일 또는 초안을 선택한 폴더로 이동합니다.
 
@@ -440,24 +440,24 @@ IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>전자 메일 계정을 [!UICONTROL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">전자 메일을 [!UICONTROL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td>
+   <td> <p>[!UICONTROL Workfront Fusion]에 전자 메일 계정을 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 전자 메일 연결</a>을 참조하십시오.</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source Folder]</td> 
+   <td role="rowheader">[!UICONTROL Source 폴더]</td> 
    <td>이동할 전자 메일이 포함된 폴더를 선택합니다. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Destination Folder]</td> 
+   <td role="rowheader">[!UICONTROL 대상 폴더]</td> 
    <td> <p> 이메일을 추가할 폴더를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
-   <td> <p>대상 폴더로 이동할 이메일의 이메일 UID을 입력합니다.</p> <p>이메일 &gt; 이메일 보기 모듈 또는 [!UICONTROL Search Email] 모듈을 사용하여 이메일의 UID을 가져올 수 있습니다.</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 이메일 ID (UID)]</p> </td> 
+   <td> <p>대상 폴더로 이동할 이메일의 이메일 UID을 입력합니다.</p> <p>이메일 &gt; 이메일 보기 모듈 또는 [!UICONTROL 검색 이메일] 모듈을 사용하여 이메일의 UID을 가져올 수 있습니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Send an Email]
+#### [!UICONTROL 전자 메일 보내기]
 
 새 이메일을 전송합니다.
 
@@ -467,11 +467,11 @@ IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>전자 메일 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">전자 메일을 [!UICONTROL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
+   <td> <p>전자 메일 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 전자 메일 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Save Message after Sending]</td> 
-   <td>전자 메일 메시지가 전송되면 사서함에 저장됩니다. [!DNL Workfront Fusion]을(를) 사용하여 보낸 전자 메일을 사서함의 <i>[!UICONTROL Sent mail]</i> 폴더 또는 다른 폴더에 저장하려면 이 옵션을 활성화합니다. [!DNL Gmail]과(와) 같은 일부 이메일 서비스는 보낸 메시지를 자동으로 저장합니다.</td> 
+   <td role="rowheader">[!UICONTROL 전송 후 메시지 저장]</td> 
+   <td>전자 메일 메시지가 전송되면 사서함에 저장됩니다. [!DNL Workfront Fusion]을(를) 사용하여 보낸 전자 메일을 사서함의 <i>[!UICONTROL 보낸 메일]</i> 폴더 또는 다른 폴더에 저장하려면 이 옵션을 활성화합니다. [!DNL Gmail]과(와) 같은 일부 이메일 서비스는 보낸 메시지를 자동으로 저장합니다.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL To] </td> 
@@ -482,28 +482,28 @@ IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함�
    <td> <p>이메일의 제목 줄을 입력하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Content Type]</p> </td> 
-   <td> <p>전자 메일의 [!UICONTROL content] 유형 선택:</p> 
+   <td role="rowheader"> <p>[!UICONTROL 콘텐츠 유형]</p> </td> 
+   <td> <p>이메일에 대한 [!UICONTROL content] 유형을 선택합니다.</p> 
     <ul> 
      <li>HTML</li> 
-     <li>[!UICONTROL Plaintext]</li> 
+     <li>[!UICONTROL 일반 텍스트]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Content] </td> 
-   <td> <p>[!UICONTROL Content Type] 필드에서 선택한 내용에 따라 HTML 태그를 사용하여 HTML 형식이나 일반 텍스트로 전자 메일 콘텐츠를 입력하거나 매핑합니다.</p> </td> 
+   <td> <p>[!UICONTROL 콘텐츠 유형] 필드에서 선택한 내용에 따라 HTML 태그를 사용하여 HTML 형식이나 일반 텍스트로 이메일 콘텐츠를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Attachments]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 첨부 파일]</p> </td> 
    <td> <p>추가할 각 첨부 파일에 대해 <b>항목 추가</b>를 클릭하고 다음을 입력하십시오.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL File name]</strong> </p> <p>확장자를 포함하여 파일 이름을 입력합니다. </p> </li> 
+     <li> <p><strong>[!UICONTROL 파일 이름]</strong> </p> <p>확장자를 포함하여 파일 이름을 입력합니다. </p> </li> 
      <li> <p><strong>[!UICONTROL Data]</strong> </p> <p>첨부 파일을 업로드할 폴더의 경로를 입력합니다.</p> </li> 
      <li> <p><strong>[!UICONTROL Content-ID]</strong> </p> <p>콘텐츠에 첨부 파일(이미지)을 삽입하려면 콘텐츠 ID를 입력합니다.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Copy Recipient] </td> 
+   <td role="rowheader">[!UICONTROL 사본 수신자] </td> 
    <td> <p>이 전자 메일의 복사본을 보낼 각 전자 메일 주소에 대해 <b>항목 추가</b>를 클릭하고 전자 메일 주소를 입력하십시오. </p> </td> 
   </tr> 
   <tr> 
@@ -512,10 +512,10 @@ IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함�
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Sender]</p> </td> 
-   <td> <p>전자 메일의 [!UICONTROL Sender] 필드에 표시되는 전자 메일 주소를 입력하거나 매핑합니다.</p> <p>팁: 이 필드를 사용할지 또는 부터 필드를 사용할지 확실하지 않은 경우 부터 필드를 선택하는 것이 좋습니다.</p> <p>중요: 올바른 구문 사용: <code>name@email.com</code> 또는 <code>"Name" name@email.com</code></p> </td> 
+   <td> <p>이메일의 [!UICONTROL Sender] 필드에 표시되는 이메일 주소를 입력하거나 매핑합니다.</p> <p>팁: 이 필드를 사용할지 또는 부터 필드를 사용할지 확실하지 않은 경우 부터 필드를 선택하는 것이 좋습니다.</p> <p>중요: 올바른 구문 사용: <code>name@email.com</code> 또는 <code>"Name" name@email.com</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Reply-To]</td> 
+   <td role="rowheader">[!UICONTROL 회신 주소]</td> 
    <td> <p> 이 전자 메일에 대한 회신을 "보낸 사람" 주소가 아닌 다른 주소로 보내려면 이 전자 메일에 회신할 전자 메일 주소를 입력하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -523,36 +523,36 @@ IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함�
    <td> <p> 특정 전자 메일에 회신하는 경우 회신하는 전자 메일의 ID를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL References] </td> 
+   <td role="rowheader">[!UICONTROL 참조] </td> 
    <td> <p>스레드에 있는 모든 응답의 메시지 ID를 입력합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Priority]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 우선 순위]</p> </td> 
    <td> <p>이메일의 우선 순위 선택:</p> 
     <ul> 
-     <li>[!UICONTROL High]</li> 
+     <li>[!UICONTROL 높음]</li> 
      <li>[!UICONTROL Normal]</li> 
-     <li>[!UICONTROL Low]</li> 
+     <li>[!UICONTROL 낮음]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Headers]</p> </td> 
    <td> <p>헤더를 추가합니다.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Key]</strong> </p> <p>키를 추가합니다. 예: [!UICONTROL Sender], [!UICONTROL Date], [!UICONTROL To] 등.</p> </li> 
-     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>키 값을 입력합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 키]</strong> </p> <p>키를 추가합니다. 예: [!UICONTROL Sender], [!UICONTROL Date], [!UICONTROL To] 등.</p> </li> 
+     <li> <p><strong>[!UICONTROL 값]</strong> </p> <p>키 값을 입력합니다.</p> </li> 
     </ul> </td> 
   </tr> 
 <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL From] </td> 
-   <td> <p>전자 메일의 [!UICONTROL From] 필드에 표시되는 전자 메일 주소(및 필요한 경우 이름)를 입력하거나 매핑합니다. </p> <p>중요: 올바른 구문(<code>name@email.com</code> 또는 <code>"Name" name@email.com</code>)을 사용하십시오.</p> <p>참고: 일반적으로 [!DNL Workfront Fusion]은(는) 연결을 만들 때 입력한 전자 메일 주소를 보낸 사람 주소로 사용합니다. 다른 이메일 주소를 입력하면 계정에 내 주소가 아닌 다른 주소에서 이메일을 보낼 수 있는 권한이 없을 수 있으므로 메시지를 보낼 때 오류가 발생할 수 있습니다. 예: <code>test@mail.com</code> 또는 "<code>John Bush" test@email.com</code>.</p> </td> 
+   <td> <p>이메일의 [!UICONTROL From] 필드에 표시되는 이메일 주소(및 필요한 경우 이름)를 입력하거나 매핑합니다. </p> <p>중요: 올바른 구문(<code>name@email.com</code> 또는 <code>"Name" name@email.com</code>)을 사용하십시오.</p> <p>참고: 일반적으로 [!DNL Workfront Fusion]은(는) 연결을 만들 때 입력한 전자 메일 주소를 보낸 사람 주소로 사용합니다. 다른 이메일 주소를 입력하면 계정에 내 주소가 아닌 다른 주소에서 이메일을 보낼 수 있는 권한이 없을 수 있으므로 메시지를 보낼 때 오류가 발생할 수 있습니다. 예: <code>test@mail.com</code> 또는 "<code>John Bush" test@email.com</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### 반복기
 
-#### [!UICONTROL Iterate Attachments]
+#### [!UICONTROL 첨부 파일 반복]
 
 수신한 첨부 파일을 하나씩 반복합니다.
 
@@ -563,7 +563,7 @@ IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함�
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source module]</td> 
+   <td role="rowheader">[!UICONTROL Source 모듈]</td> 
    <td> <p>반복할 첨부 파일이 있는 전자 메일을 출력하는 모듈을 선택합니다.</p> </td> 
   </tr> 
  </tbody> 

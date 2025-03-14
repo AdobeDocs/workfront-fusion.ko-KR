@@ -4,9 +4,9 @@ description: SOAP 모듈을 사용하여 Adobe Workfront Fusion의 SOAP API에 �
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: 3a27a51e10438e6cf8862bf28b1d58273bbaff36
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '669'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ SOAP 커넥터에는 하나의 모듈인 SOAP 실행 작업만 포함됩니다
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
    <p>또는</p>
    <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
@@ -91,7 +91,7 @@ SOAP 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드�
    <td> 모듈에서 사용할 WSDL을 선택합니다. WSDL을 만들려면 필드 옆에 있는 <b>추가</b>를 클릭하고 필드를 채웁니다. </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL HTTP headers]</td> 
+   <td>[!UICONTROL HTTP Headers]</td> 
    <td> 추가할 각 HTTP 헤더에 대해 <b>항목 추가</b>를 클릭하고 헤더의 이름과 값을 입력합니다.</td> 
   </tr> 
   <tr> 
@@ -124,7 +124,7 @@ SOAP 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드�
 
 **예:**
 
-[!UICONTROL Workfront Fusion]이(가) 다음 내용을 올바르게 인식하지 못합니다.
+[!UICONTROL Workfront Fusion]에서 다음 내용을 제대로 인식하지 못합니다.
 
 ```
 <complexType name="ArrayOfFloat">
@@ -137,16 +137,16 @@ SOAP 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드�
 </complexType>
 ```
 
-이 예에는 [!UICONTROL Workfront Fusion]에서 아직 지원되지 않는 `soapenc:Array`, `soapenc:arrayType` 및 `wsdl:arrayType` 참조가 포함되어 있습니다.
+이 예에는 아직 [!UICONTROL Workfront Fusion]에서 지원되지 않는 `soapenc:Array`, `soapenc:arrayType` 및 `wsdl:arrayType` 참조가 포함되어 있습니다.
 
 >[!ENDSHADEBOX]
 
 ## 해결 방법
 
-[!UICONTROL SOAP] 모듈이 WSDL 파일 처리를 거부하거나 모듈 구성에 다양한 오류가 발생하면 대신 범용 **[!UICONTROL HTTP]>[!UICONTROL Make a request]** 모듈을 사용할 수 있습니다.
+[!UICONTROL SOAP] 모듈이 WSDL 파일 처리를 거부하거나 모듈 구성에 여러 오류가 발생하는 경우 대신 범용 **[!UICONTROL HTTP] > [!UICONTROL 요청 만들기]** 모듈을 사용할 수 있습니다.
 
 1. [!DNL Workfront Fusion]에서 새 시나리오를 만듭니다.
-1. 시나리오에 **[!UICONTROL HTTP]>[!UICONTROL Make a request]** 모듈을 삽입합니다.
+1. 시나리오에 **[!UICONTROL HTTP] > [!UICONTROL 요청 만들기]** 모듈을 삽입합니다.
 1. 모듈의 구성을 열고 다음 필드를 채웁니다.
 
    <table style="table-layout:auto"> 
@@ -154,7 +154,7 @@ SOAP 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드�
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Method]</td> 
+      <td role="rowheader">[!UICONTROL 메서드]</td> 
       <td> <p>[!UICONTROL POST]</p> </td> 
      </tr> 
      <tr data-mc-conditions=""> 
@@ -162,12 +162,12 @@ SOAP 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드�
       <td> <p>[!UICONTROL Raw]</p> </td>
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Content type]</td> 
+      <td role="rowheader">[!UICONTROL 컨텐츠 유형]</td> 
       <td> <p>[!UICONTROL XML (application/xml)]</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Parse response]</td> 
-      <td>[!UICONTROL Enabled]</td> 
+      <td role="rowheader">[!UICONTROL 구문 분석 응답]</td> 
+      <td>[!UICONTROL 활성화됨]</td> 
      </tr> 
     </tbody> 
    </table>
@@ -188,13 +188,13 @@ SOAP 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드�
 1. [!DNL Workfront Fusion]에서 HTTP 모듈의 URL 필드에 URL을 붙여 넣습니다.
 1. 새 웹 브라우저 창/탭에서 [온라인 [!UICONTROL SOAP] 클라이언트](https://wsdlbrowser.com/)를 엽니다.
 1. WSDL URL을 WSDL URL 필드에 붙여넣습니다.
-1. **[!UICONTROL Browse]**&#x200B;을(를) 클릭합니다.
+1. **[!UICONTROL 찾아보기]**&#x200B;를 클릭합니다.
 1. 왼쪽에 있는 함수 목록(예: `getLanguages`)에서 선택하십시오.
-1. [!UICONTROL Request XML] 텍스트 영역의 콘텐츠를 복사합니다.
-1. [!UICONTROL Workfront Fusion]에서 복사한 콘텐츠를 모듈의 URL 필드에 붙여넣습니다.
+1. [!UICONTROL XML 요청] 텍스트 영역의 내용을 복사합니다.
+1. [!UICONTROL Workfront Fusion]에서 복사한 콘텐츠를 모듈의 URL 필드에 붙여 넣습니다.
 1. 물음표를 실제 값으로 대체하여 선택한 매개 변수의 값을 제공합니다.
 
    <!--![Request](/help/workfront-fusion/references/apps-and-modules/assets/request-xml-350x172.png)-->
 
-1. **[!UICONTROL OK]**&#x200B;을(를) 클릭하여 모듈의 구성을 닫습니다.
+1. **[!UICONTROL 확인]**&#x200B;을 클릭하여 모듈의 구성을 닫습니다.
 1. 시나리오 또는 모듈을 실행합니다.

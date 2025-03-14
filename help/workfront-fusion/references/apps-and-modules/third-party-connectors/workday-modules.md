@@ -5,9 +5,9 @@ description: Adobe Workfront Fusion 시나리오에서는  [!DNL Workday]을(를
 author: Becky
 feature: Workfront Fusion
 exl-id: 77237a1b-2acd-4350-9cc0-ec43b8b08137
-source-git-commit: fedf8f3f4031faaad9f81ed38fbc77e40e3a85b6
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '1027'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
    <p>또는</p>
    <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
@@ -92,7 +92,7 @@ Workday 커넥터는 다음을 사용합니다.
 
 ## [!DNL Workday]을(를) [!DNL Workfront Fusion]에 연결
 
-1. [!DNL Workfront Fusion] 모듈에서 [!UICONTROL Connection] 필드 옆의 [!UICONTROL Add]을(를) 클릭합니다
+1. [!DNL Workfront Fusion] 모듈에서 [!UICONTROL 연결] 필드 옆의 [!UICONTROL 추가]를 클릭합니다
 
 2. 다음 필드를 채웁니다.
 
@@ -102,12 +102,12 @@ Workday 커넥터는 다음을 사용합니다.
         <tbody>
             <tr>
                 <td role="rowheader">
-                    <p role="rowheader">[!UICONTROL Connection name]</p>
+                    <p role="rowheader">[!UICONTROL 연결 이름]</p>
                 </td>
                 <td>연결 이름 입력</td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL Workday host]</td>
+                <td  role="rowheader">[!UICONTROL Workday 호스트]</td>
                 <td><code>https://</code> 없이 [!DNL Workday] 호스트의 주소를 입력하십시오. 예: <code>mycompany.workday.com</code>.</td>
             </tr>
             <tr>
@@ -115,26 +115,26 @@ Workday 커넥터는 다음을 사용합니다.
                 <td><code>https://</code> 없이 [!DNL Workday] 웹 서비스의 주소를 입력하십시오. 예: <code>mycompany-services.workday.com</code>.</td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL Tenant name]</td>
+                <td  role="rowheader">[!UICONTROL 테넌트 이름]</td>
                 <td>이 [!DNL Workday] 계정의 테넌트를 입력하십시오. 테넌트는 조직의 식별자이며, Workday에 로그인하는 데 사용하는 URL에서 볼 수 있습니다. 예: 주소 <code>https://www.myworkday.com/mycompany</code>에서 테넌트는 <code>mycompany</code>입니다.</td>
             </tr>
             <tr>
-                <td role="rowheader">[!UICONTROL Client ID]</td>
+                <td role="rowheader">[!UICONTROL 클라이언트 ID]</td>
                 <td>이 연결에서 사용하는 [!DNL Workday] 응용 프로그램의 클라이언트 ID를 입력하십시오. [!DNL Workday]에서 응용 프로그램을 만들 때 이 오류가 발생합니다.</td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL Client Secret]</td>
+                <td  role="rowheader">[!UICONTROL 클라이언트 암호]</td>
                 <td>이 연결에서 사용하는 [!DNL Workday] 응용 프로그램의 클라이언트 암호를 입력하십시오. [!DNL Workday]에서 응용 프로그램을 만들 때 이 오류가 발생합니다.</td>
             </tr>
             <tr>
-                <td role="rowheader">[!UICONTROL Session timeout (min)]</td>
+                <td role="rowheader">[!UICONTROL 세션 시간 초과(분)]</td>
                 <td >인증 토큰이 만료된 후 시간(분)을 입력합니다.</td>
             </tr>
         </tbody>
     </table>
 
 
-3. 연결을 저장하고 모듈로 돌아가려면 [!UICONTROL Continue]을(를) 클릭하십시오.
+3. 연결을 저장하고 모듈로 돌아가려면 [!UICONTROL 계속]을 클릭하세요.
 
 ## [!DNL Workday]개 모듈 및 해당 필드
 
@@ -151,16 +151,16 @@ Workday 커넥터는 다음을 사용합니다.
 
 ### 액션
 
-* [[!UICONTROL Create a record]](#create-a-record)
+* [[!UICONTROL 레코드 만들기]](#create-a-record)
 
-* [[!UICONTROL Delete a record]](#delete-a-record)
+* [[!UICONTROL 레코드 삭제]](#delete-a-record)
 
-* [[!UICONTROL Make a custom API call]](#make-a-custom-api-call)
+* [[!UICONTROL 사용자 지정 API 호출 만들기]](#make-a-custom-api-call)
 
-* [[!UICONTROL Update a record]](#update-a-record)
+* [[!UICONTROL 레코드 업데이트]](#update-a-record)
 
 
-#### [!UICONTROL Create a record]
+#### [!UICONTROL 레코드 만들기]
 
 이 작업 모듈은 [!DNL Workday]에 단일 레코드를 만듭니다.
 
@@ -173,7 +173,7 @@ Workday 커넥터는 다음을 사용합니다.
             <td>[!DNL Workday] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="#Connect" class="MCXref xref" >[!DNL Workday]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</td>
         </tr>
         <tr>
-            <td  role="rowheader">[!UICONTROL Record Type]</td>
+            <td  role="rowheader">[!UICONTROL 레코드 유형]</td>
             <td>만들려는 레코드 유형을 선택합니다.</td>
         </tr>
         <tr>
@@ -181,13 +181,13 @@ Workday 커넥터는 다음을 사용합니다.
             <td>만들려는 레코드의 ID를 입력하거나 매핑합니다.</td>
         </tr>
         <tr>
-            <td role="rowheader">[!UICONTROL Subresource ID]</td>
+            <td role="rowheader">[!UICONTROL 하위 리소스 ID]</td>
             <td >만들려는 하위 리소스의 ID를 입력하거나 매핑합니다.</td>
         </tr>
     </tbody>
 </table>
 
-#### [!UICONTROL Delete a record]
+#### [!UICONTROL 레코드 삭제]
 
 이 작업 모듈은 [!DNL Workday]에서 단일 레코드를 삭제합니다.
 
@@ -202,15 +202,15 @@ Workday 커넥터는 다음을 사용합니다.
             <td>[!DNL Workday] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="#Connect" class="MCXref xref" >[!DNL Workday]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</td>
         </tr>
         <tr>
-            <td  role="rowheader">[!UICONTROL Record type]</td>
+            <td  role="rowheader">[!UICONTROL 레코드 유형]</td>
             <td>삭제할 레코드 유형을 선택합니다.</td>
         </tr>
         <tr>
-            <td role="rowheader">[!UICONTROL Specific record type]</td>
+            <td role="rowheader">[!UICONTROL 특정 레코드 유형]</td>
             <td>삭제하려는 특정 레코드 유형을 선택합니다. 선택한 레코드 종류를 기반으로 합니다.</td>
         </tr>
         <tr>
-            <td  role="rowheader">[!UICONTROL Subresource ID]</td>
+            <td  role="rowheader">[!UICONTROL 하위 리소스 ID]</td>
             <td>삭제할 하위 리소스의 ID를 입력하거나 매핑합니다.</td>
         </tr>
         <tr>
@@ -221,7 +221,7 @@ Workday 커넥터는 다음을 사용합니다.
 </table>
 
 
-### [!UICONTROL Make a custom API call]
+### [!UICONTROL 사용자 지정 API 호출 만들기]
 
 이 작업 모듈을 사용하면 [!DNL Workday] API에 대해 사용자 지정 인증된 호출을 수행할 수 있습니다. 이렇게 하면 다른 [!DNL Workday] 모듈에서 수행할 수 없는 데이터 흐름 자동화를 만들 수 있습니다.
 
@@ -242,15 +242,15 @@ Workday 커넥터는 다음을 사용합니다.
    <td><code style="color: #ff1493;">https://&lt;tenantHostname>/api/&lt;serviceName>/&lt;version>/&lt;tenant></code>과(와) 관련된 경로를 입력하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td role="rowheader">[!UICONTROL 메서드]</td> 
    <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>[!UICONTROL Workfront Fusion] 인증 헤더를 추가합니다.</p> </td> 
+   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>[!UICONTROL Workfront Fusion]이 사용자에게 권한 부여 헤더를 추가합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td role="rowheader">[!UICONTROL 쿼리 문자열]</td> 
    <td> <p>표준 JSON 개체 형식으로 API 호출에 대한 쿼리를 추가합니다.</p> <p>For example: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
@@ -263,7 +263,7 @@ Workday 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a record]
+#### [!UICONTROL 레코드 업데이트]
 
 이 작업 모듈은 [!DNL Workday]의 단일 레코드를 업데이트합니다.
 
@@ -273,10 +273,10 @@ Workday 커넥터는 다음을 사용합니다.
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL Connection]</td>
-            <td>[!DNL Workday] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 Workfront Fusion에 대한 <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect [!DNL Workday]</a>을(를) 참조하십시오</td>
+            <td>[!DNL Workday] 계정을 Workfront Fusion에 연결하는 방법은 <a href="#Connect" class="MCXref xref" >[!UICONTROL [!DNL Workday]을(를) Workfront Fusion에 연결</a>을 참조하십시오.</td>
         </tr>
         <tr>
-            <td  role="rowheader">[!UICONTROL Record Type]</td>
+            <td  role="rowheader">[!UICONTROL 레코드 유형]</td>
             <td>업데이트할 레코드 유형을 선택합니다.</td>
         </tr>
         <tr>
@@ -284,7 +284,7 @@ Workday 커넥터는 다음을 사용합니다.
             <td>업데이트할 레코드의 ID를 입력하거나 매핑합니다.</td>
         </tr>
         <tr>
-            <td role="rowheader">[!UICONTROL Subresource ID]</td>
+            <td role="rowheader">[!UICONTROL 하위 리소스 ID]</td>
             <td >업데이트할 하위 리소스의 ID를 입력하거나 매핑합니다.</td>
         </tr>
     </tbody>
@@ -292,12 +292,12 @@ Workday 커넥터는 다음을 사용합니다.
 
 ### 검색
 
-* [[!UICONTROL Read a record]](#read-a-record)
+* [[!UICONTROL 레코드 읽기]](#read-a-record)
 
-* [[!UICONTROL List records]](#list-records)
+* [[!UICONTROL 레코드 나열]](#list-records)
 
 
-#### [!UICONTROL Read a record]
+#### [!UICONTROL 레코드 읽기]
 
 이 작업 모듈은 단일 레코드를 읽습니다.
 
@@ -309,14 +309,14 @@ Workday 커넥터는 다음을 사용합니다.
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL Connection]</td>
-            <td>[!DNL Workday] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 Workfront Fusion에 대한 <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect [!DNL Workday]</a>을(를) 참조하십시오</td>
+            <td>[!DNL Workday] 계정을 Workfront Fusion에 연결하는 방법은 <a href="#Connect" class="MCXref xref" >[!UICONTROL [!DNL Workday]을(를) Workfront Fusion에 연결</a>을 참조하십시오.</td>
         </tr>
         <tr>
-            <td  role="rowheader">[!UICONTROL Record type]</td>
+            <td  role="rowheader">[!UICONTROL 레코드 유형]</td>
             <td>삭제할 레코드 유형을 선택합니다.</td>
         </tr>
         <tr>
-            <td role="rowheader">[!UICONTROL Specific record type]</td>
+            <td role="rowheader">[!UICONTROL 특정 레코드 유형]</td>
             <td>읽고자 하는 특정 레코드 유형을 선택합니다. 선택한 레코드 종류를 기반으로 합니다.</td>
         </tr>
         <tr>
@@ -326,7 +326,7 @@ Workday 커넥터는 다음을 사용합니다.
     </tbody>
 </table>
 
-#### [!UICONTROL List records]
+#### [!UICONTROL 레코드 나열]
 
 이 검색 모듈은 지정된 유형의 레코드 목록을 검색합니다.
 
@@ -339,11 +339,11 @@ Workday 커넥터는 다음을 사용합니다.
               <td>[!DNL Workday] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="#Connect" class="MCXref xref" >[!DNL Workday]을(를) [!DNL Workfront Fusion]</a>에 연결</td>
           </tr>
           <tr>
-              <td  role="rowheader">[!UICONTROL Record Type]</td>
+              <td  role="rowheader">[!UICONTROL 레코드 유형]</td>
               <td>검색할 레코드 유형을 선택합니다.</td>
           </tr>
           <tr>
-              <td role="rowheader">[!UICONTROL Limit]</td>
+              <td role="rowheader">[!UICONTROL 제한]</td>
               <td >
                   <p>각 시나리오 실행 주기 동안 모듈이 검색할 최대 레코드 수를 입력하거나 매핑합니다.</p>
               </td>

@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion 시나리오에서는 Microsoft Word 템플�
 author: Becky
 feature: Workfront Fusion
 exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
    <p>또는</p>
    <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 ## [!DNL Workfront Fusion]에 [!DNL Office] 서비스를 연결하는 중
 
-[!DNL Office] 계정을 [!UICONTROL Workfront Fusion]에 연결하는 방법에 대한 지침은 [[!UICONTROL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)을 참조하세요.
+[!DNL Office] 계정을 [!UICONTROL Workfront Fusion]에 연결하는 방법에 대한 지침은 [[!UICONTROL Adobe Workfront Fusion에 연결 만들기] - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)을 참조하십시오.
 
 >[!NOTE]
 >
@@ -164,7 +164,7 @@ ht-degree: 0%
 * [문서 작성](#fill-out-a-document)
 * [데이터 배치로 문서 채우기](#fill-a-document-with-a-batch-of-data)
 
-### [!UICONTROL Fill out a document] {#fill-out-a-document}
+### [!UICONTROL 문서 작성] {#fill-out-a-document}
 
 이 변환기 모듈을 사용하면 지정한 데이터로 문서를 채울 수 있습니다. 단순 값 태그, 조건부 태그 또는 루프 태그와 함께 사용할 수 있습니다.
 
@@ -173,27 +173,27 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Start delimiter of the text being replaced]</td> 
+   <td role="rowheader">[!UICONTROL 바꿀 텍스트의 시작 구분 기호]</td> 
    <td> <p>바꿀 텍스트의 시작 부분을 표시할 문자를 입력합니다. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>예: </b></span></span><code>[[replace_me]]</code>을(를) 바꾸려면 <code>&#91;&#91;</code>을(를) 입력하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL End delimiter of the text being replaced]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 바꿀 텍스트의 끝 구분 기호]</p> </td> 
    <td> <p>바꿀 텍스트의 끝을 표시할 문자를 입력합니다. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>예: </b></span></span>바꿀 <code>&#93;&#93;</code>을(를) 입력하십시오. <code>[[replace_me]]</code></p>. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td role="rowheader">[!UICONTROL Source 파일]</td> 
    <td> <p> 이전 모듈에서 소스 파일을 선택하거나 소스 파일의 데이터를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Name of filled out file]</td> 
+   <td role="rowheader">[!UICONTROL 채워진 파일의 이름]</td> 
    <td>대상 출력 파일의 파일 이름(확장명 포함)을 입력합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Data source]</td> 
+   <td role="rowheader">[!UICONTROL 데이터 소스]</td> 
    <td> <p>사용 중인 데이터가 양식에서 생성되었는지 원시 데이터 수집(처리되지 않은 컴퓨터 데이터)에서 생성되었는지 여부를 나타내는 옵션을 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Values]</td> 
+   <td role="rowheader">[!UICONTROL 값]</td> 
    <td> <p>이는 다음과 같은 컬렉션의 배열이어야 합니다.</p> 
     <ul> 
      <li>각 컬렉션은 하나의 데이터 항목에 해당하고 하나의 항목을 포함합니다 <code>entry</code></li> 
@@ -203,7 +203,7 @@ ht-degree: 0%
     </ul> 
     <p>항목을 추가하려면 다음 작업을 수행하십시오.</p>
     <ol> 
-     <li> <b>[!UICONTROL Add Item]</b>을(를) 클릭합니다. </li> 
+     <li> <b>[!UICONTROL 항목 추가]</b>를 클릭합니다. </li> 
      <li>항목의 값 유형을 선택합니다.</li> 
      <li>이름 및 값을 추가합니다. 자세한 내용은 이 문서에서 선택한 값 유형에 대한 예를 참조하십시오. 
       <ul> 
@@ -216,7 +216,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-### [!UICONTROL Fill a document with a batch of data] {#fill-a-document-with-a-batch-of-data}
+### [!UICONTROL 데이터 묶음으로 문서 채우기] {#fill-a-document-with-a-batch-of-data}
 
 이 집계 모듈은 데이터 항목이 별도의 번들로 제공되는 경우에 유용합니다. 이 모듈을 사용하면 값 필드에 필요한 구조를 쉽게 설정하고 항목을 각 값 항목에 매핑할 수 있습니다. 문서 채우기 모듈과 달리 데이터 모듈 배치로 문서 채우기 의 값 필드는 변수를 포함하는 단일 항목만 허용합니다.
 
@@ -235,11 +235,11 @@ ht-degree: 0%
    <td>텍스트 소스인 모듈을 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Start delimiter of the text being replaced]</td> 
+   <td role="rowheader">[!UICONTROL 바꿀 텍스트의 시작 구분 기호]</td> 
    <td> <p>바꿀 텍스트의 시작 부분을 표시할 문자를 입력합니다. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>예: </b></span></span><code>[[replace_me]]</code>을(를) 바꾸려면 <code>&#91;&#91;</code>을(를) 입력하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL End delimiter of the text being replaced]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 바꿀 텍스트의 끝 구분 기호]</p> </td> 
    <td> <p>바꿀 텍스트의 끝을 표시할 문자를 입력합니다. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>예: </b></span></span><code>[[replace_me]]</code>을(를) 바꾸려면 <code>&#93;&#93;</code>을(를) 입력하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -247,19 +247,19 @@ ht-degree: 0%
    <td> 하나 이상의 매핑된 항목을 포함하는 표현식을 정의합니다. 집계된 데이터는 동일한 표현식 값을 가진 그룹 아래에 구분됩니다. 각 그룹은 평가된 표현식 및 집계된 텍스트가 있는 키가 포함된 별도의 번들로 출력됩니다. 이렇게 하면 키를 이후 모듈에서 필터로 사용할 수 있습니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Stop processing after an empty aggregation]</td> 
+   <td role="rowheader">[!UICONTROL 빈 집계 후 처리 중지]</td> 
    <td>집계에 번들이 포함되지 않은 경우 처리를 중지하려면 이 옵션을 활성화합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td role="rowheader">[!UICONTROL Source 파일]</td> 
    <td> <p> 이전 모듈에서 소스 파일을 선택하거나 소스 파일의 데이터를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Name of filled out file]</td> 
+   <td role="rowheader">[!UICONTROL 채워진 파일의 이름]</td> 
    <td>대상 출력 파일의 파일 이름(확장명 포함)을 입력합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Values]</td> 
+   <td role="rowheader">[!UICONTROL 값]</td> 
    <td> <p>이는 다음과 같은 컬렉션의 배열이어야 합니다.</p> 
     <ul> 
      <li>각 컬렉션은 하나의 데이터 항목에 해당하고 하나의 항목을 포함합니다 <code>entry</code></li> 
@@ -269,7 +269,7 @@ ht-degree: 0%
     </ul> 
     <p>항목을 추가하려면 다음 작업을 수행하십시오.</p>
     <ol> 
-     <li> <b>[!UICONTROL Add Item]</b>을(를) 클릭합니다. </li> 
+     <li> <b>[!UICONTROL 항목 추가]</b>를 클릭합니다. </li> 
      <li>항목의 값 유형을 선택합니다.</li> 
      <li>이름 및 값을 추가합니다. 자세한 내용은 이 문서에서 선택한 값 유형에 대한 예를 참조하십시오. 
       <ul> 

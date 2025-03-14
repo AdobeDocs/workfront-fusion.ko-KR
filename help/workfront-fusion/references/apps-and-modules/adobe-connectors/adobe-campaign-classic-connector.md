@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Campaign] 모듈을 사용하면  [!DNL Adobe Campaig
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
-source-git-commit: 9bcda2cc1a5f483a8db49eae8e4f3d10f0d39c67
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 0%
+source-wordcount: '1307'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
    <p>또는</p>
    <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
@@ -88,7 +88,7 @@ Adobe Campaign 커넥터는 다음을 사용합니다.
 >
 >Campaign의 새 연결 요구 사항에 대한 자세한 내용은 Campaign 설명서에서 [Campaign 기술 연산자를 Adobe Developer Console으로 마이그레이션](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/ims-migration.html)을 참조하십시오.
 
-1. [!DNL Adobe Campaign] 모듈에서 [!UICONTROL Connection] 필드 옆의 **[!UICONTROL Add]**&#x200B;을(를) 클릭합니다.
+1. [!DNL Adobe Campaign] 모듈에서 [!UICONTROL 연결] 필드 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 1. 다음 필드를 채웁니다.
    <table style="table-layout:auto"> 
       <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
@@ -97,23 +97,23 @@ Adobe Campaign 커넥터는 다음을 사용합니다.
       </col>
       <tbody>
         <tr>
-          <td role="rowheader">[!UICONTROL Connection type]</td>
+          <td role="rowheader">[!UICONTROL 연결 유형]</td>
           <td>
             <p>기본 연결을 만드는지 아니면 서버 간 연결을 만드는지 선택합니다.</p>
           </td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Connection name]</td>
+          <td role="rowheader">[!UICONTROL 연결 이름]</td>
           <td>
             <p>이 연결의 이름을 입력하십시오.</p>
           </td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Base URL]</td>
+          <td role="rowheader">[!UICONTROL 기본 URL]</td>
           <td>[!DNL Adobe Campaign] 인스턴스에 연결하는 데 사용하는 기본 URL을 입력하십시오.</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Username]</td>
+          <td role="rowheader">[!UICONTROL 사용자 이름]</td>
           <td>기본 연결을 만드는 경우 Adobe Campaign 사용자 이름을 입력합니다.</td>
         </tr>
         <tr>
@@ -121,16 +121,16 @@ Adobe Campaign 커넥터는 다음을 사용합니다.
           <td>기본 연결을 만드는 경우 Adobe Campaign 암호를 입력합니다.</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Client ID]</td>
-          <td>서버 간 연결을 만드는 경우 [!DNL Adobe] [!UICONTROL Client ID]을(를) 입력하십시오. [!DNL Adobe Developer Console]의 [!UICONTROL Credentials details] 섹션에서 찾을 수 있습니다.</td>
+          <td role="rowheader">[!UICONTROL 클라이언트 ID]</td>
+          <td>서버 간 연결을 만드는 경우 [!DNL Adobe] [!UICONTROL 클라이언트 ID]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Client Secret]</td>
-          <td>서버 간 연결을 만드는 경우 [!DNL Adobe] [!UICONTROL Client Secret]을(를) 입력하십시오. [!DNL Adobe Developer Console]의 [!UICONTROL Credentials details] 섹션에서 찾을 수 있습니다.
+          <td role="rowheader">[!UICONTROL 클라이언트 암호]</td>
+          <td>서버 간 연결을 만드는 경우 [!DNL Adobe] [!UICONTROL 클라이언트 암호]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.
         </tr>
      </tbody>
     </table>
-1. 연결을 만들고 모듈로 돌아가려면 **[!UICONTROL Continue]**&#x200B;을(를) 클릭하십시오.
+1. 연결을 만들고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭하세요.
 
 ## [!DNL Adobe Campaign]개 모듈 및 해당 필드
 
@@ -184,15 +184,15 @@ This scheduled trigger module starts a scenario when a record changes.
 
 ### 액션
 
-* [[!UICONTROL Create a record]](#create-a-record)
-* [[!UICONTROL Delete a record]](#delete-record)
-* [[!UICONTROL Make a custom API call]](#make-a-custom-api-call)
-* [[!UICONTROL Perform an action]](#perform-an-action)
-* [[!UICONTROL Read a record]](#read-a-record)
-* [[!UICONTROL Subscribe or unsubscribe]](#subscribe-or-unsubscribe)
-* [[!UICONTROL Update a record]](#update-record)
+* [[!UICONTROL 레코드 만들기]](#create-a-record)
+* [[!UICONTROL 레코드 삭제]](#delete-record)
+* [[!UICONTROL 사용자 지정 API 호출 만들기]](#make-a-custom-api-call)
+* [[!UICONTROL 작업 수행]](#perform-an-action)
+* [[!UICONTROL 레코드 읽기]](#read-a-record)
+* [[!UICONTROL 구독 또는 구독 취소]](#subscribe-or-unsubscribe)
+* [[!UICONTROL 레코드 업데이트]](#update-record)
 
-#### [!UICONTROL Create a record]
+#### [!UICONTROL 레코드 만들기]
 
 이 작업 모듈은 [!DNL Adobe Campaign]에 새 레코드를 만듭니다.
 
@@ -209,17 +209,17 @@ This scheduled trigger module starts a scenario when a record changes.
    <td>만들려는 [!DNL Adobe Campaign] 레코드의 형식을 선택하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Fields] </td> 
+   <td role="rowheader">[!UICONTROL 필드] </td> 
    <td>레코드를 만들 때 값을 설정할 필드를 선택한 다음 해당 필드의 값을 채웁니다. 필드는 선택하는 레코드 유형에 따라 다릅니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Custom fields]</td> 
-   <td> 새 레코드에 추가할 각 사용자 정의 필드에 대해 <b>[!UICONTROL Add item]</b>을(를) 클릭하고 필드의 이름과 값을 입력하거나 매핑합니다. </td> 
+   <td role="rowheader">[!UICONTROL 사용자 정의 필드]</td> 
+   <td> 새 레코드에 추가할 각 사용자 정의 필드에 대해 <b>[!UICONTROL 항목 추가]</b>를 클릭하고 필드의 이름과 값을 입력하거나 매핑합니다. </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete Record]
+#### [!UICONTROL 레코드 삭제]
 
 이 작업 모듈은 [!DNL Adobe Campaign]에서 단일 레코드를 삭제합니다.
 
@@ -242,7 +242,7 @@ This scheduled trigger module starts a scenario when a record changes.
  </tbody> 
 </table>
 
-#### [!UICONTROL Make a custom API call]
+#### [!UICONTROL 사용자 지정 API 호출 만들기]
 
 이 모듈은 [!DNL Adobe Campaign] API에 대한 사용자 지정 API 호출을 만듭니다.
 
@@ -257,11 +257,11 @@ This scheduled trigger module starts a scenario when a record changes.
     <tr>
       <td role="rowheader">[!UICONTROL Action]</td>
       <td><p>API 호출에서 수행할 작업을 선택합니다.</p>
-      <p>[!UICONTROL Execute query]</p>
-      <p>[!UICONTROL Write]</p>
-      <p>[!UICONTROL Get entity if more recent]</p>
-      <p>[!UICONTROL Select all]</p>
-      <p>[!UICONTROL Push event]</p>
+      <p>[!UICONTROL 쿼리 실행]</p>
+      <p>[!UICONTROL 쓰기]</p>
+      <p>[!UICONTROL 더 최신인 경우 엔티티 가져오기]</p>
+      <p>[!UICONTROL 모두 선택]</p>
+      <p>[!UICONTROL 푸시 이벤트]</p>
     </td>
     </tr>
     <tr>
@@ -279,7 +279,7 @@ This scheduled trigger module starts a scenario when a record changes.
 </table>
 
 
-#### [!UICONTROL Perform an action]
+#### [!UICONTROL 작업 수행]
 
 이 작업 모듈은 [!DNL Adobe Campaign] API의 개체에 대해 선택한 작업을 수행합니다.
 
@@ -297,18 +297,18 @@ This scheduled trigger module starts a scenario when a record changes.
    <td role="rowheader">[!UICONTROL Action]</td> 
    <td><p>객체에 대해 수행할 작업을 선택합니다.</p>
    <ul>
-   <li><p><b>[!DNL List]</b></p><p> 사용 가능한 필드는 이 문서의 <a href="#search" class="MCXref xref" >[!UICONTROL Search]</a>을(를) 참조하십시오. </p></li>
-     <li><p><b>[!UICONTROL Get]</b></p><p> 사용 가능한 필드는 이 문서의 <a href="#search" class="MCXref xref" >[!UICONTROL Search]</a>을(를) 참조하십시오. </p></li> 
-   <li><p><b>[!UICONTROL Create]</b></p><p> 사용 가능한 필드는 이 문서의 <a href="#create-a-record" class="MCXref xref" >[!UICONTROL Create a record]</a>을(를) 참조하십시오. </p></li>
-   <li><p><b>[!UICONTROL Update]</b></p><p> 사용 가능한 필드는 이 문서의 <a href="#update-record" class="MCXref xref" >[!UICONTROL Update a record]</a>을(를) 참조하십시오. </p></li>
-   <li><p><b>[!UICONTROL Delete]</b></p><p> 사용 가능한 필드는 이 문서의 <a href="#delete-record" class="MCXref xref" >[!UICONTROL Delete a record]</a>을(를) 참조하십시오. </p></li>
+   <li><p><b>[!DNL List]</b></p><p> 사용 가능한 필드는 이 문서에서 <a href="#search" class="MCXref xref" >[!UICONTROL Search]</a>을(를) 참조하십시오. </p></li>
+     <li><p><b>[!UICONTROL Get]</b></p><p> 사용 가능한 필드는 이 문서에서 <a href="#search" class="MCXref xref" >[!UICONTROL Search]</a>을(를) 참조하십시오. </p></li> 
+   <li><p><b>[!UICONTROL Create]</b></p><p> 사용 가능한 필드는 이 문서에서 <a href="#create-a-record" class="MCXref xref" >[!UICONTROL 레코드 만들기]</a>를 참조하십시오. </p></li>
+   <li><p><b>[!UICONTROL 업데이트]</b></p><p> 사용 가능한 필드는 이 문서에서 <a href="#update-record" class="MCXref xref" >[!UICONTROL 레코드 업데이트]</a>를 참조하십시오. </p></li>
+   <li><p><b>[!UICONTROL Delete]</b></p><p> 사용 가능한 필드의 경우 이 문서에서 <a href="#delete-record" class="MCXref xref" >[!UICONTROL 레코드 삭제]</a>을(를) 참조하십시오. </p></li>
    </ul>
    </td>
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Read a record]
+#### [!UICONTROL 레코드 읽기]
 
 이 작업 모듈은 [!DNL Adobe Campaign]에서 레코드를 읽습니다.
 
@@ -329,18 +329,18 @@ This scheduled trigger module starts a scenario when a record changes.
    <td>읽으려는 레코드의 ID를 입력합니다.</td> 
   </tr> 
  <tr> 
-   <td role="rowheader">[!UICONTROL Fields to include in output] </td> 
+   <td role="rowheader">출력에 포함할 [!UICONTROL 필드] </td> 
    <td>모듈의 출력에 포함할 필드를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Custom fields to include in output]</td> 
-   <td>출력에 포함할 각 사용자 지정 필드에 대해 <b>[!UICONTROL Add]</b>을(를) 클릭하고 사용자 지정 필드의 이름을 입력합니다.</td> 
+   <td role="rowheader">출력에 포함할 [!UICONTROL 사용자 지정 필드]</td> 
+   <td>출력에 포함할 각 사용자 지정 필드에 대해 <b>[!UICONTROL 추가]</b>를 클릭하고 사용자 지정 필드의 이름을 입력합니다.</td> 
   </tr> 
  </tbody> 
 </table>
 
 
-#### [!UICONTROL Subscribe or unsubscribe]
+#### [!UICONTROL 구독 또는 구독 취소]
 
 이 작업 모듈은 사용자를 정보 서비스로 가입시키거나 가입 해제합니다.
 
@@ -353,7 +353,7 @@ This scheduled trigger module starts a scenario when a record changes.
    <td>[!DNL Adobe Campaign]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >[!DNL Adobe Campaign]</a>에 대한 연결 만들기 를 참조하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Subscribe or unsubscribe]</td> 
+   <td role="rowheader">[!UICONTROL 가입 또는 가입 해지]</td> 
    <td>정보 서비스를 구독할지 또는 구독 취소할지 선택합니다.</td> 
   </tr> 
   <tr> 
@@ -361,13 +361,13 @@ This scheduled trigger module starts a scenario when a record changes.
    <td>구독하거나 구독을 취소할 서비스를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Recipient email address] </td> 
+   <td role="rowheader">[!UICONTROL 수신자 이메일 주소] </td> 
    <td>정보 서비스에 가입하거나 가입을 해지하려는 사용자의 이메일 주소를 입력하거나 매핑합니다.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Update record]
+#### [!UICONTROL 레코드 업데이트]
 
 이 작업 모듈은 [!DNL Adobe Campaign]의 단일 레코드를 업데이트합니다.
 
@@ -388,19 +388,19 @@ This scheduled trigger module starts a scenario when a record changes.
    <td>업데이트할 레코드의 ID를 매핑할 항목을 입력합니다.</td> 
   </tr> 
 <tr> 
-   <td role="rowheader">[!UICONTROL Fields] </td> 
+   <td role="rowheader">[!UICONTROL 필드] </td> 
    <td>값을 업데이트할 필드를 선택한 다음 해당 필드의 값을 채웁니다. 필드는 선택하는 레코드 유형에 따라 다릅니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Custom fields]</td> 
-   <td> 업데이트할 각 사용자 지정 필드에 대해 <b>[!UICONTROL Add item]</b>을(를) 클릭하고 필드의 이름과 값을 입력하거나 매핑합니다. </td> 
+   <td role="rowheader">[!UICONTROL 사용자 정의 필드]</td> 
+   <td> 업데이트할 각 사용자 정의 필드에 대해 <b>[!UICONTROL 항목 추가]</b>를 클릭하고 필드의 이름과 값을 입력하거나 매핑하십시오. </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### 검색 결과
 
-#### [!UICONTROL Search]
+#### [!UICONTROL 검색]
 
 이 검색 모듈은 지정된 조건을 기반으로 레코드를 반환합니다.
 
@@ -417,11 +417,11 @@ This scheduled trigger module starts a scenario when a record changes.
    <td>만들려는 [!DNL Adobe Campaign] 레코드의 형식을 선택하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Search criteria]</td> 
+   <td role="rowheader">[!UICONTROL 검색 기준]</td> 
    <td>검색에서 사용할 필드 및 값을 입력합니다. 필드는 선택한 리소스에 따라 다릅니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td role="rowheader">[!UICONTROL 제한] </td> 
    <td>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</td> 
   </tr> 
  </tbody> 

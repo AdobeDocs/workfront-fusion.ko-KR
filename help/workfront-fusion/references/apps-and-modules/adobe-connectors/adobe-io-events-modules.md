@@ -4,9 +4,9 @@ description: Adobe I/O Events 모듈을 사용하면 Adobe 애플리케이션의
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: 9cea5de748873720247db39161cea12c7e9c7186
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '957'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ Adobe I/O Events 모듈을 사용하면 전용 Adobe Workfront Fusion 커넥터�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
    <p>또는</p>
    <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
@@ -184,7 +184,7 @@ Adobe I/O Events 모듈에 대한 연결을 만들려면 다음 작업을 수행
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Webhook description]
+           [!UICONTROL Webhook 설명]
          </td>
          <td>
            이 웹후크에 대한 설명을 입력하십시오.
@@ -192,7 +192,7 @@ Adobe I/O Events 모듈에 대한 연결을 만들려면 다음 작업을 수행
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Event provider]
+           [!UICONTROL 이벤트 공급자]
          </td>
          <td>
            이벤트를 만들 제품 또는 계정을 선택합니다.
@@ -200,7 +200,7 @@ Adobe I/O Events 모듈에 대한 연결을 만들려면 다음 작업을 수행
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Event type]
+           [!UICONTROL 이벤트 유형]
          </td>
          <td>
            웹후크에서 보려는 이벤트를 선택합니다. 이러한 이벤트가 발생하면 시나리오가 트리거됩니다.
@@ -227,7 +227,7 @@ Adobe I/O Events 모듈에 대한 연결을 만들려면 다음 작업을 수행
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Registration ID]
+           [!UICONTROL 등록 ID]
          </td>
          <td>
            이벤트를 검색할 등록을 선택합니다.
@@ -235,7 +235,7 @@ Adobe I/O Events 모듈에 대한 연결을 만들려면 다음 작업을 수행
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Maximum number of returned records]
+           [!UICONTROL 반환되는 최대 레코드 수]
          </td>
          <td>
               각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다. 
@@ -243,21 +243,21 @@ Adobe I/O Events 모듈에 대한 연결을 만들려면 다음 작업을 수행
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Return events that occur after]
+           [!UICONTROL 다음 시간 이후에 발생하는 이벤트 반환]
          </td>
          <td>
          </td>
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Seek]
+           [!UICONTROL 찾기]
          </td>
          <td>
          </td>
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Latest]
+           [!UICONTROL 최신]
          </td>
          <td>
          최신 이벤트를 반환하려면 이 옵션을 활성화하십시오.
@@ -280,7 +280,7 @@ Adobe I/O Events 모듈에 대한 연결을 만들려면 다음 작업을 수행
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Path]</p>
+        <p>[!UICONTROL 경로]</p>
       </td>
       <td>
         <p>상대 경로 입력 <code>https://api.adobe.io/events</code></p>
@@ -288,7 +288,7 @@ Adobe I/O Events 모듈에 대한 연결을 만들려면 다음 작업을 수행
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Method]</p>
+        <p>[!UICONTROL 메서드]</p>
       </td>
       <td>
   <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 요청 메서드</a>를 참조하십시오.</p>  
@@ -303,7 +303,7 @@ Adobe I/O Events 모듈에 대한 연결을 만들려면 다음 작업을 수행
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Query String]  </td>
+      <td role="rowheader">[!UICONTROL 쿼리 문자열]  </td>
       <td>
         <p>요청 쿼리 문자열을 입력합니다.</p>
       </td>
@@ -333,7 +333,7 @@ Adobe I/O Events 모듈에 대한 연결을 만들려면 다음 작업을 수행
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Event provider]
+           [!UICONTROL 이벤트 공급자]
          </td>
          <td>
            ID를 검색할 공급자를 선택합니다.
@@ -341,7 +341,7 @@ Adobe I/O Events 모듈에 대한 연결을 만들려면 다음 작업을 수행
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Event type]
+           [!UICONTROL 이벤트 유형]
          </td>
          <td>
               ID를 제공할 이벤트를 선택합니다. 이벤트는 이벤트 공급자를 기반으로 사용할 수 있습니다. 

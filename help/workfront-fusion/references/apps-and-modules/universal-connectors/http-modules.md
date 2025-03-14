@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] HTTP 앱은 HTTP(Hypertext Transfer
 author: Becky
 feature: Workfront Fusion
 exl-id: 7db97e6e-262d-4be2-823b-423f56a7d886
-source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
    <p>또는</p>
    <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
@@ -76,18 +76,18 @@ ht-degree: 0%
 
 특정 요청 모듈 지침에 대해서는 다음 문서를 참조하십시오.
 
-* [[!UICONTROL HTTP] > [!UICONTROL Make a request] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make a Basic Authorization request] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make a Client Certificate Authorization request] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make an API Key Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL 요청] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL 기본 권한 부여 요청 만들기] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL OAuth 2.0 요청 만들기] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL 클라이언트 인증서 권한 부여 요청 만들기] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL API 키 권한 부여 요청 만들기]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
 
 ## 기타 작업 모듈
 
-* [[!UICONTROL Get a File]](#get-a-file)
-* [[!UICONTROL Resolve a target URL]](#resolve-a-target-url)
+* [[!UICONTROL 파일 가져오기]](#get-a-file)
+* [[!UICONTROL 대상 URL 확인]](#resolve-a-target-url)
 
-### [!UICONTROL Get a File]
+### [!UICONTROL 파일 가져오기]
 
 이 작업 모듈은 지정된 URL에서 파일을 다운로드합니다. 파일이 다운로드되면 시나리오의 다른 모듈을 사용하여 파일을 추가로 처리(파일 데이터 매핑)할 수 있습니다.
 
@@ -96,7 +96,7 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Evaluate all states as errors (except for 2xx and 3xx )] </td> 
+   <td role="rowheader">[!UICONTROL 모든 상태를 오류로 평가( 2xx 및 3xx 제외)] </td> 
    <td> <p>이 옵션을 사용하여 오류 처리를 설정합니다.</p> <p>자세한 내용은 [!DNL Adobe Workfront Fusion]</a>에서 <a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">오류 처리를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -104,13 +104,13 @@ ht-degree: 0%
    <td> <p>다운로드할 파일의 URL을 입력하거나 매핑합니다. </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Share cookies with other HTTP modules] </td> 
+   <td role="rowheader">[!UICONTROL 다른 HTTP 모듈과 쿠키 공유] </td> 
    <td> <p>이 사이트의 쿠키를 다른 모듈에서 사용할 수 있도록 하려면 이 옵션을 활성화합니다. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Resolve a target URL]
+### [!UICONTROL 대상 URL 확인]
 
 이 작업 모듈은 HTTP 리디렉션 체인을 해결하고 대상 URL을 반환합니다.
 
@@ -123,7 +123,7 @@ ht-degree: 0%
    <td> <p>[!DNL bit.ly] URL과 같이 확인할 URL을 입력하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Method] </td> 
+   <td role="rowheader">[!UICONTROL 메서드] </td> 
    <td> <p>[!UICONTROL HEAD] 메서드를 사용할지 [!UICONTROL GET] 메서드를 사용할지 선택합니다.</p> </td> 
   </tr> 
  </tbody> 
@@ -131,7 +131,7 @@ ht-degree: 0%
 
 ## 반복자 모듈
 
-### [!UICONTROL Retrieve headers]
+### [!UICONTROL 헤더 검색]
 
 이 모듈은 지정된 HTTP 모듈의 각 헤더(이름 및 값)를 별도의 번들로 반환합니다.
 

@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는  [!DNL Micros
 author: Becky
 feature: Workfront Fusion
 exl-id: 657bea46-064e-4333-8e86-81678bb1c3bd
-source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '1109'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
    <p>또는</p>
    <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 ## [!DNL Workfront Fusion]에 [!DNL Microsoft OneDrive for Business] 서비스를 연결하는 중
 
-[!DNL Microsoft OneDrive for Business] 계정을 [!UICONTROL Workfront Fusion]에 연결하는 방법에 대한 지침은 [[!UICONTROL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)을 참조하세요.
+[!DNL Microsoft OneDrive for Business] 계정을 [!UICONTROL Workfront Fusion]에 연결하는 방법에 대한 지침은 [[!UICONTROL Adobe Workfront Fusion에 연결 만들기] - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)을 참조하십시오.
 
 >[!NOTE]
 >
@@ -89,10 +89,10 @@ ht-degree: 0%
 
 ### 트리거
 
-* [[!UICONTROL Watch files]](#watch-files)
-* [[!UICONTROL Watch folders]](#watch-folders)
+* [[!UICONTROL 파일 보기]](#watch-files)
+* [[!UICONTROL 폴더 보기]](#watch-folders)
 
-#### [!UICONTROL Watch files]
+#### [!UICONTROL 파일 보기]
 
 이 트리거 모듈은 감시되는 폴더에 새 파일이 추가되거나 업데이트될 때 활성화됩니다.
 
@@ -105,25 +105,25 @@ ht-degree: 0%
    <td> <p>[!DNL Office 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Drive ID]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 드라이브 ID]</p> </td> 
    <td> <p>보려는 드라이브를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td role="rowheader">[!UICONTROL 폴더]</td> 
    <td> <p> 보려는 폴더를 선택합니다. 시나리오 내에서는 한 폴더만 모니터링할 수 있습니다.</p> <p>팁: 여러 폴더를 보려면 각 폴더에 대해 독립적인 시나리오를 만드십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL I want to watch]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 보고 싶습니다]</p> </td> 
    <td> <p>새 파일 및 모든 변경 내용을 볼지 아니면 새 파일만 볼지를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximum number of returned rows]</td> 
+   <td role="rowheader">[!UICONTROL 반환되는 최대 행 수]</td> 
    <td> <p> 한 주기 동안 모듈이 반환할 최대 결과 수를 설정합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch folders]
+#### [!UICONTROL 폴더 보기]
 
 이 트리거 모듈은 새 폴더가 감시 중인 폴더에 추가되면 활성화됩니다.
 
@@ -136,19 +136,19 @@ ht-degree: 0%
    <td> <p>[!DNL Office 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Drive ID]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 드라이브 ID]</p> </td> 
    <td> <p>보려는 드라이브를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td role="rowheader">[!UICONTROL 폴더]</td> 
    <td> <p> 보려는 폴더를 선택합니다. 시나리오 내에서는 한 폴더만 모니터링할 수 있습니다.</p> <p>팁: 여러 폴더를 추적하려면 각 폴더에 대해 독립적인 시나리오를 만드십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL I want to watch]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 보고 싶습니다]</p> </td> 
    <td> <p>새 폴더와 모든 변경 사항을 볼 것인지 새 폴더만 볼 것인지 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximum number of returned rows]</td> 
+   <td role="rowheader">[!UICONTROL 반환되는 최대 행 수]</td> 
    <td> <p> 한 주기 동안 모듈이 반환할 최대 결과 수를 설정합니다.</p> </td> 
   </tr> 
  </tbody> 
@@ -156,14 +156,14 @@ ht-degree: 0%
 
 ### 액션
 
-* [[!UICONTROL Create a folder]](#create-a-folder)
-* [[!UICONTROL Delete a file]](#delete-a-file)
-* [[!UICONTROL Delete a folder]](#delete-a-folder)
-* [[!UICONTROL Get a file]](#get-a-file)
-* [[!UICONTROL Get a sharing link]](#get-a-sharing-link)
-* [[!UICONTROL Upload a file]](#upload-a-file)
+* [[!UICONTROL 폴더 만들기]](#create-a-folder)
+* [[!UICONTROL 파일 삭제]](#delete-a-file)
+* [[!UICONTROL 폴더 삭제]](#delete-a-folder)
+* [[!UICONTROL 파일 가져오기]](#get-a-file)
+* [[!UICONTROL 공유 링크 가져오기]](#get-a-sharing-link)
+* [[!UICONTROL 파일 업로드]](#upload-a-file)
 
-#### [!UICONTROL Create a folder]
+#### [!UICONTROL 폴더 만들기]
 
 지정된 상위 폴더 내에 폴더를 만듭니다.
 
@@ -173,25 +173,25 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td><strong>[!UICONTROL Connection]</strong> </td> 
+   <td><strong>[!UICONTROL 연결]</strong> </td> 
    <td> <p>[!DNL Office 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td><strong>[!UICONTROL Drive ID]</strong> </td> 
+   <td><strong>[!UICONTROL 드라이브 ID]</strong> </td> 
    <td> <p>새 폴더를 만들 드라이브를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td><strong>[!UICONTROL Folder]</strong> </td> 
+   <td><strong>[!UICONTROL 폴더]</strong> </td> 
    <td> <p>새 폴더를 만들 폴더를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td><strong>[!UICONTROL Folder name]</strong> </td> 
+   <td><strong>[!UICONTROL 폴더 이름]</strong> </td> 
    <td>새 폴더의 이름을 입력하거나 매핑합니다.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a file]
+#### [!UICONTROL 파일 삭제]
 
 이 작업 모듈은 지정된 파일을 휴지통으로 이동합니다.
 
@@ -205,17 +205,17 @@ ht-degree: 0%
    <td> <p>[!DNL Office 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Drive ID]</td> 
+   <td>[!UICONTROL 드라이브 ID]</td> 
    <td> <p>파일을 삭제할 드라이브를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File ID]</td> 
+   <td>[!UICONTROL 파일 ID]</td> 
    <td> <p>삭제할 파일의 ID를 입력합니다. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a folder]
+#### [!UICONTROL 폴더 삭제]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -227,17 +227,17 @@ ht-degree: 0%
    <td> <p>[!DNL Office 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Drive ID]</td> 
+   <td>[!UICONTROL 드라이브 ID]</td> 
    <td> <p>파일을 삭제할 드라이브를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder ID]</td> 
+   <td>[!UICONTROL 폴더 ID]</td> 
    <td> <p>삭제하려는 폴더의 ID를 입력하거나 매핑합니다. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a file]
+#### [!UICONTROL 파일 가져오기]
 
 이 작업 모듈은 특정 ID로 파일을 검색합니다.
 
@@ -251,17 +251,17 @@ ht-degree: 0%
    <td> <p>[!DNL Office 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Drive ID]</td> 
+   <td>[!UICONTROL 드라이브 ID]</td> 
    <td> <p>파일을 검색할 드라이브를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File ID]</td> 
+   <td>[!UICONTROL 파일 ID]</td> 
    <td> <p>검색할 파일의 ID를 입력합니다. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a sharing link]
+#### [!UICONTROL 공유 링크 가져오기]
 
 이 모듈은 지정된 파일에 대한 액세스 권한을 제공하기 위해 공유할 수 있는 링크를 검색합니다.
 
@@ -275,7 +275,7 @@ ht-degree: 0%
    <td> <p>[!DNL Office 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Drive ID]</td> 
+   <td>[!UICONTROL 드라이브 ID]</td> 
    <td> <p>파일을 업로드할 드라이브를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
@@ -283,17 +283,17 @@ ht-degree: 0%
    <td> <p>파일 ID를 사용하여 파일을 선택할지 파일 경로를 사용하여 파일을 선택할지 선택합니다. 표시되는 필드에 파일 ID 또는 경로를 입력합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Permission type]</p> </td> 
+   <td> <p>[!UICONTROL 권한 유형]</p> </td> 
    <td> <p>링크를 받는 사람에게 읽기/쓰기 권한을 부여할지 아니면 읽기 전용을 부여할지 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Scope]</td> 
+   <td>[!UICONTROL 범위]</td> 
    <td> <p> 링크를 가진 모든 사용자가 파일에 액세스할 수 있는지 또는 조직 구성원만 액세스할 수 있는지 여부를 선택합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload a file]
+#### [!UICONTROL 파일 업로드]
 
 이 작업 모듈은 이진 또는 텍스트 파일을 지정된 폴더로 업로드합니다
 
@@ -307,24 +307,24 @@ ht-degree: 0%
    <td> <p>[!DNL Office 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Drive ID]</td> 
+   <td>[!UICONTROL 드라이브 ID]</td> 
    <td> <p>파일을 업로드할 드라이브를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder] </td> 
+   <td>[!UICONTROL 폴더] </td> 
    <td> <p>드라이브 내의 폴더를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Source File]</p> </td> 
+   <td> <p>[!UICONTROL Source 파일]</p> </td> 
    <td> <p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 이름과 데이터를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL If the file with the same name exists]</td> 
+   <td>[!UICONTROL 이름이 같은 파일이 있는 경우]</td> 
    <td> <p> 업로드하려는 파일과 이름이 같은 파일이 이미 있는 경우 수행할 작업을 선택합니다.</p> 
     <ul> 
-     <li>[!UICONTROL Replace the existing file]</li> 
-     <li>[!UICONTROL Rename the new file]</li> 
-     <li>[!UICONTROL End with an error]</li> 
+     <li>[!UICONTROL 기존 파일 바꾸기]</li> 
+     <li>[!UICONTROL 새 파일 이름 바꾸기]</li> 
+     <li>[!UICONTROL 오류와 함께 종료]</li> 
     </ul> </td> 
   </tr> 
  </tbody> 

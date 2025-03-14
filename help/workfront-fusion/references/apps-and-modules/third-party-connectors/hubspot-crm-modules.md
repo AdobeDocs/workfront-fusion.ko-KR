@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] HubSpot CRM 모듈을 사용하면 
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: 9cea5de748873720247db39161cea12c7e9c7186
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '5530'
+source-wordcount: '6203'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
    <p>또는</p>
    <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
@@ -121,7 +121,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 <!--* [Search for CRM objects](#search-for-crm-objects)
 * [Watch CRM objects](#watch-crm-objects)-->
 
-+++ **[!UICONTROL Search for CRM Objects]**
++++ **[!UICONTROL CRM 개체 검색]**
 
 이 검색 모듈은 사용자 지정 속성 또는 쿼리별로 CRM 개체를 검색합니다. 제품 또는 라인 항목을 검색하려면 필수 사용자 지정 범위의 특수 연결을 사용하십시오.
 
@@ -134,31 +134,31 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL 제한]</td> 
    <td>한 실행 주기에서 모듈이 반환할 최대 항목 수를 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Object Type to Search]</td> 
+   <td role="rowheader">[!UICONTROL 검색할 오브젝트 유형]</td> 
    <td>검색할 Hubspot CRM 개체의 유형을 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Output properties]</td> 
+   <td role="rowheader">[!UICONTROL 출력 속성]</td> 
    <td>모듈의 출력에 표시할 속성을 선택합니다. 사용 가능한 필드는 선택한 개체에 따라 다릅니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Filter by] </td> 
+   <td role="rowheader">[!UICONTROL 필터 기준] </td> 
    <td> <p>검색 필터링 방법 선택</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Query]</strong> </p> <p>쿼리 입력 또는 매핑</p> </li> 
-     <li> <p><strong>[!UICONTROL Properties]</strong> </p> <p>검색할 그룹 또는 필터를 입력합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 쿼리]</strong> </p> <p>쿼리 입력 또는 매핑</p> </li> 
+     <li> <p><strong>[!UICONTROL 속성]</strong> </p> <p>검색할 그룹 또는 필터를 입력합니다.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Sort by]</td> 
+   <td role="rowheader">[!UICONTROL 정렬 기준]</td> 
    <td> <p>결과를 정렬하려면 을 클릭합니다. 결과 정렬을 선택하면 다음 필드가 나타납니다. </p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Property name]</strong> </p> <p>결과를 정렬할 속성 선택</p> </li> 
-     <li> <p><strong>[!UICONTROL Direction]</strong> </p> <p>결과를 오름차순으로 정렬할지 아니면 내림차순으로 정렬할지 선택합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 속성 이름]</strong> </p> <p>결과를 정렬할 속성 선택</p> </li> 
+     <li> <p><strong>[!UICONTROL 방향]</strong> </p> <p>결과를 오름차순으로 정렬할지 아니면 내림차순으로 정렬할지 선택합니다.</p> </li> 
     </ul> </td> 
   </tr> 
    <tr> 
@@ -183,23 +183,23 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL 제한]</td> 
    <td>한 실행 주기에서 모듈이 반환할 최대 항목 수를 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Object type to search]</td> 
+   <td role="rowheader">[!UICONTROL 검색할 오브젝트 유형]</td> 
    <td> <p>검색할 객체 유형을 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Output Properties]</td> 
+   <td role="rowheader">[!UICONTROL 출력 속성]</td> 
    <td>이 모듈에 대한 출력에 포함할 속성을 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Created/Updated]</td> 
+   <td role="rowheader">[!UICONTROL 생성됨/업데이트됨]</td> 
    <td>생성된(신규) 또는 업데이트된(수정된) 객체를 감시할지 여부를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Filter by]</td> 
+   <td role="rowheader">[!UICONTROL 필터 기준]</td> 
    <td>필터를 추가하여 특정 조건이 충족될 때만 시나리오가 시작되도록 할 수 있습니다.<ul><li><b>쿼리</b><p>필터링 기준으로 사용할 쿼리를 입력합니다.</li><li><b>속성</b><p>결과를 필터링하는 데 사용할 각 속성에 대해 <b>항목 추가</b>를 클릭하고 속성 이름, 연산자 및 속성 값을 입력하십시오.</td> 
   </tr> 
  </tbody> 
@@ -231,11 +231,11 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record Type]</td> 
+   <td role="rowheader">[!UICONTROL 레코드 유형]</td> 
    <td> <p>만들려는 레코드 유형을 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Property groups]</td> 
+   <td role="rowheader">[!UICONTROL 속성 그룹]</td> 
    <td>레코드를 만들 때 추가할 각 속성에 대해 속성을 찾을 그룹을 선택합니다. 속성 그룹이 열리고 속성 값을 입력할 수 있습니다. 사용 가능한 속성 그룹 및 속성은 만들려는 레코드 유형에 따라 다릅니다.</td> 
   </tr> 
  </tbody> 
@@ -243,7 +243,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 +++
 
-+++ **[!UICONTROL Create a Record (Legacy)]**
++++ **[!UICONTROL 레코드 만들기(레거시)]**
 
 이 작업 모듈은 연락처, 회사 또는 거래를 만듭니다.
 
@@ -256,11 +256,11 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record Type]</td> 
+   <td role="rowheader">[!UICONTROL 레코드 유형]</td> 
    <td> <p>만들려는 레코드 유형을 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Properties]</td> 
+   <td role="rowheader">[!UICONTROL 속성]</td> 
    <td>레코드에 설정할 속성을 입력합니다. 사용 가능한 필드는 만들려는 레코드 유형에 따라 다릅니다.</td> 
   </tr> 
  </tbody> 
@@ -268,7 +268,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 +++
 
-+++ **[!UICONTROL Delete a Record]**
++++ **[!UICONTROL 레코드 삭제]**
 
 이 작업 모듈은 연락처, 회사 또는 거래를 삭제합니다.
 
@@ -281,7 +281,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record Type]</td> 
+   <td role="rowheader">[!UICONTROL 레코드 유형]</td> 
    <td>삭제할 레코드 유형을 선택합니다.</td> 
   </tr> 
   <tr> 
@@ -293,7 +293,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 +++
 
-+++ [!UICONTROL Get a Record]
++++ [!UICONTROL 레코드 가져오기]
 
 이 작업 모듈은 연락처, 회사 또는 거래의 세부 정보를 가져옵니다.
 
@@ -306,16 +306,16 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record Type]</td> 
+   <td role="rowheader">[!UICONTROL 레코드 유형]</td> 
    <td> <p>레코드 유형을 선택합니다.</p> 
     <ul> 
-     <li>[!UICONTROL Contact]</li> 
+     <li>[!UICONTROL 연락처]</li> 
      <li>[!UICONTROL Company] </li> 
      <li>[!UICONTROL Deal]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Search Type]</td> 
+   <td role="rowheader">[!UICONTROL 검색 유형]</td> 
    <td>연락처를 받는 경우 ID로 식별할지 이메일 주소로 식별할지 선택합니다.</td> 
   </tr> 
   <tr> 
@@ -331,7 +331,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 +++
 
-+++ **[!UICONTROL Get a Record Property]**
++++ **[!UICONTROL 레코드 속성 가져오기]**
 
 이 작업 모듈은 (내부) 이름으로 특정 레코드 속성에 대한 메타데이터를 가져옵니다.
 
@@ -344,15 +344,15 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record Type]</td> 
+   <td role="rowheader">[!UICONTROL 레코드 유형]</td> 
    <td>메타데이터를 검색할 속성이 있는 레코드 유형을 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Property Name]</td> 
+   <td role="rowheader">[!UICONTROL 속성 이름]</td> 
    <td>메타데이터를 검색할 속성을 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Option ID]</td> 
+   <td role="rowheader">[!UICONTROL 옵션 ID]</td> 
    <td> <p> 일부 속성에는 사용자가 속성 값으로 선택할 수 있는 사용 가능한 옵션 세트가 있습니다. 검색할 속성 값을 나타내는 옵션의 ID를 입력합니다.</p> </td> 
   </tr> 
  </tbody> 
@@ -373,15 +373,15 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Type]</td> 
+   <td role="rowheader">[!UICONTROL 유형]</td> 
    <td> <p>반환할 레코드 유형을 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Output Properties]</td> 
+   <td role="rowheader">[!UICONTROL 출력 속성]</td> 
    <td>이 모듈에 대한 출력에 포함할 속성을 선택합니다.</td> 
   </tr> 
     <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL 제한]</td> 
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
@@ -389,7 +389,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 +++
 
-+++ **[!UICONTROL Update a Record]**
++++ **[!UICONTROL 레코드 업데이트]**
 
 이 작업 모듈은 연락처, 회사 또는 거래를 업데이트합니다.
 
@@ -402,11 +402,11 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record Type]</td> 
+   <td role="rowheader">[!UICONTROL 레코드 유형]</td> 
    <td>업데이트할 레코드 유형을 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Search Type]</td> 
+   <td role="rowheader">[!UICONTROL 검색 유형]</td> 
    <td> <p>연락처를 받는 경우 레코드를 식별하는 방법을 선택합니다.</p> 
     <ul> 
      <li> <p>[!UICONTROL ID]</p> </li> 
@@ -422,7 +422,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td>상세내역을 갱신할 담당자의 전자 메일 주소를 입력합니다. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Properties]</td> 
+   <td role="rowheader">[!UICONTROL 속성]</td> 
    <td>레코드에 설정할 속성을 입력합니다. 사용 가능한 필드는 만들려는 레코드 유형에 따라 다릅니다.</td> 
   </tr> 
  </tbody> 
@@ -430,7 +430,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 +++
 
-+++ **[!UICONTROL Watch Records]**
++++ **[!UICONTROL 레코드 보기]**
 
 이 트리거 모듈은 지난 30일 내에 연락처, 회사 또는 거래가 수정되거나 만들어진 경우 시나리오를 시작합니다. 출력은 10,000개의 레코드로 제한됩니다.
 
@@ -443,7 +443,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record Type]</td> 
+   <td role="rowheader">[!UICONTROL 레코드 유형]</td> 
    <td>보려는 속성이 있는 레코드 유형을 선택합니다.</td> 
   </tr> 
   <tr> 
@@ -451,11 +451,11 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td>최근에 수정한 레코드 또는 최근에 만든 레코드를 볼지 여부를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Output Properties]</td> 
+   <td role="rowheader">[!UICONTROL 출력 속성]</td> 
    <td>모듈의 출력에 포함할 속성을 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL 제한]</td> 
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
@@ -476,7 +476,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 * [[!UICONTROL Search for Contacts]](#search-for-contacts)
 * [Watch Contacts Added to a List](#watch-contacts-added-to-a-list)-->
 
-+++ **[!UICONTROL Add Contacts to a List]**
++++ **[!UICONTROL 목록에 연락처 추가]**
 
 이 모듈은 시스템에서 이미 생성된 연락처 레코드를 연락처 목록에 추가합니다.
 
@@ -489,15 +489,15 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL List ID] </td> 
+   <td role="rowheader">[!UICONTROL 목록 ID] </td> 
    <td>연락처를 추가할 목록의 ID를 선택합니다. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL IDs/Emails] </td> 
+   <td role="rowheader">[!UICONTROL ID/Emails] </td> 
    <td> <p>목록에 추가할 연락처를 식별하는 방법을 선택합니다.</p> 
     <ul> 
      <li> <p>[!UICONTROL IDs]</p> <p>목록에 추가하려는 연락처의 ID를 추가합니다.</p> </li> 
-     <li> <p>[!UICONTROL Emails]</p> <p>목록에 추가하려는 연락처의 이메일 주소를 추가합니다.</p> </li> 
+     <li> <p>[!UICONTROL 전자 메일]</p> <p>목록에 추가하려는 연락처의 이메일 주소를 추가합니다.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -518,7 +518,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Property groups]</td> 
+   <td role="rowheader">[!UICONTROL 속성 그룹]</td> 
    <td>연락처를 만들 때 추가하려는 각 속성에 대해 속성이 있는 그룹을 선택합니다. 속성 그룹이 열리고 속성 값을 입력할 수 있습니다.</td> 
   </tr> 
  </tbody> 
@@ -526,7 +526,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 +++
 
-+++ **[!UICONTROL Create/Update a Contact (Legacy)]**
++++ **[!UICONTROL 연락처 만들기/업데이트(레거시)]**
 
 포털에 이미 존재하지 않는 연락처를 만들거나, 포털에 존재하는 연락처를 최신 속성 값으로 업데이트합니다.
 
@@ -539,7 +539,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Properties]</td> 
+   <td role="rowheader">[!UICONTROL 속성]</td> 
    <td>연락처에 대해 설정하거나 업데이트할 속성을 입력합니다. </td> 
   </tr> 
  </tbody> 
@@ -547,7 +547,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 +++
 
-+++ **[!UICONTROL Create/Update a Group of Contacts]**
++++ **[!UICONTROL 연락처 그룹 만들기/업데이트]**
 
 대화 상대 그룹을 만들거나 대화 상대가 이미 있는 경우 업데이트합니다. 일괄 처리 크기가 연락처 100개 이하로 제한된 경우 성능이 가장 좋습니다. 이 끝점을 통해 수행된 변경 사항은 비동기적으로 처리되므로 변경 사항이 연락처 레코드에 적용되는 데 몇 분이 걸릴 수 있습니다.
 
@@ -560,15 +560,15 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Batch of Contacts to Create/Update] </td> 
-   <td> <p>연락처 배치를 추가합니다.</p> <p>새 연락처를 추가하려면 <strong>[!UICONTROL Add item]</strong>을(를) 클릭하세요. 표시되는 창에서 다음 정보를 입력하거나 매핑합니다.</p> 
+   <td role="rowheader">생성/업데이트할 연락처의 [!UICONTROL 배치] </td> 
+   <td> <p>연락처 배치를 추가합니다.</p> <p>새 연락처를 추가하려면 <strong>[!UICONTROL 항목 추가]</strong>를 클릭하십시오. 표시되는 창에서 다음 정보를 입력하거나 매핑합니다.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Search Type]</strong> </p> <p>연락처를 식별하는 방법을 선택합니다.</p> 
+     <li> <p><strong>[!UICONTROL 검색 유형]</strong> </p> <p>연락처를 식별하는 방법을 선택합니다.</p> 
       <ul> 
        <li> <p>[!UICONTROL ID]</p> <p>만들거나 업데이트할 연락처의 ID를 입력하십시오. </p> </li> 
        <li> <p>[!UICONTROL Email]</p> <p>만들거나 업데이트할 연락처의 이메일 주소를 입력합니다. </p> </li> 
       </ul> </li> 
-     <li> <p><strong>[!UICONTROL Properties]</strong> </p> <p>연락처에 대해 설정하거나 업데이트할 속성을 입력합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 속성]</strong> </p> <p>연락처에 대해 설정하거나 업데이트할 속성을 입력합니다.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -576,9 +576,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 +++
 
-+++ **[!UICONTROL List Contacts]**
++++ **[!UICONTROL 연락처 나열]**
 
-포털에서 만든 모든 연락처를 반환합니다. 출력은 5000개의 연락처로 제한됩니다. 이전 또는 다음 연락처를 나열하려면 [!UICONTROL advanced] 매개 변수를 사용하여 목록을 오프셋할 수 있습니다.
+포털에서 만든 모든 연락처를 반환합니다. 출력은 5000개의 연락처로 제한됩니다. 이전 또는 다음 연락처를 나열하려면 [!UICONTROL 고급] 매개 변수를 사용하여 목록을 오프셋할 수 있습니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -589,11 +589,11 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL 제한]</td> 
    <td>시나리오 실행 주기 동안 최대 연락처 수 [!DNL Workfront Fusion]이(가) 반환되어야 합니다. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Output properties]</td> 
+   <td role="rowheader">[!UICONTROL 출력 속성]</td> 
    <td>모듈의 출력에 표시할 속성을 선택합니다. </td> 
   </tr> 
    <tr> 
@@ -605,9 +605,9 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 +++
 
-+++ **[!UICONTROL List Contacts of a Company]**
++++ **[!UICONTROL 회사 연락처 나열]**
 
-회사 연락처 목록을 검색합니다. 출력은 5000개의 연락처로 제한됩니다. 이전 또는 다음 연락처를 나열하려면 [!UICONTROL advanced] 매개 변수를 사용하여 목록을 오프셋할 수 있습니다.
+회사 연락처 목록을 검색합니다. 출력은 5000개의 연락처로 제한됩니다. 이전 또는 다음 연락처를 나열하려면 [!UICONTROL 고급] 매개 변수를 사용하여 목록을 오프셋할 수 있습니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -622,7 +622,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td>연락처를 나열할 회사의 ID를 입력합니다. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL 제한]</td> 
    <td>시나리오 실행 주기 동안 최대 연락처 수 [!DNL Workfront Fusion]이(가) 반환되어야 합니다. </td> 
   </tr> 
    <tr> 
@@ -634,7 +634,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 +++
 
-+++ **[!UICONTROL Merge contacts]**
++++ **[!UICONTROL 연락처 병합]**
 
 이 작업 모듈은 연락처를 병합합니다.
 
@@ -659,7 +659,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 +++
 
-+++ **[!UICONTROL Remove a Contact from a List]**
++++ **[!UICONTROL 목록에서 연락처 제거]**
 
 연락처 목록에서 연락처를 제거합니다.
 
@@ -676,11 +676,11 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL List ID] </td> 
+   <td role="rowheader">[!UICONTROL 목록 ID] </td> 
    <td>연락처를 제거할 목록의 ID를 선택합니다. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Contact ID] </td> 
+   <td role="rowheader">[!UICONTROL 연락처 ID] </td> 
    <td>목록에서 제거할 연락처의 ID를 입력하십시오. </td> 
   </tr> 
  </tbody> 
@@ -688,7 +688,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 +++
 
-+++ **[!UICONTROL Search for Contacts]**
++++ **[!UICONTROL 연락처 검색]**
 
 검색 쿼리를 사용하여 연락처 목록을 검색합니다.
 
@@ -705,7 +705,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td>검색 쿼리를 입력합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td role="rowheader">[!UICONTROL 제한] </td> 
    <td>시나리오 실행 주기 동안 [!DNL Workfront Fusion]이(가) 반환해야 하는 최대 연락처 수를 입력하거나 매핑합니다. </td> 
   </tr> 
  </tbody> 
@@ -713,7 +713,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 +++
 
-+++ **[!UICONTROL Watch contacts added to a list]**
++++ **[!UICONTROL 목록에 추가된 연락처 보기]**
 
 이 트리거 모듈은 새 연락처가 목록에 추가되면 시나리오를 시작합니다. 이 기능은 유료 마케팅 계정이 있는 사용자만 사용할 수 있습니다.
 
@@ -726,15 +726,15 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL List ID]</td> 
+   <td role="rowheader">[!UICONTROL 목록 ID]</td> 
    <td>보려는 연락처가 포함된 목록의 ID를 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Output Properties]</td> 
+   <td role="rowheader">[!UICONTROL 출력 속성]</td> 
    <td>모듈의 출력에 포함할 속성을 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL 제한]</td> 
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
@@ -747,7 +747,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 <!--* [[!UICONTROL Get a Deal's CRM Pipeline]](#get-a-deals-crm-pipeline)
 * [[!UICONTROL List Deal/Ticket Pipelines]](#list-dealticket-pipelines)-->
 
-+++ **[!UICONTROL Get a Deal's CRM Pipeline]**
++++ **[!UICONTROL 거래의 CRM 파이프라인 가져오기]**
 
 특정 거래 파이프라인을 반환합니다.
 
@@ -760,11 +760,11 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Pipeline ID] </td> 
+   <td role="rowheader">[!UICONTROL 파이프라인 ID] </td> 
    <td>세부 정보를 검색할 파이프라인의 ID를 입력하거나 매핑합니다. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Stage ID] </td> 
+   <td role="rowheader">[!UICONTROL 단계 ID] </td> 
    <td>세부 정보를 검색할 단계의 ID를 입력하거나 매핑합니다. </td> 
   </tr> 
  </tbody> 
@@ -772,7 +772,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 +++
 
-+++ **[!UICONTROL List Deal/Ticket Pipelines]**
++++ **[!UICONTROL 거래/티켓 파이프라인 나열]**
 
 지정된 포털에 대한 모든 거래 및 티켓 파이프라인을 반환합니다.
 
@@ -785,7 +785,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Object Type] </td> 
+   <td role="rowheader">[!UICONTROL 개체 유형] </td> 
    <td>거래 또는 티켓 나열 여부를 선택합니다.</td> 
   </tr> 
  </tbody> 
@@ -795,7 +795,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 ### 회사
 
-+++ **[!UICONTROL Search for Companies by domain]**
++++ **[!UICONTROL 도메인별로 회사 검색]**
 
 도메인 속성에 정확히 일치하는 항목을 기반으로 회사 목록을 검색합니다.
 
@@ -812,11 +812,11 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td>검색할 회사의 도메인(예: <code>[!DNL hubspot].com</code>)을 입력하십시오. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL 제한]</td> 
    <td>시나리오 실행 주기 동안 최대 회사 수 [!DNL Workfront Fusion]이(가) 반환해야 합니다. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Output properties]</td> 
+   <td role="rowheader">[!UICONTROL 출력 속성]</td> 
    <td>모듈의 출력에 표시할 속성을 선택합니다. </td> 
   </tr> 
  </tbody> 
@@ -844,15 +844,15 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Type]</td> 
+   <td role="rowheader">[!UICONTROL 유형]</td> 
    <td>참여를 연결할 CRM 레코드 유형을 선택합니다. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Engagement ID]</td> 
+   <td role="rowheader">[!UICONTROL 참여 ID]</td> 
   <td>개체와 연결할 계약의 ID를 입력하거나 매핑합니다.</td> 
    </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record ID]</td> 
+   <td role="rowheader">[!UICONTROL 레코드 ID]</td> 
   <td>계약을 연결할 레코드의 ID를 입력하거나 매핑합니다.</td> 
    </tr> 
  </tbody> 
@@ -873,11 +873,11 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Is Active?]</td> 
+   <td role="rowheader">[!UICONTROL이 활성화되었습니까?]</td> 
    <td>새 참여가 만들어질 때 활성화될 경우 이 옵션을 활성화하십시오. 타임라인에 참여하려면 참여가 활성화되어야 합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Type]</td> 
+   <td role="rowheader">[!UICONTROL 유형]</td> 
   <td>만들려는 참여 유형을 선택합니다.
   <ul>
   <li><b>이메일</b><p></p><a href="#email-metadata" class="MCXref xref" >이메일 메타데이터</a>을(를) 계속합니다.</p></li>
@@ -934,7 +934,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td> <p>[!UICONTROL From > Email]</p> </td> 
+   <td> <p>[!UICONTROL From &gt; Email]</p> </td> 
    <td> <p>이메일을 보낼 이메일 주소를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
@@ -942,7 +942,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td>이메일을 보낼 사람의 이름을 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Last Name]</td> 
+   <td role="rowheader">[!UICONTROL 성]</td> 
   <td>이메일을 보낼 사람의 성을 입력하거나 매핑합니다.
   </td> 
    </tr> 
@@ -988,7 +988,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td>전화를 걸 전화 번호를 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Status]</td> 
+   <td role="rowheader">[!UICONTROL 상태]</td> 
   <td>호출 상태를 선택합니다.
   </td> 
    </tr> 
@@ -1030,7 +1030,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td>모임 설명 또는 세부 정보의 텍스트를 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Start Time]</td> 
+   <td role="rowheader">[!UICONTROL 시작 시간]</td> 
   <td>회의 시작 시간을 UNIX 타임스탬프로 입력하거나 매핑합니다.
   </td> 
    </tr> 
@@ -1060,7 +1060,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td>작업 상태를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL For Object Type]</td> 
+   <td role="rowheader">개체 유형에 대한 [!UICONTROL]</td> 
   <td><code>CONTACT</code> 또는 <code>COMPANY</code>을(를) 입력하십시오.
   </td> 
    </tr> 
@@ -1082,7 +1082,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL File ID]</td> 
+   <td role="rowheader">[!UICONTROL 파일 ID]</td> 
    <td>삭제할 계약의 ID를 입력하거나 매핑합니다.</td> 
   </tr> 
  </tbody> 
@@ -1103,7 +1103,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL 제한]</td> 
    <td>시나리오 실행 주기 동안 최대 회사 수 [!DNL Workfront Fusion]이(가) 반환해야 합니다. </td> 
   </tr> 
   <tr> 
@@ -1135,15 +1135,15 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Application ID]</td> 
+   <td role="rowheader">[!UICONTROL 응용 프로그램 ID]</td> 
    <td>이 이벤트가 속한 응용 프로그램의 ID를 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Event ID]</td> 
+   <td role="rowheader">[!UICONTROL 이벤트 ID]</td> 
    <td>이 이벤트의 ID를 입력하거나 매핑합니다. 이벤트 ID는 시스템에서 생성되지 않습니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Event Type ID]</td> 
+   <td role="rowheader">[!UICONTROL 이벤트 유형 ID]</td> 
    <td>이 이벤트의 이벤트 유형 ID를 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
@@ -1151,15 +1151,15 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td>이벤트를 만들 연락처의 이메일 주소를 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Object ID]</td> 
+   <td role="rowheader">[!UICONTROL 개체 ID]</td> 
    <td>이벤트를 만들 연락처의 ID를 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Timestamp]</td> 
+   <td role="rowheader">[!UICONTROL 타임스탬프]</td> 
    <td>이 이벤트의 타임스탬프를 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Custom data]</td> 
+   <td role="rowheader">[!UICONTROL 사용자 지정 데이터]</td> 
    <td>이 이벤트에 추가할 사용자 지정 데이터의 각 항목에 대해 <b>항목 추가</b>를 클릭하고 항목의 이름과 값을 입력합니다.</td> 
   </tr> 
  </tbody> 
@@ -1180,7 +1180,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Application ID]</td> 
+   <td role="rowheader">[!UICONTROL 응용 프로그램 ID]</td> 
    <td>이 이벤트가 속한 애플리케이션의 ID를 입력하거나 매핑합니다. </td> 
   </tr> 
  </tbody> 
@@ -1201,19 +1201,19 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Events Type]</td> 
+   <td role="rowheader">[!UICONTROL 이벤트 유형]</td> 
    <td>소셜 이벤트, 콘텐츠 이벤트 또는 모든 이벤트를 시청할지 여부를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL 제한]</td> 
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 파일 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Start Date]</td> 
+   <td role="rowheader">[!UICONTROL 시작 날짜]</td> 
    <td>시작 날짜를 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL End Date]</td> 
+   <td role="rowheader">[!UICONTROL 종료 날짜]</td> 
    <td>종료 날짜를 입력하거나 매핑합니다.</td> 
   </tr> 
  </tbody> 
@@ -1236,15 +1236,15 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Application ID]</td> 
+   <td role="rowheader">[!UICONTROL 응용 프로그램 ID]</td> 
    <td>이 웹후크에 사용할 애플리케이션 ID를 입력합니다. HubSpot 개발자 포털에서 ID를 찾을 수 있습니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Subscriptions]</td> 
+   <td role="rowheader">[!UICONTROL 가입]</td> 
    <td> <p>보려는 각 알림 유형에 대해 <b>항목 추가</b>를 클릭하고 구독 유형을 선택하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Force to Remove Old Subscriptions]</td> 
+   <td role="rowheader">[!UICONTROL 이전 구독을 강제로 제거]</td> 
    <td>이 웹후크에 첨부된 이전 구독을 분리하거나 삭제하려면 이 옵션을 활성화하십시오.</td> 
   </tr> 
  </tbody> 
@@ -1262,7 +1262,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 * [Upload a file](#upload-a-file)
 * [Watch files](#watch-files)-->
 
-+++ **[!UICONTROL Create a Folder]**
++++ **[!UICONTROL 폴더 만들기]**
 
 이 모듈은 폴더를 생성합니다.
 
@@ -1275,11 +1275,11 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder Name] </td> 
+   <td role="rowheader">[!UICONTROL 폴더 이름] </td> 
    <td>새 폴더의 이름을 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Parent Folder ID] </td> 
+   <td role="rowheader">[!UICONTROL 상위 폴더 ID] </td> 
    <td>생성 중인 폴더의 상위 폴더 ID를 선택합니다. </td> 
   </tr> 
  </tbody> 
@@ -1300,7 +1300,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL File ID]</td> 
+   <td role="rowheader">[!UICONTROL 파일 ID]</td> 
    <td>삭제할 파일의 ID를 입력하거나 매핑합니다.</td> 
   </tr> 
  </tbody> 
@@ -1308,7 +1308,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 +++
 
-+++ **[!UICONTROL Delete a Folder]**
++++ **[!UICONTROL 폴더 삭제]**
 
 폴더를 삭제된 것으로 표시합니다.
 
@@ -1342,11 +1342,11 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL 제한]</td> 
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 파일 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder ID]</td> 
+   <td role="rowheader">[!UICONTROL 폴더 ID]</td> 
    <td>나열할 파일이 포함된 폴더의 ID를 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
@@ -1358,7 +1358,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 +++
 
-+++ **[!UICONTROL Move a File]**
++++ **[!UICONTROL 파일 이동]**
 
 파일을 다른 폴더로 이동합니다.
 
@@ -1371,15 +1371,15 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL File ID] </td> 
+   <td role="rowheader">[!UICONTROL 파일 ID] </td> 
    <td>이동할 파일의 ID를 입력하거나 매핑합니다. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder ID] </td> 
+   <td role="rowheader">[!UICONTROL 폴더 ID] </td> 
    <td>파일을 이동할 폴더의 ID를 선택합니다. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Name]</td> 
+   <td role="rowheader">[!UICONTROL 이름]</td> 
    <td>이동된 파일의 이름을 입력합니다.</td> 
   </tr> 
  </tbody> 
@@ -1400,19 +1400,19 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source file]</td> 
+   <td>[!UICONTROL Source 파일]</td> 
    <td> <p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 이름과 데이터를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Access type] </td> 
+   <td role="rowheader">[!UICONTROL 액세스 유형] </td> 
    <td>파일을 private으로 할지, public으로 할지, indexable로 만들지 또는 public과 indexable로 할지 선택합니다. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder ID] </td> 
+   <td role="rowheader">[!UICONTROL 폴더 ID] </td> 
    <td>파일을 업로드할 폴더의 ID를 선택합니다. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Overwrite]</td> 
+   <td role="rowheader">[!UICONTROL 덮어쓰기]</td> 
    <td>폴더에 파일이 이미 있는 경우 덮어쓰려면 이 옵션을 활성화합니다.</td> 
   </tr> 
  </tbody> 
@@ -1433,11 +1433,11 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL 제한]</td> 
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 파일 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder ID]</td> 
+   <td role="rowheader">[!UICONTROL 폴더 ID]</td> 
    <td>보려는 파일이 포함된 폴더의 ID를 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
@@ -1468,27 +1468,27 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Name]</td> 
+   <td role="rowheader">[!UICONTROL 이름]</td> 
    <td>새 달력 작업의 이름을 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Description]</td> 
+   <td role="rowheader">[!UICONTROL 설명]</td> 
    <td>새 달력 작업에 대한 설명을 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Owner ID]</td> 
+   <td role="rowheader">[!UICONTROL 소유자 ID]</td> 
    <td>이 작업에 할당된 사용자의 소유자 ID를 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Event Date]</td> 
+   <td role="rowheader">[!UICONTROL 이벤트 날짜]</td> 
    <td>이 작업의 날짜를 입력하거나 매핑합니다.<p>지원되는 날짜 및 시간 형식 목록을 보려면 [!DNL Adobe Workfront Fusion]</a>의 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 변환을 참조하십시오.</p></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Category]</td> 
+   <td role="rowheader">[!UICONTROL 범주]</td> 
    <td>이벤트 유형을 선택합니다.<ul><li><b>블로그 게시물</b><p>콘텐츠 그룹 ID를 입력합니다. 블로그 페이지의 ID입니다.</p></li><li><b>이메일</b><p>사용할 이메일 템플릿에 경로를 입력하거나 매핑합니다.</li><li><b>랜딩 페이지</b><p>사용할 랜딩 페이지 템플릿에 경로를 입력하거나 매핑합니다.</li><li><b>사용자 정의</b></li><ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL State]</td> 
+   <td role="rowheader">[!UICONTROL 상태]</td> 
    <td>이벤트가 "할 일" 상태인지 또는 "완료" 상태인지 여부를 입력합니다.</td> 
   </tr> 
   <tr> 
@@ -1534,15 +1534,15 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL 제한]</td> 
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 파일 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Start Date]</td> 
+   <td role="rowheader">[!UICONTROL 시작 날짜]</td> 
    <td>이벤트를 보려는 가장 빠른 날짜를 입력하거나 매핑합니다. <code>MM/DD/YYYY h:mm</code> 형식을 사용합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL End Date]</td> 
+   <td role="rowheader">[!UICONTROL 종료 날짜]</td> 
    <td>이벤트를 보려는 최신 날짜를 입력하거나 매핑합니다. <code>MM/DD/YYYY h:mm</code> 형식을 사용합니다.</td> 
   </tr> 
  </tbody> 
@@ -1568,7 +1568,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Owner ID]</td> 
+   <td role="rowheader">[!UICONTROL 소유자 ID]</td> 
    <td> <p>세부 정보를 반환할 소유자의 ID를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
@@ -1604,7 +1604,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 <!-- Create a Ticket Need to find a working connection-->
 
-+++ **[!UICONTROL Delete a Ticket]**
++++ **[!UICONTROL 티켓 삭제]**
 
 ID로 기존 티켓을 삭제합니다.
 
@@ -1653,7 +1653,7 @@ ID로 기존 티켓을 삭제합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL File URL]</td> 
+   <td role="rowheader">[!UICONTROL 파일 URL]</td> 
    <td>검색할 파일의 URL을 입력하거나 매핑합니다. 이는 양식 메타데이터에서 찾을 수 있습니다.</td> 
   </tr> 
  </tbody> 
@@ -1674,7 +1674,7 @@ ID로 기존 티켓을 삭제합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL 제한]</td> 
    <td>한 실행 주기에서 모듈이 반환할 최대 양식 수를 입력하거나 매핑합니다.</td> 
   </tr> 
  </tbody> 
@@ -1707,7 +1707,7 @@ ID로 기존 티켓을 삭제합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Broadcast ID]</td> 
+   <td role="rowheader">[!UICONTROL 브로드캐스트 ID]</td> 
    <td>취소할 브로드캐스트의 ID를 입력하거나 매핑합니다.</td> 
   </tr> 
  </tbody> 
@@ -1728,7 +1728,7 @@ ID로 기존 티켓을 삭제합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Channel ID]</td> 
+   <td role="rowheader">[!UICONTROL 채널 ID]</td> 
    <td>이 브로드캐스트에 사용할 채널의 ID를 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
@@ -1740,15 +1740,15 @@ ID로 기존 티켓을 삭제합니다.
    <td>브로드캐스트의 텍스트를 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Photo URL]</td> 
+   <td role="rowheader">[!UICONTROL 사진 URL]</td> 
    <td>브로드캐스트에 포함할 사진의 URL을 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Thumbnail URL]</td> 
+   <td role="rowheader">[!UICONTROL 썸네일 URL]</td> 
    <td>이 브로드캐스트에 사용할 썸네일의 URL을 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Trigger at]</td> 
+   <td role="rowheader">[!UICONTROL 트리거 위치]</td> 
    <td>브로드캐스트를 전송할 날짜 및 시간을 입력하거나 매핑합니다. 비워 두면 브로드캐스트가 즉시 전송됩니다.<p>지원되는 날짜 및 시간 형식 목록을 보려면 [!DNL Adobe Workfront Fusion]</a>의 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 변환을 참조하십시오.</p></td> 
   </tr> 
  </tbody> 
@@ -1769,19 +1769,19 @@ ID로 기존 티켓을 삭제합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL 제한]</td> 
    <td>한 실행 주기에서 모듈이 반환할 최대 항목 수를 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Filter by Status]</td> 
+   <td role="rowheader">[!UICONTROL 상태별 필터]</td> 
    <td>메시지가 특정 상태에 있을 때만 시나리오를 시작하려면 상태를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Filter by Channel]</td> 
+   <td role="rowheader">채널별 [!UICONTROL 필터]</td> 
    <td>메시지가 특정 채널에 있을 때만 시나리오를 시작하려면 채널을 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Broadcast ID]</td> 
+   <td role="rowheader">[!UICONTROL 브로드캐스트 ID]</td> 
    <td>메시지가 특정 날짜 또는 그 이후일 때만 시나리오를 시작하려면 <code>MM/DD/YYYY</code> 형식으로 날짜를 입력하거나 매핑합니다.</td> 
   </tr> 
  </tbody> 
@@ -1889,15 +1889,15 @@ This search module retrieves posts from a HubSpot blog.-->
    <td>업데이트할 구독의 이메일 주소를 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Statuses]</td> 
+   <td role="rowheader">[!UICONTROL 상태]</td> 
    <td>구독을 업데이트하려는 각 상태에 대해 <b>항목 추가</b>를 클릭하고 상태의 ID와 전자 메일 주소를 해당 상태에 구독할지 여부를 입력합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Portal Subscription Legal Status]</td> 
+   <td role="rowheader">[!UICONTROL Portal 가입 법적 상태]</td> 
    <td>GDPR에 대한 이 구독의 법적 근거를 기록하려면 이 구독의 법적 상태를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Portal Subscription Legal Basis Explanation]</td> 
+   <td role="rowheader">[!UICONTROL Portal 가입 법적 근거 설명]</td> 
    <td>GDPR에 대한 이 구독의 법적 근거에 대한 메모를 추가하려면 메모 텍스트를 입력하거나 매핑합니다.</td> 
   </tr> 
  </tbody> 
@@ -1918,15 +1918,15 @@ This search module retrieves posts from a HubSpot blog.-->
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL 제한]</td> 
    <td>한 실행 주기에서 모듈이 반환할 최대 항목 수를 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Start Timestamp]</td> 
+   <td role="rowheader">[!UICONTROL 시작 타임스탬프]</td> 
    <td>특정 날짜 또는 그 이후의 결과를 반환하려면 형식으로 날짜를 입력합니다 <code>MM/DD/YYYY.</code></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL End Timestamp]</td> 
+   <td role="rowheader">[!UICONTROL 종료 타임스탬프]</td> 
    <td>특정 날짜 또는 그 이전 날짜의 결과를 반환하려면 형식으로 날짜를 입력합니다 <code>MM/DD/YYYY.</code></td> 
   </tr> 
  </tbody> 
@@ -1960,7 +1960,7 @@ This action module associates two CRM objects.-->
 
 ### 기타
 
-+++ **[!UICONTROL Make an API Call]**
++++ **[!UICONTROL API 호출 만들기]**
 
 사용자 지정 API 호출을 수행할 수 있습니다.
 
@@ -1990,7 +1990,7 @@ This action module associates two CRM objects.-->
    <td> <p>https://api.hubapi.com/에 상대적인 경로를 입력합니다. 예: /contacts/v1/lists/all/contacts/all</p> <p>사용 가능한 끝점 목록은 <a href="https://legacydocs.hubspot.com/docs/overview">[!DNL HubSpot] API 설명서</a>를 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 메서드]</p> </td> 
    <td> <p>사용할 HTTP 메서드를 선택합니다.</p> <p>[!UICONTROL GET]</p> <p>를 클릭하여 항목에 대한 정보를 검색합니다.</p> <p>[!UICONTROL POST]</p> <p>새 항목을 만듭니다.</p> <p>[!UICONTROL PUT]</p> <p>기존 항목을 업데이트/바꿉니다.</p> <p>[!UICONTROL PATCH]</p> <p>부분 항목 업데이트를 수행합니다.</p> <p>[!UICONTROL DELETE]</p> <p>항목을 삭제합니다.</p> </td> 
   </tr> 
   <tr> 
@@ -1998,7 +1998,7 @@ This action module associates two CRM objects.-->
    <td> <p> 원하는 요청 헤더를 입력합니다. 인증 헤더를 추가할 필요가 없습니다. 이미 추가했습니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td role="rowheader">[!UICONTROL 쿼리 문자열]</td> 
    <td> <p> 요청 쿼리 문자열을 입력합니다.</p> </td> 
   </tr> 
   <tr> 
@@ -2018,7 +2018,7 @@ This action module associates two CRM objects.-->
 >
 >![Hubspot API 구성](/help/workfront-fusion/references/apps-and-modules/assets/hubspot-api-config.png)
 >
->검색 일치 항목은 모듈의 출력에서 [!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL contacts] 아래에 있습니다.
+>검색 일치 항목은 [!UICONTROL 번들] > [!UICONTROL 본문] > [!UICONTROL 연락처]의 모듈 출력에서 찾을 수 있습니다.
 >
 >이 예에서는 3개의 연락처가 반환되었습니다.
 >
@@ -2029,14 +2029,14 @@ This action module associates two CRM objects.-->
 ## 새 애플리케이션 만들기
 
 1. [!DNL HubSpot] 개발자 계정에 로그인합니다.
-1. **[!UICONTROL Create an App]** 옵션을 선택하십시오.
-1. 앱 이름을 입력하고 대화 상자를 [!UICONTROL Save]합니다.
+1. **[!UICONTROL 앱 만들기]** 옵션을 선택합니다.
+1. 앱 이름을 입력하고 대화 상자를 [!UICONTROL 저장]합니다.
 1. Webhook에 필요한 범위를 선택합니다.
 
    예를 들어 새 연락처를 만들거나 삭제할 때 모듈을 트리거하기 위한 연락처 범위를 추가합니다.
 
-   연락처, 거래 및 회사 이벤트 웹후크를 받는 데 필요한 것은 [!UICONTROL contacts scope]뿐입니다.
+   [!UICONTROL 연락처 범위]만 있으면 연락처, 거래 및 회사 이벤트 웹후크를 받을 수 있습니다.
 
    >[!IMPORTANT]
    >
-   >[!UICONTROL Redirect URL] 필드를 입력하지 마십시오.
+   >[!UICONTROL 리디렉션 URL] 필드를 입력하지 마십시오.

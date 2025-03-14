@@ -4,7 +4,7 @@ description: Adobe Workfront Fusion 이미지 모듈을 사용하면 특정 이�
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: a7696c9d-002d-4bb4-ae10-1f69dc5e66fe
-source-git-commit: 3834bb9c7f07e0097783c44558fd656d455337b4
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 0%
@@ -36,7 +36,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>Workfront Fusion 라이센스 요구 사항 없음</p>
    </td> 
   </tr> 
   <tr> 

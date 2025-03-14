@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Planning] 모듈을 사용하면  [!DNL Ado
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 06ba97ec4245f9620f013711df9a77b76abb20be
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1532'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
    <p>또는</p>
    <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
@@ -89,7 +89,7 @@ Adobe Workfront Planning 커넥터는 다음을 사용합니다.
 
 [!DNL Workfront Fusion] 모듈 내에서 직접 [!DNL Workfront Planning] 계정에 연결할 수 있습니다.
 
-1. [!DNL Adobe Workfront Planning] 모듈에서 연결 상자 옆의 **[!UICONTROL Add]**&#x200B;을(를) 클릭합니다.
+1. [!DNL Adobe Workfront Planning] 모듈에서 [연결] 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 
 1. 다음 필드를 채웁니다.
 
@@ -100,39 +100,39 @@ Adobe Workfront Planning 커넥터는 다음을 사용합니다.
       </col>
       <tbody>
         <tr>
-          <td role="rowheader">[!UICONTROL Connection name]</td>
+          <td role="rowheader">[!UICONTROL 연결 이름]</td>
           <td>
             <p>이 연결의 이름을 입력하십시오.</p>
           </td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Environment]</td>
+          <td role="rowheader">[!UICONTROL 환경]</td>
           <td>프로덕션 환경에 연결할지 아니면 비프로덕션 환경에 연결할지 선택합니다.</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Type]</td>
+          <td role="rowheader">[!UICONTROL 유형]</td>
           <td>서비스 계정에 연결할지 개인 계정에 연결할지 선택합니다.</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Client ID]<p>(선택 사항)</p></td>
-          <td>[!DNL Adobe] [!UICONTROL Client ID]을(를) 입력하십시오. [!DNL Adobe Developer Console]의 [!UICONTROL Credentials details] 섹션에서 찾을 수 있습니다.</td>
+          <td role="rowheader">[!UICONTROL 클라이언트 ID]<p>(선택 사항)</p></td>
+          <td>[!DNL Adobe] [!UICONTROL 클라이언트 ID]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Client Secret]<p>(선택 사항)</p></td>
-          <td>[!DNL Adobe] [!UICONTROL Client Secret]을(를) 입력하십시오. [!DNL Adobe Developer Console]의 [!UICONTROL Credentials details] 섹션에서 찾을 수 있습니다.
+          <td role="rowheader">[!UICONTROL 클라이언트 암호]<p>(선택 사항)</p></td>
+          <td>[!DNL Adobe] [!UICONTROL 클라이언트 암호]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Authentication URL]</td>
+          <td role="rowheader">[!UICONTROL 인증 URL]</td>
           <td>Workfront 인스턴스가 이 연결을 인증하는 데 사용할 URL을 입력하십시오. <p>기본값은 <code>https://oauth.my.workfront.com/integrations/oauth2</code>입니다.</p>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Host prefix]</td>
+          <td role="rowheader">[!UICONTROL 호스트 접두사]</td>
           <td>호스트 접두사를 입력합니다.<p>기본값은 <code>origin-</code>입니다.</p>
         </tr>
       </tbody>
     </table>
 
-1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL Continue]**&#x200B;을(를) 클릭하십시오.
+1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭하세요.
 
 ## [!DNL Adobe Workfront Planning]개 모듈 및 해당 필드
 
@@ -167,23 +167,23 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
       <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Object type]</td>
+      <td role="rowheader">[!UICONTROL 개체 유형]</td>
       <td>레코드, 레코드 종류 또는 작업 영역을 감시할지 여부를 선택합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL State]</td>
-      <td>이전 상태를 볼 것인지 새 상태를 볼 것인지 선택합니다.<ul><li><p><b>[!UICONTROL New state]</b></p><p>레코드가 지정된 값으로 <b>에서 </b>(으)로 변경되면 시나리오를 트리거합니다.</p></li><li><p><b>[!UICONTROL Old state]</b></p><p>레코드가 지정된 값에서 <b>부터</b>까지 변경되는 경우 시나리오를 트리거합니다.</p></li></ul></td> 
+      <td role="rowheader">[!UICONTROL 상태]</td>
+      <td>이전 상태를 볼 것인지 새 상태를 볼 것인지 선택합니다.<ul><li><p><b>[!UICONTROL 새 상태]</b></p><p>레코드가 지정된 값으로 <b>에서 </b>(으)로 변경되면 시나리오를 트리거합니다.</p></li><li><p><b>[!UICONTROL 이전 상태]</b></p><p>레코드가 지정된 값에서 <b>부터</b>까지 변경되는 경우 시나리오를 트리거합니다.</p></li></ul></td> 
     <tr>
       <td role="rowheader">[!UICONTROL Workspace]</td>
       <td>레코드를 보는 경우 레코드를 볼 Workspace을 선택합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Record type]</td>
+      <td role="rowheader">[!UICONTROL 레코드 유형]</td>
       <td>레코드를 보는 경우 보려는 레코드 유형을 선택합니다.</td>
     </tr>
     </tr>
      <tr data-mc-conditions=""> 
-      <td> <p>[!UICONTROL Events filters]</p> </td> 
+      <td> <p>[!UICONTROL 이벤트 필터]</p> </td> 
       <td> <p>선택한 기준을 충족하는 레코드만 보도록 필터를 설정할 수 있습니다.</p> <p>각 필터에 대해 필터를 평가할 필드, 연산자 및 필터를 허용할 값을 입력합니다. AND 규칙을 추가하여 두 개 이상의 필터를 사용할 수 있습니다.</p> <p>참고: 기존 [!DNL Workfront] 웹후크에서 필터를 편집할 수 없습니다. [!DNL Workfront] 이벤트 구독에 대해 다른 필터를 설정하려면 현재 웹후크를 제거하고 새 필터를 만드십시오.</p> <p>이벤트 필터에 대한 자세한 내용은 Workfront 모듈 문서의 [!DNL Workfront] &gt; [!UICONTROL Watch Events] 모듈에서 <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">이벤트 구독 필터</a>를 참조하십시오.</p> </td> 
      </tr> 
     <tr>
@@ -192,7 +192,7 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
     </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Exclude updates made by this connection]</p>
+        <p>[!UICONTROL 이 연결에 의해 수행된 업데이트 제외]</p>
       </td>
       <td>이 모듈에서 사용한 연결에 의해 변경이 있을 때 시나리오가 트리거되지 않도록 하려면 이 옵션을 활성화합니다. 이렇게 하면 이 시나리오가 트리거 작업을 수행하는 경우 시나리오의 다른 인스턴스가 트리거되지 않습니다.</td> 
       </tr>
@@ -222,7 +222,7 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
     </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Record type ID]</p>
+        <p>[!UICONTROL 레코드 유형 ID]</p>
       </td>
       <td>삭제하려는 레코드 유형의 ID를 입력하거나 매핑합니다.</td> 
       </tr>
@@ -251,7 +251,7 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Method]</p>
+        <p>[!UICONTROL 메서드]</p>
       </td>
    <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
     </tr>
@@ -264,7 +264,7 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Query String]  </td>
+      <td role="rowheader">[!UICONTROL 쿼리 문자열]  </td>
       <td>
         <p>쿼리 문자열에 추가할 각 키/값 쌍에 대해 <b>항목 추가</b>를 클릭하고 키와 값을 입력하십시오.</p>
       </td>
@@ -301,13 +301,13 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
       </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Record type]</p>
+        <p>[!UICONTROL 레코드 유형]</p>
       </td>
       <td>검색할 레코드 유형을 선택합니다.</td> 
       </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Record Fields]</p>
+        <p>[!UICONTROL 레코드 필드]</p>
       </td>
       <td>검색할 각 필드에 대해 해당 필드를 찾은 다음 연산자를 선택하고 검색할 값을 입력하거나 매핑합니다. 필드는 선택한 레코드 유형에 따라 사용할 수 있습니다.</td> 
       </tr>
@@ -319,7 +319,7 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
       </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Limit]</p>
+        <p>[!UICONTROL 제한]</p>
       </td>
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</p> </td> 
       </tr>
@@ -344,7 +344,7 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
     </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Record type ID]</p>
+        <p>[!UICONTROL 레코드 유형 ID]</p>
       </td>
       <td>생성할 레코드 유형을 입력하거나 매핑합니다. 사용 가능한 레코드 유형은 Workfront Planning 계정을 기반으로 합니다.</td> 
       </tr>
@@ -372,7 +372,7 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
     </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Record ID]</p>
+        <p>[!UICONTROL 레코드 ID]</p>
       </td>
       <td>삭제할 레코드의 ID를 입력하거나 매핑합니다.</td> 
       </tr>
@@ -392,7 +392,7 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
       <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Record ID]</td>
+      <td role="rowheader">[!UICONTROL 레코드 ID]</td>
       <td>검색할 레코드의 ID를 입력하거나 매핑합니다.</td>
     </tr>
   </tbody>
@@ -415,7 +415,7 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
       <td>검색할 레코드가 포함된 작업 영역을 선택하거나 매핑합니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Record type]</td>
+      <td role="rowheader">[!UICONTROL 레코드 유형]</td>
       <td>검색할 레코드 유형을 선택합니다.</td>
     </tr>
      <!--<tr>
@@ -459,7 +459,7 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
     </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Record ID]</p>
+        <p>[!UICONTROL 레코드 ID]</p>
       </td>
       <td>업데이트할 레코드 유형을 입력하거나 매핑합니다. 사용 가능한 레코드 유형은 Workfront Planning 계정을 기반으로 합니다.</td> 
       </tr>

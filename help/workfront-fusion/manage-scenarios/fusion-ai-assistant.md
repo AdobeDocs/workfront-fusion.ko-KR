@@ -4,7 +4,7 @@ description: Workfront Fusion의 AI 지원
 author: Becky
 feature: Workfront Fusion
 exl-id: 22f24c0e-4eb3-4ef7-b012-374ee5e8a844
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Workfront Fusion의 AI 지원
 
-AI Assistant는 Workfront 설명서에서 정보를 찾을 수 있으므로 필요한 도움을 받기 위해 Adobe Experience League을 방문할 필요가 없습니다.
+AI Assistant는 Workfront 설명서에서 정보를 찾을 수 있으므로 필요한 도움을 받기 위해 Adobe Experience League를 방문할 필요가 없습니다.
 
 ## 액세스 요구 사항
 
@@ -36,7 +36,7 @@ AI Assistant는 Workfront 설명서에서 정보를 찾을 수 있으므로 필�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
    <p>또는</p>
    <p>레거시: 모두 </p>
    </td> 
@@ -83,4 +83,4 @@ AI Assistant를 사용하여 Workfront Fusion 설명서에서 정보 또는 지�
 
 1. AI 지원 패널에서 응답을 봅니다.
 1. (선택 사항) 응답에 필요한 정보가 포함되어 있지 않으면 응답을 세분화하고 다시 시도하십시오.
-1. (선택 사항 및 조건부) 응답에 Adobe Experience League 문서에 대한 링크가 포함된 경우 링크를 클릭하여 새 창에서 문서를 엽니다.
+1. (선택 사항 및 조건부) 응답에 Adobe Experience League 문서에 대한 링크가 포함되어 있는 경우 링크를 클릭하여 새 창에서 문서를 엽니다.

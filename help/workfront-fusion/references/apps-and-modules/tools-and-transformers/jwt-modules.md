@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] [!UICONTROL JWT] 앱은 제공된 �
 author: Becky
 feature: Workfront Fusion
 exl-id: 380f60db-b2ec-411a-86ee-0d5699f19b41
-source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>Workfront Fusion 라이센스 요구 사항 없음</p>
    </td> 
   </tr> 
   <tr> 
@@ -82,7 +82,7 @@ JWT 커넥터는 다음을 사용합니다.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Algorithm]</td> 
+   <td role="rowheader">[!UICONTROL 알고리즘]</td> 
    <td> <p>JWT를 생성할 알고리즘을 선택합니다.</p> <ul>
    <li><b>HS256</b>: SHA-256 해시 알고리즘을 사용하는 HMAC</li>
    <li><b>HS384</b>: SHA-384 해시 알고리즘을 사용하는 HMAC</li>

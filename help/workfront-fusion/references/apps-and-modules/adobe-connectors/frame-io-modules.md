@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion Frame].io modules enable you to moni
 author: Becky
 feature: Workfront Fusion
 exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2128'
+source-wordcount: '2510'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Frame.io 커넥터에 대한 비디오 소개는 다음을 참조하십시오.
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
    <p>또는</p>
    <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
@@ -99,17 +99,17 @@ API 토큰을 사용하거나 OAuth 2.0을 사용하여 [!DNL Frame.io]에 연�
 
 ### API 토큰을 사용하여 [!DNL Frame.io]에 연결
 
-API 토큰을 사용하여 [!DNL Frame.io] 계정을 [!DNL Workfront Fusion]에 연결하려면 [!DNL Frame.io] 계정에서 API 토큰을 만든 후 [!DNL Workfront Fusion] [!DNL Frame.io] [!UICONTROL Create a connection] 대화 상자에 삽입해야 합니다.
+API 토큰을 사용하여 [!DNL Frame.io] 계정을 [!DNL Workfront Fusion]에 연결하려면 [!DNL Frame.io] 계정에서 API 토큰을 만든 다음 [!DNL Workfront Fusion] [!DNL Frame.io] [!UICONTROL 연결 만들기] 대화 상자에 삽입해야 합니다.
 
 1. [!DNL Frame.io] 계정에 로그인합니다.
-1. [!DNL Frame.io] 개발자의 **[!UICONTROL Tokens]** 페이지로 이동합니다.
-1. **[!UICONTROL New]**&#x200B;을(를) 클릭합니다.
-1. 토큰 이름을 입력하고 사용할 범위를 선택한 다음 **[!UICONTROL Create]**&#x200B;을(를) 클릭합니다.
+1. [!DNL Frame.io] 개발자의 **[!UICONTROL 토큰]** 페이지로 이동합니다.
+1. **[!UICONTROL 새로 만들기]**&#x200B;를 클릭합니다.
+1. 토큰 이름을 입력하고 사용할 범위를 선택한 다음 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 1. 제공된 토큰을 복사합니다.
-1. [!DNL Workfront Fusion](으)로 이동하여 [!DNL Frame.io] 모듈의 **[!UICONTROL Create a connection]** 대화 상자를 엽니다.
-1. **[!UICONTROL Connection type]** 필드에서 **[!DNL Frame.io]**&#x200B;을(를) 선택합니다.
-1. 5단계에서 복사한 토큰을 **[!UICONTROL Your [!DNL Frame.io] API Key]** 필드에 입력하십시오.
-1. 연결을 설정하고 모듈로 돌아가려면 **[!UICONTROL Continue]**&#x200B;을(를) 클릭하십시오.
+1. [!DNL Workfront Fusion]&#x200B;(으)로 이동하여 [!DNL Frame.io] 모듈의 **[!UICONTROL 연결 만들기]** 대화 상자를 엽니다.
+1. **[!UICONTROL 연결 유형]** 필드에서 **[!DNL Frame.io]**&#x200B;을(를) 선택합니다.
+1. 5단계에서 복사한 토큰을 **[!UICONTROL 내 [!DNL Frame.io] API 키]** 필드에 입력하십시오.
+1. 연결을 설정하고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭하세요.
 
 ### OAuth 2.0 PKCE를 사용하여 [!DNL Frame.io]에 연결
 
@@ -120,14 +120,14 @@ API 토큰을 사용하여 [!DNL Frame.io] 계정을 [!DNL Workfront Fusion]에 
 
 #### OAuth 2.0 PKCE(클라이언트 ID 없음)를 사용하여 [!DNL Frame.io]에 연결
 
-1. [!DNL Workfront Fusion](으)로 이동하여 [!DNL Frame.io] 모듈의 **[!UICONTROL Create a connection]** 대화 상자를 엽니다.
-1. **[!UICONTROL Connection type]** 필드에서 **[!UICONTROL [!DNL Frame.io] OAuth 2.0 PKCE]**&#x200B;을(를) 선택합니다.
-1. **[!UICONTROL Connection name]** 필드에 새 연결의 이름을 입력하십시오.
-1. 연결을 설정하고 모듈로 돌아가려면 **[!UICONTROL Continue]**&#x200B;을(를) 클릭하십시오.
+1. [!DNL Workfront Fusion]&#x200B;(으)로 이동하여 [!DNL Frame.io] 모듈의 **[!UICONTROL 연결 만들기]** 대화 상자를 엽니다.
+1. **[!UICONTROL 연결 유형]** 필드에서 **[!UICONTROL [!DNL Frame.io]OAuth 2.0 PKCE]**&#x200B;를 선택합니다.
+1. **[!UICONTROL 연결 이름]** 필드에 새 연결의 이름을 입력하십시오.
+1. 연결을 설정하고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭하세요.
 
 #### OAuth 2.0 PKCE(클라이언트 ID 포함)를 사용하여 [!DNL Frame.io]에 연결
 
-1. [!DNL Frame.io]에서 OAuth 2.0 앱을 만듭니다. 지침은 [!UICONTROL OAuth 2.0 Code Authorization Flow]의 [!DNL Frame.io] 설명서를 참조하십시오.
+1. [!DNL Frame.io]에서 OAuth 2.0 앱을 만듭니다. 지침은 [!UICONTROL OAuth 2.0 코드 권한 부여 흐름]의 [!DNL Frame.io] 설명서를 참조하십시오.
 
    >[!IMPORTANT]
    >
@@ -143,12 +143,12 @@ API 토큰을 사용하여 [!DNL Frame.io] 계정을 [!DNL Workfront Fusion]에 
 
 
 1. 제공된 `client_id`을(를) 복사합니다.
-1. [!DNL Workfront Fusion](으)로 이동하여 [!DNL Frame.io] 모듈의 **[!UICONTROL Create a connection]** 대화 상자를 엽니다.
-1. **[!UICONTROL Connection type]** 필드에서 **[!UICONTROL [!DNL Frame.io] OAuth 2.0 PKCE]**&#x200B;을(를) 선택합니다.
-1. **[!UICONTROL Connection name]** 필드에 새 연결의 이름을 입력하십시오.
-1. **[!UICONTROL Show advanced settings]**&#x200B;을(를) 클릭합니다.
-1. 2단계에서 복사한 `client_id`을(를) **[!UICONTROL Client ID]** 필드에 입력합니다.
-1. 연결을 설정하고 모듈로 돌아가려면 **[!UICONTROL Continue]**&#x200B;을(를) 클릭하십시오.
+1. [!DNL Workfront Fusion]&#x200B;(으)로 이동하여 [!DNL Frame.io] 모듈의 **[!UICONTROL 연결 만들기]** 대화 상자를 엽니다.
+1. **[!UICONTROL 연결 유형]** 필드에서 **[!UICONTROL [!DNL Frame.io]OAuth 2.0 PKCE]**&#x200B;를 선택합니다.
+1. **[!UICONTROL 연결 이름]** 필드에 새 연결의 이름을 입력하십시오.
+1. **[!UICONTROL 고급 설정 표시]**&#x200B;를 클릭합니다.
+1. 2단계에서 복사한 `client_id`을(를) **[!UICONTROL 클라이언트 ID]** 필드에 입력하십시오.
+1. 연결을 설정하고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭하세요.
 
 ## [!DNL Frame.io]개 모듈 및 해당 필드
 
@@ -165,16 +165,16 @@ API 토큰을 사용하여 [!DNL Frame.io] 계정을 [!DNL Workfront Fusion]에 
 
 ### 자산
 
-* [[!UICONTROL Create an Asset]](#create-an-asset)
-* [[!UICONTROL Delete an Asset]](#delete-an-asset)
-* [[!UICONTROL Get an Asset]](#get-an-asset)
-* [[!UICONTROL List Assets]](#list-assets)
-* [[!UICONTROL Update an Asset]](#update-an-asset)
-* [[!UICONTROL Watch Asset Deleted]](#watch-asset-deleted)
-* [[!UICONTROL Watch Asset Label Updated]](#watch-asset-label-updated)
-* [[!UICONTROL Watch New Asset]](#watch-new-asset)
+* [[!UICONTROL 자산 만들기]](#create-an-asset)
+* [[!UICONTROL 자산 삭제]](#delete-an-asset)
+* [[!UICONTROL 자산 가져오기]](#get-an-asset)
+* [[!UICONTROL Assets 나열]](#list-assets)
+* [[!UICONTROL 자산 업데이트]](#update-an-asset)
+* [[!UICONTROL 삭제된 자산 보기]](#watch-asset-deleted)
+* [[!UICONTROL 자산 레이블 업데이트됨 보기]](#watch-asset-label-updated)
+* [[!UICONTROL 새 자산 보기]](#watch-new-asset)
 
-#### [!UICONTROL Create an Asset]
+#### [!UICONTROL 자산 만들기]
 
 이 작업 모듈은 새 자산을 만듭니다.
 
@@ -187,23 +187,23 @@ API 토큰을 사용하여 [!DNL Frame.io] 계정을 [!DNL Workfront Fusion]에 
    <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]을(를) [!DNL Adobe Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Team ID] </td> 
+   <td role="rowheader">[!UICONTROL 팀 ID] </td> 
    <td> <p>에셋을 만들 프로젝트를 소유하고 있는 팀을 선택하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Project ID] </td> 
+   <td role="rowheader">[!UICONTROL 프로젝트 ID] </td> 
    <td> <p>프로젝트를 선택하거나 자산을 만들 프로젝트 ID를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder ID] </td> 
+   <td role="rowheader">[!UICONTROL 폴더 ID] </td> 
    <td> <p>폴더를 선택하거나 자산을 만들 폴더의 ID를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Type] </td> 
+   <td role="rowheader">[!UICONTROL 유형] </td> 
    <td> <p>폴더 또는 파일 생성 여부를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Name] </td> 
+   <td role="rowheader">[!UICONTROL 이름] </td> 
    <td> <p>새 파일 또는 폴더의 이름을 입력합니다.</p> </td> 
   </tr> <!--
    <tr> 
@@ -221,17 +221,17 @@ API 토큰을 사용하여 [!DNL Frame.io] 계정을 [!DNL Workfront Fusion]에 
    <td> <p>파일을 만드는 경우 업로드할 파일의 URL을 입력합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Description] </td> 
+   <td role="rowheader">[!UICONTROL 설명] </td> 
    <td> <p>파일을 만드는 경우 에셋에 대한 간단한 설명을 입력합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Label] </td> 
+   <td role="rowheader">[!UICONTROL 레이블] </td> 
    <td> <p>파일을 만드는 경우 파일이 진행 중인지, 검토가 필요한지 또는 승인되었는지 여부를 선택합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete an Asset]
+#### [!UICONTROL 자산 삭제]
 
 이 작업 모듈은 지정된 에셋을 삭제합니다.
 
@@ -244,25 +244,25 @@ API 토큰을 사용하여 [!DNL Frame.io] 계정을 [!DNL Workfront Fusion]에 
    <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]을(를) [!DNL Adobe Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Team ID] </td> 
+   <td role="rowheader">[!UICONTROL 팀 ID] </td> 
    <td> <p>삭제하려는 에셋이 포함된 프로젝트를 소유하는 팀을 선택하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Project ID]</td> 
+   <td role="rowheader">[!UICONTROL 프로젝트 ID]</td> 
    <td> <p> 삭제할 자산을 포함하는 또는 프로젝트를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder ID] </td> 
+   <td role="rowheader">[!UICONTROL 폴더 ID] </td> 
    <td> <p>삭제할 자산이 포함된 폴더를 선택합니다</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID] </td> 
+   <td role="rowheader">[!UICONTROL 자산 ID] </td> 
    <td> <p>삭제할 자산을 선택하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get an Asset]
+#### [!UICONTROL 자산 가져오기]
 
 이 작업 모듈은 자산 세부 사항을 검색합니다.
 
@@ -275,25 +275,25 @@ API 토큰을 사용하여 [!DNL Frame.io] 계정을 [!DNL Workfront Fusion]에 
    <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]을(를) [!DNL Adobe Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Team ID] </td> 
+   <td role="rowheader">[!UICONTROL 팀 ID] </td> 
    <td> <p>세부 정보를 검색할 에셋이 포함된 프로젝트를 소유하는 팀을 선택하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Project ID]</td> 
+   <td role="rowheader">[!UICONTROL 프로젝트 ID]</td> 
    <td> <p> 세부 정보를 검색할 에셋이 포함된 프로젝트를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder ID] </td> 
+   <td role="rowheader">[!UICONTROL 폴더 ID] </td> 
    <td> <p>세부 정보를 검색할 에셋이 포함된 폴더를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID] </td> 
+   <td role="rowheader">[!UICONTROL 자산 ID] </td> 
    <td> <p>에셋을 선택하거나 세부 정보를 검색할 에셋의 ID를 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL List Assets]
+#### [!UICONTROL Assets 나열]
 
 이 검색 모듈은 지정된 프로젝트의 폴더에 있는 모든 에셋을 검색합니다.
 
@@ -308,25 +308,25 @@ API 토큰을 사용하여 [!DNL Frame.io] 계정을 [!DNL Workfront Fusion]에 
    <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]을(를) [!DNL Adobe Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Team ID] </td> 
+   <td role="rowheader">[!UICONTROL 팀 ID] </td> 
    <td> <p>자산을 검색할 폴더가 포함된 프로젝트를 소유하는 팀을 선택하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Project ID]</td> 
+   <td role="rowheader">[!UICONTROL 프로젝트 ID]</td> 
    <td> <p> 자산을 검색할 폴더가 포함된 프로젝트를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder ID] </td> 
+   <td role="rowheader">[!UICONTROL 폴더 ID] </td> 
    <td> <p>에셋을 나열할 폴더를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td role="rowheader">[!UICONTROL 제한] </td> 
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 자산 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Update an Asset]
+#### [!UICONTROL 자산 업데이트]
 
 이 작업 모듈에서는 기존 에셋의 이름, 설명 또는 사용자 지정 필드를 업데이트할 수 있습니다.
 
@@ -339,33 +339,33 @@ API 토큰을 사용하여 [!DNL Frame.io] 계정을 [!DNL Workfront Fusion]에 
    <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]을(를) [!DNL Adobe Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Team ID] </td> 
+   <td role="rowheader">[!UICONTROL 팀 ID] </td> 
    <td> <p>에셋을 업데이트할 프로젝트를 소유한 팀을 선택하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Project ID] </td> 
+   <td role="rowheader">[!UICONTROL 프로젝트 ID] </td> 
    <td> <p>프로젝트를 선택하거나 자산을 업데이트할 프로젝트의 ID를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder ID] </td> 
+   <td role="rowheader">[!UICONTROL 폴더 ID] </td> 
    <td> <p>폴더를 선택하거나 자산을 업데이트할 폴더의 ID를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID] </td> 
+   <td role="rowheader">[!UICONTROL 자산 ID] </td> 
    <td> <p>업데이트할 에셋의 ID를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Name] </td> 
+   <td role="rowheader">[!UICONTROL 이름] </td> 
    <td> <p>업데이트된 파일의 이름을 입력합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Description] </td> 
+   <td role="rowheader">[!UICONTROL 설명] </td> 
    <td> <p>업데이트된 자산에 대한 간단한 설명을 입력합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Asset Deleted]
+#### [!UICONTROL 삭제된 자산 보기]
 
 이 트리거 모듈은 지정된 팀에 속한 자산이 삭제되면 시나리오를 시작합니다.
 
@@ -386,13 +386,13 @@ API 토큰을 사용하여 [!DNL Frame.io] 계정을 [!DNL Workfront Fusion]에 
    <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]을(를) [!DNL Adobe Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Team ID] </td> 
+   <td role="rowheader">[!UICONTROL 팀 ID] </td> 
    <td> <p>이 웹후크를 만들 팀을 선택하십시오.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Asset Label Updated]
+#### [!UICONTROL 자산 레이블 업데이트됨 보기]
 
 이 트리거 모듈은 지정된 팀 집합이 소유한 에셋의 레이블이 변경되거나 제거되면 시나리오를 시작합니다.
 
@@ -413,13 +413,13 @@ API 토큰을 사용하여 [!DNL Frame.io] 계정을 [!DNL Workfront Fusion]에 
    <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]을(를) [!DNL Adobe Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Team ID] </td> 
+   <td role="rowheader">[!UICONTROL 팀 ID] </td> 
    <td> <p>이 웹후크를 만들 팀을 선택하십시오.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch New Asset]
+#### [!UICONTROL 새 자산 보기]
 
 이 트리거 모듈은 지정된 팀에 대한 새 에셋이 생성될 때 시나리오를 시작합니다.
 
@@ -440,7 +440,7 @@ API 토큰을 사용하여 [!DNL Frame.io] 계정을 [!DNL Workfront Fusion]에 
    <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]을(를) [!DNL Adobe Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Team ID] </td> 
+   <td role="rowheader">[!UICONTROL 팀 ID] </td> 
    <td> <p>이 웹후크를 만들 팀을 선택하십시오.</p> </td> 
   </tr> 
  </tbody> 
@@ -448,15 +448,15 @@ API 토큰을 사용하여 [!DNL Frame.io] 계정을 [!DNL Workfront Fusion]에 
 
 ### 댓글
 
-* [[!UICONTROL Create a Comment]](#create-a-comment)
-* [[!UICONTROL Delete a Comment]](#delete-a-comment)
-* [[!UICONTROL Get a Comment]](#get-a-comment)
-* [[!UICONTROL List Comments]](#list-comments)
-* [[!UICONTROL Update a Comment]](#update-a-comment)
-* [[!UICONTROL Watch Comment Updated]](#watch-comment-updated)
-* [[!UICONTROL Watch New Comment]](#watch-new-comment)
+* [[!UICONTROL 댓글 만들기]](#create-a-comment)
+* [[!UICONTROL 댓글 삭제]](#delete-a-comment)
+* [[!UICONTROL 댓글 가져오기]](#get-a-comment)
+* [[!UICONTROL 댓글 나열]](#list-comments)
+* [[!UICONTROL 댓글 업데이트]](#update-a-comment)
+* [[!UICONTROL 업데이트된 댓글 보기]](#watch-comment-updated)
+* [[!UICONTROL 새 댓글 보기]](#watch-new-comment)
 
-#### [!UICONTROL Create a Comment]
+#### [!UICONTROL 댓글 만들기]
 
 이 작업 모듈은 자산에 새 댓글 또는 회신을 추가합니다.
 
@@ -469,27 +469,27 @@ API 토큰을 사용하여 [!DNL Frame.io] 계정을 [!DNL Workfront Fusion]에 
    <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]을(를) [!DNL Adobe Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Type] </td> 
+   <td role="rowheader">[!UICONTROL 유형] </td> 
    <td> <p>댓글을 작성할지 댓글에 답글을 달지 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Team ID] </td> 
+   <td role="rowheader">[!UICONTROL 팀 ID] </td> 
    <td> <p>댓글을 추가할 에셋이 포함된 프로젝트를 소유한 팀을 선택하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Project ID] </td> 
+   <td role="rowheader">[!UICONTROL 프로젝트 ID] </td> 
    <td> <p>프로젝트를 선택하거나 댓글을 추가할 자산이 포함된 프로젝트의 ID를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder ID] </td> 
+   <td role="rowheader">[!UICONTROL 폴더 ID] </td> 
    <td> <p>폴더를 선택하거나 댓글을 추가할 자산이 포함된 폴더의 ID를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID] </td> 
+   <td role="rowheader">[!UICONTROL 자산 ID] </td> 
    <td> <p>댓글을 추가할 에셋을 선택하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Comment ID] </td> 
+   <td role="rowheader">[!UICONTROL 주석 ID] </td> 
    <td> <p>회신을 추가할 댓글을 선택하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
@@ -497,13 +497,13 @@ API 토큰을 사용하여 [!DNL Frame.io] 계정을 [!DNL Workfront Fusion]에 
    <td> <p> 댓글이나 답글의 텍스트 내용을 입력합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Timestamp] </td> 
+   <td role="rowheader">[!UICONTROL 타임스탬프] </td> 
    <td> <p>댓글이 연결되어야 하는 비디오 프레임 번호를 입력합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Comment]
+#### [!UICONTROL 댓글 삭제]
 
 이 작업 모듈은 기존 주석을 삭제합니다.
 
@@ -516,29 +516,29 @@ API 토큰을 사용하여 [!DNL Frame.io] 계정을 [!DNL Workfront Fusion]에 
    <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]을(를) [!DNL Adobe Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Team ID]</td> 
+   <td role="rowheader">[!UICONTROL 팀 ID]</td> 
    <td> <p> 댓글을 삭제할 에셋이 포함된 프로젝트를 소유한 팀을 선택하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Project ID]</td> 
+   <td role="rowheader">[!UICONTROL 프로젝트 ID]</td> 
    <td> <p> 프로젝트를 선택하거나 댓글을 삭제할 자산이 포함된 프로젝트의 ID를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder ID]</td> 
+   <td role="rowheader">[!UICONTROL 폴더 ID]</td> 
    <td> <p> 댓글을 삭제할 에셋이 포함된 폴더를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID] </td> 
+   <td role="rowheader">[!UICONTROL 자산 ID] </td> 
    <td> <p>삭제하려는 주석이 포함된 에셋의 ID를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Comment ID] </td> 
+   <td role="rowheader">[!UICONTROL 주석 ID] </td> 
    <td> <p>삭제할 댓글의 ID를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Comment]
+#### [!UICONTROL 댓글 가져오기]
 
 이 작업 모듈은 지정된 주석의 세부 정보를 검색합니다.
 
@@ -551,29 +551,29 @@ API 토큰을 사용하여 [!DNL Frame.io] 계정을 [!DNL Workfront Fusion]에 
    <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]을(를) [!DNL Adobe Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Team ID] </td> 
+   <td role="rowheader">[!UICONTROL 팀 ID] </td> 
    <td> <p>자산을 검색할 폴더가 포함된 프로젝트를 소유하는 팀을 선택하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Project ID] </td> 
+   <td role="rowheader">[!UICONTROL 프로젝트 ID] </td> 
    <td> <p>자산을 검색할 폴더가 포함된 프로젝트를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder ID] </td> 
+   <td role="rowheader">[!UICONTROL 폴더 ID] </td> 
    <td> <p>에셋을 나열할 폴더를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID] </td> 
+   <td role="rowheader">[!UICONTROL 자산 ID] </td> 
    <td> <p>검색할 주석이 포함된 자산을 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Comment ID] </td> 
+   <td role="rowheader">[!UICONTROL 주석 ID] </td> 
    <td> <p>세부 정보를 가져올 주석을 선택합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL List Comments]
+#### [!UICONTROL 댓글 나열]
 
 이 검색 모듈은 지정된 자산의 모든 주석을 검색합니다.
 
@@ -586,29 +586,29 @@ API 토큰을 사용하여 [!DNL Frame.io] 계정을 [!DNL Workfront Fusion]에 
    <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]을(를) [!DNL Adobe Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Team ID] </td> 
+   <td role="rowheader">[!UICONTROL 팀 ID] </td> 
    <td> <p>주석을 검색할 폴더가 포함된 프로젝트를 소유하는 팀을 선택하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Project ID] </td> 
+   <td role="rowheader">[!UICONTROL 프로젝트 ID] </td> 
    <td> <p>주석을 가져올 폴더가 포함된 프로젝트를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder ID] </td> 
+   <td role="rowheader">[!UICONTROL 폴더 ID] </td> 
    <td> <p>설명을 나열할 에셋이 포함된 폴더를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID] </td> 
+   <td role="rowheader">[!UICONTROL 자산 ID] </td> 
    <td> <p>설명을 나열할 자산을 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td role="rowheader">[!UICONTROL 제한] </td> 
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 주석 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a Comment]
+#### [!UICONTROL 댓글 업데이트]
 
 이 작업 모듈은 기존 주석을 편집합니다.
 
@@ -621,23 +621,23 @@ API 토큰을 사용하여 [!DNL Frame.io] 계정을 [!DNL Workfront Fusion]에 
    <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]을(를) [!DNL Adobe Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Team ID] </td> 
+   <td role="rowheader">[!UICONTROL 팀 ID] </td> 
    <td> <p>댓글을 업데이트할 에셋이 포함된 프로젝트를 소유한 팀을 선택하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Project ID] </td> 
+   <td role="rowheader">[!UICONTROL 프로젝트 ID] </td> 
    <td> <p>댓글을 업데이트할 에셋이 포함된 프로젝트 \ 를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder ID] </td> 
+   <td role="rowheader">[!UICONTROL 폴더 ID] </td> 
    <td> <p>댓글을 업데이트할 에셋이 포함된 폴더를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID] </td> 
+   <td role="rowheader">[!UICONTROL 자산 ID] </td> 
    <td> <p>댓글을 업데이트할 에셋을 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Comment ID] </td> 
+   <td role="rowheader">[!UICONTROL 주석 ID] </td> 
    <td> <p>업데이트할 주석을 선택합니다.</p> </td> 
   </tr> 
   <tr> 
@@ -645,13 +645,13 @@ API 토큰을 사용하여 [!DNL Frame.io] 계정을 [!DNL Workfront Fusion]에 
    <td> <p> 주석의 텍스트 콘텐츠를 입력합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Timestamp] </td> 
+   <td role="rowheader">[!UICONTROL 타임스탬프] </td> 
    <td> <p>댓글이 연결된 비디오의 프레임 번호를 입력합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Comment Updated]
+#### [!UICONTROL 업데이트된 댓글 보기]
 
 이 트리거 모듈은 댓글을 편집할 때 시나리오를 시작합니다.
 
@@ -672,13 +672,13 @@ API 토큰을 사용하여 [!DNL Frame.io] 계정을 [!DNL Workfront Fusion]에 
    <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]을(를) [!DNL Adobe Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Team ID] </td> 
+   <td role="rowheader">[!UICONTROL 팀 ID] </td> 
    <td> <p>이 웹후크를 만들 팀을 선택하십시오.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch New Comment]
+#### [!UICONTROL 새 댓글 보기]
 
 이 트리거 모듈은 새 댓글 또는 답글이 작성되면 시나리오를 시작합니다.
 
@@ -699,7 +699,7 @@ API 토큰을 사용하여 [!DNL Frame.io] 계정을 [!DNL Workfront Fusion]에 
    <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]을(를) [!DNL Adobe Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Team ID] </td> 
+   <td role="rowheader">[!UICONTROL 팀 ID] </td> 
    <td> <p>이 웹후크를 만들 팀을 선택하십시오.</p> </td> 
   </tr> 
  </tbody> 
@@ -707,7 +707,7 @@ API 토큰을 사용하여 [!DNL Frame.io] 계정을 [!DNL Workfront Fusion]에 
 
 ### 프로젝트
 
-#### [!UICONTROL List Projects]
+#### [!UICONTROL 프로젝트 나열]
 
 이 검색 모듈은 지정된 팀의 모든 프로젝트를 검색합니다.
 
@@ -720,11 +720,11 @@ API 토큰을 사용하여 [!DNL Frame.io] 계정을 [!DNL Workfront Fusion]에 
    <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]을(를) [!DNL Adobe Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Team ID] </td> 
+   <td role="rowheader">[!UICONTROL 팀 ID] </td> 
    <td> <p>프로젝트를 검색할 팀을 선택하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td role="rowheader">[!UICONTROL 제한] </td> 
    <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 프로젝트 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
@@ -732,7 +732,7 @@ API 토큰을 사용하여 [!DNL Frame.io] 계정을 [!DNL Workfront Fusion]에 
 
 ### 기타
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL API 호출 만들기]
 
 이 모듈에서는 사용자 지정 API 호출을 수행할 수 있습니다.
 
@@ -749,7 +749,7 @@ API 토큰을 사용하여 [!DNL Frame.io] 계정을 [!DNL Workfront Fusion]에 
    <td> <p><code>https://api.frame.io</code>과(와) 관련된 경로를 입력하십시오. 예: <code> /v2/teams</code></p> <p>참고: 사용 가능한 끝점 목록은 [!DNL Frame.io] API 참조를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 메서드]</p> </td> 
    <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -757,8 +757,8 @@ API 토큰을 사용하여 [!DNL Frame.io] 계정을 [!DNL Workfront Fusion]에 
    <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] 인증 헤더를 자동으로 추가합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String] </td> 
-   <td> <p>요청 쿼리 문자열을 입력합니다. 쿼리 문자열에 포함할 각 매개 변수에 대해 <b>[!UICONTROL Add item]</b>을(를) 클릭하고 필드 이름과 원하는 값을 입력합니다.</p> </td> 
+   <td role="rowheader">[!UICONTROL 쿼리 문자열] </td> 
+   <td> <p>요청 쿼리 문자열을 입력합니다. 쿼리 문자열에 포함할 각 매개 변수에 대해 <b>[!UICONTROL 항목 추가]</b>를 클릭하고 필드 이름과 원하는 값을 입력합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 

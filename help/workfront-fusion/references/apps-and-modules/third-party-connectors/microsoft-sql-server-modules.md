@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 을 사용하여 Microsoft SQL Serv
 author: Becky
 feature: Workfront Fusion
 exl-id: 8f3293f7-8b45-4e42-8ad8-f9d4969b63fd
-source-git-commit: ef1a96d9ef4c2c82eaf376c84188e3ed6ea7b2cf
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
    <p>또는</p>
    <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 ## [!DNL Workfront Fusion]에 [!DNL Microsoft SQL Server] 서비스를 연결하는 중
 
-[!DNL Microsoft SQL Server] 계정을 [!UICONTROL Workfront Fusion]에 연결하는 방법에 대한 지침은 [[!UICONTROL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)을 참조하세요.
+[!DNL Microsoft SQL Server] 계정을 [!UICONTROL Workfront Fusion]에 연결하는 방법에 대한 지침은 [[!UICONTROL Adobe Workfront Fusion에 연결 만들기] - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)을 참조하십시오.
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ ht-degree: 0%
 >
 >[!DNL Workfront Fusion]은(는) 여러 개의 레코드 집합을 지원하지 않습니다. 첫 번째 작업만 처리됩니다.
 
-## 문제 해결 오류 [!UICONTROL ER_LOCK_WAIT_TIMEOUT: Lock wait timeout exceeded; try restarting transaction]
+## 문제 해결 오류 [!UICONTROL ER_LOCK_WAIT_TIMEOUT: 잠금 대기 시간 제한을 초과했습니다. 트랜잭션을 다시 시작해 보십시오]
 
 이 오류는 여러 모듈을 사용하여 동일한 데이터를 수정할 때 발생합니다. 이 오류는 SQL 트랜잭션으로 인해 발생합니다.
 
@@ -94,6 +94,6 @@ SQL 모듈이 실행되면 트랜잭션이 시작됩니다. 시나리오가 완�
 
 자동 커밋을 켭니다. 자동 커밋은 모듈 실행이 완료된 직후 모든 트랜잭션을 완료(커밋)합니다.
 
-1. 화면 하단의 [!UICONTROL Scenario settings] 아이콘 ![시나리오 설정 아이콘](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png)을 클릭합니다.
-1. **[!UICONTROL Auto commit]** 확인란을 클릭합니다.
-1. 시나리오 설정을 저장하려면 **[!UICONTROL OK]**&#x200B;을(를) 클릭합니다.
+1. 화면 하단의 [!UICONTROL 시나리오 설정] 아이콘 ![시나리오 설정 아이콘](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png)을 클릭합니다.
+1. **[!UICONTROL 자동 커밋]** 확인란을 클릭합니다.
+1. 시나리오 설정을 저장하려면 **[!UICONTROL 확인]**&#x200B;을 클릭하세요.

@@ -4,16 +4,16 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 GitHub를 사
 author: Becky
 feature: Workfront Fusion
 exl-id: d9e6c26c-8770-40bc-a83a-8c05f86e4a3f
-source-git-commit: e11c73482a3844bbc96c8d08f8e50a53bc302513
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1519'
+source-wordcount: '1851'
 ht-degree: 0%
 
 ---
 
 # [!DNL GitHub]개 모듈
 
-[!DNL Adobe Workfront Fusion] 시나리오에서는 [!UICONTROL GitHub]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
+[!DNL Adobe Workfront Fusion] 시나리오에서는 [!UICONTROL GitHub]를 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
 
 ## 액세스 요구 사항
 
@@ -36,7 +36,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
    <p>또는</p>
    <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 ## [!DNL GitHub]을(를) [!DNL Workfront Fusion]에 연결
 
-[!DNL GitHub] 계정을 [!UICONTROL Workfront Fusion]에 연결하는 방법에 대한 지침은 [[!UICONTROL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)을 참조하세요.
+[!DNL GitHub] 계정을 [!UICONTROL Workfront Fusion]에 연결하는 방법에 대한 지침은 [[!UICONTROL Adobe Workfront Fusion에 연결 만들기] - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)을 참조하십시오.
 
 ## [!DNL GitHub]개 모듈 및 해당 필드.
 
@@ -79,13 +79,13 @@ ht-degree: 0%
 
 ### 트리거
 
-* [[!UICONTROL Watch Comments]](#watch-comments)
-* [[!UICONTROL Watch Forks]](#watch-forks)
-* [[!UICONTROL Watch Issues]](#watch-issues)
-* [[!UICONTROL Watch Pull Requests]](#watch-pull-requests)
-* [[!UICONTROL Watch Repositories]](#watch-repositories)
+* [[!UICONTROL 댓글 보기]](#watch-comments)
+* [[!UICONTROL 분기점 보기]](#watch-forks)
+* [[!UICONTROL 문제 보기]](#watch-issues)
+* [[!UICONTROL 끌어오기 요청 보기]](#watch-pull-requests)
+* [[!UICONTROL 저장소 보기]](#watch-repositories)
 
-#### [!UICONTROL Watch Comments]
+#### [!UICONTROL 댓글 보기]
 
 이 트리거 모듈은 새 주석이 추가되거나 기존 주석이 수정되면 시나리오를 시작합니다.
 
@@ -98,15 +98,15 @@ ht-degree: 0%
    <td> <p>[!DNL GitHub] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Repository]</td> 
+   <td role="rowheader">[!UICONTROL 저장소]</td> 
    <td>보려는 저장소를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Issue number]</td> 
+   <td role="rowheader">[!UICONTROL 문제 번호]</td> 
    <td>특정 문제에 대한 새로운 의견만 검색하여 검색을 제한하려면 문제 번호를 입력합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximum number of returned issues]</td> 
+   <td role="rowheader">[!UICONTROL 반환되는 최대 문제 수]</td> 
    <td> <p> [!DNL Workfront Fusion]이(가) 한 주기 동안 반환하는 최대 댓글 수를 설정하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -116,7 +116,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Forks]
+#### [!UICONTROL 분기점 보기]
 
 이 트리거 모듈은 새 포크를 만들 때 시나리오를 시작합니다.
 
@@ -129,17 +129,17 @@ ht-degree: 0%
    <td> <p>[!DNL GitHub] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Repository]</td> 
+   <td role="rowheader">[!UICONTROL 저장소]</td> 
    <td>포크를 검사할 저장소를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximum number of returned forks]</td> 
+   <td role="rowheader">[!UICONTROL 반환되는 최대 포크 수]</td> 
     <td>각 시나리오 실행 주기 동안 모듈이 반환할 최대 포크 수를 입력하거나 매핑합니다.</td>
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Issues]
+#### [!UICONTROL 문제 보기]
 
 이 트리거 모듈은 새 문제가 추가되거나 기존 문제가 수정되면 시나리오를 시작합니다.
 
@@ -152,15 +152,15 @@ ht-degree: 0%
    <td> <p>[!DNL GitHub] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL I want to watch]</td> 
+   <td role="rowheader">[!UICONTROL 보고 싶습니다]</td> 
    <td>이 계정과 연결된 모든 저장소를 감시할지 하나의 저장소만 감시할지 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Repository]</td> 
+   <td role="rowheader">[!UICONTROL 저장소]</td> 
    <td>한 저장소에서만 문제를 확인하도록 선택한 경우 확인하려는 저장소를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximum number of returned issues]</td> 
+   <td role="rowheader">[!UICONTROL 반환되는 최대 문제 수]</td> 
    <td> <p> [!DNL Workfront Fusion]이(가) 한 주기 동안 반환하는 최대 문제 수를 설정하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -171,25 +171,25 @@ ht-degree: 0%
    <td role="rowheader">[!UICONTROL Filter]</td> 
    <td> <p>감시할 문제를 연결된 방법별로 필터링할 수 있습니다.</p> 
     <ul> 
-     <li>[!UICONTROL All issues]</li> 
-     <li>[!UICONTROL Only issues assigned to me]</li> 
-     <li>[!UICONTROL Only issues created by me]</li> 
-     <li>[!UICONTROL Only issues mentioning me]</li> 
-     <li>[!UICONTROL Only issues I'm subscribed to updates for]</li> 
+     <li>[!UICONTROL 모든 문제]</li> 
+     <li>[!UICONTROL만 나에게 할당된 문제]</li> 
+     <li>[!UICONTROL 내가 만든 문제만 해당]</li> 
+     <li>[!UICONTROL만 나를 언급하는 문제]</li> 
+     <li>[!UICONTROL 다음에 대한 업데이트를 구독하는 문제만 발생]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL State]</td> 
+   <td role="rowheader">[!UICONTROL 상태]</td> 
    <td>진행 중인 문제만 볼 것인지 종료된 문제만 볼 것인지 선택합니다. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Labels]</td> 
+   <td role="rowheader">[!UICONTROL 레이블]</td> 
    <td>추가할 각 태그에 대해 <b>항목 추가</b>를 클릭하고 태그를 입력하십시오. 모듈은 이러한 태그의 문제를 감시합니다.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Pull Requests]
+#### [!UICONTROL 끌어오기 요청 보기]
 
 이 모듈은 새 끌어오기 요청이 추가되거나 기존 끌어오기 요청이 수정되면 트리거됩니다.
 
@@ -202,16 +202,16 @@ ht-degree: 0%
    <td> <p>[!DNL GitHub] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Repository]</td> 
+   <td role="rowheader">[!UICONTROL 저장소]</td> 
    <td>보려는 저장소를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximum number of returned pull requests]</td> 
+   <td role="rowheader">[!UICONTROL 반환되는 최대 풀 요청 수]</td> 
    <td> <p> [!DNL Workfront Fusion]이(가) 한 주기 동안 반환하는 최대 가져오기 요청 수를 설정하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL State]</td> 
-   <td>[!UICONTROL only open pull]개의 요청, [!UICONTROL only closed ones]개의 요청 또는 모든 가져오기 요청을 시청할지 여부를 선택합니다. </td> 
+   <td role="rowheader">[!UICONTROL 상태]</td> 
+   <td>[!UICONTROL only open pull] 요청, [!UICONTROL only closed ones] 또는 모든 pull 요청을 시청할지 여부를 선택합니다. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Watch]</td> 
@@ -220,7 +220,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Repositories]
+#### [!UICONTROL 저장소 보기]
 
 이 트리거 모듈은 저장소가 생성되거나 수정될 때 시나리오를 시작합니다.
 
@@ -233,7 +233,7 @@ ht-degree: 0%
    <td> <p>[!DNL GitHub] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximum number of returned repositories]</td> 
+   <td role="rowheader">[!UICONTROL 반환되는 최대 저장소 수]</td> 
    <td> <p> [!DNL Workfront Fusion]이(가) 한 주기 동안 반환하는 최대 저장소 수를 설정하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -245,18 +245,18 @@ ht-degree: 0%
 
 ### 액션
 
-* [[!UICONTROL Add assignees]](#add-assignees)
-* [[!UICONTROL Add labels to an issue]](#add-labels-to-an-issue)
-* [[!UICONTROL Create a comment]](#create-a-comment)
-* [[!UICONTROL Create an issue]](#create-an-issue)
-* [[!UICONTROL Get an issue]](#get-an-issue)
-* [[!UICONTROL List comments]](#list-comments)
-* [[!UICONTROL Remove a label from an issue]](#remove-a-label-from-an-issue)
-* [[!UICONTROL Remove assignees]](#remove-assignees)
-* [[!UICONTROL Search for an issue]](#search-for-an-issue)
-* [[!UICONTROL Update an issue]](#update-an-issue)
+* [[!UICONTROL 피할당자 추가]](#add-assignees)
+* [[!UICONTROL 문제에 레이블 추가]](#add-labels-to-an-issue)
+* [[!UICONTROL 댓글 만들기]](#create-a-comment)
+* [[!UICONTROL 문제 만들기]](#create-an-issue)
+* [[!UICONTROL 문제 가져오기]](#get-an-issue)
+* [[!UICONTROL 댓글 나열]](#list-comments)
+* [[!UICONTROL 문제에서 레이블 제거]](#remove-a-label-from-an-issue)
+* [[!UICONTROL 피할당자 제거]](#remove-assignees)
+* [[!UICONTROL 문제 검색]](#search-for-an-issue)
+* [[!UICONTROL 문제 업데이트]](#update-an-issue)
 
-#### [!UICONTROL Add assignees]
+#### [!UICONTROL 피할당자 추가]
 
 이 모듈은 지정된 문제에 피할당자를 추가합니다
 
@@ -269,11 +269,11 @@ ht-degree: 0%
    <td> <p>[!DNL GitHub] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Repository]</td> 
+   <td role="rowheader">[!UICONTROL 저장소]</td> 
    <td>피할당자를 추가하려는 문제가 포함된 저장소를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Assignee]</td> 
+   <td role="rowheader">[!UICONTROL 담당자]</td> 
    <td>문제에 할당할 사람을 선택합니다. 사용 가능한 할당자에는 저장소에 대한 쓰기 권한이 있는 모든 사용자와 저장소에 대한 읽기 권한이 있는 조직 구성원이 포함됩니다. </td> 
   </tr> 
   <tr> 
@@ -283,7 +283,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-#### [!UICONTROL Add labels to an issue]
+#### [!UICONTROL 문제에 레이블 추가]
 
 이 모듈은 문제에 레이블을 추가합니다. 레이블은 저장소 수준에서 정의되며 저장소에 대한 쓰기 권한이 있는 사용자만 만들 수 있습니다.
 
@@ -296,11 +296,11 @@ ht-degree: 0%
    <td> <p>[!DNL GitHub] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Repository]</td> 
+   <td role="rowheader">[!UICONTROL 저장소]</td> 
    <td>레이블을 추가할 문제가 포함된 저장소를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Labels]</td> 
+   <td role="rowheader">[!UICONTROL 레이블]</td> 
    <td>문제에 추가할 레이블을 선택합니다.</td> 
   </tr> 
   <tr> 
@@ -310,7 +310,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-#### [!UICONTROL Create a comment]
+#### [!UICONTROL 댓글 만들기]
 
 이 모듈은 지정된 문제에 대한 주석을 만듭니다.
 
@@ -323,7 +323,7 @@ ht-degree: 0%
    <td> <p>[!DNL GitHub] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Repository]</td> 
+   <td role="rowheader">[!UICONTROL 저장소]</td> 
    <td>댓글을 작성하려는 문제가 포함된 저장소를 선택합니다.</td> 
   </tr> 
   <tr> 
@@ -337,7 +337,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-#### [!UICONTROL Create an issue]
+#### [!UICONTROL 문제 만들기]
 
 이 모듈은 선택한 저장소에 새 문제를 만듭니다.
 
@@ -350,19 +350,19 @@ ht-degree: 0%
    <td> <p>[!DNL GitHub] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Repository]</td> 
+   <td role="rowheader">[!UICONTROL 저장소]</td> 
    <td>문제를 만들려는 저장소를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Assignee]</td> 
+   <td role="rowheader">[!UICONTROL 담당자]</td> 
    <td>문제에 할당할 사람을 선택합니다. 사용 가능한 할당자에는 저장소에 대한 쓰기 권한이 있는 모든 사용자와 저장소에 대한 읽기 권한이 있는 조직 구성원이 포함됩니다. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Milestone]</td> 
+   <td role="rowheader">[!UICONTROL 이정표]</td> 
    <td>새 문제와 연결할 이정표를 선택합니다. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Labels]</td> 
+   <td role="rowheader">[!UICONTROL 레이블]</td> 
    <td>새 문제에 적용할 레이블을 선택합니다. </td> 
   </tr> 
   <tr> 
@@ -376,7 +376,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-#### [!UICONTROL Get an issue]
+#### [!UICONTROL 문제 가져오기]
 
 이 모듈은 지정된 문제에 대한 세부 정보를 검색합니다.
 
@@ -389,7 +389,7 @@ ht-degree: 0%
    <td> <p>[!DNL GitHub] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Repository]</td> 
+   <td role="rowheader">[!UICONTROL 저장소]</td> 
    <td>세부 정보를 가져올 문제가 포함된 저장소를 선택합니다.</td> 
   </tr> 
   <tr> 
@@ -399,7 +399,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-#### [!UICONTROL List comments]
+#### [!UICONTROL 댓글 나열]
 
 이 모듈에는 지정된 문제에 대한 모든 주석이 나열됩니다.
 
@@ -412,7 +412,7 @@ ht-degree: 0%
    <td> <p>[!DNL GitHub] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Repository]</td> 
+   <td role="rowheader">[!UICONTROL 저장소]</td> 
    <td>의견을 나열할 문제가 포함된 저장소를 선택합니다.</td> 
   </tr> 
   <tr> 
@@ -424,13 +424,13 @@ ht-degree: 0%
    <td>모듈은 이 날짜 이후에 작성된 주석을 반환합니다. 지원되는 날짜 형식 목록을 보려면 [!DNL Adobe Workfront Fusion]</a>의 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 변환을 참조하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximum number of returned comments]</td> 
+   <td role="rowheader">[!UICONTROL 반환되는 최대 주석 수]</td> 
    <td> <p> [!DNL Workfront Fusion]이(가) 한 주기 동안 반환하는 최대 댓글 수를 설정하십시오.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Remove a label from an issue]
+#### [!UICONTROL 문제에서 레이블 제거]
 
 이 모듈은 문제에서 단일 레이블을 제거합니다.
 
@@ -443,11 +443,11 @@ ht-degree: 0%
    <td> <p>[!DNL GitHub] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Repository]</td> 
+   <td role="rowheader">[!UICONTROL 저장소]</td> 
    <td>레이블을 제거할 문제가 포함된 저장소를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Labels]</td> 
+   <td role="rowheader">[!UICONTROL 레이블]</td> 
    <td>문제에서 제거할 레이블을 선택합니다.</td> 
   </tr> 
   <tr> 
@@ -457,7 +457,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-#### [!UICONTROL Remove assignees]
+#### [!UICONTROL 피할당자 제거]
 
 이 모듈은 지정된 문제에서 피할당자를 제거합니다.
 
@@ -470,11 +470,11 @@ ht-degree: 0%
    <td> <p>[!DNL GitHub] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Repository]</td> 
+   <td role="rowheader">[!UICONTROL 저장소]</td> 
    <td>피할당자를 제거하려는 문제가 포함된 저장소를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Assignee]</td> 
+   <td role="rowheader">[!UICONTROL 담당자]</td> 
    <td>문제에서 제거할 사람을 선택합니다. </td> 
   </tr> 
   <tr> 
@@ -484,7 +484,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-#### [!UICONTROL Search for an issue]
+#### [!UICONTROL 문제 검색]
 
 이 모듈은 검색 기준과 일치하는 문제를 검색합니다.
 
@@ -497,22 +497,22 @@ ht-degree: 0%
    <td> <p>[!DNL GitHub] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximum number of returned issues]</td> 
+   <td role="rowheader">[!UICONTROL 반환되는 최대 문제 수]</td> 
    <td> <p> [!DNL Workfront Fusion]이(가) 한 주기 동안 반환하는 최대 문제 수를 설정하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Sort by]</td> 
+   <td role="rowheader">[!UICONTROL 정렬 기준]</td> 
    <td> <p>검색 결과를 정렬할 방법을 선택합니다.</p> 
     <ul> 
-     <li> <p>[!UICONTROL Best match] </p> </li> 
-     <li>[!UICONTROL Date created]</li> 
-     <li>[!UICONTROL Date updated]</li> 
-     <li>[!UICONTROL Number of comments]</li> 
+     <li> <p>[!UICONTROL 최적 일치] </p> </li> 
+     <li>[!UICONTROL 만든 날짜]</li> 
+     <li>[!UICONTROL 날짜 업데이트됨]</li> 
+     <li>[!UICONTROL 댓글 수]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Sort direction]</td> 
-   <td> <p>오름차순 또는 내림차순을 선택합니다. </p> <p>날짜의 경우 <strong>[!UICONTROL descending]</strong>을(를) 선택하면 가장 최근 날짜가 먼저 반환됩니다. </p> <p>[!UICONTROL number of comments]의 경우 <strong>[!UICONTROL descending]</strong>을(를) 선택하면 댓글 수가 가장 많은 문제가 먼저 반환됩니다.</p> </td> 
+   <td role="rowheader">[!UICONTROL 정렬 방향]</td> 
+   <td> <p>오름차순 또는 내림차순을 선택합니다. </p> <p>날짜의 경우 <strong>[!UICONTROL 내림차순]</strong>을(를) 선택하면 가장 최근 날짜가 먼저 반환됩니다. </p> <p>[!UICONTROL number of comments]에 대해 <strong>[!UICONTROL descending]</strong>을(를) 선택하면 댓글 수가 가장 많은 문제가 먼저 반환됩니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query]</td> 
@@ -521,7 +521,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-#### [!UICONTROL Update an issue]
+#### [!UICONTROL 문제 업데이트]
 
 이 모듈은 기존 [!DNL GitHub] 문제를 업데이트합니다.
 
@@ -534,19 +534,19 @@ ht-degree: 0%
    <td> <p>[!DNL GitHub] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Repository]</td> 
+   <td role="rowheader">[!UICONTROL 저장소]</td> 
    <td>문제를 업데이트할 저장소를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Assignee]</td> 
+   <td role="rowheader">[!UICONTROL 담당자]</td> 
    <td>문제에 할당할 사람을 선택합니다. 사용 가능한 할당자에는 저장소에 대한 쓰기 권한이 있는 모든 사용자와 저장소에 대한 읽기 권한이 있는 조직 구성원이 포함됩니다. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Milestone]</td> 
+   <td role="rowheader">[!UICONTROL 이정표]</td> 
    <td>문제와 연결할 이정표를 선택합니다. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Labels]</td> 
+   <td role="rowheader">[!UICONTROL 레이블]</td> 
    <td>문제에 적용할 레이블을 선택합니다. </td> 
   </tr> 
   <tr> 
@@ -554,7 +554,7 @@ ht-degree: 0%
    <td>업데이트하려는 문제의 문제 번호를 입력하거나 매핑합니다. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL State]</td> 
+   <td role="rowheader">[!UICONTROL 상태]</td> 
    <td>문제를 업데이트할 상태를 선택합니다.</td> 
   </tr> 
   <tr> 

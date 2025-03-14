@@ -4,16 +4,16 @@ description: Text 파서 도구를 사용하여 다른 [!DNL Adobe Workfront Fus
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1290'
 ht-degree: 0%
 
 ---
 
-# [!UICONTROL Text parser]
+# [!UICONTROL 텍스트 구문 분석기]
 
-[!UICONTROL Text parser tool]을(를) 사용하여 다른 [!DNL Adobe Workfront Fusion] 시나리오 모듈에서 사용할 텍스트를 구문 분석할 수 있습니다. [!UICONTROL Text parser]은(는) 연결할 필요가 없습니다.
+[!UICONTROL 텍스트 파서 도구]를 사용하여 다른 [!DNL Adobe Workfront Fusion] 시나리오 모듈에서 사용할 텍스트를 구문 분석할 수 있습니다. [!UICONTROL 텍스트 구문 분석기]에는 연결이 필요하지 않습니다.
 
 ## 액세스 요구 사항
 
@@ -36,7 +36,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>Workfront Fusion 라이센스 요구 사항 없음</p>
    </td> 
   </tr> 
   <tr> 
@@ -71,9 +71,9 @@ ht-degree: 0%
  </tbody> 
  </table>
 
-## [!UICONTROL Text parser]개 모듈 및 해당 필드
+## [!UICONTROL 텍스트 구문 분석기] 모듈과 해당 필드
 
-[!UICONTROL Text parser] 모듈을 구성할 때 [!DNL Adobe Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!UICONTROL 텍스트 파서] 모듈을 구성할 때 [!DNL Adobe Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
@@ -81,13 +81,13 @@ ht-degree: 0%
 
 ### 트랜스포머
 
-* [[!UICONTROL Get Elements from HTML]](#get-elements-from-html)
-* [[!UICONTROL Get Elements from text]](#get-elements-from-text)
-* [[!UICONTROL HTML to Text]](#html-to-text)
-* [[!UICONTROL Match Pattern]](#match-pattern)
-* [[!UICONTROL Replace]](#replace)
+* [[!UICONTROL HTML에서 요소 가져오기]](#get-elements-from-html)
+* [[!UICONTROL 텍스트에서 요소 가져오기]](#get-elements-from-text)
+* [[!UICONTROL HTML을 텍스트로]](#html-to-text)
+* [[!UICONTROL 패턴 일치]](#match-pattern)
+* [[!UICONTROL 바꾸기]](#replace)
 
-#### [!UICONTROL Get Elements from HTML]
+#### [!UICONTROL HTML에서 요소 가져오기]
 
 HTML 코드에서 원하는 요소를 검색합니다.
 
@@ -96,16 +96,16 @@ HTML 코드에서 원하는 요소를 검색합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Continue the execution of the route even if the module finds no matches]</td> 
+   <td>[!UICONTROL 모듈이 일치 항목을 찾지 못하더라도 라우트 실행을 계속합니다.]</td> 
    <td> <p>이 옵션을 활성화하면 모듈이 결과를 반환하지 않는 경우 시나리오를 중지하지 않습니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Element type]</td> 
-   <td> <p> HTML 코드에서 검색할 요소의 유형을 선택합니다. </p> 
+   <td>[!UICONTROL 요소 유형]</td> 
+   <td> <p> HTML 코드에서 검색할 요소 유형을 선택합니다. </p> 
     <ul> 
      <li>[!UICONTROL Image]</li> 
      <li>[!UICONTROL Link]</li> 
-     <li>[!UICONTROL iFrame element(s)]</li> 
+     <li>[!UICONTROL iFrame 요소]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -115,7 +115,7 @@ HTML 코드에서 원하는 요소를 검색합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL Get Elements from text]
+#### [!UICONTROL 텍스트에서 요소 가져오기]
 
 제공된 패턴을 기반으로 텍스트에서 요소를 구문 분석합니다.
 
@@ -124,7 +124,7 @@ HTML 코드에서 원하는 요소를 검색합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Input text]</td> 
+   <td>[!UICONTROL 입력 텍스트]</td> 
    <td> <p>구문 분석할 텍스트를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
@@ -132,13 +132,13 @@ HTML 코드에서 원하는 요소를 검색합니다.
    <td> <p>텍스트에서 구문 분석할 요소를 반영하는 패턴을 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Ignore Duplicate Occurrences]</td> 
+   <td>[!UICONTROL 중복 발생 무시]</td> 
    <td> <p>텍스트 요소의 중복 발생을 무시하려면 이 상자를 선택합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL HTML to Text]
+#### [!UICONTROL HTML을 텍스트로]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -149,19 +149,19 @@ HTML 코드에서 원하는 요소를 검색합니다.
    <td> <p>일반 텍스트로 변환할 HTML 코드를 입력합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Line break] </td> 
+   <td>[!UICONTROL 줄 바꿈] </td> 
    <td> <p>줄바꿈(줄 바꿈) 유형을 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Uppercase headings]</p> </td> 
+   <td> <p>[!UICONTROL 대문자]</p> </td> 
    <td> <p>제목 태그로 둘러싸인 텍스트(&lt;h2&gt; &lt;/h2&gt; 등)를 대문자로 변환하려면 이 옵션을 활성화합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Match Pattern]
+#### [!UICONTROL 패턴 일치]
 
-[!UICONTROL Match pattern] 모듈을 사용하면 지정된 텍스트에서 검색 패턴과 일치하는 문자열 요소를 찾아 추출할 수 있습니다. 이 모듈에서는 정규 표현식(regex 또는 regexp라고도 함)을 사용합니다.
+[!UICONTROL 패턴 일치] 모듈을 사용하면 지정된 텍스트에서 검색 패턴과 일치하는 문자열 요소를 찾아 추출할 수 있습니다. 이 모듈에서는 정규 표현식(regex 또는 regexp라고도 함)을 사용합니다.
 
 정규 표현식은 각 문자가 특별한 의미를 갖는 메타문자 또는 리터럴 의미를 갖는 정규 문자인 문자의 시퀀스입니다. 이러한 문자 및 메타문자는 텍스트 검색에 사용할 수 있는 패턴을 식별합니다. 예를 들어 이름을 검색하려면 정규 표현식을 설정하여 대문자로 시작하는 연속된 두 단어로 구성된 패턴을 검색할 수 있습니다. 정규 표현식은 텍스트를 검색하고 조작할 수 있는 강력한 도구입니다.
 
@@ -180,11 +180,11 @@ HTML 코드에서 원하는 요소를 검색합니다.
    <td> <p>정규 표현식 패턴을 입력합니다. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>예: </b></span></span> <code>[+-]?(\d+(\.\d+)?|\.\d+)([eE][+-]?\d+)?</code>은(는) 제공된 텍스트에서 모든 숫자를 추출합니다.</p> <p>참고:  <p>패턴은 괄호 <code>()</code>에 캡처 그룹을 하나 이상 포함해야 합니다. 패턴에 캡처 그룹이 없으면 출력 번들은 비어 있습니다.</p> </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Global match]</td> 
+   <td>[!UICONTROL 전역 일치]</td> 
    <td> <p>텍스트에서 모든 일치 항목을 검색하려면 이 옵션을 활성화합니다. 각 일치 항목은 별도의 번들로 출력됩니다. 이 옵션이 비활성화되면 모듈은 첫 번째 항목만 검색합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Case sensitive]</td> 
+   <td>[!UICONTROL 대/소문자 구분]</td> 
    <td> <p> 이 모듈에서 텍스트를 대소문자를 구분하도록 하려면 이 옵션을 활성화합니다.</p> </td> 
   </tr> 
   <tr> 
@@ -196,7 +196,7 @@ HTML 코드에서 원하는 요소를 검색합니다.
    <td>마침표(.)가 줄바꿈 문자(<code>\n</code>)와 일치하는지 확인하려면 이 옵션을 활성화하십시오.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Continue the execution of the route even if the module returns no results]</td> 
+   <td>[!UICONTROL 모듈이 결과를 반환하지 않더라도 라우트 실행을 계속합니다.]</td> 
    <td> <p>이 옵션을 활성화하면 모듈이 결과를 반환하지 않는 경우 시나리오를 중지하지 않습니다.</p> </td> 
   </tr> 
   <tr> 
@@ -206,7 +206,7 @@ HTML 코드에서 원하는 요소를 검색합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL Replace]
+#### [!UICONTROL 바꾸기]
 
 입력한 텍스트에서 지정된 값이나 정규 표현식을 검색하고 결과를 새 값으로 바꿉니다.
 
@@ -216,18 +216,18 @@ HTML 코드에서 원하는 요소를 검색합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Pattern] </td> 
-   <td> <p>검색어를 입력합니다. 정규 표현식을 사용할 수도 있습니다. 정규식에 대한 자세한 내용은 <a href="#match-pattern" class="MCXref xref">[!UICONTROL Match Pattern]</a> 모듈을 참조하세요.</p> </td> 
+   <td> <p>검색어를 입력합니다. 정규 표현식을 사용할 수도 있습니다. 정규 표현식에 대한 자세한 내용은 <a href="#match-pattern" class="MCXref xref">[!UICONTROL 일치 패턴]</a> 모듈을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL New value]</td> 
+   <td>[!UICONTROL 새 값]</td> 
    <td> <p> 검색어를 대체할 값을 입력합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Global match]</td> 
+   <td>[!UICONTROL 전역 일치]</td> 
    <td> <p>텍스트에서 모든 일치 항목을 검색하려면 이 옵션을 활성화합니다. 각 일치 항목은 별도의 번들로 출력됩니다. 이 옵션이 비활성화되면 모듈은 첫 번째 항목만 검색합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Case sensitive]</td> 
+   <td>[!UICONTROL 대/소문자 구분]</td> 
    <td> <p> 이 모듈에서 텍스트를 대소문자를 구분하도록 하려면 이 옵션을 활성화합니다.</p> </td> 
   </tr> 
   <tr> 
@@ -259,7 +259,7 @@ HTML 코드에서 원하는 요소를 검색합니다.
 
 예:
 
-모듈은 파일 문서 &quot;filename.docx&quot;의 파일 유형을 구문 분석해야 하며 파일 이름 확장자는 DOCX에서 PDF으로 CSV로 다양합니다.
+모듈은 파일 문서 &quot;filename.docx&quot;의 파일 유형을 구문 분석해야 하며 파일 이름 확장자는 DOCX에서 PDF으로, CSV로 다양합니다.
 
 이 경우 사용할 수 있는 식은 [!DNL \..+]입니다.
 

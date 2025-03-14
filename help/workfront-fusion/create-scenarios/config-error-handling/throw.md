@@ -8,9 +8,9 @@ description: 롤백 또는 커밋 단계 다음에 나오는 시나리오 실행
 author: Becky
 feature: Workfront Fusion
 exl-id: 4bf2a6c7-16b2-4545-9adf-be3947a7017d
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '383'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
    <p>또는</p>
    <p>레거시: 모두 </p>
    </td> 
@@ -72,7 +72,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 ## `throw`에 대한 해결 방법
 
-오류를 조건부로 발생시키려면 작업 중에 모듈을 의도적으로 실패하도록 구성할 수 있습니다. 선택적으로 오류(`BundleValidationError`)를 발생시키도록 구성된 [!UICONTROL JSON] > [!UICONTROL Parse JSON] 모듈을 사용할 수 있습니다.
+오류를 조건부로 발생시키려면 작업 중에 모듈을 의도적으로 실패하도록 구성할 수 있습니다. 선택적으로 오류(`BundleValidationError`)를 발생시키도록 구성된 [!UICONTROL JSON] > [!UICONTROL JSON 구문 분석] 모듈을 사용할 수 있습니다.
 
 ![JSON 오류](assets/json-parse-json.png)
 

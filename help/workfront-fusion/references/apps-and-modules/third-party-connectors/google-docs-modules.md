@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion [!DNL Google Docs] 모듈을 사용하면  [
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: cd44250d-c2cd-46b2-8773-15b30472a8d8
-source-git-commit: eac874d588e026cab3a01017d32e291d5c8b7b74
+source-git-commit: 2af808aaf8136253c623ee65641d0e57d4f6cf10
 workflow-type: tm+mt
-source-wordcount: '3999'
+source-wordcount: '4045'
 ht-degree: 0%
 
 ---
@@ -498,8 +498,12 @@ Google Docs 커넥터는 다음을 사용합니다.
     </ul> </td> 
   </tr> 
   <tr> 
+   <td role="rowheader">[!UICONTROL 문서 ID]</td> 
+   <td> <p>텍스트를 바꿀 문서를 매핑하거나 선택합니다.</p> </td> 
+  </tr> 
+  <tr> 
    <td role="rowheader"> <p>[!UICONTROL 텍스트 바꾸기]</p> </td> 
-   <td> <p>바꿀 각 텍스트를 추가합니다.</p> 
+   <td> <p>바꿀 각 텍스트에 대해 <b>항목 추가</b>를 클릭하고 다음을 입력하십시오.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL 바꿀 이전 텍스트]</strong> </p> <p>바꿀 텍스트를 입력합니다.</p> </li> 
      <li> <p><strong>[!UICONTROL 삽입할 새 텍스트]</strong> </p> <p>새 텍스트를 입력합니다.</p> </li> 
@@ -538,8 +542,12 @@ Google Docs 커넥터는 다음을 사용합니다.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL 이미지 URL]</p> </td> 
-   <td> <p>기존 이미지를 대체할 새 이미지의 URL을 입력하거나 매핑합니다.</p> <p>이미지는 문서에 나타나는 순서대로 나열됩니다. 예를 들어 <code>Body: Image No. 1</code>은(는) 문서의 첫 번째 이미지입니다.</p> </td> 
+   <td role="rowheader">[!UICONTROL 문서 ID]</td> 
+   <td> <p>이미지를 바꿀 문서를 매핑하거나 선택합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL 이미지 대체]</p> </td> 
+   <td> 바꾸려는 각 이미지에 대해 <b>항목 추가</b>를 클릭하고 기존 이미지 ID를 입력한 다음 기존 이미지를 바꿀 새 이미지의 URL을 입력하거나 매핑합니다. <p>이미지는 문서에 나타나는 순서대로 나열됩니다. 예를 들어 <code>Body: Image No. 1</code>은(는) 문서의 첫 번째 이미지입니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -579,8 +587,48 @@ Google Docs 커넥터는 다음을 사용합니다.
 
 ### 기타
 
-* [[!UICONTROL API 호출 만들기]](#make-an-api-call)
 * [[!UICONTROL 문서에 있는 모든 링크를 클릭 가능하게 만들기]](#make-all-links-in-a-document-clickable)
+* [[!UICONTROL API 호출 만들기]](#make-an-api-call)
+
+#### [!UICONTROL 문서에 있는 모든 링크를 클릭 가능하게 만들기]
+
+이 작업 모듈은 문서의 모든 링크를 찾아 클릭할 수 있도록 합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>[!DNL Google] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL 문서에 모든 링크 만들기]</p> </td> 
+   <td> 
+    <ul> 
+     <li><strong>[!UICONTROL By Mapping]</strong> <br>문서 템플릿을 매핑하려면 이 옵션을 선택하십시오.</li> 
+     <li><strong>[!UICONTROL By Dropdown]</strong> <br> 드롭다운 메뉴에서 문서를 선택하려면 이 옵션을 선택하십시오.</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 드라이브 선택]</td> 
+   <td> <p>링크를 클릭할 수 있게 하려는 문서가 있는 드라이브 유형을 선택합니다. 이 옵션은 이전 필드에서 [!UICONTROL By Dropdown]을 선택한 경우 사용할 수 있습니다.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL 내 드라이브]</strong> </p> <p>링크를 클릭할 수 있게 하려는 문서가 있는 폴더를 선택합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL이 나와 공유됨]</strong> </p> <p>링크를 클릭할 수 있게 하려는 문서가 있는 폴더를 선택합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] 공유 드라이브]</strong>([!DNL Google Workspace] 사용자만 사용 가능)</p> <p>[!UICONTROL Use Domain Admin Access]를 사용할지 여부를 선택합니다. [!UICONTROL 예]를 선택하면 도메인 관리자로서 요청이 발행되고 요청자가 관리자인 모든 공유 드라이브가 반환됩니다.</p> <p>링크를 클릭할 수 있게 하려는 문서가 있는 공유 드라이브를 선택한 다음 문서를 선택합니다.</p> <p>참고: 이 필드에서 [!DNL Google Docs] 옵션을 선택했지만 사용자가 [!DNL Google Workspace]이(가) 아닌 경우 <code>[400] Invalid Value</code> 오류가 반환됩니다.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 공유 드라이브]</td> 
+   <td> <p>링크를 업데이트할 문서가 들어 있는 드라이브를 선택한 다음 문서를 선택합니다. 이 옵션은 [!UICONTROL 드라이브 선택] 필드에서 [!DNL My Drive]을(를) 선택한 경우 사용할 수 있습니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 문서 ID]</td> 
+   <td> <p> 링크를 업데이트할 문서를 선택하거나 매핑합니다.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL API 호출 만들기]
 
@@ -620,6 +668,8 @@ Google Docs 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
+>[!BEGINSHADEBOX]
+
 **예:** 다음 API 호출은 Google Docs에서 지정된 문서에 대한 세부 정보를 검색합니다.
 
 **URL:**
@@ -636,42 +686,4 @@ Google Docs 커넥터는 다음을 사용합니다.
 
 ![API 호출 출력](/help/workfront-fusion/references/apps-and-modules/assets/api-output.png)
 
-#### [!UICONTROL 문서에 있는 모든 링크를 클릭 가능하게 만들기]
-
-이 작업 모듈은 문서의 모든 링크를 찾아 클릭할 수 있도록 합니다.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Google] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL 문서에 모든 링크 만들기]</p> </td> 
-   <td> 
-    <ul> 
-     <li><strong>[!UICONTROL By Mapping]</strong> <br>문서 템플릿을 매핑하려면 이 옵션을 선택하십시오.</li> 
-     <li><strong>[!UICONTROL By Dropdown]</strong> <br> 드롭다운 메뉴에서 문서를 선택하려면 이 옵션을 선택하십시오.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL 드라이브 선택]</td> 
-   <td> <p>링크를 클릭할 수 있게 하려는 문서가 있는 드라이브 유형을 선택합니다. 이 옵션은 이전 필드에서 [!UICONTROL By Dropdown]을 선택한 경우 사용할 수 있습니다.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL 내 드라이브]</strong> </p> <p>링크를 클릭할 수 있게 하려는 문서가 있는 폴더를 선택한 다음 문서를 선택합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL이 나와 공유됨]</strong> </p> <p>링크를 클릭할 수 있게 하려는 문서가 있는 폴더를 선택한 다음 문서를 선택합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] 공유 드라이브]</strong>([!DNL Google Workspace] 사용자만 사용 가능)</p> <p>[!UICONTROL Use Domain Admin Access]를 사용할지 여부를 선택합니다. [!UICONTROL 예]를 선택하면 도메인 관리자로서 요청이 발행되고 요청자가 관리자인 모든 공유 드라이브가 반환됩니다.</p> <p>링크를 클릭할 수 있게 하려는 문서가 있는 공유 드라이브를 선택한 다음 문서를 선택합니다.</p> <p>참고: 이 필드에서 [!DNL Google Docs] 옵션을 선택했지만 사용자가 [!DNL Google Workspace]이(가) 아닌 경우 <code>[400] Invalid Value</code> 오류가 반환됩니다.</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL 공유 드라이브]</td> 
-   <td> <p>링크를 업데이트할 문서가 들어 있는 드라이브를 선택한 다음 문서를 선택합니다. 이 옵션은 [!UICONTROL 드라이브 선택] 필드에서 [!DNL My Drive]을(를) 선택한 경우 사용할 수 있습니다.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL 문서 ID]</td> 
-   <td> <p> 링크를 업데이트할 문서를 선택하거나 매핑합니다.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+>[!ENDSHADEBOX]

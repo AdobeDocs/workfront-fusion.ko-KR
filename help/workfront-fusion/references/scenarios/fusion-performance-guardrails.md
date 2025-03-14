@@ -4,9 +4,9 @@ description: 작업 자동화에는 빠른 처리가 필요하므로  [!DNL Adob
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: fe503c27bc4e3beb5645f0efa7c2097297f19190
+source-git-commit: 2af808aaf8136253c623ee65641d0e57d4f6cf10
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -55,8 +55,8 @@ ht-degree: 0%
 ## 웹후크
 
 * 페이로드의 기본 최대 크기는 **5MB**&#x200B;입니다.
-* Webhooks는 **초당 요청 100개로 제한됩니다**. 이 한도에 도달하면 Workfront Fusion에서 429([!UICONTROL Too Many Requests]) 상태를 보냅니다.
-* [!DNL Workfront Fusion]이(가) 30일 동안 webhook 페이로드를 저장합니다. 받은 후 30일 이상 지난 후 Webhook 페이로드에 액세스하면 &quot;[!UICONTROL Failed to read file from storage.]&quot; 오류가 발생합니다.
+* Webhooks는 **초당 요청 100개로 제한됩니다**. 이 한도에 도달하면 Workfront Fusion에서 429([!UICONTROL 요청이 너무 많음]) 상태를 보냅니다.
+* [!DNL Workfront Fusion]이(가) 30일 동안 webhook 페이로드를 저장합니다. 받은 후 30일 이상 지난 후 웹후크 페이로드에 액세스하면 &quot;[!UICONTROL 저장소에서 파일을 읽지 못했습니다.]&quot; 오류가 발생합니다.
 * 다음 중 하나가 적용되는 경우 웹후크는 자동으로 비활성화됩니다.
 
    * 웹후크가 5일 이상 어떤 시나리오에도 연결되지 않았습니다.
@@ -76,3 +76,17 @@ ht-degree: 0%
 ## 재시도
 
 * Break 모듈을 사용하고 Retry 지시문을 지정할 때 시나리오가 2분 기간 내에 10번 연속적으로 실패하면 시나리오가 자동으로 비활성화됩니다.
+
+## 재귀
+
+재귀는 무한 루프에 있는 시나리오 자신의 새 실행을 트리거하고 새 실행을 트리거하는 등의 경우에 발생합니다.
+
+예를 들어, 작업이 생성될 때 시나리오가 트리거되고 해당 시나리오가 작업을 생성합니다. 새로 만든 작업이 시나리오를 다시 트리거하여 다른 작업을 만듭니다. 작업이 생성될 때마다 시나리오가 트리거되고 시나리오가 실행될 때마다 작업이 생성됩니다.
+
+재귀를 사용하면 재귀 시나리오를 소유한 조직과 다른 조직 모두에 성능 문제가 발생할 수 있습니다.
+
+재귀와 관련하여 다음 사항을 고려하십시오.
+
+* **시나리오가 재귀되면 성능 문제를 방지하기 위해 Fusion 엔지니어링 팀에서 이를 비활성화합니다.**
+* 재귀는 시나리오 설계의 결과이므로 시나리오에 시나리오를 트리거하는 작업이 포함되지 않도록 해야 합니다.
+

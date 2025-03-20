@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion 시나리오에서는 Salesforce을 사용�
 author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 87b15e32338b798983adbf0016709752ee862567
 workflow-type: tm+mt
-source-wordcount: '3042'
+source-wordcount: '2952'
 ht-degree: 0%
 
 ---
@@ -185,15 +185,15 @@ Salesforce 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Salesforce] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Salesforce] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-salesforce">Salesforce에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 레코드 유형] </td> 
-   <td> <p>모듈에서 조사할 필드가 포함된 레코드 유형을 선택합니다. [!DNL Salesforce] 설정에서 [!UICONTROL 필드 기록]이 설정된 레코드 종류를 선택해야 합니다. 자세한 내용은 [!DNL Salesforce] 설명서의 <a href="https://help.salesforce.com/articleView?id=tracking_field_history.htm&amp;type=5">필드 기록 추적</a>을 참조하십시오. </p> </td> 
+   <td> <p>모듈에서 조사할 필드가 포함된 레코드 유형을 선택합니다. [!DNL Salesforce] 설정에서 [!UICONTROL 필드 기록]이 설정된 레코드 종류를 선택해야 합니다. 자세한 내용은 [!DNL Salesforce] 설명서의 <a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&amp;type=5">필드 기록 추적</a>을 참조하십시오. </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 필드]</td> 
-   <td> <p>모듈에서 변경 사항을 감시할 필드를 선택합니다.</p> </td> 
+   <td> <p>모듈에서 변경 사항을 감시할 필드를 선택합니다. 사용 가능한 필드는 선택한 레코드 유형에 따라 다릅니다.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 제한]</td> 
@@ -214,7 +214,7 @@ Salesforce 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Salesforce] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Salesforce] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-salesforce">Salesforce에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 유형] </td> 
@@ -239,29 +239,36 @@ Salesforce 커넥터는 다음을 사용합니다.
 
 이 트리거 모듈은 누군가가 메시지를 보낼 때 시나리오를 실행합니다. 모듈은 연결에서 액세스하는 모든 사용자 지정 필드 및 값과 함께 레코드 또는 레코드와 연결된 모든 표준 필드를 반환합니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
 
-이 모듈에는 추가 설정이 필요합니다.
+이 모듈에서는 추가 설정이 필요합니다. 아웃바운드 메시지에 대해 구성된 흐름이 있어야 합니다.
 
-1. [!DNL Salesforce] 설정 페이지로 이동합니다.
+* Salesforce의 흐름에 대한 지침은 Salesforce 설명서에서 [흐름을 사용하여 작업 자동화](https://help.salesforce.com/s/articleView?id=platform.flow.htm)를 참조하십시오.
+* Salesforce에서 아웃바운드 메시지를 구성하는 방법에 대한 자세한 내용은 Salesforce 설명서의 [레코드에서 트리거된 흐름에서 아웃바운드 메시지 보내기](https://help.salesforce.com/s/articleView?id=release-notes.rn_automate_flow_builder_outbound_message.htm)를 참조하십시오
 
-   설정 페이지에 액세스하려면 [!DNL Salesforce] 계정의 오른쪽 상단 모서리에서 &quot;[!UICONTROL 설정]&quot; 단추를 찾아 클릭합니다. [!DNL Salesforce] 설정 페이지에서 왼쪽의 &quot;[!UICONTROL 빠른 찾기/검색]&quot; 막대를 찾습니다. &quot;[!UICONTROL 워크플로 규칙]&quot;을 검색합니다.
+<!--
 
-1. **[!UICONTROL 워크플로 규칙]**&#x200B;을 클릭합니다.
-1. 표시되는 [!UICONTROL 워크플로 규칙] 페이지에서 **[!UICONTROL 새 규칙]**&#x200B;을(를) 클릭하고 규칙이 적용될 개체 유형(예: &quot;[!UICONTROL 기회]&quot;)을 선택합니다(기회 레코드에 대한 업데이트를 모니터링하는 경우).
-1. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
-1. 규칙 이름, 평가 기준 및 규칙 기준을 설정한 다음 **[!UICONTROL 저장]** 및 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+1. Go to the [!DNL Salesforce] setup page.
 
-1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
-1. 새로 만든 워크플로 규칙에서 **[!UICONTROL 편집]**&#x200B;을 클릭합니다.
-1. **[!UICONTROL 워크플로 작업 추가]** 드롭다운 목록에서 **[!UICONTROL 새 아웃바운드 메시지]**&#x200B;를 선택합니다.
+   To access the setup page, locate and click the button labeled "[!UICONTROL Setup]" in the upper-right hand corner of the [!DNL Salesforce] account. From the [!DNL Salesforce] setup page, locate the "[!UICONTROL Quick Find / Search]" bar on the left hand side. Search for "[!UICONTROL Workflow Rules]." 
 
-1. 새 아웃바운드 메시지에 포함할 이름, 설명, 끝점 URL 및 필드를 지정한 다음 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+1. Click **[!UICONTROL Workflow Rules]**. 
+1. On the the [!UICONTROL Workflow Rules] page that appears, click **[!UICONTROL New Rule]** and select the object type the rule will apply to (such as "[!UICONTROL Opportunity]" if you are monitoring updates to Opportunity records).
+1. Click **[!UICONTROL Next]**.
+1. Set a rule name, evaluation criteria, and rule criteria, then click **[!UICONTROL Save]** and **[!UICONTROL Next]**.
 
-   **[!UICONTROL 끝점 URL]** 필드에 [!DNL Workfront Fusion]의 [!DNL Salesforce] [!UICONTROL 아웃바운드 메시지]에 제공된 URL이 포함되어 있습니다.
+1. Click **[!UICONTROL Done]**.
+1. From the newly created Workflow rule, click **[!UICONTROL Edit]**..
+1. From the **[!UICONTROL Add Workflow Action]** drop-down list, select **[!UICONTROL New Outbound Message]**.
 
-1. [!UICONTROL 아웃바운드 메시지] 이벤트로 시작하는 시나리오를 구성합니다.
+1. Specify name, description, Endpoint URL, and fields you want to include in the new outbound message, then click **[!UICONTROL Save]**.
 
-1. 오른쪽 하단에 있는 **&lt;/>** 아이콘을 클릭하고 제공된 URL을 복사합니다.
-1. **[!UICONTROL 워크플로 규칙]** 페이지로 돌아가서 새로 만든 규칙을 찾은 다음 **[!UICONTROL 활성화]**&#x200B;를 클릭합니다.
+   The **[!UICONTROL Endpoint URL]** field contains the URL provided on the [!DNL Salesforce] [!UICONTROL Outbound Message] in [!DNL Workfront Fusion].
+
+1. Configure a scenario beginning with the [!UICONTROL Outbound Message] event. 
+
+1. Click the **</>** icon in the bottom right and copy the provided URL.
+1. Return to the **[!UICONTROL Workflow Rules]** page, locate the newly created rule, then click **[!UICONTROL Activate]**.
+
+-->
 
 이 모듈을 구성할 때 다음 필드가 표시됩니다.
 
@@ -310,7 +317,7 @@ Salesforce 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Salesforce] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Salesforce] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-salesforce">Salesforce에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL 레코드 유형] </p> </td> 
@@ -344,15 +351,15 @@ Salesforce 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Salesforce] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Salesforce] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-salesforce">Salesforce에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
-   <td> <p><code> &lt;Instance URL&gt;/services/data/v46.0/</code>에 상대적인 경로를 입력하십시오.</p> <p>사용 가능한 끝점 목록은 <a href="https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm">Salesforce REST API 개발자 안내서</a>를 참조하십시오.</p> </td> 
+   <td> <p><code> &lt;Instance URL&gt;/services/data/v62.0/</code>에 상대적인 경로를 입력하십시오.</p> <p>사용 가능한 끝점 목록은 <a href="https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm">Salesforce REST API 개발자 안내서</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 메서드]</p> </td> 
-   td&gt; <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
+   <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -372,6 +379,28 @@ Salesforce 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
+>[!BEGINSHADEBOX]
+
+**예:** 다음 API 호출은 [!DNL Salesforce] 계정의 모든 사용자 목록을 반환합니다.
+
+* **URL**: `query`
+
+* **메서드**: [!UICONTROL GET]
+
+* **쿼리 문자열**:
+
+* **키**: `q`
+
+* **값**: `SELECT Id, Name, CreatedDate, LastModifiedDate FROM User LIMIT 10`
+
+검색 일치 항목은 **[!UICONTROL 번들] > [!UICONTROL 본문] > [!UICONTROL 레코드]**&#x200B;의 모듈 출력에서 찾을 수 있습니다.
+
+이 예에서는 6명의 사용자가 반환되었습니다.
+
+![검색 일치](/help/workfront-fusion/references/apps-and-modules/assets/matches-of-the-search-350x573.png)
+
+>[!ENDSHADEBOX]
+
 #### [!UICONTROL 레코드 삭제]
 
 이 작업 모듈은 오브젝트의 기존 레코드를 삭제합니다.
@@ -388,7 +417,7 @@ Salesforce 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Salesforce] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Salesforce] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-salesforce">Salesforce에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 레코드 유형] </td> 
@@ -417,7 +446,7 @@ Salesforce 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr>
     <td>[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Salesforce] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Salesforce] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-salesforce">Salesforce에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr>
     <td>[!UICONTROL 다운로드 유형]</td>
@@ -451,7 +480,7 @@ Salesforce 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr>
     <td>[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Salesforce] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Salesforce] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-salesforce">Salesforce에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr>
     <td>[!UICONTROL 레코드 유형]</td>
@@ -459,7 +488,7 @@ Salesforce 커넥터는 다음을 사용합니다.
   </tr> 
   <tr>
     <td>[!UICONTROL 레코드 필드]</td>
-    <td>모듈에서 읽을 필드를 선택합니다. 필드를 하나 이상 선택해야 합니다.</td>
+    <td>모듈에서 읽을 필드를 선택합니다. 필드를 하나 이상 선택해야 합니다. 사용 가능한 필드는 레코드 유형에 따라 다릅니다.</td>
   </tr> 
   <tr>
     <td>[!UICONTROL ID]</td>
@@ -467,26 +496,6 @@ Salesforce 커넥터는 다음을 사용합니다.
   </tr> 
  </tbody> 
 </table>
-
->[!INFO]
->
->**예:** 다음 API 호출은 [!DNL Salesforce] 계정의 모든 사용자 목록을 반환합니다.
->
->* **URL**: `query`
->
->* **메서드**: [!UICONTROL GET]
->
->* **쿼리 문자열**:
->
->* **키**: `q`
->
->* **값**: `SELECT Id, Name, CreatedDate, LastModifiedDate FROM User LIMIT 10`
->
->검색 일치 항목은 **[!UICONTROL 번들] > [!UICONTROL 본문] > [!UICONTROL 레코드]**&#x200B;의 모듈 출력에서 찾을 수 있습니다.
->
->이 예에서는 6명의 사용자가 반환되었습니다.
->
->![검색 일치](/help/workfront-fusion/references/apps-and-modules/assets/matches-of-the-search-350x573.png)
 
 
 #### [!UICONTROL 레코드 업데이트]
@@ -505,7 +514,7 @@ Salesforce 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Salesforce] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Salesforce] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-salesforce">Salesforce에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL ID]</td> 
@@ -537,7 +546,7 @@ Salesforce 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Salesforce] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Salesforce] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-salesforce">Salesforce에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 업로드 유형]</td> 
@@ -549,7 +558,7 @@ Salesforce 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td>[!UICONTROL 폴더]</td> 
-   <td>모듈을 업로드할 파일이 포함된 폴더를 선택합니다. </td> 
+   <td>문서를 업로드할 폴더를 선택합니다. </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Source 파일]</td> 
@@ -561,8 +570,6 @@ Salesforce 커넥터는 다음을 사용합니다.
 #### 파일 업로드
 
 이 작업 모듈은 단일 파일을 Salesforce에 업로드합니다.
-
-
 
 <table style="table-layout:auto"> 
  <col> 
@@ -591,47 +598,14 @@ Salesforce 커넥터는 다음을 사용합니다.
   <tr> 
    <td role="rowheader">[!UICONTROL 가시성]</td> 
    <td>문서 연결을 사용하는 경우 문서의 가시성을 입력하거나 매핑합니다.<ul><li><b>모든 사용자</b><p>권한이 있는 모든 사용자가 사용할 수 있습니다.</p></li><li><b>내부 사용자</b><p>권한이 있는 내부 사용자가 사용할 수 있습니다.</p></li><li><b>공유 사용자</b><p>파일이 게시된 피드를 볼 수 있는 사용자가 사용할 수 있습니다.</p></li></ul></td> 
-  </tr>
-
-### 검색 결과
-
-#### [!UICONTROL 쿼리로 검색]
-
-이 검색 모듈은 지정한 검색 쿼리와 일치하는 [!DNL Salesforce]의 개체에서 레코드를 찾습니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
-
-이 모듈을 구성할 때 다음 필드가 표시됩니다.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Salesforce] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL 검색 유형]</td> 
-   <td> <p>모듈에서 수행할 검색 유형을 선택합니다.</p> 
-    <ul> 
-     <li> <p>[!UICONTROL Simple]</p> </li> 
-     <li> <p>[!UICONTROL Using SOSL (Salesforce Object Search Language)]</p> </li> 
-     <li> <p>[!UICONTROL Using SOQL(Salesforce 개체 쿼리 언어)]</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td> <p>[!UICONTROL 유형] </p> </td> 
-   <td> <p>단순 검색 유형을 선택한 경우 모듈에서 검색할 [!DNL Salesforce] 레코드의 유형을 선택합니다.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Query] / [!UICONTROL SOSL Query] / [!UICONTROL SOQL Query]</td> 
-   <td> <p>검색할 쿼리를 입력합니다.</p> <p>SOSL에 대한 자세한 내용은 [!DNL Salesforce] 설명서의 <a href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_sosl.htm">Salesforce SOSL(개체 검색 언어)</a>을 참조하십시오.</p> <p>SOQL에 대한 자세한 내용은 [!DNL Salesforce] 설명서에서 <a href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm">Salesforce SOQL(개체 쿼리 언어)</a>을(를) 참조하십시오.</p> <p>참고: 매개 변수 <code>RETURNING </code>의 값은 모듈의 출력에 영향을 줍니다. <code>LIMIT</code>을(를) 사용하는 경우 [!DNL Fusion]은(는) [!UICONTROL 최대 레코드 수] 필드의 설정을 무시합니다. 제한을 설정하지 않으면 [!UICONTROL LIMIT = 최대 레코드 수] 값이 삽입됩니다.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL 레코드의 최대 개수]</td> 
-   <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
+
+### 검색 결과
+
+* [검색](#search)
+* [쿼리를 사용하여 검색](#search-with-query)
 
 #### [!UICONTROL 검색]
 
@@ -655,7 +629,7 @@ Salesforce 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 출력]</td> 
-   <td>모듈의 출력에 포함할 필드를 선택합니다.</td> 
+   <td>모듈의 출력에 포함할 필드를 선택합니다. 필드는 레코드 유형에 따라 사용할 수 있습니다.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 결과 집합]</td> 
@@ -664,6 +638,44 @@ Salesforce 커넥터는 다음을 사용합니다.
   <tr> 
    <td role="rowheader">[!UICONTROL Maximal]</td> 
    <td>각 시나리오 실행 주기 동안 모듈이 검색할 최대 레코드 수를 입력하거나 매핑합니다.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL 쿼리로 검색]
+
+이 검색 모듈은 지정한 검색 쿼리와 일치하는 [!DNL Salesforce]의 개체에서 레코드를 찾습니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
+
+이 모듈을 구성할 때 다음 필드가 표시됩니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection]</td> 
+   <td> <p>[!DNL Salesforce] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-salesforce">Salesforce에 연결 만들기</a>를 참조하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL 검색 유형]</td> 
+   <td> <p>모듈에서 수행할 검색 유형을 선택합니다.</p> 
+    <ul> 
+     <li> <p>[!UICONTROL Simple]</p> </li> 
+     <li> <p>[!UICONTROL Using SOSL (Salesforce Object Search Language)]</p> </li> 
+     <li> <p>[!UICONTROL Using SOQL(Salesforce 개체 쿼리 언어)]</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td> <p>[!UICONTROL 유형] </p> </td> 
+   <td> <p>단순 검색 유형을 선택한 경우 모듈에서 검색할 [!DNL Salesforce] 레코드의 유형을 선택합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Query] / [!UICONTROL SOSL Query] / [!UICONTROL SOQL Query]</td> 
+   <td> <p>검색할 쿼리를 입력합니다.</p> <p>SOSL에 대한 자세한 내용은 [!DNL Salesforce] 설명서의 <a href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_sosl.htm">Salesforce SOSL(개체 검색 언어)</a>을 참조하십시오.</p> <p>SOQL에 대한 자세한 내용은 [!DNL Salesforce] 설명서에서 <a href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm">Salesforce SOQL(개체 쿼리 언어)</a>을(를) 참조하십시오.</p> <p>참고: 매개 변수 <code>RETURNING </code>의 값은 모듈의 출력에 영향을 줍니다. <code>LIMIT</code>을(를) 사용하는 경우 [!DNL Fusion]은(는) [!UICONTROL 최대 레코드 수] 필드의 설정을 무시합니다. 제한을 설정하지 않으면 [!UICONTROL LIMIT = 최대 레코드 수] 값이 삽입됩니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL 레코드의 최대 개수]</td> 
+   <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>

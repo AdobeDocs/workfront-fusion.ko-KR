@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion Adobe Workfront 커넥터를 사용하여 Wo
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: dab5aacd091cec2644f3e8ddac2549dac7b927b8
 workflow-type: tm+mt
-source-wordcount: '6684'
+source-wordcount: '7075'
 ht-degree: 2%
 
 ---
@@ -849,6 +849,79 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
 </table>
 
 각 Workfront 모듈에 사용할 수 있는 [Workfront 개체 유형](#workfront-object-types-available-for-each-workfront-module)에서 이 모듈을 사용할 수 있는 Workfront 개체 유형 목록을 참조하십시오.
+
++++
+
++++ **이벤트 페이로드 버전 업데이트**
+
+Workfront은 최근 새로운 버전의 이벤트 구독 서비스를 발표했습니다. 새 버전은 Workfront API가 아니라 이벤트 구독 기능이 변경되었습니다. 이 작업 모듈은 이 시나리오에 사용되는 이벤트 페이로드 버전을 업데이트합니다.
+
+새 이벤트 구독 버전에 대한 자세한 내용은 Workfront 설명서에서 [이벤트 구독 버전 관리](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)를 참조하십시오
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection]</td> 
+   <td> <p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Workfront을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL 버전]</td> 
+   <td> 이 페이로드에 사용할 이벤트 구독 버전을 선택합니다. </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
++++
+
++++ **사용자 정의 양식을 첨부하여 레코드 업데이트**
+
+
+이 작업 모듈은 프로젝트, 작업 또는 문제와 같은 개체를 업데이트합니다. 모듈을 사용하면 모듈에서 사용할 수 있는 개체 필드를 선택할 수 있습니다.
+
+레코드의 ID를 지정합니다.
+
+모듈은 연결에서 액세스하는 사용자 지정 필드 및 값과 함께 개체의 ID와 연결된 필드를 반환합니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
+
+이 모듈을 구성할 때 다음 필드가 표시됩니다.
+
+<table style="table-layout:auto">
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection]</td> 
+   <td> <p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Workfront을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!UICONTROL ID]</td> 
+   <td> <p>모듈에서 업데이트할 레코드의 고유 Workfront ID를 입력합니다.</p> <p>ID를 가져오려면 브라우저에서 Workfront 개체를 열고 "ID=" 뒤에 있는 URL 끝에 있는 텍스트를 복사합니다. 예: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!DNL Record Type]</td> 
+   <td> <p>모듈에서 업데이트할 Workfront 레코드의 유형을 선택합니다.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!DNL Select fields to map]</td> 
+   <td>데이터 입력에 사용할 수 있는 필드를 선택합니다. 따라서 필요하지 않은 필드를 스크롤하지 않고도 이러한 필드를 사용할 수 있습니다. 그런 다음 이러한 필드에 데이터를 입력하거나 매핑할 수 있습니다.</td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!DNL Attach Custom Form]</td> 
+   <td>새 레코드에 첨부할 사용자 정의 양식을 선택합니다. 양식을 선택한 후 해당 양식의 필드에 대한 데이터를 입력합니다.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+각 Workfront 모듈에 사용할 수 있는 [Workfront 개체 유형](#workfront-object-types-available-for-each-workfront-module)에서 이 모듈을 사용할 수 있는 Workfront 개체 유형 목록을 참조하십시오.
+
+>[!NOTE]
+>
+> 사용자 지정 필드 또는 [!UICONTROL 메모] 개체(댓글 또는 답글)의 텍스트를 입력할 때 [!UICONTROL 메모 텍스트] 필드의 HTML 태그를 사용하여 굵게 또는 기울임꼴 텍스트와 같은 서식 있는 텍스트를 만들 수 있습니다.
+
 
 +++
 

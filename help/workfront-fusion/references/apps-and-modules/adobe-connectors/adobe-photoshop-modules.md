@@ -4,9 +4,9 @@ description: Adobe Photoshop 모듈을 사용하면 Adobe Photoshop 계정의 �
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
+source-git-commit: ad5701c5484da802dea8668c9c4aad58a6dba3eb
 workflow-type: tm+mt
-source-wordcount: '4334'
+source-wordcount: '4352'
 ht-degree: 0%
 
 ---
@@ -68,6 +68,7 @@ ht-degree: 0%
 [!DNL Adobe Photoshop] 커넥터를 사용하려면 먼저 다음 전제 조건을 충족하는지 확인해야 합니다.
 
 * 활성 [!DNL Adobe Photoshop] 계정이 있어야 합니다.
+* 클라이언트 ID와 클라이언트 암호가 있어야 합니다. Adobe Developer Console에서 구입할 수 있습니다.
 
 ## Adobe Photoshop API 정보
 

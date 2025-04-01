@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion Adobe Workfront 커넥터를 사용하여 Wo
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: dab5aacd091cec2644f3e8ddac2549dac7b927b8
+source-git-commit: 76272b2e9f084f670075d9b975ffa26c0be07fe5
 workflow-type: tm+mt
-source-wordcount: '7075'
+source-wordcount: '7796'
 ht-degree: 2%
 
 ---
@@ -375,7 +375,7 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
 
 +++
 
-+++ **[!UICONTROL 레코드 만들기(사용자 정의 양식 첨부)]**
++++ **[!UICONTROL 레코드 만들기]**
 
 이 작업 모듈은 Workfront의 프로젝트, 작업 또는 문제와 같은 개체를 만들며, 이를 통해 사용자 정의 양식을 새 개체에 추가할 수 있습니다. 모듈을 사용하면 모듈에서 사용할 수 있는 개체 필드를 선택할 수 있습니다.
 
@@ -422,7 +422,12 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
 
 +++
 
-+++ **[!UICONTROL 레코드 만들기]**
++++ **[!UICONTROL 레코드 만들기(레거시)]**
+
+>[!IMPORTANT]
+>
+>이 모듈은 레코드 만들기 모듈로 대체되었습니다. 새 시나리오에서는 해당 모듈을 사용하는 것이 좋습니다.
+>이 모듈을 사용하는 기존 시나리오는 예상대로 계속 작동합니다. 이 모듈은 2025년 5월에 모듈 선택기에서 제거됩니다.
 
 이 작업 모듈은 Workfront의 프로젝트, 작업 또는 문제와 같은 개체를 만듭니다. 모듈을 사용하면 모듈에서 사용할 수 있는 개체 필드를 선택할 수 있습니다.
 
@@ -820,8 +825,65 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection]</td>
+    <td> <p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Workfront을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL 레코드 유형]</td>
 
-<td> <p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Workfront을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
+<td>모듈에서 읽을 Workfront 개체 유형을 선택합니다.</td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL 출력]</td>
+
+<td> <p>이 모듈에 대한 출력 번들에 포함할 정보를 선택합니다.</p> </td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL 출력 사용자 정의 양식]</td>
+     <td> <p>이 모듈의 출력 번들에 포함할 사용자 정의 양식을 선택한 다음 출력에 포함할 사용자 정의 양식에서 특정 필드를 선택합니다.</p> </td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL 참조]</td>
+   <td>출력에 포함할 참조 필드를 선택합니다.</td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL Collections]</td>
+   <td>출력에 포함할 참조 필드를 선택합니다.</td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL ID]</td>
+   <td> <p>모듈에서 읽을 레코드의 고유 Workfront ID를 입력합니다.</p> <p>ID를 가져오려면 브라우저에서 Workfront 개체를 열고 "ID=" 뒤에 있는 URL 끝에 있는 텍스트를 복사합니다. 예: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+각 Workfront 모듈에 사용할 수 있는 [Workfront 개체 유형](#workfront-object-types-available-for-each-workfront-module)에서 이 모듈을 사용할 수 있는 Workfront 개체 유형 목록을 참조하십시오.
+
++++
+
++++ **[!UICONTROL 레코드 읽기(레거시)]**
+
+>[!IMPORTANT]
+>
+>이 모듈은 레코드 읽기 모듈로 대체되었습니다. 새 시나리오에서는 해당 모듈을 사용하는 것이 좋습니다.
+>이 모듈을 사용하는 기존 시나리오는 예상대로 계속 작동합니다. 이 모듈은 2025년 5월에 모듈 선택기에서 제거됩니다.
+
+이 작업 모듈은 단일 레코드에서 데이터를 검색합니다.
+
+레코드의 ID를 지정합니다. 모듈에서 읽을 관련 레코드를 지정할 수도 있습니다.
+
+예를 들어 모듈이 읽고 있는 레코드가 프로젝트인 경우 프로젝트의 작업을 읽도록 지정할 수 있습니다.
+
+모듈은 지정한 출력 필드에서 데이터 배열을 반환합니다.
+
+이 모듈을 구성할 때 다음 필드가 표시됩니다.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td>[!UICONTROL Connection]</td>
+    <td> <p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Workfront을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL 레코드 유형]</td>
@@ -876,7 +938,12 @@ Workfront은 최근 새로운 버전의 이벤트 구독 서비스를 발표했�
 
 +++
 
-+++ **사용자 정의 양식을 첨부하여 레코드 업데이트**
++++ **레코드 업데이트**
+
+>[!IMPORTANT]
+>
+>이 모듈은 레코드 업데이트 모듈로 대체되었습니다. 새 시나리오에서는 해당 모듈을 사용하는 것이 좋습니다.
+>이 모듈을 사용하는 기존 시나리오는 예상대로 계속 작동합니다. 이 모듈은 2025년 5월에 모듈 선택기에서 제거됩니다.
 
 
 이 작업 모듈은 프로젝트, 작업 또는 문제와 같은 개체를 업데이트합니다. 모듈을 사용하면 모듈에서 사용할 수 있는 개체 필드를 선택할 수 있습니다.
@@ -925,7 +992,7 @@ Workfront은 최근 새로운 버전의 이벤트 구독 서비스를 발표했�
 
 +++
 
-+++ **[!UICONTROL 레코드 업데이트]**
++++ **[!UICONTROL 레코드 업데이트(레거시)]**
 
 이 작업 모듈은 프로젝트, 작업 또는 문제와 같은 개체를 업데이트합니다. 모듈을 사용하면 모듈에서 사용할 수 있는 개체 필드를 선택할 수 있습니다.
 
@@ -1095,9 +1162,69 @@ Workfront은 최근 새로운 버전의 이벤트 구독 서비스를 발표했�
  </tbody> 
 </table>
 
++++ **[!UICONTROL 레코드 검색]**
+
+이 검색 모듈은 Workfront의 객체에서 지정한 검색 쿼리와 일치하는 레코드를 찾습니다.
+
+이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
+
+이 모듈을 구성할 때 다음 필드가 표시됩니다.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection]</td> 
+   <td> <p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Workfront을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL 레코드 유형]</td> 
+   <td> <p>모듈에서 검색할 Workfront 레코드 유형을 선택합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL 사용자 정의 양식 목록]</td> 
+   <td> <p>사용자 정의 양식을 하나 이상 선택하십시오. 이러한 사용자 정의 양식의 필드를 검색 쿼리에 사용할 수 있습니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL 결과 집합]</td> 
+   <td>옵션을 선택하여 모듈이 검색 기준과 일치하는 첫 번째 결과를 가져오는지 또는 일치하는 모든 결과를 가져오는지 여부를 지정합니다.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Maximal]</td> 
+   <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL 검색 기준 필드]</td> 
+   <td> <p>검색 기준에 사용할 필드를 선택합니다. 그런 다음 검색 기준 드롭다운에서 이러한 필드를 사용할 수 있습니다.</p></td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL 검색 기준]</td> 
+   <td> <p>검색할 필드, 쿼리에 사용할 연산자 및 검색할 값을 필드에 입력합니다.</p> <p>참고: 검색 기준에 <code>username </code>을(를) 사용하지 마십시오. Workfront에 대한 API 쿼리에 <code>username </code>을(를) 포함하면 사용자가 Workfront에 로그인되므로 검색에 실패하게 됩니다.</p> <p>참고: <code>In</code> 및 <code>NotIn</code>은(는) 배열을 사용하여 작업합니다. 입력은 배열 형식이어야 합니다.</p></td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!UICONTROL 출력]</td> 
+   <td> <p>이 모듈의 출력에 포함할 필드를 선택합니다.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!UICONTROL 참조]</td> 
+   <td>검색에 포함할 참조 필드를 선택합니다.</td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!UICONTROL Collections]</td> 
+   <td>검색에 추가할 컬렉션을 선택합니다.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
 +++
 
-+++ **[!UICONTROL 검색]**
++++ **[!UICONTROL 검색(기존)]**
+
+>[!IMPORTANT]
+>
+>이 모듈은 레코드 검색 모듈로 대체되었습니다. 새 시나리오에서는 해당 모듈을 사용하는 것이 좋습니다.
+>이 모듈을 사용하는 기존 시나리오는 예상대로 계속 작동합니다. 이 모듈은 2025년 5월에 모듈 선택기에서 제거됩니다.
 
 이 검색 모듈은 Workfront의 객체에서 지정한 검색 쿼리와 일치하는 레코드를 찾습니다.
 

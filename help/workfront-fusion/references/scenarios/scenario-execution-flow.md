@@ -5,9 +5,9 @@ description: 이 문서에서는 시나리오가 실행되는 방식과 이를 �
 author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 0ef6dde9566ca3b97c1c52d6055f0ce44f575cee
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 0%
 # 시나리오 실행 흐름
 
 이 문서에서는 시나리오가 실행되는 방식과 그 사이로 데이터가 흐르는 방식, 각 모듈에서 처리된 데이터를 보는 방법에 대해 설명합니다.
+
+활성 시나리오의 데이터 흐름을 보려면 [실행 중인 시나리오의 데이터 흐름 보기](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)를 참조하십시오.
 
 ## 시나리오 실행 흐름
 
@@ -26,7 +28,7 @@ ht-degree: 0%
 
 번들이 모든 모듈을 통해 올바르게 처리되면 시나리오 세부 정보 페이지에서 시나리오가 성공으로 표시됩니다.
 
-### 예: [!UICONTROL [!DNL Workfront Fusion] for Work Automation]
+### 예: 작업 자동화용 [!UICONTROL [!DNL Workfront Fusion]]
 
 >[!BEGINSHADEBOX]
 
@@ -40,7 +42,7 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-### 예: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration]
+### 예: 작업 자동화 및 통합용 [!UICONTROL [!DNL Workfront Fusion]]
 
 >[!BEGINSHADEBOX]
 

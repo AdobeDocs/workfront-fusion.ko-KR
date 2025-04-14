@@ -4,16 +4,23 @@ description: Adobe Workfront Fusion 매핑 패널에서 다음과 같은 일반 
 author: Becky
 feature: Workfront Fusion
 exl-id: 6d4b8801-aa7e-47d4-80b3-aceac10c073f
-source-git-commit: 2c732659f3f3e81e13b7b12a5df5bde19c0e0928
+source-git-commit: 295004ab7536b85124bc366d6832c08365338d08
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
 
 # 일반 함수
 
-## [!UICONTROL get (object or array; path)]
+## 변수
+
+실행에 대한 세부 사항을 식별하는 데 사용할 수 있는 두 가지 일반 변수가 있습니다.
+
+* `executionID`: 이 시나리오 실행의 ID
+* `triggerTimestamp`: 이 실행이 트리거된 시간
+
+## [!UICONTROL get(개체 또는 배열, 경로)]
 
 개체 또는 배열의 값 경로를 반환합니다. 중첩된 오브젝트에 액세스하려면 점 표기법을 사용하십시오. 배열의 첫 번째 항목은 인덱스 1입니다.
 
@@ -78,7 +85,7 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL switch (expression; value1; result1; [value2; result2; ...]; [else])]
+## [!UICONTROL switch(expression; value1; result1; [value2; result2; ...]; [else])]
 
 값 목록에 대해 하나의 값(식이라고 함)을 평가하고 첫 번째 일치하는 값에 해당하는 결과를 반환합니다. `else` 값을 포함하려면 최종 식 또는 값 뒤에 추가하십시오.
 
@@ -102,7 +109,7 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL omit(object; key1; [key2; ...])]
+## [!UICONTROL 생략(object; key1; [key2; ...])]
 
 개체의 지정된 키를 생략하고 나머지 키를 반환합니다.
 

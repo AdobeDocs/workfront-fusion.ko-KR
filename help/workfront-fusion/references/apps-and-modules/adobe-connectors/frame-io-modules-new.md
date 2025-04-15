@@ -1,11 +1,12 @@
 ---
-title: Frame.io 모듈
+title: Frame.io(Beta) 모듈
 description: ' [!DNL Adobe Workfront Fusion Frame].io modules enable you to monitor, create, update, retrieve, or delete assets and comments in your [!DNL Frame.io] 계정입니다.'
 author: Becky
 feature: Workfront Fusion
-source-git-commit: c0b08b206f69d6af3b629c5d31cc0b840edea766
+exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
+source-git-commit: d81785ec60dfd74583a54a75ab1bfc1a253d8faf
 workflow-type: tm+mt
-source-wordcount: '2167'
+source-wordcount: '2168'
 ht-degree: 1%
 
 ---
@@ -55,15 +56,15 @@ Frame.io 커넥터에 대한 비디오 소개는 다음을 참조하십시오.
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>Current: Workfront Fusion 라이센스 요구 사항 없음</p>
+   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
    <p>또는</p>
-   <p>레거시: 업무 자동화 및 통합을 위한 Workfront Fusion </p>
+   <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>새로운:</p> <ul><li>Workfront 패키지 선택 또는 프라임 구성: 조직에서 반드시 Adobe Systems Workfront Fusion을 구입해야 합니다.</li><li>Ultimate Workfront 패키지: Workfront Fusion이 포함됩니다.</li></ul>
+   <p>신규:</p> <ul><li>또는 Prime Workfront 패키지 선택: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</li><li>Ultimate Workfront 패키지: Workfront Fusion이 포함됩니다.</li></ul>
    <p>또는</p>
    <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
    </td> 
@@ -176,15 +177,15 @@ Frame.io 커넥터에서는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>에 대한 연결을 [!DNL Frame.io]만드는 방법에 대한 지침은 이 문서의 연결 [!DNL Frame.io] 대상 [!DNL Adobe Workfront Fusion]</a> 을 참조하세요<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">.</td> 
+   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]을(를) [!DNL Adobe Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! UICONTROL 계정 ID] </td> 
-   <td> <p>계정 선택하거나 자산 만들려는 프로젝트가 포함된 계정의 ID를 매핑합니다.</p> </td> 
+   <td role="rowheader">[!UICONTROL 계정 ID] </td> 
+   <td> <p>계정을 선택하거나 자산을 만들 프로젝트가 포함된 계정의 ID를 매핑합니다.</p> </td> 
   </tr> 
  <tr> 
-   <td role="rowheader">[! UICONTROL 작업 영역 ID] </td> 
-   <td> <p>작업 영역 선택하거나 자산 만들려는 프로젝트가 포함된 작업 영역의 ID를 매핑합니다.</p> </td> 
+   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td> <p>작업 영역을 선택하거나 자산을 만들려는 프로젝트가 포함된 작업 영역의 ID를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 프로젝트 ID] </td> 
@@ -215,14 +216,14 @@ Frame.io 커넥터에서는 다음을 사용합니다.
 
 #### [!UICONTROL 자산 삭제]
 
-이 작업 모듈은 지정된 자산을 삭제합니다.
+이 작업 모듈은 지정된 에셋을 삭제합니다.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[! UICONTROL 연결] </td> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
    <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]을(를) [!DNL Adobe Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
   </tr> 
   <tr> 
@@ -245,7 +246,7 @@ Frame.io 커넥터에서는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[! UICONTROL 연결] </td> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
    <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]을(를) [!DNL Adobe Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
   </tr> 
   <tr> 
@@ -294,14 +295,14 @@ Frame.io 커넥터에서는 다음을 사용합니다.
 
 #### [!UICONTROL 댓글 만들기]
 
-이 작업 모듈은 자산에 새 주석 또는 답글을 추가합니다.
+이 작업 모듈은 자산에 새 댓글 또는 회신을 추가합니다.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[! UICONTROL 연결] </td> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
    <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]을(를) [!DNL Adobe Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
   </tr> 
   <tr> 
@@ -325,7 +326,7 @@ Frame.io 커넥터에서는 다음을 사용합니다.
    <td> <p> 댓글이나 답글의 텍스트 내용을 입력합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! UICONTROL 타임스탬프] </td> 
+   <td role="rowheader">[!UICONTROL 타임스탬프] </td> 
    <td> <p>댓글이 연결되어야 하는 비디오 프레임 번호를 입력합니다.</p> </td> 
   </tr> 
   <tr> 
@@ -371,8 +372,8 @@ Frame.io 커넥터에서는 다음을 사용합니다.
    <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]을(를) [!DNL Adobe Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! UICONTROL 계정 ID] </td> 
-   <td> <p>계정 선택하거나 세부 정보를 검색할 주석이 포함된 계정의 ID를 매핑합니다.</p> </td> 
+   <td role="rowheader">[!UICONTROL 계정 ID] </td> 
+   <td> <p>계정을 선택하거나 세부 정보를 검색할 주석이 포함된 계정의 ID를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 주석 ID] </td> 
@@ -398,7 +399,7 @@ Frame.io 커넥터에서는 다음을 사용합니다.
    <td> <p>댓글을 검색할 에셋이 포함된 계정을 선택하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! UICONTROL 작업 영역 ID] </td> 
+   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
    <td> <p>주석을 검색할 에셋이 포함된 작업 영역을 선택하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
@@ -437,7 +438,7 @@ Frame.io 커넥터에서는 다음을 사용합니다.
    <td> <p>업데이트할 주석을 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! UICONTROL 텍스트]</td> 
+   <td role="rowheader">[!UICONTROL Text]</td> 
    <td> <p> 주석의 텍스트 콘텐츠를 입력합니다.</p> </td> 
   </tr> 
   <tr> 
@@ -445,8 +446,8 @@ Frame.io 커넥터에서는 다음을 사용합니다.
    <td> <p>댓글이 연결된 비디오의 프레임 번호를 입력합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! UICONTROL 페이지] </td> 
-   <td> <p>자산이 PDF인 경우 주석이 첨부된 페이지를 입력하거나 매핑합니다.</p> </td> 
+   <td role="rowheader">[!UICONTROL Page] </td> 
+   <td> <p>자산이 PDF인 경우 댓글이 첨부된 페이지를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -522,15 +523,15 @@ Frame.io 커넥터에서는 다음을 사용합니다.
 
 #### [!UICONTROL 프로젝트 나열]
 
-이 검색 모듈은 지정된 팀에 대한 모든 프로젝트를 검색합니다.
+이 검색 모듈은 지정된 팀의 모든 프로젝트를 검색합니다.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[! UICONTROL 연결] </td> 
-   <td>에 대한 연결을 [!DNL Frame.io]만드는 방법에 대한 지침은 이 문서의 연결 [!DNL Frame.io] 대상 [!DNL Adobe Workfront Fusion]</a> 을 참조하세요<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">.</td> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]을(를) [!DNL Adobe Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
@@ -597,7 +598,7 @@ Frame.io 커넥터에서는 다음을 사용합니다.
    <td> <p>공유 링크를 만들 계정을 선택하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! UICONTROL 작업 영역 ID] </td> 
+   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
    <td> <p>공유 링크를 만들 작업 영역을 선택하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
@@ -675,7 +676,7 @@ Frame.io 커넥터에서는 다음을 사용합니다.
    <tr> 
    <td role="rowheader">[!UICONTROL 반환되는 최대 작업 영역 수] </td> 
    <td> <p>최대 작업 공간 수 입력 또는 매핑
-   각 시나리오 실행 주기 동안 모듈 반환을 원합니다.</p> </td> 
+   각 시나리오 실행 주기 동안 모듈이 반환되도록 합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -691,7 +692,7 @@ Frame.io 커넥터에서는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[! UICONTROL 연결] </td> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
    <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]을(를) [!DNL Adobe Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
   </tr> 
   <tr> 
@@ -712,7 +713,7 @@ Frame.io 커넥터에서는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>API 호출에 대한 본문 컨텐츠 내용을 표준 JSON 개체 양식으로 추가합니다.</p> <p>메모:  <p>JSON에서와 같이 <code>if</code> 조건문을 사용할 때는 조건문 밖에 따옴표를 넣으십시오.</p> 
+   <td> <p>표준 JSON 개체의 형태로 API 호출에 대한 본문 콘텐츠를 추가합니다.</p> <p>참고:  <p>JSON에서 <code>if</code>과(와) 같은 조건문을 사용할 때 따옴표를 조건문 외부에 넣으십시오.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 

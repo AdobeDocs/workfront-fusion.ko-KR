@@ -4,16 +4,31 @@ description: ' [!DNL Adobe Workfront Fusion Frame].io modules enable you to moni
 author: Becky
 feature: Workfront Fusion
 exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 31487c8b5b6efad1e6d7817dfe7dda67eea88e43
 workflow-type: tm+mt
-source-wordcount: '2510'
+source-wordcount: '2586'
 ht-degree: 0%
 
 ---
 
-# [!DNL Frame.io]개 모듈
+# [!DNL Frame.io] 레거시 모듈
+
+>[!IMPORTANT]
+>
+>이 문서에서는 Frame.io 커넥터의 레거시 버전에 대해 설명합니다. 이 커넥터는 Frame.io 버전 3에 연결하는 데 사용됩니다.
+>
+>Frame.io 커넥터의 새(베타) 버전에 대한 지침은 [Frame.io Beta 커넥터](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md)를 참조하십시오.
 
 [!DNL Adobe Workfront Fusion] [!DNL Frame.io] 모듈을 사용하면 [!DNL Frame.io] 계정의 자산 및 주석을 모니터링, 만들기, 업데이트, 검색 또는 삭제할 수 있습니다.
+
+Workfront은 연결 중인 Frame.io 버전에 따라 두 개의 Frame.io 커넥터를 제공합니다.
+
+| 커넥터 | Frame.io 버전 |
+|---|---|
+| Frame.io (Beta) | V4 |
+| Frame.io(기존) | V3 |
+
+Frame.io 커넥터의 새(베타) 버전에 대한 지침은 [Frame.io Beta 커넥터](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md)를 참조하십시오.
 
 Frame.io 커넥터에 대한 비디오 소개는 다음을 참조하십시오.
 
@@ -626,7 +641,7 @@ API 토큰을 사용하여 [!DNL Frame.io] 계정을 [!DNL Workfront Fusion]에 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 프로젝트 ID] </td> 
-   <td> <p>댓글을 업데이트할 에셋이 포함된 프로젝트 \ 를 선택합니다.</p> </td> 
+   <td> <p>댓글을 업데이트할 에셋이 포함된 프로젝트를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 폴더 ID] </td> 

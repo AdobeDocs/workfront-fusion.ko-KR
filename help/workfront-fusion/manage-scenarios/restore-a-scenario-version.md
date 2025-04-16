@@ -4,14 +4,16 @@ description: 이전 버전의 시나리오를 복원할 수 있습니다. 이렇
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 18bbd77630eafac0cb293c3a6f658a74b622bdae
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 2%
+source-wordcount: '287'
+ht-degree: 1%
 
 ---
 
-# 시나리오 버전 복원
+# 시나리오 버전 보기 및 관리
+
+이전 버전의 시나리오를 보거나 복원하거나 이름을 바꿀 수 있습니다.
 
 ## 액세스 요구 사항
 
@@ -29,7 +31,7 @@ ht-degree: 2%
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] 라이센스</td> 
-   <td> <p>신규: [!UICONTROL Standard]</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
+   <td> <p>새로운 기능: [!UICONTROL Standard]</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td> 
@@ -42,7 +44,7 @@ ht-degree: 2%
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Workfront] 플랜: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 플랜: [!DNL Workfront Fusion]이(가) 포함되어 있습니다.</li></ul>
+   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Workfront] 계획: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 계획: [!DNL Workfront Fusion]이(가) 포함되어 있습니다.</li></ul>
    <p>또는</p>
    <p>현재: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</p>
    </td> 
@@ -65,16 +67,20 @@ ht-degree: 2%
 
 +++
 
-## 시나리오 버전 복원
+<!--procedure - open, optional add comment, optional restore version-->
 
-1. 시나리오를 엽니다.
-1. 화면 하단의 [!UICONTROL More] 아이콘 ![자세히 아이콘](assets/more-icon.png)을 클릭한 다음 **[!UICONTROL Previous Versions]**&#x200B;을(를) 클릭합니다.
+## 시나리오의 버전 내역 보기 및 관리
 
-1. **[!UICONTROL Pick the version]**&#x200B;을(를) 클릭한 다음 복원할 버전을 클릭합니다.
-1. **[!UICONTROL OK]**&#x200B;을(를) 클릭합니다.
+1. 왼쪽 패널에서 **[!UICONTROL 시나리오]** ![시나리오 아이콘](assets/scenarios-icon.png)을 클릭한 다음 시나리오를 클릭하여 엽니다.
+1. 화면 하단의 [!UICONTROL 자세히] 아이콘 ![자세히 아이콘](assets/more-icon.png)을 클릭한 다음 **[!UICONTROL 이전 버전]**&#x200B;을 클릭합니다.
 
-   선택한 시나리오 버전이 복원됩니다.
+   이전 버전 목록이 표시됩니다.
+1. (선택 사항) 버전의 이름을 바꾸려면 해당 버전의 줄에서 기타 메뉴 ![기타 메뉴](assets/more-icon-vertical.png)를 클릭하고 **편집**&#x200B;을 선택한 다음 필드에 이름을 입력합니다. **저장**&#x200B;을 클릭하여 새 이름을 저장합니다.
 
->[!NOTE]
->
->복원된 시나리오 버전은 자동으로 저장되지 않습니다. 시나리오의 복원된 버전을 저장하려면 수동으로 저장해야 합니다.
+   이 버전에 대한 변경 사항을 설명하는 이름을 지정하는 것이 좋습니다.
+1. (선택 사항) 버전을 복원하려면 해당 버전의 행에서 ![추가 메뉴](assets/more-icon-vertical.png) 복원을 클릭합니다
+
+
+   >[!NOTE]
+   >
+   >복원된 시나리오 버전은 자동으로 저장되지 않습니다. 시나리오의 복원된 버전을 저장하려면 수동으로 저장해야 합니다.

@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion Adobe Workfront 커넥터를 사용하여 Wo
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 5ba6e0ba687eb290c7d8882c6a615de8b3692617
+source-git-commit: 7287e0460318cf5328e703af7ecc948b1ce62257
 workflow-type: tm+mt
-source-wordcount: '7796'
+source-wordcount: '7795'
 ht-degree: 2%
 
 ---
@@ -1162,7 +1162,9 @@ Workfront은 최근 새로운 버전의 이벤트 구독 서비스를 발표했�
  </tbody> 
 </table>
 
-+++ **[!UICONTROL 레코드 검색]**
++++
+
++++ **[!UICONTROL 검색]**
 
 이 검색 모듈은 Workfront의 객체에서 지정한 검색 쿼리와 일치하는 레코드를 찾습니다.
 

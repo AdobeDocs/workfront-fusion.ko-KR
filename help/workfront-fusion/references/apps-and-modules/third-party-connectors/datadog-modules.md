@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Datadog를 �
 author: Becky
 feature: Workfront Fusion
 exl-id: c8c5f2e3-5af1-4957-bb6f-6c19c35102c5
-source-git-commit: 7edfe4a7b19597ea6e56bb2ca3969d742dbaf999
+source-git-commit: 8a4e54a4c1783e4bc679778c6fcf21dcb4d3d537
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '920'
 ht-degree: 1%
 
 ---
@@ -108,24 +108,28 @@ Datadog 커넥터에서는 다음을 사용합니다.
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 연결 유형]</td> 
-      <td> <p> [!DNL Datadog] API에 대한 전체 액세스 권한을 얻으려면 [!UICONTROL [!DNL Datadog] Application] 옵션을 선택하십시오.</p> </td> 
-     </tr> 
-     <tr> 
       <td role="rowheader">[!UICONTROL 연결 이름]</td> 
       <td> <p> 연결의 이름을 입력합니다.</p> </td> 
      </tr> 
+        <tr>
+        <td role="rowheader">[!UICONTROL 환경]</td>
+        <td>이 연결이 프로덕션 환경용인지 아니면 비프로덕션 환경용인지 선택합니다.</td>
+        </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL 유형]</td>
+        <td>서비스 계정에 연결할지 또는 개인 계정에 연결할지 선택합니다.</td>
+        </tr>
      <tr> 
       <td role="rowheader">[!UICONTROL Domain] </td> 
       <td> <p>연결할 도메인(미국 또는 유럽 연합)을 선택합니다.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL API 키]</td> 
-      <td> <p> [!DNL Datadog] API 키를 입력하십시오. </p> <p>API 키 검색에 대한 지침은 이 문서에서 <a href="#retrieve-your-api-key-and-application-key" class="MCXref xref">API 키 및 응용 프로그램 키 검색</a>을 참조하십시오.</p> </td> 
+      <td role="rowheader">[!UICONTROL API 키 위치] </td> 
+      <td> <p>헤더에 API 키를 포함할지 쿼리 문자열에 포함할지 선택합니다.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 응용 프로그램 키]</td> 
-      <td> <p> [!DNL Datadog] 응용 프로그램 키를 입력하십시오. </p> <p>응용 프로그램 키 검색에 대한 지침은 이 문서에서 <a href="#retrieve-your-api-key-and-application-key" class="MCXref xref">API 키 및 응용 프로그램 키 검색</a>을 참조하십시오.</p> </td> 
+      <td role="rowheader">[!UICONTROL API 키]</td> 
+      <td> <p> [!DNL Datadog] API 키를 입력하십시오. </p> <p>API 키 검색에 대한 지침은 이 문서에서 <a href="#retrieve-your-api-key-and-application-key" class="MCXref xref">API 키 및 응용 프로그램 키 검색</a>을 참조하십시오.</p> </td> 
      </tr> 
     </tbody> 
    </table>
@@ -217,18 +221,28 @@ URL: `/v1/dashboard`
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 유형]</td> 
-   <td> 사용할 지표 유형을 선택합니다. </td> 
+   <td> 사용할 지표 유형을 선택합니다. 
+   <ul>
+   <li>게이지</li>
+   <li>요금</li>
+   <li>계수</li>
+   </ul>
+   </td> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Interval]</td> 
+   <td> 지표 유형이 비율 또는 개수인 경우 해당 간격을 정의합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Series]</td> 
-   <td> <p>[!DNL Datadog]에 제출할 시계열을 추가합니다.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL 지표]</strong> </p> <p>시계열의 이름을 입력합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL 유형]</strong> </p> <p>지표 유형을 선택합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL Interval]</strong> </p> <p> 지표 유형이 비율 또는 개수인 경우 해당 간격을 정의합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL Points]</strong> </p> <p>지표와 관련된 포인트를 추가합니다.</p> <p>포인트의 JSON 배열입니다. 각 점의 형식은 다음과 같습니다. <code>[[POSIX_timestamp, numeric_value], ...] </code></p> <p>참고:  <p>타임스탬프는 초 단위여야 합니다.</p> <p>타임스탬프는 현재여야 합니다. 현재를 미래 10분 이하 또는 과거 1시간 이상으로 정의한다.</p> <p> 숫자 값 형식은 부동 소수로만 지정할 수 있습니다.</p> </p> <p>이 필드에는 최소 1개의 항목이 포함되어야 합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL 호스트]</strong> </p> <p>지표를 생성한 호스트의 이름을 입력합니다.</p> </li> 
-    </ul> </td> 
+   <td role="rowheader">[!UICONTROL Points]</td> 
+   <td><p>지표와 관련된 포인트를 추가합니다.</p> <p>포인트의 JSON 배열입니다. 각 점의 형식은 다음과 같습니다. <code>[[POSIX_timestamp, numeric_value], ...] </code></p> <p>참고:  <p>타임스탬프는 초 단위여야 합니다.</p> <p>타임스탬프는 현재여야 합니다. 현재를 미래 10분 이하 또는 과거 1시간 이상으로 정의한다.</p> <p> 숫자 값 형식은 부동 소수로만 지정할 수 있습니다.</p> </p> <p>이 필드에는 최소 1개의 항목이 포함되어야 합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 호스트]</td> 
+   <td>지표를 생성한 호스트의 이름을 입력합니다. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 태그]</td> 
+   <td> 지표에 추가할 각 태그에 대해 <b>항목 추가</b>를 클릭하고 태그의 값을 입력합니다.</td> 
   </tr> 
  </tbody> 
 </table>

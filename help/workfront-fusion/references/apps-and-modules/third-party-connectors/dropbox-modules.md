@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Dropbox을 �
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 8a4e54a4c1783e4bc679778c6fcf21dcb4d3d537
 workflow-type: tm+mt
 source-wordcount: '3203'
 ht-degree: 0%
@@ -122,7 +122,6 @@ Dropbox 커넥터는 다음을 사용합니다.
         <tr>
         <td role="rowheader">[!UICONTROL 유형]</td>
         <td>서비스 계정에 연결할지 또는 개인 계정에 연결할지 선택합니다.</td>
-        </tr>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL 클라이언트 ID]</td>

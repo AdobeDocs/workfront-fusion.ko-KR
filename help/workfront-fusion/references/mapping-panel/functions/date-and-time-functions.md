@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion 매핑 패널에서 다음 날짜 및 시간
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 9249223c6fbe0360b11d41988fe8b9c35e45dbb8
 workflow-type: tm+mt
-source-wordcount: '1800'
+source-wordcount: '1876'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 ## 함수
 
-### [!UICONTROL addSeconds (date; number)]
+### [!UICONTROL addSeconds(날짜; 숫자)]
 
 날짜에 주어진 시간(초)을 추가한 결과로 새 날짜를 반환합니다. 초를 빼려면 음수를 입력합니다.
 
@@ -43,7 +43,7 @@ ht-degree: 1%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addMinutes (date; number)] {#addminutes-date-number}
+### [!UICONTROL addMinutes(date; number)] {#addminutes-date-number}
 
 날짜에 주어진 시간(분) 수를 추가한 결과로 새 날짜를 반환합니다. 분을 빼려면 음수를 입력합니다.
 
@@ -61,7 +61,7 @@ ht-degree: 1%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addHours (date; number)] {#addhours-date-number}
+### [!UICONTROL addHours(date; number)] {#addhours-date-number}
 
 날짜에 지정된 시간(시) 수를 추가한 결과로 새 날짜를 반환합니다. 시간을 빼려면 음수를 입력합니다.
 
@@ -79,7 +79,7 @@ ht-degree: 1%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addDays (date; number)] {#adddays-date-number}
+### [!UICONTROL addDays(date; number)] {#adddays-date-number}
 
 날짜에 지정된 일 수를 추가한 결과로 새 날짜를 반환합니다. 일수를 빼려면 음수를 입력합니다.
 
@@ -97,7 +97,7 @@ ht-degree: 1%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addMonths (date; number)]
+### [!UICONTROL addMonths(date; number)]
 
 날짜에 지정된 개월 수를 추가한 결과로 새 날짜를 반환합니다. 월을 빼려면 음수를 입력합니다.
 
@@ -133,13 +133,13 @@ ht-degree: 1%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setSecond (date; number)]
+### [!UICONTROL setSecond(date; number)]
 
 이 함수는 매개 변수에 지정된 초 수를 사용하는 새 날짜를 반환합니다.
 
 0에서 59 사이의 숫자를 지정하십시오. 숫자가 해당 범위를 벗어나면 함수는 이전 분 (음수) 또는 이후 분 (양수)에서 1초를 반환합니다.
 
-범위 밖의 숫자를 지정해야 하는 경우 [addSeconds(date; number)](#addseconds-date-number) 섹션에서 위에 설명된 대로 [!UICONTROL  addSeconds]을(를) 사용하는 것이 좋습니다.
+범위 밖의 숫자를 지정해야 하는 경우 [addSeconds(날짜; 숫자)](#addseconds-date-number) 섹션에 설명된 대로 [!UICONTROL  addSeconds]을 사용하는 것이 좋습니다.
 
 >[!BEGINSHADEBOX]
 
@@ -149,13 +149,13 @@ ht-degree: 1%
 
   2015-10-07T11 반환:36:10.138Z
 
-* `setSecond(2015-10-07T11:36:39.138Z; 6)`
+* `setSecond(2015-10-07T11:36:39.138Z; 61)`
 
   2015-10-07T11 반환:37:01.138Z
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setMinute (date; number)]
+### [!UICONTROL setMinute(date; number)]
 
 이 함수는 매개 변수에 지정된 분이 있는 새 날짜를 반환합니다.
 
@@ -177,7 +177,7 @@ ht-degree: 1%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setHour (date; number)]
+### [!UICONTROL setHour(날짜; 숫자)]
 
 이 함수는 매개 변수에 지정된 시간이 있는 새 날짜를 반환합니다.
 
@@ -199,7 +199,7 @@ ht-degree: 1%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setDay (date; number/name of the day in English)]
+### [!UICONTROL setDay(날짜; 영어로 된 날짜의 번호/이름)]
 
 이 함수는 매개 변수에 지정된 날짜가 포함된 새 날짜를 반환합니다.
 
@@ -225,7 +225,7 @@ ht-degree: 1%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setDate (date; number)]
+### [!UICONTROL setDate(date; number)]
 
 이 함수는 매개 변수에 지정된 월의 일을 사용하는 새 날짜를 반환합니다.
 
@@ -245,7 +245,7 @@ ht-degree: 1%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setMonth (date; number/name of the month in English)]
+### [!UICONTROL setMonth(날짜; 영어의 월 번호/이름)]
 
 이 함수는 매개 변수에 지정된 월이 있는 새 날짜를 반환합니다.
 
@@ -269,7 +269,7 @@ ht-degree: 1%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setYear (date; number)]
+### [!UICONTROL setYear(date; number)]
 
 매개 변수에 지정된 연도가 있는 새 날짜를 반환합니다.
 
@@ -283,7 +283,7 @@ ht-degree: 1%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL formatDate (date; format; [timezone])]
+### [!UICONTROL formatDate(date; format; [timezone])]
 
 `Dec 10, 2021 8:30 PM`과(와) 같이 텍스트 값으로 서식을 지정하려는 Date 값(예: `12-10-2021 20:30`)이 있는 경우 이 함수를 사용합니다.
 
@@ -306,7 +306,7 @@ ht-degree: 1%
  </thead> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL date] </td> 
+   <td>[!UICONTROL 날짜] </td> 
    <td>일자 </td> 
    <td> <p>날짜 값을 텍스트 값으로 변환합니다. </p> </td> 
   </tr> 
@@ -316,7 +316,7 @@ ht-degree: 1%
    <td> <p>날짜/시간 형식 토큰을 사용하여 형식을 지정할 수 있습니다. 자세한 내용은 <a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">날짜 및 시간 형식에 대한 토큰</a>을 참조하세요.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>예: </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL timezone] </td> 
+   <td>[!UICONTROL 시간대] </td> 
    <td>텍스트 </td> 
    <td> <p>(선택 사항) 전환에 사용되는 시간대를 지정할 수 있습니다. </p> <p>인식된 시간대의 목록은 Wikipedia <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">tz 데이터베이스 시간대 목록</a>의 "TZ 데이터베이스 이름" 열을 참조하십시오. 이 열에 나열된 값만 함수에서 유효한 시간대로 인식됩니다. 다른 값은 무시되며 프로필에 지정된 시나리오 시간대가 대신 사용됩니다. </p> <p>이 매개 변수를 생략하면 프로필 설정에 지정된 시나리오 시간대가 적용됩니다. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>예: </b></span></span><code>Europe/Prague</code>, <code>UTC</code></p> </td> 
   </tr> 
@@ -353,7 +353,7 @@ ht-degree: 1%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL parseDate (text; format; [timezone])]
+### [!UICONTROL parseDate(text; format; [timezone])]
 
 날짜를 나타내는 Text 값(예: `12-10-2019 20:30` 또는 `Aug 18, 2019 10:00 AM`)이 있고 이를 Date 값(이진 컴퓨터 읽기 가능 표시)으로 변환(구문 분석)하려는 경우 이 함수를 사용합니다. 자세한 내용은 문서 [항목 데이터 형식](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)의 날짜 및 텍스트를 참조하십시오.
 
@@ -384,7 +384,7 @@ ht-degree: 1%
    <td> <p>날짜/시간 형식 토큰을 사용하여 형식을 지정할 수 있습니다. 자세한 내용은 <a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">날짜 및 시간 형식에 대한 토큰</a>을 참조하세요.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>예: </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL timezone] </td> 
+   <td>[!UICONTROL 시간대] </td> 
    <td>텍스트 </td> 
    <td> <p>(선택 사항) 전환에 사용되는 시간대를 지정할 수 있습니다. </p> <p>인식된 시간대의 목록은 Wikipedia <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">tz 데이터베이스 시간대 목록</a>의 "TZ 데이터베이스 이름" 열을 참조하십시오. 이 열에 나열된 값만 함수에서 유효한 시간대로 인식됩니다. 다른 값은 무시되며 프로필에 지정된 시나리오 시간대가 대신 사용됩니다. </p> <p>이 매개 변수를 생략하면 프로필 설정에 지정된 시나리오 시간대가 적용됩니다.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>예: </b></span></span><code>Europe/Prague</code>, <code>UTC</code></p> </td> 
   </tr> 
@@ -419,7 +419,7 @@ ht-degree: 1%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL dateDifference (Date1; Date2; Unit)]
+### [!UICONTROL dateDifference(Date1; Date2; Unit)]
 
 두 날짜의 차이를 나타내는 숫자를 지정된 단위로 표시합니다.
 

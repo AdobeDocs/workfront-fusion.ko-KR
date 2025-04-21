@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] HubSpot CRM 모듈을 사용하면 
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 0e4986d0d66b98213efabd487e6701f8385161e3
 workflow-type: tm+mt
-source-wordcount: '6203'
+source-wordcount: '7003'
 ht-degree: 0%
 
 ---
@@ -118,9 +118,6 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 ### CRM 오브젝트
 
-<!--* [Search for CRM objects](#search-for-crm-objects)
-* [Watch CRM objects](#watch-crm-objects)-->
-
 +++ **[!UICONTROL CRM 개체 검색]**
 
 이 검색 모듈은 사용자 지정 속성 또는 쿼리별로 CRM 개체를 검색합니다. 제품 또는 라인 항목을 검색하려면 필수 사용자 지정 범위의 특수 연결을 사용하십시오.
@@ -208,15 +205,6 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 +++
 
 ### 기록(거래, 연락처 및 회사)
-
-<!--* [Create a Record](#create-a-record)
-* [[!UICONTROL Create a Record (Legacy)]](#create-a-record-legacy)
-* [[!UICONTROL Delete a Record]](#delete-a-record)
-* [[!UICONTROL Get a Record]](#get-a-record)
-* [[!UICONTROL Get a Record Property]](#get-a-record-property)
-* [List Records](#list-records)
-* [[!UICONTROL Update a Record]](#update-a-record)
-* [[!UICONTROL Watch Records]](#watch-records)-->
 
 +++ **레코드 만들기**
 
@@ -464,17 +452,6 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 +++
 
 ### 연락처
-
-<!--* [[!UICONTROL Add Contacts to a List]](#add-contacts-to-a-list)
-* [Create/Update a contact](#createupdate-a-contact)
-* [[!UICONTROL Create/Update a Contact (Legacy)]](#createupdate-a-contact-legacy)
-* [[!UICONTROL Create/Update a Group of Contacts]](#createupdate-a-group-of-contacts)
-* [[!UICONTROL List Contacts]](#list-contacts)
-* [[!UICONTROL List Contacts of a Company]](#list-contacts-of-a-company)
-* [[!UICONTROL Merge contacts]](#merge-contacts)
-* [[!UICONTROL Remove a Contact from a List]](#remove-a-contact-from-a-list)
-* [[!UICONTROL Search for Contacts]](#search-for-contacts)
-* [Watch Contacts Added to a List](#watch-contacts-added-to-a-list)-->
 
 +++ **[!UICONTROL 목록에 연락처 추가]**
 
@@ -744,9 +721,6 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 ### 거래
 
-<!--* [[!UICONTROL Get a Deal's CRM Pipeline]](#get-a-deals-crm-pipeline)
-* [[!UICONTROL List Deal/Ticket Pipelines]](#list-dealticket-pipelines)-->
-
 +++ **[!UICONTROL 거래의 CRM 파이프라인 가져오기]**
 
 특정 거래 파이프라인을 반환합니다.
@@ -825,11 +799,6 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 +++
 
 ### 참여 횟수
-
-<!--* [Associate an Engagement with a CRM object](#associate-an-engagement-with-a-crm-object)
-* [Create an Engagement](#create-an-engagement)
-* [Delete an Engagement](#delete-an-engagement)
-* [Watch Engagements](#watch-engagements)-->
 
 +++ **참여를 CRM 개체와 연결**
 
@@ -1117,11 +1086,6 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 ### 이벤트 및 알림
 
-<!--* [Create / Update a Timeline Event](#create--update-a-timeline-event)
-* [List Timeline Event Types](#list-timeline-event-types)
-* [Watch Calendar Events](#watch-calendar-events)
-* [Watch Notifications](#watch-notifications)-->
-
 +++ **타임라인 이벤트 만들기/업데이트**
 
 이 작업 모듈은 타임라인 이벤트를 만들거나 업데이트합니다. 이 모듈은 사용자 식별자, HubSpot API 키, 클라이언트 ID 및 클라이언트 암호를 포함하는 개발자 연결에서만 사용할 수 있습니다.
@@ -1253,14 +1217,6 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 +++
 
 ### 파일
-
-<!--* [[!UICONTROL Create a Folder]](#create-a-folder)
-* [Delete a File](#delete-a-file)
-* [[!UICONTROL Delete a Folder]](#delete-a-folder)
-* [List Files](#list-files)
-* [[!UICONTROL Move a File]](#move-a-file)
-* [Upload a file](#upload-a-file)
-* [Watch files](#watch-files)-->
 
 +++ **[!UICONTROL 폴더 만들기]**
 
@@ -1451,10 +1407,6 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 ### 작업
 
-<!--* [Create a Calendar Task](#create-a-calendar-task)
-* [Delete a Calendar Task](#create-a-calendar-task)
-* [Watch Task Events](#watch-task-events)-->
-
 +++ **일정 작업 만들기**
 
 이 작업 모듈은 캘린더에 대한 새 작업을 만듭니다. 이 모듈에서 사용되는 연결은 유료 마케팅 계정이 있는 사용자의 자격 증명을 사용해야 합니다.
@@ -1552,9 +1504,6 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 ### 사용자
 
-<!--* [Get an Owner](#get-an-owner)
-* [List Owners](#list-owners)-->
-
 +++ **소유자 가져오기**
 
 이 작업 모듈은 소유자에 대한 세부 정보를 반환합니다.
@@ -1595,13 +1544,6 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
 
 ### 티켓
 
-<!--* [Create a Ticket]-->
-<!--* [Delete a Ticket](#delete-a-ticket)-->
-<!--* [Create a Ticket]-->
-<!--* [Create a Ticket]-->
-<!--* [Create a Ticket]-->
-<!--* [Create a Ticket]-->
-
 <!-- Create a Ticket Need to find a working connection-->
 
 +++ **[!UICONTROL 티켓 삭제]**
@@ -1634,11 +1576,6 @@ ID로 기존 티켓을 삭제합니다.
 <!-- Watch Tickets Need to find a working connection-->
 
 ### 양식
-
-<!--* [Get a File Uploaded via Form](#get-a-file-uploaded-via-form)
-* [List Forms](#list-forms)-->
-<!--* [Submit Data to a Form]-->
-<!--* [Watch Submissions for a Form]-->
 
 +++ **양식을 통해 업로드된 파일 가져오기**
 
@@ -1689,10 +1626,6 @@ ID로 기존 티켓을 삭제합니다.
 &lt;!—#### 양식에 대한 제출 보기 — 작업 연결을 찾아야 합니다.>—>
 
 ### 소셜 미디어(브로드캐스트)
-
-<!--* [Cancel a Broadcast Message](#cancel-a-broadcast-message)
-* [Create a Broadcast Message](#create-a-broadcast-message)
-* [Watch Broadcast Messages](#watch-broadcast-messages)-->
 
 +++ **브로드캐스트 메시지 취소**
 
@@ -1791,16 +1724,90 @@ ID로 기존 티켓을 삭제합니다.
 
 ### 블로그 게시물
 
-<!--* [Create a Blog Post]-->
-<!--* [Delete a Blog Post](#delete-a-blog-post)-->
-<!--* [List Blog Posts]-->
-&lt;!—* [블로그 게시물 게시/게시 취소](#publish--unpublish-a-blog-post)—>
-<!--* [Watch Blog Posts]-->
++++ **블로그 게시물 만들기**
 
-<!--
-#### Create a Blog Post May need connection
--->
+이 작업 모듈은 새 블로그 게시물을 만듭니다.
 
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">이름</td> 
+   <td>게시물 제목(게시물의 내부 이름)을 입력하거나 매핑합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">게시물 본문</td> 
+   <td>게시물의 본문을 HTML 형식으로 입력하거나 매핑합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">게시물 요약</td> 
+   <td>게시물 요약을 입력하거나 매핑합니다. 이 요약은 기본 목록 페이지에 표시됩니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">블로그 작성자 ID</td> 
+   <td>게시물과 연계된 작성자 ID를 입력하거나 매핑합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">콘텐츠 그룹 ID</td> 
+   <td>이 게시물이 속한 블로그의 ID를 입력하거나 매핑합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">바닥글 HTML</td> 
+   <td>페이지의 태그 앞에 배치해야 하는 포함 코드 또는 Javascript에 대한 HTML을 입력하거나 매핑합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">헤드 HTML</td> 
+   <td>맨 위에 배치해야 하는 포함 코드 또는 Javascript에 대한 HTML을 입력하거나 매핑합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">캠페인 ID</td> 
+   <td>이 게시물과 연계된 캠페인의 ID를 입력하거나 매핑합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">추천 이미지</td> 
+   <td>이 게시물이 추천 이미지로 사용할 이미지의 URL을 입력하거나 매핑합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">키워드</td> 
+   <td>이 게시물에 추가할 각 키워드에 대해 <b>항목 추가</b>를 클릭하고 키워드 및 키워드 GUID를 입력하십시오.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">메타 설명</td> 
+   <td>페이지의 <code>meta</code> 태그에 대한 텍스트를 입력하거나 매핑합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">게시 날짜</td> 
+   <td>블로그 게시물을 게시할 날짜를 입력하거나 매핑합니다. <p>지원되는 날짜 및 시간 형식 목록을 보려면 [!DNL Adobe Workfront Fusion]</a>의 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 변환을 참조하십시오.</p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">이름</td> 
+   <td>블로그 게시물을 만들 때 즉시 게시하려면 이 옵션을 활성화합니다. 예로 설정된 경우 이 옵션은 게시 날짜 필드를 무시합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">개요</td> 
+   <td>게시물의 슬러그를 입력하거나 매핑합니다. 슬러그는 블로그 게시물의 URL을 형성하기 위해 도메인 끝에 추가됩니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">주제 ID</td> 
+   <td>게시물에 추가할 각 주제에 대해 <b>항목 추가</b>를 클릭하고 주제 ID를 입력하십시오.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">추천 이미지 사용</td> 
+   <td>블로그 게시물에 추천 이미지를 사용하려면 이 옵션을 활성화합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">위젯</td> 
+   <td>이 블로그 게시물의 모든 모듈에 대한 날짜가 포함된 데이터 구조를 입력하거나 매핑합니다. Fusion 모듈이 아니라 블로그 게시물의 모듈을 참조합니다.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
 
 +++ **블로그 게시물 삭제**
 
@@ -1823,9 +1830,70 @@ ID로 기존 티켓을 삭제합니다.
 
 +++
 
-<!--#### List Blog Posts May need connection
++++ **블로그 게시물 나열**
 
-This search module retrieves posts from a HubSpot blog.-->
+이 검색 모듈은 HubSpot 블로그에서 게시물을 검색합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">제한</td> 
+   <td>한 실행 주기에서 반환할 블로그 게시물의 최대 수를 입력하거나 매핑합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">보관됨</td> 
+   <td>이 옵션을 활성화하면 결과에 보관된 게시물이 포함됩니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">블로그 작성자 ID</td> 
+   <td>작성자의 ID를 입력하거나 매핑하여 해당 작성자와 연결된 게시물을 반환합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">캠페인 ID</td> 
+   <td>캠페인의 ID를 입력하거나 매핑하여 해당 캠페인과 연결된 게시물을 반환합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">콘텐츠 그룹 ID</td> 
+   <td>해당 블로그에 연결된 게시물을 반환하려면 블로그의 ID를 입력하거나 매핑하십시오.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">이름</td> 
+   <td>해당 이름을 가진 게시물만 반환하려면 게시물 이름을 입력하십시오.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">필터 기준 작성됨</td> 
+   <td>필터를 선택하여 생성된 시간 값으로 게시물을 반환합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">업데이트한 날짜로 필터링</td> 
+   <td>업데이트된 시간 값으로 게시물을 반환하려면 필터 를 선택합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">삭제됨으로 필터링</td> 
+   <td>필터를 선택하여 삭제된 시간 값으로 게시물을 반환합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">개요</td> 
+   <td>슬러그를 입력하거나 매핑하여 슬러그와 일치하는 게시물을 반환합니다. 슬러그는 블로그 게시물의 URL을 형성하기 위해 도메인 끝에 추가됩니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">상태</td> 
+   <td>해당 상태의 결과만 포함할 상태(초안, 게시됨 또는 예약됨)를 선택합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">게시 날짜별 주문</td> 
+   <td>결과를 게시 날짜별로 오름차순으로 정렬할지 아니면 내림차순으로 정렬할지 선택합니다.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
 
 +++ **블로그 게시물 게시/게시 취소**
 
@@ -1852,7 +1920,70 @@ This search module retrieves posts from a HubSpot blog.-->
 
 +++
 
-<!--#### Watch Blog PostsMay need connection-->
++++ **블로그 게시물 보기**
+
+이 트리거 모듈은 설정한 기준과 일치하는 블로그 게시물이 생성, 업데이트 또는 삭제될 때 시나리오를 시작합니다.
+
+
+
+이 검색 모듈은 HubSpot 블로그에서 게시물을 검색합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">제한</td> 
+   <td>한 실행 주기에서 반환할 블로그 게시물의 최대 수를 입력하거나 매핑합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">보관됨</td> 
+   <td>이 옵션을 활성화하면 결과에 보관된 게시물이 포함됩니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">블로그 작성자 ID</td> 
+   <td>작성자의 ID를 입력하거나 매핑하여 해당 작성자와 연결된 게시물을 반환합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">캠페인 ID</td> 
+   <td>캠페인의 ID를 입력하거나 매핑하여 해당 캠페인과 연결된 게시물을 반환합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">콘텐츠 그룹 ID</td> 
+   <td>해당 블로그에 연결된 게시물을 반환하려면 블로그의 ID를 입력하거나 매핑하십시오.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">이름</td> 
+   <td>해당 이름을 가진 게시물만 반환하려면 게시물 이름을 입력하십시오.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">필터 기준 작성됨</td> 
+   <td>필터를 선택하여 생성된 시간 값으로 게시물을 반환합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">업데이트한 날짜로 필터링</td> 
+   <td>업데이트된 시간 값으로 게시물을 반환하려면 필터 를 선택합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">삭제됨으로 필터링</td> 
+   <td>필터를 선택하여 삭제된 시간 값으로 게시물을 반환합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">개요</td> 
+   <td>슬러그를 입력하거나 매핑하여 슬러그와 일치하는 게시물을 반환합니다. 슬러그는 블로그 게시물의 URL을 형성하기 위해 도메인 끝에 추가됩니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">상태</td> 
+   <td>해당 상태의 결과만 포함할 상태(초안, 게시됨 또는 예약됨)를 선택합니다.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
 
 <!--+++**Workflows**>
 
@@ -1868,9 +1999,6 @@ This search module retrieves posts from a HubSpot blog.-->
 <!--+++-->
 
 ### 구독수
-
-<!--* [Update Email Subscription](#update-email-subscription)
-* [Watch Subscriptions Timeline for a Portal](#watch-subscriptions-timeline-for-a-portal)-->
 
 +++ **이메일 구독 업데이트**
 

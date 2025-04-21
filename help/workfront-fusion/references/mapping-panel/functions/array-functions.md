@@ -4,48 +4,48 @@ description: Adobe Workfront Fusion 매핑 패널에서 다음 배열 함수를 
 author: Becky
 feature: Workfront Fusion
 exl-id: 16c3915c-add1-4aab-a0e1-75fc590c42a6
-source-git-commit: 2c732659f3f3e81e13b7b12a5df5bde19c0e0928
+source-git-commit: d141738a7e013ed817cb657b883fc5e1061e2165
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
 
 # 배열 함수
 
-## [!UICONTROL join (array; separator)]
+## [!UICONTROL 조인(배열, 구분 기호)]
 
 각 항목 사이에 지정된 구분 기호를 사용하여 배열의 모든 항목을 문자열로 연결합니다.
 
-## [!UICONTROL length (array)]
+## [!UICONTROL 길이(배열)]
 
 배열의 항목 수를 반환합니다.
 
-## [!UICONTROL keys (object)]
+## [!UICONTROL 키(개체)]
 
 특정 개체 또는 배열의 속성 배열을 반환합니다.
 
-## [!UICONTROL slice (array; start; [end])]
+## [!UICONTROL 슬라이스(배열; 시작; [끝])]
 
 선택한 항목만 포함하는 새 배열을 반환합니다.
 
-## [!UICONTROL merge (array1; array2; ...)]
+## [!UICONTROL 병합(array1; array2; ...)]
 
 하나 이상의 배열을 하나의 배열로 병합합니다.
 
-## [!UICONTROL contains (array; value)]
+## [!UICONTROL 포함(배열; 값)]
 
 배열에 값이 포함되어 있는지 확인합니다.
 
-## [!UICONTROL remove (array; value1; value2; ...)]
+## [!UICONTROL 제거(array; value1; value2; ...)]
 
 배열의 매개 변수에 지정된 값을 제거합니다. 이 함수는 텍스트나 숫자의 기본 배열에만 적용됩니다.
 
-## [!UICONTROL add (array; value1; value2; ...)]
+## [!UICONTROL add(array; value1; value2; ...)]
 
 매개 변수에 지정된 값을 배열에 추가하고 해당 배열을 반환합니다.
 
-## [!UICONTROL map (complex array; key;[key for filtering];[possible values for filtering])]
+## [!UICONTROL 맵(복합 배열; 키;[필터링용 키];[필터링용 가능한 값])]
 
 복합 배열의 값을 포함하는 기본 배열을 반환합니다. 이 함수를 사용하면 값을 필터링할 수 있습니다. 키에 원시 변수 이름을 사용합니다.
 
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 ## 무작위 재생
 
-## [!UICONTROL sort (array; [order]; [key])]
+## [!UICONTROL 정렬(배열; [순서]; [키])]
 
 배열의 값을 정렬합니다. `order` 매개 변수의 올바른 값은 다음과 같습니다.
 
@@ -117,15 +117,15 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL reverse (array)]
+## [!UICONTROL 역방향(배열)]
 
 배열의 첫 번째 요소는 마지막 요소가 되고, 두 번째 요소는 다음-마지막 요소가 됩니다.
 
-## [!UICONTROL flatten (array)]
+## [!UICONTROL 병합(배열)]
 
 지정된 깊이까지 모든 하위 배열 요소가 재귀적으로 연결된 새 배열을 만듭니다.
 
-## [!UICONTROL distinct (array; [key])]
+## [!UICONTROL distinct(배열; [키])]
 
 배열 내의 중복을 제거합니다. 복잡한 개체 내의 속성에 액세스하려면 &quot;[!UICONTROL key]&quot; 인수를 사용하십시오. 중첩된 속성에 액세스하려면 점 표기법을 사용하십시오. 배열의 첫 번째 항목은 인덱스 1입니다.
 
@@ -138,6 +138,39 @@ ht-degree: 0%
 >[!ENDSHADEBOX]
 
 ## toCollection
+
+* 이 함수는 키-값 쌍을 포함하는 배열을 가져와 컬렉션으로 변환합니다. 함수에는 3개의 인수가 있습니다.
+
+* (배열) 키 값 쌍이 포함된 경우
+* (문자열) 키로 사용할 필드의 이름
+* (문자열) 값으로 사용할 필드의 이름
+
+>[!BEGINSHADEBOX]
+
+예:
+
+지정된 배열:
+
+```
+[{"name":"Bob", "age":22}, {"name":"Tim", "age":23}]
+```
+
+및 인수
+
+```
+{{toCollection(6.array; "name"; "age")}}
+```
+
+함수는 를 반환합니다.
+
+```
+{
+    "Bob": 22,
+    "Tim": 23
+}
+```
+
+>[!ENDSHADEBOX]
 
 ## toArray
 

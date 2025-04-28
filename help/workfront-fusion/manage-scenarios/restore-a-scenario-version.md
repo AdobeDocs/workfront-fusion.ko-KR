@@ -1,19 +1,19 @@
 ---
-title: 시나리오 버전 복원
-description: 이전 버전의 시나리오를 복원할 수 있습니다. 이렇게 하면 시나리오를 변경한 다음 이전 기능을 선호하는 경우 해당 변경 사항을 쉽게 되돌릴 수 있습니다.
+title: 시나리오 버전 보기 및 관리
+description: 이전 버전의 시나리오에 대한 블루프린트를 보거나, 복원하거나, 이름을 바꾸거나, 다운로드할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
+source-git-commit: 2270b386bbf62cfc3b82bd4f9c293b36d3b7a35a
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '298'
 ht-degree: 1%
 
 ---
 
 # 시나리오 버전 보기 및 관리
 
-이전 버전의 시나리오를 보거나 복원하거나 이름을 바꿀 수 있습니다.
+이전 버전의 시나리오에 대한 블루프린트를 보거나, 복원하거나, 이름을 바꾸거나, 다운로드할 수 있습니다.
 
 ## 액세스 요구 사항
 

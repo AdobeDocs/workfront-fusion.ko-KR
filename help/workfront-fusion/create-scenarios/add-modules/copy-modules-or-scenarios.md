@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion에서 모듈, 모듈 그룹 또는 전체 �
 author: Becky
 feature: Workfront Fusion
 exl-id: 5cece7d4-b2c7-4276-8a6f-f65bad799c7a
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '908'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Adobe Workfront Fusion에서 모듈, 모듈 그룹 또는 전체 시나리오를
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] 라이센스</td> 
-   <td> <p>신규: [!UICONTROL Standard]</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
+   <td> <p>새로운 기능: [!UICONTROL Standard]</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td> 
@@ -44,7 +44,7 @@ Adobe Workfront Fusion에서 모듈, 모듈 그룹 또는 전체 시나리오를
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Workfront] 플랜: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 플랜: [!DNL Workfront Fusion]이(가) 포함되어 있습니다.</li></ul>
+   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Workfront] 계획: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 계획: [!DNL Workfront Fusion]이(가) 포함되어 있습니다.</li></ul>
    <p>또는</p>
    <p>현재: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</p>
    </td> 
@@ -77,18 +77,18 @@ Adobe Workfront Fusion에서 모듈, 모듈 그룹 또는 전체 시나리오를
 
 모듈 그룹을 복사하는 것은 단일 모듈을 복사하는 것과 비슷합니다.
 
-1. 왼쪽 패널의 **[!UICONTROL Scenarios]** 탭을 클릭합니다.
+1. 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭합니다.
 1. 모듈을 복사할 시나리오를 선택합니다.
 1. 시나리오의 아무 곳이나 클릭하여 시나리오 편집기를 입력합니다.
 1. 복사할 모듈을 마우스 오른쪽 버튼으로 클릭합니다.
 
    >[!NOTE]
    >
-   >[!UICONTROL shift]을(를) 누른 채 복사할 모듈을 클릭하면 둘 이상의 모듈을 선택할 수 있습니다. 모듈 그룹을 복사하면 연결 라인, 필터 또는 모듈 간 라우팅 로직도 복사됩니다.
+   >[!UICONTROL shift]를 누른 채 복사할 모듈을 클릭하면 둘 이상의 모듈을 선택할 수 있습니다. 모듈 그룹을 복사하면 연결 라인, 필터 또는 모듈 간 라우팅 로직도 복사됩니다.
 
-1. **[!UICONTROL Copy module]**&#x200B;을(를) 선택합니다.
+1. **[!UICONTROL 모듈 복사]**&#x200B;를 선택합니다.
 1. 시나리오를 복사할 시나리오의 영역으로 커서를 이동합니다.
-1. 마우스 오른쪽 단추를 클릭하고 **[!UICONTROL Paste]**&#x200B;을(를) 선택합니다.
+1. 마우스 오른쪽 단추를 클릭하고 **[!UICONTROL 붙여넣기]**&#x200B;를 선택합니다.
 1. 붙여넣은 모듈을 시나리오의 적절한 위치로 끌어 시나리오에 연결합니다.
 
    키보드 단축키를 사용하여 복사하여 붙여넣을 수도 있습니다.
@@ -99,17 +99,17 @@ Adobe Workfront Fusion에서 모듈, 모듈 그룹 또는 전체 시나리오를
 
 1. 시나리오 세부 사항 페이지를 엽니다.
 
-   1. 왼쪽 패널의 **[!UICONTROL Scenario]** 탭을 클릭한 다음 자세히 보려는 시나리오를 클릭합니다.
+   1. 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭한 다음 자세히 설명하려는 시나리오를 클릭합니다.
 
       또는
 
       시나리오 편집기에서 시나리오 작업을 수행하는 경우 창의 왼쪽 상단 모서리 근처에 있는 왼쪽 화살표 ![편집 종료 화살표](assets/exit-editing-arrow.png)를 클릭합니다.
 
-1. 페이지 오른쪽 상단의 **[!UICONTROL Options]**&#x200B;을(를) 마우스 오른쪽 단추로 클릭합니다.
-1. **[!UICONTROL Clone]**&#x200B;을(를) 선택합니다.
+1. 페이지 오른쪽 상단의 **[!UICONTROL 옵션]**&#x200B;을 마우스 오른쪽 단추로 클릭합니다.
+1. **[!UICONTROL 복제]**&#x200B;를 선택합니다.
 1. (선택 사항) 새 시나리오의 이름을 입력합니다.
-1. (선택 사항) **[!UICONTROL Keep the states of any new modules the same as those being duplicated]**&#x200B;을(를) 사용하면 복사된 시나리오에 원본 시나리오에서 처리한 최신 레코드에 대한 정보도 포함됩니다.
-1. 시나리오를 만들려면 **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.
+1. (선택 사항) 복사한 시나리오에 원본 시나리오에서 처리한 최신 레코드에 대한 정보도 포함되도록 **[!UICONTROL 복제되는 모듈과 동일한 새 모듈의 상태를 유지]**&#x200B;합니다.
+1. 시나리오를 만들려면 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
 ## 블루프린트를 사용하여 시나리오 복사
 
@@ -119,13 +119,17 @@ Adobe Workfront Fusion에서 모듈, 모듈 그룹 또는 전체 시나리오를
 
 ### 시나리오 블루프린트 내보내기
 
-1. 왼쪽 패널의 **[!UICONTROL Scenarios]** 탭을 클릭합니다.
+1. 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭합니다.
 1. 블루프린트를 내보낼 시나리오를 선택합니다.
 1. 시나리오의 아무 곳이나 클릭하여 시나리오 편집기를 입력합니다.
-1. 시나리오에서는 시나리오 설정 영역의 **[!UICONTROL More]** 메뉴를 클릭합니다.
-1. **[!UICONTROL Export Blueprint]**&#x200B;을(를) 클릭합니다.
+1. 시나리오에서는 시나리오 설정 영역의 **[!UICONTROL 자세히]** 메뉴를 클릭합니다.
+1. **[!UICONTROL 블루프린트 내보내기]**&#x200B;를 클릭합니다.
 
    JSON 파일이 생성되고 컴퓨터에 다운로드됩니다. [!DNL Downloads] 폴더에서 이 파일을 찾을 수 있습니다.
+
+>[!NOTE]
+>
+>이전 버전의 시나리오에 대한 블루프린트를 내보내려면 [시나리오 버전 보기 및 관리](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md)를 참조하십시오.
 
 ### 블루프린트 가져오기
 
@@ -134,13 +138,13 @@ Adobe Workfront Fusion에서 모듈, 모듈 그룹 또는 전체 시나리오를
 >블루프린트를 기존 시나리오로 가져오는 경우 시나리오 블루프린트가 기존 시나리오를 대체합니다. 블루프린트를 기존 시나리오에 추가할 수 없습니다.
 
 1. 새 시나리오 만들기를 시작합니다.
-1. 시나리오에서는 시나리오 설정 영역의 **[!UICONTROL More]** 메뉴를 클릭합니다.
-1. **[!UICONTROL Import Blueprint]**&#x200B;을(를) 클릭합니다.
-1. 표시되는 대화 상자에서 **[!UICONTROL Browse]**&#x200B;을(를) 클릭합니다.
-1. 가져올 블루프린트로 이동하여 **[!UICONTROL Open]**&#x200B;을(를) 클릭합니다.
-1. **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.
+1. 시나리오에서는 시나리오 설정 영역의 **[!UICONTROL 자세히]** 메뉴를 클릭합니다.
+1. **[!UICONTROL 블루프린트 가져오기]**&#x200B;를 클릭합니다.
+1. 표시되는 대화 상자에서 **[!UICONTROL 찾아보기]**&#x200B;를 클릭합니다
+1. 가져올 블루프린트로 이동하여 **[!UICONTROL 열기]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
-   JSON 파일이 생성되고 컴퓨터에 다운로드됩니다. [!UICONTROL Downloads] 폴더에서 이 파일을 찾을 수 있습니다.
+   JSON 파일이 생성되고 컴퓨터에 다운로드됩니다. [!UICONTROL 다운로드] 폴더에서 이 파일을 찾을 수 있습니다.
 
 ## 템플릿을 사용하여 시나리오 복사 및 재사용
 

@@ -4,9 +4,9 @@ description: 이 문서에서는 시나리오에 모듈을 추가하는 기본 �
 author: Becky
 feature: Workfront Fusion
 exl-id: f3757468-3e11-4862-a83e-ed447805545b
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '628'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] 라이센스</td> 
-   <td> <p>신규: [!UICONTROL Standard]</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
+   <td> <p>새로운 기능: [!UICONTROL Standard]</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td> 
@@ -46,7 +46,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Workfront] 플랜: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 플랜: [!DNL Workfront Fusion]이(가) 포함되어 있습니다.</li></ul>
+   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Workfront] 계획: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 계획: [!DNL Workfront Fusion]이(가) 포함되어 있습니다.</li></ul>
    <p>또는</p>
    <p>현재: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</p>
    </td> 
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 트리거 모듈에 대한 자세한 내용은 문서 모듈 개요에서 [트리거 모듈](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#trigger-modules)을(를) 참조하십시오.
 
-1. 왼쪽 패널의 **[!UICONTROL Scenarios]** 탭을 클릭합니다.
+1. 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭합니다.
 1. 화면 오른쪽 상단의 **새 시나리오 만들기**&#x200B;를 클릭하여 시나리오 만들기를 시작합니다.
 
    자리 표시자(물음표) 모듈과 사용 가능한 커넥터 목록이 있는 시나리오 편집기가 열립니다.
@@ -84,8 +84,7 @@ ht-degree: 0%
 
 ## 시나리오에 다른 모듈 추가
 
-1. 모듈을 추가할 시나리오의 시나리오 편집기에 있지 않은 경우 왼쪽 패널의 **[!UICONTROL Scenarios]** 탭을 클릭합니다.
-1. 블루프린트를 내보낼 시나리오를 선택합니다.
+1. 모듈을 추가할 시나리오의 시나리오 편집기에 없는 경우 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭합니다.
 1. 시나리오의 아무 곳이나 클릭하여 시나리오 편집기를 입력합니다.
 1. 다른 모듈에 모듈을 추가하려면 모듈을 추가할 모듈의 오른쪽 핸들을 마우스로 가리킨 다음 모듈이 나타나면 **다른 모듈 추가**&#x200B;를 클릭합니다.
 
@@ -98,8 +97,7 @@ ht-degree: 0%
 
 ## 시나리오의 기존 모듈 사이에 모듈 삽입
 
-1. 모듈을 추가할 시나리오의 시나리오 편집기에 있지 않은 경우 왼쪽 패널의 **[!UICONTROL Scenarios]** 탭을 클릭합니다.
-1. 블루프린트를 내보낼 시나리오를 선택합니다.
+1. 모듈을 추가할 시나리오의 시나리오 편집기에 없는 경우 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭합니다.
 1. 시나리오의 아무 곳이나 클릭하여 시나리오 편집기를 입력합니다.
 1. 모듈을 삽입할 모듈 사이의 점선 경로를 클릭합니다.
 1. 표시되는 메뉴에서 **모듈 추가**&#x200B;를 선택합니다.

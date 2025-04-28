@@ -4,9 +4,9 @@ description: 이전 버전의 시나리오를 복원할 수 있습니다. 이렇
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 18bbd77630eafac0cb293c3a6f658a74b622bdae
+source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '309'
 ht-degree: 1%
 
 ---
@@ -78,7 +78,8 @@ ht-degree: 1%
 1. (선택 사항) 버전의 이름을 바꾸려면 해당 버전의 줄에서 기타 메뉴 ![기타 메뉴](assets/more-icon-vertical.png)를 클릭하고 **편집**&#x200B;을 선택한 다음 필드에 이름을 입력합니다. **저장**&#x200B;을 클릭하여 새 이름을 저장합니다.
 
    이 버전에 대한 변경 사항을 설명하는 이름을 지정하는 것이 좋습니다.
-1. (선택 사항) 버전을 복원하려면 해당 버전의 행에서 ![추가 메뉴](assets/more-icon-vertical.png) 복원을 클릭합니다
+1. (선택 사항) 이전 버전에 대한 블루프린트를 다운로드하려면 해당 버전에 대한 줄의 기타 메뉴 ![기타 메뉴](assets/more-icon-vertical.png)를 클릭한 다음 **다운로드**&#x200B;를 선택하십시오.
+1. (선택 사항) 버전을 복원하려면 해당 버전의 행에서 **복원**&#x200B;을 클릭합니다
 
 
    >[!NOTE]

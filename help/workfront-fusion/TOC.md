@@ -2,10 +2,10 @@
 user-guide-title: Adobe Workfront Fusion 설명서
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 문서, 튜토리얼 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
-source-git-commit: a23517da30b4e51ef55bcc13241a03cd1d6153a0
+source-git-commit: 6ebfd07e24f77bd8c162d53554ddf1fcaefafeb8
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 2%
+source-wordcount: '1744'
+ht-degree: 3%
 
 ---
 
@@ -15,7 +15,8 @@ ht-degree: 2%
 * [Adobe Workfront Fusion 설명서](home.md)
 * Fusion 릴리스 활동 {#fusion-release-activity}
    * [Adobe Workfront Fusion 릴리스 활동](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
-   * Fusion 릴리스 - 2025년 {#fusion-releases-2025}
+   * Fusion 릴리스 - 2025 {#fusion-releases-2025}
+      * [Workfront Fusion 릴리스 활동: 2025년 4월 21일이 있는 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-21.md)
       * [Workfront Fusion 릴리스 활동: 2025년 4월 14일이 있는 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-14.md)
       * [Workfront Fusion 릴리스 활동: 2025년 3월 31일이 있는 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-31.md)
       * [Workfront Fusion 릴리스 활동: 2025년 3월 10일이 있는 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-10.md)
@@ -26,7 +27,7 @@ ht-degree: 2%
       * [Workfront Fusion 릴리스 활동: 2025년 1월 20일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-20.md)
       * [Workfront Fusion 릴리스 활동: 2025년 1월 13일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-13.md)
       * [Workfront Fusion 릴리스 활동: 2025년 1월 6일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-6.md)
-   * Fusion 릴리스 - 2024년 {#fusion-releases-2024}
+   * Fusion 릴리스 - 2024 {#fusion-releases-2024}
       * [Workfront Fusion 릴리스 활동: 2024년 12월 16일의 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-12-16.md)
       * [Workfront Fusion 릴리스 활동: 2024년 12월 2일이 있는 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-12-2.md)
       * [Workfront Fusion 릴리스 활동: 2024년 11월 25일의 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-11-25.md)
@@ -51,7 +52,7 @@ ht-degree: 2%
       * [Workfront Fusion 릴리스 활동: 2024년 2월 26일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-2-26.md)
       * [Workfront Fusion 릴리스 활동: 2024년 2월 5일이 있는 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-2-5.md)
       * [Workfront Fusion 릴리스 활동: 2024년 1월 1일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-1-4.md)
-   * Fusion 릴리스 - 2023년 {#fusion-releases-2023}
+   * Fusion 릴리스 - 2023 {#fusion-releases-2023}
       * [Workfront Fusion 릴리스 활동: 2023년 11월 27일의 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-11-30.md)
       * [Workfront Fusion 릴리스 활동: 2023년 11월 13일이 있는 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-11-14.md)
       * [Workfront Fusion 릴리스 활동: 2023년 10월 30일이 있는 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-10-26.md)
@@ -66,7 +67,7 @@ ht-degree: 2%
       * [Workfront Fusion 릴리스 활동: 2023년 4월 17일이 있는 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-4-20.md)
       * [Workfront Fusion 릴리스 활동: 2023년 3월 20일이 있는 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-3-21.md)
       * [Workfront Fusion 릴리스 활동: 2023년 3월 6일이 있는 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-3-6.md)
-   * Fusion 릴리스 - 2022년 {#fusion-releases-2022}
+   * Fusion 릴리스 - 2022 {#fusion-releases-2022}
       * [Workfront Fusion 릴리스 활동: 2022년 12월 12일이 있는 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-dec-12-22.md)
       * [Workfront Fusion 릴리스 활동: 2022년 11월 14일이 있는 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-nov-14-22.md)
       * [Workfront Fusion 릴리스 활동: 2022년 11월 7일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-nov-9-22.md)
@@ -86,7 +87,7 @@ ht-degree: 2%
       * [Workfront Fusion 릴리스 활동: 2022년 2월 21일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-feb-21-22.md)
       * [Workfront Fusion 릴리스 활동: 2022년 2월 14일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-feb-14-22.md)
       * [Workfront Fusion 릴리스 활동: 2022년 1월 3일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-jan-3-22.md)
-   * Fusion 릴리스 - 2021년 {#fusion-releases-2021}
+   * Fusion 릴리스 - 2021 {#fusion-releases-2021}
       * [Workfront Fusion 릴리스 활동: 2021년 11월 29일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-nov-29-21.md)
       * [Workfront Fusion 릴리스 활동: 2021년 11월 15일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-nov-15-21.md)
       * [Workfront Fusion 릴리스 활동: 2021년 11월 8일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-nov-8-21.md)
@@ -111,7 +112,7 @@ ht-degree: 2%
       * [Workfront Fusion 릴리스 활동: 2021년 1월 18일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jan-18.md)
       * [Workfront Fusion 릴리스 활동: 2021년 1월 11일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jan-11.md)
       * [Workfront Fusion 릴리스 활동: 2021년 1월 4일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jan-4.md)
-   * Fusion 릴리스 - 2020년 {#fusion-releases-2020}
+   * Fusion 릴리스 - 2020 {#fusion-releases-2020}
       * [Workfront Fusion 릴리스 활동: 2020년 12월 7일의 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-dec-7.md)
       * [Workfront Fusion 릴리스 활동: 2020년 11월 30일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-nov-30.md)
       * [Workfront Fusion 릴리스 활동: 2020년 11월 16일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-nov-16.md)
@@ -119,9 +120,9 @@ ht-degree: 2%
       * [Workfront Fusion 릴리스 활동: 2020년 9월 21일의 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-sept-21.md)
       * [Workfront Fusion 릴리스 활동: 2020년 8월 24일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-aug-24.md)
       * [Workfront Fusion 릴리스 활동: 2020년 8월 17일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-aug-17.md)
-* Workfront Fusion {#get-started-with-fusion} 시작
+* Workfront Fusion 시작 {#get-started-with-fusion}
    * [Workfront Fusion 시작](/help/workfront-fusion/get-started-with-fusion/get-started-fusion-toc.md)
-   * Workfront Fusion {#understand-workfront-fusion} 이해
+   * Workfront Fusion 이해 {#understand-workfront-fusion}
       * [Workfront Fusion 이해](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion-toc.md)
       * [Adobe Workfront Fusion 개요](/help/workfront-fusion/get-started-with-fusion/understand-fusion/workfront-fusion-overview.md)
       * [Adobe Workfront Fusion 용어집](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md)
@@ -130,22 +131,22 @@ ht-degree: 2%
       * [모듈 개요](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md)
       * [매핑 개요](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md)
       * [함수 개요](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
-   * Workfront Fusion {#navigate-workfront-fusion} 탐색
+   * Workfront Fusion 탐색 {#navigate-workfront-fusion}
       * [Workfront Fusion 탐색: 문서 색인](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-fusion-toc.md)
       * [Adobe Workfront Fusion 탐색](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md)
       * [시나리오 편집기 개요](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)
       * [시나리오 세부 정보 개요](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md)
       * [조직 또는 팀 간 전환](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/switch-orgs-or-teams.md)
       * [프로필 설정 변경](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/change-profile-settings.md)
-* Workfront Fusion {#set-up-and-manage-fusion} 설정 및 관리
+* Workfront Fusion 설정 및 관리 {#set-up-and-manage-fusion}
    * [Workfront Fusion 설정 및 관리](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-workfront-fusion-toc.md)
-   * 라이선스 및 작업 개요 {#licensing-and-operations-overviews}
+   * 라이선스 및 운영 개요 {#licensing-and-operations-overviews}
       * [라이선스 및 운영 개요](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/licensing-operations-overviews.md)
       * [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
       * [작업](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
    * 조직 및 팀 설정 및 관리 {#set-up-and-manage-orgs-and-teams}
       * [조직 및 팀 설정 및 관리: 문서 색인](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
-      * 조직 및 팀 {#set-up-orgs-teams-and-users} 설정
+      * 조직 및 팀 설정 {#set-up-orgs-teams-and-users}
          * [조직, 팀 및 사용자 설정: 문서 색인](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-orgs-and-teams.md)
          * [조직 및 팀 개요](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md)
          * [조직의 허용 목록에 추가하다에서 Fusion에 대한 IP 주소 구성](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)
@@ -159,18 +160,18 @@ ht-degree: 2%
          * [사용자 세부 사항 보기 또는 편집](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-details.md)
          * [사용자 역할 보기 또는 편집](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-roles.md)
          * [Adobe Admin Console에서 사용자 삭제](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/delete-users-admin-console.md)
-   * 템플릿 {#manage-templates-admin} 관리
+   * 템플릿 관리 {#manage-templates-admin}
       * [템플릿 관리](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/manage-templates-toc.md)
       * [템플릿 승인 또는 비승인](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/approve-templates.md)
       * [템플릿 편집](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/edit-templates.md)
-* 시나리오 {#create-scenarios} 만들기
+* 시나리오 만들기 {#create-scenarios}
    * [시나리오 만들기](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
-   * 시나리오 {#plan-a-scenario} 계획
+   * 시나리오 계획 {#plan-a-scenario}
       * [시나리오 계획: 문서 인덱스](/help/workfront-fusion/create-scenarios/plan-a-scenario/plan-a-scenario-toc.md)
       * [시나리오 계획 FAQ](/help/workfront-fusion/create-scenarios/plan-a-scenario/faq.md)
       * [비디오 개요](/help/workfront-fusion/create-scenarios/plan-a-scenario/fusion-basics-videos.md)
       * [시나리오를 만들기 위한 워크플로](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md)
-   * {#add-modules} 모듈 추가
+   * 모듈 추가 {#add-modules}
       * [모듈 추가](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)
       * [시나리오에 모듈 추가](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-basic.md)
       * [모듈 구성](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)
@@ -182,14 +183,14 @@ ht-degree: 2%
       * [라우터 모듈 추가 및 경로 구성](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)
       * [시나리오에 필터 추가](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md)
       * [트리거 모듈의 시작 위치 선택](/help/workfront-fusion/create-scenarios/add-modules/choose-where-trigger-module-starts.md)
-   * 맵 데이터 {#map-data}
+   * 데이터 매핑 {#map-data}
       * [데이터 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md)
       * [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)
       * [함수를 사용하여 항목 매핑](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)
       * [배열 및 배열 요소 매핑](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)
       * [모듈 간 파일 매핑](/help/workfront-fusion/create-scenarios/map-data/map-files.md)
       * [데이터 저장소](/help/workfront-fusion/create-scenarios/map-data/data-stores.md)
-   * 응용 프로그램 {#connect-to-applications}에 연결
+   * 애플리케이션에 연결 {#connect-to-applications}
       * [애플리케이션에 연결](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-apps-toc.md)
       * [연결 만들기](/help/workfront-fusion/create-scenarios/connect-to-apps/connection-instruction-toc.md)
       * [연결 만들기 - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
@@ -205,7 +206,7 @@ ht-degree: 2%
       * [Throw 오류 해결 방법 구성](/help/workfront-fusion/create-scenarios/config-error-handling/throw.md)
       * [재시도 오류 처리 해결 방법 구성](/help/workfront-fusion/create-scenarios/config-error-handling/retry.md)
       * [Break 지시문에 의해 처리된 오류 해결](/help/workfront-fusion/create-scenarios/config-error-handling/resolve-error-from-break-directive.md)
-   * 시나리오 설정 {#configure-scenario-settings} 구성
+   * 시나리오 설정 구성 {#configure-scenario-settings}
       * [시나리오 설정 구성](/help/workfront-fusion/create-scenarios/config-scenarios-settings/config-scenario-settings-toc.md)
       * [시나리오 예약](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)
       * [시나리오 설정 구성](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)
@@ -232,7 +233,7 @@ ht-degree: 2%
    * [기본 시나리오에서 함수를 사용하여 프로젝트 업데이트](/help/workfront-fusion/build-practice-scenarios/use-function-to-build-practice-scenario.md)
    * [기본 시나리오에 필터 추가](/help/workfront-fusion/build-practice-scenarios/add-filter-basic-scenario.md)
    * [기본 시나리오에 웹후크 추가](/help/workfront-fusion/build-practice-scenarios/add-a-webhook-to-basic-scenario.md)
-* 템플릿 {#create-and-manage-templates} 만들기 및 관리
+* 템플릿 만들기 및 관리 {#create-and-manage-templates}
    * [템플릿 만들기 및 관리](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md)
    * [새 템플릿 만들기](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md)
    * [템플릿을 사용하여 시나리오 만들기](/help/workfront-fusion/create-and-manage-templates/create-scenarios-with-fusion-templates.md)
@@ -240,7 +241,7 @@ ht-degree: 2%
    * [템플릿 게시 및 공유](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)
    * [현재 사용 가능한 Adobe Workfront Fusion 템플릿](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md)
    * [[!DNL Adobe Workfront Fusion]개 템플릿 FAQ](/help/workfront-fusion/create-and-manage-templates/fusion-templates-faqs.md)
-* 참조: {#references}
+* 참조 {#references}
    * [참조](/help/workfront-fusion/references/references-toc.md)
    * 라이선스 및 역할 {#licenses-and-roles}
       * [라이선스 및 역할 참조: 문서 색인](/help/workfront-fusion/references/licenses-and-roles/licenses-and-roles-index.md)
@@ -261,7 +262,7 @@ ht-degree: 2%
       * [키](/help/workfront-fusion/references/modules/keys.md)
    * 매핑 패널 {#mapping-panel}
       * [매핑 패널](/help/workfront-fusion/references/mapping-panel/mapping-panel-toc.md)
-      * 데이터 형식 {#data-types}
+      * 데이터 유형 {#data-types}
          * [데이터 유형](/help/workfront-fusion/references/mapping-panel/data-types/data-types-toc.md)
          * [항목 데이터 유형](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)
          * [문자 강제 변환](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md)
@@ -276,7 +277,7 @@ ht-degree: 2%
          * [수학 함수](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md)
          * [수학 변수](/help/workfront-fusion/references/mapping-panel/functions/math-variables.md)
          * [배열 함수](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md)
-   * 오류 {#errors}
+   * 오류수 {#errors}
       * [오류수](/help/workfront-fusion/references/errors/errors-toc.md)
       * [오류 처리를 위한 지시문](/help/workfront-fusion/references/errors/directives-for-error-handling.md)
       * [오류 유형](/help/workfront-fusion/references/errors/error-processing.md)
@@ -285,7 +286,7 @@ ht-degree: 2%
       * [연결 메타데이터](/help/workfront-fusion/references/connections/connection-metadata.md)
    * 앱 및 해당 모듈 {#apps-and-their-modules}
       * [앱 및 해당 모듈](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)
-      * 유니버설 커넥터 {#universal-connectors}
+      * 범용 커넥터 {#universal-connectors}
          * [HTTP > [!UICONTROL 요청] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
          * [[!UICONTROL HTTP] > [!UICONTROL 기본 권한 부여 요청 만들기] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
          * [[!UICONTROL HTTP] > [!UICONTROL OAuth 2.0 요청 만들기] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
@@ -320,7 +321,7 @@ ht-degree: 2%
          * [Adobe Workfront Planning 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
          * [Workfront 보드 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
          * [Workfront Proof 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-proof-modules.md)
-      * 타사 응용 프로그램 {#third-party-app-connectors}용 커넥터
+      * 서드파티 애플리케이션용 커넥터 {#third-party-app-connectors}
          * [에어테이블 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/airtable-modules.md)
          * [Allocadia 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/allocadia-modules.md)
          * [Anaplan 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/anaplan-modules.md)
@@ -372,7 +373,7 @@ ht-degree: 2%
          * [Trello 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)
          * [모듈 확장](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/widen-modules.md)
          * [Workday 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/workday-modules.md)
-      * 도구 및 변환기 {#tools-and-transformers}
+      * 도구와 변압기 {#tools-and-transformers}
          * [모듈 보관](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/archive-modules.md)
          * [CSV 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/csv.md)
          * [데이터 저장소 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md)

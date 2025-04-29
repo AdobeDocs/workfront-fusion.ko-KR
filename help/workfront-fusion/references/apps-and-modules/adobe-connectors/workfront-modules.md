@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion Adobe Workfront 커넥터를 사용하여 Wo
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 7287e0460318cf5328e703af7ecc948b1ce62257
+source-git-commit: 6fa7ab493112351d9480b21b23b3b6b7b14f2230
 workflow-type: tm+mt
-source-wordcount: '7795'
+source-wordcount: '7823'
 ht-degree: 2%
 
 ---
@@ -973,7 +973,7 @@ Workfront은 최근 새로운 버전의 이벤트 구독 서비스를 발표했�
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!DNL Attach Custom Form]</td> 
-   <td>새 레코드에 첨부할 사용자 정의 양식을 선택합니다. 양식을 선택한 후 해당 양식의 필드에 대한 데이터를 입력합니다.</td> 
+   <td>새 레코드에 대한 필드 값을 제공할 사용자 정의 양식을 선택합니다. 양식을 선택한 후 해당 양식의 필드에 대한 데이터를 입력합니다.<p> 이 모듈에서 첨부할 양식의 필드 값을 제공하려면 매핑할 필드 섹션에 사용자 정의 양식 ID를 포함하십시오.</td> 
   </tr> 
  </tbody> 
 </table>

@@ -99,7 +99,7 @@ Adobe Experience Manager Assets 커넥터는 다음을 사용합니다.
 
      이 구성에는 [!DNL Adobe Admin Console]의 정보가 필요합니다.
 
-   * **[!DNL AEM Assets Basic]([!DNL Adobe Managed Services])**
+   * **[!DNL AEM Assets Basic] ([!DNL Adobe Managed Services])**
 
      이 구성에는 사용자 이름과 암호가 필요합니다.
 

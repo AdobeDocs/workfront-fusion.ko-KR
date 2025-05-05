@@ -297,15 +297,15 @@ Slack 커넥터는 다음을 사용합니다.
    <td>이 모듈 연결에 사용되는 신임 정보를 소유하는 사용자 메시지를 업데이트하려면 이 옵션을 사용하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! UICONTROL 첨부 파일]</td> 
+   <td role="rowheader">[!UICONTROL 첨부 파일]</td> 
    <td>메시지에 첨부할 각 항목에 대해 항목</b> 추가를 클릭하고 <b>항목의 세부 정보를 입력합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[! UICONTROL 링크 이름]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 링크 이름]</p> </td> 
    <td> <p>이 옵션을 활성화하여 이름 및 채널의 사용 <code>@username</code> 또는 포맷 지정을 <code>#channel</code> 허용합니다. </p> <p>자세한 내용은 설명서에서 앱 화면에</a> 대한 텍스트 서식 지정을 [!DNL Slack] 참조하세요<a href="https://api.slack.com/docs/formatting">.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[! UICONTROL 구문 분석 메시지 텍스트]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 구문 분석 메시지 텍스트]</p> </td> 
    <td> <p>자동 구문 분석을 허용하려면 이 옵션을 활성화하십시오. </p> <p> 자세한 내용은 [!DNL Slack] 설명서에서 <a href="https://api.slack.com/docs/formatting">앱 표면에 대한 텍스트 서식 지정</a>을 참조하십시오.</p> <p>참고: 원래 메시지에서 [!UICONTROL 링크 이름] 또는 [!UICONTROL 구문 분석 메시지 텍스트] 옵션을 사용한 경우 메시지 업데이트 모듈을 실행할 때도 이 옵션을 지정해야 합니다.</p> </td> 
   </tr> 
  </tbody> 
@@ -420,19 +420,19 @@ Slack 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[! UICONTROL 연결] </td> 
+   <td role="rowheader">[!UICONTROL 연결] </td> 
    <td> <p>계정 연결 [!DNL Slack] 방법에 [!DNL Workfront Fusion]대한 자세한 내용은 에 대한 연결 [!DNL Adobe Workfront Fusion] 만들기 - 기본 지침을</a> 참조하세요<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">.</p> </td> 
   </tr> 
 <tr> 
-   <td role="rowheader"> <p>[! UICONTROL 채널 ID 또는 이름 입력]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 채널 ID 또는 이름 입력]</p> </td> 
    <td> <p>할 메시지를 선택하는 방법을 선택합니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p><strong>[!UICONTROL 채널 ID 또는 이름]</strong> 필드에 사용자를 나열할 채널의 채널 ID 또는 를 입력하거나 매핑합니다.</p> <p>참고: 채널 ID는 [!UICONTROL 목록 채널] 모듈을 사용하여 검색할 수 있습니다.</p> </li> 
-     <li> <p><strong>[! UICONTROL 목록에서 선택]</strong> </p> <p>채널 유형을 선택한 다음 채널을 선택합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 목록에서 선택]</strong> </p> <p>채널 유형을 선택한 다음 채널을 선택합니다.</p> </li> 
     </ul> </td> 
   </tr>
   <tr> 
-   <td role="rowheader">[! UICONTROL 제한] </td> 
+   <td role="rowheader">[!UICONTROL 제한] </td> 
    <td> <p>한 실행 주기 동안 반환되는 최대 멤버 [!DNL Workfront Fusion] 수를 설정합니다.</p> </td> 
   </tr> 
  </tbody> 
@@ -450,11 +450,11 @@ Slack 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[! UICONTROL 연결] </td> 
+   <td role="rowheader">[!UICONTROL 연결] </td> 
    <td> <p>계정 연결 [!DNL Slack] 방법에 [!DNL Workfront Fusion]대한 자세한 내용은 에 대한 연결 [!DNL Adobe Workfront Fusion] 만들기 - 기본 지침을</a> 참조하세요<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! UICONTROL URL]</td> 
+   <td role="rowheader">[!UICONTROL URL]</td> 
    <td>에 상대 <code>https://slack.com/api/</code>적인 경로를 입력합니다. 예: <code>/users/identity</code>.</td> 
   </tr> 
   <tr> 

@@ -91,5 +91,5 @@ ht-degree: 1%
 1. 잠긴 시나리오의 시나리오 세부 정보 페이지로 이동합니다.
 1. 화면 오른쪽 상단의 **[!UICONTROL Options]**&#x200B;을(를) 클릭합니다.
 1. **[!UICONTROL Unlock execution]**&#x200B;을(를) 선택합니다.
-1. **[!UICONTROL Unlock]**을(를) 클릭합니다.
+1. **[!UICONTROL Unlock]**&#x200B;을(를) 클릭합니다.
    ![시나리오 잠금 해제](assets/unlock-scenario.png)

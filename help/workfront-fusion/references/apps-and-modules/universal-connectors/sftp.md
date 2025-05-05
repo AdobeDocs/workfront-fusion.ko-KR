@@ -193,7 +193,7 @@ SFTP 계정을 [!DNL Workfront Fusion]에 연결하려면 대상 호스트 및 S
 
 >[!NOTE]
 >
->폴더가 이미 있으면 모듈에서 오류가 발생합니다. 흐름을 중단하지 않고 계속하려면 모듈에 오류 처리기 경로를 연결하여 오류를 catch하고 [!UICONTROL Resume] 지시문을 사용하여 흐름을 계속하십시오. 오류 처리기 경로를 연결하는 방법에 대한 자세한 내용은 [오류 처리 위치 [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md)를 참조하십시오. 오류 처리기 경로에 대한 자세한 내용은  [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/errors/directives-for-error-handling.md)의 오류 처리에 대한 [지시문을 참조하십시오.
+>폴더가 이미 있으면 모듈에서 오류가 발생합니다. 흐름을 중단하지 않고 계속하려면 모듈에 오류 처리기 경로를 연결하여 오류를 catch하고 [!UICONTROL Resume] 지시문을 사용하여 흐름을 계속하십시오. 오류 처리기 경로를 연결하는 방법에 대한 자세한 내용은 [오류 처리 위치 [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md)를 참조하십시오. 오류 처리기 경로에 대한 자세한 내용은  [!DNL Adobe Workfront Fusion][&#128279;](/help/workfront-fusion/references/errors/directives-for-error-handling.md)의 오류 처리에 대한 지시문을 참조하십시오.
 
 <table style="table-layout:auto"> 
  <col> 

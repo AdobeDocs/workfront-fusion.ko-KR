@@ -74,7 +74,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL GitHub Flavored Markdown] </td> 
-   <td> <p>HTML을 [!DNL GitHub Flavored Markdown](으)로 변환하려면 이 옵션을 활성화하십시오.</p> <p>자세한 내용은 [!DNL GitHub] 설명서에서 Markdown 치트시트를 참조하십시오.</p> </td> 
+   <td> <p>HTML을 [!DNL GitHub Flavored Markdown] (으)로 변환하려면 이 옵션을 활성화하십시오.</p> <p>자세한 내용은 [!DNL GitHub] 설명서에서 Markdown 치트시트를 참조하십시오.</p> </td> 
   </tr> 
  </tbody> 
 </table>

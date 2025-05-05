@@ -41,7 +41,7 @@ ht-degree: 0%
    >
    >왼쪽 탐색 패널이나 해당 아이콘이 보이지 않으면 메뉴 ![메뉴](assets/main-menu-icon-left-nav.png) 아이콘을 클릭합니다.
 
-1. (선택 사항)[!UICONTROL **폴더**] 패널에서 **[!UICONTROL Add folder]** 아이콘 ![폴더 추가 아이콘](assets/add-folder-icon.png)을 클릭한 다음 첫 번째 폴더의 이름을 &quot;연습 시나리오&quot;와 같이 입력합니다.
+1. (선택 사항) [!UICONTROL **폴더**] 패널에서 **[!UICONTROL Add folder]** 아이콘 ![폴더 추가 아이콘](assets/add-folder-icon.png)을 클릭한 다음 첫 번째 폴더의 이름을 &quot;연습 시나리오&quot;와 같이 입력합니다.
 
 1. (선택 사항) 폴더를 연 다음 페이지의 오른쪽 상단에 있는 **[!UICONTROL Create a new scenario]**&#x200B;을(를) 클릭합니다.
 
@@ -105,7 +105,7 @@ Google, Microsoft 또는 전용 커넥터가 없는 응용 프로그램과 관�
 1. 시나리오 실행이 끝나면 각 모듈 위의 실행 검사기 버블을 클릭하여 정보 입력과 해당 모듈의 출력을 확인합니다.
 
    * 시나리오 실행 정보를 읽는 방법에 대한 일반 정보는 [시나리오 실행 흐름](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md)을 참조하십시오.
-   * 처리된 번들에 대한 자세한 내용은  [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md)의 [시나리오 실행, 주기 및 단계를 참조하십시오.
+   * 처리된 번들에 대한 자세한 내용은  [!DNL Adobe Workfront Fusion][&#128279;](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md)의 시나리오 실행, 주기 및 단계를 참조하십시오.
 
 1. [!DNL Workfront Fusion]에서 왼쪽 아래 모서리 근처에 있는 **[!UICONTROL Save]** ![저장 아이콘](assets/save-icon.png)을 클릭하여 시나리오에 대한 진행률을 저장합니다.
 

@@ -69,7 +69,7 @@ ht-degree: 0%
 * [ [!DNL Google Workspace]을(를) 사용하여  [!DNL Gmail] to [!DNL Workfront Fusion] 연결](#connect-gmail-to-workfront-fusion-usinggoogle-workspace)
 * [ [!DNL Gmail] to [!DNL Workfront Fusion] using [!DNL gmail.com] or [!DNL googlemail].com 연결](#connect-gmail-to-workfront-fusion-using-gmailcom-or-googlemailcom)
 
-### [!DNL  Google Workspace]을(를) 사용하여 [!DNL Gmail]을(를) [!DNL Workfront Fusion]에 연결
+### [!DNL &#x200B; Google Workspace]을(를) 사용하여 [!DNL Gmail]을(를) [!DNL Workfront Fusion]에 연결
 
 [!DNL Google Workspace] 계정을 [!UICONTROL Workfront Fusion]에 연결하는 방법에 대한 지침은 [연결 만들기 - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)을 참조하십시오.
 

@@ -645,7 +645,7 @@ Adobe Workfront Fusion에는 Adobe Workfront 라이센스 외에 Adobe Workfront
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>새 연결을 만들려면 이 문서에서 Workfront Fusion에 대한 <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab]</a>을(를) 참조하십시오.</td> 
+   <td>새 연결을 만들려면 이 문서에서 Workfront Fusion에 대한 <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">Connect [!DNL GitLab]</a>을(를) 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project]</td> 
@@ -782,7 +782,7 @@ Adobe Workfront Fusion에는 Adobe Workfront 라이센스 외에 Adobe Workfront
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>새 연결을 만들려면 이 문서에서 Workfront Fusion에 대한 <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab]</a>을(를) 참조하십시오.</td> 
+   <td>새 연결을 만들려면 이 문서에서 Workfront Fusion에 대한 <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">Connect [!DNL GitLab]</a>을(를) 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project ID]</td> 
@@ -1015,7 +1015,7 @@ Adobe Workfront Fusion에는 Adobe Workfront 라이센스 외에 Adobe Workfront
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>새 연결을 만들려면 이 문서에서 Workfront Fusion에 대한 <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab]</a>을(를) 참조하십시오.</td> 
+   <td>새 연결을 만들려면 이 문서에서 Workfront Fusion에 대한 <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">Connect [!DNL GitLab]</a>을(를) 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project ID]</td> 

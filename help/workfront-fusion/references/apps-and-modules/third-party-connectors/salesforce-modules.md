@@ -454,7 +454,7 @@ Salesforce 커넥터는 다음을 사용합니다.
      <ul> 
       <li>[!UICONTROL 첨부 파일]</li> 
       <li>[!UICONTROL 문서]</li> 
-      <li>[!UICONTROL ContentDocument]([!DNL Saleforce CRM Content] 또는 [!DNL Salesforce Files]의 라이브러리에 업로드된 문서임)</li> 
+      <li>[!UICONTROL ContentDocument] ([!DNL Saleforce CRM Content] 또는 [!DNL Salesforce Files]의 라이브러리에 업로드된 문서임)</li> 
      </ul> </td>
   </tr> 
   <tr>
@@ -577,7 +577,7 @@ Salesforce 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Salesforce] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">연결 만들기[!DNL  Adobe Workfront Fusion] - 기본 지침</a>을 참조하세요.</td> 
+   <td>[!DNL Salesforce] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">연결 만들기[!DNL &#x200B; Adobe Workfront Fusion] - 기본 지침</a>을 참조하세요.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source 파일]</td> 
@@ -617,7 +617,7 @@ Salesforce 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Salesforce] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">연결 만들기[!DNL  Adobe Workfront Fusion] - 기본 지침</a>을 참조하세요.</td> 
+   <td>[!DNL Salesforce] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">연결 만들기[!DNL &#x200B; Adobe Workfront Fusion] - 기본 지침</a>을 참조하세요.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 유형]</td> 

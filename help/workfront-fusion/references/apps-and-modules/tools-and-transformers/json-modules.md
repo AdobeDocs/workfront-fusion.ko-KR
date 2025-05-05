@@ -73,7 +73,7 @@ ht-degree: 0%
 1. 수동으로 시나리오를 실행합니다. 이렇게 하면 [!UICONTROL JSON 구문 분석] 모듈이 제공한 JSON에서 JSON 구조를 식별할 수 있습니다.
 1. 이제 다음 모듈을 연결할 수 있습니다. 이제 JSON 구문 분석 모듈의 항목을 매핑에 사용할 수 있습니다.
 
-자세한 내용은 [!UICONTROL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)의 [데이터 구조를 참조하십시오.
+자세한 내용은 [!UICONTROL Adobe Workfront Fusion][&#128279;](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)의 데이터 구조를 참조하십시오.
 
 ### 컬렉션과 배열 비교
 

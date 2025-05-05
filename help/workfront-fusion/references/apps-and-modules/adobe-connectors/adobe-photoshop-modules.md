@@ -59,7 +59,7 @@ ht-degree: 0%
 
 &#42;플랜, 라이선스 유형 또는 액세스 권한을 확인하려면 [!DNL Workfront] 관리자에게 문의하세요.
 
-&#42;&#42;[!DNL Adobe Workfront Fusion]개 라이선스에 대한 자세한 내용은 [!DNL [Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)을(를) 참조하세요.
+&#42;&#42;[!DNL Adobe Workfront Fusion]개 라이선스에 대한 자세한 내용은 [[!DNL [Adobe Workfront Fusion] licenses]](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)을(를) 참조하세요.
 
 +++
 

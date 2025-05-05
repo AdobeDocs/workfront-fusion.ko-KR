@@ -138,7 +138,7 @@ ht-degree: 0%
 "[object Object]","Abby Eisenbarth"
 ```
 
-항목 <code>전체 이름</code> 는 단순 텍스트 유형이며 예상대로 내보내집니다. 항목 <code>전자 메일</code>복잡한 형식의 컬렉션 배열인 를 [개체](으)로 내보냅니다. 이 개체는 기본적으로 컬렉션과 배열이 텍스트로 변환되는 방식입니다.
+항목 <code>전체 이름</code> 는 단순 텍스트 유형이며 예상대로 내보내집니다. 항목 <code>전자 메일</code>복잡한 형식의 컬렉션 배열인 를 [개체] (으)로 내보냅니다. 이 개체는 기본적으로 컬렉션과 배열이 텍스트로 변환되는 방식입니다.
 
 자세한 내용은 [항목 데이터 형식](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)을 참조하세요.
 
@@ -198,7 +198,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL CSV]</td> 
-   <td>구문 분석할 CSV 파일을 입력하거나 매핑합니다.<p>참고: <p>데이터가 이진 형식(일반적으로 파일에서)인 경우 'toString()' 함수를 사용하여 이진 데이터를 [!UICONTROL String](으)로 변환해야 합니다.</p><p><img src="/help/workfront-fusion/references/apps-and-modules/assets/parse-csv-350x123.png"></p></p></td> 
+   <td>구문 분석할 CSV 파일을 입력하거나 매핑합니다.<p>참고: <p>데이터가 이진 형식(일반적으로 파일에서)인 경우 'toString()' 함수를 사용하여 이진 데이터를 [!UICONTROL String] (으)로 변환해야 합니다.</p><p><img src="/help/workfront-fusion/references/apps-and-modules/assets/parse-csv-350x123.png"></p></p></td> 
   </tr> 
  </tbody> 
 </table>

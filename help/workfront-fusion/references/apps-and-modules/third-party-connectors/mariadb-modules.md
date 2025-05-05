@@ -99,7 +99,7 @@ ht-degree: 0%
       <td>기본 포트는 3306입니다. 비표준 포트를 사용하는 경우 이 번호를 포트로 설정합니다. </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 데이터베이스 ]</td> 
+      <td role="rowheader">[!UICONTROL 데이터베이스 &#x200B;]</td> 
       <td>상호 작용할 데이터베이스의 이름을 입력합니다.</td> 
      </tr> 
      <tr> 

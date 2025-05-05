@@ -99,4 +99,4 @@ ht-degree: 1%
   자세한 내용은 [Fusion 성능 보호](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md#scenarios)를 참조하십시오.
 * Workfront 인스턴트 트리거 모듈을 사용하는 경우 필터링해야 합니다.
 
-  자세한 내용은  [!DNL Workfront] > [!UICONTROL Watch Events] 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules)에서 [이벤트 구독 필터를 참조하십시오.
+  자세한 내용은  [!DNL Workfront] > [!UICONTROL Watch Events] 모듈[&#128279;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules)에서 이벤트 구독 필터를 참조하십시오.

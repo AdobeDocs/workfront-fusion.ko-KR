@@ -120,7 +120,7 @@ ht-degree: 0%
 
 ## [!UICONTROL 라우터]
 
-[!UICONTROL 라우터] 모듈을 사용하면 흐름을 여러 경로로 분기하고 각 경로 내의 데이터를 다르게 처리할 수 있습니다. [!UICONTROL Router] 모듈이 번들을 받으면, [!UICONTROL Router] 모듈에 경로가 첨부된 순서대로 연결된 각 경로로 전달합니다. 자세한 내용은  [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)의 [라우터 모듈을 참조하십시오.
+[!UICONTROL 라우터] 모듈을 사용하면 흐름을 여러 경로로 분기하고 각 경로 내의 데이터를 다르게 처리할 수 있습니다. [!UICONTROL Router] 모듈이 번들을 받으면, [!UICONTROL Router] 모듈에 경로가 첨부된 순서대로 연결된 각 경로로 전달합니다. 자세한 내용은  [!DNL Adobe Workfront Fusion][&#128279;](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)의 라우터 모듈을 참조하십시오.
 
 ## 지시문
 

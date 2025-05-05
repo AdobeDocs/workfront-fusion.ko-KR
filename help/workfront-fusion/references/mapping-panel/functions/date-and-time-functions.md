@@ -139,7 +139,7 @@ ht-degree: 1%
 
 0에서 59 사이의 숫자를 지정하십시오. 숫자가 해당 범위를 벗어나면 함수는 이전 분 (음수) 또는 이후 분 (양수)에서 1초를 반환합니다.
 
-범위 밖의 숫자를 지정해야 하는 경우 [addSeconds(날짜; 숫자)](#addseconds-date-number) 섹션에 설명된 대로 [!UICONTROL  addSeconds]을 사용하는 것이 좋습니다.
+범위 밖의 숫자를 지정해야 하는 경우 [addSeconds(날짜; 숫자)](#addseconds-date-number) 섹션에 설명된 대로 [!UICONTROL &#x200B; addSeconds]을 사용하는 것이 좋습니다.
 
 >[!BEGINSHADEBOX]
 

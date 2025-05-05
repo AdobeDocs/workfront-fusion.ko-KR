@@ -25,7 +25,7 @@ ht-degree: 1%
 
 불완전한 실행에 대한 자세한 내용은 [Adobe Workfront Fusion에서 불완전한 실행 보기 및 해결](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)을 참조하십시오.
 
-오류 처리 지시문에 대한 자세한 내용은  [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/errors/directives-for-error-handling.md)의 오류 처리에 대한 [지시문을 참조하십시오.
+오류 처리 지시문에 대한 자세한 내용은  [!DNL Adobe Workfront Fusion][&#128279;](/help/workfront-fusion/references/errors/directives-for-error-handling.md)의 오류 처리에 대한 지시문을 참조하십시오.
 
 ## 액세스 요구 사항
 

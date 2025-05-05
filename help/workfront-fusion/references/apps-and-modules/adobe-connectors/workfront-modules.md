@@ -206,7 +206,7 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
 
 웹후크가 생성되면 이벤트를 전송할 엔드포인트의 주소를 볼 수 있습니다.
 
-자세한 내용은 Workfront 설명서의 이벤트 구독 API 문서에서 [이벤트 페이로드의 예](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) 섹션을 참조하십시오.
+자세한 내용은 Workfront 설명서의 이벤트 구독 API 문서에서 [이벤트 페이로드의 예](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) 섹션을 참조하십시오.
 
 각 Workfront 모듈에 사용할 수 있는 [Workfront 개체 유형](#workfront-object-types-available-for-each-workfront-module)에서 이 모듈을 사용할 수 있는 Workfront 개체 유형 목록을 참조하십시오.
 
@@ -644,7 +644,7 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
       </ul> <p>다른 모든 레코드 형식의 경우 <b>[!UICONTROL Other objects and endpoints]</b>을(를) 선택하고 알파벳순으로 정렬된 페이지에서 레코드 형식을 찾습니다.</p> </li> 
      <li value="2"> <p>적절한 레코드 종류의 페이지에서 작업을 검색(Ctrl-F 또는 Cmd-F)합니다.</p> </li> 
      <li value="3"> <p>선택한 작업 아래의 사용 가능한 필드에 대한 설명을 봅니다.</p> </li> 
-    </ol> <p>참고:  <p>Workfront [!UICONTROL 기타 작업] 모듈을 통해 증명을 만들 때 가장 좋은 방법은 고급 옵션 없이 증명을 만든 다음 [!DNL Workfront Proof] SOAP API를 사용하여 증명을 업데이트하는 것입니다.</p><p>이 모듈에서 사용하는 Workfront API를 사용하여 증명을 만드는 방법에 대한 자세한 내용은 <a href="https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Adobe Workfront API를 통해 증명을 만들 때 고급 증명 옵션 추가</a>를 참조하십시오.</p> </p> </td> 
+    </ol> <p>참고:  <p>Workfront [!UICONTROL 기타 작업] 모듈을 통해 증명을 만들 때 가장 좋은 방법은 고급 옵션 없이 증명을 만든 다음 [!DNL Workfront Proof] SOAP API를 사용하여 증명을 업데이트하는 것입니다.</p><p>이 모듈에서 사용하는 Workfront API를 사용하여 증명을 만드는 방법에 대한 자세한 내용은 <a href="https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Adobe Workfront API를 통해 증명을 만들 때 고급 증명 옵션 추가</a>를 참조하십시오.</p> </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
@@ -918,7 +918,7 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
 
 Workfront은 최근 새로운 버전의 이벤트 구독 서비스를 발표했습니다. 새 버전은 Workfront API가 아니라 이벤트 구독 기능이 변경되었습니다. 이 작업 모듈은 이 시나리오에 사용되는 이벤트 페이로드 버전을 업데이트합니다.
 
-새 이벤트 구독 버전에 대한 자세한 내용은 Workfront 설명서에서 [이벤트 구독 버전 관리](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)를 참조하십시오
+새 이벤트 구독 버전에 대한 자세한 내용은 Workfront 설명서에서 [이벤트 구독 버전 관리](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)를 참조하십시오
 
 <table style="table-layout:auto">
  <col> 
@@ -2282,7 +2282,7 @@ Workfront > 이벤트 보기 필터에서 다음 연산자를 사용할 수 있�
 >
 >하루에 100개의 문제가 만들어지지만 이 중 두 개의 문제만 Ana에 할당되면 시나리오는 100번 실행됩니다. 98개의 실행이 필터에서 중지되지만 트리거 모듈은 여전히 데이터를 소비하고 모든 실행에서 작업을 수행합니다.
 
-Workfront 이벤트 구독에 대한 자세한 내용은 [FAQ - 이벤트 구독](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq)을 참조하십시오.
+Workfront 이벤트 구독에 대한 자세한 내용은 [FAQ - 이벤트 구독](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq)을 참조하십시오.
 
 웹후크에 대한 자세한 내용은 Adobe Workfront Fusion의 [인스턴트 트리거(웹후크)](/help/workfront-fusion/references/modules/webhooks-reference.md)를 참조하십시오.
 

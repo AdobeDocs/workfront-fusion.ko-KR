@@ -34,7 +34,7 @@ Adobe Workfront Fusion 설명서 방법 문서에는 해당 절차에 필요한 
    <td role="rowheader">Adobe Workfront 패키지 
    <td> Adobe Workfront 패키지는 조직이 구입한 기능 집합을 참조합니다. 대부분의 Fusion 기능은 모든 계획에서 사용할 수 있지만 Ultimate Workfront 패키지가 있는 조직에서만 사용할 수 있는 몇 가지 예외가 있습니다. 
    <ul><li>조직이 새 패키징 모델 또는 현재 패키징 모델에 있는지 여부를 포함하여 조직이 사용하는 Adobe Workfront 패키지를 확인하려면 Workfront 관리자에게 문의하십시오.</li>
-   <li>Workfront 관리자가 조직의 Workfront 패키지를 찾는 방법에 대한 지침은 Workfront 설명서에서 <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan">조직의 클러스터 및 Workfront 계획 보기</a>를 참조하십시오.</li><li>새 Workfront 패키지에 대한 자세한 내용은 <a href="https://business.adobe.com/products/workfront/pricing.html">Adobe Workfront 가격 및 패키징</a>을 참조하십시오.</li></ul> </td> 
+   <li>Workfront 관리자가 조직의 Workfront 패키지를 찾는 방법에 대한 지침은 Workfront 설명서에서 <a href="https://experienceleague.adobe.com/ko/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan">조직의 클러스터 및 Workfront 계획 보기</a>를 참조하십시오.</li><li>새 Workfront 패키지에 대한 자세한 내용은 <a href="https://business.adobe.com/products/workfront/pricing.html">Adobe Workfront 가격 및 패키징</a>을 참조하십시오.</li></ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront 라이선스</td> 
@@ -43,9 +43,9 @@ Adobe Workfront Fusion 설명서 방법 문서에는 해당 절차에 필요한 
    <li>할당된 라이선스를 확인하려면 Workfront 관리자에게 문의하십시오.</li>
    <li>Adobe Workfront은 새로운 가격 및 패키징 모델로 전환하고 있습니다. 라이센스에 대한 자세한 내용은 다음을 참조하십시오.
    <ul>
-   <li>새로 만들기: <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/access-levels/licenses-overview">새 라이선스 개요</a></li>
-   <li>현재: <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/legacy-access-levels/wf-licenses">라이선스 개요</a></li></ul></li>
-   <li>올바른 액세스 수준을 가지고 있지만 여전히 액세스 권한이 없는 경우 Workfront 관리자가 액세스 수준에서 추가 제한을 설정하는지 확인하십시오. Workfront 관리자가 액세스 수준을 수정하는 방법에 대한 자세한 내용은 <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan" class="MCXref xref">사용자 지정 액세스 수준 만들기 또는 수정</a>을 참조하십시오.
+   <li>새로 만들기: <a href="https://experienceleague.adobe.com/ko/docs/workfront/using/administration-and-setup/add-users/access-levels/licenses-overview">새 라이선스 개요</a></li>
+   <li>현재: <a href="https://experienceleague.adobe.com/ko/docs/workfront/using/administration-and-setup/add-users/legacy-access-levels/wf-licenses">라이선스 개요</a></li></ul></li>
+   <li>올바른 액세스 수준을 가지고 있지만 여전히 액세스 권한이 없는 경우 Workfront 관리자가 액세스 수준에서 추가 제한을 설정하는지 확인하십시오. Workfront 관리자가 액세스 수준을 수정하는 방법에 대한 자세한 내용은 <a href="https://experienceleague.adobe.com/ko/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan" class="MCXref xref">사용자 지정 액세스 수준 만들기 또는 수정</a>을 참조하십시오.
    </ul>
       </p> </td> 
   </tr> 

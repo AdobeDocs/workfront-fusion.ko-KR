@@ -70,7 +70,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 Adobe은 파일에 서명된 Adobe Gen AI 계약이 있어야 합니다.
 
-계약 서명에 대한 자세한 내용은 Workfront 설명서의 AI Assistant 개요에서 [Adobe Gen AI 계약 서명](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement)을 참조하십시오.
+계약 서명에 대한 자세한 내용은 Workfront 설명서의 AI Assistant 개요에서 [Adobe Gen AI 계약 서명](https://experienceleague.adobe.com/ko/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement)을 참조하십시오.
 
 ## AI Assistant에서 정보 가져오기
 

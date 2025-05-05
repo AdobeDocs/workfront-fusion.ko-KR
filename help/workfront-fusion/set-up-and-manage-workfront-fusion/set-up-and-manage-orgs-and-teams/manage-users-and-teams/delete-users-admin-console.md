@@ -70,7 +70,7 @@ ht-degree: 0%
 
 다른 Adobe 제품 권한을 그대로 유지하면서 Workfront Fusion에서 사용자를 제거할 수 있습니다.
 
-자세한 내용은 문서 [Admin Console에서 제품 관리](https://helpx.adobe.com/enterprise/using/manage-products.html)의 &quot;제품에서 사용자 및 사용자 그룹 제거&quot;를 참조하십시오.
+자세한 내용은 문서 [Admin Console에서 제품 관리](https://helpx.adobe.com/kr/enterprise/using/manage-products.html)의 &quot;제품에서 사용자 및 사용자 그룹 제거&quot;를 참조하십시오.
 
 ## [!DNL Adobe Admin Console]의 모든 제품에서 사용자 비활성화
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 * 사용자는 제품 프로필에서 제거되고 다른 제품 프로필에 할당되지 않습니다.
 * Workfront Fusion이 포함된 조직에서 사용자가 삭제되거나 비활성화됩니다.
 
-  지침은 [개별적으로 사용자 관리](https://helpx.adobe.com/enterprise/using/manage-users-individually.html)의 &quot;사용자 제거&quot; 섹션을 참조하십시오.
+  지침은 [개별적으로 사용자 관리](https://helpx.adobe.com/kr/enterprise/using/manage-users-individually.html)의 &quot;사용자 제거&quot; 섹션을 참조하십시오.
 
 [!DNL Workfront Fusion]에서 비활성화는 다음 방법 중 하나로 사용자에게 영향을 줍니다.
 

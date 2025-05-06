@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion SFTP] 모듈을 사용하면 선택�
 author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 26c599a9887ad931763b787813153bb7791ce5d1
 workflow-type: tm+mt
-source-wordcount: '2077'
+source-wordcount: '2121'
 ht-degree: 0%
 
 ---
@@ -193,7 +193,7 @@ SFTP 계정을 [!DNL Workfront Fusion]에 연결하려면 대상 호스트 및 S
 
 >[!NOTE]
 >
->폴더가 이미 있으면 모듈에서 오류가 발생합니다. 흐름을 중단하지 않고 계속하려면 모듈에 오류 처리기 경로를 연결하여 오류를 catch하고 [!UICONTROL Resume] 지시문을 사용하여 흐름을 계속하십시오. 오류 처리기 경로를 연결하는 방법에 대한 자세한 내용은 [오류 처리 위치 [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md)를 참조하십시오. 오류 처리기 경로에 대한 자세한 내용은  [!DNL Adobe Workfront Fusion][&#128279;](/help/workfront-fusion/references/errors/directives-for-error-handling.md)의 오류 처리에 대한 지시문을 참조하십시오.
+>폴더가 이미 있으면 모듈에서 오류가 발생합니다. 흐름을 중단하지 않고 계속하려면 모듈에 오류 처리기 경로를 연결하여 오류를 catch하고 [!UICONTROL Resume] 지시문을 사용하여 흐름을 계속하십시오. 오류 처리기 경로를 연결하는 방법에 대한 자세한 내용은 [오류 처리 위치 [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md)를 참조하십시오. 오류 처리기 경로에 대한 자세한 내용은  [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/errors/directives-for-error-handling.md)의 오류 처리에 대한 [지시문을 참조하십시오.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -449,6 +449,10 @@ SFTP 계정을 [!DNL Workfront Fusion]에 연결하려면 대상 호스트 및 S
   <tr> 
    <td> <p>[!UICONTROL 권한]</p> </td> 
    <td> <p>파일 또는 폴더에 대해 원하는 권한을 설정합니다. chmod 매개 변수를 사용합니다. 예: <code>777</code> 또는 <code>-rwxrwxrwx</code>.</p> <p>이러한 권한은 패턴과 일치해야 합니다. <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>chmod에 대한 자세한 내용은 <a href="https://ss64.com/bash/chmod.html">chmod 설명서</a>를 참조하세요.</p> </td> 
+  </tr> 
+  <tr> 
+   <td> <p>[!UICONTROL 버퍼 크기(B)]</p> </td> 
+   <td> <p>파일을 업로드할 때 각 청크의 크기(바이트)를 설정합니다. 이 기능은 대용량 파일에 유용하며, 서버 메모리 제한에 더 작은 업로드가 필요한 경우에 유용합니다. 이 값을 설정하지 않으면 파일이 한 번의 작업으로 작성됩니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>

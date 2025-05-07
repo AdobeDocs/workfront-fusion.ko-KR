@@ -4,9 +4,9 @@ description: Adobe I/O Events 모듈을 사용하면 Adobe 애플리케이션의
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 983ce043afbcc44ee8af2dfcd46738f170a2b257
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '969'
 ht-degree: 1%
 
 ---
@@ -104,6 +104,12 @@ Adobe I/O Events 모듈에 대한 연결을 만들려면 다음 작업을 수행
         </td>
       </tr>
       <tr>
+        <td role="rowheader">환경</td>
+        <td>
+          <p>프로덕션 환경에 연결할지 아니면 비프로덕션 환경에 연결할지 선택합니다.</p>
+        </td>
+      </tr>
+      <tr>
         <td role="rowheader">유형</td>
         <td>
           <p>서비스 계정에 연결할지 개인 계정에 연결할지 선택합니다.</p>
@@ -160,6 +166,8 @@ Adobe I/O Events 모듈에 대한 연결을 만들려면 다음 작업을 수행
 * [검색 결과](#searches)
 
 ### 트리거
+
+<!--Becky start here-->
 
 #### 이벤트 등록 만들기
 

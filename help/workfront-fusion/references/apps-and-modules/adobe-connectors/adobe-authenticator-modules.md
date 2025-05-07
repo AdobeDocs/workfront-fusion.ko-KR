@@ -4,9 +4,9 @@ description: Adobe Authenticator 모듈을 사용하면 단일 연결을 사용�
 author: Becky
 feature: Workfront Fusion
 exl-id: af4da661-eeee-4033-a2bb-a2196e446a3d
-source-git-commit: 7652acb6654f4b1b0edc57d110478b309655a124
+source-git-commit: 983ce043afbcc44ee8af2dfcd46738f170a2b257
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1195'
 ht-degree: 1%
 
 ---
@@ -21,40 +21,46 @@ HTTP 모듈에 대한 이점은 전용 앱에서와 같이 연결을 만들 수 
 
 ## 액세스 요구 사항
 
-<table>
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] 패키지</td>
-      <td>
-        <p>새로 만들기: 모두</p><p>또는</p><p>현재: [!UICONTROL Pro] 이상</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] 라이센스</td>
-      <td>
-        <p>새로운 기능: 표준</p><p>또는</p><p>현재: [!UICONTROL Plan], [!UICONTROL Work]</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스</td>
-      <td>
-   <p>현재 Fusion 라이선스 요구 사항: [!DNL Workfront Fusion] 라이선스 요구 사항이 없습니다.</p>
++++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
+
+이 문서의 기능을 사용하려면 다음 액세스 권한이 있어야 합니다.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront 패키지</td> 
+   <td> <p>임의</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront 라이선스</td> 
+   <td> <p>새로운 기능: 표준</p><p>또는</p><p>현재: 작업 시간 이상</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
+   <td>
+   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
    <p>또는</p>
-   <p>레거시 Fusion 라이선스 요구 사항: 작업 자동화 및 통합을 위한 [!UICONTROL [!DNL Workfront Fusion]] </p>
-   </td>
-    </tr>
-    <tr>
-      <td role="rowheader">제품</td>
-      <td>
-   <p>새 Workfront 플랜: [!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Adobe Workfront] 플랜이 있는 경우 조직에서 이 문서에 설명된 기능을 사용하려면 [!DNL Adobe Workfront Fusion]과(와) [!DNL Adobe Workfront]을(를) 구매해야 합니다. [!DNL Workfront Fusion]이(가) [!UICONTROL Ultimate] [!DNL Workfront] 계획에 포함되어 있습니다.</p>
+   <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">제품</td> 
+   <td>
+   <p>신규:</p> <ul><li>또는 Prime Workfront 패키지 선택: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</li><li>Ultimate Workfront 패키지: Workfront Fusion이 포함됩니다.</li></ul>
    <p>또는</p>
-   <p>현재 Workfront 플랜: 이 문서에 설명된 기능을 사용하려면 조직에서 [!DNL Adobe Workfront Fusion]과(와) [!DNL Adobe Workfront]을(를) 구매해야 합니다.</p>
-   </td>
-    </tr>
-  </tbody>
+   <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
+   </td> 
+  </tr>
+ </tbody> 
 </table>
+
+이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+
+[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+
++++
 
 ## 전제 조건
 
@@ -110,7 +116,7 @@ Adobe Authenticator 연결은 Adobe Developer Console의 단일 프로젝트에 
       <tr>
         <td role="rowheader">[!UICONTROL 연결 유형]</td>
         <td>
-          <p>OAuth 서버 간 연결을 만들지 서비스 계정(JWT) 연결을 만들지 선택합니다.</p>
+          <p>OAuth 서버 간 연결을 만들지 서비스 계정(JWT) 연결을 만들지 선택합니다. OAuth 연결을 만드는 것이 좋습니다.</p>
         </td>
       </tr>
       <tr>
@@ -133,7 +139,7 @@ Adobe Authenticator 연결은 Adobe Developer Console의 단일 프로젝트에 
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL 기술 계정 ID]</td>
-        <td>[!DNL Adobe] 기술 계정 ID를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.
+        <td>JWT 연결을 선택한 경우 [!DNL Adobe] 기술 계정 ID를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL 조직 ID]</td>
@@ -174,14 +180,6 @@ Adobe Authenticator 연결은 Adobe Developer Console의 단일 프로젝트에 
       <tr>
         <td role="rowheader">[!UICONTROL 인증 URL]</td>
         <td><code>https://ims-na1.adobelogin.com</code>의 표준 Adobe IMS 인증 URL을 사용하려면 비워 두십시오. 인증에 Adobe IMS를 사용하지 않는 경우 인증에 사용할 URL을 입력합니다.</td>
-      </tr>
-      <tr>
-        <td role="rowheader">[!UICONTROL 환경]</td>
-        <td>프로덕션 환경에 연결할지 아니면 비프로덕션 환경에 연결할지 선택합니다.</td>
-      </tr>
-      <tr>
-        <td role="rowheader">[!UICONTROL 유형]</td>
-        <td>서비스 계정에 연결할지 또는 개인 계정에 연결할지 선택합니다.</td>
       </tr>
     </tbody>
     </table>
@@ -253,18 +251,6 @@ Adobe Authenticator 연결은 Adobe Developer Console의 단일 프로젝트에 
       </td>
       </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 요청 컨텐츠]  </td>
-      <td>
-        <p>요청 내용을 입력합니다. 이 옵션은 <code>Raw</code> 본문 유형을 선택한 경우 사용할 수 있습니다.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL 필드]  </td>
-      <td>
-        <p>API 요청에 추가하려는 각 파일에 대해 <b>항목 추가</b>를 클릭하고 원시 데이터의 경우 파일의 텍스트를 입력하거나, <code>uploadedFile</code> 키를 입력하고 파일의 데이터를 매핑하십시오. 이 옵션은 <code>application</code> 또는 <code>multipart</code> 본문 유형을 선택한 경우에 사용할 수 있습니다.</p>
-      </td>
-    </tr>
-    <tr>
       <td role="rowheader">[!UICONTROL 출력 유형]  </td>
       <td>
         <p>모듈에서 출력할 데이터 유형을 선택합니다. 유형을 선택하지 않으면 모듈에서 자동으로 유형을 선택합니다.</p>
@@ -326,11 +312,5 @@ Adobe Authenticator 연결은 Adobe Developer Console의 단일 프로젝트에 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"></p> 
      </div> </p> </td>     </tr>
-     <tr>
-      <td role="rowheader">[!UICONTROL 제한]  </td>
-      <td>
-        <p>한 실행 주기에서 모듈이 반환할 최대 결과 수를 입력합니다.</p>
-      </td>
-    </tr>
   </tbody>
 </table>

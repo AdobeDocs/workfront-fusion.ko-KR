@@ -4,9 +4,9 @@ description: Adobe I/O Events 모듈을 사용하면 Adobe 애플리케이션의
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: 983ce043afbcc44ee8af2dfcd46738f170a2b257
+source-git-commit: ef55cc62a0e0de70662440bc38d3eabbfe5e3c13
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '1077'
 ht-degree: 1%
 
 ---
@@ -221,9 +221,12 @@ Adobe I/O Events 모듈에 대한 연결을 만들려면 다음 작업을 수행
 
 ### 액션
 
-#### 저널에서 모든 이벤트 가져오기
+* [공급자 및 이벤트 ID 가져오기](#get-provider-and-event-ids)
+* [사용자 지정 API 호출 만들기](#make-a-custom-api-call)
 
-이 검색 모듈은 저널에서 등록에 대한 모든 이벤트를 검색합니다.
+#### 공급자 및 이벤트 ID 가져오기
+
+이 검색 모듈은 지정된 공급자 및 이벤트에 대한 Adobe I/O Events ID를 가져옵니다.
 
 <table>
      <col/>
@@ -235,44 +238,23 @@ Adobe I/O Events 모듈에 대한 연결을 만들려면 다음 작업을 수행
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL 등록 ID]
+           [!UICONTROL 이벤트 공급자]
          </td>
          <td>
-           이벤트를 검색할 등록을 선택합니다.
+           ID를 검색할 공급자를 선택합니다.
         </td>
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL 반환되는 최대 레코드 수]
+           [!UICONTROL 이벤트 유형]
          </td>
          <td>
-              각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다. 
-         </td>
-       </tr>
-       <tr>
-         <td role="rowheader">
-           [!UICONTROL 다음 시간 이후에 발생하는 이벤트 반환]
-         </td>
-         <td>
-         </td>
-       </tr>
-       <tr>
-         <td role="rowheader">
-           [!UICONTROL 찾기]
-         </td>
-         <td>
-         </td>
-       </tr>
-       <tr>
-         <td role="rowheader">
-           [!UICONTROL 최신]
-         </td>
-         <td>
-         최신 이벤트를 반환하려면 이 옵션을 활성화하십시오.
+              ID를 제공할 이벤트를 선택합니다. 이벤트는 이벤트 공급자를 기반으로 사용할 수 있습니다. 
          </td>
        </tr>
      </tbody>
    </table>
+
 
 #### 사용자 지정 API 호출 만들기
 
@@ -327,9 +309,9 @@ Adobe I/O Events 모듈에 대한 연결을 만들려면 다음 작업을 수행
 
 ### 검색 결과
 
-#### 공급자 및 이벤트 ID 가져오기
+#### 저널에서 모든 이벤트 가져오기
 
-이 검색 모듈은 지정된 공급자 및 이벤트에 대한 Adobe I/O Events ID를 가져옵니다.
+이 검색 모듈은 저널에서 등록에 대한 모든 이벤트를 검색합니다.
 
 <table>
      <col/>
@@ -341,28 +323,49 @@ Adobe I/O Events 모듈에 대한 연결을 만들려면 다음 작업을 수행
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL 이벤트 공급자]
+           [!UICONTROL 등록 ID]
          </td>
          <td>
-           ID를 검색할 공급자를 선택합니다.
+           이벤트를 검색할 등록을 선택합니다.
         </td>
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL 이벤트 유형]
+           [!UICONTROL 반환되는 최대 이벤트 수]
          </td>
          <td>
-              ID를 제공할 이벤트를 선택합니다. 이벤트는 이벤트 공급자를 기반으로 사용할 수 있습니다. 
+              각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다. 
+         </td>
+       </tr>
+       <tr>
+         <td role="rowheader">
+           [!UICONTROL 다음 시간 이후에 발생하는 이벤트 반환]
+         </td>
+         <td>날짜를 입력하거나 매핑합니다. 이 모듈은 이 날짜 이후에 발생한 이벤트를 반환합니다.
+         </td>
+       </tr>
+<!--       <tr>
+         <td role="rowheader">
+           [!UICONTROL Seek]
+         </td>
+         <td>
+         </td>
+       </tr>-->
+       <tr>
+         <td role="rowheader">
+           [!UICONTROL 최신]
+         </td>
+         <td>
+         최신 이벤트를 반환하려면 이 옵션을 활성화하십시오.
          </td>
        </tr>
      </tbody>
    </table>
+&lt;!—
 
-<!--
+이벤트 보기
 
-Watch Events
-
-This trigger module starts a scenario when an event occurs in the chosen Adobe product or service.
+이 트리거 모듈은 선택한 Adobe 제품 또는 서비스에서 이벤트가 발생할 때 시나리오를 시작합니다.
 
 <table style="table-layout:auto"> 
    <col> 
@@ -370,9 +373,9 @@ This trigger module starts a scenario when an event occurs in the chosen Adobe p
    <tbody> 
    <tr> 
    <td role="rowheader">Webhook</td> 
-   <td><p>Select the webhook that you want to use for this trigger, or add a new webhook. </p><p>To add a new webhook, <ol><li>Click <b>Add</b> next to the webhook field.</li><li>Enter the following: <ul><li>A name for the webhook</li><li>The connection that you want to use for this webhook</li><li>The source of the events you want to watch</li></ul></li><li>Click <b>Save</b> to save the webhook and return to the module. </td> 
+   <td><p>이 트리거에 사용할 웹후크를 선택하거나 새 웹후크를 추가합니다. </p><p>새 웹후크를 추가하려면 <ol><li>Webhook 필드 옆에 있는 <b>추가</b>를 클릭합니다.</li><li>다음을 입력합니다. <ul><li>Webhook 이름</li><li>이 웹후크에 사용할 연결입니다.</li><li>보려는 이벤트의 소스</li></ul></li><li>웹후크를 저장하고 모듈로 돌아가려면 <b>저장</b>을 클릭하십시오. </td> 
    </tr> 
    </tbody> 
 </table>
 
--->
+—>

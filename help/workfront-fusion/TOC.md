@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 설명서
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 문서, 튜토리얼 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
-source-git-commit: 26c599a9887ad931763b787813153bb7791ce5d1
+source-git-commit: f3921961b90d086c11dbad37bf277e69eb95f63f
 workflow-type: tm+mt
-source-wordcount: '1751'
+source-wordcount: '1760'
 ht-degree: 3%
 
 ---
@@ -17,6 +17,7 @@ ht-degree: 3%
    * [Adobe Workfront Fusion 릴리스 활동](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Fusion 릴리스 - 2025 {#fusion-releases-2025}
       * [Workfront Fusion 릴리스 활동: 2025년 5월 5일이 있는 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-5-5.md)
+      * [Workfront Fusion 릴리스 활동: 2025년 4월 28일이 있는 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-28.md)
       * [Workfront Fusion 릴리스 활동: 2025년 4월 21일이 있는 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-21.md)
       * [Workfront Fusion 릴리스 활동: 2025년 4월 14일이 있는 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-14.md)
       * [Workfront Fusion 릴리스 활동: 2025년 3월 31일이 있는 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-31.md)
@@ -208,7 +209,7 @@ ht-degree: 3%
       * [재시도 오류 처리 해결 방법 구성](/help/workfront-fusion/create-scenarios/config-error-handling/retry.md)
       * [Break 지시문에 의해 처리된 오류 해결](/help/workfront-fusion/create-scenarios/config-error-handling/resolve-error-from-break-directive.md)
    * 시나리오 설정 구성 {#configure-scenario-settings}
-      * [시나리오 설정 구성](/help/workfront-fusion/create-scenarios/config-scenarios-settings/config-scenario-settings-toc.md)
+      * [시나리오 설정 구성: 문서 색인](/help/workfront-fusion/create-scenarios/config-scenarios-settings/config-scenario-settings-toc.md)
       * [시나리오 예약](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)
       * [시나리오 설정 구성](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)
       * [시나리오에 메모 추가](/help/workfront-fusion/create-scenarios/config-scenarios-settings/add-notes-to-scenario.md)

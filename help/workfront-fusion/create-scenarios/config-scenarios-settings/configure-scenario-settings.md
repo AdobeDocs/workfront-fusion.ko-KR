@@ -5,9 +5,9 @@ description: 시나리오 설정 패널에서 시나리오에 대한 특정 설�
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: a7411649c0d65956552f40a7710315536755dc65
 workflow-type: tm+mt
-source-wordcount: '1198'
+source-wordcount: '1288'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] 라이센스</td> 
-   <td> <p>신규: [!UICONTROL Standard]</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
+   <td> <p>새로운 기능: [!UICONTROL Standard]</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td> 
@@ -45,7 +45,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Workfront] 플랜: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 플랜 [!DNL Workfront Fusion]이(가) 포함되어 있습니다.</li></ul>
+   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Workfront] 플랜: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 계획: [!DNL Workfront Fusion]이(가) 포함되어 있습니다.</li></ul>
    <p>또는</p>
    <p>현재: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</p>
    </td> 
@@ -77,12 +77,12 @@ ht-degree: 0%
 
    ![시나리오 설정](assets/scenario-settings-350x221.png)
 
-   표시되는 [!UICONTROL Scenario settings] 패널에서 시나리오에 대한 다양한 고급 설정을 구성할 수 있습니다.
+   표시되는 [!UICONTROL 시나리오 설정] 패널에서 시나리오에 대한 다양한 고급 설정을 구성할 수 있습니다.
 1. 필요에 따라 시나리오 설정을 활성화하거나 비활성화합니다. 아래의 [시나리오 설정 옵션](#scenario-settings-options)을 참조하세요.
 
 ## 시나리오 설정 옵션
 
-### [!UICONTROL Sequential processing]
+### [!UICONTROL 순차적 처리]
 
 이 옵션은 모든 실행을 순서대로 수행하도록 하며 주로 웹후크 및 미완료 실행과 관련이 있습니다.
 
@@ -117,7 +117,7 @@ ht-degree: 0%
 >
 >이 옵션을 활성화하면 시나리오 실행 중에 발생할 수 있는 오류를 해결하기 어려울 수 있습니다.
 
-### [!UICONTROL Allow storing incomplete executions]
+### [!UICONTROL 불완전한 실행 저장 허용]
 
 이 옵션은 시나리오를 실행하는 동안 오류가 발생하는 경우 [!DNL Adobe Workfront Fusion]의 진행 방식을 결정합니다. 이 옵션을 활성화하면 시나리오가 일시 중지되고 불완전한 실행 폴더로 이동됩니다. 이렇게 하면 문제를 해결하고 시나리오가 중지된 위치에서 계속 실행할 수 있습니다. 이 옵션이 비활성화되면 시나리오 실행이 중지되고 롤백 단계가 시작됩니다.
 
@@ -127,7 +127,7 @@ ht-degree: 0%
 
 이 옵션은 [!DNL Workfront Fusion]이(가) 사용 가능한 공간이 부족하여 불완전한 실행 큐에 번들을 저장하지 못하는 경우 데이터 손실을 활성화해야 합니다. 이 옵션을 활성화하면 전체 시나리오 실행에서 중단이 발생하지 않도록 데이터가 손실됩니다. 이 기능은 가장 높은 우선 순위가 연속 실행이고 들어오는 잘못된 데이터가 그다지 중요하지 않은 시나리오에 유용합니다.
 
-그 외에도 시나리오를 실행할 때 모듈에서 최대 허용 크기보다 큰 파일이 발생할 수 있습니다. 이 경우 [!DNL Workfront Fusion]은(는) [!UICONTROL Enable data loss] 옵션의 설정에 따라 진행되며 경고 메시지가 표시됩니다.
+그 외에도 시나리오를 실행할 때 모듈에서 최대 허용 크기보다 큰 파일이 발생할 수 있습니다. 이 경우 [!DNL Workfront Fusion]은(는) [!UICONTROL 데이터 손실 사용] 옵션의 설정에 따라 진행되며 경고 메시지가 표시됩니다.
 
 불완전한 실행에 대한 자세한 내용은 [불완전한 실행 보기 및 해결](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)을 참조하십시오.
 
@@ -135,9 +135,9 @@ ht-degree: 0%
 
 경고에 대한 자세한 내용은 [오류 유형](/help/workfront-fusion/references/errors/error-processing.md)을 참조하세요.
 
-### [!UICONTROL Auto commit]
+### [!UICONTROL 자동 커밋]
 
-[!UICONTROL Auto commit] 설정은 트랜잭션에 적용되며 시나리오를 처리하는 방법을 정의합니다. 자동 커밋 옵션이 켜져 있으면 각 모듈의 커밋 단계는 작업 단계를 완료한 후 즉시 시작됩니다. 자동 커밋 옵션이 비활성화되면 모든 모듈에 대해 작업이 실행될 때까지 커밋이 발생하지 않습니다(기본 모드).
+[!UICONTROL 자동 커밋] 설정은 트랜잭션에 적용되며 시나리오를 처리하는 방법을 정의합니다. 자동 커밋 옵션이 켜져 있으면 각 모듈의 커밋 단계는 작업 단계를 완료한 후 즉시 시작됩니다. 자동 커밋 옵션이 비활성화되면 모든 모듈에 대해 작업이 실행될 때까지 커밋이 발생하지 않습니다(기본 모드).
 
 ### 최대 주기 수
 
@@ -160,11 +160,11 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-**예:** [!DNL Workfront] > [!UICONTROL Watch record]에서 들어오는 새 문제를 감시하고 [!DNL Workfront] >[!UICONTROL Convert object]에서 새 요청을 프로젝트로 변환하고 적절한 템플릿을 할당합니다.
+**예:** [!DNL Workfront] > [!UICONTROL 레코드 보기]에서 들어오는 새로운 문제를 감시하고 [!DNL Workfront] >[!UICONTROL 개체 변환]에서 새 요청을 프로젝트로 변환하고 적절한 템플릿을 할당합니다.
 
 ![시나리오 설정](assets/scenario-settings-ex-1-350x157.png)
 
-시나리오 실행을 예약하는 경우에만 [!UICONTROL more cycles] 설정이 적용됩니다. [!UICONTROL Run once] 단추를 사용하면 주기 설정이 고려됩니다.
+시나리오 실행을 예약하는 경우에만 [!UICONTROL 주기 더] 설정이 적용됩니다. [!UICONTROL 한 번 실행] 단추를 사용하면 주기 설정이 고려됩니다.
 
 #### 최대 주기 수가 1(기본값)로 설정됩니다.
 
@@ -198,3 +198,14 @@ Dropbox 폴더에 100개의 파일이 추가되고 최대 주기 옵션이 10으
 >[!NOTE]
 >
 >시나리오가 즉각적인 트리거로 시작하는 경우 설정이 무시되고 첫 번째 오류가 발생하면 시나리오가 즉시 비활성화됩니다.
+
+### 작업자 풀
+
+>[!NOTE]
+>
+>이 설정은 다음 두 가지 조건이 충족되는 경우에만 표시됩니다.
+>
+>* 조직 관리자 또는 소유자입니다.
+>* 둘 이상의 작업자 풀이 조직과 연결되어 있습니다.
+
+이 설정은 시나리오가 조직과 연결된 특정 작업자 풀에 할당되므로 리소스를 우선 순위가 높은 시나리오에 할당할 수 있습니다.

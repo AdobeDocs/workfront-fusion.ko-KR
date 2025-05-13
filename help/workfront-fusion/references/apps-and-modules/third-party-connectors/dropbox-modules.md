@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Dropbox을 �
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
-source-git-commit: 8a4e54a4c1783e4bc679778c6fcf21dcb4d3d537
+source-git-commit: 2ed8e4e956bacc18a43947c4c55482cf32533054
 workflow-type: tm+mt
-source-wordcount: '3203'
+source-wordcount: '3238'
 ht-degree: 0%
 
 ---
@@ -68,9 +68,11 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Dropbox은 사용자가 50명을 초과하는 애플리케이션을 승인해야 합니다.
->
->자세한 내용을 보려면 Dropbox 개발자 안내서에서 &quot;프로덕션 승인&quot;을 검색하십시오.
+>* Dropbox 커넥터를 사용하려면 먼저 Dropbox에서 애플리케이션을 만들어야 합니다.
+>   자세한 내용은 Dropbox 개발자 안내서에서 &quot;애플리케이션 만들기&quot;를 검색하십시오.
+>* 응용 프로그램을 만들 때 다음 리디렉션 URI를 사용하십시오. `https://app.workfrontfusion.com/oauth/cb/dropbox`
+>* Dropbox은 사용자가 50명을 초과하는 애플리케이션을 승인해야 합니다.
+>   자세한 내용을 보려면 Dropbox 개발자 안내서에서 &quot;프로덕션 승인&quot;을 검색하십시오.
 
 ## Dropbox API 정보
 

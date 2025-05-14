@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Microsoft Sha
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 2bd3a9ba84182307af9349163db284514dd12aca
 workflow-type: tm+mt
-source-wordcount: '3124'
+source-wordcount: '3393'
 ht-degree: 0%
 
 ---
@@ -93,6 +93,7 @@ SharePoint 커넥터는 다음을 사용합니다.
 
 * [ [!DNL Microsoft] 계정을 사용하여  [!DNL Workfront Fusion] 에 Microsoft SharePoint Online 연결](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [고급 설정을 사용하여 Microsoft SharePoint Online을  [!DNL Workfront Fusion] 에 연결](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
+* [인증서 인증을 사용하여 Microsoft SharePoint Online을  [!DNL Workfront Fusion] 에 연결](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
 
 ### [!DNL Microsoft] 계정을 사용하여 [!DNL Workfront Fusion]에 Microsoft SharePoint Online 연결
 
@@ -100,19 +101,111 @@ SharePoint 커넥터는 다음을 사용합니다.
 
 ### 고급 설정을 사용하여 Microsoft SharePoint Online을 [!DNL Workfront Fusion]에 연결
 
-[!DNL Microsoft] 계정 없이 Microsoft SharePoint Online을 [!DNL Workfront Fusion]에 연결하려면 클라이언트 ID, 클라이언트 암호 및 테넌트 ID가 필요합니다.
+연결에 자격 증명을 포함하려면 고급 설정 표시 옵션을 활성화합니다. 이 유형의 연결에는 클라이언트 ID, 클라이언트 암호 및 테넌트 ID가 필요합니다.
 
-1. **Microsoft SharePoint Online** 상자 위쪽에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭하여 **[!UICONTROL 연결 만들기]** 상자를 엽니다.
-
-1. (선택 사항) 기본 **[!UICONTROL 연결 이름]**&#x200B;을 변경합니다.
+1. 모든 SharePoint 모듈에서 연결 필드 옆의 **[!UICONTROL 추가]**&#x200B;를 클릭하여 **[!UICONTROL 연결 만들기]** 상자를 엽니다.
 1. **[!UICONTROL 고급 설정 표시]**&#x200B;를 클릭합니다.
-1. Microsoft SharePoint Online **[!UICONTROL 클라이언트 ID]** 및 **[!UICONTROL 클라이언트 암호]**&#x200B;를 입력하십시오.
+1. 다음 필드를 채웁니다.
 
-1. **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
-1. 아직 로그인하지 않은 경우 표시되는 로그인 창에서 자격 증명을 입력하여 앱에 로그인합니다.
-1. (조건부) **[!UICONTROL 허용]** 단추가 표시되면 단추를 클릭하여 앱을 [!DNL Workfront Fusion]에 연결합니다.
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL 연결 유형]</p> </td> 
+      <td>클라이언트 자격 증명을 사용하려면 <b>Microsoft 365 전자 메일</b>을(를) 선택하십시오.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL 연결 이름]</p> </td> 
+      <td>연결의 이름을 입력합니다.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL 클라이언트 ID]</p> </td> 
+      <td>연결 중인 SharePoint 앱의 클라이언트 ID를 입력합니다. </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL 클라이언트 암호]</p> </td> 
+      <td>연결 중인 SharePoint 앱의 클라이언트 암호를 입력합니다.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL 테넌트 ID]</p> </td> 
+      <td>연결 중인 SharePoint 앱의 테넌트 ID를 입력합니다.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL 인스턴스]</p> </td> 
+      <td> <p><code>https://</code> 없이 [!DNL ServiceNow] 계정의 주소를 입력하십시오(일반적으로 <code>&lt;company>.service-now.com</code>).</p> </td> 
+     </tr> 
+    </tbody> 
+   </table>
 
-## Microsoft SharePoint Online 모듈 및 해당 필드
+1. 연결을 저장하고 모듈로 돌아가려면 **계속**&#x200B;을 클릭하세요.
+
+### 인증서 인증을 사용하여 Microsoft SharePoint Online을 [!DNL Workfront Fusion]에 연결
+
+인증서 인증을 사용하여 SharePoint에 연결할 수 있습니다.
+
+>[!IMPORTANT]
+>
+>인증서 인증을 사용하려면 먼저 Microsoft Entra에서 앱을 만들고 인증서를 업로드해야 합니다.
+>
+>자세한 내용은 Microsoft 설명서의 [Microsoft Entra 인증서 기반 인증을 위한 인증 기관을 구성하는 방법](https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-configure-certificate-authorities)을 참조하십시오.
+
+1. 모든 SharePoint 모듈에서 연결 필드 옆의 **[!UICONTROL 추가]**&#x200B;를 클릭하여 **[!UICONTROL 연결 만들기]** 상자를 엽니다.
+1. **[!UICONTROL 고급 설정 표시]**&#x200B;를 클릭합니다.
+1. 다음 필드를 채웁니다.
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL 연결 유형]</p> </td> 
+      <td>인증서 인증을 사용하려면 <b>Microsoft SharePoint Online(인증서 인증)</b>을(를) 선택하십시오.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL 연결 이름]</p> </td> 
+      <td>연결의 이름을 입력합니다.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL 클라이언트 ID]</p> </td> 
+      <td>연결 중인 SharePoint 앱의 클라이언트 ID를 입력합니다. </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Thumbprint]</p> </td> 
+      <td>연결 중인 SharePoint 앱의 지문을 입력합니다.</td> 
+     </tr> 
+      <tr>
+        <td role="rowheader">[!UICONTROL 개인 키]</td>
+        <td>
+          <p>Microsoft에서 자격 증명을 만들 때 생성된 인증서 또는 개인 키를 입력합니다. </p>
+          <p>개인 키 또는 인증서를 추출하려면 다음을 수행하십시오.</p>
+          <ol>
+            <li>
+              <p><b>[!UICONTROL Extract]</b>을(를) 클릭합니다.</p>
+            </li>
+            <li>
+            <p>인증서를 추출할지 또는 개인 키를 추출할지 선택합니다.</li>
+            <li>
+              <p>추출 중인 파일 유형을 선택합니다.</p>
+            </li>
+            <li>
+              <p>개인 키 또는 인증서가 포함된 파일을 선택합니다.</p>
+            </li>
+            <li>
+              <p>파일의 암호를 입력합니다.</p>
+            </li>
+            <li>
+              <p><b>[!UICONTROL 저장]</b>을(를) 클릭하여 파일을 추출하고 연결 설정으로 돌아갑니다.</p>
+            </li>
+          </ol>
+        </td>
+      </tr>
+    </tbody> 
+   </table>
+
+1. 연결을 저장하고 모듈로 돌아가려면 **계속**&#x200B;을 클릭하세요.
+
+## Microsoft SharePoint 모듈 및 해당 필드
 
 Microsoft SharePoint Online 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 이러한 필드와 함께 앱이나 서비스의 액세스 수준 등의 요소에 따라 추가 Microsoft SharePoint Online 필드가 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 

@@ -4,9 +4,9 @@ description: Adobe Photoshop 모듈을 사용하면 Adobe Photoshop 계정의 �
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: a9e7053c443c9603ab3dc84c094196b7506cc7d0
+source-git-commit: 7f167af0ba1becb603dd8d9f3767101e157a7bdf
 workflow-type: tm+mt
-source-wordcount: '4976'
+source-wordcount: '5379'
 ht-degree: 0%
 
 ---
@@ -22,44 +22,44 @@ ht-degree: 0%
 
 ## 액세스 요구 사항
 
-+++**이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.**
++++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
 
 이 문서의 기능을 사용하려면 다음 액세스 권한이 있어야 합니다.
 
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] 플랜*</td>
-      <td>
-        <p>[!UICONTROL Pro] 이상</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] 라이센스*</td>
-      <td>
-        <p>[!UICONTROL Plan], [!UICONTROL Work]</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td>
-      <td >
-        <p>작업 자동화 및 통합을 위한 [!UICONTROL Workfront Fusion]</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">제품</td>
-      <td>조직에서 이 문서에 설명된 기능을 사용하려면 [!DNL Adobe Workfront Fusion]과(와) [!DNL Adobe Workfront]을(를) 구입해야 합니다.</td>
-    </tr>
-    </tr>
-  </tbody>
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront 패키지</td> 
+   <td> <p>임의</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront 라이선스</td> 
+   <td> <p>새로운 기능: 표준</p><p>또는</p><p>현재: 작업 시간 이상</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
+   <td>
+   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
+   <p>또는</p>
+   <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">제품</td> 
+   <td>
+   <p>신규:</p> <ul><li>또는 Prime Workfront 패키지 선택: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</li><li>Ultimate Workfront 패키지: Workfront Fusion이 포함됩니다.</li></ul>
+   <p>또는</p>
+   <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
+   </td> 
+  </tr>
+ </tbody> 
 </table>
 
+이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-&#42;플랜, 라이선스 유형 또는 액세스 권한을 확인하려면 [!DNL Workfront] 관리자에게 문의하세요.
-
-&#42;&#42;[!DNL Adobe Workfront Fusion]개 라이선스에 대한 자세한 내용은 [[!DNL [Adobe Workfront Fusion] licenses]](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)을(를) 참조하세요.
+[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
 
 +++
 
@@ -105,6 +105,12 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
       </col>
       <tbody>
         <tr>
+        <td role="rowheader">[!UICONTROL 연결 유형]</td>
+        <td>
+          <p>JWT 연결을 사용할지 아니면 서버 간 연결을 사용할지 선택합니다.</p>
+        </td>
+        </tr>
+        <tr>
         <td role="rowheader">[!UICONTROL 연결 이름]</td>
         <td>
           <p>이 연결의 이름을 입력하십시오.</p>
@@ -120,16 +126,16 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL 기술 계정 ID]</td>
-        <td>[!DNL Adobe] [!UICONTROL 기술 계정 ID]를 입력하십시오. 이 로그는 의 [!UICONTROL 자격 증명] 세부 정보 섹션에서 찾을 수 있습니다. [!DNL Adobe Developer Console]</td>
+        <td>JWT 연결을 사용하는 경우 [!DNL Adobe] [!UICONTROL 기술 계정 ID]를 입력하십시오. 이 로그는 의 [!UICONTROL 자격 증명] 세부 정보 섹션에서 찾을 수 있습니다. [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL 조직 ID]</td>
-        <td>[!DNL Adobe] [!UICONTROL 조직 ID]를 입력하십시오. 이 로그는 의 [!UICONTROL 자격 증명] 세부 정보 섹션에서 찾을 수 있습니다. [!DNL Adobe Developer Console]</td>
+        <td>JWT 연결을 사용하는 경우 [!DNL Adobe] [!UICONTROL 조직 ID]를 입력하십시오. 이 로그는 의 [!UICONTROL 자격 증명] 세부 정보 섹션에서 찾을 수 있습니다. [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL 개인 키]</td>
         <td>
-          <p>[!DNL Adobe Developer Console]에서 자격 증명을 만들 때 생성된 개인 키를 입력하십시오. </p>
+          <p>JWT 연결을 사용하는 경우 [!DNL Adobe Developer Console]에서 자격 증명을 만들 때 생성된 개인 키를 입력하십시오. </p>
           <p>개인 키 또는 인증서를 추출하려면 다음을 수행하십시오.</p>
           <ol>
             <li value="1">
@@ -170,9 +176,9 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
 * [새 PSD 만들기](#create-a-new-psd)
 * [텍스트 레이어 편집](#edit-text-layers)
 * [텍스트 레이어 편집(이전)](#edit-text-layers-legacy)
+* [작업 JSON 실행](#execute-an-action-json)
 * [깊이 흐림 효과 실행](#execute-depth-blur)
 * [Photoshop 작업 실행](#execute-photoshop-actions)
-* [Photoshop 작업 실행(JSON)](#execute-photoshop-actions-json)
 * [제품 자르기 실행](#execute-product-crop)
 * [레이어 정보 가져오기](#get-layer-info)
 * [사용자 지정 API 호출 만들기](#make-a-custom-api-call)
@@ -264,7 +270,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
       <td role="rowheader">
         <p>[!UICONTROL (Options) 누락된 글꼴 관리]</p>
       </td>
-   <td> 문서에 누락된 글꼴이 하나 이상 있는 경우 수행할 작업을 선택합니다. <ul><li><code>fail</code>: 작업에 성공하지 못하고 상태가 실패 로 설정됩니다. 오류의 세부 정보는 상태의 세부 정보 섹션에 제공됩니다.</li><li><code>useDefault</code>: 작업이 성공하지만 기본적으로 누락된 모든 글꼴은 ArialMT로 대체됩니다.</li></ul></td> 
+   <td> 문서에 누락된 글꼴이 하나 이상 있는 경우 수행할 작업을 선택합니다. <ul><li><code>fail</code>: 작업에 성공하지 못하고 상태가 실패 로 설정됩니다. 오류의 세부 정보는 상태의 세부 정보 섹션에 제공됩니다.</li><li><code>useDefault</code>: 작업이 성공하고 누락된 모든 글꼴이 ArialMT로 대체됩니다.</li></ul></td> 
     </tr>
     <tr>
       <td role="rowheader">
@@ -275,7 +281,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
     <tr>
       <td role="rowheader">[!UICONTROL 출력]</td>
       <td>
-        <p>생성할 변환된 각 파일에 대해 항목 추가 를 클릭하고 이 표에 나열된 대로 저장소, 위치 및 유형을 입력합니다.</p>
+        <p>만들려는 각 편집된 파일에 대해 항목 추가 를 클릭하고 이 표에 나열된 대로 저장소, 위치 및 유형을 입력합니다.</p>
       </td>
     </tr>
     <tr>
@@ -304,14 +310,12 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
     </tr>
         <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 반환되는 최대 결과 수]</p>
+        <p>[!UICONTROL (Output) Trim to Canvas]</p>
       </td>
-   <td>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</td> 
+   <td>렌디션이 캔버스 크기여야 하는지 여부를 선택합니다. True이면 렌디션이 캔버스 크기로 트리밍되고 False이면 렌디션 레이어 크기가 됩니다</td> 
     </tr>
     </tbody>
 </table>
-
-
 
 ### 이미지 자동 색상 교정
 
@@ -361,15 +365,8 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다. 이 방법은 Adobe 저장소의 파일에만 적용됩니다.</p>
       </td>
     </tr>
-        <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL 반환되는 최대 결과 수]</p>
-      </td>
-   <td>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</td> 
-    </tr>
     </tbody>
 </table>
-
 
 ### 이미지 형식 변환
 
@@ -425,20 +422,12 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다. 이 방법은 Adobe 저장소의 파일에만 적용됩니다.</p>
       </td>
     </tr>
-        <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL 반환되는 최대 결과 수]</p>
-      </td>
-   <td>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</td> 
-    </tr>
     </tbody>
 </table>
 
-
-
 ### 마스크 만들기
 
-이 작업 모듈은 제목 주위에 마스트가 적용된 PNG 파일을 반환합니다.
+이 작업 모듈은 제목 주위에 마스크가 적용된 PNG 파일을 반환합니다.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -500,7 +489,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
       <td role="rowheader">
         <p>[!UICONTROL 사후 프로세스]</p>
       </td>
-   <td></td> 
+   <td>사후 처리를 사용할지 여부를 선택합니다.</td> 
     </tr>
     <tr>
       <td role="rowheader">
@@ -508,12 +497,6 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
       </td>
    <td>기본값은 4.0입니다.</td> 
     </tr> 
-        <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL 반환되는 최대 결과 수]</p>
-      </td>
-   <td>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</td> 
-    </tr>
     </tbody>
 </table>
 
@@ -521,7 +504,106 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
 
 이 작업 모듈은 선택적 레이어로 새 PSD을 만들고 렌디션을 생성하거나 PSD으로 저장합니다.
 
-이 모듈과 관련된 필드는 Adobe Photoshop 설명서에서 [새 PSD 만들기](https://developer.adobe.com/photoshop/photoshop-api-docs/api/#tag/Photoshop/operation/documentCreate)를 참조하십시오.
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options &gt; Document &gt; Image size) Height]</p>
+      </td>
+      <td> 이미지의 높이를 픽셀 단위로 입력하거나 매핑합니다. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options &gt; Document &gt; Image size) Width]</p>
+      </td>
+      <td> 이미지의 폭을 픽셀 단위로 입력하거나 매핑합니다. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL(옵션 &gt; 문서) 해상도]</p>
+      </td>
+   <td> 이미지의 해상도를 인치당 픽셀 단위로 입력하거나 매핑합니다. 72에서 300 사이여야 합니다. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL(옵션 &gt; 문서) 모드]</p>
+      </td>
+   <td> 이미지 모드를 선택합니다. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL(옵션 &gt; 문서) 채우기]</p>
+      </td>
+   <td> 배경 레이어의 채우기를 투명, 흰색 또는 이미지의 배경색으로 할지 여부를 선택합니다. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL(옵션 &gt; 문서) 깊이]</p>
+      </td>
+   <td> 이미지의 비트 심도를 선택합니다. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) Layers]</p>
+      </td>
+   <td> 추가할 각 레이어에 대해 항목 추가 를 클릭하고 레이어 세부 정보를 입력합니다. <p>레이어 옵션에 대한 자세한 내용은 Adobe Photoshop 설명서에서 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_createPsd/">PSD 만들기</a>를 참조하십시오.  </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) Global font]</p>
+      </td>
+   <td> 문서의 전역 기본값으로 사용할 글꼴의 전체 포스트스크립트 이름을 입력합니다. 이 글꼴은 글꼴이 누락되고 해당 레이어에 대해 특별히 제공된 다른 글꼴이 없는 텍스트 레이어에 사용됩니다. 이 글꼴이 누락된 경우 누락된 글꼴 관리에 지정된 옵션이 적용됩니다. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) Fonts]</p>
+      </td>
+   <td> 문서에 필요한 각 글꼴에 대해 항목 추가 를 클릭하고 글꼴의 저장소 위치와 파일 위치를 입력합니다. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) 누락된 글꼴 관리]</p>
+      </td>
+   <td> 문서에 누락된 글꼴이 하나 이상 있는 경우 수행할 작업을 선택합니다. <ul><li><code>fail</code>: 작업에 성공하지 못하고 상태가 실패 로 설정됩니다. 오류의 세부 정보는 상태의 세부 정보 섹션에 제공됩니다.</li><li><code>useDefault</code>: 작업이 성공하고 누락된 모든 글꼴이 ArialMT로 대체됩니다.</li></ul></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 출력]</td>
+      <td>
+        <p>생성할 각 파일에 대해 항목 추가 를 클릭하고 이 표에 나열된 대로 저장소, 위치 및 유형을 입력합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
+      <td>
+        <p>새 파일을 저장할 파일 서비스를 선택합니다.</p><p>Fusion 내부 저장소를 선택하면 파일을 이후 모듈에서 사용할 수 있지만 시나리오 외부에서 파일을 사용할 수는 없습니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (출력) 파일 위치]</p>
+      </td>
+   <td> 새 파일이 저장될 위치의 URL 또는 경로를 입력하거나 매핑합니다. 출력 스토리지에 대해 Fusion 내부 스토리지를 선택하지 않은 경우에만 필요합니다.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) Type]</p>
+      </td>
+   <td>파일을 변환할 파일 유형을 선택합니다. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Other fields]</td>
+      <td>
+        <p><p>출력 옵션에 대한 자세한 내용은 Adobe Photoshop 설명서에서 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_createPsd/">PSD 만들기</a>를 참조하십시오.  </p>
+      </td>
+    </tr>
+    </tbody>
+</table>
 
 ### 텍스트 레이어 편집
 
@@ -560,42 +642,40 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
       </td>
     </tr>
     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) Fonts]</p>
+      </td>
+   <td> 글꼴의 저장소 위치와 파일 위치를 입력합니다. </td> 
+    </tr>
+    <tr>
       <td role="rowheader">[!UICONTROL 레이어]</td>
    <td> <p>편집할 각 텍스트 레이어에 대해 <b>항목 추가</b>를 클릭하고 레이어 옵션을 입력합니다.<p>레이어 옵션에 대한 자세한 내용은 Adobe Photoshop 설명서에서 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_editText/">텍스트 편집</a>을 참조하십시오.</p>  </td>     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 출력 파일 저장소]</td>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
       <td>
         <p>편집한 파일을 저장할 파일 서비스를 선택합니다.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 출력 파일 URL]</p>
+        <p>[!UICONTROL (출력) 파일 위치]</p>
       </td>
    <td> 편집된 파일이 저장되는 위치의 URL 또는 경로를 입력하거나 매핑합니다. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 출력 파일 유형]</p>
+        <p>[!UICONTROL (Output) Type]</p>
       </td>
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL (출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>
     </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Compression]</p>
-      </td>
-   <td> 출력 파일의 압축 레벨을 선택합니다. </td> 
-    </tr>
   </tbody>
 </table>
-
-
 
 ### 텍스트 레이어 편집(이전)
 
@@ -636,6 +716,12 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
       </td>
     </tr>
     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) Fonts]</p>
+      </td>
+   <td> 글꼴의 저장소 위치와 파일 위치를 입력합니다. </td> 
+    </tr>
+    <tr>
       <td role="rowheader">[!UICONTROL 레이어]</td>
    <td> <p>레이어 옵션에 대한 자세한 내용은 Adobe Photoshop 설명서에서 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_editText/">텍스트 레이어 편집</a>을 참조하십시오.</p>  </td>     </tr>
     <tr>
@@ -645,34 +731,34 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
       </td>
     </tr>
     <tr>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
+      <td>
+        <p>편집한 파일을 저장할 파일 서비스를 선택합니다.</p>
+      </td>
+    </tr>
+    <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 출력 파일 URL]</p>
+        <p>[!UICONTROL (출력) 파일 위치]</p>
       </td>
    <td> 편집된 파일이 저장되는 위치의 URL 또는 경로를 입력하거나 매핑합니다. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 출력 파일 유형]</p>
+        <p>[!UICONTROL (Output) Type]</p>
       </td>
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL (출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Compression]</p>
-      </td>
-   <td> 출력 파일의 압축 레벨을 선택합니다. </td> 
     </tr>
   </tbody>
 </table>
 
 
-### Photoshop 작업 실행(JSON)
+### 작업 JSON 실행
 
 이 작업 모듈은 JSON 명령을 사용하여 Photoshop 작업을 실행합니다.
 
@@ -715,70 +801,35 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td> 사용할 파일의 URL 또는 경로를 입력하거나 매핑합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 출력 파일 저장소]</td>
+    <tr>
+      <td role="rowheader">[!UICONTROL 출력]</td>
+      <td>
+        <p>만들려는 각 파일에 대해 항목 추가 를 클릭하고 이 표에 나열된 대로 저장소, 위치, 유형 및 덮어쓰기 옵션을 입력합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (출력) 저장소]</td>
       <td>
         <p>편집한 파일을 저장할 파일 서비스를 선택합니다.</p><p>Fusion 내부 저장소를 선택하면 파일을 이후 모듈에서 사용할 수 있지만 시나리오 외부에서 파일을 사용할 수는 없습니다.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 출력 파일 URL]</p>
+        <p>[!UICONTROL (Outputs) 파일 URL]</p>
       </td>
    <td> 편집된 파일이 저장되는 위치의 URL 또는 경로를 입력하거나 매핑합니다.  출력 스토리지에 대해 Fusion 내부 스토리지를 선택하지 않은 경우에만 필요합니다.</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 출력 파일 유형]</p>
+        <p>[!UICONTROL (Outputs) Type]</p>
       </td>
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL(출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Compression]</p>
-      </td>
-   <td> 출력 파일의 압축 레벨을 선택합니다. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL 출력]</td>
-      <td>
-        <p>생성할 변환된 각 파일에 대해 항목 추가 를 클릭하고 이 표에 나열된 대로 저장소, 위치 및 유형을 입력합니다.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
-      <td>
-        <p>새 파일을 저장할 파일 서비스를 선택합니다.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (출력) 파일 위치]</p>
-      </td>
-   <td> 새 파일이 저장될 위치의 URL 또는 경로를 입력하거나 매핑합니다. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) Type]</p>
-      </td>
-   <td>파일을 변환할 파일 유형을 선택합니다. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (출력) 덮어쓰기]</td>
-      <td>
-        <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다. 이 방법은 Adobe 저장소의 파일에만 적용됩니다.</p>
-      </td>
-    </tr>
-        <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL 반환되는 최대 결과 수]</p>
-      </td>
-   <td>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</td> 
     </tr>
       </tbody>
 </table>
@@ -808,40 +859,34 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td> 편집할 파일의 URL 또는 경로를 입력하거나 매핑합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 출력 파일 저장소]</td>
+      <td role="rowheader">[!UICONTROL (출력) 저장소]</td>
       <td>
-        <p>편집한 파일을 저장할 파일 서비스를 선택합니다.</p>
+        <p>편집한 파일을 저장할 파일 서비스를 선택합니다.</p><p>Fusion 내부 저장소를 선택하면 파일을 이후 모듈에서 사용할 수 있지만 시나리오 외부에서 파일을 사용할 수는 없습니다.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 출력 파일 URL]</p>
+        <p>[!UICONTROL (Outputs) 파일 URL]</p>
       </td>
-   <td> 편집된 파일이 저장되는 위치의 URL 또는 경로를 입력하거나 매핑합니다. </td> 
+   <td> 편집된 파일이 저장되는 위치의 URL 또는 경로를 입력하거나 매핑합니다.  출력 스토리지에 대해 Fusion 내부 스토리지를 선택하지 않은 경우에만 필요합니다.</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 출력 파일 유형]</p>
+        <p>[!UICONTROL (Outputs) Type]</p>
       </td>
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 기타 필드]</td>
-      <td>
-        <p>다른 깊이 흐림 효과 옵션에 대한 자세한 내용은 Adobe Photoshop API 설명서의 <a href="https://developer.adobe.com/photoshop/photoshop-api-docs/api/#tag/Photoshop/operation/depthBlur">깊이 흐림 효과 실행 </a>을(를) 참조하십시오.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL(출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>
     </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Compression]</p>
+   <tr>
+      <td role="rowheader">[!UICONTROL 기타 필드]</td>
+      <td>
+        <p>다른 깊이 흐림 효과 옵션에 대한 자세한 내용은 Adobe Photoshop API 설명서의 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_depthBlur/">깊이 흐림 효과 실행 </a>을(를) 참조하십시오.</p>
       </td>
-   <td> 출력 파일의 압축 레벨을 선택합니다. </td> 
     </tr>
   </tbody>
 </table>
@@ -901,34 +946,34 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td> 사용할 파일의 URL 또는 경로를 입력하거나 매핑합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 출력 파일 저장소]</td>
+      <td role="rowheader">[!UICONTROL (출력) 저장소]</td>
       <td>
-        <p>편집한 파일을 저장할 파일 서비스를 선택합니다.</p>
+        <p>편집한 파일을 저장할 파일 서비스를 선택합니다.</p><p>Fusion 내부 저장소를 선택하면 파일을 이후 모듈에서 사용할 수 있지만 시나리오 외부에서 파일을 사용할 수는 없습니다.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 출력 파일 URL]</p>
+        <p>[!UICONTROL (Outputs) 파일 URL]</p>
       </td>
-   <td> 편집된 파일이 저장되는 위치의 URL 또는 경로를 입력하거나 매핑합니다. </td> 
+   <td> 편집된 파일이 저장되는 위치의 URL 또는 경로를 입력하거나 매핑합니다.  출력 스토리지에 대해 Fusion 내부 스토리지를 선택하지 않은 경우에만 필요합니다.</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 출력 파일 유형]</p>
+        <p>[!UICONTROL (Outputs) Type]</p>
       </td>
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL(출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>
     </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Compression]</p>
+   <tr>
+      <td role="rowheader">[!UICONTROL 기타 필드]</td>
+      <td>
+        <p>다른 깊이 흐림 효과 옵션에 대한 자세한 내용은 Adobe Photoshop API 설명서의 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_depthBlur/">깊이 흐림 효과 실행 </a>을(를) 참조하십시오.</p>
       </td>
-   <td> 출력 파일의 압축 레벨을 선택합니다. </td> 
     </tr>
   </tbody>
 </table>
@@ -976,34 +1021,34 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td> 추가할 높이 패딩 양을 입력하거나 매핑합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 출력 파일 저장소]</td>
+      <td role="rowheader">[!UICONTROL (출력) 저장소]</td>
       <td>
-        <p>편집한 파일을 저장할 파일 서비스를 선택합니다.</p>
+        <p>편집한 파일을 저장할 파일 서비스를 선택합니다.</p><p>Fusion 내부 저장소를 선택하면 파일을 이후 모듈에서 사용할 수 있지만 시나리오 외부에서 파일을 사용할 수는 없습니다.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 출력 파일 URL]</p>
+        <p>[!UICONTROL (Outputs) 파일 URL]</p>
       </td>
-   <td> 편집된 파일이 저장되는 위치의 URL 또는 경로를 입력하거나 매핑합니다. </td> 
+   <td> 편집된 파일이 저장되는 위치의 URL 또는 경로를 입력하거나 매핑합니다.  출력 스토리지에 대해 Fusion 내부 스토리지를 선택하지 않은 경우에만 필요합니다.</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 출력 파일 유형]</p>
+        <p>[!UICONTROL (Outputs) Type]</p>
       </td>
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL(출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>
     </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Compression]</p>
+   <tr>
+      <td role="rowheader">[!UICONTROL 기타 필드]</td>
+      <td>
+        <p>다른 깊이 흐림 효과 옵션에 대한 자세한 내용은 Adobe Photoshop API 설명서의 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_depthBlur/">깊이 흐림 효과 실행 </a>을(를) 참조하십시오.</p>
       </td>
-   <td> 출력 파일의 압축 레벨을 선택합니다. </td> 
     </tr>
   </tbody>
 </table>
@@ -1036,7 +1081,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
       <td role="rowheader">
         <p>[!UICONTROL 썸네일]</p>
       </td>
-   <td> </td> 
+   <td> 썸네일을 표시할 파일 유형을 선택합니다. 축소판은 렌더링 가능한 레이어의 작은 미리 보기입니다.</td> 
     </tr>
   </tbody>
 </table>
@@ -1152,7 +1197,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
       <td role="rowheader">
         <p>[!UICONTROL 사후 프로세스]</p>
       </td>
-   <td></td> 
+   <td>사후 처리를 사용할지 여부를 선택합니다.</td> 
     </tr>
     <tr>
       <td role="rowheader">
@@ -1160,16 +1205,8 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
       </td>
    <td>기본값은 4.0입니다.</td> 
     </tr> 
-        <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL 반환되는 최대 결과 수]</p>
-      </td>
-   <td>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</td> 
-    </tr>
     </tbody>
 </table>
-
-
 
 ### 스마트 오브젝트 바꾸기
 
@@ -1204,6 +1241,12 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td>스마트 오브젝트에 추가할 각 레이어에 대해 항목 추가 를 클릭하고 오브젝트의 이름 또는 ID, 스마트 오브젝트가 저장된 파일 서비스, 레이어의 URL 또는 경로를 입력합니다.<p>이 영역의 고급 설정에 대한 설명은 Photoshop API 설명서의 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">스마트 개체 바꾸기</a>를 참조하십시오 </td> 
     </tr>
     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 가져오는 동안 이미지 크기 조정]</p>
+      </td>
+   <td> 이미지 크기를 조정할지 여부를 선택합니다.</td> 
+    </tr>
+    <tr>
       <td role="rowheader">[!UICONTROL 출력]</td>
       <td>
         <p>모듈에서 생성할 각 새 렌디션에 대해 항목 추가 를 클릭하고 다음 필드를 채웁니다. 최대 25개의 출력 파일을 가질 수 있습니다.</p>
@@ -1223,26 +1266,12 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Output) Width]</p>
+        <p>[!UICONTROL (Outputs) Type]</p>
       </td>
-   <td> 출력 파일의 폭(픽셀 단위)입니다. 모듈은 원래 종횡비를 유지합니다. </td> 
+   <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (출력) 덮어쓰기]</td>
-      <td>
-        <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다. 이 방법은 Adobe 저장소의 파일에만 적용됩니다.</p>
-      </td>
-    </tr>
-        <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL 반환되는 최대 결과 수]</p>
-      </td>
-   <td>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</td> 
-    </tr>
-    </tbody>
+     </tbody>
 </table>
-
-
 
 ### 스마트 오브젝트 바꾸기(기존)
 
@@ -1305,17 +1334,8 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다. 이 방법은 Adobe 저장소의 파일에만 적용됩니다.</p>
       </td>
-    </tr>
-        <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL 반환되는 최대 결과 수]</p>
-      </td>
-   <td>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</td> 
-    </tr>
     </tbody>
 </table>
-
-
 
 ### 이미지 크기 조정
 
@@ -1348,16 +1368,23 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL 유형]</p>
+    <tr>
+      <td role="rowheader">[!UICONTROL Storage]</td>
+      <td>
+        <p>새 파일을 저장할 파일 서비스를 선택합니다.</p><p>Fusion 내부 저장소를 선택하면 파일을 이후 모듈에서 사용할 수 있지만 시나리오 외부에서 파일을 사용할 수는 없습니다.</p>
       </td>
-   <td>파일을 변환할 파일 유형을 선택합니다. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 파일 위치]</p>
+      </td>
+   <td> 새 파일이 저장될 위치의 URL 또는 경로를 입력하거나 매핑합니다.  출력 스토리지에 대해 Fusion 내부 스토리지를 선택하지 않은 경우에만 필요합니다.</td> 
     </tr>
     <tr>
       <td role="rowheader">
         <p>[!UICONTROL 너비]</p>
       </td>
-   <td>크기 조정된 이미지의 너비를 나타내는 숫자를 픽셀로 입력합니다. 종횡비는 그대로 유지됩니다.</td> 
+   <td> 출력 파일의 폭(픽셀 단위)입니다. 모듈은 원래 종횡비를 유지합니다. </td> 
     </tr>
     <tr>
       <td role="rowheader">
@@ -1393,49 +1420,49 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
       <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기 를 참조하십시오.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (기본/입력) 저장소]</td>
+      <td role="rowheader">[!UICONTROL (기본 &gt; 입력) 저장소]</td>
       <td>
         <p>워터마크를 추가할 파일이 저장된 파일 서비스를 선택합니다.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (기본/입력) 파일 위치]</p>
+        <p>[!UICONTROL (기본 &gt; 입력) 파일 위치]</p>
       </td>
    <td> 워터마크를 추가할 파일의 URL 또는 경로를 입력하거나 매핑합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (워터마크 / 입력) 저장소]</td>
+      <td role="rowheader">[!UICONTROL (워터마크 &gt; 입력) 저장소]</td>
       <td>
         <p>추가하려는 워터마크가 저장된 파일 서비스를 선택합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (워터마크 / 입력) 저장소]</td>
+      <td role="rowheader">[!UICONTROL (워터마크 &gt; 입력) 저장소]</td>
       <td>
         <p>추가하려는 워터마크가 저장된 파일 서비스를 선택합니다.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (워터마크 / 경계) 높이]</p>
+        <p>[!UICONTROL (Watermark &gt; Bounds) Height]</p>
       </td>
    <td>원하는 워터마크 높이를 픽셀 단위로 입력하거나 매핑합니다.</td> 
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Watermark / Bounds) Width]</p>
+        <p>[!UICONTROL (Watermark &gt; Bounds) Width]</p>
       </td>
    <td> 원하는 워터마크 폭을 픽셀 단위로 입력하거나 매핑합니다. </td> 
     </tr>  
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (워터마크 / 경계) 왼쪽]</p>
+        <p>[!UICONTROL (워터마크 &gt; 경계) Left]</p>
       </td>
    <td> 워터마크가 적용되어야 하는 이미지 왼쪽에서 픽셀 단위의 거리를 입력하거나 매핑합니다.</td> 
     </tr>  
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (워터마크 / 경계) 상위]</p>
+        <p>[!UICONTROL (Watermark &gt; Bounds) Top]</p>
       </td>
    <td> 워터마크가 적용되어야 하는 이미지 상단과의 거리를 픽셀 단위로 입력하거나 매핑합니다.</td> 
     </tr>  
@@ -1468,12 +1495,5 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다. 이 방법은 Adobe 저장소의 파일에만 적용됩니다.</p>
       </td>
-    </tr>
-        <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL 반환되는 최대 결과 수]</p>
-      </td>
-   <td>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</td> 
-    </tr>
     </tbody>
 </table>

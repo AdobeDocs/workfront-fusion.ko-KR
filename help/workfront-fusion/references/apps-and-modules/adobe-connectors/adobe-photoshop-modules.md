@@ -4,9 +4,9 @@ description: Adobe Photoshop 모듈을 사용하면 Adobe Photoshop 계정의 �
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: db1d6f5bf29063b069681395c6ff6d3554c67dc3
+source-git-commit: a9e7053c443c9603ab3dc84c094196b7506cc7d0
 workflow-type: tm+mt
-source-wordcount: '4359'
+source-wordcount: '4976'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 &#42;플랜, 라이선스 유형 또는 액세스 권한을 확인하려면 [!DNL Workfront] 관리자에게 문의하세요.
 
-&#42;&#42;[!DNL Adobe Workfront Fusion]개 라이선스에 대한 자세한 내용은 [[!DNL [Adobe Workfront Fusion] licenses]](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)을(를) 참조하세요.
+&#42;&#42;[!DNL Adobe Workfront Fusion]개 라이선스에 대한 자세한 내용은 [!DNL [Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)을(를) 참조하세요.
 
 +++
 
@@ -68,7 +68,7 @@ ht-degree: 0%
 [!DNL Adobe Photoshop] 커넥터를 사용하려면 먼저 다음 전제 조건을 충족하는지 확인해야 합니다.
 
 * 활성 [!DNL Adobe Photoshop] 계정이 있어야 합니다.
-* Firefly 서비스 라이선스가 있어야 합니다.
+* Firefly Services 라이선스가 있어야 합니다.
 * 클라이언트 ID와 클라이언트 암호가 있어야 합니다. Adobe Developer Console에서 가져올 수 있습니다.
 
 ## Adobe Photoshop API 정보
@@ -169,6 +169,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
 * [마스크 만들기](#create-a-mask)
 * [새 PSD 만들기](#create-a-new-psd)
 * [텍스트 레이어 편집](#edit-text-layers)
+* [텍스트 레이어 편집(이전)](#edit-text-layers-legacy)
 * [깊이 흐림 효과 실행](#execute-depth-blur)
 * [Photoshop 작업 실행](#execute-photoshop-actions)
 * [Photoshop 작업 실행(JSON)](#execute-photoshop-actions-json)
@@ -177,6 +178,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
 * [사용자 지정 API 호출 만들기](#make-a-custom-api-call)
 * [배경 제거](#remove-background)
 * [스마트 오브젝트 바꾸기](#replace-a-smart-object)
+* [스마트 오브젝트 바꾸기(기존)](#replace-a-smart-object-legacy)
 * [이미지 크기 조정](#resize-an-image)
 * [이미지에 워터마크 지정](#watermark-an-image)
 
@@ -523,7 +525,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
 
 ### 텍스트 레이어 편집
 
-이 작업 모듈은 Photoshop 파일의 텍스트 레이어를 편집합니다.
+이 작업 모듈은 Photoshop 파일의 텍스트 레이어를 편집합니다. 동일한 파일에 여러 레이어에 대한 별도의 편집 세부 정보를 입력할 수 있습니다.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -559,7 +561,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 레이어]</td>
-   <td> <p>레이어 옵션에 대한 자세한 내용은 Adobe Photoshop 설명서에서 <a href="https://developer.adobe.com/photoshop/photoshop-api-docs/api/#tag/Photoshop/operation/text">텍스트 레이어 편집</a>을 참조하십시오.</p>  </td>     </tr>
+   <td> <p>편집할 각 텍스트 레이어에 대해 <b>항목 추가</b>를 클릭하고 레이어 옵션을 입력합니다.<p>레이어 옵션에 대한 자세한 내용은 Adobe Photoshop 설명서에서 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_editText/">텍스트 편집</a>을 참조하십시오.</p>  </td>     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 출력 파일 저장소]</td>
       <td>
@@ -593,6 +595,81 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
   </tbody>
 </table>
 
+
+
+### 텍스트 레이어 편집(이전)
+
+이 작업 모듈은 Photoshop 파일의 텍스트 레이어를 편집합니다.
+
+여러 레이어를 편집하려면 [텍스트 레이어 편집](#edit-text-layers) 모듈을 사용하십시오.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 입력 파일 저장소]</td>
+      <td>
+        <p>편집할 파일이 저장된 파일 서비스를 선택합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 입력 파일 URL]</p>
+      </td>
+   <td> 편집할 파일의 URL 또는 경로를 입력하거나 매핑합니다. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 누락된 글꼴 관리]</td>
+      <td>
+        <p>문서에 누락된 글꼴이 하나 이상 있는 경우 수행할 작업을 선택합니다. 글꼴이 제공되지 않으면 모듈은 기본 글꼴을 사용합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Default font]  </td>
+      <td>
+        <p>문서의 전역 기본값으로 사용할 글꼴의 전체 포스트스크립트 이름을 입력합니다. 이 글꼴은 글꼴이 누락되고 해당 레이어에 대해 특별히 제공된 다른 글꼴이 없는 텍스트 레이어에 사용됩니다. 이 글꼴이 누락된 경우 누락된 글꼴 관리에 지정된 옵션이 적용됩니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 레이어]</td>
+   <td> <p>레이어 옵션에 대한 자세한 내용은 Adobe Photoshop 설명서에서 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_editText/">텍스트 레이어 편집</a>을 참조하십시오.</p>  </td>     </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 출력 파일 저장소]</td>
+      <td>
+        <p>편집한 파일을 저장할 파일 서비스를 선택합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 출력 파일 URL]</p>
+      </td>
+   <td> 편집된 파일이 저장되는 위치의 URL 또는 경로를 입력하거나 매핑합니다. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 출력 파일 유형]</p>
+      </td>
+   <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 덮어쓰기]</td>
+      <td>
+        <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Compression]</p>
+      </td>
+   <td> 출력 파일의 압축 레벨을 선택합니다. </td> 
+    </tr>
+  </tbody>
+</table>
 
 
 ### Photoshop 작업 실행(JSON)
@@ -1097,6 +1174,81 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
 ### 스마트 오브젝트 바꾸기
 
 이 작업 모듈은 PSD 레이어 내의 스마트 오브젝트를 대체하고 새 렌디션을 생성합니다.
+
+이 모듈은 스마트 오브젝트 API 버전 2를 사용합니다.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
+      <td>
+        <p>스마트 개체가 저장된 파일 서비스를 선택합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (입력) 파일 위치]</p>
+      </td>
+   <td> 스마트 오브젝트의 URL 또는 경로를 입력하거나 매핑합니다. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 레이어]</p>
+      </td>
+   <td>스마트 오브젝트에 추가할 각 레이어에 대해 항목 추가 를 클릭하고 오브젝트의 이름 또는 ID, 스마트 오브젝트가 저장된 파일 서비스, 레이어의 URL 또는 경로를 입력합니다.<p>이 영역의 고급 설정에 대한 설명은 Photoshop API 설명서의 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">스마트 개체 바꾸기</a>를 참조하십시오 </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 출력]</td>
+      <td>
+        <p>모듈에서 생성할 각 새 렌디션에 대해 항목 추가 를 클릭하고 다음 필드를 채웁니다. 최대 25개의 출력 파일을 가질 수 있습니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
+      <td>
+        <p>새 파일을 저장할 파일 서비스를 선택합니다.</p><p>Fusion 내부 저장소를 선택하면 파일을 이후 모듈에서 사용할 수 있지만 시나리오 외부에서 파일을 사용할 수는 없습니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (출력) 파일 위치]</p>
+      </td>
+   <td> 새 파일이 저장될 위치의 URL 또는 경로를 입력하거나 매핑합니다.  출력 스토리지에 대해 Fusion 내부 스토리지를 선택하지 않은 경우에만 필요합니다.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) Width]</p>
+      </td>
+   <td> 출력 파일의 폭(픽셀 단위)입니다. 모듈은 원래 종횡비를 유지합니다. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (출력) 덮어쓰기]</td>
+      <td>
+        <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다. 이 방법은 Adobe 저장소의 파일에만 적용됩니다.</p>
+      </td>
+    </tr>
+        <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 반환되는 최대 결과 수]</p>
+      </td>
+   <td>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</td> 
+    </tr>
+    </tbody>
+</table>
+
+
+
+### 스마트 오브젝트 바꾸기(기존)
+
+이 작업 모듈은 PSD 레이어 내의 스마트 오브젝트를 대체하고 새 렌디션을 생성합니다.
+
+이 모듈에서는 기존 버전의 스마트 오브젝트를 사용합니다.
 
 <table style="table-layout:auto"> 
   <col/>

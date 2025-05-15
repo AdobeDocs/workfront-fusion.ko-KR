@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는  [!DNL Adobe 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 6219cd4406c2ccf22b1e94e5d264722e640fe3e4
 workflow-type: tm+mt
-source-wordcount: '2432'
+source-wordcount: '2466'
 ht-degree: 0%
 
 ---
@@ -241,7 +241,7 @@ Adobe Firefly 커넥터는 다음을 사용합니다.
 
 이 모듈은 더 이상 사용되지 않으며 곧 제거될 예정입니다. 대신 이미지 채우기 모듈을 사용하십시오.
 
-## 이미지 생성
+### 이미지 생성
 
 이 작업 모듈은 사용자가 제공한 프롬프트를 기반으로 및 이미지를 생성합니다. 선택적 참조 이미지를 제공할 수도 있으며, 생성된 이미지는 참조 이미지의 스타일과 일치합니다.
 
@@ -258,6 +258,10 @@ Adobe Firefly 커넥터는 다음을 사용합니다.
   <tr> 
    <td role="rowheader">[!UICONTROL 프롬프트]</td> 
    <td>생성할 이미지에 대한 프롬프트를 입력하거나 매핑합니다. 프롬프트에 자세히 설명되어 있으면 이미지에 나타나는 내용을 보다 세밀하게 제어할 수 있습니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 모델 버전]</td> 
+   <td>이미지를 생성하는 데 사용할 Firefly 모델 버전을 선택합니다.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 변형 수]</td> 
@@ -388,6 +392,10 @@ Adobe Firefly 커넥터는 다음을 사용합니다.
   <tr> 
    <td role="rowheader">[!UICONTROL 변형 수]</td> 
    <td>1-4 사이의 숫자를 입력하십시오. 모듈은 이 수의 이미지 변형을 생성합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 모델 버전]</td> 
+   <td>이미지를 생성하는 데 사용할 Firefly 모델 버전을 선택합니다.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 생성된 이미지 형식]</td> 

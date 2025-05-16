@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Workfront Fusion]용  [!DNL Adobe Experience Manager 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 0%
@@ -67,10 +67,10 @@ Adobe Experience Manager Assets 커넥터에 대한 비디오 소개는 다음�
 * 이 모듈을 사용하려면 [!DNL Adobe Experience Manager Assets] 계정이 있어야 합니다.
 * [!DNL Adobe Developer console]에서 [!UICONTROL 서버 간] 흐름을 설정해야 합니다.
 
-  [!DNL Adobe Developer console]에서 [!UICONTROL 서버 간] 흐름을 설정하는 방법에 대한 지침은 [서버측 API에 대한 액세스 토큰 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=ko#the-server-to-server-flow)을 참조하십시오.
+  [!DNL Adobe Developer console]에서 [!UICONTROL 서버 간] 흐름을 설정하는 방법에 대한 지침은 [서버측 API에 대한 액세스 토큰 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow)을 참조하십시오.
 * Adobe Experience Manager 기술 계정에 쓰기 권한이 있어야 합니다.
 
-  Adobe Experience Manager 기술 계정에 쓰기 권한을 추가하는 방법에 대한 지침은 Adobe Experience Manager 설명서에서 [서비스 자격 증명](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)을 참조하십시오.
+  Adobe Experience Manager 기술 계정에 쓰기 권한을 추가하는 방법에 대한 지침은 Adobe Experience Manager 설명서에서 [서비스 자격 증명](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)을 참조하십시오.
 
 ## Adobe Experience Manager Assets API 정보
 
@@ -99,7 +99,7 @@ Adobe Experience Manager Assets 커넥터는 다음을 사용합니다.
 
      이 구성에는 [!DNL Adobe Admin Console]의 정보가 필요합니다.
 
-   * **[!DNL AEM Assets Basic] ([!DNL Adobe Managed Services])**
+   * **[!DNL AEM Assets Basic]([!DNL Adobe Managed Services])**
 
      이 구성에는 사용자 이름과 암호가 필요합니다.
 
@@ -118,11 +118,11 @@ Adobe Experience Manager Assets 커넥터는 다음을 사용합니다.
 >
 >* 이 필드에 대한 정보는 [!DNL Adobe Developer Console]에서 [!UICONTROL 서버 간] 흐름을 설정하는 과정에서 생성됩니다. 해당 설정의 일부로 생성된 서비스 자격 증명 JSON 파일에서 이러한 값을 찾을 수 있습니다.
 >
->   [!UICONTROL Adobe Developer Console]에서 [!UICONTROL 서버 간] 흐름을 설정하는 방법에 대한 지침은 [Server Side API에 대한 액세스 토큰 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=ko#the-server-to-server-flow)을 참조하십시오.
+>   [!UICONTROL Adobe Developer Console]에서 [!UICONTROL 서버 간] 흐름을 설정하는 방법에 대한 지침은 [Server Side API에 대한 액세스 토큰 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow)을 참조하십시오.
 >
 >* Adobe Experience Manager 기술 계정에 쓰기 권한이 있어야 합니다.
 >
->   Adobe Experience Manager 기술 계정에 쓰기 권한을 추가하는 방법에 대한 지침은 Adobe Experience Manager 설명서에서 [서비스 자격 증명](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)을 참조하십시오.
+>   Adobe Experience Manager 기술 계정에 쓰기 권한을 추가하는 방법에 대한 지침은 Adobe Experience Manager 설명서에서 [서비스 자격 증명](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)을 참조하십시오.
 
 
 <table style="table-layout:auto"> 
@@ -132,7 +132,7 @@ Adobe Experience Manager Assets 커넥터는 다음을 사용합니다.
               <tr>
                   <td role="rowheader">[!UICONTROL 연결 이름]</td>
                   <td>
-                      <p>이 연결의 이름 입력</p>
+                      <p>이 연결의 이름을 입력하십시오.</p>
                   </td>
               </tr>
               <tr>
@@ -188,7 +188,7 @@ Adobe Experience Manager Assets 커넥터는 다음을 사용합니다.
             <tr>
                 <td role="rowheader">[!UICONTROL 연결 이름]</td>
                 <td>
-                    <p>이 연결의 이름 입력</p>
+                    <p>이 연결의 이름을 입력하십시오.</p>
                 </td>
             </tr>
             <tr>

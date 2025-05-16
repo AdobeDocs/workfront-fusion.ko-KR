@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는  [!DNL Jira] 
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
 workflow-type: tm+mt
 source-wordcount: '2208'
 ht-degree: 1%
@@ -251,7 +251,7 @@ Jira 커넥터는 다음을 사용합니다.
     <tbody> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL 연결 이름]</p> </td> 
-      <td> <p>연결 이름 입력</p> </td> 
+      <td> <p>연결의 이름을 입력합니다.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL 환경]</p> </td> 

@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는  [!DNL Servic
 author: Becky
 feature: Workfront Fusion
 exl-id: 7b236869-bd83-4db5-a363-d6570f6e4aff
-source-git-commit: 55418d9a25d44e107236898bb236e9daf9fe5bd1
+source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
 workflow-type: tm+mt
 source-wordcount: '1586'
 ht-degree: 1%
@@ -98,7 +98,7 @@ ServiceNow 커넥터는 다음을 사용합니다.
     <tbody> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL 연결 이름]</p> </td> 
-      <td>새 [!DNL ServiceNow] 연결의 이름 입력</td> 
+      <td>새 [!DNL ServiceNow] 연결의 이름을 입력하십시오.</td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL 환경]</p> </td> 

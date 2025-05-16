@@ -4,9 +4,9 @@ description: 일부 트리거 모듈을 사용하면 번들 검색을 시작할 
 author: Becky
 feature: Workfront Fusion
 exl-id: 83628fa5-82e2-4f67-bfed-70a4c3c19f7f
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '328'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 1%
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] 라이센스</td> 
-   <td> <p>신규: [!UICONTROL Standard]</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
+   <td> <p>새로운 기능: [!UICONTROL Standard]</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td> 
@@ -48,7 +48,7 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Workfront] 플랜: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 플랜: [!DNL Workfront Fusion]이(가) 포함되어 있습니다.</li></ul>
+   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Workfront] 계획: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 계획: [!DNL Workfront Fusion]이(가) 포함되어 있습니다.</li></ul>
    <p>또는</p>
    <p>현재: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</p>
    </td> 
@@ -64,7 +64,7 @@ ht-degree: 1%
 
 ## 트리거 모듈의 시작 위치 선택
 
-1. 왼쪽 패널의 **[!UICONTROL Scenarios]** 탭을 클릭합니다.
+1. 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭합니다.
 1. 트리거가 시작되는 위치를 선택할 시나리오를 선택합니다.
 1. 시나리오의 아무 곳이나 클릭하여 시나리오 편집기를 입력합니다.
 1. 트리거 모듈을 구성하고 저장합니다.
@@ -75,7 +75,7 @@ ht-degree: 1%
 
    ![시작할 위치 선택](assets/choose-where-to-start.png)
 
-1. 표시되는 **[!UICONTROL Choose where to start]** 상자에서 옵션을 선택하십시오.
+1. 표시되는 **[!UICONTROL 시작 위치 선택]** 상자에서 옵션을 선택합니다.
 
    표시되는 옵션은 제공된 서비스의 가능성에 따라 다릅니다. 여기에는 다음이 포함될 수 있습니다.
 
@@ -84,11 +84,11 @@ ht-degree: 1%
     <col> 
     <tbody>
     <tr>
-    <td>[!UICONTROL From now on] (기본)</td>
+    <td>[!UICONTROL From now on] (기본값)</td>
     <td>이 옵션을 선택한 후 설정에 따라 추가되거나 업데이트된 모든 번들을 검색합니다.</td>
     </tr>
      <tr>
-    <td>[!UICONTROL Since specific date]</td>
+    <td>[!UICONTROL 특정 날짜 이후]</td>
     <td>지정된 날짜 및 시간 이후에 추가되거나 업데이트된 모든 번들(설정에 따라 다름)을 검색합니다.</td>
       </tr>
       <tr>
@@ -96,27 +96,8 @@ ht-degree: 1%
     <td>사용 가능한 모든 번들 검색</td>
      </tr>
       <tr>
-    <td>[!UICONTROL Choose manually]</td>
+    <td>[!UICONTROL 수동으로 선택]</td>
     <td>번들 검색을 시작할 첫 번째 번들을 선택할 수 있습니다.</td>
      </tr>
      </tbody>
    </table>
-
-
-
-   <table style="table-layout:auto">
-    <col> 
-    <col> 
-    <tbody> 
-     <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
-      <td>새 [!DNL DocuSign] 연결의 이름 입력</td> 
-     </tr> 
-     <tr> 
-      <td role="rowheader">[!UICONTROL Account type]</td> 
-      <td>연결할 계정이 프로덕션 계정인지 데모 계정인지 선택합니다.</td> 
-     </tr> 
-    </tbody> 
-   </table>
-
-

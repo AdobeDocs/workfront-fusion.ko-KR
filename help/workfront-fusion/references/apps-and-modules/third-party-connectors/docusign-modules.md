@@ -307,7 +307,7 @@ DocuSign 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">
-     생성 후 [!UICONTROL]
+     생성 후 
    </td> 
    <td> <p>봉투를 초안으로 저장할지 서명을 위해 전송할지 선택합니다.</p> </td> 
   </tr> 

@@ -4,9 +4,9 @@ description: Adobe Lightroom 모듈을 사용하면 Adobe Lightroom 계정의 �
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
-source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
+source-git-commit: 5d1424fe88efb56e565077bf36211795c9bc96ed
 workflow-type: tm+mt
-source-wordcount: '2376'
+source-wordcount: '2563'
 ht-degree: 0%
 
 ---
@@ -21,48 +21,53 @@ ht-degree: 0%
 
 ## 액세스 요구 사항
 
++++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
+
 이 문서의 기능을 사용하려면 다음 액세스 권한이 있어야 합니다.
 
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] 플랜*</td>
-      <td>
-        <p>[!UICONTROL Pro] 이상</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] 라이센스*</td>
-      <td>
-        <p>[!UICONTROL Plan], [!UICONTROL Work]</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td>
-      <td >
-        <p>작업 자동화 및 통합을 위한 [!UICONTROL Workfront Fusion]</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">제품</td>
-      <td>조직에서 이 문서에 설명된 기능을 사용하려면 [!DNL Adobe Workfront Fusion]과(와) [!DNL Adobe Workfront]을(를) 구입해야 합니다.</td>
-    </tr>
-    </tr>
-  </tbody>
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront 패키지</td> 
+   <td> <p>임의</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront 라이선스</td> 
+   <td> <p>새로운 기능: 표준</p><p>또는</p><p>현재: 작업 시간 이상</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
+   <td>
+   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
+   <p>또는</p>
+   <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">제품</td> 
+   <td>
+   <p>신규:</p> <ul><li>또는 Prime Workfront 패키지 선택: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</li><li>Ultimate Workfront 패키지: Workfront Fusion이 포함됩니다.</li></ul>
+   <p>또는</p>
+   <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
+   </td> 
+  </tr>
+ </tbody> 
 </table>
 
+이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-&#42;플랜, 라이선스 유형 또는 액세스 권한을 확인하려면 [!DNL Workfront] 관리자에게 문의하세요.
+[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
 
-&#42;&#42;[!DNL Adobe Workfront Fusion]개 라이선스에 대한 자세한 내용은 [[!DNL [Adobe Workfront Fusion] licenses]](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)을(를) 참조하세요.
++++
 
 ## 전제 조건
 
 [!DNL Adobe Lightroom] 커넥터를 사용하려면 먼저 다음 전제 조건을 충족하는지 확인해야 합니다.
 
 * 활성 [!DNL Adobe Lightroom] 계정이 있어야 합니다.
+* Adobe Admin Console에 OAuth 웹 앱이 구성되어 있어야 합니다. 자세한 내용은 이 문서의 [Adobe Admin Console에서 OAuth 응용 프로그램 구성](#configure-an-oauth-application-in-the-adobe-admin-console)을 참조하십시오.
 
 ## Adobe Lightroom API 정보
 
@@ -87,9 +92,49 @@ Adobe Lightroom 커넥터는 다음을 사용합니다.
 
 ## Adobe Lightroom에 대한 연결 만들기
 
+Adobe Lightroom에 연결하려면 먼저 Adobe Admin Console에서 OAuth 앱을 구성해야 합니다. 이 앱이 구성되면 Workfront Fusion에서 연결을 만들 수 있습니다.
+
+### Adobe Admin Console에서 OAuth 애플리케이션 구성
+
+1. Adobe Admin Console에서 OAuth 웹 앱 구성을 시작합니다.
+
+   지침은 Adobe 개발자 설명서에서 [사용자 인증 구현 안내서](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation)를 참조하십시오.
+1. OAuth 웹 앱을 구성할 때 다음 값을 입력합니다.
+
+   <table style="table-layout:auto"> 
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+      </col>
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+      </col>
+      <tbody>
+        <tr>
+        <td role="rowheader">[!UICONTROL 범위]</td>
+        <td>
+          <ul>
+            <li>AdobeID</li>
+            <li>lr_partner_rendition_api</li>
+            <li>openid</li>
+            <li>offline_access</li>
+            <li>lr_partner_apis</li>
+          </ul>
+        </td>
+        </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL 리디렉션 URI]</td>
+        <td><code>https://app.workfrontfusion.com/oauth/cb/adobe-lightroom5</code></td>
+        </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL 리디렉션 URI 패턴]</td>
+        <td><code>https://app\.workfrontfusion\.com/oauth/cb/adobe-lightroom5</code></td>
+        </tr>
+      </tbody>
+    </table>
+
+### Workfront Fusion에서 Adobe Lightroom에 대한 연결 만들기
+
 [!DNL Adobe Lightroom] 모듈에 대한 연결을 만들려면:
 
-1. 모든 모듈에서 연결 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
+1. 모든 Adobe Lightroom 모듈에서 연결 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 
 1. 다음 필드를 채웁니다.
 
@@ -127,8 +172,6 @@ Adobe Lightroom 커넥터는 다음을 사용합니다.
 1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭하세요.
 
 
-
-
 ## Adobe Lightroom 모듈 및 해당 필드
 
 [!DNL Adobe Lightroom] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Adobe Lightroom] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
@@ -161,13 +204,15 @@ Adobe Lightroom 커넥터는 다음을 사용합니다.
     <tr>
       <td role="rowheader">[!UICONTROL 자격 증명]</td>
       <td>
-        <p>특정 서버가 실행 중인지 확인하기 위해 특정 인증서를 제공하려면 항목 추가를 누르고 인증서를 입력합니다.</p><p>인증 헤더가 자동으로 추가됩니다.</p>
+        <p>특정 서버가 실행되고 있는지 확인하기 위해 특정 자격 증명을 제공하려면 <b>항목 추가</b>를 클릭하고 자격 증명을 입력하십시오.</p><p>인증 헤더가 자동으로 추가됩니다.</p>
       </td>
     </tr>
   </tbody>
 </table>
 
 #### 사용자 카탈로그 메타데이터 검색
+
+이 작업 모듈은 Adobe Lightroom의 카탈로그에서 메타데이터를 검색합니다. 카탈로그에는 에셋, 앨범 또는 기타 리소스가 포함되어 있습니다.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -188,7 +233,7 @@ Adobe Lightroom 커넥터는 다음을 사용합니다.
 
 ### 자산
 
-* [에셋 원본 파일 만들기](#create-an-asset-external-xmp-develop-setting-file)
+* [에셋 원본 파일 만들기](#create-an-asset-original-file)
 * [에셋 만들기](#create-an-asset)
 * [외부 XMP 개발 설정 파일 에셋 만들기](#create-an-asset-external-xmp-develop-setting-file)
 * [원본 파일에 대한 렌디션 생성](#generate-renditions-for-an-original-file)
@@ -201,6 +246,7 @@ Adobe Lightroom 커넥터는 다음을 사용합니다.
 
 이 작업 모듈은 자산에 대한 원본 파일을 만들고 업로드합니다.
 
+<!--BECKY START HERE-->
 
 <table style="table-layout:auto"> 
   <col/>
@@ -231,7 +277,7 @@ Adobe Lightroom 커넥터는 다음을 사용합니다.
     <tr>
       <td role="rowheader">[!UICONTROL 바이트 범위]</td>
       <td>
-        <p>RFC 2616에서 정의한 첫 번째 바이트와 마지막 바이트 및 엔티티 길이를 포함하여 요청에 대한 바이트 범위를 입력하거나 매핑합니다. 데이터가 너무 커서 한 번의 호출로 업로드할 수 없는 경우에만 포함해야 합니다.</p>
+        <p>RFC 2616에서 정의한 첫 번째 바이트와 마지막 바이트 및 엔티티 길이를 포함하여 요청에 대한 바이트 범위를 입력하거나 매핑합니다. 이 정보는 데이터가 너무 커서 한 번의 호출로 업로드할 수 없는 경우에만 포함해야 합니다.</p>
       </td>
     </tr>
     <tr>

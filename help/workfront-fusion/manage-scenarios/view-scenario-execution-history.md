@@ -4,9 +4,9 @@ description: 시나리오의 이벤트 또는 실행에 대한 정보를 표시�
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: 0ef6dde9566ca3b97c1c52d6055f0ce44f575cee
+source-git-commit: cc7c05614390e20d4051635c605e12dfa65493a1
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '894'
 ht-degree: 1%
 
 ---
@@ -88,7 +88,7 @@ ht-degree: 1%
 
    시나리오 편집기에서 시나리오 작업을 수행하는 경우 창의 왼쪽 상단 모서리 근처에 있는 왼쪽 화살표 ![편집 종료 화살표](assets/exit-editing-arrow.png)를 클릭합니다.
 
-1. 시나리오 이름 근처에 있는 **기록**&#x200B;을 클릭합니다.
+1. 시나리오 이름 근처에 있는 **기록**을 클릭합니다.
    ![기록 탭](assets/history-tab.png)
 
    시나리오의 모든 실행에 대해 다음 세부 정보가 나열됩니다.
@@ -105,6 +105,8 @@ ht-degree: 1%
    >실행 세부 정보가 저장소에 기록되는 동안 시나리오 내역에서 최근에 실행된 시나리오 옆에 **처리 중** 배지가 표시됩니다. 처리는 시나리오가 실행된 직후에 발생합니다. 및 은(는) 몇 분 이내로 지속됩니다. 실행이 처리되는 동안에는 시나리오 실행에 대한 세부 정보가 표시되지 않을 수 있습니다.
 
 1. 특정 시나리오 실행에 대한 세부 정보를 보려면 맨 오른쪽에 있는 **세부 정보**&#x200B;를 클릭하십시오. [!UICONTROL 세부 정보] 링크는 실행에 사용 가능한 세부 정보가 있는 경우에만 표시됩니다.
+
+   시나리오 실행 세부 정보 보기에 대한 자세한 내용은 [특정 시나리오 실행 보기](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md)를 참조하십시오.
 1. 이벤트를 보려면 **이벤트 표시**&#x200B;를 전환하세요.
 
 

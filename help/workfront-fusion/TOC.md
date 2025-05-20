@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 설명서
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 문서, 튜토리얼 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
-source-git-commit: 2b970a6f0b6abac7b8dfb38922f30d59b4f91486
+source-git-commit: 0f7626e549b872b868855c0fbc54dd0f06ce0154
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '1772'
 ht-degree: 3%
 
 ---
@@ -224,6 +224,7 @@ ht-degree: 3%
    * [잠긴 시나리오 관리](/help/workfront-fusion/manage-scenarios/view-manage-locked-scenario.md)
    * [미완료 실행 보기 및 해결](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)
    * [시나리오의 실행 내역 보기](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)
+   * [특정 시나리오 실행 보기](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md)
    * [실행 중인 시나리오에서 데이터 흐름 보기](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
    * [웹후크의 대기열 보기](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
    * [Workfront Fusion의 AI 지원](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)

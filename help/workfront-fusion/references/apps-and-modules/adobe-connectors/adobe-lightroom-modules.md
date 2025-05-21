@@ -4,9 +4,9 @@ description: Adobe Lightroom 모듈을 사용하면 Adobe Lightroom 계정의 �
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
-source-git-commit: 5d1424fe88efb56e565077bf36211795c9bc96ed
+source-git-commit: 4d31a447d0d8d91ef4f86d8fd0bc63663b0f5ad0
 workflow-type: tm+mt
-source-wordcount: '2563'
+source-wordcount: '2770'
 ht-degree: 0%
 
 ---
@@ -246,8 +246,6 @@ Adobe Lightroom에 연결하려면 먼저 Adobe Admin Console에서 OAuth 앱을
 
 이 작업 모듈은 자산에 대한 원본 파일을 만들고 업로드합니다.
 
-<!--BECKY START HERE-->
-
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -293,7 +291,6 @@ Adobe Lightroom에 연결하려면 먼저 Adobe Admin Console에서 OAuth 앱을
 
 이 작업 모듈은 초기 메타데이터 및 가져오기 정보를 사용하여 새 에셋을 만듭니다.
 
-
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -335,6 +332,30 @@ Adobe Lightroom에 연결하려면 먼저 Adobe Admin Console에서 OAuth 앱을
     <tr>
       <td role="rowheader">[!UICONTROL 날짜 캡처됨]</td>
       <td>
+        <p>에셋의 캡처 날짜를 <code>YYYY-MM-DDT00:00:00-00:00</code> 형식으로 입력하거나 매핑합니다. 캡처된 날짜가 <code>0000-00-00T00:00:00</code>(으)로 설정된 경우 서버에서 설정됩니다. </p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 파일 이름]</td>
+      <td>
+        <p>Lightroom으로 가져오는 자산의 파일 이름을 입력하거나 매핑합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 장치를 가져온 위치]</td>
+      <td>
+        <p>자산을 가져오는 장치의 이름을 입력하거나 매핑합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 가져온 사용자의 계정 ID]</td>
+      <td>
+        <p>에셋을 가져오는 사용자의 ID를 입력하거나 매핑합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 가져오기 타임스탬프]</td>
+      <td>
         <p><code>YYYY-MM-DDT00:00:00-00:00</code> 형식으로 날짜를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
@@ -343,7 +364,7 @@ Adobe Lightroom에 연결하려면 먼저 Adobe Admin Console에서 OAuth 앱을
 
 #### 외부 XMP 개발 설정 파일 에셋 만들기
 
-이 작업 모듈은 두 가지 워크플로우를 지원합니다. 첫 번째 워크플로우는 자산에 대한 외부 XMP 개발 설정 파일을 업로드하는 것입니다. 두 번째 워크플로우는 다른 자산의 외부 xmp 개발 설정 파일에서 복사하여 외부 XMP 개발 설정 파일을 만드는 것입니다.
+이 작업 모듈은 자산에 대한 외부 XMP 개발 설정 파일을 업로드하거나 다른 자산의 외부 xmp 개발 설정 파일에서 복사하여 외부 XMP 개발 설정 파일을 만드는 두 가지 워크플로우를 지원합니다.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -354,7 +375,7 @@ Adobe Lightroom에 연결하려면 먼저 Adobe Admin Console에서 OAuth 앱을
       <td>[!DNL Adobe Lightroom]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >[!DNL Adobe Lightroom]</a>에 대한 연결 만들기 를 참조하십시오.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 콘텐츠의 길이(바이트)]</td>
+      <td role="rowheader">[!UICONTROL Content Length in Bytes]</td>
       <td>
         <p>콘텐츠의 길이를 바이트 단위로 입력하거나 매핑합니다.</p>
       </td>
@@ -368,7 +389,7 @@ Adobe Lightroom에 연결하려면 먼저 Adobe Admin Console에서 OAuth 앱을
     <tr>
       <td role="rowheader">[!UICONTROL 카탈로그 ID]</td>
       <td>
-        <p>자산이 포함된 카탈로그의 ID를 입력하거나 매핑합니다.</p>
+        <p>자산을 만들려는 카탈로그의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
@@ -413,7 +434,7 @@ Adobe Lightroom에 연결하려면 먼저 Adobe Admin Console에서 OAuth 앱을
     <tr>
       <td role="rowheader">[!UICONTROL 카탈로그 ID]</td>
       <td>
-        <p>자산이 포함된 카탈로그의 ID를 입력하거나 매핑합니다.</p>
+        <p>렌디션을 생성할 카탈로그의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
@@ -468,7 +489,7 @@ Adobe Lightroom에 연결하려면 먼저 Adobe Admin Console에서 OAuth 앱을
     <tr>
       <td role="rowheader">[!UICONTROL 카탈로그 ID]</td>
       <td>
-        <p>자산이 포함된 카탈로그의 ID를 입력하거나 매핑합니다.</p>
+        <p>XMP 개발 설정 파일과 연결된 자산이 포함된 카탈로그의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
@@ -495,13 +516,13 @@ Adobe Lightroom에 연결하려면 먼저 Adobe Admin Console에서 OAuth 앱을
     <tr>
       <td role="rowheader">[!UICONTROL 카탈로그 ID]</td>
       <td>
-        <p>자산이 포함된 카탈로그의 ID를 입력하거나 매핑합니다.</p>
+        <p>렌디션을 검색할 에셋이 포함된 카탈로그의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 자산 ID]</td>
       <td>
-        <p>XMP 개발 설정 파일과 연결된 에셋의 ID를 입력하거나 매핑합니다.</p>
+        <p>렌디션을 검색할 에셋의 ID를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
@@ -538,9 +559,15 @@ Adobe Lightroom에 연결하려면 먼저 Adobe Admin Console에서 OAuth 앱을
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 전에 캡처된 자산 반환]</td>
+      <td role="rowheader">[!UICONTROL 지정된 시간 전에 캡처된 에셋 반환]</td>
       <td>
-        <p><code>YYYY-MM-DDT00:00:00</code> 형식의 날짜를 입력하십시오. 모듈은 이 날짜 이전에 캡처된 결과를 반환합니다.</p><p> 이 필드는 필드 <code>Return assets captured after</code>과(와) 함께 사용할 수 없습니다.</p>
+        <p><code>YYYY-MM-DDT00:00:00</code> 형식의 날짜를 입력하십시오. 모듈은 이 날짜 이전에 캡처된 결과를 반환합니다.</p><p> 이 필드는 필드 <code>Return assets captured after given time</code>과(와) 함께 사용할 수 없습니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 지정된 시간 후에 캡처된 에셋 반환]</td>
+      <td>
+        <p><code>YYYY-MM-DDT00:00:00</code> 형식의 날짜를 입력하십시오. 모듈은 이 날짜 이전에 캡처된 결과를 반환합니다.</p><p> 이 필드는 필드 <code>Return assets captured before given time</code>과(와) 함께 사용할 수 없습니다.</p>
       </td>
     </tr>
     <tr>
@@ -552,19 +579,19 @@ Adobe Lightroom에 연결하려면 먼저 Adobe Admin Console에서 OAuth 앱을
     <tr>
       <td role="rowheader">[!UICONTROL SHA256 원본 파일의 해시 값]</td>
       <td>
-        <p></p>
+        <p>원본 파일의 해시 값을 입력하거나 매핑합니다. 일치하는 해시가 있는 Assets이 반환됩니다.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 스택 내에 있는 자산을 숨기시겠습니까?"]</td>
       <td>
-        <p></p>
+        <p>스택 내부의 자산을 숨기려면 예를 선택합니다(스택 내부의 자산은 반환되지 않음). 스택 내에 있는 자산을 결과에 포함하려면 아니오를 선택합니다.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 자산 하위 유형 값]</td>
       <td>
-        <p></p>
+        <p>반환할 하위 유형 값의 세미콜론으로 구분된 목록을 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
@@ -581,24 +608,26 @@ Adobe Lightroom에 연결하려면 먼저 Adobe Admin Console에서 OAuth 앱을
     <tr>
       <td role="rowheader">[!UICONTROL 그룹 값]</td>
       <td>
-        <p></p>
+        <p>세미콜론으로 구분된 그룹 값 목록을 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 이름 값]</td>
       <td>
-        <p></p>
+        <p>세미콜론으로 구분된 이름 값 목록을 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 즐겨찾기 상태]</td>
       <td>
-        <p></p>
+        <p>결과를 반환할 즐겨찾기 상태를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     </tr>
   </tbody>
 </table>
+
+<!--BECKY START HERE-->
 
 ### 앨범
 

@@ -4,9 +4,9 @@ description: Adobe Lightroom 모듈을 사용하면 Adobe Lightroom 계정의 �
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
-source-git-commit: 4d31a447d0d8d91ef4f86d8fd0bc63663b0f5ad0
+source-git-commit: 420665071db63954bce14b2011c5ecdb97403fd1
 workflow-type: tm+mt
-source-wordcount: '2770'
+source-wordcount: '3187'
 ht-degree: 0%
 
 ---
@@ -627,8 +627,6 @@ Adobe Lightroom에 연결하려면 먼저 Adobe Admin Console에서 OAuth 앱을
   </tbody>
 </table>
 
-<!--BECKY START HERE-->
-
 ### 앨범
 
 * [앨범에 에셋 추가](#add-assets-to-an-album)
@@ -681,10 +679,10 @@ Adobe Lightroom에 연결하려면 먼저 Adobe Admin Console에서 OAuth 앱을
     <tr>
       <td role="rowheader">[!UICONTROL Order]</td>
       <td>
-        <p></p>
+        <p>에셋의 순서를 지정합니다.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL 메타데이터]</td>
+      <td role="rowheader">[!UICONTROL 서비스 페이로드]</td>
       <td>
         <p>에셋에 포함할 메타데이터를 입력하거나 매핑합니다. 최대 길이가 1-24자인 단일 텍스트 문자열이어야 합니다.</p>
       </td>
@@ -727,32 +725,46 @@ Adobe Lightroom에 연결하려면 먼저 Adobe Admin Console에서 OAuth 앱을
         <p>앨범의 하위 유형을 선택합니다.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL API 키]</td>
+      <td role="rowheader">[!UICONTROL 서비스 ID]</td>
       <td>
         <p>앨범을 만드는 서비스의 API 키를 입력합니다.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL 날짜/시간 사용자 생성됨]</td>
+      <td role="rowheader">[!UICONTROL 사용자 생성일]</td>
       <td>
         <p><code>YYYY-MM-DDT00:00:00-00:00Z</code> 형식으로 날짜를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 날짜/시간 사용자 업데이트됨]</td>
+      <td role="rowheader">[!UICONTROL 날짜 사용자 업데이트됨]</td>
       <td>
         <p><code>YYYY-MM-DDT00:00:00-00:00Z</code> 형식으로 날짜를 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Album name]</td>
+      <td role="rowheader">[!UICONTROL Album Name]</td>
       <td>
         <p>새 앨범의 이름을 입력하거나 매핑합니다.</p>
       </td>
+    </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 표지 ID]</td>
       <td>
         <p>이 앨범의 표지로 사용할 자산의 ID를 입력하거나 매핑합니다.</p>
       </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 상위 ID]</td>
+      <td>
+        <p>이 앨범에 대한 상위 항목의 ID를 입력하거나 매핑합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 서비스 페이로드]</td>
+      <td>
+        <p>앨범 메타데이터를 문자열로 입력하거나 매핑합니다.</p>
+      </td>
+    </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Remote ID]</td>
       <td>
@@ -857,7 +869,100 @@ Adobe Lightroom에 연결하려면 먼저 Adobe Admin Console에서 OAuth 앱을
 
 이 작업 모듈은 지정된 앨범의 자산 목록을 검색합니다.
 
-
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>[!DNL Adobe Lightroom]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >[!DNL Adobe Lightroom]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 카탈로그 ID]</td>
+      <td>
+        <p>앨범이 포함된 카탈로그의 ID를 입력하거나 매핑합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 앨범 ID]</td>
+      <td>
+        <p>에셋을 나열할 앨범의 ID를 입력하거나 매핑합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Capture Assets Before Time]</td>
+      <td>
+        <p><code>YYYY-MM-DDT00:00:00</code> 형식의 날짜를 입력하십시오. 모듈은 이 날짜 이전에 캡처된 결과를 반환합니다.</p><p> 이 필드는 필드 <code>Return assets captured after given time</code>과(와) 함께 사용할 수 없습니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Capture Assets After Time]</td>
+      <td>
+        <p><code>YYYY-MM-DDT00:00:00</code> 형식의 날짜를 입력하십시오. 모듈은 이 날짜 이전에 캡처된 결과를 반환합니다.</p><p> 이 필드는 필드 <code>Return assets captured before given time</code>과(와) 함께 사용할 수 없습니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 종료 자산 순서 값]</td>
+      <td>
+        <p>종료 자산의 주문 값을 입력하거나 매핑합니다.</p><p> 이 필드는 <code>Capture Assets After Time</code> 필드에만 사용할 수 있습니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 자산 순서 값 시작]</td>
+      <td>
+        <p>시작 자산의 주문 값을 입력하거나 매핑합니다.</p><p> 이 필드는 <code>Capture Assets BEfore Time</code> 필드에만 사용할 수 있습니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 반환할 Assets 번호(1-500)]</td>
+      <td>
+        <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력합니다. 이 숫자는 1-500 사이여야 합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 스택 내에 있는 자산을 숨기시겠습니까?"]</td>
+      <td>
+        <p>스택 내부의 자산을 숨기려면 예를 선택합니다(스택 내부의 자산은 반환되지 않음). 스택 내에 있는 자산을 결과에 포함하려면 아니오를 선택합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 하위 유형 값(세미콜론으로 구분)]</td>
+      <td>
+        <p>반환할 하위 유형 값의 세미콜론으로 구분된 목록을 입력하거나 매핑합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 플래그 값(세미콜론으로 구분)]</td>
+      <td>
+        <p>반환할 세미콜론으로 구분된 플래그 값 목록을 입력하거나 매핑합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">포함할 [!UICONTROL 추가 데이터 필드(세미콜론으로 구분)]</td>
+      <td>
+        <p>에셋이 포함된 경우 모든 필드가 포함되고, 그렇지 않으면 ID 및 자체 href 링크만 반환됩니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 제외할 자산 유형]</td>
+      <td>
+        <p>전체 또는 미완료 에셋을 제외하려면 을 선택합니다. 모든 에셋을 포함하려면 이 필드를 비워 둡니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 자산 ID]</td>
+      <td>
+        <p>쉼표로 구분하여 최대 100개의 자산 ID를 입력하거나 매핑합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 프레젠테이션 필터를 기반으로 앨범 에셋 필터링]</td>
+      <td>
+        <p>이 필드를 'true'로 설정하면 앨범에 설정된 프레젠테이션 필터를 기반으로 모든 앨범 에셋을 필터링합니다. 이 매개 변수를 사용하면 거부된 자산은 항상 프레젠테이션 필터의 설정과 관계없이 필터링됩니다. album_filters에 대해 'true' 이외의 값이 설정된 경우 프레젠테이션 필터가 적용되지 않습니다. 기본 동작은 모든 에셋을 표시하는 것입니다. 이 매개 변수는 플래그 매개 변수와 함께 사용할 수 없습니다. </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 #### 앨범 검색
 
@@ -880,7 +985,7 @@ Adobe Lightroom에 연결하려면 먼저 Adobe Admin Console에서 OAuth 앱을
     <tr>
       <td role="rowheader">[!UICONTROL 하위 유형]</td>
       <td>
-        <p>검색할 앨범의 ID를 입력하거나 매핑합니다.</p>
+        <p>반환할 하위 유형 값의 세미콜론으로 구분된 목록을 입력하거나 매핑합니다.</p>
       </td>
     </tr>
     <tr>
@@ -890,7 +995,7 @@ Adobe Lightroom에 연결하려면 먼저 Adobe Admin Console에서 OAuth 앱을
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 반환되는 최대 앨범 수]</td>
+      <td role="rowheader">[!UICONTROL 반환할 앨범 수]</td>
       <td>
         <p>한 실행 주기 동안 [!DNL Workfront Fusion]이(가) 반환할 최대 자산 수를 설정하십시오. 이 필드의 기본값은 100입니다. 제한 경계의 여러 앨범에 동일한 <code>name_after</code> 값이 있는 경우 이 모듈은 이 제한보다 더 많은 앨범을 반환할 수 있습니다.</p>
       </td>

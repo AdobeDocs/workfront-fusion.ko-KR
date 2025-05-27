@@ -4,9 +4,9 @@ description: 라우터 모듈을 사용하면 플로우를 여러 경로로 분�
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: c1c11c6766678263b36488909c3799299a1c510a
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] 라이센스</td> 
-   <td> <p>신규: [!UICONTROL Standard]</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
+   <td> <p>새로운 기능: [!UICONTROL Standard]</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td> 
@@ -47,7 +47,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Workfront] 플랜: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 플랜: [!DNL Workfront Fusion]이(가) 포함되어 있습니다.</li></ul>
+   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Workfront] 계획: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 계획: [!DNL Workfront Fusion]이(가) 포함되어 있습니다.</li></ul>
    <p>또는</p>
    <p>현재: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</p>
    </td> 
@@ -65,17 +65,17 @@ ht-degree: 0%
 
 라우터를 구성하기 전에 라우터 모듈을 추가해야 합니다.
 
-1. 왼쪽 패널의 **[!UICONTROL Scenarios]** 탭을 클릭합니다.
+1. 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭합니다.
 1. 라우터를 추가할 시나리오를 선택합니다.
 1. 시나리오의 아무 곳이나 클릭하여 시나리오 편집기를 입력합니다.
 1. 시나리오 편집기에서 라우터를 추가할 모듈의 오른쪽 핸들을 클릭합니다.
-1. 표시되는 모듈 목록에서 **[!UICONTROL Flow Control]** > **라우터**&#x200B;를 선택합니다.
+1. 표시되는 모듈 목록에서 **[!UICONTROL 흐름 제어]** > **라우터**&#x200B;를 선택합니다.
 
    ![경로 연결](assets/connect-the-router-350x108.png)
 
    또는
 
-   두 모듈 사이에 라우터 모듈을 삽입하려면 두 모듈을 연결하는 경로 아래의 렌치 아이콘을 클릭하고 메뉴에서 **[!UICONTROL Add a router]**&#x200B;을(를) 선택합니다.
+   두 모듈 사이에 라우터 모듈을 삽입하려면 두 모듈을 연결하는 경로 아래의 렌치 아이콘을 클릭하고 메뉴에서 **[!UICONTROL 라우터 추가]**&#x200B;를 선택하십시오.
 
    ![라우터 삽입](assets/insert-router-350x191.png)
 1. 라우터의 오른쪽 핸들을 클릭하고 모듈을 추가하여 라우터에 첫 번째 경로를 추가합니다. 이는 모듈을 추가하는 것과 유사합니다.
@@ -87,7 +87,7 @@ ht-degree: 0%
 
    경로는 실행되는 순서대로 배열됩니다. 상위 경로가 먼저 실행됩니다.
 
-1. (선택 사항) 경로 순서를 변경하려면 라우터에서 경로를 마우스 오른쪽 버튼으로 클릭하고 링크 해제를 선택한 다음 원하는 순서로 라우터 모듈로 드래그하여 경로 연결을 해제합니다. 첨부된 첫 번째 경로가 실행할 첫 번째 경로(상단 경로)입니다.
+1. (선택 사항) 경로 순서를 변경하려면 라우터 모듈을 마우스 오른쪽 단추로 클릭하고 **경로 순서 지정**&#x200B;을 선택합니다. 경로를 실행할 순서대로 경로를 끌어서 놓습니다. 라우터는 라우터를 따르는 첫 번째 모듈(경로의 첫 번째 모듈)로 표시됩니다.
 
 1. [경로에 필터 추가](#add-a-filter-to-a-route)를 계속합니다.
 
@@ -97,7 +97,7 @@ ht-degree: 0%
 
 데이터가 두 개 이상의 경로 필터를 통과한 경우 데이터는 두 경로 모두에서 처리됩니다. 상위 경로는 먼저 데이터를 처리합니다.
 
-1. 왼쪽 패널의 **[!UICONTROL Scenarios]** 탭을 클릭합니다.
+1. 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭합니다.
 1. 필터를 추가할 시나리오를 선택합니다.
 1. 시나리오의 아무 곳이나 클릭하여 시나리오 편집기를 입력합니다.
 1. 필터를 설정할 경로에서 렌치 아이콘 ![렌치](assets/wrench-icon.png)를 클릭합니다. 라우터 모듈과 경로의 첫 번째 모듈 사이의 경로입니다.
@@ -107,7 +107,7 @@ ht-degree: 0%
 
    자세한 내용은 [시나리오에 필터 추가](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md)를 참조하십시오.
 
-1. 필터 설정을 저장하려면 **[!UICONTROL OK]**&#x200B;을(를) 클릭합니다.
+1. **[!UICONTROL 확인]**&#x200B;을 클릭하여 필터 설정을 저장합니다.
 
 1. [대체 경로 구성](#configure-a-fallback-route)을 계속합니다.
 
@@ -117,7 +117,7 @@ ht-degree: 0%
 
 필터 패널에서 대체 경로를 활성화할 수 있습니다.
 
-1. 왼쪽 패널의 **[!UICONTROL Scenarios]** 탭을 클릭합니다.
+1. 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭합니다.
 1. 대체 경로를 추가할 시나리오를 선택합니다.
 1. 시나리오의 아무 곳이나 클릭하여 시나리오 편집기를 입력합니다.
 1. 필터를 설정할 경로에서 렌치 아이콘 ![렌치](assets/wrench-icon.png)를 클릭합니다. 라우터 모듈과 경로의 첫 번째 모듈 사이의 경로입니다.
@@ -127,7 +127,7 @@ ht-degree: 0%
 
    ![대체 경로](assets/fallback-route-350x260.png)
 
-1. 필터 설정을 저장하려면 **[!UICONTROL OK]**&#x200B;을(를) 클릭합니다.
+1. **[!UICONTROL 확인]**&#x200B;을 클릭하여 필터 설정을 저장합니다.
 
 폴백 경로는 라우터 모듈에서 다른 화살표로 표시됩니다.
 

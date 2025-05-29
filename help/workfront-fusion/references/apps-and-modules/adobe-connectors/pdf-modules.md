@@ -5,7 +5,7 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: e6fbbc20-4315-4668-9e11-af7cfa82ae66
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: bf3e35a287c3beb2310a7b8d2c21c65aebfb9076
 workflow-type: tm+mt
 source-wordcount: '4125'
 ht-degree: 0%
@@ -125,22 +125,22 @@ Adobe PDF 서비스 커넥터는 다음을 사용합니다.
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL 클라이언트 ID]</td>
-          <td>[!DNL Adobe] [!UICONTROL 클라이언트 ID]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.<p>자격 증명을 찾는 방법에 대한 지침은 Adobe 개발자 설명서에서 <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >자격 증명</a>을 참조하십시오.</p></td>
+          <td>[!DNL Adobe] [!UICONTROL 클라이언트 ID]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.<p>자격 증명을 찾는 방법에 대한 지침은 Adobe 개발자 설명서에서 <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >자격 증명</a>을 참조하십시오.</p></td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL 클라이언트 암호]</td>
-          <td>[!DNL Adobe] [!UICONTROL 클라이언트 암호]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.<p>자격 증명을 찾는 방법에 대한 지침은 Adobe 개발자 설명서에서 <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >자격 증명</a>을 참조하십시오.</p>
+          <td>[!DNL Adobe] [!UICONTROL 클라이언트 암호]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.<p>자격 증명을 찾는 방법에 대한 지침은 Adobe 개발자 설명서에서 <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >자격 증명</a>을 참조하십시오.</p>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL 기술 계정 ID] (JWT만 해당)</td>
-          <td>[!DNL Adobe] [!UICONTROL 기술 계정 ID]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.<p>자격 증명을 찾는 방법에 대한 지침은 Adobe 개발자 설명서에서 <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >자격 증명</a>을 참조하십시오.</p>
+          <td role="rowheader">[!UICONTROL 기술 계정 ID](JWT만 해당)</td>
+          <td>[!DNL Adobe] [!UICONTROL 기술 계정 ID]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.<p>자격 증명을 찾는 방법에 대한 지침은 Adobe 개발자 설명서에서 <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >자격 증명</a>을 참조하십시오.</p>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL 조직 ID] (JWT만 해당)</td>
-          <td>[!DNL Adobe] [!UICONTROL 조직 ID]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.<p>자격 증명을 찾는 방법에 대한 지침은 Adobe 개발자 설명서에서 <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >자격 증명</a>을 참조하십시오.</p>
+          <td role="rowheader">[!UICONTROL 조직 ID](JWT만 해당)</td>
+          <td>[!DNL Adobe] [!UICONTROL 조직 ID]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.<p>자격 증명을 찾는 방법에 대한 지침은 Adobe 개발자 설명서에서 <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >자격 증명</a>을 참조하십시오.</p>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL 메타 범위] (JWT만 해당)</td>
+          <td role="rowheader">[!UICONTROL 메타 범위](JWT만 해당)</td>
           <td>
             연결에 필요한 메타 범위를 입력합니다.
           </td>

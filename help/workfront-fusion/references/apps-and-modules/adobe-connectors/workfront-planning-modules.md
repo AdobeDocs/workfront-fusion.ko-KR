@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Planning] 모듈을 사용하면  [!DNL Ado
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 51bb87572f16f6194f6c37bbe52ea7f27050c303
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1591'
 ht-degree: 0%
 
 ---
@@ -472,3 +472,20 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
      <tr>
   </tbody>
 </table>
+
+
+## 읽을 수 있는 `record-types` 분류에 JSONata 사용
+
+다음 JSONata 표현식은 레코드 유형 분류를 제공하는 Planning 쿼리의 사람이 읽을 수 있는 출력을 생성합니다. 이렇게 하면 레코드 유형 이름, 필드 이름 및 필드 옵션 이름(해당하는 경우)을 사람이 이름으로 읽을 수 있도록 하고 나머지 구조는 그대로 유지합니다.
+
+```
+(
+    $s0 := ({"data":$ ~> | fields | {"options":(options){name:$}} |});
+    $s1 := ({"data":$s0.data ~> | **.fields | {"options_name":(options.*){displayName:$}} | });
+    $s2 := $s1 ~> | data | {"fields":(fields){displayName:$}} |; 
+    $s2.data{displayName:$}
+)
+```
+
+JSONata 모듈 사용에 대한 자세한 내용은 [JSONata 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md)을 참조하십시오.
+

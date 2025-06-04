@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion Frame].io modules enable you to moni
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: bf3e35a287c3beb2310a7b8d2c21c65aebfb9076
+source-git-commit: cc1ce10fccf159a0c17a3bba978d88c0d1013cbf
 workflow-type: tm+mt
-source-wordcount: '2168'
+source-wordcount: '2936'
 ht-degree: 1%
 
 ---
@@ -107,7 +107,155 @@ Frame.io 커넥터에서는 다음을 사용합니다.
 
 ## [!DNL Frame.io]을(를) [!UICONTROL Adobe Workfront Fusion]에 연결
 
-연결 프로세스는 기존 Frame.io 커넥터 또는 Beta Frame.io 커넥터를 사용하는지에 따라 다릅니다.
+사용자 자격 증명으로 자동으로 연결하거나, 사용자 자격 증명 연결을 수동으로 만들거나, 서버 간 연결을 만들 수 있습니다.
+
+* [사용자 자격 증명으로 자동 연결](#connect-automatically-with-user-credentials#)
+* [사용자 자격 증명 연결을 수동으로 만듭니다.](#create-a-user-credentials-connection-manually)
+* [서버 간 연결 만들기](#create-a-server-to-server-connection)
+
+### 사용자 자격 증명으로 자동 연결
+
+이 메서드는 Frame.io에 로그인하는 경우 자동으로 연결을 만들거나 로그인할 수 있도록 Frame.io 로그인 페이지에 연결합니다.
+
+1. Frame.io Beta 모듈에서 연결 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
+1. 연결의 이름을 입력합니다.
+1. **계속**&#x200B;을 클릭합니다.
+1. Frame.io 계정에 로그인하라는 메시지가 표시되면 로그인합니다.
+1. 둘 이상의 Frame.io 조직에 속해 있는 경우 이 연결에 사용할 조직을 선택합니다.
+
+연결이 만들어집니다.
+
+### 사용자 자격 증명 연결을 수동으로 만듭니다.
+
+Frame.io에 로그인하거나 클라이언트 ID 또는 클라이언트 암호를 제공하여 사용자 자격 증명 연결을 만들 수 있습니다.
+
+서버 간 연결을 만들려면 먼저 Adobe Developer Console에서 애플리케이션을 구성해야 합니다.
+
+* [Adobe Developer Console에서 사용자 자격 증명 만들기](#create-user-credentials-in-the-adobe-developer-console)
+* [사용자 인증 연결 구성](#configure-a-user-authentication-connection)
+
+#### Adobe Developer Console에서 사용자 자격 증명 만들기
+
+Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경우 만들 수 있습니다.
+
+1. [Adobe Developer Console](https://developer.adobe.com/)을 엽니다.
+1. 이 연결에 사용할 Adobe Developer Console의 기존 프로젝트 선택
+
+   또는
+
+   Adobe Developer Console에서 새 프로젝트를 만듭니다. 지침은 [빈 프로젝트 만들기](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty)를 참조하십시오.
+
+1. 프로젝트 개요 페이지 또는 새 프로젝트 시작 페이지에서 **API 추가**&#x200B;를 클릭합니다.
+1. 열리는 페이지에서 **Frame.io API**&#x200B;를 찾아 클릭합니다.
+1. 인증 유형 선택 페이지에서 **사용자 인증**&#x200B;을 선택하고 **다음**&#x200B;을 클릭합니다.
+1. 사용자 인증 자격 증명 추가 페이지에서 **OAuth 웹 앱**&#x200B;을 선택하고 **다음**&#x200B;을 클릭합니다.
+1. OAuth 웹 앱 자격 증명 구성 페이지에서 다음을 입력합니다.   <table style="table-layout:auto">
+   <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+      </col>
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+      </col>
+      <tbody>
+        <tr>
+          <td role="rowheader">[!UICONTROL 기본 리디렉션 URI]</td>
+          <td>
+            <p><code>https://oauth.app.workfrontfusion.com/oauth/cb/frame-io2</code></p>
+          </td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL 리디렉션 URI 패턴]</td>
+          <td>
+            <p><code>https://oauth\.app\.workfrontfusion\.com/oauth/cb/frame-io2</code></p>
+          </td>
+        </tr>
+       </tbody>
+    </table>
+1. **다음**&#x200B;을 클릭합니다.
+1. **구성된 API 저장**&#x200B;을 클릭합니다.
+1. 제품 페이지에서 방금 만든 자격 증명에 대한 카드를 클릭합니다.
+
+   여기에서 클라이언트 ID와 클라이언트 암호를 찾을 수 있습니다.
+
+>[!NOTE]
+>
+> Adobe Workfront Fusion에서 연결 구성을 시작할 때 이 창을 열어 두는 것이 좋습니다. 이 페이지에서 클라이언트 ID를 복사하고 클라이언트 암호를 검색 및 복사하여 연결 필드에 붙여넣을 수 있습니다.
+
+
+#### 사용자 인증 연결 구성
+
+1. Frame.io Beta 모듈에서 연결 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
+1. 연결 만들기 상자에서 **고급 설정 표시**&#x200B;를 클릭합니다.
+
+1. 다음 필드를 채웁니다.
+
+   <table style="table-layout:auto"> 
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+      </col>
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+      </col>
+      <tbody>
+        <tr>
+          <td role="rowheader">[!UICONTROL 연결 유형]</td>
+          <td>
+            <p><b>IMS 사용자 인증</b>을 선택합니다.</p>
+          </td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL 연결 이름]</td>
+          <td>
+            <p>이 연결의 이름을 입력하십시오.</p>
+          </td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL 클라이언트 ID]</td>
+          <td>[!DNL Adobe] [!UICONTROL 클라이언트 ID]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.<p>자격 증명을 만드는 방법에 대한 지침은 이 문서의 <a href="#create-user-credentials-in-the-adobe-developer-console" class="MCXref xref">Adobe Developer Console에서 사용자 자격 증명 만들기</a>를 참조하십시오.</p></td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL 클라이언트 암호]</td>
+          <td>[!DNL Adobe] [!UICONTROL 클라이언트 암호]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.<p>자격 증명을 만드는 방법에 대한 지침은 이 문서의 <a href="#create-user-credentials-in-the-adobe-developer-console" class="MCXref xref">Adobe Developer Console에서 사용자 자격 증명 만들기</a>를 참조하십시오.</p>
+        </tr>
+       </tbody>
+    </table>
+1. Frame.io 계정에 로그인하라는 메시지가 표시되면 로그인합니다.
+1. 둘 이상의 Frame.io 조직에 속해 있는 경우 이 연결에 사용할 조직을 선택합니다.
+
+연결이 만들어집니다.
+
+
+### 서버 간 연결 만들기
+
+서버 간 연결을 만들려면 먼저 Adobe Developer Console에서 애플리케이션을 구성해야 합니다.
+
+* [Adobe Developer Console에서 서버 간 자격 증명 만들기](#create-server-to-server-credentials-in-the-adobe-developer-console)
+* [서버 간 연결 구성](#configure-a-server-to-server-connection)
+
+#### Adobe Developer Console에서 서버 간 자격 증명 만들기
+
+Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경우 만들 수 있습니다.
+
+1. [Adobe Developer Console](https://developer.adobe.com/)을 엽니다.
+1. 이 연결에 사용할 Adobe Developer Console의 기존 프로젝트 선택
+
+   또는
+
+   Adobe Developer Console에서 새 프로젝트를 만듭니다. 지침은 [빈 프로젝트 만들기](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty)를 참조하십시오.
+
+1. 프로젝트 개요 페이지 또는 새 프로젝트 시작 페이지에서 **API 추가**&#x200B;를 클릭합니다.
+1. 열리는 페이지에서 **Frame.io API**&#x200B;를 찾아 클릭합니다.
+1. 인증 유형 선택 페이지에서 **서버 간 인증**&#x200B;을 선택하고 **다음**&#x200B;을 클릭합니다.
+1. 자격 증명의 이름을 입력합니다. 이렇게 하면 나중에 Adobe Admin Console의 API 자격 증명 영역에서 자격 증명을 식별할 수 있습니다.
+1. **다음**&#x200B;을 클릭합니다.
+1. 제품 프로필 선택 페이지에서 연결할 Frame.io 계정이 포함된 제품 프로필을 선택합니다.
+1. **구성된 API 저장**&#x200B;을 클릭합니다.
+1. 제품 페이지에서 방금 만든 자격 증명에 대한 카드를 클릭합니다.
+
+   여기에서 클라이언트 ID와 클라이언트 암호를 찾을 수 있습니다.
+
+>[!NOTE]
+>
+> Adobe Workfront Fusion에서 연결 구성을 시작할 때 이 창을 열어 두는 것이 좋습니다. 이 페이지에서 클라이언트 ID를 복사하고 클라이언트 암호를 검색 및 복사하여 연결 필드에 붙여넣을 수 있습니다.
+
+
+#### 서버 간 연결 구성
 
 1. Frame.io Beta 모듈에서 연결 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 
@@ -122,7 +270,7 @@ Frame.io 커넥터에서는 다음을 사용합니다.
         <tr>
           <td role="rowheader">[!UICONTROL 연결 유형]</td>
           <td>
-            <p>IMD 사용자 인증 연결을 만들지 IMS 서버 대 서버 연결을 만들지 선택합니다.</p>
+            <p><b>서버에 대한 IMS 서버</b>를 선택하십시오.</p>
           </td>
         </tr>
         <tr>
@@ -133,15 +281,18 @@ Frame.io 커넥터에서는 다음을 사용합니다.
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL 클라이언트 ID]</td>
-          <td>[!DNL Adobe] [!UICONTROL 클라이언트 ID]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.<p>자격 증명을 찾는 방법에 대한 지침은 Adobe 개발자 설명서에서 <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >자격 증명</a>을 참조하십시오.</p></td>
+          <td>[!DNL Adobe] [!UICONTROL 클라이언트 ID]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.<p>자격 증명을 만드는 방법에 대한 지침은 이 문서의 <a href="#create-server-to-server-credentials-in-the-adobe-developer-console" class="MCXref xref">Adobe Developer Console에서 서버 간 자격 증명 만들기</a>를 참조하십시오.</p></td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL 클라이언트 암호]</td>
-          <td>[!DNL Adobe] [!UICONTROL 클라이언트 암호]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.<p>자격 증명을 찾는 방법에 대한 지침은 Adobe 개발자 설명서에서 <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >자격 증명</a>을 참조하십시오.</p>
+          <td>[!DNL Adobe] [!UICONTROL 클라이언트 암호]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.<p>자격 증명을 만드는 방법에 대한 지침은 이 문서의 <a href="#create-server-to-server-credentials-in-the-adobe-developer-console" class="MCXref xref">Adobe Developer Console에서 서버 간 자격 증명 만들기</a>를 참조하십시오.</p>
         </tr>
        </tbody>
     </table>
 1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭하세요.
+
+
+
 
 ## [!DNL Frame.io]개 모듈 및 해당 필드
 

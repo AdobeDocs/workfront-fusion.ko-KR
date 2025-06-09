@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: 830ac0085c1dce174b9ad167de7305d43143ed44
+source-git-commit: 9c0ecebddbd02d34e936bc06ddd1c27186d2433f
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '460'
 ht-degree: 0%
 
 ---
@@ -135,6 +135,7 @@ Fusion은 다양한 타사 응용 프로그램을 위한 커넥터를 제공합�
 * [Markdown 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
 * [수학 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
 * [MIME 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)
+* [MCP(Model Context Protocol) 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
 * [텍스트 파서 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md)
 * [도구 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)
 * [XML 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/xml-modules.md)

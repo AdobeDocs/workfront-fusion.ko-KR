@@ -4,14 +4,14 @@ description: Adobe Workfront Fusion JSONata 커넥터는 Adobe Workfront Fusion�
 author: Becky
 feature: Workfront Fusion
 exl-id: 8c117ecb-3c05-47d4-a629-18dbc546e2a2
-source-git-commit: 2ba6ca5f5a82aea4979ff8f273bdeef1a8d22a06
+source-git-commit: da3bf98f8254228598372fed8c06d6318718721f
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '325'
 ht-degree: 1%
 
 ---
 
-# [!UICONTROL JSONata]개 모듈
+# [!UICONTROL JSONata] 모듈
 
 [!DNL Adobe Workfront Fusion] [!UICONTROL JSONata] 커넥터를 사용하면 JSON 개체를 쿼리할 수 있습니다. 이 모듈에서는 연결할 필요가 없습니다.
 
@@ -31,7 +31,7 @@ ht-degree: 1%
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] 라이센스</td> 
-   <td> <p>신규: [!UICONTROL Standard]</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
+   <td> <p>새로운 기능: [!UICONTROL Standard]</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td> 
@@ -44,7 +44,7 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Workfront] 플랜: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 플랜: [!DNL Workfront Fusion]이(가) 포함되어 있습니다.</li></ul>
+   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Workfront] 계획: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 계획: [!DNL Workfront Fusion]이(가) 포함되어 있습니다.</li></ul>
    <p>또는</p>
    <p>현재: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</p>
    </td> 
@@ -69,7 +69,7 @@ ht-degree: 1%
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Expression]</td> 
+   <td role="rowheader">[!UICONTROL 표현식]</td> 
    <td>JSON 개체를 평가하는 데 사용할 표현식을 입력합니다. </td> 
   </tr> 
   <tr> 
@@ -105,3 +105,31 @@ ht-degree: 1%
 모듈은 JSON 개체에서 가져온 이름의 배열을 반환합니다.
 
 >[!ENDSHADEBOX]
+
+
+
+### JSONata MCP
+
+이 작업 모듈은 지정된 입력 및 출력 스키마를 분석하여 JSONata 표현식을 생성합니다. 사용자는 모델 컨텍스트 프로토콜(MCP)이 입력을 출력으로 변환하는 표현식을 생성하는 데 사용하는 스키마를 제공합니다.
+
+
+
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>이 모듈에 사용할 LLM(Large Language Model)에 연결하는 데 사용하는 연결을 선택합니다.</p> <p>현재 Anthropic API 키만 지원됩니다.</p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 입력 스키마]</td> 
+   <td> <p>이 표현식에 사용할 입력 스키마를 입력하거나 매핑합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 출력 스키마]</td> 
+   <td> <p>이 표현식에 사용할 출력 스키마를 입력하거나 매핑합니다.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>

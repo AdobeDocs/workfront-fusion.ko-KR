@@ -4,9 +4,9 @@ description: 라우터 모듈을 사용하면 플로우를 여러 경로로 분�
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: c1c11c6766678263b36488909c3799299a1c510a
+source-git-commit: e0058a54039f100ba82bc8a3ed8f5d3d4445ffeb
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '852'
 ht-degree: 0%
 
 ---
@@ -88,6 +88,8 @@ ht-degree: 0%
    경로는 실행되는 순서대로 배열됩니다. 상위 경로가 먼저 실행됩니다.
 
 1. (선택 사항) 경로 순서를 변경하려면 라우터 모듈을 마우스 오른쪽 단추로 클릭하고 **경로 순서 지정**&#x200B;을 선택합니다. 경로를 실행할 순서대로 경로를 끌어서 놓습니다. 라우터는 라우터를 따르는 첫 번째 모듈(경로의 첫 번째 모듈)로 표시됩니다.
+
+   ![경로 순서 지정](assets/order-routes.png)
 
 1. [경로에 필터 추가](#add-a-filter-to-a-route)를 계속합니다.
 

@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 설명서
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 문서, 튜토리얼 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
-source-git-commit: d03c4a68a69ea5302f6898418c3da9edaa404bad
+source-git-commit: e0058a54039f100ba82bc8a3ed8f5d3d4445ffeb
 workflow-type: tm+mt
-source-wordcount: '1791'
+source-wordcount: '1797'
 ht-degree: 3%
 
 ---
@@ -173,6 +173,7 @@ ht-degree: 3%
    * [시나리오 만들기](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
    * 시나리오 계획 {#plan-a-scenario}
       * [시나리오 계획: 문서 인덱스](/help/workfront-fusion/create-scenarios/plan-a-scenario/plan-a-scenario-toc.md)
+      * [여러 시나리오를 함께 연결](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)
       * [시나리오 계획 FAQ](/help/workfront-fusion/create-scenarios/plan-a-scenario/faq.md)
       * [비디오 개요](/help/workfront-fusion/create-scenarios/plan-a-scenario/fusion-basics-videos.md)
       * [시나리오를 만들기 위한 워크플로](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md)
@@ -381,6 +382,7 @@ ht-degree: 3%
          * [Workday 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/workday-modules.md)
       * 도구와 변압기 {#tools-and-transformers}
          * [모듈 보관](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/archive-modules.md)
+         * [체인 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)
          * [CSV 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/csv.md)
          * [데이터 저장소 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md)
          * [Draft.js 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/draft-js-modules.md)

@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: 9c0ecebddbd02d34e936bc06ddd1c27186d2433f
+source-git-commit: e0058a54039f100ba82bc8a3ed8f5d3d4445ffeb
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -123,6 +123,7 @@ Fusion은 다양한 타사 응용 프로그램을 위한 커넥터를 제공합�
 이러한 모듈을 사용하면 데이터에 대한 작업을 수행할 수 있지만 Fusion 외부의 서비스에 연결할 필요는 없습니다.
 
 * [모듈 보관](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/archive-modules.md)
+* [체인 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)
 * [CSV 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/csv.md)
 * [데이터 저장소 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md)
 * [Draft.js 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/draft-js-modules.md)

@@ -4,9 +4,9 @@ description: 작업 자동화에는 빠른 처리가 필요하므로  [!DNL Adob
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 1253470a23a2a9124824d5ab1ff2b5013d773517
+source-git-commit: 391675882c9f8c4e8f66e3b63da3e878c413d031
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,8 @@ ht-degree: 0%
 ## 시나리오
 
 * 기본 시나리오 실행 시간 제한은 **40분**&#x200B;입니다. 실행이 이 시간 제한에 도달하면 [!DNL Workfront Fusion]은(는) 시나리오에 따라 다음 주기나 작업 후 시나리오 실행을 중단합니다. 이렇게 하면 40분 제한에 도달한 직후 시나리오가 중지됩니다
+
+  체인 시나리오는 시나리오 실행 시간 초과에 포함되지 않습니다. 상위 시나리오는 하위 시나리오가 실행될 때까지 기다리는 동안 시간이 발생하지 않습니다.
 * 시나리오 블루프린트의 최대 크기는 **5MB**&#x200B;이지만 시나리오 크기를 **3MB** 미만으로 유지하는 것이 좋습니다.
 
   많은 수의 필드로 데이터를 생성하거나 업데이트하는 앱 모듈로 인해 매우 큰 블루프린트가 발생할 수 있습니다.

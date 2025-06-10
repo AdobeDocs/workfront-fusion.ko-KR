@@ -1,23 +1,23 @@
 ---
 title: 미완료 실행 보기 및 해결
-description: 오류로 인해 [!UICONTROL Incomplete executions] 폴더가 완료되지 않은 시나리오 실행을 저장합니다. 저장된 각 불완전한 실행은 수동 또는 자동으로 해결할 수 있습니다.
+description: '[!UICONTROL 미완료 실행] 폴더는 오류로 인해 정상적으로 완료되지 않은 시나리오 실행을 저장합니다. 저장된 각 불완전한 실행은 수동 또는 자동으로 해결할 수 있습니다.'
 author: Becky
 feature: Workfront Fusion
 exl-id: 8891b4d7-a39a-4f14-8521-8c2ca186ca6e
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ad304117fb6e9d1320b8e50d71a162609dc6e6f4
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 6%
+source-wordcount: '649'
+ht-degree: 5%
 
 ---
 
 # 미완료 실행 보기 및 해결
 
-오류로 인해 [!UICONTROL Incomplete executions] 폴더가 완료되지 않은 시나리오 실행을 저장합니다. 저장된 각 불완전한 실행은 수동 또는 자동으로 해결할 수 있습니다.
+[!UICONTROL 미완료 실행] 폴더는 오류로 인해 정상적으로 완료되지 않은 시나리오 실행을 저장합니다. 저장된 각 불완전한 실행은 수동 또는 자동으로 해결할 수 있습니다.
 
 >[!NOTE]
 >
->기본적으로 미완료 실행 저장은 비활성화되어 있습니다. 활성화하려면 시나리오 고급 설정에서 [!UICONTROL Allow storing incomplete executions] 옵션을 활성화하십시오.
+>기본적으로 미완료 실행 저장은 비활성화되어 있습니다. 활성화하려면 시나리오 고급 설정에서 [!UICONTROL 불완전한 실행 저장 허용] 옵션을 활성화하십시오.
 >
 >시나리오 설정에 대한 자세한 내용은 [시나리오 설정 구성](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)을 참조하십시오.
 
@@ -37,7 +37,7 @@ ht-degree: 6%
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] 라이센스</td> 
-   <td> <p>신규: [!UICONTROL Standard]</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
+   <td> <p>새로운 기능: [!UICONTROL Standard]</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td> 
@@ -50,7 +50,7 @@ ht-degree: 6%
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Workfront] 플랜: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 플랜: [!DNL Workfront Fusion]이(가) 포함되어 있습니다.</li></ul>
+   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Workfront] 계획: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 계획: [!DNL Workfront Fusion]이(가) 포함되어 있습니다.</li></ul>
    <p>또는</p>
    <p>현재: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</p>
    </td> 
@@ -75,7 +75,7 @@ ht-degree: 6%
 
 ## 미완료 실행 보기
 
-작업 중 모듈에 오류가 발생하면 미완료 실행 폴더에 새로운 미완료 실행이 추가됩니다. 각 불완전한 실행에는 시나리오의 블루프린트와 실패한 모듈에 매핑할 수 있는 모든 번들이 포함됩니다. 시나리오 세부 정보 페이지에서 [!UICONTROL Incomplete Executions] 탭을 클릭하여 불완전한 실행 목록을 열 수 있습니다.
+작업 중 모듈에 오류가 발생하면 미완료 실행 폴더에 새로운 미완료 실행이 추가됩니다. 각 불완전한 실행에는 시나리오의 블루프린트와 실패한 모듈에 매핑할 수 있는 모든 번들이 포함됩니다. 시나리오 세부 정보 페이지에서 [!UICONTROL 불완전 실행] 탭을 클릭하여 불완전 실행 목록을 열 수 있습니다.
 
 <!--
 
@@ -99,8 +99,13 @@ ht-degree: 6%
 새 미완료 실행이 저장되면 다음과 같이 해결할 수 있습니다.
 
 1. 영향을 받는 시나리오를 엽니다.
-1. **[!UICONTROL Incomplete Executions]** 탭을 클릭합니다.
-1. 해결할 불완전한 실행을 찾은 다음 **[!UICONTROL Details]**&#x200B;을(를) 클릭합니다.
+1. **[!UICONTROL 미완료 실행]** 탭을 클릭합니다.
+1. 해결할 불완전한 실행을 찾은 다음 **[!UICONTROL 세부 정보]**&#x200B;을(를) 클릭합니다.
+1. 모든 모듈의 작업이 표시되는 모듈의 로그를 엽니다.
+1. 실패한 작업을 찾은 다음 **[!UICONTROL 해결]**&#x200B;을 클릭합니다.
+
+   ![확인 단추](assets/resolve-btn-350x188.png)
+
 
 
 ## 내역 탭에서 불완전한 실행 해결
@@ -108,16 +113,16 @@ ht-degree: 6%
 불완전한 실행을 해결하기 전에 모든 모듈의 작업 로그를 보려면 [!UICONTROL History] 폴더에서 불완전한 실행을 해결할 수 있습니다.
 
 1. 영향을 받는 시나리오를 엽니다.
-1. **[!UICONTROL History]** 탭을 클릭합니다.
-1. 실패한 시나리오의 실행을 찾은 다음 **[!UICONTROL Details]**&#x200B;을(를) 클릭합니다.
+1. **[!UICONTROL 기록]** 탭을 클릭합니다.
+1. 실패한 시나리오의 실행을 찾은 다음 **[!UICONTROL 세부 정보]**&#x200B;를 클릭합니다.
 1. 모든 모듈의 작업이 표시되는 모듈의 로그를 엽니다.
-1. 실패한 작업을 찾아 **[!UICONTROL Resolve]**&#x200B;을(를) 클릭합니다.
+1. 실패한 작업을 찾은 다음 **[!UICONTROL 해결]**&#x200B;을 클릭합니다.
 
    ![확인 단추](assets/resolve-btn-350x188.png)
 
 ## 불완전한 실행과 관련된 옵션
 
-[!UICONTROL Scenario settings] 패널의 다음 옵션에 따라 미완료 실행이 저장되는지 및 저장되는지 여부가 결정됩니다.
+[!UICONTROL 시나리오 설정] 패널의 다음 옵션에 따라 불완전한 실행의 저장 여부와 저장 방법이 결정됩니다.
 
 * 미완료 실행 저장 허용
 * 순차적 처리
@@ -136,6 +141,20 @@ ht-degree: 6%
 
 다른 모듈에서 오류가 발생하고 첨부된 오류 처리기 경로가 없으면 다음 중 하나가 발생합니다.
 
-* 오류 유형이 `ConnectionError`, `RateLimitError`, `OutOfSpaceError` 또는 `ModuleTimeoutError`인 경우 자동 다시 시도와 함께 불완전한 실행 레코드가 저장됩니다.
-* 오류 유형이 `DataError`, `InvalidConfigurationError`, `InvalidAccessTokenError`, `UnexpectedError`, `MaxFileSizeExceededError` 또는 `MaxResultsExceededError`인 경우 자동 다시 시도 없이 불완전한 실행 레코드가 저장됩니다.
+* 자동 재시도가 있는 불완전한 실행 레코드는 다음 오류 유형에 대해 저장됩니다.
+
+   * `ConnectionError`
+   * `RateLimitError`
+   * `OutOfSpaceError`
+   * `ModuleTimeoutError`
+
+* 다음 오류 유형에 대해 자동 재시도 없이 불완전한 실행 레코드가 저장됩니다.
+
+   * `DataError`
+   * `InvalidConfigurationError`
+   * `InvalidAccessTokenError`
+   * `UnexpectedError`
+   * `MaxFileSizeExceededError`
+   * `MaxResultsExceededError`
+
 * 오류 유형이 위와 다른 경우 실행이 실패합니다.

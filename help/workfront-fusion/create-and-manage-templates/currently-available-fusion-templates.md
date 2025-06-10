@@ -178,7 +178,7 @@ ht-degree: 0%
 
 이러한 템플릿은 Workfront-Anaplan 통합을 지원하며 Workfront의 두 Anaplan 모두에서 특정 구성을 예상합니다. 이러한 템플릿 및 필수 구성에 대한 자세한 내용은 개별 템플릿 문서를 참조하십시오.
 
-Workfront-Anaplan 통합에 대한 자세한 내용은 Workfront 설명서에서 [Anaplan을 사용한 Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration)을(를) 참조하십시오.
+Workfront-Anaplan 통합에 대한 자세한 내용은 Workfront 설명서에서 [Anaplan을 사용한 Adobe Workfront](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration)을(를) 참조하십시오.
 
 >[!NOTE]
 >
@@ -186,19 +186,19 @@ Workfront-Anaplan 통합에 대한 자세한 내용은 Workfront 설명서에서
 
 ### 지출 최적화 워크플로우
 
-* [목록 항목 [!DNL Anaplan] 에 대한  [!DNL Adobe Workfront] 프로젝트 업데이트 보내기](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
-* [목록 항목 [!DNL Anaplan] 에 경비 보내기 [!DNL Adobe Workfront] 경비](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
-* [목록 항목  [!DNL Anaplan] 에 대한  [!DNL Adobe Workfront] 실제 시간 업데이트 보내기](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
+* [목록 항목 [!DNL Anaplan] 에 대한  [!DNL Adobe Workfront] 프로젝트 업데이트 보내기](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
+* [목록 항목 [!DNL Anaplan] 에 경비 보내기 [!DNL Adobe Workfront] 경비](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
+* [목록 항목  [!DNL Anaplan] 에 대한  [!DNL Adobe Workfront] 실제 시간 업데이트 보내기](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
 
 ### 예산 요청 연결을 위한 워크플로
 
-* [예산 요청에서  [!DNL Anaplan] 목록 항목 만들기 [!DNL Adobe Workfront] 3&rbrace;](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
-* [프로젝트에  [!DNL Anaplan] 예산 할당 적용 [!DNL Adobe Workfront] 프로젝트](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
+* [예산 요청에서  [!DNL Anaplan] 목록 항목 만들기 [!DNL Adobe Workfront] 3&rbrace;](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
+* [프로젝트에  [!DNL Anaplan] 예산 할당 적용 [!DNL Adobe Workfront] 프로젝트](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
 
 ### 캠페인 요청 연결을 위한 워크플로우
 
-* [캠페인 요청에서  [!DNL Anaplan] 목록 항목 만들기 [!DNL Adobe Workfront] 3&rbrace;](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
-* [캠페인 요청 또는 캠페인 프로젝트에  [!DNL Anaplan] 예산 할당 적용 [!DNL Adobe Workfront] 3&rbrace;](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
+* [캠페인 요청에서  [!DNL Anaplan] 목록 항목 만들기 [!DNL Adobe Workfront] 3&rbrace;](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
+* [캠페인 요청 또는 캠페인 프로젝트에  [!DNL Anaplan] 예산 할당 적용 [!DNL Adobe Workfront] 3&rbrace;](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
 
 
 <!--[!BADGE New!]{type=Informative} -->

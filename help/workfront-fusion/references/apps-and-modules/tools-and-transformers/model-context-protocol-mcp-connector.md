@@ -3,87 +3,95 @@ title: MCP(Model Context Protocol) 모듈
 description: MCP(Model Context Protocol) 모듈은 MCP를 사용하여 사용자 프롬프트를 처리할 수 있도록 해줍니다.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: d8ae176db714d2b9f041b74a62e8276171745c4b
+hide: true
+hidefromtoc: true
+source-git-commit: 12315eca71d8febf7f3e5bb055d94cd5ccb9361e
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 1%
+source-wordcount: '34'
+ht-degree: 0%
 
 ---
 
 # MCP(Model Context Protocol) 모듈
 
-모델 컨텍스트 프로토콜(MCP)은 AI 언어 모델을 다른 애플리케이션과 안전하게 연결하는 방법입니다. AI 모델이 애플리케이션에 액세스할 수 있도록 MCP 서버를 구성합니다. 그런 다음 AI 모델에 프롬프트를 보내고 애플리케이션에서 정보를 반환할 수 있습니다.
+현재 사용 가능한 MCP 모듈이 없습니다.
 
-예를 들어 AI 모델을 Gmail과 연결하도록 MCP 서버를 구성할 수 있습니다. &quot;Gmail에서 최근 5개의 이메일 보내기&quot;라는 메시지를 보낼 때 Gmail에 액세스하고 이메일을 반환할 수 있습니다.
+<!--
 
-MCP(Model Context Protocol) 모듈은 언어 모델 및 MCP 서버를 사용하여 사용자 프롬프트를 처리할 수 있도록 해줍니다.
+Model Context Protocol (MCP) is a way to securely connect AI language models with other applications. You configure MCP servers, which allow the AI model to access the application. You can then send a prompt to the AI model, and it can return information from the application.
 
-## 액세스 요구 사항
+For example, you could configure a MCP server to connect an AI model with Gmail. When you send the prompt "Give me my last 5 emails from Gmail," it can access your Gmail and return the emails.
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
+The Model Context Protocol (MCP) module allows you to process a user prompt using a language model and MCP servers.
 
-이 문서의 기능을 사용하려면 다음 액세스 권한이 있어야 합니다.
+## Access requirements
+
++++ Expand to view access requirements for the functionality in this article.
+
+You must have the following access to use the functionality in this article:
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront 패키지</td> 
-   <td> <p>임의</p> </td> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront 라이선스</td> 
-   <td> <p>새로운 기능: 표준</p><p>또는</p><p>현재: 작업 시간 이상</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
-   <p>또는</p>
-   <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
+   <p>Current: No Workfront Fusion license requirement</p>
+   <p>Or</p>
+   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">제품</td> 
+   <td role="rowheader">Product</td> 
    <td>
-   <p>신규:</p> <ul><li>또는 Prime Workfront 패키지 선택: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</li><li>Ultimate Workfront 패키지: Workfront Fusion이 포함됩니다.</li></ul>
-   <p>또는</p>
-   <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
+   <p>Or</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
-## 모델 컨텍스트 프로토콜 모듈 및 해당 필드
+## Model Context Protocol module and its fields
 
-MCP 모듈을 구성할 때 [!DNL Adobe Workfront Fusion]은(는) 아래 나열된 필드를 표시합니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+When you configure the MCP module, [!DNL Adobe Workfront Fusion] displays the fields listed below. A bolded title in a module indicates a required field.
 
-### 사용자 프롬프트 처리
+### Process User Prompt
 
-이 작업 모듈은 사용자가 지정하는 언어 모델 및 MCP 서버를 사용하여 프롬프트를 처리합니다.
+This action module processes a prompt, using the language model and MCP servers you specify.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL LLM(Large Language Model) key]</td> 
-   <td> <p>이 프롬프트에 사용할 대형 언어 모델의 API 키를 입력하거나 매핑합니다. </p> <p>현재 Anthropic API 키만 지원됩니다.</p></td> 
+   <td role="rowheader">[!UICONTROL Large language model (LLM) key]</td> 
+   <td> <p>Enter or map API key for the large language model you want to use for this prompt. </p> <p>Currently, only the Anthropic API key is supported.</p></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL MCP 서버]</td> 
-   <td> <p>이 프롬프트에 사용할 수 있게 하려는 각 MCP 서버에 대해 <b>항목 추가</b>를 클릭하고 서버의 이름과 호스트를 입력합니다. </p> </td> 
+   <td role="rowheader">[!UICONTROL MCP servers]</td> 
+   <td> <p>For each MCP server that you want to make available for this prompt, click <b>Add item</b> and enter the server's name and host. </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 프롬프트 입력]</td> 
-   <td> <p>대형 언어 모델의 프롬프트를 입력하거나 매핑합니다. </p> </td> 
+   <td role="rowheader">[!UICONTROL Enter your prompt]</td> 
+   <td> <p>Enter or map the prompt for the large lanugage model. </p> </td> 
   </tr> 
  </tbody> 
 </table>
+
+-->

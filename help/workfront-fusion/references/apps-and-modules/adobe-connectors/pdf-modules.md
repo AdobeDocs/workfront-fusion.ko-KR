@@ -5,9 +5,9 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: e6fbbc20-4315-4668-9e11-af7cfa82ae66
-source-git-commit: bf3e35a287c3beb2310a7b8d2c21c65aebfb9076
+source-git-commit: 896597fa4a0689c19eb56d98f447c6a719d90ca2
 workflow-type: tm+mt
-source-wordcount: '4125'
+source-wordcount: '4128'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ PDF 서비스에 사용되는 API에 대한 자세한 내용은 [Adobe 문서 �
 
 OAuth 서버 간 연결을 만들려면 Adobe Developers Console에서 Adobe PDF 서비스 API를 추가해야 합니다. API를 추가할 때 OAuth 서버 간 옵션을 선택합니다.
 
-지침은 Adobe 개발자 설명서에서 [OAuth를 사용하여 프로젝트에 API 추가](https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/)를 참조하십시오.
+자세한 내용은 Adobe 개발자 설명서에서 [OAuth 사용자 인증 자격 증명을 사용하여 API를 프로젝트에 추가](https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication)를 참조하십시오.
 
 ## Adobe PDF 서비스 API 정보
 
@@ -132,15 +132,15 @@ Adobe PDF 서비스 커넥터는 다음을 사용합니다.
           <td>[!DNL Adobe] [!UICONTROL 클라이언트 암호]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.<p>자격 증명을 찾는 방법에 대한 지침은 Adobe 개발자 설명서에서 <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >자격 증명</a>을 참조하십시오.</p>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL 기술 계정 ID] (JWT만 해당)</td>
+          <td role="rowheader">[!UICONTROL 기술 계정 ID](JWT만 해당)</td>
           <td>[!DNL Adobe] [!UICONTROL 기술 계정 ID]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.<p>자격 증명을 찾는 방법에 대한 지침은 Adobe 개발자 설명서에서 <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >자격 증명</a>을 참조하십시오.</p>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL 조직 ID] (JWT만 해당)</td>
+          <td role="rowheader">[!UICONTROL 조직 ID](JWT만 해당)</td>
           <td>[!DNL Adobe] [!UICONTROL 조직 ID]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.<p>자격 증명을 찾는 방법에 대한 지침은 Adobe 개발자 설명서에서 <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >자격 증명</a>을 참조하십시오.</p>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL 메타 범위] (JWT만 해당)</td>
+          <td role="rowheader">[!UICONTROL 메타 범위](JWT만 해당)</td>
           <td>
             연결에 필요한 메타 범위를 입력합니다.
           </td>

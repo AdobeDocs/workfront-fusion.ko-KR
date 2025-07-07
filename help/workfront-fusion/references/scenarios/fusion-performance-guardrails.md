@@ -4,9 +4,9 @@ description: 작업 자동화에는 빠른 처리가 필요하므로  [!DNL Adob
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 391675882c9f8c4e8f66e3b63da3e878c413d031
+source-git-commit: bebb30132a2cce66037f243563d61939625ea59d
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
@@ -92,3 +92,7 @@ ht-degree: 0%
 * **시나리오가 재귀되면 성능 문제를 방지하기 위해 Fusion 엔지니어링 팀에서 이를 비활성화합니다.**
 * 재귀는 시나리오 설계의 결과이므로 시나리오를 트리거하는 작업이 시나리오에 포함되지 않도록 하는 방식으로 시나리오를 설계해야 합니다.
 
+## TLS
+
+* Fusion은 현재 기본적으로 TLS 버전 1.2를 지원합니다.
+* 조직은 해당 Fusion 인스턴스에 대해 TLS 버전 1.3이 활성화되도록 요청할 수 있습니다.

@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Microsoft Sha
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: 2bd3a9ba84182307af9349163db284514dd12aca
+source-git-commit: b6997c2b160307489322fb6ede445336ef8bd85e
 workflow-type: tm+mt
-source-wordcount: '3393'
+source-wordcount: '3383'
 ht-degree: 0%
 
 ---
@@ -91,11 +91,11 @@ SharePoint 커넥터는 다음을 사용합니다.
 
 ## Microsoft SharePoint Online을 [!DNL Workfront Fusion]에 연결 {#connect-microsoft-sharepoint-online-to-workfront-fusion}
 
-* [ [!DNL Microsoft] 계정을 사용하여  [!DNL Workfront Fusion] 에 Microsoft SharePoint Online 연결](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
+* [ [!DNL Workfront Fusion] 계정을 사용하여  [!DNL Microsoft] 에 Microsoft SharePoint Online 연결](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [고급 설정을 사용하여 Microsoft SharePoint Online을  [!DNL Workfront Fusion] 에 연결](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
 * [인증서 인증을 사용하여 Microsoft SharePoint Online을  [!DNL Workfront Fusion] 에 연결](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
 
-### [!DNL Microsoft] 계정을 사용하여 [!DNL Workfront Fusion]에 Microsoft SharePoint Online 연결
+### [!DNL Workfront Fusion] 계정을 사용하여 [!DNL Microsoft]에 Microsoft SharePoint Online 연결
 
 [!DNL Microsoft] 계정을 사용하여 Microsoft SharePoint Online에 연결할 수 있습니다. [!DNL Sharepoint] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 [연결 만들기 [!DNL Adobe Workfront Fusion] - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)을 참조하세요.
 
@@ -130,10 +130,6 @@ SharePoint 커넥터는 다음을 사용합니다.
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL 테넌트 ID]</p> </td> 
       <td>연결 중인 SharePoint 앱의 테넌트 ID를 입력합니다.</td> 
-     </tr> 
-     <tr> 
-      <td role="rowheader"> <p>[!UICONTROL 인스턴스]</p> </td> 
-      <td> <p><code>https://</code> 없이 [!DNL ServiceNow] 계정의 주소를 입력하십시오(일반적으로 <code>&lt;company>.service-now.com</code>).</p> </td> 
      </tr> 
     </tbody> 
    </table>
@@ -689,7 +685,7 @@ Microsoft SharePoint Online 모듈을 구성할 때 [!DNL Workfront Fusion]에 �
 
 >[!NOTE]
 >
->[!DNL Microsoft Graph]에서 `beta` 버전의 API는 변경될 수 있습니다. 프로덕션 응용 프로그램에서는 이러한 API를 사용할 수 없습니다.
+>`beta`에서 [!DNL Microsoft Graph] 버전의 API는 변경될 수 있습니다. 프로덕션 응용 프로그램에서는 이러한 API를 사용할 수 없습니다.
 
 #### [!UICONTROL 페이지 가져오기]
 

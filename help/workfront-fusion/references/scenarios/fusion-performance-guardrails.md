@@ -4,9 +4,9 @@ description: 작업 자동화에는 빠른 처리가 필요하므로  [!DNL Adob
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 784516c1282f318a46b32c803064d869cc116790
+source-git-commit: 74324fd5f2f68dfbbd0dfe1286c202c246f29d43
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
@@ -96,6 +96,7 @@ ht-degree: 0%
 
 * Fusion은 현재 기본적으로 TLS 버전 1.2를 지원합니다.
 * 대상 서비스에 대해 TLS 1.3이 활성화된 경우 Fusion에서 아웃바운드 HTTPS 요청에 TLS 1.3을 사용할 수 있습니다.
+* Fusion은 Webhooks에 대한 수신 HTTPS 요청에 대해 TLS 1.2 및 TLS 1.3을 모두 지원합니다.
 * 조직은 해당 Fusion 인스턴스에 대해 TLS 버전 1.3이 활성화되도록 요청할 수 있습니다.
 
 >[!NOTE]

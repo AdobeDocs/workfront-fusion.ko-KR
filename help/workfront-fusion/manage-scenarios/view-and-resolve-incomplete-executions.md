@@ -4,9 +4,9 @@ description: '[!UICONTROL 미완료 실행] 폴더는 오류로 인해 정상적
 author: Becky
 feature: Workfront Fusion
 exl-id: 8891b4d7-a39a-4f14-8521-8c2ca186ca6e
-source-git-commit: ad304117fb6e9d1320b8e50d71a162609dc6e6f4
+source-git-commit: f2ddf62d660c4709f1e7e59c4302cde5b062725f
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '662'
 ht-degree: 5%
 
 ---
@@ -87,9 +87,11 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->조직당 해결되지 않은 미완료 실행 폴더의 현재 크기 제한은 500MB입니다. 조직에서 이 제한을 초과하는 경우 다음 오류가 표시될 수 있습니다.
+>시나리오당 해결되지 않은 미완료 실행 폴더의 현재 크기 제한은 10MB입니다. 시나리오가 이 제한을 초과하는 경우 다음 오류가 표시될 수 있습니다.
 >
->`"There is NOT ENOUGH SPACE to add a bundle to the IEQ. The reason is: Too many incomplete executions."`
+>`DLQ limit per scenario has been exceeded`
+>
+>해결되지 않은 모든 미완료 실행에 대해 팀은 총 500MB로 제한됩니다.
 >
 >자세한 내용은 시나리오 설정 구성 문서에서 [데이터 손실 사용](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable-data-loss)을 참조하십시오.
 

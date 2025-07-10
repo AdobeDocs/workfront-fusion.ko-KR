@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Microsoft 365
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 059bc82b-f1bc-4b92-a44b-51c1daf14f08
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: d967cb62018fde6a76639a8f25ee5ca23f80cd8b
 workflow-type: tm+mt
 source-wordcount: '2637'
 ht-degree: 0%
@@ -91,7 +91,7 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
 
 
 
-## [!DNL Workfront Fusion]에 [!DNL Office 365 Excel] 서비스를 연결하는 중
+## [!DNL Office 365 Excel]에 [!DNL Workfront Fusion] 서비스를 연결하는 중
 
 [!DNL Office 365 Excel] 계정을 [!UICONTROL Workfront Fusion]에 연결하는 방법에 대한 지침은 [[!UICONTROL Adobe Workfront Fusion에 연결 만들기] - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)을 참조하십시오.
 
@@ -140,7 +140,8 @@ Microsoft Office 365 Excel 커넥터는 다음을 사용합니다.
      <li> <p><strong>[!UICONTROL 경로]</strong>에서 선택 </p> <p>[!UICONTROL Workbook] 필드에서 루트 폴더에 없는 경우 경로를 포함하여 모듈이 다운로드할 통합 문서를 선택합니다.</p> </li> 
     </ul> </td> 
   </tr> 
- </tbody>
+ </tbody> 
+</table>
 
 #### [!UICONTROL 통합 문서 검색]
 

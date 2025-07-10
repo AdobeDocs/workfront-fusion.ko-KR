@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] HubSpot CRM 모듈을 사용하면 
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: 0e4986d0d66b98213efabd487e6701f8385161e3
+source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
 workflow-type: tm+mt
-source-wordcount: '7003'
+source-wordcount: '7000'
 ht-degree: 0%
 
 ---
@@ -842,7 +842,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 이 활성화되었습니까?]</td> 
+   <td role="rowheader">[!UICONTROL이 활성화되었습니까?]</td> 
    <td>새 참여가 만들어질 때 활성화될 경우 이 옵션을 활성화하십시오. 타임라인에 참여하려면 참여가 활성화되어야 합니다.</td> 
   </tr> 
   <tr> 
@@ -1029,7 +1029,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td>작업 상태를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">개체 유형에 대한 </td> 
+   <td role="rowheader">개체 유형에 대한 [!UICONTROL]</td> 
   <td><code>CONTACT</code> 또는 <code>COMPANY</code>을(를) 입력하십시오.
   </td> 
    </tr> 
@@ -1433,7 +1433,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 이벤트 날짜]</td> 
-   <td>이 작업의 날짜를 입력하거나 매핑합니다.<p>지원되는 날짜 및 시간 형식 목록을 보려면 [!DNL Adobe Workfront Fusion]</a>의 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 변환을 참조하십시오.</p></td> 
+   <td>이 작업의 날짜를 입력하거나 매핑합니다.<p>지원되는 날짜 및 시간 형식 목록은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 강제 변환</a>을 참조하십시오.</p></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 범주]</td> 
@@ -1682,7 +1682,7 @@ ID로 기존 티켓을 삭제합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 트리거 위치]</td> 
-   <td>브로드캐스트를 전송할 날짜 및 시간을 입력하거나 매핑합니다. 비워 두면 브로드캐스트가 즉시 전송됩니다.<p>지원되는 날짜 및 시간 형식 목록을 보려면 [!DNL Adobe Workfront Fusion]</a>의 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 변환을 참조하십시오.</p></td> 
+   <td>브로드캐스트를 전송할 날짜 및 시간을 입력하거나 매핑합니다. 비워 두면 브로드캐스트가 즉시 전송됩니다.<p>지원되는 날짜 및 시간 형식 목록은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 강제 변환</a>을 참조하십시오.</p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -1782,7 +1782,7 @@ ID로 기존 티켓을 삭제합니다.
   </tr> 
   <tr> 
    <td role="rowheader">게시 날짜</td> 
-   <td>블로그 게시물을 게시할 날짜를 입력하거나 매핑합니다. <p>지원되는 날짜 및 시간 형식 목록을 보려면 [!DNL Adobe Workfront Fusion]</a>의 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 변환을 참조하십시오.</p></td> 
+   <td>블로그 게시물을 게시할 날짜를 입력하거나 매핑합니다. <p>지원되는 날짜 및 시간 형식 목록은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 강제 변환</a>을 참조하십시오.</p></td> 
   </tr> 
   <tr> 
    <td role="rowheader">이름</td> 

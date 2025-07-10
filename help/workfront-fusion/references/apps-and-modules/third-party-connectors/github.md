@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 GitHub를 사
 author: Becky
 feature: Workfront Fusion
 exl-id: d9e6c26c-8770-40bc-a83a-8c05f86e4a3f
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1850'
 ht-degree: 0%
 
 ---
@@ -172,9 +172,9 @@ ht-degree: 0%
    <td> <p>감시할 문제를 연결된 방법별로 필터링할 수 있습니다.</p> 
     <ul> 
      <li>[!UICONTROL 모든 문제]</li> 
-     <li>[!UICONTROL 만 나에게 할당된 문제]</li> 
+     <li>[!UICONTROL만 나에게 할당된 문제]</li> 
      <li>[!UICONTROL 내가 만든 문제만 해당]</li> 
-     <li>[!UICONTROL 만 나를 언급하는 문제]</li> 
+     <li>[!UICONTROL만 나를 언급하는 문제]</li> 
      <li>[!UICONTROL 다음에 대한 업데이트를 구독하는 문제만 발생]</li> 
     </ul> </td> 
   </tr> 
@@ -421,7 +421,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Since]</td> 
-   <td>모듈은 이 날짜 이후에 작성된 주석을 반환합니다. 지원되는 날짜 형식 목록을 보려면 [!DNL Adobe Workfront Fusion]</a>의 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 변환을 참조하십시오.</td> 
+   <td>모듈은 이 날짜 이후에 작성된 주석을 반환합니다. 지원되는 날짜 형식 목록은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 강제 변환</a>을 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 반환되는 최대 주석 수]</td> 
@@ -516,7 +516,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query]</td> 
-   <td>검색 쿼리를 입력하거나 매핑합니다. 검색 옵션에 대한 자세한 설명은 [!DNL GitHub] 도움말 사이트에서 <a href="https://docs.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests">문제 및 가져오기 요청 검색</a>을 참조하십시오.</td> 
+   <td>검색 쿼리를 입력하거나 매핑합니다. 검색 옵션에 대한 자세한 설명은 <a href="https://docs.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests"> 도움말 사이트에서 </a>문제 및 가져오기 요청 검색[!DNL GitHub]을 참조하십시오.</td> 
   </tr> 
  </tbody> 
 </table>

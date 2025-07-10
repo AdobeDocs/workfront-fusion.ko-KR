@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Trello를 사
 author: Becky
 feature: Workfront Fusion
 exl-id: 5df5cd2b-ad4c-4a02-9d0c-7cee35232f93
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
 workflow-type: tm+mt
-source-wordcount: '5217'
+source-wordcount: '5213'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,7 @@ Trello 커넥터는 다음을 사용합니다.
  </tbody> 
  </table>
 
-## [!DNL Workfront Fusion]에 [!UICONTROL Trello] 연결
+## [!UICONTROL 에 ]Trello[!DNL Workfront Fusion] 연결
 
 [!UICONTROL Trello] 계정을 [!DNL Workfront Fusion]에 연결하는 방법은 [연결 만들기 [!DNL Adobe Workfront Fusion] - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)을 참조하세요.
 
@@ -204,7 +204,7 @@ Trello 커넥터는 다음을 사용합니다.
     <ul> 
      <li><strong>[!UICONTROL Private]</strong>: 
       구성원, 구성원 및 옵저버</li> 
-     <li><strong>[!UICONTROL , 조직]</strong>: 
+     <li><strong>[!UICONTROL, 조직]</strong>: 
       회원, 회원 및 옵저버, 조직 회원</li> 
      <li><strong>[!UICONTROL Public]</strong>: 
       구성원, 구성원 및 관찰자, 조직 구성원, 모두</li> 
@@ -255,7 +255,7 @@ Trello 커넥터는 다음을 사용합니다.
    <td> <p>두 가지 카드 에이징 모드 중에서 선택합니다. </p> 
     <ul> 
      <li><strong>[!UICONTROL Pirate mode]</strong>: 오래된 해적 지도처럼 카드가 찢어지거나 노란색으로 바뀌고 갈라집니다.</li> 
-     <li><strong>[!UICONTROL 일반 모드 &#x200B;]</strong>: 카드가 오래될수록 점점 더 투명해집니다. </li> 
+     <li><strong>[!UICONTROL 일반 모드 ]</strong>: 카드가 오래될수록 점점 더 투명해집니다. </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -270,95 +270,95 @@ Trello 커넥터는 다음을 사용합니다.
 >[!SUCCESS]
 >
 ><table style="table-layout:auto">
-><col> 
-> <col> 
-> <tbody> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Connection] </td> 
->   <td> <p>[!DNL Workfront Fusion]에 [!UICONTROL Trello] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 대한 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL 보드 ID]</p> </td> 
->   <td> <p>모듈에서 만들 보드의 고유한 [!UICONTROL Trello] ID를 입력하거나 매핑합니다. 보드 ID는 감시 보드 모듈과 같은 다른 모듈을 사용하여 검색할 수 있습니다</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/watch-boards.png"> </p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL 새 이름]</td> 
->   <td> <p> 보드에 대한 새 이름을 입력하거나 매핑합니다.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL 새 설명]</td> 
->   <td> <p> 새 게시판 설명을 입력하거나 매핑합니다.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL 조직 ID]</p> </td> 
->   <td> <p>모듈에서 편집할 보드의 고유한 [!UICONTROL Trello] ID를 입력하거나 매핑합니다.  </p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Subscribe] </td> 
->   <td> <p>옵션을 선택하여 이 모듈에서 사용하는 연결을 소유한 사용자가 보드에 가입되어 있는지 여부를 지정합니다.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL 권한 수준]</p> </td> 
->   <td> <p>게시판은 권한 수준별로 투표 및 주석 달기 규칙이 다릅니다. 예를 들어 게시판이 [!UICONTROL Private]이고 투표 및 댓글 달기 규칙을 [!UICONTROL All]로 설정하면 오류가 표시됩니다. </p> <p>투표 및 댓글은 각 권한 수준에 대해 다음 그룹으로 제한됩니다.</p> 
->    <ul> 
->     <li><strong>[!UICONTROL Private]</strong>: 
->      구성원, 구성원 및 옵저버</li> 
->     <li><strong>[!UICONTROL , 조직]</strong>: 
->      회원, 회원 및 옵저버, 조직 회원</li> 
->     <li><strong>[!UICONTROL Public]</strong>: 
->      구성원, 구성원 및 관찰자, 조직 구성원, 모두</li> 
->    </ul> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL Voting]</p> </td> 
->   <td> <p>이 게시판에서 투표할 수 있는 사람을 지정하는 옵션을 선택하십시오. 권한 수준에 대한 투표 제한에 대해서는 [!UICONTROL 권한 수준] 필드를 참조하십시오.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL Comments]</p> </td> 
->   <td> <p>이 보드의 카드에 주석을 달 수 있는 사용자를 지정하는 옵션을 선택합니다. 권한 수준에 대한 제한 사항에 대한 댓글을 달려면 [!UICONTROL 권한 수준] 필드를 참조하십시오.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL 초대] </td> 
->   <td> <p>이 게시판에 사람들을 초대할 수 있는 사용자를 선택하십시오.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Self-Join]</td> 
->   <td> <p> 팀 구성원이 직접 보드에 가입할 수 있는지 또는 초대해야 하는지 여부를 선택합니다.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Card 표지]</td> 
->   <td> <p> 이 보드에 카드 덮개를 표시할지 여부를 선택합니다.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL 배경] </td> 
->   <td> <p>배경색 또는 사용자 지정 배경을 선택합니다.</p> <p>참고: 사용자 지정 배경은 [!UICONTROL Trello Gold and Business Class] 구독자만 사용할 수 있습니다.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL 백그라운드 ID]</td> 
->   <td> <p> [!UICONTROL Background] 필드에서 사용자 지정 배경을 사용하도록 선택한 경우 사용할 배경의 ID를 입력하거나 매핑합니다.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL 카드 에이징]</p> </td> 
->   <td> <p>두 가지 카드 에이징 모드 중에서 선택합니다. </p> 
->    <ul> 
->     <li><strong>[!UICONTROL Pirate mode]</strong>: 오래된 해적 지도처럼 카드가 찢어지거나 노란색으로 바뀌고 갈라집니다.</li> 
->     <li><strong>[!UICONTROL 일반 모드]</strong>: 카드가 오래되면 점차 투명해집니다. </li> 
->    </ul> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL 달력 피드 사용]</td> 
->   <td> <p> 캘린더 피드의 활성화 여부를 선택합니다.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL &lt;색상&gt; 레이블 이름]</td> 
->   <td> <p> 원하는 색상 레이블에 이름을 지정합니다.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL 아카이브] </td> 
->   <td> <p>보드를 보관(닫기)할지 여부를 나타내는 옵션을 선택합니다. </p> </td> 
->  </tr> 
-> </tbody> 
-></table>
+<col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>[!DNL Workfront Fusion]에 [!UICONTROL Trello] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 대한 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL 보드 ID]</p> </td> 
+   <td> <p>모듈에서 만들 보드의 고유한 [!UICONTROL Trello] ID를 입력하거나 매핑합니다. 보드 ID는 감시 보드 모듈과 같은 다른 모듈을 사용하여 검색할 수 있습니다</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/watch-boards.png"> </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 새 이름]</td> 
+   <td> <p> 보드에 대한 새 이름을 입력하거나 매핑합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 새 설명]</td> 
+   <td> <p> 새 게시판 설명을 입력하거나 매핑합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL 조직 ID]</p> </td> 
+   <td> <p>모듈에서 편집할 보드의 고유한 [!UICONTROL Trello] ID를 입력하거나 매핑합니다.  </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Subscribe] </td> 
+   <td> <p>옵션을 선택하여 이 모듈에서 사용하는 연결을 소유한 사용자가 보드에 가입되어 있는지 여부를 지정합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL 권한 수준]</p> </td> 
+   <td> <p>게시판은 권한 수준별로 투표 및 주석 달기 규칙이 다릅니다. 예를 들어 게시판이 [!UICONTROL Private]이고 투표 및 댓글 달기 규칙을 [!UICONTROL All]로 설정하면 오류가 표시됩니다. </p> <p>투표 및 댓글은 각 권한 수준에 대해 다음 그룹으로 제한됩니다.</p> 
+    <ul> 
+     <li><strong>[!UICONTROL Private]</strong>: 
+      구성원, 구성원 및 옵저버</li> 
+     <li><strong>[!UICONTROL, 조직]</strong>: 
+      회원, 회원 및 옵저버, 조직 회원</li> 
+     <li><strong>[!UICONTROL Public]</strong>: 
+      구성원, 구성원 및 관찰자, 조직 구성원, 모두</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Voting]</p> </td> 
+   <td> <p>이 게시판에서 투표할 수 있는 사람을 지정하는 옵션을 선택하십시오. 권한 수준에 대한 투표 제한에 대해서는 [!UICONTROL 권한 수준] 필드를 참조하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Comments]</p> </td> 
+   <td> <p>이 보드의 카드에 주석을 달 수 있는 사용자를 지정하는 옵션을 선택합니다. 권한 수준에 대한 제한 사항에 대한 댓글을 달려면 [!UICONTROL 권한 수준] 필드를 참조하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 초대] </td> 
+   <td> <p>이 게시판에 사람들을 초대할 수 있는 사용자를 선택하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Self-Join]</td> 
+   <td> <p> 팀 구성원이 직접 보드에 가입할 수 있는지 또는 초대해야 하는지 여부를 선택합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Card 표지]</td> 
+   <td> <p> 이 보드에 카드 덮개를 표시할지 여부를 선택합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 배경] </td> 
+   <td> <p>배경색 또는 사용자 지정 배경을 선택합니다.</p> <p>참고: 사용자 지정 배경은 [!UICONTROL Trello Gold and Business Class] 구독자만 사용할 수 있습니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 백그라운드 ID]</td> 
+   <td> <p> [!UICONTROL Background] 필드에서 사용자 지정 배경을 사용하도록 선택한 경우 사용할 배경의 ID를 입력하거나 매핑합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL 카드 에이징]</p> </td> 
+   <td> <p>두 가지 카드 에이징 모드 중에서 선택합니다. </p> 
+    <ul> 
+     <li><strong>[!UICONTROL Pirate mode]</strong>: 오래된 해적 지도처럼 카드가 찢어지거나 노란색으로 바뀌고 갈라집니다.</li> 
+     <li><strong>[!UICONTROL 일반 모드]</strong>: 카드가 오래되면 점차 투명해집니다. </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 달력 피드 사용]</td> 
+   <td> <p> 캘린더 피드의 활성화 여부를 선택합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL &lt;색상&gt; 레이블 이름]</td> 
+   <td> <p> 원하는 색상 레이블에 이름을 지정합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 아카이브] </td> 
+   <td> <p>보드를 보관(닫기)할지 여부를 나타내는 옵션을 선택합니다. </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 
 +++
@@ -691,7 +691,7 @@ Trello 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 기한]</td> 
-   <td> <p> 카드의 기한을 입력하십시오. 지원되는 날짜 및 시간 형식 목록을 보려면 [!DNL Adobe Workfront Fusion]</a>의 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 변환을 참조하십시오.</p> </td> 
+   <td> <p> 카드의 기한을 입력하십시오. 지원되는 날짜 및 시간 형식 목록은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 강제 변환</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 기한 완료]</td> 
@@ -763,7 +763,7 @@ Trello 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 기한]</td> 
-   <td> <p> 카드의 기한을 입력하십시오. 지원되는 날짜 및 시간 형식 목록을 보려면 [!DNL Adobe Workfront Fusion]</a>의 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 변환을 참조하십시오.</p> </td> 
+   <td> <p> 카드의 기한을 입력하십시오. 지원되는 날짜 및 시간 형식 목록은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 강제 변환</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 기한 완료]</td> 
@@ -929,7 +929,7 @@ Trello 커넥터는 다음을 사용합니다.
 
 +++ **[!UICONTROL 보드에 구성원 할당]**
 
-[게시판](#boards)에서 &quot;[!UICONTROL 게시판에 구성원 할당]&quot;을 참조하십시오.
+[!UICONTROL 게시판]에서 &quot;[게시판에 구성원 할당](#boards)&quot;을 참조하십시오.
 
 +++
 
@@ -964,7 +964,7 @@ Trello 커넥터는 다음을 사용합니다.
 
 +++ **[!UICONTROL 게시판에서 구성원 할당 해제]**
 
-[게시판](#boards)에서 &quot;[!UICONTROL 게시판에서 구성원 할당 해제]&quot;를 참조하십시오.
+[!UICONTROL 게시판]에서 &quot;[게시판에서 구성원 할당 해제](#boards)&quot;를 참조하십시오.
 
 +++
 
@@ -1167,11 +1167,11 @@ Trello 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Since] </td> 
-   <td> <p>댓글이 생성된 기간의 시작 날짜를 설정합니다. 지원되는 날짜 및 시간 형식 목록을 보려면 [!DNL Adobe Workfront Fusion]</a>의 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 변환을 참조하십시오.</p> </td> 
+   <td> <p>댓글이 생성된 기간의 시작 날짜를 설정합니다. 지원되는 날짜 및 시간 형식 목록은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 강제 변환</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Before] </td> 
-   <td> <p>댓글이 생성된 기간의 종료 날짜를 설정합니다. 지원되는 날짜 및 시간 형식 목록을 보려면 [!DNL Adobe Workfront Fusion]</a>의 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 변환을 참조하십시오.</p> </td> 
+   <td> <p>댓글이 생성된 기간의 종료 날짜를 설정합니다. 지원되는 날짜 및 시간 형식 목록은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 강제 변환</a>을 참조하십시오.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1217,7 +1217,7 @@ Trello 커넥터는 다음을 사용합니다.
 
 ### [!DNL Trello]에서 카드의 ID 또는 바로 가기 링크를 찾는 방법
 
-카드를 편집하거나 새 주석을 만들려면 카드의 ID나 바로 가기 링크를 알고 있어야 합니다. [!UICONTROL 새 카드] 트리거의 출력에서 이 정보를 가져올 수 있습니다. 카드를 열고 [!UICONTROL 공유] 단추를 클릭하여 카드에 대한 바로 가기 링크를 얻을 수도 있습니다. 바로 가기 링크는 URL 끝의 `https://trello.com/c/` 뒤에 있는 [!UICONTROL 이 카드에 대한 링크] 상자에서 찾을 수 있습니다.
+카드를 편집하거나 새 주석을 만들려면 카드의 ID나 바로 가기 링크를 알고 있어야 합니다. [!UICONTROL 새 카드] 트리거의 출력에서 이 정보를 가져올 수 있습니다. 카드를 열고 [!UICONTROL 공유] 단추를 클릭하여 카드에 대한 바로 가기 링크를 얻을 수도 있습니다. 바로 가기 링크는 URL 끝의 [!UICONTROL  뒤에 있는 ]이 카드에 대한 링크`https://trello.com/c/` 상자에서 찾을 수 있습니다.
 
 ![외 항목 공유](/help/workfront-fusion/references/apps-and-modules/assets/share-and-more-350x575.png)
 

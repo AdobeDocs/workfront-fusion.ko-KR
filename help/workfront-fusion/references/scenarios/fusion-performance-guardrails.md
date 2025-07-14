@@ -4,9 +4,9 @@ description: 작업 자동화에는 빠른 처리가 필요하므로  [!DNL Adob
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: cf9e7def3ce406b693d22ff31f82571dd5eddd31
+source-git-commit: a5a98d2e0b246d46389d4574e29f91c74f053472
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1074'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,8 @@ ht-degree: 0%
 
 * 파일에 대한 Fusion의 총 처리 용량은 **1GB**&#x200B;입니다. 제한은 총 메모리 비용을 기준으로 합니다. 모든 작업이 그 비용에 기여한다. 400MB의 단일 파일을 다운로드하여 업로드하는 경우 파일 용량에 대한 총 비용은 800MB가 됩니다.
 * Workfront Ultimate 플랜을 사용하는 조직은 1GB가 넘는 향상된 파일 처리에 액세스할 수 있습니다. Fusion 플랫폼은 단일 작업(예: 업로드 파일)에 대해 최대 15GB의 개별 파일을 지원할 수 있지만 데이터 전송에 영향을 주는 다른 요인이 있습니다. 단일 작업의 파일 크기 제한은 Fusion이 연결되는 웹 서비스에 따라 다릅니다. 데이터 전송은 단일 실행에 대한 총 처리입니다. 즉, 한 번의 실행으로 여러 가지 작업이 전체 데이터 전송에 기여합니다. Fusion은 실행 제한 40분에 도달할 때까지 파일을 처리합니다.
+* 큰 파일을 지원하는 모듈을 사용하여 파일을 다운로드한 다음 큰 파일을 지원하지 않는 모듈로 전달되는 경우 해당 모듈은 파일을 성공적으로 처리하지 못합니다. 큰 파일은 워크플로우 전체에서 지원되는 모듈로만 처리해야 합니다.
+* 대용량 파일을 지원하지 않는 모듈은 최대 **200MB** 크기의 파일을 처리할 수 있습니다.
 
 자세한 내용은 [대용량 파일 작업](/help/workfront-fusion/references/scenarios/fusion-large-files.md)을 참조하십시오.
 

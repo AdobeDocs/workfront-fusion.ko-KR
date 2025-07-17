@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion SFTP] 모듈을 사용하면 선택�
 author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
-source-git-commit: 26c599a9887ad931763b787813153bb7791ce5d1
+source-git-commit: 0e187fb3c31375c4dc12d0f9a8438bcb6f9ea7e8
 workflow-type: tm+mt
-source-wordcount: '2121'
+source-wordcount: '2143'
 ht-degree: 0%
 
 ---
@@ -111,6 +111,46 @@ SFTP 계정을 [!DNL Workfront Fusion]에 연결하려면 대상 호스트 및 S
 
 연결 정보를 입력한 후 **[!UICONTROL 계속]**&#x200B;을 클릭하여 연결을 설정합니다.
 
+### 지원되는 연결 옵션
+
+SFTP 커넥터는 연결을 만들 때 다음을 지원합니다.
+
+#### 키 교환 알고리즘(KEX)
+
+* `ecdh-sha2-nistp256`
+* `ecdh-sha2-nistp384`
+* `ecdh-sha2-nistp521`
+* `diffie-hellman-group-exchange-sha256`
+* `diffie-hellman-group14-sha256`
+* `diffie-hellman-group16-sha512`
+* `diffie-hellman-group18-sha512`
+* `diffie-hellman-group14-sha1`
+
+#### 암호
+
+* `aes256-gcm@openssh.com`
+* `aes256-gcm`
+* `aes128-gcm@openssh.com`
+* `aes128-gcm`
+* `aes256-ctr`
+* `aes192-ctr`
+* `aes128-ctr`
+* `aes256-cbc`
+* `aes192-cbc`
+* `aes128-cbc`
+* `blowfish-cbc`
+
+#### 서버 호스트 키 형식
+
+* `ssh-ed25519`
+* `ecdsa-sha2-nistp256`
+* `ecdsa-sha2-nistp384`
+* `ecdsa-sha2-nistp521`
+* `ssh-rsa`
+* `ssh-dss`
+* `rsa-sha2-256`
+* `rsa-sha2-512`
+
 ## [!UICONTROL SFTP] 모듈 및 해당 필드
 
 [!UICONTROL SFTP] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 추가 [!UICONTROL SFTP] 필드가 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
@@ -193,7 +233,7 @@ SFTP 계정을 [!DNL Workfront Fusion]에 연결하려면 대상 호스트 및 S
 
 >[!NOTE]
 >
->폴더가 이미 있으면 모듈에서 오류가 발생합니다. 흐름을 중단하지 않고 계속하려면 모듈에 오류 처리기 경로를 연결하여 오류를 catch하고 [!UICONTROL Resume] 지시문을 사용하여 흐름을 계속하십시오. 오류 처리기 경로를 연결하는 방법에 대한 자세한 내용은 [오류 처리 위치 [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md)를 참조하십시오. 오류 처리기 경로에 대한 자세한 내용은  [!DNL Adobe Workfront Fusion][&#128279;](/help/workfront-fusion/references/errors/directives-for-error-handling.md)의 오류 처리에 대한 지시문을 참조하십시오.
+>폴더가 이미 있으면 모듈에서 오류가 발생합니다. 흐름을 중단하지 않고 계속하려면 모듈에 오류 처리기 경로를 연결하여 오류를 catch하고 [!UICONTROL Resume] 지시문을 사용하여 흐름을 계속하십시오. 오류 처리기 경로를 연결하는 방법에 대한 자세한 내용은 [오류 처리 위치 [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md)를 참조하십시오. 오류 처리기 경로에 대한 자세한 내용은 [의 오류 처리에 대한  [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/errors/directives-for-error-handling.md)지시문을 참조하십시오.
 
 <table style="table-layout:auto"> 
  <col> 

@@ -4,9 +4,9 @@ description: 작업 자동화에는 빠른 처리가 필요하므로  [!DNL Adob
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: a5a98d2e0b246d46389d4574e29f91c74f053472
+source-git-commit: e036784fbf241c6d528f2020b7c368249e4f2133
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1083'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,7 @@ ht-degree: 0%
 
 * 불완전한 실행은 시나리오당 총 크기 **10MB**(으)로 제한됩니다. 10MB 제한에 도달하면 해당 시나리오에 대해 더 이상 완료되지 않은 실행이 저장되지 않습니다.
 * 불완전한 실행은 팀당 총 크기 **500MB**(으)로 제한됩니다. 500MB 제한에 도달하면 해당 팀에 대해 더 이상 완료되지 않은 실행이 저장되지 않습니다.
+* Workfront Fusion을 사용하면 분당 최대 5회의 오류가 가능합니다.
 
 ## 재시도
 

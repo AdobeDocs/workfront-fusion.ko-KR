@@ -4,18 +4,18 @@ description: ' [!DNL Adobe Workfront Fusion Frame].io modules enable you to moni
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: cc1ce10fccf159a0c17a3bba978d88c0d1013cbf
+source-git-commit: 7eaed8b6afd5de0d36c94605c9708d74b6ec8aa6
 workflow-type: tm+mt
-source-wordcount: '2936'
+source-wordcount: '3471'
 ht-degree: 1%
 
 ---
 
-# [!DNL Frame.io]개의 Beta(V4) 모듈
+# [!DNL Frame.io] V4 모듈
 
 >[!IMPORTANT]
 >
->이 문서에서는 Frame.io 커넥터의 새(베타) 버전에 대해 설명합니다. 이 커넥터는 Frame.io 버전 4에 연결하는 데 사용됩니다.
+>이 문서에서는 Frame.io 커넥터의 새 버전에 대해 설명합니다. 이 커넥터는 Frame.io 버전 4에 연결하는 데 사용됩니다.
 >
 >Frame.io 커넥터의 레거시 버전에 대한 지침은 [Frame.io 레거시 커넥터](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)를 참조하십시오.
 
@@ -25,7 +25,7 @@ Workfront은 연결 중인 Frame.io 버전에 따라 두 개의 Frame.io 커넥�
 
 | 커넥터 | Frame.io 버전 |
 |---|---|
-| Frame.io (Beta) | V4 |
+| Frame.io | V4 |
 | Frame.io(기존) | V3 |
 
 Frame.io 커넥터의 레거시 버전에 대한 지침은 [Frame.io 레거시 커넥터](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)를 참조하십시오.
@@ -316,7 +316,8 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
 * [[!UICONTROL 자산 삭제]](#delete-an-asset)
 * [[!UICONTROL 자산 가져오기]](#get-an-asset)
 * [[!UICONTROL 자산 나열]](#list-assets)
-* [[!UICONTROL 자산 업데이트]](#update-an-asset)
+* [자산 보기 삭제됨](#watch-asset-deleted)
+* [새 자산 보기](#watch-new-asset)
 
 #### [!UICONTROL 자산 만들기] <!--different for v4-->
 
@@ -436,6 +437,60 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
  </tbody> 
 </table>
 
+#### 자산 보기 삭제됨
+
+이 트리거 모듈은 자산이 삭제되면 시나리오를 시작합니다.
+
+이 모듈에 사용할 웹후크를 선택하거나 웹후크 필드 옆에 있는 추가 를 클릭하고 다음 정보를 입력합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Webhook name] </td> 
+   <td> <p>새 웹후크의 이름을 입력합니다.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]을(를) [!DNL Adobe Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 계정 ID] </td> 
+   <td> <p>계정을 선택하거나 삭제된 자산을 확인하려는 계정의 ID를 매핑합니다.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 새 자산 보기
+
+이 트리거 모듈은 새 에셋이 생성될 때 시나리오를 시작합니다.
+
+이 모듈에 사용할 웹후크를 선택하거나 웹후크 필드 옆에 있는 추가 를 클릭하고 다음 정보를 입력합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Webhook name] </td> 
+   <td> <p>새 웹후크의 이름을 입력합니다.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]을(를) [!DNL Adobe Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 계정 ID] </td> 
+   <td> <p>계정을 선택하거나 새 자산을 확인하려는 계정의 ID를 매핑합니다.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 ### 댓글
 
 * [[!UICONTROL 댓글 만들기]](#create-a-comment)
@@ -443,6 +498,8 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
 * [[!UICONTROL 댓글 가져오기]](#get-a-comment)
 * [[!UICONTROL 댓글 나열]](#list-comments)
 * [[!UICONTROL 댓글 업데이트]](#update-a-comment)
+* [업데이트된 댓글 보기](#watch-comment-updated)
+* [새 댓글 보기](#watch-new-comment)
 
 #### [!UICONTROL 댓글 만들기]
 
@@ -603,6 +660,60 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
  </tbody> 
 </table>
 
+#### 업데이트된 댓글 보기
+
+이 트리거 모듈은 댓글이 업데이트되면 시나리오를 시작합니다.
+
+이 모듈에 사용할 웹후크를 선택하거나 웹후크 필드 옆에 있는 추가 를 클릭하고 다음 정보를 입력합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Webhook name] </td> 
+   <td> <p>새 웹후크의 이름을 입력합니다.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]을(를) [!DNL Adobe Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 계정 ID] </td> 
+   <td> <p>계정을 선택하거나 업데이트된 댓글이 있는지 확인할 계정의 ID를 매핑합니다.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 새 댓글 보기
+
+이 트리거 모듈은 댓글이 작성되면 시나리오를 시작합니다.
+
+이 모듈에 사용할 웹후크를 선택하거나 웹후크 필드 옆에 있는 추가 를 클릭하고 다음 정보를 입력합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Webhook name] </td> 
+   <td> <p>새 웹후크의 이름을 입력합니다.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]을(를) [!DNL Adobe Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 계정 ID] </td> 
+   <td> <p>계정을 선택하거나 새 댓글이 있는지 확인할 계정의 ID를 매핑합니다.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 ### 폴더
 
 #### 폴더 만들기
@@ -643,6 +754,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
 ### 프로젝트
 
 * [프로젝트 만들기](#create-a-project)
+* [Frame.io 프로젝트에 사용자 초대](#invite-users-to-frameio-project)
 * [프로젝트 나열](#list-projects)
 
 #### 프로젝트 만들기
@@ -668,6 +780,38 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
    <tr> 
    <td role="rowheader">이름 </td> 
    <td> <p>새 프로젝트의 이름을 입력하거나 매핑합니다.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Frame.io 프로젝트에 사용자 초대
+
+이 작업 모듈은 지정된 Frame.io 프로젝트에 사용자를 초대합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]을(를) [!DNL Adobe Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 계정 ID] </td> 
+   <td> <p>사용자를 초대하려는 프로젝트가 포함된 계정을 선택하거나 매핑합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td> <p>사용자를 초대하려는 프로젝트가 포함된 작업 영역을 선택하거나 매핑합니다.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">프로젝트 ID </td> 
+   <td> <p>사용자를 초대할 프로젝트를 선택하거나 매핑합니다.</p> </td> 
+  </tr> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">사용자 ID </td> 
+   <td> <p>프로젝트에 초대할 사용자를 선택하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -834,6 +978,10 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
 
 ### 기타
 
+* [사용자 지정 API 호출 만들기](#make-a-custom-api-call)
+* [업데이트된 메타데이터 값 보기](#watch-metadata-value-updated)
+
+
 #### [!UICONTROL 사용자 지정 API 호출 만들기]
 
 이 모듈에서는 사용자 지정 API 호출을 수행할 수 있습니다.
@@ -868,6 +1016,33 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 업데이트된 메타데이터 값 보기
+
+이 트리거 모듈은 댓글이 업데이트되면 시나리오를 시작합니다.
+
+이 모듈에 사용할 웹후크를 선택하거나 웹후크 필드 옆에 있는 추가 를 클릭하고 다음 정보를 입력합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Webhook name] </td> 
+   <td> <p>새 웹후크의 이름을 입력합니다.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]을(를) [!DNL Adobe Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 계정 ID] </td> 
+   <td> <p>계정을 선택하거나 업데이트된 메타데이터 값을 확인하려는 계정의 ID를 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -5,9 +5,10 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 454e06527fe1a624f36be3b7f3682ff49a61d42d
+exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
+source-git-commit: efab436edce8a5253b147c77b87a005f6efc63d0
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '628'
 ht-degree: 1%
 
 ---
@@ -105,6 +106,7 @@ ht-degree: 1%
    하위 시나리오의 트리거 모듈에 구성된 필드가 하위 시나리오 호출 모듈에 나타납니다.
 
 1. 하위 시나리오에 전달할 정보를 하위 시나리오 호출 모듈에 입력하거나 매핑합니다.
+1. (조건부) 하위 시나리오의 응답을 기다리지 않고 상위 시나리오가 실행을 계속하도록 하려면 **실행 및 삭제** 옵션을 활성화합니다.
 1. **확인**&#x200B;을 클릭하여 모듈을 저장합니다.
 
 >[!NOTE]
@@ -128,4 +130,3 @@ ht-degree: 1%
    데이터 구조를 만드는 방법에 대한 지침은 [데이터 구조](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)를 참조하십시오.
 
 1. **확인**&#x200B;을 클릭하여 모듈을 저장합니다.
-

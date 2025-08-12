@@ -5,7 +5,7 @@ description: 시나리오 설정 패널에서 시나리오에 대한 특정 설�
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: a7411649c0d65956552f40a7710315536755dc65
+source-git-commit: 273a07a28563a0eb3a3446937964e8dcef8a68d3
 workflow-type: tm+mt
 source-wordcount: '1288'
 ht-degree: 0%
@@ -191,7 +191,7 @@ Dropbox 폴더에 100개의 파일이 추가되고 최대 주기 옵션이 10으
 
 ### 연속 오류 수
 
-시나리오 실행이 비활성화되기 전 최대 연속 실행 시도 횟수를 정의합니다(`DataError`, `DuplicateDataError` 및 `ConnectionError` 제외).
+시나리오 실행이 비활성화되기 전 최대 연속 실행 시도 횟수를 정의합니다(`DataError`, `DuplicateDataError`, `ModuleTimeoutError` 및 `ConnectionError` 제외).
 
 오류에 대한 자세한 내용은 [오류 유형](/help/workfront-fusion/references/errors/error-processing.md)을 참조하세요.
 

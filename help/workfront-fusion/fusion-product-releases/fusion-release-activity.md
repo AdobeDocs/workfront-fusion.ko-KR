@@ -9,10 +9,10 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: c37aea95-7cc3-4939-a4d7-9a6a75557b85
-source-git-commit: 14960edd32497a06620a9a039632a58ebd246c2b
+source-git-commit: 679a4f5c91625dfecf32e10904700bf75ea7a7cf
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 5%
+source-wordcount: '978'
+ht-degree: 16%
 
 ---
 
@@ -22,8 +22,14 @@ Adobe Workfront Fusion은 동일한 작업을 계속해서 반복하는 대신 �
 
 ## 2025년 Fusion 릴리스
 
+### 2025년 8월
+
+* [Workfront Fusion 릴리스 활동: 2025년 8월 18일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-8-18.md)
+
+
 ### 2025년 7월
 
+* [Workfront Fusion 릴리스 활동: 2025년 7월 31일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-7-31.md)
 * [Workfront Fusion 릴리스 활동: 2025년 7월 7일이 있는 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-7-7.md)
 
 

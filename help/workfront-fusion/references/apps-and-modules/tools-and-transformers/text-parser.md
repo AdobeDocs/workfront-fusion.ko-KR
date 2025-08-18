@@ -4,9 +4,9 @@ description: Text 파서 도구를 사용하여 다른 [!DNL Adobe Workfront Fus
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 679a4f5c91625dfecf32e10904700bf75ea7a7cf
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1311'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ ht-degree: 0%
 * [[!UICONTROL 텍스트에서 요소 가져오기]](#get-elements-from-text)
 * [[!UICONTROL HTML을 텍스트로]](#html-to-text)
 * [[!UICONTROL 패턴 일치]](#match-pattern)
-* [[!UICONTROL 바꾸기]](#replace)
+* [[!UICONTROL Replace]](#replace)
 
 #### [!UICONTROL HTML에서 요소 가져오기]
 
@@ -129,7 +129,7 @@ HTML 코드에서 원하는 요소를 검색합니다.
   </tr> 
   <tr> 
    <td>[!UICONTROL Pattern]</td> 
-   <td> <p>텍스트에서 구문 분석할 요소를 반영하는 패턴을 선택합니다.</p> </td> 
+   <td> <p>텍스트에서 구문 분석할 요소를 반영하는 패턴을 선택합니다.</p> <p>사용자 정의 정규 표현식을 입력하려면 목록에서 사용자 정의를 선택하고 사용자 정의 정규 표현식 필드에 사용자 정의 표현식을 입력합니다.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 중복 발생 무시]</td> 
@@ -206,7 +206,7 @@ HTML 코드에서 원하는 요소를 검색합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL 바꾸기]
+#### [!UICONTROL Replace]
 
 입력한 텍스트에서 지정된 값이나 정규 표현식을 검색하고 결과를 새 값으로 바꿉니다.
 

@@ -4,9 +4,9 @@ description: 이 문서에서는 시나리오에 모듈을 추가하는 기본 �
 author: Becky
 feature: Workfront Fusion
 exl-id: f3757468-3e11-4862-a83e-ed447805545b
-source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
+source-git-commit: 62b09469c1d85fd2bd1f154cde339cc4a10fc34a
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '682'
 ht-degree: 0%
 
 ---
@@ -108,3 +108,14 @@ ht-degree: 0%
 1. 모듈을 구성합니다.
 
    특정 모듈 구성에 대한 지침은 [Fusion 응용 프로그램 및 해당 모듈 참조에 나열된 선택한 응용 프로그램에 대한 문서를 참조하십시오. 문서 인덱스](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
+
+>[!NOTE]
+>
+>특정 모듈에 대한 링크를 만들려면 다음 페이지를 볼 때 URL에 `?moduleId=<module-id>`을(를) 추가하십시오.
+>
+>* 시나리오 편집 페이지(URL이 `/edit`에 끝남)
+>* 특정 시나리오 실행(URL이 `/logs/<log-id>`에 끝남)
+>
+>`<module-id>`은(는) 시나리오를 볼 때 모듈 레이블 옆에 있는 숫자를 참조합니다.
+>
+>이 기능은 시나리오를 디버깅하거나 모듈 구성을 복사할 때 유용합니다.

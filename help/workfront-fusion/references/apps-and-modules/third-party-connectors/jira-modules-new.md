@@ -3,10 +3,11 @@ title: Jira 모듈
 description: Adobe Workfront Fusion 시나리오에서는 Jira 소프트웨어를 사용하는 워크플로를 자동화하고 여러 타사 애플리케이션 및 서비스에 연결할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: d16c1d9f257d44b72cfb93caa2a814fd62b0b733
+exl-id: b74a3618-c4a1-4965-a88d-1643bfab12db
+source-git-commit: 9865101fe57c2668ecb5ad743b3d6963833feb4a
 workflow-type: tm+mt
-source-wordcount: '1564'
-ht-degree: 5%
+source-wordcount: '1608'
+ht-degree: 6%
 
 ---
 
@@ -73,15 +74,50 @@ Jira 모듈을 사용하려면 Jira 계정이 있어야 합니다.
 
 ## Jira를 Workfront Fusion에 연결
 
-Jira 모듈 내에서 직접 Jira 계정에 대한 연결을 만들 수 있습니다.
+### 필요한 자격 증명 만들기
 
->[!IMPORTANT]
->
->* Jira 데이터 센터에 대한 기본 연결을 만들려면 Jira 개인 액세스 토큰이 필요합니다.
->* Jira Cloud에 대한 기본 연결을 만들려면 Jira API 토큰이 필요합니다
->* Jira Cloud 또는 Jira 데이터 센터에 대한 OAuth 2 연결을 만들려면 Jira 클라이언트 ID 및 클라이언트 암호가 필요합니다.
->
->이러한 항목을 만드는 방법에 대한 지침은 Jira 설명서를 참조하십시오.
+Jira에 대한 연결을 만들려면 다음이 필요합니다.
+
+| 연결 유형 | 계정 유형 | 자격 증명 필요 |
+|---|---|---|
+| OAuth 2 | 임의 | 클라이언트 ID 및 클라이언트 암호 |
+| 기본 | Jira 클라우드 | Jira API 토큰 |
+| 기본 | Jira 데이터 센터 | Jira 개인 액세스 토큰(PAT) |
+
+이러한 항목을 만드는 방법에 대한 지침은 Jira 설명서를 참조하십시오.
+
+이러한 자격 증명을 만들 때 다음 정보가 필요합니다.
+
+* OAuth 2의 경우:
+
+  | Fusion 데이터 센터 | 리디렉션 URL |
+  |---|---|
+  | US | `https://app.workfrontfusion.com/oauth/cb/workfront-jira2` |
+  | EU | `https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira2` |
+  | Azure | `https://app-az.workfrontfusion.com/oauth/cb/workfront-jira2` |
+
+
+
+* PAT(개인 액세스 토큰)의 경우:
+
+  | Fusion 데이터 센터 | 리디렉션 URL |
+  |---|---|
+  | US | `https://app.workfrontfusion.com/oauth/cb/workfront-jira` |
+  | EU | `https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira` |
+  | Azure | `https://app-az.workfrontfusion.com/oauth/cb/workfront-jira` |
+
+  >[!IMPORTANT]
+  >
+  >PAT를 사용하려면 `jira/bin/WEB-INF/classes` 파일의 `jira-config.properties` 파일에서 다음을 사용하도록 설정해야 합니다.
+  >
+  >* `jira.rest.auth.allow.basic = true`
+  >* `jira.rest.csrf.disabled = true`
+  >
+  >이 파일이 없으면 직접 만들어야 합니다.
+
+### Workfront Fusion에서 Jira에 대한 연결 만들기
+
+Workfront Fusion에서 연결을 만들려면 다음 작업을 수행하십시오.
 
 1. Jira 모듈에서 연결 필드 옆에 있는 **추가**&#x200B;를 클릭합니다.
 1. 다음 필드를 구성합니다.

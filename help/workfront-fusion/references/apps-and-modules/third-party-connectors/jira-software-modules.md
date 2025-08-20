@@ -114,7 +114,7 @@ Jira 커넥터는 다음을 사용합니다.
 
 [!DNL Jira Cloud]을(를) [!DNL Workfront Fusion]에 연결
 
-[!DNL Jira Software]을(를) [!DNL Workfront Fusion]에 연결하려면 API 토큰을 만들고 서비스 URL 및 사용자 이름과 함께 [!UICONTROL 의 ]연결 만들기[!DNL Workfront Fusion] 필드에 삽입해야 합니다.
+[!DNL Jira Software]을(를) [!DNL Workfront Fusion]에 연결하려면 API 토큰을 만들고 서비스 URL 및 사용자 이름과 함께 [!UICONTROL 의 &#x200B;]연결 만들기[!DNL Workfront Fusion] 필드에 삽입해야 합니다.
 
 #### [!DNL Jira]에서 API 토큰 만들기
 

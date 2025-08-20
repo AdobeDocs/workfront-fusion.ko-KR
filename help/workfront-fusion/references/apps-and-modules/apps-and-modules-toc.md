@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: 7f5339de5164a6eb43dae311335cacbc5c10ff96
+source-git-commit: f169b9d918d42bbecd885aeec1505bd41088907b
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,8 @@ Fusion은 다양한 타사 응용 프로그램을 위한 커넥터를 제공합�
 * [Google 슬라이드 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-slides-modules.md)
 * [Google 팀 드라이브 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-team-drive-modules.md)
 * [Hubspot CRM 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/hubspot-crm-modules.md)
-* [Jira 소프트웨어 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md)
+* [Jira 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md)
+* [Jira 소프트웨어 모듈 (기존)](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md)
 * [MariaDB 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/mariadb-modules.md)
 * [Microsoft 365 달력 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-calendar-modules.md)
 * [Microsoft 356 이메일 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-email-modules.md)

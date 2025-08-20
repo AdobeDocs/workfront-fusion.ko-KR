@@ -4,14 +4,18 @@ description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는  [!DNL Jira] 
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
+source-git-commit: 8181cf8c2b2c4e6523cb16df0f91120e775e654b
 workflow-type: tm+mt
-source-wordcount: '2208'
+source-wordcount: '2238'
 ht-degree: 1%
 
 ---
 
 # [!DNL Jira Software]개 모듈
+
+>[!NOTE]
+>
+>이러한 지침은 레거시 Jira Cloud 및 Jira Server 커넥터에 적용됩니다. 단순히 Jira로 레이블이 지정된 새 버전의 Jira 커넥터에 대한 지침은 [Jira 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md)을 참조하십시오.
 
 [!DNL Adobe Workfront Fusion] 시나리오에서는 [!DNL Jira Software]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
 
@@ -110,7 +114,7 @@ Jira 커넥터는 다음을 사용합니다.
 
 [!DNL Jira Cloud]을(를) [!DNL Workfront Fusion]에 연결
 
-[!DNL Jira Software]을(를) [!DNL Workfront Fusion]에 연결하려면 API 토큰을 만들고 서비스 URL 및 사용자 이름과 함께 [!DNL Workfront Fusion]의 [!UICONTROL 연결 만들기] 필드에 삽입해야 합니다.
+[!DNL Jira Software]을(를) [!DNL Workfront Fusion]에 연결하려면 API 토큰을 만들고 서비스 URL 및 사용자 이름과 함께 [!UICONTROL 의 ]연결 만들기[!DNL Workfront Fusion] 필드에 삽입해야 합니다.
 
 #### [!DNL Jira]에서 API 토큰 만들기
 
@@ -125,9 +129,9 @@ Jira 커넥터는 다음을 사용합니다.
 1. 생성된 토큰을 안전한 장소에 저장합니다.
 1. [다음 위치에서  [!DNL Jira] API 토큰 구성 [!DNL Workfront Fusion]](#configure-the-jira-api-token-in-workfront-fusion)을(를) 계속합니다.
 
-#### [!DNL Workfront Fusion]에서 [!DNL Jira] API 토큰 구성
+#### [!DNL Jira]에서 [!DNL Workfront Fusion] API 토큰 구성
 
-1. [!DNL Workfront Fusion]의 [!DNL Jira Cloud] 모듈에서 [!UICONTROL 연결] 필드 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
+1. [!DNL Jira Cloud]의 [!DNL Workfront Fusion] 모듈에서 **[!UICONTROL 연결]** 필드 옆에 있는 [!UICONTROL 추가]를 클릭합니다.
 1. 다음 정보를 지정합니다.
 
    * **환경**
@@ -144,7 +148,7 @@ Jira 커넥터는 다음을 사용합니다.
 
 * [ [!DNL Jira] 연결에 대한 공개 및 개인 키 생성](#generate-public-and-private-keys-for-your-jira-connection)
 * [ [!DNL Jira]에서 클라이언트 앱을 소비자로 구성](#configure-the-client-app-as-a-consumer-in-jira)
-* [ [!DNL Workfront Fusion]에서  [!DNL Jira] 서버 또는 Jira 데이터 센터에 연결 만들기](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)
+* [ [!DNL Jira] 에서  [!DNL Workfront Fusion]서버 또는 Jira 데이터 센터에 연결 만들기](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)
 
 #### [!DNL Jira] 연결에 대한 공개 및 개인 키 생성
 
@@ -236,13 +240,13 @@ Jira 커넥터는 다음을 사용합니다.
 1. **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
 1. [계속  [!DNL Jira Server] 또는 [!DNL Jira Data Center] in [!DNL Workfront Fusion]](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)에 연결 만들기
 
-#### [!DNL Workfront Fusion]에서 [!DNL Jira Server] 또는 [!DNL Jira Data Center]에 연결 만들기
+#### [!DNL Jira Server]에서 [!DNL Jira Data Center] 또는 [!DNL Workfront Fusion]에 연결 만들기
 
 >[!NOTE]
 >
 >[!DNL Jira Server] 앱을 사용하여 [!DNL Jira Server] 또는 [!DNL Jira Data Center]에 연결합니다.
 
-1. [!DNL Workfront Fusion]의 [!DNL Jira Server] 모듈에서 [!UICONTROL 연결] 필드 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
+1. [!DNL Jira Server]의 [!DNL Workfront Fusion] 모듈에서 **[!UICONTROL 연결]** 필드 옆에 있는 [!UICONTROL 추가]를 클릭합니다.
 1. [!UICONTROL 연결 만들기] 패널에서 다음 필드를 채웁니다.
 
    <table style="table-layout:auto"> 
@@ -267,7 +271,7 @@ Jira 커넥터는 다음을 사용합니다.
      </tr> 
      <tr> 
       <td role="rowheader">[!DNL Private Key]</td> 
-      <td><a href="#generate-public-and-private-keys-for-your-jira-connection" class="MCXref xref">[!DNL Jira] 연결에 대한 공개 및 개인 키 생성</a>에서 만든 <code>[!DNL jira_privatekey.pcks8]</code> 파일의 개인 키에 붙여 넣으십시오.</td> 
+      <td><code>[!DNL jira_privatekey.pcks8]</code><a href="#generate-public-and-private-keys-for-your-jira-connection" class="MCXref xref"> 연결에 대한 공개 및 개인 키 생성[!DNL Jira]에서 만든 </a> 파일의 개인 키에 붙여 넣으십시오.</td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!DNL Service URL]</td> 

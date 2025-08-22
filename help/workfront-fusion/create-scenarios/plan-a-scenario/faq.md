@@ -4,9 +4,9 @@ description: 이 문서의 정보는 Workfront Fusion에서 시나리오를 만�
 author: Becky
 feature: Workfront Fusion
 exl-id: 6a1d672d-0bd7-4a3a-b96d-6d8b4c97522d
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '552'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 모듈에 대한 자세한 내용은 [모듈 개요](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md)를 참조하세요.
 
-## [!DNL Workfront Fusion]이(가) 파일로 작업할 수 있습니까?
+## Workfront Fusion이 파일에서 작동할 수 있습니까?
 
 ### 답변
 
@@ -69,7 +69,7 @@ Fusion에서 파일 작업에 대한 자세한 내용은 [모듈 간 파일 매�
 
 ### 답변
 
-연결은 [!DNL Workfront Fusion] 계정과 사용할 서드파티 서비스 간의 연결입니다. 시나리오를 편집할 때 연결을 만들 수 있습니다.
+연결은 Workfront Fusion 계정과 사용하려는 서드파티 서비스 간의 연결입니다. 시나리오를 편집할 때 연결을 만들 수 있습니다.
 
 자세한 내용은 [연결 개요](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md)를 참조하십시오.
 
@@ -77,12 +77,12 @@ Fusion에서 파일 작업에 대한 자세한 내용은 [모듈 간 파일 매�
 
 ### 답변
 
-[!UICONTROL Aggregator]이(가) 데이터를 하나의 컬렉션으로 병합합니다. 예를 들어 파일이 zip 아카이브로 압축되어 이메일 첨부 파일로 전송되는 경우가 있습니다.
+[!UICONTROL 집계]에서 데이터를 하나의 컬렉션으로 병합합니다. 예를 들어 파일이 zip 아카이브로 압축되어 이메일 첨부 파일로 전송되는 경우가 있습니다.
 
-자세한 내용은 [[!UICONTROL Aggregator] 모듈](/help/workfront-fusion/references/modules/aggregator-module.md)을 참조하세요.
+자세한 내용은 [[!UICONTROL 집계] 모듈](/help/workfront-fusion/references/modules/aggregator-module.md)을 참조하십시오.
 
-## [!DNL Workfront Fusion]에서 첨부 파일이 두 개 이상 포함된 전자 메일을 처리하도록 하면 어떻게 됩니까?
+## Workfront Fusion에서 두 개 이상의 첨부 파일이 포함된 이메일을 처리하도록 하면 어떻게 됩니까?
 
 ### 답변
 
-[!UICONTROL Email] 모듈 [!UICONTROL Retrieve attachments]을(를) 사용하는 경우 시나리오의 나머지 모듈을 통해 각 첨부 파일이 개별적으로 전송됩니다. 여러 파일을 한 번에 수신하는 다른 앱에서도 유사한 모듈을 사용할 수 있습니다.
+[!UICONTROL 전자 메일] 모듈 [!UICONTROL 첨부 파일 검색]을 사용하는 경우 시나리오에서 각 첨부 파일은 나머지 모듈을 통해 개별적으로 전송됩니다. 여러 파일을 한 번에 수신하는 다른 앱에서도 유사한 모듈을 사용할 수 있습니다.

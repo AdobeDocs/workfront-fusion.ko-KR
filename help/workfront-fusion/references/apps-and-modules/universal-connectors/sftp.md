@@ -4,16 +4,16 @@ description: ' [!DNL Adobe Workfront Fusion SFTP] 모듈을 사용하면 선택�
 author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
-source-git-commit: 358101ee7e4168913976b86fa712ed9aeb979093
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2143'
+source-wordcount: '2216'
 ht-degree: 0%
 
 ---
 
 # SFTP 모듈
 
-[!DNL Adobe Workfront Fusion] SFTP 모듈을 사용하면 선택한 폴더/하위 폴더의 파일 변경 사항을 모니터링하고, 새 파일을 원하는 폴더로 업로드하고, 이미 폴더에 있는 기존 파일을 수정 또는 삭제하거나, 파일 권한을 변경할 수 있습니다.
+Adobe Workfront Fusion SFTP 모듈을 사용하면 선택한 폴더/하위 폴더의 파일 변경 사항을 모니터링하고, 새 파일을 원하는 폴더로 업로드하고, 이미 폴더에 있는 기존 파일을 수정 또는 삭제하거나, 파일 권한을 변경할 수 있습니다.
 
 ## 액세스 요구 사항
 
@@ -54,17 +54,17 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
 ## 전제 조건
 
-SFTP를 [!DNL Workfront Fusion]과(와) 함께 사용하려면 SFTP 계정이 있어야 합니다(예: [!DNL GoDaddy] 웹 호스팅).
+SFTP를 Workfront Fusion과 함께 사용하려면 SFTP 계정(예: [!DNL GoDaddy] 웹 호스팅)이 있어야 합니다.
 
-## SFTP를 [!DNL Workfront Fusion]에 연결 {#connect-sftp-to-workfront-fusion}
+## SFTP를 Workfront Fusion에 연결 {#connect-sftp-to-workfront-fusion}
 
-SFTP 계정을 [!DNL Workfront Fusion]에 연결하려면 대상 호스트 및 SFTP 자격 증명(사용자 이름 및 암호 또는 사용자 이름 및 키)을 지정하는 연결을 만들어야 합니다.
+SFTP 계정을 Workfront Fusion에 연결하려면 대상 호스트 및 SFTP 자격 증명(사용자 이름 및 암호 또는 사용자 이름 및 키)을 지정하는 연결을 만들어야 합니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -95,7 +95,7 @@ SFTP 계정을 [!DNL Workfront Fusion]에 연결하려면 대상 호스트 및 S
    <td> <p>SFTP 서버 연결에 사용할 인증 방법을 선택합니다.</p> 
     <ul> 
      <li><strong>[!UICONTROL 사용자 이름 및 암호]</strong>: 자격 증명을 입력하십시오.</li> 
-     <li> <p><strong>[!UICONTROL 사용자 이름 및 키]</strong>: 사용자 이름과 개인 키/인증서를 입력하십시오.</p> <p>클라이언트측 인증을 사용하도록 개인 키를 업로드하거나 자체 서명된 인증서를 사용하여 TLS를 사용하려는 경우 인증서(P12 또는 PFX 파일)를 업로드합니다. 클라이언트측 인증서 인증을 사용하는 경우 여기에 CA 인증서를 입력할 수 있습니다.</p> <p>[!DNL Workfront Fusion] 여기서 제공하는 데이터(파일, 암호)는 유지하거나 저장하지 않습니다. 파일 및 암호는 개인 키/인증서를 추출하는 데만 사용됩니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 사용자 이름 및 키]</strong>: 사용자 이름과 개인 키/인증서를 입력하십시오.</p> <p>클라이언트측 인증을 사용하도록 개인 키를 업로드하거나 자체 서명된 인증서를 사용하여 TLS를 사용하려는 경우 인증서(P12 또는 PFX 파일)를 업로드합니다. 클라이언트측 인증서 인증을 사용하는 경우 여기에 CA 인증서를 입력할 수 있습니다.</p> <p>Workfront Fusion은 사용자가 여기에 제공한 데이터(파일, 암호)를 보존하거나 저장하지 않습니다. 파일 및 암호는 개인 키/인증서를 추출하는 데만 사용됩니다.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -155,7 +155,7 @@ SFTP 커넥터는 연결을 만들 때 다음을 지원합니다.
 
 ## [!UICONTROL SFTP] 모듈 및 해당 필드
 
-[!UICONTROL SFTP] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 추가 [!UICONTROL SFTP] 필드가 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!UICONTROL SFTP] 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 추가 [!UICONTROL SFTP] 필드가 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
@@ -176,7 +176,7 @@ SFTP 커넥터는 연결을 만들 때 다음을 지원합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>SFTP 계정을 [!DNL Workfront Fusion]에 연결하는 방법은 이 문서의 <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">SFTP를 [!DNL Workfront Fusion]</a>에 연결을 참조하십시오.</p> </td> 
+   <td> <p>SFTP 계정을 Workfront Fusion에 연결하는 방법은 이 문서의 <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 SFTP 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 폴더] </td> 
@@ -203,7 +203,7 @@ SFTP 커넥터는 연결을 만들 때 다음을 지원합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>SFTP 계정을 [!DNL Workfront Fusion]에 연결하는 방법은 이 문서의 <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">SFTP를 [!DNL Workfront Fusion]</a>에 연결을 참조하십시오.</p> </td> 
+   <td> <p>SFTP 계정을 Workfront Fusion에 연결하는 방법은 이 문서의 <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 SFTP 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 폴더] </td> 
@@ -235,7 +235,7 @@ SFTP 커넥터는 연결을 만들 때 다음을 지원합니다.
 
 >[!NOTE]
 >
->폴더가 이미 있으면 모듈에서 오류가 발생합니다. 흐름을 중단하지 않고 계속하려면 모듈에 오류 처리기 경로를 연결하여 오류를 catch하고 [!UICONTROL Resume] 지시문을 사용하여 흐름을 계속하십시오. 오류 처리기 경로를 연결하는 방법에 대한 자세한 내용은 [오류 처리 위치 [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md)를 참조하십시오. 오류 처리기 경로에 대한 자세한 내용은 [의 오류 처리에 대한  [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/errors/directives-for-error-handling.md)지시문을 참조하십시오.
+>폴더가 이미 있으면 모듈에서 오류가 발생합니다. 흐름을 중단하지 않고 계속하려면 모듈에 오류 처리기 경로를 연결하여 오류를 catch하고 [!UICONTROL Resume] 지시문을 사용하여 흐름을 계속하십시오. 오류 처리기 경로를 연결하는 방법에 대한 자세한 내용은 [Adobe Workfront Fusion의 오류 처리](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md)를 참조하십시오. 오류 처리기 경로에 대한 자세한 내용은 [Adobe Workfront Fusion의 오류 처리에 대한 지시문](/help/workfront-fusion/references/errors/directives-for-error-handling.md)을 참조하십시오.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -243,7 +243,7 @@ SFTP 커넥터는 연결을 만들 때 다음을 지원합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>SFTP 계정을 [!DNL Workfront Fusion]에 연결하는 방법은 이 문서의 <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">SFTP를 [!DNL Workfront Fusion]</a>에 연결을 참조하십시오.</p> </td> 
+   <td> <p>SFTP 계정을 Workfront Fusion에 연결하는 방법은 이 문서의 <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 SFTP 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 폴더] </td> 
@@ -268,7 +268,7 @@ SFTP 커넥터는 연결을 만들 때 다음을 지원합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>SFTP 계정을 [!DNL Workfront Fusion]에 연결하는 방법은 이 문서의 <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">SFTP를 [!DNL Workfront Fusion]</a>에 연결을 참조하십시오.</p> </td> 
+   <td> <p>SFTP 계정을 Workfront Fusion에 연결하는 방법은 이 문서의 <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 SFTP 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 파일 경로]</td> 
@@ -285,7 +285,7 @@ SFTP 커넥터는 연결을 만들 때 다음을 지원합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>SFTP 계정을 [!DNL Workfront Fusion]에 연결하는 방법은 이 문서의 <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">SFTP를 [!DNL Workfront Fusion]</a>에 연결을 참조하십시오.</p> </td> 
+   <td> <p>SFTP 계정을 Workfront Fusion에 연결하는 방법은 이 문서의 <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 SFTP 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!DNL Folder Path]</td> 
@@ -304,7 +304,7 @@ SFTP 커넥터는 연결을 만들 때 다음을 지원합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>SFTP 계정을 [!DNL Workfront Fusion]에 연결하는 방법은 이 문서의 <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">SFTP를 [!DNL Workfront Fusion]</a>에 연결을 참조하십시오.</p> </td> 
+   <td> <p>SFTP 계정을 Workfront Fusion에 연결하는 방법은 이 문서의 <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 SFTP 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 버퍼 크기 [B]]</td> 
@@ -327,7 +327,7 @@ SFTP 커넥터는 연결을 만들 때 다음을 지원합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>SFTP 계정을 [!DNL Workfront Fusion]에 연결하는 방법은 이 문서의 <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">SFTP를 [!DNL Workfront Fusion]</a>에 연결을 참조하십시오.</p> </td> 
+   <td> <p>SFTP 계정을 Workfront Fusion에 연결하는 방법은 이 문서의 <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 SFTP 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 버퍼 크기 [B]]</td> 
@@ -368,7 +368,7 @@ SFTP 커넥터는 연결을 만들 때 다음을 지원합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>SFTP 계정을 [!DNL Workfront Fusion]에 연결하는 방법은 이 문서의 <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">SFTP를 [!DNL Workfront Fusion]</a>에 연결을 참조하십시오.</p> </td> 
+   <td> <p>SFTP 계정을 Workfront Fusion에 연결하는 방법은 이 문서의 <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 SFTP 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 표시] </td> 
@@ -409,7 +409,7 @@ SFTP 커넥터는 연결을 만들 때 다음을 지원합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>SFTP 계정을 [!DNL Workfront Fusion]에 연결하는 방법은 이 문서의 <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">SFTP를 [!DNL Workfront Fusion]</a>에 연결을 참조하십시오.</p> </td> 
+   <td> <p>SFTP 계정을 Workfront Fusion에 연결하는 방법은 이 문서의 <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 SFTP 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 파일 경로]</td> 
@@ -432,7 +432,7 @@ SFTP 커넥터는 연결을 만들 때 다음을 지원합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>SFTP 계정을 [!DNL Workfront Fusion]에 연결하는 방법은 이 문서의 <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">SFTP를 [!DNL Workfront Fusion]</a>에 연결을 참조하십시오.</p> </td> 
+   <td> <p>SFTP 계정을 Workfront Fusion에 연결하는 방법은 이 문서의 <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 SFTP 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 파일 경로]</td> 
@@ -455,7 +455,7 @@ SFTP 커넥터는 연결을 만들 때 다음을 지원합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>SFTP 계정을 [!DNL Workfront Fusion]에 연결하는 방법은 이 문서의 <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">SFTP를 [!DNL Workfront Fusion]</a>에 연결을 참조하십시오.</p> </td> 
+   <td> <p>SFTP 계정을 Workfront Fusion에 연결하는 방법은 이 문서의 <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 SFTP 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 파일 경로]</td> 
@@ -478,7 +478,7 @@ SFTP 커넥터는 연결을 만들 때 다음을 지원합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>SFTP 계정을 [!DNL Workfront Fusion]에 연결하는 방법은 이 문서의 <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">SFTP를 [!DNL Workfront Fusion]</a>에 연결을 참조하십시오.</p> </td> 
+   <td> <p>SFTP 계정을 Workfront Fusion에 연결하는 방법은 이 문서의 <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 SFTP 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 폴더] </td> 

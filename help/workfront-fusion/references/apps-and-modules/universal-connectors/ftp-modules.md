@@ -4,10 +4,10 @@ description: FTP 모듈을 사용하면 선택한 폴더의 파일 변경 사항
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e14f778-ab8c-421f-a4b4-c57be66c7cad
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1381'
-ht-degree: 0%
+source-wordcount: '1391'
+ht-degree: 1%
 
 ---
 
@@ -54,7 +54,7 @@ FTP 모듈을 사용하면 선택한 폴더의 파일 변경 사항을 모니터
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -115,7 +115,7 @@ FTP 모듈을 사용하려면 FTP 서비스가 있는 계정이 있어야 합니
     </tr> 
     <tr> 
      <td> <p>[!UICONTROL 자체 서명된 인증서]</p> </td> 
-     <td> <p>업로드 대화 상자를 열려면 <b>[!UICONTROL 추출]</b> 단추를 클릭하십시오.</p> <p>자체 서명된 인증서와 함께 TLS를 사용하려면 인증서를 업로드하십시오. [!DNL Workfront Fusion]은(는) 파일 및 암호와 같이 사용자가 제공한 데이터를 유지하거나 저장하지 않습니다. 파일 및 암호는 인증서를 추출하는 데만 사용됩니다.</p> </td> 
+     <td> <p>업로드 대화 상자를 열려면 <b>[!UICONTROL 추출]</b> 단추를 클릭하십시오.</p> <p>자체 서명된 인증서와 함께 TLS를 사용하려면 인증서를 업로드하십시오. Workfront Fusion은 파일 및 암호와 같이 사용자가 제공한 데이터를 유지하거나 저장하지 않습니다. 파일 및 암호는 인증서를 추출하는 데만 사용됩니다.</p> </td> 
     </tr> 
    </tbody> 
    </table>
@@ -139,7 +139,7 @@ FTP 모듈을 사용하려면 FTP 서비스가 있는 계정이 있어야 합니
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>FTP 계정에 연결하는 방법에 대한 지침은 이 문서의 FTP 모듈</a>에서 <a href="#create-a-connection" class="MCXref xref">[!UICONTROL 연결 만들기]를 참조하십시오.</p> </td> 
+   <td> <p>FTP 계정에 연결하는 방법에 대한 지침은 이 문서의 FTP 모듈<a href="#create-a-connection" class="MCXref xref">에서 </a>[!UICONTROL 연결 만들기]를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL 폴더]</p> </td> 
@@ -147,7 +147,7 @@ FTP 모듈을 사용하려면 FTP 서비스가 있는 계정이 있어야 합니
   </tr> 
   <tr> 
    <td>[!UICONTROL 반환되는 최대 파일 수] </td> 
-   <td> <p>한 주기 동안 모듈에서 작업할 최대 결과 수를 설정합니다. 값이 너무 높게 설정되면 FTP 서버 측에서 연결이 중단될 수 있습니다. [!DNL Workfront Fusion]은(는) 이 작업에 영향을 주지 않습니다. 낮은 값을 설정하고 최대 주기 횟수에 대해 높은 값을 정의하거나 시나리오를 더 자주 실행하는 것이 좋습니다.</p> </td> 
+   <td> <p>한 주기 동안 모듈에서 작업할 최대 결과 수를 설정합니다. 값이 너무 높게 설정되면 FTP 서버 측에서 연결이 중단될 수 있습니다. Workfront Fusion은 이에 영향을 주지 않습니다. 낮은 값을 설정하고 최대 주기 횟수에 대해 높은 값을 정의하거나 시나리오를 더 자주 실행하는 것이 좋습니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -173,7 +173,7 @@ FTP 모듈을 사용하려면 FTP 서비스가 있는 계정이 있어야 합니
    <tbody>
          <tr>
             <td>[!UICONTROL Connection]</td>
-            <td>FTP 계정에 연결하는 방법에 대한 지침은 이 문서의 FTP 모듈</a>에서 <a href="#Create" class="MCXref xref" >[!UICONTROL 연결 만들기]를 참조하십시오.</td>
+            <td>FTP 계정에 연결하는 방법에 대한 지침은 이 문서의 FTP 모듈<a href="#Create" class="MCXref xref" >에서 </a>[!UICONTROL 연결 만들기]를 참조하십시오.</td>
          </tr>
          <tr>
             <td>[!UICONTROL 의 권한 설정 변경]</td>
@@ -205,7 +205,7 @@ FTP 모듈을 사용하려면 FTP 서비스가 있는 계정이 있어야 합니
    <tbody>
          <tr>
             <td>[!UICONTROL Connection]</td>
-            <td>FTP 계정에 연결하는 방법에 대한 지침은 이 문서의 FTP 모듈</a>에서 <a href="#Create" class="MCXref xref" >[!UICONTROL 연결 만들기]를 참조하십시오.</td>
+            <td>FTP 계정에 연결하는 방법에 대한 지침은 이 문서의 FTP 모듈<a href="#Create" class="MCXref xref" >에서 </a>[!UICONTROL 연결 만들기]를 참조하십시오.</td>
          </tr>
          <tr>
             <td>[!UICONTROL 폴더 경로]</td>
@@ -230,7 +230,7 @@ FTP 모듈을 사용하려면 FTP 서비스가 있는 계정이 있어야 합니
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-            <td>FTP 계정에 연결하는 방법에 대한 지침은 이 문서의 FTP 모듈</a>에서 <a href="#Create" class="MCXref xref" >[!UICONTROL 연결 만들기]를 참조하십시오.</td>
+            <td>FTP 계정에 연결하는 방법에 대한 지침은 이 문서의 FTP 모듈<a href="#Create" class="MCXref xref" >에서 </a>[!UICONTROL 연결 만들기]를 참조하십시오.</td>
   </tr> 
   <tr> 
    <td>[!UICONTROL 폴더] </td> 
@@ -253,7 +253,7 @@ FTP 모듈을 사용하려면 FTP 서비스가 있는 계정이 있어야 합니
    <tbody>
          <tr>
             <td>[!UICONTROL Connection]</td>
-            <td>FTP 계정에 연결하는 방법에 대한 지침은 이 문서의 FTP 모듈</a>에서 <a href="#Create" class="MCXref xref" >[!UICONTROL 연결 만들기]를 참조하십시오.</td>
+            <td>FTP 계정에 연결하는 방법에 대한 지침은 이 문서의 FTP 모듈<a href="#Create" class="MCXref xref" >에서 </a>[!UICONTROL 연결 만들기]를 참조하십시오.</td>
          </tr>
          <tr>
             <td>[!UICONTROL 폴더]</td>
@@ -324,18 +324,18 @@ FTP 모듈을 사용하려면 FTP 서비스가 있는 계정이 있어야 합니
    <tbody>
          <tr>
             <td>[!UICONTROL Connection]</td>
-            <td>FTP 계정에 연결하는 방법에 대한 지침은 이 문서의 FTP 모듈</a>에서 <a href="#Create" class="MCXref xref" >[!UICONTROL 연결 만들기]를 참조하십시오.</td>
+            <td>FTP 계정에 연결하는 방법에 대한 지침은 이 문서의 FTP 모듈<a href="#Create" class="MCXref xref" >에서 </a>[!UICONTROL 연결 만들기]를 참조하십시오.</td>
          </tr>
          <tr>
             <td>[!UICONTROL 이전 파일 경로]</td>
             <td>
-               <p>파일을 이동할 경로를 입력합니다. 예: <code>/folder1/document.txt</code></p>
+               <p>파일을 이동할 경로를 입력합니다. 예: <code>/folder1/document.txt</code>.</p>
             </td>
          </tr>
          <tr>
             <td>[!UICONTROL 새 파일 경로]</td>
             <td>
-               <p>파일을 이동할 경로를 입력합니다. 예: <code>/folder2/document.txt</code></p>
+               <p>파일을 이동할 경로를 입력합니다. 예: <code>/folder2/document.txt</code>.</p>
             </td>
          </tr>
    </tbody>

@@ -1,21 +1,21 @@
 ---
 title: Workfront Proof 모듈
-description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는  [!DNL Workfront Proof]을(를) 사용하는 워크플로를 자동화할 수 있을 뿐만 아니라 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.'
+description: Adobe Workfront Fusion 시나리오에서는  [!DNL Workfront Proof]을(를) 사용하는 워크플로를 자동화하고 여러 타사 애플리케이션 및 서비스에 연결할 수 있습니다.
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '3050'
+source-wordcount: '3131'
 ht-degree: 0%
 
 ---
 
 # [!DNL Workfront Proof]개 모듈
 
-[!DNL Adobe Workfront Fusion] 시나리오에서는 [!DNL Workfront Proof]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
+Adobe Workfront Fusion 시나리오에서는 [!DNL Workfront Proof]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
 
-특정 이벤트를 기반으로 증명을 업데이트하고 증명 수신자를 검색하는 등 현재 [!DNL Workfront] 또는 [!DNL Workfront Proof]에서 증명에서 지원되지 않는 작업을 실행해야 하는 경우 유용합니다.
+특정 이벤트를 기반으로 증명 업데이트 및 증명 수신자 검색 등 Workfront 또는 [!DNL Workfront Proof]에서 현재 증명에서 지원되지 않는 작업을 실행해야 하는 경우 유용합니다.
 
 [!DNL Workfront Proof] 커넥터는 조직에서 사용할 수 있는 활성 앱 수에 포함되지 않습니다. 모든 시나리오는 [!DNL Workfront Proof] 앱만 사용하더라도 조직의 총 시나리오 수에 대해 계산됩니다.
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -85,11 +85,11 @@ Workfront Proof 커넥터는 다음을 사용합니다.
  </tbody> 
  </table>
 
-## [!DNL Workfront Proof]을(를) [!DNL Workfront Fusion]에 연결
+## Workfront Fusion에 [!DNL Workfront Proof] 연결
 
-[!DNL Workfront Fusion] 모듈 내에서 직접 [!DNL Workfront Proof] 계정에 연결할 수 있습니다.
+Workfront Fusion 모듈 내에서 직접 [!DNL Workfront Proof] 계정에 연결할 수 있습니다.
 
-1. [!DNL Workfront Fusion] 모듈에서 [!UICONTROL 연결] 필드 옆의 [!UICONTROL **추가**]&#x200B;를 클릭합니다
+1. Workfront Fusion 모듈에서 [!UICONTROL **연결**] 필드 옆에 있는 [!UICONTROL 추가]를 클릭합니다
 
 2. 다음 필드를 채웁니다.
 
@@ -139,7 +139,7 @@ Workfront Proof 커넥터는 다음을 사용합니다.
 
 ## [!DNL Workfront Proof]개 모듈 및 해당 필드
 
-[!DNL Workfront Proof] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Workfront Proof] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!DNL Workfront Proof] 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Workfront Proof] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
@@ -175,7 +175,7 @@ Workfront Proof 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>[!DNL Workfront Proof] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Workfront Proof] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -194,7 +194,7 @@ Workfront Proof 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>[!DNL Workfront Proof] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Workfront Proof] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 활동 유형]</td> 
@@ -225,7 +225,7 @@ Workfront Proof 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Workfront Proof] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Workfront Proof] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">레코드 유형</td> 
@@ -270,7 +270,7 @@ Workfront Proof 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>[!DNL Workfront Proof] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Workfront Proof] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 증명 유형]</td> 
@@ -419,7 +419,7 @@ Workfront Proof 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>[!DNL Workfront Proof] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Workfront Proof] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL 메서드]</td> 
@@ -459,7 +459,7 @@ Workfront Proof 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>[!DNL Workfront Proof] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Workfront Proof] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 증명 ID]</td> 
@@ -486,7 +486,7 @@ Workfront Proof 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>[!DNL Workfront Proof] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Workfront Proof] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 레코드 유형]</td> 
@@ -521,7 +521,7 @@ Workfront Proof 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>[!DNL Workfront Proof] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Workfront Proof] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 증명 ID]</td> 
@@ -557,7 +557,7 @@ Workfront Proof 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>[!DNL Workfront Proof] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Workfront Proof] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 증명 ID]</td> 
@@ -632,7 +632,7 @@ Workfront Proof 커넥터는 다음을 사용합니다.
 
 #### [!UICONTROL 파일 업로드]
 
-이 작업 모듈은 [!DNL Workfront Proof]의 [!UICONTROL 증명 만들기] 모듈에서 사용할 파일을 업로드합니다.
+이 작업 모듈은 [!UICONTROL 의 ]증명 만들기[!DNL Workfront Proof] 모듈에서 사용할 파일을 업로드합니다.
 
 모듈이 업로드된 파일에 대한 해시 ID를 반환합니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
 
@@ -644,7 +644,7 @@ Workfront Proof 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>[!DNL Workfront Proof] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Workfront Proof] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Source 파일]</td> 
@@ -668,7 +668,7 @@ Workfront Proof 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>[!DNL Workfront Proof] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Workfront Proof] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 출력]</td> 
@@ -697,7 +697,7 @@ Workfront Proof 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>[!DNL Workfront Proof] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Workfront Proof] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Search for]</td> 

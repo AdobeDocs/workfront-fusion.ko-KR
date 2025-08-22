@@ -4,16 +4,16 @@ description: Adobe Workfront Fusion CSV 모듈을 사용하면 CSV 파일을 만
 author: Becky
 feature: Workfront Fusion
 exl-id: bc6d5ddc-93c3-437b-8537-5bece1351c1d
-source-git-commit: 5971b2210eaac8f8a75fd7a4aac5a9f7954d27ef
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '957'
 ht-degree: 0%
 
 ---
 
 # CSV
 
-[!DNL Adobe Workfront Fusion] [!UICONTROL CSV] 모듈을 사용하면 CSV 파일을 만들고 수신된 텍스트 값 또는 파일에서 CSV 텍스트를 구문 분석할 수 있습니다.
+Adobe Workfront Fusion [!UICONTROL CSV] 모듈을 사용하면 CSV 파일을 만들고 수신된 텍스트 값 또는 파일에서 CSV 텍스트를 구문 분석할 수 있습니다.
 
 변환기이므로 이러한 모듈은 연결이 필요하지 않습니다.
 
@@ -54,13 +54,13 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
-## [!UICONTROL Create CSV]
+## [!UICONTROL CSV 만들기]
 
-[!UICONTROL Create CSV] 집계기를 사용하면 수신된 텍스트 값에서 csv 텍스트를 만들 수 있습니다.
+[!UICONTROL CSV 만들기] 집계를 사용하면 수신된 텍스트 값에서 CSV 텍스트를 만들 수 있습니다.
 
 집계자에 대한 자세한 내용은 [집계 모듈](/help/workfront-fusion/references/modules/aggregator-module.md)을 참조하십시오.
 
@@ -70,11 +70,11 @@ ht-degree: 0%
         <td>CSV를 만드는 데 사용할 필드를 출력하는 모듈을 선택합니다.</td>
     </tr>
     <tr>
-        <td>[!UICONTROL Aggregated Fields]</td>
+        <td>[!UICONTROL 집계된 필드]</td>
         <td>사용 가능한 필드 목록에서 집계할 필드를 선택합니다.</td>
     </tr>
     <tr>
-        <td>[!UICONTROL Include headers in the first row]</td>
+        <td>[!UICONTROL 첫 번째 행에 헤더 포함]</td>
         <td>결과에 헤더를 포함하려면 이 옵션을 선택합니다.</td>
     </tr>
     <tr>
@@ -82,14 +82,14 @@ ht-degree: 0%
         <td>결과를 그룹화할 필터를 입력합니다. 예를 들어 날짜를 입력합니다.</td>
     </tr>
     <tr>
-        <td>[!UICONTROL Stop processing after an empty aggregation]</td>
+        <td>[!UICONTROL 빈 집계 후 처리 중지]</td>
         <td>결과가 없을 때 시나리오를 중지하려면 이 옵션을 선택합니다.</td>
     </tr>
 </table>
 
-## [!UICONTROL Create CSV (advanced)]
+## [!UICONTROL CSV 만들기(고급)]
 
-[!UICONTROL Create CSV (advanced)] 집계기를 사용하면 수신된 텍스트 값에서 CSV 텍스트를 만들 수 있습니다. 결과 CSV 파일의 CSV 열을 정의하는 데이터 구조를 사용합니다. 정의된 열은 CSV 모듈 설정에서 필드로 표시되며, 시나리오의 이후 모듈에 매핑될 수 있습니다.
+[!UICONTROL CSV 만들기(고급)] 집계를 사용하면 수신된 텍스트 값에서 CSV 텍스트를 만들 수 있습니다. 결과 CSV 파일의 CSV 열을 정의하는 데이터 구조를 사용합니다. 정의된 열은 CSV 모듈 설정에서 필드로 표시되며, 시나리오의 이후 모듈에 매핑될 수 있습니다.
 
 집계자에 대한 자세한 내용은 [집계 모듈](/help/workfront-fusion/references/modules/aggregator-module.md)을 참조하십시오.
 
@@ -102,11 +102,11 @@ ht-degree: 0%
         <td>CSV를 만드는 데 사용할 필드를 출력하는 모듈을 선택합니다.</td>
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Data Structure]</td> 
+   <td role="rowheader">[!UICONTROL 데이터 구조]</td> 
    <td> <p>원하는 방식으로 필드를 집계할 데이터 구조를 선택합니다. 데이터 구조를 정의한 후 해당 필드에 항목을 매핑할 수 있습니다.</p> <p>자세한 내용은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md" class="MCXref xref">데이터 구조</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Include headers in the first row] </td> 
+   <td role="rowheader">[!UICONTROL 첫 번째 행에 헤더 포함] </td> 
    <td>결과에 헤더를 포함하려면 이 옵션을 선택합니다. </td> 
   </tr> 
   <tr> 
@@ -114,7 +114,7 @@ ht-degree: 0%
    <td>결과를 그룹화할 필터를 입력합니다. 예를 들어 날짜를 입력합니다. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Stop processing after an empty aggregation] </td> 
+   <td role="rowheader">[!UICONTROL 빈 집계 후 처리 중지] </td> 
    <td>결과가 없을 때 시나리오를 중지하려면 이 옵션을 선택합니다. </td> 
   </tr> 
  </tbody> 
@@ -125,10 +125,10 @@ ht-degree: 0%
 
 **예**:
 
-이 예에서는 &quot;전체 이름&quot; 및 &quot;이메일&quot;이라는 두 개의 열을 사용하여 Google 연락처를 CSV 파일로 내보내는 방법을 보여 줍니다. [!UICONTROL Google Contacts] > [!UICONTROL Get contacts from a group] 모듈의 출력 번들에 다음 구조가 있습니다. 전자 메일 주소는 <code>[!UICONTROL Emails[]] 내부에 저장됩니다.</code> item: 컬렉션의 배열이며 각 컬렉션에는 두 개의 항목이 들어 있습니다. <code>레이블</code> 및 <code>전자 메일</code>.
+이 예에서는 &quot;전체 이름&quot; 및 &quot;이메일&quot;이라는 두 개의 열을 사용하여 Google 연락처를 CSV 파일로 내보내는 방법을 보여 줍니다. [!UICONTROL Google 연락처] > [!UICONTROL 그룹에서 연락처 가져오기] 모듈의 출력 번들에는 다음과 같은 구조가 있습니다. 전자 메일 주소는 <code>[!UICONTROL 전자 메일[]] 내부에 저장됩니다.</code> item: 컬렉션의 배열이며 각 컬렉션에는 두 개의 항목이 들어 있습니다. <code>레이블</code> 및 <code>전자 메일</code>.
 ![변환](/help/workfront-fusion/references/apps-and-modules/assets/transforming-350x546.png)
 
-간단한 [!DNL Create CSV] 모듈에서는 번들의 최상위 항목에 해당하는 확인란 목록을 제공합니다. <code>전체 이름을 선택하려고 하면</code> 및 <code>개의 전자 메일</code> [!UICONTROL Create CSV] 모듈에서 다음 출력을 생성합니다. 이 출력은 원하는 출력이 아닐 수 있습니다.
+간단한 [!DNL Create CSV] 모듈에서는 번들의 최상위 항목에 해당하는 확인란 목록을 제공합니다. <code>전체 이름을 선택하려고 하면</code> 및 <code>개의 전자 메일</code> [!UICONTROL CSV 만들기] 모듈에서 다음 출력을 생성합니다. 이 출력은 원하는 출력이 아닐 수 있습니다.
 
 ```
 "emails","fullName"
@@ -138,20 +138,20 @@ ht-degree: 0%
 "[object Object]","Abby Eisenbarth"
 ```
 
-항목 <code>전체 이름</code> 는 단순 텍스트 유형이며 예상대로 내보내집니다. 항목 <code>전자 메일</code>복잡한 형식의 컬렉션 배열인 를 [개체] (으)로 내보냅니다. 이 개체는 기본적으로 컬렉션과 배열이 텍스트로 변환되는 방식입니다.
+항목 <code>전체 이름</code> 는 단순 텍스트 유형이며 예상대로 내보내집니다. 항목 <code>전자 메일</code>복잡한 형식의 컬렉션 배열인 를 [개체]&#x200B;(으)로 내보냅니다. 이 개체는 기본적으로 컬렉션과 배열이 텍스트로 변환되는 방식입니다.
 
 자세한 내용은 [항목 데이터 형식](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)을 참조하세요.
 
 
-<code>전자 메일의 콘텐츠를 내보내려면 </code><code>전자 메일[]의 첫 번째 컬렉션 항목</code> 대신 [!UICONTROL Create CSV (advanced)] 모듈을 사용해야 합니다. 이 모듈에서는 CSV 파일의 개별 열을 정의하고 중첩된 열을 포함하여 항목을 해당 열에 매핑할 수 있습니다.
+<code>전자 메일의 콘텐츠를 내보내려면 </code><code>전자 메일[]의 첫 번째 컬렉션 항목</code> 대신 [!UICONTROL CSV 만들기(고급)] 모듈을 사용해야 합니다. 이 모듈에서는 CSV 파일의 개별 열을 정의하고 중첩된 열을 포함하여 항목을 해당 열에 매핑할 수 있습니다.
 
-1. 시나리오에 [!UICONTROL Create CSV (advanced)] 모듈을 삽입합니다.
-1. 새 데이터 구조를 만들려면 [!UICONTROL Data structure] 필드 옆에 있는 <strong>[!UICONTROL Add]</strong> 단추를 클릭하십시오.
-1. 데이터 구조의 이름을 입력하고 <strong>[!UICONTROL Add item]</strong>을(를) 클릭하여 개별 열을 추가합니다. &quot;전체 이름&quot;과 &quot;이메일&quot;, 이렇게 두 개의 열을 내보내려면 결과 데이터 구조가 다음과 같습니다.
+1. 시나리오에 [!UICONTROL CSV 만들기(고급)] 모듈을 삽입합니다.
+1. <strong>[!UICONTROL 데이터 구조]</strong> 필드 옆에 있는 [!UICONTROL 추가] 단추를 클릭하여 새 데이터 구조를 만듭니다.
+1. 데이터 구조의 이름을 입력하고 <strong>[!UICONTROL 항목 추가]</strong>를 클릭하여 개별 열을 추가합니다. &quot;전체 이름&quot;과 &quot;이메일&quot;, 이렇게 두 개의 열을 내보내려면 결과 데이터 구조가 다음과 같습니다.
 
    ![Google 연락처 출력](/help/workfront-fusion/references/apps-and-modules/assets/google-contacts-350x524.png)
 
-1. 데이터 구조를 정의하면 항목을 매핑할 수 있도록 각 개별 열에 해당하는 필드가 [!UICONTROL Create CSV (advanced)] 모듈의 구성에 나타납니다. <code>[!UICONTROL Emails[]]에서 첫 번째 항목 가져오기</code> 해당 항목 <code>전자 메일 배열 및 매핑 </code>필드/열 이메일로:
+1. 데이터 구조를 정의한 후 각 개별 열에 해당하는 필드가 [!UICONTROL CSV 만들기(고급)] 모듈의 구성에 표시되므로 항목을 매핑할 수 있습니다. <code>[!UICONTROL 전자 메일[]]에서 첫 번째 항목 가져오기</code> 해당 항목 <code>전자 메일 배열 및 매핑 </code>필드/열 이메일로:
 
    ![CSV 고급 모듈 만들기](/help/workfront-fusion/references/apps-and-modules/assets/create-csv-advanced-350x308.png)
 
@@ -167,38 +167,38 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL Parse CSV]
+## [!UICONTROL CSV 구문 분석]
 
-[!UICONTROL Parse CSV] 변환기를 사용하면 수신된 텍스트 값 또는 파일에서 CSV 텍스트를 구문 분석할 수 있습니다.
+[!UICONTROL CSV 구문 분석] 변환기를 사용하면 수신된 텍스트 값 또는 파일에서 CSV 텍스트를 구문 분석할 수 있습니다.
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Number of columns]</td> 
+   <td role="rowheader">[!UICONTROL 열 수]</td> 
    <td>CSV 파일의 열 수를 지정합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL CSV contains headers]</td> 
+   <td role="rowheader">[!UICONTROL CSV에 헤더 포함]</td> 
    <td> <p>CSV 텍스트의 첫 행에 머리글이 포함된 경우 이 옵션을 선택합니다.</p> <p>참고: 모듈은 이러한 헤더를 사용하여 출력의 열에 레이블을 지정하지 않습니다. 대신 이 필드에서는 헤더가 출력 데이터에 포함되지 않도록 합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL delimiterType]</td> 
    <td> <p>CSV 파일의 구분 기호를 선택합니다. 구분 기호는 별도의 값 또는 필드 사이의 경계를 나타내는 텍스트 문자입니다.</p> 
     <ul> 
-     <li>[!UICONTROL Comma]</li> 
+     <li>[!UICONTROL 쉼표]</li> 
      <li>[!UICONTROL Tab]</li> 
-     <li> <p>[!UICONTROL Other]</p> <p>[!UICONTROL Other]을(를) 선택하는 경우 CSV 파일에서 값을 구분하는 데 사용하는 구분 기호를 입력하십시오. 정확히 하나의 문자를 입력해야 합니다.<br></p> </li> 
+     <li> <p>[!UICONTROL Other]</p> <p>[!UICONTROL Other]를 선택하는 경우 CSV 파일에서 값을 구분하는 데 사용하는 구분 기호를 입력합니다. 정확히 하나의 문자를 입력해야 합니다.<br></p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Preserve quotes inside unquoted field]</td> 
+   <td role="rowheader">[!UICONTROL 인용되지 않은 필드 내에 따옴표 유지]</td> 
    <td>견적을 유지하려면 이 옵션을 활성화합니다.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL CSV]</td> 
-   <td>구문 분석할 CSV 파일을 입력하거나 매핑합니다.<p>참고: <p>데이터가 이진 형식(일반적으로 파일에서)인 경우 'toString()' 함수를 사용하여 이진 데이터를 [!UICONTROL String] (으)로 변환해야 합니다.</p><p><img src="/help/workfront-fusion/references/apps-and-modules/assets/parse-csv-350x123.png"></p></p></td> 
+   <td>구문 분석할 CSV 파일을 입력하거나 매핑합니다.<p>참고: <p>데이터가 이진 형식(일반적으로 파일에서)으로 제공되는 경우 'toString()' 함수를 사용하여 이진 데이터를 [!UICONTROL String](으)로 변환해야 합니다.</p><p><img src="/help/workfront-fusion/references/apps-and-modules/assets/parse-csv-350x123.png"></p></p></td> 
   </tr> 
  </tbody> 
 </table>

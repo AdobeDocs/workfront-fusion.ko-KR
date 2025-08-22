@@ -1,25 +1,25 @@
 ---
 title: 모듈 보관
-description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 압축 파일과 같은 아카이브를 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다. 예를 들어 다음과 같은 시나리오를 구성할 수 있습니다.'
+description: Adobe Workfront Fusion 시나리오에서는 압축 파일과 같은 아카이브를 여러 타사 애플리케이션 및 서비스에 연결할 수 있습니다. 예를 들어 다음과 같은 시나리오를 구성할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: 4b5ff3d5-601c-4119-ad70-3612ad5ba1ab
-source-git-commit: 640aae1f4b7563545d7f9aa3f801671aa3d45fca
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL 보관] 모듈
 
-[!DNL Adobe Workfront Fusion] 시나리오에서는 압축된 파일과 같은 아카이브를 사용하여 자동화 또는 통합에 사용할 수 있습니다.
+Adobe Workfront Fusion 시나리오에서는 압축 파일과 같은 아카이브를 시나리오에서 사용하여 자동화 또는 통합에 사용할 수 있습니다.
 
 시나리오를 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 인덱스](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오. 모듈에 대한 자세한 내용은 [모듈: 문서 인덱스](/help/workfront-fusion/references/modules/modules-toc.md)의 문서를 참조하십시오.
 
 ## [!UICONTROL 보관] 모듈 및 해당 필드
 
-[!UICONTROL 보관] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 추가 [!UICONTROL 보관] 필드가 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!UICONTROL 보관] 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 추가 [!UICONTROL 보관] 필드가 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 

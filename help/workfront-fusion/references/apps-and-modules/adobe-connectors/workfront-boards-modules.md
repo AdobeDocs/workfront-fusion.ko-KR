@@ -4,14 +4,14 @@ description: Adobe Workfront Boards 커넥터를 사용하여 Workfront Boards �
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
-source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2868'
-ht-degree: 0%
+source-wordcount: '2929'
+ht-degree: 1%
 
 ---
 
-# [!DNL Adobe Workfront] 보드 모듈
+# Adobe Workfront 보드 모듈
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Adobe Workfront 보드 모듈을 사용하여 레코드를 읽거나 업데이�
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -139,7 +139,7 @@ Workfront 보드 연결을 만들려면 다음 작업을 수행하십시오.
 
 ## Adobe Workfront 보드 모듈 및 해당 필드
 
-Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 이러한 필드와 함께 앱이나 서비스의 액세스 수준 등의 요소에 따라 추가 Workfront 보드 필드가 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+Workfront 보드 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 이러한 필드와 함께 앱이나 서비스의 액세스 수준 등의 요소에 따라 추가 Workfront 보드 필드가 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
@@ -171,7 +171,7 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>[!DNL Workfront] 앱을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
+      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Card ID]</td> 
@@ -194,7 +194,7 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>[!DNL Workfront] 앱을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
+      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 상위 카드 ID]</td> 
@@ -221,7 +221,7 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>[!DNL Workfront] 앱을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
+      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 보드 ID]</td> 
@@ -248,7 +248,7 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>[!DNL Workfront] 앱을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
+      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Card ID]</td> 
@@ -279,7 +279,7 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>[!DNL Workfront] 앱을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
+      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Card ID]</td> 
@@ -302,7 +302,7 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>[!DNL Workfront] 앱을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
+      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Card ID]</td> 
@@ -352,7 +352,7 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>[!DNL Workfront] 앱을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
+      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 보드 이름]</td> 
@@ -375,7 +375,7 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>[!DNL Workfront] 앱을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
+      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 보드 ID]</td> 
@@ -400,7 +400,7 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>[!DNL Workfront] 앱을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
+      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 보드 ID]</td> 
@@ -427,7 +427,7 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>[!DNL Workfront] 앱을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
+      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 보드 ID]</td> 
@@ -450,7 +450,7 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>[!DNL Workfront] 앱을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
+      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 보드 ID]</td> 
@@ -482,7 +482,7 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>[!DNL Workfront] 앱을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
+      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Card ID]</td> 
@@ -509,7 +509,7 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>[!DNL Workfront] 앱을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
+      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 보드 ID]</td> 
@@ -541,7 +541,7 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>[!DNL Workfront] 앱을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
+      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Card ID]</td> 
@@ -564,7 +564,7 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>[!DNL Workfront] 앱을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
+      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Card ID]</td> 
@@ -589,7 +589,7 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>[!DNL Workfront] 앱을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
+      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
@@ -628,7 +628,7 @@ Workfront 보드 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>[!DNL Workfront] 앱을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
+      <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">[!UICONTROL 메서드]</td> 

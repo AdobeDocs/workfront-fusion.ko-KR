@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion 시나리오에서는 수학 모듈을 사�
 author: Becky
 feature: Workfront Fusion
 exl-id: ebbe74ea-d274-481d-8584-a71ddb1d959b
-source-git-commit: 8a4e54a4c1783e4bc679778c6fcf21dcb4d3d537
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '176'
 ht-degree: 2%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 2%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 

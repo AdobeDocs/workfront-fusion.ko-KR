@@ -1,23 +1,23 @@
 ---
 title: 데이터 저장소 모듈
-description: 데이터베이스 또는 간단한 테이블과 유사한  [!DNL Adobe Workfront Fusion] 데이터 저장소는 시나리오의 데이터를 저장할 수 있으므로 개별 시나리오 또는 시나리오 실행 간에 데이터를 전송할 수 있습니다. 동기화 중에 데이터 저장소를 사용하여 다양한 시스템의 새 데이터를 저장할 수 있습니다.
+description: 데이터베이스 또는 간단한 테이블과 유사한 Adobe Workfront Fusion 데이터 저장소는 시나리오의 데이터를 저장할 수 있으므로 개별 시나리오 또는 시나리오 실행 간에 데이터를 전송할 수 있습니다. 동기화 중에 데이터 저장소를 사용하여 다양한 시스템의 새 데이터를 저장할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: 0338b822-b345-429e-850d-3978b692231d
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1154'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL 데이터 저장소] 모듈
 
-데이터베이스 또는 간단한 테이블과 유사한 [!DNL Adobe Workfront Fusion] 데이터 저장소는 시나리오의 데이터를 저장할 수 있으므로 개별 시나리오 또는 시나리오 실행 간에 데이터를 전송할 수 있습니다. 동기화 중에 데이터 저장소를 사용하여 다양한 시스템의 새 데이터를 저장할 수 있습니다.
+데이터베이스 또는 간단한 테이블과 유사한 Adobe Workfront Fusion 데이터 저장소는 시나리오의 데이터를 저장할 수 있으므로 개별 시나리오 또는 시나리오 실행 간에 데이터를 전송할 수 있습니다. 동기화 중에 데이터 저장소를 사용하여 다양한 시스템의 새 데이터를 저장할 수 있습니다.
 
-데이터 저장소 모듈을 사용하면 [!DNL Adobe Workfront Fusion] 데이터 저장소의 레코드를 추가, 바꾸기, 업데이트, 검색, 삭제, 검색 또는 계산할 수 있습니다.
+데이터 저장소 모듈을 사용하면 Adobe Workfront Fusion 데이터 저장소에서 레코드를 추가, 교체, 업데이트, 검색, 삭제, 검색 또는 계산할 수 있습니다.
 
-<!--For information on creating, editing, and troubleshooting data stores, see [Data Stores in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/)-->
+<!--For information on creating, editing, and troubleshooting data stores, see [Data Stores in Adobe Workfront Fusion](/help/workfront-fusion/references/mapping-panel/data-types/)-->
 
 Workfront Fusion의 데이터 저장소에 대한 비디오 소개는 다음을 참조하십시오.
 
@@ -60,7 +60,7 @@ Workfront Fusion의 데이터 저장소에 대한 비디오 소개는 다음을 
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -72,7 +72,7 @@ Workfront Fusion의 데이터 저장소에 대한 비디오 소개는 다음을 
 
 ## [!UICONTROL 데이터 저장소] 모듈 및 해당 필드
 
-데이터 저장소 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 이러한 필드와 함께 앱이나 서비스의 액세스 수준 등의 요소에 따라 추가 데이터 스토어 필드가 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+데이터 저장소 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 이러한 필드와 함께 앱이나 서비스의 액세스 수준 등의 요소에 따라 추가 데이터 스토어 필드가 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 데이터 저장소를 사용하기 위해 연결을 만들 필요는 없습니다.
 
@@ -256,7 +256,7 @@ Workfront Fusion의 데이터 저장소에 대한 비디오 소개는 다음을 
   </tr> 
   <tr> 
    <td>[!UICONTROL 제한]</td> 
-   <td> <p> 한 실행 주기 동안 [!DNL Workfront Fusion]이(가) 반환하는 최대 검색 결과 수를 설정하십시오.</p> </td> 
+   <td> <p> 한 실행 주기 동안 Workfront Fusion이 반환하는 최대 검색 결과 수를 설정합니다.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 모듈이 결과를 반환하지 않더라도 라우트 실행을 계속합니다.]</td> 

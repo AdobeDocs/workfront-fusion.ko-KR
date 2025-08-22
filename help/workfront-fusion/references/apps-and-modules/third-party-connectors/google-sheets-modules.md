@@ -1,21 +1,21 @@
 ---
 title: Google Sheets 모듈
-description: ' [!DNL Google Sheets] with [!DNL Adobe Workfront Fusion],you need the [!UICONTROL Workfront Fusion Google Sheets] extension을 사용하려면(선택 사항이지만 인스턴트 트리거에는 필요).'
+description: Adobe Workfront Fusion에서  [!DNL Google Sheets] 을(를) 사용하려면 [!UICONTROL Workfront Fusion Google Sheets] 확장이 필요합니다(선택 사항이지만 인스턴트 트리거에는 필요).
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 80965570-2937-4ac8-97c0-54f7a813ec50
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '3957'
+source-wordcount: '4040'
 ht-degree: 0%
 
 ---
 
 # [!DNL Google Sheets]개 모듈
 
-[!DNL Adobe Workfront Fusion] 시나리오에서는 [!DNL Google Sheets]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
+Adobe Workfront Fusion 시나리오에서는 [!DNL Google Sheets]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
 
-[!DNL Google Sheets] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 [연결 만들기 [!DNL Adobe Workfront Fusion] - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)을 참조하세요.
+[!DNL Google Sheets] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 [Adobe Workfront Fusion 연결 만들기 - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)을 참조하십시오.
 
 ## 액세스 요구 사항
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -89,7 +89,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
 
 ## Google Sheets 모듈 및 필드
 
-[!DNL Google Forms] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Google Sheets] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!DNL Google Forms] 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Google Sheets] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
@@ -113,7 +113,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Sheets] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Google Sheets] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Spreadsheet] </td> 
@@ -149,7 +149,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 제한] </td> 
-   <td> <p>한 실행 주기 동안 [!DNL Workfront Fusion]이(가) 사용할 최대 결과 수를 설정하십시오.</p> </td> 
+   <td> <p>한 실행 주기 동안 Workfront Fusion이 작동할 최대 결과 수를 설정합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -172,7 +172,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
 
 이 모듈은 시트에 행을 추가합니다.
 
-[!DNL Google Sheets] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Google Sheets] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!DNL Google Sheets] 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Google Sheets] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
@@ -184,11 +184,11 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Sheets] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Google Sheets] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 모드]</td> 
-   <td> <p>스프레드시트와 시트를 수동으로 선택할지 아니면 매핑으로 선택할지를 선택합니다.</p> <p>참고: 수동 매핑은 [!DNL Workfront Fusion] 시나리오에서 새 스프레드시트가 만들어지고 시나리오에서 직접 새로 생성된 스프레드시트에 데이터를 추가하려는 경우 유용합니다.</p> </td> 
+   <td> <p>스프레드시트와 시트를 수동으로 선택할지 아니면 매핑으로 선택할지를 선택합니다.</p> <p>참고: 수동 매핑은 Workfront Fusion 시나리오에서 새 스프레드시트가 생성되고 시나리오에서 직접 새로 생성된 스프레드시트에 데이터를 추가하려는 경우 유용합니다.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -243,7 +243,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Sheets] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Google Sheets] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -270,7 +270,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Sheets] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Google Sheets] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -282,7 +282,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td>[!UICONTROL 셀] </td> 
-   <td> <p>지우려는 셀의 ID를 입력하거나 매핑합니다. 예: <code>A5</code></p> </td> 
+   <td> <p>지우려는 셀의 ID를 입력하거나 매핑합니다. 예: <code>A5</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -297,7 +297,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Sheets] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Google Sheets] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -309,7 +309,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td>[!UICONTROL 행 번호]</td> 
-   <td> <p>데이터를 지우려는 행의 번호를 입력합니다. 예: <code> 23</code></p> </td> 
+   <td> <p>데이터를 지우려는 행의 번호를 입력합니다. 예: <code> 23</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -322,7 +322,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Sheets] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Google Sheets] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Title] </td> 
@@ -339,7 +339,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td>[!UICONTROL 재계산 간격]</td> 
-   <td> <p>휘발성 함수가 다시 계산되기 전까지 대기할 시간:</p> <ul><li><p style="font-weight: bold;">변경 시 </p> <p>변동성 함수는 변경 시마다 업데이트됩니다.</p></li><li> <p style="font-weight: bold;">변경 시 및 매분 </p> <p>변동성 함수는 변경 시마다 매 분마다 업데이트됩니다.</p></li> <li><p style="font-weight: bold;">변경 시 및 시간별 </p> <p>변동성 함수는 변경 시마다 업데이트됩니다.</p></li></ul> </td> 
+   <td> <p>휘발성 함수가 다시 계산되기 전까지 대기할 시간:</p> <ul><li><p style="font-weight: bold;">변경 시 [!UICONTROL]</p> <p>변동성 함수는 변경 시마다 업데이트됩니다.</p></li><li> <p style="font-weight: bold;">변경 시 및 매분 [!UICONTROL]</p> <p>변동성 함수는 변경 시마다 매 분마다 업데이트됩니다.</p></li> <li><p style="font-weight: bold;">변경 시 및 시간별 [!UICONTROL]</p> <p>변동성 함수는 변경 시마다 업데이트됩니다.</p></li></ul> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 시간대]</td> 
@@ -366,7 +366,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Sheets] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Google Sheets] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -393,7 +393,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Sheets] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Google Sheets] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -416,7 +416,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Sheets] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Google Sheets] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -451,7 +451,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Google Sheets 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>Google Sheets 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Adobe Workfront Fusion에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
@@ -463,7 +463,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다. 예: <code>{"Content-type":"application/json"}</code>. [!DNL Workfront Fusion]이(가) 권한 부여 헤더를 추가합니다.</p> </td> 
+   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다. 예, <code>{"Content-type":"application/json"}</code>. Workfront Fusion은 사용자에게 권한 부여 헤더를 추가합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 쿼리 문자열]</td> 
@@ -487,7 +487,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Sheets] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Google Sheets] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -526,7 +526,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Sheets] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Google Sheets] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 모드]</td> 
@@ -582,7 +582,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Sheets] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Google Sheets] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -594,7 +594,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td>[!UICONTROL 범위] </td> 
-   <td> <p>가져올 범위를 입력하십시오. 예: <code>A1:D25</code></p> </td> 
+   <td> <p>가져올 범위를 입력하십시오. 예: <code>A1:D25</code>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Table contains headers]</td> 
@@ -602,7 +602,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td>헤더가 있는 [!UICONTROL 행]</td> 
-   <td>테이블 머리글의 범위를 입력합니다. 예 <code>A1:F1</code>. 필드를 비워 두면 [!DNL Workfront Fusion]에서 지정한 범위의 첫 행을 헤더로 처리합니다.</td> 
+   <td>테이블 머리글의 범위를 입력합니다. 예 <code>A1:F1</code>. 필드를 비워 두면 Workfront Fusion은 지정된 범위의 첫 번째 행을 헤더로 처리합니다.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 값 렌더링 옵션]</td> 
@@ -625,7 +625,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Sheets] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Google Sheets] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -644,7 +644,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Google Sheets 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>Google Sheets 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Adobe Workfront Fusion에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -684,7 +684,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td>[!UICONTROL 반환되는 최대 행 수]</td> 
-   <td>한 실행 주기 동안 [!DNL Workfront Fusion]이(가) 반환할 최대 행 수를 설정하십시오.</td> 
+   <td>한 실행 주기 동안 Workfront Fusion이 반환할 최대 행 수를 설정합니다.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -699,7 +699,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Sheets] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Google Sheets] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -711,7 +711,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td>[!UICONTROL Query]</td> 
-   <td> <p>[!DNL Google Charts Query Language] 사용. 예: <code>select * where B = "John"</code></p> <p>[!DNL Google Charts Query Language]에 대한 자세한 내용은 [!DNL Google] 설명서의 <a href="https://developers.google.com/chart/interactive/docs/querylanguage">쿼리 언어 참조</a>를 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Google Charts Query Language] 사용. 예: <code>select * where B = "John"</code></p> <p>[!DNL Google Charts Query Language]에 대한 자세한 내용은 <a href="https://developers.google.com/chart/interactive/docs/querylanguage"> 설명서의 </a>쿼리 언어 참조[!DNL Google]를 참조하십시오.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -741,7 +741,7 @@ select * where E is null
 
 ### 시트에 단추를 추가하여 시나리오 실행
 
-1. [!DNL Workfront Fusion]에서 시나리오에 **[!UICONTROL Webhook]** > **[!UICONTROL 사용자 지정 Webhooks]** 모듈을 삽입하고 구성합니다. 자세한 내용은 [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md)을(를) 참조하십시오.
+1. Workfront Fusion에서 시나리오에 **[!UICONTROL Webhook]** > **[!UICONTROL 사용자 지정 Webhooks]** 모듈을 삽입하고 구성합니다. 자세한 내용은 [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md)을(를) 참조하십시오.
 
 1. 웹후크의 URL을 복사합니다.
 1. 시나리오를 실행합니다.
@@ -769,7 +769,7 @@ select * where E is null
 
 1. [!DNL Google Sheets]&#x200B;(으)로 다시 전환하고 새 단추를 클릭하세요.
 1. 스크립트에 필요한 권한 부여:
-1. [!DNL Workfront Fusion]에서 시나리오가 성공적으로 실행되었는지 확인합니다.
+1. Workfront Fusion에서 시나리오가 성공적으로 실행되었는지 확인합니다.
 
 ## 스프레드시트에 날짜 저장
 
@@ -779,7 +779,7 @@ select * where E is null
 
 [!DNL Google Sheets]이(가) 날짜를 이해할 수 있도록 하려면 `formatDate` 함수로 형식을 지정하십시오. 두 번째 인수로 함수에 전달되는 올바른 형식은 스프레드시트의 로케일 설정에 따라 다릅니다.
 
-이 함수에 대한 자세한 내용은 문서 날짜 및 시간 함수에서 [[!UICONTROL formatDate] (date; format; [timezone])](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md#formatdate-date-format-timezone)을(를) 참조하십시오.
+이 함수에 대한 자세한 내용은 문서 날짜 및 시간 함수에서 [[!UICONTROL formatDate](date; format; [timezone])](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md#formatdate-date-format-timezone)을(를) 참조하십시오.
 
 올바른 형식을 확인하려면 다음을 수행하십시오.
 
@@ -810,4 +810,4 @@ Google Sheets에서 기본 제공 함수를 사용하려면 이를 활용할 수
 1. [!DNL Google Sheets]에서 숫자가 들어 있는 열 또는 셀을 강조 표시합니다.
 1. **[!UICONTROL 서식]** > **[!UICONTROL 숫자]** > **[!UICONTROL 일반 텍스트]**&#x200B;를 클릭합니다.
 
-[!DNL Workfront Fusion]의 또 다른 해결 방법은 숫자 앞에 아포스트로피(&#39;)를 입력하는 것입니다(예: &#39;1-2019 또는 &#39;1/47). [!DNL Workfront Fusion]에서 데이터를 보낸 후에는 아포스트로피가 셀에 표시되지 않습니다.
+Workfront Fusion의 또 다른 해결 방법은 숫자 앞에 아포스트로피(&#39;)를 입력하는 것입니다(예: &#39;1-2019 또는 &#39;1/47). Workfront Fusion에서 데이터가 전송된 후 아포스트로피가 셀에 표시되지 않습니다.

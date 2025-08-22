@@ -1,19 +1,19 @@
 ---
 title: Microsoft OneDrive 모듈
-description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 OneDrive를 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.'
+description: Adobe Workfront Fusion 시나리오에서는 OneDrive를 사용하는 워크플로를 자동화하고 여러 타사 애플리케이션 및 서비스에 연결할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: d21eafad-9c67-4f42-b718-0aa4223846e6
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '4088'
+source-wordcount: '4159'
 ht-degree: 0%
 
 ---
 
 # [!DNL Microsoft OneDrive]개 모듈
 
-[!DNL Adobe Workfront Fusion] 시나리오에서는 [!DNL OneDrive]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
+Adobe Workfront Fusion 시나리오에서는 [!DNL OneDrive]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
 
 시나리오를 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 인덱스](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -92,7 +92,7 @@ OneDrive 커넥터는 다음을 사용합니다.
  </table>
 
 
-## [!DNL Workfront Fusion]에 [!DNL OneDrive] 서비스를 연결하는 중
+## Workfront Fusion에 [!DNL OneDrive] 서비스 연결
 
 [!DNL OneDrive] 계정을 [!UICONTROL Workfront Fusion]에 연결하는 방법에 대한 지침은 [[!UICONTROL Adobe Workfront Fusion에 연결 만들기] - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)을 참조하십시오.
 
@@ -104,7 +104,7 @@ OneDrive 커넥터는 다음을 사용합니다.
 
 ## [!DNL Microsoft OneDrive]개 모듈 및 해당 필드
 
-[!DNL OneDrive] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL OneDrive] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!DNL OneDrive] 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL OneDrive] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
@@ -136,7 +136,7 @@ OneDrive 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL OneDrive] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</td> 
+   <td>[!DNL OneDrive] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter (File ID &amp; File Path)]</td> 
@@ -217,7 +217,7 @@ OneDrive 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL OneDrive] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</td> 
+   <td>[!DNL OneDrive] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL [!DNL OneDrive] 위치 선택]</td> 
@@ -261,7 +261,7 @@ OneDrive 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL OneDrive] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</td> 
+   <td>[!DNL OneDrive] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter (파일/폴더 ID 및 경로)]</td> 
@@ -313,7 +313,7 @@ OneDrive 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL OneDrive] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</td> 
+   <td>[!DNL OneDrive] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter (File ID &amp; File Path)]</td> 
@@ -401,7 +401,7 @@ OneDrive 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL OneDrive] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</td> 
+   <td>[!DNL OneDrive] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter (File ID &amp; File Path)]</td> 
@@ -449,7 +449,7 @@ OneDrive 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL OneDrive] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</td> 
+   <td>[!DNL OneDrive] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter (File ID &amp; File Path)]</td> 
@@ -505,7 +505,7 @@ OneDrive 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL OneDrive] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</td> 
+   <td>[!DNL OneDrive] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter (File ID &amp; File Path)]</td> 
@@ -586,7 +586,7 @@ OneDrive 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL OneDrive] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</td> 
+   <td>[!DNL OneDrive] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL [!DNL OneDrive] 위치 선택]</td> 
@@ -597,7 +597,7 @@ OneDrive 커넥터는 다음을 사용합니다.
        <li> <p><b>[!UICONTROL Yes]</b> </p> <p>모듈이 검색할 드라이브의 ID를 입력합니다.</p> </li> 
        <li> <p><b>[!UICONTROL 번호]</b> </p> <p>모듈이 검색할 폴더로 이동합니다. 쿼리를 입력하여 반환된 결과를 필터링할 수도 있습니다.</p> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL 이 나와 공유됨]</b> </p> <p>모듈은 드라이브 소유자와 공유된 파일을 검색합니다.</p> </li> 
+     <li> <p><b>[!UICONTROL이 나와 공유됨]</b> </p> <p>모듈은 드라이브 소유자와 공유된 파일을 검색합니다.</p> </li> 
      <li> <p><b>[!UICONTROL 사이트의 드라이브]</b> </p> <p>모듈이 검색할 [!DNL SharePoint] 사이트를 선택하십시오. 사용 가능한 사이트는 사이트 다음에 로그인한 사용자가 표시됩니다.</p> </li> 
      <li> <p><b>[!UICONTROL 그룹의 드라이브]</b> </p> <p>모듈에서 검색할 드라이브의 그룹을 선택합니다.</p> </li> 
     </ul> </td> 
@@ -623,7 +623,7 @@ OneDrive 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL OneDrive] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</td> 
+   <td>[!DNL OneDrive] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">(폴더 위치 ID 및 경로) 입력</td> 
@@ -671,14 +671,14 @@ OneDrive 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL OneDrive] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</td> 
+   <td>[!DNL OneDrive] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 감시 파일/폴더]</td> 
    <td> <p>파일 또는 폴더를 볼 방법을 선택하십시오.</p> 
     <ul> 
      <li> <p><b>[!UICONTROL 작성일 기준]</b> </p> <p>새 파일 또는 폴더를 확인하십시오.</p> </li> 
-     <li> <p>업데이트된 시간까지 <b></b> </p> <p>업데이트된 기존 파일 또는 폴더를 확인하십시오.</p> </li> 
+     <li> <p>업데이트된 시간까지 <b>[!UICONTROL]</b> </p> <p>업데이트된 기존 파일 또는 폴더를 확인하십시오.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -690,7 +690,7 @@ OneDrive 커넥터는 다음을 사용합니다.
        <li> <p><b>[!UICONTROL Yes]</b> </p> <p>모듈에서 볼 드라이브의 ID를 입력합니다.</p> </li> 
        <li> <p><b>[!UICONTROL 번호]</b> </p> <p>모듈에서 감시할 폴더로 이동합니다. 쿼리를 입력하여 반환된 결과를 필터링할 수도 있습니다.</p> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL 이 나와 공유됨]</b> </p> <p>모듈은 드라이브 소유자와 공유된 파일을 감시합니다.</p> </li> 
+     <li> <p><b>[!UICONTROL이 나와 공유됨]</b> </p> <p>모듈은 드라이브 소유자와 공유된 파일을 감시합니다.</p> </li> 
      <li> <p><b>[!UICONTROL 사이트의 드라이브]</b> </p> <p>모듈에서 볼 SharePoint 사이트를 선택합니다. 사용 가능한 사이트는 사이트 다음에 로그인한 사용자가 표시됩니다.</p> </li> 
      <li> <p><b>[!UICONTROL 그룹의 드라이브]</b> </p> <p>모듈에서 조사할 드라이브의 그룹을 선택합니다.</p> </li> 
     </ul> </td> 
@@ -720,7 +720,7 @@ OneDrive 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL OneDrive] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</td> 
+   <td>[!DNL OneDrive] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 

@@ -1,19 +1,19 @@
 ---
 title: 텍스트 구문 분석기
-description: Text 파서 도구를 사용하여 다른 [!DNL Adobe Workfront Fusion] 시나리오 모듈에서 사용할 텍스트를 구문 분석할 수 있습니다. 텍스트 파서는 연결할 필요가 없습니다.
+description: 텍스트 파서 도구를 사용하여 다른 Adobe Workfront Fusion 시나리오 모듈에서 사용할 텍스트를 구문 분석할 수 있습니다. 텍스트 파서는 연결할 필요가 없습니다.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 679a4f5c91625dfecf32e10904700bf75ea7a7cf
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL 텍스트 구문 분석기]
 
-[!UICONTROL 텍스트 파서 도구]를 사용하여 다른 [!DNL Adobe Workfront Fusion] 시나리오 모듈에서 사용할 텍스트를 구문 분석할 수 있습니다. [!UICONTROL 텍스트 구문 분석기]에는 연결이 필요하지 않습니다.
+[!UICONTROL 텍스트 파서 도구]를 사용하여 다른 Adobe Workfront Fusion 시나리오 모듈에서 사용할 텍스트를 구문 분석할 수 있습니다. [!UICONTROL 텍스트 구문 분석기]에는 연결이 필요하지 않습니다.
 
 ## 액세스 요구 사항
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 ## [!UICONTROL 텍스트 구문 분석기] 모듈과 해당 필드
 
-[!UICONTROL 텍스트 파서] 모듈을 구성할 때 [!DNL Adobe Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!UICONTROL 텍스트 파서] 모듈을 구성하면 Adobe Workfront Fusion에서 아래 나열된 필드가 표시됩니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 

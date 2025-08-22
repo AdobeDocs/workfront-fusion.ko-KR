@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion의 작업은 모듈에서 수행하는 작�
 author: Becky
 feature: Workfront Fusion
 exl-id: c14e2bb2-1cce-48ff-8bea-acc9829d3cf2
-source-git-commit: 3470f7a9658ac4e6214c27f94f5b41821f2f8665
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 0%
+source-wordcount: '355'
+ht-degree: 1%
 
 ---
 
@@ -29,9 +29,9 @@ Adobe Workfront Fusion의 작업은 모듈에서 수행하는 작업입니다. �
 
 ## 작업 제한
 
-조직에 월별 작업 제한이 있을 수 있습니다. 조직에서 구입한 [!DNL Workfront] 플랜을 기반으로 합니다. [!UICONTROL Ultimate] [!DNL Workfront] 요금제에서는 무제한 작업을 제공합니다.
+조직에 월별 작업 제한이 있을 수 있습니다. 이는 조직이 구입한 Workfront 플랜을 기반으로 합니다. [!UICONTROL Ultimate] Workfront 플랜에서는 무제한 작업을 제공합니다.
 
-조직에 월별 제한이 있는 경우 조직이 제한에 근접하면 알림이 표시됩니다. 조직이 한도를 초과하면 [!DNL Workfront]에서 사용자의 계획이 요구 사항을 충족하는지 확인하기 위해 조직에 연락합니다.
+조직에 월별 제한이 있는 경우 조직이 제한에 근접하면 알림이 표시됩니다. 조직에서 한도를 초과하는 경우 Workfront은 조직에 문의하여 플랜이 요구 사항을 충족하는지 확인합니다.
 
 Workfront Fusion은 조직이 다음 조직의 월별 제한 비율에 도달하면 알림을 보냅니다.
 

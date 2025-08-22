@@ -4,9 +4,9 @@ description: 시나리오의 이벤트 또는 실행에 대한 정보를 표시�
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: cc7c05614390e20d4051635c605e12dfa65493a1
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '924'
 ht-degree: 1%
 
 ---
@@ -34,17 +34,17 @@ ht-degree: 1%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 패키지</td> 
+   <td role="rowheader">Adobe Workfront 패키지</td> 
    <td> <p>임의</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 라이센스</td> 
-   <td> <p>새로운 기능: [!UICONTROL Standard]</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
+   <td role="rowheader">Adobe Workfront 라이선스</td> 
+   <td> <p>새로운 기능: 표준</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td> 
+   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: [!DNL Workfront Fusion] 라이선스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
    <p>또는</p>
    <p>레거시: 모두 </p>
    </td> 
@@ -52,16 +52,16 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Workfront] 계획: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 계획: [!DNL Workfront Fusion]이(가) 포함되어 있습니다.</li></ul>
+   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] Workfront 플랜: 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li><li>[!UICONTROL Ultimate] Workfront 계획: Workfront Fusion이 포함됩니다.</li></ul>
    <p>또는</p>
-   <p>현재: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</p>
+   <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">액세스 수준 구성*</td> 
    <td> 
-     <p>조직의 [!DNL Workfront Fusion] 관리자여야 합니다.</p>
-     <p>팀의 [!DNL Workfront Fusion] 관리자여야 합니다.</p>
+     <p>조직의 Workfront Fusion 관리자여야 합니다.</p>
+     <p>팀의 Workfront Fusion 관리자여야 합니다.</p>
    </td> 
   </tr> 
    </td> 
@@ -71,7 +71,7 @@ ht-degree: 1%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -88,7 +88,7 @@ ht-degree: 1%
 
    시나리오 편집기에서 시나리오 작업을 수행하는 경우 창의 왼쪽 상단 모서리 근처에 있는 왼쪽 화살표 ![편집 종료 화살표](assets/exit-editing-arrow.png)를 클릭합니다.
 
-1. 시나리오 이름 근처에 있는 **기록**&#x200B;을 클릭합니다.
+1. 시나리오 이름 근처에 있는 **기록**을 클릭합니다.
    ![기록 탭](assets/history-tab.png)
 
    시나리오의 모든 실행에 대해 다음 세부 정보가 나열됩니다.
@@ -134,7 +134,7 @@ ht-degree: 1%
 
 실행 기록을 필터링하여 지정된 값이 있는 실행만 볼 수 있습니다.
 
-1. 이 문서의 [!UICONTROL 기록] 탭에서 [시나리오 실행 기록 보기](#view-scenario-history-on-the-history-tab)에 설명된 대로 시나리오에 대한 전체 페이지 기록을 엽니다.
+1. 이 문서의 [기록[!UICONTROL  탭에서 ]시나리오 실행 기록 보기](#view-scenario-history-on-the-history-tab)에 설명된 대로 시나리오에 대한 전체 페이지 기록을 엽니다.
 1. 필터링할 열의 헤더에서 [!UICONTROL 필터] 아이콘 ![시나리오 필터 아이콘](assets/fusion-scenario-filter-icon.png)을 클릭합니다.
 1. [!UICONTROL 필터] 대화 상자에서 필터링할 값을 입력합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
@@ -153,7 +153,7 @@ You can sort the scenario execution history.
 
 ## 시나리오의 모든 실행 검색
 
-1. 이 문서의 [!UICONTROL 기록] 탭에서 [시나리오 실행 기록 보기](#view-scenario-history-on-the-history-tab)에 설명된 대로 시나리오에 대한 전체 페이지 기록을 엽니다.
+1. 이 문서의 [기록[!UICONTROL  탭에서 ]시나리오 실행 기록 보기](#view-scenario-history-on-the-history-tab)에 설명된 대로 시나리오에 대한 전체 페이지 기록을 엽니다.
 1. 실행 목록의 맨 위에서 **[!UICONTROL 전체 텍스트 검색]**&#x200B;을 클릭합니다.
 
    또는
@@ -177,7 +177,7 @@ You can sort the scenario execution history.
    >
    >* 이전 30일 동안만 실행할 수 있습니다.
    >
-   >* [!DNL Workfront Fusion]이(가) 30일 동안 webhook 페이로드를 저장합니다. 웹후크 페이로드가 생성된 후 30일 이상 지나면 &quot;[!UICONTROL 저장소에서 파일을 읽지 못했습니다.]&quot; 오류가 발생합니다.
+   >* Workfront Fusion은 30일 동안 웹후크 페이로드를 저장합니다. 웹후크 페이로드가 생성된 후 30일 이상 지나면 &quot;[!UICONTROL 저장소에서 파일을 읽지 못했습니다.]&quot; 오류가 발생합니다.
 
 
 1. (선택 사항) 상태별로 검색을 제한하려면 **[!UICONTROL 상태별]** 드롭다운에서 원하는 상태를 선택합니다.
@@ -189,7 +189,7 @@ You can sort the scenario execution history.
 
    * [!UICONTROL 오류]
 
-   * [!UICONTROL 경고]
+   * [!UICONTROL Warning]
 
    * [!UICONTROL 성공]
 

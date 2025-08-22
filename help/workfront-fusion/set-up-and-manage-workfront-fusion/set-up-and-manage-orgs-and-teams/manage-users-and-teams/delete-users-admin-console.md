@@ -6,16 +6,16 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: aa570f28-7387-47c5-9968-e3554921b0f5
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 0%
+source-wordcount: '499'
+ht-degree: 1%
 
 ---
 
 # [!DNL Adobe Admin Console]을(를) 통해 사용자 삭제
 
-[!DNL Adobe Workfront Fusion]에서만 사용자를 제거하고 다른 [!DNL Adobe] 제품 프로필에 액세스할 수 있습니다. 또는 [!DNL Adobe Admin Console]에서 사용자를 완전히 제거할 수 있습니다.
+Adobe Workfront Fusion에서만 사용자를 제거하고 다른 [!DNL Adobe] 제품 프로필에 액세스할 수 있습니다. 또는 [!DNL Adobe Admin Console]에서 사용자를 완전히 제거할 수도 있습니다.
 
 ## 액세스 요구 사항
 
@@ -28,17 +28,17 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 패키지</td> 
+   <td role="rowheader">Adobe Workfront 패키지</td> 
    <td> <p>임의</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 라이센스</td> 
-   <td> <p>신규: [!UICONTROL Standard]</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
+   <td role="rowheader">Adobe Workfront 라이선스</td> 
+   <td> <p>새로운 기능: 표준</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td> 
+   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: [!DNL Workfront Fusion] 라이선스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
    <p>또는</p>
    <p>레거시: 모두 </p>
    </td> 
@@ -46,9 +46,9 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Workfront] 플랜: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 플랜: [!DNL Workfront Fusion]이(가) 포함되어 있습니다.</li></ul>
+   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] Workfront 플랜: 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li><li>[!UICONTROL Ultimate] Workfront 계획: Workfront Fusion이 포함됩니다.</li></ul>
    <p>또는</p>
-   <p>현재: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</p>
+   <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
@@ -62,15 +62,15 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
-## [!DNL Adobe Workfront Fusion]에서만 사용자 제거
+## Adobe Workfront Fusion에서만 사용자 제거
 
 다른 Adobe 제품 권한을 그대로 유지하면서 Workfront Fusion에서 사용자를 제거할 수 있습니다.
 
-자세한 내용은 문서 [Admin Console에서 제품 관리](https://helpx.adobe.com/kr/enterprise/using/manage-products.html)의 &quot;제품에서 사용자 및 사용자 그룹 제거&quot;를 참조하십시오.
+자세한 내용은 문서 [Admin Console에서 제품 관리](https://helpx.adobe.com/kr/enterprise/using/manage-products.html)에서 &quot;제품에서 사용자 및 사용자 그룹 제거&quot;를 참조하십시오.
 
 ## [!DNL Adobe Admin Console]의 모든 제품에서 사용자 비활성화
 
@@ -85,7 +85,7 @@ ht-degree: 0%
 
   지침은 [개별적으로 사용자 관리](https://helpx.adobe.com/kr/enterprise/using/manage-users-individually.html)의 &quot;사용자 제거&quot; 섹션을 참조하십시오.
 
-[!DNL Workfront Fusion]에서 비활성화는 다음 방법 중 하나로 사용자에게 영향을 줍니다.
+Workfront Fusion에서 비활성화는 다음 방법 중 하나로 사용자에게 영향을 줍니다.
 
 * 사용자가 한 조직에만 있는 경우 사용자는 비활성화됩니다.
 * 사용자가 둘 이상의 조직에 있는 경우 사용자가 [!DNL Adobe Admin Console]에서 수정된 조직에서 제거됩니다.

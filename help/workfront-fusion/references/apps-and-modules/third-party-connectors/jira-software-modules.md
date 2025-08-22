@@ -1,12 +1,12 @@
 ---
 title: Jira 소프트웨어 모듈
-description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는  [!DNL Jira] 소프트웨어를 사용하는 워크플로를 자동화할 수 있을 뿐만 아니라 여러 타사 응용 프로그램 및 서비스에 연결할 수도 있습니다.'
+description: Adobe Workfront Fusion 시나리오에서는  [!DNL Jira] 소프트웨어를 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: 8181cf8c2b2c4e6523cb16df0f91120e775e654b
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2238'
+source-wordcount: '2324'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 >
 >이러한 지침은 레거시 Jira Cloud 및 Jira Server 커넥터에 적용됩니다. 단순히 Jira로 레이블이 지정된 새 버전의 Jira 커넥터에 대한 지침은 [Jira 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 시나리오에서는 [!DNL Jira Software]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
+Adobe Workfront Fusion 시나리오에서는 [!DNL Jira Software]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
 
 이 지침은 Jira Cloud 및 Jira Server 모듈 모두에 적용됩니다.
 
@@ -64,7 +64,7 @@ ht-degree: 1%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -103,18 +103,18 @@ Jira 커넥터는 다음을 사용합니다.
  </tbody> 
  </table>
 
-## [!DNL Jira Software]을(를) [!DNL Workfront Fusion]에 연결
+## Workfront Fusion에 [!DNL Jira Software] 연결
 
 연결 메서드는 [!DNL Jira Cloud]을(를) 사용하는지 [!DNL Jira Server]을(를) 사용하는지 여부를 기준으로 합니다.
 
 * [Workfront Fusion에  [!DNL Jira Cloud] 연결](#connect-jira-cloud-to-workfront-fusion)
-* [ [!DNL Jira Server] to [!DNL Workfront Fusion] 연결](#connect-jira-server-to-workfront-fusion)
+* [Workfront Fusion에  [!DNL Jira Server] 연결](#connect-jira-server-to-workfront-fusion)
 
-### [!DNL Jira Cloud]을(를) [!DNL Workfront Fusion]에 연결
+### Workfront Fusion에 [!DNL Jira Cloud] 연결
 
-[!DNL Jira Cloud]을(를) [!DNL Workfront Fusion]에 연결
+Workfront Fusion에 [!DNL Jira Cloud] 연결
 
-[!DNL Jira Software]을(를) [!DNL Workfront Fusion]에 연결하려면 API 토큰을 만들고 서비스 URL 및 사용자 이름과 함께 [!UICONTROL 의 &#x200B;]연결 만들기[!DNL Workfront Fusion] 필드에 삽입해야 합니다.
+[!DNL Jira Software]을(를) Workfront Fusion에 연결하려면 API 토큰을 만들고 서비스 URL 및 사용자 이름과 함께 Workfront Fusion의 [!UICONTROL 연결 만들기] 필드에 삽입해야 합니다.
 
 #### [!DNL Jira]에서 API 토큰 만들기
 
@@ -127,11 +127,11 @@ Jira 커넥터는 다음을 사용합니다.
    >
    >이 대화 상자를 닫은 후에는 토큰을 다시 볼 수 없습니다.
 1. 생성된 토큰을 안전한 장소에 저장합니다.
-1. [다음 위치에서  [!DNL Jira] API 토큰 구성 [!DNL Workfront Fusion]](#configure-the-jira-api-token-in-workfront-fusion)을(를) 계속합니다.
+1. [Workfront Fusion에서  [!DNL Jira] API 토큰 구성](#configure-the-jira-api-token-in-workfront-fusion)을 계속합니다.
 
-#### [!DNL Jira]에서 [!DNL Workfront Fusion] API 토큰 구성
+#### Workfront Fusion에서 [!DNL Jira] API 토큰 구성
 
-1. [!DNL Jira Cloud]의 [!DNL Workfront Fusion] 모듈에서 **[!UICONTROL 연결]** 필드 옆에 있는 [!UICONTROL 추가]를 클릭합니다.
+1. Workfront Fusion의 [!DNL Jira Cloud] 모듈에서 **[!UICONTROL 연결]** 필드 옆에 있는 [!UICONTROL 추가]를 클릭합니다.
 1. 다음 정보를 지정합니다.
 
    * **환경**
@@ -142,13 +142,13 @@ Jira 커넥터는 다음을 사용합니다.
 
 1. 연결을 만들고 모듈로 돌아가려면 [!UICONTROL 계속]을 클릭하세요.
 
-### [!DNL Jira Server]을(를) [!DNL Workfront Fusion]에 연결
+### Workfront Fusion에 [!DNL Jira Server] 연결
 
-[!DNL Workfront Fusion]과(와) [!DNL Jira Server] 간의 연결을 승인하려면 소비자 키, 개인 키 및 서비스 URL이 필요합니다. 이 정보는 [!DNL Jira] 관리자에게 문의하십시오.
+Workfront Fusion과 [!DNL Jira Server] 간의 연결을 승인하려면 소비자 키, 개인 키 및 서비스 URL이 필요합니다. 이 정보는 [!DNL Jira] 관리자에게 문의하십시오.
 
 * [ [!DNL Jira] 연결에 대한 공개 및 개인 키 생성](#generate-public-and-private-keys-for-your-jira-connection)
 * [ [!DNL Jira]에서 클라이언트 앱을 소비자로 구성](#configure-the-client-app-as-a-consumer-in-jira)
-* [ [!DNL Jira] 에서  [!DNL Workfront Fusion]서버 또는 Jira 데이터 센터에 연결 만들기](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)
+* [Workfront Fusion에서  [!DNL Jira] 서버 또는 Jira 데이터 센터에 연결 만들기](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)
 
 #### [!DNL Jira] 연결에 대한 공개 및 개인 키 생성
 
@@ -238,15 +238,15 @@ Jira 커넥터는 다음을 사용합니다.
    </table>
 
 1. **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
-1. [계속  [!DNL Jira Server] 또는 [!DNL Jira Data Center] in [!DNL Workfront Fusion]](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)에 연결 만들기
+1. 계속해서 [연결 만들기 [!DNL Jira Server] 또는 [!DNL Jira Data Center] Workfront Fusion에서](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)
 
-#### [!DNL Jira Server]에서 [!DNL Jira Data Center] 또는 [!DNL Workfront Fusion]에 연결 만들기
+#### Workfront Fusion에서 [!DNL Jira Server] 또는 [!DNL Jira Data Center]에 대한 연결 만들기
 
 >[!NOTE]
 >
 >[!DNL Jira Server] 앱을 사용하여 [!DNL Jira Server] 또는 [!DNL Jira Data Center]에 연결합니다.
 
-1. [!DNL Jira Server]의 [!DNL Workfront Fusion] 모듈에서 **[!UICONTROL 연결]** 필드 옆에 있는 [!UICONTROL 추가]를 클릭합니다.
+1. Workfront Fusion의 [!DNL Jira Server] 모듈에서 **[!UICONTROL 연결]** 필드 옆에 있는 [!UICONTROL 추가]를 클릭합니다.
 1. [!UICONTROL 연결 만들기] 패널에서 다음 필드를 채웁니다.
 
    <table style="table-layout:auto"> 
@@ -284,7 +284,7 @@ Jira 커넥터는 다음을 사용합니다.
 
 ## [!DNL Jira Software]개 모듈 및 해당 필드
 
-[!DNL Jira Software] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Jira Software] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!DNL Jira Software] 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Jira Software] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
@@ -310,7 +310,7 @@ Jira 커넥터는 다음을 사용합니다.
     <ol> 
      <li value="1"><strong>[!UICONTROL 추가]</strong>를 클릭합니다.</li> 
      <li value="2">Webhook의 이름을 입력합니다.</li> 
-     <li value="3"> <p>Webhook에 사용할 연결을 선택합니다. </p> <p>[!DNL Jira Software] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </li> 
+     <li value="3"> <p>Webhook에 사용할 연결을 선택합니다. </p> <p>[!DNL Jira Software] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Workfront Fusion에 [!DNL Jira Software] 연결</a>을 참조하십시오.</p> </li> 
      <li value="4"> <p>소프트웨어에서 감시할 레코드 유형을 선택합니다.</p> 
       <ul> 
        <li>[!UICONTROL Comment] </li> 
@@ -345,7 +345,7 @@ Jira 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Jira Software] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Jira Software] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Workfront Fusion에 [!DNL Jira Software] 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Sprint ID]</td> 
@@ -372,7 +372,7 @@ Jira 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Jira Software] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Jira Software] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Workfront Fusion에 [!DNL Jira Software] 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 레코드 유형]</td> 
@@ -401,7 +401,7 @@ Jira 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Jira Software] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Jira Software] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Workfront Fusion에 [!DNL Jira Software] 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
@@ -413,7 +413,7 @@ Jira 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] 인증 헤더를 추가합니다.</p> </td> 
+   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion은 사용자에게 권한 부여 헤더를 추가합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 쿼리 문자열]</td> 
@@ -443,7 +443,7 @@ Jira 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Jira Software] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Jira Software] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Workfront Fusion에 [!DNL Jira Software] 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 레코드 유형]</td> 
@@ -475,7 +475,7 @@ Jira 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Jira Software] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Jira Software] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Workfront Fusion에 [!DNL Jira Software] 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
@@ -500,7 +500,7 @@ Jira 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Jira Software] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Jira Software] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Workfront Fusion에 [!DNL Jira Software] 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 레코드 유형]</td> 
@@ -540,7 +540,7 @@ Jira 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Jira Software] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Jira Software] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Workfront Fusion에 [!DNL Jira Software] 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 레코드 유형]</td> 
@@ -579,7 +579,7 @@ Jira 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Jira Software] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Jira Software] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Workfront Fusion에 [!DNL Jira Software] 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 레코드 유형]</td> 
@@ -618,7 +618,7 @@ Jira 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Jira Software] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Jira Software] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Workfront Fusion에 [!DNL Jira Software] 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 레코드 유형]</td> 

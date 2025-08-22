@@ -4,14 +4,14 @@ description: Adobe Workfront Fusion HTTP 모듈에서 Mutual TLS를 사용하여
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-source-git-commit: 89017451c8e0b821616adda861222127e100a08d
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
 
-# [!DNL Adobe Workfront Fusion]의 HTTP 모듈에서 Mutual TLS 사용
+# Adobe Workfront Fusion의 HTTP 모듈에서 상호 TLS 사용
 
 ## 상호 TLS 개요
 
@@ -68,15 +68,15 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
-## [!DNL Workfront Fusion] 공개 인증서 제공
+## Workfront Fusion 공개 인증서 제공
 
-HTTP 요청을 사용하여 웹 서비스에 연결할 때 일반적으로 웹 서비스에는 확인을 위해 [!DNL Workfront Fusion] 공개 인증서가 필요합니다. 이렇게 하면 웹 서비스가 인증서가 웹 서비스의 허용 목록에 추가하다에 있는지 확인하는 방법으로 HTTP 요청에 표시된 인증서를 파일에 있는 인증서와 비교할 수 있습니다.
+HTTP 요청을 사용하여 웹 서비스에 연결할 경우 일반적으로 웹 서비스에는 확인을 위한 Workfront Fusion 공개 인증서가 필요합니다. 이렇게 하면 웹 서비스가 인증서가 웹 서비스의 허용 목록에 추가하다에 있는지 확인하는 방법으로 HTTP 요청에 표시된 인증서를 파일에 있는 인증서와 비교할 수 있습니다.
 
-[!DNL Adobe Workfront Fusion] 공개 인증서를 웹 서비스에 업로드하는 방법에 대한 지침은 웹 서비스의 설명서를 참조하십시오.
+Adobe Workfront Fusion 공개 인증서를 웹 서비스에 업로드하는 방법에 대한 지침은 웹 서비스의 설명서를 참조하십시오.
 
 >[!NOTE]
 >
@@ -88,7 +88,7 @@ HTTP 요청을 사용하여 웹 서비스에 연결할 때 일반적으로 웹 �
 
 >[!IMPORTANT]
 >
->* 이 [!DNL Workfront Fusion] 공개 인증서는 **2026년 4월 4일**(미국 및 EU) 또는 **2025년 11월 25일**(Azure)에 만료됩니다. 만료되면 웹 서비스에 새 인증서를 업로드해야 합니다. 권장 사항:
+>* 이러한 Workfront Fusion 공개 인증서는 **2026년 4월 4일**(미국 및 유럽 연합) 또는 **2025년 11월 25일**(Azure)에 만료됩니다. 만료되면 웹 서비스에 새 인증서를 업로드해야 합니다. 권장 사항:
 >
 >   * 만료 날짜를 기록하고 인증서를 웹 서비스에 업로드하도록 미리 알림을 설정하십시오.
 >   * 새 인증서를 쉽게 찾으려면 이 페이지에 책갈피를 지정합니다.
@@ -97,9 +97,9 @@ HTTP 요청을 사용하여 웹 서비스에 연결할 때 일반적으로 웹 �
 
 | 데이터 센터 | 다운로드 링크 | 유효한 날짜 |
 |---|---|---|
-| 미국 데이터 센터 | [다운로드 [!DNL Workfront Fusion] 미국 인증서 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-us-mtls-certificate.pem) | 2025년 3월 3일~2026년 4월 4일 |
-| EU 데이터 센터 | [다운로드 [!DNL Workfront Fusion] EU 인증서 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pem) | 2025년 3월 3일~2026년 4월 4일 |
-| Azure 클러스터 | [다운로드 [!DNL Workfront Fusion] Azure 인증서 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | 2024년 10월 24일~2025년 11월 25일 |
+| 미국 데이터 센터 | [Workfront Fusion US 인증서 2025 다운로드](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-us-mtls-certificate.pem) | 2025년 3월 3일~2026년 4월 4일 |
+| EU 데이터 센터 | [Workfront Fusion EU 인증서 2025 다운로드](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pem) | 2025년 3월 3일~2026년 4월 4일 |
+| Azure 클러스터 | [Workfront Fusion Azure 인증서 2025 다운로드](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | 2024년 10월 24일~2025년 11월 25일 |
 
 <!--
 
@@ -108,7 +108,7 @@ HTTP 요청을 사용하여 웹 서비스에 연결할 때 일반적으로 웹 �
 >[!IMPORTANT]
 >
 >* We recommend installing the certificates for 2025, available above.
->* These [!DNL Workfront Fusion] public certificates expire on **May 7, 2025**. After yours expires you will need to upload a new certificate to the web service. We recommend that you:
+>* These Workfront Fusion public certificates expire on **May 7, 2025**. After yours expires you will need to upload a new certificate to the web service. We recommend that you:
 >
 >   * Make note of the expiration date and set a reminder for yourself to upload the certificate to your web service.
 >   * Bookmark this page to easily find the new certificates.
@@ -117,14 +117,14 @@ HTTP 요청을 사용하여 웹 서비스에 연결할 때 일반적으로 웹 �
 
 | Datacenter | Download link | Dates valid |
 |---|---|---|
-| US Datacenter | [Download [!DNL Workfront Fusion] Certificate 2024](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-us-mtls-certificate.pem) | April 5, 2024 to May 7, 2025 |
-| EU Datacenter | [Download [!DNL Workfront Fusion] EU Certificate 2024](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-eu-mtls-certificate.pem) | April 5, 2024 to May 7, 2025 |
+| US Datacenter | [Download Workfront Fusion Certificate 2024](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-us-mtls-certificate.pem) | April 5, 2024 to May 7, 2025 |
+| EU Datacenter | [Download Workfront Fusion EU Certificate 2024](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-eu-mtls-certificate.pem) | April 5, 2024 to May 7, 2025 |
 
 -->
 
-## [!DNL Workfront Fusion] HTTP 모듈에서 상호 TLS 활성화
+## Workfront Fusion HTTP 모듈에서 상호 TLS 활성화
 
-모든 [!DNL Workfront Fusion] [!UICONTROL HTTP] 요청 모듈에는 Mutual TLS를 활성화하는 옵션이 있습니다.
+모든 Workfront Fusion [!UICONTROL HTTP] 요청 모듈에는 Mutual TLS를 활성화하는 옵션이 있습니다.
 
 [!UICONTROL HTTP] 요청 모듈에서 Mutual TLS를 활성화하려면 다음을 수행하십시오.
 

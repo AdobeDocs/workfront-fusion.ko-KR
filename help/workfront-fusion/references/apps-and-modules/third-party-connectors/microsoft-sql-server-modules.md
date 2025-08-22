@@ -1,19 +1,19 @@
 ---
 title: Microsoft Server 모듈
-description: ' [!DNL Adobe Workfront Fusion] 을 사용하여 Microsoft SQL Server에 연결할 수 있습니다.'
+description: Adobe Workfront Fusion을 사용하여 Microsoft SQL Server에 연결할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: 8f3293f7-8b45-4e42-8ad8-f9d4969b63fd
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
 
 # [!DNL Microsoft SQL Server]개 모듈
 
-[!DNL Adobe Workfront Fusion]을(를) 사용하여 [!UICONTROL Microsoft SQL Server]에 연결할 수 있습니다.
+Adobe Workfront Fusion을 사용하여 [!UICONTROL Microsoft SQL Server]에 연결할 수 있습니다.
 
 ## 액세스 요구 사항
 
@@ -54,11 +54,11 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
-## [!DNL Workfront Fusion]에 [!DNL Microsoft SQL Server] 서비스를 연결하는 중
+## Workfront Fusion에 [!DNL Microsoft SQL Server] 서비스 연결
 
 [!DNL Microsoft SQL Server] 계정을 [!UICONTROL Workfront Fusion]에 연결하는 방법에 대한 지침은 [[!UICONTROL Adobe Workfront Fusion에 연결 만들기] - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)을 참조하십시오.
 
@@ -70,17 +70,17 @@ ht-degree: 0%
 
 ## [!DNL Microsoft SQL Server]개 모듈 사용
 
-저장 프로시저를 통해 데이터베이스 서버에서 직접 사용자 지정 논리를 실행할 수 있습니다. [!DNL Adobe Workfront Fusion]은(는) 입력/출력 매개 변수 및 레코드 집합의 인터페이스를 동적으로 로드하므로 각 매개 변수 또는 값을 개별적으로 매핑할 수 있습니다. 시나리오 구성을 시작하기 전에 데이터베이스에 연결하는 데 사용하는 계정에 `INFORMATION_SCHEMA.ROUTINES` 및 `INFORMATION_SCHEMA.PARAMETERS` 보기에 대한 읽기 권한이 있는지 확인하십시오.
+저장 프로시저를 통해 데이터베이스 서버에서 직접 사용자 지정 논리를 실행할 수 있습니다. Adobe Workfront Fusion은 입력/출력 매개 변수 및 레코드세트의 인터페이스를 동적으로 로드하므로 각 매개 변수 또는 값을 개별적으로 매핑할 수 있습니다. 시나리오 구성을 시작하기 전에 데이터베이스에 연결하는 데 사용하는 계정에 `INFORMATION_SCHEMA.ROUTINES` 및 `INFORMATION_SCHEMA.PARAMETERS` 보기에 대한 읽기 권한이 있는지 확인하십시오.
 
 [!DNL Fusion]이(가) [!DNL SQL server] 대상에 대한 연결을 설정하면 [!DNL Fusion] 사용자가 호스트(서버가 호스트되는 도메인 이름 또는 IP 주소)와 포트를 식별합니다. [!DNL Fusion]은(는) 사용 가능한 모든 호스트 및 포트에 연결할 수 있습니다.
 
-[!DNL Workfront Fusion]에서 사용하는 특정 IP 주소에 대한 자세한 내용은 [액세스할 IP 주소 [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)를 참조하십시오.
+Workfront Fusion에서 사용하는 특정 IP 주소에 대한 자세한 내용은 Adobe Workfront Fusion에 액세스하기 위한 [IP 주소](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)를 참조하십시오.
 
 저장 프로시저 만들기에 대한 자세한 내용은 [!DNL Microsoft SQL Server] 설명서를 참조하세요.
 
 >[!NOTE]
 >
->[!DNL Workfront Fusion]은(는) 여러 개의 레코드 집합을 지원하지 않습니다. 첫 번째 작업만 처리됩니다.
+>Workfront Fusion은 여러 레코드세트를 지원하지 않습니다. 첫 번째 작업만 처리됩니다.
 
 ## 문제 해결 오류 [!UICONTROL ER_LOCK_WAIT_TIMEOUT: 잠금 대기 시간 제한을 초과했습니다. 트랜잭션을 다시 시작해 보십시오]
 

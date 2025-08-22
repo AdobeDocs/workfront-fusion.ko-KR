@@ -4,9 +4,9 @@ description: 시나리오 이벤트 필터링 및 검색을 포함하여 특정 
 author: Becky
 feature: Workfront Fusion
 exl-id: 34dd9836-9a1b-4ce2-b24e-ae769888a52a
-source-git-commit: 62b09469c1d85fd2bd1f154cde339cc4a10fc34a
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '436'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 1%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -67,7 +67,7 @@ ht-degree: 1%
 
    시나리오 편집기에서 시나리오 작업을 수행하는 경우 창의 왼쪽 상단 모서리 근처에 있는 왼쪽 화살표 ![편집 종료 화살표](assets/exit-editing-arrow.png)를 클릭합니다.
 
-1. 시나리오 이름 근처에 있는 **기록**&#x200B;을 클릭합니다.
+1. 시나리오 이름 근처에 있는 **기록**을 클릭합니다.
    ![기록 탭](assets/history-tab.png)
 
 

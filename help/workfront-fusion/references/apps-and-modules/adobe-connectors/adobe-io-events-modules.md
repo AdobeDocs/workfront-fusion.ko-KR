@@ -4,10 +4,10 @@ description: Adobe I/O Events 모듈을 사용하면 Adobe 애플리케이션의
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: ef55cc62a0e0de70662440bc38d3eabbfe5e3c13
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 1%
+source-wordcount: '1085'
+ht-degree: 2%
 
 ---
 
@@ -54,7 +54,7 @@ Adobe I/O Events 모듈을 사용하면 전용 Adobe Workfront Fusion 커넥터�
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -155,7 +155,7 @@ Adobe I/O Events 모듈에 대한 연결을 만들려면 다음 작업을 수행
 
 ## Adobe I/O Events 모듈 및 해당 필드
 
-[!DNL Adobe I/O Events] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Adobe I/O Events] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!DNL Adobe I/O Events] 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Adobe I/O Events] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
@@ -373,9 +373,9 @@ Adobe I/O Events 모듈에 대한 연결을 만들려면 다음 작업을 수행
    <tbody> 
    <tr> 
    <td role="rowheader">Webhook</td> 
-   <td><p>이 트리거에 사용할 웹후크를 선택하거나 새 웹후크를 추가합니다. </p><p>새 웹후크를 추가하려면 <ol><li>Webhook 필드 옆에 있는 <b>추가</b>를 클릭합니다.</li><li>다음을 입력합니다. <ul><li>Webhook 이름</li><li>이 웹후크에 사용할 연결입니다.</li><li>보려는 이벤트의 소스</li></ul></li><li>웹후크를 저장하고 모듈로 돌아가려면 <b>저장</b>을 클릭하십시오. </td> 
+   <td><p>이 트리거에 사용할 웹후크를 선택하거나 새 웹후크를 추가합니다. </p><p>새 웹후크를 추가하려면 <ol><li>Webhook 필드 옆에 있는 <b>추가</b>를 클릭합니다.</li><li>다음을 입력하십시오. <ul><li>Webhook 이름</li><li>이 웹후크에 사용할 연결입니다.</li><li>보려는 이벤트의 소스</li></ul></li><li>웹후크를 저장하고 모듈로 돌아가려면 <b>저장</b>을 클릭하십시오. </td> 
    </tr> 
    </tbody> 
 </table>
 
-—>
+-->

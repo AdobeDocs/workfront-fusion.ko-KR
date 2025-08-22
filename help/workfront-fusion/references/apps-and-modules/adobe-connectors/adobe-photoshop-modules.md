@@ -4,16 +4,16 @@ description: Adobe Photoshop 모듈을 사용하면 Adobe Photoshop 계정의 �
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: 7f167af0ba1becb603dd8d9f3767101e157a7bdf
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '5379'
+source-wordcount: '5392'
 ht-degree: 0%
 
 ---
 
 # [!DNL Adobe Photoshop]개 모듈
 
-[!DNL Adobe Workfront Fusion] 시나리오에서는 [!DNL Adobe Photoshop]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
+Adobe Workfront Fusion 시나리오에서는 [!DNL Adobe Photoshop]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
 
 
 시나리오를 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 인덱스](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -163,7 +163,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
 
 ## [!DNL Adobe Photoshop]개 모듈 및 해당 필드
 
-[!DNL Adobe Photoshop] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Adobe Photoshop] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!DNL Adobe Photoshop] 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Adobe Photoshop] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
@@ -526,25 +526,25 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (옵션 &gt; 문서) 해상도]</p>
+        <p>[!UICONTROL(옵션 &gt; 문서) 해상도]</p>
       </td>
    <td> 이미지의 해상도를 인치당 픽셀 단위로 입력하거나 매핑합니다. 72에서 300 사이여야 합니다. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (옵션 &gt; 문서) 모드]</p>
+        <p>[!UICONTROL(옵션 &gt; 문서) 모드]</p>
       </td>
    <td> 이미지 모드를 선택합니다. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (옵션 &gt; 문서) 채우기]</p>
+        <p>[!UICONTROL(옵션 &gt; 문서) 채우기]</p>
       </td>
    <td> 배경 레이어의 채우기를 투명, 흰색 또는 이미지의 배경색으로 할지 여부를 선택합니다. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (옵션 &gt; 문서) 깊이]</p>
+        <p>[!UICONTROL(옵션 &gt; 문서) 깊이]</p>
       </td>
    <td> 이미지의 비트 심도를 선택합니다. </td> 
     </tr>
@@ -826,7 +826,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (출력) 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL(출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>
@@ -877,7 +877,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (출력) 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL(출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>
@@ -964,7 +964,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (출력) 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL(출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>
@@ -1039,7 +1039,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (출력) 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL(출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>
@@ -1115,7 +1115,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
       <td>
         <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p>
         <p>For example, <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] 인증 헤더를 자동으로 추가합니다.</p>
+        <p>Workfront Fusion은 인증 헤더를 자동으로 추가합니다.</p>
       </td>
     </tr>
     <tr>

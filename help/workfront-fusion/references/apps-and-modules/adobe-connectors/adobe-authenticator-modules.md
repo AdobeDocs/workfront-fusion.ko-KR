@@ -4,9 +4,9 @@ description: Adobe Authenticator 모듈을 사용하면 단일 연결을 사용�
 author: Becky
 feature: Workfront Fusion
 exl-id: af4da661-eeee-4033-a2bb-a2196e446a3d
-source-git-commit: 983ce043afbcc44ee8af2dfcd46738f170a2b257
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1201'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ HTTP 모듈에 대한 이점은 전용 앱에서와 같이 연결을 만들 수 
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -66,7 +66,7 @@ HTTP 모듈에 대한 이점은 전용 앱에서와 같이 연결을 만들 수 
 
 * 모듈을 연결할 Adobe 제품에 대한 액세스 권한이 있어야 합니다.
 * Adobe Developer Console에 대한 액세스 권한이 있어야 합니다.
-* 모듈을 연결할 API가 포함된 프로젝트가 Adobe Developer Console에 있어야 합니다. 다음을 수행할 수 있습니다.
+* 모듈을 연결할 API가 포함된 프로젝트가 Adobe Developer Console에 있어야 합니다. 다음과 같은 작업을 수행할 수 있습니다.
 
    * API를 사용하여 새 프로젝트를 만듭니다.
 

@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion은 사용자가 액세스할 수 있는 기�
 author: Becky
 feature: Workfront Fusion
 exl-id: 6e2df1a0-c1f9-4833-b1c2-65efb3be9657
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '763'
 ht-degree: 1%
 
 ---
@@ -40,9 +40,9 @@ Adobe Workfront Fusion 레거시 라이선스 모델에서 Fusion은 사용자�
 
 #### 작업 자동화를 위한 Workfront Fusion의 이점
 
-작업 자동화를 위한 Workfront Fusion 라이선스를 사용하면 [!DNL Workfront] 워크플로를 자동화할 수 있습니다. 작업 자동화용 Workfront Fusion을 사용하면 시나리오를 만들어 조직의 고유한 작업 프로세스를 자동화할 수 있습니다.
+작업 자동화를 위한 Workfront Fusion 라이선스를 사용하면 Workfront 워크플로를 자동화할 수 있습니다. 작업 자동화용 Workfront Fusion을 사용하면 시나리오를 만들어 조직의 고유한 작업 프로세스를 자동화할 수 있습니다.
 
-[!DNL Workfront] 프로세스를 자동화하면 다음과 같은 이점이 있습니다.
+Workfront 프로세스를 자동화할 수 있는 이점은 다음과 같습니다.
 
 * 자동화는 더 빠르고 오류 발생 가능성이 낮습니다.
 * 의사 결정이 필요하지 않거나 의사 결정이 있는 워크플로우는 if/then과 같은 간단한 논리를 기반으로 자동화에 적합합니다.
@@ -105,8 +105,8 @@ Workfront Fusion for Work Automation 라이센스를 사용하면 다음에 액�
 다음 예제는 워크플로를 보여 줍니다.
 
 1. 새 사용자를 위한 스프레드시트 보기
-1. 사용자가 [!DNL Workfront]에 있는지 확인합니다.
-1. 사용자가 없는 경우 [!DNL Workfront]에서 사용자를 만듭니다.
-1. [!DNL Workfront] 사용자 ID를 스프레드시트로 다시 업로드합니다.
+1. 사용자가 Workfront에 있는지 확인합니다.
+1. 사용자가 없는 경우 Workfront에서 사용자를 만듭니다.
+1. Workfront 사용자 ID를 스프레드시트로 다시 업로드합니다.
 
 ![자동화 시나리오 예](assets/fusion-integration-example.png)

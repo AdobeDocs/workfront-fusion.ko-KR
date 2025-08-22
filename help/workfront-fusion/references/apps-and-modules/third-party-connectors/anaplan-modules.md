@@ -1,18 +1,18 @@
 ---
-description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Anaplan을 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.'
+description: Adobe Workfront Fusion 시나리오에서는 Anaplan을 사용하는 워크플로를 자동화하고 여러 타사 애플리케이션 및 서비스에 연결할 수 있습니다.
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 81c9b141-4e40-430f-99f1-c44b7a833bcd
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1983'
+source-wordcount: '2023'
 ht-degree: 1%
 
 ---
 
 # [!DNL Anaplan]개 모듈
 
-[!DNL Adobe Workfront Fusion] 시나리오에서는 [!DNL Anaplan]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
+Adobe Workfront Fusion 시나리오에서는 [!DNL Anaplan]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
 
 시나리오를 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 인덱스](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
 
@@ -57,7 +57,7 @@ ht-degree: 1%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -66,7 +66,7 @@ ht-degree: 1%
 [!DNL Anaplan] 커넥터를 사용하려면 먼저 다음 전제 조건을 충족하는지 확인해야 합니다.
 
 * 활성 [!UICONTROL Anaplan] 계정이 있어야 합니다.
-* [!DNL Workfront Fusion]이(가) 작업 공간, 모델 및 [!UICONTROL Anaplan] 계정에서 다른 [!DNL Anaplan] 개체와 상호 작용하려면 먼저 해당 개체를 구성해야 합니다.
+* Workfront Fusion이 작업 공간, 모델 및 [!DNL Anaplan]Anaplan[!UICONTROL  계정의 ] 개체를 상호 작용하려면 먼저 해당 개체를 구성해야 합니다.
 
 ## Anaplan API 정보
 
@@ -91,11 +91,11 @@ Anaplan 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-## [!DNL Anaplan]을(를) [!DNL Workfront Fusion]에 연결 {#connect-anaplan-to-workfront-fusion}
+## Workfront Fusion에 [!DNL Anaplan] 연결 {#connect-anaplan-to-workfront-fusion}
 
 [!DNL Anaplan] 모듈에 대한 연결을 만들려면:
 
-1. [!UICONTROL 연결] 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 연결]** 상자 옆에 있는 [!UICONTROL 추가]를 클릭합니다.
 1. 다음 필드를 채웁니다.
 
    <table style="table-layout:auto"> 
@@ -159,7 +159,7 @@ Anaplan 커넥터는 다음을 사용합니다.
 
 ## [!DNL Anaplan]개 모듈 및 해당 필드
 
-[!DNL Anaplan] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Anaplan] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!DNL Anaplan] 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Anaplan] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
@@ -185,7 +185,7 @@ Anaplan 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Anaplan]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">[!DNL Anaplan]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
+   <td>[!DNL Anaplan]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Anaplan] 연결</a>을 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">조사할 오브젝트 유형</td> 
@@ -221,7 +221,7 @@ Anaplan 커넥터는 다음을 사용합니다.
 <table style="table-layout:auto">
     <tr>
         <td>[!UICONTROL Connection]</td>
-        <td>[!DNL Anaplan]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">[!DNL Anaplan]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</td>
+        <td>[!DNL Anaplan]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Anaplan] 연결</a>을 참조하십시오.</td>
     </tr>
     <tr>
         <td>[!UICONTROL Workspace ID]</td>
@@ -267,7 +267,7 @@ Anaplan 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Anaplan]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">[!DNL Anaplan]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
+   <td>[!DNL Anaplan]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Anaplan] 연결</a>을 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 
@@ -301,7 +301,7 @@ Anaplan 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Anaplan]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">[!DNL Anaplan]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
+   <td>[!DNL Anaplan]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Anaplan] 연결</a>을 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 
@@ -329,7 +329,7 @@ Anaplan 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Anaplan]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">[!DNL Anaplan]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
+   <td>[!DNL Anaplan]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Anaplan] 연결</a>을 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 
@@ -357,7 +357,7 @@ Anaplan 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Anaplan]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">[!DNL Anaplan]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
+   <td>[!DNL Anaplan]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Anaplan] 연결</a>을 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
@@ -369,7 +369,7 @@ Anaplan 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] 인증 헤더를 자동으로 추가합니다.</p> </td> 
+   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion은 인증 헤더를 자동으로 추가합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 쿼리 문자열] </td> 
@@ -395,7 +395,7 @@ Anaplan 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Anaplan]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">[!DNL Anaplan]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
+   <td>[!DNL Anaplan]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Anaplan] 연결</a>을 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 레코드 유형]</td> 
@@ -485,7 +485,7 @@ Anaplan 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Anaplan]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">[!DNL Anaplan]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
+   <td>[!DNL Anaplan]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Anaplan] 연결</a>을 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 레코드 유형]</td> 
@@ -523,7 +523,7 @@ Anaplan 커넥터는 다음을 사용합니다.
 <tbody>
 <tr>
 <td role="rowheader">[!UICONTROL Connection]</td>
-<td>[!DNL Anaplan]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">[!DNL Anaplan]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</td>
+<td>[!DNL Anaplan]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Anaplan] 연결</a>을 참조하십시오.</td>
 </tr>
 <tr>
 <td role="rowheader">[!UICONTROL Workspace ID]</td>
@@ -553,7 +553,7 @@ Anaplan 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Anaplan]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">[!DNL Anaplan]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</td> 
+   <td>[!DNL Anaplan]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Anaplan] 연결</a>을 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 레코드 유형]</td> 

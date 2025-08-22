@@ -1,19 +1,19 @@
 ---
 title: HTTP > 기타 모듈
-description: ' [!DNL Adobe Workfront Fusion] HTTP 앱은 HTTP(Hypertext Transfer Protocol) 프로토콜을 기반으로 통신을 위한 다양한 모듈을 제공합니다. HTTP는 World Wide Web을 위한 데이터 통신의 기초입니다. 모듈을 사용하여 웹 페이지 및 파일을 다운로드하고, 웹후크 및 API 엔드포인트를 호출하는 등의 작업을 수행할 수 있습니다.'
+description: Adobe Workfront Fusion HTTP 앱은 HTTP(Hypertext Transfer Protocol) 프로토콜을 기반으로 통신을 위한 다양한 모듈을 제공합니다. HTTP는 World Wide Web을 위한 데이터 통신의 기초입니다. 모듈을 사용하여 웹 페이지 및 파일을 다운로드하고, 웹후크 및 API 엔드포인트를 호출하는 등의 작업을 수행할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: 7db97e6e-262d-4be2-823b-423f56a7d886
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
 
 # HTTP > 기타 모듈
 
-[!DNL Adobe Workfront Fusion] [!UICONTROL HTTP] 앱은 HTTP(Hypertext Transfer Protocol) 프로토콜을 기반으로 통신을 위한 다양한 모듈을 제공합니다. HTTP는 World Wide Web을 위한 데이터 통신의 기초입니다. 모듈을 사용하여 웹 페이지 및 파일을 다운로드하고, 웹후크 및 API 엔드포인트를 호출하는 등의 작업을 수행할 수 있습니다.
+Adobe Workfront Fusion [!UICONTROL HTTP] 앱은 HTTP(Hypertext Transfer Protocol) 프로토콜을 기반으로 통신을 위한 다양한 모듈을 제공합니다. HTTP는 World Wide Web을 위한 데이터 통신의 기초입니다. 모듈을 사용하여 웹 페이지 및 파일을 다운로드하고, 웹후크 및 API 엔드포인트를 호출하는 등의 작업을 수행할 수 있습니다.
 
 모듈의 올바른 선택은 액세스하려는 리소스가 사용하는 인증/권한 부여 메커니즘에 따라 다릅니다. 다음은 모듈의 예입니다
 
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -97,7 +97,7 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 모든 상태를 오류로 평가( 2xx 및 3xx 제외)] </td> 
-   <td> <p>이 옵션을 사용하여 오류 처리를 설정합니다.</p> <p>자세한 내용은 [!DNL Adobe Workfront Fusion]</a>에서 <a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">오류 처리를 참조하십시오.</p> </td> 
+   <td> <p>이 옵션을 사용하여 오류 처리를 설정합니다.</p> <p>자세한 내용은 <a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">Adobe Workfront Fusion에서 오류 처리</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL] </td> 
@@ -150,7 +150,7 @@ ht-degree: 0%
 
 기본 제공 함수를 사용하여 JWT 토큰을 생성할 수 있습니다.
 
-헤더:
+Header:
 
 ![JWT 헤더](/help/workfront-fusion/references/apps-and-modules/assets/jwt-header-350x19.png)
 

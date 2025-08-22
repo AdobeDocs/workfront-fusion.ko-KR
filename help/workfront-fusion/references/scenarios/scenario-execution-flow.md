@@ -5,9 +5,9 @@ description: 이 문서에서는 시나리오가 실행되는 방식과 이를 �
 author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
-source-git-commit: 0ef6dde9566ca3b97c1c52d6055f0ce44f575cee
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,11 @@ ht-degree: 0%
 
 번들이 모든 모듈을 통해 올바르게 처리되면 시나리오 세부 정보 페이지에서 시나리오가 성공으로 표시됩니다.
 
-### 예: 작업 자동화용 [!UICONTROL [!DNL Workfront Fusion]]
+### 예: [!UICONTROL 작업 자동화용 Workfront Fusion]
 
 >[!BEGINSHADEBOX]
 
-**예:** [!DNL Workfront]에서 들어오는 요청을 감시한 다음 [!DNL Workfront] 프로젝트로 변환하는 이 시나리오에서는 데이터가 다음과 같이 이동합니다.
+**예:** Workfront에서 들어오는 요청을 감시한 다음 Workfront 프로젝트로 변환하는 이 시나리오에서는 데이터가 다음과 같이 흐릅니다.
 
 첫 번째 모듈에서 수행되는 시나리오의 첫 번째 단계는 요청을 감시하는 것입니다. 검색되는 각 요청은 하나의 번들로 간주됩니다. 번들을 찾지 못한 채 모듈이 실행되면 첫 번째 모듈 이후 시나리오가 종료됩니다.
 
@@ -42,11 +42,11 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-### 예: 작업 자동화 및 통합용 [!UICONTROL [!DNL Workfront Fusion]]
+### 예: [!UICONTROL 작업 자동화 및 통합을 위한 Workfront Fusion]
 
 >[!BEGINSHADEBOX]
 
-**예:** [!DNL Adobe Workfront]에서 문서를 다운로드하여 [!DNL Dropbox]의 폴더로 보내는 이 시나리오에서는 다음과 같이 데이터가 흐릅니다.
+**예:** Adobe Workfront에서 문서를 다운로드하여 [!DNL Dropbox]의 폴더로 보내는 이 시나리오에서는 다음과 같이 데이터가 흐릅니다.
 
 첫 번째 모듈에서 수행되는 시나리오의 첫 번째 단계는 Workfront의 문서를 감시하는 것입니다. 찾은 각 문서는 하나의 번들로 간주됩니다. 번들을 찾지 못한 채 모듈이 실행되면 첫 번째 모듈 이후 시나리오가 종료됩니다.
 

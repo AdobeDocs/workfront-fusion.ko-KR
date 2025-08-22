@@ -1,19 +1,19 @@
 ---
 title: Microsoft Dynamics 365 모듈
-description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Microsoft Dynamics 365를 사용하는 워크플로를 자동화할 수 있을 뿐만 아니라 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.'
+description: Adobe Workfront Fusion 시나리오에서는 Microsoft Dynamics 365를 사용하는 워크플로를 자동화하고 여러 타사 애플리케이션 및 서비스에 연결할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: 16ae173b-10ce-481d-8f6c-1df0e65f7c0e
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1810'
-ht-degree: 0%
+source-wordcount: '1860'
+ht-degree: 1%
 
 ---
 
 # [!DNL Microsoft Dynamics 365 modules]
 
-[!DNL Adobe Workfront Fusion] 시나리오에서는 [!DNL Microsoft Dynamics 365]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
+Adobe Workfront Fusion 시나리오에서는 [!DNL Microsoft Dynamics 365]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -82,7 +82,7 @@ ht-degree: 0%
 >
 >예를 들어 사용자가 Excel 커넥터를 통해 부여된 &quot;테이블 읽기&quot; 권한을 가지고 있는 다음 Outlook 커넥터에서 연결을 만들어 이메일을 읽은 경우 권한 동의 화면에 이미 부여된 &quot;테이블 읽기&quot; 권한과 새로 필요한 &quot;이메일 쓰기&quot; 권한이 모두 표시됩니다.
 
-1. [!DNL Microsoft Dynamics 365] 모듈에서 [!UICONTROL 연결] 필드 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
+1. [!DNL Microsoft Dynamics 365] 모듈에서 **[!UICONTROL 연결]** 필드 옆에 있는 [!UICONTROL 추가]를 클릭합니다.
 
 
 1. 다음 필드를 채웁니다.
@@ -121,7 +121,7 @@ ht-degree: 0%
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Resource]</td>
-          <td><code>>https://</code> 없이 [!DNL Dynamics 365] 계정의 주소를 입력하십시오.</p>
+          <td>[!DNL Dynamics 365] 없이 <code>>https://</code> 계정의 주소를 입력하십시오.</p>
         </tr>
       </tbody>
     </table>
@@ -129,14 +129,14 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[!DNL Microsoft Azure] 포털에서 [!DNL Workfront Fusion]을(를) 등록할 때 다음 리디렉션 URI를 사용하십시오.
+>[!DNL Microsoft Azure] 포털에서 Workfront Fusion을 등록할 때 다음 리디렉션 URI를 사용하십시오.
 >
 >* `https://app.workfrontfusion.com/oauth/cb/workfront-microsoft-dynamics2`
 
 
 ## [!DNL Microsoft Dynamics 365]개 모듈 및 해당 필드
 
-[!DNL Microsoft Dynamics 365] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Microsoft Dynamics 365] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!DNL Microsoft Dynamics 365] 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Microsoft Dynamics 365] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
@@ -167,7 +167,7 @@ ht-degree: 0%
     <ol> 
      <li value="1"> <p>Webhook 필드 오른쪽에 있는 <strong>[!UICONTROL Add]</strong>을(를) 클릭합니다.</p> </li> 
      <li value="2"> <p><strong>[!UICONTROL Webhook]</strong> 이름 필드에 Webhook를 설명하는 이름을 입력합니다.</p> </li> 
-     <li value="3"> <p><strong>[!UICONTROL 연결]</strong> 필드에서 선택한 항목을 사용할 연결을 선택합니다</p> <p>[!DNL Microsoft Dynamics 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">[!DNL Microsoft Dynamics 365]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오. </p> </li> 
+     <li value="3"> <p><strong>[!UICONTROL 연결]</strong> 필드에서 선택한 항목을 사용할 연결을 선택합니다</p> <p>[!DNL Microsoft Dynamics 365] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Microsoft Dynamics 365] 연결</a>을 참조하십시오. </p> </li> 
      <li value="4"> <p>웹후크를 저장하고 모듈로 돌아가려면 <strong>[!UICONTROL 저장]</strong>을(를) 클릭합니다.</p> </li> 
     </ol> </td> 
   </tr> 
@@ -190,7 +190,7 @@ ht-degree: 0%
  <tbody> "
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>[!DNL Microsoft Dynamics 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">[!DNL Microsoft Dynamics 365]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오. </p> </td> 
+  <td> <p>[!DNL Microsoft Dynamics 365] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Microsoft Dynamics 365] 연결</a>을 참조하십시오. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Include]</td> 
@@ -236,7 +236,7 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Microsoft Dynamics 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">[!DNL Microsoft Dynamics 365]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오. </p> </td> 
+   <td> <p>[!DNL Microsoft Dynamics 365] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Microsoft Dynamics 365] 연결</a>을 참조하십시오. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 엔티티 유형]</td> 
@@ -269,7 +269,7 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>[!DNL Microsoft Dynamics 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">[!DNL Microsoft Dynamics 365]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오. </p> </td> 
+  <td> <p>[!DNL Microsoft Dynamics 365] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Microsoft Dynamics 365] 연결</a>을 참조하십시오. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 엔티티 유형]</td> 
@@ -288,7 +288,7 @@ ht-degree: 0%
 
 모듈은 상태 코드, 헤더 및 본문에 대한 정보를 반환합니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
 
-자세한 내용은 [!DNL Dynamics 365 Customer Engagement Web API] 사용에 대한 [!DNL Microsoft] 설명서를 참조하세요.
+자세한 내용은 [!DNL Microsoft] 사용에 대한 [!DNL Dynamics 365 Customer Engagement Web API] 설명서를 참조하세요.
 
 이 모듈을 구성할 때 다음 필드가 표시됩니다.
 
@@ -298,7 +298,7 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>[!DNL Microsoft Dynamics 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">[!DNL Microsoft Dynamics 365]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오. </p> </td> 
+  <td> <p>[!DNL Microsoft Dynamics 365] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Microsoft Dynamics 365] 연결</a>을 참조하십시오. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
@@ -310,7 +310,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] 인증 헤더를 추가합니다.</p> </td> 
+   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion은 사용자에게 권한 부여 헤더를 추가합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 쿼리 문자열]</td> 
@@ -342,7 +342,7 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>[!DNL Microsoft Dynamics 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">[!DNL Microsoft Dynamics 365]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오. </p> </td> 
+  <td> <p>[!DNL Microsoft Dynamics 365] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Microsoft Dynamics 365] 연결</a>을 참조하십시오. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 엔티티 유형]</td> 
@@ -375,7 +375,7 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>[!DNL Microsoft Dynamics 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">[!DNL Microsoft Dynamics 365]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오. </p> </td> 
+  <td> <p>[!DNL Microsoft Dynamics 365] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Microsoft Dynamics 365] 연결</a>을 참조하십시오. </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL 엔티티 유형]</td> 
@@ -410,7 +410,7 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>[!DNL Microsoft Dynamics 365] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">[!DNL Microsoft Dynamics 365]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오. </p> </td> 
+  <td> <p>[!DNL Microsoft Dynamics 365] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Microsoft Dynamics 365] 연결</a>을 참조하십시오. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 엔티티 유형]</td> 
@@ -421,7 +421,7 @@ ht-degree: 0%
    <td> <p>이 검색에 사용할 필터를 선택합니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL 표준 필터]</strong> </p> <p>필드 및 연산자를 선택하고 검색할 값을 입력하거나 매핑하여 필터를 설정합니다. 필터에 AND 또는 OR 규칙을 사용할 수 있습니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL 쿼리 함수]</strong> </p> <p>검색할 [!DNL Dynamics 365] 웹 API 쿼리 함수를 입력하십시오. </p> <p>쿼리 함수에 대한 자세한 내용은 [!DNL Microsoft] 설명서의 <a href="https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/queryfunctions?view=dynamics-ce-odata-9">웹 API 쿼리 함수 참조</a>를 참조하십시오.</p> </li> 
+     <li> <p><strong>[!UICONTROL 쿼리 함수]</strong> </p> <p>검색할 [!DNL Dynamics 365] 웹 API 쿼리 함수를 입력하십시오. </p> <p>쿼리 함수에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/queryfunctions?view=dynamics-ce-odata-9"> 설명서의 </a>웹 API 쿼리 함수 참조[!DNL Microsoft]를 참조하십시오.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 

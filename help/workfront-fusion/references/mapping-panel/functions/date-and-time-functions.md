@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion 매핑 패널에서 다음 날짜 및 시간
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: 9249223c6fbe0360b11d41988fe8b9c35e45dbb8
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1879'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 현재 시간을 YYYY-MM-DD-hh:mm:ss 형식으로 가져옵니다.
 
-### timestamp
+### 타임스탬프
 
 현재 시간을 Unix 타임스탬프로 가져옵니다.
 
@@ -139,7 +139,7 @@ ht-degree: 1%
 
 0에서 59 사이의 숫자를 지정하십시오. 숫자가 해당 범위를 벗어나면 함수는 이전 분 (음수) 또는 이후 분 (양수)에서 1초를 반환합니다.
 
-범위 밖의 숫자를 지정해야 하는 경우 [addSeconds(날짜; 숫자)](#addseconds-date-number) 섹션에 설명된 대로 [!UICONTROL &#x200B; addSeconds]을 사용하는 것이 좋습니다.
+범위 밖의 숫자를 지정해야 하는 경우 [!UICONTROL addSeconds(날짜; 숫자)] 섹션에 설명된 대로 [ addSeconds](#addseconds-date-number)을 사용하는 것이 좋습니다.
 
 >[!BEGINSHADEBOX]
 
@@ -285,7 +285,7 @@ ht-degree: 1%
 
 ### [!UICONTROL formatDate(date; format; [timezone])]
 
-`Dec 10, 2021 8:30 PM`과(와) 같이 텍스트 값으로 서식을 지정하려는 Date 값(예: `12-10-2021 20:30`)이 있는 경우 이 함수를 사용합니다.
+`12-10-2021 20:30`과(와) 같이 텍스트 값으로 서식을 지정하려는 Date 값(예: `Dec 10, 2021 8:30 PM`)이 있는 경우 이 함수를 사용합니다.
 
 이 기능은 예를 들어 동일한 시나리오에서 한 앱 또는 웹 서비스의 날짜 형식을 연결된 앱 또는 웹 서비스의 날짜 형식으로 변경해야 하는 경우 유용합니다.
 
@@ -307,7 +307,7 @@ ht-degree: 1%
  <tbody> 
   <tr> 
    <td>[!UICONTROL 날짜] </td> 
-   <td>일자 </td> 
+   <td>Date </td> 
    <td> <p>날짜 값을 텍스트 값으로 변환합니다. </p> </td> 
   </tr> 
   <tr> 
@@ -341,11 +341,11 @@ ht-degree: 1%
 
 * `formatDate(1. Date created; YYYY-MM-DD hh:mm A)`
 
-  반환 2018-10-01 09:32 AM
+  2018-10-01 09:32 AM 반환
 
 * `formatDate(1. Date created;DD.MM.YYYY HH:mm;UTC)`
 
-  반환 01.10.2018 07:32
+  반환: 01.10.2018 07:32
 
 * `formatDate(now;DD.MM.YYYY HH:mm)`
 
@@ -459,7 +459,7 @@ Date2는 Date1에서 빼집니다.
 
 #### 월의 n번째 요일을 계산하는 방법
 
-이 섹션은 한 달에 n번째 요일을 가져오는 방법을 설명하는 [!DNL Exceljet] 웹 페이지의 [!DNL Workfront Fusion]에 맞게 조정되었습니다.
+이 섹션은 한 달에 n번째 요일을 가져오는 방법을 설명하는 [!DNL Exceljet] 웹 페이지에서 Workfront Fusion에 맞게 조정되었습니다.
 
 월의 n번째 요일(예: 첫 번째 화요일, 세 번째 금요일 등)에 해당하는 날짜를 계산해야 하는 경우 다음 공식을 사용할 수 있습니다.
 

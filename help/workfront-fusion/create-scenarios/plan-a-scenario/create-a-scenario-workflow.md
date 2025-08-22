@@ -4,9 +4,9 @@ description: 시나리오를 만들려면 이 일반 워크플로를 따르십�
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: 394f80a2d7c124bbd00e1a5b51ad3dc6e73a996b
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '808'
 ht-degree: 0%
 
 ---
@@ -34,18 +34,18 @@ ht-degree: 0%
 
 ## 시나리오 만들기 및 이름 지정
 
-1. [!DNL Workfront Fusion] 계정에 로그인합니다.
-1. 왼쪽 패널에서 **[!UICONTROL Scenarios]** ![시나리오 아이콘](assets/scenarios-icon.png)을 클릭합니다.
+1. Workfront Fusion 계정에 로그인합니다.
+1. 왼쪽 패널에서 **[!UICONTROL 시나리오]** ![시나리오 아이콘](assets/scenarios-icon.png)을 클릭합니다.
 
    >[!NOTE]
    >
    >왼쪽 탐색 패널이나 해당 아이콘이 보이지 않으면 메뉴 ![메뉴](assets/main-menu-icon-left-nav.png) 아이콘을 클릭합니다.
 
-1. (선택 사항) [!UICONTROL **폴더**] 패널에서 **[!UICONTROL Add folder]** 아이콘 ![폴더 추가 아이콘](assets/add-folder-icon.png)을 클릭한 다음 첫 번째 폴더의 이름을 &quot;연습 시나리오&quot;와 같이 입력합니다.
+1. (선택 사항)[!UICONTROL **폴더**] 패널에서 **[!UICONTROL 폴더 추가]** 아이콘 ![폴더 추가 아이콘](assets/add-folder-icon.png)을 클릭한 다음 첫 번째 폴더에 대해 &quot;연습 시나리오&quot;와 같은 이름을 입력합니다.
 
-1. (선택 사항) 폴더를 연 다음 페이지의 오른쪽 상단에 있는 **[!UICONTROL Create a new scenario]**&#x200B;을(를) 클릭합니다.
+1. (선택 사항) 폴더를 연 다음 페이지의 오른쪽 상단에 있는 **[!UICONTROL 새 시나리오 만들기]**&#x200B;를 클릭합니다.
 
-1. 왼쪽 상단 모서리에서 **[!UICONTROL New scenario]** 자리 표시자 이름을 선택한 다음 &quot;연습 시나리오 1&quot;과 같은 이름을 입력하십시오.
+1. 왼쪽 상단에서 **[!UICONTROL 새 시나리오]** 자리 표시자 이름을 선택한 다음 &quot;연습 시나리오 1&quot;과 같은 이름을 입력하십시오.
 
    ![시나리오 이름 지정](assets/name-the-scenario.png)
 
@@ -101,13 +101,13 @@ Google, Microsoft 또는 전용 커넥터가 없는 응용 프로그램과 관�
 
 시나리오를 테스트하면 시나리오가 의도한 대로 작동하는지 확인할 수 있습니다. 그런 다음 결과에 따라 시나리오를 수정한 다음 다시 테스트할 수 있습니다.
 
-1. 시나리오 편집기의 왼쪽 아래에서 **[!UICONTROL Run once]**&#x200B;을(를) 클릭합니다.
+1. 시나리오 편집기의 왼쪽 아래에서 **[!UICONTROL 한 번 실행]**&#x200B;을 클릭합니다.
 1. 시나리오 실행이 끝나면 각 모듈 위의 실행 검사기 버블을 클릭하여 정보 입력과 해당 모듈의 출력을 확인합니다.
 
    * 시나리오 실행 정보를 읽는 방법에 대한 일반 정보는 [시나리오 실행 흐름](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md)을 참조하십시오.
-   * 처리된 번들에 대한 자세한 내용은  [!DNL Adobe Workfront Fusion][&#128279;](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md)의 시나리오 실행, 주기 및 단계를 참조하십시오.
+   * 처리된 번들에 대한 자세한 내용은 [Adobe Workfront Fusion의 시나리오 실행, 주기 및 단계](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md)를 참조하십시오.
 
-1. [!DNL Workfront Fusion]에서 왼쪽 아래 모서리 근처에 있는 **[!UICONTROL Save]** ![저장 아이콘](assets/save-icon.png)을 클릭하여 시나리오에 대한 진행률을 저장합니다.
+1. Workfront Fusion에서 왼쪽 하단 모서리 근처에 있는 **[!UICONTROL 저장]** ![저장 아이콘](assets/save-icon.png)을 클릭하여 시나리오에 대한 진행 상황을 저장합니다.
 
    >[!IMPORTANT]
    >
@@ -138,22 +138,22 @@ Google, Microsoft 또는 전용 커넥터가 없는 응용 프로그램과 관�
  </thead> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Save] </td> 
+   <td role="rowheader">[!UICONTROL 저장] </td> 
    <td>Ctrl+Shift+S</td> 
    <td>Cmd+Shift+S</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Run Once]</td> 
+   <td role="rowheader">[!UICONTROL 한 번 실행]</td> 
    <td>Ctrl+Shift+Enter</td> 
    <td>Cmd+Shift+Enter</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Open the DevTool]</td> 
+   <td role="rowheader">[!UICONTROL DevTool 열기]</td> 
    <td>F12</td> 
    <td>Ctrl+Fn+F12</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select multiple modules]</td> 
+   <td role="rowheader">[!UICONTROL 여러 모듈 선택]</td> 
    <td>Shift+드래그</td> 
    <td>Shift+드래그</span> </td> 
   </tr> 
@@ -163,7 +163,7 @@ Google, Microsoft 또는 전용 커넥터가 없는 응용 프로그램과 관�
    <td>Cmd+C</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Paste]</td> 
+   <td role="rowheader">[!UICONTROL 붙여넣기]</td> 
    <td>Ctrl+V</td> 
    <td>Cmd+V</span> </td> 
   </tr> 

@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 설명서
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 문서, 튜토리얼 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
-source-git-commit: ef41c85010b53bbc80c5b44ba8a622027c9e4911
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1855'
 ht-degree: 3%
 
 ---
@@ -254,7 +254,7 @@ ht-degree: 3%
    * [템플릿 보기, 편집 및 삭제](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)
    * [템플릿 게시 및 공유](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)
    * [현재 사용 가능한 Adobe Workfront Fusion 템플릿](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md)
-   * [[!DNL Adobe Workfront Fusion]개 템플릿 FAQ](/help/workfront-fusion/create-and-manage-templates/fusion-templates-faqs.md)
+   * [Adobe Workfront Fusion 템플릿 FAQ](/help/workfront-fusion/create-and-manage-templates/fusion-templates-faqs.md)
 * 참조 {#references}
    * [참조](/help/workfront-fusion/references/references-toc.md)
    * 라이선스 및 역할 {#licenses-and-roles}
@@ -311,7 +311,7 @@ ht-degree: 3%
          * [FTP 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/ftp-modules.md)
          * [SFTP 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/sftp.md)
          * [웹후크](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md)
-         * [ [!DNL Adobe Workfront Fusion]의 HTTP 모듈에서 상호 TLS 사용](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)
+         * [Adobe Workfront Fusion의 HTTP 모듈에서 상호 TLS 사용](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)
       * Adobe 커넥터 {#adobe-connectors}
          * [Adobe Acrobat Sign 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-sign-modules.md)
          * [Adobe Authenticator 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md)

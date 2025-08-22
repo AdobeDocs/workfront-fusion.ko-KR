@@ -5,16 +5,16 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 94a823a6-3c70-42a1-b6cf-298591dbca15
-source-git-commit: 2b2030d062b5ec8c81476a8950fee3b15f96dcd2
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2200'
+source-wordcount: '2244'
 ht-degree: 0%
 
 ---
 
 # DocuSign 모듈
 
-[!DNL Adobe Workfront Fusion] [!DNL DocuSign] 모듈을 사용하면 봉투 상태를 모니터링 및 검색하고 봉투를 검색 및 검색하거나 [!DNL DocuSign] 계정에 로그인할 문서를 다운로드하여 보낼 수 있습니다.
+Adobe Workfront Fusion [!DNL DocuSign] 모듈을 사용하면 봉투 상태를 모니터링 및 검색하고 봉투를 검색 및 검색하거나 문서를 다운로드하여 보내 [!DNL DocuSign] 계정에 로그인할 수 있습니다.
 
 시나리오를 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 인덱스](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -82,12 +82,12 @@ DocuSign 커넥터는 다음을 사용합니다.
  </tbody> 
  </table>
 
-## [!DNL DocuSign]을(를) [!DNL Workfront Fusion]에 연결 {#connect-docusign-to-workfront-fusion}
+## Workfront Fusion에 [!DNL DocuSign] 연결 {#connect-docusign-to-workfront-fusion}
 
 [!DNL DocuSign] 모듈에 대한 연결을 만들려면:
 
-1. 첫 번째 [!DNL DocuSign] 모듈 구성을 시작할 때 [!UICONTROL 연결] 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
-1. 다음을 입력합니다.
+1. 첫 번째 **[!UICONTROL 모듈 구성을 시작할 때]**&#x200B;연결[!UICONTROL  상자 옆에 있는 ]추가[!DNL DocuSign]를 클릭합니다.
+1. 다음을 입력하십시오.
 
    <table style="table-layout:auto">
     <col> 
@@ -116,7 +116,7 @@ DocuSign 커넥터는 다음을 사용합니다.
 
 ## [!DNL DocuSign]개 모듈 및 해당 필드
 
-[!DNL DocuSign] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL DocuSign] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!DNL DocuSign] 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL DocuSign] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
@@ -137,7 +137,7 @@ DocuSign 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL DocuSign] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL DocuSign] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 Docusign 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정] </td> 
@@ -187,7 +187,7 @@ DocuSign 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL DocuSign] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">[!DNL DocuSign]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td>
+   <td> <p>[!DNL DocuSign] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL DocuSign] 연결</a>을 참조하십시오.</p> </td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정] </td> 
@@ -307,7 +307,7 @@ DocuSign 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">
-     생성 후 
+     생성 후 [!UICONTROL]
    </td> 
    <td> <p>봉투를 초안으로 저장할지 서명을 위해 전송할지 선택합니다.</p> </td> 
   </tr> 
@@ -396,7 +396,7 @@ DocuSign 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL DocuSign] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">[!DNL DocuSign]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL DocuSign] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL DocuSign] 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 계정]</td> 
@@ -412,7 +412,7 @@ DocuSign 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td>[!UICONTROL Headers]</td> 
-   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다. 요청의 콘텐츠 유형을 결정합니다.</p> <p>For example,<code> {"Content-type":"application/json"}</code></p> <p>참고: 오류가 발생하여 원래 위치를 확인하기 어려운 경우 [!DNL Workfront] 설명서를 기반으로 헤더를 수정하는 것이 좋습니다. 사용자 지정 API 호출이 422 HTTP 요청 오류를 반환하는 경우 "Content-Type":"text/plain" 헤더를 사용해 보십시오.</p> </td> 
+   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다. 요청의 콘텐츠 유형을 결정합니다.</p> <p>For example,<code> {"Content-type":"application/json"}</code></p> <p>참고: 오류가 발생하여 원래 위치를 확인하기 어려운 경우 Workfront 설명서를 기반으로 헤더를 수정하는 것이 좋습니다. 사용자 지정 API 호출이 422 HTTP 요청 오류를 반환하는 경우 "Content-Type":"text/plain" 헤더를 사용해 보십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 쿼리 문자열]</td> 
@@ -470,7 +470,7 @@ DocuSign 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL DocuSign] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">[!DNL DocuSign]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td>
+   <td> <p>[!DNL DocuSign] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL DocuSign] 연결</a>을 참조하십시오.</p> </td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정] </td> 
@@ -521,7 +521,7 @@ DocuSign 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL DocuSign] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">[!DNL DocuSign]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td>
+   <td> <p>[!DNL DocuSign] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL DocuSign] 연결</a>을 참조하십시오.</p> </td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정] </td> 
@@ -564,7 +564,7 @@ DocuSign 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL DocuSign] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">[!DNL DocuSign]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td>
+   <td> <p>[!DNL DocuSign] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL DocuSign] 연결</a>을 참조하십시오.</p> </td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정] </td> 
@@ -591,7 +591,7 @@ DocuSign 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL DocuSign] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">[!DNL DocuSign]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td>
+   <td> <p>[!DNL DocuSign] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL DocuSign] 연결</a>을 참조하십시오.</p> </td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정] </td> 
@@ -614,7 +614,7 @@ DocuSign 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL DocuSign] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">[!DNL DocuSign]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td>
+   <td> <p>[!DNL DocuSign] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL DocuSign] 연결</a>을 참조하십시오.</p> </td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정] </td> 

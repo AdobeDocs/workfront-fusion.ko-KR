@@ -1,19 +1,19 @@
 ---
 title: Markdown 모듈
-description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Markdown 모듈을 사용하여 Markdown을 HTML으로, HTML을 Markdown으로 변환할 수 있습니다.'
+description: Adobe Workfront Fusion 시나리오에서는 Markdown 모듈을 사용하여 Markdown을 HTML으로, HTML을 Markdown으로 변환할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: f1134bbf-c244-4f52-8744-f97453b2ce8a
-source-git-commit: 7edfe4a7b19597ea6e56bb2ca3969d742dbaf999
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '285'
 ht-degree: 1%
 
 ---
 
 # [!UICONTROL Markdown] 모듈
 
-[!DNL Adobe Workfront Fusion] 시나리오에서는 [!UICONTROL Markdown] 모듈을 사용하여 Markdown을 HTML으로, HTML을 Markdown으로 변환할 수 있습니다.
+Adobe Workfront Fusion 시나리오에서는 [!UICONTROL Markdown] 모듈을 사용하여 Markdown을 HTML으로, HTML을 Markdown으로 변환할 수 있습니다.
 
 시나리오를 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 인덱스](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
 
@@ -56,7 +56,7 @@ ht-degree: 1%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -74,7 +74,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL GitHub Flavored Markdown] </td> 
-   <td> <p>HTML을 [!DNL GitHub Flavored Markdown] (으)로 변환하려면 이 옵션을 활성화하십시오.</p> <p>자세한 내용은 [!DNL GitHub] 설명서에서 Markdown 치트시트를 참조하십시오.</p> </td> 
+   <td> <p>HTML을 [!DNL GitHub Flavored Markdown](으)로 변환하려면 이 옵션을 활성화하십시오.</p> <p>자세한 내용은 [!DNL GitHub] 설명서에서 Markdown 치트시트를 참조하십시오.</p> </td> 
   </tr> 
  </tbody> 
 </table>

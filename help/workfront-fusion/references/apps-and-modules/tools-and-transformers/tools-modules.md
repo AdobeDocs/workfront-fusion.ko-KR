@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion Tools] 섹션에는 시나리오를 
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2286'
+source-wordcount: '2292'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -254,7 +254,7 @@ ht-degree: 0%
 >
 >첫 번째 시나리오에서는 현재 타임스탬프와 함께 필요한 모든 정보를 데이터 저장소에 저장합니다. 두 번째 시나리오는 의도한 지연보다 오래된 타임스탬프를 갖는 레코드에 대해 데이터 저장소를 정기적으로 확인하고, 레코드를 검색하고, 데이터 처리를 완료하고, 데이터 저장소에서 레코드를 제거합니다.
 >
-><!--For more information on data stores, see [Data Stores in [!DNL Adobe Workfront Fusion]]().-->
+><!--For more information on data stores, see [Data Stores in Adobe Workfront Fusion]().-->
 >
 >특정 데이터 저장소 모듈에 대한 자세한 내용은 [[!UICONTROL 데이터 저장소] 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md)을 참조하세요.
 

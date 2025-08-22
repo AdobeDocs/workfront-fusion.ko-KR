@@ -4,9 +4,9 @@ description: 시나리오를 만들거나 편집할 때 설정을 구성하여 �
 author: Becky
 feature: Workfront Fusion
 exl-id: b3aed366-c399-44fa-8967-54ecb8647d96
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -120,7 +120,7 @@ ht-degree: 0%
 
 ## [!UICONTROL 라우터]
 
-[!UICONTROL 라우터] 모듈을 사용하면 흐름을 여러 경로로 분기하고 각 경로 내의 데이터를 다르게 처리할 수 있습니다. [!UICONTROL Router] 모듈이 번들을 받으면, [!UICONTROL Router] 모듈에 경로가 첨부된 순서대로 연결된 각 경로로 전달합니다. 자세한 내용은  [!DNL Adobe Workfront Fusion][&#128279;](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)의 라우터 모듈을 참조하십시오.
+[!UICONTROL 라우터] 모듈을 사용하면 흐름을 여러 경로로 분기하고 각 경로 내의 데이터를 다르게 처리할 수 있습니다. [!UICONTROL Router] 모듈이 번들을 받으면, [!UICONTROL Router] 모듈에 경로가 첨부된 순서대로 연결된 각 경로로 전달합니다. 자세한 내용은 Adobe Workfront Fusion의 [라우터 모듈](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)을 참조하십시오.
 
 ## 지시문
 

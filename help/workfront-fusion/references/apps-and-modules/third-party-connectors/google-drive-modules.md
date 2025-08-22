@@ -4,18 +4,18 @@ description: ' [!DNL Adobe Workfront Fusion Google Drive] 모듈을 사용하면
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 788f4e1b-d774-45ad-a8be-b16922c1d5dc
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2041'
+source-wordcount: '2096'
 ht-degree: 0%
 
 ---
 
 # [!DNL Google Drive]개 모듈
 
-[!DNL Adobe Workfront Fusion] [!DNL Google Drive] 모듈을 사용하면 [!DNL Google Drive]에서 파일, 폴더 또는 공유 드라이브를 모니터링, 검색, 만들기, 업데이트, 삭제 및 관리할 수 있습니다.
+Adobe Workfront Fusion [!DNL Google Drive] 모듈을 사용하면 [!DNL Google Drive]에서 파일, 폴더 또는 공유 드라이브를 모니터링, 검색, 만들기, 업데이트, 삭제 및 관리할 수 있습니다.
 
-[!DNL Adobe Workfront Fusion] 시나리오에서는 [!DNL Google Drive] 계정을 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
+Adobe Workfront Fusion 시나리오에서는 [!DNL Google Drive] 계정을 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
 
 시나리오를 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 인덱스](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -89,17 +89,17 @@ Google 드라이브 커넥터는 다음을 사용합니다.
 
 
 
-## [!DNL Workfront Fusion]에 [!DNL Google Drive] 연결 중
+## Workfront Fusion에 [!DNL Google Drive] 연결 중
 
 [!DNL @gmail.com] 또는 [!DNL @googlemail.com] 사용자를 사용하는 경우 [!DNL Google Cloud Platform]에 OAuth 클라이언트를 만들어 [!UICONTROL 클라이언트 ID] 및 [!UICONTROL 클라이언트 암호]를 얻어야 합니다.
 
-OAuth 클라이언트를 만들고 [!UICONTROL 클라이언트 ID] 및 [!UICONTROL 클라이언트 암호]를 얻는 방법에 대한 단계별 지침은 [연결 [!DNL Adobe Workfront Fusion] to [!DNL Google Services] 사용자 지정 OAuth 클라이언트 사용](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)을 참조하십시오.
+OAuth 클라이언트를 만들고 [!UICONTROL 클라이언트 ID] 및 [!UICONTROL 클라이언트 암호]를 얻는 방법에 대한 단계별 지침은 [Adobe Workfront Fusion 연결 [!DNL Google Services] 사용자 지정 OAuth 클라이언트 사용](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)을 참조하십시오.
 
 [!DNL Google Drive] 계정을 [!UICONTROL Workfront Fusion]에 연결하는 방법에 대한 지침은 [[!UICONTROL Adobe Workfront Fusion에 연결 만들기] - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)을 참조하십시오.
 
 ## [!DNL Google Drive]개 모듈 및 해당 필드
 
-[!DNL Google Drive] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Google Drive] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!DNL Google Drive] 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Google Drive] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
@@ -127,7 +127,7 @@ OAuth 클라이언트를 만들고 [!UICONTROL 클라이언트 ID] 및 [!UICONTR
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Drive] 계정을 [!DNL Workfront Fusion]에 연결하는 방법은 <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL Google Drive] 연결</a>을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Google Drive] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL Google Drive] 연결</a>을 참조하십시오</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 조사할 파일]</td> 
@@ -162,7 +162,7 @@ OAuth 클라이언트를 만들고 [!UICONTROL 클라이언트 ID] 및 [!UICONTR
   </tr> 
   <tr> 
    <td>[!UICONTROL 다운로드한 최대 파일 수]</td> 
-   <td>[!DNL Workfront Fusion]이(가) 한 주기 동안 다운로드할 최대 결과 수(시나리오 실행당 반복 횟수)를 설정합니다.</td> 
+   <td>Workfront Fusion이 한 주기 동안 다운로드할 최대 결과 수(시나리오 실행당 반복 횟수)를 설정합니다.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -177,7 +177,7 @@ OAuth 클라이언트를 만들고 [!UICONTROL 클라이언트 ID] 및 [!UICONTR
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Drive] 계정을 [!DNL Workfront Fusion]에 연결하는 방법은 <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL Google Drive] 연결</a>을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Google Drive] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL Google Drive] 연결</a>을 참조하십시오</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 파일]</td> 
@@ -189,7 +189,7 @@ OAuth 클라이언트를 만들고 [!UICONTROL 클라이언트 ID] 및 [!UICONTR
   </tr> 
   <tr> 
    <td>[!UICONTROL 반환되는 최대 주석 수]</td> 
-   <td>[!DNL Workfront Fusion]이(가) 한 주기 동안 반환할 최대 댓글 수(시나리오 실행당 반복 횟수)를 설정하십시오.</td> 
+   <td>Workfront Fusion이 한 주기 동안 반환할 최대 주석 수(시나리오 실행당 반복 수)를 설정합니다.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -204,7 +204,7 @@ OAuth 클라이언트를 만들고 [!UICONTROL 클라이언트 ID] 및 [!UICONTR
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection] </td>
-   <td> <p>[!DNL Google Drive] 계정을 [!DNL Workfront Fusion]에 연결하는 방법은 <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL Google Drive] 연결</a>을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Google Drive] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL Google Drive] 연결</a>을 참조하십시오</p> </td> 
   </tr> 
   <tr>
     <td>[!UICONTROL 감시할 폴더 선택]</td>
@@ -243,7 +243,7 @@ OAuth 클라이언트를 만들고 [!UICONTROL 클라이언트 ID] 및 [!UICONTR
   </tr> 
   <tr> 
     <td>[!UICONTROL 다운로드한 최대 파일 수]</td>
-    <td>[!DNL Workfront Fusion]이(가) 한 주기 동안 다운로드할 최대 결과 수(시나리오 실행당 반복 횟수)를 설정합니다.</td>
+    <td>Workfront Fusion이 한 주기 동안 다운로드할 최대 결과 수(시나리오 실행당 반복 횟수)를 설정합니다.</td>
   </tr> 
  </tbody> 
 </table>
@@ -258,7 +258,7 @@ OAuth 클라이언트를 만들고 [!UICONTROL 클라이언트 ID] 및 [!UICONTR
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Drive] 계정을 [!DNL Workfront Fusion]에 연결하는 방법은 <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL Google Drive] 연결</a>을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Google Drive] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL Google Drive] 연결</a>을 참조하십시오</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 감시할 폴더 선택]</td> 
@@ -297,7 +297,7 @@ OAuth 클라이언트를 만들고 [!UICONTROL 클라이언트 ID] 및 [!UICONTR
   </tr> 
   <tr> 
    <td>[!UICONTROL 다운로드한 최대 파일 수]</td> 
-   <td>[!DNL Workfront Fusion]이(가) 한 주기 동안 다운로드할 최대 결과 수(시나리오 실행당 반복 횟수)를 설정합니다.</td> 
+   <td>Workfront Fusion이 한 주기 동안 다운로드할 최대 결과 수(시나리오 실행당 반복 횟수)를 설정합니다.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -324,7 +324,7 @@ OAuth 클라이언트를 만들고 [!UICONTROL 클라이언트 ID] 및 [!UICONTR
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Drive] 계정을 [!DNL Workfront Fusion]에 연결하는 방법은 <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL Google Drive] 연결</a>을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Google Drive] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL Google Drive] 연결</a>을 참조하십시오</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 대상]</td> 
@@ -359,7 +359,7 @@ OAuth 클라이언트를 만들고 [!UICONTROL 클라이언트 ID] 및 [!UICONTR
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Drive] 계정을 [!DNL Workfront Fusion]에 연결하는 방법은 <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL Google Drive] 연결</a>을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Google Drive] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL Google Drive] 연결</a>을 참조하십시오</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 대상]</td> 
@@ -394,7 +394,7 @@ OAuth 클라이언트를 만들고 [!UICONTROL 클라이언트 ID] 및 [!UICONTR
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Drive] 계정을 [!DNL Workfront Fusion]에 연결하는 방법은 <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL Google Drive] 연결</a>을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Google Drive] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL Google Drive] 연결</a>을 참조하십시오</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 파일 ID]</td> 
@@ -413,7 +413,7 @@ OAuth 클라이언트를 만들고 [!UICONTROL 클라이언트 ID] 및 [!UICONTR
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Drive] 계정을 [!DNL Workfront Fusion]에 연결하는 방법은 <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL Google Drive] 연결</a>을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Google Drive] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL Google Drive] 연결</a>을 참조하십시오</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL [!DNL Google Documents]개 파일을 형식으로 변환]</td> 
@@ -448,7 +448,7 @@ OAuth 클라이언트를 만들고 [!UICONTROL 클라이언트 ID] 및 [!UICONTR
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Drive] 계정을 [!DNL Workfront Fusion]에 연결하는 방법은 <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL Google Drive] 연결</a>을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Google Drive] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL Google Drive] 연결</a>을 참조하십시오</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 파일 ID]</td> 
@@ -467,7 +467,7 @@ OAuth 클라이언트를 만들고 [!UICONTROL 클라이언트 ID] 및 [!UICONTR
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Drive] 계정을 [!DNL Workfront Fusion]에 연결하는 방법은 <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL Google Drive] 연결</a>을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Google Drive] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL Google Drive] 연결</a>을 참조하십시오</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 파일 ID]</td> 
@@ -486,7 +486,7 @@ OAuth 클라이언트를 만들고 [!UICONTROL 클라이언트 ID] 및 [!UICONTR
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Drive] 계정을 [!DNL Workfront Fusion]에 연결하는 방법은 <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL Google Drive] 연결</a>을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Google Drive] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL Google Drive] 연결</a>을 참조하십시오</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 대상]</td> 
@@ -526,7 +526,7 @@ OAuth 클라이언트를 만들고 [!UICONTROL 클라이언트 ID] 및 [!UICONTR
   </tr> 
   <tr> 
    <td>[!UICONTROL 반환되는 최대 결과 수]</td> 
-   <td>한 실행 주기 동안 [!DNL Workfront Fusion]이(가) 반환할 최대 파일 또는 폴더 수를 설정하십시오.</td> 
+   <td>한 실행 주기 동안 Workfront Fusion이 반환할 최대 파일 또는 폴더 수를 설정합니다.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 모듈이 결과를 반환하지 않더라도 라우트 실행을 계속합니다.]</td> 
@@ -545,7 +545,7 @@ OAuth 클라이언트를 만들고 [!UICONTROL 클라이언트 ID] 및 [!UICONTR
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Drive] 계정을 [!DNL Workfront Fusion]에 연결하는 방법은 <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL Google Drive] 연결</a>을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Google Drive] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL Google Drive] 연결</a>을 참조하십시오</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 대상]</td> 
@@ -592,7 +592,7 @@ OAuth 클라이언트를 만들고 [!UICONTROL 클라이언트 ID] 및 [!UICONTR
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Drive] 계정을 [!DNL Workfront Fusion]에 연결하는 방법은 <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL Google Drive] 연결</a>을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Google Drive] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL Google Drive] 연결</a>을 참조하십시오</p> </td> 
   </tr> 
   <tr> 
    <td>[!DNL Destination]</td> 

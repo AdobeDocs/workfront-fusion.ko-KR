@@ -4,16 +4,16 @@ description: Adobe Workfront Fusion JSON 앱은 Adobe Workfront Fusion이 데이
 author: Becky
 feature: Workfront Fusion
 exl-id: f8b281c5-bb63-4412-98c5-d82f45f8eafc
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1236'
-ht-degree: 0%
+source-wordcount: '1254'
+ht-degree: 1%
 
 ---
 
 # [!UICONTROL JSON] 모듈
 
-[!DNL Adobe Workfront Fusion] [!UICONTROL JSON] 앱은 [!DNL Adobe Workfront Fusion]이(가) 데이터 콘텐츠로 더 작업하거나 새 JSON 콘텐츠를 만들 수 있도록 JSON 형식으로 데이터를 처리하는 모듈을 제공합니다.
+Adobe Workfront Fusion [!UICONTROL JSON] 앱은 JSON 형식으로 데이터를 처리하는 모듈을 제공하므로 Adobe Workfront Fusion이 데이터 콘텐츠로 더 이상 작동하거나 새 JSON 콘텐츠를 만들 수 있습니다.
 
 ## 액세스 요구 사항
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -65,15 +65,15 @@ ht-degree: 0%
 
 ### 데이터 구조
 
-데이터 구조는 JSON 데이터가 구성되는 방법을 설명하고 개별 JSON 항목을 시나리오의 다른 모듈에 매핑할 수 있도록 합니다. 데이터 구조를 제공하지 않으면 모듈을 수동으로 실행할 수 있으며 [!DNL Workfront Fusion]이(가) 제공된 JSON에서 구조를 작성합니다.
+데이터 구조는 JSON 데이터가 구성되는 방법을 설명하고 개별 JSON 항목을 시나리오의 다른 모듈에 매핑할 수 있도록 합니다. 데이터 구조를 제공하지 않는 경우 모듈을 수동으로 실행할 수 있으며 Workfront Fusion은 제공된 JSON에서 구조를 작성합니다.
 
 1. 시나리오에 [!UICONTROL JSON 구문 분석] 모듈을 추가합니다.
 1. **[!UICONTROL JSON 문자열]** 필드에 데이터 구조를 작성할 JSON을 입력합니다.
-1. 아직 [!UICONTROL JSON 구문 분석] 모듈에 다른 모듈을 연결하지 마십시오. [!DNL Workfront Fusion]이(가) JSON 데이터의 구조를 아직 모르기 때문에 [!UICONTROL JSON 구문 분석] 모듈의 데이터를 시나리오의 다른 모듈에 매핑할 수 없습니다.
+1. 아직 [!UICONTROL JSON 구문 분석] 모듈에 다른 모듈을 연결하지 마십시오. Workfront Fusion은 아직 JSON 데이터의 구조를 모르므로 [!UICONTROL JSON 구문 분석] 모듈의 데이터를 시나리오의 다른 모듈에 매핑할 수 없습니다.
 1. 수동으로 시나리오를 실행합니다. 이렇게 하면 [!UICONTROL JSON 구문 분석] 모듈이 제공한 JSON에서 JSON 구조를 식별할 수 있습니다.
 1. 이제 다음 모듈을 연결할 수 있습니다. 이제 JSON 구문 분석 모듈의 항목을 매핑에 사용할 수 있습니다.
 
-자세한 내용은 [!UICONTROL Adobe Workfront Fusion][&#128279;](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)의 데이터 구조를 참조하십시오.
+자세한 내용은 [Adobe Workfront Fusion[!UICONTROL 의 ]](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)데이터 구조를 참조하십시오.
 
 ### 컬렉션과 배열 비교
 
@@ -121,7 +121,7 @@ JSON 문자열 필드에 배열 `[ ... ]`이(가) 포함된 경우 출력은 일
 
 ## [!UICONTROL JSON] 모듈 및 해당 필드
 
-[!DNL JSON] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 이러한 필드와 함께 앱이나 서비스의 액세스 수준과 같은 요소에 따라 추가 JSON 필드가 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!DNL JSON] 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 이러한 필드와 함께 앱이나 서비스의 액세스 수준과 같은 요소에 따라 추가 JSON 필드가 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
@@ -252,7 +252,7 @@ JSON 문자열 필드에 배열 `[ ... ]`이(가) 포함된 경우 출력은 일
 
 1. 데이터를 가져오려면 시나리오에 [!DNL Google Sheets] > [!UICONTROL 행 선택] 모듈을 배치하십시오. [!DNL Google] 스프레드시트에서 행을 검색하도록 모듈을 설정합니다. **[!UICONTROL &#x200B;반환된 최대 행 수]**&#x200B;을 작은 수로 설정하되 테스트 목적으로 1보다 크게 설정합니다(예: 3개). [!DNL Google Sheets] 모듈을 마우스 오른쪽 단추로 클릭하고 &quot;**[!UICONTROL 이 모듈만 실행]**&quot;을 선택하여 실행합니다. 모듈의 출력을 확인합니다.
 
-1. [!DNL Google Sheets] 모듈 뒤에 [!UICONTROL 배열 집계] 모듈을 연결합니다. 모듈의 설정에서 **[!UICONTROL Source 노드]** 필드의 [!DNL Google Sheets] 모듈을 선택합니다. 다른 필드는 현재 상태로 두십시오.
+1. [!UICONTROL  모듈 뒤에 ]배열 집계[!DNL Google Sheets] 모듈을 연결합니다. 모듈의 설정에서 [!DNL Google Sheets]Source 노드&#x200B;**[!UICONTROL 필드의]** 모듈을 선택합니다. 다른 필드는 현재 상태로 두십시오.
 
 1. [!UICONTROL 배열 집계] 모듈 뒤에 [!UICONTROL JSON] > [!UICONTROL JSON 만들기] 모듈을 연결합니다. 모듈의 설정에는 JSON 형식을 설명하는 데이터 구조가 필요합니다. 데이터 구조 설정을 열려면 **[!UICONTROL 추가]**&#x200B;를 클릭하십시오. 이 데이터 구조를 만드는 가장 쉬운 방법은 JSON 샘플에서 자동으로 생성하는 것입니다. **[!UICONTROL 생성기]**&#x200B;를 클릭하고 JSON 샘플을 **[!UICONTROL 샘플 데이터]** 필드에 붙여 넣으십시오.
 
@@ -275,7 +275,7 @@ JSON 문자열 필드에 배열 `[ ... ]`이(가) 포함된 경우 출력은 일
 
 1. 필드 옆에 있는 **[!UICONTROL 맵]** 단추를 클릭하고 배열 집계 출력의 `Array[]` 항목을 매핑합니다.
 
-1. [!UICONTROL JSON] 모듈의 설정을 닫으려면 **[!UICONTROL 확인]**&#x200B;을 클릭하세요.
+1. **[!UICONTROL JSON]** 모듈의 설정을 닫으려면 [!UICONTROL 확인]을 클릭하세요.
 
 1. [!UICONTROL 배열 집계] 모듈의 설정을 엽니다. **[!UICONTROL Target 구조]**&#x200B;를 [!UICONTROL Custom]에서 루트 배열 특성에 해당하는 [!UICONTROL JSON] 모듈의 필드로 변경합니다. [!DNL Google Sheets] 모듈의 항목을 적절한 필드에 매핑합니다.
 

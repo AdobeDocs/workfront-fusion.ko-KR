@@ -1,19 +1,19 @@
 ---
 title: Figma 모듈
-description: ' [!DNL Adobe Workfront Fusion] Figma 모듈을 사용하면 주석, 파일, 파일 버전 또는 프로젝트 목록을 검색할 수 있습니다. Figma API에 댓글을 게시하거나 호출할 수도 있습니다.'
+description: Adobe Workfront Fusion Figure 모듈을 사용하면 주석, 파일, 파일 버전 또는 프로젝트 목록을 검색할 수 있습니다. Figma API에 댓글을 게시하거나 호출할 수도 있습니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: 1220460b-1957-4dfc-b7c1-4c97b36ea061
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2560'
+source-wordcount: '2594'
 ht-degree: 0%
 
 ---
 
 # [!DNL Figma]개 모듈
 
-[!DNL Adobe Workfront Fusion] [!DNL Figma] 모듈을 사용하면 주석, 파일, 파일 버전 또는 프로젝트 목록을 검색할 수 있습니다. 댓글을 게시하거나 [!DNL Figma] API를 호출할 수도 있습니다.
+Adobe Workfront Fusion [!DNL Figma] 모듈을 사용하면 주석, 파일, 파일 버전 또는 프로젝트 목록을 검색할 수 있습니다. 댓글을 게시하거나 [!DNL Figma] API를 호출할 수도 있습니다.
 
 시나리오를 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 인덱스](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -140,7 +140,7 @@ Figure 모듈에 대한 연결을 만들려면:
 
 ## [!DNL Figma]개 모듈 및 해당 필드
 
-[!DNL Figma] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Figma] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!DNL Figma] 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Figma] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
@@ -174,7 +174,7 @@ Figure 모듈에 대한 연결을 만들려면:
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figure에 연결 만들기</a>를 참조하십시오.</p>
+      <td> <p>[!DNL Figma] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Fi그마로의 연결 만들기</a>를 참조하십시오.</p>
       </td>
     </tr>
     <tr>
@@ -198,7 +198,7 @@ Figure 모듈에 대한 연결을 만들려면:
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figure에 연결 만들기</a>를 참조하십시오.</p>
+      <td> <p>[!DNL Figma] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Fi그마로의 연결 만들기</a>를 참조하십시오.</p>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 파일 ID]</td>
@@ -232,7 +232,7 @@ Figure 모듈에 대한 연결을 만들려면:
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figure에 연결 만들기</a>를 참조하십시오.</p>
+      <td> <p>[!DNL Figma] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Fi그마로의 연결 만들기</a>를 참조하십시오.</p>
     </tr>
     <tr>
       <td  role="rowheader">[!UICONTROL 파일 ID]</td>
@@ -277,7 +277,7 @@ Figure 모듈에 대한 연결을 만들려면:
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figure에 연결 만들기</a>를 참조하십시오.</p>
+      <td> <p>[!DNL Figma] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Fi그마로의 연결 만들기</a>를 참조하십시오.</p>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 개체 유형]</td>
@@ -305,7 +305,7 @@ Figure 모듈에 대한 연결을 만들려면:
           <li>
             <p><b>[!UICONTROL 이미지 채우기]</b>
             </p>
-            <p>이 모듈은 문서의 이미지 채우기에 있는 모든 이미지에 대한 다운로드 링크를 반환합니다. 이미지 채우기는 [!DNL Figma]이(가) 사용자가 제공한 이미지를 나타내는 방식입니다. 이미지를 [!DNL Figma] (으)로 드래그하면 [!DNL Figma]에서 이미지를 나타내는 단일 채우기로 사각형을 만들고 사용자는 사각형을 변형할 수 있습니다(및 채우기의 속성).</p>
+            <p>이 모듈은 문서의 이미지 채우기에 있는 모든 이미지에 대한 다운로드 링크를 반환합니다. 이미지 채우기는 [!DNL Figma]이(가) 사용자가 제공한 이미지를 나타내는 방식입니다. 이미지를 [!DNL Figma](으)로 드래그하면 [!DNL Figma]에서 이미지를 나타내는 단일 채우기로 사각형을 만들고 사용자는 사각형을 변형할 수 있습니다(및 채우기의 속성).</p>
             <p>필드의 경우 <a href="#get-a-file-or-image-image-fills" class="MCXref xref" >[!UICONTROL 파일 또는 이미지 가져오기: 이미지 채우기]</a>을(를) 참조하십시오.</p>
           </li>
         </ul>
@@ -500,7 +500,7 @@ Figure 모듈에 대한 연결을 만들려면:
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figure에 연결 만들기</a>를 참조하십시오.</p>
+      <td> <p>[!DNL Figma] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Fi그마로의 연결 만들기</a>를 참조하십시오.</p>
     <tr>
       <td role="rowheader">[!UICONTROL 파일 ID]</td>
       <td>
@@ -532,7 +532,7 @@ Figure 모듈에 대한 연결을 만들려면:
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figure에 연결 만들기</a>를 참조하십시오.</p>
+      <td> <p>[!DNL Figma] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Fi그마로의 연결 만들기</a>를 참조하십시오.</p>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 파일 ID]</td>
@@ -562,7 +562,7 @@ Figure 모듈에 대한 연결을 만들려면:
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figure에 연결 만들기</a>를 참조하십시오.</p>
+      <td> <p>[!DNL Figma] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Fi그마로의 연결 만들기</a>를 참조하십시오.</p>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 팀 ID]</td>
@@ -588,7 +588,7 @@ Figure 모듈에 대한 연결을 만들려면:
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figure에 연결 만들기</a>를 참조하십시오.</p>
+      <td> <p>[!DNL Figma] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Fi그마로의 연결 만들기</a>를 참조하십시오.</p>
     </tr>
     <tr>
       <td role="rowheader">개체&gt; 유형</td>
@@ -643,7 +643,7 @@ Figure 모듈에 대한 연결을 만들려면:
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figure에 연결 만들기</a>를 참조하십시오.</p>
+      <td> <p>[!DNL Figma] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Fi그마로의 연결 만들기</a>를 참조하십시오.</p>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL URL]</td>
@@ -661,7 +661,7 @@ Figure 모듈에 대한 연결을 만들려면:
       <td>
         <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p>
         <p>For example, <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] 인증 헤더를 추가합니다.</p>
+        <p>Workfront Fusion은 사용자에게 권한 부여 헤더를 추가합니다.</p>
       </td>
     </tr>
     <tr>

@@ -2,21 +2,21 @@
 title: Adobe Workfront Fusion
 description: Adobe Workfront Fusion 제품 및 기술 설명서 홈 페이지를 시작합니다. 다음 링크, 도움말 문서 및 추가 리소스를 사용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법을 알아보십시오.
 exl-id: c005fc89-4b58-4c4e-ba45-0155cd2c8f03
-source-git-commit: 6e62836006dcca1acc2cc314c44dbb114cda0e08
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 0%
+source-wordcount: '306'
+ht-degree: 2%
 
 ---
 
-# [!DNL Workfront] Fusion 설명서
+# Workfront Fusion 설명서
 
 Adobe Workfront Fusion 제품 및 기술 설명서 홈 페이지를 시작합니다. 다음 링크, 도움말 문서 및 추가 리소스를 사용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법을 알아보십시오.
 
 ## 새로운 기능
 
 * [릴리스 활동](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
-* [알려진 문제](https://experienceleague.adobe.com/ko/docs/workfront-known-issues/issues/fusion/workfrontfusion)
+* [알려진 문제](https://experienceleague.adobe.com/en/docs/workfront-known-issues/issues/fusion/workfrontfusion)
 
 ## 설명서 살펴보기
 
@@ -54,9 +54,9 @@ Adobe Workfront Fusion 제품 및 기술 설명서 홈 페이지를 시작합니
 
 ### 학습 및 교육 섹션 탐색
 
-* **실시간 강사 주도 교육 세션** Adobe은 Fusion에 대한 실시간 3일 교육 세션을 제공합니다. 자세한 내용 및 사용 가능한 세션은 [Adobe Workfront Fusion에서 연결 및 워크플로 관리](https://learning.adobe.com/courses/adobe_workfront/cours000000000098121.html)를 참조하십시오.
-* **교육 자료**: [소개 및 기술 전략](https://experienceleague.adobe.com/ko/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy) Workfront Fusion 교육 페이지로 이동하여 Fusion을 가장 잘 사용하는 방법을 더 잘 이해할 수 있도록 고안된 일련의 학습 및 연습을 시작합니다.
+* **실시간 강사 주도 교육 세션** Adobe에서는 Fusion에 대한 실시간 3일 교육 세션을 제공합니다. 자세한 내용 및 사용 가능한 세션은 [Adobe Workfront Fusion에서 연결 및 워크플로 관리](https://learning.adobe.com/courses/adobe_workfront/cours000000000098121.html)를 참조하십시오.
+* **교육 자료**: [소개 및 기술 전략](https://experienceleague.adobe.com/en/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy) Workfront Fusion 교육 페이지로 이동하여 Fusion을 가장 잘 사용하는 방법을 더 잘 이해할 수 있도록 고안된 일련의 학습 및 연습을 시작합니다.
 
 ### 커뮤니티 포럼에서 답변 찾기
 
-* **질문하기**: 설명서가 질문에 대답하지 않으면 다른 사용자와 전문가가 도움을 제공할 수 있는 [Workfront Fusion 커뮤니티 포럼](https://experienceleaguecommunities.adobe.com/t5/workfront-fusion/ct-p/workfront-fusion-2?profile.language=ko)에 게시해 보십시오.
+* **질문하기**: 설명서가 질문에 대답하지 않으면 다른 사용자와 전문가가 도움을 제공할 수 있는 [Workfront Fusion 커뮤니티 포럼](https://experienceleaguecommunities.adobe.com/t5/workfront-fusion/ct-p/workfront-fusion-2)에 게시해 보십시오.

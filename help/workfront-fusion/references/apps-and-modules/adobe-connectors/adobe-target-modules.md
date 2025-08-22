@@ -1,19 +1,19 @@
 ---
 title: Adobe Target 모듈
-description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는  [!DNL Adobe Target], as well as connect it to multiple third-party applications and services. [!DNL Adobe Target] 모듈을 사용하는 워크플로를 자동화하여 레코드를 만들거나, 읽거나, 업데이트하거나, 삭제할 수 있으며, 지정된 유형의 모든 레코드를 나열하거나, 지정한 기준에 따라 레코드를 검색하거나,  [!DNL Adobe Target] API에 대한 사용자 지정 API 호출을 수행할 수 있습니다.'
+description: Adobe Workfront Fusion 시나리오에서는  [!DNL Adobe Target], as well as connect it to multiple third-party applications and services. [!DNL Adobe Target] 모듈을 사용하는 워크플로를 자동화하여 레코드를 만들거나, 읽거나, 업데이트하거나, 삭제할 수 있고, 특정 유형의 모든 레코드를 나열하거나, 지정한 기준에 따라 레코드를 검색하거나,  [!DNL Adobe Target] API에 대한 사용자 지정 API 호출을 수행할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: f3c1ed7b-b69b-478a-8240-1a2ab89e11e5
-source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2259'
+source-wordcount: '2302'
 ht-degree: 0%
 
 ---
 
 # [!DNL Adobe Target]개 모듈
 
-[!DNL Adobe Workfront Fusion] 시나리오에서는 [!DNL Adobe Target]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다. [!DNL Adobe Target] 모듈을 사용하면 레코드를 만들거나, 만들거나, 읽거나, 업데이트하거나, 삭제하고, 지정된 형식의 모든 레코드를 나열하거나, 지정한 조건에 따라 레코드를 검색하거나, [!DNL Adobe Target] API에 대한 사용자 지정 API 호출을 수행할 수 있습니다.
+Adobe Workfront Fusion 시나리오에서는 [!DNL Adobe Target]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다. [!DNL Adobe Target] 모듈을 사용하면 레코드를 만들거나, 만들거나, 읽거나, 업데이트하거나, 삭제하고, 지정된 형식의 모든 레코드를 나열하거나, 지정한 조건에 따라 레코드를 검색하거나, [!DNL Adobe Target] API에 대한 사용자 지정 API 호출을 수행할 수 있습니다.
 
 
 시나리오를 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 인덱스](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
@@ -29,31 +29,31 @@ ht-degree: 0%
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] 플랜*</td>
+      <td role="rowheader">Adobe Workfront 플랜*</td>
       <td>
         <p>[!UICONTROL Pro] 이상</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] 라이센스*</td>
+      <td role="rowheader">Adobe Workfront 라이센스*</td>
       <td>
         <p>[!UICONTROL Plan], [!UICONTROL Work]</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td>
+      <td role="rowheader">Adobe Workfront Fusion 라이센스**</td>
       <td>
-   <p>현재 라이선스 요구 사항: [!DNL Workfront Fusion] 라이선스 요구 사항이 없습니다.</p>
+   <p>현재 라이선스 요구 사항: Workfront Fusion 라이선스 요구 사항이 없습니다.</p>
    <p>또는</p>
-   <p>레거시 라이선스 요구 사항: 작업 자동화 및 통합을 위한 [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>레거시 라이선스 요구 사항: [!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
    </td>
     </tr>
     <tr>
       <td role="rowheader">제품</td>
       <td>
-   <p>현재 제품 요구 사항: [!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Adobe Workfront] 플랜이 있는 경우 조직에서 이 문서에 설명된 기능을 사용하려면 [!DNL Adobe Workfront Fusion]과(와) [!DNL Adobe Workfront]을(를) 구매해야 합니다. [!DNL Workfront Fusion]이(가) [!UICONTROL Ultimate] [!DNL Workfront] 계획에 포함되어 있습니다.</p>
+   <p>현재 제품 요구 사항: [!UICONTROL Select] 또는 [!UICONTROL Prime] Adobe Workfront 플랜이 있는 경우 조직에서 이 문서에 설명된 기능을 사용하려면 Adobe Workfront Fusion과 Adobe Workfront을 구입해야 합니다. Workfront Fusion은 [!UICONTROL Ultimate] Workfront 플랜에 포함되어 있습니다.</p>
    <p>또는</p>
-   <p>레거시 제품 요구 사항: 이 문서에 설명된 기능을 사용하려면 조직에서 [!DNL Adobe Workfront Fusion]과(와) [!DNL Adobe Workfront]을(를) 구매해야 합니다.</p>
+   <p>레거시 제품 요구 사항: 조직에서 이 문서에 설명된 기능을 사용하려면 Adobe Workfront Fusion과 Adobe Workfront을 구입해야 합니다.</p>
    </td>
     </tr>
     </tr>
@@ -61,9 +61,9 @@ ht-degree: 0%
 </table>
 
 
-보유 중인 플랜, 라이선스 유형 또는 액세스 권한을 확인하려면 [!DNL Workfront] 관리자에게 문의하세요.
+보유 중인 플랜, 라이선스 유형 또는 액세스 권한을 확인하려면 Workfront 관리자에게 문의하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 ## 전제 조건
 
@@ -186,7 +186,7 @@ Adobe Target 커넥터는 다음을 사용합니다.
 
 ## [!DNL Adobe Target]개 모듈 및 해당 필드
 
-[!DNL Adobe Target] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Adobe Target] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!DNL Adobe Target] 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Adobe Target] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
@@ -785,7 +785,7 @@ Adobe Target 커넥터는 다음을 사용합니다.
       <td>
         <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p>
         <p>For example, <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] 인증 헤더 및 x-api-key 헤더를 자동으로 추가합니다.</p>
+        <p>Workfront Fusion은 인증 헤더와 x-api-key 헤더를 자동으로 추가합니다.</p>
       </td>
     </tr>
     <tr>

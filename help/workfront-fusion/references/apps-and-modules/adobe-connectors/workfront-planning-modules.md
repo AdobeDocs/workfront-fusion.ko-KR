@@ -1,13 +1,13 @@
 ---
 title: Adobe Workfront Planning 모듈
-description: ' [!DNL Adobe Workfront Planning] 모듈을 사용하면  [!DNL Adobe] Workfront Planning 계정의 이벤트를 기반으로  [!DNL Adobe Workfront Fusion] 시나리오를 시작하고, 계약 및 기타 레코드를 만들거나 읽거나 업데이트하고, 설정한 기준을 사용하여 레코드를 검색하고, 문서를 업로드할 수 있습니다.'
+description: ' [!DNL Adobe Workfront Planning] 모듈을 사용하면  [!DNL Adobe] Workfront Planning 계정의 이벤트를 기반으로 Adobe Workfront Fusion 시나리오를 시작하고, 계약 및 기타 레코드를 만들거나 읽거나 업데이트하고, 설정한 기준을 사용하여 레코드를 검색하고, 문서를 업로드할 수 있습니다.'
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 51bb87572f16f6194f6c37bbe52ea7f27050c303
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1591'
-ht-degree: 0%
+source-wordcount: '1607'
+ht-degree: 1%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -87,7 +87,7 @@ Adobe Workfront Planning 커넥터는 다음을 사용합니다.
 
 ## [!DNL Adobe Workfront Planning]에 연결 만들기 {#create-a-connection-to-adobe-workfront-planning}
 
-[!DNL Workfront Fusion] 모듈 내에서 직접 [!DNL Workfront Planning] 계정에 연결할 수 있습니다.
+Workfront Fusion 모듈 내에서 직접 [!DNL Workfront Planning] 계정에 연결할 수 있습니다.
 
 1. [!DNL Adobe Workfront Planning] 모듈에서 [연결] 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 
@@ -184,7 +184,7 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
     </tr>
      <tr data-mc-conditions=""> 
       <td> <p>[!UICONTROL 이벤트 필터]</p> </td> 
-      <td> <p>선택한 기준을 충족하는 레코드만 보도록 필터를 설정할 수 있습니다.</p> <p>각 필터에 대해 필터를 평가할 필드, 연산자 및 필터를 허용할 값을 입력합니다. AND 규칙을 추가하여 두 개 이상의 필터를 사용할 수 있습니다.</p> <p>참고: 기존 [!DNL Workfront] 웹후크에서 필터를 편집할 수 없습니다. [!DNL Workfront] 이벤트 구독에 대해 다른 필터를 설정하려면 현재 웹후크를 제거하고 새 필터를 만드십시오.</p> <p>이벤트 필터에 대한 자세한 내용은 Workfront 모듈 문서의 [!DNL Workfront] &gt; [!UICONTROL Watch Events] 모듈에서 <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">이벤트 구독 필터</a>를 참조하십시오.</p> </td> 
+      <td> <p>선택한 기준을 충족하는 레코드만 보도록 필터를 설정할 수 있습니다.</p> <p>각 필터에 대해 필터를 평가할 필드, 연산자 및 필터를 허용할 값을 입력합니다. AND 규칙을 추가하여 두 개 이상의 필터를 사용할 수 있습니다.</p> <p>참고: 기존 Workfront 웹후크에서는 필터를 편집할 수 없습니다. Workfront 이벤트 구독에 대해 서로 다른 필터를 설정하려면 현재 웹후크를 제거하고 새 필터를 만드십시오.</p> <p>이벤트 필터에 대한 자세한 내용은 Workfront 모듈 문서의 Workfront &gt; [!UICONTROL Watch Events] 모듈에서 <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">이벤트 구독 필터</a>를 참조하십시오.</p> </td> 
      </tr> 
     <tr>
       <td role="rowheader">[!UICONTROL Objects to watch]</td>
@@ -260,7 +260,7 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
       <td>
         <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p>
         <p>For example, <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] 인증 헤더를 자동으로 추가합니다.</p>
+        <p>Workfront Fusion은 인증 헤더를 자동으로 추가합니다.</p>
       </td>
     </tr>
     <tr>

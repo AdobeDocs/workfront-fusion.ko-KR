@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion에서 MIME 유형을 사용할 수 있습니
 author: Becky
 feature: Workfront Fusion
 exl-id: 9259356b-5b42-4b6d-9854-fce9718d14e3
-source-git-commit: 7edfe4a7b19597ea6e56bb2ca3969d742dbaf999
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 0%
+source-wordcount: '373'
+ht-degree: 1%
 
 ---
 
@@ -52,7 +52,7 @@ Adobe Workfront Fusion에서 MIME 유형을 사용할 수 있습니다. MIME(Mul
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 

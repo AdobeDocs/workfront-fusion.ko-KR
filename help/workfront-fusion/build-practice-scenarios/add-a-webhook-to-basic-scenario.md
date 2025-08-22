@@ -7,10 +7,10 @@ description: 즉각적인 트리거라고도 하는 웹후크는 주어진 일�
 author: Becky
 feature: Workfront Fusion
 exl-id: 28ecca1f-a9c3-4b3d-95f5-73cb9a5dc4b9
-source-git-commit: 3ba5d67806e0d495bd4a91589d06cfb9adb25c0c
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 1%
+source-wordcount: '496'
+ht-degree: 0%
 
 ---
 
@@ -26,34 +26,24 @@ ht-degree: 1%
 
 +++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
 
-이 문서의 기능을 사용하려면 다음 액세스 권한이 있어야 합니다.
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 패키지</td> 
-   <td> <p>임의</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 라이센스</td> 
-   <td> <p>신규: [!UICONTROL Standard]</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
+   <td role="rowheader">Adobe Workfront 패키지</td> 
+   <td> <p>Workfront 자동화 및 통합을 포함하는 모든 패키지</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td> 
+   <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>현재: [!DNL Workfront Fusion] 라이선스 요구 사항이 없습니다.</p>
-   <p>또는</p>
-   <p>레거시: 모두 </p>
+   <p>Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Workfront] 플랜: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 플랜: [!DNL Workfront Fusion]이(가) 포함되어 있습니다.</li></ul>
-   <p>또는</p>
-   <p>현재: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</p>
+   <p>Workfront Fusion과 연결하는 모든 애플리케이션이나 서비스에 대한 계정이 있어야 합니다.</p>
    </td> 
   </tr>
  </tbody> 
@@ -61,7 +51,7 @@ ht-degree: 1%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -99,7 +89,7 @@ ht-degree: 1%
 
 ### 테스트 및 활성화
 
-1. 시나리오 편집기의 왼쪽 아래에서 **[!UICONTROL Run once]**&#x200B;을(를) 클릭합니다.
+1. 시나리오 편집기의 왼쪽 아래에서 **[!UICONTROL 한 번 실행]**&#x200B;을 클릭합니다.
 
    새 요청을 시청하려면 시나리오가 실행 중이어야 합니다.
 1. Fusion이 연결 중인 Workfront 환경으로 이동하여 문제를 추가합니다.
@@ -109,4 +99,4 @@ ht-degree: 1%
 1. 시나리오가 예상대로 작동하는 경우 화면 왼쪽 하단의 **예약** 전환을 클릭하여 **켜기**&#x200B;로 전환합니다.
 
    이렇게 하면 시나리오가 활성화됩니다.
-1. [!DNL Workfront Fusion]에서 왼쪽 아래 모서리 근처에 있는 **[!UICONTROL Save]**&#x200B;을(를) 클릭하여 시나리오에 대한 진행률을 저장합니다.
+1. Workfront Fusion에서 왼쪽 아래 모서리 근처에 있는 **[!UICONTROL 저장]**&#x200B;을 클릭하여 시나리오에 대한 진행 상황을 저장합니다.

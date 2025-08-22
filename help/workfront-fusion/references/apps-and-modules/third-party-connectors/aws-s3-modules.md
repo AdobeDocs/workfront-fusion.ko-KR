@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion AWS] S3 모듈을 사용하면 S3 �
 author: Becky
 feature: Workfront Fusion
 exl-id: 6b2d9dd5-0b33-4297-aea0-aba26072b26a
-source-git-commit: d98d49cdca997caa2d1601d0163ae3f50e21ed66
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1462'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -81,28 +81,28 @@ AWS S3 커넥터는 다음을 사용합니다.
  </tbody> 
  </table>
 
-## [!DNL AWS]을(를) [!DNL Workfront Fusion]에 연결 {#connect-aws-to-workfront-fusion}
+## Workfront Fusion에 [!DNL AWS] 연결 {#connect-aws-to-workfront-fusion}
 
-[!DNL AWS S3]을(를) [!DNL Workfront Fusion]에 연결하려면 [!DNL AWS] 계정을 [!DNL Workfront Fusion]에 연결해야 합니다. 이렇게 하려면 먼저 [!DNL AWS] [!UICONTROL IAM]에서 API 사용자를 만들어야 합니다.
+[!DNL AWS S3]을(를) Workfront Fusion에 연결하려면 [!DNL AWS] 계정을 Workfront Fusion에 연결해야 합니다. 이렇게 하려면 먼저 [!DNL AWS] [!UICONTROL IAM]에서 API 사용자를 만들어야 합니다.
 
 1. [!DNL AWS] [!UICONTROL IAM] 계정에 로그인합니다.
 1. **[!UICONTROL ID 및 액세스 관리]** > **[!UICONTROL 액세스 관리]** > **[!UICONTROL 사용자]**(으)로 이동합니다.
 
 1. **[!UICONTROL 사용자 추가]**&#x200B;를 클릭합니다.
-1. 새 사용자의 이름을 입력하고 [!UICONTROL 액세스 형식] 섹션에서 **[!UICONTROL 프로그래밍 방식 액세스]** 옵션을 선택합니다.
+1. 새 사용자의 이름을 입력하고 **[!UICONTROL 액세스 형식]** 섹션에서 [!UICONTROL 프로그래밍 방식 액세스] 옵션을 선택합니다.
 1. **[!UICONTROL 기존 정책을 직접 첨부]**&#x200B;를 클릭한 다음 검색 창에서 **[!UICONTROL AmazonS3FullAccess]**&#x200B;를 검색합니다. 나타나면 클릭한 다음 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
 1. 다른 대화 상자 화면을 계속 진행하고 **[!UICONTROL 사용자 만들기]**&#x200B;를 클릭합니다.
 1. 제공된 **[!UICONTROL 액세스 키 ID]** 및 **[!UICONTROL 비밀 액세스 키]**&#x200B;를 복사합니다.
 
-1. [!DNL Workfront Fusion]&#x200B;(으)로 이동하여 [!DNL AWS S3] 모듈의 **[!UICONTROL 연결 만들기]** 대화 상자를 엽니다.
+1. Workfront Fusion으로 이동하여 [!DNL AWS S3] 모듈의 **[!UICONTROL 연결 만들기]** 대화 상자를 엽니다.
 1. 7단계의 각 필드에 [!UICONTROL 액세스 키 ID] 및 [!UICONTROL 비밀 액세스 키]를 입력하고 **[!UICONTROL 계속]**&#x200B;을 클릭하여 연결을 설정하십시오.
 
 연결이 설정되었습니다. 모듈 설정을 진행할 수 있습니다.
 
 ## [!DNL AWS S3]개 모듈 및 해당 필드
 
-[!DNL AWS S3] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL AWS S3] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!DNL AWS S3] 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL AWS S3] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
@@ -128,7 +128,7 @@ AWS S3 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL AWS] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">[!DNL AWS]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL AWS] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL AWS] 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 이름] </td> 
@@ -151,11 +151,11 @@ AWS S3 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL AWS] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">[!DNL AWS]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL AWS] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL AWS] 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 영역] </td> 
-   <td> <p>지역 끝점을 선택합니다. 자세한 내용은 [!DNL AWS] 설명서의 <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints">지역 끝점</a>을 참조하십시오.</p> </td> 
+   <td> <p>지역 끝점을 선택합니다. 자세한 내용은 <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints"> 설명서의 </a>지역 끝점[!DNL AWS]을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 버킷] </td> 
@@ -163,7 +163,7 @@ AWS S3 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 경로]</p> </td> 
-   <td> <p>파일 경로를 입력합니다. 예: <code>/photos/2019/February/image023.jpg</code></p> </td> 
+   <td> <p>파일 경로를 입력합니다. 예: <code>/photos/2019/February/image023.jpg</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -180,11 +180,11 @@ AWS S3 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL AWS] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">[!DNL AWS]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL AWS] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL AWS] 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 영역] </td> 
-   <td> <p>지역 끝점을 선택합니다. 자세한 내용은 [!DNL AWS] 설명서의 <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints">지역 끝점</a>을 참조하십시오.</p> </td> 
+   <td> <p>지역 끝점을 선택합니다. 자세한 내용은 <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints"> 설명서의 </a>지역 끝점[!DNL AWS]을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL URL]</td> 
@@ -192,11 +192,11 @@ AWS S3 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td>[!UICONTROL 메서드]</td> 
-   <td> <p>API 호출을 구성하는 데 필요한 [!UICONTROL HTTP] 요청 메서드를 선택합니다. 자세한 내용은 [!DNL Adobe Workfront Fusion]</a>에서 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">[!UICONTROL HTTP] 요청 메서드를 참조하십시오.</p> </td> 
+   <td> <p>API 호출을 구성하는 데 필요한 [!UICONTROL HTTP] 요청 메서드를 선택합니다. 자세한 내용은 Adobe Workfront Fusion의 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">[!UICONTROL HTTP] 요청 메서드</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Headers]</td> 
-   <td> <p>요청 헤더를 추가합니다. 추가할 각 헤더에 대해 <b>항목 추가</b>를 클릭하고 헤더를 입력하십시오. 다음과 같은 일반적인 요청 헤더를 사용할 수 있습니다. 추가 요청 헤더는 <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/RESTCommonRequestHeaders.html">[!DNL AWS S3] API 설명서</a>를 참조하십시오.</p> <p>[!DNL Workfront Fusion] 인증 헤더를 자동으로 추가합니다.</p> 
+   <td> <p>요청 헤더를 추가합니다. 추가할 각 헤더에 대해 <b>항목 추가</b>를 클릭하고 헤더를 입력하십시오. 다음과 같은 일반적인 요청 헤더를 사용할 수 있습니다. 추가 요청 헤더는 <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/RESTCommonRequestHeaders.html">[!DNL AWS S3] API 설명서</a>를 참조하십시오.</p> <p>Workfront Fusion은 인증 헤더를 자동으로 추가합니다.</p> 
     <table style="table-layout:auto">
      <col> 
      <col> 
@@ -213,7 +213,7 @@ AWS S3 커넥터는 다음을 사용합니다.
       </tr> 
       <tr> 
        <td role="rowheader"> <p>[!UICONTROL Content-Type]</p> </td> 
-       <td> <p>요청 콘텐츠가 본문에 있는 경우 리소스의 콘텐츠 유형입니다. 예: <code>text/plain</code></p> </td> 
+       <td> <p>요청 콘텐츠가 본문에 있는 경우 리소스의 콘텐츠 유형입니다. 예: <code>text/plain</code>.</p> </td> 
       </tr> 
       <tr> 
        <td role="rowheader"> <p>[!UICONTROL Content-MD5]</p> </td> 
@@ -274,11 +274,11 @@ AWS S3 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL AWS] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">[!DNL AWS]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL AWS] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL AWS] 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 영역] </td> 
-   <td> <p>지역 끝점을 선택합니다. 자세한 내용은 [!DNL AWS] 설명서의 <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints">지역 끝점</a>을 참조하십시오.</p> </td> 
+   <td> <p>지역 끝점을 선택합니다. 자세한 내용은 <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints"> 설명서의 </a>지역 끝점[!DNL AWS]을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 폴더] </p> </td> 
@@ -310,11 +310,11 @@ AWS S3 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL AWS] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">[!DNL AWS]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL AWS] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL AWS] 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 영역] </td> 
-   <td> <p>지역 끝점을 선택합니다. 자세한 내용은 [!DNL AWS] 설명서의 <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints">지역 끝점</a>을 참조하십시오.</p> </td> 
+   <td> <p>지역 끝점을 선택합니다. 자세한 내용은 <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints"> 설명서의 </a>지역 끝점[!DNL AWS]을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 버킷] </td> 
@@ -337,11 +337,11 @@ AWS S3 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL AWS] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">[!DNL AWS]을(를) [!DNL Workfront Fusion]</a>에 연결 을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL AWS] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL AWS] 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 영역] </td> 
-   <td> <p>지역 끝점을 선택합니다. 자세한 내용은 [!DNL AWS] 설명서의 <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints">지역 끝점</a>을 참조하십시오.</p> </td> 
+   <td> <p>지역 끝점을 선택합니다. 자세한 내용은 <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints"> 설명서의 </a>지역 끝점[!DNL AWS]을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 버킷] </td> 

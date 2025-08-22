@@ -5,16 +5,16 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: e6fbbc20-4315-4668-9e11-af7cfa82ae66
-source-git-commit: 896597fa4a0689c19eb56d98f447c6a719d90ca2
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '4128'
+source-wordcount: '4145'
 ht-degree: 0%
 
 ---
 
 # [!DNL Adobe PDF Services]
 
-[!DNL Adobe Workfront Fusion] [!DNL Adobe PDF Services]을(를) 사용하면 PDF 파일에서 데이터를 추출하거나 제공한 데이터에서 새 PDF 파일을 생성할 수 있습니다. 또한 다양한 파일 유형을 PDF로 변환하거나 PDF를 다른 파일 유형으로 변환할 수 있습니다. 또한 PDF 서비스를 사용하면 PDF 파일에 대한 메타데이터를 결합, 압축 또는 읽거나 파일에 대한 암호 보호를 제어할 수 있습니다.
+Adobe Workfront Fusion [!DNL Adobe PDF Services]을(를) 사용하면 PDF 파일에서 데이터를 추출하거나 제공한 데이터에서 새 PDF 파일을 생성할 수 있습니다. 또한 다양한 파일 유형을 PDF로 변환하거나 PDF를 다른 파일 유형으로 변환할 수 있습니다. 또한 PDF 서비스를 사용하면 PDF 파일에 대한 메타데이터를 결합, 압축 또는 읽거나 파일에 대한 암호 보호를 제어할 수 있습니다.
 
 시나리오를 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 인덱스](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
 
@@ -24,7 +24,7 @@ PDF 서비스에 사용되는 API에 대한 자세한 내용은 [Adobe 문서 �
 
 ## [!DNL Adobe PDF Services]을(를) 사용할 때의 보안 고려 사항
 
-[!DNL Adobe PDF Services]은(는) 파일을 읽거나 변환하거나 수정할 수 있지만 [!DNL Adobe]과(와) [!DNL Workfront Fusion]은(는) 파일이나 데이터를 저장하지 않습니다. 이것은 다음을 의미합니다.
+[!DNL Adobe PDF Services]은(는) 파일을 읽거나 변환하거나 수정할 수 있지만 [!DNL Adobe]과(와) Workfront Fusion은 사용자의 파일이나 데이터를 저장하지 않습니다. 이것의 의미는 다음과 같습니다.
 
 * 보안을 포함하여 파일에 대한 제어 유지
 * PDF 서비스를 사용하기 위해 [!UICONTROL Adobe] 저장소 또는 클라우드 저장소 계정이 필요하지 않습니다.
@@ -68,7 +68,7 @@ PDF 서비스에 사용되는 API에 대한 자세한 내용은 [Adobe 문서 �
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -132,15 +132,15 @@ Adobe PDF 서비스 커넥터는 다음을 사용합니다.
           <td>[!DNL Adobe] [!UICONTROL 클라이언트 암호]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.<p>자격 증명을 찾는 방법에 대한 지침은 Adobe 개발자 설명서에서 <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >자격 증명</a>을 참조하십시오.</p>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL 기술 계정 ID] (JWT만 해당)</td>
+          <td role="rowheader">[!UICONTROL 기술 계정 ID](JWT만 해당)</td>
           <td>[!DNL Adobe] [!UICONTROL 기술 계정 ID]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.<p>자격 증명을 찾는 방법에 대한 지침은 Adobe 개발자 설명서에서 <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >자격 증명</a>을 참조하십시오.</p>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL 조직 ID] (JWT만 해당)</td>
+          <td role="rowheader">[!UICONTROL 조직 ID](JWT만 해당)</td>
           <td>[!DNL Adobe] [!UICONTROL 조직 ID]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.<p>자격 증명을 찾는 방법에 대한 지침은 Adobe 개발자 설명서에서 <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >자격 증명</a>을 참조하십시오.</p>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL 메타 범위] (JWT만 해당)</td>
+          <td role="rowheader">[!UICONTROL 메타 범위](JWT만 해당)</td>
           <td>
             연결에 필요한 메타 범위를 입력합니다.
           </td>
@@ -176,7 +176,7 @@ Adobe PDF 서비스 커넥터는 다음을 사용합니다.
 
 ## [!DNL Adobe PDF Services]개 모듈 및 해당 필드
 
-[!DNL PDF Services]을(를) 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 이러한 필드와 함께 앱이나 서비스의 액세스 수준과 같은 요소에 따라 추가 필드가 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!DNL PDF Services]을(를) 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 이러한 필드와 함께 앱이나 서비스의 액세스 수준과 같은 요소에 따라 추가 필드가 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
@@ -548,12 +548,12 @@ ZIP으로 출력하는 경우 PDF은 페이지당 하나의 이미지로 변환�
 
 [!UICONTROL 문서 생성] 모듈은 선택한 데이터가 포함된 PDF을 만드는 강력한 방법입니다. [!DNL Microsoft Word] 템플릿을 사용하거나 JSON 형식의 데이터를 제공하여 형식을 지정할 수 있습니다.
 
-[!UICONTROL [!DNL Adobe PDF Services] 문서 생성] 기능에 대한 자세한 내용은 [!DNL Adobe Document Services] 설명서의 [문서 생성 개요](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html)를 참조하십시오.
+[!UICONTROL [!DNL Adobe PDF Services] 문서 생성] 기능에 대한 자세한 내용은 [ 설명서의 ](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html)문서 생성 개요[!DNL Adobe Document Services]를 참조하십시오.
 
-* [ [!DNL Microsoft Word] 템플릿](#use-the-generate-document-module-with-a-microsoft-word-template)을(를) 사용하여 [!UICONTROL 문서 생성] 모듈 사용
+* [[!UICONTROL 템플릿]을(를) 사용하여  [!DNL Microsoft Word] 문서 생성](#use-the-generate-document-module-with-a-microsoft-word-template) 모듈 사용
 * [JSON이 있는 [!UICONTROL 문서 생성] 모듈 사용](#use-the-generate-document-module-with-json)
 
-#### [!DNL Microsoft Word] 템플릿으로 [!UICONTROL 문서 생성] 모듈 사용
+#### [!UICONTROL  템플릿으로 ]문서 생성[!DNL Microsoft Word] 모듈 사용
 
 
 >[!NOTE]
@@ -577,7 +577,7 @@ ZIP으로 출력하는 경우 PDF은 페이지당 하나의 이미지로 변환�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source 파일]</td> 
-   <td> <p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 이름과 데이터를 매핑합니다.</p> <p>이 원본 파일은 모듈에서 새 PDF을 생성하는 데 사용하는 [!DNL Microsoft Word] 템플릿입니다.</p> <p>[!DNL Workfront Fusion]에서 사용하는 [!DNL Microsoft Word] 템플릿에 대해 [!DNL Workfront]에서 프로젝트를 만드는 것이 좋습니다. 그런 다음 [!DNL Workfront] &gt; [!UICONTROL 문서 다운로드] 모듈을 사용하여 적절한 템플릿을 시나리오로 가져올 수 있습니다.</p> </td> 
+   <td> <p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 이름과 데이터를 매핑합니다.</p> <p>이 원본 파일은 모듈에서 새 PDF을 생성하는 데 사용하는 [!DNL Microsoft Word] 템플릿입니다.</p> <p>Workfront Fusion에서 사용하는 [!DNL Microsoft Word] 템플릿에 대해 Workfront에서 프로젝트를 만드는 것이 좋습니다. 그런 다음 Workfront &gt; [!UICONTROL 문서 다운로드] 모듈을 사용하여 적절한 템플릿을 시나리오로 가져올 수 있습니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 출력 형식]</td> 

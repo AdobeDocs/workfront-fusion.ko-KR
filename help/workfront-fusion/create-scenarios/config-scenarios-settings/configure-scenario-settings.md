@@ -5,9 +5,9 @@ description: 시나리오 설정 패널에서 시나리오에 대한 특정 설�
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 273a07a28563a0eb3a3446937964e8dcef8a68d3
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -27,17 +27,17 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 플랜</td> 
+   <td role="rowheader">Adobe Workfront 플랜</td> 
    <td> <p>임의</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 라이센스</td> 
-   <td> <p>새로운 기능: [!UICONTROL Standard]</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
+   <td role="rowheader">Adobe Workfront 라이선스</td> 
+   <td> <p>새로운 기능: 표준</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td> 
+   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: [!DNL Workfront Fusion] 라이선스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
    <p>또는</p>
    <p>레거시: 모두 </p>
    </td> 
@@ -45,16 +45,16 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Workfront] 플랜: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 계획: [!DNL Workfront Fusion]이(가) 포함되어 있습니다.</li></ul>
+   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] Workfront 플랜: 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li><li>[!UICONTROL Ultimate] Workfront 계획: Workfront Fusion이 포함됩니다.</li></ul>
    <p>또는</p>
-   <p>현재: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</p>
+   <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">액세스 수준 구성*</td> 
    <td> 
-     <p>조직의 [!DNL Workfront Fusion] 관리자여야 합니다.</p>
-     <p>팀의 [!DNL Workfront Fusion] 관리자여야 합니다.</p>
+     <p>조직의 Workfront Fusion 관리자여야 합니다.</p>
+     <p>팀의 Workfront Fusion 관리자여야 합니다.</p>
    </td> 
   </tr> 
    </td> 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 [Workfront 설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -119,15 +119,15 @@ ht-degree: 0%
 
 ### [!UICONTROL 불완전한 실행 저장 허용]
 
-이 옵션은 시나리오를 실행하는 동안 오류가 발생하는 경우 [!DNL Adobe Workfront Fusion]의 진행 방식을 결정합니다. 이 옵션을 활성화하면 시나리오가 일시 중지되고 불완전한 실행 폴더로 이동됩니다. 이렇게 하면 문제를 해결하고 시나리오가 중지된 위치에서 계속 실행할 수 있습니다. 이 옵션이 비활성화되면 시나리오 실행이 중지되고 롤백 단계가 시작됩니다.
+이 옵션은 시나리오를 실행하는 동안 오류가 발생하는 경우 Adobe Workfront Fusion의 진행 방식을 결정합니다. 이 옵션을 활성화하면 시나리오가 일시 중지되고 불완전한 실행 폴더로 이동됩니다. 이렇게 하면 문제를 해결하고 시나리오가 중지된 위치에서 계속 실행할 수 있습니다. 이 옵션이 비활성화되면 시나리오 실행이 중지되고 롤백 단계가 시작됩니다.
 
 불완전한 실행에 대한 자세한 내용은 [불완전한 실행 보기 및 해결](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)을 참조하십시오.
 
 ### 데이터 손실 활성화
 
-이 옵션은 [!DNL Workfront Fusion]이(가) 사용 가능한 공간이 부족하여 불완전한 실행 큐에 번들을 저장하지 못하는 경우 데이터 손실을 활성화해야 합니다. 이 옵션을 활성화하면 전체 시나리오 실행에서 중단이 발생하지 않도록 데이터가 손실됩니다. 이 기능은 가장 높은 우선 순위가 연속 실행이고 들어오는 잘못된 데이터가 그다지 중요하지 않은 시나리오에 유용합니다.
+이 옵션은 Workfront Fusion이 불완전한 실행 큐에 번들을 저장하지 못하는 경우(예: 사용 가능한 공간 부족으로 인해) 데이터 손실을 활성화해야 합니다. 이 옵션을 활성화하면 전체 시나리오 실행에서 중단이 발생하지 않도록 데이터가 손실됩니다. 이 기능은 가장 높은 우선 순위가 연속 실행이고 들어오는 잘못된 데이터가 그다지 중요하지 않은 시나리오에 유용합니다.
 
-그 외에도 시나리오를 실행할 때 모듈에서 최대 허용 크기보다 큰 파일이 발생할 수 있습니다. 이 경우 [!DNL Workfront Fusion]은(는) [!UICONTROL 데이터 손실 사용] 옵션의 설정에 따라 진행되며 경고 메시지가 표시됩니다.
+그 외에도 시나리오를 실행할 때 모듈에서 최대 허용 크기보다 큰 파일이 발생할 수 있습니다. 이 경우 Workfront Fusion은 [!UICONTROL 데이터 손실 사용] 옵션의 설정에 따라 진행되며 경고 메시지가 표시됩니다.
 
 불완전한 실행에 대한 자세한 내용은 [불완전한 실행 보기 및 해결](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)을 참조하십시오.
 
@@ -160,7 +160,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-**예:** [!DNL Workfront] > [!UICONTROL 레코드 보기]에서 들어오는 새로운 문제를 감시하고 [!DNL Workfront] >[!UICONTROL 개체 변환]에서 새 요청을 프로젝트로 변환하고 적절한 템플릿을 할당합니다.
+**예:** Workfront > [!UICONTROL 레코드 보기] 들어오는 새 문제에 대해 감시하고 Workfront >[!UICONTROL 개체 변환]에서 새 요청을 프로젝트로 변환하고 적절한 템플릿을 할당합니다.
 
 ![시나리오 설정](assets/scenario-settings-ex-1-350x157.png)
 
@@ -171,7 +171,7 @@ ht-degree: 0%
 ![최대 주기 수](assets/max-number-cycles-1-350x201.png)
 
 Workfront > 레코드 보기 모듈의 최대 주기 수가 `10`(으)로 설정되어 있습니다.
-100개의 요청이 [!DNL Workfront]에 제출되고 [최대 주기 수] 필드가 10으로 설정된 경우 시나리오 실행 후 90개의 파일이 처리되지 않은 상태로 남습니다. 다음 10개의 파일이 다음에 예약된 시나리오 실행에서 처리됩니다.
+100개의 요청이 Workfront에 제출되고 최대 주기 필드가 10으로 설정된 경우 한 시나리오가 실행된 후 90개의 파일이 처리되지 않은 상태로 남게 됩니다. 다음 10개의 파일이 다음에 예약된 시나리오 실행에서 처리됩니다.
 
 #### 최대 주기 수는 10으로 설정됩니다.
 

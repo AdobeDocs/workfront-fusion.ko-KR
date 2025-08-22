@@ -4,9 +4,9 @@ description: 배열 또는 개별 배열 요소를 Adobe Workfront Fusion의 모
 author: Becky
 feature: Workfront Fusion
 exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 **예:**
 
-* **복잡한 배열**: [!UICONTROL Watch emails] 모듈이 모든 전자 메일에 대한 첨부 파일 배열을 반환합니다. 모든 첨부 파일은 이름, 콘텐츠, 크기 등을 포함할 수 있는 컬렉션을 나타냅니다.
+* **복잡한 배열**: [!UICONTROL 전자 메일 보기] 모듈은 모든 전자 메일에 대한 첨부 파일 배열을 반환합니다. 모든 첨부 파일은 이름, 콘텐츠, 크기 등을 포함할 수 있는 컬렉션을 나타냅니다.
 
 >[!ENDSHADEBOX]
 
@@ -37,17 +37,17 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 패키지</td> 
+   <td role="rowheader">Adobe Workfront 패키지</td> 
    <td> <p>임의</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 라이센스</td> 
-   <td> <p>신규: [!UICONTROL Standard]</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
+   <td role="rowheader">Adobe Workfront 라이선스</td> 
+   <td> <p>새로운 기능: 표준</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td> 
+   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: [!DNL Workfront Fusion] 라이선스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
    <p>또는</p>
    <p>레거시: 모두 </p>
    </td> 
@@ -55,9 +55,9 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Workfront] 플랜: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 플랜: [!DNL Workfront Fusion]이(가) 포함되어 있습니다.</li></ul>
+   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] Workfront 플랜: 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li><li>[!UICONTROL Ultimate] Workfront 계획: Workfront Fusion이 포함됩니다.</li></ul>
    <p>또는</p>
-   <p>현재: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</p>
+   <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
    </td> 
   </tr>
  </tbody> 
@@ -65,24 +65,24 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
 ## 전체 배열 매핑
 
-1. 왼쪽 패널의 **[!UICONTROL Scenarios]** 탭을 클릭합니다.
+1. 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭합니다.
 1. 배열을 매핑할 시나리오를 선택합니다.
 1. 시나리오의 아무 곳이나 클릭하여 시나리오 편집기를 입력합니다.
 1. 배열을 매핑할 모듈에서 배열을 매핑할 필드를 클릭합니다. 배열이 매핑된 필드입니다.
 
 1. 표시되는 상자에서 항목을 매핑합니다.
 
-   패널을 사용하면 다른 유형의 항목과 동일한 방식으로 필드를 매핑할 수 있습니다. 각 항목을 따로 채우지 않고 다른 배열을 대상 필드에 매핑하려면 [!UICONTROL Map] 단추를 사용합니다. 이 경우 두 배열(소스 배열과 타겟 배열)의 구조가 동일해야 합니다.
+   패널을 사용하면 다른 유형의 항목과 동일한 방식으로 필드를 매핑할 수 있습니다. 각 항목을 따로 채우지 않고 다른 배열을 대상 필드에 매핑하려면 [!UICONTROL 맵] 단추를 사용합니다. 이 경우 두 배열(소스 배열과 타겟 배열)의 구조가 동일해야 합니다.
 
    배열에 항목을 원하는 수만큼 추가할 수 있습니다.
 
-반복기를 사용하여 배열을 개별 번들로 나눌 수 있습니다. 자세한 내용은  [!DNL Adobe Workfront Fusion][&#128279;](/help/workfront-fusion/references/modules/iterator-module.md)의 [!UICONTROL Iterator] 모듈을 참조하십시오.
+반복기를 사용하여 배열을 개별 번들로 나눌 수 있습니다. 자세한 내용은 Adobe Workfront Fusion[[!UICONTROL 의 ]반복자](/help/workfront-fusion/references/modules/iterator-module.md) 모듈을 참조하십시오.
 
 ## 항목을 새 배열에 매핑
 
@@ -96,7 +96,7 @@ Workfront Fusion의 일부 필드를 사용하면 요소를 배열에 매핑할 
 
 1. **항목 추가** 클릭
 1. 열리는 패널에서 항목에 대한 세부 정보를 입력합니다.
-1. **추가**&#x200B;를 클릭합니다.
+1. **추가를 클릭합니다**.
 1. (선택 사항) 배열에 추가할 각 요소에 대해 1-3단계를 반복합니다.
 
 ## 배열 요소 매핑
@@ -151,7 +151,7 @@ Workfront Fusion의 일부 필드를 사용하면 요소를 배열에 매핑할 
 * `map`
 
    1. `map()` 함수의 첫 번째 매개 변수는 전체 배열 항목입니다.
-   1. 두 번째 매개 변수는 값 항목의 원시 이름입니다. 원시 이름을 얻으려면 [!UICONTROL mapping] 패널의 항목 위로 마우스를 가져갑니다.
+   1. 두 번째 매개 변수는 값 항목의 원시 이름입니다. 원시 이름을 얻으려면 [!UICONTROL 매핑] 패널의 항목 위로 마우스를 가져갑니다.
 
       ![원시 이름 가져오기](assets/obtain-raw-name-350x124.png)
 
@@ -185,6 +185,6 @@ Workfront Fusion의 일부 필드를 사용하면 요소를 배열에 매핑할 
 
 ## 배열 요소를 일련의 번들로 변환
 
-배열은 [!UICONTROL Iterator] 모듈을 사용하여 일련의 번들로 변환할 수 있습니다. 자세한 내용은 [[!UICONTROL Iterator] 모듈](/help/workfront-fusion/references/modules/iterator-module.md)을 참조하세요.
+배열은 [!UICONTROL 반복자] 모듈을 사용하여 일련의 번들로 변환할 수 있습니다. 자세한 내용은 [[!UICONTROL 반복자] 모듈](/help/workfront-fusion/references/modules/iterator-module.md)을 참조하세요.
 
 ![일련의 번들](assets/series-of-bundles.png)

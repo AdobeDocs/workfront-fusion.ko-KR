@@ -6,10 +6,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: dafecd8b-96e5-46da-9ab6-15f0bc9b52a4
-source-git-commit: 23e9f383b25c7b3789c413e557b94418e48a636b
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 1%
+source-wordcount: '524'
+ht-degree: 0%
 
 ---
 
@@ -32,17 +32,17 @@ Adobe Workfront Fusion 템플릿은 다양한 워크플로를 자동화하고 �
   <col>
   <tbody>
     <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] 플랜</td>
+      <td role="rowheader">Adobe Workfront 플랜</td>
       <td><p>임의</p></td>
     </tr>
     <tr data-mc-conditions="">
-      <td role="rowheader">[!DNL Adobe Workfront] 라이센스</td>
-      <td><p>신규: [!UICONTROL Standard]</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p></td>
+      <td role="rowheader">Adobe Workfront 라이선스</td>
+      <td><p>새로운 기능: 표준</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p></td>
     </tr>
     <tr>
-      <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td>
+      <td role="rowheader">Adobe Workfront Fusion 라이센스**</td>
       <td>
-        <p>현재: [!DNL Workfront Fusion] 라이선스 요구 사항이 없습니다.</p>
+        <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
         <p>또는</p>
         <p>레거시: 모두</p>
       </td>
@@ -52,11 +52,11 @@ Adobe Workfront Fusion 템플릿은 다양한 워크플로를 자동화하고 �
       <td>
         <p>신규:</p>
         <ul>
-          <li>[!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Workfront] 플랜: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</li>
-          <li>[!UICONTROL Ultimate] [!DNL Workfront] 플랜 [!DNL Workfront Fusion]이(가) 포함되어 있습니다.</li>
+          <li>[!UICONTROL Select] 또는 [!UICONTROL Prime] Workfront 플랜: 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li>
+          <li>[!UICONTROL Ultimate] Workfront 계획: Workfront Fusion이 포함됩니다.</li>
         </ul>
         <p>또는</p>
-        <p>현재: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</p>
+        <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
       </td>
     </tr>
   </tbody>
@@ -65,20 +65,20 @@ Adobe Workfront Fusion 템플릿은 다양한 워크플로를 자동화하고 �
 <!--
 For more detail about the information in this table, see [Access requirements in Workfront documentation](/help/quicksilver/administration-and-setup/add-users/access-levels-and-object-permissions/access-level-requirements-in-documentation.md). 
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).-->
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).-->
 
 +++
 
-## [!DNL Workfront Fusion] 템플릿 승인 또는 승인 취소
+## Workfront Fusion 템플릿 승인 또는 승인 취소
 
-템플릿을 승인하면 [!UICONTROL Public templates] 탭에 표시되고 모든 사용자가 사용할 수 있습니다.
+템플릿을 승인하면 [!UICONTROL 공개 템플릿] 탭에 표시되고 모든 사용자가 사용할 수 있습니다.
 
-템플릿을 승인하지 않으면 [!UICONTROL Public templates] 탭에서 템플릿이 제거되고 템플릿을 만든 팀만 사용할 수 있게 됩니다.
+템플릿을 승인하지 않으면 [!UICONTROL 공개 템플릿] 탭에서 템플릿이 제거되고 템플릿을 만든 팀만 사용할 수 있게 됩니다.
 
-1. 왼쪽 탐색 패널에서 **[!UICONTROL Administration]**&#x200B;을(를) 클릭하여 [!UICONTROL Administration] 영역을 엽니다.
-1. 왼쪽 탐색 패널에서 **[!UICONTROL Templates]**&#x200B;을(를) 클릭합니다.
-1. 서식 파일을 승인하려면 서식 파일의 오른쪽에 있는 **[!UICONTROL Approve]**&#x200B;을(를) 클릭합니다.
-1. 서식 파일을 승인하지 않으려면 서식 파일의 오른쪽에 있는 **[!UICONTROL Disapprove]**&#x200B;을(를) 클릭합니다.
+1. 왼쪽 탐색 패널에서 **[!UICONTROL 관리]**&#x200B;를 클릭하여 [!UICONTROL 관리] 영역을 엽니다.
+1. 왼쪽 탐색 패널에서 **[!UICONTROL 템플릿]**&#x200B;을 클릭합니다.
+1. 템플릿을 승인하려면 템플릿 오른쪽에 있는 **[!UICONTROL 승인]**&#x200B;을 클릭합니다.
+1. 템플릿을 승인하지 않으려면 템플릿 오른쪽에 있는 **[!UICONTROL 비승인]**&#x200B;을 클릭합니다.
 
 >[!NOTE]
 >
@@ -91,17 +91,17 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 다음 상태를 사용할 수 있습니다.
 
-* **[!UICONTROL Private]**: 이 템플릿은 템플릿 작성자와 해당 팀에만 표시됩니다.
-* **[!UICONTROL Published]**: 이 템플릿은 템플릿 작성자와 해당 팀에만 표시됩니다. 게시되면 원하는 경우 승인을 위해 템플릿을 전송할 수 있습니다. 공유 가능한 링크를 복사할 수도 있습니다.
-* **[!UICONTROL Approved]**: 이 템플릿은 모든 Workfront Fusion 사용자가 [!UICONTROL Public templates] 탭에 볼 수 있습니다. 화면 오른쪽 상단의 [!UICONTROL Options]을(를) 클릭하여 공유 가능한 링크를 복사할 수도 있습니다.
+* **[!UICONTROL 개인]**: 이 템플릿은 템플릿 작성자와 해당 팀에만 표시됩니다.
+* **[!UICONTROL 게시됨]**: 이 템플릿은 템플릿 작성자와 해당 팀에만 표시됩니다. 게시되면 원하는 경우 승인을 위해 템플릿을 전송할 수 있습니다. 공유 가능한 링크를 복사할 수도 있습니다.
+* **[!UICONTROL 승인됨]**: 이 템플릿은 모든 Workfront Fusion 사용자가 [!UICONTROL 공용 템플릿] 탭에서 볼 수 있습니다. 화면 오른쪽 상단의 [!UICONTROL 옵션]을 클릭하여 공유 가능한 링크를 복사할 수도 있습니다.
 
-[!UICONTROL Team templates] 탭에서 상태를 확인할 수도 있습니다. 템플릿이 게시되면 템플릿 이름 오른쪽에 아이콘이 표시됩니다.
+[!UICONTROL 팀 템플릿] 탭에서 상태를 확인할 수도 있습니다. 템플릿이 게시되면 템플릿 이름 오른쪽에 아이콘이 표시됩니다.
 
 * **눈 모양 아이콘**: 템플릿이 게시되었으며, 팀에서만 볼 수 있고 승인 요청이 전송되지 않았습니다.
 * **노란색 확인 표시 아이콘**: 템플릿이 게시되었으며 팀에만 표시되며 공개 템플릿 탭에 추가하는 승인을 보류 중입니다.
-* **녹색 확인 표시 아이콘**: 템플릿은 공개 템플릿 탭에서 사용할 수 있으며 모든 Workfront Fusion 사용자에게 표시됩니다. 또한 [!UICONTROL Team templates] 탭에도 표시됩니다. 템플릿 작성자 또는 팀원은 여전히 템플릿을 편집할 수 있습니다.
+* **녹색 확인 표시 아이콘**: 템플릿은 공개 템플릿 탭에서 사용할 수 있으며 모든 Workfront Fusion 사용자에게 표시됩니다. 또한 [!UICONTROL 팀 템플릿] 탭에도 표시됩니다. 템플릿 작성자 또는 팀원은 여전히 템플릿을 편집할 수 있습니다.
 
-아이콘이 없는 서식 파일의 상태는 [!UICONTROL Private]입니다. 이 지표는 게시되지 않으며 팀에게만 표시됩니다.
+아이콘이 없는 서식 파일의 상태는 [!UICONTROL 개인]입니다. 이 지표는 게시되지 않으며 팀에게만 표시됩니다.
 
 
 <!--

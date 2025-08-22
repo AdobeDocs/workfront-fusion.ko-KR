@@ -4,16 +4,16 @@ description: Adobe Workfront Fusion 매핑 패널에서 다음 문자열 함수�
 author: Becky
 feature: Workfront Fusion
 exl-id: d3e49fce-85bc-4ee6-9a94-497a306e0c74
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 0%
+source-wordcount: '619'
+ht-degree: 4%
 
 ---
 
 # 문자열 함수
 
-## [!UICONTROL length (text or buffer)]
+## [!UICONTROL 길이(텍스트 또는 버퍼)]
 
 텍스트 문자열 길이(문자 수) 또는 이진 버퍼(버퍼 크기(바이트))를 반환합니다.
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL lower (text)]
+## [!UICONTROL 하단(텍스트)]
 
 텍스트 문자열의 모든 알파벳 문자를 소문자로 변환합니다.
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL capitalize (text)]
+## [!UICONTROL 자본화(텍스트)]
 
 텍스트 문자열의 첫 번째 문자를 대문자로 변환합니다.
 
@@ -51,11 +51,11 @@ ht-degree: 0%
 
 `capitalize( workfront )`
 
-반환: [!DNL Workfront]
+반환: Workfront
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL startcase (text)]
+## [!UICONTROL 시작 사례(텍스트)]
 
 모든 단어의 첫 번째 문자를 대문자로 사용하고 다른 모든 문자는 소문자로 바꿉니다.
 
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL ascii (text; [remove diacritics])]
+## [!UICONTROL ascii(텍스트; [분음 부호 제거])]
 
 텍스트 문자열에서 ASCII가 아닌 모든 문자를 제거합니다.
 
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 * `ascii(` `Wěošrčkřfžrýoáníté` `)`
 
-반환: [!DNL Workfront]
+반환: Workfront
 
 * `ascii(` `ěščřž` `;` `true` `)`
 
@@ -86,7 +86,7 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL replace (text;search string; replacement string)]
+## [!UICONTROL 바꾸기(텍스트;검색 문자열; 대체 문자열)]
 
 검색 문자열을 새 문자열로 바꿉니다.
 
@@ -106,7 +106,7 @@ ht-degree: 0%
 
 **예:**
 
-![바꾸기](assets/replace---1-350x31.png)
+![Replace](assets/replace---1-350x31.png)
 
 X X X X는 모두 X로 대체된다
 
@@ -138,11 +138,11 @@ X X X X는 모두 X로 대체된다
 
 정규식에 대한 자세한 내용은 [텍스트 구문 분석기](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md)를 참조하십시오.
 
-## [!UICONTROL trim (text)]
+## [!UICONTROL 트리밍(텍스트)]
 
 텍스트의 시작 또는 끝에 있는 공백 문자를 제거합니다.
 
-## [!UICONTROL upper (text)]
+## [!UICONTROL upper(텍스트)]
 
 텍스트 문자열의 모든 알파벳 문자를 대문자로 변환합니다.
 
@@ -156,7 +156,7 @@ X X X X는 모두 X로 대체된다
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL substring (text; start;end)]
+## [!UICONTROL 하위 문자열(텍스트; start;end)]
 
 시작 위치와 끝 위치 사이의 텍스트 문자열 부분을 반환합니다.
 
@@ -196,7 +196,7 @@ X X X X는 모두 X로 대체된다
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL toBinary (value)]
+## [!UICONTROL toBinary(값)]
 
 모든 값을 이진 데이터로 변환합니다.
 
@@ -216,15 +216,15 @@ X X X X는 모두 X로 대체된다
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL toString (value)]
+## [!UICONTROL toString(값)]
 
 모든 값을 문자열로 변환합니다.
 
-## [!UICONTROL encodeURL (text)]
+## [!UICONTROL encodeURL(텍스트)]
 
 일부 텍스트의 특수 문자를 유효한 URL 주소로 인코딩합니다.
 
-## [!UICONTROL decodeURL (text)]
+## [!UICONTROL decodeURL(텍스트)]
 
 URL의 특수 문자를 텍스트로 디코딩합니다.
 
@@ -233,11 +233,11 @@ URL의 특수 문자를 텍스트로 디코딩합니다.
 **예:**
 `decodeURL( Automate%20your%20workflow )`
 
-반환: [!UICONTROL Automate your workflow]
+반환: [!UICONTROL 워크플로우 자동화]
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL escapeHTML (text)]
+## [!UICONTROL 이스케이프 HTML(텍스트)]
 
 텍스트의 모든 HTML 태그를 이스케이프 처리합니다.
 
@@ -265,7 +265,7 @@ URL의 특수 문자를 텍스트로 디코딩합니다.
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL stripHTML (text)]
+## [!UICONTROL stripHTML(텍스트)]
 
 텍스트에서 모든 HTML 태그를 제거합니다.
 
@@ -297,7 +297,7 @@ URL의 특수 문자를 텍스트로 디코딩합니다.
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL split (text; separator)]
+## [!UICONTROL 분할(텍스트, 구분 기호)]
 
 문자열을 하위 문자열로 분리하여 문자열을 문자열 배열로 분할합니다.
 
@@ -309,7 +309,7 @@ URL의 특수 문자를 텍스트로 디코딩합니다.
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL md5 (text)]
+## [!UICONTROL md5(텍스트)]
 
 문자열의 md5 해시를 계산합니다.
 
@@ -323,7 +323,7 @@ URL의 특수 문자를 텍스트로 디코딩합니다.
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL sha1 (text; [encoding]; [key])]
+## [!UICONTROL sha1(텍스트; [인코딩]; [키])]
 
 문자열의 sha1 해시를 계산합니다. key 인수를 지정하면 sha1 HMAC 해시가 대신 반환됩니다. 지원되는 인코딩: &quot;hex&quot;(기본값), &quot;base64&quot; 또는 &quot;latin1&quot;.
 
@@ -337,7 +337,7 @@ URL의 특수 문자를 텍스트로 디코딩합니다.
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL sha256 (text; [encoding]; [key])]
+## [!UICONTROL sha256(텍스트; [인코딩]; [키])]
 
 문자열의 sha256 해시를 계산합니다. key 인수를 지정하면 sha256 HMAC 해시가 대신 반환됩니다. 지원되는 인코딩: &quot;hex&quot;(기본값), &quot;base64&quot; 또는 &quot;latin1&quot;.>
 
@@ -351,7 +351,7 @@ URL의 특수 문자를 텍스트로 디코딩합니다.
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL sha512 (text; [output encoding]; [key]; [key encoding])]
+## [!UICONTROL sha512(텍스트; [출력 인코딩]; [키]; [키 인코딩])]
 
 문자열의 sha512 해시를 계산합니다. key 인수를 지정하면 sha512 HMAC 해시가 대신 반환됩니다.
 
@@ -379,7 +379,7 @@ URL의 특수 문자를 텍스트로 디코딩합니다.
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL base64 (text)]
+## [!UICONTROL base64(텍스트)]
 
 텍스트를 base64로 변환합니다.
 

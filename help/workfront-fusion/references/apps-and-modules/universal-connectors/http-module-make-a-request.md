@@ -4,16 +4,16 @@ description: Adobe Workfront Fusion HTTP > 요청 만들기 모듈은 HTTP 요�
 author: Becky
 feature: Workfront Fusion
 exl-id: 42f6176e-86e0-489e-868b-66823a932daf
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '960'
 ht-degree: 1%
 
 ---
 
 # [!UICONTROL HTTP] > [!UICONTROL 요청] 모듈
 
-[!DNL Adobe Workfront Fusion] [!UICONTROL HTTP] > [!UICONTROL 요청 모듈 만들기]는 HTTP 요청을 구성하고 서버에 제출할 수 있는 유니버설 모듈입니다. 그러면 수신된 HTTP 응답이 출력 번들에 포함됩니다.
+Adobe Workfront Fusion [!UICONTROL HTTP] > [!UICONTROL 요청 모듈 만들기]는 HTTP 요청을 구성하고 서버에 제출할 수 있는 범용 모듈입니다. 그러면 수신된 HTTP 응답이 출력 번들에 포함됩니다.
 
 >[!NOTE]
 >
@@ -58,13 +58,13 @@ ht-degree: 1%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
 ## [!UICONTROL HTTP] > [!UICONTROL 요청] 모듈 구성
 
-[!UICONTROL HTTP] > [!UICONTROL 요청] 모듈을 구성할 때 [!DNL Adobe Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!UICONTROL HTTP] > [!UICONTROL 요청 만들기] 모듈을 구성하면 Adobe Workfront Fusion에 아래 나열된 필드가 표시됩니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -95,7 +95,7 @@ ht-degree: 1%
    <td> <p>HTTP Body는 사용할 데이터 바이트가 있는 경우 헤더 바로 다음에 오는 HTTP 트랜잭션 메시지로 전송됩니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p>원시 본문 유형은 일반적으로 개발자 설명서에서 전송할 데이터를 지정하지 않는 경우에도 대부분의 HTTP 본문 요청에 적합합니다.</p> <p>[!UICONTROL Content type] 필드에서 데이터를 구문 분석하는 형식을 지정합니다.</p> <p>선택한 콘텐츠 유형에도 불구하고 데이터는 개발자 설명서에서 규정하거나 요구하는 모든 형식으로 입력됩니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>이 본문 유형은 <code>[!UICONTROL application/x-www-form-urlencoded]</code>을(를) 사용하여 [!UICONTROL POST] 데이터에 대한 것입니다.</p> <p><code>application/x-www-form-urlencoded</code>의 경우 서버로 전송된 HTTP 메시지의 본문은 기본적으로 하나의 쿼리 문자열입니다. 키와 값은 키와 값 사이에 <code>=</code>이(가) 있고 <code>&amp;</code>(으)로 구분된 키-값 쌍으로 인코딩됩니다. </p> <p>이진 데이터의 경우 대신 <code>[!UICONTROL multipart/form-data]</code>을(를) 사용합니다.</p> 
+     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>이 본문 유형은 <code>[!UICONTROL application/x-www-form-urlencoded]</code>을(를) 사용하여 [!UICONTROL POST] 데이터에 대한 것입니다.</p> <p><code>application/x-www-form-urlencoded</code>의 경우 서버로 전송된 HTTP 메시지의 본문은 기본적으로 하나의 쿼리 문자열입니다. 키와 값은 키와 값 사이에 <code>&amp;</code>이(가) 있고 <code>=</code>(으)로 구분된 키-값 쌍으로 인코딩됩니다. </p> <p>이진 데이터의 경우 대신 <code>[!UICONTROL multipart/form-data]</code>을(를) 사용합니다.</p> 
       <div class="example" data-mc-autonum="<b>Example: </b>">
        <span class="autonumber"><span><b>예: </b></span></span> 
        <p>결과 HTTP 요청 형식의 예:</p> 
@@ -164,7 +164,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 배열로 동일한 쿼리 문자열 키를 여러 개 직렬화할 수 없음]</p> </td> 
-   <td> <p>기본적으로 [!DNL Workfront Fusion]은(는) 배열과 동일한 URL 쿼리 문자열 매개 변수 키에 대해 여러 값을 처리합니다. 예를 들어 <code>www.test.com?foo=bar&amp;foo=baz</code>은(는) <code>www.test.com?foo[0]=bar&amp;foo[1]=baz</code>(으)로 변환됩니다. 이 기능을 비활성화하려면 이 옵션을 활성화합니다. </p> </td> 
+   <td> <p>기본적으로 Workfront Fusion은 배열과 동일한 URL 쿼리 문자열 매개 변수 키에 대해 여러 값을 처리합니다. 예를 들어 <code>www.test.com?foo=bar&amp;foo=baz</code>은(는) <code>www.test.com?foo[0]=bar&amp;foo[1]=baz</code>(으)로 변환됩니다. 이 기능을 비활성화하려면 이 옵션을 활성화합니다. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Request compressed content]</td> 

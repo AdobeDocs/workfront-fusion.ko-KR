@@ -4,10 +4,10 @@ description: 항목을 매핑할 때 함수를 사용하여 단순 또는 복합
 author: Becky
 feature: Workfront Fusion
 exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 0%
+source-wordcount: '673'
+ht-degree: 1%
 
 ---
 
@@ -29,17 +29,17 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 패키지</td> 
+   <td role="rowheader">Adobe Workfront 패키지</td> 
    <td> <p>임의</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 라이센스</td> 
-   <td> <p>신규: [!UICONTROL Standard]</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
+   <td role="rowheader">Adobe Workfront 라이선스</td> 
+   <td> <p>새로운 기능: 표준</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td> 
+   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: [!DNL Workfront Fusion] 라이선스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
    <p>또는</p>
    <p>레거시: 모두 </p>
    </td> 
@@ -47,16 +47,16 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Workfront] 플랜: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 플랜: [!DNL Workfront Fusion]이(가) 포함되어 있습니다.</li></ul>
+   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] Workfront 플랜: 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li><li>[!UICONTROL Ultimate] Workfront 계획: Workfront Fusion이 포함됩니다.</li></ul>
    <p>또는</p>
-   <p>현재: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</p>
+   <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">액세스 수준 구성*</td> 
    <td> 
-     <p>조직의 [!DNL Workfront Fusion] 관리자여야 합니다.</p>
-     <p>팀의 [!DNL Workfront Fusion] 관리자여야 합니다.</p>
+     <p>조직의 Workfront Fusion 관리자여야 합니다.</p>
+     <p>팀의 Workfront Fusion 관리자여야 합니다.</p>
    </td> 
   </tr> 
    </td> 
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 함수를 필드에 삽입하려면 다음 작업을 수행하십시오.
 
-1. 왼쪽 패널의 **[!UICONTROL Scenarios]** 탭을 클릭합니다.
+1. 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭합니다.
 1. 데이터를 매핑할 시나리오를 선택합니다.
 1. 시나리오의 아무 곳이나 클릭하여 시나리오 편집기를 입력합니다.
 1. 함수를 삽입할 필드를 클릭합니다.
@@ -137,22 +137,22 @@ ht-degree: 0%
 
 ## [!DNL Google Sheets]개 함수 사용
 
-[!DNL Workfront Fusion]에 사용할 함수가 없지만 [!DNL Google Sheets]에 포함된 함수가 있는 경우 다음 단계를 수행하여 사용할 수 있습니다.
+Workfront Fusion에 사용하려는 함수가 없지만 [!DNL Google Sheets]에 포함된 경우 다음 단계에 따라 사용할 수 있습니다.
 
 1. [!DNL Google Sheets]에서 빈 스프레드시트를 새로 만듭니다.
-1. [!DNL Workfront Fusion]에서 시나리오를 엽니다.
-1. 시나리오에 **[!DNL Google Sheets]** >**[!UICONTROL Update a cell]** 모듈을 추가합니다.
+1. Workfront Fusion에서 시나리오를 엽니다.
+1. 시나리오에 **[!DNL Google Sheets]** >**[!UICONTROL 셀 업데이트]** 모듈을 추가합니다.
 
 1. 모듈을 구성합니다.
 
-   1. **[!UICONTROL Spreadsheet]** 필드에서 새로 만든 스프레드시트를 선택합니다.
-   1. [!DNL Google Sheets] 함수가 포함된 수식을 **[!UICONTROL Value]** 필드에 삽입합니다.
+   1. **[!UICONTROL 스프레드시트]** 필드에서 새로 만든 스프레드시트를 선택합니다.
+   1. [!DNL Google Sheets] 함수가 포함된 수식을 **[!UICONTROL Value]** 필드에 삽입하십시오.
 
       이전 모듈의 출력을 평소대로 사용할 수 있습니다.
 
       ![Google Sheets 함수 사용](assets/exploit-google-sheet-functions-350x218.png)
 
-1. 계산된 결과를 얻으려면 **[!UICONTROL Google Sheets]>[!UICONTROL Get a cell]** 모듈을 삽입하십시오.
+1. 계산된 결과를 얻으려면 **[!UICONTROL Google 시트] >[!UICONTROL 셀 가져오기]** 모듈을 삽입하십시오.
 1. 4단계에서 사용한 것과 동일한 셀 ID를 사용하여 모듈을 구성합니다.
 
    ![Google Sheets 함수 사용](assets/exploit-google-sheet-functions-2-350x187.png)

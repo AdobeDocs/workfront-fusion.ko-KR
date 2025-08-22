@@ -1,19 +1,19 @@
 ---
 title: Dropbox 모듈
-description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Dropbox을 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다. 이를 통해 Dropbox에서 파일 및 폴더를 모니터링, 검색, 검색, 나열, 만들기 및 편집과 같은 작업을 자동화할 수 있습니다.'
+description: Adobe Workfront Fusion 시나리오에서는 Dropbox을 사용하는 워크플로를 자동화하고 여러 타사 애플리케이션 및 서비스에 연결할 수 있습니다. 이를 통해 Dropbox에서 파일 및 폴더를 모니터링, 검색, 검색, 나열, 만들기 및 편집하는 등의 활동을 자동화할 수 있습니다.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
-source-git-commit: 2ed8e4e956bacc18a43947c4c55482cf32533054
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '3238'
-ht-degree: 0%
+source-wordcount: '3286'
+ht-degree: 1%
 
 ---
 
 # [!DNL Dropbox]개 모듈
 
-[!DNL Adobe Workfront Fusion] 시나리오에서는 [!UICONTROL Dropbox] 또는 [!DNL Dropbox Business]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다. 이를 통해 [!UICONTROL Dropbox]에서 파일 및 폴더를 모니터링, 검색, 검색, 나열, 만들기 및 편집과 같은 활동을 자동화할 수 있습니다.
+Adobe Workfront Fusion 시나리오에서는 [!UICONTROL Dropbox] 또는 [!DNL Dropbox Business]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다. 이를 통해 [!UICONTROL Dropbox]에서 파일 및 폴더를 모니터링, 검색, 검색, 나열, 만들기 및 편집과 같은 활동을 자동화할 수 있습니다.
 
 시나리오를 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 인덱스](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -69,10 +69,10 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >* Dropbox 커넥터를 사용하려면 먼저 Dropbox에서 애플리케이션을 만들어야 합니다.
->   자세한 내용은 Dropbox 개발자 안내서에서 &quot;애플리케이션 만들기&quot;를 검색하십시오.
+>  >   자세한 내용은 Dropbox 개발자 안내서에서 &quot;애플리케이션 만들기&quot;를 검색하십시오.
 >* 응용 프로그램을 만들 때 다음 리디렉션 URI를 사용하십시오. `https://app.workfrontfusion.com/oauth/cb/dropbox`
 >* Dropbox은 사용자가 50명을 초과하는 애플리케이션을 승인해야 합니다.
->   자세한 내용을 보려면 Dropbox 개발자 안내서에서 &quot;프로덕션 승인&quot;을 검색하십시오.
+>  >   자세한 내용을 보려면 Dropbox 개발자 안내서에서 &quot;프로덕션 승인&quot;을 검색하십시오.
 
 ## Dropbox API 정보
 
@@ -147,7 +147,7 @@ Dropbox 커넥터는 다음을 사용합니다.
 
 ## [!DNL Dropbox]개 모듈 및 해당 필드
 
-[!DNL Dropbox] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Dropbox] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!DNL Dropbox] 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Dropbox] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
@@ -170,7 +170,7 @@ Dropbox 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Dropbox] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a>에 연결 만들기 를 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Dropbox] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a>에 연결 만들기 를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 폴더] </td> 
@@ -215,7 +215,7 @@ Dropbox 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Dropbox] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a>에 연결 만들기 를 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Dropbox] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a>에 연결 만들기 를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>파일 선택 방법</td> 
@@ -244,7 +244,7 @@ Dropbox 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Dropbox] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a>에 연결 만들기 를 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Dropbox] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a>에 연결 만들기 를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>공유 폴더 ID</td> 
@@ -269,7 +269,7 @@ Dropbox 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Dropbox] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a>에 연결 만들기 를 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Dropbox] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a>에 연결 만들기 를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>목록 </td> 
@@ -305,7 +305,7 @@ Dropbox 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Dropbox] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a>에 연결 만들기 를 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Dropbox] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a>에 연결 만들기 를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>파일 선택 방법</td> 
@@ -334,7 +334,7 @@ Dropbox 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Dropbox] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a>에 연결 만들기 를 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Dropbox] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a>에 연결 만들기 를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Search] </td> 
@@ -390,7 +390,7 @@ Dropbox 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Dropbox] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a>에 연결 만들기 를 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Dropbox] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a>에 연결 만들기 를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 폴더 이름] </td> 
@@ -421,7 +421,7 @@ Dropbox 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Dropbox] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a>에 연결 만들기 를 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Dropbox] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a>에 연결 만들기 를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Select to]</td> 
@@ -450,7 +450,7 @@ Dropbox 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Dropbox] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a>에 연결 만들기 를 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Dropbox] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a>에 연결 만들기 를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 파일 선택 방법]</td> 
@@ -492,7 +492,7 @@ Dropbox 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Dropbox] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a>에 연결 만들기 를 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Dropbox] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a>에 연결 만들기 를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 파일 선택 방법]</td> 
@@ -521,7 +521,7 @@ Dropbox 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Dropbox] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a>에 연결 만들기 를 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Dropbox] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a>에 연결 만들기 를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 파일/폴더 선택 방법] </td> 
@@ -566,7 +566,7 @@ Dropbox 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Dropbox] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a>에 연결 만들기 를 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Dropbox] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a>에 연결 만들기 를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>파일 선택 방법</td> 
@@ -600,7 +600,7 @@ Dropbox 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Dropbox] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a>에 연결 만들기 를 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Dropbox] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a>에 연결 만들기 를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 파일 선택 방법]</td> 
@@ -633,7 +633,7 @@ Dropbox 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Dropbox] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a>에 연결 만들기 를 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Dropbox] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a>에 연결 만들기 를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 폴더]</td> 
@@ -665,7 +665,7 @@ Dropbox 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Dropbox] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a>에 연결 만들기 를 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Dropbox] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a>에 연결 만들기 를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL URL]</p> </td> 
@@ -677,7 +677,7 @@ Dropbox 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td>[!UICONTROL Headers] </td> 
-   <td> <p>원하는 요청 헤더를 입력합니다. [!DNL Workfront Fusion]이(가) 인증 헤더를 자동으로 추가합니다.</p> </td> 
+   <td> <p>원하는 요청 헤더를 입력합니다. Workfront Fusion은 인증 헤더를 자동으로 추가합니다.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 쿼리 문자열]</td> 
@@ -697,7 +697,7 @@ Dropbox 커넥터는 다음을 사용합니다.
 
 **예:**
 
-다음 API 호출은 [!DNL Dropbox] 계정의 [!DNL /Text files] 폴더에서 처음 10개의 파일을 반환합니다.
+다음 API 호출은 [!DNL /Text files] 계정의 [!DNL Dropbox] 폴더에서 처음 10개의 파일을 반환합니다.
 
 URL: `/2/files/list_folder`
 
@@ -734,7 +734,7 @@ URL: `/2/files/list_folder`
 
 [!UICONTROL Dropbox] >[!UICONTROL 공유 링크 만들기]에서 반환된 URL은 이미지에 직접 연결되지 않고 [!DNL Dropbox] 페이지에 연결됩니다. 이미지를 강제로 다운로드하려면 후행 `?dl=0`을(를) `?dl=1`(으)로 바꾸십시오. 이미지를 렌더링하려면(예: 웹 브라우저나 Facebook Messenger에서) URL에 `&raw=1`을(를) 추가합니다.
 
-웹 사이트 또는 다른 [!DNL Workfront Fusion] 모듈에 대한 이미지의 직접 또는 원시 링크를 가져와야 하는 경우 다음과 같은 방법으로 초기 공유 URL을 수정해야 합니다.
+웹 사이트 또는 다른 Workfront Fusion 모듈에 대한 이미지의 직접 또는 원시 링크를 가져와야 하는 경우 다음과 같은 방법으로 초기 공유 URL을 수정해야 합니다.
 
 원래 URL:
 

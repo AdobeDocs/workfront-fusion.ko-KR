@@ -4,9 +4,9 @@ description: Fusion은 웹 통신에 특정 IP 주소 및 도메인을 사용합
 author: Becky
 feature: Workfront Fusion
 exl-id: 406dd45c-0863-4270-a80e-c1c115e0b367
-source-git-commit: 59d739093c88238af7a7e97499fd0c7d7cf6053a
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -17,8 +17,8 @@ Adobe Workfront Fusion은 조직의 네트워크와 통신하므로 해당 통�
 
 이는 본질적으로 방화벽을 통해 데이터를 전송하거나 수신할 수 있는 사이트의 &quot;목록&quot;인 허용 목록에 추가하다를 통해 수행됩니다. 사이트는 다음 두 가지 방법 중 하나로 식별할 수 있습니다.
 
-* **IP 주소**: 52.31.132.175와 같은 일련의 숫자
-* **도메인**: URL의 일부(예: `www.thisdomain.com`의 `thisdomain`)
+* **IP 주소**: 52.31.132.175과(와) 같은 일련의 숫자
+* **도메인**: URL의 일부(예: `thisdomain`의 `www.thisdomain.com`)
 
 Fusion은 웹 통신에 특정 IP 주소 및 도메인을 사용합니다. 조직에서 Workfront을 사용하려면 먼저 조직의 허용 목록에 추가하다에 추가해야 합니다.
 
@@ -82,7 +82,7 @@ URL을 통해 Fusion에 액세스하는 경우 URL을 검사하여 데이터 센
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] EU 데이터 센터</td> 
+   <td role="rowheader">Adobe Workfront EU 데이터 센터</td> 
    <td> 
     <ul> 
      <li>52.30.133.50</li> 
@@ -91,7 +91,7 @@ URL을 통해 Fusion에 액세스하는 경우 URL을 검사하여 데이터 센
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!DNL Adobe Workfront] 미국 데이터 센터</p> </td> 
+   <td role="rowheader"> <p>Adobe Workfront 미국 데이터 센터</p> </td> 
    <td> 
     <ul> 
      <li>54.244.142.219</li> 
@@ -103,7 +103,7 @@ URL을 통해 Fusion에 액세스하는 경우 URL을 검사하여 데이터 센
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] Microsoft Azure 클러스터에서</td> 
+   <td role="rowheader">Microsoft Azure 클러스터의 Adobe Workfront Fusion</td> 
    <td> 
     <ul> 
      <li>20.36.133.48/28</li> 
@@ -121,15 +121,15 @@ URL을 통해 Fusion에 액세스하는 경우 URL을 검사하여 데이터 센
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] EU 데이터 센터</td> 
+   <td role="rowheader">Adobe Workfront EU 데이터 센터</td> 
    <td> <p> hook.app-eu.workfrontfusion.com </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!DNL Adobe Workfront] 미국 데이터 센터</p> </td> 
+   <td role="rowheader"> <p>Adobe Workfront 미국 데이터 센터</p> </td> 
    <td> <p>hook.app.workfrontfusion.com </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!DNL Adobe Workfront Fusion] Microsoft Azure 클러스터에서</p> </td> 
+   <td role="rowheader"> <p>Microsoft Azure 클러스터의 Adobe Workfront Fusion</p> </td> 
    <td> <p>hook.app-az.workfrontfusion.com </p> </td> 
   </tr> 
  </tbody> 

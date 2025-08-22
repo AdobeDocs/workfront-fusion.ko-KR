@@ -4,16 +4,16 @@ description: Adobe Workfront Fusion 이미지 모듈을 사용하면 특정 이�
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: a7696c9d-002d-4bb4-ae10-1f69dc5e66fe
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
 
 # 이미지 모듈
 
-[!DNL Adobe Workfront Fusion] [!UICONTROL 이미지] 모듈을 사용하면 특정 이미지(치수, 유형 등)에 대한 정보를 얻고, 이미지를 다른 파일 형식으로 변환하고, 이미지 크기를 직접 변경할 수 있습니다.
+Adobe Workfront Fusion [!UICONTROL 이미지] 모듈을 사용하면 특정 이미지(치수, 유형 등)에 대한 정보를 얻고, 이미지를 다른 파일 형식으로 변환하고, 이미지 크기를 직접 변경할 수 있습니다.
 
 ## 액세스 요구 사항
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 

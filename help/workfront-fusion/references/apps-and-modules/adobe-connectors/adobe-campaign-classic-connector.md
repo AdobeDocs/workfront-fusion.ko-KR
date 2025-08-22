@@ -1,19 +1,19 @@
 ---
 title: Adobe Campaign v7/v8 모듈
-description: ' [!DNL Adobe Campaign] 모듈을 사용하면  [!DNL Adobe Campaign] 계정의 이벤트를 기반으로  [!DNL Adobe Workfront Fusion] 시나리오를 시작하고, 계약 및 기타 레코드를 만들거나 읽거나 업데이트하고, 설정한 기준을 사용하여 레코드를 검색하고, 문서를 업로드할 수 있습니다.'
+description: ' [!DNL Adobe Campaign] 모듈을 사용하면  [!DNL Adobe Campaign] 계정의 이벤트를 기반으로 Adobe Workfront Fusion 시나리오를 시작하고, 계약 및 기타 레코드를 만들거나 읽거나 업데이트하고, 설정한 기준을 사용하여 레코드를 검색하고, 문서를 업로드할 수 있습니다.'
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1326'
 ht-degree: 1%
 
 ---
 
 # [!DNL Adobe Campaign]개 모듈
 
-[!DNL Adobe Campaign] 모듈을 사용하면 [!DNL Adobe Campaign v7/v8] 계정의 이벤트를 기반으로 [!DNL Adobe Workfront Fusion] 시나리오를 시작하고, 레코드를 만들거나, 읽거나, 업데이트하고, 설정한 기준을 사용하여 레코드를 검색하고, 사용자 지정 API 호출을 수행할 수 있습니다.
+[!DNL Adobe Campaign] 모듈을 사용하면 [!DNL Adobe Campaign v7/v8] 계정의 이벤트를 기반으로 Adobe Workfront Fusion 시나리오를 시작하고, 레코드를 만들거나, 읽거나, 업데이트하고, 설정한 기준을 사용하여 레코드를 검색하고, 사용자 지정 API 호출을 수행할 수 있습니다.
 
 ## 액세스 요구 사항
 
@@ -54,7 +54,7 @@ ht-degree: 1%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -62,7 +62,7 @@ ht-degree: 1%
 
 [!DNL Adobe Campaign]에 Fusion IP 주소를 추가해야 합니다.
 
-* Ip 주소를 Campaign에 추가하는 방법은 Adobe Campaign 설명서에서 [IP 주소를 허용 목록에 추가하다허용 목록에 추가하다 에 추가](https://experienceleague.adobe.com/ko/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list)를 참조하십시오.
+* Ip 주소를 Campaign에 추가하는 방법은 Adobe Campaign 설명서에서 [IP 주소를 허용 목록에 추가하다허용 목록에 추가하다 에 추가](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list)를 참조하십시오.
 * 허용 목록에 추가할 IP 주소 목록을 보려면 [조직의 허용 목록에 추가하다에서 Fusion에 대한 IP 주소 구성](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)을 참조하십시오.
 
 ## Adobe Campaign API 정보
@@ -80,15 +80,15 @@ Adobe Campaign 커넥터는 다음을 사용합니다.
  </tbody> 
  </table>
 
-## [!DNL Adobe Campaign]을(를) [!DNL Adobe Workfront Fusion]에 연결
+## Adobe Workfront Fusion에 [!DNL Adobe Campaign] 연결
 
 >[!IMPORTANT]
 >
 >서버 간 연결을 만드는 것이 좋습니다. Adobe Campaign이 서버 간 연결만 수락하도록 API를 업데이트했습니다. Campaign 버전 8 이상에 연결하는 경우 **서버 간 연결을 만들어야**&#x200B;합니다.
 >
->Campaign의 새 연결 요구 사항에 대한 자세한 내용은 Campaign 설명서에서 [Campaign 기술 연산자를 Adobe Developer Console으로 마이그레이션](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/ims-migration.html?lang=ko)을 참조하십시오.
+>Campaign의 새 연결 요구 사항에 대한 자세한 내용은 Campaign 설명서에서 [Campaign 기술 연산자를 Adobe Developer Console으로 마이그레이션](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/ims-migration.html)을 참조하십시오.
 
-1. [!DNL Adobe Campaign] 모듈에서 [!UICONTROL 연결] 필드 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
+1. [!DNL Adobe Campaign] 모듈에서 **[!UICONTROL 연결]** 필드 옆에 있는 [!UICONTROL 추가]를 클릭합니다.
 1. 다음 필드를 채웁니다.
    <table style="table-layout:auto"> 
       <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
@@ -134,7 +134,7 @@ Adobe Campaign 커넥터는 다음을 사용합니다.
 
 ## [!DNL Adobe Campaign]개 모듈 및 해당 필드
 
-[!DNL Adobe Campaign] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Adobe Campaign] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!DNL Adobe Campaign] 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Adobe Campaign] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
@@ -269,7 +269,7 @@ This scheduled trigger module starts a scenario when a record changes.
       <td>
         <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p>
         <p>For example, <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] [!UICONTROL x-security] 토큰 헤더를 자동으로 추가합니다.</p>
+        <p>Workfront Fusion은 [!UICONTROL x-security] 토큰 헤더를 자동으로 추가합니다.</p>
       </td>
     </tr>
     <tr>
@@ -283,7 +283,7 @@ This scheduled trigger module starts a scenario when a record changes.
 
 이 작업 모듈은 [!DNL Adobe Campaign] API의 개체에 대해 선택한 작업을 수행합니다.
 
-특정 작업 및 필드에 대한 자세한 내용은 [[!DNL Adobe Campaign] - API 설명서](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=ko)를 참조하십시오.
+특정 작업 및 필드에 대한 자세한 내용은 [[!DNL Adobe Campaign] - API 설명서](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html)를 참조하십시오.
 
 <table style="table-layout:auto"> 
  <col> 

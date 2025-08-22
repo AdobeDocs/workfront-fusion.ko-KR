@@ -1,12 +1,12 @@
 ---
 title: 키
-description: ' [!DNL Adobe Workfront Fusion] 의 키 체인은 공개 및 개인 키를 관리하는 데 도움이 됩니다. 키는 예를 들어 PGP 메시지를 암호화하거나 해독하기 위해 암호화기 앱에 의해 사용된다.'
+description: Adobe Workfront Fusion의 키 체인은 공개 및 개인 키를 관리하는 데 도움이 됩니다. 키는 예를 들어 PGP 메시지를 암호화하거나 해독하기 위해 암호화기 앱에 의해 사용된다.
 author: Becky
 feature: Workfront Fusion
 exl-id: b92e54ed-fa03-4af7-be7b-436907b2bff9
-source-git-commit: 3b9a6be135a485f369dbc642b1582545e53e4cae
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 공개 및 개인 키는 데이터를 암호화하고 해독하는 데 사용됩니다. 공개 키를 배포할 수 있으며 공개 키를 가진 모든 사람이 데이터를 암호화할 수 있지만 개인 키만 해독할 수 있습니다. 마찬가지로 개인 키를 가진 사용자는 공개 키를 가진 모든 사람이 해독할 수 있는 데이터를 암호화할 수 있습니다. 키 영역에서 팀이 소유한 키를 보고 관리할 수 있습니다.
 
-## [!DNL Workfront Fusion]에서 키 사용
+## Workfront Fusion에서 키 사용
 
 연결과 마찬가지로 키가 개별 모듈에 추가된 다음 다른 모듈에서 사용할 수 있습니다.
 

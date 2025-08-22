@@ -4,16 +4,16 @@ description: 연결 영역에서 팀 연결을 보고 관리할 수 있습니다
 author: Becky
 feature: Workfront Fusion
 exl-id: 7bedf002-061b-40fc-a0f8-c12d2930bcf9
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 1%
+source-wordcount: '227'
+ht-degree: 2%
 
 ---
 
 # 시나리오 요소 삭제
 
-[!DNL Adobe Workfront Fusion] 계정의 다음 영역에서 시나리오 요소를 저장하고 삭제할 수 있습니다.
+Adobe Workfront Fusion 계정의 다음 영역에서 시나리오 요소를 저장하고 삭제할 수 있습니다.
 
 * [!UICONTROL 시나리오]
 * [!UICONTROL 연결]

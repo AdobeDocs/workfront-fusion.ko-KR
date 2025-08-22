@@ -8,9 +8,9 @@ description: 롤백 또는 커밋 단계 다음에 나오는 시나리오 실행
 author: Becky
 feature: Workfront Fusion
 exl-id: 4bf2a6c7-16b2-4545-9adf-be3947a7017d
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '386'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 불완전한 실행에 대한 자세한 내용은 [Adobe Workfront Fusion에서 불완전한 실행 보기 및 해결](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)을 참조하십시오.
 
-오류 처리 지시문에 대한 자세한 내용은  [!DNL Adobe Workfront Fusion][&#128279;](/help/workfront-fusion/references/errors/directives-for-error-handling.md)의 오류 처리에 대한 지시문을 참조하십시오.
+오류 처리 지시문에 대한 자세한 내용은 [Adobe Workfront Fusion의 오류 처리에 대한 지시문](/help/workfront-fusion/references/errors/directives-for-error-handling.md)을 참조하십시오.
 
 ## 액세스 요구 사항
 
@@ -72,7 +72,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 ## `throw`에 대한 해결 방법
 
-오류를 조건부로 발생시키려면 작업 중에 모듈을 의도적으로 실패하도록 구성할 수 있습니다. 선택적으로 오류(`BundleValidationError`)를 발생시키도록 구성된 [!UICONTROL JSON] > [!UICONTROL JSON 구문 분석] 모듈을 사용할 수 있습니다.
+오류를 조건부로 발생시키려면 작업 중에 모듈을 의도적으로 실패하도록 구성할 수 있습니다. 선택적으로 오류([!UICONTROL )를 발생시키도록 구성된 ]JSON[!UICONTROL  > ]JSON 구문 분석`BundleValidationError` 모듈을 사용할 수 있습니다.
 
 ![JSON 오류](assets/json-parse-json.png)
 

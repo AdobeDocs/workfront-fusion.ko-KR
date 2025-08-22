@@ -4,9 +4,9 @@ description: 매핑은 항목으로 구조화된 모듈의 출력을 다른 모�
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e3f7729-f48e-451e-a90b-d680c9e3bcbc
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
@@ -30,17 +30,17 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 패키지</td> 
+   <td role="rowheader">Adobe Workfront 패키지</td> 
    <td> <p>임의</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 라이센스</td> 
-   <td> <p>신규: [!UICONTROL Standard]</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
+   <td role="rowheader">Adobe Workfront 라이선스</td> 
+   <td> <p>새로운 기능: 표준</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td> 
+   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: [!DNL Workfront Fusion] 라이선스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
    <p>또는</p>
    <p>레거시: 모두 </p>
    </td> 
@@ -48,9 +48,9 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Workfront] 플랜: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 플랜: [!DNL Workfront Fusion]이(가) 포함되어 있습니다.</li></ul>
+   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] Workfront 플랜: 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li><li>[!UICONTROL Ultimate] Workfront 계획: Workfront Fusion이 포함됩니다.</li></ul>
    <p>또는</p>
-   <p>현재: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</p>
+   <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
    </td> 
   </tr>
  </tbody> 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 모듈의 입력 필드에 출력 항목을 지정하려면 다음을 수행합니다.
 
-1. 왼쪽 패널의 **[!UICONTROL Scenarios]** 탭을 클릭합니다.
+1. 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭합니다.
 1. 데이터를 매핑할 시나리오를 선택합니다.
 1. 시나리오의 아무 곳이나 클릭하여 시나리오 편집기를 입력합니다.
 1. 이전 모듈의 출력을 처리해야 하는 모듈을 클릭합니다.
@@ -100,7 +100,7 @@ ht-degree: 0%
 
 #### 인스턴트 트리거
 
-1. 모듈을 마우스 오른쪽 단추로 클릭한 다음 표시되는 메뉴에서 **[!UICONTROL Run this module only]**&#x200B;을(를) 클릭합니다.
+1. 모듈을 마우스 오른쪽 단추로 클릭한 다음 표시되는 메뉴에서 **[!UICONTROL 이 모듈만 실행]**&#x200B;을 클릭합니다.
 
    이것은 즉각적인 트리거이므로 이벤트를 보기 시작합니다.
 
@@ -114,8 +114,8 @@ ht-degree: 0%
 
 #### 폴링 트리거
 
-1. 모듈을 마우스 오른쪽 단추로 클릭한 다음 표시되는 메뉴에서 **[!UICONTROL Run this module only]**&#x200B;을(를) 클릭합니다.
-1. 출력이 없으면 **[!UICONTROL Choose where to start]**&#x200B;을(를) 클릭하고 설정을 조정하세요.
+1. 모듈을 마우스 오른쪽 단추로 클릭한 다음 표시되는 메뉴에서 **[!UICONTROL 이 모듈만 실행]**&#x200B;을 클릭합니다.
+1. 출력이 없으면 **[!UICONTROL 시작할 위치 선택]**&#x200B;을 클릭하고 설정을 조정하세요.
 1. (조건부) 처리할 이벤트가 없는 경우 모듈이 감시하는 이벤트를 만들고 2단계를 반복합니다.
 
    예를 들어 모듈이 작업 할당을 감시하는 Workfront > 레코드 감시 모듈인 경우 Workfront(Fusion 연결에서 사용 중인 사용자가 아닌 사용자)에 로그인하여 작업을 할당한 다음 모듈을 다시 실행합니다.
@@ -133,8 +133,8 @@ ht-degree: 0%
 
 단일 모듈을 실행하려면
 
-1. 모듈을 마우스 오른쪽 단추로 클릭한 다음 표시되는 메뉴에서 **[!UICONTROL Run this module only]**&#x200B;을(를) 클릭합니다.
-1. 입력 항목에 대한 샘플 값을 입력한 다음 **[!UICONTROL OK]** 을(를) 클릭합니다.
+1. 모듈을 마우스 오른쪽 단추로 클릭한 다음 표시되는 메뉴에서 **[!UICONTROL 이 모듈만 실행]**&#x200B;을 클릭합니다.
+1. 입력 항목에 대한 샘플 값을 입력한 다음 **[!UICONTROL 확인]** 을 클릭합니다.
 1. 모듈 실행이 완료되면 모듈 위의 버블을 클릭하여 전체 출력을 탐색합니다.
 
    이제 이후 모듈의 매핑 패널에 모듈의 출력에 있는 모든 항목이 포함됩니다.

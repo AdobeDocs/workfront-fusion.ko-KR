@@ -1,24 +1,24 @@
 ---
 title: 연결 만들기 - 기본 지침
-description: 연결을 만들 때 대부분의  [!DNL Adobe Workfront Fusion] 커넥터는 사용자 지정 구성이 필요하지 않습니다. 이 문서에서는 기본 연결 생성 프로세스에 대해 설명합니다.
+description: 대부분의 Adobe Workfront Fusion 커넥터는 연결을 만들 때 사용자 지정 구성이 필요하지 않습니다. 이 문서에서는 기본 연결 생성 프로세스에 대해 설명합니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: e47ab4d9-6612-4d9a-a024-da508a8bbfb2
-source-git-commit: 6aec65919e79a9e9d950a11de53bfbb1051ca20b
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 0%
+source-wordcount: '546'
+ht-degree: 1%
 
 ---
 
 # 연결 만들기 - 기본 지침
 
-연결을 만들 때 많은 [!DNL Adobe Workfront Fusion] 커넥터에 사용자 지정 구성이 필요하지 않습니다. 이 문서에서는 기본 연결 생성 프로세스에 대해 설명합니다.
+대부분의 Adobe Workfront Fusion 커넥터는 연결을 만들 때 사용자 지정 구성이 필요하지 않습니다. 이 문서에서는 기본 연결 생성 프로세스에 대해 설명합니다.
 
 >[!NOTE]
 >
 >
->Adobe Workfront Fusion에서 시나리오에서 사용하려는 웹 서비스용 앱을 제공하지 않는 경우 다음 문서에 설명된 대로 [!DNL Workfront Fusion] HTTP 및 Webhooks 모듈을 사용하여 웹 서비스에 연결할 수 있습니다.
+>Adobe Workfront Fusion이 시나리오에서 사용하려는 웹 서비스용 앱을 제공하지 않는 경우 다음 문서에 설명된 대로 Workfront Fusion HTTP 및 Webhooks 모듈을 사용하여 웹 서비스에 연결할 수 있습니다.
 >
 >* [API 토큰 인증을 사용하는 웹 서비스에 Adobe Workfront Fusion 연결](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-wf-web-service-uses-api-token-auth.md)
 >* [커넥터 없이 웹 서비스에 대한 웹후크 구성](/help/workfront-fusion/create-scenarios/add-modules/receive-a-webhook-from-a-web-service.md)
@@ -70,9 +70,9 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 특정 응용 프로그램에 대한 연결을 만들려면 해당 응용 프로그램의 모듈에 있어야 합니다. 예를 들어 Workfront에 대한 연결을 만들려면 Workfront 모듈에 있어야 합니다.
 
-[!DNL Workfront Fusion] 모듈 내에서 연결을 만들려면:
+Workfront Fusion 모듈 내에서 연결을 만들려면 다음 작업을 수행하십시오.
 
-1. 지정된 응용 프로그램의 모듈에서 [!UICONTROL 연결] 상자 옆의 **[!UICONTROL 추가]**&#x200B;를 클릭하여 **[!UICONTROL 연결 만들기]** 패널을 엽니다.
+1. 지정된 응용 프로그램의 모듈에서 **[!UICONTROL 연결]** 상자 옆의 [!UICONTROL 추가]를 클릭하여 **[!UICONTROL 연결 만들기]** 패널을 엽니다.
 1. (선택 사항) 기본 **[!UICONTROL 연결 이름]**&#x200B;을 변경합니다.
 1. 환경 필드에서 프로덕션 환경인지 비프로덕션 환경인지 선택합니다.
 1. 유형 필드에서 서비스 또는 개인 계정인지 선택합니다.
@@ -82,7 +82,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 1. **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
 1. 아직 로그인하지 않은 경우 표시되는 로그인 창에서 자격 증명을 입력하여 앱에 로그인합니다.
-1. (조건부) **[!UICONTROL 허용]** 단추가 표시되면 커넥터가 수행할 수 있는 작업을 검사한 다음 단추를 클릭하여 앱을 [!DNL Workfront Fusion]에 연결합니다.
+1. (조건부) **[!UICONTROL 허용]** 단추가 표시되는 경우 커넥터에서 수행할 수 있는 작업을 검사한 다음 단추를 클릭하여 앱을 Workfront Fusion에 연결합니다.
 
    >[!NOTE]
    >

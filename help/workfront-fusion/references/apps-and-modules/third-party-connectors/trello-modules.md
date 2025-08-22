@@ -1,19 +1,19 @@
 ---
 title: Trello 모듈
-description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Trello를 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.'
+description: Adobe Workfront Fusion 시나리오에서는 Trello를 사용하는 워크플로를 자동화하고 여러 타사 애플리케이션 및 서비스에 연결할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: 5df5cd2b-ad4c-4a02-9d0c-7cee35232f93
-source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '5213'
+source-wordcount: '5380'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL Trello] 모듈
 
-[!DNL Adobe Workfront Fusion] 시나리오에서는 [!UICONTROL Trello]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
+Adobe Workfront Fusion 시나리오에서는 [!UICONTROL Trello]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
 
 시나리오를 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 인덱스](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -89,13 +89,13 @@ Trello 커넥터는 다음을 사용합니다.
  </tbody> 
  </table>
 
-## [!UICONTROL 에 &#x200B;]Trello[!DNL Workfront Fusion] 연결
+## Workfront Fusion에 [!UICONTROL Trello] 연결
 
-[!UICONTROL Trello] 계정을 [!DNL Workfront Fusion]에 연결하는 방법은 [연결 만들기 [!DNL Adobe Workfront Fusion] - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)을 참조하세요.
+[!UICONTROL Trello] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 [Adobe Workfront Fusion에 연결 만들기 - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)을 참조하십시오.
 
 ## [!UICONTROL Trello] 모듈 및 해당 필드
 
-[!UICONTROL Trello] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 추가 [!UICONTROL Trello] 필드가 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!UICONTROL Trello] 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 추가 [!UICONTROL Trello] 필드가 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
@@ -121,7 +121,7 @@ Trello 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Workfront Fusion]에 [!UICONTROL Trello] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 대한 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 보드 ID]</td> 
@@ -146,7 +146,7 @@ Trello 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Workfront Fusion]에 [!UICONTROL Trello] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 대한 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 보드 ID]</td> 
@@ -184,7 +184,7 @@ Trello 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Workfront Fusion]에 [!UICONTROL Trello] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 대한 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 이름] </td> 
@@ -204,7 +204,7 @@ Trello 커넥터는 다음을 사용합니다.
     <ul> 
      <li><strong>[!UICONTROL Private]</strong>: 
       구성원, 구성원 및 옵저버</li> 
-     <li><strong>[!UICONTROL , 조직]</strong>: 
+     <li><strong>[!UICONTROL, 조직]</strong>: 
       회원, 회원 및 옵저버, 조직 회원</li> 
      <li><strong>[!UICONTROL Public]</strong>: 
       구성원, 구성원 및 관찰자, 조직 구성원, 모두</li> 
@@ -255,7 +255,7 @@ Trello 커넥터는 다음을 사용합니다.
    <td> <p>두 가지 카드 에이징 모드 중에서 선택합니다. </p> 
     <ul> 
      <li><strong>[!UICONTROL Pirate mode]</strong>: 오래된 해적 지도처럼 카드가 찢어지거나 노란색으로 바뀌고 갈라집니다.</li> 
-     <li><strong>[!UICONTROL 일반 모드 &#x200B;]</strong>: 카드가 오래될수록 점점 더 투명해집니다. </li> 
+     <li><strong>[!UICONTROL 일반 모드 ]</strong>: 카드가 오래될수록 점점 더 투명해집니다. </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -270,95 +270,95 @@ Trello 커넥터는 다음을 사용합니다.
 >[!SUCCESS]
 >
 ><table style="table-layout:auto">
-><col> 
-> <col> 
-> <tbody> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Connection] </td> 
->   <td> <p>[!DNL Workfront Fusion]에 [!UICONTROL Trello] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 대한 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL 보드 ID]</p> </td> 
->   <td> <p>모듈에서 만들 보드의 고유한 [!UICONTROL Trello] ID를 입력하거나 매핑합니다. 보드 ID는 감시 보드 모듈과 같은 다른 모듈을 사용하여 검색할 수 있습니다</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/watch-boards.png"> </p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL 새 이름]</td> 
->   <td> <p> 보드에 대한 새 이름을 입력하거나 매핑합니다.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL 새 설명]</td> 
->   <td> <p> 새 게시판 설명을 입력하거나 매핑합니다.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL 조직 ID]</p> </td> 
->   <td> <p>모듈에서 편집할 보드의 고유한 [!UICONTROL Trello] ID를 입력하거나 매핑합니다.  </p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Subscribe] </td> 
->   <td> <p>옵션을 선택하여 이 모듈에서 사용하는 연결을 소유한 사용자가 보드에 가입되어 있는지 여부를 지정합니다.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL 권한 수준]</p> </td> 
->   <td> <p>게시판은 권한 수준별로 투표 및 주석 달기 규칙이 다릅니다. 예를 들어 게시판이 [!UICONTROL Private]이고 투표 및 댓글 달기 규칙을 [!UICONTROL All]로 설정하면 오류가 표시됩니다. </p> <p>투표 및 댓글은 각 권한 수준에 대해 다음 그룹으로 제한됩니다.</p> 
->    <ul> 
->     <li><strong>[!UICONTROL Private]</strong>: 
->      구성원, 구성원 및 옵저버</li> 
->     <li><strong>[!UICONTROL , 조직]</strong>: 
->      회원, 회원 및 옵저버, 조직 회원</li> 
->     <li><strong>[!UICONTROL Public]</strong>: 
->      구성원, 구성원 및 관찰자, 조직 구성원, 모두</li> 
->    </ul> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL Voting]</p> </td> 
->   <td> <p>이 게시판에서 투표할 수 있는 사람을 지정하는 옵션을 선택하십시오. 권한 수준에 대한 투표 제한에 대해서는 [!UICONTROL 권한 수준] 필드를 참조하십시오.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL Comments]</p> </td> 
->   <td> <p>이 보드의 카드에 주석을 달 수 있는 사용자를 지정하는 옵션을 선택합니다. 권한 수준에 대한 제한 사항에 대한 댓글을 달려면 [!UICONTROL 권한 수준] 필드를 참조하십시오.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL 초대] </td> 
->   <td> <p>이 게시판에 사람들을 초대할 수 있는 사용자를 선택하십시오.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Self-Join]</td> 
->   <td> <p> 팀 구성원이 직접 보드에 가입할 수 있는지 또는 초대해야 하는지 여부를 선택합니다.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Card 표지]</td> 
->   <td> <p> 이 보드에 카드 덮개를 표시할지 여부를 선택합니다.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL 배경] </td> 
->   <td> <p>배경색 또는 사용자 지정 배경을 선택합니다.</p> <p>참고: 사용자 지정 배경은 [!UICONTROL Trello Gold and Business Class] 구독자만 사용할 수 있습니다.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL 백그라운드 ID]</td> 
->   <td> <p> [!UICONTROL Background] 필드에서 사용자 지정 배경을 사용하도록 선택한 경우 사용할 배경의 ID를 입력하거나 매핑합니다.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL 카드 에이징]</p> </td> 
->   <td> <p>두 가지 카드 에이징 모드 중에서 선택합니다. </p> 
->    <ul> 
->     <li><strong>[!UICONTROL Pirate mode]</strong>: 오래된 해적 지도처럼 카드가 찢어지거나 노란색으로 바뀌고 갈라집니다.</li> 
->     <li><strong>[!UICONTROL 일반 모드]</strong>: 카드가 오래되면 점차 투명해집니다. </li> 
->    </ul> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL 달력 피드 사용]</td> 
->   <td> <p> 캘린더 피드의 활성화 여부를 선택합니다.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL &lt;색상&gt; 레이블 이름]</td> 
->   <td> <p> 원하는 색상 레이블에 이름을 지정합니다.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL 아카이브] </td> 
->   <td> <p>보드를 보관(닫기)할지 여부를 나타내는 옵션을 선택합니다. </p> </td> 
->  </tr> 
-> </tbody> 
-></table>
+<col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL 보드 ID]</p> </td> 
+   <td> <p>모듈에서 만들 보드의 고유한 [!UICONTROL Trello] ID를 입력하거나 매핑합니다. 보드 ID는 감시 보드 모듈과 같은 다른 모듈을 사용하여 검색할 수 있습니다</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/watch-boards.png"> </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 새 이름]</td> 
+   <td> <p> 보드에 대한 새 이름을 입력하거나 매핑합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 새 설명]</td> 
+   <td> <p> 새 게시판 설명을 입력하거나 매핑합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL 조직 ID]</p> </td> 
+   <td> <p>모듈에서 편집할 보드의 고유한 [!UICONTROL Trello] ID를 입력하거나 매핑합니다.  </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Subscribe] </td> 
+   <td> <p>옵션을 선택하여 이 모듈에서 사용하는 연결을 소유한 사용자가 보드에 가입되어 있는지 여부를 지정합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL 권한 수준]</p> </td> 
+   <td> <p>게시판은 권한 수준별로 투표 및 주석 달기 규칙이 다릅니다. 예를 들어 게시판이 [!UICONTROL Private]이고 투표 및 댓글 달기 규칙을 [!UICONTROL All]로 설정하면 오류가 표시됩니다. </p> <p>투표 및 댓글은 각 권한 수준에 대해 다음 그룹으로 제한됩니다.</p> 
+    <ul> 
+     <li><strong>[!UICONTROL Private]</strong>: 
+      구성원, 구성원 및 옵저버</li> 
+     <li><strong>[!UICONTROL, 조직]</strong>: 
+      회원, 회원 및 옵저버, 조직 회원</li> 
+     <li><strong>[!UICONTROL Public]</strong>: 
+      구성원, 구성원 및 관찰자, 조직 구성원, 모두</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Voting]</p> </td> 
+   <td> <p>이 게시판에서 투표할 수 있는 사람을 지정하는 옵션을 선택하십시오. 권한 수준에 대한 투표 제한에 대해서는 [!UICONTROL 권한 수준] 필드를 참조하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Comments]</p> </td> 
+   <td> <p>이 보드의 카드에 주석을 달 수 있는 사용자를 지정하는 옵션을 선택합니다. 권한 수준에 대한 제한 사항에 대한 댓글을 달려면 [!UICONTROL 권한 수준] 필드를 참조하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 초대] </td> 
+   <td> <p>이 게시판에 사람들을 초대할 수 있는 사용자를 선택하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Self-Join]</td> 
+   <td> <p> 팀 구성원이 직접 보드에 가입할 수 있는지 또는 초대해야 하는지 여부를 선택합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Card 표지]</td> 
+   <td> <p> 이 보드에 카드 덮개를 표시할지 여부를 선택합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 배경] </td> 
+   <td> <p>배경색 또는 사용자 지정 배경을 선택합니다.</p> <p>참고: 사용자 지정 배경은 [!UICONTROL Trello Gold and Business Class] 구독자만 사용할 수 있습니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 백그라운드 ID]</td> 
+   <td> <p> [!UICONTROL Background] 필드에서 사용자 지정 배경을 사용하도록 선택한 경우 사용할 배경의 ID를 입력하거나 매핑합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL 카드 에이징]</p> </td> 
+   <td> <p>두 가지 카드 에이징 모드 중에서 선택합니다. </p> 
+    <ul> 
+     <li><strong>[!UICONTROL Pirate mode]</strong>: 오래된 해적 지도처럼 카드가 찢어지거나 노란색으로 바뀌고 갈라집니다.</li> 
+     <li><strong>[!UICONTROL 일반 모드]</strong>: 카드가 오래되면 점차 투명해집니다. </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 달력 피드 사용]</td> 
+   <td> <p> 캘린더 피드의 활성화 여부를 선택합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL &lt;색상&gt; 레이블 이름]</td> 
+   <td> <p> 원하는 색상 레이블에 이름을 지정합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 아카이브] </td> 
+   <td> <p>보드를 보관(닫기)할지 여부를 나타내는 옵션을 선택합니다. </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 
 +++
@@ -373,7 +373,7 @@ Trello 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Workfront Fusion]에 [!UICONTROL Trello] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 대한 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 보드 ID]</p> </td> 
@@ -394,7 +394,7 @@ Trello 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Workfront Fusion]에 [!UICONTROL Trello] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 대한 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query] </td> 
@@ -402,7 +402,7 @@ Trello 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 반환되는 최대 보드 수]</td> 
-   <td> <p> 한 실행 주기 동안 [!DNL Workfront Fusion]이(가) 반환할 최대 보드 수를 입력하십시오. 이 값은 1000보다 작거나 같아야 합니다.</p>  </td> 
+   <td> <p> 한 실행 주기 동안 Workfront Fusion이 반환할 최대 보드 수를 입력합니다. 이 값은 1000보다 작거나 같아야 합니다.</p>  </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Partial] </p> </td> 
@@ -427,7 +427,7 @@ Trello 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Workfront Fusion]에 [!UICONTROL Trello] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 대한 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 보드 ID]</td> 
@@ -452,7 +452,7 @@ Trello 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Workfront Fusion]에 [!UICONTROL Trello] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 대한 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 제한] </td> 
@@ -475,7 +475,7 @@ Trello 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Workfront Fusion]에 [!UICONTROL Trello] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 대한 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 보드 ID]</td> 
@@ -512,7 +512,7 @@ Trello 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Workfront Fusion]에 [!UICONTROL Trello] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 대한 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 목록 ID]</td> 
@@ -549,7 +549,7 @@ Trello 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Workfront Fusion]에 [!UICONTROL Trello] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 대한 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 목록 ID]</p> </td> 
@@ -570,7 +570,7 @@ Trello 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Workfront Fusion]에 [!UICONTROL Trello] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 대한 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Board]</td> 
@@ -601,7 +601,7 @@ Trello 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Workfront Fusion]에 [!UICONTROL Trello] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 대한 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 카드 ID 입력]</td> 
@@ -634,7 +634,7 @@ Trello 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Workfront Fusion]에 [!UICONTROL Trello] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 대한 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Card ID]</td> 
@@ -659,7 +659,7 @@ Trello 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Workfront Fusion]에 [!UICONTROL Trello] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 대한 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 목록 ID 입력]</td> 
@@ -731,7 +731,7 @@ Trello 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Workfront Fusion]에 [!UICONTROL Trello] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 대한 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter Card ID]</td> 
@@ -800,7 +800,7 @@ Trello 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Workfront Fusion]에 [!UICONTROL Trello] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 대한 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 보드 ID]</td> 
@@ -829,7 +829,7 @@ Trello 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Workfront Fusion]에 [!UICONTROL Trello] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 대한 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Board] </td> 
@@ -855,7 +855,7 @@ Trello 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 반환되는 최대 카드 수]</td> 
-   <td> <p> 한 실행 주기 동안 [!DNL Workfront Fusion]에서 반환할 최대 카드 수를 입력하거나 매핑합니다. 이 값은 1000보다 작거나 같아야 합니다.</p> </td> 
+   <td> <p> 한 실행 주기 동안 Workfront Fusion에서 반환할 최대 카드 수를 입력하거나 매핑합니다. 이 값은 1000보다 작거나 같아야 합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Partial] </td> 
@@ -880,7 +880,7 @@ Trello 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Workfront Fusion]에 [!UICONTROL Trello] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 대한 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 감시 개체]</td> 
@@ -912,7 +912,7 @@ Trello 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Workfront Fusion]에 [!UICONTROL Trello] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 대한 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 카드 ID 및 멤버 ID 입력]</p> </td> 
@@ -943,7 +943,7 @@ Trello 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Workfront Fusion]에 [!UICONTROL Trello] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 대한 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query] </td> 
@@ -980,7 +980,7 @@ Trello 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Workfront Fusion]에 [!UICONTROL Trello] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 대한 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 카드 ID 입력]</td> 
@@ -1017,7 +1017,7 @@ Trello 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Workfront Fusion]에 [!UICONTROL Trello] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 대한 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 체크리스트 ID 입력]</td> 
@@ -1054,7 +1054,7 @@ Trello 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Workfront Fusion]에 [!UICONTROL Trello] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 대한 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 카드 ID 및 체크리스트 항목 ID 입력]</td> 
@@ -1097,7 +1097,7 @@ Trello 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Workfront Fusion]에 [!UICONTROL Trello] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 대한 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 카드 ID 입력]</td> 
@@ -1124,7 +1124,7 @@ Trello 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Workfront Fusion]에 [!UICONTROL Trello] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 대한 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 카드 ID 입력]</td> 
@@ -1151,7 +1151,7 @@ Trello 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Workfront Fusion]에 [!UICONTROL Trello] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 대한 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 카드 ID 입력]</td> 
@@ -1163,7 +1163,7 @@ Trello 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 반환되는 최대 주석 수]</td> 
-   <td> <p> 한 실행 주기 동안 [!DNL Workfront Fusion]이(가) 반환할 최대 댓글 수를 입력하십시오.</p> </td> 
+   <td> <p> 한 실행 주기 동안 Workfront Fusion이 반환할 최대 댓글 수를 입력합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Since] </td> 
@@ -1188,7 +1188,7 @@ Trello 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Workfront Fusion]에 [!UICONTROL Trello] 계정을 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 대한 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!UICONTROL Trello] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 감시 개체]</td> 
@@ -1217,7 +1217,7 @@ Trello 커넥터는 다음을 사용합니다.
 
 ### [!DNL Trello]에서 카드의 ID 또는 바로 가기 링크를 찾는 방법
 
-카드를 편집하거나 새 주석을 만들려면 카드의 ID나 바로 가기 링크를 알고 있어야 합니다. [!UICONTROL 새 카드] 트리거의 출력에서 이 정보를 가져올 수 있습니다. 카드를 열고 [!UICONTROL 공유] 단추를 클릭하여 카드에 대한 바로 가기 링크를 얻을 수도 있습니다. 바로 가기 링크는 URL 끝의 [!UICONTROL &#x200B; 뒤에 있는 &#x200B;]이 카드에 대한 링크`https://trello.com/c/` 상자에서 찾을 수 있습니다.
+카드를 편집하거나 새 주석을 만들려면 카드의 ID나 바로 가기 링크를 알고 있어야 합니다. [!UICONTROL 새 카드] 트리거의 출력에서 이 정보를 가져올 수 있습니다. 카드를 열고 [!UICONTROL 공유] 단추를 클릭하여 카드에 대한 바로 가기 링크를 얻을 수도 있습니다. 바로 가기 링크는 URL 끝의 [!UICONTROL  뒤에 있는 ]이 카드에 대한 링크`https://trello.com/c/` 상자에서 찾을 수 있습니다.
 
 ![외 항목 공유](/help/workfront-fusion/references/apps-and-modules/assets/share-and-more-350x575.png)
 

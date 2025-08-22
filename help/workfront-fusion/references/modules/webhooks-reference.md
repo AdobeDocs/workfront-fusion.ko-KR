@@ -4,9 +4,9 @@ description: 많은 서비스는 서비스에서 특정 변경 사항이 발생�
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '868'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Workfront Fusion의 Webhooks에 대한 비디오 소개는 다음을 참조하�
 
 ![일정 설정](assets/schedule-setting.png)
 
-[!DNL Workfront Fusion]이(가) 서비스에서 새 이벤트를 받을 때 즉시 시나리오를 실행하려면 `Immediately`을(를) 선택하십시오. 이러한 이벤트는 즉시 대기열로 전송되며 데이터가 수신되는 순서로 한 번에 하나씩 시나리오에서 처리됩니다.
+Workfront Fusion이 서비스에서 새 이벤트를 받을 때 시나리오를 즉시 실행하려면 `Immediately`을(를) 선택합니다. 이러한 이벤트는 즉시 대기열로 전송되며 데이터가 수신되는 순서로 한 번에 하나씩 시나리오에서 처리됩니다.
 
 시나리오가 실행되면 대기열에 대기 중인 총 보류 이벤트 양이 계산되고 시나리오는 보류 중인 이벤트만큼 주기를 수행하여 주기당 하나의 이벤트를 처리합니다.
 
@@ -60,10 +60,10 @@ Workfront Fusion의 Webhooks에 대한 비디오 소개는 다음을 참조하�
 >
 
 
-[!UICONTROL Immediately] 이외의 다른 일정 설정을 사용하는 경우 지정한 간격으로 시나리오가 실행됩니다. 간격 동안 큐에 여러 개의 웹 후크를 수집할 수 있으므로 한 시나리오 실행에서 더 많은 웹 후크를 처리하려면 [!UICONTROL Maximum number of cycles] 옵션을 기본 1보다 높은 값으로 설정하는 것이 좋습니다.
+[!UICONTROL 즉시] 이외의 다른 일정 설정을 사용하는 경우 지정한 간격으로 시나리오가 실행됩니다. 간격 동안 큐에 여러 개의 웹 후크를 수집할 수 있으므로 한 시나리오 실행에서 더 많은 웹 후크를 처리하려면 [!UICONTROL 최대 주기 수] 옵션을 기본 1보다 높은 값으로 설정하는 것이 좋습니다.
 
-1. 시나리오 하단의 [!UICONTROL Scenario settings] 아이콘 ![시나리오 설정 아이콘](assets/scenario-settings-icon.png)을 클릭합니다.
-1. 표시되는 **[!UICONTROL Scenario settings]** 패널에서 **[!UICONTROL Max number of cycles]** 필드에 숫자를 입력하여 시나리오를 실행할 때마다 실행할 큐의 이벤트 수를 나타냅니다.
+1. 시나리오 하단의 [!UICONTROL 시나리오 설정] 아이콘 ![시나리오 설정 아이콘](assets/scenario-settings-icon.png)을 클릭합니다.
+1. 표시되는 **[!UICONTROL 시나리오 설정]** 패널에서 **[!UICONTROL 최대 주기 수]** 필드에 숫자를 입력하여 시나리오를 실행할 때마다 실행할 큐의 이벤트 수를 나타냅니다.
 
 다음에 시나리오를 실행할 때 큐에 남아 있는 이벤트는 최대 주기 필드에 설정된 수까지 처리됩니다.
 
@@ -81,20 +81,20 @@ Workfront Fusion에는 원활한 성능 확보를 위해 다음과 같은 웹 �
 
 ### Webhook 페이로드
 
-[!DNL Workfront Fusion]이(가) 30일 동안 webhook 페이로드를 저장합니다. 웹후크 페이로드가 생성된 후 30일이 지난 후에 액세스하면 [!UICONTROL `Failed to read file from storage.`] 오류가 발생합니다
+Workfront Fusion은 30일 동안 웹후크 페이로드를 저장합니다. 웹후크 페이로드가 생성된 후 30일이 지난 후에 액세스하면 [!UICONTROL `Failed to read file from storage.`] 오류가 발생합니다
 
 ### 오류 처리
 
 즉시 트리거를 사용하는 시나리오에서 오류가 있는 경우 시나리오는 다음과 같습니다.
 
-* 시나리오가 [!UICONTROL Immediately]을(를) 실행하도록 설정된 경우 즉시 중지합니다.
+* 시나리오가 [!UICONTROL 즉시]을 실행하도록 설정된 경우 즉시 중지됩니다.
 * 시나리오가 예약대로 실행되도록 설정된 경우 3번의 시도 실패(오류 3회) 후 중지됩니다.
 
 시나리오 실행 중에 오류가 발생하면 인스턴트 트리거의 롤백 단계 중에 이벤트가 다시 큐에 배치됩니다. 이러한 상황에서는 시나리오를 수정하고 다시 실행할 수 있습니다.
 
 자세한 내용은 시나리오 실행, 주기 및 단계 문서에서 [롤백](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#rollback)을 참조하십시오.
 
-시나리오에 Webhook 응답 모듈이 있으면 오류가 Webhook 응답으로 전송됩니다. Webhook 응답 모듈은 항상 마지막으로 실행됩니다(시나리오 설정의 [!UICONTROL Auto commit] 옵션이 활성화되지 않은 경우).
+시나리오에 Webhook 응답 모듈이 있으면 오류가 Webhook 응답으로 전송됩니다. 웹후크 응답 모듈은 항상 마지막으로 실행됩니다(시나리오 설정의 [!UICONTROL 자동 커밋] 옵션이 활성화되지 않은 경우).
 
 자세한 내용은 문서 Webhooks에서 [Webhooks에 응답](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md#responding-to-webhooks)을 참조하십시오.
 

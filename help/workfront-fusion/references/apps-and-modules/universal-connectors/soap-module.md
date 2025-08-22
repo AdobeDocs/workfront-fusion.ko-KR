@@ -4,10 +4,10 @@ description: SOAP 모듈을 사용하여 Adobe Workfront Fusion의 SOAP API에 �
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 0%
+source-wordcount: '681'
+ht-degree: 1%
 
 ---
 
@@ -64,13 +64,13 @@ SOAP 커넥터에는 하나의 모듈인 SOAP 실행 작업만 포함됩니다
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
 ## SOAP 모듈 및 해당 필드
 
-SOAP 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다.  모듈의 굵은 제목은 필수 필드를 나타냅니다.
+SOAP 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다.  모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
@@ -137,7 +137,7 @@ SOAP 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드�
 </complexType>
 ```
 
-이 예에는 아직 [!UICONTROL Workfront Fusion]에서 지원되지 않는 `soapenc:Array`, `soapenc:arrayType` 및 `wsdl:arrayType` 참조가 포함되어 있습니다.
+이 예에는 아직 `soapenc:Array`Workfront Fusion`soapenc:arrayType`에서 지원되지 않는 `wsdl:arrayType`, [!UICONTROL  및 ] 참조가 포함되어 있습니다.
 
 >[!ENDSHADEBOX]
 
@@ -145,7 +145,7 @@ SOAP 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드�
 
 [!UICONTROL SOAP] 모듈이 WSDL 파일 처리를 거부하거나 모듈 구성에 여러 오류가 발생하는 경우 대신 범용 **[!UICONTROL HTTP] > [!UICONTROL 요청 만들기]** 모듈을 사용할 수 있습니다.
 
-1. [!DNL Workfront Fusion]에서 새 시나리오를 만듭니다.
+1. Workfront Fusion에서 새 시나리오를 만듭니다.
 1. 시나리오에 **[!UICONTROL HTTP] > [!UICONTROL 요청 만들기]** 모듈을 삽입합니다.
 1. 모듈의 구성을 열고 다음 필드를 채웁니다.
 
@@ -185,7 +185,7 @@ SOAP 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드�
    <!--![Service](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
 
 1. 찾으면 `location` 특성에서 URL을 복사합니다.
-1. [!DNL Workfront Fusion]에서 HTTP 모듈의 URL 필드에 URL을 붙여 넣습니다.
+1. Workfront Fusion에서 URL을 HTTP 모듈의 URL 필드에 붙여 넣습니다.
 1. 새 웹 브라우저 창/탭에서 [온라인 [!UICONTROL SOAP] 클라이언트](https://wsdlbrowser.com/)를 엽니다.
 1. WSDL URL을 WSDL URL 필드에 붙여넣습니다.
 1. **[!UICONTROL 찾아보기]**&#x200B;를 클릭합니다.

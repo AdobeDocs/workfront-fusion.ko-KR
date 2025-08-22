@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion에는 Adobe Workfront 라이센스 외에 Ad
 author: Becky
 feature: Workfront Fusion
 exl-id: 3b445b50-5812-4ded-9788-f467991e0b52
-source-git-commit: 7404dafc0b368a8f1785be7b6a65fe45c0f12172
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1890'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 # 에어테이블 모듈
 
 
-[!DNL Adobe Workfront Fusion]에 대한 [!DNL Airtable] 커넥터를 사용하면 [!DNL Airtable] 계정의 이벤트를 기반으로 시나리오를 시작하고, 레코드, 검색 레코드를 만들고, 업로드 및 업데이트하고, Airtable API에 대한 사용자 지정 API를 호출할 수 있습니다.
+Adobe Workfront Fusion용 [!DNL Airtable] 커넥터를 사용하면 [!DNL Airtable] 계정의 이벤트를 기반으로 시나리오를 시작하고, 레코드, 검색 레코드를 만들고, 업로드 및 업데이트하고, Airtable API에 대한 사용자 지정 API를 호출할 수 있습니다.
 
 ## 액세스 요구 사항
 
@@ -25,27 +25,27 @@ ht-degree: 2%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 플랜*</td>
+   <td role="rowheader">Adobe Workfront 플랜*</td>
   <td> <p>[!UICONTROL Pro] 이상</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 라이센스*</td>
+   <td role="rowheader">Adobe Workfront 라이센스*</td>
    <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td> 
-   <td> <p>[!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p> </td> 
+   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
+   <td> <p>작업 자동화 및 통합을 위한 [!UICONTROL Workfront Fusion] </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
-   <td>조직에서 이 문서에 설명된 기능을 사용하려면 [!DNL Adobe Workfront Fusion]과(와) [!DNL Adobe Workfront]을(를) 구입해야 합니다.</td> 
+   <td>이 문서에 설명된 기능을 사용하려면 조직에서 Adobe Workfront Fusion과 Adobe Workfront을 구매해야 합니다.</td> 
   </tr> 
  </tbody> 
 </table>
 
-보유 중인 플랜, 라이선스 유형 또는 액세스 권한을 확인하려면 [!DNL Workfront] 관리자에게 문의하세요.
+보유 중인 플랜, 라이선스 유형 또는 액세스 권한을 확인하려면 Workfront 관리자에게 문의하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 ## 전제 조건
 
@@ -490,7 +490,7 @@ Airtable 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">헤더</td> 
-   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] 인증 헤더를 추가합니다.</p> </td> 
+   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion은 사용자에게 권한 부여 헤더를 추가합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">쿼리 문자열</td> 

@@ -1,17 +1,17 @@
 ---
 title: Adobe Workfront Fusion 개요
-description: ' [!DNL Adobe Workfront Fusion] 의 역할은 같은 작업을 반복해서 반복하지 않고 새로운 작업에 집중할 수 있도록 프로세스를 자동화하는 것입니다. 앱과 서비스 내 및 간의 작업을 연결하여 데이터를 자동으로 전송하고 변환하는 시나리오를 만듭니다. 앱 또는 서비스에서 데이터에 대한 시계를 만들고 해당 데이터를 처리하여 원하는 결과를 제공하는 시나리오입니다.'
+description: Adobe Workfront Fusion의 역할은 동일한 작업을 반복하지 않고 새로운 작업에 집중할 수 있도록 프로세스를 자동화하는 것입니다. 앱과 서비스 내 및 간의 작업을 연결하여 데이터를 자동으로 전송하고 변환하는 시나리오를 만듭니다. 앱 또는 서비스에서 데이터에 대한 시계를 만들고 해당 데이터를 처리하여 원하는 결과를 제공하는 시나리오입니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: 49df566f-59e9-469c-9123-27d1e15069e4
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
 
-# [!DNL Adobe Workfront Fusion] 개요
+# Adobe Workfront Fusion 개요
 
 Adobe Workfront Fusion의 역할은 사용자가 일상적인 작업에 많은 시간을 소비하지 않도록 프로세스를 자동화하는 것입니다. 앱과 서비스 내 및 간의 작업을 연결하여 데이터를 자동으로 전송하고 변환하는 시나리오를 만듭니다. 앱 또는 서비스에서 데이터에 대한 시계를 만들고 해당 데이터를 처리하여 원하는 결과를 제공하는 시나리오입니다.
 
@@ -31,7 +31,7 @@ Workfront Fusion은 시나리오 생성 템플릿, 실행 내역 및 디버깅�
 
 Workfront Fusion 작업을 시작할 때 유용한 리소스는 다음과 같습니다.
 
-* Workfront Fusion 교육 리소스는 [Workfront Fusion 교육 개요](https://experienceleague.adobe.com/ko/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy)를 참조하십시오.
+* Workfront Fusion 교육 리소스는 [Workfront Fusion 교육 개요](https://experienceleague.adobe.com/en/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy)를 참조하십시오.
 
 
 * 시나리오에 대한 자세한 내용은 [시나리오 개요](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md)를 참조하십시오.

@@ -4,14 +4,14 @@ description: 이 문서에서는  [!DNL Adobe Workfront Fusion scenario] 템플�
 author: Becky
 feature: Workfront Fusion
 exl-id: 479b1ee5-5bde-465e-a269-61a49640699e
-source-git-commit: 7acc27ab2ce80b964b7f9fbb302816aa75964ab5
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '275'
 ht-degree: 1%
 
 ---
 
-# [!DNL Adobe Workfront Fusion]개 템플릿 FAQ
+# Adobe Workfront Fusion 템플릿 FAQ
 
 이 문서에서는 Adobe Workfront Fusion 시나리오 템플릿에 대한 일반적인 질문에 대해 설명합니다.
 
@@ -26,17 +26,17 @@ ht-degree: 1%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 패키지</td> 
+   <td role="rowheader">Adobe Workfront 패키지</td> 
    <td> <p>임의</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 라이센스</td> 
-   <td> <p>신규: [!UICONTROL Standard]</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
+   <td role="rowheader">Adobe Workfront 라이선스</td> 
+   <td> <p>새로운 기능: 표준</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td> 
+   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재: [!DNL Workfront Fusion] 라이선스 요구 사항이 없습니다.</p>
+   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
    <p>또는</p>
    <p>레거시: 모두 </p>
    </td> 
@@ -44,9 +44,9 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Workfront] 플랜: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 플랜: [!DNL Workfront Fusion]이(가) 포함되어 있습니다.</li></ul>
+   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] Workfront 플랜: 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li><li>[!UICONTROL Ultimate] Workfront 계획: Workfront Fusion이 포함됩니다.</li></ul>
    <p>또는</p>
-   <p>현재: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</p>
+   <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
    </td> 
   </tr>
  </tbody> 
@@ -54,7 +54,7 @@ ht-degree: 1%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -64,13 +64,13 @@ ht-degree: 1%
 
 저장된 템플릿은 팀 구성원과 자동으로 공유됩니다. 팀의 구성원이 아닌 사용자와 공유하려면 해당 항목을 게시해야 합니다. 그런 다음 링크를 통해 공유하거나 관리자에게 템플릿을 공개하도록 요청할 수 있습니다.
 
-자세한 내용은 [Publish 및 공유 [!DNL Adobe Workfront Fusion templates]](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)를 참조하십시오.
+자세한 내용은 [게시 및 공유 [!DNL Adobe Workfront Fusion templates]](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)를 참조하십시오.
 
 ## 공개 템플릿을 편집하거나 삭제하려면 어떻게 해야 합니까?
 
 **답변**:
 
-[템플릿 보기, 편집 및 삭제 [!DNL Adobe Workfront Fusion] 를 참조하십시오](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md).
+[Adobe Workfront Fusion 템플릿 보기, 편집 및 삭제](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)를 참조하십시오.
 
 ## 원래 만든 공개 템플릿을 찾을 수 없습니다. 어떻게 해야 합니까?
 

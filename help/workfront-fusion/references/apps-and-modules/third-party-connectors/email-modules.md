@@ -1,19 +1,19 @@
 ---
 title: 이메일 모듈
-description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 전자 메일 계정을 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.이렇게 하면 IMAP을 통해 전자 메일을 다운로드하고, SMTP를 통해 전자 메일을 보내고, 새 초안을 만들고, 한 폴더에서 다른 폴더로 전자 메일을 이동 및 복사하고, 전자 메일을 읽음 또는 읽지 않음으로 표시하고, 전자 메일을 삭제할 수 있습니다.'
+description: Adobe Workfront Fusion 시나리오에서는 전자 메일 계정을 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다. 이렇게 하면 IMAP을 통해 전자 메일을 다운로드하고, SMTP를 통해 전자 메일을 보내고, 새 초안을 만들고, 한 폴더에서 다른 폴더로 전자 메일을 이동 및 복사하고, 전자 메일을 읽음 또는 읽지 않음으로 표시하고, 전자 메일을 삭제할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: 28a04bad-d3ef-4f3a-be93-8b04761a75e4
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2460'
+source-wordcount: '2485'
 ht-degree: 0%
 
 ---
 
 # 이메일 모듈
 
-[!DNL Adobe Workfront Fusion] 시나리오에서는 전자 메일 계정을 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.이렇게 하면 IMAP을 통해 전자 메일을 다운로드하고, SMTP를 통해 전자 메일을 보내고, 새 초안을 만들고, 한 폴더에서 다른 폴더로 전자 메일을 이동 및 복사하고, 전자 메일을 읽음 또는 읽지 않음으로 표시하고, 전자 메일을 삭제할 수 있습니다.
+Adobe Workfront Fusion 시나리오에서는 전자 메일 계정을 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다. 이렇게 하면 IMAP을 통해 전자 메일을 다운로드하고, SMTP를 통해 전자 메일을 보내고, 새 초안을 만들고, 한 폴더에서 다른 폴더로 전자 메일을 이동 및 복사하고, 전자 메일을 읽음 또는 읽지 않음으로 표시하고, 전자 메일을 삭제할 수 있습니다.
 
 ## 액세스 요구 사항
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 전자 메일 모듈 내에서 직접 [!DNL Google] 계정에 연결할 수 있습니다.
 
-1. 전자 메일 모듈에서 [!UICONTROL 연결] 필드 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
+1. 전자 메일 모듈에서 **[!UICONTROL 연결]** 필드 옆에 있는 [!UICONTROL 추가]를 클릭합니다.
 1. 연결 유형으로 **[!DNL Google]**&#x200B;을(를) 선택하십시오.
 1. 연결의 이름을 입력합니다.
 1. (선택 사항) [!UICONTROL [!DNL Google] 클라이언트 ID] 및 [!UICONTROL 클라이언트 암호]를 입력합니다.
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함에서 메시지를 읽거나 조작할 수 있습니다. 대부분의 이메일 모듈에서 IMAP 연결을 사용합니다.
 
-1. 전자 메일 모듈에서 [!UICONTROL 연결] 필드 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
+1. 전자 메일 모듈에서 **[!UICONTROL 연결]** 필드 옆에 있는 [!UICONTROL 추가]를 클릭합니다.
 1. 연결 유형으로 **[!UICONTROL 기타(SMTP)]**&#x200B;을(를) 선택하십시오.
 1. 연결을 위한 **[!UICONTROL 이름]**&#x200B;을(를) 입력하십시오.
 1. 목록에서 **[!UICONTROL 전자 메일 공급자]**&#x200B;를 선택하십시오. 이메일 공급자가 목록에 없는 경우 기타를 선택합니다.
@@ -100,7 +100,7 @@ IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함�
 
 ## [!UICONTROL 전자 메일] 모듈 및 해당 필드
 
-[!UICONTROL 전자 메일] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 이러한 필드와 함께 앱이나 서비스의 액세스 수준과 같은 요소에 따라 추가 필드가 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!UICONTROL 전자 메일] 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 이러한 필드와 함께 앱이나 서비스의 액세스 수준과 같은 요소에 따라 추가 필드가 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 시나리오의 다른 모듈에서 사용했으므로 일부 이메일 필드에 데이터가 이미 포함되어 있을 수 있습니다. 이에 대한 정보가 필요한 경우 이메일 도움말 설명서를 참조하십시오.
 
@@ -161,7 +161,7 @@ IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 최대 결과 수]</td> 
-   <td> <p> 시나리오 실행 주기 동안 [!DNL Workfront Fusion]이(가) 반환해야 하는 최대 전자 메일 수를 입력하거나 매핑합니다.</p> </td> 
+   <td> <p> 한 시나리오 실행 주기 동안 Workfront Fusion이 반환해야 하는 최대 이메일 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -251,7 +251,7 @@ IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함�
   </tr> 
   <!--<tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL From] </td> 
-   <td> <p>Enter or map the email address (and name, if needed) that appears in the [!UICONTROL From] field in the email. </p> <p>Important: Use the correct syntax: <code>name@email.com</code> or <code>"Name" name@email.com</code>.</p> <p>Note:  Normally, [!DNL Workfront Fusion] uses the email address that you entered when creating the connection as the sender address. If you enter any other email address, an error may occur when sending a message because your account may not have permission to send emails from a different address than your own. E.g. <code>test@mail.com</code> or "<code>John Bush" test@email.com</code>.</p> </td> 
+   <td> <p>Enter or map the email address (and name, if needed) that appears in the [!UICONTROL From] field in the email. </p> <p>Important: Use the correct syntax: <code>name@email.com</code> or <code>"Name" name@email.com</code>.</p> <p>Note:  Normally, Workfront Fusion uses the email address that you entered when creating the connection as the sender address. If you enter any other email address, an error may occur when sending a message because your account may not have permission to send emails from a different address than your own. E.g. <code>test@mail.com</code> or "<code>John Bush" test@email.com</code>.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader"> <p>[!UICONTROL Sender]</p> </td> 
@@ -311,7 +311,7 @@ IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Exponge]</td> 
-   <td> <p>현재 열려 있는 사서함에서 [!UICONTROL Deleted] (으)로 플래그가 지정된 모든 메시지를 영구적으로 제거하려면 이 옵션을 활성화합니다.</p> <p>참고: [!DNL Gmail]에서 이 동작은 [!UICONTROL 설정] &gt;[!UICONTROL Forwarding POP/IMAP in IMAP access] 섹션의 설정에 의해 결정됩니다.</p> </td> 
+   <td> <p>현재 열려 있는 사서함에서 [!UICONTROL Deleted](으)로 플래그가 지정된 모든 메시지를 영구적으로 제거하려면 이 옵션을 활성화합니다.</p> <p>참고: [!DNL Gmail]에서 이 동작은 [!UICONTROL 설정] &gt;[!UICONTROL Forwarding POP/IMAP in IMAP access] 섹션의 설정에 의해 결정됩니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -371,11 +371,11 @@ IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 이메일 ID (UID)]</td> 
-   <td> <p> 세부 정보를 검색할 이메일의 이메일 ID(UID)를 입력합니다.</p> <p>[!DNL Workfront Fusion]의[!UICONTROL 시계 이메일] 모듈 또는 [!UICONTROL 검색 이메일] 모듈을 사용하여 이메일의 UID을 가져올 수 있습니다.</p> </td> 
+   <td> <p> 세부 정보를 검색할 이메일의 이메일 ID(UID)를 입력합니다.</p> <p>Workfront Fusion의[!UICONTROL 시계 이메일] 모듈 또는 [!UICONTROL 검색 이메일] 모듈을 사용하여 이메일의 UID을 가져올 수 있습니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 최대 결과 수]</td> 
-   <td> <p> 시나리오 실행 주기 동안 최대 [!DNL Workfront Fusion] 전자 메일 수가 반환되어야 합니다.</p> </td> 
+   <td> <p> 한 시나리오 실행 주기 동안 Workfront Fusion이 반환해야 하는 최대 이메일 수입니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 모듈이 결과를 반환하지 않더라도 라우트 실행을 계속합니다.]</td> 
@@ -467,11 +467,11 @@ IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>전자 메일 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 전자 메일 연결</a>을 참조하십시오.</p> </td> 
+   <td> <p>전자 메일 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">전자 메일을 [!UICONTROL Workfront Fusion]에 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 전송 후 메시지 저장]</td> 
-   <td>전자 메일 메시지가 전송되면 사서함에 저장됩니다. [!DNL Workfront Fusion]을(를) 사용하여 보낸 전자 메일을 사서함의 <i>[!UICONTROL 보낸 메일]</i> 폴더 또는 다른 폴더에 저장하려면 이 옵션을 활성화합니다. [!DNL Gmail]과(와) 같은 일부 이메일 서비스는 보낸 메시지를 자동으로 저장합니다.</td> 
+   <td>전자 메일 메시지가 전송되면 사서함에 저장됩니다. Workfront Fusion을 사용하여 보낸 전자 메일을 사서함의 <i>[!UICONTROL Sent mail]</i> 폴더 또는 다른 폴더에 저장하려면 이 옵션을 활성화합니다. [!DNL Gmail]과(와) 같은 일부 이메일 서비스는 보낸 메시지를 자동으로 저장합니다.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL To] </td> 
@@ -545,7 +545,7 @@ IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함�
   </tr> 
 <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL From] </td> 
-   <td> <p>이메일의 [!UICONTROL From] 필드에 표시되는 이메일 주소(및 필요한 경우 이름)를 입력하거나 매핑합니다. </p> <p>중요: 올바른 구문(<code>name@email.com</code> 또는 <code>"Name" name@email.com</code>)을 사용하십시오.</p> <p>참고: 일반적으로 [!DNL Workfront Fusion]은(는) 연결을 만들 때 입력한 전자 메일 주소를 보낸 사람 주소로 사용합니다. 다른 이메일 주소를 입력하면 계정에 내 주소가 아닌 다른 주소에서 이메일을 보낼 수 있는 권한이 없을 수 있으므로 메시지를 보낼 때 오류가 발생할 수 있습니다. 예: <code>test@mail.com</code> 또는 "<code>John Bush" test@email.com</code>.</p> </td> 
+   <td> <p>이메일의 [!UICONTROL From] 필드에 표시되는 이메일 주소(및 필요한 경우 이름)를 입력하거나 매핑합니다. </p> <p>중요: 올바른 구문(<code>name@email.com</code> 또는 <code>"Name" name@email.com</code>)을 사용하십시오.</p> <p>참고: 일반적으로 Workfront Fusion은 연결을 만들 때 입력한 이메일 주소를 발신자 주소로 사용합니다. 다른 이메일 주소를 입력하면 계정에 내 주소가 아닌 다른 주소에서 이메일을 보낼 수 있는 권한이 없을 수 있으므로 메시지를 보낼 때 오류가 발생할 수 있습니다. 예: <code>test@mail.com</code> 또는 "<code>John Bush" test@email.com</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -4,9 +4,9 @@ description: 웹후크는 이벤트에 의해 트리거되는 HTTP 호출입니�
 author: Becky
 feature: Workfront Fusion
 exl-id: 8e415378-e9c1-4b49-874b-6d38aba0c303
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1445'
+source-wordcount: '1463'
 ht-degree: 0%
 
 ---
@@ -58,24 +58,24 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
-## [!DNL Workfront Fusion]에서 웹후크 사용
+## Workfront Fusion에서 웹후크 사용
 
 >[!NOTE]
 >
 >서드파티 웹후크(발신 웹후크)를 호출하려면 HTTP 모듈 중 하나를 사용합니다. 자세한 내용은 [HTTP 모듈](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)을 참조하세요.
 
-웹후크를 사용하여 앱을 [!DNL Workfront Fusion]에 연결하려면:
+웹후크를 사용하여 앱을 Workfront Fusion에 연결하려면
 
 1. **[!UICONTROL Webhooks]** >**[!UICONTROL 사용자 지정 Webhook]** 인스턴트 트리거 모듈을 시나리오에 추가합니다.
 
 1. Webhook 필드 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭하고 새 Webhook의 이름을 입력합니다.
 1. (선택 사항) **[!UICONTROL 고급 설정]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL IP 제한]** 필드에 모듈에서 데이터를 허용할 수 있는 IP 주소의 쉼표로 구분된 목록을 입력하십시오.
-1. **[!UICONTROL 저장]** 클릭
+1. **[!UICONTROL Save]**&#x200B;를 클릭합니다
 
 웹후크를 생성하면 고유한 URL이 표시됩니다. Webhook에서 데이터를 보내는 주소입니다. Workfront Fusion은 이 주소로 전송된 데이터의 유효성을 검사한 다음 시나리오에서 처리하기 위해 데이터를 전달합니다.
 
@@ -85,7 +85,7 @@ ht-degree: 0%
 
 ### 웹후크의 데이터 구조 구성 {#configure-the-webhook-s-data-structure}
 
-들어오는 페이로드의 데이터 구조를 인식하기 위해 [!DNL Workfront Fusion]은(는) 표시된 주소로 보내는 샘플 데이터를 구문 분석합니다. 해당 서비스 또는 앱이 Webhook을 호출하도록 하는 서비스 또는 앱을 변경하여 샘플 데이터를 제공할 수 있습니다. 예를 들어 파일을 제거할 수 있습니다.
+들어오는 페이로드의 데이터 구조를 인식하기 위해 Workfront Fusion은 표시된 주소로 전송하는 샘플 데이터를 구문 분석합니다. 해당 서비스 또는 앱이 Webhook을 호출하도록 하는 서비스 또는 앱을 변경하여 샘플 데이터를 제공할 수 있습니다. 예를 들어 파일을 제거할 수 있습니다.
 
 또는 [!UICONTROL HTTP] > [!UICONTROL 요청] 모듈을 통해 샘플 데이터를 보낼 수 있습니다.
 
@@ -148,11 +148,11 @@ ht-degree: 0%
 
 ## 지원되는 수신 데이터 형식
 
-[!DNL Workfront Fusion]은(는) 들어오는 데이터 형식 [!UICONTROL 쿼리 문자열], [!UICONTROL 양식 데이터] 및 [!UICONTROL JSON]의 3가지 형식을 지원합니다.
+Workfront Fusion은 [!UICONTROL 쿼리 문자열], [!UICONTROL 양식 데이터] 및 [!UICONTROL JSON]과 같은 3가지 수신 데이터 형식을 지원합니다.
 
-[!DNL Workfront Fusion]이(가) 선택한 데이터 구조에 대해 들어오는 모든 데이터의 유효성을 검사합니다. 그런 다음 시나리오의 설정에 따라 데이터가 처리를 위해 큐에 저장되거나 즉시 처리됩니다.
+Workfront Fusion은 선택한 데이터 구조에 대해 들어오는 모든 데이터의 유효성을 검사합니다. 그런 다음 시나리오의 설정에 따라 데이터가 처리를 위해 큐에 저장되거나 즉시 처리됩니다.
 
-데이터의 일부가 유효성 검사를 통과하지 못하면 [!DNL Workfront Fusion]은(는) 400 HTTP 상태 코드를 반환하고 HTTP 응답 본문에 들어오는 데이터가 유효성 검사에 실패한 이유를 지정합니다. 들어오는 데이터의 유효성 검사가 성공하면 Workfront Fusion은 &quot;[!UICONTROL 200 수락됨]&quot; 상태를 반환합니다.
+데이터의 일부가 유효성 검사를 통과하지 못하면 Workfront Fusion은 400 HTTP 상태 코드를 반환하고 HTTP 응답 본문에 들어오는 데이터가 유효성 검사에 실패한 이유를 지정합니다. 들어오는 데이터의 유효성 검사가 성공하면 Workfront Fusion은 &quot;[!UICONTROL 200 수락됨]&quot; 상태를 반환합니다.
 
 * [[!UICONTROL 쿼리 문자열]](#query-string)
 * [[!UICONTROL 양식 데이터]](#form-data)
@@ -202,7 +202,7 @@ Workfront Fusion
 ---generatedboundary
 ```
 
-`multipart/form-data`(으)로 인코딩된 파일을 받으려면 중첩 필드 `name`, `mime` 및 `data`이(가) 포함된 `collection` 형식 필드로 데이터 구조를 구성해야 합니다. 필드 `name`은(는) `text` 형식이며 업로드된 파일의 이름을 포함합니다. `mime`은(는) `text` 형식이며 MIME 형식의 파일을 포함합니다. 필드 `data`은(는) `buffer` 형식이며 전송 중인 파일에 대한 이진 데이터를 포함합니다.
+`multipart/form-data`(으)로 인코딩된 파일을 받으려면 중첩 필드 `collection`, `name` 및 `mime`이(가) 포함된 `data` 형식 필드로 데이터 구조를 구성해야 합니다. 필드 `name`은(는) `text` 형식이며 업로드된 파일의 이름을 포함합니다. `mime`은(는) `text` 형식이며 MIME 형식의 파일을 포함합니다. 필드 `data`은(는) `buffer` 형식이며 전송 중인 파일에 대한 이진 데이터를 포함합니다.
 
 MIME 형식에 대한 자세한 내용은 [MIME 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)을 참조하세요.
 
@@ -239,11 +239,11 @@ Webhook의 헤더에 액세스하려면 Webhook을 설정할 때 요청 헤더 �
 >
 >**예:**
 >
->아래 예제는 `Headers[]` 배열에서 `authorization` 헤더의 값을 추출하는 수식을 보여 줍니다. 공식은 추출된 값과 지정된 텍스트를 비교하여 일치하는 항목이 있는 경우 웹후크만 전달하는 필터에 사용됩니다.
+>아래 예제는 `authorization` 배열에서 `Headers[]` 헤더의 값을 추출하는 수식을 보여 줍니다. 공식은 추출된 값과 지정된 텍스트를 비교하여 일치하는 항목이 있는 경우 웹후크만 전달하는 필터에 사용됩니다.
 >
 >![필터 설정](/help/workfront-fusion/references/apps-and-modules/assets/set-up-a-filter-350x169.png)
 >
->지정된 키로 배열의 요소를 가져오는 방법에 대한 자세한 내용은 문서 배열 매핑[&#128279;](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md#map-an-arrays-element-with-a-given-key)에서 지정된 키로 배열의 요소 매핑을 참조하십시오.
+>지정된 키로 배열의 요소를 가져오는 방법에 대한 자세한 내용은 문서 배열 매핑[에서 ](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md#map-an-arrays-element-with-a-given-key)지정된 키로 배열의 요소 매핑을 참조하십시오.
 
 ## 웹후크에 응답
 
@@ -289,27 +289,27 @@ Webhook 응답을 사용자 정의하려면 Webhook 응답 모듈을 사용합�
 >다음과 같이 [!UICONTROL Webhook 응답] 모듈을 구성합니다.
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL 상태] </td> 
->&gt;   <td> <p>2xx 성공 HTTP 상태 코드(예: 200)</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
->&gt;   <td> <p>HTML 코드</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL 사용자 지정 헤더]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>키</strong>: Content-type</li> 
->&gt;     <li><strong>값</strong>: text/html</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL 상태] </td> 
+&gt;   <td> <p>2xx 성공 HTTP 상태 코드(예: 200)</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
+&gt;   <td> <p>HTML 코드</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL 사용자 지정 헤더]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>키</strong>: Content-type</li> 
+&gt;     <li><strong>값</strong>: text/html</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![사용자 지정 헤더](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
@@ -324,23 +324,23 @@ Webhook 응답을 사용자 정의하려면 Webhook 응답 모듈을 사용합�
 >**예:** [!UICONTROL Webhook 응답] 모듈을 다음과 같이 구성합니다.
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL 상태] </td> 
->&gt;   <td> <p>3xx 리디렉션 HTTP 상태 코드(예: 303)</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL 사용자 지정 헤더]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>[!UICONTROL 키]</strong>: 위치</li> 
->&gt;     <li><strong>[!UICONTROL Value]</strong>: 리디렉션할 URL입니다.</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL 상태] </td> 
+&gt;   <td> <p>3xx 리디렉션 HTTP 상태 코드(예: 303)</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL 사용자 지정 헤더]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>[!UICONTROL 키]</strong>: 위치</li> 
+&gt;     <li><strong>[!UICONTROL Value]</strong>: 리디렉션할 URL입니다.</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![Webhook 응답](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 

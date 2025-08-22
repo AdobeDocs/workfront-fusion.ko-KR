@@ -1,19 +1,19 @@
 ---
 title: Split.io 모듈
-description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는  [!DNL Split.io]을(를) 사용하는 워크플로를 자동화할 수 있을 뿐만 아니라 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.'
+description: Adobe Workfront Fusion 시나리오에서는  [!DNL Split.io]을(를) 사용하는 워크플로를 자동화하고 여러 타사 애플리케이션 및 서비스에 연결할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: 7d738a96-5424-4c30-831f-82e1d4c6f9d2
-source-git-commit: 25d98999eb99e8d842333a1c87b4b0600447b2f5
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: '1919'
 ht-degree: 0%
 
 ---
 
 # [!DNL Split.io]개 모듈
 
-[!DNL Adobe Workfront Fusion] 시나리오에서는 [!DNL Split.io]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
+Adobe Workfront Fusion 시나리오에서는 [!DNL Split.io]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
 
 시나리오를 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 인덱스](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -89,11 +89,11 @@ Split.io 커넥터는 다음을 사용합니다.
  </tbody> 
  </table>
 
-## [!DNL Split.io]을(를) [!DNL Workfront Fusion]에 연결 {#connect-split-io-to-workfront-fusion}
+## Workfront Fusion에 [!DNL Split.io] 연결  {#connect-split-io-to-workfront-fusion}
 
 [!DNL Split.io] 모듈 내에서 직접 [!DNL Split.io] 계정에 연결할 수 있습니다.
 
-1. [!DNL Split.io] 모듈에서 [!UICONTROL 연결] 필드 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
+1. [!DNL Split.io] 모듈에서 **[!UICONTROL 연결]** 필드 옆에 있는 [!UICONTROL 추가]를 클릭합니다.
 1. 다음 필드를 입력합니다.
 
    <table style="table-layout:auto"> 
@@ -118,7 +118,7 @@ Split.io 커넥터는 다음을 사용합니다.
       </tr>
       <tr> 
        <td role="rowheader">[!UICONTROL API 키]</td> 
-       <td>[!DNL Split.io] API 키를 입력하십시오.<p>[!DNL Split.io] API 키에 대한 자세한 내용은 [!DNL Split.io] 설명서의 <a href="https://help.split.io/hc/en-us/articles/360019916211-API-keys">API 키</a>를 참조하십시오.</p></td> 
+       <td>[!DNL Split.io] API 키를 입력하십시오.<p>[!DNL Split.io] API 키에 대한 자세한 내용은 <a href="https://help.split.io/hc/en-us/articles/360019916211-API-keys"> 설명서의 </a>API 키[!DNL Split.io]를 참조하십시오.</p></td> 
       </tr> 
      </tbody> 
     </table>
@@ -127,7 +127,7 @@ Split.io 커넥터는 다음을 사용합니다.
 
 ## [!DNL Split.io]개 모듈 및 해당 필드
 
-[!DNL split.io] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL split.io] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!DNL split.io] 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL split.io] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
@@ -158,7 +158,7 @@ Split.io 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Split.io] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion] </a>에 [!DNL Split.io] 연결을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Split.io] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Split.io] 연결 </a>을(를) 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 
@@ -193,7 +193,7 @@ Split.io 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Split.io] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion] </a>에 [!DNL Split.io] 연결을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Split.io] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Split.io] 연결 </a>을(를) 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 
@@ -224,7 +224,7 @@ Split.io 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Split.io] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion] </a>에 [!DNL Split.io] 연결을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Split.io] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Split.io] 연결 </a>을(를) 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 
@@ -271,7 +271,7 @@ Split.io 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Split.io] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion] </a>에 [!DNL Split.io] 연결을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Split.io] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Split.io] 연결 </a>을(를) 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
@@ -313,7 +313,7 @@ Split.io 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Split.io] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion] </a>에 [!DNL Split.io] 연결을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Split.io] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Split.io] 연결 </a>을(를) 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 
@@ -336,7 +336,7 @@ Split.io 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Split.io] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion] </a>에 [!DNL Split.io] 연결을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Split.io] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Split.io] 연결 </a>을(를) 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 
@@ -359,7 +359,7 @@ Split.io 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Split.io] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion] </a>에 [!DNL Split.io] 연결을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Split.io] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Split.io] 연결 </a>을(를) 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 
@@ -386,7 +386,7 @@ Split.io 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Split.io] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion] </a>에 [!DNL Split.io] 연결을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Split.io] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Split.io] 연결 </a>을(를) 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 
@@ -421,7 +421,7 @@ Split.io 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Split.io] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion] </a>에 [!DNL Split.io] 연결을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Split.io] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Split.io] 연결 </a>을(를) 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 
@@ -452,7 +452,7 @@ Split.io 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Split.io] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion] </a>에 [!DNL Split.io] 연결을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Split.io] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Split.io] 연결 </a>을(를) 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 
@@ -491,7 +491,7 @@ Split.io 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Split.io] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion] </a>에 [!DNL Split.io] 연결을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Split.io] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Split.io] 연결 </a>을(를) 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 
@@ -510,7 +510,7 @@ Split.io 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Split.io] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion] </a>에 [!DNL Split.io] 연결을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Split.io] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Split.io] 연결 </a>을(를) 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 
@@ -529,7 +529,7 @@ Split.io 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Split.io] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion] </a>에 [!DNL Split.io] 연결을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Split.io] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Split.io] 연결 </a>을(를) 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 제한]</td> 
@@ -548,7 +548,7 @@ Split.io 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Split.io] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion] </a>에 [!DNL Split.io] 연결을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Split.io] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Split.io] 연결 </a>을(를) 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 
@@ -575,7 +575,7 @@ Split.io 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Split.io] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion] </a>에 [!DNL Split.io] 연결을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Split.io] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Split.io] 연결 </a>을(를) 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 

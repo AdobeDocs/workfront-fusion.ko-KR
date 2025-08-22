@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion에는 Adobe Workfront 라이센스 외에 Ad
 author: Becky
 feature: Workfront Fusion
 exl-id: 73eb70e1-3f3d-419d-9cde-3ec3cda224f8
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2494'
+source-wordcount: '2600'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[!DNL Workfront Fusion]은(는) 데이터 원본이 아닙니다. [!DNL Workfront Fusion]은(는) 데이터 원본을 만들고 사용할 수 있지만 데이터를 저장하지 않습니다.
+>Workfront Fusion은 데이터 소스가 아닙니다. Workfront Fusion은 데이터 소스를 만들고 사용할 수 있지만 데이터를 저장하지 않습니다.
 
 
 ## 액세스 요구 사항
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -88,7 +88,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
 
 ## [!DNL Power BI]개 모듈 및 해당 필드
 
-[!DNL Power BI]을(를) 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 이러한 필드와 함께 앱이나 서비스의 액세스 수준과 같은 요소에 따라 추가 필드가 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!DNL Power BI]을(를) 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 이러한 필드와 함께 앱이나 서비스의 액세스 수준과 같은 요소에 따라 추가 필드가 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [Adobe Workfront Fusion에서 한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
@@ -118,7 +118,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 이름]</td>
@@ -141,7 +141,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 대시보드 ID 입력]</td>
@@ -172,7 +172,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 대시보드 ID 입력]</td>
@@ -207,7 +207,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
 <tbody>
   <tr>
     <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr>
   <tr>
     <td role="rowheader">[!UICONTROL 대시보드 ID 입력]</td>
@@ -244,7 +244,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 그룹 ID]  </td>
@@ -278,7 +278,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 보고서 ID 입력]</td>
@@ -313,7 +313,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 보고서 ID 입력]</td>
@@ -344,7 +344,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 보고서 ID 입력]</td>
@@ -375,7 +375,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 그룹 ID]  </td>
@@ -412,7 +412,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 테이블 입력]</td>
@@ -465,7 +465,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
                 <p>부울</p>
               </li>
               <li>
-                <p>일자</p>
+                <p>Date</p>
               </li>
               <li>
                 <p>텍스트</p>
@@ -495,7 +495,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 이름]</td>
@@ -666,7 +666,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 보고서 ID 입력]</td>
@@ -697,7 +697,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 보고서 ID 입력]</td>
@@ -728,7 +728,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 그룹 ID]  </td>
@@ -753,7 +753,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 데이터 세트 입력]</td>
@@ -813,7 +813,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 앱 ID]  </td>
@@ -834,7 +834,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 앱 ID]  </td>
@@ -861,7 +861,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 앱 ID]  </td>
@@ -888,7 +888,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 제한]  </td>
@@ -909,7 +909,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 앱 ID]</td>
@@ -934,7 +934,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 앱 ID]</td>
@@ -959,7 +959,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 제한]  </td>
@@ -982,14 +982,14 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Power BI] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe 연결 만들기 [!DNL Workfront Fusion] - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Power BI] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">
         <p>[!UICONTROL 경로]</p>
       </td>
       <td>
-        <p><code>https://api.powerbi.com</code>과(와) 관련된 경로를 입력하십시오. 예: <code>/v1.0/myorg/datasets</code></p>
+        <p><code>https://api.powerbi.com</code>과(와) 관련된 경로를 입력하십시오. 예: <code>/v1.0/myorg/datasets</code>.</p>
       </td>
     </tr>
     <tr>
@@ -1005,7 +1005,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
       <td>
         <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p>
         <p>For example, <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] 인증 헤더 및 x-api-key 헤더를 자동으로 추가합니다.</p>
+        <p>Workfront Fusion은 인증 헤더와 x-api-key 헤더를 자동으로 추가합니다.</p>
       </td>
     </tr>
     <tr>

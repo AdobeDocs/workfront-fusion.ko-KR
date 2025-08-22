@@ -1,19 +1,19 @@
 ---
 title: Adobe Acrobat Sign 모듈
-description: ' [!DNL Adobe Acrobat Sign] 모듈을 사용하면  [!DNL Adobe Workfront Fusion] Acrobat Sign 계정의 이벤트를 기반으로  [!DNL Adobe] 시나리오를 시작하고, 계약 및 기타 레코드를 만들거나, 읽거나, 업데이트하고, 설정한 기준을 사용하여 레코드를 검색하고, 문서를 업로드할 수 있습니다.'
+description: ' [!DNL Adobe Acrobat Sign] 모듈을 사용하면  [!DNL Adobe] Acrobat Sign 계정의 이벤트를 기반으로 Adobe Workfront Fusion 시나리오를 시작하고, 계약 및 기타 레코드를 만들거나 읽거나 업데이트하고, 설정한 기준을 사용하여 레코드를 검색하고, 문서를 업로드할 수 있습니다.'
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
-source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '6664'
+source-wordcount: '6790'
 ht-degree: 0%
 
 ---
 
 # [!DNL Adobe Acrobat Sign]개 모듈
 
-[!DNL Adobe Acrobat Sign] 모듈을 사용하면 [!DNL Adobe Workfront Fusion] 계정의 이벤트를 기반으로 [!DNL Adobe Acrobat Sign] 시나리오를 시작하고, 계약 및 기타 레코드를 만들거나 읽거나 업데이트하고, 설정한 기준을 사용하여 레코드를 검색하고, 문서를 업로드할 수 있습니다.
+[!DNL Adobe Acrobat Sign] 모듈을 사용하면 [!DNL Adobe Acrobat Sign] 계정의 이벤트를 기반으로 Adobe Workfront Fusion 시나리오를 시작하고, 계약 및 기타 레코드를 만들거나 읽거나 업데이트하고, 설정한 기준을 사용하여 레코드를 검색하고, 문서를 업로드할 수 있습니다.
 
 ## 액세스 요구 사항
 
@@ -24,35 +24,35 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 플랜*</td>
+   <td role="rowheader">Adobe Workfront 플랜*</td>
   <td> <p>[!UICONTROL Pro] 이상</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 라이센스*</td>
+   <td role="rowheader">Adobe Workfront 라이센스*</td>
    <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td> 
+   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
    <td>
-   <p>현재 라이선스 요구 사항: [!DNL Workfront Fusion] 라이선스 요구 사항이 없습니다.</p>
+   <p>현재 라이선스 요구 사항: Workfront Fusion 라이선스 요구 사항이 없습니다.</p>
    <p>또는</p>
-   <p>레거시 라이선스 요구 사항: 작업 자동화 및 통합을 위한 [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>레거시 라이선스 요구 사항: [!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
    </td>  
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>현재 제품 요구 사항: [!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Adobe Workfront] 플랜이 있는 경우 조직에서 이 문서에 설명된 기능을 사용하려면 [!DNL Adobe Workfront Fusion]과(와) [!DNL Adobe Workfront]을(를) 구매해야 합니다. [!DNL Workfront Fusion]이(가) [!UICONTROL Ultimate] [!DNL Workfront] 계획에 포함되어 있습니다.</p>
+   <p>현재 제품 요구 사항: [!UICONTROL Select] 또는 [!UICONTROL Prime] Adobe Workfront 플랜이 있는 경우 조직에서 이 문서에 설명된 기능을 사용하려면 Adobe Workfront Fusion과 Adobe Workfront을 구입해야 합니다. Workfront Fusion은 [!UICONTROL Ultimate] Workfront 플랜에 포함되어 있습니다.</p>
    <p>또는</p>
-   <p>레거시 제품 요구 사항: 이 문서에 설명된 기능을 사용하려면 조직에서 [!DNL Adobe Workfront Fusion]과(와) [!DNL Adobe Workfront]을(를) 구매해야 합니다.</p>
+   <p>레거시 제품 요구 사항: 조직에서 이 문서에 설명된 기능을 사용하려면 Adobe Workfront Fusion과 Adobe Workfront을 구입해야 합니다.</p>
    </td> 
   </tr> 
  </tbody> 
 </table>
 
-보유 중인 플랜, 라이선스 유형 또는 액세스 권한을 확인하려면 [!DNL Workfront] 관리자에게 문의하세요.
+보유 중인 플랜, 라이선스 유형 또는 액세스 권한을 확인하려면 Workfront 관리자에게 문의하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 ## [!DNL Adobe Acrobat Sign] API 정보
 
@@ -86,7 +86,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
 
 ## [!DNL Adobe Acrobat Sign]개 모듈 및 해당 필드
 
-[!DNL Adobe Acrobat Sign] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Adobe Acrobat Sign] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!DNL Adobe Acrobat Sign] 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Adobe Acrobat Sign] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
 
 필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
@@ -113,7 +113,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-<td>[!DNL Adobe Acrobat Sign] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</td>  </tr> 
+<td>[!DNL Adobe Acrobat Sign] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</td>  </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Filter]</td> 
    <td>새 레코드, 업데이트된 레코드 또는 둘 다 시청할지 여부를 선택합니다.</td> 
@@ -124,7 +124,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 텍스트 찾기]</td> 
-   <td> <p>검색할 용어를 입력하십시오. 모듈은 이러한 용어를 필드 값으로 포함하는 레코드를 반환합니다.</p> <p>[!DNL Adobe Acrobat Sign]의 필드 검색에 대한 자세한 내용은 <a href="https://helpx.adobe.com/kr/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Adobe Sign 검색 - 작동 방식</a>의 "텍스트 검색 작동 방식"을 참조하십시오.</p> </td> 
+   <td> <p>검색할 용어를 입력하십시오. 모듈은 이러한 용어를 필드 값으로 포함하는 레코드를 반환합니다.</p> <p>[!DNL Adobe Acrobat Sign]의 필드 검색에 대한 자세한 내용은 <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Adobe Sign 검색 - 작동 방식</a>의 "텍스트 검색 작동 방식"을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 반환되는 최대 계약 수]</td> 
@@ -153,7 +153,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Adobe Acrobat Sign] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Adobe Acrobat Sign] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Adobe Workfront Fusion에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 범위]</td> 
@@ -225,7 +225,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Adobe Acrobat Sign] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</td> 
+   <td>[!DNL Adobe Acrobat Sign] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -238,7 +238,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
      <li> <p><b>[!UICONTROL 그룹]</b> </p> </li> 
      <li> <p><b>[!UICONTROL 라이브러리 문서]</b> </p> </li> 
      <li> <p><b>[!UICONTROL 사용자]</b> </p> </li> 
-     <li> <p><b>[!UICONTROL 웹 양식] ([!UICONTROL 위젯])</b> </p> </li> 
+     <li> <p><b>[!UICONTROL 웹 양식]([!UICONTROL 위젯])</b> </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -273,7 +273,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
    <td> <p>다음 필드를 채웁니다.</p> 
     <ul> 
      <li> <p><b>[!UICONTROL Email]</b> </p> <p>사용자의 이메일 주소를 입력합니다.</p> </li> 
-     <li> <p><b>[!UICONTROL 은(는) 계정 관리자]</b> </p> <p>생성된 사용자가 계정 관리자인 경우 이 옵션을 선택합니다.</p> </li> 
+     <li> <p><b>[!UICONTROL은(는) 계정 관리자]</b> </p> <p>생성된 사용자가 계정 관리자인 경우 이 옵션을 선택합니다.</p> </li> 
      <li> <p><b>[!UICONTROL 사용자 ID]</b> </p> <p>사용자의 고유 ID 입력</p> </li> 
      <li> <p><b>[!UICONTROL 계정 ID]</b> </p> <p>이 사용자와 연결된 [!DNL Adobe Acrobat Sign] 계정의 고유 ID를 입력하십시오.</p> </li> 
      <li> <p><b>[!UICONTROL 이름]</b> </p> <p>사용자의 이름을 입력합니다.</p> </li> 
@@ -358,7 +358,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-<td>[!DNL Adobe Acrobat Sign] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</td>  </tr> 
+<td>[!DNL Adobe Acrobat Sign] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</td>  </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
    <td>표준 JSON 개체 형태로 요청의 헤더를 추가합니다. For example, <code>{"Content-type":"application/json"}</code></td> 
@@ -498,11 +498,11 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Adobe Acrobat Sign] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Adobe Acrobat Sign] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Adobe Workfront Fusion에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] 인증 헤더를 자동으로 추가합니다.</p> </td> 
+   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion은 인증 헤더를 자동으로 추가합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 레코드 유형]</td> 
@@ -540,7 +540,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
        <li> <p><b>[!UICONTROL 라이브러리 문서]</b> </p> <p>라이브러리 문서 링크를 표시하려면 <b>[!UICONTROL 예]</b>를 선택하십시오. 기본값은 [!UICONTROL Yes]입니다.</p> </li> 
        <li> <p><b>[!UICONTROL 로컬 파일]</b> </p> <p>로컬 파일 업로드 단추를 표시하려면 <b>[!UICONTROL 예]</b>를 선택하십시오. 기본값은 [!UICONTROL Yes]입니다.</p> </li> 
        <li> <p><b>[!UICONTROL Web connectors]</b> </p> <p>웹 소스의 문서를 첨부할 링크를 표시하려면 <b>[!UICONTROL 예]</b>를 선택하십시오. 기본값은 Yes입니다.</p> </li> 
-       <li> <p><b>[!UICONTROL 이 미리 보기를 선택했습니다]</b> </p> <p>작성 페이지를 작성 모드로 설정하려면 <b>[!UICONTROL 예]</b>를 선택하십시오.</p> </li> 
+       <li> <p><b>[!UICONTROL이 미리 보기를 선택했습니다]</b> </p> <p>작성 페이지를 작성 모드로 설정하려면 <b>[!UICONTROL 예]</b>를 선택하십시오.</p> </li> 
       </ul> </li> 
      <li> <p><b>[!UICONTROL 구성원 공유]</b> </p> <p>계약을 공유할 각 구성원에 대해 <b>[!UICONTROL 항목 추가]</b>를 클릭하고 해당 구성원의 전자 메일 주소와 메시지를 입력합니다.</p> </li> 
      <li> <p>[!UICONTROL 대리자 참가자 집합]</p> 
@@ -616,7 +616,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Adobe Acrobat Sign] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Adobe Acrobat Sign] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Adobe Workfront Fusion에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
@@ -628,7 +628,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] 인증 헤더를 자동으로 추가합니다.</p> </td> 
+   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion은 인증 헤더를 자동으로 추가합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 쿼리 문자열] </td> 
@@ -660,11 +660,11 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Adobe Acrobat Sign] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Adobe Acrobat Sign] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Adobe Workfront Fusion에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] 인증 헤더를 자동으로 추가합니다.</p> </td> 
+   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion은 인증 헤더를 자동으로 추가합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 레코드 유형]</td> 
@@ -713,11 +713,11 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Adobe Acrobat Sign] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Adobe Acrobat Sign] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Adobe Workfront Fusion에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] 인증 헤더를 자동으로 추가합니다.</p> </td> 
+   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion은 인증 헤더를 자동으로 추가합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 레코드 유형]</td> 
@@ -742,18 +742,18 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Adobe Acrobat Sign] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Adobe Acrobat Sign] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Adobe Workfront Fusion에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] 인증 헤더를 자동으로 추가합니다.</p> </td> 
+   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion은 인증 헤더를 자동으로 추가합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 레코드 유형]</td> 
    <td>관련 레코드를 검색할 레코드 유형을 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 레코드 ID] (예: [!UICONTROL 계정 ID])</td> 
+   <td role="rowheader">[!UICONTROL 레코드 ID](예: [!UICONTROL 계정 ID])</td> 
    <td>관련 레코드를 검색할 레코드의 ID를 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
@@ -772,7 +772,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
 >[!IMPORTANT]
 >
 >* 가장 좋은 방법은 계약에 대한 실질적 변경을 예상하는 경우 기존 계약을 업데이트하는 것보다 새 계약을 만드는 것입니다.
->* 일부 업데이트는 필수 필드를 포함합니다. 업데이트를 구성할 때 모든 필수 필드를 작성하십시오. 필수 필드는 [!DNL Workfront Fusion] 모듈에서 굵게 표시됩니다.
+>* 일부 업데이트는 필수 필드를 포함합니다. 업데이트를 구성할 때 모든 필수 필드를 작성하십시오. Workfront Fusion 모듈의 필수 필드는 굵게 표시됩니다.
 >
 
 
@@ -783,11 +783,11 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Adobe Acrobat Sign] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Adobe Acrobat Sign] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Adobe Workfront Fusion에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] 인증 헤더를 자동으로 추가합니다.</p> </td> 
+   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion은 인증 헤더를 자동으로 추가합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 레코드 ID] </td> 
@@ -818,7 +818,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
        <li> <p><b>[!UICONTROL 기본 그룹 ID]</b> </p> <p>새 사용자를 추가할 그룹을 입력합니다. 아무것도 입력하지 않으면 사용자는 계정의 기본 그룹에 추가됩니다.</p> </li> 
        <li> <p><b>[!UICONTROL 작업 제목]</b> </p> <p>사용자의 직함을 입력합니다.</p> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL 웹 양식] ([!UICONTROL 위젯])</b> </p> <p>레코드 종류 및 관련 필드를 기준으로 특정 필드에 정보를 입력합니다.</p> </li> 
+     <li> <p><b>[!UICONTROL 웹 양식]([!UICONTROL 위젯])</b> </p> <p>레코드 종류 및 관련 필드를 기준으로 특정 필드에 정보를 입력합니다.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -833,7 +833,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
 >[!IMPORTANT]
 >
 >* 가장 좋은 방법은 계약에 대한 실질적 변경을 예상하는 경우 기존 계약을 업데이트하는 것보다 새 계약을 만드는 것입니다.
->* 일부 업데이트는 필수 필드를 포함합니다. 업데이트를 구성할 때 모든 필수 필드를 작성하십시오. 필수 필드는 [!DNL Workfront Fusion] 모듈에서 굵게 표시됩니다.
+>* 일부 업데이트는 필수 필드를 포함합니다. 업데이트를 구성할 때 모든 필수 필드를 작성하십시오. Workfront Fusion 모듈의 필수 필드는 굵게 표시됩니다.
 >
 
 
@@ -844,11 +844,11 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Adobe Acrobat Sign] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Adobe Acrobat Sign] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Adobe Workfront Fusion에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] 인증 헤더를 자동으로 추가합니다.</p> </td> 
+   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion은 인증 헤더를 자동으로 추가합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 레코드 유형]</td> 
@@ -875,7 +875,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
         <ul> 
          <li> <p><b>[!UICONTROL 상태]</b> </p> <p>사용자에 대한 새 상태를 선택합니다.</p> </li> 
          <li> <p><b>[!UICONTROL ID]</b> </p> <p>그룹의 고유 ID 입력</p> </li> 
-         <li> <p><b>은(는) 그룹 관리자입니다.</b> </p> <p>이 사용자를 그룹 관리자로 설정하려면 <b>[!UICONTROL 예]</b>를 선택하십시오.</p> </li> 
+         <li> <p><b>[!UICONTROL은(는) 그룹 관리자입니다.</b> </p> <p>이 사용자를 그룹 관리자로 설정하려면 <b>[!UICONTROL 예]</b>를 선택하십시오.</p> </li> 
          <li> <p><b>기본 그룹임</b> </p> <p>이 그룹을 사용자의 기본 그룹으로 업데이트하려면 <b>[!UICONTROL 예]</b>를 선택하십시오.</p> </li> 
          <li> <p><b>[!UICONTROL 만든 날짜]</b> </p> <p>그룹을 만든 날짜를 입력합니다.</p> <p>지원되는 날짜 및 시간 형식 목록을 보려면 [!UICONTROL Adobe Workfront Fusion]<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">에서 </a>형식 변환을 참조하십시오.</p> </li> 
          <li> <p><b>[!UICONTROL 이름]</b> </p> <p>그룹 이름을 입력하거나 매핑합니다.</p> </li> 
@@ -900,7 +900,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
        <li> <p><b>[!UICONTROL 상태]</b> </p> <p>사용자의 새 상태를 선택하고 사용자를 활성화 또는 비활성화하려는 이유에 대한 설명을 입력합니다.</p> </li> 
        <li> <p><b>[!UICONTROL 로케일]</b> </p> <p>사용자의 로케일을 입력합니다. UI의 언어를 결정합니다. </p> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL 웹 양식] ([!UICONTROL 위젯])</b> </p> <p>레코드 종류 및 관련 필드를 기준으로 특정 필드에 정보를 입력합니다.</p> </li> 
+     <li> <p><b>[!UICONTROL 웹 양식]([!UICONTROL 위젯])</b> </p> <p>레코드 종류 및 관련 필드를 기준으로 특정 필드에 정보를 입력합니다.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -922,11 +922,11 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Adobe Acrobat Sign] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Adobe Acrobat Sign] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Adobe Workfront Fusion에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] 인증 헤더를 자동으로 추가합니다.</p> </td> 
+   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion은 인증 헤더를 자동으로 추가합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 레코드 ID]</td> 
@@ -961,7 +961,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Adobe Acrobat Sign] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
+   <td> <p>[!DNL Adobe Acrobat Sign] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Adobe Workfront Fusion에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -972,8 +972,8 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
    <td> <p>계약 메타데이터에서 텍스트를 검색합니다. </p> 
     <ul> 
      <li> <p><b>[!UICONTROL 텍스트 찾기]</b> </p> <p>계약 메타데이터에서 찾을 텍스트를 입력합니다. 각 단어는 별도의 텍스트 항목으로 처리됩니다. </p> </li> 
-     <li> <p><b>[!UICONTROL 에서 텍스트 찾기]</b> </p> <p>텍스트를 찾을 메타데이터 필드를 선택합니다. 아무 것도 선택하지 않으면 모듈은 모든 메타데이터를 검색합니다.</p> </li> 
-    </ul> <p>이 모듈은 선택한 필드에 입력한 텍스트가 포함된 계약을 반환합니다. 예: "봄 캠페인"을 입력하고 제목 및 메모 옵션을 선택하면 제목 또는 메모에 "봄" 또는 "캠페인"이라는 단어가 포함된 계약이 반환됩니다.</p> <p>[!DNL Adobe Acrobat Sign]의 필드 검색에 대한 자세한 내용은 <a href="https://helpx.adobe.com/kr/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] 검색 - 작동 방식</a>의 "텍스트 검색 작동 방식"을 참조하십시오.</p> </td> 
+     <li> <p><b>[!UICONTROL에서 텍스트 찾기]</b> </p> <p>텍스트를 찾을 메타데이터 필드를 선택합니다. 아무 것도 선택하지 않으면 모듈은 모든 메타데이터를 검색합니다.</p> </li> 
+    </ul> <p>이 모듈은 선택한 필드에 입력한 텍스트가 포함된 계약을 반환합니다. 예: "봄 캠페인"을 입력하고 제목 및 메모 옵션을 선택하면 제목 또는 메모에 "봄" 또는 "캠페인"이라는 단어가 포함된 계약이 반환됩니다.</p> <p>[!DNL Adobe Acrobat Sign]의 필드 검색에 대한 자세한 내용은 <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] 검색 - 작동 방식</a>의 "텍스트 검색 작동 방식"을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 만든 날짜]</td> 

@@ -1,19 +1,19 @@
 ---
 title: JWT 모듈
-description: ' [!DNL Adobe Workfront Fusion] [!UICONTROL JWT] 앱은 제공된 알고리즘을 기반으로 JWT 토큰을 만드는 모듈을 제공합니다.'
+description: Adobe Workfront Fusion [!UICONTROL JWT] 앱은 제공된 알고리즘을 기반으로 JWT 토큰을 생성하는 모듈을 제공합니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: 380f60db-b2ec-411a-86ee-0d5699f19b41
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL JWT] 모듈
 
-[!DNL Adobe Workfront Fusion] [!UICONTROL JWT] 앱은 제공된 알고리즘을 기반으로 JWT 토큰을 만드는 모듈을 제공합니다.
+Adobe Workfront Fusion [!UICONTROL JWT] 앱은 제공된 알고리즘을 기반으로 JWT 토큰을 생성하는 모듈을 제공합니다.
 
 ## 액세스 요구 사항
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 

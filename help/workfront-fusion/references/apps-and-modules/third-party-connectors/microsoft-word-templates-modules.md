@@ -4,16 +4,16 @@ description: Adobe Workfront Fusion 시나리오에서는 Microsoft Word 템플�
 author: Becky
 feature: Workfront Fusion
 exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1353'
 ht-degree: 0%
 
 ---
 
 # [!DNL Microsoft Word Template]개 모듈
 
-[!DNL Adobe Workfront Fusion] 시나리오에서는 [!DNL Microsoft Word Templates]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
+Adobe Workfront Fusion 시나리오에서는 [!DNL Microsoft Word Templates]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
 
 시나리오를 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 인덱스](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
 
@@ -58,17 +58,17 @@ ht-degree: 0%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
 ## 전제 조건
 
-[!DNL Adobe Workfront Fusion]에 [!DNL Miscrosoft Word Templates]을(를) 사용하려면 [!DNL Office 365] 계정이 있어야 합니다. `www.office.com`에서 만들 수 있습니다.
+Adobe Workfront Fusion에서 [!DNL Miscrosoft Word Templates]을(를) 사용하려면 [!DNL Office 365] 계정이 있어야 합니다. `www.office.com`에서 만들 수 있습니다.
 
 
 
-## [!DNL Workfront Fusion]에 [!DNL Office] 서비스를 연결하는 중
+## Workfront Fusion에 [!DNL Office] 서비스 연결
 
 [!DNL Office] 계정을 [!UICONTROL Workfront Fusion]에 연결하는 방법에 대한 지침은 [[!UICONTROL Adobe Workfront Fusion에 연결 만들기] - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)을 참조하십시오.
 
@@ -174,7 +174,7 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 바꿀 텍스트의 시작 구분 기호]</td> 
-   <td> <p>바꿀 텍스트의 시작 부분을 표시할 문자를 입력합니다. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>예: </b></span></span><code>[[replace_me]]</code>을(를) 바꾸려면 <code>&#91;&#91;</code>을(를) 입력하십시오.</p> </td> 
+   <td> <p>바꿀 텍스트의 시작 부분을 표시할 문자를 입력합니다. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>예: </b></span></span><code>&#91;&#91;</code>을(를) 바꾸려면 <code>[[replace_me]]</code>을(를) 입력하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 바꿀 텍스트의 끝 구분 기호]</p> </td> 
@@ -236,11 +236,11 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 바꿀 텍스트의 시작 구분 기호]</td> 
-   <td> <p>바꿀 텍스트의 시작 부분을 표시할 문자를 입력합니다. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>예: </b></span></span><code>[[replace_me]]</code>을(를) 바꾸려면 <code>&#91;&#91;</code>을(를) 입력하십시오.</p> </td> 
+   <td> <p>바꿀 텍스트의 시작 부분을 표시할 문자를 입력합니다. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>예: </b></span></span><code>&#91;&#91;</code>을(를) 바꾸려면 <code>[[replace_me]]</code>을(를) 입력하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 바꿀 텍스트의 끝 구분 기호]</p> </td> 
-   <td> <p>바꿀 텍스트의 끝을 표시할 문자를 입력합니다. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>예: </b></span></span><code>[[replace_me]]</code>을(를) 바꾸려면 <code>&#93;&#93;</code>을(를) 입력하십시오.</p> </td> 
+   <td> <p>바꿀 텍스트의 끝을 표시할 문자를 입력합니다. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>예: </b></span></span><code>&#93;&#93;</code>을(를) 바꾸려면 <code>[[replace_me]]</code>을(를) 입력하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Group by]</td> 

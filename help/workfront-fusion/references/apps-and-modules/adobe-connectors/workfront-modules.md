@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion Adobe Workfront 커넥터를 사용하여 Wo
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 9dfab6838057a5852a2725dbfd398144ea2097dd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '8061'
+source-wordcount: '8067'
 ht-degree: 2%
 
 ---
@@ -56,7 +56,7 @@ Adobe Workfront Fusion Adobe Workfront 커넥터를 사용하여 Workfront 내�
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 
 >[!NOTE]
@@ -158,7 +158,7 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
 
 모듈은 연결에서 액세스하는 모든 사용자 지정 필드 및 값과 함께 레코드와 연결된 모든 표준 필드를 반환합니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
 
-1. **Webhook** 상자 오른쪽에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL Webhook]** 상자 오른쪽에 있는 **추가**&#x200B;를 클릭합니다.
 
 1. 표시되는 **[!UICONTROL 후크 추가]** 상자에서 웹후크를 구성합니다.
 
@@ -206,7 +206,7 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
 
 웹후크가 생성되면 이벤트를 전송할 엔드포인트의 주소를 볼 수 있습니다.
 
-자세한 내용은 Workfront 설명서의 이벤트 구독 API 문서에서 [이벤트 페이로드의 예](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) 섹션을 참조하십시오.
+자세한 내용은 Workfront 설명서의 이벤트 구독 API 문서에서 [이벤트 페이로드의 예](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) 섹션을 참조하십시오.
 
 각 Workfront 모듈에 사용할 수 있는 [Workfront 개체 유형](#workfront-object-types-available-for-each-workfront-module)에서 이 모듈을 사용할 수 있는 Workfront 개체 유형 목록을 참조하십시오.
 
@@ -375,7 +375,7 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
 
 +++
 
-+++ **[!UICONTROL 레코드 만들기]**
++++ **[!UICONTROL 레코드 만들기]** 
 
 이 작업 모듈은 Workfront의 프로젝트, 작업 또는 문제와 같은 개체를 만들며, 이를 통해 사용자 정의 양식을 새 개체에 추가할 수 있습니다. 모듈을 사용하면 모듈에서 사용할 수 있는 개체 필드를 선택할 수 있습니다.
 
@@ -439,7 +439,7 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
 >
 >   대규모 배치에 추가된 사용자를 해결하려면 사용자 배치를 Adobe Admin Console에 직접 추가할 수 있습니다.
 >
->   지침은 [여러 사용자 관리를 참조하십시오. | Adobe 설명서의 일괄 CSV 업로드](https://helpx.adobe.com/kr/enterprise/using/bulk-upload-users.html).
+>   지침은 [여러 사용자 관리를 참조하십시오. | Adobe 설명서의 일괄 CSV 업로드](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html).
 
 +++
 
@@ -448,7 +448,7 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
 >[!IMPORTANT]
 >
 >이 모듈은 레코드 만들기 모듈로 대체되었습니다. 새 시나리오에서는 해당 모듈을 사용하는 것이 좋습니다.
->이 모듈을 사용하는 기존 시나리오는 예상대로 계속 작동합니다. 이 모듈은 2025년 5월에 모듈 선택기에서 제거됩니다.
+>>이 모듈을 사용하는 기존 시나리오는 예상대로 계속 작동합니다. 이 모듈은 2025년 5월에 모듈 선택기에서 제거됩니다.
 
 이 작업 모듈은 Workfront의 프로젝트, 작업 또는 문제와 같은 개체를 만듭니다. 모듈을 사용하면 모듈에서 사용할 수 있는 개체 필드를 선택할 수 있습니다.
 
@@ -665,7 +665,7 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
       </ul> <p>다른 모든 레코드 형식의 경우 <b>[!UICONTROL Other objects and endpoints]</b>을(를) 선택하고 알파벳순으로 정렬된 페이지에서 레코드 형식을 찾습니다.</p> </li> 
      <li value="2"> <p>적절한 레코드 종류의 페이지에서 작업을 검색(Ctrl-F 또는 Cmd-F)합니다.</p> </li> 
      <li value="3"> <p>선택한 작업 아래의 사용 가능한 필드에 대한 설명을 봅니다.</p> </li> 
-    </ol> <p>참고:  <p>Workfront [!UICONTROL 기타 작업] 모듈을 통해 증명을 만들 때 가장 좋은 방법은 고급 옵션 없이 증명을 만든 다음 [!DNL Workfront Proof] SOAP API를 사용하여 증명을 업데이트하는 것입니다.</p><p>이 모듈에서 사용하는 Workfront API를 사용하여 증명을 만드는 방법에 대한 자세한 내용은 <a href="https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Adobe Workfront API를 통해 증명을 만들 때 고급 증명 옵션 추가</a>를 참조하십시오.</p> </p> </td> 
+    </ol> <p>참고:  <p>Workfront [!UICONTROL 기타 작업] 모듈을 통해 증명을 만들 때 가장 좋은 방법은 고급 옵션 없이 증명을 만든 다음 [!DNL Workfront Proof] SOAP API를 사용하여 증명을 업데이트하는 것입니다.</p><p>이 모듈에서 사용하는 Workfront API를 사용하여 증명을 만드는 방법에 대한 자세한 내용은 <a href="https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Adobe Workfront API를 통해 증명을 만들 때 고급 증명 옵션 추가</a>를 참조하십시오.</p> </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
@@ -886,7 +886,7 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
 >[!IMPORTANT]
 >
 >이 모듈은 레코드 읽기 모듈로 대체되었습니다. 새 시나리오에서는 해당 모듈을 사용하는 것이 좋습니다.
->이 모듈을 사용하는 기존 시나리오는 예상대로 계속 작동합니다. 이 모듈은 2025년 5월에 모듈 선택기에서 제거됩니다.
+>>이 모듈을 사용하는 기존 시나리오는 예상대로 계속 작동합니다. 이 모듈은 2025년 5월에 모듈 선택기에서 제거됩니다.
 
 이 작업 모듈은 단일 레코드에서 데이터를 검색합니다.
 
@@ -939,9 +939,9 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
 
 Workfront은 최근 새로운 버전의 이벤트 구독 서비스를 발표했습니다. 새 버전은 Workfront API가 아니라 이벤트 구독 기능이 변경되었습니다. 이 작업 모듈은 이 시나리오에 사용되는 이벤트 페이로드 버전을 업데이트합니다.
 
-새 이벤트 구독 버전에 대한 자세한 내용은 Workfront 설명서에서 [이벤트 구독 버전 관리](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)를 참조하십시오
+새 이벤트 구독 버전에 대한 자세한 내용은 Workfront 설명서에서 [이벤트 구독 버전 관리](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)를 참조하십시오
 
-웨비나 녹화를 포함하여 이벤트 구독 업그레이드 중에 Workfront Fusion 시나리오를 유지하는 방법에 대한 리소스는 [이벤트 구독 V2 업그레이드 중에 Fusion 시나리오 유지](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=ko)를 참조하십시오.
+웨비나 녹화를 포함하여 이벤트 구독 업그레이드 중에 Workfront Fusion 시나리오를 유지하는 방법에 대한 리소스는 [이벤트 구독 V2 업그레이드 중에 Fusion 시나리오 유지](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)를 참조하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -1015,7 +1015,7 @@ Workfront은 최근 새로운 버전의 이벤트 구독 서비스를 발표했�
 >[!IMPORTANT]
 >
 >이 모듈은 레코드 업데이트 모듈로 대체되었습니다. 새 시나리오에서는 해당 모듈을 사용하는 것이 좋습니다.
->이 모듈을 사용하는 기존 시나리오는 예상대로 계속 작동합니다. 이 모듈은 2025년 5월에 모듈 선택기에서 제거됩니다.
+>>이 모듈을 사용하는 기존 시나리오는 예상대로 계속 작동합니다. 이 모듈은 2025년 5월에 모듈 선택기에서 제거됩니다.
 
 이 작업 모듈은 프로젝트, 작업 또는 문제와 같은 개체를 업데이트합니다. 모듈을 사용하면 모듈에서 사용할 수 있는 개체 필드를 선택할 수 있습니다.
 
@@ -1249,7 +1249,7 @@ Workfront은 최근 새로운 버전의 이벤트 구독 서비스를 발표했�
 >[!IMPORTANT]
 >
 >이 모듈은 레코드 검색 모듈로 대체되었습니다. 새 시나리오에서는 해당 모듈을 사용하는 것이 좋습니다.
->이 모듈을 사용하는 기존 시나리오는 예상대로 계속 작동합니다. 이 모듈은 2025년 5월에 모듈 선택기에서 제거됩니다.
+>>이 모듈을 사용하는 기존 시나리오는 예상대로 계속 작동합니다. 이 모듈은 2025년 5월에 모듈 선택기에서 제거됩니다.
 
 이 검색 모듈은 Workfront의 객체에서 지정한 검색 쿼리와 일치하는 레코드를 찾습니다.
 
@@ -1461,7 +1461,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>시간</td> 
+   <td>Hour</td> 
    <td> </td> 
    <td>✓</td> 
    <td>✓</td> 
@@ -1509,7 +1509,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>참고</td> 
+   <td>메모</td> 
    <td>✓</td> 
    <td>✓</td> 
    <td>✓</td> 
@@ -1796,7 +1796,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td>✓</td> 
   </tr> 
   <tr> 
-   <td>시간</td> 
+   <td>Hour</td> 
    <td>✓</td> 
    <td>✓</td> 
    <td>✓</td> 
@@ -1876,7 +1876,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>참고</td> 
+   <td>메모</td> 
    <td>✓</td> 
    <td>✓</td> 
    <td>✓</td> 
@@ -2120,7 +2120,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td>✓</td> 
   </tr> 
   <tr> 
-   <td>시간</td> 
+   <td>Hour</td> 
    <td>✓</td> 
    <td> </td> 
   </tr> 
@@ -2160,7 +2160,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>참고</td> 
+   <td>메모</td> 
    <td>✓</td> 
    <td> </td> 
   </tr> 
@@ -2259,9 +2259,9 @@ See a list of the Workfront object types for which you can use this module in [W
 >
 >* Workfront은 최근 새로운 버전의 이벤트 구독 서비스를 발표했습니다. 새 버전은 Workfront API가 아니라 이벤트 구독 기능이 변경되었습니다. 이 작업 모듈은 이 시나리오에 사용되는 이벤트 페이로드 버전을 업데이트합니다.
 >
->   새 이벤트 구독 버전에 대한 자세한 내용은 Workfront 설명서에서 [이벤트 구독 버전 관리](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)를 참조하십시오
+>   새 이벤트 구독 버전에 대한 자세한 내용은 Workfront 설명서에서 [이벤트 구독 버전 관리](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)를 참조하십시오
 >
->   웨비나 녹화를 포함하여 이벤트 구독 업그레이드 중에 Workfront Fusion 시나리오를 유지하는 방법에 대한 리소스는 [이벤트 구독 V2 업그레이드 중에 Fusion 시나리오 유지(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=ko)]를 참조하십시오.
+>   웨비나 녹화를 포함하여 이벤트 구독 업그레이드 중에 Workfront Fusion 시나리오를 유지하는 방법에 대한 리소스는 [이벤트 구독 V2 업그레이드 중에 Fusion 시나리오 유지(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)]를 참조하십시오.
 
 Workfront [!UICONTROL 이벤트 보기] 모듈은 Workfront API에서 이벤트 구독을 만드는 웹후크를 기반으로 시나리오를 트리거합니다. 이벤트 구독은 웹후크로 전송되는 이벤트를 결정하는 데이터 세트입니다. 예를 들어 문제를 감시하는 [!UICONTROL 이벤트 감시] 모듈을 설정하면 이벤트 구독에서 문제와 관련된 이벤트만 보냅니다.
 
@@ -2273,10 +2273,10 @@ Workfront > 이벤트 보기 필터에서 다음 연산자를 사용할 수 있�
 
 * 다음과 같음
 * 같지 않음
-* 보다 큼
-* 보다 작음
-* 크거나 같음
-* 작거나 같음
+* 다음보다 큼
+* 다음보다 작음
+* 다음보다 크거나 같음
+* 다음보다 작거나 같음
 * 다음 포함
 * 있음
    * 이 연산자에는 값이 필요하지 않으며 값 필드가 없습니다.
@@ -2311,7 +2311,7 @@ Workfront > 이벤트 보기 필터에서 다음 연산자를 사용할 수 있�
 >
 >하루에 100개의 문제가 만들어지지만 이 중 두 개의 문제만 Ana에 할당되면 시나리오는 100번 실행됩니다. 98개의 실행이 필터에서 중지되지만 트리거 모듈은 여전히 데이터를 소비하고 모든 실행에서 작업을 수행합니다.
 
-Workfront 이벤트 구독에 대한 자세한 내용은 [FAQ - 이벤트 구독](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq)을 참조하십시오.
+Workfront 이벤트 구독에 대한 자세한 내용은 [FAQ - 이벤트 구독](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq)을 참조하십시오.
 
 웹후크에 대한 자세한 내용은 Adobe Workfront Fusion의 [인스턴트 트리거(웹후크)](/help/workfront-fusion/references/modules/webhooks-reference.md)를 참조하십시오.
 

@@ -4,20 +4,20 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: apps-and-their-modules
 title: Adobe 스토리지 모듈
-description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Adobe Admin Console에서 프로젝트를 만들고 관리할 수 있습니다.'
+description: Adobe Workfront Fusion 시나리오에서는 Adobe Admin Console에서 프로젝트를 만들고 관리할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: 78ee905f-4713-44a4-bffb-c64cdb3665c2
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1386'
-ht-degree: 2%
+source-wordcount: '1400'
+ht-degree: 3%
 
 ---
 
 # Adobe 스토리지 모듈
 
-[!DNL Adobe Workfront Fusion] 시나리오에서는 Adobe Admin Console에서 프로젝트를 만들고 관리할 수 있습니다.
+Adobe Workfront Fusion 시나리오에서는 Adobe Admin Console에서 프로젝트를 만들고 관리할 수 있습니다.
 
 시나리오를 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 인덱스](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
 
@@ -62,7 +62,7 @@ ht-degree: 2%
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-[!DNL Adobe Workfront Fusion] 라이선스에 대한 자세한 내용은 [[!DNL Adobe Workfront Fusion] 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하세요.
+Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
 +++
 
@@ -118,7 +118,7 @@ Adobe Admin Console 페이지에서 상단 탐색 막대의 제품 탭을 선택
       <tbody>
         <tr>
         <td role="rowheader">[!UICONTROL 연결 유형]</td>
-        <td><code>Server to server</code>을(를) 선택합니다.</td>
+        <td><code>Server to server</code>를 선택합니다.</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL 연결 이름]</td>
@@ -343,7 +343,7 @@ Adobe 사용자 관리 모듈을 구성하면 Workfront Fusion에 아래 나열�
       <td>
         <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p>
         <p>For example, <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] 인증 헤더 및 x-api-key 헤더를 자동으로 추가합니다.</p>
+        <p>Workfront Fusion은 인증 헤더와 x-api-key 헤더를 자동으로 추가합니다.</p>
       </td>
     </tr>
     <tr>

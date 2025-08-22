@@ -31,7 +31,7 @@ Workfront Fusion은 시나리오 생성 템플릿, 실행 내역 및 디버깅�
 
 Workfront Fusion 작업을 시작할 때 유용한 리소스는 다음과 같습니다.
 
-* Workfront Fusion 교육 리소스는 [Workfront Fusion 교육 개요](https://experienceleague.adobe.com/en/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy)를 참조하십시오.
+* Workfront Fusion 교육 리소스는 [Workfront Fusion 교육 개요](https://experienceleague.adobe.com/ko/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy)를 참조하십시오.
 
 
 * 시나리오에 대한 자세한 내용은 [시나리오 개요](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md)를 참조하십시오.

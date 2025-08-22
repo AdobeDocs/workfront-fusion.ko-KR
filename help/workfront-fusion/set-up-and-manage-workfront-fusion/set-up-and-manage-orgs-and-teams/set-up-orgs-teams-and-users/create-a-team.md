@@ -83,7 +83,7 @@ ht-degree: 1%
 
 1. 왼쪽 탐색 패널에서 **[!UICONTROL 조직 개요]**&#x200B;를 클릭합니다
 1. **[!UICONTROL 팀]** 탭을 선택합니다.
-1. **[!UICONTROL 새 팀 추가]**를 클릭합니다.
+1. **[!UICONTROL 새 팀 추가]**&#x200B;를 클릭합니다.
    ![팀 만들기](assets/create-new-team-button.png)
 1. 새 팀의 이름을 입력하고 **추가**&#x200B;를 클릭합니다.
 

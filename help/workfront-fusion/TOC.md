@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 설명서
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 문서, 튜토리얼 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
-source-git-commit: f28dd04df0a527a35a9ef82fa92fc07a363a7144
+source-git-commit: ef41c85010b53bbc80c5b44ba8a622027c9e4911
 workflow-type: tm+mt
-source-wordcount: '1840'
+source-wordcount: '1849'
 ht-degree: 3%
 
 ---
@@ -167,8 +167,10 @@ ht-degree: 3%
          * [조직에 대한 활동 로그 보기](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-activity-logs-for-an-org.md)
       * 사용자 및 팀 관리 {#manage-users-and-teams}
          * [사용자 및 팀 관리: 문서 색인](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/manage-users-and-teams.md)
+         * [조직의 사용자 보기](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-users-in-an-org.md)
          * [사용자 세부 사항 보기 또는 편집](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-details.md)
          * [사용자 역할 보기 또는 편집](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-roles.md)
+         * [팀 보기 및 관리](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-teams.md)
          * [Adobe Admin Console에서 사용자 삭제](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/delete-users-admin-console.md)
    * 템플릿 관리 {#manage-templates-admin}
       * [템플릿 관리](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/manage-templates-toc.md)

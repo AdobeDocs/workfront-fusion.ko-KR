@@ -1,13 +1,13 @@
 ---
-title: 조직의  [!DNL Adobe Workfront Fusion] 사용자 관리
+title: 사용자 세부 사항 보기 또는 편집
 description: 조직의  [!DNL Adobe Workfront Fusion] 사용자 관리
 author: Becky
 feature: Workfront Fusion
 exl-id: 0eeed98c-0c87-4e34-9efe-027f3f03af1b
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: ef41c85010b53bbc80c5b44ba8a622027c9e4911
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 1%
+source-wordcount: '232'
+ht-degree: 2%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 1%
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] 라이센스</td> 
-   <td> <p>신규: [!UICONTROL Standard]</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
+   <td> <p>새로운 기능: [!UICONTROL Standard]</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] 라이센스**</td> 
@@ -48,7 +48,7 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Workfront] 플랜: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 플랜: [!DNL Workfront Fusion]이(가) 포함되어 있습니다.</li></ul>
+   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] [!DNL Workfront] 계획: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 계획: [!DNL Workfront Fusion]이(가) 포함되어 있습니다.</li></ul>
    <p>또는</p>
    <p>현재: 조직에서 [!DNL Adobe Workfront Fusion]을(를) 구매해야 합니다.</p>
    </td> 
@@ -75,7 +75,7 @@ ht-degree: 1%
 
 [!DNL Adobe Workfront Fusion] 관리자는 사용자 세부 정보를 보고 업데이트할 수 있습니다.
 
-1. [!DNL Workfront Fusion] 관리자로 로그인하는 동안 왼쪽 탐색에서 **[!UICONTROL All users]**&#x200B;을(를) 선택하십시오.
-1. 보려는 사용자 행에서 **[!UICONTROL Details]**&#x200B;을(를) 클릭합니다.
-1. (선택 사항) 사용자의 세부 정보를 업데이트하려면 화면 오른쪽 상단의 **[!UICONTROL Options]**&#x200B;을(를) 클릭한 다음 **[!UICONTROL Change Details]**&#x200B;을(를) 선택합니다.
+1. [!DNL Workfront Fusion] 관리자로 로그인하는 동안 왼쪽 탐색에서 **[!UICONTROL 모든 사용자]**&#x200B;를 선택합니다.
+1. 보려는 사용자 행에서 **[!UICONTROL 세부 정보]**&#x200B;를 클릭합니다.
+1. (선택 사항) 사용자의 세부 정보를 업데이트하려면 화면 오른쪽 상단의 **[!UICONTROL 옵션]**&#x200B;을 클릭한 다음 **[!UICONTROL 세부 정보 변경]**&#x200B;을 선택합니다.
 1. 세부 정보를 편집한 다음 **저장**&#x200B;을 클릭합니다.

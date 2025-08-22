@@ -115,7 +115,7 @@ Adobe Creative Cloud 라이브러리 커넥터는 다음을 사용합니다.
 
 * [[!UICONTROL 요소 업로드]](#upload-an-element)
 
-* [!UICONTROL [라이브러리의 새 요소 보기]](#watch-new-element-in-library)
+* [[!UICONTROL [라이브러리의 새 요소 보기]]](#watch-new-element-in-library)
 
 * [[!UICONTROL 업데이트된 요소 보기]](#watch-updated-elements)
 

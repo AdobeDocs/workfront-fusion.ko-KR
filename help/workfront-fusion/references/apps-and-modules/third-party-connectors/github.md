@@ -172,9 +172,9 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
    <td> <p>감시할 문제를 연결된 방법별로 필터링할 수 있습니다.</p> 
     <ul> 
      <li>[!UICONTROL 모든 문제]</li> 
-     <li>[!UICONTROL만 나에게 할당된 문제]</li> 
+     <li>[!UICONTROL 만 나에게 할당된 문제]</li> 
      <li>[!UICONTROL 내가 만든 문제만 해당]</li> 
-     <li>[!UICONTROL만 나를 언급하는 문제]</li> 
+     <li>[!UICONTROL 만 나를 언급하는 문제]</li> 
      <li>[!UICONTROL 다음에 대한 업데이트를 구독하는 문제만 발생]</li> 
     </ul> </td> 
   </tr> 

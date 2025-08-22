@@ -842,7 +842,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL이 활성화되었습니까?]</td> 
+   <td role="rowheader">[!UICONTROL 이 활성화되었습니까?]</td> 
    <td>새 참여가 만들어질 때 활성화될 경우 이 옵션을 활성화하십시오. 타임라인에 참여하려면 참여가 활성화되어야 합니다.</td> 
   </tr> 
   <tr> 
@@ -1029,7 +1029,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td>작업 상태를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">개체 유형에 대한 [!UICONTROL]</td> 
+   <td role="rowheader">개체 유형에 대한 </td> 
   <td><code>CONTACT</code> 또는 <code>COMPANY</code>을(를) 입력하십시오.
   </td> 
    </tr> 

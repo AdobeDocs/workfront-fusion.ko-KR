@@ -69,10 +69,10 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 >[!IMPORTANT]
 >
 >* Dropbox 커넥터를 사용하려면 먼저 Dropbox에서 애플리케이션을 만들어야 합니다.
->  >   자세한 내용은 Dropbox 개발자 안내서에서 &quot;애플리케이션 만들기&quot;를 검색하십시오.
+>  &#x200B;>   자세한 내용은 Dropbox 개발자 안내서에서 &quot;애플리케이션 만들기&quot;를 검색하십시오.
 >* 응용 프로그램을 만들 때 다음 리디렉션 URI를 사용하십시오. `https://app.workfrontfusion.com/oauth/cb/dropbox`
 >* Dropbox은 사용자가 50명을 초과하는 애플리케이션을 승인해야 합니다.
->  >   자세한 내용을 보려면 Dropbox 개발자 안내서에서 &quot;프로덕션 승인&quot;을 검색하십시오.
+>  &#x200B;>   자세한 내용을 보려면 Dropbox 개발자 안내서에서 &quot;프로덕션 승인&quot;을 검색하십시오.
 
 ## Dropbox API 정보
 

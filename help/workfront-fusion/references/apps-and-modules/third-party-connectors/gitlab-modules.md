@@ -645,7 +645,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>새 연결을 만들려면 이 문서에서 <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion에 연결 [!DNL GitLab]</a>을(를) 참조하십시오.</td> 
+   <td>새 연결을 만들려면 이 문서에서 <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 연결 [!DNL GitLab]</a>을(를) 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 프로젝트]</td> 
@@ -768,7 +768,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 모듈은 단일 코드 조각에 대한 모든 참고 목록을 가져옵니다. 코드 조각 노트는 사용자가 코드 조각에 게시할 수 있는 주석입니다.
 
-필드에 대한 자세한 내용은 [🔗 설명서의 ](https://docs.gitlab.com/ee/api/notes.html#list-all-snippet-notes)[!DNL GitLab]을(를) 참조하십시오.
+필드에 대한 자세한 내용은 [🔗 설명서의 ](https://docs.gitlab.com/ee/api/notes.html#list-all-snippet-notes) [!DNL GitLab]을(를) 참조하십시오.
 
 +++
 
@@ -782,7 +782,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>새 연결을 만들려면 이 문서에서 <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion에 연결 [!DNL GitLab]</a>을(를) 참조하십시오.</td> 
+   <td>새 연결을 만들려면 이 문서에서 <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 연결 [!DNL GitLab]</a>을(를) 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 프로젝트 ID]</td> 
@@ -1015,7 +1015,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>새 연결을 만들려면 이 문서에서 <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion에 연결 [!DNL GitLab]</a>을(를) 참조하십시오.</td> 
+   <td>새 연결을 만들려면 이 문서에서 <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 연결 [!DNL GitLab]</a>을(를) 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 프로젝트 ID]</td> 

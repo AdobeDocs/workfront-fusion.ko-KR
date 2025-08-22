@@ -132,15 +132,15 @@ Adobe PDF 서비스 커넥터는 다음을 사용합니다.
           <td>[!DNL Adobe] [!UICONTROL 클라이언트 암호]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.<p>자격 증명을 찾는 방법에 대한 지침은 Adobe 개발자 설명서에서 <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >자격 증명</a>을 참조하십시오.</p>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL 기술 계정 ID](JWT만 해당)</td>
+          <td role="rowheader">[!UICONTROL 기술 계정 ID] (JWT만 해당)</td>
           <td>[!DNL Adobe] [!UICONTROL 기술 계정 ID]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.<p>자격 증명을 찾는 방법에 대한 지침은 Adobe 개발자 설명서에서 <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >자격 증명</a>을 참조하십시오.</p>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL 조직 ID](JWT만 해당)</td>
+          <td role="rowheader">[!UICONTROL 조직 ID] (JWT만 해당)</td>
           <td>[!DNL Adobe] [!UICONTROL 조직 ID]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.<p>자격 증명을 찾는 방법에 대한 지침은 Adobe 개발자 설명서에서 <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >자격 증명</a>을 참조하십시오.</p>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL 메타 범위](JWT만 해당)</td>
+          <td role="rowheader">[!UICONTROL 메타 범위] (JWT만 해당)</td>
           <td>
             연결에 필요한 메타 범위를 입력합니다.
           </td>
@@ -553,7 +553,7 @@ ZIP으로 출력하는 경우 PDF은 페이지당 하나의 이미지로 변환�
 * [[!UICONTROL 템플릿]을(를) 사용하여  [!DNL Microsoft Word] 문서 생성](#use-the-generate-document-module-with-a-microsoft-word-template) 모듈 사용
 * [JSON이 있는 [!UICONTROL 문서 생성] 모듈 사용](#use-the-generate-document-module-with-json)
 
-#### [!UICONTROL  템플릿으로 ]문서 생성[!DNL Microsoft Word] 모듈 사용
+#### [!UICONTROL &#x200B; 템플릿으로 &#x200B;]문서 생성[!DNL Microsoft Word] 모듈 사용
 
 
 >[!NOTE]

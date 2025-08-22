@@ -87,7 +87,7 @@ Cvent 커넥터는 다음을 사용합니다.
 >
 >[!DNL Cvent] 모듈은 [!UICONTROL SOAP] API를 통해 작동합니다. [!DNL Cvent]에 대한 연결을 만들려면 다음을 확인해야 합니다.
 >
->* [!UICONTROL  API에 대한 ]SOAP[!DNL Cvent] 액세스 권한이 있습니다.
+>* [!UICONTROL &#x200B; API에 대한 &#x200B;]SOAP[!DNL Cvent] 액세스 권한이 있습니다.
 >* Workfront Fusion IP 주소가 조직의 허용 목록에 추가하다에 추가되었습니다.
 >
 >  Workfront 허용 목록에 추가하다 Fusion IP 주소 목록을 보려면 [조직의 Fusion에 대한 IP 주소 구성](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)을 참조하십시오.

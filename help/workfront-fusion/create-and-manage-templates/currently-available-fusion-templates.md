@@ -23,7 +23,7 @@ ht-degree: 0%
 
 이러한 템플릿은 Workfront 프로세스 및 워크플로를 자동화합니다.
 
-### [!BADGE 새로 만들기! ]{type=Informative} Workfront - 작업이 일찍 완료되면 프로젝트 타임라인을 자동으로 조정
+### [!BADGE 새로 만들기! &#x200B;]{type=Informative} Workfront - 작업이 일찍 완료되면 프로젝트 타임라인을 자동으로 조정
 
 <!--New June 10, 2025-->
 
@@ -33,13 +33,13 @@ ht-degree: 0%
 
 이 Fusion 템플릿은 해당 프로세스를 자동화합니다. 작업이 조기에 완료되면 모든 종속(후속) 작업이 자동으로 다시 예약되어 더 빨리 시작되도록 하여 팀이 더 빨리 움직이고 민첩하게 작업할 수 있습니다.
 
-### [!BADGE 새로 만들기! ]{type=Informative} HTTP>CSV>WF - 도메인 및 계층별로 이벤트 하위 목록을 만들고 CSV로 내보내기
+### [!BADGE 새로 만들기! &#x200B;]{type=Informative} HTTP>CSV>WF - 도메인 및 계층별로 이벤트 하위 목록을 만들고 CSV로 내보내기
 
 이벤트 구독 정보를 다운로드하고 CSV 파일을 만든 다음 파일을 Workfront에 업로드합니다.
 
 <!--New August 8, 2025-->
 
-### [!BADGE 새로 만들기! ]{type=Informative} Workfront 보드 - 지정된 열에서 보관된 카드 삭제(주문형)
+### [!BADGE 새로 만들기! &#x200B;]{type=Informative} Workfront 보드 - 지정된 열에서 보관된 카드 삭제(주문형)
 
 <!--New March 12, 2025-->
 
@@ -117,7 +117,7 @@ ht-degree: 0%
 
 이러한 템플릿은 Workfront과 Workfront Proof을 결합하는 워크플로를 자동화합니다.
 
-### [!BADGE 새로 만들기! ]{type=Informative} Workfront > Workfront Proof - 증명 사용자 역할을 읽기 전용으로 변경하고 프로젝트 종료 시 증명을 잠급니다.
+### [!BADGE 새로 만들기! &#x200B;]{type=Informative} Workfront > Workfront Proof - 증명 사용자 역할을 읽기 전용으로 변경하고 프로젝트 종료 시 증명을 잠급니다.
 
 <!--New March 12, 2025-->
 

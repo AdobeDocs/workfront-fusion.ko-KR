@@ -92,7 +92,7 @@ Bynder 커넥터는 다음을 사용합니다.
 >Byender는 인증 코드/새로 고침 토큰 부여 유형을 사용합니다. 이는 Fusion Byender 커넥터가 사용하는 유일한 권한 부여 유형입니다.
 
 * [Workfront Fusion에서  [!DNL Bynder] 에 대한 연결 만들기](#create-a-connection-to-bynder-from-workfront-fusion)
-* [[!UICONTROL 에서 ]클라이언트 ID[!UICONTROL  및 ]클라이언트 암호 [!DNL Bynder]  생성(선택 사항)](#generate-a-client-id-and-client-secret-in-bynder-optional)
+* [[!UICONTROL 에서 &#x200B;]클라이언트 ID[!UICONTROL &#x200B; 및 &#x200B;]클라이언트 암호 [!DNL Bynder]  생성(선택 사항)](#generate-a-client-id-and-client-secret-in-bynder-optional)
 
 ### Workfront Fusion에서 [!DNL Bynder]에 대한 연결 만들기
 
@@ -107,7 +107,7 @@ Bynder 커넥터는 다음을 사용합니다.
 1. [!UICONTROL 로그인] 창에서 사용자 이름(전자 메일 주소)과 암호를 입력합니다.
 1. 연결을 만들고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭하세요.
 
-### [!UICONTROL 에서 ]클라이언트 ID[!UICONTROL  및 ]클라이언트 암호[!DNL Bynder] 생성(선택 사항)
+### [!UICONTROL 에서 &#x200B;]클라이언트 ID[!UICONTROL &#x200B; 및 &#x200B;]클라이언트 암호[!DNL Bynder] 생성(선택 사항)
 
 클라이언트 ID와 클라이언트 암호를 사용하여 연결을 만들려면 [!DNL Bynder] 계정에서 연결을 생성할 수 있습니다. 클라이언트 ID 및 클라이언트 암호는 [!DNL Bynder]에서 앱을 만들 때 생성됩니다.
 

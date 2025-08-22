@@ -98,7 +98,7 @@ Datadog 커넥터에서는 다음을 사용합니다.
 
 ### Workfront Fusion에서 [!DNL Datadog]에 대한 연결 만들기
 
-[!DNL Datadog]Datadog[!UICONTROL  모듈 내에서 직접 ] 계정에 연결할 수 있습니다.
+[!DNL Datadog]Datadog[!UICONTROL &#x200B; 모듈 내에서 직접 &#x200B;] 계정에 연결할 수 있습니다.
 
 1. [!UICONTROL Datadog] 모듈에서 **[!UICONTROL 연결]** 필드 옆에 있는 [!UICONTROL 추가]를 클릭합니다.
 1. 다음과 같이 모듈의 필드를 채웁니다.

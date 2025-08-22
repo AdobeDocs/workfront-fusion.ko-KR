@@ -311,7 +311,7 @@ IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Exponge]</td> 
-   <td> <p>현재 열려 있는 사서함에서 [!UICONTROL Deleted](으)로 플래그가 지정된 모든 메시지를 영구적으로 제거하려면 이 옵션을 활성화합니다.</p> <p>참고: [!DNL Gmail]에서 이 동작은 [!UICONTROL 설정] &gt;[!UICONTROL Forwarding POP/IMAP in IMAP access] 섹션의 설정에 의해 결정됩니다.</p> </td> 
+   <td> <p>현재 열려 있는 사서함에서 [!UICONTROL Deleted] (으)로 플래그가 지정된 모든 메시지를 영구적으로 제거하려면 이 옵션을 활성화합니다.</p> <p>참고: [!DNL Gmail]에서 이 동작은 [!UICONTROL 설정] &gt;[!UICONTROL Forwarding POP/IMAP in IMAP access] 섹션의 설정에 의해 결정됩니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>

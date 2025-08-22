@@ -227,7 +227,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭하세요.
 1. [OAuth 2.0 요청 모듈 만들기](#configure-the-make-an-oauth-20-request-module)를 계속 진행합니다.
 
-### [!DNL Google]HTTP[!UICONTROL  > ]OAuth 2.0 요청 모듈 만들기[!UICONTROL 에서 ]에 대한 연결을 만드는 지침
+### [!DNL Google]HTTP[!UICONTROL &#x200B; > &#x200B;]OAuth 2.0 요청 모듈 만들기[!UICONTROL 에서 &#x200B;]에 대한 연결을 만드는 지침
 
 다음 예제에서는 [!UICONTROL HTTP] > [!UICONTROL OAuth 2.0] 요청 모듈을 사용하여 [!DNL Google]에 연결하는 방법을 보여 줍니다.
 

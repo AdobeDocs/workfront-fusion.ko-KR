@@ -285,7 +285,7 @@ Microsoft Office 365 이메일 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search]</td> 
-   <td>검색 쿼리를 입력합니다. 검색 쿼리를 작성하는 방법에 대한 자세한 내용은 [!DNL Microsoft] 지원 문서 <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&amp;rs=en-us&amp;ad=us">메일 및 사람 검색 [!DNL Outlook.com]</a>을(를) 참조하십시오.</td> 
+   <td>검색 쿼리를 입력합니다. 검색 쿼리를 작성하는 방법에 대한 자세한 내용은 [!DNL Microsoft] 지원 문서 <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&rs=en-us&ad=us">메일 및 사람 검색 [!DNL Outlook.com]</a>을(를) 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Order by]</td> 
@@ -331,7 +331,7 @@ Microsoft Office 365 이메일 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search]</td> 
-   <td>검색 쿼리를 입력합니다. 이 모듈은 이 쿼리와 일치하는 메시지를 반환합니다. 검색 쿼리를 작성하는 방법에 대한 자세한 내용은 [!DNL Microsoft] 지원 문서 <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&amp;rs=en-us&amp;ad=us">메일 및 사람 검색 [!DNL Outlook.com]</a>을(를) 참조하십시오.</td> 
+   <td>검색 쿼리를 입력합니다. 이 모듈은 이 쿼리와 일치하는 메시지를 반환합니다. 검색 쿼리를 작성하는 방법에 대한 자세한 내용은 [!DNL Microsoft] 지원 문서 <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&rs=en-us&ad=us">메일 및 사람 검색 [!DNL Outlook.com]</a>을(를) 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 제한] </td> 

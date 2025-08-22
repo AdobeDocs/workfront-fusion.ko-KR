@@ -91,5 +91,5 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 1. 잠긴 시나리오의 시나리오 세부 정보 페이지로 이동합니다.
 1. 화면 오른쪽 상단의 **[!UICONTROL 옵션]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL 실행 잠금 해제]**&#x200B;를 선택하십시오.
-1. **[!UICONTROL 잠금 해제]**를 클릭합니다.
+1. **[!UICONTROL 잠금 해제]**&#x200B;를 클릭합니다.
    ![시나리오 잠금 해제](assets/unlock-scenario.png)

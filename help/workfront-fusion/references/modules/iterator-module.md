@@ -115,7 +115,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 >전체 시나리오가 실행되지 않도록 하려면 다음을 수행할 수 있습니다.
 >
 >* 흐름이 더 이상 진행되지 않도록 하려면 [!UICONTROL JSON] > [!UICONTROL JSON 구문 분석] 모듈 뒤에 있는 모듈의 연결을 해제하십시오.
->  >   또는
+>  &#x200B;>   또는
 >* [!UICONTROL JSON] > [!UICONTROL JSON 구문 분석] 모듈을 마우스 오른쪽 단추로 클릭하고 컨텍스트 메뉴에서 **[!UICONTROL 이 모듈만 실행]**&#x200B;을 선택하여 [!UICONTROL JSON] > [!UICONTROL JSON 구문 분석] 모듈만 실행합니다.
 
 [!UICONTROL JSON] > [!UICONTROL JSON 구문 분석]이 실행되면 반복자 모듈을 포함하여 모든 후속 모듈에 해당 출력에 대한 정보를 제공할 수 있습니다. 그러면 반복자 설정의 매핑 패널에 다음 항목이 표시됩니다.

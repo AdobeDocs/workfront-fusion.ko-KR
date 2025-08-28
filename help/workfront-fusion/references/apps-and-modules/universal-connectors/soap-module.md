@@ -137,7 +137,7 @@ SOAP 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표�
 </complexType>
 ```
 
-이 예에는 아직 `soapenc:Array`Workfront Fusion`soapenc:arrayType`에서 지원되지 않는 `wsdl:arrayType`, [!UICONTROL  및 ] 참조가 포함되어 있습니다.
+이 예에는 아직 `soapenc:Array`Workfront Fusion`soapenc:arrayType`에서 지원되지 않는 `wsdl:arrayType`, [!UICONTROL &#x200B; 및 &#x200B;] 참조가 포함되어 있습니다.
 
 >[!ENDSHADEBOX]
 

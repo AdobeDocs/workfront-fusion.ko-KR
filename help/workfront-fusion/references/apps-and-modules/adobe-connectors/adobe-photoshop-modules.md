@@ -4,7 +4,7 @@ description: Adobe Photoshop 모듈을 사용하면 Adobe Photoshop 계정의 �
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 95d52f8227c8a40c0db165eea9d2877e60446de9
 workflow-type: tm+mt
 source-wordcount: '5392'
 ht-degree: 0%
@@ -276,7 +276,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
       <td role="rowheader">
         <p>[!UICONTROL (Options) Layers]</p>
       </td>
-   <td> 추가할 각 레이어에 대해 항목 추가 를 클릭하고 레이어 세부 정보를 입력합니다. <p>레이어 옵션에 대한 자세한 내용은 Adobe Photoshop 설명서에서 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_applyPsdEdits/">PSD 편집 적용</a>을 참조하십시오.  </td> 
+   <td> 추가할 각 레이어에 대해 항목 추가 를 클릭하고 레이어 세부 정보를 입력합니다. <p>레이어 옵션에 대한 자세한 내용은 Adobe Photoshop 설명서에서 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/modifyDocumentAsync">PSD 편집 적용</a>을 참조하십시오.  </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 출력]</td>
@@ -526,25 +526,25 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (옵션 &gt; 문서) 해상도]</p>
+        <p>[!UICONTROL(옵션 &gt; 문서) 해상도]</p>
       </td>
    <td> 이미지의 해상도를 인치당 픽셀 단위로 입력하거나 매핑합니다. 72에서 300 사이여야 합니다. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (옵션 &gt; 문서) 모드]</p>
+        <p>[!UICONTROL(옵션 &gt; 문서) 모드]</p>
       </td>
    <td> 이미지 모드를 선택합니다. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (옵션 &gt; 문서) 채우기]</p>
+        <p>[!UICONTROL(옵션 &gt; 문서) 채우기]</p>
       </td>
    <td> 배경 레이어의 채우기를 투명, 흰색 또는 이미지의 배경색으로 할지 여부를 선택합니다. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (옵션 &gt; 문서) 깊이]</p>
+        <p>[!UICONTROL(옵션 &gt; 문서) 깊이]</p>
       </td>
    <td> 이미지의 비트 심도를 선택합니다. </td> 
     </tr>
@@ -552,7 +552,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
       <td role="rowheader">
         <p>[!UICONTROL (Options) Layers]</p>
       </td>
-   <td> 추가할 각 레이어에 대해 항목 추가 를 클릭하고 레이어 세부 정보를 입력합니다. <p>레이어 옵션에 대한 자세한 내용은 Adobe Photoshop 설명서에서 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_createPsd/">PSD 만들기</a>를 참조하십시오.  </td> 
+   <td> 추가할 각 레이어에 대해 항목 추가 를 클릭하고 레이어 세부 정보를 입력합니다. <p>레이어 옵션에 대한 자세한 내용은 Adobe Photoshop 설명서에서 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/createDocumentAsync">PSD 만들기</a>를 참조하십시오.  </td> 
     </tr>
     <tr>
       <td role="rowheader">
@@ -599,7 +599,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
     <tr>
       <td role="rowheader">[!UICONTROL (Output) Other fields]</td>
       <td>
-        <p><p>출력 옵션에 대한 자세한 내용은 Adobe Photoshop 설명서에서 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_createPsd/">PSD 만들기</a>를 참조하십시오.  </p>
+        <p><p>출력 옵션에 대한 자세한 내용은 Adobe Photoshop 설명서에서 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/createDocumentAsync">PSD 만들기</a>를 참조하십시오.  </p>
       </td>
     </tr>
     </tbody>
@@ -649,7 +649,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 레이어]</td>
-   <td> <p>편집할 각 텍스트 레이어에 대해 <b>항목 추가</b>를 클릭하고 레이어 옵션을 입력합니다.<p>레이어 옵션에 대한 자세한 내용은 Adobe Photoshop 설명서에서 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_editText/">텍스트 편집</a>을 참조하십시오.</p>  </td>     </tr>
+   <td> <p>편집할 각 텍스트 레이어에 대해 <b>항목 추가</b>를 클릭하고 레이어 옵션을 입력합니다.<p>레이어 옵션에 대한 자세한 내용은 Adobe Photoshop 설명서에서 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">텍스트 편집</a>을 참조하십시오.</p>  </td>     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL (Output) Storage]</td>
       <td>
@@ -723,7 +723,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 레이어]</td>
-   <td> <p>레이어 옵션에 대한 자세한 내용은 Adobe Photoshop 설명서에서 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_editText/">텍스트 레이어 편집</a>을 참조하십시오.</p>  </td>     </tr>
+   <td> <p>레이어 옵션에 대한 자세한 내용은 Adobe Photoshop 설명서에서 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">텍스트 레이어 편집</a>을 참조하십시오.</p>  </td>     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 출력 파일 저장소]</td>
       <td>
@@ -826,7 +826,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (출력) 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL(출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>
@@ -877,7 +877,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (출력) 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL(출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>
@@ -885,7 +885,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <tr>
       <td role="rowheader">[!UICONTROL 기타 필드]</td>
       <td>
-        <p>다른 깊이 흐림 효과 옵션에 대한 자세한 내용은 Adobe Photoshop API 설명서의 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_depthBlur/">깊이 흐림 효과 실행 </a>을(를) 참조하십시오.</p>
+        <p>다른 깊이 흐림 효과 옵션에 대한 자세한 내용은 Adobe Photoshop API 설명서의 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">깊이 흐림 효과 실행 </a>을(를) 참조하십시오.</p>
       </td>
     </tr>
   </tbody>
@@ -964,7 +964,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (출력) 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL(출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>
@@ -972,7 +972,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <tr>
       <td role="rowheader">[!UICONTROL 기타 필드]</td>
       <td>
-        <p>다른 깊이 흐림 효과 옵션에 대한 자세한 내용은 Adobe Photoshop API 설명서의 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_depthBlur/">깊이 흐림 효과 실행 </a>을(를) 참조하십시오.</p>
+        <p>다른 깊이 흐림 효과 옵션에 대한 자세한 내용은 Adobe Photoshop API 설명서의 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">깊이 흐림 효과 실행 </a>을(를) 참조하십시오.</p>
       </td>
     </tr>
   </tbody>
@@ -1039,7 +1039,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (출력) 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL(출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>
@@ -1047,7 +1047,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <tr>
       <td role="rowheader">[!UICONTROL 기타 필드]</td>
       <td>
-        <p>다른 깊이 흐림 효과 옵션에 대한 자세한 내용은 Adobe Photoshop API 설명서의 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_depthBlur/">깊이 흐림 효과 실행 </a>을(를) 참조하십시오.</p>
+        <p>다른 깊이 흐림 효과 옵션에 대한 자세한 내용은 Adobe Photoshop API 설명서의 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">깊이 흐림 효과 실행 </a>을(를) 참조하십시오.</p>
       </td>
     </tr>
   </tbody>
@@ -1238,7 +1238,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
       <td role="rowheader">
         <p>[!UICONTROL 레이어]</p>
       </td>
-   <td>스마트 오브젝트에 추가할 각 레이어에 대해 항목 추가 를 클릭하고 오브젝트의 이름 또는 ID, 스마트 오브젝트가 저장된 파일 서비스, 레이어의 URL 또는 경로를 입력합니다.<p>이 영역의 고급 설정에 대한 설명은 Photoshop API 설명서의 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">스마트 개체 바꾸기</a>를 참조하십시오 </td> 
+   <td>스마트 오브젝트에 추가할 각 레이어에 대해 항목 추가 를 클릭하고 오브젝트의 이름 또는 ID, 스마트 오브젝트가 저장된 파일 서비스, 레이어의 URL 또는 경로를 입력합니다.<p>이 영역의 고급 설정에 대한 설명은 Photoshop API 설명서의 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/replaceSmartObjectAsync">스마트 개체 바꾸기</a>를 참조하십시오 </td> 
     </tr>
     <tr>
       <td role="rowheader">
@@ -1303,7 +1303,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
       <td role="rowheader">
         <p>[!UICONTROL 레이어]</p>
       </td>
-   <td>스마트 오브젝트에 추가할 각 레이어에 대해 항목 추가 를 클릭하고 오브젝트의 이름 또는 ID, 스마트 오브젝트가 저장된 파일 서비스, 레이어의 URL 또는 경로를 입력합니다.<p>이 영역의 고급 설정에 대한 설명은 Photoshop API 설명서의 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">스마트 개체 바꾸기</a>를 참조하십시오 </td> 
+   <td>스마트 오브젝트에 추가할 각 레이어에 대해 항목 추가 를 클릭하고 오브젝트의 이름 또는 ID, 스마트 오브젝트가 저장된 파일 서비스, 레이어의 URL 또는 경로를 입력합니다.<p>이 영역의 고급 설정에 대한 설명은 Photoshop API 설명서의 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/replaceSmartObjectAsync">스마트 개체 바꾸기</a>를 참조하십시오 </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 출력]</td>

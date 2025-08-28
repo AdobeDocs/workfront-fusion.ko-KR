@@ -4,9 +4,9 @@ description: SOAP 모듈을 사용하여 Adobe Workfront Fusion의 SOAP API에 �
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 95d52f8227c8a40c0db165eea9d2877e60446de9
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '638'
 ht-degree: 1%
 
 ---
@@ -137,7 +137,7 @@ SOAP 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표�
 </complexType>
 ```
 
-이 예에는 아직 `soapenc:Array`Workfront Fusion`soapenc:arrayType`에서 지원되지 않는 `wsdl:arrayType`, [!UICONTROL &#x200B; 및 &#x200B;] 참조가 포함되어 있습니다.
+이 예에는 아직 `soapenc:Array`Workfront Fusion`soapenc:arrayType`에서 지원되지 않는 `wsdl:arrayType`, [!UICONTROL  및 ] 참조가 포함되어 있습니다.
 
 >[!ENDSHADEBOX]
 
@@ -186,13 +186,11 @@ SOAP 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표�
 
 1. 찾으면 `location` 특성에서 URL을 복사합니다.
 1. Workfront Fusion에서 URL을 HTTP 모듈의 URL 필드에 붙여 넣습니다.
-1. 새 웹 브라우저 창/탭에서 [온라인 [!UICONTROL SOAP] 클라이언트](https://wsdlbrowser.com/)를 엽니다.
-1. WSDL URL을 WSDL URL 필드에 붙여넣습니다.
-1. **[!UICONTROL 찾아보기]**&#x200B;를 클릭합니다.
-1. 왼쪽에 있는 함수 목록(예: `getLanguages`)에서 선택하십시오.
-1. [!UICONTROL XML 요청] 텍스트 영역의 내용을 복사합니다.
-1. [!UICONTROL Workfront Fusion]에서 복사한 콘텐츠를 모듈의 URL 필드에 붙여 넣습니다.
 1. 물음표를 실제 값으로 대체하여 선택한 매개 변수의 값을 제공합니다.
+
+   >[!NOTE]
+   >
+   > WSDL 파일에서 특정 값을 가져오려면 온라인 WSDL 뷰어를 사용합니다.
 
    <!--![Request](/help/workfront-fusion/references/apps-and-modules/assets/request-xml-350x172.png)-->
 

@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion 시나리오에서는 Jira 소프트웨어�
 author: Becky
 feature: Workfront Fusion
 exl-id: b74a3618-c4a1-4965-a88d-1643bfab12db
-source-git-commit: 9865101fe57c2668ecb5ad743b3d6963833feb4a
+source-git-commit: 1e2a9fcfdfb15f1b254e7b4b32fc618b49de56e5
 workflow-type: tm+mt
-source-wordcount: '1608'
-ht-degree: 6%
+source-wordcount: '1744'
+ht-degree: 5%
 
 ---
 
@@ -450,6 +450,24 @@ Jira 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표�
 </table>
 
 ### 검색 결과
+
+>[!IMPORTANT]
+>
+>기존 Jira 커넥터에서 사용하는 검색 모듈로 인해 다음 오류가 발생할 수 있습니다.
+>
+>`[410] The requested API has been removed. Please migrate to the /rest/api/3/search/jql API. A full migration guideline is available at https://developer.atlassian.com/changelog/#CHANGE-2046`
+>
+>이는 Jira 측의 사용 중단 때문입니다.
+>
+>이 오류가 발생하면 기존 Jira 커넥터의 검색 모듈을 새 커넥터의 검색 모듈로 바꿀 수 있습니다. 새 커넥터를 사용하면 사용된 API 버전을 선택할 수 있습니다. 연결을 만들 때 V3을 선택해야 합니다.
+>
+> 새 Jira 커넥터의 ![API 버전 옵션](/help/workfront-fusion/references/apps-and-modules/assets/jira-version-option.png)
+>
+>참고:
+>
+>* 검색 모듈만 영향을 받습니다. 현재 Fusion 커넥터에서 사용하는 다른 Jira API 종단점은 이 사용 중지의 영향을 받지 않습니다.
+>
+>* 지리적 롤아웃으로 인해 불일치가 발생할 수 있습니다. Atlassian은 이 변경 사항을 지역적으로 롤아웃합니다. 즉, 일부 Jira Cloud 인스턴스가 여전히 이전 끝점을 일시적으로 지원할 수 있습니다. 이로 인해 환경 간에 일관되지 않은 동작이 발생할 수 있습니다.
 
 #### 레코드 검색
 

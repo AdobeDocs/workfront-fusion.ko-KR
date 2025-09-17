@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion Devtool을 사용하면 시나리오를 이�
 author: Becky
 feature: Workfront Fusion
 exl-id: 34215370-27e3-4c28-8bd1-a16268900b86
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 71bd96915f21922d637433010acea9321ed476d5
 workflow-type: tm+mt
-source-wordcount: '1483'
+source-wordcount: '1514'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Adobe Workfront Fusion Devtool을 사용하면 시나리오를 이해하고 문�
 비디오 소개 및 Fusion Devtool에 대한 설명은
 
 * [Fusion 개발 도구](https://video.tv.adobe.com/v/3427031/){target=_blank}
-* [Devtool 연습](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=ko)
+* [Devtool 연습](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=en)
 
 ## 액세스 요구 사항
 
@@ -150,6 +150,12 @@ Workfront Fusion Devtool은 3개의 기본 섹션으로 나뉩니다. Devtool �
    </table>
 
 ### 시나리오 디버거
+
+>[!NOTE]
+>
+>오류가 발생한 시나리오에서 빠르게 디버거로 이동하려면 모듈 출력의 오류 메시지에서 **세부 정보 가져오기**&#x200B;를 클릭합니다.
+>
+>![모듈 출력에서 세부 정보 가져오기](assets/go-to-debugger.png)
 
 시나리오 디버거는 보다 복잡한 시나리오에 유용합니다. 시나리오 실행 기록이 표시되며, 이를 사용하여 모듈 이름이나 ID로 모듈을 검색할 수 있습니다.
 

@@ -5,9 +5,9 @@ description: 각 모듈에 대한 메모를 추가하는 옵션이지만 유용�
 author: Becky
 feature: Workfront Fusion
 exl-id: 754601fa-b572-42c2-96a3-3c36a8ed2c56
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 7f4709920e52f6b8660370af83de1f11eecbf092
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '163'
 ht-degree: 0%
 
 ---
@@ -25,3 +25,7 @@ ht-degree: 0%
    시나리오에 메모를 추가하면 시나리오 편집기 하단의 **[!UICONTROL 메모]** 아이콘 ![메모 아이콘 ](assets/notes-icon-w-dot.png)에 파란색 점이 표시됩니다.
 
 1. 모든 메모를 보거나 숨기려면 **[!UICONTROL 메모]** 아이콘 ![점이 있는 메모 아이콘](assets/notes-icon-w-dot.png)을 클릭하세요.
+
+   메모가 열려 있으면 메모 아이콘 주위에 원이 나타납니다.
+
+   ![원이 있는 메모 아이콘](assets/notes-icon-with-circle.png)

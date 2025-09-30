@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion의 조직 및 팀 기능을 통해 기업은
 author: Becky
 feature: Workfront Fusion
 exl-id: 44e6de2a-b2d3-410d-abc3-10facd258495
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 4cd97fe2924150b9e7be140a25215f135b2788da
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '549'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ Workfront Fusion 사용자는 조직에 속합니다.
 사용자에게는 조직에서 다음 역할 중 하나가 있습니다.
 
 * **[!UICONTROL 소유자]**: 소유자에게 조직에서 사용 가능한 모든 권한이 있습니다.
-* **[!UICONTROL 관리자]**: 관리자는 조직의 팀과 사용자를 만들고 관리하고 템플릿을 승인할 수 있습니다.
+* **[!UICONTROL 관리자]**: 관리자가 조직이 Adobe Identity Management System(IMS)에 대해 활성화되어 있는 경우 Adobe Admin Console에서 사용자를 관리하거나 IMS가 아닌 조직에 대해 새 사용자를 초대할 수 있습니다. 템플릿을 승인할 수도 있습니다.
 * **[!UICONTROL 구성원]**: 구성원은 Workfront Fusion을 사용할 수 있지만 조직을 변경할 수 없습니다.
 * **[!UICONTROL 회계사]**: 회계사는 조직 대시보드에서 라이선스 정보를 볼 수 있지만 작업을 수행할 수 없습니다.
 * **[!UICONTROL 앱 개발자]**: 이 역할의 기능은 현재 사용할 수 없으며 곧 제공될 예정입니다. 지금은 이 역할에 사용자를 할당하지 않는 것이 좋습니다.

@@ -4,9 +4,9 @@ description: Fusion은 메타데이터를 사용하여 연결의 중요한 속�
 author: Becky
 feature: Workfront Fusion
 exl-id: b41fbe8c-30fa-49d0-8a24-3535642b97ae
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: d13312031955a697e10ddfcdc2e64dfe198b3dac
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '282'
 ht-degree: 1%
 
 ---
@@ -19,9 +19,11 @@ Fusion은 메타데이터를 사용하여 연결의 중요한 속성을 식별�
 
 ![연결 메타데이터](assets/connection-metadata-setup.png)
 
-Fusion 사용자는 연결 영역에서 연결을 보고 편집할 수 있습니다.
+Fusion 사용자는 연결 영역에서 연결을 보고 편집할 수 있습니다. 왼쪽 탐색에서 연결 을 클릭하여 연결 영역에 도달할 수 있습니다.
 
-![연결 영역의 연결 메타데이터](assets/connections-area-metadata.png)
+![왼쪽 탐색의 연결 영역](assets/connections-in-left-nav.png)
+
+<!--![Connection metadata in Connections area](assets/connections-area-metadata.png)-->
 
 ## 환경 유형
 
@@ -35,7 +37,7 @@ Fusion 연결은 서비스 계정과 개인 계정 모두에 사용할 수 있�
 
 다른 연결 메타데이터와 마찬가지로 인증 유형은 정보 제공 목적으로만 사용됩니다. 사용자는 이 속성을 정확히 설정하고 시나리오에서 올바른 연결 유형을 사용해야 합니다.
 
-인증 유형에 대한 자세한 내용은 Adobe 인증 가이드의 [인증](https://developer.adobe.com/developer-console/docs/guides/authentication/)을 참조하십시오.
+인증 유형에 대한 자세한 내용은 Adobe의 인증 안내서에서 [인증](https://developer.adobe.com/developer-console/docs/guides/authentication/)을 참조하십시오.
 
 ## 리소스
 

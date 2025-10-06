@@ -4,9 +4,9 @@ description: SOAP 모듈을 사용하여 Adobe Workfront Fusion의 SOAP API에 �
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: 95d52f8227c8a40c0db165eea9d2877e60446de9
+source-git-commit: 29f9595d063e89e9cd393fecba07194d2e9008aa
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '639'
 ht-degree: 1%
 
 ---
@@ -137,7 +137,7 @@ SOAP 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표�
 </complexType>
 ```
 
-이 예에는 아직 `soapenc:Array`Workfront Fusion`soapenc:arrayType`에서 지원되지 않는 `wsdl:arrayType`, [!UICONTROL &#x200B; 및 &#x200B;] 참조가 포함되어 있습니다.
+이 예에는 아직 `soapenc:Array`Workfront Fusion`soapenc:arrayType`에서 지원되지 않는 `wsdl:arrayType`, [!UICONTROL  및 ] 참조가 포함되어 있습니다.
 
 >[!ENDSHADEBOX]
 
@@ -185,7 +185,7 @@ SOAP 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표�
    <!--![Service](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
 
 1. 찾으면 `location` 특성에서 URL을 복사합니다.
-1. Workfront Fusion에서 URL을 HTTP 모듈의 URL 필드에 붙여 넣습니다.
+1. Workfront Fusion에서 URL을 HTTP 모듈의 **콘텐츠 요청** 필드에 붙여 넣습니다.
 1. 물음표를 실제 값으로 대체하여 선택한 매개 변수의 값을 제공합니다.
 
    >[!NOTE]

@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 설명서
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 문서, 튜토리얼 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
-source-git-commit: a5dbbec63e0871037e6cc3a88255a84b36be85c7
+source-git-commit: f827b299fa8ffd3b0bf3393d5e22b7eb94be78f2
 workflow-type: tm+mt
-source-wordcount: '1886'
+source-wordcount: '1891'
 ht-degree: 3%
 
 ---
@@ -145,6 +145,7 @@ ht-degree: 3%
       * [모듈 개요](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md)
       * [매핑 개요](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md)
       * [함수 개요](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
+      * [Fusion의 API 개요](/help/workfront-fusion/get-started-with-fusion/understand-fusion/api-overview.md)
    * Workfront Fusion 탐색 {#navigate-workfront-fusion}
       * [Workfront Fusion 탐색: 문서 색인](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-fusion-toc.md)
       * [Adobe Workfront Fusion 탐색](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md)

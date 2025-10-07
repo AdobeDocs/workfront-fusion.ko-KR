@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion에는 Adobe Workfront 라이센스 외에 Ad
 author: Becky
 feature: Workfront Fusion
 exl-id: de81ad4c-27e5-4b6c-acf0-f01a8c85922e
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 34dad92019ca855f40698d3f3795788698c1cece
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '704'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ Workfront Fusion을 다른 애플리케이션 및 웹 서비스에 연결할 수
 
 >[!IMPORTANT]
 >
->Adobe Workfront Fusion은 거의 모든 웹 서비스에 연결할 수 있습니다. 작업할 앱에 전용 Workfront Fusion 커넥터가 없는 경우 범용 커넥터를 사용하여 앱 또는 서비스에 연결합니다.
+>Adobe Workfront Fusion은 거의 모든 웹 서비스에 연결할 수 있습니다. 작업할 앱에 전용 Workfront Fusion 커넥터가 없는 경우 범용 커넥터를 사용하여 앱 또는 서비스에 연결할 수 있습니다.
 >
 >범용 커넥터 목록은 [범용 커넥터](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)를 참조하십시오.
 

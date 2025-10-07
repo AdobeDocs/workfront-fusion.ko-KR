@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 설명서
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 문서, 튜토리얼 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
-source-git-commit: 45b595cb8e3bf74e552e68714460a919e7e1ded6
+source-git-commit: 3832299db48566c07d2031d75237846bc3568631
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1879'
 ht-degree: 3%
 
 ---
@@ -391,6 +391,7 @@ ht-degree: 3%
          * [Split.io 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/split-io-modules.md)
          * [Trello 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)
          * [모듈 확장](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/widen-modules.md)
+         * [Veeva Vault 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/veeva-vault-modules.md)
          * [Workday 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/workday-modules.md)
       * 도구와 변압기 {#tools-and-transformers}
          * [모듈 보관](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/archive-modules.md)

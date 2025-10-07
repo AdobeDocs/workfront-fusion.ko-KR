@@ -4,7 +4,7 @@ description: Adobe Workfront Fusion용 Adobe Experience Manager Assets 커넥터
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
-source-git-commit: d62a8bd4675c034581f6cf5f3a1e61c177de5ebc
+source-git-commit: 190c35629f1fc1e07eef4110f3f4f771af1065fb
 workflow-type: tm+mt
 source-wordcount: '3727'
 ht-degree: 2%
@@ -67,10 +67,10 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 * 이러한 모듈을 사용하려면 Adobe Experience Manager Assets 계정이 있어야 합니다.
 * Adobe Developer 콘솔에서 서버 간 흐름을 설정해야 합니다.
 
-  Adobe Developer 콘솔에서 서버 간 흐름을 설정하는 방법에 대한 지침은 [서버측 API용 액세스 토큰 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=ko#the-server-to-server-flow)을 참조하십시오.
+  Adobe Developer 콘솔에서 서버 간 흐름을 설정하는 방법에 대한 지침은 [서버측 API용 액세스 토큰 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow)을 참조하십시오.
 * Adobe Experience Manager 기술 계정에 쓰기 권한이 있어야 합니다.
 
-  Adobe Experience Manager 기술 계정에 쓰기 권한을 추가하는 방법에 대한 지침은 Adobe Experience Manager 설명서에서 [서비스 자격 증명](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)을 참조하십시오.
+  Adobe Experience Manager 기술 계정에 쓰기 권한을 추가하는 방법에 대한 지침은 Adobe Experience Manager 설명서에서 [서비스 자격 증명](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)을 참조하십시오.
 
 ## Adobe Experience Manager Assets API 정보
 
@@ -118,11 +118,11 @@ Adobe Experience Manager Assets 모듈에 대한 연결을 만들려면 다음 �
 >
 >* 이러한 필드에 대한 정보는 Adobe Developer Console에서 서버 간 흐름 설정의 일부로 생성됩니다. 해당 설정의 일부로 생성된 서비스 자격 증명 JSON 파일에서 이러한 값을 찾을 수 있습니다.
 >
->   Adobe Developer Console에서 서버 간 흐름 설정에 대한 지침은 [서버측 API용 액세스 토큰 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=ko#the-server-to-server-flow)을 참조하십시오.
+>   Adobe Developer Console에서 서버 간 흐름 설정에 대한 지침은 [서버측 API용 액세스 토큰 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow)을 참조하십시오.
 >
 >* Adobe Experience Manager 기술 계정에 쓰기 권한이 있어야 합니다.
 >
->   Adobe Experience Manager 기술 계정에 쓰기 권한을 추가하는 방법에 대한 지침은 Adobe Experience Manager 설명서에서 [서비스 자격 증명](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)을 참조하십시오.
+>   Adobe Experience Manager 기술 계정에 쓰기 권한을 추가하는 방법에 대한 지침은 Adobe Experience Manager 설명서에서 [서비스 자격 증명](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)을 참조하십시오.
 
 
 <table style="table-layout:auto"> 
@@ -164,8 +164,8 @@ Adobe Experience Manager Assets 모듈에 대한 연결을 만들려면 다음 �
                   <td class="">상세내역을 수동으로 입력하는 경우 조직의 ID를 입력합니다. 클라이언트 자격 증명 JSON 파일의 "org" 필드입니다.</td>
               </tr>
               <tr>
-                  <td role="rowheader">메타 범위</td>
-                  <td>서버 간 설정에서 생성된 메타 범위를 입력합니다.</td>
+                  <td role="rowheader">Meta 범위</td>
+                  <td>서버 간 설정에서 생성된 Meta 범위를 입력합니다.</td>
               </tr>
               <tr>
                   <td role="rowheader">개인 키</td>
@@ -773,7 +773,7 @@ Adobe Experience Manager Assets 모듈을 구성하면 Workfront Fusion에 아�
   </tr> 
   <tr> 
    <td role="rowheader">만료일</td> 
-   <td> <p>에셋의 실행 날짜를 입력하거나 매핑합니다.</p><p>지원되는 날짜 및 시간 형식 목록은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 강제 변환</a>을 참조하십시오.</p> </td> 
+   <td> <p>에셋의 만료 날짜를 입력하거나 매핑합니다.</p><p>지원되는 날짜 및 시간 형식 목록은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 강제 변환</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">사용자 지정 메타데이터</td> 
@@ -929,7 +929,7 @@ Adobe Experience Manager Assets 모듈을 구성하면 Workfront Fusion에 아�
    <ul>
    <li><b>새 폴더 위치</b><p>새 폴더를 만들 위치의 경로를 선택합니다.</p></li>
        <li> <b>이름</b> <p>폴더 이름을 입력합니다. 이 이름은 파일 경로에 나타나므로 공백이나 다른 문자를 포함해서는 안 됩니다. </p> </li> 
-       <li> <b>제목</b> <p>이름 대신 표시할 수 있는 폴더의 제목을 입력합니다.</p> </li> 
+       <li> <b>Title</b> <p>이름 대신 표시할 수 있는 폴더의 제목을 입력합니다.</p> </li> 
    </ul> </td> 
   </tr> 
  </tbody> 

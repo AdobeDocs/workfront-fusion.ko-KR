@@ -3,7 +3,7 @@ title: API 개요
 description: API(Application Programming Interface)는 애플리케이션과 서비스가 서로 통신하는 방법입니다. Fusion은 API를 사용하여 연결 중인 애플리케이션과 통신합니다. 각 애플리케이션에는 별도의 API가 있습니다.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: f5dcb5207581fb68d0f3048d23214d08a28f2f22
+source-git-commit: b30aac8040cc0b6bcad92914b1c0997a8ddebdd5
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%

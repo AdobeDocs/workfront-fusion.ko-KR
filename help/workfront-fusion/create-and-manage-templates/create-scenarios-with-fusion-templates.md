@@ -4,7 +4,7 @@ description: Adobe Workfront FusionTemplates 기능을 사용하면 기존 템�
 author: Becky
 feature: Workfront Fusion
 exl-id: 560c20b7-155c-40db-9018-5a51b40d6fb0
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: ce2a41a9708bb0e611ab4056aac733d58d27d7a9
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 1%
@@ -76,6 +76,6 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 1. 템플릿에 필요한 모든 설정을 구성한 경우 템플릿을 이동할 준비가 되었다는 알림이 표시되고 화면 하단에 표준 시나리오 옵션이 나타납니다. 이제 시나리오 빌드를 계속할 수 있습니다.
 
-   시나리오 작성에 대한 자세한 내용은 [시나리오 작성을 위한 워크플로우](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md)를 참조하십시오.
+   시나리오 작성에 대한 자세한 내용은 [시나리오 작성을 위한 워크플로](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md)를 참조하십시오.
 
 1. 시나리오를 저장하려면 **[!UICONTROL 저장]** 아이콘 ![저장 아이콘](assets/save-icon.png)을 클릭합니다. 시나리오는 Workfront Fusion의 시나리오 영역에 저장됩니다.

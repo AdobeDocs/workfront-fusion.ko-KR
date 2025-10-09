@@ -4,9 +4,9 @@ description: 시나리오 편집기를 사용하면 시각적 인터페이스에
 author: Becky
 feature: Workfront Fusion
 exl-id: 47ccecf0-751c-4026-96a9-329c33cb6801
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: ce2a41a9708bb0e611ab4056aac733d58d27d7a9
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '589'
 ht-degree: 3%
 
 ---
@@ -100,7 +100,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 | 시나리오 설정 | 시나리오 설정 패널에는 시나리오에 대한 고급 설정이 포함되어 있습니다. 사용 가능한 설정에 대한 자세한 내용은 [시나리오 설정 구성](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)을 참조하십시오. |
 | 참고 | 시나리오에 대해 메모를 합니다. 다른 사용자는 시나리오에 있을 때 이러한 메모를 볼 수 있습니다. |
 | 자동 정렬 | 시나리오에서 모듈을 자동 정렬합니다. |
-| 흐름 설명 | 시나리오의 데이터 흐름 방식을 보여 주는 애니메이션을 봅니다. |
+| 흐름 설명 | 움직이는 점이 시나리오를 통해 데이터가 이동하는 방식을 보여 주는 애니메이션을 봅니다. |
 | 개발 도구 | Devtool을 사용하면 시나리오의 모든 수동 실행을 확인하고, 수행된 모든 작업을 검토하고, 수행된 모든 API 호출의 세부 정보를 볼 수 있습니다. 오류를 일으킨 모듈, 작업 또는 단일 응답을 확인하고 해당 지식을 사용하여 시나리오를 구체화할 수 있습니다. 자세한 내용은 [시나리오 디버그](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)를 참조하십시오. |
 | 기타 | 기타 메뉴에서 블루프린트를 가져오거나 내보내고 시나리오를 이전 버전으로 복원할 수 있습니다. |
 

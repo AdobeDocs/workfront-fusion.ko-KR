@@ -726,7 +726,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
 
 ## 팁 및 요령
 
-* [ [!DNL Google] 시트에서 빈 셀 가져오기](#get-empty-cells-from-a-google-sheet)
+* [&#x200B; [!DNL Google] 시트에서 빈 셀 가져오기](#get-empty-cells-from-a-google-sheet)
 * [시트에 단추를 추가하여 시나리오 실행](#add-a-button-in-a-sheet-to-run-a-scenario)
 
 ### [!DNL Google Sheet]에서 빈 셀 가져오기

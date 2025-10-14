@@ -1212,8 +1212,8 @@ Trello 커넥터는 다음을 사용합니다.
 
 ## [!UICONTROL Trello] 개체 ID
 
-* [ [!DNL Trello]에서 카드의 ID 또는 바로 가기 링크를 찾는 방법](#how-to-find-the-id-or-the-shortlink-of-a-card-in-trello)
-* [ [!DNL Trello]에서 다른 개체의 ID를 찾는 방법](#how-to-find-ids-of-other-objects-in-trello)
+* [&#x200B; [!DNL Trello]에서 카드의 ID 또는 바로 가기 링크를 찾는 방법](#how-to-find-the-id-or-the-shortlink-of-a-card-in-trello)
+* [&#x200B; [!DNL Trello]에서 다른 개체의 ID를 찾는 방법](#how-to-find-ids-of-other-objects-in-trello)
 
 ### [!DNL Trello]에서 카드의 ID 또는 바로 가기 링크를 찾는 방법
 

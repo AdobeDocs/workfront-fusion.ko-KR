@@ -243,7 +243,7 @@ Webhook의 헤더에 액세스하려면 Webhook을 설정할 때 요청 헤더 �
 >
 >![필터 설정](/help/workfront-fusion/references/apps-and-modules/assets/set-up-a-filter-350x169.png)
 >
->지정된 키로 배열의 요소를 가져오는 방법에 대한 자세한 내용은 문서 배열 매핑[에서 ](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md#map-an-arrays-element-with-a-given-key)지정된 키로 배열의 요소 매핑을 참조하십시오.
+>지정된 키로 배열의 요소를 가져오는 방법에 대한 자세한 내용은 문서 배열 매핑[에서 &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md#map-an-arrays-element-with-a-given-key)지정된 키로 배열의 요소 매핑을 참조하십시오.
 
 ## 웹후크에 응답
 

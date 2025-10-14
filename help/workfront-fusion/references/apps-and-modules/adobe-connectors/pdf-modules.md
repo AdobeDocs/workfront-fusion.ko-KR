@@ -548,7 +548,7 @@ ZIP으로 출력하는 경우 PDF은 페이지당 하나의 이미지로 변환�
 
 [!UICONTROL 문서 생성] 모듈은 선택한 데이터가 포함된 PDF을 만드는 강력한 방법입니다. [!DNL Microsoft Word] 템플릿을 사용하거나 JSON 형식의 데이터를 제공하여 형식을 지정할 수 있습니다.
 
-[!UICONTROL [!DNL Adobe PDF Services] 문서 생성] 기능에 대한 자세한 내용은 [ 설명서의 ](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html)문서 생성 개요[!DNL Adobe Document Services]를 참조하십시오.
+[!UICONTROL [!DNL Adobe PDF Services] 문서 생성] 기능에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html)문서 생성 개요[!DNL Adobe Document Services]를 참조하십시오.
 
 * [[!UICONTROL 템플릿]을(를) 사용하여  [!DNL Microsoft Word] 문서 생성](#use-the-generate-document-module-with-a-microsoft-word-template) 모듈 사용
 * [JSON이 있는 [!UICONTROL 문서 생성] 모듈 사용](#use-the-generate-document-module-with-json)

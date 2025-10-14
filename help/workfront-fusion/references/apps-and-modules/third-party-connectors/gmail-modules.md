@@ -66,8 +66,8 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 ## Workfront Fusion에 [!DNL Gmail] 연결 {#connect-gmail-to-workfront-fusion}
 
-* [ [!DNL Gmail] 을(를) 사용하여  [!DNL Google Workspace]Workfront Fusion 연결](#connect-gmail-to-workfront-fusion-usinggoogle-workspace)
-* [ [!DNL Gmail] or [!DNL gmail.com] .com을 사용하여  [!DNL googlemail]Workfront Fusion에 연결](#connect-gmail-to-workfront-fusion-using-gmailcom-or-googlemailcom)
+* [&#x200B; [!DNL Gmail] 을(를) 사용하여  [!DNL Google Workspace]Workfront Fusion 연결](#connect-gmail-to-workfront-fusion-usinggoogle-workspace)
+* [&#x200B; [!DNL Gmail] or [!DNL gmail.com] .com을 사용하여  [!DNL googlemail]Workfront Fusion에 연결](#connect-gmail-to-workfront-fusion-using-gmailcom-or-googlemailcom)
 
 ### [!DNL Gmail]을(를) 사용하여 [!DNL &#x200B; Google Workspace]을(를) Workfront Fusion에 연결
 
@@ -75,7 +75,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 ### [!DNL Gmail] 또는 [!DNL gmail.com].com을 사용하여 [!DNL googlemail]을(를) Workfront Fusion에 연결
 
-[!DNL @gmail.com] 또는 [!DNL @googlemail.com] 사용자인 경우 [클라이언트 ID [!DNL Google Cloud Platform] 및 ](https://console.developers.google.com/projectselector2/apis/dashboard?supportedpurview=project)클라이언트 암호[!UICONTROL 를 가져오려면 &#x200B;]the에 OAuth 클라이언트를 만들어야 합니다.
+[!DNL @gmail.com] 또는 [!DNL @googlemail.com] 사용자인 경우 [클라이언트 ID [!DNL Google Cloud Platform] 및 &#x200B;](https://console.developers.google.com/projectselector2/apis/dashboard?supportedpurview=project)클라이언트 암호[!UICONTROL 를 가져오려면 &#x200B;]the에 OAuth 클라이언트를 만들어야 합니다.
 
 OAuth 클라이언트를 만들고 [!UICONTROL 클라이언트 ID] 및 [!UICONTROL 클라이언트 암호]를 얻는 방법에 대한 단계별 지침은 [사용자 지정 OAuth 클라이언트를 사용하여 Adobe Workfront Fusion을 Google Services에 연결](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)을 참조하십시오.
 

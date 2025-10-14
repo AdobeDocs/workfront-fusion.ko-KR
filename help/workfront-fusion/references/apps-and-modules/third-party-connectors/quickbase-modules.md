@@ -99,7 +99,7 @@ Quickbase 커넥터는 다음을 사용합니다.
 
 ### [!DNL Custom API Call]
 
-이 모듈은 [!DNL Quickbase]developer.quickbase.com[에 문서화된 사용 가능한 ](https://developer.quickbase.com/) RESTful API 끝점을 호출합니다.
+이 모듈은 [!DNL Quickbase]developer.quickbase.com[에 문서화된 사용 가능한 &#x200B;](https://developer.quickbase.com/) RESTful API 끝점을 호출합니다.
 
 <table style="table-layout:auto"> 
  <col> 

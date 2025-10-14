@@ -111,7 +111,7 @@ Bynder 커넥터는 다음을 사용합니다.
 
 클라이언트 ID와 클라이언트 암호를 사용하여 연결을 만들려면 [!DNL Bynder] 계정에서 연결을 생성할 수 있습니다. 클라이언트 ID 및 클라이언트 암호는 [!DNL Bynder]에서 앱을 만들 때 생성됩니다.
 
-[!DNL Bynder]에서 앱을 만드는 방법에 대한 지침은 [ 설명서의 ](https://developer-docs.bynder.com/api/authentication-oauth2-oauth-apps/)Oauth 2.0 앱[!DNL Bynder]을 참조하십시오.
+[!DNL Bynder]에서 앱을 만드는 방법에 대한 지침은 [&#x200B; 설명서의 &#x200B;](https://developer-docs.bynder.com/api/authentication-oauth2-oauth-apps/)Oauth 2.0 앱[!DNL Bynder]을 참조하십시오.
 
 >[!NOTE]
 >

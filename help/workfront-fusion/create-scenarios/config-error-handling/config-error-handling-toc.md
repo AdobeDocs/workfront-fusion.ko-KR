@@ -17,6 +17,6 @@ ht-degree: 4%
 
 * [오류 처리 추가](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md)
 * [오류 처리 경로에 필터링 및 중첩 추가](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md)
-* [구성 ](/help/workfront-fusion/create-scenarios/config-error-handling/throw.md)
-* [구성 ](/help/workfront-fusion/create-scenarios/config-error-handling/retry.md)
+* [구성 &#x200B;](/help/workfront-fusion/create-scenarios/config-error-handling/throw.md)
+* [구성 &#x200B;](/help/workfront-fusion/create-scenarios/config-error-handling/retry.md)
 * [Break 지시문에 의해 처리된 오류 해결](/help/workfront-fusion/create-scenarios/config-error-handling/resolve-error-from-break-directive.md)

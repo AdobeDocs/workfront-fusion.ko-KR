@@ -4,9 +4,9 @@ description: 작업 자동화에는 빠른 처리가 필요하므로 Adobe Workf
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 80cb3736d96d4b7c3226d78149842a80077e3551
+source-git-commit: 3a05e5df36bf9b1aacd0611fdad0240c8c52368d
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,7 @@ ht-degree: 0%
    * 웹후크는 30일 이상 비활성 상태인 비활성 시나리오에서만 사용됩니다.
 
 * 비활성화된 웹후크는 시나리오에 연결되어 있지 않고 30일 이상 비활성화된 상태인 경우 자동으로 삭제 및 등록 취소됩니다.
+* Webhook 응답에 대한 시간 제한은 5분입니다.
 
 ## 실행 기록
 

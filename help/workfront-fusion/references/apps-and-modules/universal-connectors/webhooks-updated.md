@@ -4,7 +4,7 @@ description: 웹후크는 이벤트에 의해 트리거되는 HTTP 호출입니�
 author: Becky
 feature: Workfront Fusion
 exl-id: 8e415378-e9c1-4b49-874b-6d38aba0c303
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 3a05e5df36bf9b1aacd0611fdad0240c8c52368d
 workflow-type: tm+mt
 source-wordcount: '1463'
 ht-degree: 0%
@@ -243,7 +243,7 @@ Webhook의 헤더에 액세스하려면 Webhook을 설정할 때 요청 헤더 �
 >
 >![필터 설정](/help/workfront-fusion/references/apps-and-modules/assets/set-up-a-filter-350x169.png)
 >
->지정된 키로 배열의 요소를 가져오는 방법에 대한 자세한 내용은 문서 배열 매핑[에서 &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md#map-an-arrays-element-with-a-given-key)지정된 키로 배열의 요소 매핑을 참조하십시오.
+>지정된 키로 배열의 요소를 가져오는 방법에 대한 자세한 내용은 문서 배열 매핑[에서 ](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md#map-an-arrays-element-with-a-given-key)지정된 키로 배열의 요소 매핑을 참조하십시오.
 
 ## 웹후크에 응답
 
@@ -278,7 +278,7 @@ Webhook 응답을 사용자 정의하려면 Webhook 응답 모듈을 사용합�
   >
   >`Content-Type` 헤더를 해당하는 MIME 형식으로 설정하는 것이 좋습니다. 일반 텍스트의 경우 `text/plain`, HTML의 경우 `text/html`, JSON의 경우 `application/json`, XML의 경우 `application/xml` 등입니다. MIME 유형에 대한 자세한 내용은 [MIME 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)을 참조하세요.
 
-응답 전송 시간 제한은 40초입니다. 이 기간 내에 응답을 사용할 수 없는 경우 Workfront Fusion은 &#39;200 수락됨&#39; 상태를 반환합니다.
+응답 전송에 대한 시간 제한은 5분입니다. 이 기간 내에 응답을 사용할 수 없는 경우 Workfront Fusion은 &#39;200 수락됨&#39; 상태를 반환합니다.
 
 ### HTML 응답 예
 
@@ -289,27 +289,27 @@ Webhook 응답을 사용자 정의하려면 Webhook 응답 모듈을 사용합�
 >다음과 같이 [!UICONTROL Webhook 응답] 모듈을 구성합니다.
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL 상태] </td> 
->&gt;   <td> <p>2xx 성공 HTTP 상태 코드(예: 200)</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
->&gt;   <td> <p>HTML 코드</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL 사용자 지정 헤더]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>키</strong>: Content-type</li> 
->&gt;     <li><strong>값</strong>: text/html</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL 상태] </td> 
+&gt;   <td> <p>2xx 성공 HTTP 상태 코드(예: 200)</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
+&gt;   <td> <p>HTML 코드</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL 사용자 지정 헤더]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>키</strong>: Content-type</li> 
+&gt;     <li><strong>값</strong>: text/html</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![사용자 지정 헤더](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
@@ -324,23 +324,23 @@ Webhook 응답을 사용자 정의하려면 Webhook 응답 모듈을 사용합�
 >**예:** [!UICONTROL Webhook 응답] 모듈을 다음과 같이 구성합니다.
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL 상태] </td> 
->&gt;   <td> <p>3xx 리디렉션 HTTP 상태 코드(예: 303)</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL 사용자 지정 헤더]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>[!UICONTROL 키]</strong>: 위치</li> 
->&gt;     <li><strong>[!UICONTROL Value]</strong>: 리디렉션할 URL입니다.</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL 상태] </td> 
+&gt;   <td> <p>3xx 리디렉션 HTTP 상태 코드(예: 303)</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL 사용자 지정 헤더]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>[!UICONTROL 키]</strong>: 위치</li> 
+&gt;     <li><strong>[!UICONTROL Value]</strong>: 리디렉션할 URL입니다.</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![Webhook 응답](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 

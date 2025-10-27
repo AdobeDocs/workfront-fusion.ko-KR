@@ -4,14 +4,29 @@ description: Adobe Workfront Fusion Adobe Workfront 커넥터를 사용하여 Wo
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: d2c873ffec406ae343fbcc72246688dec0bd1eab
 workflow-type: tm+mt
-source-wordcount: '8067'
+source-wordcount: '7373'
 ht-degree: 2%
 
 ---
 
 # Adobe Workfront 모듈
+
+>[!IMPORTANT]
+>
+>이 문서에는 2025년 10월 22일에 릴리스된 Workfront 커넥터의 새 버전에 대한 지침이 포함되어 있습니다. 이 새 커넥터는 Workfront API에 대한 변경 사항을 반영합니다.
+>
+>새 커넥터의 레이블은 &quot;Workfront&quot;로 표시되고, 이전에 사용할 수 있었던 커넥터의 레이블은 &quot;Workfront(기존)&quot;로 표시됩니다.
+>
+>권장 사항:
+>
+>* 시나리오를 만들거나 업데이트할 때 새 커넥터를 사용합니다.
+>* 기존 모듈을 새 커넥터로 업그레이드하는 중입니다.
+>
+>기존 모듈을 업그레이드하는 방법에 대한 지침은 새 버전으로 모듈 업그레이드 문서에서 [Workfront 모듈을 새 버전으로 업그레이드](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md)를 참조하십시오.
+>
+>경우에 따라 새 커넥터가 필요한 이유에 대한 자세한 내용은 [Fusion의 API 개요](/help/workfront-fusion/get-started-with-fusion/understand-fusion/api-overview.md)를 참조하십시오.
 
 Adobe Workfront Fusion Adobe Workfront 커넥터를 사용하여 Workfront 내에서 프로세스를 자동화할 수 있습니다. Workfront을 다른 애플리케이션 및 서비스에 연결할 수도 있습니다.
 
@@ -71,6 +86,11 @@ Workfront 커넥터는 OAuth 2.0을 사용하여 Workfront에 연결합니다.
 
 Workfront Fusion 모듈 내에서 직접 Workfront 계정에 대한 연결을 만들 수 있습니다.
 
+* [클라이언트 ID 및 클라이언트 암호를 사용하여 Workfront에 연결](#connect-to-workfront-using-client-id-and-client-secret)
+* [서버 간 연결을 사용하여 Workfront에 연결](#connect-to-workfront-using-a-server-to-server-connection)
+
+### 클라이언트 ID 및 클라이언트 암호를 사용하여 Workfront에 연결
+
 1. 모든 Adobe Workfront 모듈에서 연결 필드 옆에 있는 **추가**&#x200B;를 클릭합니다.
 1. 다음 필드를 채웁니다.
 
@@ -81,21 +101,15 @@ Workfront Fusion 모듈 내에서 직접 Workfront 계정에 대한 연결을 �
     </col>
     <tbody>
       <tr>
+        <td role="rowheader">[!UICONTROL 연결 유형]</td>
+        <td>
+          <p><b>Adobe Workfront 인증 연결</b>을 선택합니다.</p>
+        </td>
+      </tr>
+      <tr>
         <td role="rowheader">[!UICONTROL 연결 이름]</td>
         <td>
           <p>새 연결의 이름을 입력합니다.</p>
-        </td>
-      </tr>
-      <tr>
-        <td role="rowheader">[!UICONTROL 환경]</td>
-        <td>
-          <p>프로덕션 환경에 연결할지 아니면 비프로덕션 환경에 연결할지 선택합니다.</p>
-        </td>
-      </tr>
-      <tr>
-        <td role="rowheader">[!UICONTROL 연결 유형]</td>
-        <td>
-          <p>서비스 계정에 연결할지 또는 개인 계정에 연결할지 선택합니다.</p>
         </td>
       </tr>
       <tr>
@@ -109,6 +123,69 @@ Workfront Fusion 모듈 내에서 직접 Workfront 계정에 대한 연결을 �
       <tr>
         <td role="rowheader">[!UICONTROL 인증 URL]</td>
         <td>이 값은 기본값으로 유지되거나 Workfront 인스턴스의 URL을 입력한 후 <code>/integrations/oauth2</code>을(를) 입력할 수 있습니다. <p>예: <code>https://mydomain.my.workfront.com/integrations/oauth2</code></p></td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL 호스트 접두사]</td>
+        <td>대부분의 경우 이 값은 <code>origin</code>이어야 합니다.
+      </tr>
+    </tbody>
+    </table>
+
+1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭하세요.
+
+   Workfront에 로그인하지 않은 경우 로그인 화면으로 이동합니다. 로그인 후 연결을 허용할 수 있습니다.
+
+>[!NOTE]
+>
+>* Workfront API에 대한 OAuth 2.0 연결은 더 이상 API 키를 사용하지 않습니다.
+>* Workfront 샌드박스 환경에 대한 연결을 만들려면 해당 환경에서 OAuth2 애플리케이션을 만든 다음 해당 애플리케이션에서 생성된 클라이언트 ID 및 클라이언트 암호를 연결에서 사용해야 합니다.
+
+### 서버 간 연결을 사용하여 Workfront에 연결
+
+1. 모든 Adobe Workfront 모듈에서 연결 필드 옆에 있는 **추가**&#x200B;를 클릭합니다.
+1. 다음 필드를 채웁니다.
+
+   <table style="table-layout:auto"> 
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+    </col>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+    </col>
+    <tbody>
+      <tr>
+        <td role="rowheader">[!UICONTROL 연결 유형]</td>
+        <td>
+          <p><b>Adobe Workfront 서버 간 연결</b>을 선택합니다.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL 연결 이름]</td>
+        <td>
+          <p>새 연결의 이름을 입력합니다.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL 인스턴스 이름]</td>
+        <td>
+          <p>인스턴스 이름(도메인이라고도 함)을 입력합니다.</p><p>예: URL이 <code>https://example.my.workfront.com</code>인 경우 <code>example</code>을(를) 입력하십시오.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL 인스턴스 레인]</td>
+        <td>
+          <p>이 연결이 연결될 환경 유형을 입력합니다.</p><p>예: URL이 <code>https://example.my.workfront.com</code>인 경우 <code>my</code>을(를) 입력하십시오.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL 클라이언트 ID]</td>
+        <td>Workfront 클라이언트 ID를 입력합니다. 이 정보는 Workfront의 설정 영역에 있는 OAuth2 애플리케이션 영역에서 찾을 수 있습니다. 연결할 특정 애플리케이션을 열어 클라이언트 ID를 확인합니다.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL 클라이언트 암호]</td>
+        <td>Workfront 클라이언트 암호를 입력합니다. 이 정보는 Workfront의 설정 영역에 있는 OAuth2 애플리케이션 영역에서 찾을 수 있습니다. Workfront에 OAuth2 애플리케이션용 클라이언트 암호가 없는 경우 다른 클라이언트 암호를 생성할 수 있습니다. 자세한 내용은 Workfront 설명서를 참조하십시오.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL 범위]</td>
+        <td>이 연결에 적용할 수 있는 범위를 입력하십시오.</td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL 호스트 접두사]</td>
@@ -206,7 +283,7 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
 
 웹후크가 생성되면 이벤트를 전송할 엔드포인트의 주소를 볼 수 있습니다.
 
-자세한 내용은 Workfront 설명서의 이벤트 구독 API 문서에서 [이벤트 페이로드의 예](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) 섹션을 참조하십시오.
+자세한 내용은 Workfront 설명서의 이벤트 구독 API 문서에서 [이벤트 페이로드의 예](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) 섹션을 참조하십시오.
 
 각 Workfront 모듈에 사용할 수 있는 [Workfront 개체 유형](#workfront-object-types-available-for-each-workfront-module)에서 이 모듈을 사용할 수 있는 Workfront 개체 유형 목록을 참조하십시오.
 
@@ -407,7 +484,7 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL 사용자 정의 양식 첨부]</td> 
-   <td>새 오브젝트에 추가할 사용자 정의 양식을 선택한 다음 해당 필드에 값을 입력하거나 매핑합니다.</td> 
+   <td>새 오브젝트에 추가할 사용자 정의 양식을 선택하고 값을 입력할 필드를 선택한 다음 해당 필드에 값을 입력하거나 매핑합니다.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -439,28 +516,30 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
 >
 >   대규모 배치에 추가된 사용자를 해결하려면 사용자 배치를 Adobe Admin Console에 직접 추가할 수 있습니다.
 >
->   지침은 [여러 사용자 관리를 참조하십시오. | Adobe 설명서의 일괄 CSV 업로드](https://helpx.adobe.com/kr/enterprise/using/bulk-upload-users.html).
+>   지침은 [여러 사용자 관리를 참조하십시오. | Adobe 설명서의 일괄 CSV 업로드](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html).
 
 +++
 
-+++ **[!UICONTROL 레코드 만들기(레거시)]**
+<!--
+
++++ **[!UICONTROL Create Record (Legacy)]**
 
 >[!IMPORTANT]
 >
->이 모듈은 레코드 만들기 모듈로 대체되었습니다. 새 시나리오에서는 해당 모듈을 사용하는 것이 좋습니다.
->&#x200B;>이 모듈을 사용하는 기존 시나리오는 예상대로 계속 작동합니다. 이 모듈은 2025년 5월에 모듈 선택기에서 제거됩니다.
+>This module has been replaced with the Create a record module. We recommend using that module in new scenarios.
+>Existing scenarios that use this module will continue to function as expected. This module will be removed from the module selector in May 2025.
 
-이 작업 모듈은 Workfront의 프로젝트, 작업 또는 문제와 같은 개체를 만듭니다. 모듈을 사용하면 모듈에서 사용할 수 있는 개체 필드를 선택할 수 있습니다.
+This action module creates an object, such as a project, task, or issue in Workfront. The module allows you to select which of the object's fields are available in the module.
 
-레코드의 ID를 지정합니다.
+You specify the ID of the record.
 
-모듈은 연결에서 액세스하는 사용자 지정 필드 및 값과 함께 레코드 및 관련 필드의 ID를 반환합니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
+The module returns the ID of the  record and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
 
-최소 입력 필드 수를 입력해야 합니다. 예를 들어, 문제를 만들려면 프로젝트 ID 필드에 유효한 상위 프로젝트 ID를 제공하여 문제가 Workfront에서 발생해야 하는 위치를 나타내야 합니다. 매핑 패널을 사용하여 시나리오의 다른 모듈에서 가져온 이 정보를 매핑하거나 이름을 입력한 다음 목록에서 선택하여 수동으로 입력할 수 있습니다.
+Make sure you provide the minimum number of input fields. For example, if you want to create an issue, you need to provide a valid parent project ID in the Project ID field to indicate where the issue should live in Workfront. You can use the mapping panel to map this information from another module in your scenario, or you can enter it manually by typing in the name and then selecting it from the list.
 
-이 모듈은 개체를 만들 때 사용자 정의 양식을 첨부하지 않습니다. 개체를 만드는 동안 사용자 정의 양식을 첨부하려면 [!UICONTROL 레코드 만들기(사용자 정의 양식 첨부)] 모듈을 사용하십시오.
+This module does not attach custom forms when creating the object. To attach custom forms while creating an object, use the [!UICONTROL Create a record (attaching custom forms)] module.
 
-이 모듈을 구성할 때 다음 필드가 표시됩니다.
+When you are configuring this module, the following fields display.
 
 <table style="table-layout:auto">
  <col> 
@@ -470,27 +549,29 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Workfront을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
+   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 레코드 유형]</td> 
-   <td> <p>모듈에서 만들 Workfront 레코드 유형을 선택합니다.</p> <p>예를 들어 프로젝트를 만들려면 드롭다운 목록에서 [!UICONTROL 프로젝트]를 선택합니다.</p> </td> 
+   <td>[!UICONTROL Record Type]</td> 
+   <td> <p>Select the type of Workfront record that you want the module to create.</p> <p>For example, if you want to create a Project, select [!UICONTROL Project] from the dropdown list.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 매핑할 필드 선택]</td> 
-   <td>데이터 입력에 사용할 수 있는 필드를 선택합니다. 따라서 필요하지 않은 필드를 스크롤하지 않고도 이러한 필드를 사용할 수 있습니다.</td> 
+   <td>[!UICONTROL Select fields to map]</td> 
+   <td>Select the fields that you want available for data input. This allows you to use these fields without having to scroll through the ones you don't need.</td> 
   </tr> 
  </tbody> 
 </table>
 
-각 Workfront 모듈에 사용할 수 있는 [Workfront 개체 유형](#workfront-object-types-available-for-each-workfront-module)에서 이 모듈을 사용할 수 있는 Workfront 개체 유형 목록을 참조하십시오.
+See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
 >[!NOTE]
 >
->* 개체의 ID를 입력할 때 개체의 이름을 입력한 다음 목록에서 해당 개체를 선택할 수 있습니다. 그런 다음 모듈은 해당 ID를 필드에 입력합니다.
->* 사용자 지정 필드 또는 [!UICONTROL 메모] 개체(댓글 또는 답글)의 텍스트를 입력할 때 [!UICONTROL 메모 텍스트] 필드의 HTML 태그를 사용하여 굵게 또는 기울임꼴 텍스트와 같은 서식 있는 텍스트를 만들 수 있습니다.
+>* When entering the ID of an object, you can begin typing the name of the object, then select it from the list. The module then enters the appropriate ID into the field.
+>* When entering the text for a custom field or a [!UICONTROL Note] object (Comment or reply), you can use HTML tags in the [!UICONTROL Note Text] field to create rich text, such as bold or italic text.
 
 +++
+
+-->
 
 +++ **[!UICONTROL 사용자 지정 API 호출]**
 
@@ -629,6 +710,29 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
 
 +++
 
+### **사전 서명된 파일 URL 가져오기**
+
+이 작업 모듈은 나중에 다른 API에서 사용할 수 있는 사전 서명된 파일 URL을 가져옵니다.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection]</td> 
+   <td> <p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Workfront을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL 문서 ID]</td> 
+   <td> <p>사전 서명된 URL을 가져올 문서의 고유 Workfront ID를 매핑하거나 수동으로 입력합니다.</p> <p>ID를 가져오려면 브라우저에서 Workfront 개체를 열고 "ID=" 뒤에 있는 URL 끝에 있는 텍스트를 복사합니다. 예: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL TIME to URL expiration]</td> 
+   <td> <p>만료되기 전에 이 URL이 존재하는 시간(분)을 입력하거나 매핑합니다. 기본값은 1분입니다.</p><p>이 값을 변경하려면 Workfront Fusion 팀에서 이 매개 변수를 활성화해야 합니다. 활성화되지 않은 경우 입력한 숫자에 관계없이 값이 1분 유지됩니다.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 +++ **[!UICONTROL 기타 동작]**
 
 이 작업 모듈을 사용하면 API에 대해 작업을 수행할 수 있습니다.
@@ -665,7 +769,7 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
       </ul> <p>다른 모든 레코드 형식의 경우 <b>[!UICONTROL Other objects and endpoints]</b>을(를) 선택하고 알파벳순으로 정렬된 페이지에서 레코드 형식을 찾습니다.</p> </li> 
      <li value="2"> <p>적절한 레코드 종류의 페이지에서 작업을 검색(Ctrl-F 또는 Cmd-F)합니다.</p> </li> 
      <li value="3"> <p>선택한 작업 아래의 사용 가능한 필드에 대한 설명을 봅니다.</p> </li> 
-    </ol> <p>참고:  <p>Workfront [!UICONTROL 기타 작업] 모듈을 통해 증명을 만들 때 가장 좋은 방법은 고급 옵션 없이 증명을 만든 다음 [!DNL Workfront Proof] SOAP API를 사용하여 증명을 업데이트하는 것입니다.</p><p>이 모듈에서 사용하는 Workfront API를 사용하여 증명을 만드는 방법에 대한 자세한 내용은 <a href="https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Adobe Workfront API를 통해 증명을 만들 때 고급 증명 옵션 추가</a>를 참조하십시오.</p> </p> </td> 
+    </ol> <p>참고:  <p>Workfront [!UICONTROL 기타 작업] 모듈을 통해 증명을 만들 때 가장 좋은 방법은 고급 옵션 없이 증명을 만든 다음 [!DNL Workfront Proof] SOAP API를 사용하여 증명을 업데이트하는 것입니다.</p><p>이 모듈에서 사용하는 Workfront API를 사용하여 증명을 만드는 방법에 대한 자세한 내용은 <a href="https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Adobe Workfront API를 통해 증명을 만들 때 고급 증명 옵션 추가</a>를 참조하십시오.</p> </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
@@ -881,22 +985,24 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
 
 +++
 
-+++ **[!UICONTROL 레코드 읽기(레거시)]**
+<!--
+
++++ **[!UICONTROL Read a Record (Legacy)]**
 
 >[!IMPORTANT]
 >
->이 모듈은 레코드 읽기 모듈로 대체되었습니다. 새 시나리오에서는 해당 모듈을 사용하는 것이 좋습니다.
->&#x200B;>이 모듈을 사용하는 기존 시나리오는 예상대로 계속 작동합니다. 이 모듈은 2025년 5월에 모듈 선택기에서 제거됩니다.
+>This module has been replaced with the Read a record module. We recommend using that module in new scenarios.
+>Existing scenarios that use this module will continue to function as expected. This module will be removed from the module selector in May 2025.
 
-이 작업 모듈은 단일 레코드에서 데이터를 검색합니다.
+This action module retrieves data from a single record.
 
-레코드의 ID를 지정합니다. 모듈에서 읽을 관련 레코드를 지정할 수도 있습니다.
+You specify the ID of the record. You can also specify which related records you want the module to read.
 
-예를 들어 모듈이 읽고 있는 레코드가 프로젝트인 경우 프로젝트의 작업을 읽도록 지정할 수 있습니다.
+For example, if the record that the module is reading is a project, you can specify that you want the project's tasks read.
 
-모듈은 지정한 출력 필드에서 데이터 배열을 반환합니다.
+The module returns an array of data from the output fields you specified.
 
-이 모듈을 구성할 때 다음 필드가 표시됩니다.
+When you are configuring this module, the following fields display.
 
 <table style="table-layout:auto">
  <col> 
@@ -904,44 +1010,46 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection]</td>
-    <td> <p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Workfront을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
+    <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL 레코드 유형]</td>
-
-<td>모듈에서 읽을 Workfront 개체 유형을 선택합니다.</td> 
+    <td>[!UICONTROL Record Type]</td>
+  
+   <td>Choose the Workfront object type that you want the module to read.</td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL 출력]</td>
-
-<td> <p>이 모듈에 대한 출력 번들에 포함할 정보를 선택합니다.</p> </td> 
+    <td>[!UICONTROL Outputs]</td>
+  
+   <td> <p>Select the information you want included in the output bundle for this module.</p> </td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL 참조]</td>
-   <td>출력에 포함할 참조 필드를 선택합니다.</td> 
+    <td>[!UICONTROL References]</td>
+   <td>Select any reference fields that you want to include in the output.</td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Collections]</td>
-   <td>출력에 포함할 참조 필드를 선택합니다.</td> 
+   <td>Select any reference fields that you want to include in the output.</td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL ID]</td>
-   <td> <p>모듈에서 읽을 레코드의 고유 Workfront ID를 입력합니다.</p> <p>ID를 가져오려면 브라우저에서 Workfront 개체를 열고 "ID=" 뒤에 있는 URL 끝에 있는 텍스트를 복사합니다. 예: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+   <td> <p>Enter the unique Workfront ID of the record that you want the module to read.</p> <p>To get the ID, open the Workfront object in your browser and copy the text at the end of the URL after "ID=." For example: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-각 Workfront 모듈에 사용할 수 있는 [Workfront 개체 유형](#workfront-object-types-available-for-each-workfront-module)에서 이 모듈을 사용할 수 있는 Workfront 개체 유형 목록을 참조하십시오.
+See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
 +++
+
+-->
 
 +++ **이벤트 페이로드 버전 업데이트**
 
 Workfront은 최근 새로운 버전의 이벤트 구독 서비스를 발표했습니다. 새 버전은 Workfront API가 아니라 이벤트 구독 기능이 변경되었습니다. 이 작업 모듈은 이 시나리오에 사용되는 이벤트 페이로드 버전을 업데이트합니다.
 
-새 이벤트 구독 버전에 대한 자세한 내용은 Workfront 설명서에서 [이벤트 구독 버전 관리](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)를 참조하십시오
+새 이벤트 구독 버전에 대한 자세한 내용은 Workfront 설명서에서 [이벤트 구독 버전 관리](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)를 참조하십시오
 
-웨비나 녹화를 포함하여 이벤트 구독 업그레이드 중에 Workfront Fusion 시나리오를 유지하는 방법에 대한 리소스는 [이벤트 구독 V2 업그레이드 중에 Fusion 시나리오 유지](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=ko)를 참조하십시오.
+웨비나 녹화를 포함하여 이벤트 구독 업그레이드 중에 Workfront Fusion 시나리오를 유지하는 방법에 대한 리소스는 [이벤트 구독 V2 업그레이드 중에 Fusion 시나리오 유지](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)를 참조하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -1010,20 +1118,22 @@ Workfront은 최근 새로운 버전의 이벤트 구독 서비스를 발표했�
 
 +++
 
-+++ **[!UICONTROL 레코드 업데이트(레거시)]**
+<!--
+
++++ **[!UICONTROL Update Record (Legacy)]**
 
 >[!IMPORTANT]
 >
->이 모듈은 레코드 업데이트 모듈로 대체되었습니다. 새 시나리오에서는 해당 모듈을 사용하는 것이 좋습니다.
->&#x200B;>이 모듈을 사용하는 기존 시나리오는 예상대로 계속 작동합니다. 이 모듈은 2025년 5월에 모듈 선택기에서 제거됩니다.
+>This module has been replaced with the Update a record module. We recommend using that module in new scenarios.
+>Existing scenarios that use this module will continue to function as expected. This module will be removed from the module selector in May 2025.
 
-이 작업 모듈은 프로젝트, 작업 또는 문제와 같은 개체를 업데이트합니다. 모듈을 사용하면 모듈에서 사용할 수 있는 개체 필드를 선택할 수 있습니다.
+This action module updates an object, such as a project, task, or issue. The module allows you to select which of the object's fields are available in the module.
 
-레코드의 ID를 지정합니다.
+You specify the ID of the record.
 
-모듈은 연결에서 액세스하는 사용자 지정 필드 및 값과 함께 개체의 ID와 연결된 필드를 반환합니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
+The module returns the ID of the  object and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
 
-이 모듈을 구성할 때 다음 필드가 표시됩니다.
+When you are configuring this module, the following fields display.
 
 <table style="table-layout:auto">
  <col> 
@@ -1033,31 +1143,33 @@ Workfront은 최근 새로운 버전의 이벤트 구독 서비스를 발표했�
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Workfront을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
+   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
-   <td> <p>모듈에서 업데이트할 레코드의 고유 Workfront ID를 입력합니다.</p> <p>ID를 가져오려면 브라우저에서 Workfront 개체를 열고 "ID=" 뒤에 있는 URL 끝에 있는 텍스트를 복사합니다. 예: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+   <td> <p>Enter the unique Workfront ID of the record that you want the module to update.</p> <p>To get the ID, open the Workfront object in your browser and copy the text at the end of the URL after "ID=." For example: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
   </tr> 
   <tr> 
    <td>[!DNL Record Type]</td> 
-   <td> <p>모듈에서 업데이트할 Workfront 레코드의 유형을 선택합니다.</p> </td> 
+   <td> <p>Select the type of Workfront record that you want the module to update.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!DNL Select fields to map]</td> 
-   <td>데이터 입력에 사용할 수 있는 필드를 선택합니다. 따라서 필요하지 않은 필드를 스크롤하지 않고도 이러한 필드를 사용할 수 있습니다. 그런 다음 이러한 필드에 데이터를 입력하거나 매핑할 수 있습니다.</td> 
+   <td>Select the fields that you want available for data input. This allows you to use these fields without having to scroll through the ones you don't need. You can then enter or map data into these fields.</td> 
   </tr> 
  </tbody> 
 </table>
 
-각 Workfront 모듈에 사용할 수 있는 [Workfront 개체 유형](#workfront-object-types-available-for-each-workfront-module)에서 이 모듈을 사용할 수 있는 Workfront 개체 유형 목록을 참조하십시오.
+See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
 >[!NOTE]
 >
->* 개체의 ID를 입력할 때 개체의 이름을 입력한 다음 목록에서 해당 개체를 선택할 수 있습니다. 그런 다음 모듈은 해당 ID를 필드에 입력합니다.
->* 사용자 지정 필드 또는 [!UICONTROL 메모] 개체(댓글 또는 답글)의 텍스트를 입력할 때 [!UICONTROL 메모 텍스트] 필드의 HTML 태그를 사용하여 굵게 또는 기울임꼴 텍스트와 같은 서식 있는 텍스트를 만들 수 있습니다.
+>* When entering the ID of an object, you can begin typing the name of the object, then select it from the list. The module then enters the appropriate ID into the field.
+>* When entering the text for a custom field or a [!UICONTROL Note] object (Comment or reply), you can use HTML tags in the [!UICONTROL Note Text] field to create rich text, such as bold or italic text.
 
 +++
+
+-->
 
 +++ **[!UICONTROL 문서 업로드]**
 
@@ -1102,15 +1214,17 @@ Workfront은 최근 새로운 버전의 이벤트 구독 서비스를 발표했�
 
 +++
 
-+++ **[!UICONTROL 문서 업로드(기존)]**
+<!--
 
-이 작업 모듈은 프로젝트, 작업 또는 문제와 같은 Workfront 개체에 문서를 업로드합니다. 전체 문서를 한 번에 업로드합니다.
++++ **[!UICONTROL Upload Document (Legacy)]**
 
-문서의 위치, 업로드할 파일 및 파일의 새 이름(선택 사항)을 지정합니다.
+This action module uploads a document to a Workfront object, such as a project, task, or issue. It uploads the entire document at once. 
 
-모듈은 연결이 액세스하는 사용자 지정 필드 및 값과 함께 문서의 ID 및 관련 필드를 반환합니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
+You specify the location for the document, the file you want to upload, and an optional new name for the file.
 
-이 모듈을 구성할 때 다음 필드가 표시됩니다.
+The module returns the ID of the document and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
+
+When you are configuring this module, the following fields display.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1118,30 +1232,32 @@ Workfront은 최근 새로운 버전의 이벤트 구독 서비스를 발표했�
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Workfront을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
+   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 관련 레코드 ID]</td> 
-   <td>문서를 업로드할 레코드의 고유 Workfront ID를 입력합니다.</td> 
+   <td>[!UICONTROL Related Record ID]</td> 
+   <td>Enter the unique Workfront ID of the record to which you want to upload the document.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 관련 레코드 유형]</td> 
-   <td>모듈이 문서를 업로드할 Workfront 레코드 유형을 선택합니다.</td> 
+   <td>[!UICONTROL Related Record Type]</td> 
+   <td>Select the type of Workfront record where you want the module to upload the document.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 폴더 ID]</td> 
-   <td>관련 레코드 유형에 따라 폴더 ID를 입력하거나 매핑해야 할 수 있습니다.</td> 
+   <td>[!UICONTROL Folder ID]</td> 
+   <td>Depending on the type of related record, you may need to enter or map a folder ID.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source 파일]</td> 
-   <td> <p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 이름과 데이터를 매핑합니다.</p> </td> 
+   <td>[!UICONTROL Source file]</td> 
+   <td> <p>Select a source file from a previous module, or map the source file's name and data.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-각 Workfront 모듈에 사용할 수 있는 [Workfront 개체 유형](#workfront-object-types-available-for-each-workfront-module)에서 이 모듈을 사용할 수 있는 Workfront 개체 유형 목록을 참조하십시오.
+See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
+
 
 +++
+-->
 
 ### 검색 결과
 
@@ -1249,7 +1365,7 @@ Workfront은 최근 새로운 버전의 이벤트 구독 서비스를 발표했�
 >[!IMPORTANT]
 >
 >이 모듈은 레코드 검색 모듈로 대체되었습니다. 새 시나리오에서는 해당 모듈을 사용하는 것이 좋습니다.
->&#x200B;>이 모듈을 사용하는 기존 시나리오는 예상대로 계속 작동합니다. 이 모듈은 2025년 5월에 모듈 선택기에서 제거됩니다.
+>>이 모듈을 사용하는 기존 시나리오는 예상대로 계속 작동합니다. 이 모듈은 2025년 5월에 모듈 선택기에서 제거됩니다.
 
 이 검색 모듈은 Workfront의 객체에서 지정한 검색 쿼리와 일치하는 레코드를 찾습니다.
 
@@ -2259,9 +2375,9 @@ See a list of the Workfront object types for which you can use this module in [W
 >
 >* Workfront은 최근 새로운 버전의 이벤트 구독 서비스를 발표했습니다. 새 버전은 Workfront API가 아니라 이벤트 구독 기능이 변경되었습니다. 이 작업 모듈은 이 시나리오에 사용되는 이벤트 페이로드 버전을 업데이트합니다.
 >
->   새 이벤트 구독 버전에 대한 자세한 내용은 Workfront 설명서에서 [이벤트 구독 버전 관리](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)를 참조하십시오
+>   새 이벤트 구독 버전에 대한 자세한 내용은 Workfront 설명서에서 [이벤트 구독 버전 관리](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)를 참조하십시오
 >
->   웨비나 녹화를 포함하여 이벤트 구독 업그레이드 중에 Workfront Fusion 시나리오를 유지하는 방법에 대한 리소스는 [이벤트 구독 V2 업그레이드 중에 Fusion 시나리오 유지(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=ko)]를 참조하십시오.
+>   웨비나 녹화를 포함하여 이벤트 구독 업그레이드 중에 Workfront Fusion 시나리오를 유지하는 방법에 대한 리소스는 [이벤트 구독 V2 업그레이드 중에 Fusion 시나리오 유지(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)]를 참조하십시오.
 
 Workfront [!UICONTROL 이벤트 보기] 모듈은 Workfront API에서 이벤트 구독을 만드는 웹후크를 기반으로 시나리오를 트리거합니다. 이벤트 구독은 웹후크로 전송되는 이벤트를 결정하는 데이터 세트입니다. 예를 들어 문제를 감시하는 [!UICONTROL 이벤트 감시] 모듈을 설정하면 이벤트 구독에서 문제와 관련된 이벤트만 보냅니다.
 
@@ -2311,7 +2427,7 @@ Workfront > 이벤트 보기 필터에서 다음 연산자를 사용할 수 있�
 >
 >하루에 100개의 문제가 만들어지지만 이 중 두 개의 문제만 Ana에 할당되면 시나리오는 100번 실행됩니다. 98개의 실행이 필터에서 중지되지만 트리거 모듈은 여전히 데이터를 소비하고 모든 실행에서 작업을 수행합니다.
 
-Workfront 이벤트 구독에 대한 자세한 내용은 [FAQ - 이벤트 구독](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq)을 참조하십시오.
+Workfront 이벤트 구독에 대한 자세한 내용은 [FAQ - 이벤트 구독](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq)을 참조하십시오.
 
 웹후크에 대한 자세한 내용은 Adobe Workfront Fusion의 [인스턴트 트리거(웹후크)](/help/workfront-fusion/references/modules/webhooks-reference.md)를 참조하십시오.
 

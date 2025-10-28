@@ -3,9 +3,9 @@ title: Veeva Vault 모듈
 description: Adobe Workfront Fusion 시나리오에서는 Veeva Vault를 사용하는 워크플로를 자동화하고 여러 타사 애플리케이션 및 서비스에 연결할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 6e7125bee77526caa93edc17f05b75bdfd7d7ac4
+source-git-commit: 4f5a4cf8691e5bb47eec6f6b2842369c5c6fbad8
 workflow-type: tm+mt
-source-wordcount: '1514'
+source-wordcount: '1516'
 ht-degree: 3%
 
 ---
@@ -318,7 +318,7 @@ Veeva Vault 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드�
   </tr> 
   <tr> 
    <td role="rowheader"> <p>유형</p> </td> 
-   <td> <p>문서, 바인더 또는 템플릿을 만들지 선택합니다.</p> </td> 
+   <td> <p>문서, 문서 버전, 바인더 또는 템플릿을 만들지 선택합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>ID / 이름</p> </td> 

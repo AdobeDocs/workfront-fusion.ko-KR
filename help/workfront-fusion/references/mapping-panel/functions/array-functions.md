@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion 매핑 패널에서 다음 배열 함수를 
 author: Becky
 feature: Workfront Fusion
 exl-id: 16c3915c-add1-4aab-a0e1-75fc590c42a6
-source-git-commit: d141738a7e013ed817cb657b883fc5e1061e2165
+source-git-commit: 9b61a3b18df1f755cc7ccc28889564e4bcb6cda0
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -57,9 +57,9 @@ ht-degree: 0%
 
   이메일이 포함된 기본 배열을 반환합니다.
 
-* `map(Emails[];email;label;work;home)`
+* `map(Emails[];email;label;work)`
 
-  작업 또는 홈과 동일한 레이블을 갖는 이메일이 포함된 기본 배열을 반환합니다.
+  작업과 동일한 레이블을 갖는 이메일이 포함된 기본 배열을 반환합니다.
 
 >[!ENDSHADEBOX]
 
@@ -200,11 +200,11 @@ ht-degree: 0%
 
 `mode` 매개 변수에 대해 다음 값 중 하나를 입력하십시오.
 
-* `classic`: `array2`에 없는 `array1`의 모든 요소를 포함하는 새 배열을 반환합니다.
+* `classic`: `array1`에 없는 `array2`의 모든 요소를 포함하는 새 배열을 반환합니다.
 
 * `symmetric`: 두 배열에 공통되지 않는 요소의 배열을 반환합니다.
 
-  즉, 이 함수는 `array2`에 없는 `array1`의 모든 요소와 `array1`에 없는 `array2`의 모든 요소를 포함하는 배열을 반환합니다.
+  즉, 이 함수는 `array1`에 없는 `array2`의 모든 요소와 `array2`에 없는 `array1`의 모든 요소를 포함하는 배열을 반환합니다.
 
 >[!BEGINSHADEBOX]
 

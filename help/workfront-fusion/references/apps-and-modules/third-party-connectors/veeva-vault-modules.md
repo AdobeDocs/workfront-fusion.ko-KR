@@ -3,9 +3,9 @@ title: Veeva Vault 모듈
 description: Adobe Workfront Fusion 시나리오에서는 Veeva Vault를 사용하는 워크플로를 자동화하고 여러 타사 애플리케이션 및 서비스에 연결할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 4f5a4cf8691e5bb47eec6f6b2842369c5c6fbad8
+source-git-commit: 37cb18a2e13a494c4174514539c0c7e43cdee011
 workflow-type: tm+mt
-source-wordcount: '1516'
+source-wordcount: '1661'
 ht-degree: 3%
 
 ---
@@ -59,6 +59,56 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 ## 전제 조건
 
 Veeva Vault 모듈을 사용하려면 Veeva Vault 계정이 있어야 합니다.
+
+## Veeva Vault를 Workfront Fusion에 연결
+
+Veeva Vault 모듈 내에서 직접 Veeva Vault 계정에 연결할 수 있습니다.
+
+1. Veeva Vault 모듈에서 Connection 필드 옆에 있는 **추가**&#x200B;를 클릭합니다.
+1. 다음 필드를 입력합니다.
+
+   <table style="table-layout:auto"> 
+     <col> 
+     <col> 
+     <tbody> 
+      <tr> 
+       <td role="rowheader">연결 이름</td> 
+       <td> <p>연결의 이름을 입력합니다.</p> </td> 
+      </tr> 
+      <tr>
+        <td role="rowheader">환경</td>
+        <td>
+          <p>프로덕션 환경에 연결할지 아니면 비프로덕션 환경에 연결할지 선택합니다.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">유형</td>
+        <td>
+          <p>서비스 계정에 연결할지 또는 개인 계정에 연결할지 선택합니다.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">사용자 이름</td>
+        <td>
+          <p>Veeva Vault 계정의 사용자 이름을 입력합니다.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">암호</td>
+        <td>
+          <p>Veeva Vault 계정의 암호를 입력합니다.</p>
+        </td>
+      </tr>
+      <tr> 
+       <td role="rowheader">자격 증명 모음 DNS</td> 
+       <td>Veeva Vault DNS(도메인 이름)를 입력합니다.</p><p>Veeva Vault DNS를 찾으려면 Veeva Vault에 액세스하는 데 사용하는 URL을 검사합니다.</p>예를 들어 URL <code>https://my-dns.veevavault.com</code>에서 DNS는 <code>my-dns</code>입니다. 전체 URL을 입력할 필요는 없습니다.</td> 
+      </tr> 
+     </tbody> 
+    </table>
+
+1. 연결을 만들고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭하세요.
+
+
 
 ## Veeva Vault 모듈 및 해당 필드
 

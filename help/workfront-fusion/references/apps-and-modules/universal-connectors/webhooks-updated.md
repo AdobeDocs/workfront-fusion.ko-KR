@@ -4,9 +4,9 @@ description: 웹후크는 이벤트에 의해 트리거되는 HTTP 호출입니�
 author: Becky
 feature: Workfront Fusion
 exl-id: 8e415378-e9c1-4b49-874b-6d38aba0c303
-source-git-commit: 3a05e5df36bf9b1aacd0611fdad0240c8c52368d
+source-git-commit: 1fce6f9db83aa700538a29d7a15c61f60d522e58
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1522'
 ht-degree: 0%
 
 ---
@@ -70,11 +70,16 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 웹후크를 사용하여 앱을 Workfront Fusion에 연결하려면
 
-1. **[!UICONTROL Webhooks]** >**[!UICONTROL 사용자 지정 Webhook]** 인스턴트 트리거 모듈을 시나리오에 추가합니다.
+1. **[!UICONTROL Webhooks]** > **[!UICONTROL 사용자 지정 Webhook]** 인스턴트 트리거 모듈을 시나리오에 추가합니다.
 
 1. Webhook 필드 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭하고 새 Webhook의 이름을 입력합니다.
 1. (선택 사항) **[!UICONTROL 고급 설정]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL IP 제한]** 필드에 모듈에서 데이터를 허용할 수 있는 IP 주소의 쉼표로 구분된 목록을 입력하십시오.
+1. 들어오는 데이터의 유효성을 검사하려면 **데이터 구조** 필드에서 사용할 데이터 구조를 선택하거나 추가하십시오.
+
+   데이터 구조에 대한 자세한 내용은 [데이터 구조](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)를 참조하십시오.
+1. **자격 증명** 필드에 인증에 사용할 자격 증명을 입력할 수 있습니다. 자격 증명을 입력하려면 **추가**&#x200B;를 클릭하고 자격 증명 정보를 입력하십시오.
+1. 원하는 대로 다른 설정을 활성화합니다.
 1. **[!UICONTROL Save]**&#x200B;를 클릭합니다
 
 웹후크를 생성하면 고유한 URL이 표시됩니다. Webhook에서 데이터를 보내는 주소입니다. Workfront Fusion은 이 주소로 전송된 데이터의 유효성을 검사한 다음 시나리오에서 처리하기 위해 데이터를 전달합니다.
@@ -243,7 +248,7 @@ Webhook의 헤더에 액세스하려면 Webhook을 설정할 때 요청 헤더 �
 >
 >![필터 설정](/help/workfront-fusion/references/apps-and-modules/assets/set-up-a-filter-350x169.png)
 >
->지정된 키로 배열의 요소를 가져오는 방법에 대한 자세한 내용은 문서 배열 매핑[에서 &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md#map-an-arrays-element-with-a-given-key)지정된 키로 배열의 요소 매핑을 참조하십시오.
+>지정된 키로 배열의 요소를 가져오는 방법에 대한 자세한 내용은 문서 배열 매핑[에서 ](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md#map-an-arrays-element-with-a-given-key)지정된 키로 배열의 요소 매핑을 참조하십시오.
 
 ## 웹후크에 응답
 
@@ -289,27 +294,27 @@ Webhook 응답을 사용자 정의하려면 Webhook 응답 모듈을 사용합�
 >다음과 같이 [!UICONTROL Webhook 응답] 모듈을 구성합니다.
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL 상태] </td> 
->&gt;   <td> <p>2xx 성공 HTTP 상태 코드(예: 200)</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
->&gt;   <td> <p>HTML 코드</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL 사용자 지정 헤더]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>키</strong>: Content-type</li> 
->&gt;     <li><strong>값</strong>: text/html</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL 상태] </td> 
+&gt;   <td> <p>2xx 성공 HTTP 상태 코드(예: 200)</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
+&gt;   <td> <p>HTML 코드</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL 사용자 지정 헤더]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>키</strong>: Content-type</li> 
+&gt;     <li><strong>값</strong>: text/html</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![사용자 지정 헤더](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
@@ -324,23 +329,23 @@ Webhook 응답을 사용자 정의하려면 Webhook 응답 모듈을 사용합�
 >**예:** [!UICONTROL Webhook 응답] 모듈을 다음과 같이 구성합니다.
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL 상태] </td> 
->&gt;   <td> <p>3xx 리디렉션 HTTP 상태 코드(예: 303)</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL 사용자 지정 헤더]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>[!UICONTROL 키]</strong>: 위치</li> 
->&gt;     <li><strong>[!UICONTROL Value]</strong>: 리디렉션할 URL입니다.</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL 상태] </td> 
+&gt;   <td> <p>3xx 리디렉션 HTTP 상태 코드(예: 303)</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL 사용자 지정 헤더]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>[!UICONTROL 키]</strong>: 위치</li> 
+&gt;     <li><strong>[!UICONTROL Value]</strong>: 리디렉션할 URL입니다.</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![Webhook 응답](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 

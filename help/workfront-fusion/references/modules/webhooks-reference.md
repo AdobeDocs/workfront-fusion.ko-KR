@@ -4,9 +4,9 @@ description: 많은 서비스는 서비스에서 특정 변경 사항이 발생�
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: e0cfe4e6af0c6d1fe8f44fd72e13f9e9d5e6a73f
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '1064'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,25 @@ Workfront Fusion의 Webhooks에 대한 비디오 소개는 다음을 참조하�
 
 * [Webhooks 소개](https://video.tv.adobe.com/v/3427025/){target=_blank}
 * [중간 웹후크](https://video.tv.adobe.com/v/3427030/){target=_blank}
+
+## 웹후크 세부 정보 보기
+
+[웹후크] 영역에서 웹후크 목록을 볼 수 있습니다.
+
+1. Webhooks 영역을 열려면 왼쪽 탐색에서 Webhooks 아이콘 ![Webhooks](assets/webhooks-icon.png)을 클릭합니다.
+
+   여기에서 웹후크 목록을 볼 수 있습니다.
+
+   ![Webhook 목록](assets/list-of-webhooks.png)
+
+1. 특정 웹후크를 검색하려면 검색 상자에 검색어를 입력합니다.
+1. 웹후크를 복사하려면 해당 웹후크 행의 URL 근처에 있는 복사 아이콘 ![웹후크 복사 아이콘](assets/copy-webhook-icon.png)을 클릭합니다.
+1. 웹후크를 비활성화하거나 활성화하려면 해당 웹후크 행의 상태 열에서 토글을 비활성화하거나 활성화합니다.
+1. 웹후크 대기열이 가득 찼는지 확인하려면 [전체 대기열] 열을 선택합니다. 이 열의 숫자는 현재 큐에 있는 항목의 수입니다.
+1. Webhook에서 처리한 작업을 보려면 해당 Webhook의 전체 대기열 열에서 **작업**&#x200B;을 클릭합니다.
+1. 웹후크가 사용되는 시나리오를 보려면 해당 웹후크에 대한 시나리오 열에서 **시나리오** 단추를 클릭하십시오.
+1. 이 웹후크에 사용된 연결을 보려면 해당 웹후크의 연결 열에서 **연결** 단추를 클릭하십시오.
+1. 열을 숨기거나 이전에 숨겨진 열을 표시하려면 **열** 아이콘 ![열 아이콘](assets/glist-column.png)을 클릭하고 열 이름을 선택하거나 선택 취소합니다.
 
 ## 인스턴트 트리거 예약
 

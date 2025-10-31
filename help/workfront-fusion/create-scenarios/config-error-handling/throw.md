@@ -58,7 +58,7 @@ ht-degree: 0%
 
 ## `throw`에 대한 해결 방법
 
-오류를 조건부로 발생시키려면 작업 중에 모듈을 의도적으로 실패하도록 구성할 수 있습니다. 선택적으로 오류([!UICONTROL )를 발생시키도록 구성된 ]JSON[!UICONTROL  > ]JSON 구문 분석`BundleValidationError` 모듈을 사용할 수 있습니다.
+오류를 조건부로 발생시키려면 작업 중에 모듈을 의도적으로 실패하도록 구성할 수 있습니다. 선택적으로 오류([!UICONTROL )를 발생시키도록 구성된 &#x200B;]JSON[!UICONTROL &#x200B; > &#x200B;]JSON 구문 분석`BundleValidationError` 모듈을 사용할 수 있습니다.
 
 ![JSON 오류](assets/json-parse-json.png)
 

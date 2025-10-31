@@ -68,7 +68,7 @@ ht-degree: 0%
 
    배열에 항목을 원하는 수만큼 추가할 수 있습니다.
 
-반복기를 사용하여 배열을 개별 번들로 나눌 수 있습니다. 자세한 내용은 Adobe Workfront Fusion[[!UICONTROL 의 ]반복자](/help/workfront-fusion/references/modules/iterator-module.md) 모듈을 참조하십시오.
+반복기를 사용하여 배열을 개별 번들로 나눌 수 있습니다. 자세한 내용은 Adobe Workfront Fusion[[!UICONTROL 의 &#x200B;]반복자](/help/workfront-fusion/references/modules/iterator-module.md) 모듈을 참조하십시오.
 
 ## 항목을 새 배열에 매핑
 

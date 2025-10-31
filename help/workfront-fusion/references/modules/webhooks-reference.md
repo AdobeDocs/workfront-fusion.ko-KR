@@ -4,9 +4,9 @@ description: 많은 서비스는 서비스에서 특정 변경 사항이 발생�
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: e0cfe4e6af0c6d1fe8f44fd72e13f9e9d5e6a73f
+source-git-commit: 3746ba1cd213a19a042da1a30b0d57bd1140907c
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -50,6 +50,7 @@ Workfront Fusion의 Webhooks에 대한 비디오 소개는 다음을 참조하�
 1. 웹후크를 비활성화하거나 활성화하려면 해당 웹후크 행의 상태 열에서 토글을 비활성화하거나 활성화합니다.
 1. 웹후크 대기열이 가득 찼는지 확인하려면 [전체 대기열] 열을 선택합니다. 이 열의 숫자는 현재 큐에 있는 항목의 수입니다.
 1. Webhook에서 처리한 작업을 보려면 해당 Webhook의 전체 대기열 열에서 **작업**&#x200B;을 클릭합니다.
+1. 웹후크가 만료되었는지 확인하려면 만료됨 열을 선택합니다. 만료된 웹후크는 시나리오에 연결되어 있지 않거나 120시간 동안 이벤트를 받지 않았습니다.
 1. 웹후크가 사용되는 시나리오를 보려면 해당 웹후크에 대한 시나리오 열에서 **시나리오** 단추를 클릭하십시오.
 1. 이 웹후크에 사용된 연결을 보려면 해당 웹후크의 연결 열에서 **연결** 단추를 클릭하십시오.
 1. 열을 숨기거나 이전에 숨겨진 열을 표시하려면 **열** 아이콘 ![열 아이콘](assets/glist-column.png)을 클릭하고 열 이름을 선택하거나 선택 취소합니다.

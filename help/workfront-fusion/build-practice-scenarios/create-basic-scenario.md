@@ -7,10 +7,10 @@ description: Adobe Workfront Fusion을 사용하여 간단한 자동화 시나�
 author: Becky
 feature: Workfront Fusion
 exl-id: 5284dee1-e890-4357-a28d-29e09ac02822
-source-git-commit: 7f4709920e52f6b8660370af83de1f11eecbf092
+source-git-commit: 93d06cb917680f9cabc1bad6be0f9cd843449d07
 workflow-type: tm+mt
-source-wordcount: '1426'
-ht-degree: 1%
+source-wordcount: '1403'
+ht-degree: 0%
 
 ---
 
@@ -24,34 +24,22 @@ Adobe Workfront Fusion의 역할은 동일한 작업을 반복하지 않고 새�
 
 +++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
 
-이 문서의 기능을 사용하려면 다음 액세스 권한이 있어야 합니다.
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront 패키지</td> 
-   <td> <p>임의</p> </td> 
+   <td> <p>모든 Adobe Workfront 워크플로 패키지 및 모든 Adobe Workfront 자동화 및 통합 패키지</p><p>Workfront Ultimate</p><p>Workfront Prime 및 Select 패키지 및 Workfront Fusion 추가 구매.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront 라이선스</td> 
-   <td> <p>새로운 기능: 표준</p><p>또는</p><p>현재: [!UICONTROL Work] 이상</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
-   <td>
-   <p>현재: Workfront Fusion 라이센스 요구 사항이 없습니다.</p>
-   <p>또는</p>
-   <p>레거시: 모두 </p>
-   </td> 
+   <td> <p>표준</p><p>작업 이상</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>신규:</p> <ul><li>[!UICONTROL Select] 또는 [!UICONTROL Prime] Workfront 플랜: 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li><li>[!UICONTROL Ultimate] Workfront 계획: Workfront Fusion이 포함됩니다.</li></ul>
-   <p>또는</p>
-   <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -59,11 +47,7 @@ Adobe Workfront Fusion의 역할은 동일한 작업을 반복하지 않고 새�
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
-
 +++
-
-
 
 ## 연습 시나리오 만들기
 
@@ -107,7 +91,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
    1. [!UICONTROL 검색 조건] 아래의 첫 번째 상자에서 검색에 포함할 필드를 선택합니다. 이 예제에서는 **[!UICONTROL 이름]**&#x200B;을(를) 선택합니다.
 
       단어 &quot;**[!UICONTROL 이름]**&quot;을(를) 입력하면 목록에서 [!UICONTROL 이름]을(를) 찾을 수 있습니다.
-   1. 연산자의 경우 **존재** 옆에 있는 드롭다운 화살표를 클릭하고 [!UICONTROL **포함(대/소문자 구분 안 함)**] (으)로 변경합니다.
+   1. 연산자의 경우 **존재** 옆에 있는 드롭다운 화살표를 클릭하고 [!UICONTROL **포함(대/소문자 구분 안 함)**](으)로 변경합니다.
 
       이렇게 하면 전체 이름을 입력하지 않거나 대/소문자가 잘못된 이름(예: 모두 대문자)을 입력하더라도 모듈이 이름에 선택한 단어가 포함된 프로젝트를 찾을 수 있습니다.
    1. [!UICONTROL 검색 조건]의 마지막 필드에 검색 중인 작업 이름에 있는 단어 또는 구를 입력하십시오.
@@ -191,7 +175,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 >
 >1. **[!UICONTROL 메모]** 영역을 닫습니다.
 >
->     시나리오에 메모를 추가하면 시나리오 편집기 하단의 **[!UICONTROL 메모]** 아이콘 ![메모 아이콘 &#x200B;](assets/notes-icon-w-dot.png)에 점이 표시됩니다.
+>     시나리오에 메모를 추가하면 시나리오 편집기 하단의 **[!UICONTROL 메모]** 아이콘 ![메모 아이콘 ](assets/notes-icon-w-dot.png)에 점이 표시됩니다.
 >
 >1. **[!UICONTROL 메모]** 아이콘 ![점이 있는 메모 아이콘](assets/notes-icon-w-dot.png)을 클릭하여 메모를 봅니다. 메모가 열려 있으면 메모 아이콘 주위에 원이 나타납니다.
 >

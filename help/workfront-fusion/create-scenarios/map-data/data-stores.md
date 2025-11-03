@@ -4,9 +4,9 @@ description: 데이터베이스 또는 간단한 테이블과 유사한 데이�
 author: Becky
 feature: Workfront Fusion
 exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: b59532d96d64f77c04d31d03f6ae5addf15c0dd7
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1324'
 ht-degree: 1%
 
 ---
@@ -81,7 +81,7 @@ Select 또는 Prime 패키지의 Fusion 인스턴스는 :--> 수신
 
   예를 들어, 600만 건의 작업을 수행하는 조직은 110MB를 수신합니다.
 
-조직은 최대 50개의 데이터 저장소를 가질 수 있습니다. 이러한 데이터 저장소의 결합된 크기는 조직의 총 데이터 저장소 크기를 초과할 수 없습니다.
+조직의 각 팀에는 최대 50개의 데이터 저장소가 있을 수 있습니다. 이러한 데이터 저장소의 결합된 크기는 조직의 총 데이터 저장소 크기를 초과할 수 없습니다.
 
 ## Workfront Fusion에서 데이터 저장소 만들기
 

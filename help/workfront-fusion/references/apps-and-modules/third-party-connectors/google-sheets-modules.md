@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion에서  [!DNL Google Sheets] 을(를) 사용�
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 80965570-2937-4ac8-97c0-54f7a813ec50
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '4040'
+source-wordcount: '4046'
 ht-degree: 0%
 
 ---
@@ -21,34 +21,29 @@ Adobe Workfront Fusion 시나리오에서는 [!DNL Google Sheets]을(를) 사용
 
 +++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
 
-이 문서의 기능을 사용하려면 다음 액세스 권한이 있어야 합니다.
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront 패키지</td> 
-   <td> <p>임의</p> </td> 
+   <td> <p>모든 Adobe Workfront 워크플로 패키지 및 모든 Adobe Workfront 자동화 및 통합 패키지</p><p>Workfront Ultimate</p><p>Workfront Prime 및 Select 패키지 및 Workfront Fusion 추가 구매.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront 라이선스</td> 
-   <td> <p>새로운 기능: 표준</p><p>또는</p><p>현재: 작업 시간 이상</p> </td> 
+   <td> <p>표준</p><p>작업 이상</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
+   <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
-   <p>또는</p>
-   <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
+   <p>작업 기반: Workfront Fusion 라이센스 요구 사항 없음</p>
+   <p>커넥터 기반(레거시): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>신규:</p> <ul><li>또는 Prime Workfront 패키지 선택: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</li><li>Ultimate Workfront 패키지: Workfront Fusion이 포함됩니다.</li></ul>
-   <p>또는</p>
-   <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -339,7 +334,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td>[!UICONTROL 재계산 간격]</td> 
-   <td> <p>휘발성 함수가 다시 계산되기 전까지 대기할 시간:</p> <ul><li><p style="font-weight: bold;">변경 시 </p> <p>변동성 함수는 변경 시마다 업데이트됩니다.</p></li><li> <p style="font-weight: bold;">변경 시 및 매분 </p> <p>변동성 함수는 변경 시마다 매 분마다 업데이트됩니다.</p></li> <li><p style="font-weight: bold;">변경 시 및 시간별 </p> <p>변동성 함수는 변경 시마다 업데이트됩니다.</p></li></ul> </td> 
+   <td> <p>휘발성 함수가 다시 계산되기 전까지 대기할 시간:</p> <ul><li><p style="font-weight: bold;">변경 시 [!UICONTROL]</p> <p>변동성 함수는 변경 시마다 업데이트됩니다.</p></li><li> <p style="font-weight: bold;">변경 시 및 매분 [!UICONTROL]</p> <p>변동성 함수는 변경 시마다 매 분마다 업데이트됩니다.</p></li> <li><p style="font-weight: bold;">변경 시 및 시간별 [!UICONTROL]</p> <p>변동성 함수는 변경 시마다 업데이트됩니다.</p></li></ul> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 시간대]</td> 
@@ -726,7 +721,7 @@ Google Sheets 커넥터에서는 다음을 사용합니다.
 
 ## 팁 및 요령
 
-* [&#x200B; [!DNL Google] 시트에서 빈 셀 가져오기](#get-empty-cells-from-a-google-sheet)
+* [ [!DNL Google] 시트에서 빈 셀 가져오기](#get-empty-cells-from-a-google-sheet)
 * [시트에 단추를 추가하여 시나리오 실행](#add-a-button-in-a-sheet-to-run-a-scenario)
 
 ### [!DNL Google Sheet]에서 빈 셀 가져오기
@@ -779,7 +774,7 @@ select * where E is null
 
 [!DNL Google Sheets]이(가) 날짜를 이해할 수 있도록 하려면 `formatDate` 함수로 형식을 지정하십시오. 두 번째 인수로 함수에 전달되는 올바른 형식은 스프레드시트의 로케일 설정에 따라 다릅니다.
 
-이 함수에 대한 자세한 내용은 문서 날짜 및 시간 함수에서 [[!UICONTROL formatDate] (date; format; [timezone])](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md#formatdate-date-format-timezone)을(를) 참조하십시오.
+이 함수에 대한 자세한 내용은 문서 날짜 및 시간 함수에서 [[!UICONTROL formatDate](date; format; [timezone])](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md#formatdate-date-format-timezone)을(를) 참조하십시오.
 
 올바른 형식을 확인하려면 다음을 수행하십시오.
 

@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion 시나리오에서는 Dropbox을 사용하�
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '3286'
+source-wordcount: '3292'
 ht-degree: 1%
 
 ---
@@ -23,34 +23,29 @@ Adobe Workfront Fusion 시나리오에서는 [!UICONTROL Dropbox] 또는 [!DNL D
 
 +++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
 
-이 문서의 기능을 사용하려면 다음 액세스 권한이 있어야 합니다.
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront 패키지</td> 
-   <td> <p>임의</p> </td> 
+   <td> <p>모든 Adobe Workfront 워크플로 패키지 및 모든 Adobe Workfront 자동화 및 통합 패키지</p><p>Workfront Ultimate</p><p>Workfront Prime 및 Select 패키지 및 Workfront Fusion 추가 구매.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront 라이선스</td> 
-   <td> <p>새로운 기능: 표준</p><p>또는</p><p>현재: 작업 시간 이상</p> </td> 
+   <td> <p>표준</p><p>작업 이상</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
+   <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
-   <p>또는</p>
-   <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
+   <p>작업 기반: Workfront Fusion 라이센스 요구 사항 없음</p>
+   <p>커넥터 기반(레거시): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>신규:</p> <ul><li>또는 Prime Workfront 패키지 선택: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</li><li>Ultimate Workfront 패키지: Workfront Fusion이 포함됩니다.</li></ul>
-   <p>또는</p>
-   <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -69,10 +64,10 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 >[!IMPORTANT]
 >
 >* Dropbox 커넥터를 사용하려면 먼저 Dropbox에서 애플리케이션을 만들어야 합니다.
->  &#x200B;>   자세한 내용은 Dropbox 개발자 안내서에서 &quot;애플리케이션 만들기&quot;를 검색하십시오.
+>  >   자세한 내용은 Dropbox 개발자 안내서에서 &quot;애플리케이션 만들기&quot;를 검색하십시오.
 >* 응용 프로그램을 만들 때 다음 리디렉션 URI를 사용하십시오. `https://app.workfrontfusion.com/oauth/cb/dropbox`
 >* Dropbox은 사용자가 50명을 초과하는 애플리케이션을 승인해야 합니다.
->  &#x200B;>   자세한 내용을 보려면 Dropbox 개발자 안내서에서 &quot;프로덕션 승인&quot;을 검색하십시오.
+>  >   자세한 내용을 보려면 Dropbox 개발자 안내서에서 &quot;프로덕션 승인&quot;을 검색하십시오.
 
 ## Dropbox API 정보
 
@@ -154,8 +149,8 @@ Dropbox 커넥터는 다음을 사용합니다.
 ![맵 전환](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [트리거 모듈](#trigger-modules)
-* [&#x200B; [!DNL Dropbox] 파일 및 폴더 가져오기 모듈](#modules-for-getting-dropbox-files-and-folders)
-* [&#x200B; [!DNL Dropbox] 파일 및 폴더를 만들고 편집하기 위한 모듈](#modules-for-creating-and-editing-dropbox-files-and-folders)
+* [ [!DNL Dropbox] 파일 및 폴더 가져오기 모듈](#modules-for-getting-dropbox-files-and-folders)
+* [ [!DNL Dropbox] 파일 및 폴더를 만들고 편집하기 위한 모듈](#modules-for-creating-and-editing-dropbox-files-and-folders)
 * [기타 모듈](#other-modules)
 
 ### 트리거 모듈

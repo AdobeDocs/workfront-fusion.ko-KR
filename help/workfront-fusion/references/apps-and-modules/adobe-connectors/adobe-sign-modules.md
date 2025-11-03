@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Acrobat Sign] 모듈을 사용하면  [!DNL Adobe] Ac
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
 workflow-type: tm+mt
-source-wordcount: '6790'
+source-wordcount: '6763'
 ht-degree: 0%
 
 ---
@@ -17,42 +17,41 @@ ht-degree: 0%
 
 ## 액세스 요구 사항
 
-이 문서의 기능을 사용하려면 다음 액세스 권한이 있어야 합니다.
++++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront 플랜*</td>
-  <td> <p>[!UICONTROL Pro] 이상</p> </td>
+   <td role="rowheader">Adobe Workfront 패키지</td> 
+   <td> <p>모든 Adobe Workfront 워크플로 패키지 및 모든 Adobe Workfront 자동화 및 통합 패키지</p><p>Workfront Ultimate</p><p>Workfront Prime 및 Select 패키지 및 Workfront Fusion 추가 구매.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront 라이센스*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront 라이선스</td> 
+   <td> <p>표준</p><p>작업 이상</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
+   <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>현재 라이선스 요구 사항: Workfront Fusion 라이선스 요구 사항이 없습니다.</p>
-   <p>또는</p>
-   <p>레거시 라이선스 요구 사항: [!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
-   </td>  
+   <p>작업 기반: Workfront Fusion 라이센스 요구 사항 없음</p>
+   <p>커넥터 기반(레거시): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
+   </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>현재 제품 요구 사항: [!UICONTROL Select] 또는 [!UICONTROL Prime] Adobe Workfront 플랜이 있는 경우 조직에서 이 문서에 설명된 기능을 사용하려면 Adobe Workfront Fusion과 Adobe Workfront을 구입해야 합니다. Workfront Fusion은 [!UICONTROL Ultimate] Workfront 플랜에 포함되어 있습니다.</p>
-   <p>또는</p>
-   <p>레거시 제품 요구 사항: 조직에서 이 문서에 설명된 기능을 사용하려면 Adobe Workfront Fusion과 Adobe Workfront을 구입해야 합니다.</p>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-보유 중인 플랜, 라이선스 유형 또는 액세스 권한을 확인하려면 Workfront 관리자에게 문의하십시오.
+이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
+
++++
 
 ## [!DNL Adobe Acrobat Sign] API 정보
 
@@ -124,7 +123,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 텍스트 찾기]</td> 
-   <td> <p>검색할 용어를 입력하십시오. 모듈은 이러한 용어를 필드 값으로 포함하는 레코드를 반환합니다.</p> <p>[!DNL Adobe Acrobat Sign]의 필드 검색에 대한 자세한 내용은 <a href="https://helpx.adobe.com/kr/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Adobe Sign 검색 - 작동 방식</a>의 "텍스트 검색 작동 방식"을 참조하십시오.</p> </td> 
+   <td> <p>검색할 용어를 입력하십시오. 모듈은 이러한 용어를 필드 값으로 포함하는 레코드를 반환합니다.</p> <p>[!DNL Adobe Acrobat Sign]의 필드 검색에 대한 자세한 내용은 <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Adobe Sign 검색 - 작동 방식</a>의 "텍스트 검색 작동 방식"을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 반환되는 최대 계약 수]</td> 
@@ -238,7 +237,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
      <li> <p><b>[!UICONTROL 그룹]</b> </p> </li> 
      <li> <p><b>[!UICONTROL 라이브러리 문서]</b> </p> </li> 
      <li> <p><b>[!UICONTROL 사용자]</b> </p> </li> 
-     <li> <p><b>[!UICONTROL 웹 양식] ([!UICONTROL 위젯])</b> </p> </li> 
+     <li> <p><b>[!UICONTROL 웹 양식]([!UICONTROL 위젯])</b> </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -273,7 +272,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
    <td> <p>다음 필드를 채웁니다.</p> 
     <ul> 
      <li> <p><b>[!UICONTROL Email]</b> </p> <p>사용자의 이메일 주소를 입력합니다.</p> </li> 
-     <li> <p><b>[!UICONTROL 은(는) 계정 관리자]</b> </p> <p>생성된 사용자가 계정 관리자인 경우 이 옵션을 선택합니다.</p> </li> 
+     <li> <p><b>[!UICONTROL은(는) 계정 관리자]</b> </p> <p>생성된 사용자가 계정 관리자인 경우 이 옵션을 선택합니다.</p> </li> 
      <li> <p><b>[!UICONTROL 사용자 ID]</b> </p> <p>사용자의 고유 ID 입력</p> </li> 
      <li> <p><b>[!UICONTROL 계정 ID]</b> </p> <p>이 사용자와 연결된 [!DNL Adobe Acrobat Sign] 계정의 고유 ID를 입력하십시오.</p> </li> 
      <li> <p><b>[!UICONTROL 이름]</b> </p> <p>사용자의 이름을 입력합니다.</p> </li> 
@@ -540,7 +539,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
        <li> <p><b>[!UICONTROL 라이브러리 문서]</b> </p> <p>라이브러리 문서 링크를 표시하려면 <b>[!UICONTROL 예]</b>를 선택하십시오. 기본값은 [!UICONTROL Yes]입니다.</p> </li> 
        <li> <p><b>[!UICONTROL 로컬 파일]</b> </p> <p>로컬 파일 업로드 단추를 표시하려면 <b>[!UICONTROL 예]</b>를 선택하십시오. 기본값은 [!UICONTROL Yes]입니다.</p> </li> 
        <li> <p><b>[!UICONTROL Web connectors]</b> </p> <p>웹 소스의 문서를 첨부할 링크를 표시하려면 <b>[!UICONTROL 예]</b>를 선택하십시오. 기본값은 Yes입니다.</p> </li> 
-       <li> <p><b>[!UICONTROL 이 미리 보기를 선택했습니다]</b> </p> <p>작성 페이지를 작성 모드로 설정하려면 <b>[!UICONTROL 예]</b>를 선택하십시오.</p> </li> 
+       <li> <p><b>[!UICONTROL이 미리 보기를 선택했습니다]</b> </p> <p>작성 페이지를 작성 모드로 설정하려면 <b>[!UICONTROL 예]</b>를 선택하십시오.</p> </li> 
       </ul> </li> 
      <li> <p><b>[!UICONTROL 구성원 공유]</b> </p> <p>계약을 공유할 각 구성원에 대해 <b>[!UICONTROL 항목 추가]</b>를 클릭하고 해당 구성원의 전자 메일 주소와 메시지를 입력합니다.</p> </li> 
      <li> <p>[!UICONTROL 대리자 참가자 집합]</p> 
@@ -753,7 +752,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
    <td>관련 레코드를 검색할 레코드 유형을 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 레코드 ID] (예: [!UICONTROL 계정 ID])</td> 
+   <td role="rowheader">[!UICONTROL 레코드 ID](예: [!UICONTROL 계정 ID])</td> 
    <td>관련 레코드를 검색할 레코드의 ID를 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
@@ -818,7 +817,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
        <li> <p><b>[!UICONTROL 기본 그룹 ID]</b> </p> <p>새 사용자를 추가할 그룹을 입력합니다. 아무것도 입력하지 않으면 사용자는 계정의 기본 그룹에 추가됩니다.</p> </li> 
        <li> <p><b>[!UICONTROL 작업 제목]</b> </p> <p>사용자의 직함을 입력합니다.</p> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL 웹 양식] ([!UICONTROL 위젯])</b> </p> <p>레코드 종류 및 관련 필드를 기준으로 특정 필드에 정보를 입력합니다.</p> </li> 
+     <li> <p><b>[!UICONTROL 웹 양식]([!UICONTROL 위젯])</b> </p> <p>레코드 종류 및 관련 필드를 기준으로 특정 필드에 정보를 입력합니다.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -875,7 +874,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
         <ul> 
          <li> <p><b>[!UICONTROL 상태]</b> </p> <p>사용자에 대한 새 상태를 선택합니다.</p> </li> 
          <li> <p><b>[!UICONTROL ID]</b> </p> <p>그룹의 고유 ID 입력</p> </li> 
-         <li> <p><b>은(는) 그룹 관리자입니다.</b> </p> <p>이 사용자를 그룹 관리자로 설정하려면 <b>[!UICONTROL 예]</b>를 선택하십시오.</p> </li> 
+         <li> <p><b>[!UICONTROL은(는) 그룹 관리자입니다.</b> </p> <p>이 사용자를 그룹 관리자로 설정하려면 <b>[!UICONTROL 예]</b>를 선택하십시오.</p> </li> 
          <li> <p><b>기본 그룹임</b> </p> <p>이 그룹을 사용자의 기본 그룹으로 업데이트하려면 <b>[!UICONTROL 예]</b>를 선택하십시오.</p> </li> 
          <li> <p><b>[!UICONTROL 만든 날짜]</b> </p> <p>그룹을 만든 날짜를 입력합니다.</p> <p>지원되는 날짜 및 시간 형식 목록을 보려면 [!UICONTROL Adobe Workfront Fusion]<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">에서 </a>형식 변환을 참조하십시오.</p> </li> 
          <li> <p><b>[!UICONTROL 이름]</b> </p> <p>그룹 이름을 입력하거나 매핑합니다.</p> </li> 
@@ -900,7 +899,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
        <li> <p><b>[!UICONTROL 상태]</b> </p> <p>사용자의 새 상태를 선택하고 사용자를 활성화 또는 비활성화하려는 이유에 대한 설명을 입력합니다.</p> </li> 
        <li> <p><b>[!UICONTROL 로케일]</b> </p> <p>사용자의 로케일을 입력합니다. UI의 언어를 결정합니다. </p> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL 웹 양식] ([!UICONTROL 위젯])</b> </p> <p>레코드 종류 및 관련 필드를 기준으로 특정 필드에 정보를 입력합니다.</p> </li> 
+     <li> <p><b>[!UICONTROL 웹 양식]([!UICONTROL 위젯])</b> </p> <p>레코드 종류 및 관련 필드를 기준으로 특정 필드에 정보를 입력합니다.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -972,8 +971,8 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
    <td> <p>계약 메타데이터에서 텍스트를 검색합니다. </p> 
     <ul> 
      <li> <p><b>[!UICONTROL 텍스트 찾기]</b> </p> <p>계약 메타데이터에서 찾을 텍스트를 입력합니다. 각 단어는 별도의 텍스트 항목으로 처리됩니다. </p> </li> 
-     <li> <p><b>[!UICONTROL 에서 텍스트 찾기]</b> </p> <p>텍스트를 찾을 메타데이터 필드를 선택합니다. 아무 것도 선택하지 않으면 모듈은 모든 메타데이터를 검색합니다.</p> </li> 
-    </ul> <p>이 모듈은 선택한 필드에 입력한 텍스트가 포함된 계약을 반환합니다. 예: "봄 캠페인"을 입력하고 제목 및 메모 옵션을 선택하면 제목 또는 메모에 "봄" 또는 "캠페인"이라는 단어가 포함된 계약이 반환됩니다.</p> <p>[!DNL Adobe Acrobat Sign]의 필드 검색에 대한 자세한 내용은 <a href="https://helpx.adobe.com/kr/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] 검색 - 작동 방식</a>의 "텍스트 검색 작동 방식"을 참조하십시오.</p> </td> 
+     <li> <p><b>[!UICONTROL에서 텍스트 찾기]</b> </p> <p>텍스트를 찾을 메타데이터 필드를 선택합니다. 아무 것도 선택하지 않으면 모듈은 모든 메타데이터를 검색합니다.</p> </li> 
+    </ul> <p>이 모듈은 선택한 필드에 입력한 텍스트가 포함된 계약을 반환합니다. 예: "봄 캠페인"을 입력하고 제목 및 메모 옵션을 선택하면 제목 또는 메모에 "봄" 또는 "캠페인"이라는 단어가 포함된 계약이 반환됩니다.</p> <p>[!DNL Adobe Acrobat Sign]의 필드 검색에 대한 자세한 내용은 <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] 검색 - 작동 방식</a>의 "텍스트 검색 작동 방식"을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 만든 날짜]</td> 

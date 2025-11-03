@@ -4,16 +4,45 @@ description: Adobe Workfront Fusion의 키 체인은 공개 및 개인 키를 �
 author: Becky
 feature: Workfront Fusion
 exl-id: b92e54ed-fa03-4af7-be7b-436907b2bff9
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 99621f57da1eb294834a0eacfe527dcf017408e9
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 0%
+source-wordcount: '266'
+ht-degree: 1%
 
 ---
 
 # 키
 
 공개 및 개인 키는 데이터를 암호화하고 해독하는 데 사용됩니다. 공개 키를 배포할 수 있으며 공개 키를 가진 모든 사람이 데이터를 암호화할 수 있지만 개인 키만 해독할 수 있습니다. 마찬가지로 개인 키를 가진 사용자는 공개 키를 가진 모든 사람이 해독할 수 있는 데이터를 암호화할 수 있습니다. 키 영역에서 팀이 소유한 키를 보고 관리할 수 있습니다.
+
+## 액세스 요구 사항
+
++++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront 패키지</td> 
+   <td> <p>모든 Adobe Workfront 워크플로 패키지 및 모든 Adobe Workfront 자동화 및 통합 패키지</p><p>Workfront Ultimate</p><p>Workfront Prime 및 Select 패키지 및 Workfront Fusion 추가 구매.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront 라이선스</td> 
+   <td> <p>표준</p><p>작업 이상</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">제품</td> 
+   <td>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   </td> 
+  </tr>
+ </tbody> 
+</table>
+
+이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+
++++
 
 ## Workfront Fusion에서 키 사용
 

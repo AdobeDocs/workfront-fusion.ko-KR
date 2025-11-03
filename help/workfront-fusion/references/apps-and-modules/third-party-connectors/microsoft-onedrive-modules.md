@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion 시나리오에서는 OneDrive를 사용하�
 author: Becky
 feature: Workfront Fusion
 exl-id: d21eafad-9c67-4f42-b718-0aa4223846e6
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '4159'
+source-wordcount: '4165'
 ht-degree: 0%
 
 ---
@@ -23,34 +23,29 @@ Adobe Workfront Fusion 시나리오에서는 [!DNL OneDrive]을(를) 사용하�
 
 +++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
 
-이 문서의 기능을 사용하려면 다음 액세스 권한이 있어야 합니다.
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront 패키지</td> 
-   <td> <p>임의</p> </td> 
+   <td> <p>모든 Adobe Workfront 워크플로 패키지 및 모든 Adobe Workfront 자동화 및 통합 패키지</p><p>Workfront Ultimate</p><p>Workfront Prime 및 Select 패키지 및 Workfront Fusion 추가 구매.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront 라이선스</td> 
-   <td> <p>새로운 기능: 표준</p><p>또는</p><p>현재: 작업 시간 이상</p> </td> 
+   <td> <p>표준</p><p>작업 이상</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
+   <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
-   <p>또는</p>
-   <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
+   <p>작업 기반: Workfront Fusion 라이센스 요구 사항 없음</p>
+   <p>커넥터 기반(레거시): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>신규:</p> <ul><li>또는 Prime Workfront 패키지 선택: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</li><li>Ultimate Workfront 패키지: Workfront Fusion이 포함됩니다.</li></ul>
-   <p>또는</p>
-   <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -597,7 +592,7 @@ OneDrive 커넥터는 다음을 사용합니다.
        <li> <p><b>[!UICONTROL Yes]</b> </p> <p>모듈이 검색할 드라이브의 ID를 입력합니다.</p> </li> 
        <li> <p><b>[!UICONTROL 번호]</b> </p> <p>모듈이 검색할 폴더로 이동합니다. 쿼리를 입력하여 반환된 결과를 필터링할 수도 있습니다.</p> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL 이 나와 공유됨]</b> </p> <p>모듈은 드라이브 소유자와 공유된 파일을 검색합니다.</p> </li> 
+     <li> <p><b>[!UICONTROL이 나와 공유됨]</b> </p> <p>모듈은 드라이브 소유자와 공유된 파일을 검색합니다.</p> </li> 
      <li> <p><b>[!UICONTROL 사이트의 드라이브]</b> </p> <p>모듈이 검색할 [!DNL SharePoint] 사이트를 선택하십시오. 사용 가능한 사이트는 사이트 다음에 로그인한 사용자가 표시됩니다.</p> </li> 
      <li> <p><b>[!UICONTROL 그룹의 드라이브]</b> </p> <p>모듈에서 검색할 드라이브의 그룹을 선택합니다.</p> </li> 
     </ul> </td> 
@@ -678,7 +673,7 @@ OneDrive 커넥터는 다음을 사용합니다.
    <td> <p>파일 또는 폴더를 볼 방법을 선택하십시오.</p> 
     <ul> 
      <li> <p><b>[!UICONTROL 작성일 기준]</b> </p> <p>새 파일 또는 폴더를 확인하십시오.</p> </li> 
-     <li> <p>업데이트된 시간까지 <b></b> </p> <p>업데이트된 기존 파일 또는 폴더를 확인하십시오.</p> </li> 
+     <li> <p>업데이트된 시간까지 <b>[!UICONTROL]</b> </p> <p>업데이트된 기존 파일 또는 폴더를 확인하십시오.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -690,7 +685,7 @@ OneDrive 커넥터는 다음을 사용합니다.
        <li> <p><b>[!UICONTROL Yes]</b> </p> <p>모듈에서 볼 드라이브의 ID를 입력합니다.</p> </li> 
        <li> <p><b>[!UICONTROL 번호]</b> </p> <p>모듈에서 감시할 폴더로 이동합니다. 쿼리를 입력하여 반환된 결과를 필터링할 수도 있습니다.</p> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL 이 나와 공유됨]</b> </p> <p>모듈은 드라이브 소유자와 공유된 파일을 감시합니다.</p> </li> 
+     <li> <p><b>[!UICONTROL이 나와 공유됨]</b> </p> <p>모듈은 드라이브 소유자와 공유된 파일을 감시합니다.</p> </li> 
      <li> <p><b>[!UICONTROL 사이트의 드라이브]</b> </p> <p>모듈에서 볼 SharePoint 사이트를 선택합니다. 사용 가능한 사이트는 사이트 다음에 로그인한 사용자가 표시됩니다.</p> </li> 
      <li> <p><b>[!UICONTROL 그룹의 드라이브]</b> </p> <p>모듈에서 조사할 드라이브의 그룹을 선택합니다.</p> </li> 
     </ul> </td> 

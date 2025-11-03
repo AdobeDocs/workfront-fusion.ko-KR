@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion 시나리오에서는 Gmail을 사용하는 
 author: Becky
 feature: Workfront Fusion
 exl-id: 62269eca-c3cf-42fe-a866-fb66d2363b8d
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '1852'
+source-wordcount: '1858'
 ht-degree: 0%
 
 ---
@@ -21,34 +21,29 @@ Adobe Workfront Fusion 시나리오에서는 [!DNL Gmail]을(를) 사용하는 �
 
 +++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
 
-이 문서의 기능을 사용하려면 다음 액세스 권한이 있어야 합니다.
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront 패키지</td> 
-   <td> <p>임의</p> </td> 
+   <td> <p>모든 Adobe Workfront 워크플로 패키지 및 모든 Adobe Workfront 자동화 및 통합 패키지</p><p>Workfront Ultimate</p><p>Workfront Prime 및 Select 패키지 및 Workfront Fusion 추가 구매.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront 라이선스</td> 
-   <td> <p>새로운 기능: 표준</p><p>또는</p><p>현재: 작업 시간 이상</p> </td> 
+   <td> <p>표준</p><p>작업 이상</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
+   <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
-   <p>또는</p>
-   <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
+   <p>작업 기반: Workfront Fusion 라이센스 요구 사항 없음</p>
+   <p>커넥터 기반(레거시): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>신규:</p> <ul><li>또는 Prime Workfront 패키지 선택: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</li><li>Ultimate Workfront 패키지: Workfront Fusion이 포함됩니다.</li></ul>
-   <p>또는</p>
-   <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -66,16 +61,16 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 ## Workfront Fusion에 [!DNL Gmail] 연결 {#connect-gmail-to-workfront-fusion}
 
-* [&#x200B; [!DNL Gmail] 을(를) 사용하여  [!DNL Google Workspace]Workfront Fusion 연결](#connect-gmail-to-workfront-fusion-usinggoogle-workspace)
-* [&#x200B; [!DNL Gmail] or [!DNL gmail.com] .com을 사용하여  [!DNL googlemail]Workfront Fusion에 연결](#connect-gmail-to-workfront-fusion-using-gmailcom-or-googlemailcom)
+* [ [!DNL Gmail] 을(를) 사용하여  [!DNL Google Workspace]Workfront Fusion 연결](#connect-gmail-to-workfront-fusion-usinggoogle-workspace)
+* [ [!DNL Gmail] or [!DNL gmail.com] .com을 사용하여  [!DNL googlemail]Workfront Fusion에 연결](#connect-gmail-to-workfront-fusion-using-gmailcom-or-googlemailcom)
 
-### [!DNL Gmail]을(를) 사용하여 [!DNL &#x200B; Google Workspace]을(를) Workfront Fusion에 연결
+### [!DNL Gmail]을(를) 사용하여 [!DNL  Google Workspace]을(를) Workfront Fusion에 연결
 
 [!DNL Google Workspace] 계정을 [!UICONTROL Workfront Fusion]에 연결하는 방법에 대한 지침은 [연결 만들기 - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)을 참조하십시오.
 
 ### [!DNL Gmail] 또는 [!DNL gmail.com].com을 사용하여 [!DNL googlemail]을(를) Workfront Fusion에 연결
 
-[!DNL @gmail.com] 또는 [!DNL @googlemail.com] 사용자인 경우 [클라이언트 ID [!DNL Google Cloud Platform] 및 &#x200B;](https://console.developers.google.com/projectselector2/apis/dashboard?supportedpurview=project)클라이언트 암호[!UICONTROL 를 가져오려면 &#x200B;]the에 OAuth 클라이언트를 만들어야 합니다.
+[!DNL @gmail.com] 또는 [!DNL @googlemail.com] 사용자인 경우 [클라이언트 ID [!DNL Google Cloud Platform] 및 ](https://console.developers.google.com/projectselector2/apis/dashboard?supportedpurview=project)클라이언트 암호[!UICONTROL 를 가져오려면 ]the에 OAuth 클라이언트를 만들어야 합니다.
 
 OAuth 클라이언트를 만들고 [!UICONTROL 클라이언트 ID] 및 [!UICONTROL 클라이언트 암호]를 얻는 방법에 대한 단계별 지침은 [사용자 지정 OAuth 클라이언트를 사용하여 Adobe Workfront Fusion을 Google Services에 연결](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)을 참조하십시오.
 

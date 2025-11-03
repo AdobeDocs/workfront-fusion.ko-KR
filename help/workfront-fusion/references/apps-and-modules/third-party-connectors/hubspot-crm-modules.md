@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion HubSpot CRM 모듈을 사용하면 이벤트
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '7317'
+source-wordcount: '7323'
 ht-degree: 0%
 
 ---
@@ -19,34 +19,29 @@ Adobe Workfront Fusion [!DNL HubSpot CRM] 모듈을 사용하면 이벤트, 레�
 
 +++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
 
-이 문서의 기능을 사용하려면 다음 액세스 권한이 있어야 합니다.
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront 패키지</td> 
-   <td> <p>임의</p> </td> 
+   <td> <p>모든 Adobe Workfront 워크플로 패키지 및 모든 Adobe Workfront 자동화 및 통합 패키지</p><p>Workfront Ultimate</p><p>Workfront Prime 및 Select 패키지 및 Workfront Fusion 추가 구매.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront 라이선스</td> 
-   <td> <p>새로운 기능: 표준</p><p>또는</p><p>현재: 작업 시간 이상</p> </td> 
+   <td> <p>표준</p><p>작업 이상</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
+   <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
-   <p>또는</p>
-   <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
+   <p>작업 기반: Workfront Fusion 라이센스 요구 사항 없음</p>
+   <p>커넥터 기반(레거시): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>신규:</p> <ul><li>또는 Prime Workfront 패키지 선택: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</li><li>Ultimate Workfront 패키지: Workfront Fusion이 포함됩니다.</li></ul>
-   <p>또는</p>
-   <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -842,7 +837,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 이 활성화되었습니까?]</td> 
+   <td role="rowheader">[!UICONTROL이 활성화되었습니까?]</td> 
    <td>새 참여가 만들어질 때 활성화될 경우 이 옵션을 활성화하십시오. 타임라인에 참여하려면 참여가 활성화되어야 합니다.</td> 
   </tr> 
   <tr> 
@@ -1029,7 +1024,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td>작업 상태를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">개체 유형에 대한 </td> 
+   <td role="rowheader">개체 유형에 대한 [!UICONTROL]</td> 
   <td><code>CONTACT</code> 또는 <code>COMPANY</code>을(를) 입력하십시오.
   </td> 
    </tr> 
@@ -1777,7 +1772,7 @@ ID로 기존 티켓을 삭제합니다.
    <td>이 게시물에 추가할 각 키워드에 대해 <b>항목 추가</b>를 클릭하고 키워드 및 키워드 GUID를 입력하십시오.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">메타 설명</td> 
+   <td role="rowheader">Meta 설명</td> 
    <td>페이지의 <code>meta</code> 태그에 대한 텍스트를 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 

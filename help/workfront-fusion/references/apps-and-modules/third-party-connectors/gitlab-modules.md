@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion에는 Adobe Workfront 라이센스 외에 Ad
 author: Becky
 feature: Workfront Fusion
 exl-id: fabbadce-5669-4363-834e-6d7428520f62
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '4122'
+source-wordcount: '4095'
 ht-degree: 1%
 
 ---
@@ -27,42 +27,41 @@ Adobe Workfront Fusion 시나리오에서는 [!UICONTROL GitLab]을 사용하는
 
 ## 액세스 요구 사항
 
-이 문서의 기능을 사용하려면 다음 액세스 권한이 있어야 합니다.
++++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront 플랜*</td>
-  <td> <p>[!UICONTROL Pro] 이상</p> </td>
+   <td role="rowheader">Adobe Workfront 패키지</td> 
+   <td> <p>모든 Adobe Workfront 워크플로 패키지 및 모든 Adobe Workfront 자동화 및 통합 패키지</p><p>Workfront Ultimate</p><p>Workfront Prime 및 Select 패키지 및 Workfront Fusion 추가 구매.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront 라이센스*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront 라이선스</td> 
+   <td> <p>표준</p><p>작업 이상</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
+   <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>현재 라이선스 요구 사항: Workfront Fusion 라이선스 요구 사항이 없습니다.</p>
-   <p>또는</p>
-   <p>레거시 라이선스 요구 사항: [!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
+   <p>작업 기반: Workfront Fusion 라이센스 요구 사항 없음</p>
+   <p>커넥터 기반(레거시): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>현재 제품 요구 사항: [!UICONTROL Select] 또는 [!UICONTROL Prime] Adobe Workfront 플랜이 있는 경우 조직에서 이 문서에 설명된 기능을 사용하려면 Adobe Workfront Fusion과 Adobe Workfront을 구입해야 합니다. Workfront Fusion은 [!UICONTROL Ultimate] Workfront 플랜에 포함되어 있습니다.</p>
-   <p>또는</p>
-   <p>레거시 제품 요구 사항: 조직에서 이 문서에 설명된 기능을 사용하려면 Adobe Workfront Fusion과 Adobe Workfront을 구입해야 합니다.</p>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-보유 중인 플랜, 라이선스 유형 또는 액세스 권한을 확인하려면 Workfront 관리자에게 문의하십시오.
+이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
+
++++
 
 ## Workfront Fusion에 [!DNL GitLab] 연결 {#connect-gitlab-to-workfront-fusion}
 
@@ -323,7 +322,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 예약된 트리거 모듈은 새로운 할 일이 추가되면 시나리오를 시작합니다. 필터가 적용되지 않은 경우 새 보류 중인 작업이 추가되면 트리거가 실행됩니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/todos.html#get-a-list-of-todos)할 일 목록 가져오기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/todos.html#get-a-list-of-todos)할 일 목록 가져오기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -350,7 +349,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 제출된 변경 사항을 지정된 병합 요청과 병합합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/merge_requests.html#accept-mr)병합 요청 수락[!DNL GitLab]을 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/merge_requests.html#accept-mr)병합 요청 수락[!DNL GitLab]을 참조하십시오.
 
 +++
 
@@ -400,7 +399,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 단일 파이프라인에 대한 빌드를 취소합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/pipelines.html#cancel-a-pipelines-jobs)파이프라인 작업 취소[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/pipelines.html#cancel-a-pipelines-jobs)파이프라인 작업 취소[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -408,7 +407,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 파이프라인이 성공할 때 병합 요청이 병합으로 설정되면 이 작업 모듈은 해당 작업을 취소합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/merge_requests.html)파이프라인이 성공하면 병합 취소[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/merge_requests.html)파이프라인이 성공하면 병합 취소[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -416,7 +415,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈 체리는 지정된 분기에 대한 커밋을 선택합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/commits.html#cherry-pick-a-commit)Cherry 커밋 선택[!DNL GitLab]을 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/commits.html#cherry-pick-a-commit)Cherry 커밋 선택[!DNL GitLab]을 참조하십시오.
 
 +++
 
@@ -424,7 +423,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 지정된 저장소에 대한 새 레이블을 만듭니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/labels.html#create-a-new-label)새 레이블 만들기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/labels.html#create-a-new-label)새 레이블 만들기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -432,7 +431,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 지정된 프로젝트에 대한 새 파이프라인을 만듭니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/pipelines.html#create-a-new-pipeline)새 파이프라인 만들기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/pipelines.html#create-a-new-pipeline)새 파이프라인 만들기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -440,7 +439,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 기존 git 태그에 릴리스 정보를 추가합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/releases/#create-a-release)릴리스 만들기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/releases/#create-a-release)릴리스 만들기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -448,7 +447,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 제공된 참조를 가리키는 새 태그를 저장소에 만듭니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/tags.html#create-a-new-tag)새 태그 만들기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/tags.html#create-a-new-tag)새 태그 만들기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -456,7 +455,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 선택한 문제에 대한 현재 사용자의 할 일을 만듭니다. 현재 사용자는 이 모듈에 사용되는 연결에 대한 자격 증명으로 식별되는 사용자입니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/issues.html#create-a-todo)할 일 만들기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/issues.html#create-a-todo)할 일 만들기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -464,7 +463,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 선택한 병합 요청에 대해 현재 사용자에 대한 작업을 만듭니다. 현재 사용자는 이 모듈에 사용되는 연결에 대한 자격 증명으로 식별되는 사용자입니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/merge_requests.html#create-a-todo)할 일 만들기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/merge_requests.html#create-a-todo)할 일 만들기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -472,7 +471,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 프로젝트에 대한 새 병합 요청을 만듭니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/merge_requests.html#create-mr)병합 요청 만들기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/merge_requests.html#create-mr)병합 요청 만들기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -480,7 +479,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 선택한 저장소에 새 파일을 만듭니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/repository_files.html#create-new-file-in-repository)저장소에 새 파일 만들기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/repository_files.html#create-new-file-in-repository)저장소에 새 파일 만들기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -488,7 +487,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 단일 프로젝트 문제에 대한 문제 메모를 만듭니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/notes.html#create-new-issue-note)새 문제 메모 만들기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/notes.html#create-new-issue-note)새 문제 메모 만들기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -496,7 +495,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 단일 병합 요청에 대한 메모를 생성합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/notes.html#create-new-merge-request-note)새 병합 요청 메모 만들기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/notes.html#create-new-merge-request-note)새 병합 요청 메모 만들기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -504,7 +503,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 프로젝트에 대한 새 이정표를 만듭니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/milestones.html#create-new-milestone)새 마일스톤 만들기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/milestones.html#create-new-milestone)새 마일스톤 만들기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -512,7 +511,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 단일 코드 조각에 대한 새 메모를 만듭니다. 코드 조각 노트는 사용자가 코드 조각에 게시할 수 있는 주석입니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/notes.html#create-new-snippet-note)새 코드 조각 메모 만들기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/notes.html#create-new-snippet-note)새 코드 조각 메모 만들기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -520,7 +519,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 단일 저장소 분기를 만듭니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/branches.html#create-repository-branch)저장소 분기 만들기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/branches.html#create-repository-branch)저장소 분기 만들기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -528,7 +527,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 새 빌드 변수를 만듭니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/project_level_variables.html#create-variable)변수 만들기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/project_level_variables.html#create-variable)변수 만들기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -536,7 +535,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 관리자 및 프로젝트 소유자만 사용할 수 있습니다. 문제가 되는 병합 요청이 삭제됩니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/merge_requests.html#delete-a-merge-request)병합 요청 삭제[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/merge_requests.html#delete-a-merge-request)병합 요청 삭제[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -544,7 +543,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 저장소에서 기존 파일을 삭제합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/repository_files.html#delete-existing-file-in-repository)저장소의 기존 파일 삭제[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/repository_files.html#delete-existing-file-in-repository)저장소의 기존 파일 삭제[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -552,7 +551,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 저장소에서 분기를 삭제합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/branches.html#delete-repository-branch)저장소 분기 삭제[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/branches.html#delete-repository-branch)저장소 분기 삭제[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -560,14 +559,14 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 기존 프로젝트 문제를 업데이트합니다. 이 호출은 문제를 종료로 표시하는 데에도 사용됩니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/issues.html#edit-issue)문제 편집[!DNL GitLab]을 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/issues.html#edit-issue)문제 편집[!DNL GitLab]을 참조하십시오.
 
 +++
 
 +++**[!UICONTROL 마일스톤 편집]**
 이 작업 모듈은 기존 프로젝트 이정표를 업데이트합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/milestones.html#edit-milestone)마일스톤 편집[!DNL GitLab]을 참조하세요.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/milestones.html#edit-milestone)마일스톤 편집[!DNL GitLab]을 참조하세요.
 
 +++
 
@@ -575,7 +574,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 프로젝트 빌드를 지웁니다(작업 아티팩트 및 작업 로그 제거).
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/jobs.html#erase-a-job)작업 지우기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/jobs.html#erase-a-job)작업 지우기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -583,7 +582,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 검색 모듈은 할 일 항목의 목록을 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/todos.html#get-a-list-of-todos)할 일 목록 가져오기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/todos.html#get-a-list-of-todos)할 일 목록 가져오기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -591,7 +590,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 프로젝트의 단일 작업을 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/jobs.html#get-a-single-job)단일 작업 가져오기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/jobs.html#get-a-single-job)단일 작업 가져오기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -599,7 +598,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 해당 이름으로 결정된 특정 저장소 태그를 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/tags.html#get-a-single-repository-tag)단일 저장소 태그 가져오기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/tags.html#get-a-single-repository-tag)단일 저장소 태그 가져오기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -607,7 +606,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 특정 배포를 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/deployments.html#get-a-specific-deployment)특정 배포 가져오기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/deployments.html#get-a-specific-deployment)특정 배포 가져오기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -615,7 +614,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 검색 모듈은 단일 프로젝트 마일스톤에 할당된 모든 문제를 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/milestones.html#get-all-issues-assigned-to-a-single-milestone)단일 마일스톤에 할당된 모든 문제 가져오기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/milestones.html#get-all-issues-assigned-to-a-single-milestone)단일 마일스톤에 할당된 모든 문제 가져오기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -623,7 +622,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 이름, 크기 또는 컨텐츠와 같은 저장소의 파일에 대한 정보를 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/repository_files.html#get-file-from-repository)저장소에서 파일 가져오기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/repository_files.html#get-file-from-repository)저장소에서 파일 가져오기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -631,7 +630,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 검색 모듈은 프로젝트의 사용자를 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/projects.html#get-project-users)프로젝트 사용자 가져오기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/projects.html#get-project-users)프로젝트 사용자 가져오기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -645,7 +644,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>새 연결을 만들려면 이 문서에서 <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 연결 [!DNL GitLab]</a>을(를) 참조하십시오.</td> 
+   <td>새 연결을 만들려면 이 문서에서 <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion에 연결 [!DNL GitLab]</a>을(를) 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 프로젝트]</td> 
@@ -664,7 +663,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 특정 프로젝트 문제에 대한 단일 메모를 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/notes.html#get-single-issue-note)단일 문제 메모 가져오기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/notes.html#get-single-issue-note)단일 문제 메모 가져오기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -672,7 +671,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 단일 병합 요청에 대한 정보를 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/merge_requests.html#get-single-mr)단일 병합 요청 가져오기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/merge_requests.html#get-single-mr)단일 병합 요청 가져오기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -680,7 +679,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 검색 모듈은 파일 및 변경 사항을 포함한 병합 요청에 대한 정보를 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/merge_requests.html#get-single-mr-changes)단일 병합 요청 변경 사항 가져오기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/merge_requests.html#get-single-mr-changes)단일 병합 요청 변경 사항 가져오기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -688,7 +687,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 병합 요청 커밋 목록을 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/merge_requests.html#get-single-mr-commits)단일 병합 요청 커밋 가져오기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/merge_requests.html#get-single-mr-commits)단일 병합 요청 커밋 가져오기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -696,7 +695,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 지정된 병합 요청에 대한 단일 메모를 반환합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/notes.html#get-single-merge-request-note)단일 병합 요청 메모 가져오기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/notes.html#get-single-merge-request-note)단일 병합 요청 메모 가져오기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -704,7 +703,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 마일스톤 세부 정보를 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/milestones.html#get-single-milestone)단일 마일스톤 가져오기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/milestones.html#get-single-milestone)단일 마일스톤 가져오기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -712,7 +711,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 프로젝트 세부 정보를 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/projects.html#get-single-project)단일 프로젝트 가져오기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/projects.html#get-single-project)단일 프로젝트 가져오기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -720,7 +719,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 저장소 분기 세부 정보를 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/branches.html#get-single-repository-branch)단일 저장소 분기 가져오기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/branches.html#get-single-repository-branch)단일 저장소 분기 가져오기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -728,7 +727,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 모듈은 지정된 코드 조각에 대한 단일 메모를 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/notes.html#get-single-snippet-note)단일 코드 조각 메모 가져오기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/notes.html#get-single-snippet-note)단일 코드 조각 메모 가져오기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -736,7 +735,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 검색 모듈은 프로젝트에서 커밋 주석을 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/commits.html#get-the-comments-of-a-commit)커밋 주석 가져오기[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/commits.html#get-the-comments-of-a-commit)커밋 주석 가져오기[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -744,7 +743,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 프로젝트의 커밋 차이를 가져옵니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/commits.html#get-the-diff-of-a-commit)커밋 비교[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/commits.html#get-the-diff-of-a-commit)커밋 비교[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -752,7 +751,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 만료 설정 시 아티팩트가 삭제되지 않도록 합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/job_artifacts.html#keep-artifacts)아티팩트 보관[!DNL GitLab]을 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/job_artifacts.html#keep-artifacts)아티팩트 보관[!DNL GitLab]을 참조하십시오.
 
 +++
 
@@ -760,7 +759,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 검색 모듈은 단일 병합 요청에 대한 모든 메모 목록을 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/notes.html#list-all-merge-request-notes)모든 병합 요청 메모 나열[!DNL GitLab]을 참조하세요.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/notes.html#list-all-merge-request-notes)모든 병합 요청 메모 나열[!DNL GitLab]을 참조하세요.
 
 +++
 
@@ -768,7 +767,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 모듈은 단일 코드 조각에 대한 모든 참고 목록을 가져옵니다. 코드 조각 노트는 사용자가 코드 조각에 게시할 수 있는 주석입니다.
 
-필드에 대한 자세한 내용은 [🔗 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/notes.html#list-all-snippet-notes) [!DNL GitLab]을(를) 참조하십시오.
+필드에 대한 자세한 내용은 [🔗 설명서의 ](https://docs.gitlab.com/ee/api/notes.html#list-all-snippet-notes)[!DNL GitLab]을(를) 참조하십시오.
 
 +++
 
@@ -782,7 +781,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>새 연결을 만들려면 이 문서에서 <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 연결 [!DNL GitLab]</a>을(를) 참조하십시오.</td> 
+   <td>새 연결을 만들려면 이 문서에서 <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion에 연결 [!DNL GitLab]</a>을(를) 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 프로젝트 ID]</td> 
@@ -801,7 +800,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 검색 모듈은 지정된 필터 설정에 따라 모든 문제를 반환합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/issues.html#list-issues)문제 나열[!DNL GitLab]을 참조하세요.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/issues.html#list-issues)문제 나열[!DNL GitLab]을 참조하세요.
 
 +++
 
@@ -809,7 +808,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 검색 모듈은 제공된 병합 요청을 병합하여 종결될 모든 문제를 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/merge_requests.html#list-issues-that-will-close-on-merge)병합 시 닫히는 문제 나열[!DNL GitLab]을 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/merge_requests.html#list-issues-that-will-close-on-merge)병합 시 닫히는 문제 나열[!DNL GitLab]을 참조하십시오.
 
 +++
 
@@ -817,7 +816,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 검색 모듈은 프로젝트의 모든 레이블을 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/labels.html#list-labels)목록 레이블[!DNL GitLab]을 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/labels.html#list-labels)목록 레이블[!DNL GitLab]을 참조하십시오.
 
 +++
 
@@ -825,7 +824,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 검색 모듈은 필터 설정별로 모든 병합 요청을 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/merge_requests.html#list-merge-requests)병합 요청 나열[!DNL GitLab]을 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/merge_requests.html#list-merge-requests)병합 요청 나열[!DNL GitLab]을 참조하십시오.
 
 +++
 
@@ -833,7 +832,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 검색 모듈은 인증된 사용자가 소유자로 설정된 프로젝트를 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/projects.html#list-all-projects)사용자 프로젝트 나열[!DNL GitLab]을 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/projects.html#list-all-projects)사용자 프로젝트 나열[!DNL GitLab]을 참조하십시오.
 
 +++
 
@@ -841,7 +840,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 검색 모듈은 프로젝트의 빌드 목록을 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/jobs.html#list-project-jobs)프로젝트 작업 나열[!DNL GitLab]을 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/jobs.html#list-project-jobs)프로젝트 작업 나열[!DNL GitLab]을 참조하십시오.
 
 +++
 
@@ -849,7 +848,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 검색 모듈은 프로젝트의 배포 목록을 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/deployments.html#list-project-deployments)프로젝트 배포 나열[!DNL GitLab]을 참조하세요.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/deployments.html#list-project-deployments)프로젝트 배포 나열[!DNL GitLab]을 참조하세요.
 
 +++
 
@@ -857,7 +856,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 검색 모듈은 단일 문제에 대한 모든 참고 사항 목록을 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/notes.html#list-project-issue-notes)프로젝트 문제 메모 나열[!DNL GitLab]을 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/notes.html#list-project-issue-notes)프로젝트 문제 메모 나열[!DNL GitLab]을 참조하십시오.
 
 +++
 
@@ -865,7 +864,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 검색 모듈은 지정된 프로젝트의 모든 문제를 반환합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/issues.html#list-project-issues)프로젝트 문제 나열[!DNL GitLab]을 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/issues.html#list-project-issues)프로젝트 문제 나열[!DNL GitLab]을 참조하십시오.
 
 +++
 
@@ -873,7 +872,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 검색 모듈은 프로젝트의 모든 이정표를 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/milestones.html#list-project-milestones)프로젝트 마일스톤 나열[!DNL GitLab]을 참조하세요.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/milestones.html#list-project-milestones)프로젝트 마일스톤 나열[!DNL GitLab]을 참조하세요.
 
 +++
 
@@ -881,7 +880,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 검색 모듈은 프로젝트의 모든 파이프라인을 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/pipelines.html#list-project-pipelines)프로젝트 파이프라인 나열[!DNL GitLab]을 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/pipelines.html#list-project-pipelines)프로젝트 파이프라인 나열[!DNL GitLab]을 참조하십시오.
 
 +++
 
@@ -889,7 +888,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 검색 모듈은 이름별로 알파벳 역순으로 정렬된 프로젝트에서 저장소 태그 목록을 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/tags.html#list-project-repository-tags)프로젝트 저장소 태그 나열[!DNL GitLab]을 참조하세요.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/tags.html#list-project-repository-tags)프로젝트 저장소 태그 나열[!DNL GitLab]을 참조하세요.
 
 +++
 
@@ -897,7 +896,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 검색 모듈은 프로젝트 변수 목록을 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/project_level_variables.html#list-project-variables)프로젝트 변수 나열[!DNL GitLab]을 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/project_level_variables.html#list-project-variables)프로젝트 변수 나열[!DNL GitLab]을 참조하십시오.
 
 +++
 
@@ -905,7 +904,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 검색 모듈은 인증된 사용자가 멤버인 모든 프로젝트를 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/projects.html#list-all-projects)모든 프로젝트 나열[!DNL GitLab]을 참조하세요.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/projects.html#list-all-projects)모든 프로젝트 나열[!DNL GitLab]을 참조하세요.
 
 +++
 
@@ -913,7 +912,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 모듈은 검색어로 저장소 분기를 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/branches.html#list-repository-branches)저장소 분기 나열[!DNL GitLab]을 참조하세요.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/branches.html#list-repository-branches)저장소 분기 나열[!DNL GitLab]을 참조하세요.
 
 +++
 
@@ -921,7 +920,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 검색 모듈은 프로젝트의 저장소 커밋 목록을 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/commits.html#list-repository-commits)저장소 커밋 나열[!DNL GitLab]을 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/commits.html#list-repository-commits)저장소 커밋 나열[!DNL GitLab]을 참조하십시오.
 
 +++
 
@@ -929,7 +928,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 검색 모듈은 저장소 기여자 목록을 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/repositories.html#contributors)참가자[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/repositories.html#contributors)참가자[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -937,7 +936,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 검색 모듈은 프로젝트의 저장소 파일 및 디렉터리 목록을 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/repositories.html#list-repository-tree)목록 저장소 트리[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/repositories.html#list-repository-tree)목록 저장소 트리[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -945,7 +944,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 현재 사용자에 대해 해당 ID로 지정된 단일 보류 중인 할 일 항목을 완료 상태로 표시합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/todos.html#mark-a-todo-as-done)수행할 항목 표시[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/todos.html#mark-a-todo-as-done)수행할 항목 표시[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -953,7 +952,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 문제의 기존 메모를 수정합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/notes.html#modify-existing-issue-note)기존 문제 메모 수정[!DNL GitLab]을 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/notes.html#modify-existing-issue-note)기존 문제 메모 수정[!DNL GitLab]을 참조하십시오.
 
 +++
 
@@ -961,7 +960,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 병합 요청의 기존 메모를 수정합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/notes.html#modify-existing-merge-request-note)기존 병합 요청 메모 수정[!DNL GitLab]을 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/notes.html#modify-existing-merge-request-note)기존 병합 요청 메모 수정[!DNL GitLab]을 참조하십시오.
 
 +++
 
@@ -969,7 +968,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 코드 조각의 기존 메모를 수정합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://docs.gitlab.com/ee/api/notes.html#modify-existing-snippet-note)기존 코드 조각 메모 수정[!DNL GitLab]을 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://docs.gitlab.com/ee/api/notes.html#modify-existing-snippet-note)기존 코드 조각 메모 수정[!DNL GitLab]을 참조하십시오.
 
 +++
 
@@ -977,7 +976,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 새 프로젝트 문제를 만듭니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서에서 &#x200B;](https://www.integromat.com/en/help/app/gitlab)새 문제[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서에서 ](https://www.integromat.com/en/help/app/gitlab)새 문제[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -985,7 +984,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 작업을 시작하는 수동 작업을 트리거합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/jobs.html#play-a-job)작업 재생[!DNL GitLab]을 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/jobs.html#play-a-job)작업 재생[!DNL GitLab]을 참조하십시오.
 
 +++
 
@@ -993,7 +992,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 커밋에 주석을 추가합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/commits.html#post-comment-to-commit)커밋에 대한 댓글 게시[!DNL GitLab]을 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/commits.html#post-comment-to-commit)커밋에 대한 댓글 게시[!DNL GitLab]을 참조하십시오.
 
 +++
 
@@ -1001,7 +1000,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 프로젝트의 변수를 제거합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/project_level_variables.html#remove-variable)변수 제거[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/project_level_variables.html#remove-variable)변수 제거[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -1015,7 +1014,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>새 연결을 만들려면 이 문서에서 <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 연결 [!DNL GitLab]</a>을(를) 참조하십시오.</td> 
+   <td>새 연결을 만들려면 이 문서에서 <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion에 연결 [!DNL GitLab]</a>을(를) 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 프로젝트 ID]</td> 
@@ -1034,7 +1033,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 파이프라인에서 빌드를 다시 시도하지 못했습니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/pipelines.html#retry-jobs-in-a-pipeline)파이프라인에서 작업 다시 시도[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/pipelines.html#retry-jobs-in-a-pipeline)파이프라인에서 작업 다시 시도[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -1042,7 +1041,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 모듈은 프로젝트 특정 변수의 세부 정보를 검색합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/project_level_variables.html#show-variable-details)변수 세부 정보 표시[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/project_level_variables.html#show-variable-details)변수 세부 정보 표시[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -1050,7 +1049,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 릴리스를 업데이트합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/releases/#update-a-release)릴리스 업데이트[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/releases/#update-a-release)릴리스 업데이트[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -1058,7 +1057,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 기존 병합 요청을 업데이트합니다. 대상 지점, 제목을 변경하거나 MR을 닫을 수 있습니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/merge_requests.html#update-mr)병합 요청 업데이트[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/merge_requests.html#update-mr)병합 요청 업데이트[!DNL GitLab]를 참조하십시오.
 
 +++
 
@@ -1066,6 +1065,6 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 이 작업 모듈은 프로젝트의 변수를 업데이트합니다.
 
-필드에 대한 자세한 내용은 [&#x200B; 설명서의 &#x200B;](https://docs.gitlab.com/ee/api/project_level_variables.html#update-variable)변수 업데이트[!DNL GitLab]를 참조하십시오.
+필드에 대한 자세한 내용은 [ 설명서의 ](https://docs.gitlab.com/ee/api/project_level_variables.html#update-variable)변수 업데이트[!DNL GitLab]를 참조하십시오.
 
 +++

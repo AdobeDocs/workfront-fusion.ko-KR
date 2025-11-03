@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion [!DNL Google Docs] 모듈을 사용하면  [
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: cd44250d-c2cd-46b2-8773-15b30472a8d8
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '4087'
+source-wordcount: '4093'
 ht-degree: 0%
 
 ---
@@ -25,34 +25,29 @@ Adobe Workfront Fusion에서 [!DNL Google Docs]을(를) 사용하려면 [!DNL Go
 
 +++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
 
-이 문서의 기능을 사용하려면 다음 액세스 권한이 있어야 합니다.
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront 패키지</td> 
-   <td> <p>임의</p> </td> 
+   <td> <p>모든 Adobe Workfront 워크플로 패키지 및 모든 Adobe Workfront 자동화 및 통합 패키지</p><p>Workfront Ultimate</p><p>Workfront Prime 및 Select 패키지 및 Workfront Fusion 추가 구매.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront 라이선스</td> 
-   <td> <p>새로운 기능: 표준</p><p>또는</p><p>현재: 작업 시간 이상</p> </td> 
+   <td> <p>표준</p><p>작업 이상</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
+   <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
-   <p>또는</p>
-   <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
+   <p>작업 기반: Workfront Fusion 라이센스 요구 사항 없음</p>
+   <p>커넥터 기반(레거시): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>신규:</p> <ul><li>또는 Prime Workfront 패키지 선택: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</li><li>Ultimate Workfront 패키지: Workfront Fusion이 포함됩니다.</li></ul>
-   <p>또는</p>
-   <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -138,7 +133,7 @@ Google Docs 커넥터는 다음을 사용합니다.
    <td> <p>문서를 만들 드라이브 유형을 선택합니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL 내 드라이브]</strong> </p> <p>새 문서의 위치 필드에서 문서를 만들 폴더를 선택합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL 이 나와 공유됨]</strong> </p> <p>새 문서의 위치 필드에서 문서를 만들 폴더를 선택합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL이 나와 공유됨]</strong> </p> <p>새 문서의 위치 필드에서 문서를 만들 폴더를 선택합니다.</p> </li> 
      <li> <p><strong>[!UICONTROL [!DNL Google] 공유 드라이브]</strong>([!DNL Google Workspace] 사용자만 사용 가능)</p> <p>[!UICONTROL Use Domain Admin Access]를 사용할지 여부를 선택합니다. [!UICONTROL 예]를 선택하면 도메인 관리자로서 요청이 발행되고 요청자가 관리자인 모든 공유 드라이브가 반환됩니다.</p> <p>문서를 만들 공유 드라이브를 선택합니다.</p> <p>참고: 이 필드에서 [!DNL Google Docs] 옵션을 선택했지만 사용자가 [!DNL Google Workspace]이(가) 아닌 경우 <code>[400] Invalid Value</code> 오류가 반환됩니다.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -178,7 +173,7 @@ Google Docs 커넥터는 다음을 사용합니다.
    <td> <p>템플릿이 있는 드라이브 유형을 선택합니다. 이 옵션은 이전 필드에서 [!UICONTROL By Dropdown]을 선택한 경우 사용할 수 있습니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL 내 드라이브]</strong> </p>  </li> 
-     <li> <p><strong>[!UICONTROL 이 나와 공유됨]</strong> </p> <p> </li> 
+     <li> <p><strong>[!UICONTROL이 나와 공유됨]</strong> </p> <p> </li> 
      <li> <p><strong>[!UICONTROL [!DNL Google] 공유 드라이브]</strong>([!DNL Google Workspace] 사용자만 사용 가능)</p> <p>[!UICONTROL Use Domain Admin Access]를 사용할지 여부를 선택합니다. [!UICONTROL 예]를 선택하면 도메인 관리자로서 요청이 발행되고 요청자가 관리자인 모든 공유 드라이브가 반환됩니다.</p> <p>템플릿이 있는 공유 드라이브를 선택합니다.</p> <p>참고: 이 필드에서 [!DNL Google Docs] 옵션을 선택했지만 사용자가 [!DNL Google Workspace]이(가) 아닌 경우 <code>[400] Invalid Value</code> 오류가 반환됩니다.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -191,7 +186,7 @@ Google Docs 커넥터는 다음을 사용합니다.
    <td> <p>값을 입력하려는 각 태그에 대해 <b>항목 추가</b>를 클릭하고 태그를 입력한 다음 새 문서에 태그 대신 입력할 값을 입력합니다.</p> 
     <ul> 
      <li><strong>[!UICONTROL 태그]</strong> <br>문서 템플릿에 포함된 태그를 입력합니다. <code>&#123;&#123;&#125;&#125;</code>을(를) 사용하지 마십시오. 예: <code>name</code> 대신 <code>&#123;&#123;name&#125;&#125;</code> 사용.</li> 
-     <li><strong>[!UICONTROL 이 값을 대체했습니다]</strong><br>태그의 값을 입력하십시오.</li> 
+     <li><strong>[!UICONTROL이 값을 대체했습니다]</strong><br>태그의 값을 입력하십시오.</li> 
     </ul> <p>예를 들어 소스 문서의 <code> &#123;&#123;name&#125;&#125;</code> 변수는 <code>John</code>과 같이 값을 삽입할 수 있는 여기에서 이름 필드로 표시됩니다.</p> </td> 
   </tr> 
   <tr> 
@@ -212,7 +207,7 @@ Google Docs 커넥터는 다음을 사용합니다.
    <td> <p>템플릿이 있는 드라이브 유형을 선택합니다. 이 옵션은 이전 필드에서 [!UICONTROL By Dropdown]을 선택한 경우 사용할 수 있습니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL 내 드라이브]</strong> </p> <p>문서를 만들 폴더를 선택합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL 이 나와 공유됨]</strong> </p> <p>문서를 만들 폴더를 선택합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL이 나와 공유됨]</strong> </p> <p>문서를 만들 폴더를 선택합니다.</p> </li> 
      <li> <p><strong>[!UICONTROL [!DNL Google] 공유 드라이브]</strong>([!DNL Google Workspace] 사용자만 사용 가능)</p> <p>[!UICONTROL Use Domain Admin Access]를 사용할지 여부를 선택합니다. [!UICONTROL 예]를 선택하면 도메인 관리자로서 요청이 발행되고 요청자가 관리자인 모든 공유 드라이브가 반환됩니다.</p> <p>문서를 만들 공유 드라이브를 선택합니다.</p> <p>참고: 이 필드에서 [!DNL Google Docs] 옵션을 선택했지만 사용자가 [!DNL Google Workspace]이(가) 아닌 경우 <code>[400] Invalid Value</code> 오류가 반환됩니다.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -236,7 +231,7 @@ Google Docs 커넥터는 다음을 사용합니다.
    <td> <p>삭제하려는 문서가 있는 드라이브 유형을 선택합니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL 내 드라이브]</strong> </p> <p>삭제할 문서가 있는 폴더를 선택한 다음 문서를 선택합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL 이 나와 공유됨]</strong> </p> <p>삭제할 문서가 있는 폴더를 선택한 다음 문서를 선택합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL이 나와 공유됨]</strong> </p> <p>삭제할 문서가 있는 폴더를 선택한 다음 문서를 선택합니다.</p> </li> 
      <li> <p><strong>[!UICONTROL [!DNL Google] 공유 드라이브]</strong>([!DNL Google Workspace] 사용자만 사용 가능)</p> <p>[!UICONTROL Use Domain Admin Access]를 사용할지 여부를 선택합니다. [!UICONTROL 예]를 선택하면 도메인 관리자로서 요청이 발행되고 요청자가 관리자인 모든 공유 드라이브가 반환됩니다.</p> <p>삭제할 문서가 있는 공유 드라이브를 선택한 다음 문서를 선택합니다.</p> <p>참고: 이 필드에서 [!DNL Google Docs] 옵션을 선택했지만 사용자가 [!DNL Google Workspace]이(가) 아닌 경우 <code>[400] Invalid Value</code> 오류가 반환됩니다.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -268,7 +263,7 @@ Google Docs 커넥터는 다음을 사용합니다.
    <td> <p>다운로드할 문서가 있는 드라이브 유형을 선택합니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL 내 드라이브]</strong> </p> <p>문서 ID 필드에서 다운로드할 문서가 있는 폴더를 선택한 다음 문서를 선택합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL 이 나와 공유됨]</strong> </p> <p>문서 ID 필드에서 다운로드할 문서가 있는 폴더를 선택한 다음 문서를 선택합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL이 나와 공유됨]</strong> </p> <p>문서 ID 필드에서 다운로드할 문서가 있는 폴더를 선택한 다음 문서를 선택합니다.</p> </li> 
      <li> <p><strong>[!UICONTROL [!DNL Google] 공유 드라이브]</strong>([!DNL Google Workspace] 사용자만 사용 가능)</p> <p>[!UICONTROL Use Domain Admin Access]를 사용할지 여부를 선택합니다. [!UICONTROL 예]를 선택하면 도메인 관리자로서 요청이 발행되고 요청자가 관리자인 모든 공유 드라이브가 반환됩니다.</p> <p>다운로드할 문서가 있는 공유 드라이브를 선택한 다음 문서를 선택합니다.</p> <p>참고: 이 필드에서 [!DNL Google Docs] 옵션을 선택했지만 사용자가 [!DNL Google Workspace]이(가) 아닌 경우 <code>[400] Invalid Value</code> 오류가 반환됩니다.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -302,7 +297,7 @@ Google Docs 커넥터는 다음을 사용합니다.
    <td> <p>검색할 문서가 포함된 드라이브 유형을 선택합니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL 내 드라이브]</strong> </p> <p>검색할 문서가 포함된 폴더를 선택합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL 이 나와 공유됨]</strong> </p> <p>검색할 문서가 포함된 폴더를 선택합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL이 나와 공유됨]</strong> </p> <p>검색할 문서가 포함된 폴더를 선택합니다.</p> </li> 
      <li> <p><strong>[!UICONTROL [!DNL Google] 공유 드라이브]</strong>([!DNL Google Workspace] 사용자만 사용 가능)</p> <p>[!UICONTROL Use Domain Admin Access]를 사용할지 여부를 선택합니다. [!UICONTROL 예]를 선택하면 도메인 관리자로서 요청이 발행되고 요청자가 관리자인 모든 공유 드라이브가 반환됩니다.</p> <p>검색할 문서가 포함된 공유 드라이브를 선택합니다.</p> <p>참고: 이 필드에서 [!DNL Google Docs] 옵션을 선택했지만 사용자가 [!DNL Google Workspace]이(가) 아닌 경우 <code>[400] Invalid Value</code> 오류가 반환됩니다.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -347,7 +342,7 @@ Google Docs 커넥터는 다음을 사용합니다.
    <td> <p>단락을 추가할 문서가 있는 드라이브 유형을 선택합니다. 이 옵션은 이전 필드에서 [!UICONTROL By Dropdown]을 선택한 경우 사용할 수 있습니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL 내 드라이브]</strong> </p> <p>단락을 추가할 문서가 있는 폴더를 선택합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL 이 나와 공유됨]</strong> </p> <p>단락을 추가할 문서가 있는 폴더를 선택합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL이 나와 공유됨]</strong> </p> <p>단락을 추가할 문서가 있는 폴더를 선택합니다.</p> </li> 
      <li> <p><strong>[!UICONTROL [!DNL Google] 공유 드라이브]</strong>([!DNL Google Workspace] 사용자만 사용 가능)</p> <p>[!UICONTROL Use Domain Admin Access]를 사용할지 여부를 선택합니다. [!UICONTROL 예]를 선택하면 도메인 관리자로서 요청이 발행되고 요청자가 관리자인 모든 공유 드라이브가 반환됩니다.</p> <p>단락을 추가할 문서가 있는 공유 드라이브를 선택한 다음 문서를 선택합니다.</p> <p>참고: 이 필드에서 [!DNL Google Docs] 옵션을 선택했지만 사용자가 [!DNL Google Workspace]이(가) 아닌 경우 <code>[400] Invalid Value</code> 오류가 반환됩니다.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -359,14 +354,14 @@ Google Docs 커넥터는 다음을 사용합니다.
    <td role="rowheader"> <p>[!UICONTROL 단락 삽입]</p> </td> 
    <td> <p>문서에 새 텍스트를 삽입할 방법을 선택합니다.</p> 
     <ul> 
-     <li> <p>위치 지정별 <strong></strong> </p> 
+     <li> <p>위치 지정별 <strong>[!UICONTROL]</strong> </p> 
       <ul> 
        <li> <p><strong>[!UICONTROL By index]</strong> </p> 
         <ul> 
          <li> <p><strong>[!UICONTROL 인덱스]</strong> </p> <p>텍스트를 삽입할 색인 번호를 입력합니다. [!UICONTROL Get a Document] 모듈을 사용하여 인덱스 번호를 검색할 수 있습니다.</p> </li> 
          <li> <p><strong>[!UICONTROL 삽입된 텍스트]</strong> </p> <p>문서에 삽입할 텍스트를 입력합니다.</p> </li> 
         </ul> </li> 
-       <li> <p>세그먼트 ID별 <strong></strong> </p> <p>텍스트 내용을 삽입할 머리글과 바닥글을 선택하고 해당 필드에 삽입할 텍스트를 입력합니다.</p> <p>머리글이나 바닥글에 이미 텍스트가 포함되어 있으면 새 텍스트가 기존 텍스트 앞에 추가됩니다.</p> </li> 
+       <li> <p>세그먼트 ID별 <strong>[!UICONTROL]</strong> </p> <p>텍스트 내용을 삽입할 머리글과 바닥글을 선택하고 해당 필드에 삽입할 텍스트를 입력합니다.</p> <p>머리글이나 바닥글에 이미 텍스트가 포함되어 있으면 새 텍스트가 기존 텍스트 앞에 추가됩니다.</p> </li> 
       </ul> </li> 
      <li> <p><strong>[!UICONTROL 문서 본문에 추가]</strong> </p> <p>문서의 본문 내용 끝에 입력한 텍스트를 추가합니다.</p> <p>새 단락의 스타일은 목록 및 글머리 기호를 포함하여 현재 삽입 색인의 단락에서 복사됩니다.</p> </li> 
     </ul> 
@@ -406,7 +401,7 @@ Google Docs 커넥터는 다음을 사용합니다.
    <td> <p>이미지를 추가할 문서가 있는 드라이브 유형을 선택합니다. 이 옵션은 이전 필드에서 [!UICONTROL By Dropdown]을 선택한 경우 사용할 수 있습니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL 내 드라이브]</strong> </p> <p>이미지를 추가할 문서가 있는 폴더를 선택합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL 이 나와 공유됨]</strong> </p> <p>이미지를 추가할 문서가 있는 폴더를 선택합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL이 나와 공유됨]</strong> </p> <p>이미지를 추가할 문서가 있는 폴더를 선택합니다.</p> </li> 
      <li> <p><strong>[!UICONTROL [!DNL Google] 공유 드라이브]</strong>([!DNL Google Workspace] 사용자만 사용 가능)</p> <p>[!UICONTROL Use Domain Admin Access]를 사용할지 여부를 선택합니다. [!UICONTROL 예]를 선택하면 도메인 관리자로서 요청이 발행되고 요청자가 관리자인 모든 공유 드라이브가 반환됩니다.</p> <p>이미지를 추가할 문서가 있는 공유 드라이브를 선택한 다음 문서를 선택합니다.</p> <p>참고: 이 필드에서 [!DNL Google Docs] 옵션을 선택했지만 사용자가 [!DNL Google Workspace]이(가) 아닌 경우 <code>[400] Invalid Value</code> 오류가 반환됩니다.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -418,14 +413,14 @@ Google Docs 커넥터는 다음을 사용합니다.
    <td role="rowheader"> <p>[!UICONTROL 이미지 삽입]</p> </td> 
    <td> <p>문서에 새 이미지를 삽입할 방법을 선택합니다.</p> 
     <ul> 
-     <li> <p>위치 지정별 <strong></strong> </p> 
+     <li> <p>위치 지정별 <strong>[!UICONTROL]</strong> </p> 
       <ul> 
        <li> <p><strong>[!UICONTROL By index]</strong> </p> 
         <ul> 
          <li> <p><strong>[!UICONTROL 인덱스]</strong> </p> <p>이미지를 삽입할 인덱스 번호를 입력합니다. [!UICONTROL Get a Document] 모듈을 사용하여 [!UICONTROL Index number]를 검색할 수 있습니다.</p>  </li> 
          <li> <p><strong>[!UICONTROL 이미지 URL]</strong> </p> <p>문서에 삽입할 이미지의 URL을 입력합니다.</p> <p>최대 이미지 크기는 50MB입니다. 2,500만 픽셀을 초과할 수 없습니다. PNG, JPEG 또는 GIF 형식만 지원됩니다.</p> </li> 
         </ul> </li> 
-       <li> <p>세그먼트 ID별 <strong></strong> </p> <p>이미지를 삽입할 머리글과 바닥글을 선택하고 해당 필드에 이미지 URL을 입력합니다.</p> <p>최대 이미지 크기는 50MB입니다. 이미지는 2,500만 픽셀을 초과할 수 없습니다. PNG, JPEG 또는 GIF 형식만 지원됩니다.</p> </li> 
+       <li> <p>세그먼트 ID별 <strong>[!UICONTROL]</strong> </p> <p>이미지를 삽입할 머리글과 바닥글을 선택하고 해당 필드에 이미지 URL을 입력합니다.</p> <p>최대 이미지 크기는 50MB입니다. 이미지는 2,500만 픽셀을 초과할 수 없습니다. PNG, JPEG 또는 GIF 형식만 지원됩니다.</p> </li> 
       </ul> </li> 
      <li> <p><strong>[!UICONTROL 문서 본문에 추가]</strong> </p> <p>문서의 본문 내용 끝에 특정 이미지를 추가합니다.</p> </li> 
     </ul> 
@@ -457,7 +452,7 @@ Google Docs 커넥터는 다음을 사용합니다.
    <td> <p>문서를 나열할 드라이브 유형을 선택합니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL 내 드라이브]</strong> </p> <p>문서 목록을 표시할 폴더를 선택합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL 이 나와 공유됨]</strong> </p> <p>문서 목록을 표시할 폴더를 선택합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL이 나와 공유됨]</strong> </p> <p>문서 목록을 표시할 폴더를 선택합니다.</p> </li> 
      <li> <p><strong>[!UICONTROL [!DNL Google] 공유 드라이브]</strong>([!DNL Google Workspace] 사용자만 사용 가능)</p> <p>[!UICONTROL Use Domain Admin Access]를 사용할지 여부를 선택합니다. [!UICONTROL 예]를 선택하면 도메인 관리자로서 요청이 발행되고 요청자가 관리자인 모든 공유 드라이브가 반환됩니다.</p> <p>문서를 나열할 공유 드라이브를 선택합니다.</p> <p>참고: 이 필드에서 [!DNL Google Docs] 옵션을 선택했지만 사용자가 [!DNL Google Workspace]이(가) 아닌 경우 <code>[400] Invalid Value</code> 오류가 반환됩니다.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -493,7 +488,7 @@ Google Docs 커넥터는 다음을 사용합니다.
    <td> <p>텍스트를 추가할 문서가 있는 드라이브 유형을 선택합니다. 이 옵션은 이전 필드에서 [!UICONTROL By Dropdown]을 선택한 경우 사용할 수 있습니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL 내 드라이브]</strong> </p> <p>텍스트를 추가할 문서가 있는 폴더를 선택한 다음 문서를 선택합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL 이 나와 공유됨]</strong> </p> <p>텍스트를 추가할 문서가 있는 폴더를 선택한 다음 문서를 선택합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL이 나와 공유됨]</strong> </p> <p>텍스트를 추가할 문서가 있는 폴더를 선택한 다음 문서를 선택합니다.</p> </li> 
      <li> <p><strong>[!UICONTROL [!DNL Google] 공유 드라이브]</strong>([!DNL Google Workspace] 사용자만 사용 가능)</p> <p>[!UICONTROL Use Domain Admin Access]를 사용할지 여부를 선택합니다. [!UICONTROL 예]를 선택하면 도메인 관리자로서 요청이 발행되고 요청자가 관리자인 모든 공유 드라이브가 반환됩니다.</p> <p>텍스트를 추가할 문서가 있는 공유 드라이브를 선택한 다음 문서를 선택합니다.</p> <p>참고: 이 필드에서 [!DNL Google Docs] 옵션을 선택했지만 사용자가 [!DNL Google Workspace]이(가) 아닌 경우 <code>[400] Invalid Value</code> 오류가 반환됩니다.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -537,7 +532,7 @@ Google Docs 커넥터는 다음을 사용합니다.
    <td> <p>이미지를 바꿀 문서가 있는 드라이브 유형을 선택합니다. 이 옵션은 이전 필드에서 [!UICONTROL By Dropdown]을 선택한 경우 사용할 수 있습니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL 내 드라이브]</strong> </p> <p>이미지를 바꿀 문서가 있는 폴더를 선택한 다음 문서를 선택합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL 이 나와 공유됨]</strong> </p> <p>이미지를 바꿀 문서가 있는 폴더를 선택한 다음 문서를 선택합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL이 나와 공유됨]</strong> </p> <p>이미지를 바꿀 문서가 있는 폴더를 선택한 다음 문서를 선택합니다.</p> </li> 
      <li> <p><strong>[!UICONTROL [!DNL Google] 공유 드라이브]</strong>([!DNL Google Workspace] 사용자만 사용 가능)</p> <p>[!UICONTROL Use Domain Admin Access]를 사용할지 여부를 선택합니다. [!UICONTROL 예]를 선택하면 도메인 관리자로서 요청이 발행되고 요청자가 관리자인 모든 공유 드라이브가 반환됩니다.</p> <p>이미지를 바꿀 문서가 있는 공유 드라이브를 선택한 다음 문서를 선택합니다.</p> <p>참고: 이 필드에서 [!DNL Google Docs] 옵션을 선택했지만 사용자가 [!DNL Google Workspace]이(가) 아닌 경우 <code>[400] Invalid Value</code> 오류가 반환됩니다.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -574,7 +569,7 @@ Google Docs 커넥터는 다음을 사용합니다.
    <td> <p>모니터링할 드라이브 유형을 선택합니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL 내 드라이브]</strong> </p> <p>생성 또는 수정된 문서를 감시할 폴더를 선택합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL 이 나와 공유됨]</strong> </p> <p>생성 또는 수정된 문서를 감시할 폴더를 선택합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL이 나와 공유됨]</strong> </p> <p>생성 또는 수정된 문서를 감시할 폴더를 선택합니다.</p> </li> 
      <li> <p><strong>[!UICONTROL [!DNL Google] 공유 드라이브]</strong>([!DNL Google Workspace] 사용자만 사용 가능)</p> <p>[!UICONTROL Use Domain Admin Access]를 사용할지 여부를 선택합니다. [!UICONTROL 예]를 선택하면 도메인 관리자로서 요청이 발행되고 요청자가 관리자인 모든 공유 드라이브가 반환됩니다.</p> <p>보려는 공유 드라이브를 선택합니다.</p> <p>참고: 이 필드에서 [!DNL Google Shared Drive] 옵션을 선택했지만 사용자가 [!DNL Google Workspace]이(가) 아닌 경우 <code>[400] Invalid Value</code> 오류가 반환됩니다.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -615,7 +610,7 @@ Google Docs 커넥터는 다음을 사용합니다.
    <td> <p>링크를 클릭할 수 있게 하려는 문서가 있는 드라이브 유형을 선택합니다. 이 옵션은 이전 필드에서 [!UICONTROL By Dropdown]을 선택한 경우 사용할 수 있습니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL 내 드라이브]</strong> </p> <p>링크를 클릭할 수 있게 하려는 문서가 있는 폴더를 선택합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL 이 나와 공유됨]</strong> </p> <p>링크를 클릭할 수 있게 하려는 문서가 있는 폴더를 선택합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL이 나와 공유됨]</strong> </p> <p>링크를 클릭할 수 있게 하려는 문서가 있는 폴더를 선택합니다.</p> </li> 
      <li> <p><strong>[!UICONTROL [!DNL Google] 공유 드라이브]</strong>([!DNL Google Workspace] 사용자만 사용 가능)</p> <p>[!UICONTROL Use Domain Admin Access]를 사용할지 여부를 선택합니다. [!UICONTROL 예]를 선택하면 도메인 관리자로서 요청이 발행되고 요청자가 관리자인 모든 공유 드라이브가 반환됩니다.</p> <p>링크를 클릭할 수 있게 하려는 문서가 있는 공유 드라이브를 선택한 다음 문서를 선택합니다.</p> <p>참고: 이 필드에서 [!DNL Google Docs] 옵션을 선택했지만 사용자가 [!DNL Google Workspace]이(가) 아닌 경우 <code>[400] Invalid Value</code> 오류가 반환됩니다.</p> </li> 
     </ul> </td> 
   </tr> 

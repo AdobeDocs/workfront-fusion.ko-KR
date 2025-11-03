@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion JSON 앱은 Adobe Workfront Fusion이 데이
 author: Becky
 feature: Workfront Fusion
 exl-id: f8b281c5-bb63-4412-98c5-d82f45f8eafc
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 1%
+source-wordcount: '1229'
+ht-degree: 0%
 
 ---
 
@@ -19,34 +19,22 @@ Adobe Workfront Fusion [!UICONTROL JSON] 앱은 JSON 형식으로 데이터를 �
 
 +++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
 
-이 문서의 기능을 사용하려면 다음 액세스 권한이 있어야 합니다.
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront 패키지</td> 
-   <td> <p>임의</p> </td> 
+   <td> <p>모든 Adobe Workfront 워크플로 패키지 및 모든 Adobe Workfront 자동화 및 통합 패키지</p><p>Workfront Ultimate</p><p>Workfront Prime 및 Select 패키지 및 Workfront Fusion 추가 구매.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront 라이선스</td> 
-   <td> <p>새로운 기능: 표준</p><p>또는</p><p>현재: 작업 시간 이상</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion 라이센스**</td> 
-   <td>
-   <p>현재: Workfront Fusion 라이선스 요구 사항 없음</p>
-   <p>또는</p>
-   <p>레거시: 작업 자동화 및 통합을 위한 Workfront Fusion </p>
-   </td> 
+   <td> <p>표준</p><p>작업 이상</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>신규:</p> <ul><li>또는 Prime Workfront 패키지 선택: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</li><li>Ultimate Workfront 패키지: Workfront Fusion이 포함됩니다.</li></ul>
-   <p>또는</p>
-   <p>현재: 조직은 Adobe Workfront Fusion을 구매해야 합니다.</p>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -54,9 +42,9 @@ Adobe Workfront Fusion [!UICONTROL JSON] 앱은 JSON 형식으로 데이터를 �
 
 이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
-
 +++
+
+
 
 ## JSON 구문 분석 시 고려 사항
 
@@ -73,7 +61,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 1. 수동으로 시나리오를 실행합니다. 이렇게 하면 [!UICONTROL JSON 구문 분석] 모듈이 제공한 JSON에서 JSON 구조를 식별할 수 있습니다.
 1. 이제 다음 모듈을 연결할 수 있습니다. 이제 JSON 구문 분석 모듈의 항목을 매핑에 사용할 수 있습니다.
 
-자세한 내용은 [Adobe Workfront Fusion[!UICONTROL 의 &#x200B;]](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)데이터 구조를 참조하십시오.
+자세한 내용은 [Adobe Workfront Fusion[!UICONTROL 의 ]](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)데이터 구조를 참조하십시오.
 
 ### 컬렉션과 배열 비교
 
@@ -252,7 +240,7 @@ JSON 문자열 필드에 배열 `[ ... ]`이(가) 포함된 경우 출력은 일
 
 1. 데이터를 가져오려면 시나리오에 [!DNL Google Sheets] > [!UICONTROL 행 선택] 모듈을 배치하십시오. [!DNL Google] 스프레드시트에서 행을 검색하도록 모듈을 설정합니다. **[!UICONTROL &#x200B;반환된 최대 행 수]**&#x200B;을 작은 수로 설정하되 테스트 목적으로 1보다 크게 설정합니다(예: 3개). [!DNL Google Sheets] 모듈을 마우스 오른쪽 단추로 클릭하고 &quot;**[!UICONTROL 이 모듈만 실행]**&quot;을 선택하여 실행합니다. 모듈의 출력을 확인합니다.
 
-1. [!UICONTROL &#x200B; 모듈 뒤에 &#x200B;]배열 집계[!DNL Google Sheets] 모듈을 연결합니다. 모듈의 설정에서 [!DNL Google Sheets]Source 노드&#x200B;**[!UICONTROL 필드의]** 모듈을 선택합니다. 다른 필드는 현재 상태로 두십시오.
+1. [!UICONTROL  모듈 뒤에 ]배열 집계[!DNL Google Sheets] 모듈을 연결합니다. 모듈의 설정에서 [!DNL Google Sheets]Source 노드&#x200B;**[!UICONTROL 필드의]** 모듈을 선택합니다. 다른 필드는 현재 상태로 두십시오.
 
 1. [!UICONTROL 배열 집계] 모듈 뒤에 [!UICONTROL JSON] > [!UICONTROL JSON 만들기] 모듈을 연결합니다. 모듈의 설정에는 JSON 형식을 설명하는 데이터 구조가 필요합니다. 데이터 구조 설정을 열려면 **[!UICONTROL 추가]**&#x200B;를 클릭하십시오. 이 데이터 구조를 만드는 가장 쉬운 방법은 JSON 샘플에서 자동으로 생성하는 것입니다. **[!UICONTROL 생성기]**&#x200B;를 클릭하고 JSON 샘플을 **[!UICONTROL 샘플 데이터]** 필드에 붙여 넣으십시오.
 

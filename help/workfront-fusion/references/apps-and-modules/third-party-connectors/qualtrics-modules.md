@@ -86,7 +86,7 @@ Qualtrics 커넥터는 다음을 사용합니다.
 
 ## Workfront Fusion에 [!DNL Qualtrics] 연결 중
 
-[!DNL Qualtrics]Qualtrics[!UICONTROL  모듈 내에서 직접 ] 계정에 연결할 수 있습니다.
+[!DNL Qualtrics]Qualtrics[!UICONTROL &#x200B; 모듈 내에서 직접 &#x200B;] 계정에 연결할 수 있습니다.
 
 1. [!UICONTROL Qualtrics] 모듈에서 **[!UICONTROL 연결]** 필드 옆에 있는 [!UICONTROL 추가]를 클릭합니다.
 1. 다음 정보를 입력합니다.

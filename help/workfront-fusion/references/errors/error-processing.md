@@ -148,7 +148,7 @@ Workfront Fusion이 서드파티 서비스에 등록된 계정에 액세스할 �
 >[!NOTE]
 >
 >시나리오가 인스턴트 트리거로 시작되고 이 오류가 발생하면 [!UICONTROL 최대 연속 오류 수] 설정이 무시되고 시나리오가 즉시 비활성화됩니다.
->>자세한 내용은 문서 모듈 개요에서 [인스턴스 트리거](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers)를 참조하십시오.
+>&#x200B;>자세한 내용은 문서 모듈 개요에서 [인스턴스 트리거](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers)를 참조하십시오.
 
 ## 불일치 오류
 

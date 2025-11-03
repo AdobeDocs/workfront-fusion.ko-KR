@@ -92,7 +92,7 @@ ht-degree: 2%
 일반적인 사용 사례는 [!DNL Google] >스프레드시트의 데이터를 XML로 변환하는 것입니다.
 
 1. 데이터를 가져오려면 시나리오에 [!DNL Google Sheets] > [!UICONTROL 행 선택] 모듈을 배치하십시오. [!DNL Google] 스프레드시트에서 행을 검색하도록 모듈을 설정합니다. **[!UICONTROL &#x200B;반환된 최대 행 수]**&#x200B;을 작은 수로 설정하되 테스트 목적으로 1보다 크게 설정합니다(예: 3개). [!DNL Google Sheets] 모듈을 마우스 오른쪽 단추로 클릭하고 &quot;**[!UICONTROL 이 모듈만 실행]**&quot;을 선택하여 실행합니다. 모듈의 출력을 확인합니다.
-1. [!UICONTROL  모듈 뒤에 ]배열 집계[!DNL Google Sheets] 모듈을 연결합니다. 모듈의 설정에서 [!DNL Google Sheets]Source 노드&#x200B;**[!UICONTROL 필드의]** 모듈을 선택합니다. 다른 필드는 현재 상태로 두십시오.
+1. [!UICONTROL &#x200B; 모듈 뒤에 &#x200B;]배열 집계[!DNL Google Sheets] 모듈을 연결합니다. 모듈의 설정에서 [!DNL Google Sheets]Source 노드&#x200B;**[!UICONTROL 필드의]** 모듈을 선택합니다. 다른 필드는 현재 상태로 두십시오.
 1. [!UICONTROL 배열 집계] 모듈 뒤에 [!UICONTROL XML] > [!UICONTROL XML 만들기] 모듈을 연결합니다.
 
    모듈의 설정에는 XML 출력의 구조를 설명하는 데이터 구조가 필요합니다. **[!UICONTROL 추가]** 단추를 클릭하여 데이터 구조 설정을 엽니다. 이 데이터 구조를 만드는 가장 쉬운 방법은 XML 샘플에서 자동으로 생성하는 것입니다.
@@ -107,7 +107,7 @@ ht-degree: 2%
 1. 데이터 구조의 이름을 좀 더 구체적으로 변경하고 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
 
    루트 배열 속성에 해당하는 필드는 JSON 모듈의 설정에서 매핑 가능한 필드로 표시됩니다.
-1. 필드 옆에 있는 **[!UICONTROL 맵]** 단추를 클릭하고 `Array[]`배열 집계[!UICONTROL  출력의 ] 항목을 매핑합니다.
+1. 필드 옆에 있는 **[!UICONTROL 맵]** 단추를 클릭하고 `Array[]`배열 집계[!UICONTROL &#x200B; 출력의 &#x200B;] 항목을 매핑합니다.
 1. XML 모듈의 설정을 닫으려면 **[!UICONTROL 확인]**&#x200B;을 클릭하십시오.
 1. [!UICONTROL 배열 집계] 모듈의 설정을 엽니다. **[!UICONTROL 대상 구조]**&#x200B;을(를) 사용자 지정에서 부모 XML 요소에 해당하는 XML 모듈의 필드로 변경합니다. [!DNL Google Sheets] 모듈의 항목을 적절한 필드에 매핑합니다.
 1. Array Aggregator 모듈의 설정을 닫으려면 **[!UICONTROL 확인]**&#x200B;을 클릭하십시오.
@@ -174,7 +174,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL XML]</p> </td> 
-   <td> <p>구문 분석할 XML 형식 텍스트를 입력하거나 매핑합니다.</p> <p>수식을 사용하는 경우 결과 값 유형이 [!UICONTROL Text] 데이터 유형인지(또는 자동으로 강제 변환할 수 있는지) 확인합니다. </p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/if-you-use-a-formula-350x164.png" style="width: 350;height: 164;"> </p> <p>결과 값 형식이 [!UICONTROL Buffer](이진 데이터)이면 <code>toString()</code> 함수를 사용하여 Text 데이터 형식으로 변환합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 강제 변환</a> 및 <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">항목 데이터 형식</a>을 참조하세요.</p> </td> 
+   <td> <p>구문 분석할 XML 형식 텍스트를 입력하거나 매핑합니다.</p> <p>수식을 사용하는 경우 결과 값 유형이 [!UICONTROL Text] 데이터 유형인지(또는 자동으로 강제 변환할 수 있는지) 확인합니다. </p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/if-you-use-a-formula-350x164.png" style="width: 350;height: 164;"> </p> <p>결과 값 형식이 [!UICONTROL Buffer] (이진 데이터)이면 <code>toString()</code> 함수를 사용하여 Text 데이터 형식으로 변환합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 강제 변환</a> 및 <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">항목 데이터 형식</a>을 참조하세요.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -218,7 +218,7 @@ URL에서 XML 파일을 다운로드하고 해당 콘텐츠를 구문 분석하�
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL XML]</td> 
-      <td> <p>[!UICONTROL HTTP] &gt; [!UICONTROL 파일 가져오기] 모듈의 출력에서 <code>Data </code>항목을 필드에 매핑합니다. <code>toString()</code> 함수를 사용하여 해당 값을 [!UICONTROL Buffer](이진 데이터) 형식에서 [!UICONTROL Text] 데이터 형식으로 변환합니다.</p> <p>수식의 코드를 복사하여 필드에 붙여넣을 수 있습니다. <code>&#123;&#123;toString(1.data)&#125;&#125;</code></p> <p>Buffer 및 Text 데이터 형식에 대한 자세한 내용은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">Item 데이터 형식</a>을 참조하십시오.</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/paste-formula-code-350x99.png"> </p> </td> 
+      <td> <p>[!UICONTROL HTTP] &gt; [!UICONTROL 파일 가져오기] 모듈의 출력에서 <code>Data </code>항목을 필드에 매핑합니다. <code>toString()</code> 함수를 사용하여 해당 값을 [!UICONTROL Buffer] (이진 데이터) 형식에서 [!UICONTROL Text] 데이터 형식으로 변환합니다.</p> <p>수식의 코드를 복사하여 필드에 붙여넣을 수 있습니다. <code>&#123;&#123;toString(1.data)&#125;&#125;</code></p> <p>Buffer 및 Text 데이터 형식에 대한 자세한 내용은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">Item 데이터 형식</a>을 참조하십시오.</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/paste-formula-code-350x99.png"> </p> </td> 
      </tr> 
     </tbody> 
    </table>

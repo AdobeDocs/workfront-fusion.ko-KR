@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Adobe Workfront Fusion [!DNL Google Team Drive] 모듈을 사용하면 파일을 모니터링, 업로드, 업데이트, 복사, 삭제 또는 검색하고 [!DNL Google Shared Drive]에서 폴더를 만들 수 있습니다.
 
-Adobe Workfront Fusion에서 [!DNL Google Team Drive]을(를) 사용하려면 [!DNL Google Workspace] 계정이 있어야 합니다. 계정이 없으면 [!DNL Google Workspace]등록 사이트[[!DNL Google Workspace] 에서 ](https://workspace.google.com/business/signup/welcome) 계정을 만들 수 있습니다.
+Adobe Workfront Fusion에서 [!DNL Google Team Drive]을(를) 사용하려면 [!DNL Google Workspace] 계정이 있어야 합니다. 계정이 없으면 [!DNL Google Workspace]등록 사이트[[!DNL Google Workspace] 에서 &#x200B;](https://workspace.google.com/business/signup/welcome) 계정을 만들 수 있습니다.
 
 Adobe Workfront Fusion 시나리오에서는 [!DNL Google Team Drive]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
 

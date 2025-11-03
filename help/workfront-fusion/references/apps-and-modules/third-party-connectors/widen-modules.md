@@ -347,7 +347,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
    <td> <p>파일 업로드 방법을 선택합니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL From File]</strong> </p> <p>이전 모듈에서 소스 파일을 선택하거나 매핑합니다.</p> </li> 
-     <li> <p>URL별 <strong>[!UICONTROL]</strong> </p> <p>업로드할 파일의 URL을 입력하거나 매핑합니다.</p> </li> 
+     <li> <p>URL별 <strong></strong> </p> <p>업로드할 파일의 URL을 입력하거나 매핑합니다.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 

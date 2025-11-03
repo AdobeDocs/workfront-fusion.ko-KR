@@ -81,7 +81,7 @@ DocuSign 커넥터는 다음을 사용합니다.
 
 [!DNL DocuSign] 모듈에 대한 연결을 만들려면:
 
-1. 첫 번째 **[!UICONTROL 모듈 구성을 시작할 때]**&#x200B;연결[!UICONTROL  상자 옆에 있는 ]추가[!DNL DocuSign]를 클릭합니다.
+1. 첫 번째 **[!UICONTROL 모듈 구성을 시작할 때]**&#x200B;연결[!UICONTROL &#x200B; 상자 옆에 있는 &#x200B;]추가[!DNL DocuSign]를 클릭합니다.
 1. 다음을 입력하십시오.
 
    <table style="table-layout:auto">
@@ -302,7 +302,7 @@ DocuSign 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">
-     생성 후 [!UICONTROL]
+     생성 후 
    </td> 
    <td> <p>봉투를 초안으로 저장할지 서명을 위해 전송할지 선택합니다.</p> </td> 
   </tr> 

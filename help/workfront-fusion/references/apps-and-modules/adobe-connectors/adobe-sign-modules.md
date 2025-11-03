@@ -237,7 +237,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
      <li> <p><b>[!UICONTROL 그룹]</b> </p> </li> 
      <li> <p><b>[!UICONTROL 라이브러리 문서]</b> </p> </li> 
      <li> <p><b>[!UICONTROL 사용자]</b> </p> </li> 
-     <li> <p><b>[!UICONTROL 웹 양식]([!UICONTROL 위젯])</b> </p> </li> 
+     <li> <p><b>[!UICONTROL 웹 양식] ([!UICONTROL 위젯])</b> </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -272,7 +272,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
    <td> <p>다음 필드를 채웁니다.</p> 
     <ul> 
      <li> <p><b>[!UICONTROL Email]</b> </p> <p>사용자의 이메일 주소를 입력합니다.</p> </li> 
-     <li> <p><b>[!UICONTROL은(는) 계정 관리자]</b> </p> <p>생성된 사용자가 계정 관리자인 경우 이 옵션을 선택합니다.</p> </li> 
+     <li> <p><b>[!UICONTROL 은(는) 계정 관리자]</b> </p> <p>생성된 사용자가 계정 관리자인 경우 이 옵션을 선택합니다.</p> </li> 
      <li> <p><b>[!UICONTROL 사용자 ID]</b> </p> <p>사용자의 고유 ID 입력</p> </li> 
      <li> <p><b>[!UICONTROL 계정 ID]</b> </p> <p>이 사용자와 연결된 [!DNL Adobe Acrobat Sign] 계정의 고유 ID를 입력하십시오.</p> </li> 
      <li> <p><b>[!UICONTROL 이름]</b> </p> <p>사용자의 이름을 입력합니다.</p> </li> 
@@ -539,7 +539,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
        <li> <p><b>[!UICONTROL 라이브러리 문서]</b> </p> <p>라이브러리 문서 링크를 표시하려면 <b>[!UICONTROL 예]</b>를 선택하십시오. 기본값은 [!UICONTROL Yes]입니다.</p> </li> 
        <li> <p><b>[!UICONTROL 로컬 파일]</b> </p> <p>로컬 파일 업로드 단추를 표시하려면 <b>[!UICONTROL 예]</b>를 선택하십시오. 기본값은 [!UICONTROL Yes]입니다.</p> </li> 
        <li> <p><b>[!UICONTROL Web connectors]</b> </p> <p>웹 소스의 문서를 첨부할 링크를 표시하려면 <b>[!UICONTROL 예]</b>를 선택하십시오. 기본값은 Yes입니다.</p> </li> 
-       <li> <p><b>[!UICONTROL이 미리 보기를 선택했습니다]</b> </p> <p>작성 페이지를 작성 모드로 설정하려면 <b>[!UICONTROL 예]</b>를 선택하십시오.</p> </li> 
+       <li> <p><b>[!UICONTROL 이 미리 보기를 선택했습니다]</b> </p> <p>작성 페이지를 작성 모드로 설정하려면 <b>[!UICONTROL 예]</b>를 선택하십시오.</p> </li> 
       </ul> </li> 
      <li> <p><b>[!UICONTROL 구성원 공유]</b> </p> <p>계약을 공유할 각 구성원에 대해 <b>[!UICONTROL 항목 추가]</b>를 클릭하고 해당 구성원의 전자 메일 주소와 메시지를 입력합니다.</p> </li> 
      <li> <p>[!UICONTROL 대리자 참가자 집합]</p> 
@@ -752,7 +752,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
    <td>관련 레코드를 검색할 레코드 유형을 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 레코드 ID](예: [!UICONTROL 계정 ID])</td> 
+   <td role="rowheader">[!UICONTROL 레코드 ID] (예: [!UICONTROL 계정 ID])</td> 
    <td>관련 레코드를 검색할 레코드의 ID를 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
@@ -817,7 +817,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
        <li> <p><b>[!UICONTROL 기본 그룹 ID]</b> </p> <p>새 사용자를 추가할 그룹을 입력합니다. 아무것도 입력하지 않으면 사용자는 계정의 기본 그룹에 추가됩니다.</p> </li> 
        <li> <p><b>[!UICONTROL 작업 제목]</b> </p> <p>사용자의 직함을 입력합니다.</p> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL 웹 양식]([!UICONTROL 위젯])</b> </p> <p>레코드 종류 및 관련 필드를 기준으로 특정 필드에 정보를 입력합니다.</p> </li> 
+     <li> <p><b>[!UICONTROL 웹 양식] ([!UICONTROL 위젯])</b> </p> <p>레코드 종류 및 관련 필드를 기준으로 특정 필드에 정보를 입력합니다.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -874,7 +874,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
         <ul> 
          <li> <p><b>[!UICONTROL 상태]</b> </p> <p>사용자에 대한 새 상태를 선택합니다.</p> </li> 
          <li> <p><b>[!UICONTROL ID]</b> </p> <p>그룹의 고유 ID 입력</p> </li> 
-         <li> <p><b>[!UICONTROL은(는) 그룹 관리자입니다.</b> </p> <p>이 사용자를 그룹 관리자로 설정하려면 <b>[!UICONTROL 예]</b>를 선택하십시오.</p> </li> 
+         <li> <p><b>은(는) 그룹 관리자입니다.</b> </p> <p>이 사용자를 그룹 관리자로 설정하려면 <b>[!UICONTROL 예]</b>를 선택하십시오.</p> </li> 
          <li> <p><b>기본 그룹임</b> </p> <p>이 그룹을 사용자의 기본 그룹으로 업데이트하려면 <b>[!UICONTROL 예]</b>를 선택하십시오.</p> </li> 
          <li> <p><b>[!UICONTROL 만든 날짜]</b> </p> <p>그룹을 만든 날짜를 입력합니다.</p> <p>지원되는 날짜 및 시간 형식 목록을 보려면 [!UICONTROL Adobe Workfront Fusion]<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">에서 </a>형식 변환을 참조하십시오.</p> </li> 
          <li> <p><b>[!UICONTROL 이름]</b> </p> <p>그룹 이름을 입력하거나 매핑합니다.</p> </li> 
@@ -899,7 +899,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
        <li> <p><b>[!UICONTROL 상태]</b> </p> <p>사용자의 새 상태를 선택하고 사용자를 활성화 또는 비활성화하려는 이유에 대한 설명을 입력합니다.</p> </li> 
        <li> <p><b>[!UICONTROL 로케일]</b> </p> <p>사용자의 로케일을 입력합니다. UI의 언어를 결정합니다. </p> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL 웹 양식]([!UICONTROL 위젯])</b> </p> <p>레코드 종류 및 관련 필드를 기준으로 특정 필드에 정보를 입력합니다.</p> </li> 
+     <li> <p><b>[!UICONTROL 웹 양식] ([!UICONTROL 위젯])</b> </p> <p>레코드 종류 및 관련 필드를 기준으로 특정 필드에 정보를 입력합니다.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -971,7 +971,7 @@ Adobe Acrobat Sign 커넥터는 다음을 사용합니다.
    <td> <p>계약 메타데이터에서 텍스트를 검색합니다. </p> 
     <ul> 
      <li> <p><b>[!UICONTROL 텍스트 찾기]</b> </p> <p>계약 메타데이터에서 찾을 텍스트를 입력합니다. 각 단어는 별도의 텍스트 항목으로 처리됩니다. </p> </li> 
-     <li> <p><b>[!UICONTROL에서 텍스트 찾기]</b> </p> <p>텍스트를 찾을 메타데이터 필드를 선택합니다. 아무 것도 선택하지 않으면 모듈은 모든 메타데이터를 검색합니다.</p> </li> 
+     <li> <p><b>[!UICONTROL 에서 텍스트 찾기]</b> </p> <p>텍스트를 찾을 메타데이터 필드를 선택합니다. 아무 것도 선택하지 않으면 모듈은 모든 메타데이터를 검색합니다.</p> </li> 
     </ul> <p>이 모듈은 선택한 필드에 입력한 텍스트가 포함된 계약을 반환합니다. 예: "봄 캠페인"을 입력하고 제목 및 메모 옵션을 선택하면 제목 또는 메모에 "봄" 또는 "캠페인"이라는 단어가 포함된 계약이 반환됩니다.</p> <p>[!DNL Adobe Acrobat Sign]의 필드 검색에 대한 자세한 내용은 <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] 검색 - 작동 방식</a>의 "텍스트 검색 작동 방식"을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 

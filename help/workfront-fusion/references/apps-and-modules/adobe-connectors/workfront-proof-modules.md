@@ -616,7 +616,7 @@ Workfront Fusion 모듈 내에서 직접 [!DNL Workfront Proof] 계정에 연결
 
 #### [!UICONTROL 파일 업로드]
 
-이 작업 모듈은 [!UICONTROL 의 ]증명 만들기[!DNL Workfront Proof] 모듈에서 사용할 파일을 업로드합니다.
+이 작업 모듈은 [!UICONTROL 의 &#x200B;]증명 만들기[!DNL Workfront Proof] 모듈에서 사용할 파일을 업로드합니다.
 
 모듈이 업로드된 파일에 대한 해시 ID를 반환합니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
 

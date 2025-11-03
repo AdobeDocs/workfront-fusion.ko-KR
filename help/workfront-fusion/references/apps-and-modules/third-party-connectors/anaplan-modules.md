@@ -61,7 +61,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 [!DNL Anaplan] 커넥터를 사용하려면 먼저 다음 전제 조건을 충족하는지 확인해야 합니다.
 
 * 활성 [!UICONTROL Anaplan] 계정이 있어야 합니다.
-* Workfront Fusion이 작업 공간, 모델 및 [!DNL Anaplan]Anaplan[!UICONTROL  계정의 ] 개체를 상호 작용하려면 먼저 해당 개체를 구성해야 합니다.
+* Workfront Fusion이 작업 공간, 모델 및 [!DNL Anaplan]Anaplan[!UICONTROL &#x200B; 계정의 &#x200B;] 개체를 상호 작용하려면 먼저 해당 개체를 구성해야 합니다.
 
 ## Anaplan API 정보
 

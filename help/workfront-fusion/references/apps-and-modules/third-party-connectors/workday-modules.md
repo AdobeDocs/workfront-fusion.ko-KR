@@ -268,7 +268,7 @@ Workday 커넥터는 다음을 사용합니다.
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL Connection]</td>
-            <td>[!DNL Workday] 계정을 Workfront Fusion에 연결하는 방법은 <a href="#Connect" class="MCXref xref" >[!UICONTROL [!DNL Workday]을(를) Workfront Fusion에 연결</a>을 참조하십시오.</td>
+            <td>[!DNL Workday] 계정을 Workfront Fusion에 연결하는 방법은 <a href="#Connect" class="MCXref xref" >[!DNL Workday]을(를) Workfront Fusion에 연결</a>을 참조하십시오.</td>
         </tr>
         <tr>
             <td  role="rowheader">[!UICONTROL 레코드 유형]</td>
@@ -304,7 +304,7 @@ Workday 커넥터는 다음을 사용합니다.
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL Connection]</td>
-            <td>[!DNL Workday] 계정을 Workfront Fusion에 연결하는 방법은 <a href="#Connect" class="MCXref xref" >[!UICONTROL [!DNL Workday]을(를) Workfront Fusion에 연결</a>을 참조하십시오.</td>
+            <td>[!DNL Workday] 계정을 Workfront Fusion에 연결하는 방법은 <a href="#Connect" class="MCXref xref" >[!DNL Workday]을(를) Workfront Fusion에 연결</a>을 참조하십시오.</td>
         </tr>
         <tr>
             <td  role="rowheader">[!UICONTROL 레코드 유형]</td>

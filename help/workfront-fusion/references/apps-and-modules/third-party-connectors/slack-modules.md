@@ -490,4 +490,4 @@ Slack 커넥터는 다음을 사용합니다.
 * **메신저**: [!UICONTROL 인스턴트 메시지]
 * **개인 채널**: 이전 [!UICONTROL 그룹]
 * **다이렉트 메시지**: 이전 [!UICONTROL IM]
-* **채널**: API 설명서의 [!UICONTROL 대화], [!UICONTROL  앱의 ]채널[!DNL Slack].
+* **채널**: API 설명서의 [!UICONTROL 대화], [!UICONTROL &#x200B; 앱의 &#x200B;]채널[!DNL Slack].

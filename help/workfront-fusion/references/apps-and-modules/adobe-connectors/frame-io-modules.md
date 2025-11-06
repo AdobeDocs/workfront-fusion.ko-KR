@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion Frame].io modules enable you to moni
 author: Becky
 feature: Workfront Fusion
 exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: b23255cb9585c58f025a0b2c99b824ecbf2c6879
 workflow-type: tm+mt
-source-wordcount: '2666'
+source-wordcount: '2663'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >이 문서에서는 Frame.io 커넥터의 레거시 버전에 대해 설명합니다. 이 커넥터는 Frame.io 버전 3에 연결하는 데 사용됩니다.
 >
->Frame.io 커넥터의 새(베타) 버전에 대한 지침은 [Frame.io Beta 커넥터](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md)를 참조하십시오.
+>Frame.io 커넥터의 새(베타) 버전에 대한 지침은 [Frame.io 커넥터](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md)를 참조하십시오.
 
 Adobe Workfront Fusion [!DNL Frame.io] 모듈을 사용하면 [!DNL Frame.io] 계정의 에셋 및 주석을 모니터링, 만들기, 업데이트, 검색 또는 삭제할 수 있습니다.
 
@@ -25,10 +25,10 @@ Workfront은 연결 중인 Frame.io 버전에 따라 두 개의 Frame.io 커넥�
 
 | 커넥터 | Frame.io 버전 |
 |---|---|
-| Frame.io (Beta) | V4 |
+| Frame.io | V4 |
 | Frame.io(기존) | V3 |
 
-새 버전의 Frame.io 커넥터에 대한 지침은 [Frame.io Beta 커넥터](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md)를 참조하십시오.
+새 버전의 Frame.io 커넥터에 대한 지침은 [Frame.io 커넥터](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md)를 참조하십시오.
 
 Frame.io 커넥터에 대한 비디오 소개는 다음을 참조하십시오.
 
@@ -137,7 +137,7 @@ API 토큰을 사용하여 [!DNL Frame.io] 계정을 Workfront Fusion에 연결�
 
 #### OAuth 2.0 PKCE(클라이언트 ID 포함)를 사용하여 [!DNL Frame.io]에 연결
 
-1. [!DNL Frame.io]에서 OAuth 2.0 앱을 만듭니다. 지침은 [!DNL Frame.io]OAuth 2.0 코드 권한 부여 흐름[!UICONTROL 의 &#x200B;] 설명서를 참조하십시오.
+1. [!DNL Frame.io]에서 OAuth 2.0 앱을 만듭니다. 지침은 [!DNL Frame.io]OAuth 2.0 코드 권한 부여 흐름[!UICONTROL 의 ] 설명서를 참조하십시오.
 
    >[!IMPORTANT]
    >

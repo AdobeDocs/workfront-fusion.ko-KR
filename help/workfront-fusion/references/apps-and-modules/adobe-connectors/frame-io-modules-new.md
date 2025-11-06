@@ -1,12 +1,12 @@
 ---
-title: Frame.io(Beta) 모듈
+title: Frame.io 모듈
 description: ' [!DNL Adobe Workfront Fusion Frame].io modules enable you to monitor, create, update, retrieve, or delete assets and comments in your [!DNL Frame.io] 계정입니다.'
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: b23255cb9585c58f025a0b2c99b824ecbf2c6879
 workflow-type: tm+mt
-source-wordcount: '3559'
+source-wordcount: '3555'
 ht-degree: 1%
 
 ---
@@ -112,7 +112,7 @@ Frame.io 커넥터에서는 다음을 사용합니다.
 
 이 메서드는 Frame.io에 로그인하는 경우 자동으로 연결을 만들거나 로그인할 수 있도록 Frame.io 로그인 페이지에 연결합니다.
 
-1. Frame.io Beta 모듈에서 연결 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
+1. Frame.io 모듈에서 연결 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 1. 연결의 이름을 입력합니다.
 1. **계속**&#x200B;을 클릭합니다.
 1. Frame.io 계정에 로그인하라는 메시지가 표시되면 로그인합니다.
@@ -177,7 +177,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
 
 #### 사용자 인증 연결 구성
 
-1. Frame.io Beta 모듈에서 연결 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
+1. Frame.io 모듈에서 연결 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 1. 연결 만들기 상자에서 **고급 설정 표시**&#x200B;를 클릭합니다.
 
 1. 다음 필드를 채웁니다.
@@ -252,7 +252,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
 
 #### 서버 간 연결 구성
 
-1. Frame.io Beta 모듈에서 연결 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
+1. Frame.io 모듈에서 연결 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 
 1. 다음 필드를 채웁니다.
 

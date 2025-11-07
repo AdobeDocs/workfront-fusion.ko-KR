@@ -9,9 +9,9 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: c37aea95-7cc3-4939-a4d7-9a6a75557b85
-source-git-commit: 1fce6f9db83aa700538a29d7a15c61f60d522e58
+source-git-commit: 1b32b42cfbee9bc4993f4b7658b463fe262a5c09
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1040'
 ht-degree: 16%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 16%
 Adobe Workfront Fusion은 동일한 작업을 계속해서 반복하는 대신 새로운 작업에 집중할 수 있도록 앱과 웹 서비스를 원활하게 연결하여 줍니다.
 
 ## 2025년 Fusion 릴리스
+
+### 2025년 11월
+
+* [Workfront Fusion 릴리스 활동: 2025년 11월 3일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-3.md)
 
 ### 2025년 10월
 

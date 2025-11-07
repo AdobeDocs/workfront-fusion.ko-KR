@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion Frame].io modules enable you to moni
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: b23255cb9585c58f025a0b2c99b824ecbf2c6879
+source-git-commit: 52dbf75ebb65a1de1a7a86619af4c7633e0cbe03
 workflow-type: tm+mt
-source-wordcount: '3555'
+source-wordcount: '4399'
 ht-degree: 1%
 
 ---
@@ -303,6 +303,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
 * [프로젝트](#projects)
 * [공유](#shares)
 * [작업 영역](#workspaces)
+* [메타데이터](#metadata)
 * [기타](#other)
 
 ### 자산
@@ -315,6 +316,61 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
 * [새 자산 보기](#watch-new-asset)
 
 #### [!UICONTROL 자산 만들기] <!--different for v4-->
+
+이 작업 모듈은 새 자산을 만듭니다. 로컬 파일을 업로드하거나 원격 파일의 URL을 제공하여 자산을 만들 수 있습니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion에 [!DNL Frame.io] 연결</a>을 참조하십시오.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 계정 ID] </td> 
+   <td> <p>계정을 선택하거나 자산을 만들 프로젝트가 포함된 계정의 ID를 매핑합니다.</p> </td> 
+  </tr> 
+ <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td> <p>작업 영역을 선택하거나 자산을 만들려는 프로젝트가 포함된 작업 영역의 ID를 매핑합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 프로젝트 ID] </td> 
+   <td> <p>프로젝트를 선택하거나 자산을 만들 프로젝트 ID를 매핑합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 경로] </td> 
+   <td> <p>자산을 만들 경로를 선택합니다.</p> </td> 
+  </tr> 
+<!--  <tr> 
+   <td role="rowheader">[!UICONTROL File Name] </td> 
+   <td> <p>Enter the name of the file that you want to use for this asset.</p> </td> 
+  </tr> -->
+    <tr> 
+    <td role="rowheader">업로드 유형 </td> 
+    <td> <p>로컬 파일에서 자산을 만드는지 아니면 원격 삶에서 자산을 만드는지 선택합니다.</p> </td> 
+   </tr>
+    <tr> 
+    <td role="rowheader">파일 크기 </td> 
+    <td> <p>로컬 파일을 업로드하는 경우 파일 크기를 바이트 단위로 입력하거나 매핑합니다.</p> </td> 
+   </tr>
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source URL] </td> 
+   <td> <p>원격 파일에서 자산을 만드는 경우 업로드할 파일의 URL을 입력합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Source 파일]</td> 
+   <td> <p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 이름을 매핑합니다.</p> </td> 
+  </tr> 
+<!--  <tr> 
+   <td role="rowheader">[!UICONTROL Media type] </td> 
+   <td> <p>Select the media type for this asset.</p> </td> 
+  </tr> -->
+  </tbody> 
+</table>
+
+#### [!UICONTROL 에셋 만들기(레거시)] <!--different for v4-->
 
 이 작업 모듈은 새 자산을 만듭니다.
 
@@ -967,6 +1023,183 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
    <td role="rowheader">[!UICONTROL 반환되는 최대 작업 영역 수] </td> 
    <td> <p>최대 작업 공간 수 입력 또는 매핑
    각 시나리오 실행 주기 동안 모듈이 반환되도록 합니다.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### 메타데이터
+
+* [계정 수준 필드 만들기](#create-an-account-level-field)
+* [계정 수준 필드 삭제](#delete-an-account-level-field)
+* [메타데이터 가져오기](#get-metadata)
+* [계정 수준 필드 나열](#list-account-level-fields)
+* [계정 수준 필드 정의 업데이트](#update-an-account-level-field-definition)
+* [여러 파일에 걸친 메타데이터 업데이트](#update-metadata-across-multiple-files)
+
+#### 계정 수준 필드 만들기
+
+이 작업 모듈은 새 계정 수준 메타데이터 필드를 만들고 구성합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion에 [!DNL Frame.io] 연결</a>을 참조하십시오.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 계정 ID] </td> 
+   <td> <p>메타데이터를 만들려는 계정을 선택하거나 매핑합니다.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">필드 유형 </td> 
+   <td> <p>만들려는 메타데이터 필드의 유형을 선택한 다음 해당 필드에 대한 옵션을 구성합니다.</p> </td> 
+  </tr> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">이름 </td> 
+   <td> <p>새 필드의 이름을 입력하거나 매핑합니다.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 계정 수준 필드 삭제
+
+이 작업 모듈은 단일 계정 수준 메타데이터 필드를 삭제합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion에 [!DNL Frame.io] 연결</a>을 참조하십시오.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 계정 ID] </td> 
+   <td> <p>삭제하려는 메타데이터 필드가 포함된 계정을 선택하거나 매핑합니다.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">필드 정의 ID </td> 
+   <td> <p>삭제하려는 필드의 ID를 입력하거나 매핑합니다. 목록 계정 수준 필드 모듈로 필드 ID를 찾을 수 있습니다.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 메타데이터 가져오기
+
+이 작업 모듈은 Frame.io의 파일에 대한 메타데이터를 검색합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion에 [!DNL Frame.io] 연결</a>을 참조하십시오.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 계정 ID] </td> 
+   <td> <p>메타데이터를 검색할 파일이 포함된 계정을 선택하거나 매핑합니다.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">파일 ID </td> 
+   <td> <p>메타데이터를 검색할 파일의 ID를 입력하거나 매핑합니다.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">null 표시 </td> 
+   <td> <p>이 옵션을 활성화하여 출력 시 null 값이 포함된 필드를 포함할 수 있습니다.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 계정 수준 필드 나열
+
+이 모듈은 지정된 계정에 대한 계정 수준 메타데이터 필드 목록을 검색합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion에 [!DNL Frame.io] 연결</a>을 참조하십시오.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 계정 ID] </td> 
+   <td> <p>필드를 나열할 계정을 선택하거나 매핑합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 반환되는 최대 계약 수]</td> 
+   <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 필드 수를 입력하거나 매핑합니다.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 계정 수준 필드 정의 업데이트
+
+이 모듈은 하나의 기존 메타데이터 필드에 대한 정의를 업데이트합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion에 [!DNL Frame.io] 연결</a>을 참조하십시오.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 계정 ID] </td> 
+   <td> <p>메타데이터를 만들려는 계정을 선택하거나 매핑합니다.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">필드 정의 ID </td> 
+   <td> <p>업데이트할 필드의 ID를 입력하거나 매핑합니다. 목록 계정 수준 필드 모듈로 필드 ID를 찾을 수 있습니다.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">필드 유형 </td> 
+   <td> <p>필드의 필드 유형을 변경하려면 만들 메타데이터 필드 유형을 선택한 다음, 해당 필드에 대한 옵션을 구성합니다.</p> </td> 
+  </tr> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">이름 </td> 
+   <td> <p>필드에 대한 새 이름을 입력하거나 매핑합니다.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 여러 파일에 걸친 메타데이터 업데이트
+
+이 모듈은 사용자가 지정한 값으로 하나 이상의 파일에 대한 메타데이터 필드를 업데이트합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion에 [!DNL Frame.io] 연결</a>을 참조하십시오.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 계정 ID] </td> 
+   <td> <p>메타데이터를 업데이트할 파일이 포함된 계정을 선택하거나 매핑합니다.</p> </td> 
+  </tr> 
+ <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td> <p>작업 영역을 선택하거나 자산을 만들려는 프로젝트가 포함된 작업 영역의 ID를 매핑합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 프로젝트 ID] </td> 
+   <td> <p>프로젝트를 선택하거나 자산을 만들 프로젝트 ID를 매핑합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 파일 ID] </td> 
+   <td> <p>메타데이터를 업데이트할 각 파일에 대해 <b>항목 추가</b>를 클릭하고 파일의 ID를 입력하거나 매핑하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 값] </td> 
+   <td> <p>메타데이터를 업데이트할 각 필드에 대해 <b>항목 추가</b>를 클릭하고 필드 정의의 ID와 해당 필드에 입력할 값을 입력하거나 매핑합니다. 파일 ID 필드에 지정된 모든 파일은 이 필드 값으로 업데이트됩니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>

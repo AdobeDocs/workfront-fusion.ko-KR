@@ -3,10 +3,10 @@ title: Veeva Vault 모듈
 description: Adobe Workfront Fusion 시나리오에서는 Veeva Vault를 사용하는 워크플로를 자동화하고 여러 타사 애플리케이션 및 서비스에 연결할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 37cb18a2e13a494c4174514539c0c7e43cdee011
+source-git-commit: 4ba05a5f400ba1bdfb97586500baf741b555cd20
 workflow-type: tm+mt
-source-wordcount: '1661'
-ht-degree: 3%
+source-wordcount: '2325'
+ht-degree: 2%
 
 ---
 
@@ -118,18 +118,23 @@ Veeva Vault 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드�
 
 ![맵 전환](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
+* [문서](#document)
+* [오브젝트](#object)
+* [기타](#other)
+
 ### 문서
 
 * [단일 문서 만들기](#create-a-single-document)
 * [여러 문서 만들기](#create-multiple-documents)
 * [단일 문서 삭제](#delete-a-single-document)
+* [파일 다운로드](#download-file)
 * [문서 내보내기](#export-documents)
 * [단일 문서 가져오기](#get-a-single-document)
 * [사용자 작업 시작](#initiate-user-action)
 * [문서 나열](#list-documents)
 * [문서 내보내기 결과 가져오기](#retrieve-document-export-results)
-* [여러 문서 업데이트](#update-multiple-documents)
 * [단일 문서 업데이트](#update-a-single-document)
+* [여러 문서 업데이트](#update-multiple-documents)
 
 #### 단일 문서 만들기
 
@@ -196,6 +201,41 @@ Veeva Vault 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드�
   <tr> 
    <td role="rowheader"><p>문서 ID / 바인더 ID / 템플릿 이름</p> </td> 
    <td> <p>삭제할 필드를 선택합니다.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 파일 다운로드
+
+이 모듈은 Veeva Vault에서 문서, 문서 버전 또는 템플릿을 다운로드합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">연결 </td> 
+   <td> <p>Veeva Vault 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>유형</p> </td> 
+   <td> <p>문서 또는 템플릿을 다운로드할지 선택합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>다운로드 유형</p> </td> 
+   <td> <p>문서 또는 문서 버전을 다운로드할지 선택합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>문서 ID / 템플릿 이름</p> </td> 
+   <td> <p>다운로드할 템플릿의 이름 또는 문서 ID를 입력하거나 매핑합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>문서 체크 아웃</p> </td> 
+   <td> <p>문서를 다운로드하는 경우 다운로드하기 전에 문서를 체크 아웃하려면 이 옵션을 활성화합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>버전</p> </td> 
+   <td> <p>문서 버전을 다운로드하는 경우 다운로드할 버전을 선택합니다.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -387,9 +427,106 @@ Veeva Vault 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드�
 
 ### 오브젝트
 
+* [단일 개체 레코드 만들기](#create-a-single-object-record)
+* [단일 개체 레코드 삭제](#delete-a-single-object-record)
+* [단일 개체 가져오기](#get-a-single-object)
+* [목록 개체 레코드](#list-objects-records)
+* [단일 개체 레코드 업데이트](#update-a-single-object-record)
 
+#### 단일 개체 레코드 만들기
 
-#### 목록 개체
+이 모듈은 단일 객체 레코드를 생성, 복사 또는 딥 복사합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">연결 </td> 
+   <td> <p>Veeva Vault 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>유형</p> </td> 
+   <td> <p>레코드를 만들거나 복사할지 또는 레코드를 딥 복사할지 여부를 선택합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">마이그레이션 모드</td> 
+   <td>레코드를 만들거나 복사하는 경우, 이 옵션을 사용하여 초기 상태가 아닌 최소한의 유효성 검사로 개체 레코드를 만들거나 업데이트하고, 비활성 레코드를 만들고, <code>createdby_v</code>과 같은 표준 및 시스템 관리 필드를 설정합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">트리거 없음</td> 
+   <td>true로 설정하고 마이그레이션 모드가 활성화되면 모듈은 모든 시스템, 표준, 사용자 지정 SDK 트리거 및 작업 트리거를 건너뜁니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">개체 이름</td> 
+   <td><code>product__v</code>, <code>country__v</code> 또는 <code>custom_object__c</code>과(와) 같은 개체 이름__v 필드 값을 입력하거나 매핑합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">레코드 ID</td> 
+   <td>레코드를 완전히 복사하는 경우 복사할 레코드를 선택합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">레코드 필드</td> 
+   <td>레코드를 완전히 복사하는 경우 값을 제공할 필드를 선택한 다음 해당 값을 제공합니다.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 단일 개체 레코드 삭제
+
+이 모듈은 단일 객체 레코드를 삭제하거나 계단식으로 삭제합니다. 레코드를 계단식으로 삭제하면 레코드와 모든 하위 개체가 삭제됩니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">연결 </td> 
+   <td> <p>Veeva Vault 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>유형</p> </td> 
+   <td> <p>레코드를 삭제할지 아니면 레코드를 계단식으로 삭제할지 선택합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">개체 이름</td> 
+   <td>삭제할 객체를 선택합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">레코드 ID</td> 
+   <td>삭제할 레코드의 ID를 선택합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">외부 ID</td> 
+   <td>레코드 ID 대신 이 사용자 정의 문서 외부 ID를 사용할 수 있습니다.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 단일 개체 가져오기
+
+이 모듈은 저장소의 특정 개체 레코드에 구성된 메타데이터를 검색합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">연결 </td> 
+   <td> <p>Veeva Vault 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">개체 이름</td> 
+   <td>메타데이터를 검색할 개체를 선택합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">레코드 ID</td> 
+   <td>메타데이터를 검색할 레코드의 ID를 선택합니다.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 목록 개체 레코드
 
 이 모듈은 인증된 저장소의 모든 저장소 개체를 검색합니다.
 
@@ -408,6 +545,55 @@ Veeva Vault 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드�
   <tr> 
    <td role="rowheader">반환된 최대 결과 수</td> 
    <td>각 시나리오 실행 주기 동안 모듈이 반환할 최대 레코드 수를 입력하거나 매핑합니다.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+<!--#### Update a single object record-->
+
+이 모듈은 기존 개체 레코드의 필드를 업데이트합니다.
+
+이 모듈은 단일 객체 레코드를 생성, 복사 또는 딥 복사합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">연결 </td> 
+   <td> <p>Veeva Vault 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>유형</p> </td> 
+   <td> <p>레코드를 만들거나 복사할지 또는 레코드를 딥 복사할지 여부를 선택합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">마이그레이션 모드</td> 
+   <td>이 옵션을 활성화하면 초기 상태가 아닌 최소한의 유효성 검사로 개체 레코드를 만들거나 업데이트하고, 비활성 레코드를 만들고, <code>createdby_v</code>과 같은 표준 및 시스템 관리 필드를 설정할 수 있습니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">트리거 없음</td> 
+   <td>마이그레이션 모드가 활성화되면 모든 시스템, 표준, 사용자 지정 SDK 트리거 및 작업 트리거를 무시하도록 이 옵션을 활성화할 수 있습니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">개체 이름</td> 
+   <td><code>product__v</code>, <code>country__v</code> 또는 <code>custom_object__c</code>과(와) 같은 개체 이름__v 필드 값을 입력하거나 매핑합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">레코드 ID</td> 
+   <td>업데이트할 레코드의 ID를 선택합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">주/도</td> 
+   <td><code>X-VaultAPI-MigrationMode</code>이(가) true로 설정된 경우 레코드의 라이프사이클 상태를 지정하십시오.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">상태 레이블</td> 
+   <td><code>X-VaultAPI-MigrationMode</code>이(가) true로 설정된 경우 레코드의 라이프사이클 상태 유형을 지정하십시오. <code>base:object_lifecycle:</code> 형식 다음에 개체 상태 형식을 사용하십시오.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">레코드 필드</td> 
+   <td>레코드를 완전히 복사하는 경우 값을 제공할 필드를 선택한 다음 해당 값을 제공합니다.</td> 
   </tr> 
  </tbody> 
 </table>

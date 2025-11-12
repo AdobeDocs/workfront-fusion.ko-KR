@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: f5d60e10dd500b97b0be8c54be1add495dc452fa
+source-git-commit: 4648fd66281e3771bd1859969f7aa7627b1d3434
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '474'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,8 @@ Fusion은 다양한 타사 응용 프로그램을 위한 커넥터를 제공합�
 * [Salesforce 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/salesforce-modules.md)
 * [SDL 관리 번역 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sdl-managed-translation-modules.md)
 * [ServiceNow 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/servicenow-modules.md)
-* [Slack 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
+* [Slack 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules-new.md)
+* [Slack 모듈(이전)](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
 * [Split.io 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/split-io-modules.md)
 * [Trello 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)
 * [Veeva Vault 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/veeva-vault-modules.md)

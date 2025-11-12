@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 설명서
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 문서, 튜토리얼 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
-source-git-commit: 43b4c261859074c01759c0a0f924233c18401072
+source-git-commit: 4648fd66281e3771bd1859969f7aa7627b1d3434
 workflow-type: tm+mt
-source-wordcount: '1926'
+source-wordcount: '1929'
 ht-degree: 3%
 
 ---
@@ -394,7 +394,8 @@ ht-degree: 3%
          * [Salesforce 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/salesforce-modules.md)
          * [SDL 관리 번역 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sdl-managed-translation-modules.md)
          * [ServiceNow 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/servicenow-modules.md)
-         * [Slack 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
+         * [Slack 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules-new.md)
+         * [Slack 모듈(이전)](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
          * [Split.io 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/split-io-modules.md)
          * [Trello 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)
          * [모듈 확장](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/widen-modules.md)

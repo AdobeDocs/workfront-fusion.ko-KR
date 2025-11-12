@@ -1,17 +1,27 @@
 ---
-title: Slack 모듈
+title: Slack 모듈(이전)
 description: Adobe Workfront Fusion 시나리오에서는 Slack을 사용하는 워크플로를 자동화할 뿐만 아니라 여러 타사 애플리케이션 및 서비스에 연결할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: c9c68a4c-f592-42d1-b15f-a525b9aa3944
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: c5c1f632ce5cc3b4f357118e7bdb8ec852bd91fb
 workflow-type: tm+mt
-source-wordcount: '2037'
+source-wordcount: '2039'
 ht-degree: 0%
 
 ---
 
-# [!DNL Slack]개 모듈
+# [!DNL Slack]개 모듈(이전)
+
+<!--
+
+>[!IMPORTANT]
+>
+>This article describes modules available in the legacy Slack connector, which is no longer available. This article will be removed in the near future. 
+>
+>For information on the new Slack connector, released on November 14, 2025, see [[!DNL Slack] modules (Legacy)](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md).
+
+-->
 
 Adobe Workfront Fusion 시나리오에서는 [!DNL Slack]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
 
@@ -490,4 +500,4 @@ Slack 커넥터는 다음을 사용합니다.
 * **메신저**: [!UICONTROL 인스턴트 메시지]
 * **개인 채널**: 이전 [!UICONTROL 그룹]
 * **다이렉트 메시지**: 이전 [!UICONTROL IM]
-* **채널**: API 설명서의 [!UICONTROL 대화], [!UICONTROL &#x200B; 앱의 &#x200B;]채널[!DNL Slack].
+* **채널**: API 설명서의 [!UICONTROL 대화], [!UICONTROL  앱의 ]채널[!DNL Slack].

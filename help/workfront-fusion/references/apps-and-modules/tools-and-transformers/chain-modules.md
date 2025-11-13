@@ -3,17 +3,19 @@ title: 체인 모듈
 description: 이러한 모듈을 사용하면 시나리오를 서로 연결하여 서로 호출할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
-hide: true
-hidefromtoc: true
 exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+source-git-commit: 7f73007e219714c38dd0cf29d2a1e3a4c8f6f3cc
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '625'
 ht-degree: 1%
 
 ---
 
 # 체인 모듈
+
+>[!NOTE]
+>
+>이 기능은 현재 Beta에 있습니다.
 
 체인 모듈을 사용하면 한 시나리오를 다른 시나리오에 연결할 수 있습니다.
 

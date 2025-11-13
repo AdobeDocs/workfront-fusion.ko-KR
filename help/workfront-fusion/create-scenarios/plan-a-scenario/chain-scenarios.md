@@ -3,17 +3,19 @@ title: 여러 시나리오를 함께 연결
 description: 시나리오를 서로 연결하여 한 시나리오가 다른 시나리오를 트리거하고 두 번째 시나리오의 데이터 출력을 첫 번째 시나리오로 반환할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
-hide: true
-hidefromtoc: true
-source-git-commit: b41f7795273d35dc4e0c019c568f8939926b875a
+exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
+source-git-commit: 7f73007e219714c38dd0cf29d2a1e3a4c8f6f3cc
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1247'
 ht-degree: 0%
 
 ---
 
-
 # 여러 시나리오를 함께 연결
+
+>[!NOTE]
+>
+>이 기능은 현재 Beta에 있습니다.
 
 시나리오를 서로 연결하여 한 시나리오가 다른 시나리오를 트리거하고 두 번째 시나리오의 데이터 출력을 첫 번째 시나리오로 반환할 수 있습니다. 이렇게 하면 여러 시나리오에서 시나리오 섹션을 복제할 필요가 없는 보다 모듈식 시나리오 생성을 수행할 수 있습니다.
 

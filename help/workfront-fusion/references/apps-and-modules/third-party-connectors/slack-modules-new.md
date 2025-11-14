@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: b5892f64c73c41524029621591e64c942c146432
+source-git-commit: bb1cd0c54ae2c81c601d463cdc281d6ae7b8c434
 workflow-type: tm+mt
-source-wordcount: '4699'
+source-wordcount: '4560'
 ht-degree: 0%
 
 ---
@@ -454,43 +454,6 @@ Slack 커넥터는 다음을 사용합니다.
 +++
 
 ### 파일
-
-+++ **[!UICONTROL 텍스트 파일 만들기]**
-
-이 작업 모듈은 텍스트 파일을 만듭니다.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Slack] 계정을 [!DNL Workfront Fusion]에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]에 연결 만들기 - 기본 지침</a>을 참조하세요.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL 채널]</td> 
-   <td> <p>파일을 업로드할 각 채널에 대해 <b>[!UICONTROL 항목 추가]</b>를 클릭한 다음 채널 유형 및 채널을 선택합니다.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Source 파일]</td> 
-   <td>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 이름과 데이터를 매핑합니다.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Title]</td> 
-   <td>업로드할 파일의 제목을 입력하십시오.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL 스레드 ID(타임스탬프)]</td> 
-   <td> <p>파일을 회신으로 업로드하는 경우 회신할 메시지의 타임스탬프를 입력하거나 매핑합니다.</p> <p>참고: 타임스탬프는 [!UICONTROL Watch Private Channel] 모듈과 같은 다른 모듈을 사용하여 검색할 수 있습니다.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL 초기 주석]</td> 
-   <td> <p>파일을 소개하는 메시지 텍스트를 입력하거나 매핑합니다.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-+++
 
 +++ **[!UICONTROL 파일 삭제]**
 
@@ -1563,5 +1526,5 @@ This action module deletes a specific reminder.
 * **메신저**: [!UICONTROL 인스턴트 메시지]
 * **개인 채널**: 이전 [!UICONTROL 그룹]
 * **다이렉트 메시지**: 이전 [!UICONTROL IM]
-* **채널**: API 설명서의 [!UICONTROL 대화], [!UICONTROL &#x200B; 앱의 &#x200B;]채널[!DNL Slack].
+* **채널**: API 설명서의 [!UICONTROL 대화], [!UICONTROL  앱의 ]채널[!DNL Slack].
 

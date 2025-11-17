@@ -3,9 +3,7 @@ title: Slack 모듈
 description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Slack을 사용하는 워크플로를 자동화할 수 있을 뿐만 아니라 여러 타사 응용 프로그램 및 서비스에 연결할 수도 있습니다.'
 author: Becky
 feature: Workfront Fusion
-hide: true
-hidefromtoc: true
-source-git-commit: bb1cd0c54ae2c81c601d463cdc281d6ae7b8c434
+source-git-commit: 9c5a73e284026cea03296e9a536958f4630fd81c
 workflow-type: tm+mt
 source-wordcount: '4560'
 ht-degree: 0%
@@ -16,7 +14,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->이 문서에서는 2025년 11월 14일에 릴리스된 새로운 Slack 커넥터에서 사용할 수 있는 모듈에 대해 설명합니다.
+>이 문서에서는 2025년 11월 17일에 릴리스된 새로운 Slack 커넥터에서 사용할 수 있는 모듈에 대해 설명합니다.
 >
 >기존 Slack 커넥터에 대한 자세한 내용은 [[!DNL Slack] 모듈(레거시)](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)을 참조하십시오.
 
@@ -1526,5 +1524,5 @@ This action module deletes a specific reminder.
 * **메신저**: [!UICONTROL 인스턴트 메시지]
 * **개인 채널**: 이전 [!UICONTROL 그룹]
 * **다이렉트 메시지**: 이전 [!UICONTROL IM]
-* **채널**: API 설명서의 [!UICONTROL 대화], [!UICONTROL &#x200B; 앱의 &#x200B;]채널[!DNL Slack].
+* **채널**: API 설명서의 [!UICONTROL 대화], [!UICONTROL  앱의 ]채널[!DNL Slack].
 

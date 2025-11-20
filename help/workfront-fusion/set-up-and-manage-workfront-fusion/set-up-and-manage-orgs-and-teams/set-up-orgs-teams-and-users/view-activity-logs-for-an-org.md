@@ -4,10 +4,10 @@ description: 조직의 시나리오 생성 또는 활성화와 같은 활동 로
 author: Becky
 feature: Workfront Fusion
 exl-id: 3cf851e3-50a1-4baa-8318-a24e1f467134
-source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
+source-git-commit: 2ffb7676067720a5b9daa51b560389396f4a665f
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 0%
+source-wordcount: '500'
+ht-degree: 7%
 
 ---
 
@@ -15,9 +15,11 @@ ht-degree: 0%
 
 시나리오를 만들거나 사용자를 조직에 초대하는 것과 같은 활동 로그를 볼 수 있습니다.
 
+활동 로그에는 3개월의 데이터가 표시됩니다. 3개월 이상의 데이터는 내보낼 수 있습니다.
+
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -41,7 +43,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 +++
 

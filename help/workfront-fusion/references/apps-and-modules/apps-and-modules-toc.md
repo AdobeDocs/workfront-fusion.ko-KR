@@ -1,15 +1,15 @@
 ---
 content-type: reference
 title: 'Fusion 애플리케이션 및 해당 모듈 참조: 문서 색인'
-description: 이 섹션에서는 Adobe Workfront Fusion의 특정 모듈 구성과 관련된 참조 자료를 제공합니다.
+description: 이 섹션에는 Adobe Workfront Fusion의 특정 모듈 구성과 관련된 참조 자료가 포함되어 있습니다.
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: 4648fd66281e3771bd1859969f7aa7627b1d3434
+source-git-commit: f23a089565c2cfb7d2d1321a7bf67ae14e336af3
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 0%
+source-wordcount: '477'
+ht-degree: 98%
 
 ---
 
@@ -17,17 +17,17 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Adobe Workfront Fusion은 거의 모든 웹 서비스에 연결할 수 있습니다. 이 목록에 있는 앱에만 국한되지 않습니다. 작업할 앱이 이 목록에 없는 경우 범용 커넥터 중 하나를 사용하여 앱 또는 웹 서비스에 연결합니다.
+>Adobe Workfront Fusion은 거의 모든 웹 서비스에 연결할 수 있습니다. 이 목록에 있는 앱에만 국한되지 않습니다. 작업하려는 앱이 이 목록에 없는 경우 범용 커넥터 중 하나를 사용하여 앱 또는 웹 서비스에 연결합니다.
 
 ## 범용 커넥터
 
-이러한 커넥터를 사용하면 공개 API가 있는 모든 앱 또는 웹 서비스에 연결할 수 있습니다.
+이러한 커넥터를 사용하면 공개 API가 있는 모든 앱이나 웹 서비스에 연결할 수 있습니다.
 
-* [http > [!UICONTROL 요청] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL 기본 권한 부여 요청 만들기] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
+* [http > [!UICONTROL 요청하기] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL 기본 인증 요청 만들기] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
 * [[!UICONTROL HTTP] > [!UICONTROL OAuth 2.0 요청 만들기] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL 클라이언트 인증서 권한 부여 요청 만들기] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL API 키 권한 부여 요청 만들기]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL 클라이언트 인증서 인증 요청 만들기] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL API 키 인증 요청 만들기]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
 * [[!UICONTROL HTTP] > 기타 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-modules.md)
 * [SOAP 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/soap-module.md)
 * [FTP 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/ftp-modules.md)
@@ -36,45 +36,46 @@ ht-degree: 0%
 
 ## Adobe 제품용 커넥터
 
-Fusion은 Adobe의 많은 제품 및 서비스를 위한 커넥터를 제공합니다.
+Fusion은 Adobe의 많은 제품과 서비스에 커넥터를 제공합니다.
 
 * [Adobe Acrobat Sign 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-sign-modules.md)
 * [Adobe Authenticator 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md)
 * [Adobe Campaign 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-campaign-classic-connector.md)
-* [Adobe Creative Cloud 라이브러리 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
+* [Adobe Creative Cloud Libraries 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
 * [Adobe Experience Manager Assets 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
 * [Adobe Experience Manager Forms 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
 * [Adobe Firefly 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
 * [Adobe Frame.io Beta (V4) 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
-* [Adobe Frame.io 레거시(V3) 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
+* [Adobe Frame.io Legacy (V3) 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
 * [Adobe I/O Events 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
 * [Adobe Journey Optimizer 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-journey-optimizer-modules.md)
 * [Adobe Lightroom 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-lightroom-modules.md)
 * [Adobe Marketo 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-modules.md)
-* [Adobe PDF 서비스 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/pdf-modules.md)
+* [Adobe PDF Services 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/pdf-modules.md)
 * [Adobe Photoshop 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-photoshop-modules.md)
-* [Adobe 스토리지 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-storage-modules.md)
+* [Adobe Storage 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-storage-modules.md)
+* [Adobe Substance 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-substance-modules.md)
 * [Adobe Target 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
-* [Adobe 사용자 관리 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
+* [Adobe User Management 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
 * [Adobe Workfront 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
 * [Adobe Workfront Planning 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
-* [Workfront 보드 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
+* [Workfront Boards 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
 * [Workfront Proof 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-proof-modules.md)
 
-## 서드파티 애플리케이션용 커넥터
+## 제3자 애플리케이션용 커넥터
 
-Fusion은 다양한 타사 응용 프로그램을 위한 커넥터를 제공합니다.
+Fusion은 다양한 제3자 애플리케이션을 위한 커넥터를 제공합니다.
 
-* [에어테이블 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/airtable-modules.md)
+* [Airtable 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/airtable-modules.md)
 * [Allocadia 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/allocadia-modules.md)
 * [Anaplan 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/anaplan-modules.md)
 * [AWS S3 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/aws-s3-modules.md)
 * [Azure Active Directory 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/azure-ad-modules.md)
 * [Azure DevOps 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/azure-dev-ops.md)
-* [상자 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/box-modules.md)
-* [바이더 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/bynder-modules.md)
-* [CloudConverter 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/cloud-convert-modules.md)
-* [이벤트 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/cvent-modules.md)
+* [확인란 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/box-modules.md)
+* [Bynder 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/bynder-modules.md)
+* [CloudConvert 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/cloud-convert-modules.md)
+* [Cvent 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/cvent-modules.md)
 * [Datadog 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/datadog-modules.md)
 * [DocuSign 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/docusign-modules.md)
 * [Dropbox 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/dropbox-modules.md)
@@ -83,18 +84,18 @@ Fusion은 다양한 타사 응용 프로그램을 위한 커넥터를 제공합�
 * [Github 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/github.md)
 * [GitLab 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/gitlab-modules.md)
 * [Gmail 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/gmail-modules.md)
-* [Google 달력 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-calendar-modules.md)
+* [Google 캘린더 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-calendar-modules.md)
 * [Google Docs 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-docs-modules.md)
-* [Google 드라이브 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-drive-modules.md)
+* [Google Drive 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-drive-modules.md)
 * [Google Forms 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-forms-modules.md)
 * [Google Sheets 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-sheets-modules.md)
-* [Google 슬라이드 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-slides-modules.md)
-* [Google 팀 드라이브 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-team-drive-modules.md)
+* [Google Slides 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-slides-modules.md)
+* [Google Team Drive 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-team-drive-modules.md)
 * [Hubspot CRM 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/hubspot-crm-modules.md)
 * [Jira 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md)
-* [Jira 소프트웨어 모듈 (기존)](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md)
+* [Jira 소프트웨어 모듈(이전)](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md)
 * [MariaDB 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/mariadb-modules.md)
-* [Microsoft 365 달력 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-calendar-modules.md)
+* [Microsoft 365 캘린더 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-calendar-modules.md)
 * [Microsoft 356 이메일 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-email-modules.md)
 * [Microsoft 365 Excel 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-excel-modules.md)
 * [Microsoft Dynamics 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-dynamics-365-modules.md)
@@ -102,7 +103,7 @@ Fusion은 다양한 타사 응용 프로그램을 위한 커넥터를 제공합�
 * [Microsoft OneDrive 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-onedrive-modules.md)
 * [비즈니스용 Microsoft OneDrive 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-onedrive-for-business-modules.md)
 * [Microsoft SharePoint Online 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sharepoint-modules.md)
-* [Microsoft Server 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-sql-server-modules.md)
+* [Microsoft SQL Server 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-sql-server-modules.md)
 * [Microsoft Teams 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-teams-modules.md)
 * [Microsoft Word 템플릿 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-word-templates-modules.md)
 * [NetSuite 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/netsuite.md)
@@ -111,7 +112,7 @@ Fusion은 다양한 타사 응용 프로그램을 위한 커넥터를 제공합�
 * [Qualtrics 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/qualtrics-modules.md)
 * [Quickbase 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/quickbase-modules.md)
 * [Salesforce 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/salesforce-modules.md)
-* [SDL 관리 번역 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sdl-managed-translation-modules.md)
+* [SDL 관리형 번역 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sdl-managed-translation-modules.md)
 * [ServiceNow 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/servicenow-modules.md)
 * [Slack 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules-new.md)
 * [Slack 모듈(이전)](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
@@ -122,11 +123,11 @@ Fusion은 다양한 타사 응용 프로그램을 위한 커넥터를 제공합�
 * [Workday 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/workday-modules.md)
 
 
-## 도구와 변압기
+## 도구 및 변환기
 
-이러한 모듈을 사용하면 데이터에 대한 작업을 수행할 수 있지만 Fusion 외부의 서비스에 연결할 필요는 없습니다.
+이러한 모듈은 데이터에 대한 액션을 수행할 수 있게 해주지만, Fusion 외부의 어떤 서비스에도 연결할 필요가 없습니다.
 
-* [모듈 보관](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/archive-modules.md)
+* [아카이브 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/archive-modules.md)
 * [체인 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)
 * [CSV 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/csv.md)
 * [데이터 저장소 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md)

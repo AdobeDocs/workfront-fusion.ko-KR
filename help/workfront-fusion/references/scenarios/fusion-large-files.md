@@ -4,10 +4,10 @@ description: 현재 Workfront 및 HTTP 커넥터에서 대용량 파일을 지�
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: 80cb3736d96d4b7c3226d78149842a80077e3551
+source-git-commit: a68de976258d17631459f0951d28657fd0e0dcf6
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 2%
+source-wordcount: '1048'
+ht-degree: 6%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->* 큰 파일을 지원하는 모듈을 사용하여 파일을 다운로드한 다음 큰 파일을 지원하지 않는 모듈로 전달되는 경우 해당 모듈은 파일을 성공적으로 처리하지 못합니다. 큰 파일은 워크플로우 전체에서 지원되는 모듈로만 처리해야 합니다.
+>* 대용량 파일을 지원하는 모듈을 사용하여 파일을 다운로드한 후 대용량 파일을 지원하지 않는 모듈로 전달하면 해당 모듈은 파일을 성공적으로 처리하지 못합니다. 대용량 파일은 워크플로 전체에서 지원되는 모듈로만 처리해야 합니다.
 >* 대용량 파일을 지원하지 않는 모듈은 최대 200MB의 파일을 처리할 수 있습니다.
 
 * Workfront
@@ -40,6 +40,8 @@ ht-degree: 2%
    * 증명 다운로드
 * Adobe Authenticator
    * 사용자 지정 API 호출 만들기
+* Adobe Photoshop
+   * PSD 편집 적용
 * SharePoint
    * 파일 만들기
    * 파일 가져오기

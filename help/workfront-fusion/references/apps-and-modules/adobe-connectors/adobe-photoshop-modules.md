@@ -4,25 +4,25 @@ description: Adobe Photoshop 모듈을 사용하면 Adobe Photoshop 계정의 �
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
+source-git-commit: a68de976258d17631459f0951d28657fd0e0dcf6
 workflow-type: tm+mt
-source-wordcount: '5398'
-ht-degree: 0%
+source-wordcount: '5414'
+ht-degree: 14%
 
 ---
 
-# [!DNL Adobe Photoshop]개 모듈
+# [!DNL Adobe Photoshop] 모듈
 
-Adobe Workfront Fusion 시나리오에서는 [!DNL Adobe Photoshop]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
+Adobe Workfront Fusion 시나리오에서는 [!DNL Adobe Photoshop]를 사용하는 워크플로를 자동화할 수 있으며 여러 제3자 애플리케이션 및 서비스에 연결할 수 있습니다.
 
 
 시나리오를 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 인덱스](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
 
-모듈에 대한 자세한 내용은 [모듈: 문서 인덱스](/help/workfront-fusion/references/modules/modules-toc.md)의 문서를 참조하십시오.
+모듈에 대한 자세한 내용은 [모듈: 문서 색인](/help/workfront-fusion/references/modules/modules-toc.md)의 문서를 참조하십시오.
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -39,20 +39,20 @@ Adobe Workfront Fusion 시나리오에서는 [!DNL Adobe Photoshop]을(를) 사�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>작업 기반: Workfront Fusion 라이센스 요구 사항 없음</p>
-   <p>커넥터 기반(레거시): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
+   <p>작업 기반: Workfront Fusion 라이선스 요구 사항 없음</p>
+   <p>커넥터 기반(이전): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
@@ -87,7 +87,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
 
 ## [!DNL Adobe Photoshop]에 연결 만들기
 
-[!DNL Adobe Photoshop] 모듈에 대한 연결을 만들려면:
+사용자의 [!DNL Adobe Photoshop] 모듈에 대한 연결을 만들려면:
 
 1. 모든 모듈에서 연결 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 
@@ -108,7 +108,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
         <tr>
         <td role="rowheader">[!UICONTROL 연결 이름]</td>
         <td>
-          <p>이 연결의 이름을 입력하십시오.</p>
+          <p>이 연결의 이름을 입력합니다.</p>
         </td>
         </tr>
         <tr>
@@ -117,7 +117,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL 클라이언트 암호]</td>
-        <td>[!DNL Adobe] [!UICONTROL 클라이언트 암호]를 입력하십시오. 이 로그는 의 [!UICONTROL 자격 증명] 세부 정보 섹션에서 찾을 수 있습니다. [!DNL Adobe Developer Console]</td>
+        <td>[!DNL Adobe] [!UICONTROL 클라이언트 암호]를 입력합니다. 이 로그는 의 [!UICONTROL 자격 증명] 세부 정보 섹션에서 찾을 수 있습니다. [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL 기술 계정 ID]</td>
@@ -128,19 +128,19 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
         <td>JWT 연결을 사용하는 경우 [!DNL Adobe] [!UICONTROL 조직 ID]를 입력하십시오. 이 로그는 의 [!UICONTROL 자격 증명] 세부 정보 섹션에서 찾을 수 있습니다. [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL 개인 키]</td>
+        <td role="rowheader">[!UICONTROL 비공개 키]</td>
         <td>
           <p>JWT 연결을 사용하는 경우 [!DNL Adobe Developer Console]에서 자격 증명을 만들 때 생성된 개인 키를 입력하십시오. </p>
-          <p>개인 키 또는 인증서를 추출하려면 다음을 수행하십시오.</p>
+          <p>비공개 키 또는 인증서를 추출하려면 다음을 수행합니다.</p>
           <ol>
             <li value="1">
-              <p><b>[!UICONTROL Extract]</b>을(를) 클릭합니다.</p>
+              <p><b>[!UICONTROL 추출]</b>을 클릭합니다.</p>
             </li>
             <li value="2">
-              <p>추출 중인 파일 유형을 선택합니다.</p>
+              <p>추출할 파일 유형을 선택합니다.</p>
             </li>
             <li value="3">
-              <p>개인 키 또는 인증서가 포함된 파일을 선택합니다.</p>
+              <p>비공개 키 또는 인증서가 포함된 파일을 선택합니다.</p>
             </li>
             <li value="4">
               <p>파일의 암호를 입력합니다.</p>
@@ -154,15 +154,15 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
       </tbody>
     </table>
 
-1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭하세요.
+1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
 
-## [!DNL Adobe Photoshop]개 모듈 및 해당 필드
+## [!DNL Adobe Photoshop] 모듈 및 해당 필드
 
-[!DNL Adobe Photoshop] 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Adobe Photoshop] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!DNL Adobe Photoshop] 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를 표시합니다. 이와 함께 앱 또는 서비스의 액세스 수준과 같은 요인에 따라 추가적인 [!DNL Adobe Photoshop] 필드가 표시될 수 있습니다. 모듈의 굵은 글씨 제목은 필수 필드를 나타냅니다.
 
-필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
+필드 또는 함수 위에 있는 맵 버튼을 보면 해당 필드의 변수와 함수를 설정하는 데 사용할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
-![맵 전환](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![토글 매핑](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [PSD 편집 적용](#apply-psd-edits)
 * [이미지 자동 색상 교정](#auto-color-correct-an-image)
@@ -176,7 +176,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
 * [Photoshop 작업 실행](#execute-photoshop-actions)
 * [제품 자르기 실행](#execute-product-crop)
 * [레이어 정보 가져오기](#get-layer-info)
-* [사용자 지정 API 호출 만들기](#make-a-custom-api-call)
+* [사용자 정의 API 호출 만들기](#make-a-custom-api-call)
 * [배경 제거](#remove-background)
 * [스마트 오브젝트 바꾸기](#replace-a-smart-object)
 * [스마트 오브젝트 바꾸기(기존)](#replace-a-smart-object-legacy)
@@ -187,13 +187,15 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
 
 이 작업 모듈은 다양한 문서 및 레이어 수준 편집 사항을 적용합니다.
 
+이 모듈은 대용량 파일을 지원합니다. 대용량 파일에 대한 자세한 내용은 [대용량 파일 작업](/help/workfront-fusion/references/scenarios/fusion-large-files.md)을 참조하십시오.
+
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기를 참조하십시오.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL (Input) Storage]</td>
@@ -321,8 +323,8 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기를 참조하십시오.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL (Input) Storage]</td>
@@ -372,8 +374,8 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기를 참조하십시오.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL (Input) Storage]</td>
@@ -429,8 +431,8 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기를 참조하십시오.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL (Input) Storage]</td>
@@ -504,8 +506,8 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기를 참조하십시오.</td>
     </tr>
     <tr>
       <td role="rowheader">
@@ -521,25 +523,25 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (옵션 &gt; 문서) 해상도]</p>
+        <p>[!UICONTROL(옵션 &gt; 문서) 해상도]</p>
       </td>
    <td> 이미지의 해상도를 인치당 픽셀 단위로 입력하거나 매핑합니다. 72에서 300 사이여야 합니다. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (옵션 &gt; 문서) 모드]</p>
+        <p>[!UICONTROL(옵션 &gt; 문서) 모드]</p>
       </td>
    <td> 이미지 모드를 선택합니다. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (옵션 &gt; 문서) 채우기]</p>
+        <p>[!UICONTROL(옵션 &gt; 문서) 채우기]</p>
       </td>
    <td> 배경 레이어의 채우기를 투명, 흰색 또는 이미지의 배경색으로 할지 여부를 선택합니다. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (옵션 &gt; 문서) 깊이]</p>
+        <p>[!UICONTROL(옵션 &gt; 문서) 깊이]</p>
       </td>
    <td> 이미지의 비트 심도를 선택합니다. </td> 
     </tr>
@@ -609,8 +611,8 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기를 참조하십시오.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 입력 파일 저장소]</td>
@@ -683,8 +685,8 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기를 참조하십시오.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 입력 파일 저장소]</td>
@@ -762,8 +764,8 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기를 참조하십시오.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL (Input) Storage]</td>
@@ -821,7 +823,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (출력) 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL(출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>
@@ -838,8 +840,8 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기를 참조하십시오.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 입력 파일 저장소]</td>
@@ -872,7 +874,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (출력) 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL(출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>
@@ -895,8 +897,8 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기를 참조하십시오.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 입력 파일 저장소]</td>
@@ -959,7 +961,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (출력) 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL(출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>
@@ -982,8 +984,8 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기를 참조하십시오.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 입력 파일 저장소]</td>
@@ -1034,7 +1036,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (출력) 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL(출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>
@@ -1057,8 +1059,8 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기를 참조하십시오.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 입력 파일 저장소]</td>
@@ -1081,7 +1083,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
   </tbody>
 </table>
 
-### 사용자 지정 API 호출 만들기
+### 사용자 정의 API 호출 만들기
 
 이 작업 모듈은 Photoshop API에 대한 사용자 지정 호출을 만듭니다.
 
@@ -1090,13 +1092,13 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기를 참조하십시오.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL URL]</td>
       <td>
-        <p><code>https://image.adobe.io/pie/psdService</code>과(와) 관련된 경로를 입력하십시오. 예: <code>/photoshopActions</code></p>
+        <p><code>https://image.adobe.io/pie/psdService</code>와 관련된 경로를 입력합니다. 예: <code>/photoshopActions</code></p>
       </td>
     </tr>
     <tr>
@@ -1106,11 +1108,11 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Headers]</td>
+      <td role="rowheader">[!UICONTROL 헤더]</td>
       <td>
-        <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p>
-        <p>For example, <code>{"Content-type":"application/json"}</code></p>
-        <p>Workfront Fusion은 인증 헤더를 자동으로 추가합니다.</p>
+        <p>표준 JSON 오브젝트 형태로 요청의 헤더를 추가합니다.</p>
+        <p>예: <code>{"Content-type":"application/json"}</code></p>
+        <p>Workfront Fusion은 자동으로 인증 헤더를 추가합니다.</p>
       </td>
     </tr>
     <tr>
@@ -1120,8 +1122,8 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>표준 JSON 개체의 형태로 API 호출에 대한 본문 콘텐츠를 추가합니다.</p> <p>참고:  <p>JSON에서 <code>if</code>과(와) 같은 조건문을 사용할 때 따옴표를 조건문 외부에 넣으십시오.</p> 
+      <td role="rowheader">[!UICONTROL 본문]</td>
+   <td> <p>표준 JSON 오브젝트 형식으로 API 호출에 대한 본문 콘텐츠를 추가합니다.</p> <p>메모:  <p>JSON에서 <code>if</code>와 같은 조건문을 사용할 때는 따옴표를 조건문 외부에 배치해야 합니다.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
@@ -1137,8 +1139,8 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기를 참조하십시오.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL (Input) Storage]</td>
@@ -1214,8 +1216,8 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기를 참조하십시오.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL (Input) Storage]</td>
@@ -1279,8 +1281,8 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기를 참조하십시오.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL (Input) Storage]</td>
@@ -1341,8 +1343,8 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기를 참조하십시오.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Storage]</td>
@@ -1411,8 +1413,8 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Photoshop]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 대한 연결 만들기를 참조하십시오.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL (기본 &gt; 입력) 저장소]</td>

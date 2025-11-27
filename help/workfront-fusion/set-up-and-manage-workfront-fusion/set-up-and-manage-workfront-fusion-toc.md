@@ -1,19 +1,19 @@
 ---
 product-previous: workfront-fusion
 product-area: workfront-integrations
-keywords: 퓨전
+keywords: Fusion
 navigation-topic: workfront-fusion-navigation-topic
 title: 'Workfront Fusion 설정 및 관리: 문서 색인'
-description: Adobe Workfront Fusion에는 Adobe Workfront 라이센스 외에 Adobe Workfront Fusion 라이센스가 필요합니다.
-short-description: 조직을 위해 Adone Workfront Fusion을 구성하고 관리하는 데 필요한 정보를 찾으십시오.
+description: Adobe Workfront Fusion에는 Adobe Workfront 라이선스 외에도 Adobe Workfront Fusion 라이선스가 필요합니다.
+short-description: 조직을 위해 Adone Workfront Fusion을 구성하고 관리하는 데 필요한 정보를 찾습니다.
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: bbc94bb0-7432-44c5-8000-9aea25916b28
 source-git-commit: 6c47c93102d2d3c88beb04e4d8e1739dbaa03b96
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '61'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 

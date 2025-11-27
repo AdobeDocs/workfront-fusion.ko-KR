@@ -1,17 +1,17 @@
 ---
 title: Adobe Workfront Fusion
-description: Adobe Workfront Fusion 제품 및 기술 설명서 홈 페이지를 시작합니다. 다음 링크, 도움말 문서 및 추가 리소스를 사용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법을 알아보십시오.
+description: Adobe Workfront Fusion 제품 및 기술 설명서 홈 페이지를 시작합니다. 다음 링크, 도움말 문서 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
 exl-id: c005fc89-4b58-4c4e-ba45-0155cd2c8f03
 source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '306'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 # Workfront Fusion 설명서
 
-Adobe Workfront Fusion 제품 및 기술 설명서 홈 페이지를 시작합니다. 다음 링크, 도움말 문서 및 추가 리소스를 사용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법을 알아보십시오.
+Adobe Workfront Fusion 제품 및 기술 설명서 홈 페이지를 시작합니다. 다음 링크, 도움말 문서 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
 
 ## 새로운 기능
 
@@ -49,14 +49,14 @@ Adobe Workfront Fusion 제품 및 기술 설명서 홈 페이지를 시작합니
 
 ### 목차 및 검색 창 사용
 
-* **목차**: 페이지 왼쪽에 있는 목차로 시작하여 사용 가능한 주제에 대한 개요를 확인하고 확장 섹션을 통해 특정 주제로 범위를 좁힙니다.
-* **검색 창**: 페이지 상단 근처에 있는 검색 창을 사용하여 설명서를 찾습니다. 문제 또는 주제와 관련된 특정 용어를 입력합니다. &quot;시나리오&quot;와 같은 일반 용어 대신 &quot;필터 추가&quot; 또는 &quot;Workfront 커넥터&quot;를 사용하십시오.
+* **목차**: 페이지 왼쪽의 목차부터 시작하여 사용 가능한 주제에 대한 개요를 확인하고 확장 섹션별로 특정 주제로 좁힙니다.
+* **검색 창**: 페이지 상단의 검색 창을 사용하여 문서를 찾습니다. 문제나 주제와 관련된 특정 용어를 입력합니다. “시나리오”와 같은 일반 용어 대신 “필터 추가” 또는 “Workfront 커넥터”를 사용하십시오.
 
 ### 학습 및 교육 섹션 탐색
 
-* **실시간 강사 주도 교육 세션** Adobe에서는 Fusion에 대한 실시간 3일 교육 세션을 제공합니다. 자세한 내용 및 사용 가능한 세션은 [Adobe Workfront Fusion에서 연결 및 워크플로 관리](https://learning.adobe.com/courses/adobe_workfront/cours000000000098121.html)를 참조하십시오.
-* **교육 자료**: [소개 및 기술 전략](https://experienceleague.adobe.com/ko/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy) Workfront Fusion 교육 페이지로 이동하여 Fusion을 가장 잘 사용하는 방법을 더 잘 이해할 수 있도록 고안된 일련의 학습 및 연습을 시작합니다.
+* **실시간 강사 주도 교육 세션** Adobe에서는 Fusion에 대한 3일간의 실시간 교육 세션을 제공합니다. 자세한 내용 및 사용 가능한 세션은 [Adobe Workfront Fusion에서 연결 및 워크플로 관리](https://learning.adobe.com/courses/adobe_workfront/cours000000000098121.html)를 참조하십시오.
+* **교육 자료**: [소개 및 기술 전략](https://experienceleague.adobe.com/ko/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy) Workfront Fusion 교육 페이지로 이동하여 Fusion을 가장 잘 사용하는 방법을 더 잘 이해할 수 있도록 설계된 일련의 학습 및 연습을 시작합니다.
 
 ### 커뮤니티 포럼에서 답변 찾기
 
-* **질문하기**: 설명서가 질문에 대답하지 않으면 다른 사용자와 전문가가 도움을 제공할 수 있는 [Workfront Fusion 커뮤니티 포럼](https://experienceleaguecommunities.adobe.com/t5/workfront-fusion/ct-p/workfront-fusion-2?profile.language=ko)에 게시해 보십시오.
+* **질문하기**: 설명서가 질문에 답이 되지 않는다면, 다른 사용자와 전문가들이 도움을 제공할 수 있는 [Workfront Fusion 커뮤니티 포럼](https://experienceleaguecommunities.adobe.com/t5/workfront-fusion/ct-p/workfront-fusion-2)에 게시해 보십시오.

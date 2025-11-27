@@ -17,17 +17,17 @@ ht-degree: 98%
 
 >[!IMPORTANT]
 >
->Adobe Workfront Fusion은 거의 모든 웹 서비스에 연결할 수 있습니다. 이 목록에 있는 앱에만 국한되지 않습니다. 작업하려는 앱이 이 목록에 없는 경우 범용 커넥터 중 하나를 사용하여 앱 또는 웹 서비스에 연결합니다.
+>Adobe Workfront Fusion은 거의 모든 웹 서비스에 연결할 수 있습니다. 이 목록에 있는 앱에만 국한되지 않습니다. 작업할 앱이 이 목록에 없는 경우 범용 커넥터 중 하나를 사용하여 앱 또는 웹 서비스에 연결합니다.
 
 ## 범용 커넥터
 
 이러한 커넥터를 사용하면 공개 API가 있는 모든 앱이나 웹 서비스에 연결할 수 있습니다.
 
 * [http > [!UICONTROL 요청하기] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL 기본 인증 요청 만들기] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL OAuth 2.0 요청 만들기] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL 클라이언트 인증서 인증 요청 만들기] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL API 키 인증 요청 만들기]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL 기본 인증 요청하기] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL OAuth 2.0 요청하기] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL 클라이언트 인증서 인증 요청하기] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL API 키 인증 요청하기]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
 * [[!UICONTROL HTTP] > 기타 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-modules.md)
 * [SOAP 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/soap-module.md)
 * [FTP 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/ftp-modules.md)

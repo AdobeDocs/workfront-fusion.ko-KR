@@ -27,7 +27,7 @@ ht-degree: 100%
 | 웹후크 <br> ![웹후크 아이콘](assets/webhooks-icon.png) | 웹후크는 애플리케이션의 변경 사항을 확인한 다음, 해당 변경 사항을 기반으로 시나리오를 시작합니다. 예를 들어, 특정 Workfront 프로젝트에 문제가 제출될 때 시나리오를 시작하도록 웹후크를 구성할 수 있습니다. 웹후크 영역에는 팀에서 구성한 웹후크 목록과 해당 웹후크가 사용되는 시나리오가 표시됩니다. | [인스턴트 트리거(웹후크)](/help/workfront-fusion/references/modules/webhooks-reference.md) |
 | 키 <br> ![키 아이콘](assets/keys-icon.png) | 공개 및 비공개 키는 데이터를 암호화하고 해독하는 데 사용됩니다. 공개 키는 배포할 수 있으며, 공개 키를 가진 사람이라면 누구나 데이터를 암호화할 수 있지만, 비공개 키만 해독할 수 있습니다. 마찬가지로, 비공개 키를 가진 사용자는 공개 키를 가진 누구나 해독할 수 있는 데이터를 암호화할 수 있습니다. 키 영역에서 팀이 소유한 키를 보고 관리할 수 있습니다. | [키](/help/workfront-fusion/references/modules/keys.md) |
 | 데이터 저장소  <br> ![데이터 저장소 아이콘](assets/data-store-icon.png) | 데이터 저장소는 시나리오 외부에 존재하는 소규모 데이터베이스입니다. 데이터 저장소를 사용하면 시나리오 간 또는 시나리오의 개별 실행 간에 데이터를 전송할 수 있습니다. 데이터 저장소 영역에서 팀이 소유한 데이터 저장소를 보고 관리할 수 있습니다. | [데이터 저장소](/help/workfront-fusion/create-scenarios/map-data/data-stores.md) |
-| 데이터 구조 <br> ![데이터 구조 아이콘](assets/data-structure-icon.png) | 데이터 구조는 Fusion으로 전송되는 데이터 포맷을 설명하며, 일반적으로 JSON, XML, CSV와 같은 포맷을 직렬화하거나 구문 분석하는 데 사용됩니다. 데이터 구조에서 팀이 소유한 데이터 구조를 보고 관리할 수 있습니다. | [데이터 구조](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md) |
+| 데이터 구조 <br> ![데이터 구조 아이콘](assets/data-structure-icon.png) | 데이터 구조는 Fusion으로 전송되는 데이터 형식을 설명하며, 일반적으로 JSON, XML, CSV와 같은 형식을 직렬화하거나 구문 분석하는 데 사용됩니다. 데이터 구조에서 팀이 소유한 데이터 구조를 보고 관리할 수 있습니다. | [데이터 구조](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md) |
 
 >[!NOTE]
 >

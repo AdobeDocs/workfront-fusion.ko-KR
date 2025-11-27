@@ -59,4 +59,4 @@ Adobe Workfront Fusion 제품 및 기술 설명서 홈 페이지를 시작합니
 
 ### 커뮤니티 포럼에서 답변 찾기
 
-* **질문하기**: 설명서가 질문에 답이 되지 않는다면, 다른 사용자와 전문가들이 도움을 제공할 수 있는 [Workfront Fusion 커뮤니티 포럼](https://experienceleaguecommunities.adobe.com/t5/workfront-fusion/ct-p/workfront-fusion-2)에 게시해 보십시오.
+* **질문하기**: 설명서가 질문에 답이 되지 않는다면, 다른 사용자와 전문가들이 도움을 제공할 수 있는 [Workfront Fusion 커뮤니티 포럼](https://experienceleaguecommunities.adobe.com/t5/workfront-fusion/ct-p/workfront-fusion-2?profile.language=ko)에 게시해 보십시오.

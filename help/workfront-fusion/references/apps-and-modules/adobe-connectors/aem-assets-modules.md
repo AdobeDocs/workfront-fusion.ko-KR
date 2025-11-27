@@ -62,7 +62,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 * 이 모듈을 사용하려면 Adobe Experience Manager Assets 계정이 있어야 합니다.
 * Adobe Developer 콘솔에서 서버 간 흐름을 설정해야 합니다.
 
-  Adobe Developer 콘솔에서 서버 간 흐름을 설정하는 방법에 대한 지침은 [서버측 API용 액세스 토큰 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow)을 참조하십시오.
+  Adobe Developer 콘솔에서 서버 간 흐름을 설정하는 방법에 대한 지침은 [서버측 API용 액세스 토큰 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=ko#the-server-to-server-flow)을 참조하십시오.
 * Adobe Experience Manager 기술 계정에 쓰기 권한이 있어야 합니다.
 
   Adobe Experience Manager 기술 계정에 쓰기 권한을 추가하는 방법에 대한 지침은 Adobe Experience Manager 설명서의 [서비스 자격 증명](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)을 참조하십시오.
@@ -113,7 +113,7 @@ Adobe Experience Manager Assets 모듈에 대한 연결을 만들려면 다음 �
 >
 >* 이 필드에 대한 정보는 Adobe Developer Console에서 서버 간 흐름을 설정하는 과정에서 생성됩니다. 이 값들은 해당 설정의 일부로 생성된 서비스 자격 증명 JSON 파일에서 찾을 수 있습니다.
 >
->   Adobe Developer Console에서 서버 간 흐름을 설정하는 방법에 대한 지침은 [서버측 API용 액세스 토큰 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow)을 참조하십시오.
+>   Adobe Developer Console에서 서버 간 흐름을 설정하는 방법에 대한 지침은 [서버측 API용 액세스 토큰 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=ko#the-server-to-server-flow)을 참조하십시오.
 >
 >* Adobe Experience Manager 기술 계정에 쓰기 권한이 있어야 합니다.
 >

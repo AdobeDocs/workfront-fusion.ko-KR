@@ -3,10 +3,10 @@ title: Veeva Vault 모듈
 description: Adobe Workfront Fusion 시나리오에서는 Veeva Vault를 사용하는 워크플로를 자동화하고 여러 타사 애플리케이션 및 서비스에 연결할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 4ba05a5f400ba1bdfb97586500baf741b555cd20
+source-git-commit: 881e5ba39d1730b641085cf0d02137d18e443135
 workflow-type: tm+mt
-source-wordcount: '2325'
-ht-degree: 2%
+source-wordcount: '2485'
+ht-degree: 19%
 
 ---
 
@@ -14,13 +14,13 @@ ht-degree: 2%
 
 Adobe Workfront Fusion 시나리오에서는 Veeva Vault를 사용하는 워크플로를 자동화하고 여러 타사 애플리케이션 및 서비스에 연결할 수 있습니다.
 
-시나리오를 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 인덱스](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
+시나리오 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 색인](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
 
-모듈에 대한 자세한 내용은 [모듈: 문서 인덱스](/help/workfront-fusion/references/modules/modules-toc.md)의 문서를 참조하십시오.
+모듈에 대한 자세한 내용은 [모듈: 문서 색인](/help/workfront-fusion/references/modules/modules-toc.md)의 문서를 참조하십시오.
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -37,20 +37,20 @@ Adobe Workfront Fusion 시나리오에서는 Veeva Vault를 사용하는 워크�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>작업 기반: Workfront Fusion 라이센스 요구 사항 없음</p>
-   <p>커넥터 기반(레거시): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
+   <p>작업 기반: Workfront Fusion 라이선스 요구 사항 없음</p>
+   <p>커넥터 기반(이전): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
@@ -64,7 +64,12 @@ Veeva Vault 모듈을 사용하려면 Veeva Vault 계정이 있어야 합니다.
 
 Veeva Vault 모듈 내에서 직접 Veeva Vault 계정에 연결할 수 있습니다.
 
+연결을 만들 때 암호를 사용할지 또는 OAuth2 인증을 사용할지 여부를 선택할 수 있습니다.
+
+### 사용자 이름과 암호를 사용하여 Veeva Vault에 연결
+
 1. Veeva Vault 모듈에서 Connection 필드 옆에 있는 **추가**&#x200B;를 클릭합니다.
+1. **연결 유형** 필드에서 `Veeva Username Password`을(를) 선택합니다.
 1. 다음 필드를 입력합니다.
 
    <table style="table-layout:auto"> 
@@ -75,18 +80,6 @@ Veeva Vault 모듈 내에서 직접 Veeva Vault 계정에 연결할 수 있습�
        <td role="rowheader">연결 이름</td> 
        <td> <p>연결의 이름을 입력합니다.</p> </td> 
       </tr> 
-      <tr>
-        <td role="rowheader">환경</td>
-        <td>
-          <p>프로덕션 환경에 연결할지 아니면 비프로덕션 환경에 연결할지 선택합니다.</p>
-        </td>
-      </tr>
-      <tr>
-        <td role="rowheader">유형</td>
-        <td>
-          <p>서비스 계정에 연결할지 또는 개인 계정에 연결할지 선택합니다.</p>
-        </td>
-      </tr>
       <tr>
         <td role="rowheader">사용자 이름</td>
         <td>
@@ -106,17 +99,69 @@ Veeva Vault 모듈 내에서 직접 Veeva Vault 계정에 연결할 수 있습�
      </tbody> 
     </table>
 
-1. 연결을 만들고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭하세요.
+1. 연결을 만들고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
 
+### OAuth2 인증을 사용하여 Veeva Vault에 연결
+
+1. Veeva Vault 모듈에서 Connection 필드 옆에 있는 **추가**&#x200B;를 클릭합니다.
+1. **연결 유형** 필드에서 `Veeva Oauth 2`을(를) 선택합니다.
+1. 다음 필드를 입력합니다.
+
+   <table style="table-layout:auto"> 
+     <col> 
+     <col> 
+     <tbody> 
+      <tr> 
+       <td role="rowheader">연결 이름</td> 
+       <td> <p>연결의 이름을 입력합니다.</p> </td> 
+      </tr> 
+      <tr>
+        <td role="rowheader">클라이언트 ID</td>
+        <td>
+          <p>이 연결에 사용할 Veeva Vault 응용 프로그램의 클라이언트 ID를 입력합니다.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">클라이언트 암호</td>
+        <td>
+          <p>이 연결에 사용할 Veeva Vault 응용 프로그램의 클라이언트 암호를 입력합니다.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">범위</td>
+        <td>
+          <p>이 연결의 범위를 입력합니다.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">임차인 ID</td>
+        <td>
+          <p>이 연결에 대한 테넌트 ID를 입력합니다.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">프로필 ID</td>
+        <td>
+          <p>OAuth2 / Copen ID Connect 프로필의 ID를 입력합니다.</p>
+        </td>
+      </tr>
+      <tr> 
+       <td role="rowheader">자격 증명 모음 DNS</td> 
+       <td>Veeva Vault DNS(도메인 이름)를 입력합니다.</p><p>Veeva Vault DNS를 찾으려면 Veeva Vault에 액세스하는 데 사용하는 URL을 검사합니다.</p>예를 들어 URL <code>https://my-dns.veevavault.com</code>에서 DNS는 <code>my-dns</code>입니다. 전체 URL을 입력할 필요는 없습니다.</td> 
+      </tr> 
+     </tbody> 
+    </table>
+
+1. 연결을 만들고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
 
 
 ## Veeva Vault 모듈 및 해당 필드
 
-Veeva Vault 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 추가 Veeva Vault 필드가 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+Veeva Vault 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 추가 Veeva Vault 필드가 표시될 수 있습니다. 모듈의 굵은 글씨 제목은 필수 필드를 나타냅니다.
 
-필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
+필드 또는 함수 위에 있는 맵 버튼을 보면 해당 필드의 변수와 함수를 설정하는 데 사용할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
-![맵 전환](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![토글 매핑](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [문서](#document)
 * [오브젝트](#object)
@@ -600,11 +645,11 @@ Veeva Vault 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드�
 
 ### 기타
 
-* [사용자 지정 API 호출 만들기](#make-a-custom-api-call)
+* [사용자 정의 API 호출하기](#make-a-custom-api-call)
 * [VQL 쿼리 만들기](#make-a-vql-query)
 * [로그 읽기](#read-logs)
 
-#### 사용자 지정 API 호출 만들기
+#### 사용자 정의 API 호출하기
 
 이 작업 모듈은 Veeva Vault API에 대한 사용자 정의 호출을 수행합니다.
 
@@ -626,15 +671,15 @@ Veeva Vault 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드�
   </tr> 
   <tr> 
    <td role="rowheader">헤더</td> 
-   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion은 사용자에게 권한 부여 헤더를 추가합니다.</p> </td> 
+   <td> <p>표준 JSON 오브젝트 형태로 요청의 헤더를 추가합니다.</p> <p>예: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion은 사용자에게 권한 부여 헤더를 추가합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">쿼리 문자열</td> 
-   <td> <p>표준 JSON 개체 형식으로 API 호출에 대한 쿼리를 추가합니다.</p> <p>For example: <code>{"name":"something-urgent"}</code></p> </td> 
+   <td> <p>표준 JSON 오브젝트 형식으로 API 호출에 대한 쿼리를 추가합니다.</p> <p>예: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">본문</td> 
-   <td> <p>표준 JSON 개체의 형태로 API 호출에 대한 본문 콘텐츠를 추가합니다.</p> <p>참고:  <p>JSON에서 <code>if</code>과(와) 같은 조건문을 사용할 때 따옴표를 조건문 외부에 넣으십시오.</p> 
+   <td> <p>표준 JSON 오브젝트 형식으로 API 호출에 대한 본문 콘텐츠를 추가합니다.</p> <p>메모:  <p>JSON에서 <code>if</code>와 같은 조건문을 사용할 때는 따옴표를 조건문 외부에 배치해야 합니다.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -683,11 +728,11 @@ Veeva Vault 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드�
   </tr> 
   <tr> 
    <td role="rowheader"> <p>시작 일자</p> </td> 
-   <td> <p>검색할 감사의 시작 날짜를 입력하거나 매핑합니다.</p><p>지원되는 날짜 및 시간 형식 목록은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 강제 변환</a>을 참조하십시오.</p> </td> 
+   <td> <p>검색할 감사의 시작 날짜를 입력하거나 매핑합니다.</p><p>지원되는 날짜 및 시간 형식 목록은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">유형 강제 변환</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>종료 일자</p> </td> 
-   <td> <p>검색할 감사의 종료 날짜를 입력하거나 매핑합니다.</p><p>지원되는 날짜 및 시간 형식 목록은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 강제 변환</a>을 참조하십시오.</p> </td> 
+   <td> <p>검색할 감사의 종료 날짜를 입력하거나 매핑합니다.</p><p>지원되는 날짜 및 시간 형식 목록은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">유형 강제 변환</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>결과 URL </p> </td> 

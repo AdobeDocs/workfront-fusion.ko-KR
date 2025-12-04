@@ -4,10 +4,10 @@ description: 많은 서비스는 서비스에서 특정 변경 사항이 발생�
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
+source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
 workflow-type: tm+mt
-source-wordcount: '1182'
-ht-degree: 0%
+source-wordcount: '1232'
+ht-degree: 10%
 
 ---
 
@@ -37,7 +37,7 @@ Workfront Fusion의 Webhooks에 대한 비디오 소개는 다음을 참조하�
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -54,13 +54,13 @@ Workfront Fusion의 Webhooks에 대한 비디오 소개는 다음을 참조하�
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 +++
 
@@ -83,6 +83,11 @@ Workfront Fusion의 Webhooks에 대한 비디오 소개는 다음을 참조하�
 1. 웹후크가 사용되는 시나리오를 보려면 해당 웹후크에 대한 시나리오 열에서 **시나리오** 단추를 클릭하십시오.
 1. 이 웹후크에 사용된 연결을 보려면 해당 웹후크의 연결 열에서 **연결** 단추를 클릭하십시오.
 1. 열을 숨기거나 이전에 숨겨진 열을 표시하려면 **열** 아이콘 ![열 아이콘](assets/glist-column.png)을 클릭하고 열 이름을 선택하거나 선택 취소합니다.
+1. Workfront 웹후크와 연결된 이벤트 구독을 보려면 웹후크 옆에 있는 상자를 선택하고 페이지 하단에서 **세부 정보 표시**&#x200B;를 선택하십시오.
+
+   >[!NOTE]
+   >
+   > 이벤트 구독 세부 정보는 새 Workfront 커넥터에서 생성된 Workfront 웹후크에만 사용할 수 있습니다. 웹후크 세부 사항은 현재 다른 커넥터에 사용할 수 없습니다.
 
 
 ## 인스턴트 트리거 예약
@@ -150,7 +155,7 @@ Workfront Fusion은 30일 동안 웹후크 페이로드를 저장합니다. 웹�
 
 ### Webhook 비활성화
 
-다음 중 하나가 적용되는 경우 웹후크는 자동으로 비활성화됩니다.
+다음 중 하나에 해당하는 경우 웹후크가 자동으로 비활성화됩니다.
 
 * 웹후크가 5일 이상 어떤 시나리오에도 연결되지 않았습니다.
 * 웹후크는 30일 이상 비활성 상태인 비활성 시나리오에서만 사용됩니다.

@@ -4,10 +4,10 @@ description: 시나리오 편집기를 사용하면 시각적 인터페이스에
 author: Becky
 feature: Workfront Fusion
 exl-id: 47ccecf0-751c-4026-96a9-329c33cb6801
-source-git-commit: 93d06cb917680f9cabc1bad6be0f9cd843449d07
+source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 3%
+source-wordcount: '623'
+ht-degree: 16%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -36,13 +36,13 @@ ht-degree: 3%
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 +++
 
@@ -71,15 +71,20 @@ ht-degree: 3%
 
 ### 컨트롤
 
+이러한 컨트롤 중 일부를 보려면 컨트롤 영역에서 세 점 아이콘을 클릭해야 할 수 있습니다.
+
 | 액션 | 세부 사항 |
 |----------|----------|
-| 저장합니다. | 시나리오를 저장하면 나중에 액세스해야 하는 경우 3점 메뉴 아래에서 새 버전을 사용할 수 있습니다. 이전에 저장한 시나리오 버전은 60일 동안만 사용할 수 있습니다. |
-| 시나리오 설정 | 시나리오 설정 패널에는 시나리오에 대한 고급 설정이 포함되어 있습니다. 사용 가능한 설정에 대한 자세한 내용은 [시나리오 설정 구성](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)을 참조하십시오. |
-| 참고 | 시나리오에 대해 메모를 합니다. 다른 사용자는 시나리오에 있을 때 이러한 메모를 볼 수 있습니다. |
-| 자동 정렬 | 시나리오에서 모듈을 자동 정렬합니다. |
-| 흐름 설명 | 움직이는 점이 시나리오를 통해 데이터가 이동하는 방식을 보여 주는 애니메이션을 봅니다. |
-| 개발 도구 | Devtool을 사용하면 시나리오의 모든 수동 실행을 확인하고, 수행된 모든 작업을 검토하고, 수행된 모든 API 호출의 세부 정보를 볼 수 있습니다. 오류를 일으킨 모듈, 작업 또는 단일 응답을 확인하고 해당 지식을 사용하여 시나리오를 구체화할 수 있습니다. 자세한 내용은 [시나리오 디버그](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)를 참조하십시오. |
-| 기타 | 기타 메뉴에서 블루프린트를 가져오거나 내보내고 시나리오를 이전 버전으로 복원할 수 있습니다. |
+| 저장합니다. <p>![저장 아이콘](assets/save-icon.png)</p> | 시나리오를 저장하면 나중에 액세스해야 하는 경우 3점 메뉴 아래에서 새 버전을 사용할 수 있습니다. 이전에 저장한 시나리오 버전은 60일 동안만 사용할 수 있습니다. |
+| 시나리오 설정 <p>![시나리오 설정 아이콘](assets/scenario-settings-icon.png)</p> | 시나리오 설정 패널에는 시나리오에 대한 고급 설정이 포함되어 있습니다. 사용 가능한 설정에 대한 자세한 내용은 [시나리오 설정 구성](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)을 참조하십시오. |
+| 참고  <p>![메모 아이콘](assets/notes-icon.png)</p> | 시나리오에 대해 메모를 합니다. 다른 사용자는 시나리오에 있을 때 이러한 메모를 볼 수 있습니다. |
+| 자동 정렬 <p>![자동 정렬 아이콘](assets/auto-align-icon.png)</p> | 시나리오에서 모듈을 자동 정렬합니다. |
+| 검색 모듈 ![검색 모듈](assets/search-modules-icon.png)  </p> | 검색어를 입력하여 모듈을 찾은 다음 해당 모듈로 가져올 검색 결과를 클릭합니다. 모듈 이름, ID, 유형 또는 애플리케이션별로 검색할 수 있습니다. |
+| 흐름 설명  <p>![흐름 설명 아이콘](assets/explain-flow-icon.png) </p> | 움직이는 점이 시나리오를 통해 데이터가 이동하는 방식을 보여 주는 애니메이션을 봅니다. |
+| DevTool <p>![DevTool 아이콘](assets/devtool-icon.png)</p> | DevTool을 사용하면 시나리오의 모든 수동 실행을 확인하고, 수행된 모든 작업을 검토하고, 수행된 모든 API 호출의 세부 정보를 볼 수 있습니다. 오류를 일으킨 모듈, 작업 또는 단일 응답을 확인하고 해당 지식을 사용하여 시나리오를 구체화할 수 있습니다. 자세한 내용은 [시나리오 디버그](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)를 참조하십시오. |
+| 블루프린트 내보내기  <p>![블루프린트 내보내기 아이콘](assets/export-blueprint-icon.png) </p> | 현재 시나리오의 블루프린트를 내보냅니다. |
+| 블루프린트 가져오기  <p>![블루프린트 가져오기 아이콘](assets/import-blueprint-icon.png) </p> | 이전에 내보낸 시나리오 블루프린트를 가져옵니다. |
+| 이전 버전  <p>![이전 버전 아이콘](assets//previous-version-icon.png) </p> | 이 시나리오의 이전 버전을 봅니다. |
 
 ![컨트롤 패널](assets/controls-editor-scenario.png)
 

@@ -4,20 +4,20 @@ description: ' [!DNL Adobe Workfront Planning] 모듈을 사용하면  [!DNL Ado
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: 30ddefa8519e6f2052308482137d0fa018676902
 workflow-type: tm+mt
-source-wordcount: '1582'
-ht-degree: 1%
+source-wordcount: '1583'
+ht-degree: 44%
 
 ---
 
-# [!DNL Adobe Workfront Planning]개 모듈
+# [!DNL Adobe Workfront Planning] 모듈
 
 [!DNL Adobe Workfront Planning] 모듈을 사용하면 Workfront Planning에서 이벤트가 발생할 때 시나리오를 트리거할 수 있습니다. 레코드를 만들고, 읽고, 업데이트하고 삭제하거나 [!DNL Adobe Workfront Planning] 계정에 대한 사용자 지정 API 호출을 수행할 수도 있습니다.
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -34,15 +34,17 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
-   </td> 
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   </td>
   </tr>
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-+++## 사전 요구 사항
++++
+
+s## 사전 요구 사항
 
 Workfront Planning에 액세스하려면 다음 항목이 있어야 합니다.
 
@@ -69,11 +71,11 @@ Adobe Workfront Planning 커넥터는 다음을 사용합니다.
  </tbody> 
  </table>
 
-## [!DNL Adobe Workfront Planning]에 연결 만들기 {#create-a-connection-to-adobe-workfront-planning}
+## [!DNL Adobe Workfront Planning]에 연결하기 {#create-a-connection-to-adobe-workfront-planning}
 
 Workfront Fusion 모듈 내에서 직접 [!DNL Workfront Planning] 계정에 연결할 수 있습니다.
 
-1. [!DNL Adobe Workfront Planning] 모듈에서 [연결] 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
+1. 모든 [!DNL Adobe Workfront Planning] 모듈에서 연결 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 
 1. 다음 필드를 채웁니다.
 
@@ -86,7 +88,7 @@ Workfront Fusion 모듈 내에서 직접 [!DNL Workfront Planning] 계정에 연
         <tr>
           <td role="rowheader">[!UICONTROL 연결 이름]</td>
           <td>
-            <p>이 연결의 이름을 입력하십시오.</p>
+            <p>이 연결의 이름을 입력합니다.</p>
           </td>
         </tr>
         <tr>
@@ -99,11 +101,11 @@ Workfront Fusion 모듈 내에서 직접 [!DNL Workfront Planning] 계정에 연
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL 클라이언트 ID]<p>(선택 사항)</p></td>
-          <td>[!DNL Adobe] [!UICONTROL 클라이언트 ID]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.</td>
+          <td>[!DNL Adobe] [!UICONTROL 클라이언트 ID]를 입력합니다. 해당 ID는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL 클라이언트 암호]<p>(선택 사항)</p></td>
-          <td>[!DNL Adobe] [!UICONTROL 클라이언트 암호]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.
+          <td>[!DNL Adobe] [!UICONTROL 클라이언트 암호]를 입력합니다. 해당 ID는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL 인증 URL]</td>
@@ -116,16 +118,16 @@ Workfront Fusion 모듈 내에서 직접 [!DNL Workfront Planning] 계정에 연
       </tbody>
     </table>
 
-1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭하세요.
+1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
 
-## [!DNL Adobe Workfront Planning]개 모듈 및 해당 필드
+## [!DNL Adobe Workfront Planning] 모듈 및 해당 필드
 
-Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 이러한 필드와 함께 앱이나 서비스의 액세스 수준 등의 요소에 따라 추가 Workfront 필드가 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+Workfront 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를 표시합니다. 이와 함께 앱 또는 서비스의 액세스 수준과 같은 요인에 따라 추가적인 Workfront 필드가 표시될 수 있습니다. 모듈의 굵은 글씨 제목은 필수 필드를 나타냅니다.
 
-필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
+필드 또는 함수 위에 있는 맵 버튼을 보면 해당 필드의 변수와 함수를 설정하는 데 사용할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
 
-![맵 전환](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![토글 매핑](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [트리거](#triggers)
 * [액션](#actions)
@@ -143,20 +145,20 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Webhook]</td>
+      <td role="rowheader">[!UICONTROL 웹후크]</td>
       <td>사용할 웹후크를 선택하거나 추가 를 클릭하여 새 웹후크를 만듭니다.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Workfront Planning]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 연결하기를 참조하십시오.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 개체 유형]</td>
+      <td role="rowheader">[!UICONTROL 오브젝트 유형]</td>
       <td>레코드, 레코드 종류 또는 작업 영역을 감시할지 여부를 선택합니다.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 상태]</td>
-      <td>이전 상태를 볼 것인지 새 상태를 볼 것인지 선택합니다.<ul><li><p><b>[!UICONTROL 새 상태]</b></p><p>레코드가 지정된 값으로 <b>에서 </b>(으)로 변경되면 시나리오를 트리거합니다.</p></li><li><p><b>[!UICONTROL 이전 상태]</b></p><p>레코드가 지정된 값에서 <b>부터</b>까지 변경되는 경우 시나리오를 트리거합니다.</p></li></ul></td> 
+      <td>이전 상태를 볼 것인지 새 상태를 볼 것인지 선택합니다.<ul><li><p><b>[!UICONTROL 새 상태]</b></p><p>레코드가 지정된 값<b>으로</b> 변경되면 시나리오를 트리거합니다.</p></li><li><p><b>[!UICONTROL 이전 상태]</b></p><p>레코드가 지정된 값<b>에서</b> 변경되면 시나리오를 트리거합니다.</p></li></ul></td> 
     <tr>
       <td role="rowheader">[!UICONTROL Workspace]</td>
       <td>레코드를 보는 경우 레코드를 볼 Workspace을 선택합니다.</td>
@@ -168,7 +170,7 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
     </tr>
      <tr data-mc-conditions=""> 
       <td> <p>[!UICONTROL 이벤트 필터]</p> </td> 
-      <td> <p>선택한 기준을 충족하는 레코드만 보도록 필터를 설정할 수 있습니다.</p> <p>각 필터에 대해 필터를 평가할 필드, 연산자 및 필터를 허용할 값을 입력합니다. AND 규칙을 추가하여 두 개 이상의 필터를 사용할 수 있습니다.</p> <p>참고: 기존 Workfront 웹후크에서는 필터를 편집할 수 없습니다. Workfront 이벤트 구독에 대해 서로 다른 필터를 설정하려면 현재 웹후크를 제거하고 새 필터를 만드십시오.</p> <p>이벤트 필터에 대한 자세한 내용은 Workfront 모듈 문서의 Workfront &gt; [!UICONTROL Watch Events] 모듈에서 <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">이벤트 구독 필터</a>를 참조하십시오.</p> </td> 
+      <td> <p>선택한 기준을 충족하는 레코드만 보도록 필터를 설정할 수 있습니다.</p> <p>각 필터에 대해 필터가 평가할 필드, 연산자, 필터를 허용하기 원하는 값을 입력합니다. AND 규칙을 추가하여 두 개 이상의 필터를 사용할 수 있습니다.</p> <p>참고: 기존 Workfront 웹후크에서는 필터를 편집할 수 없습니다. Workfront 이벤트 구독에 대해 서로 다른 필터를 설정하려면 현재 웹후크를 제거하고 새 웹후크를 만듭니다.</p> <p>이벤트 필터에 대한 자세한 내용은 Workfront 모듈 문서의 Workfront &gt; [!UICONTROL Watch Events] 모듈에서 <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">이벤트 구독 필터</a>를 참조하십시오.</p> </td> 
      </tr> 
     <tr>
       <td role="rowheader">[!UICONTROL Objects to watch]</td>
@@ -201,8 +203,8 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Workfront Planning]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 연결하기를 참조하십시오.</td>
     </tr>
      <tr>
       <td role="rowheader">
@@ -213,7 +215,7 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
   </tbody>
 </table>
 
-#### 사용자 지정 API 호출 만들기
+#### 사용자 정의 API 호출하기
 
 이 모듈은 [!DNL Adobe Workfront Planning] API에 대한 사용자 지정 API 호출을 만듭니다.
 
@@ -222,8 +224,8 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Workfront Planning]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 연결하기를 참조하십시오.</td>
     </tr>
      <tr>
       <td role="rowheader">
@@ -240,11 +242,11 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
    <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Headers]</td>
+      <td role="rowheader">[!UICONTROL 헤더]</td>
       <td>
-        <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p>
-        <p>For example, <code>{"Content-type":"application/json"}</code></p>
-        <p>Workfront Fusion은 인증 헤더를 자동으로 추가합니다.</p>
+        <p>표준 JSON 오브젝트 형태로 요청의 헤더를 추가합니다.</p>
+        <p>예: <code>{"Content-type":"application/json"}</code></p>
+        <p>Workfront Fusion은 자동으로 인증 헤더를 추가합니다.</p>
       </td>
     </tr>
     <tr>
@@ -254,8 +256,8 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>표준 JSON 개체의 형태로 API 호출에 대한 본문 콘텐츠를 추가합니다.</p> <p>참고:  <p>JSON에서 <code>if</code>과(와) 같은 조건문을 사용할 때 따옴표를 조건문 외부에 넣으십시오.</p> 
+      <td role="rowheader">[!UICONTROL 본문]</td>
+   <td> <p>표준 JSON 오브젝트 형식으로 API 호출에 대한 본문 콘텐츠를 추가합니다.</p> <p>메모:  <p>JSON에서 <code>if</code>와 같은 조건문을 사용할 때는 따옴표를 조건문 외부에 배치해야 합니다.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
@@ -274,8 +276,8 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Workfront Planning]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 연결하기를 참조하십시오.</td>
     </tr>
      <tr>
       <td role="rowheader">
@@ -323,8 +325,8 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Workfront Planning]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 연결하기를 참조하십시오.</td>
     </tr>
      <tr>
       <td role="rowheader">
@@ -351,8 +353,8 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Workfront Planning]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 연결하기를 참조하십시오.</td>
     </tr>
      <tr>
       <td role="rowheader">
@@ -372,8 +374,8 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Workfront Planning]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 연결하기를 참조하십시오.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 레코드 ID]</td>
@@ -391,8 +393,8 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Workfront Planning]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 연결하기를 참조하십시오.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Workspace]</td>
@@ -419,8 +421,8 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Workfront Planning]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 연결하기를 참조하십시오.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Workspace]</td>
@@ -438,8 +440,8 @@ Workfront 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Workfront Planning]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Workfront Planning]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 연결하기를 참조하십시오.</td>
     </tr>
      <tr>
       <td role="rowheader">

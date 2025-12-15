@@ -4,9 +4,9 @@ description: 많은 서비스는 서비스에서 특정 변경 사항이 발생�
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
+source-git-commit: 45efeecd1758e302f57498bab842594800a84c1d
 workflow-type: tm+mt
-source-wordcount: '1232'
+source-wordcount: '1272'
 ht-degree: 10%
 
 ---
@@ -76,6 +76,9 @@ Workfront Fusion의 Webhooks에 대한 비디오 소개는 다음을 참조하�
 
 1. 특정 웹후크를 검색하려면 검색 상자에 검색어를 입력합니다.
 1. 웹후크를 복사하려면 해당 웹후크 행의 URL 근처에 있는 복사 아이콘 ![웹후크 복사 아이콘](assets/copy-webhook-icon.png)을 클릭합니다.
+1. 웹후크의 우선 순위를 설정하려면 우선 순위 열의 드롭다운을 클릭하고 새 우선 순위를 선택합니다.
+
+   우선 순위가 더 높은 웹후크를 먼저 처리하며, 이는 작업자 풀의 자원 경쟁 자동화 수가 많은 경우 유용할 수 있습니다.
 1. 웹후크를 비활성화하거나 활성화하려면 해당 웹후크 행의 상태 열에서 토글을 비활성화하거나 활성화합니다.
 1. 웹후크 대기열이 가득 찼는지 확인하려면 [전체 대기열] 열을 선택합니다. 이 열의 숫자는 현재 큐에 있는 항목의 수입니다.
 1. Webhook에서 처리한 작업을 보려면 해당 Webhook의 전체 대기열 열에서 **작업**&#x200B;을 클릭합니다.

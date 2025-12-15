@@ -1,24 +1,24 @@
 ---
-title: 시나리오를 만들기 위한 워크플로
+title: 시나리오 만들기 워크플로
 description: 시나리오를 만들려면 이 일반 워크플로를 따르십시오.
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: fc0b3b7ca4ec999c7a121d0564d36abff6f2d620
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 0%
+source-wordcount: '816'
+ht-degree: 3%
 
 ---
 
-# 시나리오를 만들기 위한 워크플로
+# 시나리오 만들기 워크플로
 
 시나리오는 사용 사례를 처리하는 애플리케이션 및 모듈을 통해 조직의 요구 사항을 충족하도록 구축됩니다. 그러나 시나리오를 만드는 것은 사용 사례에 관계없이 동일한 기본 워크플로우를 따릅니다. 이 문서에서는 시나리오를 만드는 기본 프로세스에 대해 설명합니다.
 
 
 * [시나리오 만들기 및 이름 지정](#create-and-name-the-scenario)
 * [첫 번째 모듈 추가 및 구성](#configure-the-first-module)
-* [연결 만들기](#create-connections)
+* [연결하기](#create-connections)
 * [추가 모듈 추가 및 구성](#add-and-configure-additional-modules)
 * [모듈 간 데이터 매핑](#map-data-between-modules)
 * [라우팅 구성](#configure-routing)
@@ -41,7 +41,7 @@ ht-degree: 0%
    >
    >왼쪽 탐색 패널이나 해당 아이콘이 보이지 않으면 메뉴 ![메뉴](assets/main-menu-icon-left-nav.png) 아이콘을 클릭합니다.
 
-1. (선택 사항) [!UICONTROL **폴더**] 패널에서 **[!UICONTROL 폴더 추가]** 아이콘 ![폴더 추가 아이콘](assets/add-folder-icon.png)을 클릭한 다음 첫 번째 폴더에 대해 &quot;연습 시나리오&quot;와 같은 이름을 입력합니다.
+1. (선택 사항)[!UICONTROL **폴더**] 패널에서 **[!UICONTROL 폴더 추가]** 아이콘 ![폴더 추가 아이콘](assets/add-folder-icon.png)을 클릭한 다음 첫 번째 폴더에 대해 &quot;연습 시나리오&quot;와 같은 이름을 입력합니다.
 
 1. (선택 사항) 폴더를 연 다음 페이지의 오른쪽 상단에 있는 **[!UICONTROL 새 시나리오 만들기]**&#x200B;를 클릭합니다.
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 모듈 구성에 대한 지침은 [모듈 구성](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)을 참조하세요.
 
-## 연결 만들기
+## 연결하기
 
 모듈을 구성할 때는 연결을 입력하거나 만들어야 합니다. 모듈은 이 연결 및 이 연결에 포함된 권한을 사용하여 애플리케이션의 날짜에 액세스합니다.
 
@@ -166,6 +166,11 @@ Google, Microsoft 또는 전용 커넥터가 없는 응용 프로그램과 관�
    <td role="rowheader">[!UICONTROL 붙여넣기]</td> 
    <td>Ctrl+V</td> 
    <td>Cmd+V</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 모듈 검색]</td> 
+   <td>Ctrl+K</td> 
+   <td>Cmd+K</span> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">시나리오에 cURL을 붙여넣어 HTTP 모듈을 만듭니다.</td> 

@@ -201,7 +201,7 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>만들려는 [!DNL Adobe Campaign] 레코드의 형식을 선택하거나 **사용자 지정 리소스**를 선택하고 리소스 세부 정보를 입력하십시오.</td> 
+   <td>만들려는 [!DNL Adobe Campaign] 레코드의 형식을 선택하거나 **사용자 지정 리소스**&#x200B;를 선택하고 리소스 세부 정보를 입력하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 필드] </td> 
@@ -228,7 +228,7 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>삭제할 리소스 유형을 선택하거나 **사용자 정의 리소스**를 선택하고 리소스 세부 정보를 입력합니다.</td> 
+   <td>삭제할 리소스 유형을 선택하거나 **사용자 정의 리소스**&#x200B;를 선택하고 리소스 세부 정보를 입력합니다.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
@@ -290,7 +290,7 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>작업을 수행할 리소스 유형을 선택하거나 **사용자 지정 리소스**를 선택하고 리소스 세부 정보를 입력합니다.</td> 
+   <td>작업을 수행할 리소스 유형을 선택하거나 **사용자 지정 리소스**&#x200B;를 선택하고 리소스 세부 정보를 입력합니다.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 액션]</td> 
@@ -321,7 +321,7 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>읽으려는 [!DNL Adobe Campaign] 레코드의 형식을 선택하거나 **사용자 지정 리소스**를 선택하고 리소스 세부 정보를 입력하십시오.</td> 
+   <td>읽으려는 [!DNL Adobe Campaign] 레코드의 형식을 선택하거나 **사용자 지정 리소스**&#x200B;를 선택하고 리소스 세부 정보를 입력하십시오.</td> 
   </tr> 
     <tr> 
    <td role="rowheader">[!UICONTROL ID] </td> 
@@ -380,7 +380,7 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>업데이트할 [!DNL Adobe Campaign] 레코드의 형식을 선택하거나 **사용자 지정 리소스**를 선택하고 리소스 세부 정보를 입력하십시오.</td> 
+   <td>업데이트할 [!DNL Adobe Campaign] 레코드의 형식을 선택하거나 **사용자 지정 리소스**&#x200B;를 선택하고 리소스 세부 정보를 입력하십시오.</td> 
   </tr> 
     <tr> 
    <td role="rowheader">[!UICONTROL ID] </td> 
@@ -413,7 +413,7 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>반환할 [!DNL Adobe Campaign] 레코드의 형식을 선택하거나 **사용자 지정 리소스**를 선택하고 리소스 세부 정보를 입력하십시오.</td> 
+   <td>반환할 [!DNL Adobe Campaign] 레코드의 형식을 선택하거나 **사용자 지정 리소스**&#x200B;를 선택하고 리소스 세부 정보를 입력하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 검색 기준]</td> 

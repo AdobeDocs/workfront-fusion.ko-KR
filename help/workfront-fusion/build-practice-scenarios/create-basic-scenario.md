@@ -7,22 +7,22 @@ description: Adobe Workfront Fusion을 사용하여 간단한 자동화 시나�
 author: Becky
 feature: Workfront Fusion
 exl-id: 5284dee1-e890-4357-a28d-29e09ac02822
-source-git-commit: 93d06cb917680f9cabc1bad6be0f9cd843449d07
+source-git-commit: 6269db7454a63e80de3d770ab1012162d5080565
 workflow-type: tm+mt
-source-wordcount: '1403'
-ht-degree: 0%
+source-wordcount: '1419'
+ht-degree: 12%
 
 ---
 
 # 기본 시나리오 만들기
 
-Adobe Workfront Fusion의 역할은 동일한 작업을 반복하지 않고 새로운 작업에 집중할 수 있도록 프로세스를 자동화하는 것입니다. 앱과 서비스 내 및 간의 작업을 연결하여 데이터를 자동으로 전송하고 변환하는 시나리오를 만듭니다. 앱 또는 서비스에서 데이터에 대한 시계를 만들고 해당 데이터를 처리하여 원하는 결과를 제공하는 시나리오입니다.
+Adobe Workfront Fusion의 역할은 동일한 작업을 계속해서 반복하는 대신 새로운 작업에 집중할 수 있도록 프로세스를 자동화하는 것입니다. 데이터를 자동으로 전송하고 변환하는 시나리오를 만들기 위해 앱과 서비스 내에서 그리고 앱과 서비스 간에 액션을 연결하는 방식입니다. 생성한 시나리오는 앱이나 서비스의 데이터를 관찰하고 해당 데이터를 처리하여 원하는 결과를 제공합니다.
 
 이 예에서는 Workfront에서 요청을 검색하고 이 요청을 프로젝트로 변환하는 시나리오를 만드는 프로세스를 안내합니다.
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -39,13 +39,13 @@ Adobe Workfront Fusion의 역할은 동일한 작업을 반복하지 않고 새�
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 +++
 
@@ -91,7 +91,7 @@ Adobe Workfront Fusion의 역할은 동일한 작업을 반복하지 않고 새�
    1. [!UICONTROL 검색 조건] 아래의 첫 번째 상자에서 검색에 포함할 필드를 선택합니다. 이 예제에서는 **[!UICONTROL 이름]**&#x200B;을(를) 선택합니다.
 
       단어 &quot;**[!UICONTROL 이름]**&quot;을(를) 입력하면 목록에서 [!UICONTROL 이름]을(를) 찾을 수 있습니다.
-   1. 연산자의 경우 **존재** 옆에 있는 드롭다운 화살표를 클릭하고 [!UICONTROL **포함(대/소문자 구분 안 함)**] (으)로 변경합니다.
+   1. 연산자의 경우 **존재** 옆에 있는 드롭다운 화살표를 클릭하고 [!UICONTROL **포함(대/소문자 구분 안 함)**](으)로 변경합니다.
 
       이렇게 하면 전체 이름을 입력하지 않거나 대/소문자가 잘못된 이름(예: 모두 대문자)을 입력하더라도 모듈이 이름에 선택한 단어가 포함된 프로젝트를 찾을 수 있습니다.
    1. [!UICONTROL 검색 조건]의 마지막 필드에 검색 중인 작업 이름에 있는 단어 또는 구를 입력하십시오.
@@ -123,7 +123,7 @@ Adobe Workfront Fusion의 역할은 동일한 작업을 반복하지 않고 새�
 
    활성화되면 토글이 파란색으로 바뀝니다. 이를 통해 이전 모듈의 작업 ID를 매핑할 수 있습니다.
 
-   ![맵 전환](assets/map-toggle.png)
+   ![토글 매핑](assets/map-toggle.png)
 1. **[!UICONTROL 작업 ID]** 필드를 클릭합니다.
 
    프로젝트로 전환할 작업의 ID로 사용할 항목을 선택할 수 있는 패널이 열립니다. 매핑을 활성화했으므로 패널에는 이전 모듈의 출력이 포함됩니다. ID를 이전 모듈의 출력으로 선택했으므로 이제 패널에서 사용할 수 있습니다.
@@ -162,7 +162,7 @@ Adobe Workfront Fusion의 역할은 동일한 작업을 반복하지 않고 새�
 
    >[!IMPORTANT]
    >
-   >원하는 만큼 자주 저장하고 시나리오를 테스트합니다.
+   >원하는 만큼 자주 저장하고 시나리오를 테스트합니다. 시나리오를 트리거하려면 Workfront 계정에서 새 문제를 만들어야 할 수 있습니다.
 
 >[!TIP]
 >
@@ -175,7 +175,7 @@ Adobe Workfront Fusion의 역할은 동일한 작업을 반복하지 않고 새�
 >
 >1. **[!UICONTROL 메모]** 영역을 닫습니다.
 >
->     시나리오에 메모를 추가하면 시나리오 편집기 하단의 **[!UICONTROL 메모]** 아이콘 ![메모 아이콘 &#x200B;](assets/notes-icon-w-dot.png)에 점이 표시됩니다.
+>     시나리오에 메모를 추가하면 시나리오 편집기 하단의 **[!UICONTROL 메모]** 아이콘 ![메모 아이콘 ](assets/notes-icon-w-dot.png)에 점이 표시됩니다.
 >
 >1. **[!UICONTROL 메모]** 아이콘 ![점이 있는 메모 아이콘](assets/notes-icon-w-dot.png)을 클릭하여 메모를 봅니다. 메모가 열려 있으면 메모 아이콘 주위에 원이 나타납니다.
 >

@@ -2,19 +2,19 @@
 product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: get-started-with-workfront-fusion-2-0
-title: 기본 시나리오에서 함수를 사용하여 프로젝트 업데이트
+title: 함수를 사용하여 기본 시나리오에서 프로젝트 업데이트
 description: Workfront에서 작업 항목을 업데이트하는 기능을 추가하는 방법을 알아봅니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: aa082ac8-48e8-4569-880e-024dd77feaa1
-source-git-commit: 3a977d805c10fda7209b0634c6e32e818a980691
+source-git-commit: 6269db7454a63e80de3d770ab1012162d5080565
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 0%
+source-wordcount: '602'
+ht-degree: 19%
 
 ---
 
-# 기본 시나리오에서 함수를 사용하여 프로젝트 업데이트
+# 함수를 사용하여 기본 시나리오에서 프로젝트 업데이트
 
 Workfront 작업 항목 업데이트는 Workfront Fusion의 일반적인 사용 사례입니다. 이 예제에서는 함수를 사용하여 프로젝트 이름을 대문자로 변경합니다.
 
@@ -24,7 +24,7 @@ Fusion에는 데이터에 대해 조건부 논리를 변환하고 수행할 수 
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -41,13 +41,13 @@ Fusion에는 데이터에 대해 조건부 논리를 변환하고 수행할 수 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 +++
 
@@ -107,7 +107,7 @@ Fusion에는 데이터에 대해 조건부 논리를 변환하고 수행할 수 
 
    >[!IMPORTANT]
    >
-   >원하는 만큼 자주 저장하고 시나리오를 테스트합니다.
+   >원하는 만큼 자주 저장하고 시나리오를 테스트합니다. 시나리오를 트리거하려면 Workfront 계정에서 새 문제를 만들어야 할 수 있습니다.
 
 ## 리소스
 

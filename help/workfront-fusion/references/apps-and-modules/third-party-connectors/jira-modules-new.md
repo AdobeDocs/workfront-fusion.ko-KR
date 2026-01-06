@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion 시나리오에서는 Jira 소프트웨어�
 author: Becky
 feature: Workfront Fusion
 exl-id: b74a3618-c4a1-4965-a88d-1643bfab12db
-source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
+source-git-commit: 017341e045a703f5d6e933a6df860f4fc8c0649d
 workflow-type: tm+mt
-source-wordcount: '1750'
-ht-degree: 5%
+source-wordcount: '2348'
+ht-degree: 20%
 
 ---
 
@@ -21,13 +21,13 @@ Adobe Workfront Fusion 시나리오에서는 Jira를 사용하는 워크플로�
 
 Jira 커넥터는 Jira Cloud와 Jira Data Server 모두에 사용할 수 있습니다.
 
-시나리오를 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 인덱스](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
+시나리오 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 색인](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
 
-모듈에 대한 자세한 내용은 [모듈: 문서 인덱스](/help/workfront-fusion/references/modules/modules-toc.md)의 문서를 참조하십시오.
+모듈에 대한 자세한 내용은 [모듈: 문서 색인](/help/workfront-fusion/references/modules/modules-toc.md)의 문서를 참조하십시오.
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -44,20 +44,20 @@ Jira 커넥터는 Jira Cloud와 Jira Data Server 모두에 사용할 수 있습�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>작업 기반: Workfront Fusion 라이센스 요구 사항 없음</p>
-   <p>커넥터 기반(레거시): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
+   <p>작업 기반: Workfront Fusion 라이선스 요구 사항 없음</p>
+   <p>커넥터 기반(이전): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
@@ -65,54 +65,118 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 ## 전제 조건
 
-Jira 모듈을 사용하려면 Jira 계정이 있어야 합니다.
+* Jira 모듈을 사용하려면 Jira 계정이 있어야 합니다.
+* Jira에서 OAuth2 애플리케이션을 만들려면 Jira Developer Console에 액세스할 수 있어야 합니다.
 
 ## Jira를 Workfront Fusion에 연결
 
-### 필요한 자격 증명 만들기
+Jira에 대한 연결을 만드는 절차는 기본 연결을 만드는지 OAuth2 연결을 만드는지에 따라 다릅니다.
 
-Jira에 대한 연결을 만들려면 다음이 필요합니다.
+* [Jira에 대한 OAuth2 연결 만들기](#create-an-oauth2-connection-to-jira)
+* [Jira에 대한 기본 연결 만들기](#create-a-basic-connection-to-jira)
 
-| 연결 유형 | 계정 유형 | 자격 증명 필요 |
-|---|---|---|
-| OAuth 2 | 임의 | 클라이언트 ID 및 클라이언트 암호 |
-| 기본 | Jira 클라우드 | Jira API 토큰 |
-| 기본 | Jira 데이터 센터 | Jira 개인 액세스 토큰(PAT) |
+### Jira에 대한 OAuth2 연결 만들기
 
-이러한 항목을 만드는 방법에 대한 지침은 Jira 설명서를 참조하십시오.
+Jira에 대한 OAuth2 연결을 만들려면 Fusion에서 연결을 구성하기 전에 Jira에서 애플리케이션을 만들어야 합니다.
 
-이러한 자격 증명을 만들 때 다음 정보가 필요합니다.
+* [Jira에서 OAuth2 애플리케이션 만들기](#create-an-oauth2-application-in-jira)
+* [Fusion에서 OAutt2 연결 구성](#configure-the-oauth2-connection-in-fusion)
 
-* OAuth 2의 경우:
+#### Jira에서 OAuth2 애플리케이션 만들기
 
-  | Fusion 데이터 센터 | 리디렉션 URL |
-  |---|---|
-  | US | `https://app.workfrontfusion.com/oauth/cb/workfront-jira2` |
-  | EU | `https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira2` |
-  | Azure | `https://app-az.workfrontfusion.com/oauth/cb/workfront-jira2` |
+>[!IMPORTANT]
+>
+>Jira 연결에 대한 OAuth2 애플리케이션을 만들고 구성하려면 Jira Developer Console에 액세스할 수 있어야 합니다.
 
+1. [Jira Developer Console](https://developer.atlassian.com/console.myapps/)로 이동합니다.
+1. 내 앱 영역에서 **만들기**&#x200B;를 클릭한 다음 **OAuth 2.0 통합**&#x200B;을 선택합니다.
+1. 통합 이름을 입력하고 개발자 약관에 동의하며 **만들기**&#x200B;를 클릭합니다.
 
+   애플리케이션이 만들어지면 애플리케이션 구성 영역으로 이동합니다.
+1. 왼쪽 탐색 패널에서 **권한**&#x200B;을 클릭합니다.
+1. 권한 영역에서 **Jira API** 줄을 찾습니다.
+1. Jira API 줄에서 **추가**&#x200B;를 클릭한 다음 같은 줄에서 **계속**&#x200B;을 클릭합니다.
+1. 다음 범위를 활성화합니다.
 
-* PAT(개인 액세스 토큰)의 경우:
+   * Jira 문제 데이터 보기(`read:jira-work`)
+   * 사용자 프로필 보기(`read:jira-user`)
+   * 문제 만들기 및 관리(`write:jira-work`)
 
-  | Fusion 데이터 센터 | 리디렉션 URL |
-  |---|---|
-  | US | `https://app.workfrontfusion.com/oauth/cb/workfront-jira` |
-  | EU | `https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira` |
-  | Azure | `https://app-az.workfrontfusion.com/oauth/cb/workfront-jira` |
+1. 왼쪽 탐색에서 **권한 부여**&#x200B;를 클릭합니다.
+1. OAuth 2.0 인증을 위해 줄의 **추가**&#x200B;를 클릭합니다.
+1. **콜백 URL** 필드에 Workfront Fusion 데이터 센터를 기반으로 다음 URL 중 하나를 입력합니다.
 
-  >[!IMPORTANT]
-  >
-  >PAT를 사용하려면 `jira/bin/WEB-INF/classes` 파일의 `jira-config.properties` 파일에서 다음을 사용하도록 설정해야 합니다.
-  >
-  >* `jira.rest.auth.allow.basic = true`
-  >* `jira.rest.csrf.disabled = true`
-  >
-  >이 파일이 없으면 직접 만들어야 합니다.
+   | Fusion 데이터 센터 | 콜백 URL |
+   |---|---|
+   | US | `https://app.workfrontfusion.com/oauth/cb/workfront-jira2` |
+   | EU | `https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira2` |
+   | Azure | `https://app-az.workfrontfusion.com/oauth/cb/workfront-jira2` |
 
-### Workfront Fusion에서 Jira에 대한 연결 만들기
+1. 왼쪽 탐색에서 **설정**&#x200B;을 클릭합니다.
+1. (선택 사항) 설명 필드에 설명을 입력하고 해당 필드 아래의 **변경 내용 저장**&#x200B;을 클릭합니다.
+1. 설정 영역에서 클라이언트 ID 및 클라이언트 암호를 보안 위치에 복사하거나, Fusion에서 연결을 구성할 때 이 페이지를 열어 두십시오.
+1. 계속 [Fusion에서 OAutt2 연결 구성](#configure-the-oauth2-connection-in-fusion)
 
-Workfront Fusion에서 연결을 만들려면 다음 작업을 수행하십시오.
+#### Fusion에서 OAuth2 연결 구성
+
+1. Jira 모듈에서 연결 필드 옆에 있는 **추가**&#x200B;를 클릭합니다.
+1. 다음 필드를 구성합니다.
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td role="rowheader"> <p>연결 유형</p> </td> 
+      <td> <p><b>OAuth 2</b>을(를) 선택합니다.</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>연결 이름</p> </td> 
+      <td> <p>새로운 연결의 이름을 입력합니다.</p> </td> 
+     </tr> 
+     <tr>
+      <td role="rowheader">서비스 URL</td>
+      <td>Jira 인스턴스 URL을 입력합니다. Jira에 액세스하는 데 사용하는 URL입니다.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">Jira 계정 유형</td>
+       <td>Jira Cloud에 연결할지 또는 Jira 데이터 센터에 연결할지 선택합니다.</td>
+     </tr>
+     <tr> 
+      <td role="rowheader">클라이언트 ID</td> 
+      <td> <p><a href="#create-an-oauth2-application-in-jira" class="MCXref xref" data-mc-variable-override="">Jira에서 OAuth2 응용 프로그램 만들기</a>에서 만든 Jira 응용 프로그램의 클라이언트 ID를 입력합니다.</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">클라이언트 암호</td> 
+      <td> <p><a href="#create-an-oauth2-application-in-jira" class="MCXref xref" data-mc-variable-override="">Jira에서 OAuth2 애플리케이션 만들기</a>에서 만든 Jira 애플리케이션의 클라이언트 암호를 입력하십시오.</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">추가 범위</td> 
+      <td>이 연결에 추가할 추가 범위를 입력하십시오.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">API 버전</td> 
+      <td>이 연결을 연결할 Jira API 버전을 선택합니다.</td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+1. 연결을 만들고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
+
+### Jira에 대한 기본 연결 만들기
+
+Jira에 대한 기본 연결 만들기는 Jira Cloud에 대한 연결을 만드는지 Jira 데이터 센터에 대한 연결을 만드는지에 따라 다릅니다.
+
+* [Jira Cloud에 대한 기본 연결 만들기](#create-a-basic-connection-to-jira-cloud)
+* [Jira 데이터 센터에 대한 기본 연결 만들기](#create-a-basic-connection-to-jira-data-center)
+
+#### Jira Cloud에 대한 기본 연결 만들기
+
+>[!IMPORTANT]
+>
+> Jira Cloud에 대한 기본 연결을 만들려면 Jira API 토큰이 있어야 합니다.
+>Jira API 토큰을 가져오는 방법에 대한 지침은 Atlassian 설명서의 [Atlassian 계정에 대한 API 토큰 관리](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account)를 참조하십시오.
+
 
 1. Jira 모듈에서 연결 필드 옆에 있는 **추가**&#x200B;를 클릭합니다.
 1. 다음 필드를 구성합니다.
@@ -127,7 +191,7 @@ Workfront Fusion에서 연결을 만들려면 다음 작업을 수행하십시�
      </tr> 
      <tr> 
       <td role="rowheader"> <p>연결 이름</p> </td> 
-      <td> <p>새 연결의 이름을 입력합니다.</p> </td> 
+      <td> <p>새로운 연결의 이름을 입력합니다.</p> </td> 
      </tr> 
      <tr>
       <td role="rowheader">서비스 URL</td>
@@ -138,24 +202,12 @@ Workfront Fusion에서 연결을 만들려면 다음 작업을 수행하십시�
        <td>Jira Cloud에 연결할지 또는 Jira 데이터 센터에 연결할지 선택합니다.</td>
      </tr>
      <tr> 
-      <td role="rowheader">클라이언트 ID</td> 
-      <td> <p>OAuth 2 연결을 만드는 경우 Jira 클라이언트 ID를 입력합니다</p> </td> 
-     </tr> 
-     <tr> 
-      <td role="rowheader">클라이언트 암호</td> 
-      <td> <p>OAuth 2 연결을 만드는 경우 Jira 클라이언트 암호를 입력합니다</p> </td> 
-     </tr> 
-     <tr> 
       <td role="rowheader">이메일</td> 
-      <td>Jira Cloud에 대한 기본 연결을 만드는 경우 이메일 주소를 입력합니다.</td> 
+      <td>이메일 주소를 입력합니다.</td> 
      </tr> 
      <tr> 
       <td role="rowheader">API 토큰</td> 
-      <td>Jira Cloud에 대한 기본 연결을 만드는 경우 API 토큰을 입력합니다.</td> 
-     </tr> 
-     <tr> 
-      <td role="rowheader">개인 액세스 토큰</td> 
-      <td>Jira 데이터 센터에 대한 기본 연결을 만드는 경우 개인 액세스 토큰을 입력합니다.</td> 
+      <td>API 토큰을 입력합니다.</td> 
      </tr> 
      <tr> 
       <td role="rowheader">API 버전</td> 
@@ -164,16 +216,84 @@ Workfront Fusion에서 연결을 만들려면 다음 작업을 수행하십시�
     </tbody> 
    </table>
 
-1. 연결을 만들고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭하세요.
+1. 연결을 만들고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
 
+#### Jira 데이터 센터에 대한 기본 연결 만들기
+
+>[!IMPORTANT]
+>
+> Jira 데이터 센터에 대한 기본 연결을 만들려면 Jira 개인 액세스 토큰(PAT)이 있어야 합니다.
+>Jira 개인 액세스 토큰을 가져오는 방법에 대한 지침은 Atlassian 설명서의 [Atlassian 계정에 대한 API 토큰 관리](https://confluence.atlassian.com/enterprise/using-personal-access-tokens-1026032365.html)를 참조하십시오.
+>PAT를 만들 때 고려할 사항에 대해서는 이 문서에서 [PAT 구성](#configure-your-pat)을 참조하십시오.
+
+1. Jira 모듈에서 연결 필드 옆에 있는 **추가**&#x200B;를 클릭합니다.
+1. 다음 필드를 구성합니다.
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td role="rowheader"> <p>연결 유형</p> </td> 
+      <td> <p>기본 연결을 만드는지 OAuth 2 연결을 만드는지 선택합니다.</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>연결 이름</p> </td> 
+      <td> <p>새로운 연결의 이름을 입력합니다.</p> </td> 
+     </tr> 
+     <tr>
+      <td role="rowheader">서비스 URL</td>
+      <td>Jira 인스턴스 URL을 입력합니다. Jira에 액세스하는 데 사용하는 URL입니다.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">Jira 계정 유형</td>
+       <td>Jira Cloud에 연결할지 또는 Jira 데이터 센터에 연결할지 선택합니다.</td>
+     </tr>
+     <tr> 
+      <td role="rowheader">PAT(개인 액세스 토큰)</td> 
+      <td>Jira 개인 액세스 토큰을 입력합니다.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">API 버전</td> 
+      <td>이 연결을 연결할 Jira API 버전을 선택합니다.</td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+1. 연결을 만들고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
+
+##### PAT 구성
+
+Jira 데이터 센터에 대한 기본 연결을 만들려면 Jira 개인 액세스 토큰(PAT)이 있어야 합니다.
+
+Jira 개인 액세스 토큰을 가져오는 방법에 대한 지침은 Atlassian 설명서의 [Atlassian 계정에 대한 API 토큰 관리](https://confluence.atlassian.com/enterprise/using-personal-access-tokens-1026032365.html)를 참조하십시오.
+
+PAT를 구성할 때 다음 정보가 필요할 수 있습니다
+
+* 리디렉션 URL
+
+  | Fusion 데이터 센터 | 리디렉션 URL |
+  |---|---|
+  | US | `https://app.workfrontfusion.com/oauth/cb/workfront-jira` |
+  | EU | `https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira` |
+  | Azure | `https://app-az.workfrontfusion.com/oauth/cb/workfront-jira` |
+
+* 파일 구성
+
+PAT를 사용하려면 `jira/bin/WEB-INF/classes` 파일의 `jira-config.properties` 파일에서 다음을 사용하도록 설정해야 합니다.
+
+* `jira.rest.auth.allow.basic = true`
+* `jira.rest.csrf.disabled = true`
+
+이 파일이 없으면 직접 만들어야 합니다.
 
 ## Jira 모듈 및 해당 필드
 
-Jira 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 이러한 필드와 함께 앱 또는 서비스의 액세스 수준 등의 요소에 따라 추가 Jira 필드가 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+Jira 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 이러한 필드와 함께 앱 또는 서비스의 액세스 수준 등의 요소에 따라 추가 Jira 필드가 표시될 수 있습니다. 모듈의 굵은 글씨 제목은 필수 필드를 나타냅니다.
 
-필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
+필드 또는 함수 위에 있는 맵 버튼을 보면 해당 필드의 변수와 함수를 설정하는 데 사용할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
-![맵 전환](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![토글 매핑](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [트리거](#triggers)
 * [액션](#actions)
@@ -190,8 +310,8 @@ Jira 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표�
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Webhook</td> 
-   <td> <p>레코드를 감시하는 데 사용할 웹후크를 선택하거나 새 웹후크를 만듭니다. </p> <p>새 웹후크를 생성하려면</p> 
+   <td role="rowheader">웹후크</td> 
+   <td> <p>레코드를 감시하는 데 사용할 웹후크를 선택하거나 새 웹후크를 만듭니다. </p> <p>새 웹후크를 생성하는 방법:</p> 
     <ol> 
      <li><strong>추가</strong> 클릭</li> 
      <li>Webhook의 이름을 입력합니다.</li> 
@@ -303,15 +423,15 @@ Jira 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표�
   </tr> 
   <tr> 
    <td role="rowheader">헤더</td> 
-   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p> Workfront Fusion은 사용자에게 권한 부여 헤더를 추가합니다.</p> </td> 
+   <td> <p>표준 JSON 오브젝트 형태로 요청의 헤더를 추가합니다.</p> <p>예: <code>{"Content-type":"application/json"}</code></p> <p> Workfront Fusion은 사용자에게 권한 부여 헤더를 추가합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">쿼리 문자열</td> 
-   <td> <p>표준 JSON 개체 형식으로 API 호출에 대한 쿼리를 추가합니다.</p> <p>For example: <code>{"name":"something-urgent"}</code></p> </td> 
+   <td> <p>표준 JSON 오브젝트 형식으로 API 호출에 대한 쿼리를 추가합니다.</p> <p>예: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">본문</td> 
-   <td> <p>표준 JSON 개체의 형태로 API 호출에 대한 본문 콘텐츠를 추가합니다.</p> <p>참고:  <p>JSON에서 <code>if</code>과(와) 같은 조건문을 사용할 때 따옴표를 조건문 외부에 넣으십시오.</p> 
+   <td> <p>표준 JSON 오브젝트 형식으로 API 호출에 대한 본문 콘텐츠를 추가합니다.</p> <p>메모:  <p>JSON에서 <code>if</code>와 같은 조건문을 사용할 때는 따옴표를 조건문 외부에 배치해야 합니다.</p> 
      <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png">  </td> 
   </tr> 
  </tbody> 
@@ -468,7 +588,7 @@ Jira 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표�
 
 이 검색 모듈은 지정한 검색 쿼리와 일치하는 Jira의 객체에서 레코드를 찾습니다.
 
-이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
+시나리오의 후속 모듈에서 이 정보를 매핑할 수 있습니다.
 
 이 모듈을 구성할 때 다음 필드가 표시됩니다.
 

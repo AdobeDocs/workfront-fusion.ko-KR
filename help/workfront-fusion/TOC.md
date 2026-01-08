@@ -2,10 +2,10 @@
 user-guide-title: Adobe Workfront Fusion 설명서
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 문서, 튜토리얼 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
-source-git-commit: fc0b3b7ca4ec999c7a121d0564d36abff6f2d620
+source-git-commit: aa3bdd7d14c86085c36e3859f6d53c0cadb28920
 workflow-type: tm+mt
-source-wordcount: '1970'
-ht-degree: 99%
+source-wordcount: '1979'
+ht-degree: 98%
 
 ---
 
@@ -269,6 +269,7 @@ ht-degree: 99%
    * [템플릿 보기, 편집 및 삭제](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)
    * [템플릿 게시 및 공유](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)
    * [현재 사용 가능한 Adobe Workfront Fusion 템플릿](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md)
+   * [템플릿을 사용하여 Adobe Workfront Fusion 및 Jira 연결](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md)
    * [Adobe Workfront Fusion 템플릿 FAQ](/help/workfront-fusion/create-and-manage-templates/fusion-templates-faqs.md)
 * 참조 {#references}
    * [참조](/help/workfront-fusion/references/references-toc.md)

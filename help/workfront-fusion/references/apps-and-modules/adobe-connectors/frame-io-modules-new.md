@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion Frame].io modules enable you to moni
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: 52dbf75ebb65a1de1a7a86619af4c7633e0cbe03
+source-git-commit: 3cb613c11500dfc94774783ee0b38e6f1768de20
 workflow-type: tm+mt
-source-wordcount: '4399'
-ht-degree: 87%
+source-wordcount: '4539'
+ht-degree: 85%
 
 ---
 
@@ -15,23 +15,23 @@ ht-degree: 87%
 
 >[!IMPORTANT]
 >
->본 문서는 Frame.io 커넥터의 신규 버전에 대해 설명합니다. 이 커넥터는 Frame.io 버전 4에 연결하는 데 사용됩니다.
+>본 문서는 Frame.io 커넥터의 신규 버전을 설명합니다. 이 커넥터는 Frame.io 버전 4에 연결하는 데 사용됩니다.
 >
 >Frame.io 커넥터의 이전 버전에 대한 지침은 [Frame.io 이전 커넥터](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)를 참조하십시오.
 
-Adobe Workfront Fusion [!DNL Frame.io] 모듈을 사용하면 [!DNL Frame.io] 계정의 에셋과 댓글을 모니터링, 생성, 업데이트, 가져오기 또는 삭제할 수 있습니다.
+Adobe Workfront Fusion [!DNL Frame.io] 모듈을 사용하면 [!DNL Frame.io] 계정의 에셋과 주석을 모니터링, 만들기, 업데이트, 가져오기 또는 삭제할 수 있습니다.
 
 Workfront은 연결 중인 Frame.io 버전에 따라 두 개의 Frame.io 커넥터를 제공합니다.
 
 | 커넥터 | Frame.io 버전 |
 |---|---|
 | Frame.io | V4 |
-| Frame.io(기존) | V3 |
+| Frame.io(이전) | V3 |
 
 Frame.io 커넥터의 이전 버전에 대한 지침은 [Frame.io 이전 커넥터](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)를 참조하십시오.
 
 
-Frame.io 커넥터에 대한 비디오 소개는 다음을 참조하십시오.
+Frame.io 커넥터에 대한 소개 비디오는 다음을 참조하십시오.
 
 * [Frame.io](https://video.tv.adobe.com/v/3427032/){target=_blank}
 
@@ -106,7 +106,7 @@ Frame.io 커넥터는 다음을 사용합니다.
 
 * [사용자 자격 증명으로 자동 연결](#connect-automatically-with-user-credentials#)
 * [사용자 자격 증명 연결을 수동으로 만들기](#create-a-user-credentials-connection-manually)
-* [서버 간 연결 만들기](#create-a-server-to-server-connection)
+* [서버 간 연결하기](#create-a-server-to-server-connection)
 
 ### 사용자 자격 증명으로 자동 연결
 
@@ -216,7 +216,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
 연결이 생성되었습니다.
 
 
-### 서버 간 연결 만들기
+### 서버 간 연결하기
 
 서버 간 연결을 만들려면 먼저 Adobe Developer Console에서 애플리케이션을 구성해야 합니다.
 
@@ -295,7 +295,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
 
 필드 또는 함수 위에 있는 맵 버튼을 보면 해당 필드의 변수와 함수를 설정하는 데 사용할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
-![맵 토글](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![토글 매핑](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [에셋](#assets)
 * [댓글](#comments)
@@ -312,7 +312,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
 * [[!UICONTROL 에셋 삭제]](#delete-an-asset)
 * [[!UICONTROL 에셋 가져오기]](#get-an-asset)
 * [[!UICONTROL 에셋 나열]](#list-assets)
-* [삭제된 에셋 보기](#watch-asset-deleted)
+* [에셋 보기 삭제됨](#watch-asset-deleted)
 * [새 에셋 보기](#watch-new-asset)
 
 #### [!UICONTROL 에셋 만들기]<!--different for v4-->
@@ -325,7 +325,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법을 안내하는 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
@@ -360,7 +360,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
    <td> <p>원격 파일에서 자산을 만드는 경우 업로드할 파일의 URL을 입력합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source 파일]</td> 
+   <td>[!UICONTROL 소스 파일]</td> 
    <td> <p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 이름을 매핑합니다.</p> </td> 
   </tr> 
 <!--  <tr> 
@@ -380,7 +380,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법을 안내하는 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
@@ -427,7 +427,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법을 안내하는 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
@@ -450,7 +450,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법을 안내하는 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
@@ -475,7 +475,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법을 안내하는 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
@@ -506,11 +506,11 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법을 안내하는 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
-   <td> <p>계정을 선택하거나 삭제된 에셋을 확인하려는 계정의 ID를 매핑합니다.</p> </td> 
+   <td> <p>계정을 선택하거나 삭제된 에셋을 확인할 계정의 ID를 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -533,11 +533,11 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법을 안내하는 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
-   <td> <p>계정을 선택하거나 새 에셋을 확인하려는 계정의 ID를 매핑합니다.</p> </td> 
+   <td> <p>계정을 선택하거나 새 에셋을 확인할 계정의 ID를 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -562,7 +562,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법을 안내하는 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
@@ -582,7 +582,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 텍스트]</td> 
-   <td> <p> 댓글이나 답글의 텍스트 내용을 입력합니다.</p> </td> 
+   <td> <p> 댓글이나 답글의 텍스트 콘텐츠를 입력합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 타임스탬프] </td> 
@@ -605,7 +605,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법을 안내하는 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
@@ -628,7 +628,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법을 안내하는 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
@@ -651,7 +651,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법을 안내하는 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
@@ -686,7 +686,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법을 안내하는 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
@@ -698,7 +698,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 텍스트]</td> 
-   <td> <p> 댓글의 텍스트 내용을 입력합니다.</p> </td> 
+   <td> <p> 댓글의 텍스트 콘텐츠를 입력합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 타임스탬프] </td> 
@@ -729,11 +729,11 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법을 안내하는 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
-   <td> <p>계정을 선택하거나 업데이트된 댓글을 확인하려는 계정의 ID를 매핑합니다.</p> </td> 
+   <td> <p>계정을 선택하거나 업데이트된 댓글을 확인할 계정의 ID를 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -756,11 +756,11 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법을 안내하는 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
-   <td> <p>계정을 선택하거나 새 댓글을 확인하려는 계정의 ID를 매핑합니다.</p> </td> 
+   <td> <p>계정을 선택하거나 새 댓글을 확인할 계정의 ID를 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -777,7 +777,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법을 안내하는 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
@@ -818,7 +818,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법을 안내하는 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
@@ -845,15 +845,15 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법을 안내하는 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
-   <td> <p>사용자를 초대하려는 프로젝트가 포함된 계정을 선택하거나 매핑합니다.</p> </td> 
+   <td> <p>사용자를 초대할 프로젝트가 포함된 계정을 선택하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 작업 영역 ID] </td> 
-   <td> <p>사용자를 초대하려는 프로젝트가 포함된 작업 영역을 선택하거나 매핑합니다.</p> </td> 
+   <td> <p>사용자를 초대할 프로젝트가 포함된 작업 영역을 선택하거나 매핑합니다.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">프로젝트 ID </td> 
@@ -877,7 +877,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법을 안내하는 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
@@ -910,7 +910,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법을 안내하는 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
@@ -937,7 +937,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법을 안내하는 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
@@ -957,7 +957,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
   </tr> 
    <tr> 
    <td role="rowheader">에셋 </td> 
-   <td> <p>공유 링크에 추가하려는 각 에셋에 대해 <b>항목 추가</b>를 클릭하고 에셋의 ID를 입력합니다.</p> </td> 
+   <td> <p>공유 링크에 추가할 각 에셋에 대해 <b>항목 추가</b>를 클릭하고 에셋의 ID를 입력합니다.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">설명 </td> 
@@ -990,7 +990,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법을 안내하는 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
@@ -1013,7 +1013,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법을 안내하는 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
@@ -1046,7 +1046,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법을 안내하는 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
@@ -1074,7 +1074,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법을 안내하는 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
@@ -1097,7 +1097,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법을 안내하는 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
@@ -1124,7 +1124,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법을 안내하는 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
@@ -1147,7 +1147,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법을 안내하는 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
@@ -1179,7 +1179,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법을 안내하는 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
@@ -1206,11 +1206,12 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
 
 ### 기타
 
-* [사용자 정의 API 호출 만들기](#make-a-custom-api-call)
+* [사용자 정의 API 호출하기](#make-a-custom-api-call)
+* [이벤트 보기](#watch-events)
 * [업데이트된 메타데이터 값 보기](#watch-metadata-value-updated)
 
 
-#### [!UICONTROL 사용자 정의 API 호출 만들기]
+#### [!UICONTROL 사용자 정의 API 호출하기]
 
 이 모듈에서는 사용자 지정 API 호출을 수행할 수 있습니다.
 
@@ -1220,33 +1221,75 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법을 안내하는 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
    <td> <p><code>https://api.frame.io</code>와 관련된 경로를 입력합니다. 예: <code> /v4/me</code></p> <p>참고: 사용 가능한 엔드포인트 목록은 [!DNL Frame.io] API 참조를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL 방법]</p> </td> 
-   <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 방법을 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP 요청 방법</a>을 참조하십시오.</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 메서드]</p> </td> 
+   <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 헤더]</td> 
-   <td> <p>표준 JSON 오브젝트 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion은 자동으로 인증 헤더를 추가합니다.</p> </td> 
+   <td> <p>표준 JSON 오브젝트 형태로 요청의 헤더를 추가합니다.</p> <p>예: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion은 자동으로 인증 헤더를 추가합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 쿼리 문자열] </td> 
-   <td> <p>요청 쿼리 문자열을 입력합니다. 쿼리 문자열에 포함할 각 매개 변수에 대해 <b>[!UICONTROL 항목 추가]</b>를 클릭하고 필드 이름과 원하는 값을 입력합니다.</p> </td> 
+   <td> <p>요청 쿼리 문자열을 입력합니다. 쿼리 문자열에 포함할 각 매개변수에 대해 <b>[!UICONTROL 항목 추가]</b>를 클릭하고 필드 이름과 원하는 값을 입력합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 본문]</td> 
-   <td> <p>표준 JSON 오브젝트 형식으로 API 호출에 대한 본문 내용을 추가합니다.</p> <p>참고:  <p>JSON에서 <code>if</code>와 같은 조건문을 사용할 때는 따옴표를 조건문 외부에 배치해야 합니다.</p> 
+   <td> <p>표준 JSON 오브젝트 형식으로 API 호출에 대한 본문 콘텐츠를 추가합니다.</p> <p>메모:  <p>JSON에서 <code>if</code>와 같은 조건문을 사용할 때는 따옴표를 조건문 외부에 배치해야 합니다.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
   </tr> 
  </tbody> 
 </table>
+
+#### 이벤트 보기
+
+이 즉시 트리거 모듈은 선택한 이벤트가 Frame.io에서 발생할 때 시나리오를 시작합니다.
+
+기존 Webhook을 사용하거나 새 Webhook을 만들 수 있습니다.
+
+새 웹후크를 생성하는 방법:
+
+1. 웹후크 필드 옆에 있는 **추가**&#x200B;를 클릭합니다.
+1. 다음 정보를 입력합니다.
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+     <td role="rowheader">Webhook 이름 </td> 
+      <td> <p>새 웹후크의 이름을 입력합니다.</p> </td> 
+     </tr> 
+     <tr> 
+       <td role="rowheader">[!UICONTROL 연결] </td> 
+       <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+     </tr> 
+     <tr> 
+     <td role="rowheader">[!UICONTROL 계정 ID] </td> 
+      <td> <p>이벤트를 보려는 작업 영역이 포함된 계정을 선택하거나 매핑합니다.</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL 작업 영역 ID]</td> 
+      <td> <p>이벤트를 보려는 작업 영역의 ID를 입력합니다.</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Events]</td> 
+      <td> <p>이 모듈을 트리거할 이벤트 선택</p> </td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+1. 웹후크를 저장하고 모듈로 돌아가려면 **저장**&#x200B;을 클릭하십시오.
+1. 이벤트 보기 모듈에서 **확인**&#x200B;을 클릭하여 구성을 저장합니다.
+
 
 #### 업데이트된 메타데이터 값 보기
 
@@ -1266,11 +1309,11 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td>[!DNL Frame.io]에 대한 연결을 만드는 방법을 안내하는 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
-   <td> <p>계정을 선택하거나 업데이트된 메타데이터 값을 확인하려는 계정의 ID를 매핑합니다.</p> </td> 
+   <td> <p>계정을 선택하거나 업데이트된 메타데이터 값을 확인할 계정의 ID를 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>

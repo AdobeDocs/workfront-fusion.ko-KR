@@ -8,9 +8,9 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: aa3bdd7d14c86085c36e3859f6d53c0cadb28920
+source-git-commit: c3d1abb898eec6fc84dc1de0fb7799d13d9e3571
 workflow-type: tm+mt
-source-wordcount: '4075'
+source-wordcount: '4171'
 ht-degree: 3%
 
 ---
@@ -61,7 +61,7 @@ Adobe workfront Fusion은 Fusion과 Jira 간의 공통 워크플로를 자동화
   자세한 내용 및 지침은 Adobe 설명서에서 [기술 계정 설정](https://developer.adobe.com/cloud-storage/guides/getting-started/technical-account-setup)을 참조하세요.
 * Adobe Admin Console 제품 프로필 영역의 기술 계정에 시스템 관리자 권한을 적용해야 합니다.
 
-  자세한 내용 및 지침은 [Adobe Admin Console을 사용하여 Workfront에서 시스템 관리자 만들기](https://experienceleague.adobe.com/ko/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)를 참조하십시오.
+  자세한 내용 및 지침은 [Adobe Admin Console을 사용하여 Workfront에서 시스템 관리자 만들기](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)를 참조하십시오.
 
 ### Jira
 
@@ -156,13 +156,13 @@ Jira 통합 템플릿을 사용하려면 다음 구성을 수행해야 합니다
 
 1. Workfront에서 시스템 통합 사용자를 만듭니다. 이 사용자는 Workfront Fusion에서만 사용되며 사람 사용자를 나타내지는 않습니다. 이 사용자에게 할당된 작업은 Workfront을 Jira와 동기화하는 시나리오를 트리거합니다.
 
-   지침은 Workfront 설명서에서 [사용자 추가](https://experienceleague.adobe.com/ko/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users)를 참조하십시오.
+   지침은 Workfront 설명서에서 [사용자 추가](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users)를 참조하십시오.
 
 #### Workfront에서 사용자 정의 양식 만들기
 
 1. Workfront에서 사용자 정의 양식을 만들기 시작합니다.
 
-   자세한 내용은 Workfront 설명서에서 [사용자 정의 양식 만들기](https://experienceleague.adobe.com/ko/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form)를 참조하십시오.
+   자세한 내용은 Workfront 설명서에서 [사용자 정의 양식 만들기](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form)를 참조하십시오.
 1. 양식 이름을 &quot;**JIRA 필드**&quot;로 지정합니다.
 1. 사용자 정의 양식에 다음 필드를 포함합니다.
 
@@ -179,7 +179,7 @@ Jira 통합 템플릿을 사용하려면 다음 구성을 수행해야 합니다
 >
 >다른 사용자가 이 양식을 편집할 수 없도록 제한하는 것이 좋습니다. 사용자 정의 양식에 추가된 모든 사용자에게 보기 액세스만 허용하면 됩니다.
 >
->자세한 내용은 Workfront 설명서에서 [사용자 정의 양식 공유](https://experienceleague.adobe.com/ko/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form)를 참조하십시오.
+>자세한 내용은 Workfront 설명서에서 [사용자 정의 양식 공유](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form)를 참조하십시오.
 
 ### Workfront Fusion에서 연결 구성
 
@@ -204,11 +204,11 @@ Jira용 8개의 즉시 사용 가능한 템플릿은 일반적인 워크플로�
 * **[Workfront에서 Jira로: Workfront 작업 또는 문제 할당에서 JIRA 문제 만들기](#scenario-1-workfront-to-jira-create-jira-issue-from-workfront-task-or-issue-assignment)**
 * [JIRA에서 Workfront으로: JIRA에서 Workfront으로: 문제에 대한 업데이트 및 주석을 Jira에서 Workfront으로 다시 보냅니다.](#scenario-2-jira-to-workfront-send-updates-on-issues-and-comments-back-to-workfront-from-jira)
 * [Workfront to Jira: Workfront 작업의 JIRA 문제 변경](#scenario-3-workfront-to-jira-changes-to-workfront-task-to-jira-issue)
-* Workfront to Jira: Workfront 문제가 JIRA 문제로 변경되었습니다.
-* Workfront에서 Jira로: Workfront 작업 또는 문제에 대한 새 메모가 있을 때 JIRA에서 주석 만들기
-* Workfront에서 Jira로: Workfront 작업 또는 문제에 대해 삭제된 노트에 JIRA에 댓글 만들기
-* Workfront to Jira: Workfront 작업 또는 문제에 대한 새 문서가 있을 때 JIRA에서 주석 만들기
-* Workfront에서 Jira로: Workfront 작업 또는 문제에 대해 삭제된 문서에 대해 JIRA에 댓글 만들기
+* [Workfront to Jira: Workfront 문제가 JIRA 문제로 변경되었습니다.](#scenario-4-workfront-to-jira-changes-to-workfront-issue-to-jira-issue)
+* [Workfront에서 Jira로: Workfront 작업 또는 문제에 대한 새 메모가 있을 때 JIRA에서 주석 만들기](#scenario-5-workfront-to-jira-create-comment-in-jira-when-new-note-on-workfront-task-or-issue)
+* [Workfront에서 Jira로: Workfront 작업 또는 문제에 대해 삭제된 노트에 JIRA에 댓글 만들기](#scenario-6-workfront-to-jira-create-comment-in-jira-on-deleted-note-on-workfront-task-or-issue)
+* [Workfront to Jira: Workfront 작업 또는 문제에 대한 새 문서가 있을 때 JIRA에서 주석 만들기](#scenario-7-workfront-to-jira-create-comment-in-jira-when-new-document-on-workfront-task-or-issue)
+* [Workfront에서 Jira로: Workfront 작업 또는 문제에 대해 삭제된 문서에 대해 JIRA에 댓글 만들기](#scenario-8-workfront-to-jira-create-comment-in-jira-on-deleted-document-on-workfront-task-or-issue)
 
 ### 일반 매개 변수
 
@@ -274,9 +274,9 @@ Workfront 작업이 할당되면 Jira의 문제는 작업입니다. Workfront �
 
 1. [Jira의 사용자 지정 필드 매핑](#map-custom-fields-in-jira)을 계속합니다.
 
-#### Jira의 사용자 정의 필드를 매핑합니다.
+<!--#### Map custom fields in Jira. 
 
-<!--Awaiting feedback-->
+Awaiting feedback-->
 
 +++
 
@@ -323,7 +323,7 @@ Workfront 작업이 할당되면 Jira의 문제는 작업입니다. Workfront �
 #### 템플릿 모듈을 Workfront 및 Jira에 연결(모듈 2)
 
 1. **각** Workfront 모듈의 연결 필드에서 [Workfront Fusion에서 연결 구성](#configure-connections-in-workfront-fusion)에서 만든 Workfront 연결을 선택한 다음 **확인**&#x200B;을 클릭하여 해당 모듈에 대한 연결을 저장합니다.
-1. **각** Jira 모듈의 연결 필드에서 [Workfront Fusion에서 연결 구성](#configure-connections-in-workfront-fusion)에서 만든 Workfront 연결을 선택한 다음 **확인**&#x200B;을 클릭하여 해당 모듈에 대한 연결을 저장합니다.
+1. **각** Jira 모듈의 연결 필드에서 [Workfront Fusion에서 연결 구성](#configure-connections-in-workfront-fusion)에서 만든 Workfront 연결을 선택한 다음 **확인**을 클릭하여 해당 모듈에 대한 연결을 저장합니다.
    <!--#### Map custom fields-->
 
 +++
@@ -355,7 +355,7 @@ Workfront 작업이 할당되면 Jira의 문제는 작업입니다. Workfront �
 1. **이 연결에서 수행한 업데이트 제외** 옵션을 사용하도록 설정합니다.
 1. **원본 기록** 필드에서 `Updated record only`을(를) 선택합니다.
 1. **저장**&#x200B;을 클릭하여 웹후크를 저장한 다음 **확인**&#x200B;을 클릭하여 트리거 모듈을 저장합니다.
-1. 두 번째 모듈에서 다음 변수를 설정한 다음 **확인**&#x200B;을 클릭하여 모듈을 저장합니다.
+1. **JIRA 변수 설정** 모듈에서 다음 변수를 설정한 다음 **확인**&#x200B;을 클릭하여 모듈을 저장합니다.
 
    | 변수 이름 | 변수 값 |
    |---|---|
@@ -366,16 +366,13 @@ Workfront 작업이 할당되면 Jira의 문제는 작업입니다. Workfront �
 1. **각** Workfront 모듈의 연결 필드에서 시스템 통합 자격 증명을 사용하는 Workfront 연결을 선택한 다음 **확인**&#x200B;을 클릭하여 모듈을 저장합니다.
 1. **각** Jira 모듈의 연결 필드에서 System Integration 자격 증명을 사용하는 Jira 연결을 선택한 다음 **확인**&#x200B;을 클릭하여 모듈을 저장합니다.
 
-
 +++
-
-
 
 ### 시나리오 4: Workfront에서 Jira로: Workfront 문제가 JIRA 문제로 변경됨
 
 이 시나리오는 Workfront 문제에서 이전에 연결된 JIRA 문제로 업데이트를 전송합니다.
 
-+++**시나리오 4: WF-Jira 변경(문제) 구성을 위한 지침을 보려면 확장**
++++**를 확장하여 시나리오 4: Workfront에서 Jira로 구성: Workfront 문제의 변경 사항을 JIRA 문제로 구성**&#x200B;하기 위한 지침을 봅니다.
 
 1. 왼쪽 탐색 패널에서 **템플릿** 탭 ![템플릿 아이콘](assets/templates-icon.png)을 클릭합니다.
 1. 화면의 왼쪽 상단 모서리 근처에 있는 검색 막대를 사용하여 템플릿을 검색합니다. 템플릿 이름 또는 포함된 애플리케이션별로 검색할 수 있습니다.
@@ -387,20 +384,20 @@ Workfront 작업이 할당되면 Jira의 문제는 작업입니다. Workfront �
 1. 이 시나리오를 소유할 조직 및 팀을 선택하십시오.
 1. 첫 번째 모듈에서 웹후크 추가를 시작합니다.
 1. 연결 필드에서 System Integration 자격 증명을 사용하는 Workfront 연결을 선택합니다.
-1. **레코드 종류** 필드에서 `??`을(를) 선택합니다.
+1. **레코드 종류** 필드에서 `Issues`을(를) 선택합니다.
 1. **상태** 필드에서 `New state`을(를) 선택합니다.
 1. **And** 옵션을 사용하여 다음 작업으로 필터를 구성합니다.
 
    | 필드 | 연산자 | 값 |
    |---|---|---|
-   | (문제에 대한 업데이트) |  |  |
    | assignedToID | 다음과 같음 | System Integration 사용자의 Workfront ID 입력 |
    | projectID | 다음과 같음 | Webhook에서 볼 프로젝트의 ID를 입력합니다. |
-   | WF ID | 있음 |  |
+   | DE: Jira 키 | 있음 |  |
 
 1. **이 연결에서 수행한 업데이트 제외** 옵션을 사용하도록 설정합니다.
+1. **원본 기록** 필드에서 `Updated record only`을(를) 선택합니다.
 1. **저장**&#x200B;을 클릭하여 웹후크를 저장한 다음 **확인**&#x200B;을 클릭하여 트리거 모듈을 저장합니다.
-1. 두 번째 모듈에서 다음 변수를 설정한 다음 **확인**&#x200B;을 클릭하여 모듈을 저장합니다.
+1. **JIRA 변수 설정** 모듈에서 다음 변수를 설정한 다음 **확인**&#x200B;을 클릭하여 모듈을 저장합니다.
 
    | 변수 이름 | 변수 값 |
    |---|---|
@@ -411,14 +408,11 @@ Workfront 작업이 할당되면 Jira의 문제는 작업입니다. Workfront �
 1. **각** Workfront 모듈의 연결 필드에서 시스템 통합 자격 증명을 사용하는 Workfront 연결을 선택한 다음 **확인**&#x200B;을 클릭하여 모듈을 저장합니다.
 1. **각** Jira 모듈의 연결 필드에서 System Integration 자격 증명을 사용하는 Jira 연결을 선택한 다음 **확인**&#x200B;을 클릭하여 모듈을 저장합니다.
 
-
 +++
 
+### 시나리오 5: Workfront에서 Jira로: Workfront 작업 또는 문제에 대한 새 메모가 있을 때 JIRA에서 주석 만들기
 
-
-### 시나리오 5: WF-to-Jira 새 참고 사항(작업 및 문제)
-
-+++**시나리오 5 구성에 대한 지침을 보려면 확장: WF-Jira의 새 메모(작업 및 문제)**
++++**시나리오 5: Workfront에서 Jira로: Workfront 작업 또는 문제에 대한 새 메모가 있을 때 JIRA에서 주석을 만들기**&#x200B;을 구성하는 지침을 보려면 확장하십시오.
 
 1. 왼쪽 탐색 패널에서 **템플릿** 탭 ![템플릿 아이콘](assets/templates-icon.png)을 클릭합니다.
 1. 화면의 왼쪽 상단 모서리 근처에 있는 검색 막대를 사용하여 템플릿을 검색합니다. 템플릿 이름 또는 포함된 애플리케이션별로 검색할 수 있습니다.
@@ -427,19 +421,20 @@ Workfront 작업이 할당되면 Jira의 문제는 작업입니다. Workfront �
    템플릿 보기가 열리고 정보 및 데이터 흐름의 애니메이션이 표시됩니다.
 1. 첫 번째 모듈에서 웹후크 추가를 시작합니다.
 1. 연결 필드에서 System Integration 자격 증명을 사용하는 Workfront 연결을 선택합니다.
-1. **레코드 종류** 필드에서 `??`을(를) 선택합니다.
+1. **레코드 종류** 필드에서 `Note`을(를) 선택합니다.
 1. **상태** 필드에서 `New state`을(를) 선택합니다.
-1. **And** 옵션을 사용하여 다음 작업으로 필터를 구성합니다.
+1. 다음 작업을 사용하여 필터를 구성합니다.
 
    | 필드 | 연산자 | 값 |
    |---|---|---|
-   | (메모 작성 및 업데이트) |  |  |
-   | assignedToID | 다음과 같음 | System Integration 사용자의 Workfront ID 입력 |
-   | projectID | 다음과 같음 | Webhook에서 볼 프로젝트의 ID를 입력합니다. |
+   | projectID<br>AND<br>TaskID | 같음<br><br>존재함 | Webhook에서 볼 프로젝트의 ID를 입력합니다. |
+   | 또는 |  |  |
+   | projectID<br>AND<br>OpTaskID | 같음<br><br>존재함 | Webhook에서 볼 프로젝트의 ID를 입력합니다. |
 
 1. **이 연결에서 수행한 업데이트 제외** 옵션을 사용하도록 설정합니다.
+1. **원본 기록** 필드에서 `New record only`을(를) 선택합니다.
 1. **저장**&#x200B;을 클릭하여 웹후크를 저장한 다음 **확인**&#x200B;을 클릭하여 트리거 모듈을 저장합니다.
-1. 두 번째 모듈에서 다음 변수를 설정한 다음 **확인**&#x200B;을 클릭하여 모듈을 저장합니다.
+1. **변수 설정** 모듈에서 다음 변수를 설정한 다음 **확인**&#x200B;을 클릭하여 모듈을 저장합니다.
 
    | 변수 이름 | 변수 값 |
    |---|---|
@@ -447,20 +442,14 @@ Workfront 작업이 할당되면 Jira의 문제는 작업입니다. Workfront �
    | JiraBaseURL | 연결 중인 Jira 계정의 기본 URL입니다. |
    | wfBaseURL | 연결 중인 Workfront 계정의 기본 URL입니다. |
 
-1. **이 연결에서 수행한 업데이트 제외** 옵션을 사용하도록 설정합니다.
-1. **저장**&#x200B;을 클릭하여 웹후크를 저장한 다음 **확인**&#x200B;을 클릭하여 트리거 모듈을 저장합니다.
 1. **각** Workfront 모듈의 연결 필드에서 시스템 통합 자격 증명을 사용하는 Workfront 연결을 선택한 다음 **확인**&#x200B;을 클릭하여 모듈을 저장합니다.
 1. **각** Jira 모듈의 연결 필드에서 System Integration 자격 증명을 사용하는 Jira 연결을 선택한 다음 **확인**&#x200B;을 클릭하여 모듈을 저장합니다.
 
-
 +++
 
+### 시나리오 6: Workfront에서 Jira로: Workfront 작업 또는 문제에 대해 삭제된 노트에 JIRA에 댓글 만들기
 
-
-
-### 시나리오 6: WF-to-Jira Remove notes (작업 및 문제)
-
-+++**시나리오 6 구성에 대한 지침을 보려면 확장:WF-to-Jira 메모(작업 및 문제) 제거**
++++**를 확장하여 시나리오 6: Workfront에서 Jira로 구성: Workfront 작업 또는 문제에 대해 삭제된 노트에 대한 JIRA의 댓글 만들기**&#x200B;을 구성하는 방법에 대한 지침을 봅니다.
 
 1. 왼쪽 탐색 패널에서 **템플릿** 탭 ![템플릿 아이콘](assets/templates-icon.png)을 클릭합니다.
 1. 화면의 왼쪽 상단 모서리 근처에 있는 검색 막대를 사용하여 템플릿을 검색합니다. 템플릿 이름 또는 포함된 애플리케이션별로 검색할 수 있습니다.
@@ -469,18 +458,18 @@ Workfront 작업이 할당되면 Jira의 문제는 작업입니다. Workfront �
    템플릿 보기가 열리고 정보 및 데이터 흐름의 애니메이션이 표시됩니다.
 1. 첫 번째 모듈에서 웹후크 추가를 시작합니다.
 1. 연결 필드에서 System Integration 자격 증명을 사용하는 Workfront 연결을 선택합니다.
-1. **레코드 종류** 필드에서 `??`을(를) 선택합니다.
+1. **레코드 종류** 필드에서 `Note`을(를) 선택합니다.
 1. **상태** 필드에서 `New state`을(를) 선택합니다.
-1. **And** 옵션을 사용하여 다음 작업으로 필터를 구성합니다.
+1. 다음 작업을 사용하여 필터를 구성합니다.
 
    | 필드 | 연산자 | 값 |
    |---|---|---|
-   | (메모에서 삭제) |  |  |
-   | assignedToID | 다음과 같음 | System Integration 사용자의 Workfront ID 입력 |
-   | projectID | 다음과 같음 | Webhook에서 볼 프로젝트의 ID를 입력합니다. |
-   | WF ID | 있음 |  |
+   | projectID<br>AND<br>TaskID | 같음<br><br>존재함 | Webhook에서 볼 프로젝트의 ID를 입력합니다. |
+   | 또는 |  |  |
+   | projectID<br>AND<br>OpTaskID | 같음<br><br>존재함 | Webhook에서 볼 프로젝트의 ID를 입력합니다. |
 
 1. **이 연결에서 수행한 업데이트 제외** 옵션을 사용하도록 설정합니다.
+1. **원본 기록** 필드에서 `Deleted record only`을(를) 선택합니다.
 1. **저장**&#x200B;을 클릭하여 웹후크를 저장한 다음 **확인**&#x200B;을 클릭하여 트리거 모듈을 저장합니다.
 1. 두 번째 모듈에서 다음 변수를 설정한 다음 **확인**&#x200B;을 클릭하여 모듈을 저장합니다.
 
@@ -493,14 +482,11 @@ Workfront 작업이 할당되면 Jira의 문제는 작업입니다. Workfront �
 1. **각** Workfront 모듈의 연결 필드에서 시스템 통합 자격 증명을 사용하는 Workfront 연결을 선택한 다음 **확인**&#x200B;을 클릭하여 모듈을 저장합니다.
 1. **각** Jira 모듈의 연결 필드에서 System Integration 자격 증명을 사용하는 Jira 연결을 선택한 다음 **확인**&#x200B;을 클릭하여 모듈을 저장합니다.
 
-
 +++
 
+### 시나리오 7: Workfront에서 Jira로: Workfront 작업 또는 문제에 대한 새 문서가 있을 때 JIRA에서 주석 만들기
 
-
-### 시나리오 7: WF-Jira 신규 첨부 파일(태스크 및 문제)
-
-+++**Scenario 7: WF-to-Jira 새 첨부 파일(작업 및 문제)을 구성하기 위한 지침을 보려면 확장**
++++**시나리오 7을 구성하는 지침을 보려면 확장: Workfront에서 Jira로: Workfront 작업 또는 문제에 대한 새 문서가 있을 때 JIRA에서 주석 만들기**
 
 1. 왼쪽 탐색 패널에서 **템플릿** 탭 ![템플릿 아이콘](assets/templates-icon.png)을 클릭합니다.
 1. 화면의 왼쪽 상단 모서리 근처에 있는 검색 막대를 사용하여 템플릿을 검색합니다. 템플릿 이름 또는 포함된 애플리케이션별로 검색할 수 있습니다.
@@ -509,13 +495,12 @@ Workfront 작업이 할당되면 Jira의 문제는 작업입니다. Workfront �
    템플릿 보기가 열리고 정보 및 데이터 흐름의 애니메이션이 표시됩니다.
 1. 첫 번째 모듈에서 웹후크 추가를 시작합니다.
 1. 연결 필드에서 System Integration 자격 증명을 사용하는 Workfront 연결을 선택합니다.
-1. **레코드 종류** 필드에서 `??`을(를) 선택합니다.
+1. **레코드 종류** 필드에서 `Document`을(를) 선택합니다.
 1. **상태** 필드에서 `New state`을(를) 선택합니다.
 1. **And** 옵션을 사용하여 다음 작업으로 필터를 구성합니다.
 
    | 필드 | 연산자 | 값 |
    |---|---|---|
-   | (문서에 만들기) |  |  |
    | assignedToID | 다음과 같음 | System Integration 사용자의 Workfront ID 입력 |
    | projectID | 다음과 같음 | Webhook에서 볼 프로젝트의 ID를 입력합니다. |
 
@@ -528,18 +513,16 @@ Workfront 작업이 할당되면 Jira의 문제는 작업입니다. Workfront �
    | wfBaseURL | 연결 중인 Workfront 계정의 기본 URL입니다. |
 
 1. **이 연결에서 수행한 업데이트 제외** 옵션을 사용하도록 설정합니다.
+1. **원본 기록** 필드에서 `New record only`을(를) 선택합니다.
 1. **저장**&#x200B;을 클릭하여 웹후크를 저장한 다음 **확인**&#x200B;을 클릭하여 트리거 모듈을 저장합니다.
 1. **각** Workfront 모듈의 연결 필드에서 시스템 통합 자격 증명을 사용하는 Workfront 연결을 선택한 다음 **확인**&#x200B;을 클릭하여 모듈을 저장합니다.
 1. **각** Jira 모듈의 연결 필드에서 System Integration 자격 증명을 사용하는 Jira 연결을 선택한 다음 **확인**&#x200B;을 클릭하여 모듈을 저장합니다.
 
-
 +++
 
+### 시나리오 8: Workfront에서 Jira로: Workfront 작업 또는 문제에 대해 삭제된 문서의 JIRA에 댓글 만들기
 
-
-### 시나리오 8: WF-To-Jira 첨부 파일 제거(작업 및 문제)
-
-+++**시나리오 8 구성에 대한 지침을 보려면 확장: WF-To-Jira 첨부 파일 제거(작업 및 문제)**
++++**시나리오 8을 구성하는 방법에 대한 지침을 보려면 확장: Workfront에서 Jira로: Workfront 작업 또는 문제에 대해 삭제된 문서의 JIRA에 댓글 만들기**
 
 1. 왼쪽 탐색 패널에서 **템플릿** 탭 ![템플릿 아이콘](assets/templates-icon.png)을 클릭합니다.
 1. 화면의 왼쪽 상단 모서리 근처에 있는 검색 막대를 사용하여 템플릿을 검색합니다. 템플릿 이름 또는 포함된 애플리케이션별로 검색할 수 있습니다.
@@ -548,17 +531,17 @@ Workfront 작업이 할당되면 Jira의 문제는 작업입니다. Workfront �
    템플릿 보기가 열리고 정보 및 데이터 흐름의 애니메이션이 표시됩니다.
 1. 첫 번째 모듈에서 웹후크 추가를 시작합니다.
 1. 연결 필드에서 System Integration 자격 증명을 사용하는 Workfront 연결을 선택합니다.
-1. **레코드 종류** 필드에서 `??`을(를) 선택합니다.
+1. **레코드 종류** 필드에서 `Document`을(를) 선택합니다.
 1. **상태** 필드에서 `New state`을(를) 선택합니다.
-1. **And** 옵션을 사용하여 다음 작업으로 필터를 구성합니다.
+1. 다음 작업을 사용하여 필터를 구성합니다.
 
    | 필드 | 연산자 | 값 |
    |---|---|---|
-   | (문서에서 삭제) |  |  |
-   | assignedToID | 다음과 같음 | System Integration 사용자의 Workfront ID 입력 |
-   | projectID | 다음과 같음 | Webhook에서 볼 프로젝트의 ID를 입력합니다. |
+   | projectID<br>AND<br>TaskID | 같음<br><br>존재함 | Webhook에서 볼 프로젝트의 ID를 입력합니다. |
+   | 또는 |  |  |
+   | projectID<br>AND<br>OpTaskID | 같음<br><br>존재함 | Webhook에서 볼 프로젝트의 ID를 입력합니다. |
 
-1. 두 번째 모듈에서는 다음 변수를 설정합니다.
+1. **변수 설정** 모듈에서 다음 변수를 설정합니다.
 
    | 변수 이름 | 변수 값 |
    |---|---|
@@ -567,6 +550,7 @@ Workfront 작업이 할당되면 Jira의 문제는 작업입니다. Workfront �
    | wfBaseURL | 연결 중인 Workfront 계정의 기본 URL입니다. |
 
 1. **이 연결에서 수행한 업데이트 제외** 옵션을 사용하도록 설정합니다.
+1. **원본 기록** 필드에서 `Deleted record only`을(를) 선택합니다.
 1. **저장**&#x200B;을 클릭하여 웹후크를 저장한 다음 **확인**&#x200B;을 클릭하여 트리거 모듈을 저장합니다.
 1. **각** Workfront 모듈의 연결 필드에서 시스템 통합 자격 증명을 사용하는 Workfront 연결을 선택한 다음 **확인**&#x200B;을 클릭하여 모듈을 저장합니다.
 1. **각** Jira 모듈의 연결 필드에서 System Integration 자격 증명을 사용하는 Jira 연결을 선택한 다음 **확인**&#x200B;을 클릭하여 모듈을 저장합니다.

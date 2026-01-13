@@ -3,9 +3,9 @@ title: Veeva Vault 모듈
 description: Adobe Workfront Fusion 시나리오에서는 Veeva Vault를 사용하는 워크플로를 자동화하고 여러 타사 애플리케이션 및 서비스에 연결할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 881e5ba39d1730b641085cf0d02137d18e443135
+source-git-commit: b57ae36cf9225705c7f4923d7302b1749aa04d94
 workflow-type: tm+mt
-source-wordcount: '2485'
+source-wordcount: '2539'
 ht-degree: 19%
 
 ---
@@ -115,6 +115,26 @@ Veeva Vault 모듈 내에서 직접 Veeva Vault 계정에 연결할 수 있습�
        <td role="rowheader">연결 이름</td> 
        <td> <p>연결의 이름을 입력합니다.</p> </td> 
       </tr> 
+      <tr> 
+       <td role="rowheader">인증 서버 공급자</td> 
+       <td> <p>이 인증에 사용할 공급자를 선택하십시오.</p> </td> 
+      </tr> 
+      <tr> 
+       <td role="rowheader">Ping 호스트</td> 
+       <td> <p>PingFederate를 사용하는 경우 ping 호스트를 입력합니다.</p> </td> 
+      </tr> 
+      <tr>
+        <td role="rowheader">범위</td>
+        <td>
+          <p>이 연결의 범위를 입력합니다.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">임차인 ID</td>
+        <td>
+          <p>인증 서버 공급자에 Azure AD/Microsoft Entra ID를 사용하는 경우 이 연결에 대한 테넌트 ID를 입력합니다.</p>
+        </td>
+      </tr>
       <tr>
         <td role="rowheader">클라이언트 ID</td>
         <td>
@@ -128,18 +148,6 @@ Veeva Vault 모듈 내에서 직접 Veeva Vault 계정에 연결할 수 있습�
         </td>
       </tr>
       <tr>
-        <td role="rowheader">범위</td>
-        <td>
-          <p>이 연결의 범위를 입력합니다.</p>
-        </td>
-      </tr>
-      <tr>
-        <td role="rowheader">임차인 ID</td>
-        <td>
-          <p>이 연결에 대한 테넌트 ID를 입력합니다.</p>
-        </td>
-      </tr>
-      <tr>
         <td role="rowheader">프로필 ID</td>
         <td>
           <p>OAuth2 / Copen ID Connect 프로필의 ID를 입력합니다.</p>
@@ -149,6 +157,12 @@ Veeva Vault 모듈 내에서 직접 Veeva Vault 계정에 연결할 수 있습�
        <td role="rowheader">자격 증명 모음 DNS</td> 
        <td>Veeva Vault DNS(도메인 이름)를 입력합니다.</p><p>Veeva Vault DNS를 찾으려면 Veeva Vault에 액세스하는 데 사용하는 URL을 검사합니다.</p>예를 들어 URL <code>https://my-dns.veevavault.com</code>에서 DNS는 <code>my-dns</code>입니다. 전체 URL을 입력할 필요는 없습니다.</td> 
       </tr> 
+      <tr>
+        <td role="rowheader">세션 만료 시간(분)</td>
+        <td>
+          <p>세션의 만료 시간을 분 단위로 입력합니다.</p>
+        </td>
+      </tr>
      </tbody> 
     </table>
 

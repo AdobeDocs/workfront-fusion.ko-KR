@@ -1,17 +1,17 @@
 ---
-title: 시나리오의 실행 내역 보기
+title: 시나리오의 실행 기록 보기
 description: 시나리오의 이벤트 또는 실행에 대한 정보를 표시하거나 시나리오의 모든 실행에서 특정 데이터를 검색할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: 93d06cb917680f9cabc1bad6be0f9cd843449d07
+source-git-commit: ab12dbf0dbad25a8300eb1201fa3e0fde9148acc
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 1%
+source-wordcount: '911'
+ht-degree: 12%
 
 ---
 
-# 시나리오의 실행 내역 보기
+# 시나리오의 실행 기록 보기
 
 시나리오의 이벤트 또는 실행에 대한 정보를 표시하거나 시나리오의 모든 실행에서 특정 데이터를 검색할 수 있습니다.
 
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -42,13 +42,13 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 +++
 
@@ -59,13 +59,17 @@ ht-degree: 1%
 
 [!UICONTROL 기록] 탭에 [!UICONTROL 시나리오 세부 정보] 페이지에서 사용할 수 있는 것보다 더 많은 세부 정보가 표시됩니다. [!UICONTROL 내역] 탭에서 실행을 필터링하고 정렬할 수도 있습니다.
 
+>[!NOTE]
+>
+>시나리오 기록이 실행 중일 때 이 기록을 보면 데이터가 계속 처리 중임을 알리는 메모가 표시되고 처리가 완료될 때까지 부분 시나리오 기록만 표시됩니다.
+
 1. 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭한 다음 시나리오를 클릭합니다.
 
    또는
 
    시나리오 편집기에서 시나리오 작업을 수행하는 경우 창의 왼쪽 상단 모서리 근처에 있는 왼쪽 화살표 ![편집 종료 화살표](assets/exit-editing-arrow.png)를 클릭합니다.
 
-1. 시나리오 이름 근처에 있는 **기록**&#x200B;을 클릭합니다.
+1. 시나리오 이름 근처에 있는 **기록**을 클릭합니다.
    ![기록 탭](assets/history-tab.png)
 
    시나리오의 모든 실행에 대해 다음 세부 정보가 나열됩니다.
@@ -111,7 +115,7 @@ ht-degree: 1%
 
 실행 기록을 필터링하여 지정된 값이 있는 실행만 볼 수 있습니다.
 
-1. 이 문서의 [기록[!UICONTROL &#x200B; 탭에서 &#x200B;]시나리오 실행 기록 보기](#view-scenario-history-on-the-history-tab)에 설명된 대로 시나리오에 대한 전체 페이지 기록을 엽니다.
+1. 이 문서의 [기록[!UICONTROL  탭에서 ]시나리오 실행 기록 보기](#view-scenario-history-on-the-history-tab)에 설명된 대로 시나리오에 대한 전체 페이지 기록을 엽니다.
 1. 필터링할 열의 헤더에서 [!UICONTROL 필터] 아이콘 ![시나리오 필터 아이콘](assets/fusion-scenario-filter-icon.png)을 클릭합니다.
 1. [!UICONTROL 필터] 대화 상자에서 필터링할 값을 입력합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
@@ -130,7 +134,7 @@ You can sort the scenario execution history.
 
 ## 시나리오의 모든 실행 검색
 
-1. 이 문서의 [기록[!UICONTROL &#x200B; 탭에서 &#x200B;]시나리오 실행 기록 보기](#view-scenario-history-on-the-history-tab)에 설명된 대로 시나리오에 대한 전체 페이지 기록을 엽니다.
+1. 이 문서의 [기록[!UICONTROL  탭에서 ]시나리오 실행 기록 보기](#view-scenario-history-on-the-history-tab)에 설명된 대로 시나리오에 대한 전체 페이지 기록을 엽니다.
 1. 실행 목록의 맨 위에서 **[!UICONTROL 전체 텍스트 검색]**&#x200B;을 클릭합니다.
 
    또는

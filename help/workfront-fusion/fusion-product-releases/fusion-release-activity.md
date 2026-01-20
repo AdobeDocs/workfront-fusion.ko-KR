@@ -9,9 +9,9 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: c37aea95-7cc3-4939-a4d7-9a6a75557b85
-source-git-commit: e6c6e33135f5367c626f83405a0b1e5fbb8f028a
+source-git-commit: 3ae274720ea2d7e4ee823a8467b750ad6f4d0c52
 workflow-type: tm+mt
-source-wordcount: '1091'
+source-wordcount: '1098'
 ht-degree: 99%
 
 ---
@@ -22,6 +22,7 @@ Adobe Workfront Fusion은 동일한 작업을 계속해서 반복하는 대신 �
 
 ## 2026년 Fusion 릴리스
 
+* [Workfront Fusion 릴리스 활동: 2026년 1월 19일 화요일 주간](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-19.md)
 * [Workfront Fusion 릴리스 활동: 2026년 1월 12일 화요일 주간](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-12.md)
 
 
@@ -31,15 +32,15 @@ Adobe Workfront Fusion은 동일한 작업을 계속해서 반복하는 대신 �
 
 ### 2025년 12월
 
-* [Workfront Fusion 릴리스 활동: 2025년 12월 15일 화요일 주간](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-15.md)
-* [Workfront Fusion 릴리스 활동: 2025년 12월 8일 화요일 주간](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-8.md)
-* [Workfront Fusion 릴리스 활동: 2025년 12월 1일 화요일 주간](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-1.md)
+* [Workfront Fusion 릴리스 활동: 2025년 12월 15일 주간](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-15.md)
+* [Workfront Fusion 릴리스 활동: 2025년 12월 8일 주간](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-8.md)
+* [Workfront Fusion 릴리스 활동: 2025년 12월 1일 주간](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-1.md)
 
 ### 2025년 11월
 
-* [Workfront Fusion 릴리스 활동: 2025년 11월 17일 화요일 주간](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-17.md)
-* [Workfront Fusion 릴리스 활동: 2025년 11월 10일 화요일 주간](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-10.md)
-* [Workfront Fusion 릴리스 활동: 2025년 11월 3일 화요일 주간](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-3.md)
+* [Workfront Fusion 릴리스 활동: 2025년 11월 17일 주간](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-17.md)
+* [Workfront Fusion 릴리스 활동: 2025년 11월 10일 주간](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-10.md)
+* [Workfront Fusion 릴리스 활동: 2025년 11월 3일 주간](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-3.md)
 
 ### 2025년 10월
 

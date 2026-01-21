@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
 source-git-commit: 3cb613c11500dfc94774783ee0b38e6f1768de20
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4539'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 85%
 >
 >Frame.io 커넥터의 이전 버전에 대한 지침은 [Frame.io 이전 커넥터](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)를 참조하십시오.
 
-Adobe Workfront Fusion [!DNL Frame.io] 모듈을 사용하면 [!DNL Frame.io] 계정의 에셋과 주석을 모니터링, 만들기, 업데이트, 가져오기 또는 삭제할 수 있습니다.
+Adobe Workfront Fusion [!DNL Frame.io] 모듈을 사용하면 [!DNL Frame.io] 계정의 자산과 주석을 모니터링, 만들기, 업데이트, 가져오기 또는 삭제할 수 있습니다.
 
 Workfront은 연결 중인 Frame.io 버전에 따라 두 개의 Frame.io 커넥터를 제공합니다.
 
@@ -291,13 +291,13 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
 
 ## [!DNL Frame.io] 모듈 및 해당 필드
 
-[!DNL Frame.io] 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를 표시합니다. 이와 함께 앱 또는 서비스의 액세스 수준과 같은 요인에 따라 추가적인 [!DNL Frame.io] 필드가 표시될 수 있습니다. 모듈의 굵은 글씨 제목은 필수 필드를 나타냅니다.
+[!DNL Frame.io] 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를 표시합니다. 이와 함께 앱 또는 서비스의 액세스 레벨과 같은 요인에 따라 추가적인 [!DNL Frame.io] 필드가 표시될 수 있습니다. 모듈의 굵은 글씨 제목은 필수 필드를 나타냅니다.
 
 필드 또는 함수 위에 있는 맵 버튼을 보면 해당 필드의 변수와 함수를 설정하는 데 사용할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
 ![토글 매핑](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [에셋](#assets)
+* [자산](#assets)
 * [댓글](#comments)
 * [폴더](#folders)
 * [프로젝트](#projects)
@@ -306,18 +306,18 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
 * [메타데이터](#metadata)
 * [기타](#other)
 
-### 에셋
+### 자산
 
-* [[!UICONTROL 에셋 만들기]](#create-an-asset)
-* [[!UICONTROL 에셋 삭제]](#delete-an-asset)
-* [[!UICONTROL 에셋 가져오기]](#get-an-asset)
-* [[!UICONTROL 에셋 나열]](#list-assets)
-* [에셋 보기 삭제됨](#watch-asset-deleted)
-* [새 에셋 보기](#watch-new-asset)
+* [[!UICONTROL 자산 만들기]](#create-an-asset)
+* [[!UICONTROL 자산 삭제]](#delete-an-asset)
+* [[!UICONTROL 자산 가져오기]](#get-an-asset)
+* [[!UICONTROL 자산 나열]](#list-assets)
+* [자산 보기 삭제됨](#watch-asset-deleted)
+* [새 자산 보기](#watch-new-asset)
 
-#### [!UICONTROL 에셋 만들기]<!--different for v4-->
+#### [!UICONTROL 자산 만들기]<!--different for v4-->
 
-이 작업 모듈은 새 자산을 만듭니다. 로컬 파일을 업로드하거나 원격 파일의 URL을 제공하여 자산을 만들 수 있습니다.
+이 액션 모듈은 새 자산을 만듭니다. 로컬 파일을 업로드하거나 원격 파일의 URL을 제공하여 자산을 만들 수 있습니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -329,19 +329,19 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
-   <td> <p>계정을 선택하거나 에셋을 만들 프로젝트가 포함된 계정의 ID를 매핑합니다.</p> </td> 
+   <td> <p>계정을 선택하거나 자산을 만들 프로젝트가 포함된 계정의 ID를 매핑합니다.</p> </td> 
   </tr> 
  <tr> 
    <td role="rowheader">[!UICONTROL 작업 영역 ID] </td> 
-   <td> <p>작업 영역을 선택하거나 에셋을 만들 프로젝트가 포함된 작업 영역의 ID를 매핑합니다.</p> </td> 
+   <td> <p>작업 영역을 선택하거나 자산을 만들 프로젝트가 포함된 작업 영역의 ID를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 프로젝트 ID] </td> 
-   <td> <p>프로젝트를 선택하거나 에셋을 만들 프로젝트 ID를 매핑합니다.</p> </td> 
+   <td> <p>프로젝트를 선택하거나 자산을 만들 프로젝트 ID를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 경로] </td> 
-   <td> <p>에셋을 만들 경로를 선택합니다.</p> </td> 
+   <td> <p>자산을 만들 경로를 선택합니다.</p> </td> 
   </tr> 
 <!--  <tr> 
    <td role="rowheader">[!UICONTROL File Name] </td> 
@@ -349,7 +349,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
   </tr> -->
     <tr> 
     <td role="rowheader">업로드 유형 </td> 
-    <td> <p>로컬 파일에서 자산을 만드는지 아니면 원격 삶에서 자산을 만드는지 선택합니다.</p> </td> 
+    <td> <p>로컬 파일에서 자산을 만들지 원격 라이프에서 만들지 선택합니다.</p> </td> 
    </tr>
     <tr> 
     <td role="rowheader">파일 크기 </td> 
@@ -370,9 +370,9 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
   </tbody> 
 </table>
 
-#### [!UICONTROL 에셋 만들기(레거시)] <!--different for v4-->
+#### [!UICONTROL 자산 만들기(이전)]<!--different for v4-->
 
-이 액션 모듈은 새 에셋을 만듭니다.
+이 액션 모듈은 새 자산을 만듭니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -384,23 +384,23 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
-   <td> <p>계정을 선택하거나 에셋을 만들 프로젝트가 포함된 계정의 ID를 매핑합니다.</p> </td> 
+   <td> <p>계정을 선택하거나 자산을 만들 프로젝트가 포함된 계정의 ID를 매핑합니다.</p> </td> 
   </tr> 
  <tr> 
    <td role="rowheader">[!UICONTROL 작업 영역 ID] </td> 
-   <td> <p>작업 영역을 선택하거나 에셋을 만들 프로젝트가 포함된 작업 영역의 ID를 매핑합니다.</p> </td> 
+   <td> <p>작업 영역을 선택하거나 자산을 만들 프로젝트가 포함된 작업 영역의 ID를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 프로젝트 ID] </td> 
-   <td> <p>프로젝트를 선택하거나 에셋을 만들 프로젝트 ID를 매핑합니다.</p> </td> 
+   <td> <p>프로젝트를 선택하거나 자산을 만들 프로젝트 ID를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 경로] </td> 
-   <td> <p>에셋을 만들 경로를 선택합니다.</p> </td> 
+   <td> <p>자산을 만들 경로를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 파일 이름] </td> 
-   <td> <p>이 에셋에 사용할 파일의 이름을 입력합니다.</p> </td> 
+   <td> <p>이 자산에 사용할 파일의 이름을 입력합니다.</p> </td> 
   </tr>
     <tr> 
     <td role="rowheader">파일 크기 </td> 
@@ -412,37 +412,14 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 미디어 유형] </td> 
-   <td> <p>이 에셋에 대한 미디어 유형을 선택합니다.</p> </td> 
+   <td> <p>이 자산에 대한 미디어 유형을 선택합니다.</p> </td> 
   </tr> 
   </tbody> 
 </table>
 
-#### [!UICONTROL 에셋 삭제]
+#### [!UICONTROL 자산 삭제]
 
-이 액션 모듈은 지정된 에셋을 삭제합니다.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL 계정 ID] </td> 
-   <td> <p>계정을 선택하거나 삭제할 에셋을 포함하는 계정의 ID를 매핑합니다.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL 에셋 ID] </td> 
-   <td> <p>삭제할 에셋을 선택하거나 매핑합니다.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL 에셋 가져오기]
-
-이 액션 모듈은 에셋 세부 정보를 가져옵니다.
+이 액션 모듈은 지정된 자산을 삭제합니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -454,18 +431,41 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
-   <td> <p>계정을 선택하거나 가져올 에셋을 포함하는 계정의 ID를 매핑합니다.</p> </td> 
+   <td> <p>계정을 선택하거나 삭제할 자산을 포함하는 계정의 ID를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 에셋 ID] </td> 
-   <td> <p>가져올 에셋을 선택하거나 매핑합니다.</p> </td> 
+   <td role="rowheader">[!UICONTROL 자산 ID] </td> 
+   <td> <p>삭제할 자산을 선택하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL 에셋 나열]
+#### [!UICONTROL 자산 가져오기]
 
-이 검색 모듈은 지정된 프로젝트의 폴더에 있는 모든 에셋을 가져옵니다.
+이 액션 모듈은 자산 세부 정보를 가져옵니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL 연결] </td> 
+   <td>[!DNL Frame.io]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io]를 Adobe Workfront Fusion에 연결</a>을 확인하십시오.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 계정 ID] </td> 
+   <td> <p>계정을 선택하거나 가져올 자산을 포함하는 계정의 ID를 매핑합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 자산 ID] </td> 
+   <td> <p>가져올 자산을 선택하거나 매핑합니다.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL 자산 나열]
+
+이 검색 모듈은 지정된 프로젝트의 폴더에 있는 모든 자산을 가져옵니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -479,18 +479,18 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
-   <td> <p>계정을 선택하거나 나열할 에셋을 포함하는 계정의 ID를 매핑합니다.</p> </td> 
+   <td> <p>계정을 선택하거나 나열할 자산을 포함하는 계정의 ID를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 반환되는 최대 에셋 수] </td> 
-   <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 에셋 수를 입력하거나 매핑합니다.</p> </td> 
+   <td role="rowheader">[!UICONTROL 반환되는 최대 자산 수] </td> 
+   <td> <p>각 시나리오 실행 주기 동안 모듈이 반환할 최대 자산 수를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### 에셋 보기 삭제됨
+#### 자산 보기 삭제됨
 
-이 트리거 모듈은 에셋이 삭제되면 시나리오를 시작합니다.
+이 트리거 모듈은 자산이 삭제되면 시나리오를 시작합니다.
 
 이 모듈에 사용할 웹후크를 선택하거나 웹후크 필드 옆에 있는 추가를 클릭하고 다음 정보를 입력합니다.
 
@@ -510,14 +510,14 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
-   <td> <p>계정을 선택하거나 삭제된 에셋을 확인할 계정의 ID를 매핑합니다.</p> </td> 
+   <td> <p>계정을 선택하거나 삭제된 자산을 확인할 계정의 ID를 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### 새 에셋 보기
+#### 새 자산 보기
 
-이 트리거 모듈은 새 에셋이 생성될 때 시나리오를 시작합니다.
+이 트리거 모듈은 새 자산이 생성될 때 시나리오를 시작합니다.
 
 이 모듈에 사용할 웹후크를 선택하거나 웹후크 필드 옆에 있는 추가를 클릭하고 다음 정보를 입력합니다.
 
@@ -537,7 +537,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
-   <td> <p>계정을 선택하거나 새 에셋을 확인할 계정의 ID를 매핑합니다.</p> </td> 
+   <td> <p>계정을 선택하거나 새 자산을 확인할 계정의 ID를 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -554,7 +554,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
 
 #### [!UICONTROL 댓글 작성]
 
-이 액션 모듈은 에셋에 새 댓글 또는 답글을 추가합니다.
+이 액션 모듈은 자산에 새 댓글 또는 답글을 추가합니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -566,19 +566,19 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
-   <td> <p>계정을 선택하거나 댓글을 추가할 에셋을 포함하는 계정의 ID를 매핑합니다.</p> </td> 
+   <td> <p>계정을 선택하거나 댓글을 추가할 자산을 포함하는 계정의 ID를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 작업 영역 ID] </td> 
-   <td> <p>계정을 선택하거나 댓글을 추가할 에셋을 포함하는 작업 영역의 ID를 매핑합니다.</p> </td> 
+   <td> <p>계정을 선택하거나 댓글을 추가할 자산을 포함하는 작업 영역의 ID를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 프로젝트 ID] </td> 
-   <td> <p>프로젝트를 선택하거나 댓글을 추가할 에셋을 포함하는 프로젝트의 ID를 매핑합니다.</p> </td> 
+   <td> <p>프로젝트를 선택하거나 댓글을 추가할 자산을 포함하는 프로젝트의 ID를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 경로] </td> 
-   <td> <p>댓글을 추가할 에셋의 경로를 선택합니다.</p> </td> 
+   <td> <p>댓글을 추가할 자산의 경로를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 텍스트]</td> 
@@ -590,7 +590,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 페이지] </td> 
-   <td> <p>에셋이 PDF인 경우 댓글을 첨부해야 하는 페이지를 입력하거나 매핑합니다.</p> </td> 
+   <td> <p>자산이 PDF인 경우 댓글을 첨부해야 하는 페이지를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -643,7 +643,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
 
 #### [!UICONTROL 댓글 나열]
 
-이 검색 모듈은 지정된 에셋의 모든 댓글을 가져옵니다.
+이 검색 모듈은 지정된 자산의 모든 댓글을 가져옵니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -655,19 +655,19 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
-   <td> <p>댓글을 가져올 에셋이 포함된 계정을 선택하거나 매핑합니다.</p> </td> 
+   <td> <p>댓글을 가져올 자산이 포함된 계정을 선택하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 작업 영역 ID] </td> 
-   <td> <p>댓글을 가져올 에셋이 포함된 작업 영역을 선택하거나 매핑합니다.</p> </td> 
+   <td> <p>댓글을 가져올 자산이 포함된 작업 영역을 선택하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 프로젝트 ID] </td> 
-   <td> <p>댓글을 가져올 에셋이 포함된 프로젝트를 선택합니다.</p> </td> 
+   <td> <p>댓글을 가져올 자산이 포함된 프로젝트를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 경로] </td> 
-   <td> <p>댓글을 나열할 에셋으로 연결되는 경로를 선택합니다.</p> </td> 
+   <td> <p>댓글을 나열할 자산으로 연결되는 경로를 선택합니다.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">[!UICONTROL 반환되는 최대 댓글 수] </td> 
@@ -690,7 +690,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
-   <td> <p>댓글을 업데이트할 에셋이 포함된 프로젝트가 포함된 계정을 선택하거나 매핑합니다.</p> </td> 
+   <td> <p>댓글을 업데이트할 자산이 포함된 프로젝트가 포함된 계정을 선택하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 댓글 ID] </td> 
@@ -706,7 +706,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 페이지] </td> 
-   <td> <p>에셋이 PDF인 경우 댓글이 첨부된 페이지를 입력하거나 매핑합니다.</p> </td> 
+   <td> <p>자산이 PDF인 경우 댓글이 첨부된 페이지를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -881,11 +881,11 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
-   <td> <p>프로젝트를 가져올 에셋이 포함된 계정을 선택하거나 매핑합니다.</p> </td> 
+   <td> <p>프로젝트를 가져올 자산이 포함된 계정을 선택하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 작업 영역 ID] </td> 
-   <td> <p>프로젝트를 가져올 에셋이 포함된 작업 영역을 선택하거나 매핑합니다.</p> </td> 
+   <td> <p>프로젝트를 가져올 자산이 포함된 작업 영역을 선택하거나 매핑합니다.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">[!UICONTROL 반환되는 최대 프로젝트 수] </td> 
@@ -897,12 +897,12 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
 
 ### 공유
 
-* [공유 링크에 에셋 추가](#add-an-asset-to-a-share-link)
+* [공유 링크에 자산 추가](#add-an-asset-to-a-share-link)
 * [공유 링크 만들기](#create-a-share-link)
 
-#### 공유 링크에 에셋 추가
+#### 공유 링크에 자산 추가
 
-이 액션 모듈은 Frame.io의 공유 링크에 에셋을 추가합니다.
+이 액션 모듈은 Frame.io의 공유 링크에 자산을 추가합니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -914,15 +914,15 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
-   <td> <p>에셋을 추가할 공유 링크가 포함된 계정을 선택하거나 매핑합니다.</p> </td> 
+   <td> <p>자산을 추가할 공유 링크가 포함된 계정을 선택하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 공유 링크 ID] </td> 
-   <td> <p>에셋을 추가할 공유 링크를 선택하거나 매핑합니다.</p> </td> 
+   <td> <p>자산을 추가할 공유 링크를 선택하거나 매핑합니다.</p> </td> 
   </tr> 
    <tr> 
-   <td role="rowheader">[!UICONTROL 에셋 ID] </td> 
-   <td> <p>공유 링크에 추가할 에셋의 ID를 입력하거나 매핑합니다.</p> </td> 
+   <td role="rowheader">[!UICONTROL 자산 ID] </td> 
+   <td> <p>공유 링크에 추가할 자산의 ID를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -956,8 +956,8 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
    <td> <p>이 링크에 공개 또는 제한된 액세스 권한이 있는지 선택합니다.</p> </td> 
   </tr> 
    <tr> 
-   <td role="rowheader">에셋 </td> 
-   <td> <p>공유 링크에 추가할 각 에셋에 대해 <b>항목 추가</b>를 클릭하고 에셋의 ID를 입력합니다.</p> </td> 
+   <td role="rowheader">자산 </td> 
+   <td> <p>공유 링크에 추가할 각 자산에 대해 <b>항목 추가</b>를 클릭하고 자산의 ID를 입력합니다.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">설명 </td> 
@@ -1017,7 +1017,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
-   <td> <p>작업 영역을 가져올 에셋이 포함된 계정을 선택하거나 매핑합니다.</p> </td> 
+   <td> <p>작업 영역을 가져올 자산이 포함된 계정을 선택하거나 매핑합니다.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">[!UICONTROL 반환되는 최대 작업 영역 수] </td> 
@@ -1038,7 +1038,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
 
 #### 계정 수준 필드 만들기
 
-이 작업 모듈은 새 계정 수준 메타데이터 필드를 만들고 구성합니다.
+이 액션 모듈은 새 계정 수준 메타데이터 필드를 만들고 구성합니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1050,11 +1050,11 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
-   <td> <p>메타데이터를 만들려는 계정을 선택하거나 매핑합니다.</p> </td> 
+   <td> <p>메타데이터를 만들 계정을 선택하거나 매핑합니다.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">필드 유형 </td> 
-   <td> <p>만들려는 메타데이터 필드의 유형을 선택한 다음 해당 필드에 대한 옵션을 구성합니다.</p> </td> 
+   <td> <p>만들려는 메타데이터 필드의 유형을 선택한 다음 해당 필드의 옵션을 구성합니다.</p> </td> 
   </tr> 
   </tr> 
    <tr> 
@@ -1066,7 +1066,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
 
 #### 계정 수준 필드 삭제
 
-이 작업 모듈은 단일 계정 수준 메타데이터 필드를 삭제합니다.
+이 액션 모듈은 단일 계정 수준 메타데이터 필드를 삭제합니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1082,14 +1082,14 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
   </tr> 
    <tr> 
    <td role="rowheader">필드 정의 ID </td> 
-   <td> <p>삭제하려는 필드의 ID를 입력하거나 매핑합니다. 목록 계정 수준 필드 모듈로 필드 ID를 찾을 수 있습니다.</p> </td> 
+   <td> <p>삭제할 필드의 ID를 입력하거나 매핑합니다. 계정 수준 필드 목록 모듈을 사용하여 필드 ID를 찾을 수 있습니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### 메타데이터 가져오기
 
-이 작업 모듈은 Frame.io의 파일에 대한 메타데이터를 검색합니다.
+이 액션 모듈은 Frame.io 에서 파일의 메타데이터를 가져옵니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1101,22 +1101,22 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
-   <td> <p>메타데이터를 검색할 파일이 포함된 계정을 선택하거나 매핑합니다.</p> </td> 
+   <td> <p>메타데이터를 가져올 파일이 포함된 계정을 선택하거나 매핑합니다.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">파일 ID </td> 
-   <td> <p>메타데이터를 검색할 파일의 ID를 입력하거나 매핑합니다.</p> </td> 
+   <td> <p>메타데이터를 가져올 파일의 ID를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">null 표시 </td> 
-   <td> <p>이 옵션을 활성화하여 출력 시 null 값이 포함된 필드를 포함할 수 있습니다.</p> </td> 
+   <td> <p>출력 시 null 값을 가진 필드를 포함하도록 이 옵션을 활성화합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### 계정 수준 필드 나열
 
-이 모듈은 지정된 계정에 대한 계정 수준 메타데이터 필드 목록을 검색합니다.
+이 모듈은 지정된 계정의 계정 수준 메타데이터 필드 목록을 가져옵니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1139,7 +1139,7 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
 
 #### 계정 수준 필드 정의 업데이트
 
-이 모듈은 하나의 기존 메타데이터 필드에 대한 정의를 업데이트합니다.
+이 모듈은 단일 기존 메타데이터 필드의 정의를 업데이트합니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1151,20 +1151,20 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 계정 ID] </td> 
-   <td> <p>메타데이터를 만들려는 계정을 선택하거나 매핑합니다.</p> </td> 
+   <td> <p>메타데이터를 만들 계정을 선택하거나 매핑합니다.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">필드 정의 ID </td> 
-   <td> <p>업데이트할 필드의 ID를 입력하거나 매핑합니다. 목록 계정 수준 필드 모듈로 필드 ID를 찾을 수 있습니다.</p> </td> 
+   <td> <p>업데이트할 필드의 ID를 입력하거나 매핑합니다. 계정 수준 필드 목록 모듈을 사용하여 필드 ID를 찾을 수 있습니다.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">필드 유형 </td> 
-   <td> <p>필드의 필드 유형을 변경하려면 만들 메타데이터 필드 유형을 선택한 다음, 해당 필드에 대한 옵션을 구성합니다.</p> </td> 
+   <td> <p>필드의 필드 유형을 변경하려면 만들려는 메타데이터 필드 유형을 선택한 다음 해당 필드의 옵션을 구성합니다.</p> </td> 
   </tr> 
   </tr> 
    <tr> 
    <td role="rowheader">이름 </td> 
-   <td> <p>필드에 대한 새 이름을 입력하거나 매핑합니다.</p> </td> 
+   <td> <p>필드의 새 이름을 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1187,19 +1187,19 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
   </tr> 
  <tr> 
    <td role="rowheader">[!UICONTROL 작업 영역 ID] </td> 
-   <td> <p>작업 영역을 선택하거나 에셋을 만들 프로젝트가 포함된 작업 영역의 ID를 매핑합니다.</p> </td> 
+   <td> <p>작업 영역을 선택하거나 자산을 만들 프로젝트가 포함된 작업 영역의 ID를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 프로젝트 ID] </td> 
-   <td> <p>프로젝트를 선택하거나 에셋을 만들 프로젝트 ID를 매핑합니다.</p> </td> 
+   <td> <p>프로젝트를 선택하거나 자산을 만들 프로젝트 ID를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 파일 ID] </td> 
-   <td> <p>메타데이터를 업데이트할 각 파일에 대해 <b>항목 추가</b>를 클릭하고 파일의 ID를 입력하거나 매핑하십시오.</p> </td> 
+   <td> <p>메타데이터를 업데이트하려는 각 파일에 대해 <b>항목 추가</b>를 클릭하고 파일 ID를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 값] </td> 
-   <td> <p>메타데이터를 업데이트할 각 필드에 대해 <b>항목 추가</b>를 클릭하고 필드 정의의 ID와 해당 필드에 입력할 값을 입력하거나 매핑합니다. 파일 ID 필드에 지정된 모든 파일은 이 필드 값으로 업데이트됩니다.</p> </td> 
+   <td> <p>메타데이터를 업데이트하려는 각 파일에 대해 <b>항목 추가</b>를 클릭하고 필드 정의의 ID와 해당 필드에 값을 입력하거나 매핑합니다. 파일 ID 필드에 지정된 모든 파일은 이 필드 값으로 업데이트됩니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1251,21 +1251,21 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
 
 #### 이벤트 보기
 
-이 즉시 트리거 모듈은 선택한 이벤트가 Frame.io에서 발생할 때 시나리오를 시작합니다.
+선택한 이벤트가 Frame.io에서 발생할 때 이 즉시 트리거 모듈이 시나리오를 시작합니다.
 
-기존 Webhook을 사용하거나 새 Webhook을 만들 수 있습니다.
+기존 웹후크를 사용하거나 새 웹후크를 만들 수 있습니다.
 
 새 웹후크를 생성하는 방법:
 
 1. 웹후크 필드 옆에 있는 **추가**&#x200B;를 클릭합니다.
-1. 다음 정보를 입력합니다.
+1. 다음 정보를 채웁니다.
 
    <table style="table-layout:auto"> 
     <col> 
     <col> 
     <tbody> 
      <tr> 
-     <td role="rowheader">Webhook 이름 </td> 
+     <td role="rowheader">웹후크 이름 </td> 
       <td> <p>새 웹후크의 이름을 입력합니다.</p> </td> 
      </tr> 
      <tr> 
@@ -1274,20 +1274,20 @@ Adobe Developer Console 프로젝트에 서버 간 자격 증명이 없는 경�
      </tr> 
      <tr> 
      <td role="rowheader">[!UICONTROL 계정 ID] </td> 
-      <td> <p>이벤트를 보려는 작업 영역이 포함된 계정을 선택하거나 매핑합니다.</p> </td> 
+      <td> <p>이벤트를 볼 작업 영역이 포함된 계정을 선택하거나 매핑합니다.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL 작업 영역 ID]</td> 
-      <td> <p>이벤트를 보려는 작업 영역의 ID를 입력합니다.</p> </td> 
+      <td> <p>이벤트를 볼 작업 영역의 ID를 입력합니다.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Events]</td> 
+      <td role="rowheader">[!UICONTROL 이벤트]</td> 
       <td> <p>이 모듈을 트리거할 이벤트 선택</p> </td> 
      </tr> 
     </tbody> 
    </table>
 
-1. 웹후크를 저장하고 모듈로 돌아가려면 **저장**&#x200B;을 클릭하십시오.
+1. **저장**&#x200B;을 클릭하여 웹후크를 저장하고 모듈로 돌아갑니다.
 1. 이벤트 보기 모듈에서 **확인**&#x200B;을 클릭하여 구성을 저장합니다.
 
 

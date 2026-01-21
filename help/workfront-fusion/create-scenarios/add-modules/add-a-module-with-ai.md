@@ -4,10 +4,10 @@ description: AI를 사용하여 시나리오의 세그먼트가 수행해야 할
 author: Becky
 feature: Workfront Fusion
 exl-id: d231e33a-6033-4e3c-b1d4-7034797c45a5
-source-git-commit: c83070a7c2d1d048000a4eace4aaede73c7ec49d
+source-git-commit: 2bec2607d55e4ba2ffd6ddcae6daa51071b204c4
 workflow-type: tm+mt
 source-wordcount: '612'
-ht-degree: 1%
+ht-degree: 19%
 
 ---
 
@@ -27,7 +27,7 @@ AI에서 생성된 모든 것과 마찬가지로 생성된 모듈을 두 번 확
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -44,22 +44,24 @@ AI에서 생성된 모든 것과 마찬가지로 생성된 모듈을 두 번 확
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-+++## 사전 요구 사항
++++
+
+## 전제 조건
 
 이 기능을 사용하려면 조직에서 다음 전제 조건을 충족해야 합니다.
 
 * 귀사는 Workfront AI Assistant Beta 프로그램에 참여했어야 합니다.
 * Adobe은 조직의 파일에 대해 서명된 Adobe Gen AI 계약이 있어야 합니다.
 
-  계약 서명에 대한 자세한 내용은 Workfront 설명서의 AI Assistant 개요에서 [Adobe Gen AI 계약 서명](https://experienceleague.adobe.com/ko/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement)을 참조하십시오.
+  계약 서명에 대한 자세한 내용은 Workfront 설명서의 AI Assistant 개요에서 [Adobe Gen AI 계약 서명](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement)을 참조하십시오.
 
 ## 현재 지원되는 AI 모듈 애플리케이션
 
@@ -68,9 +70,9 @@ Fusion AI는 현재 다음 애플리케이션에 연결하는 모듈을 생성�
 * Adobe Firefly
 * Azure OpenAI
 * Microsoft 그래프
-* Adobe Workfront 계획
+* Adobe Workfront 계획 수립
 * Adobe Analytics
-* Adobe PDF 서비스
+* Adobe PDF Services
 * Adobe Marketo
 * Adobe Frame.io
 * Dropbox

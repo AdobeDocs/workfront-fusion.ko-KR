@@ -4,9 +4,9 @@ description: 현재 Adobe Workfront Fusion에서 사용할 수 있는 공용 템
 author: Becky
 feature: Workfront Fusion
 exl-id: b14bed4d-3503-42cf-a8c3-618d3b2448b4
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 4ede5c7a75725a6540d6a8ff9cd056e6147d5c55
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1660'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 이러한 템플릿은 Workfront 프로세스 및 워크플로를 자동화합니다.
 
-### [!BADGE 새로 만들기! &#x200B;]{type=Informative} Workfront - 작업이 일찍 완료되면 프로젝트 타임라인을 자동으로 조정
+### Workfront - 작업이 일찍 완료되면 프로젝트 타임라인을 자동으로 조정
 
 <!--New June 10, 2025-->
 
@@ -33,13 +33,13 @@ ht-degree: 0%
 
 이 Fusion 템플릿은 해당 프로세스를 자동화합니다. 작업이 조기에 완료되면 모든 종속(후속) 작업이 자동으로 다시 예약되어 더 빨리 시작되도록 하여 팀이 더 빨리 움직이고 민첩하게 작업할 수 있습니다.
 
-### [!BADGE 새로 만들기! &#x200B;]{type=Informative} HTTP>CSV>WF - 도메인 및 계층별로 이벤트 하위 목록을 만들고 CSV로 내보내기
+### [!BADGE 새로 만들기! ]{type=Informative} HTTP>CSV>WF - 도메인 및 계층별로 이벤트 하위 목록을 만들고 CSV로 내보내기
 
 이벤트 구독 정보를 다운로드하고 CSV 파일을 만든 다음 파일을 Workfront에 업로드합니다.
 
 <!--New August 8, 2025-->
 
-### [!BADGE 새로 만들기! &#x200B;]{type=Informative} Workfront 보드 - 지정된 열에서 보관된 카드 삭제(주문형)
+### Workfront 보드 - 지정된 열에서 보관된 카드 삭제(온디맨드)
 
 <!--New March 12, 2025-->
 
@@ -117,7 +117,7 @@ ht-degree: 0%
 
 이러한 템플릿은 Workfront과 Workfront Proof을 결합하는 워크플로를 자동화합니다.
 
-### [!BADGE 새로 만들기! &#x200B;]{type=Informative} Workfront > Workfront Proof - 증명 사용자 역할을 읽기 전용으로 변경하고 프로젝트 종료 시 증명을 잠급니다.
+### Workfront > Workfront Proof - 증명 사용자 역할을 읽기 전용으로 변경하고 프로젝트 종료 시 증명 잠금
 
 <!--New March 12, 2025-->
 
@@ -184,7 +184,7 @@ ht-degree: 0%
 
 이러한 템플릿은 Workfront-Anaplan 통합을 지원하며 Workfront의 두 Anaplan 모두에서 특정 구성을 예상합니다. 이러한 템플릿 및 필수 구성에 대한 자세한 내용은 개별 템플릿 문서를 참조하십시오.
 
-Workfront-Anaplan 통합에 대한 자세한 내용은 Workfront 설명서에서 [Anaplan을 사용한 Adobe Workfront](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration)을(를) 참조하십시오.
+Workfront-Anaplan 통합에 대한 자세한 내용은 Workfront 설명서에서 [Anaplan을 사용한 Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration)을(를) 참조하십시오.
 
 >[!NOTE]
 >
@@ -192,19 +192,34 @@ Workfront-Anaplan 통합에 대한 자세한 내용은 Workfront 설명서에서
 
 ### 지출 최적화 워크플로우
 
-* [목록 항목에 대한  [!DNL Anaplan] Adobe Workfront 프로젝트 업데이트 보내기](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
-* [목록 항목 [!DNL Anaplan] 에 Adobe Workfront 경비 보내기](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
-* [목록 항목에 대한 Adobe Workfront 실제 시간 업데이트를  [!DNL Anaplan] 보냅니다](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
+* [목록 항목에 대한  [!DNL Anaplan] Adobe Workfront 프로젝트 업데이트 보내기](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
+* [목록 항목 [!DNL Anaplan] 에 Adobe Workfront 경비 보내기](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
+* [목록 항목에 대한 Adobe Workfront 실제 시간 업데이트를  [!DNL Anaplan] 보냅니다](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
 
 ### 예산 요청 연결을 위한 워크플로
 
-* [Adobe Workfront 예산 요청에서  [!DNL Anaplan] 목록 항목 만들기](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
-* [Adobe Workfront 프로젝트에  [!DNL Anaplan] 예산 할당 적용](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
+* [Adobe Workfront 예산 요청에서  [!DNL Anaplan] 목록 항목 만들기](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
+* [Adobe Workfront 프로젝트에  [!DNL Anaplan] 예산 할당 적용](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
 
 ### 캠페인 요청 연결을 위한 워크플로우
 
-* [Adobe Workfront 캠페인 요청에서  [!DNL Anaplan] 목록 항목 만들기](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
-* [Adobe Workfront 캠페인 요청 또는 캠페인 프로젝트에  [!DNL Anaplan] 예산 할당 적용](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
+* [Adobe Workfront 캠페인 요청에서  [!DNL Anaplan] 목록 항목 만들기](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
+* [Adobe Workfront 캠페인 요청 또는 캠페인 프로젝트에  [!DNL Anaplan] 예산 할당 적용](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
+
+## Workfront - Jira 템플릿
+
+이러한 템플릿은 Workfront과 Jira 간의 일반적인 워크플로를 나타냅니다.
+
+이러한 템플릿에 대한 자세한 내용은 [템플릿을 사용하여 Adobe Workfront Fusion 및 Jira 연결](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md)을 참조하십시오.
+
+* [Workfront에서 Jira로: Workfront 작업 또는 문제 할당에서 JIRA 문제 만들기](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-1-workfront-to-jira-create-jira-issue-from-workfront-task-or-issue-assignment)
+* [JIRA에서 Workfront으로: JIRA에서 Workfront으로: 문제에 대한 업데이트 및 주석을 Jira에서 Workfront으로 다시 보냅니다.](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-2-jira-to-workfront-send-updates-on-issues-and-comments-back-to-workfront-from-jira)
+* [Workfront to Jira: Workfront 작업의 JIRA 문제 변경](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-3-workfront-to-jira-changes-to-workfront-task-to-jira-issue)
+* [Workfront to Jira: Workfront 문제가 JIRA 문제로 변경되었습니다.](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-4-workfront-to-jira-changes-to-workfront-issue-to-jira-issue)
+* [Workfront에서 Jira로: Workfront 작업 또는 문제에 대한 새 메모가 있을 때 JIRA에서 주석 만들기](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-5-workfront-to-jira-create-comment-in-jira-when-new-note-on-workfront-task-or-issue)
+* [Workfront에서 Jira로: Workfront 작업 또는 문제에 대해 삭제된 노트에 JIRA에 댓글 만들기](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-6-workfront-to-jira-create-comment-in-jira-on-deleted-note-on-workfront-task-or-issue)
+* [Workfront to Jira: Workfront 작업 또는 문제에 대한 새 문서가 있을 때 JIRA에서 주석 만들기](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-7-workfront-to-jira-create-comment-in-jira-when-new-document-on-workfront-task-or-issue)
+* [Workfront에서 Jira로: Workfront 작업 또는 문제에 대해 삭제된 문서에 대해 JIRA에 댓글 만들기](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-8-workfront-to-jira-create-comment-in-jira-on-deleted-document-on-workfront-task-or-issue)
 
 
 <!--[!BADGE New!]{type=Informative} -->

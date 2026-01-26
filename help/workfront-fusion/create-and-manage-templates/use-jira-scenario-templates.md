@@ -6,9 +6,7 @@ title: 템플릿을 사용하여 Adobe Workfront Fusion 및 Jira 연결
 description: 이러한 템플릿을 사용하여 Adobe Workfront Fusion과 Jira 간에 워크플로우를 자동화합니다.
 author: Becky
 feature: Workfront Fusion
-hide: true
-hidefromtoc: true
-source-git-commit: c3d1abb898eec6fc84dc1de0fb7799d13d9e3571
+source-git-commit: 4ede5c7a75725a6540d6a8ff9cd056e6147d5c55
 workflow-type: tm+mt
 source-wordcount: '4171'
 ht-degree: 3%
@@ -61,7 +59,7 @@ Adobe workfront Fusion은 Fusion과 Jira 간의 공통 워크플로를 자동화
   자세한 내용 및 지침은 Adobe 설명서에서 [기술 계정 설정](https://developer.adobe.com/cloud-storage/guides/getting-started/technical-account-setup)을 참조하세요.
 * Adobe Admin Console 제품 프로필 영역의 기술 계정에 시스템 관리자 권한을 적용해야 합니다.
 
-  자세한 내용 및 지침은 [Adobe Admin Console을 사용하여 Workfront에서 시스템 관리자 만들기](https://experienceleague.adobe.com/ko/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)를 참조하십시오.
+  자세한 내용 및 지침은 [Adobe Admin Console을 사용하여 Workfront에서 시스템 관리자 만들기](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)를 참조하십시오.
 
 ### Jira
 
@@ -156,13 +154,13 @@ Jira 통합 템플릿을 사용하려면 다음 구성을 수행해야 합니다
 
 1. Workfront에서 시스템 통합 사용자를 만듭니다. 이 사용자는 Workfront Fusion에서만 사용되며 사람 사용자를 나타내지는 않습니다. 이 사용자에게 할당된 작업은 Workfront을 Jira와 동기화하는 시나리오를 트리거합니다.
 
-   지침은 Workfront 설명서에서 [사용자 추가](https://experienceleague.adobe.com/ko/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users)를 참조하십시오.
+   지침은 Workfront 설명서에서 [사용자 추가](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users)를 참조하십시오.
 
 #### Workfront에서 사용자 정의 양식 만들기
 
 1. Workfront에서 사용자 정의 양식을 만들기 시작합니다.
 
-   자세한 내용은 Workfront 설명서에서 [사용자 정의 양식 만들기](https://experienceleague.adobe.com/ko/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form)를 참조하십시오.
+   자세한 내용은 Workfront 설명서에서 [사용자 정의 양식 만들기](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form)를 참조하십시오.
 1. 양식 이름을 &quot;**JIRA 필드**&quot;로 지정합니다.
 1. 사용자 정의 양식에 다음 필드를 포함합니다.
 
@@ -179,7 +177,7 @@ Jira 통합 템플릿을 사용하려면 다음 구성을 수행해야 합니다
 >
 >다른 사용자가 이 양식을 편집할 수 없도록 제한하는 것이 좋습니다. 사용자 정의 양식에 추가된 모든 사용자에게 보기 액세스만 허용하면 됩니다.
 >
->자세한 내용은 Workfront 설명서에서 [사용자 정의 양식 공유](https://experienceleague.adobe.com/ko/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form)를 참조하십시오.
+>자세한 내용은 Workfront 설명서에서 [사용자 정의 양식 공유](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form)를 참조하십시오.
 
 ### Workfront Fusion에서 연결 구성
 
@@ -323,7 +321,7 @@ Awaiting feedback-->
 #### 템플릿 모듈을 Workfront 및 Jira에 연결(모듈 2)
 
 1. **각** Workfront 모듈의 연결 필드에서 [Workfront Fusion에서 연결 구성](#configure-connections-in-workfront-fusion)에서 만든 Workfront 연결을 선택한 다음 **확인**&#x200B;을 클릭하여 해당 모듈에 대한 연결을 저장합니다.
-1. **각** Jira 모듈의 연결 필드에서 [Workfront Fusion에서 연결 구성](#configure-connections-in-workfront-fusion)에서 만든 Workfront 연결을 선택한 다음 **확인**&#x200B;을 클릭하여 해당 모듈에 대한 연결을 저장합니다.
+1. **각** Jira 모듈의 연결 필드에서 [Workfront Fusion에서 연결 구성](#configure-connections-in-workfront-fusion)에서 만든 Workfront 연결을 선택한 다음 **확인**을 클릭하여 해당 모듈에 대한 연결을 저장합니다.
    <!--#### Map custom fields-->
 
 +++

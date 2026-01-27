@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
 source-git-commit: ab12dbf0dbad25a8300eb1201fa3e0fde9148acc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7366'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ Adobe Workfront Fusion Adobe Workfront 커넥터를 사용하여 Workfront 내�
 
 +++
 
-## Workfront을 Workfront Fusion에 연결
+## Workfront를 Workfront Fusion에 연결
 
 Workfront 커넥터는 OAuth 2.0을 사용하여 Workfront에 연결합니다.
 
@@ -1034,7 +1034,7 @@ Workfront는 최근 이벤트 구독 서비스의 신규 버전을 출시했습�
 
 새 이벤트 구독 버전에 대한 자세한 내용은 Workfront 설명서의 [이벤트 구독 버전 관리](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)를 참조하십시오.
 
-웨비나 녹화를 포함한 이벤트 구독 업그레이드 중 Workfront Fusion 시나리오 유지에 대한 리소스는 [이벤트 구독 V2 업그레이드 중 Fusion 시나리오 유지](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=ko)를 참조하십시오.
+웨비나 녹화를 포함한 이벤트 구독 업그레이드 중 Workfront Fusion 시나리오 유지에 대한 리소스는 [이벤트 구독 V2 업그레이드 중 Fusion 시나리오 유지](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)를 참조하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -2362,7 +2362,7 @@ See a list of the Workfront object types for which you can use this module in [W
 >
 >   새 이벤트 구독 버전에 대한 자세한 내용은 Workfront 설명서의 [이벤트 구독 버전 관리](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)를 참조하십시오.
 >
->   웨비나 녹화를 포함한 이벤트 구독 업그레이드 중 Workfront Fusion 시나리오 유지에 대한 리소스는 [이벤트 구독 V2 업그레이드(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=ko) 중 Fusion 시나리오 유지]를 참조하십시오.
+>   웨비나 녹화를 포함한 이벤트 구독 업그레이드 중 Workfront Fusion 시나리오 유지에 대한 리소스는 [이벤트 구독 V2 업그레이드(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182) 중 Fusion 시나리오 유지]를 참조하십시오.
 
 Workfront [!UICONTROL 이벤트 보기] 모듈은 Workfront API에서 이벤트 구독을 만드는 웹후크를 기반으로 시나리오를 트리거합니다. 이벤트 구독은 웹후크로 전송되는 이벤트를 결정하는 데이터 세트입니다. 예를 들어, 문제를 확인하는 [!UICONTROL 이벤트 보기] 모듈을 설정하면 이벤트 구독은 문제와 관련된 이벤트만 전송합니다.
 

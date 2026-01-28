@@ -5,10 +5,10 @@ description: 시나리오 설정 패널에서 시나리오에 대한 특정 설�
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: 0b9f972a0d051db6771f5a54d8af57cdee8b0ce6
 workflow-type: tm+mt
-source-wordcount: '1279'
-ht-degree: 0%
+source-wordcount: '1293'
+ht-degree: 7%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -35,13 +35,13 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 +++
 
@@ -186,3 +186,7 @@ Dropbox 폴더에 100개의 파일이 추가되고 최대 주기 옵션이 10으
 >* 둘 이상의 작업자 풀이 조직과 연결되어 있습니다.
 
 이 설정은 시나리오가 조직과 연결된 특정 작업자 풀에 할당되므로 리소스를 우선 순위가 높은 시나리오에 할당할 수 있습니다.
+
+>[!NOTE]
+>
+>조직은 하나의 추가 작업자 풀(총 2개)의 프로비저닝을 요청할 수 있습니다.

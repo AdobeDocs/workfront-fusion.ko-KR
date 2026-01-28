@@ -5,10 +5,10 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 671773fa1baaac8e01e0f01546602a738e219fdf
+source-git-commit: 0b9f972a0d051db6771f5a54d8af57cdee8b0ce6
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 6%
+source-wordcount: '548'
+ht-degree: 9%
 
 ---
 
@@ -50,6 +50,10 @@ Fusion Performance Dashboard를 사용하면 가장 많이 실행되고 있는 �
 >[!NOTE]
 >
 >지표는 작업자 풀별로 표시됩니다. 다른 작업자 풀을 보려면 대시보드의 왼쪽 상단 모서리 근처에 있는 풀 필드를 클릭한 다음 지표를 볼 풀을 선택합니다.
+
+>[!NOTE]
+>
+>조직은 하나의 추가 작업자 풀(총 2개)에 대한 프로비저닝을 요청할 수 있습니다.
 
 Fusion 성능 대시보드에서 다음 지표를 볼 수 있습니다.
 

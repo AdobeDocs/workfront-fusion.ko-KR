@@ -5,9 +5,9 @@ description: 시나리오 설정 패널에서 시나리오에 대한 특정 설�
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 0b9f972a0d051db6771f5a54d8af57cdee8b0ce6
+source-git-commit: 85b7a5e07ef7d3169b31f91bc54d4cb246199443
 workflow-type: tm+mt
-source-wordcount: '1293'
+source-wordcount: '1279'
 ht-degree: 7%
 
 ---
@@ -187,6 +187,10 @@ Dropbox 폴더에 100개의 파일이 추가되고 최대 주기 옵션이 10으
 
 이 설정은 시나리오가 조직과 연결된 특정 작업자 풀에 할당되므로 리소스를 우선 순위가 높은 시나리오에 할당할 수 있습니다.
 
+<!--
+
 >[!NOTE]
 >
->조직은 하나의 추가 작업자 풀(총 2개)의 프로비저닝을 요청할 수 있습니다.
+>Organizations can request provisioning of one additional worker pool (for a total of 2).
+
+-->

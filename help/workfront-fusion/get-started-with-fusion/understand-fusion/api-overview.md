@@ -3,10 +3,10 @@ title: API 개요
 description: 애플리케이션 프로그래밍 인터페이스(API)는 애플리케이션과 서비스가 서로 통신할 수 있는 방법입니다. Fusion은 API를 사용하여 연결 중인 애플리케이션과 통신합니다. 각 애플리케이션에는 별도의 API가 있습니다.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: b30aac8040cc0b6bcad92914b1c0997a8ddebdd5
-workflow-type: ht
-source-wordcount: '431'
-ht-degree: 100%
+source-git-commit: 74308a6a43418296b29739f03683f23357d545bc
+workflow-type: tm+mt
+source-wordcount: '490'
+ht-degree: 87%
 
 ---
 
@@ -17,6 +17,12 @@ ht-degree: 100%
 애플리케이션 프로그래밍 인터페이스(API)는 애플리케이션과 서비스가 서로 통신할 수 있는 방법입니다. Fusion은 API를 사용하여 연결 중인 애플리케이션과 통신합니다.
 
 API는 애플리케이션 소유자가 만들고 제어합니다. 예를 들어, Workfront API는 Adobe의 Workfront 팀이 소유하고, Microsoft Graph API는 Microsoft가 소유합니다. API 소유자는 API를 통해 사용할 수 있는 액션을 정의합니다.
+
+>[!NOTE]
+>
+>Workfront Fusion에는 Fusion에서 작업을 자동화하는 데 사용할 수 있는 자체 API가 있습니다.
+>API는 점진적으로 릴리스되고 있으며 현재 실험으로 표시되어 있습니다. Fusion 팀은 API를 활발하게 개발 및 확장하고 있으며 새로운 기능을 사용할 수 있게 되면 업데이트가 게시됩니다.
+>Workfront Fusion API에 대한 설명서는 [Workfront Fusion API](https://developer.adobe.com/workfront-fusion-apis/)를 참조하십시오.
 
 ## 고려 사항
 

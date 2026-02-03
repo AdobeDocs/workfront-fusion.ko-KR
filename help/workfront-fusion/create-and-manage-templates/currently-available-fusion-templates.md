@@ -4,9 +4,9 @@ description: 현재 Adobe Workfront Fusion에서 사용할 수 있는 공용 템
 author: Becky
 feature: Workfront Fusion
 exl-id: b14bed4d-3503-42cf-a8c3-618d3b2448b4
-source-git-commit: 4ede5c7a75725a6540d6a8ff9cd056e6147d5c55
+source-git-commit: 08c0e6d779cea5ebb2b6ebbdb1dfd7fd659b18b0
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '2278'
 ht-degree: 0%
 
 ---
@@ -33,15 +33,11 @@ ht-degree: 0%
 
 이 Fusion 템플릿은 해당 프로세스를 자동화합니다. 작업이 조기에 완료되면 모든 종속(후속) 작업이 자동으로 다시 예약되어 더 빨리 시작되도록 하여 팀이 더 빨리 움직이고 민첩하게 작업할 수 있습니다.
 
-### [!BADGE 새로 만들기! &#x200B;]{type=Informative} HTTP>CSV>WF - 도메인 및 계층별로 이벤트 하위 목록을 만들고 CSV로 내보내기
+### HTTP>CSV>WF - 도메인 및 계층별로 이벤트 하위 목록을 만들고 CSV로 내보내기
 
 이벤트 구독 정보를 다운로드하고 CSV 파일을 만든 다음 파일을 Workfront에 업로드합니다.
 
-<!--New August 8, 2025-->
-
 ### Workfront 보드 - 지정된 열에서 보관된 카드 삭제(온디맨드)
-
-<!--New March 12, 2025-->
 
 온디맨드 지정 보드의 지정 열에서 보관된 카드를 삭제합니다.
 
@@ -113,6 +109,52 @@ ht-degree: 0%
 
 한 달에 한 번, 자체 정책을 사용하여 프로젝트 템플릿을 검토하십시오. 이를 통해 손쉽게 관리할 수 있습니다. 템플릿을 사용하면 정책을 위반하는 템플릿에 대해 적절한 사용자에게 알릴 수 있습니다.
 
+### Workfront - 소스 문제/요청에서 프로젝트 또는 작업 해결로 사용자 정의 양식 변경 사항 복사
+
+이 템플릿을 사용하여 문제/요청의 사용자 정의 양식 변경 사항을 해결 중인 프로젝트 및/또는 작업으로 복사할 수 있습니다.
+
+### Workfront - 프로젝트, 작업 또는 문제 사용자 정의 필드 데이터를 일괄적으로 업데이트
+
+이 템플릿은 Workfront에서 준비하고 제공하는 CSV를 사용하여 프로젝트, 작업 또는 문제 사용자 정의 필드 데이터를 업데이트합니다. 고려 사항 및 제한 사항에 대해서는 모듈 1과 2 내의 참고 사항을 참조하십시오.
+
+### Workfront - 작업이 100% 완료된 경우 프로젝트 상태를 계획에서 현재로 변경
+
+이 자동화는 작업이 100% 완료된 경우 프로젝트 상태를 계획에서 현재로 업데이트합니다. 검색으로 시작하고 사용자가 필요에 따라 Planning 상태에서 프로젝트를 계속 업데이트할 수 있도록 하루에 한 번 실행하는 것이 좋습니다.
+
+### Workfront - 정책 시간에 사용되지 않는 프로젝트 템플릿을 찾아 알림
+
+한 달에 한 번, 자체 정책을 사용하여 프로젝트 템플릿을 검토하십시오. 이를 통해 손쉽게 관리할 수 있습니다. 템플릿을 사용하면 정책을 위반하는 템플릿에 대해 적절한 사용자에게 알릴 수 있습니다.
+
+### Workfront - 새 문서가 추가되면 문서 소유자에게 사전 서명된 URL을 다시 전달합니다.
+
+사용자 업데이트로 모든 새 문서에 대해 사전 서명된 URL 다시 가져오기
+
+### Workfront 이벤트 구독 모니터링(일별) - 변수 설정
+
+이 시나리오 템플릿은 Workfront 환경에서 이벤트 구독에 대한 상태 검사를 수행하기 위해 매일 실행됩니다. 지난 24시간 동안 비활성화된 이벤트 구독을 식별합니다. 적합한 비활성화된 이벤트 구독이 발견되면 시나리오는 고객이 시나리오를 설치하는 동안 식별하는 Workfront 요청 대기열에 문제를 생성합니다. 라우팅 규칙 또는 문제에 할당할 팀/사용자 리소스를 식별할 수도 있습니다. 알림을 생성하기 위해 수신자에게 보낼 내부 새 문제 이메일을 사용합니다. 이 접근법은 각각의 비활성화에 대한 단일 작업 항목을 초래해야 한다.
+
+### Workfront - 일련 번호 지정
+
+#### Workfront - 일련번호 지정 시리즈: 객체 사용자 정의 양식 및 필드 생성
+
+이 템플릿은 Workfront - 일련 번호 시리즈 템플릿에서 사용할 사용자 정의 양식과 필드를 만듭니다.
+
+#### Workfront - 일련 번호 지정 시리즈: 포트폴리오
+
+이 템플릿은 포트폴리오에 순차적으로 번호를 매깁니다. 이 안내서에서는 Workfront - 일련 번호 시리즈: 개체 사용자 정의 양식 및 필드 만들기 템플릿을 사용하여 사용자 정의 양식 및 필드를 만들었다고 가정하지만, 기존 양식 및 필드를 사용할 수 있습니다.
+
+#### Workfront - 일련 번호 지정 시리즈: 프로그램
+
+이 템플릿은 순차적으로 프로그램에 번호를 매깁니다. 이 안내서에서는 Workfront - 일련 번호 시리즈: 개체 사용자 정의 양식 및 필드 만들기 템플릿을 사용하여 사용자 정의 양식 및 필드를 만들었다고 가정하지만, 기존 양식 및 필드를 사용할 수 있습니다.
+
+#### Workfront - 일련번호 지정 시리즈: 프로젝트
+
+이 템플릿은 프로젝트 번호를 순차적으로 매깁니다. 이 안내서에서는 Workfront - 일련 번호 시리즈: 개체 사용자 정의 양식 및 필드 만들기 템플릿을 사용하여 사용자 정의 양식 및 필드를 만들었다고 가정하지만, 기존 양식 및 필드를 사용할 수 있습니다.
+
+#### Workfront - 일련 번호 지정 시리즈: 문제
+
+이 템플릿은 문제에 대해 순차적으로 번호를 매깁니다. 이 안내서에서는 Workfront - 일련 번호 시리즈: 개체 사용자 정의 양식 및 필드 만들기 템플릿을 사용하여 사용자 정의 양식 및 필드를 만들었다고 가정하지만, 기존 양식 및 필드를 사용할 수 있습니다.
+
 ## Workfront - Workfront Proof 템플릿
 
 이러한 템플릿은 Workfront과 Workfront Proof을 결합하는 워크플로를 자동화합니다.
@@ -130,6 +172,14 @@ ht-degree: 0%
 ### Workfront Proof > Workfront - 증명 결정에 대한 작업 업데이트 및 완료(승인된 경우)
 
 개별 증명이 개별 작업에 연결된 경우 이 시나리오는 증명에 대한 승인 결정이 내려지면 관련 작업을 닫습니다. 승인되면 작업이 완료되고 프로젝트가 업데이트됩니다.
+
+### Workfront > Workfront Proof - 새 증명 - 증명 승인자가 기한 내에 휴무할 경우 알림
+
+이 자동화는 증명을 사용하여 새 문서 버전(지정된 포트폴리오 내)을 감시합니다. 승인자가 기한 일자에 프로필에서 개인 휴무를 갖는 경우 증명 소유자 및 프로젝트 소유자에게 알림이 전송됩니다.
+
+### Workfront > Workfront Proof - 지정된 증명 승인자를 제거하고(가능한 경우) 새 승인자를 추가합니다.
+
+이 자동화는 승인자의 증명을 찾고 새 승인자를 추가합니다. 원본 승인자는 가능한 경우 증명에서 제거됩니다. 원래 승인자가 작성자 또는 소유자인 경우 추가 작업이 발생합니다. 자세한 내용은 모듈 1의 참고 사항을 참조하십시오.
 
 ## HTTP - Workfront 템플릿
 
@@ -184,7 +234,7 @@ ht-degree: 0%
 
 이러한 템플릿은 Workfront-Anaplan 통합을 지원하며 Workfront의 두 Anaplan 모두에서 특정 구성을 예상합니다. 이러한 템플릿 및 필수 구성에 대한 자세한 내용은 개별 템플릿 문서를 참조하십시오.
 
-Workfront-Anaplan 통합에 대한 자세한 내용은 Workfront 설명서에서 [Anaplan을 사용한 Adobe Workfront](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration)을(를) 참조하십시오.
+Workfront-Anaplan 통합에 대한 자세한 내용은 Workfront 설명서에서 [Anaplan을 사용한 Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration)을(를) 참조하십시오.
 
 >[!NOTE]
 >
@@ -192,19 +242,19 @@ Workfront-Anaplan 통합에 대한 자세한 내용은 Workfront 설명서에서
 
 ### 지출 최적화 워크플로우
 
-* [목록 항목에 대한  [!DNL Anaplan] Adobe Workfront 프로젝트 업데이트 보내기](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
-* [목록 항목 [!DNL Anaplan] 에 Adobe Workfront 경비 보내기](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
-* [목록 항목에 대한 Adobe Workfront 실제 시간 업데이트를  [!DNL Anaplan] 보냅니다](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
+* [목록 항목에 대한  [!DNL Anaplan] Adobe Workfront 프로젝트 업데이트 보내기](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
+* [목록 항목 [!DNL Anaplan] 에 Adobe Workfront 경비 보내기](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
+* [목록 항목에 대한 Adobe Workfront 실제 시간 업데이트를  [!DNL Anaplan] 보냅니다](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
 
 ### 예산 요청 연결을 위한 워크플로
 
-* [Adobe Workfront 예산 요청에서  [!DNL Anaplan] 목록 항목 만들기](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
-* [Adobe Workfront 프로젝트에  [!DNL Anaplan] 예산 할당 적용](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
+* [Adobe Workfront 예산 요청에서  [!DNL Anaplan] 목록 항목 만들기](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
+* [Adobe Workfront 프로젝트에  [!DNL Anaplan] 예산 할당 적용](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
 
 ### 캠페인 요청 연결을 위한 워크플로우
 
-* [Adobe Workfront 캠페인 요청에서  [!DNL Anaplan] 목록 항목 만들기](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
-* [Adobe Workfront 캠페인 요청 또는 캠페인 프로젝트에  [!DNL Anaplan] 예산 할당 적용](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
+* [Adobe Workfront 캠페인 요청에서  [!DNL Anaplan] 목록 항목 만들기](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
+* [Adobe Workfront 캠페인 요청 또는 캠페인 프로젝트에  [!DNL Anaplan] 예산 할당 적용](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
 
 ## Workfront - Jira 템플릿
 

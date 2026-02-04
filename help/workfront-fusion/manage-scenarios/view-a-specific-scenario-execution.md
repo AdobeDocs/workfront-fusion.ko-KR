@@ -4,10 +4,10 @@ description: 시나리오 이벤트 필터링 및 검색을 포함하여 특정 
 author: Becky
 feature: Workfront Fusion
 exl-id: 34dd9836-9a1b-4ce2-b24e-ae769888a52a
-source-git-commit: 42be02d6a59a5d7b8faccdcfe40e8b967153c6eb
+source-git-commit: 05c75c0e125a4f3f657049d7e57bbc94cc5e4d67
 workflow-type: tm+mt
 source-wordcount: '421'
-ht-degree: 0%
+ht-degree: 23%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -34,13 +34,13 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 +++
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
    시나리오 편집기에서 시나리오 작업을 수행하는 경우 창의 왼쪽 상단 모서리 근처에 있는 왼쪽 화살표 ![편집 종료 화살표](assets/exit-editing-arrow.png)를 클릭합니다.
 
-1. 시나리오 이름 근처에 있는 **기록**&#x200B;을 클릭합니다.
+1. 시나리오 이름 근처에 있는 **기록**을 클릭합니다.
    ![기록 탭](assets/history-tab.png)
 
 

@@ -2,10 +2,10 @@
 user-guide-title: Adobe Workfront Fusion 설명서
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 문서, 튜토리얼 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
-source-git-commit: 95cdc14b313a3f76d6feebabb59f72b4277ae9e4
+source-git-commit: b6822db8c177beade3e70616ef4282bc9ed02c08
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 100%
+source-wordcount: '2013'
+ht-degree: 99%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 100%
 * Fusion 릴리스 활동 {#fusion-release-activity}
    * [Adobe Workfront Fusion 릴리스 활동](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Fusion 릴리스 - 2025 {#fusion-releases-2025}
+      * [Workfront Fusion 릴리스 활동: 2026년 2월 2일 화요일 주간](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-2.md)
       * [Workfront Fusion 릴리스 활동: 2026년 1월 26일 화요일 주간](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-26.md)
       * [Workfront Fusion 릴리스 활동: 2026년 1월 19일 주간](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-19.md)
       * [Workfront Fusion 릴리스 활동: 2026년 1월 12일 주간](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-12.md)
@@ -258,6 +259,7 @@ ht-degree: 100%
    * [Workfront Fusion의 AI 어시스턴트](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
    * [시나리오 채점 전문가 실행](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
    * [시나리오 요소 삭제](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
+   * [시나리오 영역에서 시나리오 관리](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
 * 연습 시나리오 빌드 {#build-practice-scenarios}
    * [연습 시나리오 빌드](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)
    * [기본 시나리오 만들기](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)

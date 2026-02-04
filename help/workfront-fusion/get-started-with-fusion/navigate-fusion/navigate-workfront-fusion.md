@@ -4,8 +4,8 @@ description: Fusion을 열면 다양한 액션 옵션이 있습니다. 이 문�
 author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
-source-git-commit: b54a2ae43efb44ebd002357d7b2269f40523bc9f
-workflow-type: ht
+source-git-commit: 05c75c0e125a4f3f657049d7e57bbc94cc5e4d67
+workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 이 문서에서는 이러한 영역을 소개하고 각 영역에 대한 자세한 정보를 볼 수 있는 링크를 제공합니다.
 
 | 영역 | 설명 | 자세한 내용은 다음 문서를 참조하십시오. |
-|---|---|---|
+| --- | --- | --- |
 | 조직 개요 <br> ![조직 아이콘](assets/org-icon.png) | 여기에서 Fusion 조직에 대한 정보를 볼 수 있습니다. 이 조직에서 시나리오별로 수행된 작업 수와 활성 시나리오 목록을 볼 수 있습니다. 이 조직의 팀, 사용자 및 환경 목록도 볼 수 있습니다.<br>현재 선택된 조직이 이 아이콘 위에 표시됩니다. | [조직 및 팀](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
 | 팀 개요  <br> ![팀 아이콘](assets/team-icon.png) | 여기에서 이 팀의 시나리오별로 수행된 작업 수 및 활성 시나리오 목록과 같은 Fusion 팀에 대한 정보를 볼 수 있습니다. 이 팀의 사용자들을 보고 관리할 수도 있습니다. 팀을 보는 중에 이 페이지 상단의 드롭다운에서 다른 팀을 선택할 수 있습니다.<br>현재 선택된 팀이 이 아이콘 위에 표시됩니다.<br>이 문서에 나열된 팀 개요나 팀 섹션을 보려면 먼저 팀을 만들어야 할 수도 있습니다. | [조직 및 팀](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
 | 시나리오  <br> ![시나리오 아이콘](assets/scenarios-icon.png) | Fusion의 시나리오는 자동화된 워크플로를 나타냅니다. 예를 들어, 한 시나리오는 들어오는 Workfront 요청을 모니터링하여 프로젝트로 변환할 수 있고, 다른 시나리오는 이미지를 생성하여 문서 공급자에게 업로드하고 Workfront에 승인 작업을 추가할 수 있습니다. Fusion의 대부분 작업은 시나리오를 구성하고 관리하는 것입니다. 시나리오 영역에서 팀의 시나리오 목록을 보고 구성하거나, 개별 시나리오를 선택하여 보거나 수정하거나, 새로운 시나리오를 만들 수 있습니다. | [시나리오 개요](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md) |

@@ -4,7 +4,7 @@ description: Adobe Workfront Fusion HTTP 모듈에서 Mutual TLS를 사용하여
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-source-git-commit: b48b7ad0954208ae80e99501e9297a3adaede228
+source-git-commit: e0b25da3d0c7a2cab454adafc7525f14c4f0b4eb
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 16%
@@ -79,7 +79,7 @@ Adobe Workfront Fusion 공개 인증서를 웹 서비스에 업로드하는 방�
 
 다음 링크를 사용하여 Workfront Fusion 공개 인증서를 다운로드할 수 있습니다. 데이터 센터를 찾으려면 조직의 허용 목록에 추가하다에서 Fusion에 대한 IP 주소 구성 문서의 [데이터 센터 식별](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)을 참조하십시오.
 
-### 2025년 인증서
+### 2026년 인증서
 
 >[!IMPORTANT]
 >

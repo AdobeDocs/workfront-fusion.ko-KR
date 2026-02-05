@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion HTTP 모듈에서 Mutual TLS를 사용하여
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-source-git-commit: e0b25da3d0c7a2cab454adafc7525f14c4f0b4eb
+source-git-commit: 6a4bf090e7804f0b2b9ca6eefbb7490d1c35b6ce
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '866'
 ht-degree: 16%
 
 ---
@@ -83,7 +83,7 @@ Adobe Workfront Fusion 공개 인증서를 웹 서비스에 업로드하는 방�
 
 >[!IMPORTANT]
 >
->* 이 Workfront Fusion 공개 인증서는 **2027년 3월 2일**(미국 및 유럽 연합) 또는 **2027년 3월 8일**(Azure)에 만료됩니다. 만료되면 웹 서비스에 새 인증서를 업로드해야 합니다. 권장 사항:
+>* 이러한 Workfront Fusion 공개 인증서는 클러스터에 따라 다른 날에 만료됩니다. 만료일을 확인하려면 아래 차트를 확인하십시오. 만료되면 웹 서비스에 새 인증서를 업로드해야 합니다. 권장 사항:
 >
 >   * 만료 날짜를 기록하고 인증서를 웹 서비스에 업로드하도록 미리 알림을 설정하십시오.
 >   * 새 인증서를 쉽게 찾으려면 이 페이지에 책갈피를 지정합니다.
@@ -92,9 +92,10 @@ Adobe Workfront Fusion 공개 인증서를 웹 서비스에 업로드하는 방�
 
 | 데이터 센터 | 다운로드 링크 | 유효한 날짜 |
 | --- | --- | --- |
-| 미국 데이터 센터 | [Workfront Fusion US 인증서 2026 다운로드](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-us-mtls-certificate-2026.pem) | 2026년 1월 29일~2027년 3월 2일 |
-| EU 데이터 센터 | [Workfront Fusion EU 인증서 2026 다운로드](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-mtls-certificate-2026.pem) | 2026년 1월 29일~2027년 3월 2일 |
-| Azure 클러스터 | [Workfront Fusion Azure 인증서 2026 다운로드](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem) | 2026년 2월 4일~2027년 3월 8일 |
+| 미국 AWS 데이터 센터 | [Workfront Fusion US 인증서 2026 다운로드](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-us-mtls-certificate-2026.pem) | 2026년 1월 29일~2027년 3월 2일 |
+| US Azure 클러스터 | [Workfront Fusion US Azure 인증서 2026 다운로드](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-az-mtls-certificate.pem) | 2025년 9월 21일~2026년 10월 23일 |
+| EU AWS 데이터 센터 | [Workfront Fusion EU 인증서 2026 다운로드](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-mtls-certificate-2026.pem) | 2026년 1월 29일~2027년 3월 2일 |
+| EU Azure 클러스터 | [Workfront Fusion EU Azure 인증서 2026 다운로드](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem) | 2026년 2월 4일~2027년 3월 8일 |
 
 
 ### 2025년 인증서

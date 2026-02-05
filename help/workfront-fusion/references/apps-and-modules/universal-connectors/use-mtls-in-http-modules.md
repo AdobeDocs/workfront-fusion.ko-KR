@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion HTTP 모듈에서 Mutual TLS를 사용하여
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-source-git-commit: 54c368d335b30f55cab19595a5b4740dde6013a7
+source-git-commit: b48b7ad0954208ae80e99501e9297a3adaede228
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 0%
+source-wordcount: '841'
+ht-degree: 16%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -48,20 +48,20 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>작업 기반: Workfront Fusion 라이센스 요구 사항 없음</p>
-   <p>커넥터 기반(레거시): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
+   <p>작업 기반: Workfront Fusion 라이선스 요구 사항 없음</p>
+   <p>커넥터 기반(이전): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
@@ -83,6 +83,25 @@ Adobe Workfront Fusion 공개 인증서를 웹 서비스에 업로드하는 방�
 
 >[!IMPORTANT]
 >
+>* 이 Workfront Fusion 공개 인증서는 **2027년 3월 2일**(미국 및 유럽 연합) 또는 **2027년 3월 8일**(Azure)에 만료됩니다. 만료되면 웹 서비스에 새 인증서를 업로드해야 합니다. 권장 사항:
+>
+>   * 만료 날짜를 기록하고 인증서를 웹 서비스에 업로드하도록 미리 알림을 설정하십시오.
+>   * 새 인증서를 쉽게 찾으려면 이 페이지에 책갈피를 지정합니다.
+>
+>* 이는 비 와일드카드 mTLS 인증서입니다.
+
+| 데이터 센터 | 다운로드 링크 | 유효한 날짜 |
+| --- | --- | --- |
+| 미국 데이터 센터 | [Workfront Fusion US 인증서 2026 다운로드](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-us-mtls-certificate-2026.pem) | 2026년 1월 29일~2027년 3월 2일 |
+| EU 데이터 센터 | [Workfront Fusion EU 인증서 2026 다운로드](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-mtls-certificate-2026.pem) | 2026년 1월 29일~2027년 3월 2일 |
+| Azure 클러스터 | [Workfront Fusion Azure 인증서 2026 다운로드](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem) | 2026년 2월 4일~2027년 3월 8일 |
+
+
+### 2025년 인증서
+
+>[!IMPORTANT]
+>
+>* 위에서 제공하는 2026년 인증서를 설치하는 것이 좋습니다.
 >* 이러한 Workfront Fusion 공개 인증서는 **2026년 4월 4일**(미국 및 유럽 연합) 또는 **2025년 11월 25일**(Azure)에 만료됩니다. 만료되면 웹 서비스에 새 인증서를 업로드해야 합니다. 권장 사항:
 >
 >   * 만료 날짜를 기록하고 인증서를 웹 서비스에 업로드하도록 미리 알림을 설정하십시오.
@@ -91,7 +110,7 @@ Adobe Workfront Fusion 공개 인증서를 웹 서비스에 업로드하는 방�
 >* 이는 비 와일드카드 mTLS 인증서입니다.
 
 | 데이터 센터 | 다운로드 링크 | 유효한 날짜 |
-|---|---|---|
+| --- | --- | --- |
 | 미국 데이터 센터 | [Workfront Fusion US 인증서 2025 다운로드](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-us-mtls-certificate.pem) | 2025년 3월 3일~2026년 4월 4일 |
 | EU 데이터 센터 | [Workfront Fusion EU 인증서 2025 다운로드](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pem) | 2025년 3월 3일~2026년 4월 4일 |
 | Azure 클러스터 | [Workfront Fusion Azure 인증서 2025 다운로드](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | 2024년 10월 24일~2025년 11월 25일 |

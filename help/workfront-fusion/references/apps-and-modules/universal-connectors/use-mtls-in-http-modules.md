@@ -4,7 +4,7 @@ description: Adobe Workfront Fusion HTTP 모듈에서 Mutual TLS를 사용하여
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-source-git-commit: 6a4bf090e7804f0b2b9ca6eefbb7490d1c35b6ce
+source-git-commit: 47600e6e07ea07336557338cbb3037c3bffe9321
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 16%
@@ -96,7 +96,6 @@ Adobe Workfront Fusion 공개 인증서를 웹 서비스에 업로드하는 방�
 | US Azure 클러스터 | [Workfront Fusion US Azure 인증서 2026 다운로드](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-az-mtls-certificate.pem) | 2025년 9월 21일~2026년 10월 23일 |
 | EU AWS 데이터 센터 | [Workfront Fusion EU 인증서 2026 다운로드](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-mtls-certificate-2026.pem) | 2026년 1월 29일~2027년 3월 2일 |
 | EU Azure 클러스터 | [Workfront Fusion EU Azure 인증서 2026 다운로드](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem) | 2026년 2월 4일~2027년 3월 8일 |
-
 
 ### 2025년 인증서
 

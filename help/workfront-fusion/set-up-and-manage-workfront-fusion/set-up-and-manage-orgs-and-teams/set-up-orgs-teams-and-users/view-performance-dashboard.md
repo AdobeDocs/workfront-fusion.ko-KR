@@ -3,9 +3,8 @@ title: 조직의 성과 대시보드 보기
 description: Fusion 관리자는 조직의 실행 지표를 표시하는 대시보드를 볼 수 있습니다.
 author: Becky
 feature: Workfront Fusion
-hide: true
-hidefromtoc: true
-source-git-commit: b4c9cd075cc2bb7aa3d5c568bb91fb8ce5c6f31e
+exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
+source-git-commit: 1d8504b10d9ca74a5df5532232cda235c67b0185
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 7%
@@ -93,6 +92,3 @@ Fusion 성능 대시보드에서 다음 지표를 볼 수 있습니다.
 1. 대시보드의 시간 범위를 변경하려면 대시보드의 오른쪽 위 모서리에 있는 시간 범위 필드를 선택한 다음 새 시간대를 선택합니다. 이용 가능한 가장 긴 시간대는 24시간이며, 가장 짧은 시간대는 15분이다.
 1. 차트를 새로 고치려면 대시보드의 오른쪽 상단 근처에 있는 새로 고침 아이콘을 클릭합니다.
 1. 다른 작업자 풀을 보려면 대시보드의 왼쪽 상단 모서리 근처에 있는 풀 필드를 클릭한 다음 보려는 풀을 선택하십시오.
-
-
-

@@ -4,10 +4,10 @@ description: 다음 용어집은 Adobe Workfront Fusion의 몇 가지 일반적�
 author: Becky
 feature: Workfront Fusion
 exl-id: 7f098ec2-8594-4e5d-9ce7-d1738a05f9a6
-source-git-commit: 190bfe5992fb21b789a7246c4ae732a5dc7672fa
-workflow-type: ht
+source-git-commit: c89536b6d3e6ca5f7e5048b8487a2d86bda3b213
+workflow-type: tm+mt
 source-wordcount: '924'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 100%
   </tr> 
   <tr>
    <td role="rowheader"> <p>연결</p> </td> 
-   <td> <p>연결은 주어진 서비스에 연결하기 위한 자격 증명 세트를 나타냅니다. 어떤 모듈 내부에서도 연결을 구성할 수 있으며, 그 연결을 다른 어떤 모듈에서도 사용할 수 있습니다. 모든 모듈은 Fusion이 해당 자격 증명을 사용하여 모듈이 필요로 하는 정보에 액세스할 수 있도록 연결을 선택해야 합니다. </p><p>자세한 내용은 <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md" class="MCXref xref">연결 개요</a>를 참조하십시오.</p> </td> 
+   <td> <p>연결은 주어진 서비스에 연결하기 위한 자격 증명 집합을 나타냅니다. 어떤 모듈 내부에서도 연결을 구성할 수 있으며, 그 연결을 다른 어떤 모듈에서도 사용할 수 있습니다. 모든 모듈은 Fusion이 해당 자격 증명을 사용하여 모듈이 필요로 하는 정보에 액세스할 수 있도록 연결을 선택해야 합니다. </p><p>자세한 내용은 <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md" class="MCXref xref">연결 개요</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">커넥터</td> 

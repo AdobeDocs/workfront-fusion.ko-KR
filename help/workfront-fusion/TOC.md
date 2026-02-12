@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 설명서
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 문서, 튜토리얼 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
-source-git-commit: b6822db8c177beade3e70616ef4282bc9ed02c08
+source-git-commit: 0c91cd108c7350a9e2d790ca71e6d4edbd4a461b
 workflow-type: tm+mt
-source-wordcount: '2013'
+source-wordcount: '2015'
 ht-degree: 99%
 
 ---
@@ -172,6 +172,7 @@ ht-degree: 99%
       * [라이선스 및 운영 개요](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/licensing-operations-overviews.md)
       * [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
       * [작업](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
+        [작업자 풀](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)
    * 조직 및 팀 설정 및 관리 {#set-up-and-manage-orgs-and-teams}
       * [조직 및 팀 설정 및 관리: 문서 색인](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
       * 조직 및 팀 설정 {#set-up-orgs-teams-and-users}

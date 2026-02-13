@@ -4,10 +4,10 @@ description: Adobe Workfront Boards 커넥터를 사용하여 Workfront Boards �
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
 workflow-type: tm+mt
 source-wordcount: '2904'
-ht-degree: 1%
+ht-degree: 15%
 
 ---
 
@@ -25,7 +25,7 @@ Adobe Workfront 보드 모듈을 사용하여 레코드를 읽거나 업데이�
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -42,15 +42,17 @@ Adobe Workfront 보드 모듈을 사용하여 레코드를 읽거나 업데이�
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
-+++## 사전 요구 사항
++++
+
+## 전제 조건
 
 연결하려면 먼저 Adobe Workfront에서 보드를 구성해야 합니다.
 
@@ -77,7 +79,7 @@ Adobe Workfront 보드 커넥터는 다음을 사용합니다.
 
 Workfront 보드 연결을 만들려면 다음 작업을 수행하십시오.
 
-1. [!DNL Adobe Workfront Boards] 모듈에서 [연결] 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
+1. 모든 [!DNL Adobe Workfront Boards] 모듈에서 연결 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 
 1. 다음 필드를 채웁니다.
 
@@ -90,7 +92,7 @@ Workfront 보드 연결을 만들려면 다음 작업을 수행하십시오.
         <tr>
           <td role="rowheader">[!UICONTROL 연결 이름]</td>
           <td>
-            <p>이 연결의 이름을 입력하십시오.</p>
+            <p>이 연결의 이름을 입력합니다.</p>
           </td>
         </tr>
         <tr>
@@ -103,11 +105,11 @@ Workfront 보드 연결을 만들려면 다음 작업을 수행하십시오.
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL 클라이언트 ID]<p>(선택 사항)</p></td>
-          <td>[!DNL Adobe] [!UICONTROL 클라이언트 ID]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.</td>
+          <td>[!DNL Adobe] [!UICONTROL 클라이언트 ID]를 입력합니다. 해당 ID는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL 클라이언트 암호]<p>(선택 사항)</p></td>
-          <td>[!DNL Adobe] [!UICONTROL 클라이언트 암호]를 입력하십시오. 이는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.
+          <td>[!DNL Adobe] [!UICONTROL 클라이언트 암호]를 입력합니다. 해당 ID는 [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명 세부 정보] 섹션에서 찾을 수 있습니다.
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL 인증 URL]<p>(선택 사항)</p></td>
@@ -119,15 +121,15 @@ Workfront 보드 연결을 만들려면 다음 작업을 수행하십시오.
         </tr>
       </tbody>
     </table>
-1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭하세요.
+1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
 
 ## Adobe Workfront 보드 모듈 및 해당 필드
 
-Workfront 보드 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 이러한 필드와 함께 앱이나 서비스의 액세스 수준 등의 요소에 따라 추가 Workfront 보드 필드가 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+Workfront 보드 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 이러한 필드와 함께 앱이나 서비스의 액세스 수준 등의 요소에 따라 추가 Workfront 보드 필드가 표시될 수 있습니다. 모듈의 굵은 글씨 제목은 필수 필드를 나타냅니다.
 
-필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
+필드 또는 함수 위에 있는 맵 버튼을 보면 해당 필드의 변수와 함수를 설정하는 데 사용할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
-![맵 전환](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![토글 매핑](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [카드](#cards)
 * [보드](#boards)
@@ -154,7 +156,7 @@ Workfront 보드 모듈을 구성하면 Workfront Fusion에 아래 나열된 필
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL 연결]</td> 
       <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -177,7 +179,7 @@ Workfront 보드 모듈을 구성하면 Workfront Fusion에 아래 나열된 필
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL 연결]</td> 
       <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -204,7 +206,7 @@ Workfront 보드 모듈을 구성하면 Workfront Fusion에 아래 나열된 필
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL 연결]</td> 
       <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -231,7 +233,7 @@ Workfront 보드 모듈을 구성하면 Workfront Fusion에 아래 나열된 필
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL 연결]</td> 
       <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -262,7 +264,7 @@ Workfront 보드 모듈을 구성하면 Workfront Fusion에 아래 나열된 필
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL 연결]</td> 
       <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -285,7 +287,7 @@ Workfront 보드 모듈을 구성하면 Workfront Fusion에 아래 나열된 필
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL 연결]</td> 
       <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -311,7 +313,7 @@ Workfront 보드 모듈을 구성하면 Workfront Fusion에 아래 나열된 필
   <tr> 
    <td>[!UICONTROL 기한]</td> 
    <td>이 카드의 기한을 입력하거나 매핑하십시오.</p>
-   <p>지원되는 날짜 및 시간 형식 목록은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 강제 변환</a>을 참조하십시오.</p>
+   <p>지원되는 날짜 및 시간 형식 목록은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">유형 강제 변환</a>을 참조하십시오.</p>
    </td> 
   </tr> 
   <tr> 
@@ -335,7 +337,7 @@ Workfront 보드 모듈을 구성하면 Workfront Fusion에 아래 나열된 필
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL 연결]</td> 
       <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -358,7 +360,7 @@ Workfront 보드 모듈을 구성하면 Workfront Fusion에 아래 나열된 필
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL 연결]</td> 
       <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -383,7 +385,7 @@ Workfront 보드 모듈을 구성하면 Workfront Fusion에 아래 나열된 필
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL 연결]</td> 
       <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -410,7 +412,7 @@ Workfront 보드 모듈을 구성하면 Workfront Fusion에 아래 나열된 필
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL 연결]</td> 
       <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -433,7 +435,7 @@ Workfront 보드 모듈을 구성하면 Workfront Fusion에 아래 나열된 필
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL 연결]</td> 
       <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -465,7 +467,7 @@ Workfront 보드 모듈을 구성하면 Workfront Fusion에 아래 나열된 필
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL 연결]</td> 
       <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -492,7 +494,7 @@ Workfront 보드 모듈을 구성하면 Workfront Fusion에 아래 나열된 필
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL 연결]</td> 
       <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -524,7 +526,7 @@ Workfront 보드 모듈을 구성하면 Workfront Fusion에 아래 나열된 필
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL 연결]</td> 
       <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -547,7 +549,7 @@ Workfront 보드 모듈을 구성하면 Workfront Fusion에 아래 나열된 필
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL 연결]</td> 
       <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -563,7 +565,7 @@ Workfront 보드 모듈을 구성하면 Workfront Fusion에 아래 나열된 필
 
 ### 기타
 
-#### 사용자 지정 API 호출 만들기
+#### 사용자 정의 API 호출하기
 
 이 작업 모듈은 Workfront 보드 API에 대한 사용자 지정 호출을 만듭니다.
 
@@ -572,28 +574,28 @@ Workfront 보드 모듈을 구성하면 Workfront Fusion에 아래 나열된 필
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
       <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
-   <td> <p><code> https://&lt;WORKFRONT_DOMAIN&gt;/boards-service/graphql?</code>에 상대적인 경로를 입력하십시오.</p> </td> 
+   <td> <p><code> https://&lt;WORKFRONT_DOMAIN&gt;/boards-service/graphql?</code>와 관련된 경로를 입력합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 메서드]</td> 
    <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 요청 메서드</a>를 참조하십시오.</p><p>대부분의 보드에서 를 호출하는 방법은 POST입니다. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다. 요청의 콘텐츠 유형을 결정합니다.</p> <p>For example,<code> { "Content-type":"application/json-stringify()"}</code></p>  </td> 
+   <td role="rowheader">[!UICONTROL 헤더]</td> 
+   <td> <p>표준 JSON 오브젝트 형태로 요청의 헤더를 추가합니다. 요청의 콘텐츠 유형을 결정합니다.</p> <p>예:<code> { "Content-type":"application/json-stringify()"}</code></p>  </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 쿼리 문자열]</td> 
-   <td> <p>표준 JSON 개체 형식으로 API 호출에 대한 쿼리를 추가합니다.</p> <p>Workfront 보드의 경우 이 섹션은 일반적으로 비어 있습니다.</p>  </td> 
+   <td> <p>표준 JSON 오브젝트 형식으로 API 호출에 대한 쿼리를 추가합니다.</p> <p>Workfront 보드의 경우 이 섹션은 일반적으로 비어 있습니다.</p>  </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>JSON 임베드된 Graphql 형식으로 API 호출에 대한 본문 콘텐츠 추가 </p> <p>예:</p><p>이 예에서는 열 이름을 업데이트합니다. 이전 모듈에서 하드 코딩되거나 매핑된 GUID로 <code>boardId</code> 및 <code>columnId</code>을(를) 포함할 수 있습니다.<p><pre>{<br> "query": "mutation { updateColumn(boardId: \"\", columnId: \"\", updateColumnInput: { name: \"\" }) { id name }}"<br>}</pre><p>참고:  <p>JSON에서 <code>if</code>과(와) 같은 조건문을 사용할 때 따옴표를 조건문 외부에 넣으십시오.</p> 
+   <td role="rowheader">[!UICONTROL 본문]</td> 
+   <td> <p>JSON 임베드된 Graphql 형식으로 API 호출에 대한 본문 콘텐츠 추가 </p> <p>예:</p><p>이 예에서는 열 이름을 업데이트합니다. 이전 모듈에서 하드 코딩되거나 매핑된 GUID로 <code>boardId</code> 및 <code>columnId</code>을(를) 포함할 수 있습니다.<p><pre>{<br> "query": "mutation { updateColumn(boardId: \"\", columnId: \"\", updateColumnInput: { name: \"\" }) { id name }}"<br>}</pre><p>메모:  <p>JSON에서 <code>if</code>와 같은 조건문을 사용할 때는 따옴표를 조건문 외부에 배치해야 합니다.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -611,7 +613,7 @@ Workfront 보드 모듈을 구성하면 Workfront Fusion에 아래 나열된 필
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
       <td> <p>기존 Workfront 연결을 사용하여 Workfront 보드에 연결하거나 특정 Workfront 보드 연결을 사용할 수 있습니다. </p><p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront 보드에 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
    <tr> 
@@ -620,7 +622,7 @@ Workfront 보드 모듈을 구성하면 Workfront Fusion에 아래 나열된 필
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query]</td> 
-   <td> <p>표준 JSON 개체 형식으로 API 호출에 대한 쿼리를 추가합니다.</p> </td> 
+   <td> <p>표준 JSON 오브젝트 형식으로 API 호출에 대한 쿼리를 추가합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 작업 이름]</td> 

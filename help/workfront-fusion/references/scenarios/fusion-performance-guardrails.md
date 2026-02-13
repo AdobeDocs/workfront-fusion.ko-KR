@@ -4,10 +4,10 @@ description: 작업 자동화에는 빠른 처리가 필요하므로 Adobe Workf
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 3a05e5df36bf9b1aacd0611fdad0240c8c52368d
-workflow-type: ht
-source-wordcount: '1092'
-ht-degree: 100%
+source-git-commit: 441b192d50e928ce74e54d8bcc0d89f4af348bb5
+workflow-type: tm+mt
+source-wordcount: '1072'
+ht-degree: 96%
 
 ---
 
@@ -76,8 +76,7 @@ ht-degree: 100%
 
 ## 불완전한 실행
 
-* 불완전한 실행은 시나리오당 총 **10MB**&#x200B;로 제한됩니다. 10MB 제한에 도달하면 해당 시나리오에 대해 더 이상 불완전한 실행이 저장되지 않습니다.
-* 불완전한 실행은 팀당 총 **500MB**&#x200B;로 제한됩니다. 500MB 제한에 도달하면 해당 팀에 대해 더 이상 불완전한 실행이 저장되지 않습니다.
+* 불완전한 실행은 시나리오당 총 크기 **11GB** 또는 **불완전한 실행**&#x200B;으로 제한됩니다. 어느 쪽이든 먼저 제한에 도달하는 것. 제한에 도달하면 해당 시나리오에 대해 더 이상 미완료 실행이 저장되지 않습니다.
 * Workfront Fusion은 분당 최대 5번 실패를 허용합니다.
 
 ## 재시도

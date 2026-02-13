@@ -1,26 +1,27 @@
 ---
-title: 함수를 사용하여 항목 매핑
-description: 항목을 매핑할 때 함수를 사용하여 단순 또는 복합 공식을 만들 수 있습니다.
+title: 기본 제공 함수를 사용하여 항목 매핑
+description: 항목을 매핑할 때 함수를 사용하여 간단하거나 복잡한 공식을 만들 수 있습니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: 3c726c1df589785719c0f141fbd5bc17194cc218
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 0%
+source-wordcount: '711'
+ht-degree: 24%
 
 ---
 
-# 함수를 사용하여 항목 매핑
+# 기본 제공 함수를 사용하여 항목 매핑
 
-항목을 매핑할 때 함수를 사용하여 단순 또는 복합 공식을 만들 수 있습니다. 사용 가능한 함수는 Excel 및 일부 프로그래밍 언어의 함수와 유사합니다.
+Workfront Fusion에는 간단하거나 복잡한 공식을 만들 수 있는 기본 제공 함수가 포함되어 있습니다. 이러한 함수는 배열, 문자열, 숫자 및 이전 모듈의 데이터를 비롯한 다양한 사용 사례를 다룹니다.
 
-* 일반적인 논리, 수학, 텍스트, 날짜 및 배열을 평가합니다.
-* 텍스트를 대문자로 변환, 텍스트 트리밍, 날짜를 다른 형식으로 변환 등과 같은 항목 값의 조건부 논리 및 변환을 수행할 수 있도록 해 줍니다.
+또한 시나리오가 데이터를 변환하고 조작하는 데 사용할 수 있는 사용자 지정 함수를 만들 수 있습니다.
+
+사용자 지정 함수에 대한 자세한 내용과 지침은 [사용자 지정 함수를 사용하여 데이터 매핑](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)을 참조하세요.
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -37,17 +38,24 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   <p><ul><li>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 Adobe Workfront Fusion을 구매해야 합니다.</li><li>사용자 지정 기능을 사용하려면 Adobe App Builder 라이선스가 있어야 합니다.</ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 +++
 
-## 필드에 함수 삽입
+## 기본 제공 함수를 사용하여 데이터 매핑
+
+항목을 매핑할 때 함수를 사용하여 간단하거나 복잡한 공식을 만들 수 있습니다. 사용 가능한 함수는 Excel 및 일부 프로그래밍 언어의 함수와 유사합니다.
+
+* 일반적인 논리, 수학, 텍스트, 날짜 및 배열을 평가합니다.
+* 텍스트를 대문자로 변환, 텍스트 트리밍, 날짜를 다른 형식으로 변환하는 등의 조건부 논리와 항목 값 변환을 수행할 수 있습니다.
+
+### 필드에 함수 삽입
 
 함수를 필드에 삽입하려면 다음 작업을 수행하십시오.
 
@@ -86,7 +94,7 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-## 함수 중첩
+### 함수 중첩
 
 함수를 서로 중첩할 수 있습니다.
 
@@ -112,7 +120,7 @@ ht-degree: 0%
 1. 원하는 대로 기능을 계속 구성합니다.
 1. 모듈 구성을 계속하거나 **확인**&#x200B;을 클릭합니다.
 
-## [!DNL Google Sheets]개 함수 사용
+### [!DNL Google Sheets]개 함수 사용
 
 Workfront Fusion에 사용하려는 함수가 없지만 [!DNL Google Sheets]에 포함된 경우 다음 단계에 따라 사용할 수 있습니다.
 

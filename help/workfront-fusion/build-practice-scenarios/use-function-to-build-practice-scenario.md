@@ -7,10 +7,10 @@ description: Workfront에서 작업 항목을 업데이트하는 기능을 추�
 author: Becky
 feature: Workfront Fusion
 exl-id: aa082ac8-48e8-4569-880e-024dd77feaa1
-source-git-commit: 6269db7454a63e80de3d770ab1012162d5080565
+source-git-commit: 88147d0305595e1d0d388f510ed43fc5beaa4b64
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 19%
+source-wordcount: '603'
+ht-degree: 18%
 
 ---
 
@@ -111,4 +111,4 @@ Fusion에는 데이터에 대해 조건부 논리를 변환하고 수행할 수 
 
 ## 리소스
 
-* [함수를 사용하여 항목 매핑](/help//workfront-fusion/create-scenarios/map-data/map-using-functions.md)
+* [기본 제공 함수를 사용하여 항목 매핑](/help//workfront-fusion/create-scenarios/map-data/map-using-functions.md)

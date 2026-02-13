@@ -4,10 +4,10 @@ description: 매핑은 항목으로 구조화된 모듈의 출력을 다른 모�
 author: Becky
 feature: Workfront Fusion
 exl-id: 9208ce20-0757-427a-9669-ce4274d05522
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
-workflow-type: ht
-source-wordcount: '435'
-ht-degree: 100%
+source-git-commit: 88147d0305595e1d0d388f510ed43fc5beaa4b64
+workflow-type: tm+mt
+source-wordcount: '436'
+ht-degree: 96%
 
 ---
 
@@ -65,7 +65,7 @@ ht-degree: 100%
 
 함수 탭에 대한 자세한 내용은 [함수 개요](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)를 참조하십시오.
 
-함수를 사용한 항목 매핑에 대한 자세한 내용은 [함수를 사용한 항목 매핑](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)을 참조하십시오.
+함수를 사용한 항목 매핑에 대한 자세한 내용은 [기본 제공 함수를 사용한 항목 매핑](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)을 참조하십시오.
 
 ## 컬렉션
 

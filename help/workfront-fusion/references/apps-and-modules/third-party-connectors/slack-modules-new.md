@@ -3,9 +3,10 @@ title: Slack 모듈
 description: ' [!DNL Adobe Workfront Fusion] 시나리오에서는 Slack을 사용하는 워크플로를 자동화할 수 있을 뿐만 아니라 여러 타사 응용 프로그램 및 서비스에 연결할 수도 있습니다.'
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 0dbe23c5eb7a0d890b7b543f2f310b163baa3793
+exl-id: 4c14fa36-8333-40d6-bd0a-fc6b0d9f4410
+source-git-commit: 88147d0305595e1d0d388f510ed43fc5beaa4b64
 workflow-type: tm+mt
-source-wordcount: '4580'
+source-wordcount: '4581'
 ht-degree: 12%
 
 ---
@@ -90,7 +91,7 @@ Slack 커넥터는 다음을 사용합니다.
 
 ## [!DNL Slack] 모듈 및 해당 필드
 
-[!DNL Slack] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 이와 함께 앱 또는 서비스의 액세스 수준과 같은 요인에 따라 추가적인 [!DNL Slack] 필드가 표시될 수 있습니다. 모듈의 굵은 글씨 제목은 필수 필드를 나타냅니다.
+[!DNL Slack] 모듈을 구성할 때 [!DNL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 이와 함께 앱 또는 서비스의 액세스 레벨과 같은 요인에 따라 추가적인 [!DNL Slack] 필드가 표시될 수 있습니다. 모듈의 굵은 글씨 제목은 필수 필드를 나타냅니다.
 
 필드 또는 함수 위에 있는 맵 버튼을 보면 해당 필드의 변수와 함수를 설정하는 데 사용할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
@@ -294,7 +295,7 @@ Slack 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query]</td> 
-   <td> <p>검색할 쿼리를 입력합니다. </p> <p>매핑 패널에서 수식을 만드는 방법에 대한 자세한 내용은 <a href="/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a>의 함수를 사용하여 항목 매핑을 참조하십시오.</p> </td> 
+   <td> <p>검색할 쿼리를 입력합니다. </p> <p>매핑 패널에서 수식을 만드는 방법에 대한 자세한 내용은 <a href="/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a>의 기본 제공 함수를 사용하여 항목 매핑을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 제한] </td> 
@@ -1466,7 +1467,7 @@ This action module deletes a specific reminder.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 상태 만료]</td> 
-   <td>상태를 만료하려는 날짜 및 시간을 입력하거나 매핑합니다. 지원되는 날짜 및 시간 포맷 목록은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">유형 강제 변환</a>을 참조하십시오.</td> 
+   <td>상태를 만료하려는 날짜 및 시간을 입력하거나 매핑합니다. 지원되는 날짜 및 시간 형식 목록은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">유형 강제 변환</a>을 참조하십시오.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -1527,5 +1528,4 @@ This action module deletes a specific reminder.
 * **메신저**: [!UICONTROL 인스턴트 메시지]
 * **개인 채널**: 이전 [!UICONTROL 그룹]
 * **다이렉트 메시지**: 이전 [!UICONTROL IM]
-* **채널**: API 설명서의 [!UICONTROL 대화], [!UICONTROL &#x200B; 앱의 &#x200B;]채널[!DNL Slack].
-
+* **채널**: API 설명서의 [!UICONTROL 대화], [!UICONTROL  앱의 ]채널[!DNL Slack].

@@ -4,9 +4,9 @@ description: 현재 Workfront 및 HTTP 커넥터에서 대용량 파일을 지�
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: a68de976258d17631459f0951d28657fd0e0dcf6
+source-git-commit: 2493ce7ccca599e30b44b62558573ce2a55b03e0
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1052'
 ht-degree: 6%
 
 ---
@@ -44,6 +44,7 @@ ht-degree: 6%
    * PSD 편집 적용
 * SharePoint
    * 파일 만들기
+   * 파일 만들기(이전)
    * 파일 가져오기
 * Salesforce
    * 파일 업로드

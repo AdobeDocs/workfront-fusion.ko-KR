@@ -2,10 +2,10 @@
 user-guide-title: Adobe Workfront Fusion 설명서
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 문서, 튜토리얼 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
-source-git-commit: 0c91cd108c7350a9e2d790ca71e6d4edbd4a461b
+source-git-commit: 84deef6c58e18d526788727611932d7fe10d3210
 workflow-type: tm+mt
-source-wordcount: '2015'
-ht-degree: 99%
+source-wordcount: '2032'
+ht-degree: 98%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 99%
 * Fusion 릴리스 활동 {#fusion-release-activity}
    * [Adobe Workfront Fusion 릴리스 활동](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Fusion 릴리스 - 2025 {#fusion-releases-2025}
+      * [Workfront Fusion 릴리스 활동: 2026년 2월 9일 화요일 주간](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-9.md)
       * [Workfront Fusion 릴리스 활동: 2026년 2월 2일 화요일 주간](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-2.md)
       * [Workfront Fusion 릴리스 활동: 2026년 1월 26일 화요일 주간](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-26.md)
       * [Workfront Fusion 릴리스 활동: 2026년 1월 19일 주간](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-19.md)
@@ -219,7 +220,8 @@ ht-degree: 99%
    * 데이터 매핑 {#map-data}
       * [데이터 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md)
       * [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)
-      * [함수를 사용하여 항목 매핑](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)
+      * [기본 제공 함수를 사용하여 항목 매핑](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)
+      * [사용자 정의 함수를 사용하여 데이터 매핑](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)
       * [배열 및 배열 요소 매핑](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)
       * [모듈 간 파일 매핑](/help/workfront-fusion/create-scenarios/map-data/map-files.md)
       * [데이터 저장소](/help/workfront-fusion/create-scenarios/map-data/data-stores.md)
@@ -335,6 +337,7 @@ ht-degree: 99%
          * [웹후크](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md)
          * [Adobe Workfront Fusion의 HTTP 모듈에서 상호 TLS 사용](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)
       * Adobe 커넥터 {#adobe-connectors}
+         * [Adobe App Builder 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md)
          * [Adobe Acrobat Sign 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-sign-modules.md)
          * [Adobe Authenticator 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md)
          * [Adobe Campaign 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-campaign-classic-connector.md)

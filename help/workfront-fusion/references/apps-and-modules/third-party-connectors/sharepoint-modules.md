@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion 시나리오에서는 Microsoft SharePoint O
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 2493ce7ccca599e30b44b62558573ce2a55b03e0
 workflow-type: tm+mt
-source-wordcount: '4130'
-ht-degree: 0%
+source-wordcount: '4276'
+ht-degree: 13%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 Adobe Workfront Fusion 시나리오에서는 Microsoft SharePoint Online을 사용하는 워크플로를 자동화하고 여러 타사 애플리케이션 및 서비스에 연결할 수 있습니다.
 
-시나리오를 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 인덱스](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
+시나리오 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 색인](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
 
-모듈에 대한 자세한 내용은 [모듈: 문서 인덱스](/help/workfront-fusion/references/modules/modules-toc.md)의 문서를 참조하십시오.
+모듈에 대한 자세한 내용은 [모듈: 문서 색인](/help/workfront-fusion/references/modules/modules-toc.md)의 문서를 참조하십시오.
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -38,20 +38,20 @@ Adobe Workfront Fusion 시나리오에서는 Microsoft SharePoint Online을 사�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>작업 기반: Workfront Fusion 라이센스 요구 사항 없음</p>
-   <p>커넥터 기반(레거시): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
+   <p>작업 기반: Workfront Fusion 라이선스 요구 사항 없음</p>
+   <p>커넥터 기반(이전): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
@@ -86,7 +86,7 @@ SharePoint 커넥터는 다음을 사용합니다.
 
 ## Microsoft SharePoint Online을 Workfront Fusion에 연결 {#connect-microsoft-sharepoint-online-to-workfront-fusion}
 
-* [&#x200B; [!DNL Microsoft] 계정을 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
+* [ [!DNL Microsoft] 계정을 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [고급 설정을 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
 * [인증서 인증을 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
 
@@ -129,7 +129,7 @@ SharePoint 커넥터는 다음을 사용합니다.
     </tbody> 
    </table>
 
-1. 연결을 저장하고 모듈로 돌아가려면 **계속**&#x200B;을 클릭하세요.
+1. 연결을 저장하고 모듈로 돌아가려면 **계속**&#x200B;을 클릭합니다.
 
 ### 인증서 인증을 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결
 
@@ -166,27 +166,27 @@ SharePoint 커넥터는 다음을 사용합니다.
       <td>연결 중인 SharePoint 앱의 지문을 입력합니다.</td> 
      </tr> 
       <tr>
-        <td role="rowheader">[!UICONTROL 개인 키]</td>
+        <td role="rowheader">[!UICONTROL 비공개 키]</td>
         <td>
           <p>Microsoft에서 자격 증명을 만들 때 생성된 인증서 또는 개인 키를 입력합니다. </p>
-          <p>개인 키 또는 인증서를 추출하려면 다음을 수행하십시오.</p>
+          <p>비공개 키 또는 인증서를 추출하려면 다음을 수행합니다.</p>
           <ol>
             <li>
-              <p><b>[!UICONTROL Extract]</b>을(를) 클릭합니다.</p>
+              <p><b>[!UICONTROL 추출]</b>을 클릭합니다.</p>
             </li>
             <li>
             <p>인증서를 추출할지 또는 개인 키를 추출할지 선택합니다.</li>
             <li>
-              <p>추출 중인 파일 유형을 선택합니다.</p>
+              <p>추출할 파일 유형을 선택합니다.</p>
             </li>
             <li>
-              <p>개인 키 또는 인증서가 포함된 파일을 선택합니다.</p>
+              <p>비공개 키 또는 인증서가 포함된 파일을 선택합니다.</p>
             </li>
             <li>
               <p>파일의 암호를 입력합니다.</p>
             </li>
             <li>
-              <p><b>[!UICONTROL 저장]</b>을(를) 클릭하여 파일을 추출하고 연결 설정으로 돌아갑니다.</p>
+              <p><b>[!UICONTROL 저장]</b>을 클릭하여 파일을 추출하고 연결 설정으로 돌아갑니다.</p>
             </li>
           </ol>
         </td>
@@ -194,15 +194,15 @@ SharePoint 커넥터는 다음을 사용합니다.
     </tbody> 
    </table>
 
-1. 연결을 저장하고 모듈로 돌아가려면 **계속**&#x200B;을 클릭하세요.
+1. 연결을 저장하고 모듈로 돌아가려면 **계속**&#x200B;을 클릭합니다.
 
 ## Microsoft SharePoint 모듈 및 해당 필드
 
-Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 이러한 필드와 함께 앱이나 서비스의 액세스 수준 등의 요소에 따라 추가 Microsoft SharePoint Online 필드가 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 이러한 필드와 함께 앱이나 서비스의 액세스 수준 등의 요소에 따라 추가 Microsoft SharePoint Online 필드가 표시될 수 있습니다. 모듈의 굵은 글씨 제목은 필수 필드를 나타냅니다.
 
-필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
+필드 또는 함수 위에 있는 맵 버튼을 보면 해당 필드의 변수와 함수를 설정하는 데 사용할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
-![맵 전환](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![토글 매핑](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [드라이브 항목](#drive-item)
 * [항목](#item)
@@ -222,14 +222,14 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
 
 #### 파일 만들기
 
-이 모듈은 SharePoint에서 수행한 변경 사항을 반환합니다.
+이 모듈은 SharePoint에서 파일을 생성합니다. 이 모듈의 성능은 파일 만들기(기존) 모듈보다 뛰어납니다.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>Microsoft SharePoint Online 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -241,8 +241,38 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source 파일]</td> 
-      <p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 이름과 데이터를 매핑합니다.</p>
+   <td role="rowheader">[!UICONTROL 소스 파일] </td>
+      <td><p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 이름과 데이터를 매핑합니다.</p></td>
+  </tr>  </tbody> 
+</table>
+
+
+
+#### 파일 만들기(이전)
+
+이 모듈은 SharePoint에서 파일을 만듭니다.
+
+성능을 향상시키려면 [파일 만들기](#create-a-file) 모듈을 사용하는 것이 좋습니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
+   <td> <p>Microsoft SharePoint Online 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 사이트, 드라이브 및 폴더 ID 입력]</td> 
+   <td> <p>변경 사항을 검색할 폴더의 위치를 식별하는 방법을 선택합니다.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>파일을 만들 위치의 <strong>[!UICONTROL 사이트 ID]</strong>, <strong>[!UICONTROL 드라이브 ID]</strong> 및 <strong>[!UICONTROL 폴더 ID]</strong>을(를) 입력하거나 매핑합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL 팔로우하는 목록에서 선택]</strong> </p> <p>파일을 만들 위치를 선택합니다. </p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 소스 파일]</td> 
+      <td><p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 이름과 데이터를 매핑합니다.</p></td>
   </tr>  </tbody> 
 </table>
 
@@ -255,7 +285,7 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>Microsoft SharePoint Online 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -282,7 +312,7 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>Microsoft SharePoint Online 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -305,7 +335,7 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>Microsoft SharePoint Online 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -328,7 +358,7 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>Microsoft SharePoint Online 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -355,7 +385,7 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>Microsoft SharePoint Online 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -395,7 +425,7 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>Microsoft SharePoint Online 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -426,7 +456,7 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>Microsoft SharePoint Online 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -453,7 +483,7 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>Microsoft SharePoint Online 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -476,7 +506,7 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>Microsoft SharePoint Online 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -499,7 +529,7 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>Microsoft SharePoint Online 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -518,7 +548,7 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>Microsoft SharePoint Online 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -545,7 +575,7 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>Microsoft SharePoint Online 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -576,7 +606,7 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>Microsoft SharePoint Online 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -603,7 +633,7 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>Microsoft SharePoint Online 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -641,7 +671,7 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>Microsoft SharePoint Online 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -676,7 +706,7 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>Microsoft SharePoint Online 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -699,7 +729,7 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>Microsoft SharePoint Online 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -726,7 +756,7 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>Microsoft SharePoint Online 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -768,7 +798,7 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>Microsoft SharePoint Online 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -791,7 +821,7 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>Microsoft SharePoint Online 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -818,7 +848,7 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>Microsoft SharePoint Online 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -841,7 +871,7 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>Microsoft SharePoint Online 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -873,7 +903,7 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>Microsoft SharePoint Online 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -896,7 +926,7 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>Microsoft SharePoint Online 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -925,7 +955,7 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>Microsoft SharePoint Online 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -952,32 +982,32 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>Microsoft SharePoint Online 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Online을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
-   <td> <p><code>https://graph.microsoft.com</code>과(와) 관련된 경로를 입력하십시오. 예:<code> /beta/sites</code></p> </td> 
+   <td> <p><code>https://graph.microsoft.com</code>와 관련된 경로를 입력합니다. 예:<code> /beta/sites</code></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 메서드]</p> </td> 
    <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다. 예, <code>{"Content-type":"application/json"}</code>. Workfront Fusion은 사용자에게 권한 부여 헤더를 추가합니다.</p> </td> 
+   <td role="rowheader">[!UICONTROL 헤더]</td> 
+   <td> <p>표준 JSON 오브젝트 형태로 요청의 헤더를 추가합니다. 예, <code>{"Content-type":"application/json"}</code>. Workfront Fusion은 사용자에게 권한 부여 헤더를 추가합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 쿼리 문자열]</td> 
-   <td> <p> 표준 JSON 개체 형식으로 API 호출에 대한 쿼리를 추가합니다.</p> </td> 
+   <td> <p> 표준 JSON 오브젝트 형식으로 API 호출에 대한 쿼리를 추가합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 유형]</td> 
    <td>API 호출에서 전송할 데이터 유형을 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>표준 JSON 개체의 형태로 API 호출에 대한 본문 콘텐츠를 추가합니다.</p> <p>참고:  <p>JSON에서 <code>if</code>과(와) 같은 조건문을 사용할 때 따옴표를 조건문 외부에 넣으십시오.</p> 
+   <td role="rowheader">[!UICONTROL 본문]</td> 
+   <td> <p>표준 JSON 오브젝트 형식으로 API 호출에 대한 본문 콘텐츠를 추가합니다.</p> <p>메모:  <p>JSON에서 <code>if</code>와 같은 조건문을 사용할 때는 따옴표를 조건문 외부에 배치해야 합니다.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -1000,7 +1030,7 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
   </tr> 
   -->
   <tr> 
-   <td role="rowheader">[!UICONTROL Webhook]</td> 
+   <td role="rowheader">[!UICONTROL 웹후크]</td> 
    <td> <p>기존 웹후크를 선택하거나 추가 를 클릭하고 연결을 입력하여 새 웹후크를 생성합니다.</p> 
    </td> 
   </tr> 

@@ -4,7 +4,7 @@ description: 작업 자동화에는 빠른 처리가 필요하므로 Adobe Workf
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 086fef455017e19768969533ad63f39c34f962f4
+source-git-commit: c41cc27660b15824a560c770ace663739dccdfa2
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 96%
@@ -76,7 +76,7 @@ ht-degree: 96%
 
 ## 불완전한 실행
 
-* 불완전한 실행은 시나리오당 총 크기 **11GB** 또는 **불완전한 실행**&#x200B;으로 제한됩니다. 어느 쪽이든 먼저 제한에 도달하는 것. 제한에 도달하면 해당 시나리오에 대해 더 이상 미완료 실행이 저장되지 않습니다.
+* 불완전한 실행은 시나리오당 총 크기 **1GB** 또는 **불완전한 실행**&#x200B;으로 제한됩니다. 어느 쪽이든 먼저 제한에 도달하는 것. 제한에 도달하면 해당 시나리오에 대해 더 이상 미완료 실행이 저장되지 않습니다.
 
 ## 재시도
 

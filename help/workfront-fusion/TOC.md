@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 설명서
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 문서, 튜토리얼 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
-source-git-commit: 5e7a879ee69bea03aed5a936fe0962acdd3a3014
+source-git-commit: bd8e770765ac535fd8c11e6f58620e1e4cadfc3d
 workflow-type: tm+mt
-source-wordcount: '2039'
+source-wordcount: '2046'
 ht-degree: 98%
 
 ---
@@ -210,6 +210,7 @@ ht-degree: 98%
       * [모듈 추가](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)
       * [시나리오에 모듈 추가](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-basic.md)
       * [모듈 구성](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)
+      * [시나리오에 AI 프롬프트 추가](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)
       * [AI를 사용하여 시나리오 세그먼트 생성](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md)
       * [모듈 또는 시나리오 복사](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md)
       * [Adobe Workfront Fusion 템플릿으로 시나리오 만들기](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md)

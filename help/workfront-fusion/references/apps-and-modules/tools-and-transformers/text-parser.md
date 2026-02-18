@@ -4,10 +4,10 @@ description: 텍스트 파서 도구를 사용하여 다른 Adobe Workfront Fusi
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+source-git-commit: 5be274105bf13a48e7e76eaa6bd3b62c315f97a9
 workflow-type: tm+mt
 source-wordcount: '1311'
-ht-degree: 0%
+ht-degree: 11%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -34,13 +34,13 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 +++
 
@@ -63,11 +63,11 @@ ht-degree: 0%
 
 ## [!UICONTROL 텍스트 구문 분석기] 모듈과 해당 필드
 
-[!UICONTROL 텍스트 파서] 모듈을 구성하면 Adobe Workfront Fusion에서 아래 나열된 필드가 표시됩니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!UICONTROL 텍스트 파서] 모듈을 구성하면 Adobe Workfront Fusion에서 아래 나열된 필드가 표시됩니다. 모듈의 굵은 글씨 제목은 필수 필드를 나타냅니다.
 
-필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
+필드 또는 함수 위에 있는 맵 버튼을 보면 해당 필드의 변수와 함수를 설정하는 데 사용할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
-![맵 전환](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![토글 매핑](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 ### 트랜스포머
 
@@ -167,7 +167,7 @@ HTML 코드에서 원하는 요소를 검색합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Pattern] </td> 
-   <td> <p>정규 표현식 패턴을 입력합니다. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>예: </b></span></span> <code>[+-]?(\d+(\.\d+)?|\.\d+)([eE][+-]?\d+)?</code>은(는) 제공된 텍스트에서 모든 숫자를 추출합니다.</p> <p>참고:  <p>패턴은 괄호 <code>()</code>에 캡처 그룹을 하나 이상 포함해야 합니다. 패턴에 캡처 그룹이 없으면 출력 번들은 비어 있습니다.</p> </p> </td> 
+   <td> <p>정규 표현식 패턴을 입력합니다. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>예: </b></span></span> <code>[+-]?(\d+(\.\d+)?|\.\d+)([eE][+-]?\d+)?</code>은(는) 제공된 텍스트에서 모든 숫자를 추출합니다.</p> <p>메모:  <p>패턴은 괄호 <code>()</code>에 캡처 그룹을 하나 이상 포함해야 합니다. 패턴에 캡처 그룹이 없으면 출력 번들은 비어 있습니다.</p> </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 전역 일치]</td> 
@@ -190,7 +190,7 @@ HTML 코드에서 원하는 요소를 검색합니다.
    <td> <p>이 옵션을 활성화하면 모듈이 결과를 반환하지 않는 경우 시나리오를 중지하지 않습니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Text] </td> 
+   <td>[!UICONTROL 텍스트] </td> 
    <td> <p>패턴과 일치시킬 텍스트를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
@@ -229,7 +229,7 @@ HTML 코드에서 원하는 요소를 검색합니다.
    <td>마침표(.)가 줄바꿈 문자(<code>\n</code>)와 일치하는지 확인하려면 이 옵션을 활성화하십시오.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Text] </td> 
+   <td>[!UICONTROL 텍스트] </td> 
    <td> <p>검색할 텍스트를 입력합니다.</p> </td> 
   </tr> 
  </tbody> 

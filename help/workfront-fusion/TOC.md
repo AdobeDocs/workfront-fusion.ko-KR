@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 설명서
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 문서, 튜토리얼 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
-source-git-commit: bd8e770765ac535fd8c11e6f58620e1e4cadfc3d
+source-git-commit: 7ae68b0bce0d04f3b0181ed69b570df1445018d9
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2056'
 ht-degree: 98%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 98%
 * [Adobe Workfront Fusion 설명서](home.md)
 * Fusion 릴리스 활동 {#fusion-release-activity}
    * [Adobe Workfront Fusion 릴리스 활동](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
+   * Fusion 릴리스 - 2026 {#fusion-releases-2026}
+      * [Workfront Fusion 릴리스 활동: 2026년 2월 23일 화요일 주간](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-23.md)
    * Fusion 릴리스 - 2025 {#fusion-releases-2025}
       * [Workfront Fusion 릴리스 활동: 2026년 2월 16일 화요일 주간](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-16.md)
       * [Workfront Fusion 릴리스 활동: 2026년 2월 9일 화요일 주간](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-9.md)

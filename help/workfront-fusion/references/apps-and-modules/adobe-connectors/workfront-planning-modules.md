@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Planning] 모듈을 사용하면  [!DNL Ado
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 86747ffc38fddde91352558277d40572d13ba2b0
+source-git-commit: a58a6c25751eb10365508c06ab1571ce7652d0c8
 workflow-type: tm+mt
-source-wordcount: '1993'
+source-wordcount: '1992'
 ht-degree: 52%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 52%
 
 +++
 
-s## 사전 요구 사항
+## 전제 조건
 
 Workfront Planning에 액세스하려면 다음 항목이 있어야 합니다.
 
@@ -197,7 +197,7 @@ Workfront Planning Fusion 모듈 내에서 직접 Workfront Planning 계정에 �
 
 ## [!DNL Adobe Workfront Planning] 모듈 및 해당 필드
 
-Workfront 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를 표시합니다. 이와 함께 앱 또는 서비스의 액세스 수준과 같은 요인에 따라 추가적인 Workfront 필드가 표시될 수 있습니다. 모듈의 굵은 글씨 제목은 필수 필드를 나타냅니다.
+Workfront 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를 표시합니다. 이와 함께 앱 또는 서비스의 액세스 레벨과 같은 요인에 따라 추가적인 Workfront 필드가 표시될 수 있습니다. 모듈의 굵은 글씨 제목은 필수 필드를 나타냅니다.
 
 필드 또는 함수 위에 있는 맵 버튼을 보면 해당 필드의 변수와 함수를 설정하는 데 사용할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 

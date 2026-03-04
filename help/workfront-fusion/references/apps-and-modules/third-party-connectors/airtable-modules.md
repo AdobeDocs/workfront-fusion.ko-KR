@@ -1,24 +1,24 @@
 ---
-title: 에어테이블 모듈
-description: Adobe Workfront Fusion에는 Adobe Workfront 라이센스 외에 Adobe Workfront Fusion 라이센스가 필요합니다.
+title: Airtable 모듈
+description: Adobe Workfront Fusion에는 Adobe Workfront 라이선스 외에도 Adobe Workfront Fusion 라이선스가 필요합니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: 3b445b50-5812-4ded-9788-f467991e0b52
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: a5a1f8f596b55b2f1eca9d7874b5885e435b2489
 workflow-type: tm+mt
-source-wordcount: '1923'
-ht-degree: 2%
+source-wordcount: '1957'
+ht-degree: 26%
 
 ---
 
-# 에어테이블 모듈
+# Airtable 모듈
 
 
 Adobe Workfront Fusion용 [!DNL Airtable] 커넥터를 사용하면 [!DNL Airtable] 계정의 이벤트를 기반으로 시나리오를 시작하고, 레코드, 검색 레코드를 만들고, 업로드 및 업데이트하고, Airtable API에 대한 사용자 지정 API를 호출할 수 있습니다.
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -35,20 +35,20 @@ Adobe Workfront Fusion용 [!DNL Airtable] 커넥터를 사용하면 [!DNL Airtab
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>작업 기반: Workfront Fusion 라이센스 요구 사항 없음</p>
-   <p>커넥터 기반(레거시): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
+   <p>작업 기반: Workfront Fusion 라이선스 요구 사항 없음</p>
+   <p>커넥터 기반(이전): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
@@ -89,8 +89,10 @@ Airtable 커넥터는 다음을 사용합니다.
 1. Open your account overview and generate the API key.
 -->
 1. Workfront Fusion을 열고 원하는 모듈의 **연결 만들기** 대화 상자를 엽니다.
+1. 개인 액세스 토큰을 사용하는지 OAuth 2 인증을 사용하는지 선택합니다.
 1. 연결의 이름을 입력합니다.
-1. (선택 사항) 고급 설정 표시 를 클릭하고 Airtable 클라이언트 ID 및 클라이언트 암호를 입력합니다.
+1. (조건부) 개인 액세스 토큰을 사용하는 경우 고급 설정 표시를 클릭하고 개인 액세스 토큰을 입력합니다.
+1. (조건부) OAuth 2를 사용하는 경우 고급 설정 표시 를 클릭하고 Airtable 클라이언트 ID 및 클라이언트 암호를 입력합니다.
 1. 연결을 만들고 모듈로 돌아가려면 **계속** 단추를 클릭하십시오.
 
 ## Airtable 모듈 및 해당 필드
@@ -100,7 +102,7 @@ Airtable 커넥터는 다음을 사용합니다.
 * [레코드 만들기](#create-a-record)
 * [레코드 삭제](#delete-a-record)
 * [레코드 가져오기](#get-a-record)
-* [레코드 검색](#search-records)
+* [검색 레코드](#search-records)
 * [레코드 업데이트](#update-a-record)
 * [레코드 업데이트](#upsert-a-record)
 * [레코드 보기](#watch-records)
@@ -113,7 +115,7 @@ Airtable 커넥터는 다음을 사용합니다.
 
 레코드에 저장할 데이터와 위치를 지정합니다.
 
-모듈은 연결에서 액세스하는 모든 사용자 지정 필드 및 값과 함께 레코드와 연결된 모든 표준 필드를 반환합니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
+모듈은 연결에서 액세스하는 모든 사용자 정의 필드 및 값과 함께 레코드와 연결된 모든 표준 필드를 반환합니다. 시나리오의 후속 모듈에서 이 정보를 매핑할 수 있습니다.
 
 이 모듈을 구성할 때 다음 필드가 표시됩니다.
 
@@ -173,7 +175,7 @@ Airtable 커넥터는 다음을 사용합니다.
 
 레코드의 ID 및 위치를 지정합니다.
 
-모듈은 연결에서 액세스하는 사용자 지정 필드 및 값과 함께 레코드 및 관련 필드의 ID를 반환합니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
+모듈은 연결에서 액세스하는 모든 사용자 정의 필드 및 값과 함께 레코드의 ID와 모든 연결된 필드를 반환합니다. 시나리오의 후속 모듈에서 이 정보를 매핑할 수 있습니다.
 
 이 모듈을 구성할 때 다음 필드가 표시됩니다.
 
@@ -231,7 +233,7 @@ Airtable 커넥터는 다음을 사용합니다.
 
 이 검색 모듈은 지정한 검색 쿼리와 일치하는 Airtable의 객체에서 레코드를 찾습니다.
 
-이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
+시나리오의 후속 모듈에서 이 정보를 매핑할 수 있습니다.
 
 이 모듈을 구성할 때 다음 필드가 표시됩니다.
 
@@ -276,7 +278,7 @@ Airtable 커넥터는 다음을 사용합니다.
 
 레코드의 ID와 레코드에 포함할 새 데이터를 지정합니다.
 
-모듈은 연결에서 액세스하는 모든 사용자 지정 필드 및 값과 함께 레코드와 연결된 모든 표준 필드를 반환합니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
+모듈은 연결에서 액세스하는 모든 사용자 정의 필드 및 값과 함께 레코드와 연결된 모든 표준 필드를 반환합니다. 시나리오의 후속 모듈에서 이 정보를 매핑할 수 있습니다.
 
 이 모듈을 구성할 때 다음 필드가 표시됩니다.
 
@@ -340,7 +342,7 @@ Airtable 커넥터는 다음을 사용합니다.
 
 레코드의 ID와 레코드에 포함할 새 데이터를 지정합니다.
 
-모듈은 연결에서 액세스하는 모든 사용자 지정 필드 및 값과 함께 레코드와 연결된 모든 표준 필드를 반환합니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
+모듈은 연결에서 액세스하는 모든 사용자 정의 필드 및 값과 함께 레코드와 연결된 모든 표준 필드를 반환합니다. 시나리오의 후속 모듈에서 이 정보를 매핑할 수 있습니다.
 
 이 모듈을 구성할 때 다음 필드가 표시됩니다.
 
@@ -473,7 +475,7 @@ Airtable 커넥터는 다음을 사용합니다.
 
 #### 사용자 정의 API 호출
 
-이 작업 모듈을 사용하면 [!DNL Airtable] API에 대해 사용자 지정 인증된 호출을 수행할 수 있습니다. 이렇게 하면 다른 [!DNL Airtable] 모듈에서 수행할 수 없는 데이터 흐름 자동화를 만들 수 있습니다.
+이 액션 모듈을 사용하면 [!DNL Airtable] API에 인증된 사용자 정의 호출을 수행할 수 있습니다. 이렇게 하면 다른 [!DNL Airtable] 모듈로는 수행할 수 없는 데이터 흐름 자동화를 만들 수 있습니다.
 
 작업은 지정한 엔티티 유형(Allocadia 객체 유형)을 기반으로 합니다.
 
@@ -489,7 +491,7 @@ Airtable 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
-   <td><code>https://api.airtable.com/</code>과(와) 관련된 경로를 입력하십시오. 예: <code>v0/{base}/{table}</code> </td> 
+   <td><code>https://api.airtable.com/</code>와 관련된 경로를 입력합니다. 예: <code>v0/{base}/{table}</code> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">메서드</td> 
@@ -497,7 +499,7 @@ Airtable 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">헤더</td> 
-   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion은 사용자에게 권한 부여 헤더를 추가합니다.</p> </td> 
+   <td> <p>표준 JSON 오브젝트 형태로 요청의 헤더를 추가합니다.</p> <p>예: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion은 사용자에게 권한 부여 헤더를 추가합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">쿼리 문자열</td> 
@@ -505,7 +507,7 @@ Airtable 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">본문</td> 
-   <td> <p>표준 JSON 개체의 형태로 API 호출에 대한 본문 콘텐츠를 추가합니다.</p> <p>참고:  <p>JSON에서 <code>if</code>과(와) 같은 조건문을 사용할 때 따옴표를 조건문 외부에 넣으십시오.</p> 
+   <td> <p>표준 JSON 오브젝트 형식으로 API 호출에 대한 본문 콘텐츠를 추가합니다.</p> <p>메모:  <p>JSON에서 <code>if</code>와 같은 조건문을 사용할 때는 따옴표를 조건문 외부에 배치해야 합니다.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 

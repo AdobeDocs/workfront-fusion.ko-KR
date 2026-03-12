@@ -5,7 +5,7 @@ description: 시나리오 설정 패널에서 시나리오에 대한 특정 설�
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 85b7a5e07ef7d3169b31f91bc54d4cb246199443
+source-git-commit: 3e999de9127d6ce320e313f26bf143bf13637ad1
 workflow-type: tm+mt
 source-wordcount: '1279'
 ht-degree: 7%

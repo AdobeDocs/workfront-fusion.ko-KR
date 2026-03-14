@@ -410,7 +410,7 @@ Microsoft Office 365 Calendar 커넥터는 다음을 사용합니다.
    <td> <p>이벤트 시청 방법을 선택합니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL 작성일 기준]</strong> </p> <p>새로운 이벤트를 확인하십시오.</p> </li> 
-     <li> <p>업데이트된 시간까지 <strong>[!UICONTROL]</strong> </p> <p>업데이트된 이벤트를 확인하십시오.</p> </li> 
+     <li> <p>업데이트된 시간까지 <strong></strong> </p> <p>업데이트된 이벤트를 확인하십시오.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 

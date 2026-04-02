@@ -4,10 +4,10 @@ description: 작업 자동화에는 빠른 처리가 필요하므로 Adobe Workf
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: c41cc27660b15824a560c770ace663739dccdfa2
+source-git-commit: d2bc26f26af530e3d770faba47d24e1d4f73b73d
 workflow-type: tm+mt
-source-wordcount: '1063'
-ht-degree: 96%
+source-wordcount: '1082'
+ht-degree: 94%
 
 ---
 
@@ -72,6 +72,7 @@ ht-degree: 96%
 ## 실행 기록
 
 * 실행 기록 로그는 **100MB**&#x200B;로 제한됩니다. 실행 기록이 이 크기를 초과하면 처음 100MB만 표시됩니다.
+* 단일 작업의 입력 또는 출력이 15MB보다 크면 실행 기록에 나타나지 않는다.
 * 시나리오에 여러 개의 동시 실행이 있는 경우 시나리오 세부 정보 페이지의 실행 영역에 5개의 실행만 표시됩니다. 5개 이상의 실행이 진행 중인 때에도 마찬가지입니다.
 
 ## 불완전한 실행

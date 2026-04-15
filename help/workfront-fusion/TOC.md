@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 설명서
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 문서, 튜토리얼 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
-source-git-commit: ac19f04af9ce80912e3dd9d63dc2ca414080c0c1
+source-git-commit: 6885e29b3b14d97bebcb046d86e204bd2fdfbace
 workflow-type: tm+mt
-source-wordcount: '2091'
+source-wordcount: '2104'
 ht-degree: 97%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 97%
 * Fusion 릴리스 활동 {#fusion-release-activity}
    * [Adobe Workfront Fusion 릴리스 활동](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Fusion 릴리스 - 2026 {#fusion-releases-2026}
+      * [Workfront Fusion 릴리스 활동: 2026년 4월 13일 화요일 주간](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-4-13.md)
       * [Workfront Fusion 릴리스 활동: 2026년 3월 30일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-30.md)
       * [Workfront Fusion 릴리스 활동: 2026년 3월 23일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-23.md)
       * [Workfront Fusion 릴리스 활동: 2026년 3월 16일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-16.md)
@@ -266,6 +267,7 @@ ht-degree: 97%
    * [불완전한 실행 보기 및 해결](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)
    * [시나리오의 실행 기록 보기](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)
    * [특정 시나리오 실행 보기](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md)
+   * [체인 시나리오 관계 보기 및 관리](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md)
    * [실행 중인 시나리오에서 데이터 흐름 보기](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
    * [웹후크의 대기열 보기](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
    * [Workfront Fusion의 AI 어시스턴트](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)

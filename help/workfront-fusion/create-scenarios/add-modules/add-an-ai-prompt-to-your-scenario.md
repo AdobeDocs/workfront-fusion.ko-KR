@@ -3,9 +3,10 @@ title: 시나리오에 AI 프롬프트 추가
 description: 시나리오에 연결할 AI 프롬프트를 포함할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 09e8ca28c12990a699816671d07f85288d973bc7
+exl-id: d0ac0d0b-e3a0-46de-801d-e53c1c4d63ff
+source-git-commit: 3d957c219cdc5fed4fdf9b0649cab724fae21871
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -13,12 +14,6 @@ ht-degree: 0%
 # 시나리오에 AI 프롬프트 추가
 
 대형 언어 모델(LLM)과 결합된 모델 컨텍스트 프로토콜(MCP)을 사용하여 시나리오에 AI 프롬프트를 포함할 수 있습니다. MCP 에이전트 모듈에서 이를 구성함으로써 인공 지능을 이용하여 효율적이고 안전하며 유연한 워크플로를 설정할 수 있다.
-
->[!NOTE]
->
->이 기능은 AI를 사용하여 시나리오에 모듈을 추가하는 기능과 별개입니다.
->
->AI를 사용하는 모듈을 추가하는 방법에 대한 자세한 내용은 [AI를 사용하여 시나리오 세그먼트 생성](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md)을 참조하십시오.
 
 ## 모델 컨텍스트 프로토콜 개요
 

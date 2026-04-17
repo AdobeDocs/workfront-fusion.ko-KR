@@ -6,10 +6,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 45935dab-199b-46b8-a339-abfea8650320
-source-git-commit: bd8e770765ac535fd8c11e6f58620e1e4cadfc3d
+source-git-commit: 3d957c219cdc5fed4fdf9b0649cab724fae21871
 workflow-type: tm+mt
-source-wordcount: '88'
-ht-degree: 70%
+source-wordcount: '82'
+ht-degree: 68%
 
 ---
 
@@ -17,7 +17,6 @@ ht-degree: 70%
 
 * [시나리오에 모듈 추가](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-basic.md)
 * [모듈 구성](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)
-* [AI를 사용하여 시나리오 세그먼트 생성](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md)
 * [시나리오에 AI 프롬프트 추가](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)
 * [모듈 또는 시나리오 복사](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md)
 * [Adobe Workfront Fusion 템플릿으로 시나리오 만들기](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md)

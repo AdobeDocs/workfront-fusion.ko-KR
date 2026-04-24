@@ -529,4 +529,4 @@ Google Calendar 커넥터는 다음을 사용합니다.
 
    *패턴*: `<meta itemprop="eventId/googleCalendar" content="(?<evenitID>.*?)"/>`
 
-   *텍스트*: `HTML content`Webhooks[!UICONTROL  >]사용자 지정 메일 후크[!UICONTROL  모듈에서 출력된 ] 항목입니다.
+   *텍스트*: `HTML content`Webhooks[!UICONTROL &#x200B; >]사용자 지정 메일 후크[!UICONTROL &#x200B; 모듈에서 출력된 &#x200B;] 항목입니다.

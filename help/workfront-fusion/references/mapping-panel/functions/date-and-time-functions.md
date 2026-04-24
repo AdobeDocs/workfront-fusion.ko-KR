@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion 매핑 패널에서 다음 날짜 및 시간
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 42bf7b0ac6eb414312573b32b93677a5c9650fa8
 workflow-type: tm+mt
 source-wordcount: '1879'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -139,7 +139,7 @@ ht-degree: 1%
 
 0에서 59 사이의 숫자를 지정하십시오. 숫자가 해당 범위를 벗어나면 함수는 이전 분 (음수) 또는 이후 분 (양수)에서 1초를 반환합니다.
 
-범위 밖의 숫자를 지정해야 하는 경우 [!UICONTROL addSeconds(날짜; 숫자)] 섹션에 설명된 대로 [&#x200B; addSeconds](#addseconds-date-number)을 사용하는 것이 좋습니다.
+범위 밖의 숫자를 지정해야 하는 경우 [!UICONTROL addSeconds(날짜; 숫자)] 섹션에 설명된 대로 [ addSeconds](#addseconds-date-number)을 사용하는 것이 좋습니다.
 
 >[!BEGINSHADEBOX]
 
@@ -307,7 +307,7 @@ ht-degree: 1%
  <tbody> 
   <tr> 
    <td>[!UICONTROL 날짜] </td> 
-   <td>Date </td> 
+   <td>일자 </td> 
    <td> <p>날짜 값을 텍스트 값으로 변환합니다. </p> </td> 
   </tr> 
   <tr> 
@@ -333,7 +333,7 @@ ht-degree: 1%
 
 **예:** 이 예제에서 시나리오와 웹 시간대가 모두 `Europe/Prague`(으)로 설정되었습니다.
 
-![날짜 시간 함수 예제](assets/date&time-functions-examples-350x61.png)
+![날짜 시간 함수 예제](assets/date-time-functions-examples-350x61.png)
 
 * `formatDate(1. Date created;MM/DD/YYYY)`
 
@@ -463,7 +463,7 @@ Date2는 Date1에서 빼집니다.
 
 월의 n번째 요일(예: 첫 번째 화요일, 세 번째 금요일 등)에 해당하는 날짜를 계산해야 하는 경우 다음 공식을 사용할 수 있습니다.
 
-![n일 계산](assets/date&time-functions-calc-nth-day-350x31.png)
+![n일 계산](assets/date-time-functions-calc-nth-day-350x31.png)
 
 ```
 {{addDays(setDate(1.date; 1); 1.n * 7 - formatDate(addDays(setDate(1.date; 1); "-" + 1.dow); "E"))}}

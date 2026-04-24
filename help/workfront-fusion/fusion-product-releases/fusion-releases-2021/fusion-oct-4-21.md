@@ -1,25 +1,25 @@
 ---
-title: Workfront Fusion 릴리스 활동:&nbsp;2021년 10월 4일 주
-description: Workfront Fusion 릴리스 활동:&nbsp;2021년 10월 4일 주
+title: 'Workfront Fusion 릴리스 활동: 2021년 10월 4일 주간'
+description: 'Workfront Fusion 릴리스 활동: 2021년 10월 4일 주간'
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 123f49bc-54fd-4f60-8a61-33fce5ec56a6
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 15%
+source-wordcount: '358'
+ht-degree: 21%
 
 ---
 
-# Workfront Fusion 릴리스 활동: 2021년 10월 4일이 있는 주
+# Workfront Fusion 릴리스 활동: 2021년 10월 4일 주간
 
 이 페이지에서는 2021년 10월 4일 화요일이 있는 주에 Adobe Workfront Fusion에서 이루어진 모든 개선 사항을 설명합니다.
 
 최근 모든 변경 사항의 목록은 [Adobe Workfront Fusion 릴리스 활동](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)을 참조하십시오.
 
-Workfront Fusion의 최근 버그 수정 목록을 보려면 [Workfront 유지 관리 업데이트](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=ko) 페이지를 참조하고 Workfront Fusion 유지 관리 업데이트 레이블이 지정된 업데이트를 확인하십시오.
+Workfront Fusion의 최근 버그 수정 목록을 보려면 [Workfront 유지 관리 업데이트](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html) 페이지를 참조하고 Workfront Fusion 유지 관리 업데이트 레이블이 지정된 업데이트를 확인하십시오.
 
 ## Workfront > 이벤트 보기 모듈에서 기존 이벤트 필터 보기
 

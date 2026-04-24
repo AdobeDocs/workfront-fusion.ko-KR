@@ -4,7 +4,7 @@ description: Adobe Workfront Fusion Adobe Workfront 커넥터를 사용하여 Wo
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
 source-wordcount: '7366'
 ht-degree: 100%
@@ -695,7 +695,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 +++
 
-### **미리 서명된 파일 URL 가져오기**
++++ **미리 서명된 파일 URL 가져오기**
 
 이 액션 모듈은 나중에 다른 API에서 사용할 수 있는 미리 서명된 파일 URL을 가져옵니다.
 
@@ -717,6 +717,8 @@ See a list of the Workfront object types for which you can use this module in [W
   </tr> 
  </tbody> 
 </table>
+
++++
 
 +++ **[!UICONTROL 기타 액션]**
 

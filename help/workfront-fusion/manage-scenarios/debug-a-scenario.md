@@ -22,7 +22,7 @@ Adobe Workfront Fusion Devtool을 사용하면 시나리오를 이해하고 문�
 비디오 소개 및 Fusion Devtool에 대한 설명은
 
 * [Fusion 개발 도구](https://video.tv.adobe.com/v/3427031/){target=_blank}
-* [Devtool 연습](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=en)
+* [Devtool 연습](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=ko)
 
 ## 액세스 요구 사항
 

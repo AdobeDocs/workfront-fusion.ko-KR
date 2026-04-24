@@ -3,7 +3,8 @@ title: Adobe Substance 모듈
 description: Adobe Workfront Fusion 시나리오에서는  [!DNL Adobe Substance]를 사용하는 워크플로를 자동화할 수 있으며 여러 제3자 애플리케이션 및 서비스에 연결할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 2e44c89d487100b3245b40f6927185a0ff12ef2f
+exl-id: 85e2e832-0347-4270-b360-4a07224f2bcc
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '830'
 ht-degree: 32%
@@ -66,7 +67,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 ## [!DNL Adobe Substance] 모듈 및 해당 필드
 
-[!DNL Adobe Substance] 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를 표시합니다. 이와 함께 앱 또는 서비스의 액세스 수준과 같은 요인에 따라 추가적인 [!DNL Adobe Substance] 필드가 표시될 수 있습니다. 모듈에서 필드 이름 옆에 있는 별표는 필수 필드를 나타냅니다.
+[!DNL Adobe Substance] 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를 표시합니다. 이와 함께 앱 또는 서비스의 액세스 레벨과 같은 요인에 따라 추가적인 [!DNL Adobe Substance] 필드가 표시될 수 있습니다. 모듈에서 필드 이름 옆에 있는 별표는 필수 필드를 나타냅니다.
 
 필드 또는 함수 위에 있는 맵 버튼을 보면 해당 필드의 변수와 함수를 설정하는 데 사용할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
@@ -94,7 +95,8 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
    <td role="rowheader">기타 필드</td> 
    <td>원하는 대로 다른 필드를 구성합니다. 필드에 대한 자세한 내용은 <a href="https://s3d.adobe.io/docs#/operations/v1/composites/compose">Adobe Substance API 설명서</a>를 참조하십시오.</td> 
   </tr> 
-<!--  <tr> 
+  <!--
+  <tr>
    <td role="rowheader">Camera name</td> 
    <td>Enter or map the name of an existing camera that has been previously defined in the source 3D file.</td> 
   </tr> 
@@ -105,7 +107,8 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
   <tr> 
    <td role="rowheader">Enable ground plane</td> 
    <td>Enable this to enable the auto-generated ground plane under the hero asset. This is useful if the 3D scene contains only a hero asset, without additional elements.</td> 
-  </tr> -->
+  </tr>
+  -->
  </tbody> 
 </table>
 

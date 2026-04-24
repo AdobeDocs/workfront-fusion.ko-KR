@@ -3,21 +3,20 @@ product-previous: workfront-fusion
 content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: fusion-release-activity
-title: 'Workfront Fusion 릴리스 활동: 2022년 10월 17일이 있는 주'
-description: 이 페이지에서는 2022년 10월 17일이 있는 주에 Adobe Workfront Fusion에서 향상된 기능을 모두 설명합니다.
+title: 'Workfront Fusion 릴리스 활동: 2022년 10월 17일 주간'
+description: 이 페이지에서는 2022년 10월 17일 화요일이 있는 주에 Adobe Workfront Fusion에서 이루어진 모든 개선 사항을 설명합니다.
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: 74130f09-2b18-4732-b338-c2bf53a3ed3f
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '109'
-ht-degree: 0%
+ht-degree: 25%
 
 ---
 
-# Workfront Fusion 릴리스 활동: 2022년 10월 17일이 있는 주
+# Workfront Fusion 릴리스 활동: 2022년 10월 17일 주간
 
 ## Adobe Creative Cloud 라이브러리 > 에셋 업로드 모듈에서 이제 더 큰 파일을 사용할 수 있습니다
 

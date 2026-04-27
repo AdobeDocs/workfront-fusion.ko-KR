@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Campaign] 모듈을 사용하면  [!DNL Adobe Campaig
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+source-git-commit: bbd1ec27e52127c8814188612a1e8d5cfab0cd25
 workflow-type: tm+mt
-source-wordcount: '1401'
-ht-degree: 35%
+source-wordcount: '1449'
+ht-degree: 34%
 
 ---
 
@@ -57,7 +57,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 [!DNL Adobe Campaign]에 Fusion IP 주소를 추가해야 합니다.
 
-* Ip 주소를 Campaign에 추가하는 방법은 Adobe Campaign 설명서에서 [IP 주소를 허용 목록에 추가하다에 추가](https://experienceleague.adobe.com/ko/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list)를 참조하십시오.
+* Ip 주소를 Campaign에 추가하는 방법은 Adobe Campaign 설명서에서 [IP 주소를 허용 목록에 추가하다에 추가](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list)를 참조하십시오.
 * 허용 목록에 추가할 IP 주소 목록을 보려면 [조직의 허용 목록에 추가하다에서 Fusion에 대한 IP 주소 구성](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)을 참조하십시오.
 
 ## Adobe Campaign API 정보
@@ -81,9 +81,9 @@ Adobe Campaign 커넥터는 다음을 사용합니다.
 >
 >서버 간 연결을 만드는 것이 좋습니다. Adobe Campaign이 서버 간 연결만 수락하도록 API를 업데이트했습니다. Campaign 버전 8 이상에 연결하는 경우 **서버 간 연결을 만들어야**&#x200B;합니다.
 >
->Campaign의 새 연결 요구 사항에 대한 자세한 내용은 Campaign 설명서에서 [Campaign 기술 연산자를 Adobe Developer Console으로 마이그레이션](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/ims-migration.html?lang=ko)을 참조하십시오.
+>Campaign의 새 연결 요구 사항에 대한 자세한 내용은 Campaign 설명서에서 [Campaign 기술 연산자를 Adobe Developer Console으로 마이그레이션](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/ims-migration.html)을 참조하십시오.
 
-1. [!DNL Adobe Campaign] 모듈에서 **[!UICONTROL 연결]** 필드 옆에 있는 [!UICONTROL 추가]를 클릭합니다.
+1. [!DNL Adobe Campaign] 모듈에서 [!UICONTROL 연결] 필드 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 1. 다음 필드를 채웁니다.
    <table style="table-layout:auto"> 
       <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
@@ -203,7 +203,7 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>만들려는 [!DNL Adobe Campaign] 레코드의 형식을 선택하거나 **사용자 지정 리소스**&#x200B;를 선택하고 리소스 세부 정보를 입력하십시오.</td> 
+   <td>만들려는 [!DNL Adobe Campaign] 레코드의 형식을 선택하거나 **사용자 지정 리소스**를 선택하고 리소스 세부 정보를 입력하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 필드] </td> 
@@ -230,7 +230,7 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>삭제할 리소스 유형을 선택하거나 **사용자 정의 리소스**&#x200B;를 선택하고 리소스 세부 정보를 입력합니다.</td> 
+   <td>삭제할 리소스 유형을 선택하거나 **사용자 정의 리소스**를 선택하고 리소스 세부 정보를 입력합니다.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
@@ -254,11 +254,13 @@ This scheduled trigger module starts a scenario when a record changes.
     <tr>
       <td role="rowheader">[!UICONTROL 액션]</td>
       <td><p>API 호출에서 수행할 작업을 선택합니다.</p>
-      <p>[!UICONTROL 쿼리 실행]</p>
-      <p>[!UICONTROL 쓰기]</p>
-      <p>[!UICONTROL 더 최신인 경우 엔티티 가져오기]</p>
-      <p>[!UICONTROL 모두 선택]</p>
-      <p>[!UICONTROL 푸시 이벤트]</p>
+      <ul>
+      <li><p>[!UICONTROL 쿼리 실행]</p></li>
+      <li><p>[!UICONTROL 쓰기]</p></li>
+      <li><p>[!UICONTROL 더 최신인 경우 엔티티 가져오기]</p></li>
+      <li><p>[!UICONTROL 모두 선택]</p></li>
+      <li><p>[!UICONTROL 푸시 이벤트]</p></li>
+      </ul>
     </td>
     </tr>
     <tr>
@@ -280,7 +282,7 @@ This scheduled trigger module starts a scenario when a record changes.
 
 이 작업 모듈은 [!DNL Adobe Campaign] API의 개체에 대해 선택한 작업을 수행합니다.
 
-특정 작업 및 필드에 대한 자세한 내용은 [[!DNL Adobe Campaign] - API 설명서](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=ko)를 참조하십시오.
+특정 작업 및 필드에 대한 자세한 내용은 [[!DNL Adobe Campaign] - API 설명서](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html)를 참조하십시오.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -292,7 +294,7 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>작업을 수행할 리소스 유형을 선택하거나 **사용자 지정 리소스**&#x200B;를 선택하고 리소스 세부 정보를 입력합니다.</td> 
+   <td>작업을 수행할 리소스 유형을 선택하거나 **사용자 지정 리소스**를 선택하고 리소스 세부 정보를 입력합니다.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 액션]</td> 
@@ -323,7 +325,7 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>읽으려는 [!DNL Adobe Campaign] 레코드의 형식을 선택하거나 **사용자 지정 리소스**&#x200B;를 선택하고 리소스 세부 정보를 입력하십시오.</td> 
+   <td>읽으려는 [!DNL Adobe Campaign] 레코드의 형식을 선택하거나 **사용자 지정 리소스**를 선택하고 리소스 세부 정보를 입력하십시오.</td> 
   </tr> 
     <tr> 
    <td role="rowheader">[!UICONTROL ID] </td> 
@@ -382,7 +384,7 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>업데이트할 [!DNL Adobe Campaign] 레코드의 형식을 선택하거나 **사용자 지정 리소스**&#x200B;를 선택하고 리소스 세부 정보를 입력하십시오.</td> 
+   <td>업데이트할 [!DNL Adobe Campaign] 레코드의 형식을 선택하거나 **사용자 지정 리소스**를 선택하고 리소스 세부 정보를 입력하십시오.</td> 
   </tr> 
     <tr> 
    <td role="rowheader">[!UICONTROL ID] </td> 
@@ -415,7 +417,7 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>반환할 [!DNL Adobe Campaign] 레코드의 형식을 선택하거나 **사용자 지정 리소스**&#x200B;를 선택하고 리소스 세부 정보를 입력하십시오.</td> 
+   <td>반환할 [!DNL Adobe Campaign] 레코드의 형식을 선택하거나 **사용자 지정 리소스**를 선택하고 리소스 세부 정보를 입력하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 검색 기준]</td> 

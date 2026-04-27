@@ -1,26 +1,26 @@
 ---
 title: 시나리오에 필터 추가
-description: 일부 시나리오에서는 특정 기준을 충족하는 번들로만 작업해야 합니다. 필터를 사용하여 해당 번들을 선택할 수 있습니다.
+description: In some scenarios, you need to work only with bundles that meet specific criteria. Filters allow you to select those bundles.
 author: Becky
 feature: Workfront Fusion
 exl-id: b507dca0-0e85-4ab7-8310-b6e6bcb7ae12
-source-git-commit: bec838423e13c3efe4f3d002f824c203cad6ecf8
+source-git-commit: 8de3e365ff7ff91f4b29fb8a298f3b846de0a980
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '528'
 ht-degree: 19%
 
 ---
 
 # 시나리오에 필터 추가
 
-일부 시나리오에서는 특정 기준을 충족하는 번들로만 작업해야 합니다. 필터를 사용하여 해당 번들을 선택할 수 있습니다.
+In some scenarios, you need to work only with bundles that meet specific criteria. Filters allow you to select those bundles.
 
-예를 들어 Workfront의 [!UICONTROL 레코드 보기] 트리거를 사용하여 특정 사용자에게 할당된 작업만 캡처하는 시나리오를 만들 수 있습니다.
+For example, you could create a scenario with the [!UICONTROL Watch records] trigger for Workfront to capture only tasks assigned to a specific user.
 
-두 모듈 사이에 필터를 추가하고 이전 모듈에서 받은 번들이 특정 필터 조건을 충족하는지 확인할 수 있습니다.
+You can add a filter between two modules and check whether bundles received from the preceding modules fulfill specific filter conditions:
 
-* 번들이 그러한 경우 시나리오의 다음 모듈로 전달됩니다.
-* 그렇지 않으면 번들 처리가 종료됩니다.
+* If they do, the bundles pass on to the next module in the scenario.
+* If they don&#39;t, processing for the bundles terminates.
 
 ## 액세스 요구 사항
 
@@ -53,42 +53,42 @@ ht-degree: 19%
 
 ## 전제 조건
 
-두 모듈 사이에 필터를 추가하려면 먼저 두 모듈을 시나리오에 추가해야 합니다.
+You must add both modules to a scenario before you can add a filter between them.
 
-## 다음 두 모듈 사이에 필터를 추가합니다.
+## Add a filter between two modules:
 
-1. 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭합니다.
-1. 필터를 추가할 시나리오를 선택합니다.
-1. 시나리오의 아무 곳이나 클릭하여 시나리오 편집기를 입력합니다.
-1. 필터를 추가할 모듈 사이에 있는 렌치 아이콘 ![렌치 아이콘](assets/wrench-icon.png)을 클릭하고 **필터 설정**&#x200B;을 선택합니다.
-1. 표시되는 상자에 필터에 대한 **[!UICONTROL 레이블]**&#x200B;을 입력합니다.
-1. 필터 **[!UICONTROL 조건]**&#x200B;을(를) 정의합니다.
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
+1. Select the scenario where you want to add a filter.
+1. Click anywhere on the scenario to enter the Scenario editor.
+1. Click the wrench icon ![Wrench icon](assets/wrench-icon.png) between the modules where you want to add a filter and select **Set up a filter**.
+1. In the box that displays, enter a **[!UICONTROL Label]** for the filter.
+1. Define the filter **[!UICONTROL Condition]**.
 
-   첫 번째 필드, 연산자 및 (필요한 경우) 필드를 비교할 값을 기준으로 필터링할 필드를 입력합니다.
+   Enter the field that you want to filter by in the first field, the operator, and (if necessary) the value that you want to compare the field to.
 
    >[!TIP]
    >
-   >매핑 패널에서 필터 필드에 값을 입력할 수 있습니다
-   >매핑에 대한 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
+   >You can enter values into filter fields from the mapping panel
+   >For more information on mapping, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-   예를 들어 필터가 XML로 끝나는 Adobe Workfront의 파일을 전달하게 하려면 첫 번째 상자에 **[!UICONTROL 파일 이름]**&#x200B;을 입력하고두 번째 상자에 **[!UICONTROL xml]**&#x200B;이 있습니다. 이 두 메뉴 사이의 드롭다운 메뉴에서 **[!UICONTROL 다음으로 끝남(대/소문자 구분 안 함)]**&#x200B;을 선택합니다. 이 필터는 첫 번째 모듈(Workfront)에서 들어오는 번들에 적용됩니다. XML 파일이 포함된 번들만 다음 모듈로 전달됩니다.
+   For example, if you wanted the filter to pass files in Adobe Workfront ending with XML, you would enter **[!UICONTROL File name]** in the first box and .**[!UICONTROL xml]** in the second box. In the drop-down menu between them, you would select **[!UICONTROL Ends with (case insensitive)]**. This filter would apply to incoming bundles from the first module (Workfront). Only bundles containing XML files would pass on to the next module.
 
-   ![필터 설정](assets/set-up-filter-box.png)
+   ![Set up a filter](assets/set-up-filter-box.png)
 
 1. **[!DNL OK]**&#x200B;을(를) 클릭합니다.
 
-## 필터 복사
+## Copy a filter
 
-기존 필터를 복사하여 시나리오의 다른 곳에 붙여넣을 수 있습니다.
+You can copy an existing filter and paste it elsewhere in the scenario.
 
-1. 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭합니다.
-1. 필터를 추가할 시나리오를 선택합니다.
-1. 시나리오의 아무 곳이나 클릭하여 시나리오 편집기를 입력합니다.
-1. 필터가 있는 모듈 사이의 연결 점을 마우스 오른쪽 단추로 클릭합니다.
-1. **필터 복사**&#x200B;를 선택합니다.
-1. 필터를 붙여넣을 모듈 간의 연결 점을 마우스 오른쪽 버튼으로 클릭합니다.
-1. 선택**필터 붙여넣기
-1. (선택 사항) 필터를 조정하려면 필터 아이콘이나 레이블을 클릭하고 이 문서의 [두 모듈 사이에 필터 추가](#add-a-filter-between-two-modules)에 설명된 대로 값을 입력하십시오.
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
+1. Select the scenario where you want to add a filter.
+1. Click anywhere on the scenario to enter the Scenario editor.
+1. Right-click on the connecting dots between modules where the filter is located.
+1. Select **Copy filter**.
+1. Right-click on the connecting dots between modules where you want to paste the filter.
+1. Select **Paste** filter
+1. (Optional) To adjust the filter, click the filter icon or label, and enter values as described in [Add a filter between two modules](#add-a-filter-between-two-modules) in this article.
 
 
 

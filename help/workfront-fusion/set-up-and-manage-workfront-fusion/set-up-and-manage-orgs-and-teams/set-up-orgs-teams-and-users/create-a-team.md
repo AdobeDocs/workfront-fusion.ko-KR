@@ -1,29 +1,29 @@
 ---
 title: 팀 만들기
-description: 팀은 조직 내의 작은 그룹이며 시나리오, 연결 및 템플릿과 같은 Fusion 리소스를 공유합니다. 원하는 만큼 팀을 만들 수 있습니다.
+description: Teams are smaller groups within the organization, and share Fusion resources such as scenarios, connections, and templates. You can create as many teams as you want.
 author: Becky
 feature: Workfront Fusion
 exl-id: 511b5a9c-0b7f-4003-ad86-4bbe630674e0
-source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
+source-git-commit: 0390bb875eb10278967d7d1c9cd61e5243e5f37e
 workflow-type: tm+mt
 source-wordcount: '358'
-ht-degree: 0%
+ht-degree: 27%
 
 ---
 
 # 팀 만들기
 
-팀은 조직 내의 작은 그룹이며 시나리오, 연결 및 템플릿과 같은 Fusion 리소스를 공유합니다. 원하는 만큼 팀을 만들 수 있습니다.
+Teams are smaller groups within the organization, and share Fusion resources such as scenarios, connections, and templates. You can create as many teams as you want.
 
-조직에는 필요한 만큼 많은 팀이 있을 수 있으며 사용자는 하나 이상의 팀에 속할 수 있습니다.
+Organizations may have as many teams as they need, and users may belong to one or more teams.
 
 >[!NOTE]
 >
->팀은 리소스를 공유하므로 팀에 구성원이 한 명만 있는 것이 유용한 경우도 있습니다. 예를 들어 교육 중인 사용자는 개별 Workfront 계정에 대한 연결을 만들 수 있습니다. 모든 팀 멤버도 개별 Workfront 계정에 연결할 수 있습니다. 이 경우 사용자는 교육 팀의 유일한 멤버인 것이 좋습니다.
+>Because teams share resources, it is sometimes useful for a team to have only one member. For example, users in training may create connections to their individual Workfront accounts. Any team members would also be able to connect to the individual Workfront account. In this case we recommend that the user be the only member of a training team.
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -40,7 +40,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
@@ -53,28 +53,28 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 +++
 
 ## 팀 만들기
 
-조직 소유자 및 관리자는 팀을 만들 수 있습니다. 팀은 조직에 새 팀을 추가하여 만듭니다.
+Organization owners and administrators are able to create teams. Teams are created by adding a new team to an organization.
 
-팀을 만들려면 다음 작업을 수행하십시오.
+To create a team:
 
-1. 왼쪽 탐색 패널에서 **[!UICONTROL 조직 개요]**&#x200B;를 클릭합니다
-1. **[!UICONTROL 팀]** 탭을 선택합니다.
-1. **[!UICONTROL 새 팀 추가]**&#x200B;를 클릭합니다.
-   ![팀 만들기](assets/create-new-team-button.png)
-1. 새 팀의 이름을 입력하고 **추가**&#x200B;를 클릭합니다.
+1. In the left navigation panel, click **[!UICONTROL Org overview]**.
+1. Select the **[!UICONTROL Teams]** tab.
+1. Click **[!UICONTROL Add a new team]**.
+   ![Create a team](assets/create-new-team-button.png)
+1. Enter a name for the new team, and click **Add**.
 
-## 팀 편집
+## Edit a team
 
-팀의 이름을 편집할 수 있습니다.
+You can edit the name of a team.
 
-1. 왼쪽 탐색 패널에서 **[!UICONTROL 조직 개요]**&#x200B;를 클릭합니다
-1. **[!UICONTROL 팀]** 탭을 선택합니다.
-1. 이름을 편집할 팀을 찾은 다음 해당 팀의 행에서 **편집**&#x200B;을 클릭합니다.
-1. 팀의 새 이름을 입력한 다음 **저장**&#x200B;을 클릭합니다.
+1. In the left navigation panel, click **[!UICONTROL Org overview]**.
+1. Select the **[!UICONTROL Teams]** tab.
+1. Locate the team that you want to edit the name of, then click **Edit** in the line for that team.
+1. Enter a new name for the team, then click **Save**.
 

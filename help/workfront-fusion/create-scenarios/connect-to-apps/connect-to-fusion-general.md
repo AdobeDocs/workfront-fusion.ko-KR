@@ -1,17 +1,17 @@
 ---
-title: 연결 만들기 - 기본 지침
+title: 연결하기 - 기본 지침
 description: 대부분의 Adobe Workfront Fusion 커넥터는 연결을 만들 때 사용자 지정 구성이 필요하지 않습니다. 이 문서에서는 기본 연결 생성 프로세스에 대해 설명합니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: e47ab4d9-6612-4d9a-a024-da508a8bbfb2
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: bbd1ec27e52127c8814188612a1e8d5cfab0cd25
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 0%
+source-wordcount: '575'
+ht-degree: 21%
 
 ---
 
-# 연결 만들기 - 기본 지침
+# 연결하기 - 기본 지침
 
 대부분의 Adobe Workfront Fusion 커넥터는 연결을 만들 때 사용자 지정 구성이 필요하지 않습니다. 이 문서에서는 기본 연결 생성 프로세스에 대해 설명합니다.
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -42,20 +42,20 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>작업 기반: Workfront Fusion 라이센스 요구 사항 없음</p>
+   <p>작업 기반: Workfront Fusion 라이선스 요구 사항 없음</p>
    <p>커넥터 기반(레거시): Workfront 제품군 외부 애플리케이션에 연결하려면 작업 자동화 및 통합을 위한 Workfront Fusion이 있어야 합니다 </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
@@ -67,13 +67,13 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 Workfront Fusion 모듈 내에서 연결을 만들려면 다음 작업을 수행하십시오.
 
-1. 지정된 응용 프로그램의 모듈에서 **[!UICONTROL 연결]** 상자 옆의 [!UICONTROL 추가]를 클릭하여 **[!UICONTROL 연결 만들기]** 패널을 엽니다.
+1. 지정된 응용 프로그램의 모듈에서 [!UICONTROL 연결] 상자 옆의 **[!UICONTROL 추가]**&#x200B;를 클릭하여 **[!UICONTROL 연결 만들기]** 패널을 엽니다.
 1. (선택 사항) 기본 **[!UICONTROL 연결 이름]**&#x200B;을 변경합니다.
 1. 환경 필드에서 프로덕션 환경인지 비프로덕션 환경인지 선택합니다.
 1. 유형 필드에서 서비스 또는 개인 계정인지 선택합니다.
 1. (조건부) 앱에 ID, 키 또는 [!UICONTROL 암호]와 같은 고급 연결 설정이 필요한 경우 해당 정보를 입력하십시오.
 
-   이러한 정보를 입력할 수 있는 필드를 표시하려면 **[!UICONTROL 고급 설정 표시]**&#x200B;를 클릭해야 합니다.
+   이러한 정보를 입력할 수 있는 필드를 표시하려면 **[!UICONTROL 고급 설정 표시]**&#x200B;를 클릭해야 할 수 있습니다.
 
 1. **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
 1. 아직 로그인하지 않은 경우 표시되는 로그인 창에서 자격 증명을 입력하여 앱에 로그인합니다.

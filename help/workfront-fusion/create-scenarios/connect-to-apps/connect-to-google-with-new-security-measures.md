@@ -1,23 +1,23 @@
 ---
-title: 업데이트된 보안 조치를 사용하여 Adobe Workfront Fusion을 Google Services에 연결
+title: 업데이트된 보안 조치를 통해 Adobe Workfront Fusion을 Google 서비스에 연결
 description: Google은 사용자가 API를 사용하는 방법에 대한 제한 사항을 도입했습니다. 이 문서에서는 이러한 업데이트 보안 조치를 고려하여 Adobe Workfront Fusion을 Google에 연결하는 방법에 대해 설명합니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: eac7ba26-664e-464c-b05c-8c2ebf407fb3
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: bbd1ec27e52127c8814188612a1e8d5cfab0cd25
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 0%
+source-wordcount: '804'
+ht-degree: 18%
 
 ---
 
-# 업데이트된 보안 조치를 사용하여 Adobe Workfront Fusion을 Google Services에 연결
+# 업데이트된 보안 조치를 통해 Adobe Workfront Fusion을 Google 서비스에 연결
 
 Google은 사용자가 API를 사용하는 방법에 대한 제한 사항을 도입했습니다. 이 문서에서는 이러한 업데이트 보안 조치를 고려하여 Adobe Workfront Fusion을 Google에 연결하는 방법에 대해 설명합니다.
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -34,20 +34,20 @@ Google은 사용자가 API를 사용하는 방법에 대한 제한 사항을 도
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>작업 기반: Workfront Fusion 라이센스 요구 사항 없음</p>
-   <p>커넥터 기반(레거시): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
+   <p>작업 기반: Workfront Fusion 라이선스 요구 사항 없음</p>
+   <p>커넥터 기반(이전): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
@@ -102,7 +102,7 @@ Google 드라이브, Gmail 및 이메일(Gmail 계정에 연결됨).
 
 이러한 새 제한 사항은 Google 드라이브 또는 Gmail을 통합하는 경우에만 적용됩니다. Google 드라이브 또는 Gmail에 연결하려면 다음을 수행할 수 있습니다.
 
-* Google Workspace으로 전환
+* Google Workspace으로 전환합니다.
 
   또는
 

@@ -1,25 +1,26 @@
 ---
-title: 'Workfront Fusion 릴리스 활동: 2021년 11월 15일 화요일 주간'
-description: 'Workfront Fusion 릴리스 활동: 2021년 11월 15일 화요일 주간'
+title: 'Workfront Fusion 릴리스 활동: 2021년 11월 15일의 주'
+description: 'Workfront Fusion 릴리스 활동: 2021년 11월 15일의 주'
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: f523c1eb-682a-45af-8945-a1815422fbea
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 44%
+source-wordcount: '184'
+ht-degree: 29%
 
 ---
 
-# Workfront Fusion 릴리스 활동: 2021년 11월 15일 화요일 주간
+# Workfront Fusion 릴리스 활동: 2021년 11월 15일의 주
 
 이 페이지에서는 2021년 11월 15일 화요일이 있는 주에 Adobe Workfront Fusion에서 이루어진 모든 개선 사항을 설명합니다.
 
 최근 모든 변경 사항의 목록은 [Adobe Workfront Fusion 릴리스 활동](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)을 참조하십시오.
 
-Workfront Fusion의 최근 버그 수정 목록을 보려면 [Workfront 유지 관리 업데이트](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=ko) 페이지를 참조하고 Workfront Fusion 유지 관리 업데이트 레이블이 지정된 업데이트를 확인하십시오.
+Workfront Fusion의 최근 버그 수정 목록을 보려면 [Workfront 유지 관리 업데이트](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html) 페이지를 참조하고 Workfront Fusion 유지 관리 업데이트 레이블이 지정된 업데이트를 확인하십시오.
 
 ## Adobe Workfront Fusion의 새로운 모양과 느낌
 

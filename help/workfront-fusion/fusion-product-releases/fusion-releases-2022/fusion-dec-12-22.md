@@ -1,14 +1,15 @@
 ---
-title: Workfront Fusion 릴리스 활동 2022년 12월 12일 화요일 주간
-description: Workfront Fusion 릴리스 활동 2022년 12월 12일 화요일 주간
+title: 2022년 12월 12일의 Workfront Fusion 릴리스 활동 주
+description: 2022년 12월 12일의 Workfront Fusion 릴리스 활동 주
 author: Becky
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: aa71be54-f956-438d-a84b-a6e80f6a1431
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 47%
+source-wordcount: '173'
+ht-degree: 36%
 
 ---
 
@@ -18,7 +19,7 @@ ht-degree: 47%
 
 최근 모든 변경 사항의 목록은 [Adobe Workfront Fusion 릴리스 활동](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)을 참조하십시오.
 
-Workfront Fusion의 최근 버그 수정 목록을 보려면 [Workfront 유지 관리 업데이트](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=ko) 페이지를 참조하고 Workfront Fusion 유지 관리 업데이트 레이블이 지정된 업데이트를 확인하십시오.
+Workfront Fusion의 최근 버그 수정 목록을 보려면 [Workfront 유지 관리 업데이트](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html) 페이지를 참조하고 Workfront Fusion 유지 관리 업데이트 레이블이 지정된 업데이트를 확인하십시오.
 
 ## 향후 성장을 위한 Fusion 기능 향상
 

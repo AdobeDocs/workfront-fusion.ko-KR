@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 설명서
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 문서, 튜토리얼 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
-source-git-commit: 97545ffb73017e147b73c32776ca890761c0f235
+source-git-commit: b13664750da1280aa2d6ac3c419271ea18cbe9fc
 workflow-type: tm+mt
-source-wordcount: '2386'
+source-wordcount: '2388'
 ht-degree: 93%
 
 ---
@@ -275,6 +275,7 @@ ht-degree: 93%
    * [시나리오 채점 전문가 실행](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
    * [시나리오 요소 삭제](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
    * [시나리오 영역에서 시나리오 관리](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
+   * [웹후크 편집](/help/workfront-fusion/manage-scenarios/edit-webhooks.md)
 * 연습 시나리오 빌드 {#build-practice-scenarios}
    * [연습 시나리오 빌드](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)
    * [기본 시나리오 만들기](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)

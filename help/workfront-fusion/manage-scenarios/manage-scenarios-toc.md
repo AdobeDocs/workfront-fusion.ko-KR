@@ -6,10 +6,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: b2e48618-cc55-429e-9bed-c62ba60a6249
-source-git-commit: 34f24f26675fbdf0dd84223cbe8e2d1c3b1aa8cf
+source-git-commit: 3b3131516a920d16edf2ebce74235a90a2701864
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 63%
+source-wordcount: '95'
+ht-degree: 62%
 
 ---
 
@@ -31,3 +31,4 @@ ht-degree: 63%
 * [시나리오 채점 전문가 실행](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
 * [시나리오 요소 삭제](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
 * [시나리오 영역에서 시나리오 관리](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
+* [웹후크 편집](/help/workfront-fusion/manage-scenarios/edit-webhooks.md)

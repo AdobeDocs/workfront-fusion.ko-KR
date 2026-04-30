@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Planning] 모듈을 사용하면  [!DNL Ado
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+source-git-commit: 35cbede1551bd8d158d2ef502b436bc2f760bcae
 workflow-type: tm+mt
-source-wordcount: '1992'
-ht-degree: 52%
+source-wordcount: '2106'
+ht-degree: 49%
 
 ---
 
@@ -214,6 +214,17 @@ Workfront 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를
 #### 이벤트 보기
 
 이 트리거 모듈은 기록, 레코드 유형 또는 작업 영역이 Workfront Planning에서 생성, 업데이트 또는 삭제될 때 시나리오를 시작합니다.
+
+>[!IMPORTANT]
+>
+>이 모듈은 나중에 편집하여 웹후크를 편집할 수 있습니다.
+>
+>Webhook을 업데이트할 때에는 다음 사항을 고려하십시오.
+>
+>* 편집된 웹후크는 Workfront 이벤트 구독에서 새 구독으로 처리됩니다. 이전 웹후크 구성은 별도의 이벤트 구독으로 간주되므로 이벤트 구독 내역이 보존되지 않습니다.
+>* 이전 이벤트 구독에서 새 이벤트 구독으로의 전환이 완벽하게 동기화되지 않을 수 있습니다. 따라서 이벤트를 두 번 받거나(새 구독이 이전 구독이 중지되기 전에 시작되는 경우) 이벤트를 놓칠 수 있습니다(새 구독이 시작되기 전에 이전 구독이 중지되는 경우).
+>
+>웹후크 편집에 대한 자세한 내용은 [웹후크 편집](/help/workfront-fusion/manage-scenarios/edit-webhooks.md)을 참조하십시오.
 
 <table style="table-layout:auto"> 
   <col/>

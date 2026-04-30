@@ -3,10 +3,11 @@ title: 체인 시나리오 관계 보기
 description: 상위 시나리오와 하위 시나리오 간의 관계를 매핑할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: e7b12ec51474440990cc28996bc70fd97688b082
+exl-id: 0782c6b1-42a5-48de-bfa0-3ced6ed2bf7f
+source-git-commit: aee2b35919e240cce5346df6d94a610c34b26e88
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 20%
+source-wordcount: '485'
+ht-degree: 18%
 
 ---
 
@@ -88,5 +89,6 @@ ht-degree: 20%
 
    * 맵의 일부만 보는 경우에는 단순화 맵에서 해당 부분이 더 어둡게 표시됩니다.
    * 현재 시나리오는 간소화된 맵에 파란색으로 표시됩니다.
+1. 체인에 대한 실행 기록을 보려면 보기 상단의 기록 탭을 클릭합니다.
 
-
+   히스토리를 클릭하여 연결된 시나리오 간에 전달된 특정 데이터를 볼 수 있습니다.

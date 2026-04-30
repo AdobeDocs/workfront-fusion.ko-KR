@@ -4,10 +4,11 @@ title: 시나리오 영역에서 시나리오 관리
 description: 이 섹션에는 Adobe Workfront Fusion의 시나리오 관리와 관련된 문서가 포함되어 있습니다.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 8801b8c175b3cf6ed7b0dc98a8b3d269ca2bbd2b
+exl-id: 4e2f1bbb-fcd6-4724-bd0f-c028f3ea8d69
+source-git-commit: e63ec5927f2844f94fd0c7cd3f9890b7d236aede
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 21%
+source-wordcount: '463'
+ht-degree: 19%
 
 ---
 
@@ -54,6 +55,9 @@ ht-degree: 21%
 1. 특정 시나리오를 검색하려면 검색 창에 입력을 시작합니다. 입력한 대로 시나리오가 필터링됩니다.
 1. 시나리오를 활성화하거나 비활성화하려면 목록에서 시나리오를 찾은 다음 해당 시나리오에 대한 **상태** 열에서 토글을 전환하십시오.
 1. 시나리오의 세부 정보 페이지로 직접 이동하려면 목록에서 시나리오를 찾은 다음 해당 시나리오의 행에서 **열기**&#x200B;를 클릭합니다.
+1. 시나리오에 설명을 추가하려면 해당 시나리오에 대한 설명 열을 누르고 설명을 입력합니다.
+
+   설명은 최대 240자까지 가능합니다.
 1. 시나리오를 복제하려면 해당 시나리오의 행에서 확인란을 클릭한 다음 화면 하단의 막대에서 **복제**&#x200B;를 선택합니다.
 
    복제 시나리오에 대한 자세한 내용은 모듈 또는 시나리오 복사 문서에서 [복제하여 시나리오 복사](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md#copy-a-scenario-by-cloning)를 참조하십시오.
@@ -61,4 +65,3 @@ ht-degree: 21%
 1. 하나 이상의 시나리오를 작업자 풀에 할당하려면 풀에 할당할 각 시나리오 옆에 있는 확인란을 클릭한 다음 화면 하단의 막대에서 **작업자 풀에 할당**&#x200B;을 클릭합니다. 시나리오를 할당할 작업자 풀을 선택하십시오.
 1. 시나리오를 삭제하려면 삭제하려는 시나리오 옆에 있는 확인란을 클릭한 다음 페이지 하단에 있는 막대에서 **삭제**&#x200B;를 클릭합니다.
 1. 목록 열을 숨기려면 **열** 아이콘 ![열 아이콘](assets/glist-column.png)을 클릭하고 열 이름 옆에 있는 상자를 선택하거나 선택 취소합니다.
-

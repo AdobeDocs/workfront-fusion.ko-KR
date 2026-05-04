@@ -8,9 +8,8 @@ description: 이 페이지에서는 2021년 2월 1일 화요일이 있는 주에
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: ce0c1c62-d012-4bc2-8d73-69893c1be8da
-source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
+source-git-commit: a48a7f5f6577782dbc043e322a3c769781ffd63b
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 46%
@@ -23,7 +22,7 @@ ht-degree: 46%
 
 최근 모든 변경 사항의 목록은 [Adobe Workfront Fusion 릴리스 활동](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)을 참조하십시오.
 
-Workfront Fusion의 최근 버그 수정 목록을 보려면 [Workfront 유지 관리 업데이트](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=ko) 페이지를 참조하고 Workfront Fusion 유지 관리 업데이트 레이블이 지정된 업데이트를 확인하십시오.
+Workfront Fusion의 최근 버그 수정 목록을 보려면 [Workfront 유지 관리 업데이트](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html) 페이지를 참조하고 Workfront Fusion 유지 관리 업데이트 레이블이 지정된 업데이트를 확인하십시오.
 
 
 ## 이제 MariaDB 커넥터 및 모듈을 사용할 수 있습니다

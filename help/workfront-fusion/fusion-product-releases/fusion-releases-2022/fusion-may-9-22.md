@@ -9,9 +9,8 @@ description: 이 페이지에서는 2022년 5월 9일 화요일이 있는 주에
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: 5727d1bd-6b1d-4c99-90b5-68a555751e8c
-source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
+source-git-commit: a48a7f5f6577782dbc043e322a3c769781ffd63b
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 42%
@@ -24,7 +23,7 @@ ht-degree: 42%
 
 최근 모든 변경 사항의 목록은 [Adobe Workfront Fusion 릴리스 활동](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)을 참조하십시오.
 
-Workfront Fusion의 최근 버그 수정 목록을 보려면 [Workfront 유지 관리 업데이트](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=ko) 페이지를 참조하고 Workfront Fusion 유지 관리 업데이트 레이블이 지정된 업데이트를 확인하십시오.
+Workfront Fusion의 최근 버그 수정 목록을 보려면 [Workfront 유지 관리 업데이트](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html) 페이지를 참조하고 Workfront Fusion 유지 관리 업데이트 레이블이 지정된 업데이트를 확인하십시오.
 
 
 ## 시나리오 실행 내역 검색 기능 개선 사항

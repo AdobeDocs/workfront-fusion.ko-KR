@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion 매핑 패널에서 다음 배열 함수를 
 author: Becky
 feature: Workfront Fusion
 exl-id: 16c3915c-add1-4aab-a0e1-75fc590c42a6
-source-git-commit: 9b61a3b18df1f755cc7ccc28889564e4bcb6cda0
+source-git-commit: 869927a3bc9849fa136078c8acb195f56aee0320
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 0%
+source-wordcount: '648'
+ht-degree: 1%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-**예:**
+**예**
 
 * `map(Emails[];email)`
 
@@ -97,7 +97,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-**예:**
+**예**
 
 * `sort(Contacts[];name)`
 
@@ -200,11 +200,11 @@ ht-degree: 0%
 
 `mode` 매개 변수에 대해 다음 값 중 하나를 입력하십시오.
 
-* `classic`: `array1`에 없는 `array2`의 모든 요소를 포함하는 새 배열을 반환합니다.
+* `classic`: `array2`에 없는 `array1`의 모든 요소를 포함하는 새 배열을 반환합니다.
 
 * `symmetric`: 두 배열에 공통되지 않는 요소의 배열을 반환합니다.
 
-  즉, 이 함수는 `array1`에 없는 `array2`의 모든 요소와 `array2`에 없는 `array1`의 모든 요소를 포함하는 배열을 반환합니다.
+  즉, 이 함수는 `array2`에 없는 `array1`의 모든 요소와 `array1`에 없는 `array2`의 모든 요소를 포함하는 배열을 반환합니다.
 
 >[!BEGINSHADEBOX]
 
@@ -231,6 +231,30 @@ yourArray = [3,4,5,6,7]
 * `arrayDifference [myArray, yourArray, symmetric]`
 
   `[1,2,6,7]` 반환
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL arrayElement(array; index)]
+
+[!BADGE 새로 만들기!]{type=Informative}
+
+
+배열에서 지정된 1 기반 인덱스의 요소를 반환합니다. 인덱스가 범위를 벗어나거나 1보다 작은 경우 `null`을(를) 반환합니다.
+
+>[!BEGINSHADEBOX]
+
+**예**
+
+* `arrayElement(\[10; 20; 30]; 2)`
+
+  반환 20
+* `arrayElement(\[10; 20; 30]; 1)`
+
+  10 반환
+* `arrayElement(\[10; 20; 30]; 5)`
+
+  null 반환
 
 >[!ENDSHADEBOX]
 

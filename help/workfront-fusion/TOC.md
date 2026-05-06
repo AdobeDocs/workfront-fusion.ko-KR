@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 설명서
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 문서, 튜토리얼 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
-source-git-commit: a48a7f5f6577782dbc043e322a3c769781ffd63b
+source-git-commit: 1752b97d5902c9f9b2ec3a8c0bd01f9dbab93d0a
 workflow-type: tm+mt
-source-wordcount: '2388'
+source-wordcount: '2397'
 ht-degree: 55%
 
 ---
@@ -16,14 +16,15 @@ ht-degree: 55%
 * Fusion 릴리스 활동 {#fusion-release-activity}
    * [Adobe Workfront Fusion 릴리스 활동](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Fusion 릴리스 - 2026 {#fusion-releases-2026}
-      * {hide-from-toc}[Workfront Fusion 릴리스 활동: 2026년 4월 27일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-4-27.md)
-      * {hide-from-toc}[Workfront Fusion 릴리스 활동: 2026년 4월 13일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-4-13.md)
-      * {hide-from-toc}[Workfront Fusion 릴리스 활동: 2026년 3월 30일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-30.md)
-      * {hide-from-toc}[Workfront Fusion 릴리스 활동: 2026년 3월 23일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-23.md)
-      * {hide-from-toc}[Workfront Fusion 릴리스 활동: 2026년 3월 16일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-16.md)
-      * {hide-from-toc}[Workfront Fusion 릴리스 활동: 2026년 3월 9일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-9.md)
-      * {hide-from-toc}[Workfront Fusion 릴리스 활동: 2026년 3월 2일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-2.md)
-      * {hide-from-toc}[Workfront Fusion 릴리스 활동: 2026년 2월 23일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-23.md)
+      * [Workfront Fusion 릴리스 활동: 2026년 5월 4일이 있는 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-5-4.md)
+      * [Workfront Fusion 릴리스 활동: 2026년 4월 27일이 있는 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-4-27.md)
+      * [Workfront Fusion 릴리스 활동: 2026년 4월 13일이 있는 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-4-13.md)
+      * [Workfront Fusion 릴리스 활동: 2026년 3월 30일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-30.md)
+      * [Workfront Fusion 릴리스 활동: 2026년 3월 23일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-23.md)
+      * [Workfront Fusion 릴리스 활동: 2026년 3월 16일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-16.md)
+      * [Workfront Fusion 릴리스 활동: 2026년 3월 9일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-9.md)
+      * [Workfront Fusion 릴리스 활동: 2026년 3월 2일이 있는 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-2.md)
+      * [Workfront Fusion 릴리스 활동: 2026년 2월 23일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-23.md)
    * Fusion 릴리스 - 2025 {#fusion-releases-2025}
       * {hide-from-toc}[Workfront Fusion 릴리스 활동: 2026년 2월 16일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-16.md)
       * {hide-from-toc}[Workfront Fusion 릴리스 활동: 2026년 2월 9일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-9.md)

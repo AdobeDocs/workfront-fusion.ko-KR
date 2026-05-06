@@ -1,27 +1,27 @@
 ---
 title: Adobe Firefly 모듈
-description: Adobe Workfront Fusion 시나리오에서는  [!DNL Adobe Firefly]을(를) 사용하는 워크플로를 자동화하고 여러 타사 애플리케이션 및 서비스에 연결할 수 있습니다.
+description: Adobe Workfront Fusion 시나리오에서는  [!DNL Adobe Firefly]를 사용하는 워크플로를 자동화할 수 있으며 여러 제3자 애플리케이션 및 서비스에 연결할 수 있습니다.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: a766080defca64b4ce5d8ecd8b19fdfc3ff26470
 workflow-type: tm+mt
-source-wordcount: '2488'
-ht-degree: 0%
+source-wordcount: '2519'
+ht-degree: 21%
 
 ---
 
-# [!DNL Adobe Firefly]개 모듈
+# [!DNL Adobe Firefly] 모듈
 
-Adobe Workfront Fusion 시나리오에서는 [!DNL Adobe Firefly]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
+Adobe Workfront Fusion 시나리오에서는 [!DNL Adobe Firefly]를 사용하는 워크플로를 자동화할 수 있으며 여러 제3자 애플리케이션 및 서비스에 연결할 수 있습니다.
 
 시나리오를 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 인덱스](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
 
-모듈에 대한 자세한 내용은 [모듈: 문서 인덱스](/help/workfront-fusion/references/modules/modules-toc.md)의 문서를 참조하십시오.
+모듈에 대한 자세한 내용은 [모듈: 문서 색인](/help/workfront-fusion/references/modules/modules-toc.md)의 문서를 참조하십시오.
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -38,20 +38,20 @@ Adobe Workfront Fusion 시나리오에서는 [!DNL Adobe Firefly]을(를) 사용
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>작업 기반: Workfront Fusion 라이센스 요구 사항 없음</p>
-   <p>커넥터 기반(레거시): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
+   <p>작업 기반: Workfront Fusion 라이선스 요구 사항 없음</p>
+   <p>커넥터 기반(이전): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
@@ -78,9 +78,9 @@ Adobe Firefly 커넥터는 다음을 사용합니다.
  </tbody> 
  </table>
 
-## [!DNL Adobe Firefly]에 연결 만들기
+## [!DNL Adobe Firefly]에 연결하기
 
-[!DNL Adobe Firefly] 모듈에 대한 연결을 만들려면:
+사용자의 [!DNL Adobe Firefly] 모듈에 연결하려면:
 
 1. 모든 모듈에서 연결 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 
@@ -95,7 +95,7 @@ Adobe Firefly 커넥터는 다음을 사용합니다.
         <tr>
         <td role="rowheader">[!UICONTROL 연결 이름]</td>
         <td>
-          <p>이 연결의 이름을 입력하십시오.</p>
+          <p>이 연결의 이름을 입력합니다.</p>
         </td>
         </tr>
         <tr>
@@ -104,7 +104,7 @@ Adobe Firefly 커넥터는 다음을 사용합니다.
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL 유형]</td>
-        <td>서비스 계정에 연결할지 또는 개인 계정에 연결할지 선택합니다.</td>
+        <td>서비스 계정에 연결할지 개인 계정에 연결할지 선택합니다.</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL 클라이언트 ID]</td>
@@ -112,20 +112,20 @@ Adobe Firefly 커넥터는 다음을 사용합니다.
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL 클라이언트 암호]</td>
-        <td>[!DNL Adobe] [!UICONTROL 클라이언트 암호]를 입력하십시오. [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명] 세부 정보 섹션에서 찾을 수 있습니다.</td>
+        <td>[!DNL Adobe] [!UICONTROL 클라이언트 암호]를 입력합니다. [!DNL Adobe Developer Console]의 [!UICONTROL 자격 증명] 세부 정보 섹션에서 찾을 수 있습니다.</td>
         </tr>
       </tbody>
     </table>
 
-1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭하세요.
+1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
 
-## [!DNL Adobe Firefly]개 모듈 및 해당 필드
+## [!DNL Adobe Firefly] 모듈 및 해당 필드
 
-[!DNL Adobe Firefly] 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Adobe Firefly] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!DNL Adobe Firefly] 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를 표시합니다. 이와 함께 앱 또는 서비스의 액세스 레벨과 같은 요인에 따라 추가적인 [!DNL Adobe Firefly] 필드가 표시될 수 있습니다. 모듈의 굵은 글씨 제목은 필수 필드를 나타냅니다.
 
-필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
+필드 또는 함수 위에 있는 맵 버튼을 보면 해당 필드의 변수와 함수를 설정하는 데 사용할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
-![맵 전환](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![토글 매핑](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 ### 이미지 확장
 
@@ -138,8 +138,8 @@ Adobe Firefly 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Adobe Campaign]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >[!DNL Adobe Firefly]</a>에 대한 연결 만들기 를 참조하십시오.</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
+   <td>[!DNL Adobe Firefly]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >[!DNL Adobe Firefly]</a>에 연결하기를 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 프롬프트]</td> 
@@ -193,8 +193,8 @@ Adobe Firefly 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Adobe Campaign]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >[!DNL Adobe Firefly]</a>에 대한 연결 만들기 를 참조하십시오.</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
+   <td>[!DNL Adobe Firefly]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >[!DNL Adobe Firefly]</a>에 연결하기를 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 이미지 &gt; Source]</td> 
@@ -247,8 +247,8 @@ Adobe Firefly 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Adobe Campaign]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >[!DNL Adobe Firefly]</a>에 대한 연결 만들기 를 참조하십시오.</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
+   <td>[!DNL Adobe Firefly]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >[!DNL Adobe Firefly]</a>에 연결하기를 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 프롬프트]</td> 
@@ -330,8 +330,8 @@ Adobe Firefly 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Adobe Campaign]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >[!DNL Adobe Firefly]</a>에 대한 연결 만들기 를 참조하십시오.</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
+   <td>[!DNL Adobe Firefly]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >[!DNL Adobe Firefly]</a>에 연결하기를 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 프롬프트]</td> 
@@ -381,8 +381,8 @@ Adobe Firefly 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Adobe Campaign]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >[!DNL Adobe Firefly]</a>에 대한 연결 만들기 를 참조하십시오.</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
+   <td>[!DNL Adobe Firefly]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >[!DNL Adobe Firefly]</a>에 연결하기를 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 변형 수]</td> 
@@ -420,7 +420,7 @@ Adobe Firefly 커넥터는 다음을 사용합니다.
 </table>
 
 
-### 사용자 지정 API 호출 만들기
+### 사용자 정의 API 호출하기
 
 이 작업 모듈은 Firefly API에 대한 사용자 지정 호출을 만듭니다.
 
@@ -431,13 +431,13 @@ Adobe Firefly 커넥터는 다음을 사용합니다.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Firefly]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >[!DNL Adobe Firefly]</a>에 대한 연결 만들기 를 참조하십시오.</td>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Firefly]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >[!DNL Adobe Firefly]</a>에 연결하기를 참조하십시오.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL URL]</td>
       <td>
-        <p><code>https://firefly-api.adobe.io/</code>과(와) 관련된 경로를 입력하십시오.</p>
+        <p><code>https://firefly-api.adobe.io/</code>과 관련된 경로를 입력합니다.</p>
       </td>
     </tr>
     <tr>
@@ -447,16 +447,16 @@ Adobe Firefly 커넥터는 다음을 사용합니다.
    <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Headers]</td>
+      <td role="rowheader">[!UICONTROL 헤더]</td>
       <td>
-        <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p>
-        <p>For example, <code>{"Content-type":"application/json"}</code></p>
-        <p>Workfront Fusion은 인증 헤더를 자동으로 추가합니다.</p>
+        <p>표준 JSON 오브젝트 형태로 요청의 헤더를 추가합니다.</p>
+        <p>예: <code>{"Content-type":"application/json"}</code></p>
+        <p>Workfront Fusion은 자동으로 인증 헤더를 추가합니다.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>표준 JSON 개체의 형태로 API 호출에 대한 본문 콘텐츠를 추가합니다.</p> <p>참고:  <p>JSON에서 <code>if</code>과(와) 같은 조건문을 사용할 때 따옴표를 조건문 외부에 넣으십시오.</p> 
+      <td role="rowheader">[!UICONTROL 본문]</td>
+   <td> <p>표준 JSON 오브젝트 형식으로 API 호출에 대한 본문 콘텐츠를 추가합니다.</p> <p>메모:  <p>JSON에서 <code>if</code>와 같은 조건문을 사용할 때는 따옴표를 조건문 외부에 배치해야 합니다.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>

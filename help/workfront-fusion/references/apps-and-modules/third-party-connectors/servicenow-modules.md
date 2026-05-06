@@ -1,27 +1,27 @@
 ---
 title: ServiceNow 모듈
-description: Adobe Workfront Fusion 시나리오에서는  [!DNL ServiceNow]을(를) 사용하는 워크플로를 자동화하고 여러 타사 애플리케이션 및 서비스에 연결할 수 있습니다.
+description: Adobe Workfront Fusion 시나리오에서는  [!DNL ServiceNow]를 사용하는 워크플로를 자동화할 수 있으며 여러 제3자 애플리케이션 및 서비스에 연결할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: 7b236869-bd83-4db5-a363-d6570f6e4aff
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 3e39d284014c76a1cc300a075e61c25964c49995
 workflow-type: tm+mt
-source-wordcount: '1628'
-ht-degree: 1%
+source-wordcount: '1643'
+ht-degree: 43%
 
 ---
 
-# [!DNL ServiceNow]개 모듈
+# [!DNL ServiceNow] 모듈
 
-Adobe Workfront Fusion 시나리오에서는 [!DNL ServiceNow]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
+Adobe Workfront Fusion 시나리오에서는 [!DNL ServiceNow]를 사용하는 워크플로를 자동화할 수 있으며 여러 제3자 애플리케이션 및 서비스에 연결할 수 있습니다.
 
-시나리오를 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 인덱스](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
+시나리오 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 색인](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
 
-모듈에 대한 자세한 내용은 [모듈: 문서 인덱스](/help/workfront-fusion/references/modules/modules-toc.md)의 문서를 참조하십시오.
+모듈에 대한 자세한 내용은 [모듈: 문서 색인](/help/workfront-fusion/references/modules/modules-toc.md)의 문서를 참조하십시오.
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -38,20 +38,20 @@ Adobe Workfront Fusion 시나리오에서는 [!DNL ServiceNow]을(를) 사용하
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>작업 기반: Workfront Fusion 라이센스 요구 사항 없음</p>
-   <p>커넥터 기반(레거시): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
+   <p>작업 기반: Workfront Fusion 라이선스 요구 사항 없음</p>
+   <p>커넥터 기반(이전): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
@@ -71,7 +71,7 @@ ServiceNow 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">기본 URL</td> 
-   <td>https://{{connection.instance}}/api</td> 
+   <td><pre><code>https://&#123;&#123;connection.instance&#125;&#125;/api</code></pre></td> 
   </tr>
   <tr> 
    <td role="rowheader">API 태그</td> 
@@ -80,11 +80,11 @@ ServiceNow 커넥터는 다음을 사용합니다.
  </tbody> 
  </table>
 
-## Workfront Fusion에 [!DNL ServiceNow] 연결
+## [!DNL ServiceNow]를 Workfront Fusion에 연결
 
-[!DNL ServiceNow] 모듈에 대한 연결을 만들려면:
+사용자의 [!DNL ServiceNow] 모듈에 연결하려면:
 
-1. 첫 번째 **[!UICONTROL 모듈 구성을 시작할 때]**&#x200B;연결[!UICONTROL &#x200B; 상자 옆에 있는 &#x200B;]추가[!DNL ServiceNow]를 클릭합니다.
+1. 첫 번째 [!DNL ServiceNow] 모듈 구성을 시작할 때 [!UICONTROL 연결] 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 1. 다음을 입력하십시오.
 
    <table style="table-layout:auto"> 
@@ -100,35 +100,35 @@ ServiceNow 커넥터는 다음을 사용합니다.
       <td>프로덕션 환경에 연결할지 아니면 비프로덕션 환경에 연결할지 선택합니다.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Password]</p> </td> 
-      <td>서비스 계정에 연결할지 또는 개인 계정에 연결할지 선택합니다. </td> 
+      <td role="rowheader"> <p>[!UICONTROL 암호]</p> </td> 
+      <td>서비스 계정에 연결할지 개인 계정에 연결할지 선택합니다. </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL 사용자 이름]</p> </td> 
       <td>[!DNL ServiceNow] 사용자 이름을 입력하십시오.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Password]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL 암호]</p> </td> 
       <td>ServiceNow 암호를 입력합니다.</td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL 인스턴스]</p> </td> 
-      <td> <p>[!DNL ServiceNow] 없이 <code>https://</code> 계정의 주소를 입력하십시오(일반적으로 <code>&lt;company>.service-now.com</code>).</p> </td> 
+      <td> <p><code>https://</code> 없이 [!DNL ServiceNow] 계정의 주소를 입력하십시오(일반적으로 <code>&lt;company>.service-now.com</code>).</p> </td> 
      </tr> 
     </tbody> 
    </table>
 
-1. 연결을 저장하고 모듈로 돌아가려면 **계속**&#x200B;을 클릭하세요.
+1. 연결을 저장하고 모듈로 돌아가려면 **계속**&#x200B;을 클릭합니다.
 
    <!--Markdown placeholder-->
 
 ## [!UICONTROL ServiceNow] 모듈 및 해당 필드
 
-[!DNL ServiceNow] 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL ServiceNow] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!DNL ServiceNow] 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를 표시합니다. 이와 함께 앱 또는 서비스의 액세스 레벨과 같은 요인에 따라 추가적인 [!DNL ServiceNow] 필드가 표시될 수 있습니다. 모듈의 굵은 글씨 제목은 필수 필드를 나타냅니다.
 
-필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
+필드 또는 함수 위에 있는 맵 버튼을 보면 해당 필드의 변수와 함수를 설정하는 데 사용할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
-![맵 전환](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![토글 매핑](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 >[!NOTE]
 >
@@ -147,7 +147,7 @@ ServiceNow 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>ServiceNow 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL ServiceNow] 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -167,7 +167,7 @@ ServiceNow 커넥터는 다음을 사용합니다.
    <td>모듈에서 출력할 필드를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Filter]</td> 
+   <td role="rowheader">[!UICONTROL 필터]</td> 
    <td>새 레코드와 업데이트된 레코드 중 어느 것을 보려는지 선택합니다.</td> 
   </tr> 
   <tr> 
@@ -180,7 +180,7 @@ ServiceNow 커넥터는 다음을 사용합니다.
 ### 액션
 
 * [[!UICONTROL 레코드 만들기]](#create-a-record)
-* [[!UICONTROL 사용자 지정 API 호출]](#custom-api-call)
+* [[!UICONTROL 사용자 정의 API 호출]](#custom-api-call)
 * [[!UICONTROL 사용자 비활성화]](#deactivate-a-user)
 * [[!UICONTROL 레코드 삭제]](#delete-a-record)
 * [[!UICONTROL 첨부 파일 다운로드]](#download-an-attachment)
@@ -199,7 +199,7 @@ ServiceNow 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>ServiceNow 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL ServiceNow] 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -213,9 +213,9 @@ ServiceNow 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL 사용자 지정 API 호출]
+#### [!UICONTROL 사용자 정의 API 호출]
 
-이 작업 모듈을 사용하면 [!DNL ServiceNow] API에 대해 사용자 지정 인증된 호출을 수행할 수 있습니다. 이렇게 하면 다른 [!DNL ServiceNow] 모듈에서 수행할 수 없는 데이터 흐름 자동화를 만들 수 있습니다.
+이 액션 모듈을 사용하면 [!DNL ServiceNow] API에 인증된 사용자 정의 호출을 수행할 수 있습니다. 이렇게 하면 다른 [!DNL ServiceNow] 모듈로는 수행할 수 없는 데이터 흐름 자동화를 만들 수 있습니다.
 
 이 모듈을 구성할 때 다음 필드가 표시됩니다.
 
@@ -224,28 +224,28 @@ ServiceNow 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>ServiceNow 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL ServiceNow] 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 상대 URL]</td> 
-   <td> <code>https://&ltinstance_url&gt/api/</code>과(와) 관련된 경로를 입력하십시오. </td> 
+   <td> <code>https://&ltinstance_url&gt/api/</code>과 관련된 경로를 입력합니다. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 메서드]</td> 
    <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> </td> 
+   <td role="rowheader">[!UICONTROL 헤더]</td> 
+   <td> <p>표준 JSON 오브젝트 형태로 요청의 헤더를 추가합니다.</p> <p>예: <code>{"Content-type":"application/json"}</code></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 쿼리 문자열]</td> 
-   <td> <p>표준 JSON 개체 형식으로 API 호출에 대한 쿼리를 추가합니다.</p> <p>For example: <code>{"name":"something-urgent"}</code></p> </td> 
+   <td> <p>표준 JSON 오브젝트 형식으로 API 호출에 대한 쿼리를 추가합니다.</p> <p>예: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>표준 JSON 개체의 형태로 API 호출에 대한 본문 콘텐츠를 추가합니다.</p> <p>참고:  <p>JSON에서 <code>if</code>과(와) 같은 조건문을 사용할 때 따옴표를 조건문 외부에 넣으십시오.</p> 
+   <td role="rowheader">[!UICONTROL 본문]</td> 
+   <td> <p>표준 JSON 오브젝트 형식으로 API 호출에 대한 본문 콘텐츠를 추가합니다.</p> <p>메모:  <p>JSON에서 <code>if</code>와 같은 조건문을 사용할 때는 따옴표를 조건문 외부에 배치해야 합니다.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -262,7 +262,7 @@ ServiceNow 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>ServiceNow 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL ServiceNow] 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -283,7 +283,7 @@ ServiceNow 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>ServiceNow 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL ServiceNow] 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -306,7 +306,7 @@ ServiceNow 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>ServiceNow 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL ServiceNow] 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -320,7 +320,7 @@ ServiceNow 커넥터는 다음을 사용합니다.
 
 이 작업 모듈은 시스템 ID를 사용하여 [!DNL ServiceNow] 레코드를 읽습니다.
 
-모듈은 연결에서 액세스하는 모든 사용자 지정 필드 및 값과 함께 레코드와 연결된 모든 표준 필드를 반환합니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
+모듈은 연결에서 액세스하는 모든 사용자 정의 필드 및 값과 함께 레코드와 연결된 모든 표준 필드를 반환합니다. 시나리오의 후속 모듈에서 이 정보를 매핑할 수 있습니다.
 
 이 모듈을 구성할 때 다음 필드가 표시됩니다.
 
@@ -329,7 +329,7 @@ ServiceNow 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>ServiceNow 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL ServiceNow] 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -366,7 +366,7 @@ ServiceNow 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>ServiceNow 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL ServiceNow] 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -393,7 +393,7 @@ ServiceNow 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>ServiceNow 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL ServiceNow] 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -405,7 +405,7 @@ ServiceNow 커넥터는 다음을 사용합니다.
    <td>첨부 파일을 업로드할 항목의 고유한 [!DNL ServiceNow] ID를 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source 파일]</td> 
+   <td role="rowheader">[!UICONTROL 소스 파일]</td> 
    <td> <p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 이름과 데이터를 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
@@ -417,14 +417,14 @@ ServiceNow 커넥터는 다음을 사용합니다.
 
 이 모듈은 사용자가 선택한 기준을 사용하여 레코드를 검색합니다.
 
-모듈은 연결에서 액세스하는 모든 사용자 지정 필드 및 값과 함께 레코드와 연결된 모든 표준 필드를 반환합니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
+모듈은 연결에서 액세스하는 모든 사용자 정의 필드 및 값과 함께 레코드와 연결된 모든 표준 필드를 반환합니다. 시나리오의 후속 모듈에서 이 정보를 매핑할 수 있습니다.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>ServiceNow 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]에 [!DNL ServiceNow] 연결</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 

@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion 시나리오에서는 Slack을 사용하는 
 author: Becky
 feature: Workfront Fusion
 exl-id: c9c68a4c-f592-42d1-b15f-a525b9aa3944
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+source-git-commit: 585574f60758a27eb695f31c1193ed86ab700d38
 workflow-type: tm+mt
-source-wordcount: '2039'
+source-wordcount: '2071'
 ht-degree: 22%
 
 ---
@@ -81,7 +81,7 @@ Slack 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">기본 URL</td> 
-   <td>{{ifempty(parameters.domain, 'https://slack.com/api/')}}</td> 
+   <td><pre><code>&#123;&#123;ifempty(parameters.domain, 'https://slack.com/api/')&#125;&#125;</code></pre></td> 
   </tr>
   <tr> 
    <td role="rowheader">API 태그</td> 
@@ -134,7 +134,7 @@ Slack 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 텍스트]</p> </td> 
-   <td> <p>만들려는 메시지의 텍스트 콘텐츠를 입력합니다.</p> <p>참고: 텍스트 서식에 대한 자세한 내용은 <a href="https://api.slack.com/reference/surfaces/formatting"> 설명서에서 </a>앱 표면에 대한 텍스트 서식 지정[!DNL Slack]을 참조하십시오.</p> </td> 
+   <td> <p>만들려는 메시지의 텍스트 콘텐츠를 입력합니다.</p> <p>참고: 텍스트 서식에 대한 자세한 내용은 [!DNL Slack] 설명서에서 <a href="https://api.slack.com/reference/surfaces/formatting">앱 표면에 대한 텍스트 서식 지정</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL As User]</td> 
@@ -166,11 +166,11 @@ Slack 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 링크 이름]</p> </td> 
-   <td> <p>이름 및 채널에서 <code>@username</code> 또는 <code>#channel</code> 형식을 사용할 수 있도록 하려면 이 옵션을 활성화하십시오. </p> <p>자세한 내용은 <a href="https://api.slack.com/docs/formatting"> 설명서에서 </a>앱 표면에 대한 텍스트 서식 지정[!DNL Slack]을 참조하십시오.</p> </td> 
+   <td> <p>이름 및 채널에서 <code>@username</code> 또는 <code>#channel</code> 형식을 사용할 수 있도록 하려면 이 옵션을 활성화하십시오. </p> <p>자세한 내용은 [!DNL Slack] 설명서에서 <a href="https://api.slack.com/docs/formatting">앱 표면에 대한 텍스트 서식 지정</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 구문 분석 메시지 텍스트]</p> </td> 
-   <td> <p>자동 구문 분석을 허용하려면 이 옵션을 활성화합니다. </p> <p>자세한 내용은 <a href="https://api.slack.com/docs/formatting"> 설명서에서 </a>앱 표면에 대한 텍스트 서식 지정[!DNL Slack]을 참조하십시오.</p> <p>참고: 원래 메시지에서 [!UICONTROL 링크 이름] 또는 [!UICONTROL 구문 분석 메시지 텍스트] 옵션을 사용한 경우 [!UICONTROL 메시지 업데이트] 모듈도 실행할 때 이 옵션을 지정해야 합니다.</p> </td> 
+   <td> <p>자동 구문 분석을 허용하려면 이 옵션을 활성화합니다. </p> <p>자세한 내용은 [!DNL Slack] 설명서에서 <a href="https://api.slack.com/docs/formatting">앱 표면에 대한 텍스트 서식 지정</a>을 참조하십시오.</p> <p>참고: 원래 메시지에서 [!UICONTROL 링크 이름] 또는 [!UICONTROL 구문 분석 메시지 텍스트] 옵션을 사용한 경우 [!UICONTROL 메시지 업데이트] 모듈도 실행할 때 이 옵션을 지정해야 합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Use Markdown]</p> </td> 
@@ -178,11 +178,11 @@ Slack 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 주로 텍스트 기반 콘텐츠 펼치기]</p> </td> 
-   <td> <p>주로 텍스트 기반 콘텐츠를 펼칠 수 있도록 하려면 이 옵션을 활성화합니다. </p> <p>[!DNL Slack]에서 연결 해제에 대한 자세한 내용은 <a href="https://api.slack.com/reference/messaging/link-unfurling"> 설명서에서 </a>메시지의 연결 해제[!DNL Slack]를 참조하십시오.</p> </td> 
+   <td> <p>주로 텍스트 기반 콘텐츠를 펼칠 수 있도록 하려면 이 옵션을 활성화합니다. </p> <p>[!DNL Slack]에서 연결 해제에 대한 자세한 내용은 [!DNL Slack] 설명서에서 <a href="https://api.slack.com/reference/messaging/link-unfurling">메시지의 연결 해제</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 미디어 콘텐츠 펼치기]</p> </td> 
-   <td> <p>미디어 콘텐츠 풀기를 허용하려면 이 옵션을 활성화합니다. </p> <p>[!DNL Slack]에서 연결 해제에 대한 자세한 내용은 <a href="https://api.slack.com/reference/messaging/link-unfurling"> 설명서에서 </a>메시지의 연결 해제[!DNL Slack]를 참조하십시오.</p> </td> 
+   <td> <p>미디어 콘텐츠 풀기를 허용하려면 이 옵션을 활성화합니다. </p> <p>[!DNL Slack]에서 연결 해제에 대한 자세한 내용은 [!DNL Slack] 설명서에서 <a href="https://api.slack.com/reference/messaging/link-unfurling">메시지의 연결 해제</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 사용자 이름]</td> 
@@ -297,7 +297,7 @@ Slack 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 텍스트]</p> </td> 
-   <td> <p>업데이트하려는 메시지의 새 텍스트 콘텐츠를 입력합니다.</p> <p>자세한 내용은 <a href="https://api.slack.com/docs/formatting"> 설명서에서 </a>앱 표면에 대한 텍스트 서식 지정[!DNL Slack]을 참조하십시오.</p> </td> 
+   <td> <p>업데이트하려는 메시지의 새 텍스트 콘텐츠를 입력합니다.</p> <p>자세한 내용은 [!DNL Slack] 설명서에서 <a href="https://api.slack.com/docs/formatting">앱 표면에 대한 텍스트 서식 지정</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL As User]</td> 
@@ -309,11 +309,11 @@ Slack 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 링크 이름]</p> </td> 
-   <td> <p>이름 및 채널에서 <code>@username</code> 또는 <code>#channel</code> 형식을 사용할 수 있도록 하려면 이 옵션을 활성화하십시오. </p> <p>자세한 내용은 <a href="https://api.slack.com/docs/formatting"> 설명서에서 </a>앱 표면에 대한 텍스트 서식 지정[!DNL Slack]을 참조하십시오.</p> </td> 
+   <td> <p>이름 및 채널에서 <code>@username</code> 또는 <code>#channel</code> 형식을 사용할 수 있도록 하려면 이 옵션을 활성화하십시오. </p> <p>자세한 내용은 [!DNL Slack] 설명서에서 <a href="https://api.slack.com/docs/formatting">앱 표면에 대한 텍스트 서식 지정</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 구문 분석 메시지 텍스트]</p> </td> 
-   <td> <p>자동 구문 분석을 허용하려면 이 옵션을 활성화합니다. </p> <p> 자세한 내용은 <a href="https://api.slack.com/docs/formatting"> 설명서에서 </a>앱 표면에 대한 텍스트 서식 지정[!DNL Slack]을 참조하십시오.</p> <p>참고: 원래 메시지에서 [!UICONTROL 링크 이름] 또는 [!UICONTROL 구문 분석 메시지 텍스트] 옵션을 사용한 경우 메시지 업데이트 모듈을 실행할 때도 이 옵션을 지정해야 합니다.</p> </td> 
+   <td> <p>자동 구문 분석을 허용하려면 이 옵션을 활성화합니다. </p> <p> 자세한 내용은 [!DNL Slack] 설명서에서 <a href="https://api.slack.com/docs/formatting">앱 표면에 대한 텍스트 서식 지정</a>을 참조하십시오.</p> <p>참고: 원래 메시지에서 [!UICONTROL 링크 이름] 또는 [!UICONTROL 구문 분석 메시지 텍스트] 옵션을 사용한 경우 메시지 업데이트 모듈을 실행할 때도 이 옵션을 지정해야 합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -462,7 +462,7 @@ Slack 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
-   <td><code>https://slack.com/api/</code>와 관련된 경로를 입력합니다. 예: <code>/users/identity</code>.</td> 
+   <td><code>https://slack.com/api/</code>과 관련된 경로를 입력합니다. 예: <code>/users/identity</code>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 메서드]</td> 
@@ -502,4 +502,4 @@ Slack 커넥터는 다음을 사용합니다.
 * **메신저**: [!UICONTROL 인스턴트 메시지]
 * **개인 채널**: 이전 [!UICONTROL 그룹]
 * **다이렉트 메시지**: 이전 [!UICONTROL IM]
-* **채널**: API 설명서의 [!UICONTROL 대화], [!UICONTROL &#x200B; 앱의 &#x200B;]채널[!DNL Slack].
+* **채널**: API 설명서의 [!UICONTROL 대화], [!DNL Slack] 앱의 [!UICONTROL 채널].

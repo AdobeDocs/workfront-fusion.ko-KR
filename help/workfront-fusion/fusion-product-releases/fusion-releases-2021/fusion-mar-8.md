@@ -8,9 +8,8 @@ description: 이 페이지에서는 2021년 3월 8일 화요일이 있는 주에
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: c543ac10-840f-497a-a511-9afefc417a3b
-source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
+source-git-commit: a48a7f5f6577782dbc043e322a3c769781ffd63b
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 60%

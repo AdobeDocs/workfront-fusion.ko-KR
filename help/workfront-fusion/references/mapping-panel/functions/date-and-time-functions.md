@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion 매핑 패널에서 다음 날짜 및 시간
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: 42bf7b0ac6eb414312573b32b93677a5c9650fa8
+source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
 workflow-type: tm+mt
-source-wordcount: '1879'
+source-wordcount: '2253'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예:**
+**예**
 
 * `addSeconds(2016-12-08T15:55:57.536Z;2)`
 
@@ -49,7 +49,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예:**
+**예**
 
 * `addMinutes(2016-12-08T15:55:57.536Z;2)`
 
@@ -67,7 +67,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예:**
+**예**
 
 * `addHours(2016-12-08T15:55:57.536Z; 2)`
 
@@ -85,7 +85,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예:**
+**예**
 
 * `addDays(2016-12-08T15:55:57.536Z;2)`
 
@@ -97,13 +97,32 @@ ht-degree: 2%
 
 >[!ENDSHADEBOX]
 
+### [!UICONTROL addWeekDays(date; number)]
+
+[!BADGE 새로 만들기!]{type=Informative}
+
+날짜에 평일 수를 추가합니다. 정수 값만 추가됩니다(분수 값은 내림됨).
+
+>[!BEGINSHADEBOX]
+
+**예**
+
+`addWeekDays("2016-12-08T15:55:57.536Z"; 2)`
+
+2016-12-12T15 반환:55:57.536Z
+`addWeekDays("2016-12-08T15:55:57.536Z"; -2)`
+2016-12-06T15:55:57.536Z 반환
+
+>[!ENDSHADEBOX]
+
+
 ### [!UICONTROL addMonths(date; number)]
 
 날짜에 지정된 개월 수를 추가한 결과로 새 날짜를 반환합니다. 월을 빼려면 음수를 입력합니다.
 
 >[!BEGINSHADEBOX]
 
-**예:**
+**예**
 
 * `addMonths(2016-08-08T15:55:57.536Z;2)`
 
@@ -121,7 +140,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예:**
+**예**
 
 * `addYears(2016-08-08T15:55:57.536Z;2)`
 
@@ -133,17 +152,298 @@ ht-degree: 2%
 
 >[!ENDSHADEBOX]
 
+### [!UICONTROL dayOfMonth(date)]
+
+[!BADGE 새로 만들기!]{type=Informative}
+
+1과 31 사이의 숫자로 날짜 날짜를 반환합니다.
+
+>[!BEGINSHADEBOX]
+
+**예**
+
+* `dayOfMonth("2016-12-28T16:03:06.372Z")`
+
+  반환 28
+* `dayOfMonth("2015-01-05T11:36:39.138Z")`
+
+  5 반환
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL dayOfWeek(date)]
+
+[!BADGE 새로 만들기!]{type=Informative}
+
+1(일요일)과 7(토요일) 사이의 숫자로 날짜의 요일을 반환합니다.
+
+>[!BEGINSHADEBOX]
+
+**예**
+
+* `dayOfWeek("2016-12-28T16:03:06.372Z")`
+
+  반환 4
+* `dayOfWeek("2016-12-25T16:03:06.372Z")`
+
+  1 반환
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL daysInMonth(date)]
+
+[!BADGE 새로 만들기!]{type=Informative}
+
+주어진 일자의 월간 총 일 수를 반환합니다.
+
+>[!BEGINSHADEBOX]
+
+**예**
+
+* `daysInMonth("2016-01-01T00:00:00.000Z")`
+
+  반환 31
+* `daysInMonth("2016-02-01T00:00:00.000Z")`
+
+  반환 29
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL daysInSplitWeek(date)]
+
+[!BADGE 새로 만들기!]{type=Informative}
+
+일자와 주의 끝 또는 월의 끝 중 먼저 도래하는 일자 사이의 총 평일 수를 반환합니다.
+
+>[!BEGINSHADEBOX]
+
+**예**
+
+* `daysInSplitWeek("2016-12-28T16:03:06.372Z")`
+
+  반환 3
+* `daysInSplitWeek("2016-01-25T16:03:06.372Z")`
+
+  5 반환
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL daysInYear(date)]
+
+[!BADGE 새로 만들기!]{type=Informative}
+
+주어진 일자가 있는 연도의 총 일 수(일반 연도의 경우 365, 윤년의 경우 366)를 반환합니다.
+
+>[!BEGINSHADEBOX]
+
+**예**
+
+* `daysInYear("2016-06-01T00:00:00.000Z")`
+
+  반환 366
+* `daysInYear("2015-06-01T00:00:00.000Z")`
+
+  반환 365
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL dateMax(date1; date2; ...)]
+
+[!BADGE 새로 만들기!]{type=Informative}
+
+목록에서 가장 최근 날짜를 반환합니다.
+
+>[!BEGINSHADEBOX]
+
+**예**
+
+* `dateMax("2016-06-01T00:00:00.000Z"; "2016-12-01T00:00:00.000Z") `
+
+  2016-12-01T00:00:00.000Z 반환
+
+* `dateMax("2015-01-01T00:00:00.000Z"; "2016-06-15T00:00:00.000Z"; "2014-03-20T00:00:00.000Z")`
+
+  2016-06-15T00:00:00.000Z 반환
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL dateMin(date1; date2; ...)]
+
+[!BADGE 새로 만들기!]{type=Informative}
+
+목록에서 가장 빠른 날짜를 반환합니다.
+
+>[!BEGINSHADEBOX]
+
+**예**
+
+* `dateMin("2016-06-01T00:00:00.000Z"; "2016-12-01T00:00:00.000Z")`
+
+  2016-06-01T00:00:00.000Z 반환
+
+* `dateMin("2015-01-01T00:00:00.000Z"; "2016-06-15T00:00:00.000Z"; "2014-03-20T00:00:00.000Z") `
+
+  2014-03-20T00:00:00.000Z 반환
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL 시간(날짜)]
+
+[!BADGE 새로 만들기!]{type=Informative}
+
+날짜의 시간을 0에서 23 사이의 숫자로 반환합니다.
+
+>[!BEGINSHADEBOX]
+
+**예**
+
+* `hour("2016-12-08T15:55:57.536Z")`
+
+  15 반환
+* `hour("2016-12-08T00:00:00.000Z")`
+
+  0 반환
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL 분(날짜)]
+
+[!BADGE 새로 만들기!]{type=Informative}
+
+날짜의 분을 0에서 59 사이의 숫자로 반환합니다.
+
+>[!BEGINSHADEBOX]
+
+**예**
+
+* `minute("2016-12-08T15:55:57.536Z")`
+
+  반환 55
+* `minute("2016-12-08T15:00:00.000Z")`
+
+  0 반환
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL 개월(날짜)]
+
+[!BADGE 새로 만들기!]{type=Informative}
+
+날짜의 월을 1과 12 사이의 숫자로 반환합니다.
+
+>[!BEGINSHADEBOX]
+
+**예**
+
+* `month("2016-12-08T15:55:57.536Z")`
+
+  12 반환
+* `month("2016-01-08T15:55:57.536Z")`
+
+  1 반환
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL 초(날짜)]
+
+[!BADGE 새로 만들기!]{type=Informative}
+
+날짜의 초를 0과 59 사이의 숫자로 반환합니다.
+
+>[!BEGINSHADEBOX]
+
+**예**
+
+* `second("2016-12-08T15:55:57.536Z")`
+
+  57 반환
+* `second("2016-12-08T15:55:00.000Z")`
+
+  0 반환
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL weekDayDiff(date2; date1)]
+
+[!BADGE 새로 만들기!]{type=Informative}
+
+두 날짜 사이의 평일 수를 반환하며, 해당 날짜의 타임스탬프를 처리합니다. 예를 들어 시작 시간이 오후 3시인 경우 시작일은 전일로 계산되지 않습니다.
+
+>[!BEGINSHADEBOX]
+
+**예**
+
+* `weekDayDiff("2016-12-07T12:00:00.000Z"; "2016-12-05T00:00:00.000Z")`
+
+  2.5 반환
+* `weekDayDiff("2016-12-09T15:00:00.000Z"; "2016-12-05T15:00:00.000Z")`
+
+  반환 4
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL workMinutesDiff(date1; date2)]
+
+[!BADGE 새로 만들기!]{type=Informative}
+
+표준 월요일-금요일 오전 9시-오후 5시 일정을 기준으로 두 날짜 사이의 예약된 작업 시간(분)을 반환합니다.
+
+>[!BEGINSHADEBOX]
+
+**예**
+
+* `workMinutesDiff("2016-12-05T09:00:00.000Z"; "2016-12-05T17:00:00.000Z")`
+
+  반환 480
+* `workMinutesDiff("2016-12-05T09:00:00.000Z"; "2016-12-06T17:00:00.000Z")`
+
+  960 반환
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL 년(날짜)]
+
+[!BADGE 새로 만들기!]{type=Informative}
+
+날짜의 연도를 4자리 숫자로 반환합니다.
+
+>[!BEGINSHADEBOX]
+
+**예**
+
+* `year("2016-12-08T15:55:57.536Z")`
+
+  2016년 반환
+* `year("2000-01-01T00:00:00.000Z")`
+
+  2000 반환
+
+>[!ENDSHADEBOX]
+
 ### [!UICONTROL setSecond(date; number)]
 
 이 함수는 매개 변수에 지정된 초 수를 사용하는 새 날짜를 반환합니다.
 
 0에서 59 사이의 숫자를 지정하십시오. 숫자가 해당 범위를 벗어나면 함수는 이전 분 (음수) 또는 이후 분 (양수)에서 1초를 반환합니다.
 
-범위 밖의 숫자를 지정해야 하는 경우 [!UICONTROL addSeconds(날짜; 숫자)] 섹션에 설명된 대로 [&#x200B; addSeconds](#addseconds-date-number)을 사용하는 것이 좋습니다.
+범위 밖의 숫자를 지정해야 하는 경우 [addSeconds(날짜; 숫자)](#addseconds-date-number) 섹션에 설명된 대로 [!UICONTROL &#x200B; addSeconds]을 사용하는 것이 좋습니다.
 
 >[!BEGINSHADEBOX]
 
-**예:**
+**예**
 
 * `setSecond(2015-10-07T11:36:39.138Z;10)`
 
@@ -165,7 +465,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예:**
+**예**
 
 * `setMinute(2015-10-07T11:36:39.138Z;10)`
 
@@ -187,7 +487,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예:**
+**예**
 
 * `setHour(2015-08-07T11:36:39.138Z;6)`
 
@@ -209,7 +509,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예:**
+**예**
 
 * `setDay(2018-06-27T11:36:39.138Z;Monday)`
 
@@ -233,7 +533,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예:**
+**예**
 
 * `setDate(2015-08-07T11:36:39.138Z;5)`
 
@@ -253,7 +553,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예:**
+**예**
 
 * `setMonth(2015-08-07T11:36:39.138Z;5)`
 
@@ -285,7 +585,7 @@ ht-degree: 2%
 
 ### [!UICONTROL formatDate(date; format; [timezone])]
 
-`12-10-2021 20:30`과(와) 같이 텍스트 값으로 서식을 지정하려는 Date 값(예: `Dec 10, 2021 8:30 PM`)이 있는 경우 이 함수를 사용합니다.
+`Dec 10, 2021 8:30 PM`과(와) 같이 텍스트 값으로 서식을 지정하려는 Date 값(예: `12-10-2021 20:30`)이 있는 경우 이 함수를 사용합니다.
 
 이 기능은 예를 들어 동일한 시나리오에서 한 앱 또는 웹 서비스의 날짜 형식을 연결된 앱 또는 웹 서비스의 날짜 형식으로 변경해야 하는 경우 유용합니다.
 
@@ -439,7 +739,7 @@ Date2는 Date1에서 빼집니다.
 
 >[!BEGINSHADEBOX]
 
-**예:**
+**예**
 
 * `dateDifference(2021-05-11T18:10:00.000Z;2021-05-11T18:00:00.000Z)`
 
@@ -464,6 +764,7 @@ Date2는 Date1에서 빼집니다.
 월의 n번째 요일(예: 첫 번째 화요일, 세 번째 금요일 등)에 해당하는 날짜를 계산해야 하는 경우 다음 공식을 사용할 수 있습니다.
 
 ![n일 계산](assets/date-time-functions-calc-nth-day-350x31.png)
+
 
 ```
 {{addDays(setDate(1.date; 1); 1.n * 7 - formatDate(addDays(setDate(1.date; 1); "-" + 1.dow); "E"))}}
@@ -523,6 +824,7 @@ Date2는 Date1에서 빼집니다.
 
 ![날짜 사이의 일 수 계산](assets/calculate-days-between-dates-350x68.png)
 
+
 ```
 {{round((2.value - 1.value) / 1000 / 60 / 60 / 24)}}
 ```
@@ -543,6 +845,7 @@ Date2는 Date1에서 빼집니다.
 
 ![이전 달의 마지막 날](assets/last-day-prev-month.png)
 
+
 ```
 {{addDays(setDate(now; 1); -1)}}
 ```
@@ -554,6 +857,7 @@ Date2는 Date1에서 빼집니다.
 이 수식은 이전 달의 마지막 밀리초를 계산하는 방법을 보여 줍니다.
 
 ![이전 달의 마지막 밀리초](assets/last-millisecond-prev-month-350x45.png)
+
 
 ```
 {{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD"; "UTC") - 1; "x")}}

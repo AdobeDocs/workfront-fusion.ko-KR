@@ -8,9 +8,8 @@ description: 이 페이지에서는 2022년 5월 16일 화요일이 있는 주�
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: f81fdabc-a51a-4a29-b624-1241eba58b38
-source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
+source-git-commit: a48a7f5f6577782dbc043e322a3c769781ffd63b
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 51%

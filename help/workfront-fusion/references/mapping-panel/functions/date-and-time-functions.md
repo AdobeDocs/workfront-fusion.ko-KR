@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion 매핑 패널에서 다음 날짜 및 시간
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
+source-git-commit: fc7f98c128f73a60d75750c6bd57ec8ddc31954c
 workflow-type: tm+mt
-source-wordcount: '2253'
+source-wordcount: '2375'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예**
+**예:**
 
 * `addSeconds(2016-12-08T15:55:57.536Z;2)`
 
@@ -49,7 +49,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예**
+**예:**
 
 * `addMinutes(2016-12-08T15:55:57.536Z;2)`
 
@@ -67,7 +67,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예**
+**예:**
 
 * `addHours(2016-12-08T15:55:57.536Z; 2)`
 
@@ -85,7 +85,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예**
+**예:**
 
 * `addDays(2016-12-08T15:55:57.536Z;2)`
 
@@ -105,7 +105,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예**
+**예:**
 
 `addWeekDays("2016-12-08T15:55:57.536Z"; 2)`
 
@@ -122,7 +122,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예**
+**예:**
 
 * `addMonths(2016-08-08T15:55:57.536Z;2)`
 
@@ -140,7 +140,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예**
+**예:**
 
 * `addYears(2016-08-08T15:55:57.536Z;2)`
 
@@ -160,7 +160,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예**
+**예:**
 
 * `dayOfMonth("2016-12-28T16:03:06.372Z")`
 
@@ -180,7 +180,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예**
+**예:**
 
 * `dayOfWeek("2016-12-28T16:03:06.372Z")`
 
@@ -200,7 +200,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예**
+**예:**
 
 * `daysInMonth("2016-01-01T00:00:00.000Z")`
 
@@ -220,7 +220,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예**
+**예:**
 
 * `daysInSplitWeek("2016-12-28T16:03:06.372Z")`
 
@@ -240,7 +240,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예**
+**예:**
 
 * `daysInYear("2016-06-01T00:00:00.000Z")`
 
@@ -260,7 +260,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예**
+**예:**
 
 * `dateMax("2016-06-01T00:00:00.000Z"; "2016-12-01T00:00:00.000Z") `
 
@@ -281,7 +281,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예**
+**예:**
 
 * `dateMin("2016-06-01T00:00:00.000Z"; "2016-12-01T00:00:00.000Z")`
 
@@ -294,6 +294,31 @@ ht-degree: 2%
 >[!ENDSHADEBOX]
 
 
+### [!UICONTROL endOfMonth(date)]
+
+[!BADGE 새로 만들기!]{type=Informative}
+
+지정된 날짜의 월의 마지막 순간(마지막 날의 마지막 밀리초)을 반환합니다(23:59:59.999). 는 윤년을 포함하여 그 달의 일 수를 자동으로 처리합니다.
+
+>[!BEGINSHADEBOX]
+
+**예:**
+
+* `endOfMonth("2016-06-15T12:30:00.000Z")`
+
+  2016-06-30T23 반환:59:59.999Z
+
+* `endOfMonth("2016-01-01T00:00:00.000Z")`
+
+  2016-01-31T23 반환:59:59.999Z
+
+* `endOfMonth("2016-02-01T00:00:00.000Z")`
+
+  2016-02-29T23 반환:59:59.999Z
+
+>[!ENDSHADEBOX]
+
+
 ### [!UICONTROL 시간(날짜)]
 
 [!BADGE 새로 만들기!]{type=Informative}
@@ -302,7 +327,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예**
+**예:**
 
 * `hour("2016-12-08T15:55:57.536Z")`
 
@@ -310,6 +335,35 @@ ht-degree: 2%
 * `hour("2016-12-08T00:00:00.000Z")`
 
   0 반환
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL isWeekend(date)]
+
+[!BADGE 새로 만들기!]{type=Informative}
+
+날짜가 토요일이나 일요일이면 `true`을(를) 반환하고, 다른 날에는 `false`을(를) 반환합니다. 결과는 시나리오가 구성한 시간대에서 결정됩니다.
+
+>[!BEGINSHADEBOX]
+
+**예:**
+
+* `isWeekend("2016-12-10T00:00:00.000Z")`
+
+  true 반환(토요일)
+
+* `isWeekend("2016-12-11T00:00:00.000Z")`
+
+  true 반환(일요일)
+
+* `isWeekend("2016-12-12T00:00:00.000Z")`
+
+  false 반환(월요일)
+
+* `isWeekend("2016-12-09T00:00:00.000Z")`
+
+  false 반환(금요일)
 
 >[!ENDSHADEBOX]
 
@@ -322,7 +376,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예**
+**예:**
 
 * `minute("2016-12-08T15:55:57.536Z")`
 
@@ -342,7 +396,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예**
+**예:**
 
 * `month("2016-12-08T15:55:57.536Z")`
 
@@ -362,7 +416,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예**
+**예:**
 
 * `second("2016-12-08T15:55:57.536Z")`
 
@@ -370,6 +424,27 @@ ht-degree: 2%
 * `second("2016-12-08T15:55:00.000Z")`
 
   0 반환
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL startOfMonth(date)]
+
+[!BADGE 새로 만들기!]{type=Informative}
+
+지정된 일자의 월의 첫 번째 순간을 반환합니다(첫 번째 날 자정)(00:00:00.000). 시간대를 인식하게 됩니다.
+
+>[!BEGINSHADEBOX]
+
+**예:**
+
+* `startOfMonth("2016-06-15T12:30:00.000Z")`
+
+  2016-06-01T00:00:00.000Z 반환
+
+* `startOfMonth("2024-02-14T08:00:00.000Z")`
+
+  2024-02-01T00:00:00.000Z 반환
 
 >[!ENDSHADEBOX]
 
@@ -382,7 +457,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예**
+**예:**
 
 * `weekDayDiff("2016-12-07T12:00:00.000Z"; "2016-12-05T00:00:00.000Z")`
 
@@ -402,7 +477,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예**
+**예:**
 
 * `workMinutesDiff("2016-12-05T09:00:00.000Z"; "2016-12-05T17:00:00.000Z")`
 
@@ -422,7 +497,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예**
+**예:**
 
 * `year("2016-12-08T15:55:57.536Z")`
 
@@ -439,11 +514,11 @@ ht-degree: 2%
 
 0에서 59 사이의 숫자를 지정하십시오. 숫자가 해당 범위를 벗어나면 함수는 이전 분 (음수) 또는 이후 분 (양수)에서 1초를 반환합니다.
 
-범위 밖의 숫자를 지정해야 하는 경우 [addSeconds(날짜; 숫자)](#addseconds-date-number) 섹션에 설명된 대로 [!UICONTROL &#x200B; addSeconds]을 사용하는 것이 좋습니다.
+범위 밖의 숫자를 지정해야 하는 경우 [addSeconds(날짜; 숫자)](#addseconds-date-number) 섹션에 설명된 대로 [!UICONTROL  addSeconds]을 사용하는 것이 좋습니다.
 
 >[!BEGINSHADEBOX]
 
-**예**
+**예:**
 
 * `setSecond(2015-10-07T11:36:39.138Z;10)`
 
@@ -465,7 +540,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예**
+**예:**
 
 * `setMinute(2015-10-07T11:36:39.138Z;10)`
 
@@ -487,7 +562,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예**
+**예:**
 
 * `setHour(2015-08-07T11:36:39.138Z;6)`
 
@@ -509,7 +584,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예**
+**예:**
 
 * `setDay(2018-06-27T11:36:39.138Z;Monday)`
 
@@ -533,7 +608,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예**
+**예:**
 
 * `setDate(2015-08-07T11:36:39.138Z;5)`
 
@@ -553,7 +628,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-**예**
+**예:**
 
 * `setMonth(2015-08-07T11:36:39.138Z;5)`
 
@@ -739,7 +814,7 @@ Date2는 Date1에서 빼집니다.
 
 >[!BEGINSHADEBOX]
 
-**예**
+**예:**
 
 * `dateDifference(2021-05-11T18:10:00.000Z;2021-05-11T18:00:00.000Z)`
 

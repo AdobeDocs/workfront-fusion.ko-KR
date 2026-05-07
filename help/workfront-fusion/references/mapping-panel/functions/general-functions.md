@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion 매핑 패널에서 다음과 같은 일반 
 author: Becky
 feature: Workfront Fusion
 exl-id: 6d4b8801-aa7e-47d4-80b3-aceac10c073f
-source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
+source-git-commit: 5709c9c0f8efd2c29ff7dbc0391a5b496a467c6a
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 7%
+source-wordcount: '478'
+ht-degree: 6%
 
 ---
 
@@ -20,6 +20,7 @@ ht-degree: 7%
 * `executionID`: 이 시나리오 실행의 ID
 * `triggerTimestamp`: 이 실행이 트리거된 시간
 * `scenarioID`: 현재 열려 있는 시나리오의 ID
+* `scenarioName`: 현재 실행 중인 시나리오의 이름
 * `operationsConsumed`: 시나리오의 해당 지점에서 사용된 작업 수.
 
 ## [!UICONTROL get(개체 또는 배열, 경로)]
@@ -28,7 +29,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-**예**
+**예:**
 
 * `get( array ; 1 + 1 )`
 * `get( array ; 5.raw_name )`
@@ -49,7 +50,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-**예**
+**예:**
 
 * `if( 1 = 1 ; A ; B )`
 
@@ -93,7 +94,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-**예**
+**예:**
 
 * `switch( B ; A ; 1 ; B ; 2 ; C ; 3 )`
 

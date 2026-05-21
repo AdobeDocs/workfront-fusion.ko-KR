@@ -4,10 +4,15 @@ description: 데이터베이스 또는 간단한 테이블과 유사한 Adobe Wo
 author: Becky
 feature: Workfront Fusion
 exl-id: 0338b822-b345-429e-850d-3978b692231d
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+TQID: https://experienceleague.adobe.com/xxcj73D3UZawazZrK92lAZTYaFTVj92o74zPRsnfFPA
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1139'
-ht-degree: 0%
+source-wordcount: 1139
+ht-degree: 30%
 
 ---
 
@@ -25,7 +30,7 @@ Workfront Fusion의 데이터 저장소에 대한 비디오 소개는 다음을 
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -42,13 +47,13 @@ Workfront Fusion의 데이터 저장소에 대한 비디오 소개는 다음을 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 +++
 
@@ -62,13 +67,13 @@ Workfront Fusion의 데이터 저장소에 대한 비디오 소개는 다음을 
 
 ## [!UICONTROL 데이터 저장소] 모듈 및 해당 필드
 
-데이터 저장소 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 이러한 필드와 함께 앱이나 서비스의 액세스 수준 등의 요소에 따라 추가 데이터 스토어 필드가 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+데이터 저장소 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 이러한 필드와 함께 앱이나 서비스의 액세스 수준 등의 요소에 따라 추가 데이터 스토어 필드가 표시될 수 있습니다. 모듈의 굵은 글씨 제목은 필수 필드를 나타냅니다.
 
 데이터 저장소를 사용하기 위해 연결을 만들 필요는 없습니다.
 
-필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
+필드 또는 함수 위에 있는 맵 버튼을 보면 해당 필드의 변수와 함수를 설정하는 데 사용할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
-![맵 전환](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![토글 매핑](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 
 * [레코드 추가/바꾸기](#addreplace-a-record)
@@ -86,7 +91,7 @@ Workfront Fusion의 데이터 저장소에 대한 비디오 소개는 다음을 
 
 데이터 저장소 및 레코드 키를 지정합니다.
 
-모듈은 연결에서 액세스하는 사용자 지정 필드 및 값과 함께 레코드 및 관련 필드의 ID를 반환합니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
+모듈은 연결에서 액세스하는 모든 사용자 정의 필드 및 값과 함께 레코드의 ID와 모든 연결된 필드를 반환합니다. 시나리오의 후속 모듈에서 이 정보를 매핑할 수 있습니다.
 
 >[!NOTE]
 >
@@ -163,7 +168,7 @@ Workfront Fusion의 데이터 저장소에 대한 비디오 소개는 다음을 
 
 데이터 저장소 및 레코드 키를 지정합니다.
 
-모듈은 연결에서 액세스하는 사용자 지정 필드 및 값과 함께 레코드 및 관련 필드의 ID를 반환합니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
+모듈은 연결에서 액세스하는 모든 사용자 정의 필드 및 값과 함께 레코드의 ID와 모든 연결된 필드를 반환합니다. 시나리오의 후속 모듈에서 이 정보를 매핑할 수 있습니다.
 
 <table style="table-layout:auto">
  <col> 
@@ -203,7 +208,7 @@ Workfront Fusion의 데이터 저장소에 대한 비디오 소개는 다음을 
 
 데이터 저장소 및 레코드 키를 지정합니다.
 
-모듈은 연결에서 액세스하는 사용자 지정 필드 및 값과 함께 레코드 및 관련 필드의 ID를 반환합니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
+모듈은 연결에서 액세스하는 모든 사용자 정의 필드 및 값과 함께 레코드의 ID와 모든 연결된 필드를 반환합니다. 시나리오의 후속 모듈에서 이 정보를 매핑할 수 있습니다.
 
 <table style="table-layout:auto">
  <col> 
@@ -220,11 +225,11 @@ Workfront Fusion의 데이터 저장소에 대한 비디오 소개는 다음을 
  </tbody> 
 </table>
 
-### [!UICONTROL 레코드 검색]
+### [!UICONTROL 검색 레코드]
 
 이 검색 모듈은 데이터 저장소의 개체에서 지정한 검색 쿼리와 일치하는 레코드를 찾습니다.
 
-이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
+시나리오의 후속 모듈에서 이 정보를 매핑할 수 있습니다.
 
 이 모듈을 구성할 때 다음 필드가 표시됩니다.
 
@@ -237,7 +242,7 @@ Workfront Fusion의 데이터 저장소에 대한 비디오 소개는 다음을 
    <td> <p> 검색할 데이터 저장소를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Filter]</p> </td> 
+   <td> <p>[!UICONTROL 필터]</p> </td> 
    <td> <p>검색 필터를 설정합니다.</p> </td> 
   </tr> 
   <tr> 
@@ -261,7 +266,7 @@ Workfront Fusion의 데이터 저장소에 대한 비디오 소개는 다음을 
 
 데이터 저장소 및 레코드 키를 지정합니다.
 
-모듈은 연결에서 액세스하는 사용자 지정 필드 및 값과 함께 레코드 및 관련 필드의 ID를 반환합니다. 이 정보는 시나리오의 후속 모듈에 매핑할 수 있습니다.
+모듈은 연결에서 액세스하는 모든 사용자 정의 필드 및 값과 함께 레코드의 ID와 모든 연결된 필드를 반환합니다. 시나리오의 후속 모듈에서 이 정보를 매핑할 수 있습니다.
 
 이 모듈을 구성할 때 다음 필드가 표시됩니다.
 

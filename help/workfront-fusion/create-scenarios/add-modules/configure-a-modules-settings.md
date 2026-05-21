@@ -4,9 +4,12 @@ description: 만드는 모든 모듈에 대한 설정을 구성해야 합니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: ae82d1fe-31e1-424a-9c1a-42dc1a20b749
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+TQID: https://experienceleague.adobe.com/yDENFBx9N8X2hxJOmKJYYj2yqCkasYLgunIJwFf-JY4
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: 301
 ht-degree: 32%
 
 ---
@@ -61,7 +64,7 @@ ht-degree: 32%
 
    구성할 모듈을 클릭합니다.
 
-1. 모듈에 필요한 경우 **[!UICONTROL 연결 개요]**&#x200B;에 설명된 대로 해당 서비스의 등록된 사용자 계정에 대해 [연결](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md)을 만듭니다.
+1. 모듈에 필요한 경우 [연결 개요](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md)에 설명된 대로 해당 서비스의 등록된 사용자 계정에 대해 **[!UICONTROL 연결]**&#x200B;을 만듭니다.
 1. 각 필드에 적절한 텍스트를 입력합니다.
 
    또는

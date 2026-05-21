@@ -1,25 +1,28 @@
 ---
 title: 팀 만들기
-description: Teams are smaller groups within the organization, and share Fusion resources such as scenarios, connections, and templates. You can create as many teams as you want.
+description: 팀은 조직 내의 작은 그룹이며 시나리오, 연결 및 템플릿과 같은 Fusion 리소스를 공유합니다. 원하는 만큼 팀을 만들 수 있습니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: 511b5a9c-0b7f-4003-ad86-4bbe630674e0
-source-git-commit: 0390bb875eb10278967d7d1c9cd61e5243e5f37e
+TQID: https://experienceleague.adobe.com/-7x51V-z5F-LIK2eALXr66tPkSI5fJ4iLyXH28aR9CY
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: 358
 ht-degree: 27%
 
 ---
 
 # 팀 만들기
 
-Teams are smaller groups within the organization, and share Fusion resources such as scenarios, connections, and templates. You can create as many teams as you want.
+팀은 조직 내의 작은 그룹이며 시나리오, 연결 및 템플릿과 같은 Fusion 리소스를 공유합니다. 원하는 만큼 팀을 만들 수 있습니다.
 
-Organizations may have as many teams as they need, and users may belong to one or more teams.
+조직에는 필요한 만큼 많은 팀이 있을 수 있으며 사용자는 하나 이상의 팀에 속할 수 있습니다.
 
 >[!NOTE]
 >
->Because teams share resources, it is sometimes useful for a team to have only one member. For example, users in training may create connections to their individual Workfront accounts. Any team members would also be able to connect to the individual Workfront account. In this case we recommend that the user be the only member of a training team.
+>팀은 리소스를 공유하므로 팀에 구성원이 한 명만 있는 것이 유용한 경우도 있습니다. 예를 들어 교육 중인 사용자는 개별 Workfront 계정에 대한 연결을 만들 수 있습니다. 모든 팀 멤버도 개별 Workfront 계정에 연결할 수 있습니다. 이 경우 사용자는 교육 팀의 유일한 멤버인 것이 좋습니다.
 
 ## 액세스 요구 사항
 
@@ -59,22 +62,22 @@ Organizations may have as many teams as they need, and users may belong to one o
 
 ## 팀 만들기
 
-Organization owners and administrators are able to create teams. Teams are created by adding a new team to an organization.
+조직 소유자 및 관리자는 팀을 만들 수 있습니다. 팀은 조직에 새 팀을 추가하여 만듭니다.
 
-To create a team:
+팀을 만들려면 다음 작업을 수행하십시오.
 
-1. In the left navigation panel, click **[!UICONTROL Org overview]**.
-1. Select the **[!UICONTROL Teams]** tab.
-1. Click **[!UICONTROL Add a new team]**.
-   ![Create a team](assets/create-new-team-button.png)
-1. Enter a name for the new team, and click **Add**.
+1. 왼쪽 탐색 패널에서 **[!UICONTROL 조직 개요]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 팀]** 탭을 선택합니다.
+1. **[!UICONTROL 새 팀 추가]**&#x200B;를 클릭합니다.
+   ![팀 만들기](assets/create-new-team-button.png)
+1. 새 팀의 이름을 입력하고 **추가**&#x200B;를 클릭합니다.
 
-## Edit a team
+## 팀 편집
 
-You can edit the name of a team.
+팀의 이름을 편집할 수 있습니다.
 
-1. In the left navigation panel, click **[!UICONTROL Org overview]**.
-1. Select the **[!UICONTROL Teams]** tab.
-1. Locate the team that you want to edit the name of, then click **Edit** in the line for that team.
-1. Enter a new name for the team, then click **Save**.
+1. 왼쪽 탐색 패널에서 **[!UICONTROL 조직 개요]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 팀]** 탭을 선택합니다.
+1. 이름을 편집할 팀을 찾은 다음 해당 팀의 행에서 **편집**&#x200B;을 클릭합니다.
+1. 팀의 새 이름을 입력한 다음 **저장**&#x200B;을 클릭합니다.
 

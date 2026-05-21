@@ -4,9 +4,16 @@ description: Adobe Workfront Fusion 시나리오에서는 Gmail을 사용하는 
 author: Becky
 feature: Workfront Fusion
 exl-id: 62269eca-c3cf-42fe-a866-fb66d2363b8d
-source-git-commit: 03f4556d7f903689c85cba966ad875973037a2ba
+TQID: https://experienceleague.adobe.com/N1oyeO-yNRUKW3u-BPw-yGOI1nCO8XT8pB4Rdg6zycA
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: 1871
 ht-degree: 25%
 
 ---
@@ -61,16 +68,16 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 ## [!DNL Gmail]를 Workfront Fusion에 연결 {#connect-gmail-to-workfront-fusion}
 
-* [&#x200B; [!DNL Gmail] 을(를) 사용하여  [!DNL Google Workspace]Workfront Fusion 연결](#connect-gmail-to-workfront-fusion-usinggoogle-workspace)
-* [&#x200B; [!DNL Gmail] or [!DNL gmail.com] .com을 사용하여  [!DNL googlemail]Workfront Fusion에 연결](#connect-gmail-to-workfront-fusion-using-gmailcom-or-googlemailcom)
+* [&#x200B; [!DNL Google Workspace]을(를) 사용하여  [!DNL Gmail] Workfront Fusion 연결](#connect-gmail-to-workfront-fusion-usinggoogle-workspace)
+* [&#x200B; [!DNL gmail.com] or [!DNL googlemail].com을 사용하여  [!DNL Gmail] Workfront Fusion에 연결](#connect-gmail-to-workfront-fusion-using-gmailcom-or-googlemailcom)
 
-### [!DNL Gmail]을(를) 사용하여 [!DNL &#x200B; Google Workspace]을(를) Workfront Fusion에 연결
+### [!DNL &#x200B; Google Workspace]을(를) 사용하여 [!DNL Gmail]을(를) Workfront Fusion에 연결
 
 [!DNL Google Workspace] 계정을 [!UICONTROL Workfront Fusion]에 연결하는 방법에 대한 지침은 [연결 만들기 - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)을 참조하십시오.
 
-### [!DNL Gmail] 또는 [!DNL gmail.com].com을 사용하여 [!DNL googlemail]을(를) Workfront Fusion에 연결
+### [!DNL gmail.com] 또는 [!DNL googlemail].com을 사용하여 [!DNL Gmail]을(를) Workfront Fusion에 연결
 
-[!DNL @gmail.com] 또는 [!DNL @googlemail.com] 사용자인 경우 [클라이언트 ID [!DNL Google Cloud Platform] 및 &#x200B;](https://console.developers.google.com/projectselector2/apis/dashboard?supportedpurview=project)클라이언트 암호[!UICONTROL 를 가져오려면 &#x200B;]the에 OAuth 클라이언트를 만들어야 합니다.
+[!DNL @gmail.com] 또는 [!DNL @googlemail.com] 사용자인 경우 [!UICONTROL 클라이언트 ID] 및 [!UICONTROL 클라이언트 암호]를 가져오려면 [the [!DNL Google Cloud Platform]](https://console.developers.google.com/projectselector2/apis/dashboard?supportedpurview=project)에 OAuth 클라이언트를 만들어야 합니다.
 
 OAuth 클라이언트를 만들고 [!UICONTROL 클라이언트 ID] 및 [!UICONTROL 클라이언트 암호]를 얻는 방법에 대한 단계별 지침은 [사용자 지정 OAuth 클라이언트를 사용하여 Adobe Workfront Fusion을 Google Services에 연결](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)을 참조하십시오.
 
@@ -113,7 +120,7 @@ OAuth 클라이언트를 만들고 [!UICONTROL 클라이언트 ID] 및 [!UICONTR
    <td> <p>전자 메일 시청에 사용할 필터 유형 선택</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL 단순 필터]</strong> </p> <p>[!UICONTROL Criteria], [!UICONTROL 발신자 이메일 주소], [!UICONTROL 제목] 및 [!UICONTROL 검색 구문] 필드를 채웁니다.</p> </li> 
-     <li> <p> <strong>[!UICONTROL Gmail 필터]</strong> </p> <p>[!UICONTROL 쿼리] 필드에 이메일을 필터링하는 데 사용할 쿼리를 입력합니다.</p> <p>[!DNL Gmail] 필터에 대한 자세한 내용은 <a href="https://support.google.com/mail/answer/7190"> 설명서에서 </a>검색 구체화[!DNL Gmail]를 참조하십시오.</p> </li> 
+     <li> <p> <strong>[!UICONTROL Gmail 필터]</strong> </p> <p>[!UICONTROL 쿼리] 필드에 이메일을 필터링하는 데 사용할 쿼리를 입력합니다.</p> <p>[!DNL Gmail] 필터에 대한 자세한 내용은 [!DNL Gmail] 설명서에서 <a href="https://support.google.com/mail/answer/7190">검색 구체화</a>를 참조하십시오.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 

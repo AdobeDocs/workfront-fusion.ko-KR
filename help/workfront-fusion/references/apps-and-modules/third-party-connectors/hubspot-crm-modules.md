@@ -4,10 +4,16 @@ description: Adobe Workfront Fusion HubSpot CRM 모듈을 사용하면 이벤트
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: 27ff7374e5e2d6765a1bcbfae9d10fb8a8f77521
+TQID: https://experienceleague.adobe.com/F-jLL4aF0bSUiFpDjJr-DVBU8ZnbqNHKiFzjEjmalxw
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '7314'
-ht-degree: 9%
+source-wordcount: 7326
+ht-degree: 10%
 
 ---
 
@@ -1618,7 +1624,7 @@ ID로 기존 티켓을 삭제합니다.
 
 
 
-&lt;!—#### 양식에 대한 제출 보기 — 작업 연결을 찾아야 합니다.>—>
+&lt;!—#### 양식 제출 보기—작동 중인 연결을 찾아야 함>—>
 
 ### 소셜 미디어(브로드캐스트)
 
@@ -2129,7 +2135,7 @@ This action module associates two CRM objects.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 본문]</td> 
-   <td> <p>표준 JSON 개체 형식으로 API 호출에 대한 본문 콘텐츠를 추가합니다. JSON에서 <code>if</code>과(와) 같은 조건문을 사용할 때는 따옴표를 조건문 외부에 넣으십시오.<img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"></p> </td> 
+   <td> <p>표준 JSON 오브젝트 형식으로 API 호출에 대한 본문 콘텐츠를 추가합니다.JSON에서 <code>if</code>와 같은 조건문을 사용할 때는 따옴표를 조건문 외부에 배치해야 합니다.<img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"></p> </td> 
   </tr> 
  </tbody> 
 </table>

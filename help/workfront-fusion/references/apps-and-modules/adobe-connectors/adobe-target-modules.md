@@ -4,16 +4,22 @@ description: Adobe Workfront Fusion 시나리오에서는  [!DNL Adobe Target], 
 author: Becky
 feature: Workfront Fusion
 exl-id: f3c1ed7b-b69b-478a-8240-1a2ab89e11e5
-source-git-commit: f23a089565c2cfb7d2d1321a7bf67ae14e336af3
+TQID: https://experienceleague.adobe.com/WIVzoQxjp0cEeUgQPWN49Vp-cNreFyaBdQM8yPOvqsM
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2275'
+source-wordcount: 2368
 ht-degree: 30%
 
 ---
 
 # [!DNL Adobe Target]개 모듈
 
-Adobe Workfront Fusion 시나리오에서는 [!DNL Adobe Target]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다. [!DNL Adobe Target] 모듈을 사용하면 레코드를 만들거나, 읽거나, 업데이트하거나, 삭제할 수 있고, 지정된 형식의 모든 레코드를 나열하거나, 지정한 조건을 기준으로 레코드를 검색하거나, [!DNL Adobe Target] API에 대한 사용자 지정 API 호출을 수행할 수 있습니다.
+Adobe Workfront Fusion 시나리오에서는 [!DNL Adobe Target]를 사용하는 워크플로를 자동화할 수 있으며 여러 제3자 애플리케이션 및 서비스에 연결할 수 있습니다. [!DNL Adobe Target] 모듈을 사용하면 레코드를 만들거나, 읽거나, 업데이트하거나, 삭제할 수 있고, 지정된 형식의 모든 레코드를 나열하거나, 지정한 조건을 기준으로 레코드를 검색하거나, [!DNL Adobe Target] API에 대한 사용자 지정 API 호출을 수행할 수 있습니다.
 
 
 시나리오를 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 인덱스](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
@@ -79,7 +85,7 @@ Adobe Target 커넥터는 다음을 사용합니다.
  </tbody> 
  </table>
 
-## [!DNL Adobe Target]에 연결 만들기
+## [!DNL Adobe Target]에 연결하기
 
 >[!IMPORTANT]
 >
@@ -88,7 +94,7 @@ Adobe Target 커넥터는 다음을 사용합니다.
 >* 기존 서비스 계정 연결은 2025년 1월까지 계속 작동합니다. 2024년 1월까지는 서비스 계정 연결을 Adobe Target 서버 간 연결로 대체해야 합니다.
 >* Adobe Target 서버 간 연결을 만들려면 조직의 개발자여야 합니다. 개발자 역할은 Adobe Admin Console에서 설정합니다.
 
-사용자의 [!DNL Adobe Target] 모듈에 대한 연결을 만들려면:
+사용자의 [!DNL Adobe Target] 모듈에 연결하려면:
 
 1. 모든 모듈에서 연결 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 
@@ -179,7 +185,7 @@ Adobe Target 커넥터는 다음을 사용합니다.
 
 ## [!DNL Adobe Target] 모듈 및 해당 필드
 
-[!DNL Adobe Target] 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를 표시합니다. 이와 함께 앱 또는 서비스의 액세스 수준과 같은 요인에 따라 추가적인 [!DNL Adobe Target] 필드가 표시될 수 있습니다. 모듈의 굵은 글씨 제목은 필수 필드를 나타냅니다.
+[!DNL Adobe Target] 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를 표시합니다. 이와 함께 앱 또는 서비스의 액세스 레벨과 같은 요인에 따라 추가적인 [!DNL Adobe Target] 필드가 표시될 수 있습니다. 모듈의 굵은 글씨 제목은 필수 필드를 나타냅니다.
 
 필드 또는 함수 위에 있는 맵 버튼을 보면 해당 필드의 변수와 함수를 설정하는 데 사용할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
@@ -194,7 +200,7 @@ Adobe Target 커넥터는 다음을 사용합니다.
 
 * [[!UICONTROL 레코드 만들기]](#create-a-record)
 
-* [[!UICONTROL 사용자 정의 API 호출 만들기]](#make-a-custom-api-call)
+* [[!UICONTROL 사용자 정의 API 호출하기]](#make-a-custom-api-call)
 
 * [[!UICONTROL 레코드 삭제]](#delete-a-record)
 
@@ -213,7 +219,7 @@ Adobe Target 커넥터는 다음을 사용합니다.
 <tbody>
   <tr>
     <td role="rowheader">[!UICONTROL 연결]</td>
-    <td>[!DNL Adobe Target]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >[!DNL Adobe Target]</a>에 대한 연결 만들기를 참조하십시오.</td>
+    <td>[!DNL Adobe Target]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >[!DNL Adobe Target]</a>에 연결하기를 참조하십시오.</td>
   </tr>
   <tr>
     <td role="rowheader">[!UICONTROL 레코드 유형]</td>
@@ -743,7 +749,7 @@ Adobe Target 커넥터는 다음을 사용합니다.
 
 -->
 
-#### [!UICONTROL 사용자 정의 API 호출 만들기]
+#### [!UICONTROL 사용자 정의 API 호출하기]
 
 이 모듈은 [!DNL Adobe Target] API에 대한 사용자 지정 API 호출을 만듭니다.
 
@@ -753,7 +759,7 @@ Adobe Target 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL 연결]</td>
-      <td>[!DNL Adobe Target]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >[!DNL Adobe Target]</a>에 대한 연결 만들기를 참조하십시오.</td>
+      <td>[!DNL Adobe Target]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >[!DNL Adobe Target]</a>에 연결하기를 참조하십시오.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL [!DNL Target] 기본 URL]</td>
@@ -806,7 +812,7 @@ Adobe Target 커넥터는 다음을 사용합니다.
 <tbody>
   <tr>
     <td role="rowheader">[!UICONTROL 연결]</td>
-    <td>[!DNL Adobe Target]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >[!DNL Adobe Target]</a>에 대한 연결 만들기를 참조하십시오.</td>
+    <td>[!DNL Adobe Target]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >[!DNL Adobe Target]</a>에 연결하기를 참조하십시오.</td>
   </tr>
   <tr>
     <td role="rowheader">[!UICONTROL 레코드 유형]</td>
@@ -829,7 +835,7 @@ Adobe Target 커넥터는 다음을 사용합니다.
 <tbody>
   <tr>
     <td role="rowheader">[!UICONTROL 연결]</td>
-    <td>[!DNL Adobe Target]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >[!DNL Adobe Target]</a>에 대한 연결 만들기를 참조하십시오.</td>
+    <td>[!DNL Adobe Target]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >[!DNL Adobe Target]</a>에 연결하기를 참조하십시오.</td>
   </tr>
   <tr>
     <td role="rowheader">[!UICONTROL 레코드 유형]</td>
@@ -852,7 +858,7 @@ Adobe Target 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL 연결]</td>
-      <td>[!DNL Adobe Target]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >[!DNL Adobe Target]</a>에 대한 연결 만들기를 참조하십시오.</td>
+      <td>[!DNL Adobe Target]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >[!DNL Adobe Target]</a>에 연결하기를 참조하십시오.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 레코드 유형]</td>
@@ -886,7 +892,7 @@ Adobe Target 커넥터는 다음을 사용합니다.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL 연결]</td>
-      <td>[!DNL Adobe Target]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >[!DNL Adobe Target]</a>에 대한 연결 만들기를 참조하십시오.</td>
+      <td>[!DNL Adobe Target]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >[!DNL Adobe Target]</a>에 연결하기를 참조하십시오.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 레코드 유형]</td>
@@ -900,14 +906,14 @@ Adobe Target 커넥터는 다음을 사용합니다.
       <td role="rowheader">[!UICONTROL 시작 시간]</td>
       <td>
         <p>레코드를 검색할 가장 빠른 일자를 입력합니다. </p>
-        <p>지원되는 날짜 및 시간 포맷 목록은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">유형 강제 변환</a>을 참조하십시오.</p>
+        <p>지원되는 날짜 및 시간 형식 목록은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">유형 강제 변환</a>을 참조하십시오.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 종료 시간]</td>
       <td>
         <p>레코드를 검색할 최신 날짜를 입력합니다. </p>
-        <p>지원되는 날짜 및 시간 포맷 목록은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">유형 강제 변환</a>을 참조하십시오.</p>
+        <p>지원되는 날짜 및 시간 형식 목록은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">유형 강제 변환</a>을 참조하십시오.</p>
       </td>
     </tr>
   </tbody>
@@ -923,7 +929,7 @@ Adobe Target 커넥터는 다음을 사용합니다.
 <tbody>
   <tr>
     <td role="rowheader">[!UICONTROL 연결]</td>
-    <td>[!DNL Adobe Target]에 대한 연결을 만드는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >[!DNL Adobe Target]</a>에 대한 연결 만들기를 참조하십시오.</td>
+    <td>[!DNL Adobe Target]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >[!DNL Adobe Target]</a>에 연결하기를 참조하십시오.</td>
   </tr>
   <tr>
     <td role="rowheader">[!UICONTROL 레코드 유형]</td>

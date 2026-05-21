@@ -1,21 +1,24 @@
 ---
-title: 문자 강제 변환
+title: 유형 강제 변환
 description: 이 문서에서는 Adobe Workfront Fusion이 예상 및 예기치 않은 데이터 형식으로 값을 수신하는 상황에서 어떻게 동작하는지 설명합니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: a8bdd36d-c01f-4019-a3ea-fb185101500e
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+TQID: https://experienceleague.adobe.com/rqDQTI-IuOW95TbguHt-F2-4lugdaOfJf-7dcwXk5ZE
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '709'
-ht-degree: 5%
+source-wordcount: 709
+ht-degree: 9%
 
 ---
 
-# 문자 강제 변환
+# 유형 강제 변환
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 이 문서의 기능을 사용하려면 다음 액세스 권한이 있어야 합니다.
 
@@ -56,7 +59,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 +++
 
-### 문자 강제 변환
+### 유형 강제 변환
 
 이 문서에서는 Adobe Workfront Fusion이 예상 및 예기치 않은 데이터 형식으로 값을 수신하는 상황에서 어떻게 동작하는지 설명합니다.
 
@@ -89,7 +92,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
   </tr> 
   <tr> 
    <td>부울 </td> 
-   <td>숫자 </td> 
+   <td>번호 </td> 
    <td> <p>값이 0인 경우에도 값이 논리적 Yes로 변환됩니다.</p> </td> 
   </tr> 
   <tr> 
@@ -119,7 +122,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
   </tr> 
   <tr> 
    <td>버퍼 </td> 
-   <td>숫자 </td> 
+   <td>번호 </td> 
    <td> <p>이 값은 텍스트로 변환하는 데 위에서 언급한 단계에 따라 텍스트로 변환된 다음 이진 데이터로 변환됩니다.</p> </td> 
   </tr> 
   <tr> 
@@ -158,17 +161,17 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
    <td> <p>Workfront Fusion에서 유효성 검사 오류를 반환합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>숫자 </td> 
-   <td>숫자 </td> 
+   <td>번호 </td> 
+   <td>번호 </td> 
    <td> <p>값은 변경되지 않은 상태로 전달됩니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>숫자 </td> 
+   <td>번호 </td> 
    <td>텍스트 </td> 
    <td> <p>Workfront Fusion은 텍스트를 숫자로 변환하려고 합니다. 전환이 실패하면 유효성 검사 오류를 반환합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>숫자 </td> 
+   <td>번호 </td> 
    <td>기타 </td> 
    <td> <p>Workfront Fusion에서 유효성 검사 오류를 반환합니다.</p> </td> 
   </tr> 
@@ -199,7 +202,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
   </tr> 
   <tr> 
    <td>텍스트 </td> 
-   <td>숫자 </td> 
+   <td>번호 </td> 
    <td> <p>값이 텍스트로 변환됩니다.</p> </td> 
   </tr> 
   <tr> 

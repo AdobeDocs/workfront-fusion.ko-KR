@@ -4,26 +4,33 @@ description: Adobe Workfront Fusion [!DNL Google Docs] 모듈을 사용하면  [
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: cd44250d-c2cd-46b2-8773-15b30472a8d8
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/8Ssu593A6Le2Z45BVg5T-wbj0Ld3z-efmO6JVRYk9n0
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '4093'
-ht-degree: 0%
+source-wordcount: 4104
+ht-degree: 9%
 
 ---
 
-# [!DNL Google Docs]개 모듈
+# [!DNL Google Docs] 모듈
 
 Adobe Workfront Fusion [!DNL Google Docs] 모듈을 사용하면 [!DNL Google Docs] 및 [!DNL Google Docs]의 문서를 모니터링, 만들기, 편집 및 검색할 수 있습니다([!DNL Google Workspace] 사용자용).
 
 Adobe Workfront Fusion에서 [!DNL Google Docs]을(를) 사용하려면 [!DNL Google] 계정이 있어야 합니다. 아직 [!DNL Google] 계정이 없는 경우 [!DNL Google] 계정 도움말 페이지에서 계정을 만들 수 있습니다.
 
-시나리오를 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 인덱스](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
+시나리오 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 색인](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
 
-모듈에 대한 자세한 내용은 [모듈: 문서 인덱스](/help/workfront-fusion/references/modules/modules-toc.md)의 문서를 참조하십시오.
+모듈에 대한 자세한 내용은 [모듈: 문서 색인](/help/workfront-fusion/references/modules/modules-toc.md)의 문서를 참조하십시오.
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -40,20 +47,20 @@ Adobe Workfront Fusion에서 [!DNL Google Docs]을(를) 사용하려면 [!DNL Go
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>작업 기반: Workfront Fusion 라이센스 요구 사항 없음</p>
-   <p>커넥터 기반(레거시): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
+   <p>작업 기반: Workfront Fusion 라이선스 요구 사항 없음</p>
+   <p>커넥터 기반(이전): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
@@ -86,13 +93,13 @@ Google Docs 커넥터는 다음을 사용합니다.
  </tbody> 
  </table>
 
-## [!DNL Google Docs]개 모듈 및 해당 필드
+## [!DNL Google Docs] 모듈 및 해당 필드
 
-[!DNL Google Docs] 모듈을 구성할 때 [!UICONTROL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Google Docs] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!DNL Google Docs] 모듈을 구성할 때 [!UICONTROL Workfront Fusion]에 아래 나열된 필드가 표시됩니다. 이와 함께 앱 또는 서비스의 액세스 레벨과 같은 요인에 따라 추가적인 [!DNL Google Docs] 필드가 표시될 수 있습니다. 모듈의 굵은 글씨 제목은 필수 필드를 나타냅니다.
 
-필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
+필드 또는 함수 위에 있는 맵 버튼을 보면 해당 필드의 변수와 함수를 설정하는 데 사용할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
-![맵 전환](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![토글 매핑](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 ### 문서
 
@@ -117,7 +124,7 @@ Google Docs 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>[!DNL Google] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -157,7 +164,7 @@ Google Docs 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>[!DNL Google] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -185,7 +192,7 @@ Google Docs 커넥터는 다음을 사용합니다.
    <td role="rowheader"> <p>[!UICONTROL 값]</p> </td> 
    <td> <p>값을 입력하려는 각 태그에 대해 <b>항목 추가</b>를 클릭하고 태그를 입력한 다음 새 문서에 태그 대신 입력할 값을 입력합니다.</p> 
     <ul> 
-     <li><strong>[!UICONTROL 태그]</strong> <br>문서 템플릿에 포함된 태그를 입력합니다. <code>&#123;&#123;&#125;&#125;</code>을(를) 사용하지 마십시오. 예: <code>name</code> 대신 <code>&#123;&#123;name&#125;&#125;</code> 사용.</li> 
+     <li><strong>[!UICONTROL 태그]</strong> <br>문서 템플릿에 포함된 태그를 입력합니다. <code>&#123;&#123;&#125;&#125;</code>을(를) 사용하지 마십시오. 예: <code>&#123;&#123;name&#125;&#125;</code> 대신 <code>name</code> 사용.</li> 
      <li><strong>[!UICONTROL 이 값을 대체했습니다]</strong><br>태그의 값을 입력하십시오.</li> 
     </ul> <p>예를 들어 소스 문서의 <code> &#123;&#123;name&#125;&#125;</code> 변수는 <code>John</code>과 같이 값을 삽입할 수 있는 여기에서 이름 필드로 표시됩니다.</p> </td> 
   </tr> 
@@ -223,7 +230,7 @@ Google Docs 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>[!DNL Google] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -255,7 +262,7 @@ Google Docs 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>[!DNL Google] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -285,7 +292,7 @@ Google Docs 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>[!DNL Google] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -306,13 +313,13 @@ Google Docs 커넥터는 다음을 사용합니다.
    <td> <p>검색할 문서를 입력하거나 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Filter]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 필터]</p> </td> 
    <td> <p>모듈의 출력에서 반환할 개체를 선택합니다.</p> 
     <ul> 
      <li>[!UICONTROL Image] (기본값)</li> 
      <li>[!UICONTROL 드로잉]</li> 
      <li>[!UICONTROL 차트]</li> 
-    </ul> <p>참고:  <p>이러한 개체를 추가로 매핑하려면 이 모듈의 출력에 있는 [!UICONTROL InlineObjects] 값([!UICONTROL inlineObjects] 대신)을 사용하십시오.</p> <p>[!UICONTROL Inline Objects Array] 개체는 문서에 나타나는 순서와 동일한 순서로 정렬됩니다. 이를 통해 더 이상의 처리가 더 쉬워집니다.</p> </p> </td> 
+    </ul> <p>메모:  <p>이러한 개체를 추가로 매핑하려면 이 모듈의 출력에 있는 [!UICONTROL InlineObjects] 값([!UICONTROL inlineObjects] 대신)을 사용하십시오.</p> <p>[!UICONTROL Inline Objects Array] 개체는 문서에 나타나는 순서와 동일한 순서로 정렬됩니다. 이를 통해 더 이상의 처리가 더 쉬워집니다.</p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -326,7 +333,7 @@ Google Docs 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>[!DNL Google] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -385,7 +392,7 @@ Google Docs 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>[!DNL Google] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -444,7 +451,7 @@ Google Docs 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>[!DNL Google] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -472,7 +479,7 @@ Google Docs 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>[!DNL Google] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -516,7 +523,7 @@ Google Docs 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>[!DNL Google] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -557,7 +564,7 @@ Google Docs 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>[!DNL Google] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -594,7 +601,7 @@ Google Docs 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
    <td> <p>[!DNL Google] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -634,28 +641,28 @@ Google Docs 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td role="rowheader">[!UICONTROL 연결] </td> 
    <td> <p>[!DNL Google] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
-   <td> <p><code>https://docs.googleapis.com/</code>과(와) 관련된 경로를 입력하십시오. 예: <code>/v1/documents/{presentationID}</code>. </p> </td> 
+   <td> <p><code>https://docs.googleapis.com/</code>과 관련된 경로를 입력합니다. 예: <code>/v1/documents/{presentationID}</code>. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 메서드]</td> 
    <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP 요청 메서드</a>를 참조하십시오.</p> <p> </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다. 예, <code>{"Content-type":"application/json"}</code>. Workfront Fusion은 사용자에게 권한 부여 헤더를 추가합니다.</p> </td> 
+   <td role="rowheader">[!UICONTROL 헤더]</td> 
+   <td> <p>표준 JSON 오브젝트 형태로 요청의 헤더를 추가합니다. 예, <code>{"Content-type":"application/json"}</code>. Workfront Fusion은 사용자에게 권한 부여 헤더를 추가합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 쿼리 문자열]</td> 
    <td> <p> 요청 쿼리 문자열을 입력합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>표준 JSON 개체의 형태로 API 호출에 대한 본문 콘텐츠를 추가합니다.</p> <p>참고:  <p>JSON에서 <code>if</code>과(와) 같은 조건문을 사용할 때 따옴표를 조건문 외부에 넣으십시오.</p> 
+   <td role="rowheader">[!UICONTROL 본문]</td> 
+   <td> <p>표준 JSON 오브젝트 형식으로 API 호출에 대한 본문 콘텐츠를 추가합니다.</p> <p>메모:  <p>JSON에서 <code>if</code>와 같은 조건문을 사용할 때는 따옴표를 조건문 외부에 배치해야 합니다.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 

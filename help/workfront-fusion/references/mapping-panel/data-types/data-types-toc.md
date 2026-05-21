@@ -6,10 +6,13 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: c31c0ad9-6de4-467d-8ccd-9376443e2e7e
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+TQID: https://experienceleague.adobe.com/O08hruYCfmwW8hSM9R9Kr19sQSiqj0eGcw45YpnVAbA
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '36'
-ht-degree: 5%
+source-wordcount: 36
+ht-degree: 19%
 
 ---
 
@@ -18,5 +21,5 @@ ht-degree: 5%
 이 섹션에는 다음 문서가 포함됩니다.
 
 * [항목 데이터 유형](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)
-* [문자 강제 변환](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md)
+* [유형 강제 변환](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md)
 * [데이터 구조](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)

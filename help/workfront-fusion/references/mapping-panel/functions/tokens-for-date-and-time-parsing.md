@@ -4,10 +4,13 @@ description: ' [!DNL Adobe Workfront Fusion mapping]  패널에서 날짜 및 �
 author: Becky
 feature: Workfront Fusion
 exl-id: d3242af3-89e8-45ae-81a1-3b4dadf824fd
-source-git-commit: 24a6c1558fd6349c022df8a1847a7f39fafddd67
+TQID: https://experienceleague.adobe.com/ZU2fO6cE2nEceklQoIj6TrpETBbssJe3FuCpcXHZepI
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 10%
+source-wordcount: 164
+ht-degree: 17%
 
 ---
 
@@ -40,7 +43,7 @@ ht-degree: 10%
   <tr> 
    <td><code>Y</code> </td> 
    <td><code>-25</code> </td> 
-   <td> <p>[!UICONTROL Year with any number of digits and sign]</p> </td> 
+   <td> <p>[!UICONTROL 연도(숫자 및 기호 포함)]</p> </td> 
   </tr> 
   <tr> 
    <td><code>Q</code> </td> 

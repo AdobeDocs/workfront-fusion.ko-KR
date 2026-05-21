@@ -3,10 +3,16 @@ title: API 개요
 description: 애플리케이션 프로그래밍 인터페이스(API)는 애플리케이션과 서비스가 서로 통신할 수 있는 방법입니다. Fusion은 API를 사용하여 연결 중인 애플리케이션과 통신합니다. 각 애플리케이션에는 별도의 API가 있습니다.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 74308a6a43418296b29739f03683f23357d545bc
+exl-id: 2629ff6e-2b76-44cd-8030-465724cc04bf
+TQID: https://experienceleague.adobe.com/LTJpx90BlcSJp-l1JieuH8Tr2ulGpLujwt50-5IYttY
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 87%
+source-wordcount: 494
+ht-degree: 79%
 
 ---
 
@@ -32,7 +38,7 @@ API가 Fusion이 아닌 소유자에 의해 정의되므로 몇 가지 중요한
 
   범용 커넥터 목록은 [범용 커넥터](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)를 참조하십시오.
 
-* **애플리케이션의 API를 소유자가 변경하면 Fusion 기능에 영향을 줄 수 있습니다.** 변경 내용이 너무 심각하다면 Fusion은 모듈이나 연결 유형을 업데이트해야 할 수도 있고, 극단적인 경우 애플리케이션을 위한 새 커넥터를 만들 수도 있습니다.
+* **응용 프로그램 API의 소유자가 변경한 내용은 Fusion 기능에 영향을 줄 수 있습니다.** 변경 내용이 너무 심하면 Fusion에서 모듈 또는 연결 유형을 업데이트해야 하거나, 경우에 따라 응용 프로그램에 대한 새 커넥터를 만들 수 있습니다.
 
   이러한 극단적인 상황, 즉 “주요 변경 사항”에 대한 자세한 내용은 이 문서의 [주요 변경 사항](#breaking-changes)을 참조하십시오.
 

@@ -4,10 +4,13 @@ description: ' [!DNL Adobe Workfront Fusion Tools] 섹션에는 시나리오를 
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+TQID: https://experienceleague.adobe.com/wNEGIZZjU-UCd6BFuXe6wm7uKS8brMs3L1dGqAIh9-o
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2277'
-ht-degree: 0%
+source-wordcount: 2289
+ht-degree: 4%
 
 ---
 
@@ -19,7 +22,7 @@ ht-degree: 0%
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -36,13 +39,13 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 +++
 
@@ -52,7 +55,7 @@ ht-degree: 0%
 
 * [트리거](#triggers)
 * [액션](#actions)
-* [집계자](#aggregators)
+* [집계기](#aggregators)
 * [트랜스포머](#transformers)
 
 ### 트리거
@@ -248,7 +251,7 @@ ht-degree: 0%
 >
 >특정 데이터 저장소 모듈에 대한 자세한 내용은 [[!UICONTROL 데이터 저장소] 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md)을 참조하세요.
 
-### 집계자
+### 집계기
 
 * [[!UICONTROL 숫자 집계]](#numeric-aggregator)
 * [[!UICONTROL 테이블 집계]](#table-aggregator)
@@ -345,7 +348,7 @@ ht-degree: 0%
    <td>결과가 없을 때 시나리오를 중지하려면 이 옵션을 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Text]</td> 
+   <td>[!UICONTROL 텍스트]</td> 
    <td> <p> 모듈을 집계할 텍스트를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 
@@ -372,7 +375,7 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Text]</td> 
+   <td role="rowheader">[!UICONTROL 텍스트]</td> 
    <td> <p>텍스트로 변환할 데이터를 입력하거나 매핑합니다.</p> </td> 
   </tr> 
  </tbody> 

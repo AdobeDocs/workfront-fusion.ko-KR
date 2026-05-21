@@ -4,10 +4,15 @@ description: Adobe Workfront Fusion 시나리오에서는  [!DNL Workfront Proof
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+TQID: https://experienceleague.adobe.com/PE6mgMsKjoQLz5JeXx6EN-xYsm-x1DpaIrtHBnRE1PY
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '3106'
-ht-degree: 22%
+source-wordcount: 3117
+ht-degree: 23%
 
 ---
 
@@ -75,7 +80,7 @@ Workfront Proof 커넥터는 다음을 사용합니다.
 
 Workfront Fusion 모듈 내에서 직접 [!DNL Workfront Proof] 계정에 연결할 수 있습니다.
 
-1. Workfront Fusion 모듈에서 [!UICONTROL **연결**] 필드 옆에 있는 [!UICONTROL 추가]를 클릭합니다
+1. Workfront Fusion 모듈에서 [!UICONTROL 연결] 필드 옆에 있는 [!UICONTROL **추가**]&#x200B;를 클릭합니다
 
 2. 다음 필드를 채웁니다.
 
@@ -433,7 +438,7 @@ Workfront Fusion 모듈 내에서 직접 [!DNL Workfront Proof] 계정에 연결
 
 증명의 ID를 지정합니다.
 
-모듈은 증명을 만드는 데 사용된 소스 파일의 내용을 반환합니다. 시나리오의 후속 모듈에서 이 정보를 매핑할 수 있습니다.
+모듈은 증명을 만드는 데 사용된 소스 파일의 콘텐츠를 반환합니다.시나리오의 후속 모듈에서 이 정보를 매핑할 수 있습니다.
 
 이 정보를 검색하려면 [!DNL Workfront Proof]의 레코드에 액세스할 수 있는 충분한 권한이 있어야 합니다.
 
@@ -618,7 +623,7 @@ Workfront Fusion 모듈 내에서 직접 [!DNL Workfront Proof] 계정에 연결
 
 #### [!UICONTROL 파일 업로드]
 
-이 작업 모듈은 [!UICONTROL 의 &#x200B;]증명 만들기[!DNL Workfront Proof] 모듈에서 사용할 파일을 업로드합니다.
+이 작업 모듈은 [!DNL Workfront Proof]의 [!UICONTROL 증명 만들기] 모듈에서 사용할 파일을 업로드합니다.
 
 모듈이 업로드된 파일에 대한 해시 ID를 반환합니다. 시나리오의 후속 모듈에서 이 정보를 매핑할 수 있습니다.
 
@@ -671,7 +676,7 @@ Workfront Fusion 모듈 내에서 직접 [!DNL Workfront Proof] 계정에 연결
 
 이 검색 모듈은 지정한 검색 쿼리와 일치하는 [!DNL Workfront Proof]의 개체에서 레코드를 찾습니다.
 
-증명을 검색하는 경우 모듈에서 증명 ID를 반환합니다. 또는 수신자를 검색할 경우 수신자의 사용자 ID, 이메일, 이름, 위치 및 이메일 별칭을 반환합니다. 시나리오의 후속 모듈에서 이 정보를 매핑할 수 있습니다.
+증명을 검색하는 경우 모듈에서 증명 ID를 반환합니다. 또는 수신자를 검색하는 경우 수신자의 사용자 ID, 이메일, 이름, 위치 및 이메일 별칭을 반환합니다.시나리오의 후속 모듈에서 이 정보를 매핑할 수 있습니다.
 
 이 정보를 검색하려면 [!DNL Workfront Proof]의 레코드에 액세스할 수 있는 충분한 권한이 있어야 합니다.
 

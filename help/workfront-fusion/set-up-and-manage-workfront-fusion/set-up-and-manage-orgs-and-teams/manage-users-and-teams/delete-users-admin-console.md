@@ -1,21 +1,24 @@
 ---
 content-type: reference
-title: 'Set up and managing organizations and teams: article index'
-description: This section contains articles related to setting up and managing organizations and teams in Adobe Workfront Fusion.
+title: '조직 및 팀 설정 및 관리: 문서 색인'
+description: 이 섹션에는 Adobe Workfront Fusion의 조직 및 팀 설정 및 관리와 관련된 문서가 포함되어 있습니다.
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: aa570f28-7387-47c5-9968-e3554921b0f5
-source-git-commit: 6762806f17a0fc55531b647a84901b8ca572a997
+TQID: https://experienceleague.adobe.com/ouJ-qNCBSqKotZOJ7lGeOm2sAv6gqTPpUv8CpfaSg7M
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: 483
 ht-degree: 21%
 
 ---
 
-# Delete users through the [!DNL Adobe Admin Console]
+# [!DNL Adobe Admin Console]을(를) 통해 사용자 삭제
 
-You can remove a user from Adobe Workfront Fusion only, leaving access to any other [!DNL Adobe] product profiles, or you can remove the user from the [!DNL Adobe Admin Console] entirely.
+Adobe Workfront Fusion에서만 사용자를 제거하고 다른 [!DNL Adobe] 제품 프로필에 액세스할 수 있습니다. 또는 [!DNL Adobe Admin Console]에서 사용자를 완전히 제거할 수도 있습니다.
 
 ## 액세스 요구 사항
 
@@ -42,7 +45,7 @@ You can remove a user from Adobe Workfront Fusion only, leaving access to any ot
   <tr data-mc-conditions=""> 
    <td role="rowheader">액세스 수준 구성</td> 
    <td> 
-     <p>You must be an Adobe Admin Console administrator for your organization.</p>
+     <p>조직의 Adobe Admin Console 관리자여야 합니다.</p>
    </td> 
   </tr> 
  </tbody> 
@@ -52,34 +55,34 @@ You can remove a user from Adobe Workfront Fusion only, leaving access to any ot
 
 +++
 
-## Remove a user from Adobe Workfront Fusion only
+## Adobe Workfront Fusion에서만 사용자 제거
 
-You can remove a user from Workfront Fusion while leaving their other Adobe product permissions intact.
+다른 Adobe 제품 권한을 그대로 유지하면서 Workfront Fusion에서 사용자를 제거할 수 있습니다.
 
-For instructions, see &quot;Remove users and user groups from a product&quot; in the article [Manage products on Admin Console](https://helpx.adobe.com/kr/enterprise/using/manage-products.html).
+자세한 내용은 문서 [Admin Console에서 제품 관리](https://helpx.adobe.com/kr/enterprise/using/manage-products.html)에서 &quot;제품에서 사용자 및 사용자 그룹 제거&quot;를 참조하십시오.
 
-## Deactivate a user in all products in the [!DNL Adobe Admin Console]
+## [!DNL Adobe Admin Console]의 모든 제품에서 사용자 비활성화
 
-To delete a user, you must deactivate the user through the [!DNL Adobe Admin Console].
+사용자를 삭제하려면 [!DNL Adobe Admin Console]을(를) 통해 사용자를 비활성화해야 합니다.
 
-A user is deactivated from the [!DNL Adobe Admin Console] when one of the following applies:
+다음 중 하나가 적용되면 사용자가 [!DNL Adobe Admin Console]에서 비활성화됩니다.
 
-* The user is moved out from a product or product profile, and are not assigned to any other product or product profile.
-* The user is removed from a group that is linked to a product profile, and is not included in any other group linked to a product profile.
-* The user is removed from a product profile and is not assigned to another product profile.
-* The user is deleted or deactivated in the organization that includes Workfront Fusion.
+* 사용자는 제품 또는 제품 프로필에서 이동되고 다른 제품 또는 제품 프로필에 할당되지 않습니다.
+* 사용자는 제품 프로필에 연결된 그룹에서 제거되며 제품 프로필에 연결된 다른 그룹에는 포함되지 않습니다.
+* 사용자는 제품 프로필에서 제거되고 다른 제품 프로필에 할당되지 않습니다.
+* Workfront Fusion이 포함된 조직에서 사용자가 삭제되거나 비활성화됩니다.
 
-  For instructions, see the section &quot;Remove users&quot; in [Manage users individually](https://helpx.adobe.com/kr/enterprise/using/manage-users-individually.html).
+  지침은 [개별적으로 사용자 관리](https://helpx.adobe.com/kr/enterprise/using/manage-users-individually.html)의 &quot;사용자 제거&quot; 섹션을 참조하십시오.
 
-In Workfront Fusion, the deactivation affects the user in one of the following ways:
+Workfront Fusion에서 비활성화는 다음 방법 중 하나로 사용자에게 영향을 줍니다.
 
-* If the user is in only one organization, the user is deactivated.
-* If the user is in more than one organization, the user is removed from the organization that the user was modified in on the [!DNL Adobe Admin Console].
+* 사용자가 한 조직에만 있는 경우 사용자는 비활성화됩니다.
+* 사용자가 둘 이상의 조직에 있는 경우 사용자가 [!DNL Adobe Admin Console]에서 수정된 조직에서 제거됩니다.
 
-### Considerations when deleting a user in Workfront Fusion
+### Workfront Fusion에서 사용자 삭제 시 고려 사항
 
-Consider the following when deleting a user.
+사용자를 삭제할 때는 다음 사항을 고려하십시오.
 
-* When a user is deleted, the user&#39;s connections, keys, and webhooks are removed.
-* Any scenarios belonging to the user are transferred to the organization Owner. The connections in these scenarios must be updated, because the connections belonging to the user are no longer valid.
+* 사용자가 삭제되면 사용자의 연결, 키 및 웹후크가 제거됩니다.
+* 사용자에게 속한 모든 시나리오는 조직 소유자에게 전송됩니다. 사용자에게 속한 연결이 더 이상 유효하지 않으므로 이러한 시나리오의 연결을 업데이트해야 합니다.
 * 삭제된 사용자가 응용 프로그램 또는 공용 템플릿을 소유하고 있으면 해당 응용 프로그램 또는 공용 템플릿이 조직 소유자에게 이전됩니다. 조직 소유자가 없는 경우 애플리케이션이나 공용 템플릿이 다른 사용자에게 전송됩니다.

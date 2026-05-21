@@ -1,12 +1,18 @@
 ---
 title: XML
-description: XML 앱을 사용하면 XML &gt; Parse XML 모듈을 통해 XML 형식의 텍스트를 구문 분석하고 번들로 변환하여 데이터를 다른 모듈에서 사용할 수 있도록 할 수 있습니다. XML &gt; Create XML 모듈을 통해 번들을 XML 형식의 텍스트로 변환할 수도 있습니다
+description: XML 앱을 사용하면 XML > Parse XML 모듈을 통해 XML 형식의 텍스트를 구문 분석하고 번들로 변환하여 다른 모듈에서 데이터를 사용할 수 있도록 할 수 있습니다. XML > Create XML 모듈을 통해 번들을 XML 형식의 텍스트로 변환할 수도 있습니다
 author: Becky
 feature: Workfront Fusion
 exl-id: ab323361-cd04-4dcc-ab02-0fb468334fdb
-source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
+TQID: https://experienceleague.adobe.com/WAXpNvb43E4nAZ8lD4Ch55gwqdgRbG3bhPmZDSvnFx4
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: 1433
 ht-degree: 8%
 
 ---
@@ -92,7 +98,7 @@ ht-degree: 8%
 일반적인 사용 사례는 [!DNL Google] >스프레드시트의 데이터를 XML로 변환하는 것입니다.
 
 1. 데이터를 가져오려면 시나리오에 [!DNL Google Sheets] > [!UICONTROL 행 선택] 모듈을 배치하십시오. [!DNL Google] 스프레드시트에서 행을 검색하도록 모듈을 설정합니다. **[!UICONTROL 반환된 최대 행 수]**&#x200B;를 작은 수로 설정하되 테스트 목적으로 1보다 크게 설정합니다(예: 3개). [!DNL Google Sheets] 모듈을 마우스 오른쪽 단추로 클릭하고 &quot;**[!UICONTROL 이 모듈만 실행]**&quot;을 선택하여 실행합니다. 모듈의 출력을 확인합니다.
-1. [!UICONTROL &#x200B; 모듈 뒤에 &#x200B;]배열 집계[!DNL Google Sheets] 모듈을 연결합니다. 모듈의 설정에서 [!DNL Google Sheets]Source 노드&#x200B;**[!UICONTROL 필드의]** 모듈을 선택합니다. 다른 필드는 현재 상태로 두십시오.
+1. [!DNL Google Sheets] 모듈 뒤에 [!UICONTROL 배열 집계] 모듈을 연결합니다. 모듈의 설정에서 **[!UICONTROL Source 노드]** 필드의 [!DNL Google Sheets] 모듈을 선택합니다. 다른 필드는 현재 상태로 두십시오.
 1. [!UICONTROL 배열 집계] 모듈 뒤에 [!UICONTROL XML] > [!UICONTROL XML 만들기] 모듈을 연결합니다.
 
    모듈의 설정에는 XML 출력의 구조를 설명하는 데이터 구조가 필요합니다. **[!UICONTROL 추가]** 단추를 클릭하여 데이터 구조 설정을 엽니다. 이 데이터 구조를 만드는 가장 쉬운 방법은 XML 샘플에서 자동으로 생성하는 것입니다.
@@ -107,9 +113,9 @@ ht-degree: 8%
 1. 데이터 구조의 이름을 좀 더 구체적으로 변경하고 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
 
    루트 배열 속성에 해당하는 필드는 JSON 모듈의 설정에서 매핑 가능한 필드로 표시됩니다.
-1. 필드 옆에 있는 **[!UICONTROL 맵]** 단추를 클릭하고 `Array[]`배열 집계[!UICONTROL &#x200B; 출력의 &#x200B;] 항목을 매핑합니다.
+1. 필드 옆에 있는 **[!UICONTROL 맵]** 단추를 클릭하고 [!UICONTROL 배열 집계] 출력의 `Array[]` 항목을 매핑합니다.
 1. XML 모듈의 설정을 닫으려면 **[!UICONTROL 확인]**&#x200B;을 클릭하십시오.
-1. [!UICONTROL 배열 집계] 모듈의 설정을 엽니다. **[!UICONTROL 대상 구조]**&#x200B;을(를) 사용자 지정에서 부모 XML 요소에 해당하는 XML 모듈의 필드로 변경합니다. [!DNL Google Sheets] 모듈의 항목을 적절한 필드에 매핑합니다.
+1. [!UICONTROL 배열 집계] 모듈의 설정을 엽니다. **[!UICONTROL 대상 구조]**&#x200B;을(를) 사용자 지정에서 상위 XML 요소에 해당하는 XML 모듈의 필드로 변경합니다.[!DNL Google Sheets] 모듈의 항목을 적절한 필드에 매핑합니다.
 1. Array Aggregator 모듈의 설정을 닫으려면 **[!UICONTROL 확인]**&#x200B;을 클릭하십시오.
 1. 시나리오를 실행합니다.
 

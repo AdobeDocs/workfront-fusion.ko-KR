@@ -4,10 +4,13 @@ description: 이러한 비디오는 시나리오를 계획할 때 유용할 수 
 author: Becky
 feature: Workfront Fusion
 exl-id: 875b4c9a-7065-4960-9fdc-85fb0a4bf146
-source-git-commit: 914f108dc7e13e89806f233812a687cdc06cf1c8
+TQID: https://experienceleague.adobe.com/aWLSSTNkbmQAePryPq8-WPMR6dEhVG1XYiVcKNahRfs
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '60'
-ht-degree: 1%
+source-wordcount: 60
+ht-degree: 21%
 
 ---
 
@@ -17,7 +20,7 @@ ht-degree: 1%
 
 ## 탐색
 
-* [Adobe 통합 셸의 Workfront Fusion](https://video.tv.adobe.com/v/3412392/){target=_blank}
+* [Adobe 통합 쉘의 Workfront Fusion](https://video.tv.adobe.com/v/3412392/){target=_blank}
 
 ## 기본 사항
 

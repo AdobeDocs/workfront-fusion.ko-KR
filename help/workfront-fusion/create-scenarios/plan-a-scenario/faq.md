@@ -1,17 +1,20 @@
 ---
-title: 시나리오 계획 FAQ
+title: 시나리오 계획 수립 FAQ
 description: 이 문서의 정보는 Workfront Fusion에서 시나리오를 만들 때 유용할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: 6a1d672d-0bd7-4a3a-b96d-6d8b4c97522d
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+TQID: https://experienceleague.adobe.com/PQablbYLDlXlY5mc7qMAXMrXnUeeHA6sSc-aMVHa6HY
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 1%
+source-wordcount: 554
+ht-degree: 5%
 
 ---
 
-# 시나리오 계획 FAQ
+# 시나리오 계획 수립 FAQ
 
 이 문서의 정보는 Workfront Fusion에서 시나리오를 만들 때 유용할 수 있습니다.
 

@@ -4,9 +4,12 @@ description: 텍스트 파서 도구를 사용하여 다른 Adobe Workfront Fusi
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 5be274105bf13a48e7e76eaa6bd3b62c315f97a9
+TQID: https://experienceleague.adobe.com/0hUSiU9zD2vHGXsZkhcfuKYQJrdP6CAjjwEn06CDLNM
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: 1324
 ht-degree: 11%
 
 ---
@@ -183,7 +186,7 @@ HTML 코드에서 원하는 요소를 검색합니다.
   </tr> 
   <tr> 
    <td>[!UICONTROL Singleline]</td> 
-   <td>마침표(.)가 줄바꿈 문자(<code>\n</code>)와 일치하는지 확인하려면 이 옵션을 활성화하십시오.</td> 
+   <td>이 옵션을 활성화하여 마침표(.)가 줄 바꿈 문자(<code>\n</code>)와 일치합니다.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 모듈이 결과를 반환하지 않더라도 라우트 실행을 계속합니다.]</td> 
@@ -226,7 +229,7 @@ HTML 코드에서 원하는 요소를 검색합니다.
   </tr> 
   <tr> 
    <td>[!UICONTROL Singleline]</td> 
-   <td>마침표(.)가 줄바꿈 문자(<code>\n</code>)와 일치하는지 확인하려면 이 옵션을 활성화하십시오.</td> 
+   <td>이 옵션을 활성화하여 마침표(.)가 줄 바꿈 문자(<code>\n</code>)와 일치합니다.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 텍스트] </td> 
@@ -263,7 +266,7 @@ HTML 코드에서 원하는 요소를 검색합니다.
 
 ![일치](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-matches-350x355.png)
 
-구문 분석할 부분에 대괄호를 추가하는 데 필요한 일치 값을 가져올 수 있으려면(예: &quot;filename.docx&quot; - &quot;docx&quot;에서만 추출) 이 경우 시나리오에서 사용 중인 정규 표현식에 따라 대괄호를 \에 적용해야 합니다.(.+)
+구문 분석할 부분에 대괄호를 추가하는 데 필요한 일치 값을 가져올 수 있으려면(예: &quot;filename.docx&quot; - &quot;docx&quot;에서만 추출) 이 경우 시나리오에서 사용 중인 정규 표현식에 따라 대괄호를 \.(.+)에 적용해야 합니다.
 
 이렇게 하면 DOCX를 캡처하고 그룹에 지정한 다음 &quot;.&quot; 빠지라고
 

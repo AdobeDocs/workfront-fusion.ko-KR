@@ -1,17 +1,19 @@
 ---
-title: 날짜 및 시간 형식에 대한 토큰
+title: 날짜 및 시간 형식용 토큰
 description: ' [!DNL Adobe Workfront Fusion mapping]  패널에서 날짜 및 시간 형식에 대한 다음 토큰을 사용할 수 있습니다.'
 author: Becky
 feature: Workfront Fusion
 exl-id: 4a7f288e-d563-4c37-a8bf-efc7e6b759d4
-source-git-commit: 24a6c1558fd6349c022df8a1847a7f39fafddd67
+TQID: https://experienceleague.adobe.com/PVtZkvmHsxtuAH7fXCoXB07zPRlHPJnG-j0M2lb-hGQ
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 11%
+source-wordcount: 253
+ht-degree: 16%
 
 ---
 
-# 날짜 및 시간 형식에 대한 토큰
+# 날짜 및 시간 형식용 토큰
 
 ## 년, 월, 일 토큰
 
@@ -40,7 +42,7 @@ ht-degree: 11%
   <tr> 
    <td><code>Y</code> </td> 
    <td><code>1970 1971 ... 9999 +10000 +10001</code> </td> 
-   <td> <p>[!UICONTROL Year with any number of digits and sign]</p> </td> 
+   <td> <p>[!UICONTROL 연도(숫자 및 기호 포함)]</p> </td> 
   </tr> 
   <tr> 
    <td><code>Q</code> </td> 
@@ -60,7 +62,7 @@ ht-degree: 11%
   <tr> 
    <td><code>Mo </code> </td> 
    <td><code>1st 2nd ... 11th 12th</code> </td> 
-   <td> <p>[!UICONTROL Month] 서수</p> </td> 
+   <td> <p>서수가 있는 [!UICONTROL Month]</p> </td> 
   </tr> 
   <tr> 
    <td><code>MM</code> </td> 
@@ -100,7 +102,7 @@ ht-degree: 11%
   <tr> 
    <td><code>DDDo</code> </td> 
    <td><code>1st 2nd ... 364th 365th</code> </td> 
-   <td> <p>[!UICONTROL Day of year] 서수</p> </td> 
+   <td> <p>서수가 있는 [!UICONTROL Day of year]</p> </td> 
   </tr> 
   <tr> 
    <td><code>DDDD </code> </td> 
@@ -132,7 +134,7 @@ ht-degree: 11%
   <tr> 
    <td><code>do</code> </td> 
    <td><code>0th 1st ... 5th 6th </code> </td> 
-   <td> <p>[!UICONTROL Day of week with ordinal]</p> </td> 
+   <td> <p>[!UICONTROL 서수가 있는 요일]</p> </td> 
   </tr> 
   <tr> 
    <td><code>dd </code> </td> 
@@ -162,7 +164,7 @@ ht-degree: 11%
   <tr> 
    <td><code>wo </code> </td> 
    <td><code>1st 2nd ... 52nd 53rd</code> </td> 
-   <td> <p>[!UICONTROL Week of year with ordinal]</p> </td> 
+   <td> <p>[!UICONTROL 서수 포함 주]</p> </td> 
   </tr> 
   <tr> 
    <td><code>ww </code> </td> 
@@ -269,7 +271,7 @@ ht-degree: 11%
   <tr> 
    <td><code>mm</code> </td> 
    <td><code>00 01 ... 58 59</code> </td> 
-   <td> <p>[!UICONTROL Minutes with] 행간 제로</p> </td> 
+   <td> <p>[!UICONTROL 분,] 앞에 0</p> </td> 
   </tr> 
   <tr> 
    <td><code>s</code> </td> 

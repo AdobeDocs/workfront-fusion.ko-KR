@@ -1,19 +1,22 @@
 ---
 title: Dropbox 모듈
-description: Adobe Workfront Fusion 시나리오에서는 Dropbox을 사용하는 워크플로를 자동화하고 여러 타사 애플리케이션 및 서비스에 연결할 수 있습니다. 이를 통해 Dropbox에서 파일 및 폴더를 모니터링, 검색, 검색, 나열, 만들기 및 편집하는 등의 활동을 자동화할 수 있습니다.
+description: Adobe Workfront Fusion 시나리오에서는 Dropbox을 사용하는 워크플로를 자동화할 뿐만 아니라 여러 타사 애플리케이션 및 서비스에 연결할 수 있습니다.이를 통해 Dropbox에서 파일 및 폴더 모니터링, 검색, 검색, 나열, 작성 및 편집과 같은 작업을 자동화할 수 있습니다.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/O5O0hXjHDhY2Av6eXrujFgXNF7K--iU55gy38ao770Q
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '3292'
+source-wordcount: 3307
 ht-degree: 26%
 
 ---
 
 # [!DNL Dropbox] 모듈
 
-Adobe Workfront Fusion 시나리오에서는 [!UICONTROL Dropbox] 또는 [!DNL Dropbox Business]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다. 이를 통해 [!UICONTROL Dropbox]에서 파일 및 폴더를 모니터링, 검색, 검색, 나열, 만들기 및 편집과 같은 활동을 자동화할 수 있습니다.
+Adobe Workfront Fusion 시나리오에서는 [!UICONTROL Dropbox] 또는 [!DNL Dropbox Business]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.이를 통해 [!UICONTROL Dropbox]에서 파일 및 폴더의 모니터링, 검색, 검색, 나열, 만들기 및 편집과 같은 작업을 자동화할 수 있습니다.
 
 시나리오 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 색인](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
 
@@ -125,7 +128,7 @@ Dropbox 커넥터는 다음을 사용합니다.
         <td>[!UICONTROL Dropbox] [!UICONTROL 클라이언트 ID]를 입력합니다. </tr>
         <tr>
         <td role="rowheader">[!UICONTROL 클라이언트 암호]</td>
-        <td>[!DNL Dropbox] [!UICONTROL 클라이언트 암호]를 입력하십시오. </td>
+        <td>[!DNL Dropbox] [!UICONTROL 클라이언트 암호]를 입력합니다. </td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL 계정 유형]</td>
@@ -138,7 +141,7 @@ Dropbox 커넥터는 다음을 사용합니다.
       </tbody>
     </table>
 
-1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭합니다.## [!DNL Dropbox] 모듈 및 해당 필드
+1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭하세요.## [!DNL Dropbox] 모듈 및 해당 필드
 
 ## [!DNL Dropbox] 모듈 및 해당 필드
 
@@ -149,8 +152,8 @@ Dropbox 커넥터는 다음을 사용합니다.
 ![토글 매핑](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [트리거 모듈](#trigger-modules)
-* [&#x200B; [!DNL Dropbox] 파일 및 폴더 가져오기 모듈](#modules-for-getting-dropbox-files-and-folders)
-* [&#x200B; [!DNL Dropbox] 파일 및 폴더를 만들고 편집하기 위한 모듈](#modules-for-creating-and-editing-dropbox-files-and-folders)
+* [ [!DNL Dropbox] 파일 및 폴더 가져오기 모듈](#modules-for-getting-dropbox-files-and-folders)
+* [ [!DNL Dropbox] 파일 및 폴더를 만들고 편집하기 위한 모듈](#modules-for-creating-and-editing-dropbox-files-and-folders)
 * [기타 모듈](#other-modules)
 
 ### 트리거 모듈
@@ -692,7 +695,7 @@ Dropbox 커넥터는 다음을 사용합니다.
 
 **예:**
 
-다음 API 호출은 [!DNL /Text files] 계정의 [!DNL Dropbox] 폴더에서 처음 10개의 파일을 반환합니다.
+다음 API 호출은 [!DNL Dropbox] 계정의 [!DNL /Text files] 폴더에서 처음 10개의 파일을 반환합니다.
 
 URL: `/2/files/list_folder`
 

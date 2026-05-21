@@ -4,10 +4,13 @@ description: 이 Adobe Workfront Fusion 모듈을 사용하면 HTTP 클라이언
 author: Becky
 feature: Workfront Fusion
 exl-id: cc33530c-3010-4955-8819-5eb8373a0e10
-source-git-commit: 54c368d335b30f55cab19595a5b4740dde6013a7
+TQID: https://experienceleague.adobe.com/LOlgXwSKNDk4QsIENzfa-QOBPR-6w4soBKe0laN-W-A
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 1%
+source-wordcount: 1083
+ht-degree: 26%
 
 ---
 
@@ -15,7 +18,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe Workfront Fusion에는 Adobe Workfront 라이센스 외에 Adobe Workfront Fusion 라이센스가 필요합니다.
+>Adobe Workfront Fusion에는 Adobe Workfront 라이선스 외에도 Adobe Workfront Fusion 라이선스가 필요합니다.
 
 이 Adobe Workfront Fusion 모듈을 사용하면 HTTP 클라이언트 인증서 인증을 통해 HTTP 요청을 구성하고 서버에 제출할 수 있습니다. 그러면 수신된 HTTP 응답이 출력 번들에 포함됩니다.
 
@@ -27,7 +30,7 @@ ht-degree: 1%
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -44,20 +47,20 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>작업 기반: Workfront Fusion 라이센스 요구 사항 없음</p>
-   <p>커넥터 기반(레거시): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
+   <p>작업 기반: Workfront Fusion 라이선스 요구 사항 없음</p>
+   <p>커넥터 기반(이전): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
@@ -65,11 +68,11 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 ## [!UICONTROL HTTP] > [!UICONTROL 클라이언트 인증서 인증 요청 만들기] 모듈 구성
 
-[!UICONTROL HTTP] > [!UICONTROL 클라이언트 인증서 권한 부여 요청 만들기] 모듈을 구성하면 Adobe Workfront Fusion에 아래 나열된 필드가 표시됩니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!UICONTROL HTTP] > [!UICONTROL 클라이언트 인증서 권한 부여 요청 만들기] 모듈을 구성하면 Adobe Workfront Fusion에 아래 나열된 필드가 표시됩니다. 모듈의 굵은 글씨 제목은 필수 필드를 나타냅니다.
 
-필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [Adobe Workfront Fusion에서 한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
+필드 또는 함수 위에 있는 맵 버튼을 보면 해당 필드의 변수와 함수를 설정하는 데 사용할 수 있습니다. 자세한 내용은 [Adobe Workfront Fusion에서 한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
-![맵 전환](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![토글 매핑](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 <table style="table-layout:auto"> 
  <col> 
@@ -77,22 +80,22 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 자격 증명]</td> 
-   <td> <p>클라이언트 인증서 인증 자격 증명이 포함된 키를 선택하거나 <strong>[!UICONTROL 추가]</strong>를 클릭하여 자격 증명을 새 키에 추가합니다. </p> <p>참고: 자격 증명을 더 추가하여 각 연결 간에 쉽게 전환할 수 있습니다.</p>           <p>개인 키 또는 인증서를 추출하려면 다음을 수행하십시오.</p>
+   <td> <p>클라이언트 인증서 인증 자격 증명이 포함된 키를 선택하거나 <strong>[!UICONTROL 추가]</strong>를 클릭하여 자격 증명을 새 키에 추가합니다. </p> <p>참고: 자격 증명을 더 추가하여 각 연결 간에 쉽게 전환할 수 있습니다.</p>           <p>비공개 키 또는 인증서를 추출하려면 다음을 수행합니다.</p>
           <ol>
             <li value="1">
-              <p><b>[!UICONTROL Extract]</b>을(를) 클릭합니다.</p>
+              <p><b>[!UICONTROL 추출]</b>을 클릭합니다.</p>
             </li>
             <li value="2">
-              <p>추출 중인 파일 유형을 선택합니다.</p>
+              <p>추출할 파일 유형을 선택합니다.</p>
             </li>
             <li value="3">
-              <p>개인 키 또는 인증서가 포함된 파일을 선택합니다.</p>
+              <p>비공개 키 또는 인증서가 포함된 파일을 선택합니다.</p>
             </li>
             <li value="4">
               <p>파일의 암호를 입력합니다.</p>
             </li>
             <li value="5">
-              <p><b>[!UICONTROL 저장]</b>을(를) 클릭하여 파일을 추출하고 연결 설정으로 돌아갑니다.</p>
+              <p><b>[!UICONTROL 저장]</b>을 클릭하여 파일을 추출하고 연결 설정으로 돌아갑니다.</p>
             </li>
 </td> 
   </tr> 
@@ -109,8 +112,8 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
    <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers] </td> 
-   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다. For example, <code>{"Content-type":"application/json"}</code></p> </td> 
+   <td role="rowheader">[!UICONTROL 헤더] </td> 
+   <td> <p>표준 JSON 오브젝트 형태로 요청의 헤더를 추가합니다. 예: <code>{"Content-type":"application/json"}</code></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 쿼리 문자열]</td> 
@@ -121,7 +124,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
    <td> <p>HTTP Body는 사용할 데이터 바이트가 있는 경우 헤더 바로 다음에 오는 HTTP 트랜잭션 메시지로 전송됩니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p>원시 본문 유형은 일반적으로 개발자 설명서에서 전송할 데이터를 지정하지 않는 경우에도 대부분의 HTTP 본문 요청에 적합합니다.</p> <p>[!UICONTROL Content type] 필드에서 데이터를 구문 분석하는 형식을 지정합니다.</p> <p>선택한 콘텐츠 유형에도 불구하고 모듈은 개발자 설명서에서 규정하거나 요구하는 모든 형식으로 데이터를 입력합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>이 본문 유형은 <code>application/x-www-form-urlencoded</code>을(를) 사용하여 [!UICONTROL POST] 데이터에 대한 것입니다.</p> <p><code>[!UICONTROL application/x-www-form-urlencoded]</code>의 경우 서버로 전송된 HTTP 메시지의 본문은 기본적으로 하나의 쿼리 문자열입니다. 키와 값은 키와 값 사이에 <code>&amp;</code>이(가) 있고 <code>=</code>(으)로 구분된 키-값 쌍으로 인코딩됩니다. </p> <p>이진 데이터의 경우 대신 <code>[!UICONTROL multipart/form-data]</code>을(를) 사용합니다.</p> <p>추가할 각 키-값 쌍에 대해 필드 필드에서 <b>항목 추가</b>를 클릭하고 키와 값을 입력합니다.</p>
+     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>이 본문 유형은 <code>application/x-www-form-urlencoded</code>을(를) 사용하여 [!UICONTROL POST] 데이터에 대한 것입니다.</p> <p><code>[!UICONTROL application/x-www-form-urlencoded]</code>의 경우 서버로 전송된 HTTP 메시지의 본문은 기본적으로 하나의 쿼리 문자열입니다. 키와 값은 키와 값 사이에 <code>=</code>이(가) 있고 <code>&amp;</code>(으)로 구분된 키-값 쌍으로 인코딩됩니다. </p> <p>이진 데이터의 경우 대신 <code>[!UICONTROL multipart/form-data]</code>을(를) 사용합니다.</p> <p>추가할 각 키-값 쌍에 대해 필드 필드에서 <b>항목 추가</b>를 클릭하고 키와 값을 입력합니다.</p>
       <div class="example" data-mc-autonum="<b>Example: </b>">
        <span class="autonumber"><span><b>예: </b></span></span> 
        <p>결과 HTTP 요청 형식의 예:</p> 
@@ -151,10 +154,10 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
    <td> <p>자체 서명된 인증서를 추가하려면 다음을 수행하십시오.</p>
           <ol>
             <li value="1">
-              <p><b>[!UICONTROL Extract]</b>을(를) 클릭합니다.</p>
+              <p><b>[!UICONTROL 추출]</b>을 클릭합니다.</p>
             </li>
             <li value="2">
-              <p>추출 중인 파일 유형을 선택합니다.</p>
+              <p>추출할 파일 유형을 선택합니다.</p>
             </li>
             <li value="3">
               <p>또는 인증서가 포함된 파일을 선택합니다.</p>

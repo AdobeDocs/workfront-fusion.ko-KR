@@ -1,24 +1,27 @@
 ---
-title: 조직의 허용 목록에 추가하다에서 Fusion에 대한 IP 주소 구성
+title: 조직의 허용 목록에서 Fusion을 위한 IP 주소 구성
 description: Fusion은 웹 통신에 특정 IP 주소 및 도메인을 사용합니다. 조직에서 Workfront을 사용하려면 먼저 조직의 허용 목록에 추가하다에 추가해야 합니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: 406dd45c-0863-4270-a80e-c1c115e0b367
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+TQID: https://experienceleague.adobe.com/-ogVZgc8Jan8jmPV-l8PzajHzJrZ1np6dS-h7OAYY10
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 0%
+source-wordcount: 569
+ht-degree: 8%
 
 ---
 
-# 조직의 허용 목록에 추가하다에서 Fusion에 대한 IP 주소 구성
+# 조직의 허용 목록에서 Fusion을 위한 IP 주소 구성
 
 Adobe Workfront Fusion은 조직의 네트워크와 통신하므로 해당 통신을 허용하도록 조직의 방화벽을 구성해야 합니다. 방화벽은 인터넷으로부터 조직의 네트워크를 분리하여 기능하는 매우 효과적인 보안 조치입니다. 선택한 데이터 및 네트워크 트래픽만 조직의 네트워크로 이동하거나 네트워크의 외부로 이동할 수 있습니다. 방화벽은 데이터를 전송하거나 수신하는 사이트를 기준으로 데이터를 허용하거나 차단합니다. Fusion 관리자는 Fusion으로 보내거나 받은 데이터가 조직 방화벽을 통과할 수 있는지 확인해야 합니다.
 
 이는 본질적으로 방화벽을 통해 데이터를 전송하거나 수신할 수 있는 사이트의 &quot;목록&quot;인 허용 목록에 추가하다를 통해 수행됩니다. 사이트는 다음 두 가지 방법 중 하나로 식별할 수 있습니다.
 
 * **IP 주소**: 52.31.132.175과(와) 같은 일련의 숫자
-* **도메인**: URL의 일부(예: `thisdomain`의 `www.thisdomain.com`)
+* **도메인**: URL의 일부(예: `www.thisdomain.com`의 `thisdomain`)
 
 Fusion은 웹 통신에 특정 IP 주소 및 도메인을 사용합니다. 조직에서 Workfront을 사용하려면 먼저 조직의 허용 목록에 추가하다에 추가해야 합니다.
 

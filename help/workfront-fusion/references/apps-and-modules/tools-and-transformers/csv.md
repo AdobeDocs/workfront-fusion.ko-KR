@@ -4,10 +4,13 @@ description: Adobe Workfront Fusion CSV 모듈을 사용하면 CSV 파일을 만
 author: Becky
 feature: Workfront Fusion
 exl-id: bc6d5ddc-93c3-437b-8537-5bece1351c1d
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+TQID: https://experienceleague.adobe.com/IhvuQxLno-vVgIWarBZG-EFSeu8shwQpZmce7PRBVQs
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 0%
+source-wordcount: 941
+ht-degree: 10%
 
 ---
 
@@ -19,7 +22,7 @@ Adobe Workfront Fusion [!UICONTROL CSV] 모듈을 사용하면 CSV 파일을 만
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -36,13 +39,13 @@ Adobe Workfront Fusion [!UICONTROL CSV] 모듈을 사용하면 CSV 파일을 만
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 +++
 
@@ -130,13 +133,13 @@ Adobe Workfront Fusion [!UICONTROL CSV] 모듈을 사용하면 CSV 파일을 만
 
 항목 <code>전체 이름</code> 는 단순 텍스트 유형이며 예상대로 내보내집니다. 항목 <code>전자 메일</code>복잡한 형식의 컬렉션 배열인 를 [개체]&#x200B;(으)로 내보냅니다. 이 개체는 기본적으로 컬렉션과 배열이 텍스트로 변환되는 방식입니다.
 
-자세한 내용은 [항목 데이터 형식](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)을 참조하세요.
+자세한 내용은 [항목 데이터 유형](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)을 참조하십시오.
 
 
 <code>전자 메일의 콘텐츠를 내보내려면 </code><code>전자 메일[]의 첫 번째 컬렉션 항목</code> 대신 [!UICONTROL CSV 만들기(고급)] 모듈을 사용해야 합니다. 이 모듈에서는 CSV 파일의 개별 열을 정의하고 중첩된 열을 포함하여 항목을 해당 열에 매핑할 수 있습니다.
 
 1. 시나리오에 [!UICONTROL CSV 만들기(고급)] 모듈을 삽입합니다.
-1. <strong>[!UICONTROL 데이터 구조]</strong> 필드 옆에 있는 [!UICONTROL 추가] 단추를 클릭하여 새 데이터 구조를 만듭니다.
+1. [!UICONTROL 데이터 구조] 필드 옆에 있는 <strong>[!UICONTROL 추가]</strong> 단추를 클릭하여 새 데이터 구조를 만듭니다.
 1. 데이터 구조의 이름을 입력하고 <strong>[!UICONTROL 항목 추가]</strong>를 클릭하여 개별 열을 추가합니다. &quot;전체 이름&quot;과 &quot;이메일&quot;, 이렇게 두 개의 열을 내보내려면 결과 데이터 구조가 다음과 같습니다.
 
    ![Google 연락처 출력](/help/workfront-fusion/references/apps-and-modules/assets/google-contacts-350x524.png)
@@ -188,7 +191,7 @@ Adobe Workfront Fusion [!UICONTROL CSV] 모듈을 사용하면 CSV 파일을 만
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL CSV]</td> 
-   <td>구문 분석할 CSV 파일을 입력하거나 매핑합니다.<p>참고: <p>데이터가 이진 형식(일반적으로 파일에서)으로 제공되는 경우 'toString()' 함수를 사용하여 이진 데이터를 [!UICONTROL String] (으)로 변환해야 합니다.</p><p><img src="/help/workfront-fusion/references/apps-and-modules/assets/parse-csv-350x123.png"></p></p></td> 
+   <td>구문 분석할 CSV 파일을 입력하거나 매핑합니다.<p>메모: <p>데이터가 이진 형식(일반적으로 파일에서)으로 제공되는 경우 'toString()' 함수를 사용하여 이진 데이터를 [!UICONTROL String](으)로 변환해야 합니다.</p><p><img src="/help/workfront-fusion/references/apps-and-modules/assets/parse-csv-350x123.png"></p></p></td> 
   </tr> 
  </tbody> 
 </table>

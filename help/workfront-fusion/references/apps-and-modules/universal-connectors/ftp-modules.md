@@ -4,10 +4,13 @@ description: FTP 모듈을 사용하면 선택한 폴더의 파일 변경 사항
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e14f778-ab8c-421f-a4b4-c57be66c7cad
-source-git-commit: 54c368d335b30f55cab19595a5b4740dde6013a7
+TQID: https://experienceleague.adobe.com/gEM0-dJD4FYvu9TFvxoDtriimtlk001zevih7KnhKJE
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1397'
-ht-degree: 0%
+source-wordcount: 1404
+ht-degree: 15%
 
 ---
 
@@ -17,7 +20,7 @@ FTP 모듈을 사용하면 선택한 폴더의 파일 변경 사항을 모니터
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -34,20 +37,20 @@ FTP 모듈을 사용하면 선택한 폴더의 파일 변경 사항을 모니터
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>작업 기반: Workfront Fusion 라이센스 요구 사항 없음</p>
-   <p>커넥터 기반(레거시): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
+   <p>작업 기반: Workfront Fusion 라이선스 요구 사항 없음</p>
+   <p>커넥터 기반(이전): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
@@ -92,7 +95,7 @@ FTP 모듈을 사용하려면 FTP 서비스가 있는 계정이 있어야 합니
       <td> <p>FTP 계정 사용자 이름을 입력합니다.</p> </td> 
      </tr> 
      <tr> 
-      <td>[!UICONTROL Password] </td> 
+      <td>[!UICONTROL 암호] </td> 
       <td> <p>FTP 계정 암호를 입력합니다.</p> </td> 
      </tr> 
      <tr> 
@@ -115,7 +118,7 @@ FTP 모듈을 사용하려면 FTP 서비스가 있는 계정이 있어야 합니
    </tbody> 
    </table>
 
-1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭하세요.
+1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
 
 ## FTP 모듈 및 해당 필드
 
@@ -133,8 +136,8 @@ FTP 모듈을 사용하려면 FTP 서비스가 있는 계정이 있어야 합니
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>FTP 계정에 연결하는 방법에 대한 지침은 이 문서의 FTP 모듈<a href="#create-a-connection" class="MCXref xref">에서 </a>[!UICONTROL 연결 만들기]를 참조하십시오.</p> </td> 
+   <td>[!UICONTROL 연결] </td> 
+   <td> <p>FTP 계정에 연결하는 방법에 대한 지침은 이 문서의 FTP 모듈</a>에서 <a href="#create-a-connection" class="MCXref xref">[!UICONTROL 연결 만들기]를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL 폴더]</p> </td> 
@@ -167,8 +170,8 @@ FTP 모듈을 사용하려면 FTP 서비스가 있는 계정이 있어야 합니
    <col>
    <tbody>
          <tr>
-            <td>[!UICONTROL Connection]</td>
-            <td>FTP 계정에 연결하는 방법에 대한 지침은 이 문서의 FTP 모듈<a href="#Create" class="MCXref xref" >에서 </a>[!UICONTROL 연결 만들기]를 참조하십시오.</td>
+            <td>[!UICONTROL 연결]</td>
+            <td>FTP 계정에 연결하는 방법에 대한 지침은 이 문서의 FTP 모듈</a>에서 <a href="#Create" class="MCXref xref" >[!UICONTROL 연결 만들기]를 참조하십시오.</td>
          </tr>
          <tr>
             <td>[!UICONTROL 의 권한 설정 변경]</td>
@@ -199,8 +202,8 @@ FTP 모듈을 사용하려면 FTP 서비스가 있는 계정이 있어야 합니
    <col>
    <tbody>
          <tr>
-            <td>[!UICONTROL Connection]</td>
-            <td>FTP 계정에 연결하는 방법에 대한 지침은 이 문서의 FTP 모듈<a href="#Create" class="MCXref xref" >에서 </a>[!UICONTROL 연결 만들기]를 참조하십시오.</td>
+            <td>[!UICONTROL 연결]</td>
+            <td>FTP 계정에 연결하는 방법에 대한 지침은 이 문서의 FTP 모듈</a>에서 <a href="#Create" class="MCXref xref" >[!UICONTROL 연결 만들기]를 참조하십시오.</td>
          </tr>
          <tr>
             <td>[!UICONTROL 폴더 경로]</td>
@@ -224,8 +227,8 @@ FTP 모듈을 사용하려면 FTP 서비스가 있는 계정이 있어야 합니
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
-            <td>FTP 계정에 연결하는 방법에 대한 지침은 이 문서의 FTP 모듈<a href="#Create" class="MCXref xref" >에서 </a>[!UICONTROL 연결 만들기]를 참조하십시오.</td>
+   <td>[!UICONTROL 연결] </td> 
+            <td>FTP 계정에 연결하는 방법에 대한 지침은 이 문서의 FTP 모듈</a>에서 <a href="#Create" class="MCXref xref" >[!UICONTROL 연결 만들기]를 참조하십시오.</td>
   </tr> 
   <tr> 
    <td>[!UICONTROL 폴더] </td> 
@@ -247,8 +250,8 @@ FTP 모듈을 사용하려면 FTP 서비스가 있는 계정이 있어야 합니
    <col>
    <tbody>
          <tr>
-            <td>[!UICONTROL Connection]</td>
-            <td>FTP 계정에 연결하는 방법에 대한 지침은 이 문서의 FTP 모듈<a href="#Create" class="MCXref xref" >에서 </a>[!UICONTROL 연결 만들기]를 참조하십시오.</td>
+            <td>[!UICONTROL 연결]</td>
+            <td>FTP 계정에 연결하는 방법에 대한 지침은 이 문서의 FTP 모듈</a>에서 <a href="#Create" class="MCXref xref" >[!UICONTROL 연결 만들기]를 참조하십시오.</td>
          </tr>
          <tr>
             <td>[!UICONTROL 폴더]</td>
@@ -268,7 +271,7 @@ FTP 모듈을 사용하려면 FTP 서비스가 있는 계정이 있어야 합니
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL 연결] </td> 
    <td> <p>FTP 계정에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#creating-the-ftp-connection" class="MCXref xref">FTP 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -287,7 +290,7 @@ FTP 모듈을 사용하려면 FTP 서비스가 있는 계정이 있어야 합니
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL 연결] </td> 
    <td> <p>FTP 계정에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#creating-the-ftp-connection" class="MCXref xref">FTP 연결 만들기</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -299,7 +302,7 @@ FTP 모듈을 사용하려면 FTP 서비스가 있는 계정이 있어야 합니
    <td> <p>파일 또는 폴더에 대한 정보를 검색할지 또는 둘 다에 대한 정보를 검색할지 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Search] </td> 
+   <td>[!UICONTROL 검색] </td> 
    <td> <p>검색어를 입력합니다. 검색어를 입력하지 않으면 지정된 폴더의 모든 파일 또는 폴더가 검색됩니다.</p> </td> 
   </tr> 
   <tr> 
@@ -318,8 +321,8 @@ FTP 모듈을 사용하려면 FTP 서비스가 있는 계정이 있어야 합니
    <col>
    <tbody>
          <tr>
-            <td>[!UICONTROL Connection]</td>
-            <td>FTP 계정에 연결하는 방법에 대한 지침은 이 문서의 FTP 모듈<a href="#Create" class="MCXref xref" >에서 </a>[!UICONTROL 연결 만들기]를 참조하십시오.</td>
+            <td>[!UICONTROL 연결]</td>
+            <td>FTP 계정에 연결하는 방법에 대한 지침은 이 문서의 FTP 모듈</a>에서 <a href="#Create" class="MCXref xref" >[!UICONTROL 연결 만들기]를 참조하십시오.</td>
          </tr>
          <tr>
             <td>[!UICONTROL 이전 파일 경로]</td>
@@ -346,7 +349,7 @@ FTP 서버에 파일을 업로드합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL 연결] </td> 
    <td>FTP 계정에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#creating-the-ftp-connection" class="MCXref xref">FTP 연결 만들기</a>를 참조하십시오.</td> 
   </tr> 
   <tr> 
@@ -354,7 +357,7 @@ FTP 서버에 파일을 업로드합니다.
    <td> <p>파일을 업로드할 FTP 폴더를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source 파일] </td> 
+   <td>[!UICONTROL 소스 파일] </td> 
    <td> <p>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 이름과 데이터를 매핑합니다.</p> </td> 
   </tr> 
   <tr> 

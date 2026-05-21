@@ -1,27 +1,30 @@
 ---
-title: 바이더 모듈
-description: Adobe Workfront Fusion 시나리오에서는  [!DNL Bynder]을(를) 사용하는 워크플로를 자동화하고 여러 타사 애플리케이션 및 서비스에 연결할 수 있습니다.
+title: Bynder 모듈
+description: Adobe Workfront Fusion 시나리오에서는  [!DNL Bynder]를 사용하는 워크플로를 자동화할 수 있으며 여러 제3자 애플리케이션 및 서비스에 연결할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: 0a45f8a7-12cc-41cc-9135-92f4779afac0
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/2NCbEM8bb0s7m30uCFTWK-wYdhCYKEZC-W01Zr21mRw
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1853'
-ht-degree: 0%
+source-wordcount: 1863
+ht-degree: 31%
 
 ---
 
-# [!DNL Bynder]개 모듈
+# [!DNL Bynder] 모듈
 
-Adobe Workfront Fusion 시나리오에서는 [!DNL Bynder]을(를) 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.
+Adobe Workfront Fusion 시나리오에서는 [!DNL Bynder]를 사용하는 워크플로를 자동화할 수 있으며 여러 제3자 애플리케이션 및 서비스에 연결할 수 있습니다.
 
-시나리오를 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 인덱스](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
+시나리오 만드는 방법에 대한 지침은 [시나리오 만들기: 문서 색인](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)의 문서를 참조하십시오.
 
-모듈에 대한 자세한 내용은 [모듈: 문서 인덱스](/help/workfront-fusion/references/modules/modules-toc.md)의 문서를 참조하십시오.
+모듈에 대한 자세한 내용은 [모듈: 문서 색인](/help/workfront-fusion/references/modules/modules-toc.md)의 문서를 참조하십시오.
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -38,20 +41,20 @@ Adobe Workfront Fusion 시나리오에서는 [!DNL Bynder]을(를) 사용하는 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>작업 기반: Workfront Fusion 라이센스 요구 사항 없음</p>
-   <p>커넥터 기반(레거시): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
+   <p>작업 기반: Workfront Fusion 라이선스 요구 사항 없음</p>
+   <p>커넥터 기반(이전): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)를 참조하십시오.
 
@@ -80,33 +83,33 @@ Bynder 커넥터는 다음을 사용합니다.
  </tbody> 
  </table>
 
-## Workfront Fusion에 [!DNL Bynder] 연결  {#connect-bynder-to-workfront-fusion}
+## [!DNL Bynder]를 Workfront Fusion에 연결  {#connect-bynder-to-workfront-fusion}
 
 >[!NOTE]
 >
 >Byender는 인증 코드/새로 고침 토큰 부여 유형을 사용합니다. 이는 Fusion Byender 커넥터가 사용하는 유일한 권한 부여 유형입니다.
 
 * [Workfront Fusion에서  [!DNL Bynder] 에 대한 연결 만들기](#create-a-connection-to-bynder-from-workfront-fusion)
-* [[!UICONTROL 에서 &#x200B;]클라이언트 ID[!UICONTROL &#x200B; 및 &#x200B;]클라이언트 암호 [!DNL Bynder]  생성(선택 사항)](#generate-a-client-id-and-client-secret-in-bynder-optional)
+* [ [!DNL Bynder] 에서 [!UICONTROL 클라이언트 ID] 및 [!UICONTROL 클라이언트 암호] 생성(선택 사항)](#generate-a-client-id-and-client-secret-in-bynder-optional)
 
 ### Workfront Fusion에서 [!DNL Bynder]에 대한 연결 만들기
 
 [!DNL Bynder] 모듈 내에서 직접 Workfront Fusion과 [!DNL Bynder] 계정에 연결할 수 있습니다.
 
-1. [!DNL Bynder] 모듈에서 **[!UICONTROL 연결]** 필드 옆에 있는 [!UICONTROL 추가]를 클릭합니다.
+1. [!DNL Bynder] 모듈에서 [!UICONTROL 연결] 필드 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 1. 연결할 [!DNL Bynder] 도메인을 선택하십시오.
 1. (선택 사항) **[!UICONTROL 고급 설정]**&#x200B;을 클릭한 다음 [!UICONTROL 클라이언트 ID] 및 [!UICONTROL 클라이언트 암호]를 입력하십시오.
 
    클라이언트 ID 및 클라이언트 암호를 생성하는 방법에 대한 지침은 이 문서의 [클라이언트 ID 및 클라이언트 암호 생성 [!DNL Bynder] (선택 사항)](#generate-a-client-id-and-client-secret-in-bynder-optional)을 참조하십시오.
 
 1. [!UICONTROL 로그인] 창에서 사용자 이름(전자 메일 주소)과 암호를 입력합니다.
-1. 연결을 만들고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭하세요.
+1. 연결을 만들고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
 
-### [!UICONTROL 에서 &#x200B;]클라이언트 ID[!UICONTROL &#x200B; 및 &#x200B;]클라이언트 암호[!DNL Bynder] 생성(선택 사항)
+### [!DNL Bynder]에서 [!UICONTROL 클라이언트 ID] 및 [!UICONTROL 클라이언트 암호] 생성(선택 사항)
 
 클라이언트 ID와 클라이언트 암호를 사용하여 연결을 만들려면 [!DNL Bynder] 계정에서 연결을 생성할 수 있습니다. 클라이언트 ID 및 클라이언트 암호는 [!DNL Bynder]에서 앱을 만들 때 생성됩니다.
 
-[!DNL Bynder]에서 앱을 만드는 방법에 대한 지침은 [&#x200B; 설명서의 &#x200B;](https://developer-docs.bynder.com/api/authentication-oauth2-oauth-apps/)Oauth 2.0 앱[!DNL Bynder]을 참조하십시오.
+[!DNL Bynder]에서 앱을 만드는 방법에 대한 지침은 [!DNL Bynder] 설명서의 [Oauth 2.0 앱](https://developer-docs.bynder.com/api/authentication-oauth2-oauth-apps/)을 참조하십시오.
 
 >[!NOTE]
 >
@@ -117,13 +120,13 @@ Bynder 커넥터는 다음을 사용합니다.
 >   * Azure 클러스터: `https://app-az.workfrontfusion.com/oauth/cb/workfront-bynder`
 >* Byender는 인증 코드/새로 고침 토큰 부여 유형을 사용합니다. 이는 Fusion Byender 커넥터가 사용하는 유일한 권한 부여 유형입니다.
 
-## [!DNL Bynder]개 모듈 및 해당 필드
+## [!DNL Bynder] 모듈 및 해당 필드
 
-[!DNL Bynder] 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 앱 또는 서비스의 액세스 수준과 같은 요소에 따라 이러한 필드와 함께 [!DNL Bynder] 필드가 추가로 표시될 수 있습니다. 모듈의 굵은 제목은 필수 필드를 나타냅니다.
+[!DNL Bynder] 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를 표시합니다. 이와 함께 앱 또는 서비스의 액세스 레벨과 같은 요인에 따라 추가적인 [!DNL Bynder] 필드가 표시될 수 있습니다. 모듈의 굵은 글씨 제목은 필수 필드를 나타냅니다.
 
-필드나 함수 위에 맵 단추가 표시되면 이 단추를 사용하여 해당 필드에 대한 변수와 함수를 설정할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
+필드 또는 함수 위에 있는 맵 버튼을 보면 해당 필드의 변수와 함수를 설정하는 데 사용할 수 있습니다. 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
 
-![맵 전환](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![토글 매핑](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [액션](#actions)
 * [검색 결과](#searches)
@@ -133,7 +136,7 @@ Bynder 커넥터는 다음을 사용합니다.
 
 * [[!UICONTROL 자산에 태그 추가]](#add-a-tag-to-assets)
 * [[!UICONTROL 컬렉션에 에셋 추가]](#add-assets-to-a-collection)
-* [[!UICONTROL 사용자 지정 API 호출]](#custom-api-call)
+* [[!UICONTROL 사용자 정의 API 호출]](#custom-api-call)
 * [[!UICONTROL 에셋 다운로드]](#download-asset)
 * [[!UICONTROL 자산 메타데이터 읽기]](#read-asset-metadata)
 * [에셋에서 [!UICONTROL 태그 제거]](#remove-a-tag-from-assets)
@@ -150,7 +153,7 @@ Bynder 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+    <td role="rowheader"> <p>[!UICONTROL 연결]</p> </td> 
    <td> <p>[!DNL Bynder] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Bynder] 연결 </a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -173,7 +176,7 @@ Bynder 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+    <td role="rowheader"> <p>[!UICONTROL 연결]</p> </td> 
    <td> <p>[!DNL Bynder] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Bynder] 연결 </a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -187,9 +190,9 @@ Bynder 커넥터는 다음을 사용합니다.
  </tbody> 
 </table>
 
-#### [!UICONTROL 사용자 지정 API 호출]
+#### [!UICONTROL 사용자 정의 API 호출]
 
-이 작업 모듈을 사용하면 [!DNL Bynder] API에 대해 사용자 지정 인증된 호출을 수행할 수 있습니다. 이렇게 하면 다른 [!DNL Bynder] 모듈에서 수행할 수 없는 데이터 흐름 자동화를 만들 수 있습니다.
+이 액션 모듈을 사용하면 [!DNL Bynder] API에 인증된 사용자 정의 호출을 수행할 수 있습니다. 이렇게 하면 다른 [!DNL Bynder] 모듈로는 수행할 수 없는 데이터 흐름 자동화를 만들 수 있습니다.
 
 이 모듈을 구성할 때 다음 필드가 표시됩니다.
 
@@ -200,28 +203,28 @@ Bynder 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+    <td role="rowheader"> <p>[!UICONTROL 연결]</p> </td> 
    <td> <p>[!DNL Bynder] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Bynder] 연결 </a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
-   <td><code>https://{your-bynder-domain}/api/{api-version}/</code>과(와) 관련된 경로를 입력하십시오.</td> 
+   <td><code>https://{your-bynder-domain}/api/{api-version}/</code>과 관련된 경로를 입력합니다.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 메서드]</td> 
    <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>표준 JSON 개체 형태로 요청의 헤더를 추가합니다.</p> <p>For example: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion은 사용자에게 권한 부여 헤더를 추가합니다.</p> </td> 
+   <td role="rowheader">[!UICONTROL 헤더]</td> 
+   <td> <p>표준 JSON 오브젝트 형태로 요청의 헤더를 추가합니다.</p> <p>예: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion은 사용자에게 권한 부여 헤더를 추가합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 쿼리 문자열]</td> 
-   <td> <p>표준 JSON 개체 형식으로 API 호출에 대한 쿼리를 추가합니다.</p> <p>For example: <code>{"name":"something-urgent"}</code></p> </td> 
+   <td> <p>표준 JSON 오브젝트 형식으로 API 호출에 대한 쿼리를 추가합니다.</p> <p>예: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>표준 JSON 개체의 형태로 API 호출에 대한 본문 콘텐츠를 추가합니다.</p> <p>참고:  <p>JSON에서 <code>if</code>과(와) 같은 조건문을 사용할 때 따옴표를 조건문 외부에 넣으십시오.</p> 
+   <td role="rowheader">[!UICONTROL 본문]</td> 
+   <td> <p>표준 JSON 오브젝트 형식으로 API 호출에 대한 본문 콘텐츠를 추가합니다.</p> <p>메모:  <p>JSON에서 <code>if</code>와 같은 조건문을 사용할 때는 따옴표를 조건문 외부에 배치해야 합니다.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -238,7 +241,7 @@ Bynder 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+    <td role="rowheader"> <p>[!UICONTROL 연결]</p> </td> 
    <td> <p>[!DNL Bynder] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Bynder] 연결 </a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -261,7 +264,7 @@ Bynder 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 연결]</p> </td> 
    <td> <p>[!DNL Bynder] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Bynder] 연결 </a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -270,7 +273,7 @@ Bynder 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 출력]</td> 
-   <td> <p>이 모듈에 대한 출력 번들에 포함할 정보를 선택합니다.</p> </td> 
+   <td> <p>이 모듈의 출력 번들에 포함할 정보를 선택합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -284,7 +287,7 @@ Bynder 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+    <td role="rowheader"> <p>[!UICONTROL 연결]</p> </td> 
    <td> <p>[!DNL Bynder] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Bynder] 연결 </a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -307,7 +310,7 @@ Bynder 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+    <td role="rowheader"> <p>[!UICONTROL 연결]</p> </td> 
    <td> <p>[!DNL Bynder] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Bynder] 연결 </a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -330,7 +333,7 @@ Bynder 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+    <td role="rowheader"> <p>[!UICONTROL 연결]</p> </td> 
    <td> <p>[!DNL Bynder] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Bynder] 연결 </a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -357,7 +360,7 @@ Bynder 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+    <td role="rowheader"> <p>[!UICONTROL 연결]</p> </td> 
    <td> <p>[!DNL Bynder] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Bynder] 연결 </a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -369,7 +372,7 @@ Bynder 커넥터는 다음을 사용합니다.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source 파일]</td> 
+   <td role="rowheader">[!UICONTROL 소스 파일]</td> 
    <td>이전 모듈에서 소스 파일을 선택하거나 소스 파일의 이름과 데이터를 매핑합니다.</td> 
   </tr> 
   <tr> 
@@ -393,7 +396,7 @@ Bynder 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+    <td role="rowheader"> <p>[!UICONTROL 연결]</p> </td> 
    <td> <p>[!DNL Bynder] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Bynder] 연결 </a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -425,7 +428,7 @@ Bynder 커넥터는 다음을 사용합니다.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+    <td role="rowheader"> <p>[!UICONTROL 연결]</p> </td> 
    <td> <p>[!DNL Bynder] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Bynder] 연결 </a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -471,7 +474,7 @@ Bynder 커넥터는 다음을 사용합니다.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+    <td role="rowheader"> <p>[!UICONTROL 연결]</p> </td> 
    <td> <p>[!DNL Bynder] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Bynder] 연결 </a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
@@ -479,7 +482,7 @@ Bynder 커넥터는 다음을 사용합니다.
     <td>새 에셋이 생성될 때 또는 기존 에셋이 업데이트될 때 시나리오를 시작할지 여부를 선택합니다.</td>
   </tr> 
   <tr>
-     <td role="rowheader">[!UICONTROL Collections]</td>
+     <td role="rowheader">[!UICONTROL 컬렉션]</td>
    <td> <p>새 자산에 대해 감시할 컬렉션을 선택합니다. 모든 컬렉션을 보려면 이 필드를 비워 두십시오.</p> </td> 
   </tr> 
   <tr> 

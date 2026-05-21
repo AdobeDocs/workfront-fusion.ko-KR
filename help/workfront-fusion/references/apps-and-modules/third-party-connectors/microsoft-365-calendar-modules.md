@@ -4,9 +4,12 @@ description: Adobe Workfront Fusion 시나리오에서는 Microsoft Office 365 C
 author: Becky
 feature: Workfront Fusion
 exl-id: fdecf740-e735-4569-b1a2-7c25c751ba42
-source-git-commit: 413736673426c1a77dac9f15defa43d4348638b5
+TQID: https://experienceleague.adobe.com/yq8DHWbrroXJ-Rc2j1LQqDejh6JuKOsffdd3bQaFAyA
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2047'
+source-wordcount: 2053
 ht-degree: 21%
 
 ---
@@ -88,7 +91,7 @@ Microsoft Office 365 Calendar 커넥터는 다음을 사용합니다.
 >
 >일부 Microsoft 앱은 개별 사용자 권한에 연결된 동일한 연결을 사용합니다. 따라서 연결을 만들 때 권한 동의 화면에는 현재 애플리케이션에 필요한 새 권한 외에도 이 사용자의 연결에 대해 이전에 부여된 모든 권한이 표시됩니다.
 >
->예를 들어 사용자가 Excel 커넥터를 통해 &quot;테이블 읽기&quot; 권한을 부여받은 다음 Outlook 커넥터에 연결을 만들어 전자 메일을 읽으면 권한 동의 화면에 이미 부여된 &quot;테이블 읽기&quot; 권한과 새로 필요한 &quot;전자 메일 쓰기&quot; 권한이 모두 표시됩니다.
+>예를 들어 사용자가 Excel 커넥터를 통해 부여된 &quot;테이블 읽기&quot; 권한을 가지고 있는 다음 Outlook 커넥터에서 연결을 만들어 이메일을 읽은 경우 권한 동의 화면에 이미 부여된 &quot;테이블 읽기&quot; 권한과 새로 필요한 &quot;이메일 쓰기&quot; 권한이 모두 표시됩니다.
 
 ## [!DNL Microsoft Office 365 Calendar] 모듈 및 해당 필드
 
@@ -141,7 +144,7 @@ Microsoft Office 365 Calendar 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 알림 메시지]</td> 
-   <td>알림 메시지가 트리거되어야 하는 이벤트 시작 시간(분)을 입력하거나 매핑합니다.</td> 
+   <td>미리 알림이 트리거되어야 하는 이벤트 시작 전 시간(분)을 입력하거나 매핑합니다.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 중요도]</td> 
@@ -156,15 +159,15 @@ Microsoft Office 365 Calendar 커넥터는 다음을 사용합니다.
    <td role="rowheader">[!UICONTROL 감도] </td> 
    <td> <p>이 이벤트의 민감도를 선택합니다.</p> 
     <ul> 
-     <li><strong>[!UICONTROL 표준]</strong> </li> 
-     <li> <p><strong>[!UICONTROL 개인]</strong> </p> <p>수신자에게 "[!UICONTROL Please treat this as Personal]" 메시지가 표시됩니다.</p> </li> 
+     <li><strong>[!UICONTROL Normal]</strong> </li> 
+     <li> <p><strong>[!UICONTROL Personal]</strong> </p> <p>수신자에게 "[!UICONTROL Please treat this as Personal]" 메시지가 표시됩니다.</p> </li> 
      <li> <p><strong>[!UICONTROL Private]</strong> </p> <p>수신자에게 "[!UICONTROL Please treat this as Private]" 메시지가 표시됩니다. 이 이벤트는 수신자의 받은 편지함 규칙에 의해 전달되거나 리디렉션되지 않습니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL 기밀]</strong> </p> <p>수신자에게 "[!UICONTROL Please treat this as Confidential]" 메시지가 표시됩니다. </p> </li> 
+     <li> <p><strong>[!UICONTROL Confidential]</strong> </p> <p>수신자에게 "[!UICONTROL 기밀 정보로 취급하십시오]" 메시지가 표시됩니다. </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 본문 내용 유형]</td> 
-   <td>본문 내용이 일반 텍스트인지 또는 HTML인지 선택합니다.</td> 
+   <td role="rowheader">[!UICONTROL 본문 컨텐츠 유형]</td> 
+   <td>본문 컨텐츠가 일반 텍스트인지 HTML인지 선택합니다.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body content]</td> 
@@ -186,13 +189,13 @@ Microsoft Office 365 Calendar 커넥터는 다음을 사용합니다.
      <li>[!UICONTROL 미정]</li> 
      <li>[!UICONTROL 사용 중]</li> 
      <li>[!UICONTROL 부재 중]</li> 
-     <li>[!UICONTROL 다른 곳에서 작업]</li> 
+     <li>[!UICONTROL 다른 곳에서 작동]</li> 
      <li>[!UICONTROL 알 수 없음]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL 출석자]</p> </td> 
-   <td> <p>초대하려는 각 참석자에 대해 <b>항목 추가</b>를 클릭하고 다음을 입력합니다.</p> 
+   <td role="rowheader"> <p>[!UICONTROL 참석자]</p> </td> 
+   <td> <p>초대할 각 참석자에 대해 <b>항목 추가</b>를 클릭하고 다음을 입력하십시오.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL 이름]</strong> </p> <p>참석자의 이름을 입력하거나 매핑합니다.</p> </li> 
      <li> <p><strong>[!UICONTROL Email]</strong> </p> <p>참석자의 이메일 주소를 입력하거나 매핑합니다.</p> </li> 
@@ -265,7 +268,7 @@ Microsoft Office 365 Calendar 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 필터]</td> 
-   <td> <p>결과를 필터링할 필터 조건을 설정합니다. 다음 속성을 기준으로 필터링할 수 있습니다.</p> 
+   <td> <p>결과를 필터링하려면 필터 조건을 설정하십시오. 다음 속성을 기준으로 필터링할 수 있습니다.</p> 
     <ul> 
      <li>[!UICONTROL Subject]</li> 
      <li>[!UICONTROL 이벤트 ID]</li> 
@@ -276,7 +279,7 @@ Microsoft Office 365 Calendar 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Order by]</td> 
-   <td> <p>결과 순서 지정 방법을 선택합니다.</p> 
+   <td> <p>결과 정렬 방법을 선택합니다.</p> 
     <ul> 
      <li><strong>[!UICONTROL Subject]</strong>, 오름차순 또는 내림차순</li> 
      <li><strong>[!UICONTROL 생성된 날짜 시간]</strong>, 오름차순 또는 내림차순</li> 
@@ -285,7 +288,7 @@ Microsoft Office 365 Calendar 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 제한]</td> 
-   <td>한 시나리오 실행 주기 동안 Workfront Fusion에서 반환해야 하는 최대 이벤트 수를 입력합니다.</td> 
+   <td>한 시나리오 실행 주기 동안 Workfront Fusion이 반환해야 하는 최대 이벤트 수를 입력합니다.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -300,7 +303,7 @@ Microsoft Office 365 Calendar 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td> <p>[!DNL Office 365] 계정을 Workfront Fusion에 연결하는 방법에 대한 자세한 내용은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion에 대한 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Office 365] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 이벤트 ID]</td> 
@@ -369,16 +372,16 @@ Microsoft Office 365 Calendar 커넥터는 다음을 사용합니다.
      <li>[!UICONTROL 미정]</li> 
      <li>[!UICONTROL 사용 중]</li> 
      <li>[!UICONTROL 부재 중]</li> 
-     <li>[!UICONTROL 다른 곳에서 작업]</li> 
+     <li>[!UICONTROL 다른 곳에서 작동]</li> 
      <li>[!DNL Unknown]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL 출석자]</p> </td> 
-   <td> <p>이벤트의 참석자를 추가합니다.</p> 
+   <td role="rowheader"> <p>[!UICONTROL 참석자]</p> </td> 
+   <td> <p>이벤트 참석자를 추가합니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL 이름]</strong> </p> <p>참석자의 이름을 입력합니다.</p> </li> 
-     <li> <p><strong>[!UICONTROL Email]</strong> </p> <p>참석자의 전자 메일 주소를 입력합니다.</p> </li> 
+     <li> <p><strong>[!UICONTROL Email]</strong> </p> <p>참석자의 이메일 주소를 입력합니다.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -394,7 +397,7 @@ Microsoft Office 365 Calendar 커넥터는 다음을 사용합니다.
 
 >[!NOTE]
 >
->이벤트 시리즈가 삭제되었는지 확인하려면 [!UICONTROL 이벤트 보기] 필드에서 [!UICONTROL 업데이트된 시간별]을(를) 선택하십시오. 이 모듈은 삭제된 단일 이벤트나 삭제된 이벤트 시리즈를 감시하지 않습니다.
+>이벤트 시리즈가 삭제되었는지 확인하려면 [!UICONTROL 이벤트 보기] 필드에서 [!UICONTROL 업데이트된 시간별]을(를) 선택하십시오. 이 모듈은 삭제된 단일 이벤트 또는 삭제된 이벤트 시리즈를 감시하지 않습니다.
 
 
 <table style="table-layout:auto"> 
@@ -410,7 +413,7 @@ Microsoft Office 365 Calendar 커넥터는 다음을 사용합니다.
    <td> <p>이벤트 시청 방법을 선택합니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL 작성일 기준]</strong> </p> <p>새로운 이벤트를 확인하십시오.</p> </li> 
-     <li> <p>업데이트된 시간까지 <strong></strong> </p> <p>업데이트된 이벤트를 확인하십시오.</p> </li> 
+     <li> <p>업데이트된 시간까지 <strong>[!UICONTROL]</strong> </p> <p>업데이트된 이벤트를 확인하십시오.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -517,14 +520,14 @@ Microsoft Office 365 Calendar 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 제한]</td> 
-   <td>한 시나리오 실행 주기 동안 Workfront Fusion에서 반환해야 하는 최대 달력 수를 입력합니다.</td> 
+   <td>한 시나리오 실행 주기 동안 Workfront Fusion이 반환해야 하는 최대 캘린더 수를 입력합니다.</td> 
   </tr> 
  </tbody> 
 </table>
 
 #### [!UICONTROL 일정 업데이트]
 
-이 작업 모듈은 기존 일정을 편집합니다.
+이 작업 모듈은 기존 캘린더를 편집합니다.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -532,22 +535,22 @@ Microsoft Office 365 Calendar 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 연결] </td> 
-   <td> <p>[!DNL Office 365] 계정을 Workfront Fusion에 연결하는 방법에 대한 자세한 내용은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion에 대한 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Office 365] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 일정 ID]</td> 
-   <td>업데이트할 캘린더의 [!UICONTROL Calendar ID]를 입력하십시오. </td> 
+   <td role="rowheader">[!UICONTROL 달력 ID]</td> 
+   <td>업데이트하려는 캘린더의 [!UICONTROL 캘린더 ID]를 입력합니다. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 새 일정 이름]</td> 
-   <td> <p>캘린더의 새 이름을 입력합니다.</p> </td> 
+   <td role="rowheader">[!UICONTROL 새 캘린더 이름]</td> 
+   <td> <p>달력의 새 이름을 입력합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### 기타
 
-#### [!UICONTROL API 호출]
+#### [!UICONTROL API 호출 만들기]
 
 이 모듈에서는 사용자 지정 API 호출을 수행할 수 있습니다.
 
@@ -557,11 +560,11 @@ Microsoft Office 365 Calendar 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 연결]</td> 
-   <td> <p>[!DNL Office 365] 계정을 Workfront Fusion에 연결하는 방법에 대한 자세한 내용은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion에 대한 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
+   <td> <p>[!DNL Office 365] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
-   <td> <p><code>https://graph.microsoft.com</code>와 관련된 경로를 입력합니다. 예:<code> /v1.0/me/events</code></p> </td> 
+   <td> <p><code>https://graph.microsoft.com</code>과 관련된 경로를 입력합니다. 예:<code> /v1.0/me/events</code></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 메서드]</p> </td> 

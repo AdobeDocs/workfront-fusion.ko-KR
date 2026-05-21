@@ -3,14 +3,17 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: scenarios
 title: 템플릿 보기, 편집 및 삭제
-description: Adobe Workfront Fusion에는 Adobe Workfront 라이센스 외에 Adobe Workfront Fusion 라이센스가 필요합니다.
+description: Adobe Workfront Fusion에는 Adobe Workfront 라이선스 외에도 Adobe Workfront Fusion 라이선스가 필요합니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: 97e3402c-d1d0-44f6-9752-11b0f5abee22
-source-git-commit: 3a977d805c10fda7209b0634c6e32e818a980691
+TQID: https://experienceleague.adobe.com/OHwMJdhw3YevvWt3K-20ly90b2S0EfQ-gUz-U9J807U
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 0%
+source-wordcount: 880
+ht-degree: 13%
 
 ---
 
@@ -22,7 +25,7 @@ Workfront Fusion 템플릿 기능을 사용하면 기존 템플릿을 만들어 
 
 ## 액세스 요구 사항
 
-+++ 을 확장하여 이 문서의 기능에 대한 액세스 요구 사항을 봅니다.
++++ 이 문서의 기능에 대한 액세스 요구 사항을 보려면 확장하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -39,13 +42,13 @@ Workfront Fusion 템플릿 기능을 사용하면 기존 템플릿을 만들어 
   <tr> 
    <td role="rowheader">제품</td> 
    <td>
-   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 조직에서 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
+   <p>조직에 Workfront 자동화 및 통합이 포함되지 않은 Select 또는 Prime Workfront 패키지가 있는 경우 Adobe Workfront Fusion을 구매해야 합니다.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-이 표의 정보에 대한 자세한 내용은 설명서에서 [액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
+이 테이블의 정보에 대한 자세한 내용은 [설명서의 액세스 요구 사항](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)을 참조하십시오.
 
 +++
 
@@ -134,4 +137,4 @@ Workfront Fusion 템플릿 기능을 사용하면 기존 템플릿을 만들어 
 
    템플릿 이름을 클릭하여 템플릿으로 이동합니다. 오른쪽 상단의 **[!UICONTROL 옵션]**&#x200B;을 클릭하고 **[!UICONTROL 삭제]**&#x200B;를 선택합니다.
 
-1. **[!UICONTROL 을(를) 클릭하십시오.]**&#x200B;하여 삭제를 확인합니다.
+1. **[!UICONTROL 정말?]**&#x200B;을(를) 클릭합니다 삭제를 확인합니다.

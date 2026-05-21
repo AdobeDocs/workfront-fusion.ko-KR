@@ -5,9 +5,12 @@ description: Adobe Workfront Fusion 시나리오에서는  [!DNL Workday]를 사
 author: Becky
 feature: Workfront Fusion
 exl-id: 77237a1b-2acd-4350-9cc0-ec43b8b08137
-source-git-commit: 5967d83107337e6567c0bb3974ba4047ed520f11
+TQID: https://experienceleague.adobe.com/b-RlvqOsRRrFZMh8JrPFAS2pigkQP-6ugZ5kZl8AdZ8
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: 1063
 ht-degree: 52%
 
 ---
@@ -268,7 +271,7 @@ Workday 커넥터는 다음을 사용합니다.
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL 연결]</td>
-            <td>[!DNL Workday] 계정을 Workfront Fusion에 연결하는 방법은 <a href="#Connect" class="MCXref xref" >[!DNL Workday]을(를) Workfront Fusion에 연결</a>을 참조하십시오.</td>
+            <td>[!DNL Workday] 계정을 Workfront Fusion에 연결하는 방법은 <a href="#Connect" class="MCXref xref" >[!UICONTROL [!DNL Workday]을(를) Workfront Fusion에 연결</a>을 참조하십시오.</td>
         </tr>
         <tr>
             <td  role="rowheader">[!UICONTROL 레코드 유형]</td>
@@ -304,7 +307,7 @@ Workday 커넥터는 다음을 사용합니다.
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL 연결]</td>
-            <td>[!DNL Workday] 계정을 Workfront Fusion에 연결하는 방법은 <a href="#Connect" class="MCXref xref" >[!DNL Workday]을(를) Workfront Fusion에 연결</a>을 참조하십시오.</td>
+            <td>[!DNL Workday] 계정을 Workfront Fusion에 연결하는 방법은 <a href="#Connect" class="MCXref xref" >[!UICONTROL [!DNL Workday]을(를) Workfront Fusion에 연결</a>을 참조하십시오.</td>
         </tr>
         <tr>
             <td  role="rowheader">[!UICONTROL 레코드 유형]</td>

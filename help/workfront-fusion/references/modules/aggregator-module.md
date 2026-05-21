@@ -4,9 +4,12 @@ description: 집계 모듈은 여러 데이터 번들을 단일 번들로 병합
 author: Becky
 feature: Workfront Fusion
 exl-id: 93cde0d0-4013-463a-b19c-d58180632739
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+TQID: https://experienceleague.adobe.com/O99Y6rWAQUUaO20Ts2T87ZaDUayi6I5ZWsyKKqOyONw
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: 810
 ht-degree: 11%
 
 ---
@@ -108,7 +111,7 @@ ht-degree: 11%
 
 * 세 번째 모듈은 집계자입니다. [!UICONTROL 전자 메일] >[!UICONTROL 첨부 파일 반복] 모듈에서 출력된 번들을 집계합니다. [!UICONTROL 보관] >[!UICONTROL 보관 집계 만들기]에서 받은 모든 번들을 모아 ZIP 파일이 포함된 단일 번들을 출력합니다.
 
-* 마지막 모듈이 결과 ZIP 파일을 [!DNL Dropbox]에 업로드합니다.  [!DNL Dropbox] > [!UICONTROL 파일 업로드] [!UICONTROL 보관] > [!UICONTROL 보관 만들기] 모듈에서 ZIP 파일을 가져와 [!DNL Dropbox]에 업로드합니다.
+* 마지막 모듈이 결과 ZIP 파일을 [!DNL Dropbox]에 업로드합니다. [!DNL Dropbox] > [!UICONTROL 파일 업로드]가 [!UICONTROL 보관] > [!UICONTROL 보관 파일 만들기] 모듈에서 ZIP 파일을 가져와서 [!DNL Dropbox]에 업로드합니다.
 
 
 

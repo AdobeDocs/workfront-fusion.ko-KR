@@ -8,10 +8,16 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 7e30c105-54be-4499-b573-949137e6a5e6
 TQID: https://experienceleague.adobe.com/1p8mg0HzgKs1U67uaAGxXshn5POSXIll9qTDfZmrzUM
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: d968a1bc-9a90-4926-a531-bcf272c32aadid: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-subfeature_v2: id: d87de1f9-8e24-4c4d-aa4c-a403075091a1
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: d968a1bc-9a90-4926-a531-bcf272c32aad
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+subfeature_v2:
+  - id: d87de1f9-8e24-4c4d-aa4c-a403075091a1
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 4277
@@ -329,7 +335,7 @@ Awaiting feedback
 #### 템플릿 모듈을 Workfront 및 Jira에 연결(모듈 2)
 
 1. **각** Workfront 모듈의 연결 필드에서 [Workfront Fusion에서 연결 구성](#configure-connections-in-workfront-fusion)에서 만든 Workfront 연결을 선택한 다음 **확인**&#x200B;을 클릭하여 해당 모듈에 대한 연결을 저장합니다.
-1. **각** Jira 모듈의 연결 필드에서 [Workfront Fusion에서 연결 구성](#configure-connections-in-workfront-fusion)에서 만든 Workfront 연결을 선택한 다음 **확인**을 클릭하여 해당 모듈에 대한 연결을 저장합니다.
+1. **각** Jira 모듈의 연결 필드에서 [Workfront Fusion에서 연결 구성](#configure-connections-in-workfront-fusion)에서 만든 Workfront 연결을 선택한 다음 **확인**&#x200B;을 클릭하여 해당 모듈에 대한 연결을 저장합니다.
    <!--#### Map custom fields-->
 
 +++

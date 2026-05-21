@@ -6,7 +6,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 754601fa-b572-42c2-96a3-3c36a8ed2c56
 TQID: https://experienceleague.adobe.com/X1ryiQtIfsc4ktqBWl2TRXVDiOJ4TDENWY9bwufsDTk
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 256
@@ -55,7 +56,7 @@ ht-degree: 39%
 1. 메모를 저장하려면 **완료**&#x200B;를 클릭하세요.
 1. 시나리오 편집기에서 원하는 위치로 메모를 드래그합니다.
 
-   시나리오에 메모를 추가하면 시나리오 편집기 하단의 **[!UICONTROL 메모]** 아이콘 ![메모 아이콘 ](assets/notes-icon-w-dot.png)에 파란색 점이 표시됩니다.
+   시나리오에 메모를 추가하면 시나리오 편집기 하단의 **[!UICONTROL 메모]** 아이콘 ![메모 아이콘 &#x200B;](assets/notes-icon-w-dot.png)에 파란색 점이 표시됩니다.
 
 1. 모든 메모를 보거나 숨기려면 **[!UICONTROL 메모]** 아이콘 ![점이 있는 메모 아이콘](assets/notes-icon-w-dot.png)을 클릭하세요.
 

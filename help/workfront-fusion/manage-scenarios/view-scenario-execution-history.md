@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
 TQID: https://experienceleague.adobe.com/V2lG2ns3rokHSCoYYsfjfZiRfsqqOUteLJTD52RcQdQ
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 915
@@ -71,7 +72,7 @@ ht-degree: 12%
 
    시나리오 편집기에서 시나리오 작업을 수행하는 경우 창의 왼쪽 상단 모서리 근처에 있는 왼쪽 화살표 ![편집 종료 화살표](assets/exit-editing-arrow.png)를 클릭합니다.
 
-1. 시나리오 이름 근처에 있는 **기록**을 클릭합니다.
+1. 시나리오 이름 근처에 있는 **기록**&#x200B;을 클릭합니다.
    ![기록 탭](assets/history-tab.png)
 
    시나리오의 모든 실행에 대해 다음 세부 정보가 나열됩니다.

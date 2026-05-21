@@ -6,8 +6,10 @@ draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 94a823a6-3c70-42a1-b6cf-298591dbca15
 TQID: https://experienceleague.adobe.com/uzyMYKqpIGORM1QDNEkkPUumYtLdgTVD7s04At0fNzM
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 2252
@@ -305,7 +307,7 @@ DocuSign 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">
-     생성 후 [!UICONTROL]
+     생성 후 
    </td> 
    <td> <p>봉투를 초안으로 저장할지 서명을 위해 전송할지 선택합니다.</p> </td> 
   </tr> 

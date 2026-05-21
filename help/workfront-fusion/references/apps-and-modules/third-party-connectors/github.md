@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d9e6c26c-8770-40bc-a83a-8c05f86e4a3f
 TQID: https://experienceleague.adobe.com/oGM3EGtQVFeEvQ1PPJQEsu9BI4-blE73oz3BR51eUWs
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 1976
@@ -170,9 +172,9 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
    <td> <p>감시할 문제를 연결된 방법별로 필터링할 수 있습니다.</p> 
     <ul> 
      <li>[!UICONTROL 모든 문제]</li> 
-     <li>[!UICONTROL만 나에게 할당된 문제]</li> 
+     <li>[!UICONTROL 만 나에게 할당된 문제]</li> 
      <li>[!UICONTROL 내가 만든 문제만 해당]</li> 
-     <li>[!UICONTROL만 나를 언급하는 문제]</li> 
+     <li>[!UICONTROL 만 나를 언급하는 문제]</li> 
      <li>[!UICONTROL 다음에 대한 업데이트를 구독하는 문제만 발생]</li> 
     </ul> </td> 
   </tr> 

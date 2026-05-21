@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
 TQID: https://experienceleague.adobe.com/4C5kCTIb-pX7zlMxx0tMHn-0UeMPkunWAlkov-lEqPQ
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 898
@@ -71,7 +73,7 @@ ht-degree: 10%
 
    배열에 항목을 원하는 수만큼 추가할 수 있습니다.
 
-반복기를 사용하여 배열을 개별 번들로 나눌 수 있습니다. 자세한 내용은 Adobe Workfront Fusion](/help/workfront-fusion/references/modules/iterator-module.md)의 [[!UICONTROL 반복자] 모듈을 참조하십시오.
+반복기를 사용하여 배열을 개별 번들로 나눌 수 있습니다. 자세한 내용은 Adobe Workfront Fusion[&#128279;](/help/workfront-fusion/references/modules/iterator-module.md)의 [!UICONTROL 반복자] 모듈을 참조하십시오.
 
 ## 항목을 새 배열에 매핑
 

@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 511b5a9c-0b7f-4003-ad86-4bbe630674e0
 TQID: https://experienceleague.adobe.com/-7x51V-z5F-LIK2eALXr66tPkSI5fJ4iLyXH28aR9CY
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 358
@@ -67,7 +68,7 @@ ht-degree: 27%
 
 1. 왼쪽 탐색 패널에서 **[!UICONTROL 조직 개요]**&#x200B;를 클릭합니다.
 1. **[!UICONTROL 팀]** 탭을 선택합니다.
-1. **[!UICONTROL 새 팀 추가]**를 클릭합니다.
+1. **[!UICONTROL 새 팀 추가]**&#x200B;를 클릭합니다.
    ![팀 만들기](assets/create-new-team-button.png)
 1. 새 팀의 이름을 입력하고 **추가**&#x200B;를 클릭합니다.
 

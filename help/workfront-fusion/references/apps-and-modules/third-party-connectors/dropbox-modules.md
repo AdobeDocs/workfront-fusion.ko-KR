@@ -5,8 +5,11 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
 TQID: https://experienceleague.adobe.com/O5O0hXjHDhY2Av6eXrujFgXNF7K--iU55gy38ao770Q
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 3307
@@ -152,8 +155,8 @@ Dropbox 커넥터는 다음을 사용합니다.
 ![토글 매핑](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [트리거 모듈](#trigger-modules)
-* [ [!DNL Dropbox] 파일 및 폴더 가져오기 모듈](#modules-for-getting-dropbox-files-and-folders)
-* [ [!DNL Dropbox] 파일 및 폴더를 만들고 편집하기 위한 모듈](#modules-for-creating-and-editing-dropbox-files-and-folders)
+* [&#x200B; [!DNL Dropbox] 파일 및 폴더 가져오기 모듈](#modules-for-getting-dropbox-files-and-folders)
+* [&#x200B; [!DNL Dropbox] 파일 및 폴더를 만들고 편집하기 위한 모듈](#modules-for-creating-and-editing-dropbox-files-and-folders)
 * [기타 모듈](#other-modules)
 
 ### 트리거 모듈

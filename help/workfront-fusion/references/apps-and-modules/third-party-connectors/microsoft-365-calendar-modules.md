@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: fdecf740-e735-4569-b1a2-7c25c751ba42
 TQID: https://experienceleague.adobe.com/yq8DHWbrroXJ-Rc2j1LQqDejh6JuKOsffdd3bQaFAyA
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 2053
@@ -413,7 +415,7 @@ Microsoft Office 365 Calendar 커넥터는 다음을 사용합니다.
    <td> <p>이벤트 시청 방법을 선택합니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL 작성일 기준]</strong> </p> <p>새로운 이벤트를 확인하십시오.</p> </li> 
-     <li> <p>업데이트된 시간까지 <strong>[!UICONTROL]</strong> </p> <p>업데이트된 이벤트를 확인하십시오.</p> </li> 
+     <li> <p>업데이트된 시간까지 <strong></strong> </p> <p>업데이트된 이벤트를 확인하십시오.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 

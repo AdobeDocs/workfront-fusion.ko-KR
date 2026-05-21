@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: a6d07ed9-aa55-4993-9f78-7e691aa61049
 TQID: https://experienceleague.adobe.com/-pnW047HSeE6M1LujbfSW6RScI8rY392d7Lmr343q4Q
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 576
@@ -97,7 +98,7 @@ ht-degree: 17%
        </ul> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Activate scenario](켜기/끄기 단추)</td> 
+      <td role="rowheader">[!UICONTROL Activate scenario] (켜기/끄기 단추)</td> 
       <td>시나리오가 만들어지면 스케줄에 따라 실행하려면 시나리오가 활성화되어야 합니다. 오른쪽 상단 모서리 근처에 있는 켜기/끄기 버튼을 클릭하면 시나리오를 활성화하거나 비활성화할 수 있습니다. 시나리오가 켜지면 스케줄에 따라 실행됩니다.</td> 
      </tr> 
      <tr> 

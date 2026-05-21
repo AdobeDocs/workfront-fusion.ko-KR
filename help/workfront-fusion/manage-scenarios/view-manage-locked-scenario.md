@@ -8,8 +8,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: b5e92bdc-cc1d-4b22-8c5f-42cc279d5590
 TQID: https://experienceleague.adobe.com/1eVGWr4SwutYzNmCKB62CCWbQ6ExdXtpjC5BORh-kxo
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 327
@@ -70,5 +72,5 @@ ht-degree: 29%
 1. 잠긴 시나리오의 시나리오 세부 정보 페이지로 이동합니다.
 1. 화면 오른쪽 상단의 **[!UICONTROL 옵션]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL 실행 잠금 해제]**&#x200B;를 선택하십시오.
-1. **[!UICONTROL 잠금 해제]**를 클릭합니다.
+1. **[!UICONTROL 잠금 해제]**&#x200B;를 클릭합니다.
    ![시나리오 잠금 해제](assets/unlock-scenario.png)

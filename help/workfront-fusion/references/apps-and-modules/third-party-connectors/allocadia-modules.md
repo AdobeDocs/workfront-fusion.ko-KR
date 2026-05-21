@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 9a6fccd6-6eee-42dc-a678-c1f34280d139
 TQID: https://experienceleague.adobe.com/bCfkq5fzw21hmZWLrWztL27g2RAlBbyk9vPEQ-v6bBU
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 1467
@@ -121,7 +123,7 @@ Allocadia 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">필터</td> 
-   <td> <p>시나리오가 새 레코드만 볼 것인지 [!UICONTROL 업데이트된 레코드만 볼 것인지 새 레코드와 업데이트된 레코드를 볼 것인지를 선택합니다.</p> </td> 
+   <td> <p>시나리오가 새 레코드만 볼 것인지 업데이트된 레코드만 볼 것인지 새 레코드와 업데이트된 레코드를 볼 것인지를 선택합니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">엔티티 유형</td> 

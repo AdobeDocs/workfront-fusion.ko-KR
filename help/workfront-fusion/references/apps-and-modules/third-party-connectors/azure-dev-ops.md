@@ -5,9 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: c0919a9a-ce99-485c-9627-45353741f6d8
 TQID: https://experienceleague.adobe.com/RFI6MFgF-C1Cnn0bvjOLVf3qahyRblEp4dtypNrxqzE
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 1897
@@ -115,7 +118,7 @@ Azure DevOps 커넥터는 다음을 사용합니다.
       </tr>
       <tr>
             <td>[!UICONTROL 모든 범위 요청]</td>
-            <td>[!DNL Azure DevOps](EntraApp) 연결 유형을 사용하는 경우 이 옵션을 활성화하여 연결에 대한 모든 범위를 요청합니다.</td>
+            <td>[!DNL Azure DevOps] (EntraApp) 연결 유형을 사용하는 경우 이 옵션을 활성화하여 연결에 대한 모든 범위를 요청합니다.</td>
       </tr>
    </table>
 
@@ -189,7 +192,7 @@ Azure DevOps 커넥터는 다음을 사용합니다.
        <li> <p><strong>[!UICONTROL 설명]</strong>: 새 프로젝트에 대한 설명을 입력하거나 매핑합니다. </p> </li> 
        <li> <p><strong>[!UICONTROL Visibility]</strong>: 프로젝트를 public으로 할지 private으로 할지 선택합니다. 비공개 프로젝트와 상호 작용하려면 사용자에게 조직에 로그인하고 프로젝트에 대한 액세스 권한이 부여되어야 합니다. 조직에 로그인하지 않은 사용자가 공개 프로젝트를 볼 수 있습니다.</p> </li> 
        <li> <p><strong>[!UICONTROL Version control]</strong>: 프로젝트에서 버전 제어에 [!DNL Git] 또는 [!UICONTROL Team Foundation Version Control(TFCV)]을(를) 사용할지 여부를 선택합니다.</p> </li> 
-       <li> <p><strong>[!UICONTROL 작업 항목 프로세스]</strong>: 프로젝트에 사용할 작업 프로세스를 선택합니다. 옵션은 [!UICONTROL Basic], [!UICONTROL Scrum], [!UICONTROL Capability Maturity Model Integration(CMMI)] 및 [!UICONTROL Agile]입니다.</p> <p>[!DNL Azure DevOps] 프로세스에 대한 자세한 내용은 [!DNL Azure DevOps] 설명서의 <a href="https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&amp;tabs=basic-process">기본 프로세스 및 프로세스 템플릿</a>을 참조하십시오.</p> </li> 
+       <li> <p><strong>[!UICONTROL 작업 항목 프로세스]</strong>: 프로젝트에 사용할 작업 프로세스를 선택합니다. 옵션은 [!UICONTROL Basic], [!UICONTROL Scrum], [!UICONTROL Capability Maturity Model Integration(CMMI)] 및 [!UICONTROL Agile]입니다.</p> <p>[!DNL Azure DevOps] 프로세스에 대한 자세한 내용은 [!DNL Azure DevOps] 설명서의 <a href="https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&tabs=basic-process">기본 프로세스 및 프로세스 템플릿</a>을 참조하십시오.</p> </li> 
       </ul> </li> 
      <li> <p><strong>[!UICONTROL 작업 항목]</strong> </p> <p>다음 필드를 채웁니다.</p> 
       <ul> 

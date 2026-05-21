@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 85607e4e-538a-427f-8a99-a0ab65a75ac2
 TQID: https://experienceleague.adobe.com/uVGhNEE-KiHbnVa2ZbP5h2rsg5GO2b1uuAkfj8BIJRw
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 1416
@@ -113,7 +115,7 @@ Adobe Creative Cloud 라이브러리 커넥터는 다음을 사용합니다.
 
 * [[!UICONTROL 요소 업로드]](#upload-an-element)
 
-* [!UICONTROL [라이브러리의 새 요소 보기]](#watch-new-element-in-library)
+* [[!UICONTROL [라이브러리의 새 요소 보기]]](#watch-new-element-in-library)
 
 * [[!UICONTROL 업데이트된 요소 보기]](#watch-updated-elements)
 

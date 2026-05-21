@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: fabbadce-5669-4363-834e-6d7428520f62
 TQID: https://experienceleague.adobe.com/uvPSzwplYFdC6R7xZ3UE-LXF7rhlGzJ7cIwF-x42ayQ
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 4690
@@ -647,7 +649,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 연결]</td> 
-   <td>새 연결을 만들려면 이 문서에서 <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion에 연결 [!DNL GitLab]</a>을(를) 참조하십시오.</td> 
+   <td>새 연결을 만들려면 이 문서에서 <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 연결 [!DNL GitLab]</a>을(를) 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 프로젝트]</td> 
@@ -784,7 +786,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 연결]</td> 
-   <td>새 연결을 만들려면 이 문서에서 <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion에 연결 [!DNL GitLab]</a>을(를) 참조하십시오.</td> 
+   <td>새 연결을 만들려면 이 문서에서 <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 연결 [!DNL GitLab]</a>을(를) 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 프로젝트 ID]</td> 
@@ -1017,7 +1019,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 연결]</td> 
-   <td>새 연결을 만들려면 이 문서에서 <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion에 연결 [!DNL GitLab]</a>을(를) 참조하십시오.</td> 
+   <td>새 연결을 만들려면 이 문서에서 <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 연결 [!DNL GitLab]</a>을(를) 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 프로젝트 ID]</td> 

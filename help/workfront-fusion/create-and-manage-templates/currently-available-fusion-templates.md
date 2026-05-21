@@ -5,9 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: b14bed4d-3503-42cf-a8c3-618d3b2448b4
 TQID: https://experienceleague.adobe.com/noPEh8h2yNo0bBTwCGyczYJAZyZfuh6U6jayF4JuByQ
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 2436
@@ -246,9 +249,9 @@ Workfront-Anaplan 통합에 대한 자세한 내용은 Workfront 설명서에서
 
 ### 지출 최적화 워크플로우
 
-* [ [!DNL Anaplan] 목록 항목으로 Adobe Workfront 프로젝트 업데이트 보내기](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
-* [ [!DNL Anaplan] 목록 항목으로 Adobe Workfront 경비 보내기](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
-* [ [!DNL Anaplan] 목록 항목에 대한 Adobe Workfront 실제 시간 업데이트 보내기](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
+* [&#x200B; [!DNL Anaplan] 목록 항목으로 Adobe Workfront 프로젝트 업데이트 보내기](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
+* [&#x200B; [!DNL Anaplan] 목록 항목으로 Adobe Workfront 경비 보내기](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
+* [&#x200B; [!DNL Anaplan] 목록 항목에 대한 Adobe Workfront 실제 시간 업데이트 보내기](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
 
 ### 예산 요청 연결을 위한 워크플로
 

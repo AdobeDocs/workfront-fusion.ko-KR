@@ -3,9 +3,8 @@ title: 특정 시나리오 실행 다시 트리거
 description: 특정 시나리오 실행을 재시도하여 업데이트된 시나리오 블루프린트를 사용하여 데이터를 처리하거나 해당 데이터 흐름을 볼 수 있습니다.
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 9c05aa1111fd571ea6f0ff86943b2849a39e4973
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 0c732add9c1ec75d7aed43bb7097bb1c95aa6408
 workflow-type: tm+mt
 source-wordcount: 523
 ht-degree: 18%
@@ -97,6 +96,9 @@ Webhook 트리거가 있는 시나리오와 하위 시나리오에 대해 검색
 
 
 ![실행에서 다시 트리거](assets/retrigger-from-execution.png)
+
+
+
 
 
 

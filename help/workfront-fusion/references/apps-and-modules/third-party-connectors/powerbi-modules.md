@@ -10,7 +10,7 @@ product_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
 source-wordcount: 2612
 ht-degree: 20%
@@ -990,7 +990,7 @@ Microsoft Power BI 커넥터는 다음을 사용합니다.
         <p>[!UICONTROL 경로]</p>
       </td>
       <td>
-        <p><code>https://api.powerbi.com</code>과 관련된 경로를 입력합니다. 예: <code>/v1.0/myorg/datasets</code>.</p>
+        <p><code>https://api.powerbi.com</code>와 관련된 경로를 입력합니다. 예: <code>/v1.0/myorg/datasets</code>.</p>
       </td>
     </tr>
     <tr>

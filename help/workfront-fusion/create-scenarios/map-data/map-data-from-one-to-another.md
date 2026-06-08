@@ -9,7 +9,7 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
 source-wordcount: 777
 ht-degree: 17%
@@ -125,7 +125,7 @@ ht-degree: 17%
 단일 모듈을 실행하려면
 
 1. 모듈을 마우스 오른쪽 단추로 클릭한 다음 표시되는 메뉴에서 **[!UICONTROL 이 모듈만 실행]**&#x200B;을 클릭합니다.
-1. 입력 항목에 대한 샘플 값을 입력한 다음 **[!UICONTROL 확인]** 을 클릭합니다.
+1. 입력 항목에 대한 샘플 값을 입력한 다음 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 1. 모듈 실행이 완료되면 모듈 위의 버블을 클릭하여 전체 출력을 탐색합니다.
 
    이제 이후 모듈의 매핑 패널에 모듈의 출력에 있는 모든 항목이 포함됩니다.

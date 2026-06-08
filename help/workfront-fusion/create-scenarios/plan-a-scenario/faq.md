@@ -7,7 +7,7 @@ exl-id: 6a1d672d-0bd7-4a3a-b96d-6d8b4c97522d
 TQID: https://experienceleague.adobe.com/PQablbYLDlXlY5mc7qMAXMrXnUeeHA6sSc-aMVHa6HY
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
 source-wordcount: 554
 ht-degree: 5%
@@ -22,7 +22,7 @@ ht-degree: 5%
 
 ### 답변
 
-시나리오는 Adobe Workfront Fusion에서 실행할 일련의 단계를 정의합니다. 각 시나리오에 대해 사용할 데이터 소스, 데이터 처리 방법을 지정합니다. Fusion을 사용하면 간단하거나 복잡한 시나리오를 만들어 조직의 사용 사례를 충족할 수 있습니다.
+시나리오는 Adobe Workfront Fusion에서 실행할 일련의 단계를 정의합니다. 각 시나리오에 대해 사용할 데이터 소스, 데이터 처리 방법을 지정합니다. Fusion을 사용하면 간단하거나 복잡한 시나리오를 만들어 조직의 사용 사례를 충족할 수 있습니다
 
 시나리오에 대한 자세한 내용은 [시나리오 개요](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md)를 참조하십시오.
 

@@ -32,7 +32,7 @@ ht-degree: 77%
   >
   > 체인 기능을 사용하면 40분 이상 워크플로우를 실행할 수 있지만 이는 지원되는 해결 방법이 아니라 디자인 위험 신호로 간주해야 합니다. 여러 장기 실행 하위 시나리오에 걸친 상위 시나리오에는 전체 시간 초과 경계가 없습니다. 하위 시나리오가 중단되거나 플랫폼 문제가 발생하면 상위 시나리오가 오류 없이 자동 복구 없이 무기한 대기합니다.
   >
-  > 40분 제한을 피하기 위해 시나리오 디자인에 체인이 필요한 경우 프로덕션에 배포하기 전에 아키텍처를 검토하십시오. 디자인 지침은 [여러 시나리오 함께 연결](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)을 참조하십시오.
+  > 40분 제한을 피하기 위해 시나리오 디자인에 체인이 필요한 경우 프로덕션에 배포하기 전에 아키텍처를 검토하십시오. 디자인 지침은 [여러 시나리오 함께 연결](https://experienceleague.adobe.com/ko/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)을 참조하십시오.
 * 시나리오 블루프린트의 최대 크기는 **5MB**&#x200B;이지만 시나리오 크기를 **3MB** 미만으로 유지하는 것이 좋습니다.
 
   많은 필드를 가진 데이터를 만들거나 업데이트하는 앱 모듈은 블루프린트가 매우 클 수 있습니다.

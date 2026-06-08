@@ -6,9 +6,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
 TQID: https://experienceleague.adobe.com/gze4-OOI8ekVaS71VgkFeT3Yef1xUoqumWYauC9Es2I
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
 source-wordcount: 770
 ht-degree: 1%
@@ -51,7 +50,7 @@ ht-degree: 1%
 
 **예:** Adobe Workfront에서 문서를 다운로드하여 [!DNL Dropbox]의 폴더로 보내는 이 시나리오에서는 다음과 같이 데이터가 흐릅니다.
 
-첫 번째 모듈에서 수행되는 시나리오의 첫 번째 단계는 Workfront의 문서를 감시하는 것입니다. 찾은 각 문서는 하나의 번들로 간주됩니다. 번들을 찾지 못한 채 모듈이 실행되면 첫 번째 모듈 이후 시나리오가 종료됩니다.
+첫 번째 모듈에서 수행되는 시나리오의 첫 번째 단계는 Workfront의 문서를 모니터링하는 것입니다. 찾은 각 문서는 하나의 번들로 간주됩니다. 번들을 찾지 못한 채 모듈이 실행되면 첫 번째 모듈 이후 시나리오가 종료됩니다.
 
 번들이 반환되면 번들은 나머지 시나리오를 통과합니다. 이 예제에서 나머지 시나리오는 [!DNL Dropbox] 폴더에 번들을 업로드하는 두 번째 모듈로 구성됩니다.
 

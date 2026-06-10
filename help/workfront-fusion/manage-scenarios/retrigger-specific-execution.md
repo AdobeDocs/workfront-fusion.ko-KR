@@ -3,9 +3,8 @@ title: 특정 시나리오 실행 다시 트리거
 description: 특정 시나리오 실행을 재시도하여 업데이트된 시나리오 블루프린트를 사용하여 데이터를 처리하거나 해당 데이터 흐름을 볼 수 있습니다.
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 0c732add9c1ec75d7aed43bb7097bb1c95aa6408
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 5859bbef4f45fd4741d89ba1795df8a67fa5beaa
 workflow-type: tm+mt
 source-wordcount: 523
 ht-degree: 18%
@@ -18,7 +17,7 @@ ht-degree: 18%
 
 예를 들어, 시나리오를 업데이트하여 문제 생성과 같은 작업을 추가하는 경우 업데이트 전에 발생한 실행을 다시 시도할 수 있습니다. 업데이트된 시나리오는 원래 시나리오의 트리거 이벤트를 사용하여 실행되지만, 업데이트된 작업이 포함됩니다. 이 예에서는 시나리오가 새 실행의 일부로 문제를 만듭니다.
 
-Webhook 트리거가 있는 시나리오와 하위 시나리오에 대해 검색을 사용할 수 있습니다.
+Webhook 트리거가 있는 시나리오와 연결된 시나리오에서 검색을 사용할 수 있습니다.
 
 웹후크를 사용하는 시나리오를 검색할 때 원래 웹후크 이벤트를 다시 사용할 수 있으므로 시나리오를 다시 검색하기 위해 이벤트를 다시 만들 필요가 없습니다.
 

@@ -7,10 +7,10 @@ exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
 TQID: https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+source-git-commit: c9c182d6c6acc34295970f9138067a6cb6c2ba2a
 workflow-type: tm+mt
-source-wordcount: 1351
-ht-degree: 77%
+source-wordcount: 1360
+ht-degree: 76%
 
 ---
 
@@ -41,6 +41,7 @@ ht-degree: 77%
    * 다른 앱을 사용할 때는 사용자 정의 API 모듈을 사용하여 필드 수가 많은 레코드 유형과 상호 작용합니다.
 
 * 시나리오에는 모듈 수에 제한이 없지만, 150개 이상의 모듈이 있는 시나리오는 Workfront Fusion 시스템의 성능에 부정적인 영향을 미칩니다. 이러한 이유로 150개 이상의 모듈로 시나리오를 만드는 것은 권장하지 않습니다.
+* 시나리오 이름은 120자를 초과할 수 없습니다.
 
 ## 체인 시나리오
 

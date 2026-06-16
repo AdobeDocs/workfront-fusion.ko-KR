@@ -5,16 +5,13 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
 TQID: https://experienceleague.adobe.com/QHOFWDOT-18-c0b3wLXsRV5cjGVxlcyLhvZdkev3GFg
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 9f736464e38e7885ff528ff114008175ff2db82e
 workflow-type: tm+mt
-source-wordcount: 2101
-ht-degree: 49%
+source-wordcount: 2236
+ht-degree: 46%
 
 ---
 
@@ -277,6 +274,8 @@ Workfront 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를
       </tr>
   </tbody>
 </table>
+
+이 모듈에서 고급 로직을 사용하는 예는 [이벤트 보기 모듈의 고급 로직 예제](#example-of-advanced-logic-in-the-watch-events-module)를 참조하십시오.
 
 ### 액션
 
@@ -571,3 +570,40 @@ Workfront 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를
 
 JSONata 모듈 사용에 대한 자세한 내용은 [JSONata 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md)을 참조하십시오.
 
+## 이벤트 보기 모듈의 고급 논리 예
+
+다음은 Workfront Planning > 이벤트 보기 모듈을 사용할 때 고급 로직에서 사용하는 형식의 예입니다.
+
+```
+[
+  {
+    "fieldName": "recordTypeId",
+    "fieldValue": "Rt68c886502d4b5554ee80896b",
+    "comparison": "eq",
+    "state": "newState"
+  },
+  {
+    "fieldName": "data",
+    "fieldValue": {
+      "F68c886502d4b5554ee808975": "planning"
+    },
+    "comparison": "eq",
+    "state": "newState"
+  },
+  {
+    "fieldName": "data",
+    "fieldValue": {
+      "F68c886502d4b5554ee808975": "active"
+    },
+    "comparison": "eq",
+    "state": "newState"
+  }
+]
+```
+
+이벤트 보기 모듈에서 고급 로직을 사용할 때 다음 사항을 고려하십시오.
+
+* 첫 번째 `"fieldvalue":` 항목은 URL에서 가져온 계획 레코드 유형 ID입니다. 이 예제에서 Planning 레코드 유형 ID는 `Rt68c886502d4b5554ee80896b`입니다.
+* Planning 데이터가 `data `(이 예제에 `"fieldName": "data"`(으)로 표시됨) 배열 내에서 반환됩니다.
+* Planning fieldNames는 `F`(으)로 시작하는 ID로 반환됩니다.
+* 이 예제는 `OR` 필터 커넥터에 대해 평가 중이므로 동일한 필드(`F68c886502d4b5554eec808975`)에 대해 두 개의 항목이 있습니다.  모듈이 필터링하는 두 가지 드롭다운 옵션은 `"planning"` 및 `"active"`입니다.

@@ -21,7 +21,7 @@ ht-degree: 15%
 
 Adobe Workfront 통합 검토 및 승인 모듈을 사용하면 승인 세부 정보를 가져오고, 에셋에 대한 결정을 내리고, 승인 참가자를 추가 또는 삭제하고, 승인 단계를 추가 또는 업데이트하고, 단계를 잠금 또는 잠금 해제하고, 사용자 지정 API를 호출할 수 있습니다.
 
-Workfront 통합 검토 및 승인에 대한 자세한 내용은 Workfront 설명서에서 [통합 검토 및 승인 개요](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview)를 참조하십시오.
+Workfront 통합 검토 및 승인에 대한 자세한 내용은 Workfront 설명서에서 [통합 검토 및 승인 개요](https://experienceleague.adobe.com/ko/docs/workfront/using/review-and-approve-work/document-approvals-overview)를 참조하십시오.
 
 ## 액세스 요구 사항
 

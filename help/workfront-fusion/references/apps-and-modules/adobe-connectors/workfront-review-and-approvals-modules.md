@@ -4,13 +4,10 @@ description: Adobe Workfront 컨텐츠 및 승인 모듈을 사용하면 승인 
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 8b031ed2093d4844f05c52db9fc79ce9e7e4b85c
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: e9ea91840c9be594e98b97202cb46dfa009349a9
 workflow-type: tm+mt
 source-wordcount: 3743
 ht-degree: 15%
@@ -21,7 +18,7 @@ ht-degree: 15%
 
 Adobe Workfront 통합 검토 및 승인 모듈을 사용하면 승인 세부 정보를 가져오고, 에셋에 대한 결정을 내리고, 승인 참가자를 추가 또는 삭제하고, 승인 단계를 추가 또는 업데이트하고, 단계를 잠금 또는 잠금 해제하고, 사용자 지정 API를 호출할 수 있습니다.
 
-Workfront 통합 검토 및 승인에 대한 자세한 내용은 Workfront 설명서에서 [통합 검토 및 승인 개요](https://experienceleague.adobe.com/ko/docs/workfront/using/review-and-approve-work/document-approvals-overview)를 참조하십시오.
+Workfront 통합 검토 및 승인에 대한 자세한 내용은 Workfront 설명서에서 [통합 검토 및 승인 개요](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview)를 참조하십시오.
 
 ## 액세스 요구 사항
 
@@ -140,7 +137,7 @@ Workfront 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를
 * [스테이지에서 결정 삭제](#delete-a-decision-on-a-stage)
 * [단계 삭제](#delete-a-stage)
 * [템플릿 삭제](#delete-a-template)
-* [# 승인 삭제](#delete-an-approval)
+* [승인 삭제](#delete-an-approval)
 * [결정 삭제](#delete-decisions)
 * [참가자 삭제](#delete-participants)
 * [스테이지 잠금](#lock-a-stage)

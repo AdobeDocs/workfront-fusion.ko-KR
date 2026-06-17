@@ -9,10 +9,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 19cca2c98ca25a7aee5c5c067d7287ab98c8b79f
 workflow-type: tm+mt
-source-wordcount: 5506
-ht-degree: 14%
+source-wordcount: 6526
+ht-degree: 13%
 
 ---
 
@@ -283,7 +283,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
     <tr>
       <td role="rowheader">[!UICONTROL 출력]</td>
       <td>
-        <p>만들려는 각 편집된 파일에 대해 항목 추가 를 클릭하고 이 표에 나열된 대로 저장소, 위치 및 유형을 입력합니다.</p>
+        <p>만들려는 각 편집된 파일에 대해 항목 추가 를 클릭하고 나열된 대로 저장소, 위치 및 유형을 입력합니다.</p>
       </td>
     </tr>
     <tr>
@@ -397,7 +397,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
     <tr>
       <td role="rowheader">[!UICONTROL 출력]</td>
       <td>
-        <p>생성할 변환된 각 파일에 대해 항목 추가 를 클릭하고 이 표에 나열된 대로 저장소, 위치 및 유형을 입력합니다.</p>
+        <p>생성하려는 변환된 각 파일에 대해 항목 추가 를 클릭하고 나열된 대로 저장소, 위치 및 유형을 입력합니다.</p>
       </td>
     </tr>
     <tr>
@@ -577,7 +577,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
     <tr>
       <td role="rowheader">[!UICONTROL 출력]</td>
       <td>
-        <p>생성할 각 파일에 대해 항목 추가 를 클릭하고 이 표에 나열된 대로 저장소, 위치 및 유형을 입력합니다.</p>
+        <p>만들려는 각 파일에 대해 항목 추가 를 클릭하고 나열된 대로 저장소, 위치 및 유형을 입력합니다.</p>
       </td>
     </tr>
     <tr>
@@ -806,7 +806,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
     <tr>
       <td role="rowheader">[!UICONTROL 출력]</td>
       <td>
-        <p>만들려는 각 파일에 대해 항목 추가 를 클릭하고 이 표에 나열된 대로 저장소, 위치, 유형 및 덮어쓰기 옵션을 입력합니다.</p>
+        <p>만들려는 각 파일에 대해 항목 추가 를 클릭하고 나열된 대로 저장소, 위치, 유형 및 덮어쓰기 옵션을 입력합니다.</p>
       </td>
     </tr>
     <tr>
@@ -1366,7 +1366,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
     <tr>
       <td role="rowheader">[!UICONTROL 출력]</td>
       <td>
-        <p>생성할 변환된 각 파일에 대해 항목 추가 를 클릭하고 이 표에 나열된 대로 저장소, 위치 및 기타 옵션을 입력합니다.</p>
+        <p>생성하려는 변환된 각 파일에 대해 항목 추가 를 클릭하고 나열된 대로 저장소, 위치 및 기타 옵션을 입력합니다.</p>
       </td>
     </tr>
     <tr>
@@ -1499,3 +1499,346 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
       </td>
     </tbody>
 </table>
+
+
+### 아트보드 만들기
+
+이 모듈은 Photoshop에 새 아트보드를 만듭니다.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Photoshop]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 연결하기를 참조하십시오.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 이미지]</td>
+      <td>
+        <p>이 대지에 추가할 각 이미지에 대해 <b>항목 추가</b>를 클릭하고 이미지의 소스 유형과 위치를 입력하십시오.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 아트보드 간격]</p>
+      </td>
+   <td>각 대지 사이에 지정할 간격을 픽셀 단위로 입력하거나 매핑합니다.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 출력]</td>
+      <td>
+        <p>생성하려는 변환된 각 파일에 대해 항목 추가 를 클릭하고 나열된 대로 저장소, 위치 및 기타 옵션을 입력합니다.</p>
+      </td>
+    </tr>
+    </tbody>
+</table>
+
+### 합성 만들기 또는 편집
+
+이 모듈은 Photoshop에서 합성을 만들거나 편집합니다.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Photoshop]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 연결하기를 참조하십시오.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 이미지]</td>
+      <td>
+        <p>이 대지에 추가할 각 이미지에 대해 <b>항목 추가</b>를 클릭하고 이미지의 소스 유형과 위치를 입력하십시오.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 너비]</p>
+      </td>
+   <td>이미지를 만드는 경우 이미지 너비를 픽셀 단위로 입력하십시오.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 높이]</td>
+      <td>
+        <p>이미지를 만드는 경우 이미지 높이를 픽셀 단위로 입력합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 모드]</td>
+      <td>
+        <p>이 이미지의 색상 모드를 선택합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 채우기]</td>
+      <td>
+        <p>배경 레이어의 채우기 유형을 선택합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 이름]</td>
+      <td>
+        <p>새 이미지의 이름을 입력하거나 매핑합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Pixel scale factor]</td>
+      <td>
+        <p>픽셀 배율 계수를 입력하거나 매핑합니다. 0.1과 1 사이의 숫자여야 합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Resolution]</td>
+      <td>
+        <p><b>값</b> 필드에 해상도 값을 밀도 단위(인치당 픽셀 수)로 입력합니다. 기본값은 72입니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 프로필 유형]</td>
+      <td>
+        <p>기본 색상 프로파일을 무시하려면 프로파일 유형을 선택하고 나열된 대로 세부 정보를 입력합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 자르기 &gt; 위쪽 / 왼쪽 / 아래쪽 / 오른쪽]</td>
+      <td>
+        <p>이미지를 자를 범위를 입력합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 숨기기]</td>
+      <td>
+        <p>자르기 경계 외부에 있는 픽셀을 숨기려면 예를 선택합니다. false로 설정하면 자르기 범위를 벗어나는 픽셀이 삭제됩니다. 기본값은 false입니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 크기 조정 &gt; 폭]</td>
+      <td>
+        <p>너비에 사용할 단위를 선택한 다음 원하는 너비를 나타내는 값을 선택합니다. </p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 크기 조정 &gt; 높이]</td>
+      <td>
+        <p>높이에 사용할 단위를 선택한 다음 원하는 높이를 나타내는 값을 선택합니다. </p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Resolution]</td>
+      <td>
+        <p>해상도에 사용할 단위를 선택한 다음 원하는 해상도를 나타내는 값을 선택합니다.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 리샘플]</td>
+      <td>
+        <p>크기를 조정할 때 사용할 리샘플링 방법을 선택합니다.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 제한 비율]</td>
+      <td>
+        <p>폭과 높이 사이의 종횡비를 유지하려면 예를 선택합니다. 폭과 높이를 독립적으로 조정하려면 아니오를 선택합니다.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 래스터화]</td>
+      <td>
+        <p>이미지를 래스터화할지 여부를 선택합니다.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 배율 스타일]</td>
+      <td>
+        <p>이미지 크기를 조정할 때 스타일에 배율을 적용할지 여부를 선택합니다.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Trim on]</td>
+      <td>
+        <p>투명 픽셀에서 트리밍할지 여부를 선택합니다.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 레이어]</td>
+      <td>
+        <p>나중에 추가할 때마다 <b>항목 추가</b>를 클릭하고 레이어 세부 정보를 입력하십시오. </p><p>자세한 내용은 Adobe 설명서에서 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop-v2/#operation/createComposite">합성 만들기 또는 편집</a>을 참조하십시오.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Default font PostScript name]</td>
+      <td>
+        <p>사용할 기본 글꼴의 PostScript 이름을 입력하거나 매핑합니다.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Missing font strategy]</td>
+      <td>
+        <p>글꼴을 사용할 수 없는 경우 만들기 또는 편집이 실패하도록 할지 또는 기본 글꼴을 사용할지 선택합니다.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 추가 글꼴]</td>
+      <td>
+        <p>추가할 각 글꼴에 대해 <b>항목 추가</b>를 클릭하고 해당 글꼴의 소스 URL을 입력하십시오. </p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 출력]</td>
+      <td>
+        <p>만들려는 각 편집된 파일에 대해 항목 추가 를 클릭하고 출력 세부 정보를 입력합니다. </p><p>자세한 내용은 Adobe 설명서에서 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop-v2/#operation/createComposite">합성 만들기 또는 편집</a>을 참조하세요.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 최대 결과 수]</td>
+      <td>
+        <p>한 실행 주기 동안 모듈에서 작업할 최대 결과 수를 입력하거나 매핑합니다.</p>
+      </td>
+      </tr>
+      </tbody>
+</table>
+
+### 다양한 조정을 통해 이미지 편집
+
+이 모듈은 이미지에 대해 Lightroom 스타일 조정을 수행합니다.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Photoshop]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 연결하기를 참조하십시오.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 이미지]</td>
+      <td>
+        <p>이미지의 소스 유형 및 위치를 입력하거나 매핑합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 기타 필드]</p>
+      </td>
+   <td><p>자세한 내용은 Adobe 설명서에서 <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop-v2/#operation/edit">다양한 조정을 통해 이미지 편집</a>을 참조하십시오.</p></td> 
+    </tr>
+    </tbody>
+</table>
+
+### Photoshop 작업, 스크립트 및 변형 실행
+
+이 모듈은 Firefly Photoshop API에서 사용할 수 있는 작업, 스크립트 및 변환을 실행합니다.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Photoshop]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 연결하기를 참조하십시오.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 이미지]</td>
+      <td>
+        <p>이미지의 소스 유형 및 위치를 입력하거나 매핑합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Actions]</p>
+      </td>
+   <td><p>추가할 각 작업에 대해 <b>항목 추가</b>를 클릭하고 작업의 소스, URL 및 이름을 입력합니다.</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL UXP source]</p>
+      </td>
+   <td><p>UXP 스크립트를 사용하는 경우 URL을 제공할지 인라인 콘텐츠를 제공할지 선택한 다음 URL이나 콘텐츠를 입력하거나 매핑합니다.</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 추가 컨텐츠]</p>
+      </td>
+   <td><p>작업 또는 UXP에서 참조한 파일을 최대 25개까지 추가합니다.</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 출력]</td>
+      <td>
+        <p>만들려는 각 편집된 파일에 대해 항목 추가 를 클릭하고 형식, 대상 및 출력 패턴을 입력합니다.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 최대 결과 수]</td>
+      <td>
+        <p>한 실행 주기 동안 모듈에서 작업할 최대 결과 수를 입력하거나 매핑합니다.</p>
+      </td>
+      </tr>
+    </tbody>
+</table>
+
+### 매니페스트 생성
+
+이 모듈은 지정된 입력 이미지에 대한 PSD 매니페스트를 생성합니다.
+
+
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Photoshop]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a>에 연결하기를 참조하십시오.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Source]</td>
+      <td>
+        <p>이미지의 소스 유형 및 위치를 입력하거나 매핑합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 출력]</td>
+      <td>
+        <p>만들려는 각 편집된 파일에 대해 항목 추가 를 클릭하고 대상 세부 정보를 입력합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 레이어 썸네일 포함]</p>
+      </td>
+   <td><p>매니페스트의 각 레이어에 대해 썸네일 렌디션을 생성하도록 모듈화하려면 예를 선택합니다.</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 최대 썸네일 깊이]</p>
+      </td>
+   <td><p>썸네일 표현물의 최대 깊이를 입력하거나 매핑합니다. 최대 깊이가 없으면 <code>0</code>을(를) 입력하십시오.</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 레이어 썸네일 형식]</p>
+      </td>
+   <td><p>썸네일을 JPEG 또는 PNG 형식으로 할지 선택합니다.</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 스마트 오브젝트 데이터 추출]</td>
+      <td>
+        <p>포함된 스마트 개체를 추출하고 매니페스트에 사전 서명된 URL을 포함할지 여부를 선택합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 트림을 투명도로 트림]</td>
+      <td>
+        <p>투명 픽셀을 제거하기 위해 각 레이어 썸네일을 트리밍할지 여부를 선택합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 최대 결과 수]</td>
+      <td>
+        <p>한 실행 주기 동안 모듈에서 작업할 최대 결과 수를 입력하거나 매핑합니다.</p>
+      </td>
+      </tr>
+    </tbody>
+</table>
+

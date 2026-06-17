@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
 TQID: https://experienceleague.adobe.com/RratZmko93V0LMxJ6qTy6cNvRqgPNvNgHTflRngE6BI
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 19cca2c98ca25a7aee5c5c067d7287ab98c8b79f
 workflow-type: tm+mt
 source-wordcount: 6526
@@ -526,25 +528,25 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL(옵션 &gt; 문서) 해상도]</p>
+        <p>[!UICONTROL (옵션 &gt; 문서) 해상도]</p>
       </td>
    <td> 이미지의 해상도를 인치당 픽셀 단위로 입력하거나 매핑합니다. 72에서 300 사이여야 합니다. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL(옵션 &gt; 문서) 모드]</p>
+        <p>[!UICONTROL (옵션 &gt; 문서) 모드]</p>
       </td>
    <td> 이미지 모드를 선택합니다. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL(옵션 &gt; 문서) 채우기]</p>
+        <p>[!UICONTROL (옵션 &gt; 문서) 채우기]</p>
       </td>
    <td> 배경 레이어의 채우기를 투명, 흰색 또는 이미지의 배경색으로 할지 여부를 선택합니다. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL(옵션 &gt; 문서) 깊이]</p>
+        <p>[!UICONTROL (옵션 &gt; 문서) 깊이]</p>
       </td>
    <td> 이미지의 비트 심도를 선택합니다. </td> 
     </tr>
@@ -826,7 +828,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL(출력) 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL (출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>
@@ -877,7 +879,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL(출력) 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL (출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>
@@ -964,7 +966,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL(출력) 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL (출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>
@@ -1039,7 +1041,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL(출력) 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL (출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>

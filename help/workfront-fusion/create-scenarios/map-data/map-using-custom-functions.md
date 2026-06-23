@@ -3,10 +3,11 @@ title: 사용자 정의 함수를 사용하여 데이터 매핑
 description: 항목을 매핑할 때 함수를 사용하여 간단하거나 복잡한 공식을 만들 수 있습니다.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 109ea8a6b3c37918110dc930a19ac85ef3e6d764
+exl-id: dc4e697a-a65c-48bc-99de-8e26fbeb7ba7
+source-git-commit: bf8274d9a80af75022fd600aee99c511b2e2d9e5
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 20%
+source-wordcount: '640'
+ht-degree: 16%
 
 ---
 
@@ -53,9 +54,19 @@ Workfront Fusion에는 간단하거나 복잡한 공식을 만들 수 있는 기
 
 ## 사용자 지정 기능 구성
 
-사용자 지정 함수는 Workfront Fusion의 함수 영역에서 구성됩니다. 함수가 구성된 후 Adobe App Builder 커넥터를 사용하여 시나리오에 해당 함수를 추가할 수 있습니다.
+여러 시나리오에서 사용할 수 있는 함수 영역에서 사용자 정의 함수를 생성하거나 개별 시나리오 내에서 사용자 정의 함수를 구성할 수 있습니다.
 
-### 런타임 환경 초기화
+* [여러 시나리오에서 사용할 사용자 지정 함수 만들기](#create-a-custom-function-to-use-in-multiple-scenarios)
+* [시나리오 내에 사용자 지정 함수 만들기](#create-a-custom-function-within-a-scenario)
+
+### 여러 시나리오에서 사용할 사용자 지정 함수 만들기
+
+여러 시나리오에서 사용할 수 있는 사용자 정의 함수는 Workfront Fusion의 함수 영역에서 구성합니다. 함수가 구성된 후 Adobe App Builder 커넥터를 사용하여 시나리오에 해당 함수를 추가할 수 있습니다.
+
+* [런타임 환경 초기화](#initialize-your-runtime-environment)
+* [함수 영역에서 사용자 지정 함수 만들기](#create-a-custom-function-in-the-functions-area)
+
+#### 런타임 환경 초기화
 
 사용자 지정 함수를 만들려면 먼저 런타임 환경을 초기화해야 합니다. 팀에 사용자 정의 기능이 없는 경우에만 수행해야 합니다.
 
@@ -72,7 +83,7 @@ Workfront Fusion에는 간단하거나 복잡한 공식을 만들 수 있는 기
 
    잠시 후 두 개의 샘플 함수가 있는 함수 목록이 나타납니다.
 
-### 사용자 지정 함수 만들기
+#### 함수 영역에서 사용자 지정 함수 만들기
 
 런타임 환경이 구성된 후 사용자 정의 함수를 만들 수 있습니다.
 
@@ -96,9 +107,14 @@ Workfront Fusion에는 간단하거나 복잡한 공식을 만들 수 있는 기
    시나리오에 함수를 추가할 때 기본 매개 변수를 재정의할 수 있습니다.
 1. **저장**&#x200B;을 클릭합니다
 
+### 시나리오 내에 사용자 지정 함수 만들기
+
+시나리오 내에서 사용자 지정 함수를 만들려면 Adobe App Builder 커넥터의 **사용자 지정 코드 블록 실행** 모듈을 사용하십시오.
+
+자세한 지침은 [Adobe App Builder 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md)을 참조하세요.
+
 ## 시나리오에 사용자 지정 함수 추가
 
 시나리오에 사용자 지정 함수를 추가하려면 Adobe App Builder 커넥터를 사용하십시오.
 
 자세한 지침은 [Adobe App Builder 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md)을 참조하세요.
-

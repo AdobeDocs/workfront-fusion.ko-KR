@@ -5,11 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
 TQID: https://experienceleague.adobe.com/ObsbedalglAtYWQlx0w8vZbvsU7z0ttVIehf8STysvw
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 61b8118bed095b526e179c8fae798ece4e11d065
 workflow-type: tm+mt
-source-wordcount: 717
+source-wordcount: 731
 ht-degree: 23%
 
 ---
@@ -18,9 +17,11 @@ ht-degree: 23%
 
 Workfront Fusion에는 간단하거나 복잡한 공식을 만들 수 있는 기본 제공 함수가 포함되어 있습니다. 이러한 함수는 배열, 문자열, 숫자 및 이전 모듈의 데이터를 비롯한 다양한 사용 사례를 다룹니다.
 
-또한 시나리오가 데이터를 변환하고 조작하는 데 사용할 수 있는 사용자 지정 함수를 만들 수 있습니다.
+또한 시나리오가 데이터를 변환하고 조작하는 데 사용할 수 있는 사용자 지정 함수와 패키지를 만들 수 있습니다.
 
 사용자 지정 함수에 대한 자세한 내용과 지침은 [사용자 지정 함수를 사용하여 데이터 매핑](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)을 참조하세요.
+
+함수 패키지에 대한 정보 및 지침은 [사용자 지정 함수 패키지 사용](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md)을 참조하세요.
 
 ## 액세스 요구 사항
 

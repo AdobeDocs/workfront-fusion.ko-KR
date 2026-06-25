@@ -11,7 +11,7 @@ ht-degree: 0%
 `help/quicksilver/product-announcements/product-releases/release-note-templates/` 및
 최근 분기별 릴리스에 사용된 실제 서식.
 
----
+&#x200B;---
 
 ## 제품 영역 페이지 템플릿
 
@@ -57,15 +57,17 @@ For more information, see [Help article title](/help/quicksilver/path/to/article
   >Production fast release: {date}
   >Production for everyone: {date}
   ```
+
 - 기능이 일시적으로 제거된 경우 날짜 뒤에 줄을 추가합니다.
 
   ```
   >
   >This feature has been temporarily removed from the Production environment on {date}.
   ```
+
 - 도움말 링크는 `/help/quicksilver/`(으)로 시작하는 절대 경로를 사용합니다.
 
----
+&#x200B;---
 
 ## 개요 페이지 템플릿
 
@@ -188,7 +190,7 @@ For information about the maintenance updates made during the {Written Quarter} 
 Explore the latest updates made to learning programs, learning paths, videos, and guides for each Adobe Workfront product release. For more information, see the "What's New" section of the [Workfront Tutorials page](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/home.html).
 ```
 
----
+&#x200B;---
 
 ## 디자인 페이지 템플릿
 
@@ -217,7 +219,7 @@ For a list of all changes available with the {Written Quarter} {Year} release, s
 Description of the look-and-feel change.
 ```
 
----
+&#x200B;---
 
 ## 날짜 설명선 형식
 
@@ -247,7 +249,7 @@ Description of the look-and-feel change.
 >Preview release: February 9, 2023; Planned Production release: February 23, 2023
 ```
 
----
+&#x200B;---
 
 ## 감시할 알려진 불일치
 

@@ -73,7 +73,7 @@ exl-id: <existing UUID — never generate or change>
 >Production for everyone: {Month Day, Year}
 ```
 
-5. **본문**: 기능 설명, 도움말 설명서 링크
+&#x200B;5. **본문**: 기능 설명, 도움말 설명서 링크
 
 #### 개요 페이지
 
@@ -90,10 +90,10 @@ exl-id: <existing UUID — never generate or change>
 * [Document enhancements](#document-enhancements)
 ```
 
-5. HTML 기능 테이블이 포함된 **제품 영역당 H3**(.claude/commands/_release-notes-formatter-reference.md#overview-feature-table 참조)
+&#x200B;5. HTML 기능 테이블이 포함된 **제품 영역당 H3**(.claude/commands/_release-notes-formatter-reference.md#overview-feature-table 참조)
    - 각 테이블 내에서 **최신 기능 먼저** — 가장 최근 행이 테이블의 맨 위(머리글 행 뒤)에 나타납니다.
 
-6. **후행 섹션**(H2): 다른 영역에 대한 릴리스 정보, 바탕 화면 교정 뷰어 업데이트, 알림, API 버전, 유지 관리 업데이트, 교육 업데이트
+&#x200B;6. **후행 섹션**(H2): 다른 영역에 대한 릴리스 정보, 바탕 화면 교정 뷰어 업데이트, 알림, API 버전, 유지 관리 업데이트, 교육 업데이트
 
 ### 3단계: 링크 유효성 검사
 

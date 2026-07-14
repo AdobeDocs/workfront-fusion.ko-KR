@@ -9,10 +9,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 754e6eee17449c4b58632702d94941f30efb1d81
 workflow-type: tm+mt
-source-wordcount: 1535
-ht-degree: 13%
+source-wordcount: 1571
+ht-degree: 12%
 
 ---
 
@@ -78,7 +78,8 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 1. 들어오는 데이터의 유효성을 검사하려면 **데이터 구조** 필드에서 사용할 데이터 구조를 선택하거나 추가하십시오.
 
    데이터 구조에 대한 자세한 내용은 [데이터 구조](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)를 참조하십시오.
-1. **자격 증명** 필드에 인증에 사용할 자격 증명을 입력할 수 있습니다. 자격 증명을 입력하려면 **추가**&#x200B;를 클릭하고 자격 증명 정보를 입력하십시오.
+1. **인증 유형** 필드에서 이 웹후크에서 기본 인증을 사용할지 또는 클라이언트 인증서를 사용할지 선택합니다.
+1. **자격 증명** 필드에 인증에 사용할 자격 증명을 입력할 수 있습니다. 자격 증명을 입력하려면 **추가**&#x200B;를 클릭하고 자격 증명 정보를 입력하십시오. 기본 인증의 사용자 이름과 암호 또는 인증서 인증의 클라이언트 인증서와 공개 키일 수 있습니다.
 1. 원하는 대로 다른 설정을 활성화합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다
 

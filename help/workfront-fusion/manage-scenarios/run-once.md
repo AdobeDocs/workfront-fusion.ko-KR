@@ -3,7 +3,8 @@ title: 한 번 실행을 사용하여 시나리오 테스트
 description: 한 번 실행 단추를 사용하여 외부 트리거 없이 시나리오를 테스트할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 74faab448149276b8d769dfde0260c96d4b0712a
 workflow-type: tm+mt
 source-wordcount: 328

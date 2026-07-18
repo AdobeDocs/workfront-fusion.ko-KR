@@ -9,10 +9,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 754e6eee17449c4b58632702d94941f30efb1d81
+source-git-commit: 8af4c12773be538823d252f5022e1613e5629d2d
 workflow-type: tm+mt
-source-wordcount: 1571
-ht-degree: 12%
+source-wordcount: 1909
+ht-degree: 10%
 
 ---
 
@@ -68,7 +68,16 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 >
 >서드파티 웹후크(발신 웹후크)를 호출하려면 HTTP 모듈 중 하나를 사용합니다. 자세한 내용은 [HTTP 모듈](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)을 참조하세요.
 
-웹후크를 사용하여 앱을 Workfront Fusion에 연결하려면
+웹후크를 사용하여 앱을 Workfront Fusion에 연결하려면 클라이언트 인증서(mTLS) 또는 기본 인증을 사용하여 인증하도록 웹후크를 설정할 수 있습니다.
+
+* [클라이언트 인증서(mTLS)와 함께 웹후크 사용](#use-a-webhook-with-a-client-certificate-mtls)
+* [기본 인증과 함께 웹후크 사용](#use-a-webhook-with-basic-authentication)
+
+### 클라이언트 인증서(mTLS)와 함께 웹후크 사용
+
+mTLS를 사용하여 클라이언트 인증서와 개인 키를 제공합니다. Fusion은 Webhook를 호출할 때 인증서와 키를 사용하여 대상 서비스에 자신을 인증합니다. 이 양방향 인증을 통해 웹후크를 기본 인증보다 더 안전하게 보호할 수 있습니다.
+
+mTLS에 대한 자세한 내용은 HTTP 모듈에서 mTLS 사용 문서에서 [상호 TLS 개요](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md#mutual-tls-overview)를 참조하십시오.
 
 1. **[!UICONTROL Webhooks]** > **[!UICONTROL 사용자 지정 Webhook]** 인스턴트 트리거 모듈을 시나리오에 추가합니다.
 
@@ -78,8 +87,42 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 1. 들어오는 데이터의 유효성을 검사하려면 **데이터 구조** 필드에서 사용할 데이터 구조를 선택하거나 추가하십시오.
 
    데이터 구조에 대한 자세한 내용은 [데이터 구조](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)를 참조하십시오.
-1. **인증 유형** 필드에서 이 웹후크에서 기본 인증을 사용할지 또는 클라이언트 인증서를 사용할지 선택합니다.
-1. **자격 증명** 필드에 인증에 사용할 자격 증명을 입력할 수 있습니다. 자격 증명을 입력하려면 **추가**&#x200B;를 클릭하고 자격 증명 정보를 입력하십시오. 기본 인증의 사용자 이름과 암호 또는 인증서 인증의 클라이언트 인증서와 공개 키일 수 있습니다.
+1. **인증 형식** 필드에서 **[!UICONTROL 클라이언트 인증서]**&#x200B;를 선택합니다.
+1. **자격 증명** 필드에서 인증에 사용할 자격 증명을 선택하거나 새 자격 증명을 추가합니다.
+1. (조건부) 자격 증명을 추가하려면 다음을 수행합니다.
+   1. **추가** 클릭
+   1. 새 자격 증명 키의 이름을 입력하십시오.
+   1. **인증서** 필드에 인증서를 붙여 넣습니다.
+   1. **개인 키** 필드에 개인 키를 붙여 넣으십시오.
+
+      >[!TIP]
+      >
+      >결합된 파일에서 인증서 또는 개인 키를 추출해야 하는 경우 해당 필드 옆의 **추출**&#x200B;을 클릭하고 추출하려는 항목을 선택한 다음 파일과 암호를 제공하십시오.
+   1. **키 만들기**&#x200B;를 클릭합니다.
+   1. 웹후크 패널의 **자격 증명** 필드에서 새 키를 선택합니다.
+1. 원하는 대로 다른 설정을 활성화합니다.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다
+
+웹후크를 생성하면 고유한 URL이 표시됩니다. Webhook에서 데이터를 보내는 주소입니다. Workfront Fusion은 이 주소로 전송된 데이터의 유효성을 검사한 다음 시나리오에서 처리하기 위해 데이터를 전달합니다.
+
+>[!NOTE]
+>
+>웹후크를 만든 후에는 한 번에 두 개 이상의 시나리오에서 사용할 수 있습니다.
+
+### 기본 인증과 함께 웹후크 사용
+
+기본 인증은 사용자 이름과 암호를 사용하여 연결 중인 서비스를 인증합니다.
+
+1. **[!UICONTROL Webhooks]** > **[!UICONTROL 사용자 지정 Webhook]** 인스턴트 트리거 모듈을 시나리오에 추가합니다.
+
+1. Webhook 필드 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭하고 새 Webhook의 이름을 입력합니다.
+1. (선택 사항) **[!UICONTROL 고급 설정]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL IP 제한]** 필드에 모듈에서 데이터를 허용할 수 있는 IP 주소의 쉼표로 구분된 목록을 입력하십시오.
+1. 들어오는 데이터의 유효성을 검사하려면 **데이터 구조** 필드에서 사용할 데이터 구조를 선택하거나 추가하십시오.
+
+   데이터 구조에 대한 자세한 내용은 [데이터 구조](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)를 참조하십시오.
+1. **인증 유형** 필드에서 **[!UICONTROL 기본 인증]**&#x200B;을 선택합니다.
+1. **자격 증명** 필드에 인증에 사용할 자격 증명을 입력하십시오. 자격 증명을 입력하려면 **추가**&#x200B;를 클릭하고 기본 인증을 위한 사용자 이름과 암호를 입력하십시오.
 1. 원하는 대로 다른 설정을 활성화합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다
 

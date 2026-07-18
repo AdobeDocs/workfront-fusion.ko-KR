@@ -7,16 +7,18 @@ exl-id: e7fd0351-b840-422c-b861-82ae110c703b
 TQID: https://experienceleague.adobe.com/xVihxZH-fwPCIkryQAQEOWgeShtPTMXth4jEl5OLdbo
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 1f1dadc88dd6209cccbab9636e8de31fca3a3f24
+source-git-commit: 6a176c74f45b17ed9fbf80b2d87cf45873067f74
 workflow-type: tm+mt
-source-wordcount: 201
-ht-degree: 45%
+source-wordcount: 217
+ht-degree: 42%
 
 ---
 
 # 삭제된 시나리오 복원
 
 Workfront Fusion 관리자는 최근에 삭제된 시나리오를 복원할 수 있습니다.
+
+시나리오는 삭제 후 7일 동안 복원할 수 있습니다. 그 후에는 복원할 수 없습니다.
 
 ## 액세스 요구 사항
 

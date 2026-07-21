@@ -97,6 +97,7 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
   
   {Regular description paragraph(s).}
   ```
+
 - 모든 기능은 &quot;자세한 내용은 [...]&quot;로 끝나야 합니다. 관련 도움말 문서 링크 링크 대상이 저장소에 있는지 확인합니다.
 
 ## 4단계: 개요 색인에 페이지 추가
@@ -111,6 +112,7 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
   ```markdown
   * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
+
 - 새로운 연도의 첫 번째 릴리스인 경우 이전 연도의 제목 위에 새 `## Fusion releases in {YYYY}` 제목을 추가하고, *이전*&#x200B;년의 섹션을 `+++ **Click to open**`/`+++` 축소 가능한 블록으로 래핑합니다(아직 올해만 확장).
 
 ## 5단계: TOC에 페이지 추가
@@ -123,6 +125,7 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
   ```markdown
         * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
+
 - 현재 연도의 머리글이 아직 없는 경우 이전 연도의 머리글 위에 `* Fusion releases - {YYYY} {#fusion-releases-{YYYY}}`을(를) 추가합니다.
 - **새 항목에 `{hide-from-toc}` 접두사를 추가하지 마십시오**. 이 접두사는 이전 항목이 표시되는 탐색 메뉴에서 오래된 경우에만 사용됩니다(아래의 알려진 불일치 참조).
 

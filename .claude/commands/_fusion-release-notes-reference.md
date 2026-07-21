@@ -10,7 +10,7 @@ ht-degree: 0%
 의 실제 최근 페이지를 기반으로 한 `fusion-release-notes` 스킬에 대한 작업 예제
 `help/workfront-fusion/fusion-product-releases/fusion-releases-2026/`.
 
----
+&#x200B;---
 
 ## 예 1: 간단한 다중 기능 주
 
@@ -50,7 +50,7 @@ To make it easier to understand changes between scenario versions, we've added t
 For more information, see [View and manage scenario versions](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md).
 ```
 
----
+&#x200B;---
 
 ## 예 2: 작업 필요/사용 중단 설명선이 있는 주
 
@@ -96,7 +96,7 @@ To make it easier to identify routes, we've added labels. Now, routes are labele
 For more information on routes, see [Add a Router module and configure routes](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 ```
 
----
+&#x200B;---
 
 ## 개요 페이지(`fusion-release-activity.md`) 업데이트 패턴
 
@@ -129,7 +129,7 @@ For more information on routes, see [Add a Router module and configure routes](/
 +++
 ```
 
----
+&#x200B;---
 
 ## TOC.md 업데이트 패턴
 
@@ -144,7 +144,7 @@ For more information on routes, see [Add a Router module and configure routes](/
         ...
 ```
 
----
+&#x200B;---
 
 ## 기존 페이지의 알려진 불일치 사항(참조용 — 새 페이지에 복사하지 않음)
 

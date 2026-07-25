@@ -9,10 +9,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 8af4c12773be538823d252f5022e1613e5629d2d
+source-git-commit: e8ba11636822fc7007e3a331002194f1a3effcbc
 workflow-type: tm+mt
-source-wordcount: 1909
-ht-degree: 10%
+source-wordcount: 2418
+ht-degree: 8%
 
 ---
 
@@ -68,10 +68,11 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 >
 >서드파티 웹후크(발신 웹후크)를 호출하려면 HTTP 모듈 중 하나를 사용합니다. 자세한 내용은 [HTTP 모듈](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)을 참조하세요.
 
-웹후크를 사용하여 앱을 Workfront Fusion에 연결하려면 클라이언트 인증서(mTLS) 또는 기본 인증을 사용하여 인증하도록 웹후크를 설정할 수 있습니다.
+웹후크를 사용하여 앱을 Workfront Fusion에 연결하려면 클라이언트 인증서(mTLS), 기본 인증 또는 Adobe Identity Management System(IMS)을 사용하여 인증하도록 웹후크를 설정할 수 있습니다.
 
 * [클라이언트 인증서(mTLS)와 함께 웹후크 사용](#use-a-webhook-with-a-client-certificate-mtls)
 * [기본 인증과 함께 웹후크 사용](#use-a-webhook-with-basic-authentication)
+* [IMS(Adobe Identity Management System)와 함께 웹후크 사용](#use-a-webhook-with-adobe-identity-management-system-ims)
 
 ### 클라이언트 인증서(mTLS)와 함께 웹후크 사용
 
@@ -84,6 +85,13 @@ mTLS에 대한 자세한 내용은 HTTP 모듈에서 mTLS 사용 문서에서 [�
 1. Webhook 필드 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭하고 새 Webhook의 이름을 입력합니다.
 1. (선택 사항) **[!UICONTROL 고급 설정]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL IP 제한]** 필드에 모듈에서 데이터를 허용할 수 있는 IP 주소의 쉼표로 구분된 목록을 입력하십시오.
+1. (선택 사항) **[!UICONTROL 원본 제한]** 필드에서 이 웹후크 호출을 허용할 각 원본에 대해 **항목 추가**&#x200B;를 클릭하고 원본 패턴을 입력하십시오. 원본을 허용하려면 이 필드를 비워 둡니다.
+
+   이 필드는 다음 패턴을 허용합니다.
+
+   * 정확한 호스트 이름: `app.example.com`
+   * 와일드카드 하위 도메인: `*.example.com`
+   * 정규화된 구성표: ` https://app.example.com` 또는 `https://*.example.com`
 1. 들어오는 데이터의 유효성을 검사하려면 **데이터 구조** 필드에서 사용할 데이터 구조를 선택하거나 추가하십시오.
 
    데이터 구조에 대한 자세한 내용은 [데이터 구조](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)를 참조하십시오.
@@ -118,11 +126,50 @@ mTLS에 대한 자세한 내용은 HTTP 모듈에서 mTLS 사용 문서에서 [�
 1. Webhook 필드 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭하고 새 Webhook의 이름을 입력합니다.
 1. (선택 사항) **[!UICONTROL 고급 설정]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL IP 제한]** 필드에 모듈에서 데이터를 허용할 수 있는 IP 주소의 쉼표로 구분된 목록을 입력하십시오.
+1. (선택 사항) **[!UICONTROL 원본 제한]** 필드에서 이 웹후크 호출을 허용할 각 원본에 대해 **항목 추가**&#x200B;를 클릭하고 원본 패턴을 입력하십시오. 원본을 허용하려면 이 필드를 비워 둡니다.
+
+   이 필드는 다음 패턴을 허용합니다.
+
+   * 정확한 호스트 이름: `app.example.com`
+   * 와일드카드 하위 도메인: `*.example.com`
+   * 정규화된 구성표: ` https://app.example.com` 또는 `https://*.example.com`
 1. 들어오는 데이터의 유효성을 검사하려면 **데이터 구조** 필드에서 사용할 데이터 구조를 선택하거나 추가하십시오.
 
    데이터 구조에 대한 자세한 내용은 [데이터 구조](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)를 참조하십시오.
 1. **인증 유형** 필드에서 **[!UICONTROL 기본 인증]**&#x200B;을 선택합니다.
 1. **자격 증명** 필드에 인증에 사용할 자격 증명을 입력하십시오. 자격 증명을 입력하려면 **추가**&#x200B;를 클릭하고 기본 인증을 위한 사용자 이름과 암호를 입력하십시오.
+1. 원하는 대로 다른 설정을 활성화합니다.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다
+
+웹후크를 생성하면 고유한 URL이 표시됩니다. Webhook에서 데이터를 보내는 주소입니다. Workfront Fusion은 이 주소로 전송된 데이터의 유효성을 검사한 다음 시나리오에서 처리하기 위해 데이터를 전달합니다.
+
+>[!NOTE]
+>
+>웹후크를 만든 후에는 한 번에 두 개 이상의 시나리오에서 사용할 수 있습니다.
+
+### IMS(Adobe Identity Management System)와 함께 웹후크 사용
+
+Adobe Identity Management System(IMS) 인증은 조직의 Adobe IMS 자격 증명을 사용하여 연결 중인 서비스를 인증합니다.
+
+1. **[!UICONTROL Webhooks]** > **[!UICONTROL 사용자 지정 Webhook]** 인스턴트 트리거 모듈을 시나리오에 추가합니다.
+
+1. Webhook 필드 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭하고 새 Webhook의 이름을 입력합니다.
+1. (선택 사항) **[!UICONTROL 고급 설정]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL IP 제한]** 필드에 모듈에서 데이터를 허용할 수 있는 IP 주소의 쉼표로 구분된 목록을 입력하십시오.
+1. (선택 사항) **[!UICONTROL 원본 제한]** 필드에서 이 웹후크 호출을 허용할 각 원본에 대해 **항목 추가**&#x200B;를 클릭하고 원본 패턴을 입력하십시오. 원본을 허용하려면 이 필드를 비워 둡니다.
+
+   이 필드는 다음 패턴을 허용합니다.
+
+   * 정확한 호스트 이름: `app.example.com`
+   * 와일드카드 하위 도메인: `*.example.com`
+   * 정규화된 구성표: ` https://app.example.com` 또는 `https://*.example.com`
+1. 들어오는 데이터의 유효성을 검사하려면 **데이터 구조** 필드에서 사용할 데이터 구조를 선택하거나 추가하십시오.
+
+   데이터 구조에 대한 자세한 내용은 [데이터 구조](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)를 참조하십시오.
+1. **인증 유형** 필드에서 **Adobe IMS(인증 헤더의 전달자 토큰)**&#x200B;을(를) 선택합니다.
+1. (선택 사항) **허용된 클라이언트** 필드에 이 웹후크를 호출할 수 있는 클라이언트 ID의 쉼표로 구분된 목록을 입력하십시오. 신뢰할 수 있는 발급자와 대상이 토큰을 유효하게 서명한 클라이언트를 수락하려면 이 설정을 비워 두십시오.
+1. (선택 사항) **허용된 사용자** 필드에 이 웹후크를 호출할 수 있는 사용자 ID의 쉼표로 구분된 목록을 입력하십시오. 모든 사용자를 허용하려면 이 설정을 비워 두십시오.
+1. (선택 사항) **필수 범위** 필드에 토큰의 `scope` 클레임에 있어야 하는 쉼표로 구분된 범위 목록을 입력하십시오. 범위 검사를 건너뛰려면 이 항목을 비워 둡니다.
 1. 원하는 대로 다른 설정을 활성화합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다
 
@@ -186,6 +233,10 @@ mTLS에 대한 자세한 내용은 HTTP 모듈에서 mTLS 사용 문서에서 [�
 1. 데이터 구조를 저장하려면 **[!UICONTROL 확인]**&#x200B;을 클릭하세요.
 
    이제 웹후크의 항목을 매핑 패널에서 시나리오의 후속 모듈과 함께 사용할 수 있습니다.
+
+## 허용된 원본/CORS
+
+Fusion에서 사용자 지정 웹후크를 만들거나 편집할 때 허용된 원본 필드를 사용하면 fetch/XHR과 같이 클라이언트측 JavaScript에서 직접 웹후크 끝점을 호출할 수 있는 브라우저 원본(웹 사이트)을 제한할 수 있습니다. CORS(원본 간 리소스 공유) 컨트롤이며, IP 제한 사항과 인증 유형(기본 인증/클라이언트 인증서/Adobe IMS)의 개별 경계입니다.
 
 ## Webhook 큐
 

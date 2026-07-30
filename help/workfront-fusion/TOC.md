@@ -3,10 +3,10 @@ user-guide-title: Adobe Workfront Fusion 설명서
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 문서, 튜토리얼 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
 nudge: true
-source-git-commit: 2f14ef21d36e4307363386563c9861c9306e9cb1
+source-git-commit: 4d018e92863fa3461ea73defe6b83991a7e2083d
 workflow-type: tm+mt
-source-wordcount: '2508'
-ht-degree: 52%
+source-wordcount: '2512'
+ht-degree: 53%
 
 ---
 
@@ -282,7 +282,7 @@ ht-degree: 52%
   * [체인 시나리오 관계 보기 및 관리](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md)
   * [실행 중인 시나리오에서 데이터 흐름 보기](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
   * [웹후크의 대기열 보기](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
-  * {hide-from-toc}[Workfront Fusion의 AI 도우미](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
+  * Workfront Fusion의 {hide-from-toc}[AI 도우미](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
   * [시나리오 채점 전문가 실행](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
   * [시나리오 요소 삭제](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
   * [시나리오 영역에서 시나리오 관리](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
@@ -368,6 +368,7 @@ ht-degree: 52%
       * [Adobe Acrobat Sign 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-sign-modules.md)
       * [Adobe Authenticator 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md)
       * [Adobe Campaign 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-campaign-classic-connector.md)
+      * [Adobe Content Tagger 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/content-tagging-modules.md)
       * [Adobe Creative Cloud Libraries 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
       * [Adobe Experience Manager Assets 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
       * [Adobe Experience Manager Forms 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
@@ -389,7 +390,8 @@ ht-degree: 52%
       * [Adobe Target 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
       * [Adobe User Management 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
       * [Adobe Workfront 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
-      * [Adobe Workfront 계획 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)* [Adobe Workfront 통합 검토 및 승인 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-review-and-approvals-modules.md)
+      * [Adobe Workfront Planning 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
+      * [Adobe Workfront 통합 검토 및 승인 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-review-and-approvals-modules.md)
       * [Workfront Boards 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
       * [Workfront Proof 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-proof-modules.md)
     * 제3자 애플리케이션용 커넥터 {#third-party-app-connectors}

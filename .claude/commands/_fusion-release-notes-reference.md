@@ -10,7 +10,7 @@ ht-degree: 0%
 의 실제 최근 페이지를 기반으로 한 `fusion-release-notes` 스킬에 대한 작업 예제
 `help/workfront-fusion/fusion-product-releases/fusion-releases-2026/`.
 
----
+&#x200B;---
 
 ## 예 1: 간단한 다중 기능 주
 
@@ -50,7 +50,7 @@ To make it easier to understand changes between scenario versions, we've added t
 For more information, see [View and manage scenario versions](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md).
 ```
 
----
+&#x200B;---
 
 ## 예 2: 작업 필요/사용 중단 설명선이 있는 주
 
@@ -96,7 +96,7 @@ To make it easier to identify routes, we've added labels. Now, routes are labele
 For more information on routes, see [Add a Router module and configure routes](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 ```
 
----
+&#x200B;---
 
 ## 예제 3: 새 커넥터 실행
 
@@ -118,7 +118,7 @@ For more information, see [Adobe Content Tagger modules](/help/workfront-fusion/
 
 이와 같은 커넥터 실행의 경우 항상 (스킬의 1단계에 따라) 사용자가 리디렉션을 설정할지 여부를 묻습니다.
 
----
+&#x200B;---
 
 ## 개요 페이지(`fusion-release-activity.md`) 업데이트 패턴
 
@@ -151,7 +151,7 @@ For more information, see [Adobe Content Tagger modules](/help/workfront-fusion/
 +++
 ```
 
----
+&#x200B;---
 
 ## TOC.md 업데이트 패턴
 
@@ -166,7 +166,7 @@ For more information, see [Adobe Content Tagger modules](/help/workfront-fusion/
         ...
 ```
 
----
+&#x200B;---
 
 ## 리디렉션 저장소 참조(7단계의 경우)
 
@@ -181,7 +181,7 @@ For more information, see [Adobe Content Tagger modules](/help/workfront-fusion/
 
 행을 추가한 후에도 PR이 활성화되기 전에 `redirects` 리포지토리에서 PR을 상승하고 병합해야 합니다(1:1 리디렉션을 위한 병합 후~5분). 이 스킬은 사용자가 행을 확인한 후에만 행을 추가합니다. PR은 상승하지 않습니다.
 
----
+&#x200B;---
 
 ## 기존 페이지의 알려진 불일치 사항(참조용 — 새 페이지에 복사하지 않음)
 

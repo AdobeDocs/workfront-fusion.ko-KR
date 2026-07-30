@@ -1,7 +1,7 @@
 ---
-source-git-commit: 59a8d8ee83906bc16fc627bd348accc4e588cf9b
+source-git-commit: 67301a4e3c16eaed28f92a1be7556c5574308429
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
@@ -98,6 +98,28 @@ For more information on routes, see [Add a Router module and configure routes](/
 
 &#x200B;---
 
+## 예제 3: 새 커넥터 실행
+
+`fusion-2026-7-27.md`을(를) 기반으로 합니다.
+
+```markdown
+## Adobe Content Tagger connector and modules now available
+
+You can now use Workfront Fusion to tag content in Adobe documents.
+
+With the Adobe Content Tagger modules, you can:
+
+* Tag colors in an image, returning the percentage covered by different pixel colors
+* Tag keywords or key phrases that best describe the subject of a document
+* Tag text in an image, indicating whether text is present and returning it if so
+
+For more information, see [Adobe Content Tagger modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/content-tagging-modules.md).
+```
+
+이와 같은 커넥터 실행의 경우 항상 (스킬의 1단계에 따라) 사용자가 리디렉션을 설정할지 여부를 묻습니다.
+
+&#x200B;---
+
 ## 개요 페이지(`fusion-release-activity.md`) 업데이트 패턴
 
 기존 2026년 7월 섹션에 2026년 7월 20일 주를 추가합니다.
@@ -143,6 +165,21 @@ For more information on routes, see [Add a Router module and configure routes](/
         * [Workfront Fusion release activity: Week of July 13 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-13.md)
         ...
 ```
+
+&#x200B;---
+
+## 리디렉션 저장소 참조(7단계의 경우)
+
+형제 `redirects` 리포지토리(`Adobe-Enterprise-Docs/redirects`)는 `redirects/` 아래 CSV 파일에 1:1 리디렉션을 포함합니다. `redirects-dev.csv`, `redirects-stage.csv`, `redirects-prod.csv` 환경당 한 개입니다.
+
+행 규칙(해당 저장소의 README):
+
+- `source`은(는) `/en`(언어 변형이 자동으로 만들어짐)으로 시작하고 공백을 포함하지 않아야 합니다.
+- `destination`은(는) `/en`(으)로 시작하는 상대 경로이거나 `https`(으)로 시작하는 전체 URL일 수 있으며 공백을 포함하지 않아야 합니다.
+- 중복된 `source`이(가) 없고 중복된 `source`/`destination` 쌍이 없습니다.
+- 리디렉션으로 인해 리디렉션 루프가 발생해서는 안 됩니다.
+
+행을 추가한 후에도 PR이 활성화되기 전에 `redirects` 리포지토리에서 PR을 상승하고 병합해야 합니다(1:1 리디렉션을 위한 병합 후~5분). 이 스킬은 사용자가 행을 확인한 후에만 행을 추가합니다. PR은 상승하지 않습니다.
 
 &#x200B;---
 

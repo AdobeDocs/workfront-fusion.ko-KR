@@ -5,20 +5,14 @@ author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
 TQID: https://experienceleague.adobe.com/CjzJP-U4P5bVop8ktivUH3pPOjVVgamqqc--cUsLm8U
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-subfeature_v2:
-  - id: ec8965fc-2f75-47f6-a9bb-730e8c2725f3
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+subfeature_v2: id: ec8965fc-2f75-47f6-a9bb-730e8c2725f3
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 86ecf8da00cbae38b4ae48f616ac37e759f84494
 workflow-type: tm+mt
-source-wordcount: 7298
-ht-degree: 98%
+source-wordcount: 7518
+ht-degree: 95%
 
 ---
 
@@ -791,6 +785,10 @@ See a list of the Workfront object types for which you can use this module in [W
 
 #### 기타 액션 옵션
 
+* [작업](#task)
+* [문제](#issue)
+* [프로젝트](#project)
+
 ##### 작업
 
 <table style="table-layout:auto">
@@ -1058,7 +1056,7 @@ Workfront는 최근 이벤트 구독 서비스의 신규 버전을 출시했습�
 
 새 이벤트 구독 버전에 대한 자세한 내용은 Workfront 설명서의 [이벤트 구독 버전 관리](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)를 참조하십시오.
 
-웨비나 녹화를 포함한 이벤트 구독 업그레이드 중 Workfront Fusion 시나리오 유지에 대한 리소스는 [이벤트 구독 V2 업그레이드 중 Fusion 시나리오 유지](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=ko)를 참조하십시오.
+웨비나 녹화를 포함한 이벤트 구독 업그레이드 중 Workfront Fusion 시나리오 유지에 대한 리소스는 [이벤트 구독 V2 업그레이드 중 Fusion 시나리오 유지](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)를 참조하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -1373,7 +1371,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 >[!IMPORTANT]
 >
->이 모듈은 검색 레코드 모듈로 교체되었습니다. 새로운 시나리오에서 해당 모듈을 사용하는 것이 좋습니다.
+>이 모듈은 레코드 검색 모듈로 대체되었습니다. 새 시나리오에서는 해당 모듈을 사용하는 것이 좋습니다.
 >이 모듈을 사용하는 기존 시나리오는 예상대로 계속 작동합니다. 이 모듈은 2025년 5월에 모듈 선택기에서 제거됩니다.
 
 이 검색 모듈은 Workfront에서 지정한 검색 쿼리와 일치하는 오브젝트의 레코드를 찾습니다.
@@ -2382,6 +2380,13 @@ See a list of the Workfront object types for which you can use this module in [W
 
 ## Workfront > [!UICONTROL 이벤트 보기] 모듈의 이벤트 구독 필터
 
+이벤트 구독의 필터를 사용하면 특정 매개 변수가 충족될 때만 시나리오가 실행되도록 할 수 있습니다.
+
+* [이벤트 구독 필터 우수 사례](#event-subscription-filter-best-practices)
+* [고급 필터 사용](#using-advanced-filters)
+
+### 이벤트 구독 필터 우수 사례
+
 >[!NOTE]
 >
 >* [!UICONTROL 이벤트 보기] 모듈에서 이벤트 구독 필터를 사용하는 것이 좋습니다.
@@ -2390,7 +2395,7 @@ See a list of the Workfront object types for which you can use this module in [W
 >
 >   새 이벤트 구독 버전에 대한 자세한 내용은 Workfront 설명서의 [이벤트 구독 버전 관리](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)를 참조하십시오.
 >
->   웨비나 녹화를 포함한 이벤트 구독 업그레이드 중 Workfront Fusion 시나리오 유지에 대한 리소스는 [이벤트 구독 V2 업그레이드(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=ko) 중 Fusion 시나리오 유지]를 참조하십시오.
+>   웨비나 녹화를 포함한 이벤트 구독 업그레이드 중 Workfront Fusion 시나리오 유지에 대한 리소스는 [이벤트 구독 V2 업그레이드 중 Fusion 시나리오 유지](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)를 참조하십시오.
 
 Workfront [!UICONTROL 이벤트 보기] 모듈은 Workfront API에서 이벤트 구독을 만드는 웹후크를 기반으로 시나리오를 트리거합니다. 이벤트 구독은 웹후크로 전송되는 이벤트를 결정하는 데이터 세트입니다. 예를 들어, 문제를 확인하는 [!UICONTROL 이벤트 보기] 모듈을 설정하면 이벤트 구독은 문제와 관련된 이벤트만 전송합니다.
 
@@ -2408,13 +2413,13 @@ Workfront > 이벤트 보기 필터에서 다음 연산자를 사용할 수 있�
 * 다음보다 작거나 같음
 * 다음 포함
 * 있음
-   * 이 연산자는 값이 필요하지 않으며, 값 필드가 없습니다.
+  * 이 연산자는 값이 필요하지 않으며, 값 필드가 없습니다.
 * 존재하지 않음
-   * 이 연산자는 값이 필요하지 않으며, 값 필드가 없습니다.
+  * 이 연산자는 값이 필요하지 않으며, 값 필드가 없습니다.
 * 변경됨
-   * 이 연산자는 값이 필요하지 않으며, 값 필드가 없습니다.
-   * 이 연산자는 상태 필드를 무시합니다.
-   * `Changed`를 사용할 때, **레코드 원본** 필드에서 **업데이트된 이벤트만** 선택합니다.
+  * 이 연산자는 값이 필요하지 않으며, 값 필드가 없습니다.
+  * 이 연산자는 상태 필드를 무시합니다.
+  * `Changed`를 사용할 때, **레코드 원본** 필드에서 **업데이트된 이벤트만** 선택합니다.
 
 >[!IMPORTANT]
 >
@@ -2424,7 +2429,7 @@ Workfront > 이벤트 보기 필터에서 다음 연산자를 사용할 수 있�
 >
 >**예:** 특정 사용자인 Ana에게 할당된 새로운 문제를 처리하는 시나리오를 가정해 보겠습니다.
 >
->### 이벤트 구독 필터를 사용하여 이벤트 필터링(권장)
+>#### 이벤트 구독 필터를 사용하여 이벤트 필터링(권장)
 >
 >이벤트 필터를 사용하여 문제가 생성될 때 Ana에 문제가 할당되면 시나리오를 트리거하도록 웹후크를 설정할 수 있습니다. Ana에게는 userID b378489d8f7cd3cee0539260720a84b7이 있습니다.
 >
@@ -2432,7 +2437,7 @@ Workfront > 이벤트 보기 필터에서 다음 연산자를 사용할 수 있�
 >
 >하루에 100개의 문제가 만들어지지만 그 중 두 개만 Ana에 할당되면 시나리오는 두 번 실행됩니다.
 >
->### 시나리오 내 이벤트 필터링(권장되지 않음)
+>#### 시나리오 내 이벤트 필터링(권장되지 않음)
 >
 >Ana에 할당된 문제만 처리되도록 이벤트를 필터링하려면 [!UICONTROL 이벤트 보기] 모듈 뒤에 필터를 만들 수 있습니다.
 >
@@ -2445,3 +2450,26 @@ Workfront 이벤트 구독에 대한 자세한 내용은 [FAQ - 이벤트 구독
 웹후크에 대한 자세한 내용은 [Adobe Workfront Fusion의 인스턴트 트리거(웹후크)](/help/workfront-fusion/references/modules/webhooks-reference.md)를 참조하십시오.
 
 시나리오의 필터에 대한 자세한 내용은 [시나리오에 필터 추가](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md)를 참조하십시오.
+
+### 고급 필터 사용
+
+Workfront > 이벤트 보기 모듈에서는 두 가지 유형의 필터를 제공합니다.
+
+* **단순**: 이 필터는 AND 및 OR 연산자와 함께 필드, 연산자 및 값을 선택하여 필터를 만들 수 있는 인터페이스를 제공합니다.
+* **고급**: 이 필터를 사용하면 필터를 나타내는 JSON을 업로드할 수 있습니다.
+
+#### 단순 및 고급 필터
+
+두 유형의 주요 차이점은 필터의 상태입니다.
+
+* **단순**: 단순 필터를 설정할 때 필드의 이전 상태를 필터링할지 새 상태를 필터링할지 선택합니다. 즉, 필드가 지정된 값으로 **부터**&#x200B;까지 변경될 때 시나리오를 활성화할지 또는 지정된 값으로 **부터**&#x200B;까지 변경될 때 활성화할지 여부를 결정합니다. AND와 OR을 사용하면 여러 필드와 값을 포함할 수 있지만 동일한 상태를 공유해야 합니다. 일부 필드에는 이전 상태를 사용하고 다른 필드에는 새 상태를 사용할 수 없습니다.
+* **고급**: 고급 필터에서 JSON을 구성하여 동일한 필터에서 이전 상태와 새 상태 모두에 대한 값을 지정할 수 있습니다. 예를 들어 프로젝트가 Planning 상태에서 현재 상태로 이동할 때 시나리오를 트리거하도록 지정할 수 있습니다. 이렇게 하면 Planning에서 중단 상태로 이동하거나 보류 상태에서 현재로 이동하는 프로젝트가 제외됩니다.
+
+<!--
+
+#### Advanced filter examples
+
+-->
+
+<!--CHECK ON EDITING FILTERS-->
+

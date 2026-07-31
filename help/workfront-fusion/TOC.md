@@ -3,10 +3,10 @@ user-guide-title: Adobe Workfront Fusion 설명서
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 문서, 튜토리얼 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
 nudge: true
-source-git-commit: 2f14ef21d36e4307363386563c9861c9306e9cb1
+source-git-commit: 4d018e92863fa3461ea73defe6b83991a7e2083d
 workflow-type: tm+mt
-source-wordcount: '2508'
-ht-degree: 52%
+source-wordcount: '2512'
+ht-degree: 53%
 
 ---
 
@@ -368,6 +368,7 @@ ht-degree: 52%
       * [Adobe Acrobat Sign 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-sign-modules.md)
       * [Adobe Authenticator 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md)
       * [Adobe Campaign 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-campaign-classic-connector.md)
+      * [Adobe Content Tagger 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/content-tagging-modules.md)
       * [Adobe Creative Cloud Libraries 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
       * [Adobe Experience Manager Assets 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
       * [Adobe Experience Manager Forms 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
@@ -389,7 +390,8 @@ ht-degree: 52%
       * [Adobe Target 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
       * [Adobe User Management 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
       * [Adobe Workfront 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
-      * [Adobe Workfront 계획 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)* [Adobe Workfront 통합 검토 및 승인 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-review-and-approvals-modules.md)
+      * [Adobe Workfront Planning 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
+      * [Adobe Workfront 통합 검토 및 승인 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-review-and-approvals-modules.md)
       * [Workfront Boards 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
       * [Workfront Proof 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-proof-modules.md)
     * 제3자 애플리케이션용 커넥터 {#third-party-app-connectors}

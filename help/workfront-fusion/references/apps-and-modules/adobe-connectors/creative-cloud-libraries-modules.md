@@ -5,14 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 85607e4e-538a-427f-8a99-a0ab65a75ac2
 TQID: https://experienceleague.adobe.com/uVGhNEE-KiHbnVa2ZbP5h2rsg5GO2b1uuAkfj8BIJRw
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 1416
-ht-degree: 34%
+source-wordcount: 1418
+ht-degree: 33%
 
 ---
 
@@ -47,7 +45,7 @@ Adobe Workfront Fusion [!DNL Adobe Creative Cloud Libraries] 모듈을 사용하
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>작업 기반: Workfront Fusion 라이선스 요구 사항 없음</p>
+   <p>운영 기반: 운영 기반 라이센스가 있는 조직에서 사용 가능</p>
    <p>커넥터 기반(이전): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
@@ -115,7 +113,7 @@ Adobe Creative Cloud 라이브러리 커넥터는 다음을 사용합니다.
 
 * [[!UICONTROL 요소 업로드]](#upload-an-element)
 
-* [[!UICONTROL [라이브러리의 새 요소 보기]]](#watch-new-element-in-library)
+* [!UICONTROL [라이브러리의 새 요소 보기]](#watch-new-element-in-library)
 
 * [[!UICONTROL 업데이트된 요소 보기]](#watch-updated-elements)
 

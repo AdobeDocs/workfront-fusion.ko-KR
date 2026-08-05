@@ -5,14 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
 TQID: https://experienceleague.adobe.com/F-jLL4aF0bSUiFpDjJr-DVBU8ZnbqNHKiFzjEjmalxw
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 7326
+source-wordcount: 7331
 ht-degree: 10%
 
 ---
@@ -40,7 +37,7 @@ Adobe Workfront Fusion [!DNL HubSpot CRM] 모듈을 사용하면 이벤트, 레�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>작업 기반: Workfront Fusion 라이선스 요구 사항 없음</p>
+   <p>운영 기반: 운영 기반 라이센스가 있는 조직에서 사용 가능</p>
    <p>커넥터 기반(이전): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
@@ -843,7 +840,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td> <p>[!DNL HubSpot CRM] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion에 연결 만들기 - 기본 지침</a>을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 이 활성화되었습니까?]</td> 
+   <td role="rowheader">[!UICONTROL이 활성화되었습니까?]</td> 
    <td>새 참여가 만들어질 때 활성화될 경우 이 옵션을 활성화하십시오. 타임라인에 참여하려면 참여가 활성화되어야 합니다.</td> 
   </tr> 
   <tr> 
@@ -1030,7 +1027,7 @@ HubSpot CRM 커넥터는 다음을 사용합니다.
    <td>작업 상태를 선택합니다.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">개체 유형에 대한 </td> 
+   <td role="rowheader">개체 유형에 대한 [!UICONTROL]</td> 
   <td><code>CONTACT</code> 또는 <code>COMPANY</code>을(를) 입력하십시오.
   </td> 
    </tr> 

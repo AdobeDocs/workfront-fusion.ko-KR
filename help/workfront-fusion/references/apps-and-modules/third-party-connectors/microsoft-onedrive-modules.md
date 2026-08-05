@@ -5,14 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d21eafad-9c67-4f42-b718-0aa4223846e6
 TQID: https://experienceleague.adobe.com/YscMl6qY47zJvwOieRmWg5rW-RaMnQ69R-b0tjB-FA4
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 4184
+source-wordcount: 4186
 ht-degree: 11%
 
 ---
@@ -44,7 +41,7 @@ Adobe Workfront Fusion 시나리오에서는 [!DNL OneDrive]를 사용하는 워
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>작업 기반: Workfront Fusion 라이선스 요구 사항 없음</p>
+   <p>운영 기반: 운영 기반 라이센스가 있는 조직에서 사용 가능</p>
    <p>커넥터 기반(이전): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
@@ -360,7 +357,7 @@ OneDrive 커넥터는 다음을 사용합니다.
       <tr> 
        <td> 
         <ul> 
-         <li> <p> <p>CSV로 내보내기</p> </p> </li> 
+         <li> <p> <p>CSV</p> </p> </li> 
          <li> <p> <p>DOC</p> </p> </li> 
          <li> <p> <p>DOCX</p> </p> </li> 
          <li> <p> <p>ODP</p> </p> </li> 
@@ -598,7 +595,7 @@ OneDrive 커넥터는 다음을 사용합니다.
        <li> <p><b>[!UICONTROL Yes]</b> </p> <p>모듈이 검색할 드라이브의 ID를 입력합니다.</p> </li> 
        <li> <p><b>[!UICONTROL 번호]</b> </p> <p>모듈이 검색할 폴더로 이동합니다. 쿼리를 입력하여 반환된 결과를 필터링할 수도 있습니다.</p> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL 이 나와 공유됨]</b> </p> <p>모듈은 드라이브 소유자와 공유된 파일을 검색합니다.</p> </li> 
+     <li> <p><b>[!UICONTROL이 나와 공유됨]</b> </p> <p>모듈은 드라이브 소유자와 공유된 파일을 검색합니다.</p> </li> 
      <li> <p><b>[!UICONTROL 사이트의 드라이브]</b> </p> <p>모듈이 검색할 [!DNL SharePoint] 사이트를 선택하십시오. 사용 가능한 사이트는 사이트 다음에 로그인한 사용자가 표시됩니다.</p> </li> 
      <li> <p><b>[!UICONTROL 그룹의 드라이브]</b> </p> <p>모듈에서 검색할 드라이브의 그룹을 선택합니다.</p> </li> 
     </ul> </td> 
@@ -679,7 +676,7 @@ OneDrive 커넥터는 다음을 사용합니다.
    <td> <p>파일 또는 폴더를 볼 방법을 선택하십시오.</p> 
     <ul> 
      <li> <p><b>[!UICONTROL 작성일 기준]</b> </p> <p>새 파일 또는 폴더를 확인하십시오.</p> </li> 
-     <li> <p>업데이트된 시간까지 <b></b> </p> <p>업데이트된 기존 파일 또는 폴더를 확인하십시오.</p> </li> 
+     <li> <p>업데이트된 시간까지 <b>[!UICONTROL]</b> </p> <p>업데이트된 기존 파일 또는 폴더를 확인하십시오.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -691,7 +688,7 @@ OneDrive 커넥터는 다음을 사용합니다.
        <li> <p><b>[!UICONTROL Yes]</b> </p> <p>모듈에서 볼 드라이브의 ID를 입력합니다.</p> </li> 
        <li> <p><b>[!UICONTROL 번호]</b> </p> <p>모듈에서 감시할 폴더로 이동합니다. 쿼리를 입력하여 반환된 결과를 필터링할 수도 있습니다.</p> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL 이 나와 공유됨]</b> </p> <p>모듈은 드라이브 소유자와 공유된 파일을 감시합니다.</p> </li> 
+     <li> <p><b>[!UICONTROL이 나와 공유됨]</b> </p> <p>모듈은 드라이브 소유자와 공유된 파일을 감시합니다.</p> </li> 
      <li> <p><b>[!UICONTROL 사이트의 드라이브]</b> </p> <p>모듈에서 볼 SharePoint 사이트를 선택합니다. 사용 가능한 사이트는 사이트 다음에 로그인한 사용자가 표시됩니다.</p> </li> 
      <li> <p><b>[!UICONTROL 그룹의 드라이브]</b> </p> <p>모듈에서 조사할 드라이브의 그룹을 선택합니다.</p> </li> 
     </ul> </td> 

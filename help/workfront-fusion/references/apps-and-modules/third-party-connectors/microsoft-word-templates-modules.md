@@ -5,14 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
 TQID: https://experienceleague.adobe.com/oP6roNkIFZJ3kCdRiE1MtmYuNQFRrcNJRPMESXP-2Sw
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 1363
+source-wordcount: 1365
 ht-degree: 13%
 
 ---
@@ -44,7 +41,7 @@ Adobe Workfront Fusion 시나리오에서는 [!DNL Microsoft Word Templates]를 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>작업 기반: Workfront Fusion 라이선스 요구 사항 없음</p>
+   <p>운영 기반: 운영 기반 라이센스가 있는 조직에서 사용 가능</p>
    <p>커넥터 기반(이전): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 

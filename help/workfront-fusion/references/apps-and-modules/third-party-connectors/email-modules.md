@@ -5,14 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 28a04bad-d3ef-4f3a-be93-8b04761a75e4
 TQID: https://experienceleague.adobe.com/rHcxYxYNQchgOxfpU1Y3jc-sOxHxG3FNAKmbIsp9Dl4
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 2507
-ht-degree: 11%
+source-wordcount: 2509
+ht-degree: 10%
 
 ---
 
@@ -39,7 +37,7 @@ Adobe Workfront Fusion 시나리오에서는 이메일 계정을 여러 서드�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>작업 기반: Workfront Fusion 라이선스 요구 사항 없음</p>
+   <p>운영 기반: 운영 기반 라이센스가 있는 조직에서 사용 가능</p>
    <p>커넥터 기반(이전): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
@@ -313,7 +311,7 @@ IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Exponge]</td> 
-   <td> <p>현재 열려 있는 사서함에서 [!UICONTROL Deleted] (으)로 플래그가 지정된 모든 메시지를 영구적으로 제거하려면 이 옵션을 활성화합니다.</p> <p>참고: [!DNL Gmail]에서 이 동작은 [!UICONTROL 설정] &gt;[!UICONTROL Forwarding POP/IMAP in IMAP access] 섹션의 설정에 의해 결정됩니다.</p> </td> 
+   <td> <p>현재 열려 있는 사서함에서 [!UICONTROL Deleted](으)로 플래그가 지정된 모든 메시지를 영구적으로 제거하려면 이 옵션을 활성화합니다.</p> <p>참고: [!DNL Gmail]에서 이 동작은 [!UICONTROL 설정] &gt;[!UICONTROL Forwarding POP/IMAP in IMAP access] 섹션의 설정에 의해 결정됩니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>

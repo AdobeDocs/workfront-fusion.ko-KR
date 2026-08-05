@@ -5,15 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 62269eca-c3cf-42fe-a866-fb66d2363b8d
 TQID: https://experienceleague.adobe.com/N1oyeO-yNRUKW3u-BPw-yGOI1nCO8XT8pB4Rdg6zycA
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 1871
+source-wordcount: 1876
 ht-degree: 25%
 
 ---
@@ -43,7 +40,7 @@ Adobe Workfront Fusion 시나리오에서는 [!DNL Gmail]를 사용하는 워크
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>작업 기반: Workfront Fusion 라이선스 요구 사항 없음</p>
+   <p>운영 기반: 운영 기반 라이센스가 있는 조직에서 사용 가능</p>
    <p>커넥터 기반(이전): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
@@ -68,10 +65,10 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 ## [!DNL Gmail]를 Workfront Fusion에 연결 {#connect-gmail-to-workfront-fusion}
 
-* [&#x200B; [!DNL Google Workspace]을(를) 사용하여  [!DNL Gmail] Workfront Fusion 연결](#connect-gmail-to-workfront-fusion-usinggoogle-workspace)
-* [&#x200B; [!DNL gmail.com] or [!DNL googlemail].com을 사용하여  [!DNL Gmail] Workfront Fusion에 연결](#connect-gmail-to-workfront-fusion-using-gmailcom-or-googlemailcom)
+* [ [!DNL Google Workspace]을(를) 사용하여  [!DNL Gmail] Workfront Fusion 연결](#connect-gmail-to-workfront-fusion-usinggoogle-workspace)
+* [ [!DNL gmail.com] or [!DNL googlemail].com을 사용하여  [!DNL Gmail] Workfront Fusion에 연결](#connect-gmail-to-workfront-fusion-using-gmailcom-or-googlemailcom)
 
-### [!DNL &#x200B; Google Workspace]을(를) 사용하여 [!DNL Gmail]을(를) Workfront Fusion에 연결
+### [!DNL  Google Workspace]을(를) 사용하여 [!DNL Gmail]을(를) Workfront Fusion에 연결
 
 [!DNL Google Workspace] 계정을 [!UICONTROL Workfront Fusion]에 연결하는 방법에 대한 지침은 [연결 만들기 - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)을 참조하십시오.
 

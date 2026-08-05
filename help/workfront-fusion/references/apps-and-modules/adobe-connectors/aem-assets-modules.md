@@ -5,17 +5,13 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
 TQID: https://experienceleague.adobe.com/x0Sf-4GkVLQ2JkOXOPQdmwcVWVrM8b9JF3P6LV6BE6U
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 3823
-ht-degree: 100%
+source-wordcount: 3825
+ht-degree: 99%
 
 ---
 
@@ -46,7 +42,7 @@ Adobe Experience Manager Assets 커넥터에 대한 소개 비디오는 다음�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>작업 기반: Workfront Fusion 라이선스 요구 사항 없음</p>
+   <p>운영 기반: 운영 기반 라이센스가 있는 조직에서 사용 가능</p>
    <p>커넥터 기반(이전): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
@@ -70,7 +66,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 * 이 모듈을 사용하려면 Adobe Experience Manager Assets 계정이 있어야 합니다.
 * Adobe Developer 콘솔에서 서버 간 흐름을 설정해야 합니다.
 
-  Adobe Developer 콘솔에서 서버 간 흐름을 설정하는 방법에 대한 지침은 [서버측 API용 액세스 토큰 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=ko#the-server-to-server-flow)을 참조하십시오.
+  Adobe Developer 콘솔에서 서버 간 흐름을 설정하는 방법에 대한 지침은 [서버측 API용 액세스 토큰 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow)을 참조하십시오.
 * Adobe Experience Manager 기술 계정에 쓰기 권한이 있어야 합니다.
 
   Adobe Experience Manager 기술 계정에 쓰기 권한을 추가하는 방법에 대한 지침은 Adobe Experience Manager 설명서의 [서비스 자격 증명](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)을 참조하십시오.
@@ -121,7 +117,7 @@ Adobe Experience Manager Assets 모듈에 대한 연결을 만들려면 다음 �
 >
 >* 이 필드에 대한 정보는 Adobe Developer Console에서 서버 간 흐름을 설정하는 과정에서 생성됩니다. 이 값들은 해당 설정의 일부로 생성된 서비스 자격 증명 JSON 파일에서 찾을 수 있습니다.
 >
->   Adobe Developer Console에서 서버 간 흐름을 설정하는 방법에 대한 지침은 [서버측 API용 액세스 토큰 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=ko#the-server-to-server-flow)을 참조하십시오.
+>   Adobe Developer Console에서 서버 간 흐름을 설정하는 방법에 대한 지침은 [서버측 API용 액세스 토큰 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow)을 참조하십시오.
 >
 >* Adobe Experience Manager 기술 계정에 쓰기 권한이 있어야 합니다.
 >

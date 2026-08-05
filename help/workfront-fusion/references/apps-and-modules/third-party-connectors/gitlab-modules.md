@@ -5,13 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: fabbadce-5669-4363-834e-6d7428520f62
 TQID: https://experienceleague.adobe.com/uvPSzwplYFdC6R7xZ3UE-LXF7rhlGzJ7cIwF-x42ayQ
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 4690
+source-wordcount: 4692
 ht-degree: 8%
 
 ---
@@ -49,7 +47,7 @@ Adobe Workfront Fusion 시나리오에서는 [!UICONTROL GitLab]을 사용하는
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>작업 기반: Workfront Fusion 라이선스 요구 사항 없음</p>
+   <p>운영 기반: 운영 기반 라이센스가 있는 조직에서 사용 가능</p>
    <p>커넥터 기반(이전): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
@@ -393,7 +391,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
    </tr> 
    <tr> 
    <td role="rowheader">[!UICONTROL SHA]</td> 
-   <td>존재하는 경우 이 SHA는 소스 분기의 HEAD과 일치해야 합니다. 일치하지 않으면 병합이 실패합니다.</td> 
+   <td>존재하는 경우 이 SHA는 소스 분기의 HEAD와 일치해야 합니다. 일치하지 않으면 병합이 실패합니다.</td> 
    </tr> 
    </tbody> 
 </table>
@@ -649,7 +647,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 연결]</td> 
-   <td>새 연결을 만들려면 이 문서에서 <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 연결 [!DNL GitLab]</a>을(를) 참조하십시오.</td> 
+   <td>새 연결을 만들려면 이 문서에서 <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion에 연결 [!DNL GitLab]</a>을(를) 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 프로젝트]</td> 
@@ -786,7 +784,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 연결]</td> 
-   <td>새 연결을 만들려면 이 문서에서 <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 연결 [!DNL GitLab]</a>을(를) 참조하십시오.</td> 
+   <td>새 연결을 만들려면 이 문서에서 <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion에 연결 [!DNL GitLab]</a>을(를) 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 프로젝트 ID]</td> 
@@ -1019,7 +1017,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 연결]</td> 
-   <td>새 연결을 만들려면 이 문서에서 <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 연결 [!DNL GitLab]</a>을(를) 참조하십시오.</td> 
+   <td>새 연결을 만들려면 이 문서에서 <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion에 연결 [!DNL GitLab]</a>을(를) 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 프로젝트 ID]</td> 

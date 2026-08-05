@@ -5,14 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 0a45f8a7-12cc-41cc-9135-92f4779afac0
 TQID: https://experienceleague.adobe.com/2NCbEM8bb0s7m30uCFTWK-wYdhCYKEZC-W01Zr21mRw
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 1863
+source-wordcount: 1859
 ht-degree: 31%
 
 ---
@@ -44,7 +41,7 @@ Adobe Workfront Fusion 시나리오에서는 [!DNL Bynder]를 사용하는 워�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>작업 기반: Workfront Fusion 라이선스 요구 사항 없음</p>
+   <p>작업 기반: 포함됨</p>
    <p>커넥터 기반(이전): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
@@ -93,7 +90,7 @@ Bynder 커넥터는 다음을 사용합니다.
 >Byender는 인증 코드/새로 고침 토큰 부여 유형을 사용합니다. 이는 Fusion Byender 커넥터가 사용하는 유일한 권한 부여 유형입니다.
 
 * [Workfront Fusion에서  [!DNL Bynder] 에 대한 연결 만들기](#create-a-connection-to-bynder-from-workfront-fusion)
-* [&#x200B; [!DNL Bynder] 에서 [!UICONTROL 클라이언트 ID] 및 [!UICONTROL 클라이언트 암호] 생성(선택 사항)](#generate-a-client-id-and-client-secret-in-bynder-optional)
+* [ [!DNL Bynder] 에서 [!UICONTROL 클라이언트 ID] 및 [!UICONTROL 클라이언트 암호] 생성(선택 사항)](#generate-a-client-id-and-client-secret-in-bynder-optional)
 
 ### Workfront Fusion에서 [!DNL Bynder]에 대한 연결 만들기
 

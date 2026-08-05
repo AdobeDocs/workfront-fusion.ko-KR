@@ -5,13 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: fdecf740-e735-4569-b1a2-7c25c751ba42
 TQID: https://experienceleague.adobe.com/yq8DHWbrroXJ-Rc2j1LQqDejh6JuKOsffdd3bQaFAyA
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 2053
+source-wordcount: 2055
 ht-degree: 21%
 
 ---
@@ -39,7 +37,7 @@ Adobe Workfront Fusion 시나리오에서는 [!DNL Microsoft Office 365 Calendar
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>작업 기반: Workfront Fusion 라이선스 요구 사항 없음</p>
+   <p>운영 기반: 운영 기반 라이센스가 있는 조직에서 사용 가능</p>
    <p>커넥터 기반(이전): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
@@ -415,7 +413,7 @@ Microsoft Office 365 Calendar 커넥터는 다음을 사용합니다.
    <td> <p>이벤트 시청 방법을 선택합니다.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL 작성일 기준]</strong> </p> <p>새로운 이벤트를 확인하십시오.</p> </li> 
-     <li> <p>업데이트된 시간까지 <strong></strong> </p> <p>업데이트된 이벤트를 확인하십시오.</p> </li> 
+     <li> <p>업데이트된 시간까지 <strong>[!UICONTROL]</strong> </p> <p>업데이트된 이벤트를 확인하십시오.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 

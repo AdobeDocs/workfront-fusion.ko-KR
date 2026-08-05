@@ -5,14 +5,12 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
 TQID: https://experienceleague.adobe.com/RratZmko93V0LMxJ6qTy6cNvRqgPNvNgHTflRngE6BI
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: ce3fb5604ac4ed85af1bcc51143732499dfb0404
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 7285
-ht-degree: 12%
+source-wordcount: 7501
+ht-degree: 11%
 
 ---
 
@@ -55,7 +53,7 @@ Adobe Workfront Fusion 시나리오에서는 [!DNL Adobe Photoshop]를 사용하
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>작업 기반: Workfront Fusion 라이선스 요구 사항 없음</p>
+   <p>운영 기반: 운영 기반 라이센스가 있는 조직에서 사용 가능</p>
    <p>커넥터 기반(이전): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
@@ -681,7 +679,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
 >[!NOTE]
 >
 >이 모듈은 사용 중단되었으며 2026년 7월 30일 이후에는 더 이상 작동하지 않습니다.
->이 모듈을 [복합 모듈 만들기 또는 편집](#create-or-edit-a-composite) 모듈로 업데이트하세요.
+>이 모듈을 [복합 모듈 만들기 또는 편집](#create-or-edit-a-composite) 모듈로 업데이트하십시오.
 
 이 작업 모듈은 다양한 문서 및 레이어 수준 편집 사항을 적용합니다.
 
@@ -868,7 +866,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
 >[!NOTE]
 >
 >이 모듈은 사용 중단되었으며 2026년 7월 30일 이후에는 더 이상 작동하지 않습니다.
->이 모듈을 [복합 모듈 만들기 또는 편집](#create-or-edit-a-composite) 모듈로 업데이트하세요.
+>이 모듈을 [복합 모듈 만들기 또는 편집](#create-or-edit-a-composite) 모듈로 업데이트하십시오.
 
 이 작업 모듈은 파일을 JPEG, PNG, PSD 또는 TIFF으로 변환합니다.
 
@@ -1005,7 +1003,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
 >[!NOTE]
 >
 >이 모듈은 사용 중단되었으며 2026년 7월 30일 이후에는 더 이상 작동하지 않습니다.
->이 모듈을 [복합 모듈 만들기 또는 편집](#create-or-edit-a-composite) 모듈로 업데이트하세요.
+>이 모듈을 [복합 모듈 만들기 또는 편집](#create-or-edit-a-composite) 모듈로 업데이트하십시오.
 
 이 작업 모듈은 선택적 레이어로 새 PSD을 만들고 렌디션을 생성하거나 PSD으로 저장합니다.
 
@@ -1031,25 +1029,25 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (옵션 &gt; 문서) 해상도]</p>
+        <p>[!UICONTROL(옵션 &gt; 문서) 해상도]</p>
       </td>
    <td> 이미지의 해상도를 인치당 픽셀 단위로 입력하거나 매핑합니다. 72에서 300 사이여야 합니다. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (옵션 &gt; 문서) 모드]</p>
+        <p>[!UICONTROL(옵션 &gt; 문서) 모드]</p>
       </td>
    <td> 이미지 모드를 선택합니다. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (옵션 &gt; 문서) 채우기]</p>
+        <p>[!UICONTROL(옵션 &gt; 문서) 채우기]</p>
       </td>
    <td> 배경 레이어의 채우기를 투명, 흰색 또는 이미지의 배경색으로 할지 여부를 선택합니다. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (옵션 &gt; 문서) 깊이]</p>
+        <p>[!UICONTROL(옵션 &gt; 문서) 깊이]</p>
       </td>
    <td> 이미지의 비트 심도를 선택합니다. </td> 
     </tr>
@@ -1157,7 +1155,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (출력) 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL(출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>
@@ -1170,7 +1168,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
 >[!NOTE]
 >
 >이 모듈은 사용 중단되었으며 2026년 7월 30일 이후에는 더 이상 작동하지 않습니다.
->이 모듈을 [Photoshop 작업, 스크립트 및 변형 실행](#execute-photoshop-actions-scripts-and-transformations) 모듈로 업데이트합니다.
+>이 모듈을 [Photoshop 작업, 스크립트 및 변형 실행](#execute-photoshop-actions-scripts-and-transformations) 모듈로 업데이트하십시오.
 
 이 작업 모듈은 Photoshop 파일의 텍스트 레이어를 편집합니다. 동일한 파일에 여러 레이어에 대한 별도의 편집 세부 정보를 입력할 수 있습니다.
 
@@ -1247,7 +1245,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
 >[!NOTE]
 >
 >이 모듈은 사용 중단되었으며 2026년 7월 30일 이후에는 더 이상 작동하지 않습니다.
->이 모듈을 [Photoshop 작업, 스크립트 및 변형 실행](#execute-photoshop-actions-scripts-and-transformations) 모듈로 업데이트합니다.
+>이 모듈을 [Photoshop 작업, 스크립트 및 변형 실행](#execute-photoshop-actions-scripts-and-transformations) 모듈로 업데이트하십시오.
 
 이 작업 모듈은 Photoshop 파일의 텍스트 레이어를 편집합니다.
 
@@ -1333,7 +1331,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
 >[!NOTE]
 >
 >이 모듈은 사용 중단되었으며 2026년 7월 30일 이후에는 더 이상 작동하지 않습니다.
->이 모듈을 [Photoshop 작업, 스크립트 및 변형 실행](#execute-photoshop-actions-scripts-and-transformations) 모듈로 업데이트합니다.
+>이 모듈을 [Photoshop 작업, 스크립트 및 변형 실행](#execute-photoshop-actions-scripts-and-transformations) 모듈로 업데이트하십시오.
 
 이 작업 모듈은 JSON 명령을 사용하여 Photoshop 작업을 실행합니다.
 
@@ -1401,7 +1399,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (출력) 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL(출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>
@@ -1456,7 +1454,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (출력) 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL(출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>
@@ -1475,7 +1473,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
 >[!NOTE]
 >
 >이 모듈은 사용 중단되었으며 2026년 7월 30일 이후에는 더 이상 작동하지 않습니다.
->이 모듈을 [Photoshop 작업, 스크립트 및 변형 실행](#execute-photoshop-actions-scripts-and-transformations) 모듈로 업데이트합니다.
+>이 모듈을 [Photoshop 작업, 스크립트 및 변형 실행](#execute-photoshop-actions-scripts-and-transformations) 모듈로 업데이트하십시오.
 
 이 작업 모듈은 선택한 이미지에 대해 Photoshop 작업을 실행합니다.
 
@@ -1548,7 +1546,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (출력) 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL(출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>
@@ -1567,7 +1565,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
 >[!NOTE]
 >
 >이 모듈은 사용 중단되었으며 2026년 7월 30일 이후에는 더 이상 작동하지 않습니다.
->이 모듈을 [Photoshop 작업, 스크립트 및 변형 실행](#execute-photoshop-actions-scripts-and-transformations) 모듈로 업데이트합니다.
+>이 모듈을 [Photoshop 작업, 스크립트 및 변형 실행](#execute-photoshop-actions-scripts-and-transformations) 모듈로 업데이트하십시오.
 
 이 작업 모듈은 선택한 이미지에 대해 제품 자르기를 실행합니다.
 
@@ -1628,7 +1626,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (출력) 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL(출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>
@@ -1732,12 +1730,12 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
 >[!NOTE]
 >
 >이 모듈은 사용 중단되었으며 2026년 7월 30일 이후에는 더 이상 작동하지 않습니다.
->이 모듈을 [복합 모듈 만들기 또는 편집](#create-or-edit-a-composite) 모듈로 업데이트하세요.
+>이 모듈을 [복합 모듈 만들기 또는 편집](#create-or-edit-a-composite) 모듈로 업데이트하십시오.
 
 >[!NOTE]
 >
 >이 모듈은 사용 중단되었으며 2026년 7월 30일 이후에는 더 이상 작동하지 않습니다.
->이 모듈을 [복합 모듈 만들기 또는 편집](#create-or-edit-a-composite) 모듈로 업데이트하세요.
+>이 모듈을 [복합 모듈 만들기 또는 편집](#create-or-edit-a-composite) 모듈로 업데이트하십시오.
 
 이 작업 모듈은 PSD 레이어 내의 스마트 오브젝트를 대체하고 새 렌디션을 생성합니다.
 
@@ -1871,7 +1869,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
 >[!NOTE]
 >
 >이 모듈은 사용 중단되었으며 2026년 7월 30일 이후에는 더 이상 작동하지 않습니다.
->이 모듈을 [복합 모듈 만들기 또는 편집](#create-or-edit-a-composite) 모듈로 업데이트하세요.
+>이 모듈을 [복합 모듈 만들기 또는 편집](#create-or-edit-a-composite) 모듈로 업데이트하십시오.
 
 이 작업은 동일한 종횡비를 사용하여 이미지 크기를 조정합니다.
 
@@ -1946,7 +1944,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
 >[!NOTE]
 >
 >이 모듈은 사용 중단되었으며 2026년 7월 30일 이후에는 더 이상 작동하지 않습니다.
->이 모듈을 [복합 모듈 만들기 또는 편집](#create-or-edit-a-composite) 모듈로 업데이트하세요.
+>이 모듈을 [복합 모듈 만들기 또는 편집](#create-or-edit-a-composite) 모듈로 업데이트하십시오.
 
 이 작업 모듈은 선택한 이미지에 워터마크를 추가합니다.
 

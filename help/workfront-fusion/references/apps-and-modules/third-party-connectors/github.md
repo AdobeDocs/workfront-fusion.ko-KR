@@ -5,13 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d9e6c26c-8770-40bc-a83a-8c05f86e4a3f
 TQID: https://experienceleague.adobe.com/oGM3EGtQVFeEvQ1PPJQEsu9BI4-blE73oz3BR51eUWs
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 1976
+source-wordcount: 1978
 ht-degree: 13%
 
 ---
@@ -39,7 +37,7 @@ Adobe Workfront Fusion 시나리오에서는 [!UICONTROL GitHub]를 사용하는
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>작업 기반: Workfront Fusion 라이선스 요구 사항 없음</p>
+   <p>운영 기반: 운영 기반 라이센스가 있는 조직에서 사용 가능</p>
    <p>커넥터 기반(이전): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
@@ -172,9 +170,9 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
    <td> <p>감시할 문제를 연결된 방법별로 필터링할 수 있습니다.</p> 
     <ul> 
      <li>[!UICONTROL 모든 문제]</li> 
-     <li>[!UICONTROL 만 나에게 할당된 문제]</li> 
+     <li>[!UICONTROL만 나에게 할당된 문제]</li> 
      <li>[!UICONTROL 내가 만든 문제만 해당]</li> 
-     <li>[!UICONTROL 만 나를 언급하는 문제]</li> 
+     <li>[!UICONTROL만 나를 언급하는 문제]</li> 
      <li>[!UICONTROL 다음에 대한 업데이트를 구독하는 문제만 발생]</li> 
     </ul> </td> 
   </tr> 

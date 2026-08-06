@@ -15,10 +15,10 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 4312
-ht-degree: 100%
+source-wordcount: 4314
+ht-degree: 99%
 
 ---
 
@@ -58,7 +58,7 @@ PDF Services에 사용되는 API에 대한 자세한 내용은 [Adobe Document G
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>작업 기반: Workfront Fusion 라이선스 요구 사항 없음</p>
+   <p>운영 기반: 운영 기반 라이센스가 있는 조직에서 사용 가능</p>
    <p>커넥터 기반(이전): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
@@ -555,7 +555,7 @@ ZIP로 출력하면 PDF는 페이지당 하나의 이미지로 변환되고 각 
 
 [!UICONTROL [!DNL Adobe PDF Services]문서 생성] 기능에 대한 자세한 내용은 [!DNL Adobe Document Services] 설명서의 [문서 생성 개요](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html)를 참조하십시오.
 
-* [ [!DNL Microsoft Word] 템플릿](#use-the-generate-document-module-with-a-microsoft-word-template)을 사용하여 [!UICONTROL 문서 생성] 모듈 사용
+* [&#x200B; [!DNL Microsoft Word] 템플릿](#use-the-generate-document-module-with-a-microsoft-word-template)을 사용하여 [!UICONTROL 문서 생성] 모듈 사용
 * [JSON을 사용하여 [!UICONTROL 문서 생성] 모듈 사용](#use-the-generate-document-module-with-json)
 
 #### [!DNL Microsoft Word] 템플릿을 사용하여 [!UICONTROL 문서 생성] 모듈 사용

@@ -9,9 +9,9 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 4620
+source-wordcount: 4623
 ht-degree: 12%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 12%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>작업 기반: Workfront Fusion 라이선스 요구 사항 없음</p>
+   <p>운영 기반: 운영 기반 라이센스가 있는 조직에서 사용 가능</p>
    <p>커넥터 기반(이전): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
@@ -72,8 +72,8 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 * [!DNL Slack] 모듈을 사용하려면 [!DNL Slack] 계정이 있어야 합니다.
 * OAuth@ 연결을 만드는 경우 조직의 허용 목록에 추가하다에 다음 URL을 추가해야 합니다.
-   * 봇 토큰: `https://oauth.app.workfrontfusion.com/oauth/cb/slack3`
-   * 사용자 토큰:` https://oauth.app.workfrontfusion.com/oauth/cb/slack2`
+  * 봇 토큰: `https://oauth.app.workfrontfusion.com/oauth/cb/slack3`
+  * 사용자 토큰:` https://oauth.app.workfrontfusion.com/oauth/cb/slack2`
 
 ## Slack API 정보
 

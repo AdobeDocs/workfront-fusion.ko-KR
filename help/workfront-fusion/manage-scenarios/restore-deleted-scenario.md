@@ -7,7 +7,7 @@ exl-id: e7fd0351-b840-422c-b861-82ae110c703b
 TQID: https://experienceleague.adobe.com/xVihxZH-fwPCIkryQAQEOWgeShtPTMXth4jEl5OLdbo
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 6a176c74f45b17ed9fbf80b2d87cf45873067f74
+source-git-commit: d4cfac1293b7c0523cc0e45872013238a7bdb364
 workflow-type: tm+mt
 source-wordcount: 217
 ht-degree: 42%
@@ -55,7 +55,7 @@ Workfront Fusion 관리자는 최근에 삭제된 시나리오를 복원할 수 
 
 ## 삭제된 시나리오 복원
 
-1. 왼쪽 탐색에서 팀 개요 를 클릭합니다.
+1. 왼쪽 탐색에서 조직 개요 를 클릭합니다.
 1. 창 상단 근처에 있는 **휴지통** 탭을 클릭합니다.
 1. (선택 사항) **검색** 막대에 검색어를 입력하거나 **다음 사이에 삭제됨** 필드에서 날짜 범위를 선택하거나 **팀** 드롭다운에서 특정 팀을 선택하여 삭제된 시나리오 목록을 필터링합니다.
 1. 복원할 시나리오를 하나 이상 선택한 다음 화면 하단의 막대에서 **복원**&#x200B;을 클릭합니다.

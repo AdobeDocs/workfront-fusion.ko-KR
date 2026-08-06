@@ -12,10 +12,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 1513
-ht-degree: 34%
+source-wordcount: 1515
+ht-degree: 33%
 
 ---
 
@@ -46,7 +46,7 @@ HTTP 모듈에 대한 이점은 전용 앱에서와 같이 연결을 만들 수 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 라이선스</td> 
    <td>
-   <p>작업 기반: Workfront Fusion 라이선스 요구 사항 없음</p>
+   <p>운영 기반: 운영 기반 라이센스가 있는 조직에서 사용 가능</p>
    <p>커넥터 기반(이전): 작업 자동화 및 통합을 위한 Workfront Fusion </p>
    </td> 
   </tr> 
@@ -71,10 +71,10 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 * Adobe Developer Console에 대한 액세스 권한이 있어야 합니다.
 * 모듈을 연결할 API가 포함된 프로젝트가 Adobe Developer Console에 있어야 합니다. 다음과 같은 작업을 수행할 수 있습니다.
 
-   * API를 사용하여 새 프로젝트를 만듭니다.
+  * API를 사용하여 새 프로젝트를 만듭니다.
 
-     또는
-   * 기존 프로젝트에 API를 추가합니다.
+    또는
+  * 기존 프로젝트에 API를 추가합니다.
 
   Adobe Developer Console에서 API를 만들거나 프로젝트에 추가하는 방법에 대한 자세한 내용은 Adobe 설명서에서 [프로젝트 만들기](https://developer.adobe.com/dep/guides/dev-console/create-project/)를 참조하십시오.
 

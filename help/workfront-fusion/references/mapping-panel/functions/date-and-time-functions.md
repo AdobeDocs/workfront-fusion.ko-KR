@@ -9,9 +9,9 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 050fb237c489859fa0ffacf2afeb665b8503598b
 workflow-type: tm+mt
-source-wordcount: 2375
+source-wordcount: 2392
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 ### now
 
-현재 시간을 YYYY-MM-DD-hh:mm:ss 형식으로 가져옵니다.
+현재 시간을 ` YYYY-MM-DD-hh:mm:ss` 형식으로 가져옵니다.
 
 ### 타임스탬프
 
@@ -721,11 +721,11 @@ ht-degree: 2%
 
 * `formatDate(1. Date created; YYYY-MM-DD hh:mm A)`
 
-  2018-10-01 09:32 AM 반환
+  반환 2018-10-01 09:32 AM
 
 * `formatDate(1. Date created;DD.MM.YYYY HH:mm;UTC)`
 
-  반환: 01.10.2018 07:32
+  반환 01.10.2018 07:32
 
 * `formatDate(now;DD.MM.YYYY HH:mm)`
 

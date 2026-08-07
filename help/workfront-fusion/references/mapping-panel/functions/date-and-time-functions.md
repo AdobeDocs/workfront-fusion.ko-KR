@@ -5,13 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
 TQID: https://experienceleague.adobe.com/E77KZbLpHtYJ-D7haukgux3AnmhfkIh-xqh0j6NbNiU
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 050fb237c489859fa0ffacf2afeb665b8503598b
 workflow-type: tm+mt
-source-wordcount: 2375
+source-wordcount: 2392
 ht-degree: 2%
 
 ---
@@ -22,7 +20,7 @@ ht-degree: 2%
 
 ### now
 
-현재 시간을 YYYY-MM-DD-hh:mm:ss 형식으로 가져옵니다.
+현재 시간을 ` YYYY-MM-DD-hh:mm:ss` 형식으로 가져옵니다.
 
 ### 타임스탬프
 
@@ -519,7 +517,7 @@ ht-degree: 2%
 
 0에서 59 사이의 숫자를 지정하십시오. 숫자가 해당 범위를 벗어나면 함수는 이전 분 (음수) 또는 이후 분 (양수)에서 1초를 반환합니다.
 
-범위 밖의 숫자를 지정해야 하는 경우 [addSeconds(날짜; 숫자)](#addseconds-date-number) 섹션에 설명된 대로 [!UICONTROL &#x200B; addSeconds]을 사용하는 것이 좋습니다.
+범위 밖의 숫자를 지정해야 하는 경우 [addSeconds(날짜; 숫자)](#addseconds-date-number) 섹션에 설명된 대로 [!UICONTROL  addSeconds]을 사용하는 것이 좋습니다.
 
 >[!BEGINSHADEBOX]
 
@@ -721,11 +719,11 @@ ht-degree: 2%
 
 * `formatDate(1. Date created; YYYY-MM-DD hh:mm A)`
 
-  2018-10-01 09:32 AM 반환
+  반환 2018-10-01 09:32 AM
 
 * `formatDate(1. Date created;DD.MM.YYYY HH:mm;UTC)`
 
-  반환: 01.10.2018 07:32
+  반환 01.10.2018 07:32
 
 * `formatDate(now;DD.MM.YYYY HH:mm)`
 

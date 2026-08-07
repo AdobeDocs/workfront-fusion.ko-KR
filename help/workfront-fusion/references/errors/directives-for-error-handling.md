@@ -6,14 +6,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d7b0141f-d99d-4ab7-a60f-ed552a76f05d
 TQID: https://experienceleague.adobe.com/4vL9oj7UXeRWQuSzDZP7GJU30oHUg1m75gWGVUkfCfA
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 5daf7bb8e2912744df6f37ec45110d179875bcb2
 workflow-type: tm+mt
-source-wordcount: 584
-ht-degree: 31%
+source-wordcount: 529
+ht-degree: 34%
 
 ---
 
@@ -63,27 +61,32 @@ Workfront Fusion에서 사용할 수 있는 오류 처리 지침은 다음과 �
    <td> <ul><li><p>시나리오 실행이 즉시 중지됩니다.</li><li>롤백 단계는 모든 모듈을 초기 상태로 되돌리기 위해 모든 모듈에서 시작됩니다. </li><li>후속 모듈은 처리되지 않습니다.</p></li><li> <p>대부분의 경우 시나리오는 시나리오 설정에 지정된 연속 오류 수 이후에 비활성화됩니다. 자세한 내용은 <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors" class="MCXref xref">연속 오류 수</a>를 참조하십시오.</p> </li><li><p>시나리오 실행 상태가 "오류"로 표시됩니다.</p></li></ul> <p><b>참고</b>: 모듈에 오류 처리기 경로가 연결되어 있지 않고 <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions" class="MCXref xref">불완전한 실행 저장 허용</a> 시나리오 설정이 선택되어 있지 않은 경우 기본 동작입니다.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>커밋</p> <p> <img src="assets/commit.png"> </p> </td> 
-   <td> <ul><li><p>시나리오 실행이 즉시 중지됩니다.</li><li>모든 모듈에서 커밋 단계가 시작됩니다. </li><li>후속 모듈은 처리되지 않습니다.</p></li><li> <p>처리되지 않은 모든 번들은 무시됩니다.</p> </li><li><p>시나리오 실행 상태는 “성공”으로 표시됩니다. </p> </li></ul></td> 
+   <td role="rowheader"> <p>Break</p> <p> <img src="assets/break.png"> </p> </td> 
+   <td><ul><li> <p>시나리오 실행 상태가 오류를 수동으로 해결할 수 있는 불완전한 실행 대기열에 저장됩니다. 자세한 내용은 <a href="/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md" class="MCXref xref">불완전한 실행 보기 및 해결</a>을 참조하십시오.</p> <p>그러나 몇 가지 예외가 있습니다. 자세한 내용은 시나리오 설정 구성 문서에서 <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow" class="MCXref xref">불완전한 실행 저장 허용</a>을 참조하십시오</a>.</p></li><li> <p>후속 모듈은 처리되지 않습니다.</p></li><li> <p>처리되지 않은 번들이 있으면 시나리오 실행이 정상적으로 계속됩니다.</p> </li><li><p>[!UICONTROL 자동으로 실행 완료] 옵션을 비활성화하면 시나리오 실행 상태가 "경고"로 표시됩니다.</p></li></ul> <p>자세한 내용은 이 문서의 <a href="#break" class="MCXref xref">[!UICONTROL Break]</a> 섹션을 참조하십시오</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Resume</p> <p> <img src="assets/resume.png"> </p> </td> 
    <td> <ul><li><p>대체 출력이 지정되어 오류가 발생한 모듈에 제공됩니다.</p> </li><li><p>이후 모듈이 처리됩니다.</p></li>오류 핸들러가 라우터에 있는 경우 예상대로 경로를 통해 시나리오가 진행됩니다.<li></li><li> <p>시나리오 실행 상태는 “성공”으로 표시됩니다.</p></li></ul> </td> 
   </tr> 
   <tr> 
+   <td role="rowheader"> <p>커밋</p> <p> <img src="assets/commit.png"> </p> </td> 
+   <td> <ul><li><p>시나리오 실행이 즉시 중지됩니다.</li><li>모든 모듈에서 커밋 단계가 시작됩니다. </li><li>후속 모듈은 처리되지 않습니다.</p></li><li> <p>처리되지 않은 모든 번들은 무시됩니다.</p> </li><li><p>시나리오 실행 상태는 “성공”으로 표시됩니다. </p> </li></ul></td> 
+  </tr> 
+  <tr> 
    <td role="rowheader"> <p>무시</p> <p> <img src="assets/ignore.png"> </p> </td> 
    <td><ul><li> <p>오류가 무시됩니다.</li><li> 후속 모듈은 처리되지 않습니다.</p> </li><li><p>처리되지 않은 번들이 있으면 시나리오 실행이 정상적으로 계속됩니다.</p> </li><li>오류 처리기가 라우터에 있으면 해당 라우터의 후속 경로를 건너뜁니다.</li><li><p>시나리오 실행 상태는 “성공”으로 표시됩니다.</p> </li></ul></td> 
-  </tr> 
+  </tr>
+
+<!--
+
   <tr> 
-   <td role="rowheader"> <p>Break</p> <p> <img src="assets/break.png"> </p> </td> 
-   <td><ul><li> <p>시나리오 실행 상태가 오류를 수동으로 해결할 수 있는 불완전한 실행 대기열에 저장됩니다. 자세한 내용은 <a href="/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md" class="MCXref xref">불완전한 실행 보기 및 해결</a>을 참조하십시오.</p> <p>그러나 몇 가지 예외가 있습니다. 자세한 내용은 시나리오 설정 구성 문서에서 <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow" class="MCXref xref">불완전한 실행 저장 허용</a>을 참조하십시오</a>.</p></li><li> <p>후속 모듈은 처리되지 않습니다.</p></li><li> <p>처리되지 않은 번들이 있으면 시나리오 실행이 정상적으로 계속됩니다.</p> </li><li><p>[!UICONTROL 자동으로 실행 완료] 옵션을 비활성화하면 시나리오 실행 상태가 "경고"로 표시됩니다.</p></li></ul> <p>자세한 내용은 이 문서의 <a href="#break" class="MCXref xref">[!UICONTROL Break]</a> 섹션을 참조하십시오</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>다시 시도</p> <p> <img src="assets/retry.png"> </p> </td> 
-   <td> <p>경우에 따라 실패 원인이 시간이 지남에 따라 전달될 가능성이 있는 경우 실패한 모듈을 다시 실행하는 것이 유용할 수 있습니다.</p> <p>Workfront Fusion은 현재 Retry 지시문을 제공하지 않지만 몇 가지 해결 방법을 사용하여 해당 기능을 모방할 수 있습니다. 자세한 내용은 <a href="/help/workfront-fusion/create-scenarios/config-error-handling/retry.md" class="MCXref xref">오류 처리 다시 시도</a>를 참조하십시오.</p> </td> 
+   <td role="rowheader"> <p>Retry</p> <p> <img src="assets/retry.png"> </p> </td> 
+   <td> <p>In some cases it may be useful to re-execute a failing module when there is a chance that the reason for the failure might pass over time.</p> <p>Workfront Fusion currently does not offer the Retry directive, though several workarounds can be employed to mimic its functionality. For more information, see <a href="/help/workfront-fusion/create-scenarios/config-error-handling/retry.md" class="MCXref xref">Retry error handling</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
+
+-->
 
 >[!NOTE]
 >

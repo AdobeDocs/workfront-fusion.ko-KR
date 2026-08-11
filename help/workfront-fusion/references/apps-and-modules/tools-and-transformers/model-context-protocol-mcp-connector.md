@@ -6,18 +6,15 @@ feature: Workfront Fusion
 hide: true
 exl-id: 748055ad-d305-4513-9a5c-9c970b74a96e
 TQID: https://experienceleague.adobe.com/KC5YvcNC-EQG4bnPA5pOVbGWZHdqa0XKYHKPMLwY-24
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 4d8599c771c76ee9b6713fd7c8e1b2907fe9599f
 workflow-type: tm+mt
-source-wordcount: 488
+source-wordcount: 490
 ht-degree: 18%
 
 ---
 
 # MCP 에이전트 모듈
-
-<!--SET UP REDIRECTS-->
 
 모델 컨텍스트 프로토콜(MCP)은 AI 언어 모델을 다른 애플리케이션과 안전하게 연결하는 방법입니다. AI 모델이 애플리케이션에 액세스할 수 있도록 MCP 서버를 구성합니다. 그런 다음 AI 모델에 프롬프트를 보내고 애플리케이션에서 정보를 반환할 수 있습니다.
 
@@ -83,7 +80,7 @@ Fusion 시나리오의 MCP에 대한 자세한 내용은 [시나리오에 AI 프
        <li><b>LLM</b>: 이 키와 연결된 큰 언어 모델을 선택하십시오.</li>
        <li><b>키</b>: 선택한 모델의 API 키를 입력하거나 매핑합니다.</li>
        <li><b>모델</b>: 키에 사용할 LLM 모델을 선택하십시오.</li>
-       <li><b>최대 토큰</b>: LLM이 응답에서 생성할 수 있는 최대 토큰 수를 입력하거나 매핑합니다.<p>한 토큰은 보통 4자, 즉 영어에서 한 단어의 .75와 같다. "Hello world"는 2개의 토큰과 같으며 "Authentication"은 1개와 2개의 토큰으로 같습니다.</li>
+       <li><b>최대 토큰 수</b>: LLM이 응답에서 생성할 수 있는 최대 토큰 수를 입력하거나 매핑합니다.<p>한 토큰은 보통 4자, 즉 영어에서 한 단어의 .75와 같다. "Hello world"는 2개의 토큰과 같으며 "Authentication"은 1개와 2개의 토큰으로 같습니다.</li>
       </ul>
     </td> 
   </tr> 

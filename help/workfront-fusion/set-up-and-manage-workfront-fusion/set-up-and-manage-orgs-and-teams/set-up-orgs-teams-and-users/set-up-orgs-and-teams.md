@@ -7,12 +7,11 @@ feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 56837f45-12f9-44b7-b48f-9a3a4fa966c8
 TQID: https://experienceleague.adobe.com/hIUqXXvCzmn-uAnDxJFDJ-jPY2JgE5smZzryufBbwtA
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: cd35c4de13296dcc403df78f69a1e562229ab5f9
 workflow-type: tm+mt
-source-wordcount: 76
-ht-degree: 56%
+source-wordcount: 75
+ht-degree: 52%
 
 ---
 
@@ -23,5 +22,5 @@ ht-degree: 56%
 * [팀 만들기](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/create-a-team.md)
 * [Adobe Admin Console을 통해 Adobe Workfront Fusion에 사용자 추가](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-fusion-users-admin-console.md)
 * [팀에 사용자 추가](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md)
-* [팀 알림 옵션 설정](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md)
+* [알림 옵션 설정](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md)
 * [조직에 대한 활동 로그 보기](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-activity-logs-for-an-org.md)

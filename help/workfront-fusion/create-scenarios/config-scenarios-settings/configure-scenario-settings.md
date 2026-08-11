@@ -8,9 +8,9 @@ exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
 TQID: https://experienceleague.adobe.com/3EtKXHUMeJ7FL9pEJpYVpT59fvnlyeC1BMpMK2KGD6M
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 7c16e9411b334d32e63b88b18f538f69e494b360
 workflow-type: tm+mt
-source-wordcount: 1306
+source-wordcount: 1366
 ht-degree: 7%
 
 ---
@@ -182,6 +182,12 @@ Dropbox 폴더에 100개의 파일이 추가되고 최대 주기 옵션이 10으
 >[!NOTE]
 >
 >시나리오가 즉각적인 트리거로 시작하는 경우 설정이 무시되고 첫 번째 오류가 발생하면 시나리오가 즉시 비활성화됩니다.
+
+### 경고 시 알림 / 오류 시 알림 / 시나리오가 비활성화될 때 알림
+
+알림 유형에 대한 시나리오 레벨 대체를 설정하려면 알림 유형 옆의 확인란을 선택하거나 선택 취소합니다.
+
+시나리오 수준 재정의를 포함하여 알림 설정에 대한 자세한 내용은 [알림 옵션 설정](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md)을 참조하세요.
 
 ### 작업자 풀
 

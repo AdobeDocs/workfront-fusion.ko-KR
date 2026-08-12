@@ -11,10 +11,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 4d8599c771c76ee9b6713fd7c8e1b2907fe9599f
+source-git-commit: 79ead2c1fd03403e8e18ecfd7a346be3b1ff890f
 workflow-type: tm+mt
-source-wordcount: 517
-ht-degree: 93%
+source-wordcount: 511
+ht-degree: 94%
 
 ---
 
@@ -153,7 +153,6 @@ Fusion은 다양한 제3자 애플리케이션을 위한 커넥터를 제공합�
 * [어휘 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/lexical-modules.md)
 * [Markdown 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
 * [수학 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
-* [MCP 에이전트(모델 컨텍스트 프로토콜) 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
 * [MIME 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)
 * [텍스트 파서 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md)
 * [도구 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)

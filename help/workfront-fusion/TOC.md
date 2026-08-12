@@ -3,7 +3,7 @@ user-guide-title: Adobe Workfront Fusion 설명서
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 문서, 튜토리얼 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
 nudge: true
-source-git-commit: 4d8599c771c76ee9b6713fd7c8e1b2907fe9599f
+source-git-commit: 79ead2c1fd03403e8e18ecfd7a346be3b1ff890f
 workflow-type: tm+mt
 source-wordcount: '2521'
 ht-degree: 52%
@@ -467,7 +467,7 @@ ht-degree: 52%
       * [Markdown 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
       * [수학 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
       * [MIME 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)
-      * [MCP 에이전트(모델 컨텍스트 프로토콜) 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
+      * {hide-from-toc}[MCP 에이전트(모델 컨텍스트 프로토콜) 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
       * [텍스트 파서 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md)
       * [도구 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)
       * [XML 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/xml-modules.md)

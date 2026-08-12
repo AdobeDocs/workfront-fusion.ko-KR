@@ -7,10 +7,10 @@ exl-id: 47ccecf0-751c-4026-96a9-329c33cb6801
 TQID: https://experienceleague.adobe.com/0NhWgeBcqYtVJ7XKqZ30O1lg3fKSs7YijEhhYBQ-jfg
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 93887116991b505676f5c51762b47829dae9bb7a
 workflow-type: tm+mt
-source-wordcount: 629
-ht-degree: 18%
+source-wordcount: 659
+ht-degree: 16%
 
 ---
 
@@ -80,7 +80,7 @@ ht-degree: 18%
 
 | 액션 | 세부 사항 |
 | ---------- | ---------- |
-| 저장합니다. <p>![저장 아이콘](assets/save-icon.png)</p> | 시나리오를 저장하면 나중에 액세스해야 하는 경우 3점 메뉴 아래에서 새 버전을 사용할 수 있습니다. 이전에 저장된 시나리오 버전은 60일 동안만 사용할 수 있습니다. |
+| 저장합니다. <p>![저장 아이콘](assets/save-icon.png)</p> | <p>시나리오를 저장하면 나중에 액세스해야 하는 경우 3점 메뉴 아래에서 새 버전을 사용할 수 있습니다. 다음 시나리오 버전을 만든 후 60일 동안 이전에 저장된 시나리오 버전을 사용할 수 있습니다. </p><p>감사 목적으로 60일 이상 시나리오 버전 기록을 유지하려면 시나리오의 블루프린트를 다른 위치에 저장하고 보관하는 것이 좋습니다.</p> |
 | 시나리오 설정 <p>![시나리오 설정 아이콘](assets/scenario-settings-icon.png)</p> | 시나리오 설정 패널에는 시나리오에 대한 고급 설정이 포함되어 있습니다. 사용 가능한 설정에 대한 자세한 내용은 [시나리오 설정 구성](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)을 참조하십시오. |
 | 참고  <p>![메모 아이콘](assets/notes-icon.png)</p> | 시나리오에 대해 메모를 합니다. 다른 사용자는 시나리오에 있을 때 이러한 메모를 볼 수 있습니다. |
 | 자동 정렬 <p>![자동 정렬 아이콘](assets/auto-align-icon.png)</p> | 시나리오에서 모듈을 자동 정렬합니다. |

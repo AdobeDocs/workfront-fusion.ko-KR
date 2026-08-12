@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
 TQID: https://experienceleague.adobe.com/xVihxZH-fwPCIkryQAQEOWgeShtPTMXth4jEl5OLdbo
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 93887116991b505676f5c51762b47829dae9bb7a
 workflow-type: tm+mt
 source-wordcount: 754
@@ -126,6 +127,6 @@ Adobe Workfront Fusion은 시나리오가 변경될 때마다 시나리오 버�
 * **오류 처리기**: 오류를 처리하는 분기입니다.
 * **고아 그룹**: 캔버스에서 모듈 연결이 끊어졌습니다.
 &#x200B;
-두 버전이 동일하면 보기에 **차이점을 찾을 수 없음**이라는 메시지가 표시됩니다.
+두 버전이 동일하면 보기에 **차이점을 찾을 수 없음**&#x200B;이라는 메시지가 표시됩니다.
 &#x200B;
 

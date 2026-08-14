@@ -5,15 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
 TQID: https://experienceleague.adobe.com/QHOFWDOT-18-c0b3wLXsRV5cjGVxlcyLhvZdkev3GFg
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: f0e185778e01b71a91837531a082e88485e97ca2
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: b7d7ae3c0a4ce47428ca993fd173f21994a58653
 workflow-type: tm+mt
-source-wordcount: 6075
+source-wordcount: 6097
 ht-degree: 34%
 
 ---
@@ -206,7 +203,8 @@ Workfront Planning Fusion 모듈 내에서 직접 Workfront Planning 계정에 �
 
 >[!IMPORTANT]
 >
->이 섹션의 모듈은 Workfront Planning V2 커넥터에 속합니다.Workfront Planning V1 커넥터의 모듈에 대해서는 [[!DNL Adobe Workfront Planning] 버전 1 모듈 및 해당 필드](#adobe-workfront-planning-version-1-modules-and-their-fields)를 참조하십시오.
+>이 섹션의 모듈은 Workfront Planning V2 커넥터에 속합니다.
+>Workfront Planning V1 커넥터의 모듈에 대해서는 [[!DNL Adobe Workfront Planning] 버전 1 모듈 및 해당 필드](#adobe-workfront-planning-version-1-modules-and-their-fields)를 참조하십시오.
 
 Workfront Planning 모듈을 구성할 때 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 이와 함께 앱 또는 서비스의 액세스 레벨과 같은 요인에 따라 추가적인 Workfront 필드가 표시될 수 있습니다. 모듈의 굵은 글씨 제목은 필수 필드를 나타냅니다.
 
@@ -1467,6 +1465,11 @@ Workfront Planning 모듈을 구성할 때 Workfront Fusion에 아래 나열된 
 >
 >웹후크 편집에 대한 자세한 내용은 [웹후크 편집](/help/workfront-fusion/manage-scenarios/edit-webhooks.md)을 참조하십시오.
 
+>[!NOTE]
+>
+>2026년 8월 23일 이후 Fusion은 기존 모듈을 포함하여 모든 Workfront 계획 > 이벤트 보기 모듈에 대해 기본적으로 authToken 기반 보안을 활성화합니다.
+
+
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -1531,7 +1534,8 @@ Workfront Planning 모듈을 구성할 때 Workfront Fusion에 아래 나열된 
 
 >[!IMPORTANT]
 >
->이 섹션의 모듈은 Workfront Planning V1 커넥터에 속합니다.Workfront Planning V2 커넥터의 모듈에 대해서는 [[!DNL Adobe Workfront Planning] 버전 2 모듈 및 해당 필드](#adobe-workfront-planning-version-2-modules-and-their-fields)를 참조하십시오.
+>이 섹션의 모듈은 Workfront Planning V1 커넥터에 속합니다.
+>Workfront Planning V2 커넥터의 모듈에 대해서는 [[!DNL Adobe Workfront Planning] 버전 2 모듈 및 해당 필드](#adobe-workfront-planning-version-2-modules-and-their-fields)를 참조하십시오.
 
 Workfront Planning 모듈을 구성할 때 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 이와 함께 앱 또는 서비스의 액세스 레벨과 같은 요인에 따라 추가적인 Workfront 필드가 표시될 수 있습니다. 모듈의 굵은 글씨 제목은 필수 필드를 나타냅니다.
 

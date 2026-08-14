@@ -5,20 +5,14 @@ author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
 TQID: https://experienceleague.adobe.com/CjzJP-U4P5bVop8ktivUH3pPOjVVgamqqc--cUsLm8U
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-subfeature_v2:
-  - id: ec8965fc-2f75-47f6-a9bb-730e8c2725f3
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 997d5af3ff9fe9354976552bbd30edf530da3beb
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+subfeature_v2: id: ec8965fc-2f75-47f6-a9bb-730e8c2725f3
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: b7d7ae3c0a4ce47428ca993fd173f21994a58653
 workflow-type: tm+mt
-source-wordcount: 7626
-ht-degree: 94%
+source-wordcount: 7689
+ht-degree: 93%
 
 ---
 
@@ -277,6 +271,13 @@ Workfront 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를
       <td>
        <p>시나리오를 [!UICONTROL 새 레코드만], [!UICONTROL 업데이트된 레코드만], [!UICONTROL 새 레코드 및 업데이트된 레코드] 또는 [!DNL Deleted Records Only] 중 어떻게 볼 것인지 선택합니다.</p>
        <p><b>메모</b>: [!UICONTROL 새 레코드 및 업데이트 레코드]를 선택하면, 웹후크 만들기에서 동일한 웹후크 주소에 대해 두 개의 이벤트 구독을 만듭니다.</p>
+       </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL 보안 후크 활성화]</td> 
+      <td>
+       <p>이 웹후크에 enableauthToken 기반 보안을 사용할지 여부를 선택합니다.</p><p>
+       <b>참고</b>: 2026년 8월 23일 이후 Fusion에서는 기존 모듈을 포함하여 모든 Workfront &gt; 이벤트 보기 모듈에 대해 기본적으로 authToken 기반 보안을 활성화합니다. 특정 웹후크가 끊기거나 호환성을 위해 비활성화해야 하는 경우 2026년 8월 23일 이전에 보안 후크 활성화 옵션을 해제할 수 있습니다.</p>
        </td> 
      </tr> 
     </tbody> 
@@ -1034,7 +1035,7 @@ Workfront는 최근 이벤트 구독 서비스의 신규 버전을 출시했습�
 
 새 이벤트 구독 버전에 대한 자세한 내용은 Workfront 설명서의 [이벤트 구독 버전 관리](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)를 참조하십시오.
 
-웨비나 녹화를 포함한 이벤트 구독 업그레이드 중 Workfront Fusion 시나리오 유지에 대한 리소스는 [이벤트 구독 V2 업그레이드 중 Fusion 시나리오 유지](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=ko)를 참조하십시오.
+웨비나 녹화를 포함한 이벤트 구독 업그레이드 중 Workfront Fusion 시나리오 유지에 대한 리소스는 [이벤트 구독 V2 업그레이드 중 Fusion 시나리오 유지](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)를 참조하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -2350,7 +2351,7 @@ See a list of the Workfront object types for which you can use this module in [W
 >
 >   새 이벤트 구독 버전에 대한 자세한 내용은 Workfront 설명서의 [이벤트 구독 버전 관리](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)를 참조하십시오.
 >
->   웨비나 녹화를 포함한 이벤트 구독 업그레이드 중 Workfront Fusion 시나리오 유지에 대한 리소스는 [이벤트 구독 V2 업그레이드 중 Fusion 시나리오 유지](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=ko)를 참조하십시오.
+>   웨비나 녹화를 포함한 이벤트 구독 업그레이드 중 Workfront Fusion 시나리오 유지에 대한 리소스는 [이벤트 구독 V2 업그레이드 중 Fusion 시나리오 유지](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)를 참조하십시오.
 
 Workfront [!UICONTROL 이벤트 보기] 모듈은 Workfront API에서 이벤트 구독을 만드는 웹후크를 기반으로 시나리오를 트리거합니다. 이벤트 구독은 웹후크로 전송되는 이벤트를 결정하는 데이터 세트입니다. 예를 들어, 문제를 확인하는 [!UICONTROL 이벤트 보기] 모듈을 설정하면 이벤트 구독은 문제와 관련된 이벤트만 전송합니다.
 

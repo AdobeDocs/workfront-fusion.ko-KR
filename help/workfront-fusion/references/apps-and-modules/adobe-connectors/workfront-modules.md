@@ -15,10 +15,10 @@ subfeature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 86ecf8da00cbae38b4ae48f616ac37e759f84494
+source-git-commit: 997d5af3ff9fe9354976552bbd30edf530da3beb
 workflow-type: tm+mt
-source-wordcount: 7518
-ht-degree: 95%
+source-wordcount: 7626
+ht-degree: 94%
 
 ---
 
@@ -217,13 +217,11 @@ Workfront 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를
 
 ### 트리거
 
-<!--
-* [Watch Events](#watch-events) 
-* [Watch Record](#watch-record) 
-* [Watch Field](#watch-field)
--->
+* [이벤트 보기](#watch-events)
+* [조사식 마당](#watch-field)
+* [녹화 시청](#watch-record)
 
-+++ **[!UICONTROL 이벤트 보기]**
+#### [!UICONTROL 이벤트 보기]
 
 이 트리거 모듈은 Workfront에서 특정 유형의 오브젝트가 추가, 업데이트 또는 삭제될 때 실시간으로 시나리오를 실행합니다.
 
@@ -294,9 +292,7 @@ Workfront 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를
 
 [각 Workfront 모듈에서 사용할 수 있는 Workfront 오브젝트 유형](#workfront-object-types-available-for-each-workfront-module)에서 이 모듈을 사용할 수 있는 Workfront 오브젝트 유형 목록을 확인하십시오.
 
-+++
-
-+++ **[!UICONTROL 필드 보기]**
+#### [!UICONTROL 필드 보기]
 
 이 트리거 모듈은 특정한 필드가 업데이트될 때 시나리오를 실행합니다. 모듈은 특정한 필드의 이전 값과 새 값을 모두 반환합니다. 시나리오의 후속 모듈에서 이 정보를 매핑할 수 있습니다.
 
@@ -331,9 +327,7 @@ Workfront 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를
 
 [각 Workfront 모듈에서 사용할 수 있는 Workfront 오브젝트 유형](#workfront-object-types-available-for-each-workfront-module)에서 이 모듈을 사용할 수 있는 Workfront 오브젝트 유형 목록을 확인하십시오.
 
-+++
-
-+++ **[!UICONTROL 레코드 보기]**
+#### [!UICONTROL 레코드 보기]
 
 이 트리거 모듈은 특정 유형의 오브젝트가 추가되거나 업데이트되거나 둘 다 사용될 때 시나리오를 실행합니다. 모듈은 연결에서 액세스하는 모든 사용자 정의 필드 및 값과 함께 레코드와 연결된 모든 표준 필드를 반환합니다. 시나리오의 후속 모듈에서 이 정보를 매핑할 수 있습니다.
 
@@ -384,25 +378,21 @@ Workfront 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를
 
 [각 Workfront 모듈에서 사용할 수 있는 Workfront 오브젝트 유형](#workfront-object-types-available-for-each-workfront-module)에서 이 모듈을 사용할 수 있는 Workfront 오브젝트 유형 목록을 확인하십시오.
 
-+++
-
-
 ### 액션
 
-<!--
-* [Convert object](#convert-object) 
-* [Create a record (attaching custom forms)](#create-a-record-attaching-custom-forms) 
-* [Create a record](#create-a-record) 
-* [Custom API Call](#custom-api-call) 
-* [Delete Record](#delete-record) 
-* [Download Document](#download-document) 
-* [Misc Action](#misc-action) 
-* [Read a Record](#read-a-record) 
-* [Update Record](#update-record) 
-* [Upload Document](#upload-document)
--->
+* [개체 변환](#convert-object)
+* [레코드 만들기](#create-a-record)
+* [사용자 정의 API 호출](#custom-api-call)
+* [레코드 삭제](#delete-record)
+* [문서 다운로드](#download-document)
+* [사전 서명된 파일 URL 가져오기](#get-a-presigned-file-url)
+* [기타 동작](#misc-action)
+* [레코드 읽기](#read-a-record)
+* [이벤트 페이로드 버전 업데이트](#update-events-payload-version)
+* [레코드 업데이트](#update-a-record)
+* [문서 업로드](#upload-document)
 
-+++ **[!UICONTROL 오브젝트 변환]**
+#### [!UICONTROL 오브젝트 변환]
 
 이 액션 모듈은 다음 중 하나를 변환합니다.
 
@@ -457,9 +447,7 @@ Workfront 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를
  </tbody> 
 </table>
 
-+++
-
-+++ **[!UICONTROL 레코드 만들기]** 
+#### [!UICONTROL 레코드 만들기]
 
 이 액션 모듈은 Workfront에서 프로젝트, 작업 또는 문제와 같은 오브젝트를 만들며, 새 오브젝트에 사용자 정의 양식을 추가할 수 있습니다. 모듈을 사용하면 모듈에서 사용할 수 있는 오브젝트의 필드를 선택할 수 있습니다.
 
@@ -525,8 +513,6 @@ Workfront 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를
 >
 >   지침은 Adobe 설명서의 [여러 사용자 관리 | 일괄 CSV 업로드](https://helpx.adobe.com/kr/enterprise/using/bulk-upload-users.html)를 참조하십시오.
 
-+++
-
 <!--
 
 +++ **[!UICONTROL Create Record (Legacy)]**
@@ -580,7 +566,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 -->
 
-+++ **[!UICONTROL 사용자 정의 API 호출]**
+#### [!UICONTROL 사용자 정의 API 호출]
 
 이 액션 모듈을 사용하면 Workfront API에 인증된 사용자 정의 호출을 수행할 수 있습니다. 이렇게 하면 다른 Workfront 모듈로는 수행할 수 없는 데이터 흐름 자동화를 만들 수 있습니다.
 
@@ -637,9 +623,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 [각 Workfront 모듈에서 사용할 수 있는 Workfront 오브젝트 유형](#workfront-object-types-available-for-each-workfront-module)에서 이 모듈을 사용할 수 있는 Workfront 오브젝트 유형 목록을 확인하십시오.
 
-+++
-
-+++ **[!UICONTROL 레코드 삭제]**
+#### [!UICONTROL 레코드 삭제]
 
 이 액션 모듈은 Workfront의 프로젝트, 작업 또는 문제와 같은 오브젝트를 삭제합니다.
 
@@ -686,9 +670,7 @@ See a list of the Workfront object types for which you can use this module in [W
 >1. 레코드 삭제 모듈에 오류 처리를 추가하여 40초 시간 제한으로 인한 오류를 무시합니다.
 
 
-+++
-
-+++ **[!UICONTROL 문서 다운로드]**
+#### [!UICONTROL 문서 다운로드]
 
 이 액션 모듈은 Workfront에서 문서를 다운로드합니다.
 
@@ -715,9 +697,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 [각 Workfront 모듈에서 사용할 수 있는 Workfront 오브젝트 유형](#workfront-object-types-available-for-each-workfront-module)에서 이 모듈을 사용할 수 있는 Workfront 오브젝트 유형 목록을 확인하십시오.
 
-+++
-
-+++ **미리 서명된 파일 URL 가져오기**
+#### 사전 서명된 파일 URL 가져오기
 
 이 액션 모듈은 나중에 다른 API에서 사용할 수 있는 미리 서명된 파일 URL을 가져옵니다.
 
@@ -740,9 +720,7 @@ See a list of the Workfront object types for which you can use this module in [W
  </tbody> 
 </table>
 
-+++
-
-+++ **[!UICONTROL 기타 액션]**
+#### [!UICONTROL 기타 액션]
 
 이 액션 모듈을 사용하면 API에 대한 액션을 수행할 수 있습니다.
 
@@ -789,13 +767,13 @@ See a list of the Workfront object types for which you can use this module in [W
 
 [각 Workfront 모듈에서 사용할 수 있는 Workfront 오브젝트 유형](#workfront-object-types-available-for-each-workfront-module)에서 이 모듈을 사용할 수 있는 Workfront 오브젝트 유형 목록을 확인하십시오.
 
-#### 기타 액션 옵션
+##### 기타 액션 옵션
 
 * [작업](#task)
 * [문제](#issue)
 * [프로젝트](#project)
 
-##### 작업
+###### 작업
 
 <table style="table-layout:auto">
  <col> 
@@ -843,7 +821,7 @@ See a list of the Workfront object types for which you can use this module in [W
  </tbody> 
 </table>
 
-##### 문제
+###### 문제
 
 <table style="table-layout:auto">
  <col> 
@@ -890,7 +868,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 
 
-##### 프로젝트
+###### 프로젝트
 
 <table style="table-layout:auto">
  <col> 
@@ -943,9 +921,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 
 
-+++
-
-+++ **[!UICONTROL 레코드 읽기]**
+#### [!UICONTROL 레코드 읽기]
 
 이 액션 모듈은 단일 레코드에서 데이터를 가져옵니다.
 
@@ -995,8 +971,6 @@ See a list of the Workfront object types for which you can use this module in [W
 </table>
 
 [각 Workfront 모듈에서 사용할 수 있는 Workfront 오브젝트 유형](#workfront-object-types-available-for-each-workfront-module)에서 이 모듈을 사용할 수 있는 Workfront 오브젝트 유형 목록을 확인하십시오.
-
-+++
 
 <!--
 
@@ -1052,11 +1026,9 @@ When you are configuring this module, the following fields display.
 
 See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
-+++
-
 -->
 
-+++ **이벤트 페이로드 버전 업데이트**
+#### 이벤트 페이로드 버전 업데이트
 
 Workfront는 최근 이벤트 구독 서비스의 신규 버전을 출시했습니다. 신규 버전은 Workfront API의 변경이 아니라 이벤트 구독 기능의 변경입니다. 이 액션 모듈은 이 시나리오에 사용된 이벤트 페이로드 버전을 업데이트합니다.
 
@@ -1080,9 +1052,7 @@ Workfront는 최근 이벤트 구독 서비스의 신규 버전을 출시했습�
 </table>
 
 
-+++
-
-+++ **레코드 업데이트**
+#### 레코드 업데이트
 
 
 이 액션 모듈은 프로젝트, 작업 또는 문제와 같은 오브젝트를 업데이트합니다. 모듈을 사용하면 모듈에서 사용할 수 있는 오브젝트의 필드를 선택할 수 있습니다.
@@ -1128,8 +1098,6 @@ Workfront는 최근 이벤트 구독 서비스의 신규 버전을 출시했습�
 >
 > 사용자 정의 필드나 [!UICONTROL 메모] 오브젝트(댓글 또는 답장)의 텍스트를 입력할 때, [!UICONTROL 메모 텍스트] 필드의 HTML 태그를 사용하여 굵은 글씨나 기울임꼴과 같은 서식 있는 텍스트를 만들 수 있습니다.
 
-
-+++
 
 <!--
 
@@ -1180,11 +1148,9 @@ See a list of the Workfront object types for which you can use this module in [W
 >* When entering the ID of an object, you can begin typing the name of the object, then select it from the list. The module then enters the appropriate ID into the field.
 >* When entering the text for a custom field or a [!UICONTROL Note] object (Comment or reply), you can use HTML tags in the [!UICONTROL Note Text] field to create rich text, such as bold or italic text.
 
-+++
-
 -->
 
-+++ **[!UICONTROL 문서 업로드]**
+#### [!UICONTROL 문서 업로드]
 
 이 액션 모듈은 프로젝트, 작업 또는 문제와 같은 Workfront 오브젝트에 문서를 업로드합니다. 이 모듈은 문서를 청크 단위로 업로드하므로 Workfront의 업로드 프로세스가 더 원활해집니다.
 
@@ -1224,8 +1190,6 @@ See a list of the Workfront object types for which you can use this module in [W
 </table>
 
 [각 Workfront 모듈에서 사용할 수 있는 Workfront 오브젝트 유형](#workfront-object-types-available-for-each-workfront-module)에서 이 모듈을 사용할 수 있는 Workfront 오브젝트 유형 목록을 확인하십시오.
-
-+++
 
 <!--
 
@@ -1274,12 +1238,11 @@ See a list of the Workfront object types for which you can use this module in [W
 
 ### 검색 결과
 
-<!--
-* [Read Related Records](#read-related-records) 
-* [Search](#search)
--->
+* [관련 레코드 읽기](#read-related-records)
+* [검색](#search)
+* [검색(기존)](#search-legacy)
 
-+++ **[!UICONTROL 관련 레코드 읽기]**
+#### [!UICONTROL 관련 레코드 읽기]
 
 이 검색 모듈은 특정 상위 오브젝트에서 지정한 검색 쿼리와 일치하는 레코드를 읽습니다.
 
@@ -1314,9 +1277,7 @@ See a list of the Workfront object types for which you can use this module in [W
  </tbody> 
 </table>
 
-+++
-
-+++ **[!UICONTROL 검색]**
+#### [!UICONTROL 검색]
 
 이 검색 모듈은 Workfront에서 지정한 검색 쿼리와 일치하는 오브젝트의 레코드를 찾습니다.
 
@@ -1371,13 +1332,11 @@ See a list of the Workfront object types for which you can use this module in [W
  </tbody> 
 </table>
 
-+++
-
-+++ **[!UICONTROL 검색(이전)]**
+#### [!UICONTROL 검색(이전)]
 
 >[!IMPORTANT]
 >
->이 모듈은 레코드 검색 모듈로 대체되었습니다. 새 시나리오에서는 해당 모듈을 사용하는 것이 좋습니다.
+>이 모듈은 검색 레코드 모듈로 교체되었습니다. 새로운 시나리오에서 해당 모듈을 사용하는 것이 좋습니다.
 >이 모듈을 사용하는 기존 시나리오는 예상대로 계속 작동합니다. 이 모듈은 2025년 5월에 모듈 선택기에서 제거됩니다.
 
 이 검색 모듈은 Workfront에서 지정한 검색 쿼리와 일치하는 오브젝트의 레코드를 찾습니다.
@@ -1428,8 +1387,6 @@ See a list of the Workfront object types for which you can use this module in [W
   </tr> 
  </tbody> 
 </table>
-
-+++
 
 <!--
 not visible Jan 6, 2025
@@ -1488,13 +1445,11 @@ See a list of the Workfront object types for which you can use this module in [W
 
 ## 각 Workfront 모듈에 사용할 수 있는 Workfront 오브젝트 유형
 
-<!--
-[Object types available for each Workfront trigger module](#object-types-available-for-each-workfront-trigger-module)
-* [Object types available for each Workfront action module](#object-types-available-for-each-workfront-action-module) 
-* [Object types available for each Workfront search module](#object-types-available-for-each-workfront-search-module)
--->
+* [각 Workfront 트리거 모듈에 사용할 수 있는 오브젝트 유형](#object-types-available-for-each-workfront-trigger-module)
+* [각 Workfront 작업 모듈에 사용할 수 있는 오브젝트 유형](#object-types-available-for-each-workfront-action-module)
+* [각 Workfront 검색 모듈에 사용할 수 있는 오브젝트 유형](#object-types-available-for-each-workfront-search-module)
 
-+++**각 Workfront 트리거 모듈에 사용할 수 있는 오브젝트 유형**
+### 각 Workfront 트리거 모듈에 사용할 수 있는 오브젝트 유형
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1758,9 +1713,7 @@ See a list of the Workfront object types for which you can use this module in [W
  </tbody> 
 </table>
 
-+++
-
-+++**각 Workfront 작업 모듈에 사용할 수 있는 오브젝트 유형**
+### 각 Workfront 작업 모듈에 사용할 수 있는 오브젝트 유형
 
 >[!NOTE]
 >
@@ -2181,9 +2134,7 @@ See a list of the Workfront object types for which you can use this module in [W
  </tbody> 
 </table>
 
-+++
-
-+++**각 Workfront 검색 모듈에 사용할 수 있는 오브젝트 유형**
+### 각 Workfront 검색 모듈에 사용할 수 있는 오브젝트 유형
 
 <table style="table-layout:auto"> 
  <col> 
@@ -2381,8 +2332,6 @@ See a list of the Workfront object types for which you can use this module in [W
 </table>
 
 예상대로 작동하는지 다시 한 번 확인하는 것이 좋습니다.
-
-+++
 
 ## Workfront > [!UICONTROL 이벤트 보기] 모듈의 이벤트 구독 필터
 

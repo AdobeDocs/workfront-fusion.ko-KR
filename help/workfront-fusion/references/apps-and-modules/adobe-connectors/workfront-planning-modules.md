@@ -11,10 +11,10 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: b7d7ae3c0a4ce47428ca993fd173f21994a58653
+source-git-commit: 6a90d388cc362b24cc9313a000aa5170f015cbf8
 workflow-type: tm+mt
-source-wordcount: 6097
-ht-degree: 34%
+source-wordcount: 6620
+ht-degree: 32%
 
 ---
 
@@ -642,17 +642,61 @@ Workfront Planning 모듈을 구성할 때 Workfront Fusion에 아래 나열된 
 
 ### 레코드(V2)
 
-* [레코드 만들기](#create-a-record-v2)
+* [레코드 만들기(V2)](#create-a-record-v2)
+* [레코드 만들기(레거시)](#create-a-record-legacy)
 * [레코드 삭제](#delete-a-record-v2)
 * [레코드 가져오기](#get-a-record-v2)
 * [레코드 유형별 레코드 가져오기](#get-records-by-record-type-v2)
 * [레코드 이동](#move-records-v2)
-* [레코드 검색](#search-records-v2)
-* [레코드 업데이트](#update-a-record-v2)
+* [레코드 검색(V2)](#search-records-v2)
+* [레코드 검색(기존)](#search-records-legacy)
+* [레코드 업데이트(V2)](#update-a-record-v2)
+* [레코드 업데이트(레거시)](#update-a-record-legacy)
 
 #### 레코드 만들기(V2)
 
+이 작업을 수행하면 Workfront Planning에 단일 레코드가 만들어집니다. 이 버전의 모듈을 사용하면 값을 제공할 필드를 선택할 수 있으므로 레코드를 만들 때 보다 작고 효율적인 페이로드를 만듭니다.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Workfront Planning]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 연결하기를 참조하십시오.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>레코드를 만들 작업 영역을 선택합니다.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 레코드 유형]</p>
+      </td>
+      <td>만들려는 레코드 유형을 선택합니다.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>매핑할 필드 선택</p>
+      </td>
+      <td>모듈을 만들 때 값을 제공할 필드를 선택합니다.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>기타 필드</p>
+      </td>
+      <td>새 레코드에 보유할 값을 입력합니다. 이러한 필드는 선택한 레코드 유형 및 필드를 기반으로 하며 Workfront Planning 조직에 고유합니다.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### 레코드 만들기(레거시)
+
 이 작업을 수행하면 Workfront Planning에 단일 레코드가 만들어집니다.
+
+값을 제공할 필드를 선택할 수 있는 새로운 레코드 만들기 모듈을 사용하는 것이 좋습니다. 필드를 선택하면 레코드를 만들 때 더 작고 효율적인 페이로드가 만들어집니다.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -799,7 +843,48 @@ Workfront Planning 모듈을 구성할 때 Workfront Fusion에 아래 나열된 
 
 #### 레코드 검색(V2)
 
+지정한 조건에 따라 레코드를 반환합니다.이 버전의 모듈을 사용하면 값을 제공할 필드를 선택할 수 있으므로 레코드를 검색할 때 보다 작고 효율적인 페이로드가 만들어집니다.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Workfront Planning]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 연결하기를 참조하십시오.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>검색할 레코드가 포함된 작업 영역을 선택합니다.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 레코드 유형]</p>
+      </td>
+      <td>검색할 레코드가 포함된 레코드 유형을 선택합니다.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>매핑할 필드 선택</p>
+      </td>
+      <td>이전에 값을 업데이트할 필드를 선택합니다.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 기타 필드]</p>
+      </td>
+      <td>필터링할 각 필드에 대해 해당 필드에 대한 연산자 및 값을 입력합니다. 이러한 필드는 선택한 레코드 유형 및 필드를 기반으로 하며 Workfront Planning 조직에 고유합니다.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### 레코드 검색(기존)
+
 지정한 기준에 따라 레코드를 반환합니다.
+
+값을 제공할 필드를 선택할 수 있는 새로운 레코드 업데이트 모듈을 사용하는 것이 좋습니다. 필드를 선택하면 레코드를 업데이트할 때 더 작고 효율적인 페이로드가 만들어집니다.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -832,8 +917,56 @@ Workfront Planning 모듈을 구성할 때 Workfront Fusion에 아래 나열된 
 
 #### 레코드 업데이트(V2)
 
+이 모듈은 지정된 레코드를 업데이트합니다. 이 버전의 모듈에서는 값을 제공할 필드를 선택할 수 있으므로 레코드를 업데이트할 때 보다 작고 효율적인 페이로드를 만듭니다.
+
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Workfront Planning]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 연결하기를 참조하십시오.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>업데이트할 레코드가 포함된 작업 영역을 선택합니다.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 레코드 유형 ID]</p>
+      </td>
+      <td>업데이트할 레코드 유형을 선택합니다.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 레코드 ID]</p>
+      </td>
+      <td>업데이트할 레코드의 ID를 입력하거나 매핑합니다.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>매핑할 필드 선택</p>
+      </td>
+      <td>이전에 값을 업데이트할 필드를 선택합니다.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 기타 필드]</p>
+      </td>
+      <td>다른 필드에 대한 값을 입력합니다. 사용 가능한 필드는 선택한 레코드 및 필드에 따라 다릅니다.</td> 
+    </tr>
+  </tbody>
+</table>
+
+
+#### 레코드 업데이트(레거시)
+
 이 모듈은 지정된 레코드를 업데이트합니다.
 
+값을 제공할 필드를 선택할 수 있는 새로운 레코드 업데이트 모듈을 사용하는 것이 좋습니다. 필드를 선택하면 레코드를 업데이트할 때 더 작고 효율적인 페이로드가 만들어집니다.
 
 
 <table style="table-layout:auto"> 
@@ -870,7 +1003,6 @@ Workfront Planning 모듈을 구성할 때 Workfront Fusion에 아래 나열된 
     </tr>
   </tbody>
 </table>
-
 
 ### 필드(V2)
 

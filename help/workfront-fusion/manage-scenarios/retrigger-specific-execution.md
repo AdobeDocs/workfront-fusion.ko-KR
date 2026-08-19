@@ -3,12 +3,11 @@ title: 특정 시나리오 실행 다시 트리거
 description: 특정 시나리오 실행을 재시도하여 업데이트된 시나리오 블루프린트를 사용하여 데이터를 처리하거나 해당 데이터 흐름을 볼 수 있습니다.
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 5859bbef4f45fd4741d89ba1795df8a67fa5beaa
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: a078120f0c16d7c2f2084c95a6129844489cfdb6
 workflow-type: tm+mt
-source-wordcount: 523
-ht-degree: 18%
+source-wordcount: 561
+ht-degree: 17%
 
 ---
 
@@ -58,6 +57,10 @@ Webhook 트리거가 있는 시나리오와 연결된 시나리오에서 검색�
 +++
 
 ## 실행 다시 트리거
+
+>[!NOTE]
+>
+>최대 256KB의 데이터만 실행 기록에 유지됩니다. 따라서 입력 데이터가 256KB를 초과하는 실행은 다시 시도할 수 없습니다. 이러한 실행을 다시 시도하면 실패하고 오류 메시지가 표시됩니다.
 
 시나리오의 다이어그램, 시나리오의 내역 영역 또는 특정 시나리오 실행의 페이지에서 시나리오 실행을 다시 시도할 수 있습니다.
 

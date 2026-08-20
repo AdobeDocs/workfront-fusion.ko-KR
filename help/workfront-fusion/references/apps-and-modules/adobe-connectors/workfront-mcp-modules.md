@@ -3,7 +3,8 @@ title: Adobe Workfront Mcp 모듈
 description: Adobe Workfront MCP 모듈을 사용하면 Adobe Workfront의 MCP 서버에 일반 영어 프롬프트를 보내고 AI 모델이 요청을 수행하도록 할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
 workflow-type: tm+mt
 source-wordcount: 841

@@ -135,7 +135,7 @@ Workfront Fusion으로 다시 리디렉션되고 새 연결은 모듈에서 사�
   </tr>  </tbody> 
 </table>
 
-읽기 전용 도구 및 쓰기/삭제 도구 필드에 대해 선택할 수 있는 도구 목록은 Workfront 설명서의 [Adobe Workfront MCP 서버 도구](https://experienceleague.adobe.com/en/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools)를 참조하십시오.
+읽기 전용 도구 및 쓰기/삭제 도구 필드에 대해 선택할 수 있는 도구 목록은 Workfront 설명서의 [Adobe Workfront MCP 서버 도구](https://experienceleague.adobe.com/ko/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools)를 참조하십시오.
 
 모듈은 시나리오에서 후속 모듈에 매핑할 수 있는 다음 정보를 반환합니다.
 

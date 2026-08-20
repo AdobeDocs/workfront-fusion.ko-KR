@@ -3,11 +3,10 @@ title: Adobe Workfront Mcp 모듈
 description: Adobe Workfront MCP 모듈을 사용하면 Adobe Workfront의 MCP 서버에 일반 영어 프롬프트를 보내고 AI 모델이 요청을 수행하도록 할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 71573ee33f852111d4541ee61567a51b137c7df5
 workflow-type: tm+mt
-source-wordcount: 841
+source-wordcount: 871
 ht-degree: 17%
 
 ---
@@ -19,6 +18,8 @@ Adobe Workfront MCP 커넥터는 Adobe Workfront의 자체 MCP(Model Context Pro
 예를 들어, &quot;예정보다 늦은 내 활성 프로젝트를 모두 찾고 상태를 요약하십시오.&quot;라는 메시지를 입력할 수 있으며, 모듈은 여러 Get 및 Filter 모듈을 함께 체인으로 연결하는 대신 합성 답변을 반환합니다.
 
 AI가 수행할 수 있는 Workfront 작업을 제한할 수 있으므로 무인 시나리오에서도 예기치 않은 파괴적인 작업이 수행되지 않도록 할 수 있습니다.
+
+기본적으로 이 모듈에서는 `claude-sonnet-5` 모델을 사용하는 Adobe Managed AI를 사용합니다. 제공한 키 및 기타 자격 증명을 사용하여 다른 LLM을 사용하도록 모듈을 구성할 수 있습니다.
 
 Fusion 시나리오의 MCP에 대한 자세한 내용은 [시나리오에 AI 프롬프트 추가](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)를 참조하십시오.
 
@@ -133,7 +134,7 @@ Workfront Fusion으로 다시 리디렉션되고 새 연결은 모듈에서 사�
   </tr>  </tbody> 
 </table>
 
-읽기 전용 도구 및 쓰기/삭제 도구 필드에 대해 선택할 수 있는 도구 목록은 Workfront 설명서의 [Adobe Workfront MCP 서버 도구](https://experienceleague.adobe.com/ko/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools)를 참조하십시오.
+읽기 전용 도구 및 쓰기/삭제 도구 필드에 대해 선택할 수 있는 도구 목록은 Workfront 설명서의 [Adobe Workfront MCP 서버 도구](https://experienceleague.adobe.com/en/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools)를 참조하십시오.
 
 모듈은 시나리오에서 후속 모듈에 매핑할 수 있는 다음 정보를 반환합니다.
 

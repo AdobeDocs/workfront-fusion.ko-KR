@@ -3,9 +3,9 @@ user-guide-title: Adobe Workfront Fusion 설명서
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 문서, 튜토리얼 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
 nudge: true
-source-git-commit: a482c81a3813d1f3a2e37e5f123907f98b216655
+source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
 workflow-type: tm+mt
-source-wordcount: '2586'
+source-wordcount: '2590'
 ht-degree: 51%
 
 ---
@@ -295,7 +295,7 @@ ht-degree: 51%
   * [체인 시나리오 관계 보기 및 관리](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md)
   * [실행 중인 시나리오에서 데이터 흐름 보기](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
   * [웹후크의 대기열 보기](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
-  * {hide-from-toc}[Workfront Fusion의 AI 도우미](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
+  * Workfront Fusion의 {hide-from-toc}[AI 도우미](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
   * [시나리오 채점 전문가 실행](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
   * [시나리오 요소 삭제](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
   * [시나리오 영역에서 시나리오 관리](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
@@ -402,6 +402,7 @@ ht-degree: 51%
       * [Adobe Storage 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-storage-modules.md)
       * [Adobe Target 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
       * [Adobe User Management 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
+      * [Adobe Workfront Mcp 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-mcp-modules.md)
       * [Adobe Workfront 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
       * [Adobe Workfront Planning 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
       * [Adobe Workfront 통합 검토 및 승인 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-review-and-approvals-modules.md)

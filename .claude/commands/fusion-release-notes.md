@@ -1,10 +1,10 @@
 ---
 name: fusion-release-notes
 description: 새 Workfront Fusion 주간 릴리스 노트 페이지를 만들고 이를 릴리스 활동 개요 페이지 및 목차에 연결합니다. 사용자가 새 Fusion 릴리스 노트 또는 주별 릴리스 페이지를 작성, 추가 또는 작성하거나 릴리스에 대한 새 Fusion 기능을 문서화하도록 요청할 때 사용합니다. 제품 공지/제품 릴리스에서 Workfront(Quicksilver) 릴리스 노트를 사용하지 마십시오. 릴리스 노트 포맷터를 사용하십시오.
-source-git-commit: 59a8d8ee83906bc16fc627bd348accc4e588cf9b
+source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 1%
+source-wordcount: '1042'
+ht-degree: 0%
 
 ---
 
@@ -30,6 +30,7 @@ ht-degree: 1%
 - 변경된 사항과 중요한 이유에 대한 간단한 설명
 - 링크가 있는 도움말 문서(경로가 있는지 확인 — 추측하지 않음)
 - 사용자/관리자 작업이 필요한지 또는 사용 중단 상태인지 여부(`>[!IMPORTANT]` 설명선 필요)
+- **새 커넥터 시작인지 여부**(기존 커넥터에 추가된 새 모듈뿐만 아니라 완전히 새로운 커넥터/앱을 사용할 수 있게 됨). 그렇다면 **7단계**&#x200B;를 트리거합니다. 릴리스 정보 자체가 완료되었기 때문에 리디렉션에 대한 질문을 건너뛰지 마십시오.
 
 ## 2단계: 파일 이름 및 날짜 확인
 
@@ -68,7 +69,7 @@ This page describes all enhancements made in Adobe Workfront Fusion the week of 
 
 For a list of all recent changes, see [Adobe Workfront Fusion release activity](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenance Updates](https://experienceleague.adobe.com/ko/docs/workfront-known-issues/releases/current-updates) page and check for any updates labeled Workfront Fusion Maintenance Update.
+For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenance Updates](https://experienceleague.adobe.com/en/docs/workfront-known-issues/releases/current-updates) page and check for any updates labeled Workfront Fusion Maintenance Update.
 
 ## {Feature title}
 
@@ -97,7 +98,6 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
   
   {Regular description paragraph(s).}
   ```
-
 - 모든 기능은 &quot;자세한 내용은 [...]&quot;로 끝나야 합니다. 관련 도움말 문서 링크 링크 대상이 저장소에 있는지 확인합니다.
 
 ## 4단계: 개요 색인에 페이지 추가
@@ -112,7 +112,6 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
   ```markdown
   * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
-
 - 새로운 연도의 첫 번째 릴리스인 경우 이전 연도의 제목 위에 새 `## Fusion releases in {YYYY}` 제목을 추가하고, *이전*&#x200B;년의 섹션을 `+++ **Click to open**`/`+++` 축소 가능한 블록으로 래핑합니다(아직 올해만 확장).
 
 ## 5단계: TOC에 페이지 추가
@@ -125,7 +124,6 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
   ```markdown
         * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
-
 - 현재 연도의 머리글이 아직 없는 경우 이전 연도의 머리글 위에 `* Fusion releases - {YYYY} {#fusion-releases-{YYYY}}`을(를) 추가합니다.
 - **새 항목에 `{hide-from-toc}` 접두사를 추가하지 마십시오**. 이 접두사는 이전 항목이 표시되는 탐색 메뉴에서 오래된 경우에만 사용됩니다(아래의 알려진 불일치 참조).
 
@@ -134,7 +132,23 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
 - 페이지 자체가 2026년 릴리스이지만 실수로 여러 2026년 초반 TOC 항목이 `Fusion releases - 2025` 제목 아래에 중첩되었습니다. 새 항목을 추가할 때 항상 이전 항목이 있는 위치가 아니라 **해당 연도**&#x200B;와 일치하는 머리글 아래에 표시되는지 다시 확인하십시오.
 - 일부 이전 페이지 제목/H1에서는 연도 앞에 쉼표를 생략합니다(`July 13, 2026` 대신 `July 13 2026`). 새 페이지에는 항상 쉼표를 사용하십시오.
 
-## 6단계: 최종 검사 목록
+## 7단계: 새 커넥터 실행 — 리디렉션에 대해 묻습니다(건너뛰지 않음).
+
+**이 단계는 1단계에서 새 커넥터 시작을 식별할 때마다 적용됩니다.** 5단계 후에 릴리스 노트를 &quot;완료&quot;로 간주하고 이 단계를 잊어버리십시오. 이 단계가 어느 방식으로든 해결될 때까지 새 커넥터 기능을 불완전한 것으로 처리하십시오.
+
+사용자에게 묻기: *&quot;새 커넥터 문서에 대해 리디렉션을 설정하시겠습니까?&quot;*
+
+- **아니요**&#x200B;이면 다른 작업은 없습니다.
+- **예**&#x200B;인 경우 다음을 수집하십시오.
+  - **원본 경로**(`/en`(으)로 시작해야 하며 공백이 없음)
+  - **대상** — `/en`(으)로 시작하는 상대 경로 또는 전체 `https` URL(공백 없음)
+- `redirects/` 아래의 형제 `Adobe-Enterprise-Docs/redirects` 리포지토리에 행을 추가합니다. 환경당 하나의 파일(`redirects-dev.csv`, `redirects-stage.csv`, `redirects-prod.csv`).
+- 행 규칙(해당 저장소의 README):
+  - 중복된 `source`이(가) 없고 중복된 `source`/`destination` 쌍이 없습니다.
+  - 리디렉션으로 인해 리디렉션 루프가 발생해서는 안 됩니다.
+- **이 스킬은 사용자가 확인한 후에만 CSV 행을 추가합니다.** `redirects` 리포지토리에서 PR을 높이는 것은 이 스킬에서 수행할 수 없는 별도의 단계입니다. 사용자에게 리디렉션이 활성화되기 전에(1:1 리디렉션을 위한 병합 후~5분) PR을 열어 병합해야 한다고 알려 주십시오.
+
+## 8단계: 최종 검사 목록
 
 - [ 날짜에 앞에 0이 없는 올바른 경로에 ] 파일을 만들었습니다.
 - [ ] Frontmatter에서 `hidefromtoc: true`을(를) 사용하고 `exl-id`/`TQID`을(를) 만들지 않았습니다.
@@ -144,6 +158,7 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
 - [ ] 새 페이지가 올바른 연도/월 아래 `fusion-release-activity.md`의 최신 항목으로 추가되었습니다.
 - [ ] 새 페이지가 올바른 연도 제목 아래에 `TOC.md`의 최신 항목으로 추가되었습니다.
 - [ 필요한 경우 ]개의 새 연도/월 머리글이 만들어지고 `fusion-release-activity.md`에서 이전 연도가 축소되었습니다.
+- [ ] **새 커넥터 시작 기능이 있는 경우: 리디렉션에 대해 묻습니다(7단계). 리디렉션을 설정하거나 명시적으로 거부했습니다**
 
 ## 추가 리소스
 

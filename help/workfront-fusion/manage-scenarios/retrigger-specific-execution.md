@@ -5,10 +5,10 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 5859bbef4f45fd4741d89ba1795df8a67fa5beaa
+source-git-commit: a7b9f754dfc987330e3a446830f37b004f7b2e4e
 workflow-type: tm+mt
-source-wordcount: 523
-ht-degree: 18%
+source-wordcount: 599
+ht-degree: 16%
 
 ---
 
@@ -27,6 +27,12 @@ Webhook 트리거가 있는 시나리오와 연결된 시나리오에서 검색�
 웹후크에 대한 자세한 내용은 [인스턴트 트리거(웹후크)](/help/workfront-fusion/references/modules/webhooks-reference.md)를 참조하십시오.
 
 체인 시나리오에 대한 자세한 내용은 [여러 시나리오를 함께 연결](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)을 참조하십시오.
+
+
+
+>[!NOTE]
+>
+>최대 256KB의 데이터만 실행 기록에 유지됩니다. 따라서 입력 데이터가 256KB를 초과하는 실행은 다시 시도할 수 없습니다. 이러한 실행을 다시 시도하면 실패하고 오류 메시지가 표시됩니다.
 
 ## 액세스 요구 사항
 
@@ -58,6 +64,10 @@ Webhook 트리거가 있는 시나리오와 연결된 시나리오에서 검색�
 +++
 
 ## 실행 다시 트리거
+
+>[!NOTE]
+>
+>최대 256KB의 데이터만 실행 기록에 유지됩니다. 따라서 입력 데이터가 256KB를 초과하는 실행은 다시 시도할 수 없습니다. 이러한 실행을 다시 시도하면 실패하고 오류 메시지가 표시됩니다.
 
 시나리오의 다이어그램, 시나리오의 내역 영역 또는 특정 시나리오 실행의 페이지에서 시나리오 실행을 다시 시도할 수 있습니다.
 

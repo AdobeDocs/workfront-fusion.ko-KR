@@ -15,9 +15,9 @@ subfeature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: b7d7ae3c0a4ce47428ca993fd173f21994a58653
+source-git-commit: 39436d53fd350158b8ee95061b7b9b49ae8f6d63
 workflow-type: tm+mt
-source-wordcount: 7689
+source-wordcount: 7687
 ht-degree: 93%
 
 ---
@@ -282,8 +282,8 @@ Workfront 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를
      <tr> 
       <td>[!UICONTROL 보안 후크 활성화]</td> 
       <td>
-       <p>이 웹후크에 enableauthToken 기반 보안을 사용할지 여부를 선택합니다.</p><p>
-       <b>참고</b>: 2026년 8월 23일 이후 Fusion에서는 기존 모듈을 포함하여 모든 Workfront &gt; 이벤트 보기 모듈에 대해 기본적으로 authToken 기반 보안을 활성화합니다. 특정 웹후크가 끊기거나 호환성을 위해 비활성화해야 하는 경우 2026년 8월 23일 이전에 보안 후크 활성화 옵션을 해제할 수 있습니다.</p>
+       <p>이 웹후크에 대해 authToken 기반 보안을 활성화할지 여부를 선택합니다.</p><p>
+       <b>참고</b>: 2026년 8월 23일부터 Fusion은 기존 모듈을 포함하여 모든 Workfront &gt; 이벤트 보기 모듈에 대해 기본적으로 authToken 기반 보안을 활성화합니다. 특정 웹후크가 끊기거나 호환성을 위해 이 기능을 비활성화해야 하는 경우 보안 후크 활성화 옵션을 해제할 수 있습니다.</p>
        </td> 
      </tr> 
     </tbody> 

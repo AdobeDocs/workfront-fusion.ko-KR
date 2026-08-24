@@ -11,9 +11,9 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 6a90d388cc362b24cc9313a000aa5170f015cbf8
+source-git-commit: 39436d53fd350158b8ee95061b7b9b49ae8f6d63
 workflow-type: tm+mt
-source-wordcount: 6620
+source-wordcount: 6660
 ht-degree: 32%
 
 ---
@@ -1600,11 +1600,6 @@ Workfront Planning 모듈을 구성할 때 Workfront Fusion에 아래 나열된 
 >
 >웹후크 편집에 대한 자세한 내용은 [웹후크 편집](/help/workfront-fusion/manage-scenarios/edit-webhooks.md)을 참조하십시오.
 
->[!NOTE]
->
->2026년 8월 23일 이후 Fusion은 기존 모듈을 포함하여 모든 Workfront 계획 > 이벤트 보기 모듈에 대해 기본적으로 authToken 기반 보안을 활성화합니다.
-
-
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -1654,6 +1649,13 @@ Workfront Planning 모듈을 구성할 때 Workfront Fusion에 아래 나열된 
         <p>[!UICONTROL 이 연결에 의해 수행된 업데이트 제외]</p>
       </td>
       <td>이 모듈에서 사용한 연결에 의해 변경이 있을 때 시나리오가 트리거되지 않도록 하려면 이 옵션을 활성화합니다. 이렇게 하면 이 시나리오가 트리거 작업을 수행하는 경우 시나리오의 다른 인스턴스가 트리거되지 않습니다.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 보안 후크 활성화]</td>
+      <td>
+       <p>이 웹후크에 대해 authToken 기반 보안을 활성화할지 여부를 선택합니다.</p><p>
+       <b>참고</b>: 2026년 8월 23일부터 Fusion은 기존 모듈을 포함하여 모든 Workfront Planning &gt; 이벤트 보기 모듈에 대해 기본적으로 authToken 기반 보안을 활성화합니다. 특정 웹후크가 끊기거나 호환성을 위해 이 기능을 비활성화해야 하는 경우 보안 후크 활성화 옵션을 해제할 수 있습니다.</p>
+      </td>
     </tr>
   </tbody>
 </table>

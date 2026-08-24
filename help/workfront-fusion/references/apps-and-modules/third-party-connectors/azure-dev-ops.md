@@ -5,16 +5,13 @@ author: Becky
 feature: Workfront Fusion
 exl-id: c0919a9a-ce99-485c-9627-45353741f6d8
 TQID: https://experienceleague.adobe.com/RFI6MFgF-C1Cnn0bvjOLVf3qahyRblEp4dtypNrxqzE
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 0b7298ce53bf59695ce52cb46cb8d25b6ede5fc8
 workflow-type: tm+mt
-source-wordcount: 1899
-ht-degree: 32%
+source-wordcount: 2646
+ht-degree: 23%
 
 ---
 
@@ -89,6 +86,11 @@ Azure DevOps 커넥터는 다음을 사용합니다.
 
 ## [!DNL Azure DevOps]를 Workfront Fusion에 연결 {#connect-azure-devops-to-workfront-fusion}
 
+* [EntraApp을 사용하여 Azure DevOps를 Workfront Fusion에 연결](#connect-azure-devops-to-workfront-fusion-using-entraapp)
+* [서비스 주체를 사용하여 Azure DevOps를 Workfront Fusion에 연결](#connect-azure-devops-to-workfront-fusion-using-a-service-principal)
+
+### EntraApp을 사용하여 Azure DevOps를 Workfront Fusion에 연결
+
 1. 시나리오에 [!DNL Azure DevOps] 모듈을 추가합니다.
 1. [!UICONTROL 연결] 필드 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 1. [!UICONTROL 연결 유형] 필드에서 사용할 연결 유형을 선택합니다.
@@ -118,12 +120,118 @@ Azure DevOps 커넥터는 다음을 사용합니다.
       </tr>
       <tr>
             <td>[!UICONTROL 모든 범위 요청]</td>
-            <td>[!DNL Azure DevOps] (EntraApp) 연결 유형을 사용하는 경우 이 옵션을 활성화하여 연결에 대한 모든 범위를 요청합니다.</td>
+            <td>[!DNL Azure DevOps](EntraApp) 연결 유형을 사용하는 경우 이 옵션을 활성화하여 연결에 대한 모든 범위를 요청합니다.</td>
       </tr>
    </table>
 
 1. Azure DevOps 앱 ID 또는 클라이언트 암호를 입력하려면 <b>고급 설정 표시</b>를 클릭하고 열려 있는 필드에 해당 ID를 입력합니다.
 1. 연결 설정을 완료하고 시나리오 만들기를 계속하려면 **[!UICONTROL 계속]**&#x200B;을(를) 클릭합니다.
+
+### 서비스 주체를 사용하여 Azure DevOps를 Workfront Fusion에 연결
+
+개인 계정 대신 서비스 주체(애플리케이션 API 연결)를 사용하는 연결을 만들 수 있습니다. 이 기능은 연결을 특정 사용자가 아닌 응용 프로그램 또는 서비스 ID로 실행하려는 경우에 유용합니다. 이 기능은 예를 들어 해당 사용자가 회사를 퇴사하거나 암호를 변경하는 경우 통합이 중단되지 않도록 유용할 수 있습니다.
+
+이 연결 유형은 모든 Azure DevOps 모듈에서 사용할 수 있습니다.
+
+>[!NOTE]
+>
+>서비스 주체 인증이 모든 Azure DevOps 기능을 지원하는 것은 아닙니다. 사용자 라이선스 관리와 같은 소수의 관리자 수준 작업에는 여전히 개인 계정 연결이 필요합니다. 작업 항목, 보드, 저장소 또는 파이프라인에 대해서만 필요한 경우 서비스 주체 인증을 사용합니다.
+
+* [서비스 주체를 사용하여 Azure DevOps를 Workfront Fusion에 연결하기 위한 사전 요구 사항](#prerequisites-to-connecting-azure-devops-to-workfront-fusion-using-a-service-principal)
+* [Microsoft Entra ID에서 앱 등록 만들기](#create-the-app-registration-in-microsoft-entra-id)
+* [클라이언트 암호 만들기](#create-a-client-secret)
+* [연결 세부 정보 수집](#collect-your-connection-details)
+* [Azure DevOps 조직에 서비스 주체 추가](#add-the-service-principal-to-your-azure-devops-organization)
+* [연결 만들기](#create-the-connection)
+
+#### 서비스 주체를 사용하여 Azure DevOps를 Workfront Fusion에 연결하기 위한 사전 요구 사항
+
+이 연결을 만들려면 다음이 필요합니다.
+
+* **전역 관리자** 또는 **응용 프로그램 관리자**&#x200B;가 앱을 등록하기 위해 Microsoft Entra ID에 액세스합니다. 이 액세스 권한이 없는 경우 IT 또는 ID 팀의 사용자에게 해당 단계를 완료하도록 요청하십시오.
+* **프로젝트 컬렉션 관리자** Azure DevOps 조직의 액세스 권한을 부여하여 서비스 주체를 구성원으로 추가합니다. 이 사용자는 Microsoft Entra ID를 관리하는 사용자와 다른 경우가 많습니다.
+* Azure DevOps 조직의 이름입니다. Azure DevOps URL `dev.azure.com/<your organization name>`에서 찾을 수 있습니다.
+
+#### Microsoft Entra ID에서 앱 등록 만들기
+
+1. [!DNL Microsoft Entra] 관리 센터에 로그인합니다.
+1. **[!UICONTROL 앱 등록]** > **[!UICONTROL 새 등록]**(으)로 이동합니다.
+1. 앱에 인식할 수 있는 명확한 이름을 지정합니다. 예: `Workfront Fusion Azure DevOps Integration`.
+1. **[!UICONTROL 리디렉션 URI]**&#x200B;을 비워 둡니다. 이 연결은 브라우저를 통한 로그인을 포함하지 않습니다.
+1. **[!UICONTROL 등록]**&#x200B;을 선택하세요.
+1. [클라이언트 암호를 만드세요](#create-a-client-secret).
+
+#### 클라이언트 암호 만들기
+
+1. 새 앱 등록에서 **[!UICONTROL 인증서 및 암호]**(으)로 이동합니다.
+1. **[!UICONTROL 새 클라이언트 암호]**&#x200B;를 선택하고 설명을 추가한 다음 만료 기간을 선택하십시오.
+1. **[!UICONTROL 추가]**&#x200B;를 선택합니다.
+1. 암호의 **[!UICONTROL 값]**&#x200B;을(를) 즉시 복사합니다. 한 번만 표시됩니다. 복사하기 전에 다른 곳으로 이동하면 새 파일을 만들어야 합니다.
+1. [연결 세부 정보 수집](#collect-your-connection-details)을 계속합니다.
+
+#### 연결 세부 정보 수집
+
+1. 앱 등록의 **[!UICONTROL 개요]** 페이지에서 다음 값을 참고하십시오. 모듈에서 연결을 만들 때 이를 입력합니다.
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL 테넌트 ID]</td>
+      <td>개요 페이지에서 <b>디렉터리(테넌트) ID</b> 레이블이 지정되었습니다.</td>
+      </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 클라이언트 ID]</td>
+      <td>개요 페이지에서 <b>응용 프로그램(클라이언트) ID</b> 레이블이 지정되었습니다.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 클라이언트 암호]</td>
+      <td><a href="#create-a-client-secret" class="MCXref xref">클라이언트 암호 만들기</a>에서 복사한 값입니다.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 조직]</td>
+      <td>Azure DevOps 조직 이름입니다. 예를 들어 URL이 <code>dev.azure.com/yourorg</code>인 경우 <code>yourorg</code>을(를) 입력하십시오.</td>
+     </tr>
+    </tbody>
+   </table>
+
+   >[!NOTE]
+   >
+   >앱 등록의 **API 권한** 영역을 건너뛸 수 있습니다. Azure DevOps를 추가하면 **위임된 권한**&#x200B;만 사용할 수 있습니다. **응용 프로그램 권한**&#x200B;이 회색으로 표시됩니다. Azure DevOps에서는 이러한 방식으로 액세스 권한을 부여할 수 없기 때문에 예상된 결과입니다. 대신 다음 부분에서 액세스 권한이 Azure DevOps 내에서 직접 부여됩니다.
+
+1. [Azure DevOps 조직에 서비스 주체를 추가](#add-the-service-principal-to-your-azure-devops-organization)합니다.
+
+#### Azure DevOps 조직에 서비스 주체 추가
+
+Microsoft Entra ID에서 앱을 등록하면 해당 ID만 생성됩니다. 아직 앱에 Azure DevOps 데이터에 대한 액세스 권한을 부여하지 않습니다. 이 절차에서는 해당 액세스 권한을 부여합니다.
+
+1. `dev.azure.com/<your organization name>`에서 Azure DevOps 조직에 로그인합니다.
+1. 왼쪽 아래에서 **[!UICONTROL 조직 설정]**&#x200B;을 선택한 다음 **[!UICONTROL 사용자]**&#x200B;를 선택합니다.
+1. **[!UICONTROL 사용자 추가]**&#x200B;를 선택합니다.
+1. 검색 상자에서 앱 표시 이름으로 검색합니다. 이 이름은 앱을 등록할 때 지정한 이름입니다. 클라이언트 ID로 검색하지 마십시오.
+1. 액세스 수준 선택:
+
+   * **[!UICONTROL 기본]**&#x200B;은(는) 일반적으로 작업 항목, 게시판 및 보고서를 읽고 쓰는 데 충분합니다.
+   * 워크플로우가 설정의 일부로 애자일, 스크럼 또는 사용자 지정 템플릿과 같은 사용 가능한 프로세스를 검색해야 하는 경우 대신 **[!UICONTROL 프로젝트 컬렉션 관리자]** 그룹에 서비스 사용자를 추가하십시오. 이는 더 광범위한 액세스 수준이므로 해당 기능이 필요한 경우에만 부여합니다.
+
+1. 조직의 일반적인 액세스 사례에 따라 필요한 특정 프로젝트 또는 프로젝트에 서비스 사용자를 할당합니다.
+1. **[!UICONTROL 추가]**&#x200B;를 선택합니다.
+1. [연결 만들기](#create-the-connection)를 계속합니다.
+
+#### 연결 만들기
+
+1. 모듈의 연결 설정 화면에서 **[!UICONTROL 서비스 사용자]** 연결 유형을 선택합니다.
+1. 다음을 입력하십시오.
+
+   * [!UICONTROL 테넌트 ID]
+   * [!UICONTROL 클라이언트 ID]
+   * [!UICONTROL 클라이언트 암호]
+   * [!UICONTROL 조직]
+
+1. 연결을 저장합니다.
+
+   모든 것이 올바르게 설정되면 연결이 성공적으로 검증됩니다.
 
 ## [!UICONTROL Azure DevOps] 모듈 및 해당 필드
 
@@ -192,7 +300,7 @@ Azure DevOps 커넥터는 다음을 사용합니다.
        <li> <p><strong>[!UICONTROL 설명]</strong>: 새 프로젝트에 대한 설명을 입력하거나 매핑합니다. </p> </li> 
        <li> <p><strong>[!UICONTROL Visibility]</strong>: 프로젝트를 public으로 할지 private으로 할지 선택합니다. 비공개 프로젝트와 상호 작용하려면 사용자에게 조직에 로그인하고 프로젝트에 대한 액세스 권한이 부여되어야 합니다. 조직에 로그인하지 않은 사용자가 공개 프로젝트를 볼 수 있습니다.</p> </li> 
        <li> <p><strong>[!UICONTROL Version control]</strong>: 프로젝트에서 버전 제어에 [!DNL Git] 또는 [!UICONTROL Team Foundation Version Control(TFCV)]을(를) 사용할지 여부를 선택합니다.</p> </li> 
-       <li> <p><strong>[!UICONTROL 작업 항목 프로세스]</strong>: 프로젝트에 사용할 작업 프로세스를 선택합니다. 옵션은 [!UICONTROL Basic], [!UICONTROL Scrum], [!UICONTROL Capability Maturity Model Integration(CMMI)] 및 [!UICONTROL Agile]입니다.</p> <p>[!DNL Azure DevOps] 프로세스에 대한 자세한 내용은 [!DNL Azure DevOps] 설명서의 <a href="https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&tabs=basic-process">기본 프로세스 및 프로세스 템플릿</a>을 참조하십시오.</p> </li> 
+       <li> <p><strong>[!UICONTROL 작업 항목 프로세스]</strong>: 프로젝트에 사용할 작업 프로세스를 선택합니다. 옵션은 [!UICONTROL Basic], [!UICONTROL Scrum], [!UICONTROL Capability Maturity Model Integration(CMMI)] 및 [!UICONTROL Agile]입니다.</p> <p>[!DNL Azure DevOps] 프로세스에 대한 자세한 내용은 [!DNL Azure DevOps] 설명서의 <a href="https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&amp;tabs=basic-process">기본 프로세스 및 프로세스 템플릿</a>을 참조하십시오.</p> </li> 
       </ul> </li> 
      <li> <p><strong>[!UICONTROL 작업 항목]</strong> </p> <p>다음 필드를 채웁니다.</p> 
       <ul> 

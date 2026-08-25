@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
 TQID: https://experienceleague.adobe.com/ypbKUSaT72N2r75oYX9tZsJaj6H39cUCumApjMw69j0
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 936fc6b4d5688e42ad6d762d4f43abf8be47e5af
 workflow-type: tm+mt
-source-wordcount: 1705
-ht-degree: 9%
+source-wordcount: 1744
+ht-degree: 8%
 
 ---
 
@@ -33,6 +32,8 @@ ht-degree: 9%
 시간 초과를 포함하여 Fusion의 성능 보호 기능에 대한 자세한 내용은 [Fusion 성능 보호 기능](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md)을 참조하십시오.
 
 체인 모듈 구성에 대한 지침은 [체인 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)을 참조하십시오.
+
+시나리오에서 기존 모듈을 선택하고 새 자식 시나리오로 이동하는 방법에 대한 지침은 [모듈을 체인으로 이동](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)을 참조하십시오.
 
 ## 상위 및 하위 시나리오
 

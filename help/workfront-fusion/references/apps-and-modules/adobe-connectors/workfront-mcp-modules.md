@@ -5,10 +5,10 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 71573ee33f852111d4541ee61567a51b137c7df5
+source-git-commit: 88515edc81bafe2d1a81df627fd51dd4ed674c02
 workflow-type: tm+mt
-source-wordcount: 871
-ht-degree: 17%
+source-wordcount: 884
+ht-degree: 16%
 
 ---
 
@@ -21,6 +21,10 @@ Adobe Workfront MCP 커넥터는 Adobe Workfront의 자체 MCP(Model Context Pro
 AI가 수행할 수 있는 Workfront 작업을 제한할 수 있으므로 무인 시나리오에서도 예기치 않은 파괴적인 작업이 수행되지 않도록 할 수 있습니다.
 
 기본적으로 이 모듈에서는 `claude-sonnet-5` 모델을 사용하는 Adobe Managed AI를 사용합니다. 제공한 키 및 기타 자격 증명을 사용하여 다른 LLM을 사용하도록 모듈을 구성할 수 있습니다.
+
+>[!NOTE]
+>
+>Adobe Managed AI의 사용은 조직당 월별 25달러로 제한됩니다.
 
 Fusion 시나리오의 MCP에 대한 자세한 내용은 [시나리오에 AI 프롬프트 추가](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)를 참조하십시오.
 

@@ -12,10 +12,10 @@ feature_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+source-git-commit: 0b7298ce53bf59695ce52cb46cb8d25b6ede5fc8
 workflow-type: tm+mt
-source-wordcount: 4305
-ht-degree: 13%
+source-wordcount: 4846
+ht-degree: 12%
 
 ---
 
@@ -97,6 +97,7 @@ SharePoint 커넥터는 다음을 사용합니다.
 * [&#x200B; [!DNL Microsoft] 계정을 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [고급 설정을 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
 * [인증서 인증을 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
+* [서비스 주체를 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-service-principal)
 
 ### [!DNL Microsoft] 계정을 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결
 
@@ -204,6 +205,97 @@ SharePoint 커넥터는 다음을 사용합니다.
 
 1. 연결을 저장하고 모듈로 돌아가려면 **계속**&#x200B;을 클릭합니다.
 
+### 서비스 주체를 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결
+
+개인 계정 대신 서비스 주체(애플리케이션 API 연결)를 사용하는 연결을 만들 수 있습니다. 이 기능은 연결을 특정 사용자가 아닌 애플리케이션이나 서비스 ID로 실행하려는 경우에 유용합니다. 예를 들어, 해당 사용자가 회사를 떠나거나 암호를 변경할 경우 통합이 중단되지 않습니다.
+
+>[!IMPORTANT]
+>
+>이 연결 유형은 [API 호출 만들기](#make-an-api-call) 모듈에만 사용할 수 있습니다. 다른 SharePoint 모듈에는 이 문서에 설명된 다른 연결 유형 중 하나가 필요합니다.
+
+* [서비스 주체를 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결하기 위한 사전 요구 사항](#prerequisites-to-connecting-microsoft-sharepoint-online-to-workfront-fusion-using-a-service-principal)
+* [Microsoft Entra ID에서 앱 등록 만들기](#create-the-app-registration-in-microsoft-entra-id)
+* [클라이언트 암호 만들기](#create-a-client-secret)
+* [API 권한 부여](#grant-api-permissions)
+* [연결 세부 정보 수집](#collect-your-connection-details)
+* [연결 만들기](#create-the-connection)
+
+#### 서비스 주체를 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결하기 위한 사전 요구 사항
+
+앱을 등록하고 권한을 부여하려면 Microsoft Entra ID에서 **전역 관리자**, **응용 프로그램 관리자** 또는 **권한 있는 역할 관리자** 액세스 권한이 필요합니다. 이 액세스 권한이 없는 경우 IT 또는 ID 팀의 사용자에게 이러한 단계를 완료하도록 요청하십시오.
+
+계속해서 [Microsoft Entra ID에서 앱 등록을 만듭니다](#create-the-app-registration-in-microsoft-entra-id).
+
+#### Microsoft Entra ID에서 앱 등록 만들기
+
+1. [!DNL Microsoft Entra] 관리 센터에 로그인합니다.
+1. **[!UICONTROL 앱 등록]** > **[!UICONTROL 새 등록]**(으)로 이동합니다.
+1. 앱에 인식할 수 있는 명확한 이름을 지정합니다. 예: `Make - SharePoint Integration`.
+1. **[!UICONTROL 리디렉션 URI]**&#x200B;을 비워 둡니다. 이 연결에는 브라우저를 통해 로그인하는 사용자가 포함되지 않습니다.
+1. **[!UICONTROL 등록]**&#x200B;을 선택하세요.
+1. [클라이언트 암호를 만드세요](#create-a-client-secret).
+
+#### 클라이언트 암호 만들기
+
+1. 새 앱 등록에서 **[!UICONTROL 인증서 및 암호]**(으)로 이동합니다.
+1. **[!UICONTROL 새 클라이언트 암호]**&#x200B;를 선택하고 설명을 추가한 다음 만료 기간을 선택하십시오.
+1. **[!UICONTROL 추가]**&#x200B;를 선택합니다.
+1. 암호의 **[!UICONTROL 값]**&#x200B;을(를) 즉시 복사합니다. 한 번만 표시됩니다. 복사하기 전에 다른 곳으로 이동하면 새 파일을 만들어야 합니다.
+1. [API 권한 부여](#grant-api-permissions)를 계속합니다.
+
+#### API 권한 부여
+
+>[!IMPORTANT]
+>
+>BECKY CHECK ME: Azure DevOps와 달리 Microsoft Graph는 이 단계에서 직접 애플리케이션 권한을 지원합니다. 이 섹션을 게시하기 전에 API 호출 만들기 모듈에 필요한 정확한 권한(예: Sites 권한 범위)을 확인하고 아래 단계를 적절하게 업데이트합니다.
+
+1. 앱 등록에서 **[!UICONTROL API 권한]**(으)로 이동합니다.
+1. **[!UICONTROL 권한 추가]**&#x200B;를 선택한 다음 **[!UICONTROL Microsoft 그래프]**&#x200B;를 선택합니다.
+1. **[!UICONTROL 응용 프로그램 권한]**&#x200B;을 선택하십시오.
+1. API 호출에 필요한 권한을 선택한 다음 **[!UICONTROL 권한 추가]**&#x200B;를 선택합니다.
+1. **[!UICONTROL 조직에 대한 관리자 동의 부여]**&#x200B;를 선택한 다음 확인합니다.
+1. [연결 세부 정보 수집](#collect-your-connection-details)을 계속합니다.
+
+#### 연결 세부 정보 수집
+
+앱 등록의 **[!UICONTROL 개요]** 페이지에서 다음 값을 참고하십시오. 모듈에서 연결을 만들 때 이를 입력합니다.
+
+<table style="table-layout:auto">
+ <col>
+ <col>
+ <tbody>
+  <tr>
+   <td role="rowheader">[!UICONTROL 테넌트 ID]</td>
+   <td>개요 페이지에서 <b>디렉터리(테넌트) ID</b> 레이블이 지정되었습니다.</td>
+  </tr>
+  <tr>
+   <td role="rowheader">[!UICONTROL 클라이언트 ID]</td>
+   <td>개요 페이지에서 <b>응용 프로그램(클라이언트) ID</b> 레이블이 지정되었습니다.</td>
+  </tr>
+  <tr>
+   <td role="rowheader">[!UICONTROL 클라이언트 암호]</td>
+   <td><a href="#create-a-client-secret" class="MCXref xref">클라이언트 암호 만들기</a>에서 복사한 값입니다.</td>
+  </tr>
+ </tbody>
+</table>
+
+[연결 만들기](#create-the-connection)를 계속합니다.
+
+#### 연결 만들기
+
+1. [!UICONTROL API 호출 만들기] 모듈에서 연결 필드 옆의 **[!UICONTROL 추가]**&#x200B;를 클릭하여 **[!UICONTROL 연결 만들기]** 상자를 엽니다.
+1. **[!UICONTROL 고급 설정 표시]**&#x200B;를 클릭합니다.
+1. [!UICONTROL 연결 유형] 필드에서 **[!UICONTROL 서비스 주체]**&#x200B;를 선택합니다.
+1. 다음을 입력하십시오.
+
+   * [!UICONTROL 테넌트 ID]
+   * [!UICONTROL 클라이언트 ID]
+   * [!UICONTROL 클라이언트 암호]
+
+1. 연결을 저장하고 모듈로 돌아가려면 **계속**&#x200B;을 클릭합니다.
+
+   모든 것이 올바르게 설정되면 연결이 성공적으로 검증됩니다.
+
 ## Microsoft SharePoint 모듈 및 해당 필드
 
 Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드가 표시됩니다. 이러한 필드와 함께 앱이나 서비스의 액세스 수준 등의 요소에 따라 추가 Microsoft SharePoint Online 필드가 표시될 수 있습니다. 모듈의 굵은 글씨 제목은 필수 필드를 나타냅니다.
@@ -222,6 +314,7 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
 ### 드라이브 항목
 
 * [파일 만들기](#create-a-file)
+* [파일 만들기(이전)](#create-a-file-legacy)
 * [폴더 만들기](#create-a-folder)
 * [파일 가져오기](#get-a-file)
 * [폴더 가져오기](#get-a-folder)

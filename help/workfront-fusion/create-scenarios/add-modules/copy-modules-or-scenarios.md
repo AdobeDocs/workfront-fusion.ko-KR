@@ -9,10 +9,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 936fc6b4d5688e42ad6d762d4f43abf8be47e5af
 workflow-type: tm+mt
-source-wordcount: 914
-ht-degree: 11%
+source-wordcount: 941
+ht-degree: 10%
 
 ---
 
@@ -83,6 +83,10 @@ Adobe Workfront Fusion에서 모듈, 모듈 그룹 또는 전체 시나리오를
 1. 붙여넣은 모듈을 시나리오의 적절한 위치로 끌어 시나리오에 연결합니다.
 
    키보드 단축키를 사용하여 복사하여 붙여넣을 수도 있습니다.
+
+>[!NOTE]
+>
+>모듈 그룹을 복사하는 대신 모듈 그룹을 새 체인 시나리오로 이동할 수 있습니다. 자세한 내용은 [모듈을 체인으로 이동](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)을 참조하십시오.
 
 ## 복제를 통해 시나리오 복사
 

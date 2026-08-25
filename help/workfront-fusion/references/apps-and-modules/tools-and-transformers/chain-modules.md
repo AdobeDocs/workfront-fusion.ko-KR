@@ -7,9 +7,9 @@ exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
 TQID: https://experienceleague.adobe.com/AlHUrliXikCc3OVHiBTjLNQFndCf5qLzOLuBvnDTUfA
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+source-git-commit: 936fc6b4d5688e42ad6d762d4f43abf8be47e5af
 workflow-type: tm+mt
-source-wordcount: 883
+source-wordcount: 913
 ht-degree: 10%
 
 ---
@@ -29,6 +29,10 @@ ht-degree: 10%
 <!--This article will be about the specific module configuration-->
 
 체인 시나리오 계획에 대한 지침은 [여러 시나리오를 함께 연결](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)을 참조하십시오.
+
+>[!NOTE]
+>
+>이러한 모듈을 수동으로 구성하는 대신, 시나리오에서 기존 모듈을 선택하여 새 하위 시나리오로 이동할 수 있습니다. 자세한 내용은 [모듈을 체인으로 이동](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)을 참조하십시오.
 
 
 ## 액세스 요구 사항

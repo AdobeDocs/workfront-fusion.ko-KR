@@ -9,10 +9,10 @@ exl-id: b2e48618-cc55-429e-9bed-c62ba60a6249
 TQID: https://experienceleague.adobe.com/EUSuZIyMovl2W3PlmmGaJ6rivpwQWZIJMKbZ4VGJDgw
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 336cdb956b69b996b2eaa7f08508e2efaae56a0e
+source-git-commit: 936fc6b4d5688e42ad6d762d4f43abf8be47e5af
 workflow-type: tm+mt
-source-wordcount: 110
-ht-degree: 53%
+source-wordcount: 115
+ht-degree: 51%
 
 ---
 
@@ -30,6 +30,7 @@ ht-degree: 53%
 * [웹후크의 대기열 보기](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
 * [실행 중인 시나리오에서 데이터 흐름 보기](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
 * [체인 시나리오 관계 보기](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md)
+* [모듈을 체인으로 이동](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)
 * [Workfront Fusion의 AI 어시스턴트](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
 * [시나리오 채점 전문가 실행](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
 * [시나리오 요소 삭제](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)

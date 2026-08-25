@@ -3,7 +3,8 @@ title: 모듈을 체인으로 이동
 description: 매핑이나 데이터 구조를 수동으로 다시 만들지 않고도 시나리오에서 모듈 그룹을 선택하고 새 체인 시나리오로 이동할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: f1a80f64edc410ae76bfbba1280df7232e2d09c5
 workflow-type: tm+mt
 source-wordcount: 513

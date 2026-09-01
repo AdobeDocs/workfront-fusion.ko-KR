@@ -3,7 +3,8 @@ title: 저장소에서 파일 삭제
 description: 파일 브라우저에서 직접 저장소에서 파일을 삭제할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 5a7288755ac1bdc747c7b77a019841cb7ade59ca
 workflow-type: tm+mt
 source-wordcount: 96

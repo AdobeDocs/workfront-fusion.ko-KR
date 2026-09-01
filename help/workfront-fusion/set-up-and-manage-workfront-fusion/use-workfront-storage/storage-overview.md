@@ -3,7 +3,8 @@ title: 스토리지 개요
 description: 스토리지는 Workfront Fusion의 페이지로, 팀이 Adobe ESM(Enterprise Storage Management) 저장소에 직접 액세스할 수 있으므로 사용자가 폴더를 찾아보고, 파일을 업로드 및 다운로드하고, 버전 기록을 보고, 자동화 시나리오를 만들 수 있습니다.
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: d5568479d43bd5518adae5b66b132b4075e7f356
 workflow-type: tm+mt
 source-wordcount: 279

@@ -3,7 +3,8 @@ title: 저장소에서 파일 다운로드
 description: 저장소에서 최신 버전의 파일을 다운로드하거나 특정 이전 버전을 다운로드할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: a2632cb3184cd555555136288e78ab1e05e4ea9d
 workflow-type: tm+mt
 source-wordcount: 211

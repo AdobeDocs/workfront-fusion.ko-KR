@@ -3,7 +3,8 @@ title: 저장소에 파일 업로드
 description: 파일을 Storage의 폴더에 직접 업로드하거나 자동화 시나리오를 만들어 업로드를 처리할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: a2632cb3184cd555555136288e78ab1e05e4ea9d
 workflow-type: tm+mt
 source-wordcount: 196

@@ -3,7 +3,8 @@ title: 스토리지에서 시나리오 만들기
 description: 저장소는 Fusion의 시나리오 빌더와 통합되므로 저장소 페이지에서 직접 사전 구성된 시나리오를 만들어 파일을 다운로드하거나 업로드할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: aef1685cb25c0cdcb0dcdf9b0c73fb482d392e5f
 workflow-type: tm+mt
 source-wordcount: 272

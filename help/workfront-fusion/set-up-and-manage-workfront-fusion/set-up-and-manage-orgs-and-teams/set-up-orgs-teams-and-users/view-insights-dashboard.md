@@ -1,5 +1,5 @@
 ---
-title: 조직의 성과 대시보드 보기
+title: 조직에 대한 인사이트 대시보드 보기
 description: Fusion 관리자는 조직의 실행 지표를 표시하는 대시보드를 볼 수 있습니다.
 author: Becky
 feature: Workfront Fusion
@@ -7,16 +7,16 @@ exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
 TQID: https://experienceleague.adobe.com/tBZCbpImQxY42gOE8e04aQwCJC8EKgrDTIAt6Sw1KaU
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: fac09ae8c8b2e248ef9c0731c38a4be58cea2994
 workflow-type: tm+mt
 source-wordcount: 694
-ht-degree: 7%
+ht-degree: 5%
 
 ---
 
-# 조직의 성과 대시보드 보기
+# 조직에 대한 인사이트 대시보드 보기
 
-Fusion Performance Dashboard를 사용하면 가장 많이 실행되고 있는 시나리오, 지연이 발생하는 위치 및 작업자 풀이 얼마나 효과적으로 작동하는지 빠르게 확인할 수 있습니다. 따라서 실행 볼륨, 대기열 길이, 풀 활용도 및 시나리오 수준의 성능을 실시간으로 파악할 수 있습니다.
+Fusion Insights 대시보드를 사용하면 가장 많이 실행 중인 시나리오, 지연이 발생하는 위치 및 작업자 풀이 얼마나 효과적으로 작동하는지 빠르게 확인할 수 있습니다. 따라서 실행 볼륨, 대기열 길이, 풀 활용도 및 시나리오 수준의 성능을 실시간으로 파악할 수 있습니다.
 
 ## 액세스 요구 사항
 
@@ -47,7 +47,7 @@ Fusion Performance Dashboard를 사용하면 가장 많이 실행되고 있는 �
 
 +++
 
-## 성능 대시보드 구성 요소
+## 인사이트 대시보드 구성 요소
 
 >[!NOTE]
 >
@@ -61,7 +61,7 @@ Fusion Performance Dashboard를 사용하면 가장 많이 실행되고 있는 �
 
 -->
 
-Fusion 성능 대시보드에서 다음 지표를 볼 수 있습니다.
+Fusion Insights 대시보드에서 다음 지표를 볼 수 있습니다.
 
 * **실행 처리 대기 중**
 이 차트는 지정된 시점에 처리 대기 중인 실행(실행 백로그라고도 함) 수를 보여 줍니다.
@@ -80,9 +80,9 @@ Fusion 성능 대시보드에서 다음 지표를 볼 수 있습니다.
 
   이 차트를 사용하여 연결된 앱 또는 서비스와 관련된 문제의 영향을 받는 시나리오를 포함하여 평소보다 오래 걸리는 시나리오를 식별할 수 있습니다.
 
-## Fusion 성능 대시보드 보기
+## Fusion Insights 대시보드 보기
 
-1. Fusion의 왼쪽 탐색에서 **성능**&#x200B;을 클릭합니다.
+1. Fusion의 왼쪽 탐색 메뉴에서 **인사이트**&#x200B;를 클릭합니다.
 
    대시보드가 열립니다.
 

@@ -7,10 +7,10 @@ exl-id: 427ec131-d68d-4401-b620-998d3d5162da
 TQID: https://experienceleague.adobe.com/95RrU217DFpxtEVaO3FyIx0wNR6p-sJw9J4ZDaqPkXw
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: fac09ae8c8b2e248ef9c0731c38a4be58cea2994
 workflow-type: tm+mt
-source-wordcount: 775
-ht-degree: 94%
+source-wordcount: 895
+ht-degree: 82%
 
 ---
 
@@ -23,6 +23,7 @@ ht-degree: 94%
 | 영역 | 설명 | 자세한 내용은 다음 문서를 참조하십시오. |
 | --- | --- | --- |
 | 조직 개요 <br> ![조직 아이콘](assets/org-icon.png) | 여기에서 Fusion 조직에 대한 정보를 볼 수 있습니다. 이 조직에서 시나리오별로 수행된 작업 수와 활성 시나리오 목록을 볼 수 있습니다. 이 조직의 팀, 사용자 및 환경 목록도 볼 수 있습니다.<br>현재 선택된 조직이 이 아이콘 위에 표시됩니다. | [조직 및 팀](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
+| 인사이트 <br> ![인사이트 아이콘](assets/insights-icon.png) | 여기에서 가장 많이 실행 중인 시나리오, 지연이 발생하는 위치 및 작업자 풀의 작동 효율성과 같은 조직의 실행 지표 대시보드를 볼 수 있습니다. | [조직에 대한 인사이트 대시보드 보기](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-insights-dashboard.md) |
 | 팀 개요  <br> ![팀 아이콘](assets/team-icon.png) | 여기에서 이 팀의 시나리오별로 수행된 작업 수 및 활성 시나리오 목록과 같은 Fusion 팀에 대한 정보를 볼 수 있습니다. 이 팀의 사용자들을 보고 관리할 수도 있습니다. 팀을 보는 중에 이 페이지 상단의 드롭다운에서 다른 팀을 선택할 수 있습니다.<br>현재 선택된 팀이 이 아이콘 위에 표시됩니다.<br>이 문서에 나열된 팀 개요나 팀 섹션을 보려면 먼저 팀을 만들어야 할 수도 있습니다. | [조직 및 팀](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
 | 시나리오  <br> ![시나리오 아이콘](assets/scenarios-icon.png) | Fusion의 시나리오는 자동화된 워크플로를 나타냅니다. 예를 들어, 한 시나리오는 들어오는 Workfront 요청을 모니터링하여 프로젝트로 변환할 수 있고, 다른 시나리오는 이미지를 생성하여 문서 공급자에게 업로드하고 Workfront에 승인 작업을 추가할 수 있습니다. Fusion의 대부분 작업은 시나리오를 구성하고 관리하는 것입니다. 시나리오 영역에서 팀의 시나리오 목록을 보고 구성하거나, 개별 시나리오를 선택하여 보거나 수정하거나, 새로운 시나리오를 만들 수 있습니다. | [시나리오 개요](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md) |
 | 템플릿  <br> ![템플릿 아이콘](assets/templates-icon.png) | 템플릿은 사용 사례에 맞게 구성할 수 있는 미리 빌드된 시나리오입니다. 여기에서 Workfront Fusion에서 제공하는 공개 시나리오와 팀에서 만든 템플릿을 볼 수 있습니다. | [템플릿 만들기 및 관리: 문서 색인](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md) |
@@ -32,6 +33,8 @@ ht-degree: 94%
 | 데이터 저장소  <br> ![데이터 저장소 아이콘](assets/data-store-icon.png) | 데이터 저장소는 시나리오 외부에 존재하는 소규모 데이터베이스입니다. 데이터 저장소를 사용하면 시나리오 간 또는 시나리오의 개별 실행 간에 데이터를 전송할 수 있습니다. 데이터 저장소 영역에서 팀이 소유한 데이터 저장소를 보고 관리할 수 있습니다. | [데이터 저장소](/help/workfront-fusion/create-scenarios/map-data/data-stores.md) |
 | 데이터 구조 <br> ![데이터 구조 아이콘](assets/data-structure-icon.png) | 데이터 구조는 Fusion으로 전송되는 데이터 형식을 설명하며, 일반적으로 JSON, XML, CSV와 같은 형식을 직렬화하거나 구문 분석하는 데 사용됩니다. 데이터 구조에서 팀이 소유한 데이터 구조를 보고 관리할 수 있습니다. | [데이터 구조](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md) |
 | 함수 <br> ![함수 아이콘](assets/functions-icon.png) | 사용자 지정 함수는 시나리오에 추가하여 데이터를 조작하고 변환할 수 있는 JavaScript 함수입니다. <br>사용자 지정 함수를 만들고 사용하려면 조직에 Adobe App Builder 라이선스가 있어야 합니다. | [사용자 지정 함수를 사용하여 데이터 매핑](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md) |
+| 패키지 <br> ![패키지 아이콘](assets/packages-icon.png) | 패키지를 사용하면 Fusion 인터페이스를 종료하지 않고 Fusion 내에서 고유한 사용자 지정 논리를 빌드하고 실행할 수 있습니다. 패키지 영역에서 팀이 소유한 패키지를 보고 관리할 수 있습니다. | [사용자 지정 기능 패키지 사용](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md) |
+| 저장소 <br> ![저장소 아이콘](assets/storage-icon.png) | 스토리지를 사용하면 팀이 Adobe ESM(엔터프라이즈 스토리지 관리) 저장소에 직접 액세스할 수 있습니다. Fusion을 종료하지 않고도 폴더를 찾아보고, 파일을 업로드 및 다운로드하고, 파일 버전 기록을 보고, 자동화 시나리오를 만들 수 있습니다. | [저장소 개요](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md) |
 
 >[!NOTE]
 >

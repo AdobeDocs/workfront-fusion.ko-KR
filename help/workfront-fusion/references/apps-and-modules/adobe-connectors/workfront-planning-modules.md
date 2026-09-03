@@ -5,15 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
 TQID: https://experienceleague.adobe.com/QHOFWDOT-18-c0b3wLXsRV5cjGVxlcyLhvZdkev3GFg
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 39436d53fd350158b8ee95061b7b9b49ae8f6d63
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 9521866c29e4e08eaf815080162735f0f70299a5
 workflow-type: tm+mt
-source-wordcount: 6660
+source-wordcount: 6739
 ht-degree: 32%
 
 ---
@@ -408,6 +405,7 @@ Workfront Planning 모듈을 구성할 때 Workfront Fusion에 아래 나열된 
 * [글로벌 레코드 유형 가져오기](#get-global-record-types-v2)
 * [레코드 유형 가져오기](#get-a-record-type-v2)
 * [레코드 유형 가져오기](#get-record-types-v2)
+* [레코드 종류 구성 다시 캐스트](#recast-record-type-configuration-v2)
 * [레코드 유형 업데이트](#update-a-record-type-v2)
 
 #### 레코드 유형 만들기(V2)
@@ -553,6 +551,27 @@ Workfront Planning 모듈을 구성할 때 Workfront Fusion에 아래 나열된 
         <p>[!UICONTROL 반환되는 최대 레코드 유형 수]</p>
       </td>
       <td>한 실행 주기 동안 모듈이 반환할 최대 레코드 종류 수를 입력하거나 매핑합니다.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### 다시 캐스트 레코드 유형 구성(V2)
+
+이 모듈은 각 레코드 유형의 필드 및 각 필드의 선택 옵션과 함께 해당 섹션별로 그룹화된 작업 영역의 모든 레코드 유형을 검색합니다. 출력은 섹션 > 레코드 유형 > 필드로 구성됩니다.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL 연결]</td>
+      <td>[!DNL Adobe Workfront Planning]에 연결하는 방법에 대한 지침은 이 문서에서 <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a>에 연결하기를 참조하십시오.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 작업 영역 ID]</p>
+      </td>
+      <td>레코드 유형 구성을 검색할 작업 공간의 ID를 입력하거나 매핑합니다.</td> 
     </tr>
   </tbody>
 </table>

@@ -3,9 +3,9 @@ user-guide-title: Adobe Workfront Fusion 설명서
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 문서, 튜토리얼 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
 nudge: true
-source-git-commit: fac09ae8c8b2e248ef9c0731c38a4be58cea2994
+source-git-commit: b2d2634c72b044898b656852e57ef36a8b5f2fe9
 workflow-type: tm+mt
-source-wordcount: '2652'
+source-wordcount: '2655'
 ht-degree: 49%
 
 ---
@@ -308,7 +308,7 @@ ht-degree: 49%
   * [모듈을 체인으로 이동](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)
   * [실행 중인 시나리오에서 데이터 흐름 보기](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
   * [웹후크의 대기열 보기](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
-  * {hide-from-toc}[Workfront Fusion의 AI 도우미](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
+  * Workfront Fusion의 {hide-from-toc}[AI 도우미](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
   * [시나리오 채점 전문가 실행](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
   * [시나리오 요소 삭제](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
   * [시나리오 영역에서 시나리오 관리](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
@@ -420,6 +420,7 @@ ht-degree: 49%
       * [Adobe Workfront Planning 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
       * [Adobe Workfront 통합 검토 및 승인 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-review-and-approvals-modules.md)
       * [Workfront Boards 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
+      * [Workfront Fusion 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-fusion-modules.md)
       * [Workfront Proof 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-proof-modules.md)
     * 제3자 애플리케이션용 커넥터 {#third-party-app-connectors}
       * [Airtable 모듈](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/airtable-modules.md)

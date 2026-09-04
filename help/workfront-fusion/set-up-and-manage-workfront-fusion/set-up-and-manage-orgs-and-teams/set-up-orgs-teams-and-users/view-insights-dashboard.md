@@ -5,11 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
 TQID: https://experienceleague.adobe.com/tBZCbpImQxY42gOE8e04aQwCJC8EKgrDTIAt6Sw1KaU
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 557ec6de4ccf0753005fed3e4772d2eb9317537d
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 069ab0fd3d72da3b67d50e4f8e62823c825ef934
 workflow-type: tm+mt
-source-wordcount: 848
+source-wordcount: 849
 ht-degree: 4%
 
 ---
@@ -63,6 +62,9 @@ Fusion Insights 대시보드를 사용하면 가장 많이 실행 중인 시나�
 
 Fusion Insights 대시보드에서 다음 지표를 볼 수 있습니다.
 
+* **실패한 실행 로그**
+이 표에는 조직 전체의 실패한 시나리오 실행이나 경고 시나리오가 모두 나열되므로 대시보드를 종료하지 않고도 문제 실행을 찾아 해결할 수 있습니다.
+
 * **실행 처리 대기 중**
 이 차트는 지정된 시점에 처리 대기 중인 실행(실행 백로그라고도 함) 수를 보여 줍니다.
 
@@ -79,8 +81,6 @@ Fusion Insights 대시보드에서 다음 지표를 볼 수 있습니다.
 이 차트는 시나리오별 실행을 표시합니다. 서로 다른 색상은 서로 다른 시나리오를 나타냅니다. 차트 위에 마우스를 가져다 대면 어떤 색상이 어떤 시나리오인지 보여주는 창이 나타납니다.
 
   이 차트를 사용하여 연결된 앱 또는 서비스와 관련된 문제의 영향을 받는 시나리오를 포함하여 평소보다 오래 걸리는 시나리오를 식별할 수 있습니다.
-* **실행 로그**
-이 표에는 조직 전체의 실패한 시나리오 실행이나 경고 시나리오가 모두 나열되므로 대시보드를 종료하지 않고도 문제 실행을 찾아 해결할 수 있습니다.
 
 ## Fusion Insights 대시보드 보기
 
@@ -116,6 +116,6 @@ Fusion Insights 대시보드에서 다음 지표를 볼 수 있습니다.
 1. 오류에 대한 자세한 내용을 보려면 실행을 클릭하십시오.
 1. 반복 실패 후 자동으로 비활성화되는 하나 이상의 시나리오를 다시 활성화하려면 실행을 선택한 다음 **활성화**&#x200B;를 클릭합니다.
 
-   <!-- BECKY CHECK ME: confirm this button's exact label against the live UI. The Slack feature request calls it "Activate," but a related community post describes the same action as "Reactivate." -->
-
-   시나리오를 다시 활성화하기 전에 만료된 자격 증명 또는 커넥터 문제와 같은 실패의 원인을 조사하십시오. 그러면 시나리오가 즉시 다시 실패하지 않습니다.
+   >[!NOTE]
+   >
+   >시나리오를 다시 활성화하기 전에 만료된 자격 증명 또는 커넥터 문제와 같은 실패의 원인을 조사하십시오. 그러면 시나리오가 즉시 다시 실패하지 않습니다.

@@ -1,9 +1,9 @@
 ---
 name: fusion-doc-request
 description: null
-source-git-commit: 6726c582294758de0bbab19d6014ad80bb66e553
+source-git-commit: 2b1e8c3281334ac0846bd7cc6297f972dc1bad61
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1215'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 1단계: 요청 세부 정보 가져오기
 
-Slack 링크가 지정된 경우 URL에서 `channel_id` 및 `message_ts`을(를) 구문 분석하고 스레드(`slack_get_thread_replies` 또는 `slack_read_thread`, 연결된 Slack MCP 도구에 따라 다름)를 가져옵니다. 하나가 실패하면 둘 다 시도하십시오. 스레드의 영구 링크/URL을 유지합니다. 이 URL은 3단계에서 필요합니다.
+Slack 링크가 지정된 경우 URL에서 `channel_id` 및 `message_ts`을(를) 구문 분석하고 스레드(`slack_get_thread_replies` 또는 `slack_read_thread`, 연결된 Slack MCP 도구에 따라 다름)를 가져옵니다. 하나가 실패하면 둘 다 시도하십시오. 스레드의 영구 링크/URL을 유지합니다. 이 URL은 4단계에서 필요합니다.
 
 이 환경의 Slack 연결은 불안합니다(만료된 토큰, 중간 세션 연결 끊기). 가져오기에 실패한 경우:
 - 한 번 다시 시도하십시오.
@@ -33,9 +33,17 @@ Slack 링크가 지정된 경우 URL에서 `channel_id` 및 `message_ts`을(를)
 
 요청이 전체 사양이 있는 Confluence Wiki 페이지로 링크되는 경우 설명서를 작성하기 전에 해당 페이지(`get_wiki_content`)를 가져오십시오. 기술 세부 사항(정확한 필드 이름, 단계, UI 레이블)에 Slack 요약만 의존하지 말고, 하나가 연결되어 있을 때 위키 사양에서 가져옵니다.
 
-대신 요청이 신뢰할 수 있는 사양이 아닌 비 Confluence 보조 소스(예: Experience League 커뮤니티 게시물, 지원 문서, AI 생성 요약)로 연결되는 경우 이를 사용하여 Slack 텍스트에 없는 기술적인 세부 사항을 채울 수 있지만 Slack 요청 자체보다 낮은 신뢰도로 처리할 수 있습니다. 이 텍스트가 Slack 텍스트(동일한 단추/필드의 다른 이름, Slack에서 전혀 언급되지 않은 세부 정보)와 충돌하거나 추가할 경우 자동으로 선택하지 마십시오. Slack 요청의 구문을 기본 소스로 사용하여 문서를 작성하고, 2단계의 지침에 따라 HTML 주석(예: `<!-- BECKY CHECK ME: Slack calls this "Activate," but the linked community post calls it "Reactivate" - confirm against the live UI. -->`)으로 인라인으로 불일치를 플래그를 지정합니다.
+대신 요청이 신뢰할 수 있는 사양이 아닌 비 Confluence 보조 소스(예: Experience League 커뮤니티 게시물, 지원 문서, AI 생성 요약)로 연결되는 경우 이를 사용하여 Slack 텍스트에 없는 기술적인 세부 사항을 채울 수 있지만 Slack 요청 자체보다 낮은 신뢰도로 처리할 수 있습니다. Slack 텍스트(동일한 단추/필드의 다른 이름, Slack에서 전혀 언급되지 않은 세부 사항)와 충돌하거나 이 텍스트를 추가하는 경우 자동으로 선택하지 마십시오. Slack 요청의 구문을 기본 소스로 사용하여 문서를 작성하고 3단계의 지침에 따라 HTML 주석(예: `<!-- BECKY CHECK ME: Slack calls this "Activate," but the linked community post calls it "Reactivate" - confirm against the live UI. -->`)으로 인라인으로 불일치를 플래그를 지정합니다.
 
-## 2단계: 설명서 업데이트
+## 2단계: 요청에 대한 분기 만들기
+
+파일을 터치하기 전에 이 요청에 대한 새 git 분기를 만들고 확인하십시오. 현재 기본 분기(`main`)의 분기이며, 체크 아웃되는 분기가 없습니다.
+
+**기능 제목**&#x200B;에서 파생된 `becky-{short-kebab-case-description}` 분기의 이름을 지정합니다. 첫 번째 단어는 `becky`이어야 하며 이 리포지토리의 기존 분기 규칙(예: `becky-webhook-update`, `becky-storage-beta-sos`)과 일치해야 합니다. 짧게 유지하십시오. 전체 제목 축어가 아닌 몇 단어입니다.
+
+작업 트리가 깨끗하지 않은 경우(관련 없는 작업에서 커밋되지 않은 변경) 트리 위로 분기하지 말고 중지한 후 사용자에게 알립니다.
+
+## 3단계: 설명서 업데이트
 
 이 보고서에서 관련 기존 문서를 찾습니다(관련 모듈 이름, UI 레이블 또는 설정 이름의 경우 grep - 파일을 추측하지 마십시오). 해당 문서의 기존 구조, 제목 수준 및 집 스타일에 따라 변경 사항을 반영하도록 업데이트합니다.
 
@@ -46,7 +54,7 @@ Slack 링크가 지정된 경우 URL에서 `channel_id` 및 `message_ts`을(를)
   - 이러한 종류의 문서에 연결되는 모든 콘텐츠 내 하위 인덱스/랜딩 페이지(예: 새 커넥터 모듈 페이지의 경우 `apps-and-modules-toc.md`).
     두 항목을 모두 명시적으로 확인하고 새 항목이 각 파일에서 가장 가까운 형제 문서와 동일한 중첩 수준에서 동일한 목록에 있는지 확인합니다. 다른 항목 위에 항목을 추가한다고 가정하지 마십시오.
 
-## 3단계: Workfront 작업 만들기
+## 4단계: Workfront 작업 만들기
 
 프로젝트: **제품 설명서 작업 - 메시지가 필요한 개발 문제에 대한**. 변경되는 경우 하드 코딩하지 않고 `insights_find_id_by_name`(엔터티 `project`)로 ID를 확인합니다. 마지막으로 해결된 ID에 대해서는 아래의 알려진 값 을 참조하십시오.
 
@@ -81,10 +89,11 @@ For more information, see [{Article title}](/help/workfront-fusion/{path-to-arti
 
 만들기 호출 전에 `workfront://tools/create-any-object`(으)로 `read_workflow_docs`을(를) 호출하십시오. 이 호출은 사용자 지정 필드와 열거형 값(`DE:Preview Date Known`)을 설정하며, MCP 서버 규칙에 따라 필요합니다.
 
-## 4단계: 사용자에게 다시 확인
+## 5단계: 사용자에게 다시 확인
 
 명확하게 보고:
 
+&#x200B;* 생성한 분기입니다.
 &#x200B;* 변경한 문서 파일과 추가한 내용
 &#x200B;* 작업 이름 및 URL.
 &#x200B;* 미리 보기 날짜 필드를 포함하여 사용자가 설정한 정확한 필드 값.

@@ -4,16 +4,13 @@ description: Adobe Workfront 컨텐츠 및 승인 모듈을 사용하면 승인 
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 68b973fd27c2c5a40000096a29b38b46481ae190
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: edf962333554869d75f0956dfceccce04dd36ec6
 workflow-type: tm+mt
-source-wordcount: 4194
-ht-degree: 14%
+source-wordcount: 3743
+ht-degree: 15%
 
 ---
 
@@ -21,7 +18,7 @@ ht-degree: 14%
 
 Adobe Workfront 통합 검토 및 승인 모듈을 사용하면 승인 세부 정보를 가져오고, 에셋에 대한 결정을 내리고, 승인 참가자를 추가 또는 삭제하고, 승인 단계를 추가 또는 업데이트하고, 단계를 잠금 또는 잠금 해제하고, 사용자 지정 API를 호출할 수 있습니다.
 
-Workfront 통합 검토 및 승인에 대한 자세한 내용은 Workfront 설명서에서 [통합 검토 및 승인 개요](https://experienceleague.adobe.com/ko/docs/workfront/using/review-and-approve-work/document-approvals-overview)를 참조하십시오.
+Workfront 통합 검토 및 승인에 대한 자세한 내용은 Workfront 설명서에서 [통합 검토 및 승인 개요](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview)를 참조하십시오.
 
 ## 액세스 요구 사항
 
@@ -136,21 +133,16 @@ Workfront 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를
 * [템플릿 일괄 삭제](#bulk-delete-templates)
 * [템플릿 만들기](#create-a-template)
 * [승인 만들기](#create-an-approval)
-* [그룹화된 승인 만들기](#create-grouped-approval)
 * [단계 만들기](#create-stages)
 * [스테이지에서 결정 삭제](#delete-a-decision-on-a-stage)
 * [단계 삭제](#delete-a-stage)
 * [템플릿 삭제](#delete-a-template)
 * [승인 삭제](#delete-an-approval)
 * [결정 삭제](#delete-decisions)
-* [그룹화된 승인 삭제](#delete-grouped-approval)
 * [참가자 삭제](#delete-participants)
 * [스테이지 잠금](#lock-a-stage)
 * [결정](#make-a-decision)
 * [스테이지에서 결정](#make-a-decision-on-a-stage)
-* [그룹화된 승인에서 Assets 관리](#manage-assets-on-a-grouped-approval)
-* [스테이지 참가자 관리](#manage-stage-participants)
-* [그룹화된 승인에서 단계 관리](#manage-stages-on-a-grouped-approval)
 * [스테이지의 참가자에게 알림](#remind-a-participant-on-a-stage)
 * [참가자 알림](#remind-participant)
 * [결정되지 않은 참가자에게 알림 전송](#remind-undecided-participants)
@@ -159,7 +151,6 @@ Workfront 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를
 * [단계 업데이트](#update-a-stage)
 * [템플릿 업데이트](#update-a-template)
 * [모든 단계 업데이트](#update-all-stages)
-* [그룹화 승인 업데이트(전체 상태)](#update-grouped-approval-full-state)
 
 
 #### 참가자 추가 또는 업데이트
@@ -276,22 +267,26 @@ Workfront 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를
   </tbody>
 </table>
 
-#### 그룹화된 승인 만들기
+<!--
 
-이 작업 모듈은 그룹화된 승인을 만듭니다.
+#### Create Grouped Approval
+
+This action module creates a grouped approval.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">연결</td>
-      <td>Adobe Workfront 통합 검토 및 승인에 대한 연결을 만드는 방법에 대한 지침은 이 문서의 <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront 통합 검토 및 승인에 연결</a>을 참조하십시오.</td>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
     </tr>
   </tbody>
 </table>
 
-<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Create Grouped Approval"), without field detail. -->
+BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Create Grouped Approval"), without field detail.
+
+-->
 
 #### 단계 만들기
 
@@ -427,22 +422,26 @@ Workfront 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를
   </tbody>
 </table>
 
-#### 그룹화된 승인 삭제
+<!--
 
-이 작업 모듈은 지정된 그룹 승인을 삭제합니다.
+#### Delete Grouped Approval
+
+This action module deletes the specified grouped approval.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">연결</td>
-      <td>Adobe Workfront 통합 검토 및 승인에 대한 연결을 만드는 방법에 대한 지침은 이 문서의 <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront 통합 검토 및 승인에 연결</a>을 참조하십시오.</td>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
     </tr>
   </tbody>
 </table>
 
-<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Delete Grouped Approval"), without field detail. -->
+BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Delete Grouped Approval"), without field detail.
+
+-->
 
 #### 참가자 삭제
 
@@ -556,56 +555,68 @@ Workfront 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를
   </tbody>
 </table>
 
-#### 그룹화된 승인에서 Assets 관리
+<!--
 
-이 작업 모듈은 그룹화된 승인에 포함된 자산을 관리합니다.
+#### Manage Assets on a Grouped Approval
 
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">연결</td>
-      <td>Adobe Workfront 통합 검토 및 승인에 대한 연결을 만드는 방법에 대한 지침은 이 문서의 <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront 통합 검토 및 승인에 연결</a>을 참조하십시오.</td>
-    </tr>
-  </tbody>
-</table>
-
-<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Manage Assets on a Grouped Approval"), without field detail. -->
-
-#### 스테이지 참가자 관리
-
-이 작업 모듈은 스테이지에서 참가자를 관리합니다.
+This action module manages which assets are included in a grouped approval.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">연결</td>
-      <td>Adobe Workfront 통합 검토 및 승인에 대한 연결을 만드는 방법에 대한 지침은 이 문서의 <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront 통합 검토 및 승인에 연결</a>을 참조하십시오.</td>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
     </tr>
   </tbody>
 </table>
 
-<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Manage Stage Participants"), without field detail. -->
+BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Manage Assets on a Grouped Approval"), without field detail.
 
-#### 그룹화된 승인에서 단계 관리
+-->
 
-이 작업 모듈은 그룹화된 승인에서 단계를 관리합니다.
+<!--
+
+#### Manage Stage Participants
+
+This action module manages participants on a stage.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">연결</td>
-      <td>Adobe Workfront 통합 검토 및 승인에 대한 연결을 만드는 방법에 대한 지침은 이 문서의 <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront 통합 검토 및 승인에 연결</a>을 참조하십시오.</td>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
     </tr>
   </tbody>
 </table>
 
-<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Manage Stages on a Grouped Approval"), without field detail. -->
+BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Manage Stage Participants"), without field detail.
+
+-->
+
+<!--
+
+#### Manage Stages on a Grouped Approval
+
+This action module manages the stages on a grouped approval.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+  </tbody>
+</table>
+
+BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Manage Stages on a Grouped Approval"), without field detail.
+
+-->
 
 #### 스테이지의 참가자에게 알림
 
@@ -846,37 +857,37 @@ Workfront 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를
   </tbody>
 </table>
 
-#### 그룹화 승인 업데이트(전체 상태)
+<!--
 
-이 작업 모듈은 지정된 그룹화된 승인의 전체 상태를 대체합니다.
+#### Update Grouped Approval (Full State)
+
+This action module replaces the full state of the specified grouped approval.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">연결</td>
-      <td>Adobe Workfront 통합 검토 및 승인에 대한 연결을 만드는 방법에 대한 지침은 이 문서의 <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront 통합 검토 및 승인에 연결</a>을 참조하십시오.</td>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
     </tr>
   </tbody>
 </table>
 
-<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Update Grouped Approval (Full State)"), without field detail. -->
+BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Update Grouped Approval (Full State)"), without field detail.
+
+-->
 
 ### 검색 결과
 
 * [템플릿 가져오기](#get-a-template)
 * [승인 세부 정보 가져오기](#get-approval-details)
-* [그룹화된 승인에서 승인 받기](#get-approvals-in-a-grouped-approval)
-* [그룹화된 승인 세부 정보 가져오기](#get-grouped-approval-details)
 * [여러 승인 받기](#get-multiple-approvals)
 * [제안된 승인 받기](#get-suggested-approvals)
 * [제안된 참가자 가져오기](#get-suggested-participants)
 * [보트 나열](#list-bots)
-* [상위 항목별로 그룹화된 승인 나열](#list-grouped-approvals-by-parent)
 * [목록 템플릿](#list-templates)
 * [AI 브랜드 검토자 검색](#search-ai-brand-reviews)
-* [그룹화된 승인 검색](#search-grouped-approvals)
 
 
 #### 템플릿 가져오기
@@ -929,39 +940,47 @@ Workfront 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를
   </tbody>
 </table>
 
-#### 그룹화된 승인에서 승인 받기
+<!--
 
-이 검색 모듈은 그룹화된 승인에 포함된 개별 승인을 반환합니다.
+#### Get Approvals in a Grouped Approval
 
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">연결</td>
-      <td>Adobe Workfront 통합 검토 및 승인에 대한 연결을 만드는 방법에 대한 지침은 이 문서의 <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront 통합 검토 및 승인에 연결</a>을 참조하십시오.</td>
-    </tr>
-  </tbody>
-</table>
-
-<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Get Approvals in a Grouped Approval"), without field detail. -->
-
-#### 그룹화된 승인 세부 정보 가져오기
-
-이 검색 모듈은 지정된 그룹 승인에 대한 세부 정보를 검색합니다.
+This search module returns the individual approvals contained in a grouped approval.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">연결</td>
-      <td>Adobe Workfront 통합 검토 및 승인에 대한 연결을 만드는 방법에 대한 지침은 이 문서의 <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront 통합 검토 및 승인에 연결</a>을 참조하십시오.</td>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
     </tr>
   </tbody>
 </table>
 
-<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Get Grouped Approval Details"), without field detail. -->
+BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Get Approvals in a Grouped Approval"), without field detail.
+
+-->
+
+<!--
+
+#### Get Grouped Approval Details
+
+This search module retrieves details for the specified grouped approval.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+  </tbody>
+</table>
+
+BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Get Grouped Approval Details"), without field detail.
+
+-->
 
 #### 여러 승인 받기
 
@@ -1071,22 +1090,26 @@ Workfront 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를
   </tbody>
 </table>
 
-#### 상위 항목별로 그룹화된 승인 나열
+<!--
 
-이 검색 모듈은 지정된 상위에 대해 그룹화된 승인 목록을 반환합니다.
+#### List Grouped Approvals by Parent
+
+This search module returns a list of grouped approvals for the specified parent.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">연결</td>
-      <td>Adobe Workfront 통합 검토 및 승인에 대한 연결을 만드는 방법에 대한 지침은 이 문서의 <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront 통합 검토 및 승인에 연결</a>을 참조하십시오.</td>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
     </tr>
   </tbody>
 </table>
 
-<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("List Grouped Approvals by Parent"), without field detail. -->
+BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("List Grouped Approvals by Parent"), without field detail.
+
+-->
 
 #### 목록 템플릿
 
@@ -1148,22 +1171,26 @@ Workfront 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를
   </tbody>
 </table>
 
-#### 그룹화된 승인 검색
+<!--
 
-이 검색 모듈은 지정된 기준과 일치하는 그룹화된 승인을 검색합니다.
+#### Search Grouped Approvals
+
+This search module searches for grouped approvals matching the specified criteria.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">연결</td>
-      <td>Adobe Workfront 통합 검토 및 승인에 대한 연결을 만드는 방법에 대한 지침은 이 문서의 <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront 통합 검토 및 승인에 연결</a>을 참조하십시오.</td>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
     </tr>
   </tbody>
 </table>
 
-<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Search Grouped Approvals"), without field detail. -->
+BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Search Grouped Approvals"), without field detail.
+
+-->
 
 ### 기타
 

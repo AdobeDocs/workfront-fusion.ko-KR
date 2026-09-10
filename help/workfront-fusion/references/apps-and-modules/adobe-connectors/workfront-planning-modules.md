@@ -5,15 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
 TQID: https://experienceleague.adobe.com/QHOFWDOT-18-c0b3wLXsRV5cjGVxlcyLhvZdkev3GFg
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 9521866c29e4e08eaf815080162735f0f70299a5
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 77d29cea134abe6e048fd744151acffe256f5992
 workflow-type: tm+mt
-source-wordcount: 6739
+source-wordcount: 6777
 ht-degree: 32%
 
 ---
@@ -1677,6 +1674,12 @@ Workfront Planning 모듈을 구성할 때 Workfront Fusion에 아래 나열된 
       <td>
        <p>이 웹후크에 대해 authToken 기반 보안을 활성화할지 여부를 선택합니다.</p><p>
        <b>참고</b>: 2026년 8월 23일부터 Fusion은 기존 모듈을 포함하여 모든 Workfront Planning &gt; 이벤트 보기 모듈에 대해 기본적으로 authToken 기반 보안을 활성화합니다. 특정 웹후크가 끊기거나 호환성을 위해 이 기능을 비활성화해야 하는 경우 보안 후크 활성화 옵션을 해제할 수 있습니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 사용자 지정 토큰]</td>
+      <td>
+       <p>(선택 사항) [!UICONTROL 보안 후크 활성화]가 [!UICONTROL 예]로 설정된 경우 자체 토큰 값을 입력하여 웹 후크를 보호할 수 있습니다. 이 필드를 비워 두면 자동으로 토큰이 생성됩니다.</p>
       </td>
     </tr>
   </tbody>

@@ -7,7 +7,7 @@ exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
 TQID: https://experienceleague.adobe.com/L-0fyqwvahM--LXM15no9APxcFNkAsoYqHwAqO1bAno
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+source-git-commit: ffd91f83940f37b15229b79fa04b5a3596bd97fb
 workflow-type: tm+mt
 source-wordcount: 901
 ht-degree: 15%
@@ -95,12 +95,12 @@ Adobe Workfront Fusion 공개 인증서를 웹 서비스에 업로드하는 방�
 
 다음 zip 파일을 다운로드하여 압축을 풀고 데이터 센터용 PEM 파일을 사용합니다.
 
-[Workfront Fusion 2026 인증서 다운로드](assets/2026-certs/fusion-prod-mtls-certificate-2026.zip)
+[Workfront Fusion 2026 인증서 다운로드](assets/fusion-prod-mtls-certificate-2026-updated.zip)
 
 | 데이터 센터 | 다운로드 링크 | 유효한 날짜 |
 | --- | --- | --- |
 | 미국 AWS 데이터 센터 | `fusion-prod-us-mtls-certificate-2026.pem` | 2026년 1월 29일~2027년 3월 2일 |
-| US Azure 클러스터 | `fusion-prod-az-mtls-certificate.pem` | 2025년 9월 21일~2026년 10월 23일 |
+| US Azure 클러스터 | `fusion-prod-az-mtls-certificate-2026-sept.pem` | 2026년 8월 19일~2027년 3월 6일 |
 | EU AWS 데이터 센터 | `fusion-prod-eu-mtls-certificate-2026.pem` | 2026년 1월 29일~2027년 3월 2일 |
 | EU Azure 클러스터 | `fusion-prod-eu-az-mtls-certificate-2026.pem` | 2026년 2월 4일~2027년 3월 8일 |
 

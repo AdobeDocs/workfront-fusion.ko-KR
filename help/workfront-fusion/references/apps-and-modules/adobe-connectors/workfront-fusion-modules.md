@@ -5,10 +5,10 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 557ec6de4ccf0753005fed3e4772d2eb9317537d
+source-git-commit: 7606f1b15aac0f2baef1b4ef16e3bcaa39dad27c
 workflow-type: tm+mt
-source-wordcount: 1374
-ht-degree: 21%
+source-wordcount: 1430
+ht-degree: 20%
 
 ---
 
@@ -276,6 +276,9 @@ Workfront Fusion 모듈을 구성하면 Workfront Fusion에 아래 나열된 필
 
 ### 내보내기
 
+* [활동 로그 내보내기](#export-activity-logs)
+* [시나리오 내보내기](#export-scenarios)
+
 #### 활동 로그 내보내기
 
 이 모듈은 활동 로그를 내보냅니다.
@@ -311,6 +314,25 @@ Workfront Fusion 모듈을 구성하면 Workfront Fusion에 아래 나열된 필
   <tr> 
    <td role="rowheader">방향</td> 
    <td>결과의 순서를 오름차순으로 지정할지 아니면 내림차순으로 지정할지 선택합니다.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 시나리오 내보내기
+
+이 모듈은 하나 이상의 시나리오에 대한 Fusion 블루프린트를 내보냅니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
+   <td> <p>Workfront Fusion을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Workfront Fusion을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
+  <tr> 
+   <td role="rowheader">시나리오 ID</td> 
+   <td>내보낼 각 시나리오에 대해 <b>항목 추가</b>를 클릭하고 시나리오 ID를 입력하십시오.</td> 
+  </tr> 
   </tr> 
  </tbody> 
 </table>

@@ -1,9 +1,9 @@
 ---
 name: fusion-release-notes
 description: 새 Workfront Fusion 주간 릴리스 노트 페이지를 만들고 이를 릴리스 활동 개요 페이지 및 목차에 연결합니다. 사용자가 새 Fusion 릴리스 노트 또는 주별 릴리스 페이지를 작성, 추가 또는 작성하거나 릴리스에 대한 새 Fusion 기능을 문서화하도록 요청할 때 사용합니다. 제품 공지/제품 릴리스에서 Workfront(Quicksilver) 릴리스 노트를 사용하지 마십시오. 릴리스 노트 포맷터를 사용하십시오.
-source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
+source-git-commit: 6610b43b1f313e29654acd8cfcd339240a718f5d
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1090'
 ht-degree: 0%
 
 ---
@@ -145,10 +145,11 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
 - **예**&#x200B;인 경우 다음을 수집하십시오.
   - **원본 경로**(`/en`(으)로 시작해야 하며 공백이 없음)
   - **대상** — `/en`(으)로 시작하는 상대 경로 또는 전체 `https` URL(공백 없음)
-- `redirects/` 아래의 형제 `Adobe-Enterprise-Docs/redirects` 리포지토리에 행을 추가합니다. 환경당 하나의 파일(`redirects-dev.csv`, `redirects-stage.csv`, `redirects-prod.csv`).
+- 행을 형제 `Adobe-Enterprise-Docs/redirects` 저장소, `redirects/redirects-prod.csv` **에 추가하고 다른 파일은 추가하지 않습니다**. `redirects-dev.csv`, `redirects-stage.csv` 또는 해당 리포지토리의 다른 파일에 추가하지 마십시오. 프로덕션은 이 스킬이 터치한 유일한 환경이며 분기에는 해당 파일의 변경 사항만 포함되어야 합니다.
 - 행 규칙(해당 저장소의 README):
   - 중복된 `source`이(가) 없고 중복된 `source`/`destination` 쌍이 없습니다.
   - 리디렉션으로 인해 리디렉션 루프가 발생해서는 안 됩니다.
+- `redirects` 리포지토리의 새 분기(이름이 `workfront-{month}-{day}-{year}-{topic}`인 소문자(예: `workfront-sep-10-2026-aem-mcp-redirect`))를 변경합니다. `main`에 바로 커밋하지 않습니다.
 - **이 스킬은 사용자가 확인한 후에만 CSV 행을 추가합니다.** `redirects` 리포지토리에서 PR을 높이는 것은 이 스킬에서 수행할 수 없는 별도의 단계입니다. 사용자에게 리디렉션이 활성화되기 전에(1:1 리디렉션을 위한 병합 후~5분) PR을 열어 병합해야 한다고 알려 주십시오.
 
 ## 8단계: 최종 검사 목록

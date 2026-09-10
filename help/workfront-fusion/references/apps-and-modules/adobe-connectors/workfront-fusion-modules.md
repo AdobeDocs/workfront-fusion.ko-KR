@@ -3,7 +3,8 @@ title: Workfront Fusion 모듈
 description: Workfront Fusion 커넥터를 사용하면 레코드, 후크, 시나리오 및 연결을 비롯한 시나리오 내에서 자체 Fusion 조직을 관리할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 7606f1b15aac0f2baef1b4ef16e3bcaa39dad27c
 workflow-type: tm+mt
 source-wordcount: 1430

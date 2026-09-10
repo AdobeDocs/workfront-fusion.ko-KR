@@ -3,7 +3,8 @@ title: Adobe Experience Manager Mcp 모듈
 description: Adobe Experience Manager MCP 모듈을 사용하면 Adobe Experience Manager의 MCP 서버에 일반 영어 프롬프트를 보내고 AI 모델이 요청을 수행하도록 할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 06271bbe8dd3c5eb7e3c6b45b71e7e0f7fd4d444
 workflow-type: tm+mt
 source-wordcount: 1020

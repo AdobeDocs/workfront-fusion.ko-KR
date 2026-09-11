@@ -1,9 +1,9 @@
 ---
 name: fusion-doc-request
 description: null
-source-git-commit: 2b1e8c3281334ac0846bd7cc6297f972dc1bad61
+source-git-commit: ac9a22b254b591ccf55270df62a85d158bb03697
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -70,10 +70,13 @@ Slack 링크가 지정된 경우 URL에서 `channel_id` 및 `message_ts`을(를)
 | `description` | **전체 Slack 메시지 텍스트**(요청 템플릿의 모든 필드, 패러프어 아님) 뒤에 Slack 대화에 대한 링크가 있습니다. |
 | `DE:Release notes` | 형식이 지정된 릴리스 노트는 아래 형식을 참조하십시오. |
 | `DE:Preview Date Known` | 기본적으로 `Yes` |
-| `DE:Preview Date` | 기본적으로 요청의 **예상 릴리스 일자** |
+| `DE:Preview Date` | 기본적으로 원래 Slack 메시지에 인용된 날짜(요청의 **예상 릴리스 날짜**) |
+| `taskConstraint` + `constraintDate` | `taskConstraint`을(를) `MFO`(완료일 기준)로 설정합니다. `constraintDate` = 원래 Slack 메시지에 인용된 날짜(요청의 **예상 릴리스 날짜**)이므로 작업의 계획된 완료 날짜도 이와 일치합니다. |
 | 제품/영역 | `Fusion`(제품 설명서 양식의 열거형 필드)을(를) 선택합니다. 불분명한 경우 `insights_search_fields`을(를) 사용하여 정확한 필드 이름을 확인하십시오. |
 
-미리 보기 날짜 필드를 이 동일한 만들기 호출의 일부로 설정합니다. 나중에 보관하거나 요청을 기다리지 마십시오. 사용자가 나중에 다른 날짜를 제공하거나 날짜가 실제로 아직 알려져 있지 않다고 말하는 경우 그에 따라 업데이트하지만 매번 채우도록 기본값이 설정됩니다.
+미리 보기 날짜 필드와 계획된 완료 날짜를 이 동일한 만들기 호출의 일부로 설정합니다. 나중에 남겨두거나 요청을 기다리지 마십시오. 사용자가 나중에 다른 날짜를 제공하거나 날짜가 실제로 아직 알려져 있지 않다고 말하는 경우 그에 따라 업데이트하지만 매번 채우도록 기본값이 설정됩니다.
+
+새 작업의 기본값은 가능한 한 빨리 제한으로, 이 제한에서는 `plannedStartDate`/`plannedCompletionDate`이(가) 스케줄러에서 파생되며 두 작업 중 하나에 대한 직접 쓰기가 자동으로 삭제됩니다(오류 없음, 날짜가 변경되지 않음). `taskConstraint: "MFO"`을(를) `constraintDate`(으)로 설정하면 계획된 완료 날짜를 Slack 메시지에 인용된 날짜로 고정할 수 있습니다. 이 쓰기 전에 `workfront://knowledge/task/update`을(를) 읽으십시오. MCP 서버 규칙에 따른 예약/날짜 필드입니다.
 
 `DE:Release notes` 필드에 대한 릴리스 노트 형식입니다. `***FUSION***`을(를) 첫 줄로 시작하여 빈 줄로 만든 다음 제목을 입력하면 Fusion에 속하는 것으로 메모가 표시됩니다(핵심 Workfront과 반대).
 

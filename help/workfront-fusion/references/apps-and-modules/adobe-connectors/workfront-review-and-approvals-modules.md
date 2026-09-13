@@ -4,16 +4,13 @@ description: Adobe Workfront 컨텐츠 및 승인 모듈을 사용하면 승인 
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: edf962333554869d75f0956dfceccce04dd36ec6
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: bb6db3153c3c85ef1df1a0d49d127c3e712dbc3c
 workflow-type: tm+mt
-source-wordcount: 3743
-ht-degree: 15%
+source-wordcount: 3631
+ht-degree: 16%
 
 ---
 
@@ -21,7 +18,7 @@ ht-degree: 15%
 
 Adobe Workfront 통합 검토 및 승인 모듈을 사용하면 승인 세부 정보를 가져오고, 에셋에 대한 결정을 내리고, 승인 참가자를 추가 또는 삭제하고, 승인 단계를 추가 또는 업데이트하고, 단계를 잠금 또는 잠금 해제하고, 사용자 지정 API를 호출할 수 있습니다.
 
-Workfront 통합 검토 및 승인에 대한 자세한 내용은 Workfront 설명서에서 [통합 검토 및 승인 개요](https://experienceleague.adobe.com/ko/docs/workfront/using/review-and-approve-work/document-approvals-overview)를 참조하십시오.
+Workfront 통합 검토 및 승인에 대한 자세한 내용은 Workfront 설명서에서 [통합 검토 및 승인 개요](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview)를 참조하십시오.
 
 ## 액세스 요구 사항
 
@@ -135,7 +132,6 @@ Workfront 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를
 * [참가자 추가 또는 업데이트](#add-or-update-participants)
 * [템플릿 일괄 삭제](#bulk-delete-templates)
 * [템플릿 만들기](#create-a-template)
-* [승인 만들기](#create-an-approval)
 * [단계 만들기](#create-stages)
 * [스테이지에서 결정 삭제](#delete-a-decision-on-a-stage)
 * [단계 삭제](#delete-a-stage)
@@ -237,35 +233,6 @@ Workfront 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를
     <tr>
       <td role="rowheader"><p>다음 사용자와 공유:</p></td>
       <td>템플릿을 공유할 각 사용자에 대해 <b>항목 추가</b> 및 사용자 ID와 원하는 액세스 수준을 클릭합니다.</td> 
-      </tr>
-  </tbody>
-</table>
-
-#### 승인 만들기
-
-이 작업 모듈은 단계 데이터 또는 템플릿을 포함하여 Adobe 클라우드 스토리지에 있는 문서에 대한 승인을 생성합니다.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">연결</td>
-      <td>Adobe Workfront 통합 검토 및 승인에 대한 연결을 만드는 방법에 대한 지침은 이 문서의 <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront 통합 검토 및 승인에 연결</a>을 참조하십시오.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>문서 ID</p></td>
-      <td>승인을 생성할 자산의 ID를 입력하거나 매핑합니다.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader">
-        <p>단계</p>
-      </td>
-      <td>추가할 각 단계에 대해 <b>항목 추가</b>를 클릭하고 단계 데이터를 입력하십시오.<p>자세한 내용은 이 문서에서 <a href="#stages-fields" class="MCXref xref" >단계 필드</a>를 참조하십시오. </p> </td> 
-      </tr>
-    <tr>
-      <td role="rowheader"><p>템플릿 ID</p></td>
-      <td>이 승인에 사용할 템플릿의 ID를 입력하거나 매핑합니다.</td> 
       </tr>
   </tbody>
 </table>

@@ -7,15 +7,15 @@ exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
 TQID: https://experienceleague.adobe.com/P-GPOboH09jZI9dQ5wBfFNV3NNOk-lpSPs7SI4rXHE4
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 6d107dda1c657e7b0b7ae44cfebecc97421ca47e
 workflow-type: tm+mt
-source-wordcount: 3034
-ht-degree: 35%
-
+source-wordcount: '3056'
+ht-degree: 34%
 ---
-
 # [!DNL Salesforce] 모듈
 
 Adobe Workfront Fusion 시나리오에서는 [!DNL Salesforce]을(를) 사용하는 워크플로를 자동화하고 여러 타사 애플리케이션 및 서비스에 연결할 수 있습니다.
@@ -111,7 +111,7 @@ Salesforce 커넥터는 다음을 사용합니다.
 
 ## [!DNL Salesforce]에 연결하기
 
-사용자의 [!DNL Salesforce] 모듈에 연결하려면:
+[!DNL Salesforce] 모듈에 대한 연결을 만들려면 OAuth 2 또는 PKCE를 사용하여 인증할 수 있습니다.
 
 1. 모든 [!DNL Salesforce] 모듈에서 연결 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 
@@ -139,6 +139,12 @@ Salesforce 커넥터는 다음을 사용합니다.
         <td role="rowheader">[!UICONTROL 유형]</td>
         <td>
           <p>서비스 계정에 연결할지 개인 계정에 연결할지 선택합니다.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL 연결 유형]</td>
+        <td>
+          <p>OAuth 2를 사용하여 인증할지 PKCE를 사용하여 인증할지 선택합니다.</p>
         </td>
       </tr>
       <tr>
@@ -189,7 +195,7 @@ Salesforce 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td>[!UICONTROL 레코드 유형] </td> 
-   <td> <p>모듈에서 조사할 필드가 포함된 레코드 유형을 선택합니다. [!DNL Salesforce] 설정에서 [!UICONTROL 필드 기록]이 설정된 레코드 종류를 선택해야 합니다. 자세한 내용은 [!DNL Salesforce] 설명서의 <a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&type=5">필드 기록 추적</a>을 참조하십시오. </p> </td> 
+   <td> <p>모듈에서 조사할 필드가 포함된 레코드 유형을 선택합니다. [!DNL Salesforce] 설정에서 [!UICONTROL 필드 기록]이 설정된 레코드 종류를 선택해야 합니다. 자세한 내용은 [!DNL Salesforce] 설명서의 <a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&amp;type=5">필드 기록 추적</a>을 참조하십시오. </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 필드]</td> 
@@ -454,7 +460,7 @@ Salesforce 커넥터는 다음을 사용합니다.
      <ul> 
       <li>[!UICONTROL 첨부 파일]</li> 
       <li>[!UICONTROL 문서]</li> 
-      <li>[!UICONTROL ContentDocument] ([!DNL Saleforce CRM Content] 또는 [!DNL Salesforce Files]의 라이브러리에 업로드된 문서임)</li> 
+      <li>[!UICONTROL ContentDocument]([!DNL Saleforce CRM Content] 또는 [!DNL Salesforce Files]의 라이브러리에 업로드된 문서임)</li> 
      </ul> </td>
   </tr> 
   <tr>
@@ -577,7 +583,7 @@ Salesforce 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 연결]</td> 
-   <td>[!DNL Salesforce] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">연결 만들기[!DNL &#x200B; Adobe Workfront Fusion] - 기본 지침</a>을 참조하십시오.</td> 
+   <td>[!DNL Salesforce] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">연결 만들기[!DNL  Adobe Workfront Fusion] - 기본 지침</a>을 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 소스 파일]</td> 
@@ -617,7 +623,7 @@ Salesforce 커넥터는 다음을 사용합니다.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 연결]</td> 
-   <td>[!DNL Salesforce] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">연결 만들기[!DNL &#x200B; Adobe Workfront Fusion] - 기본 지침</a>을 참조하십시오.</td> 
+   <td>[!DNL Salesforce] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">연결 만들기[!DNL  Adobe Workfront Fusion] - 기본 지침</a>을 참조하십시오.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 유형]</td> 

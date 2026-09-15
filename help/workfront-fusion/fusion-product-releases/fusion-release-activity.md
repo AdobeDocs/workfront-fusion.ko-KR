@@ -12,15 +12,15 @@ exl-id: c37aea95-7cc3-4939-a4d7-9a6a75557b85
 TQID: https://experienceleague.adobe.com/Gk5AKwj-C46H2HyURlUxcndsqWWpJmA1AUxZFYbg4uo
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: 3df43d17c2e6ecd9625e67f4aa75eea8c8b4eecc
+    internal-label: Integrations
+source-git-commit: 6d107dda1c657e7b0b7ae44cfebecc97421ca47e
 workflow-type: tm+mt
-source-wordcount: 1598
-ht-degree: 85%
-
+source-wordcount: '1607'
+ht-degree: 84%
 ---
-
 # Adobe Workfront Fusion 릴리스 활동 개요
 
 Adobe Workfront Fusion은 동일한 작업을 계속해서 반복하는 대신 새로운 작업에 집중할 수 있도록 앱과 웹 서비스를 원활하게 연결하여 줍니다.
@@ -29,6 +29,7 @@ Adobe Workfront Fusion은 동일한 작업을 계속해서 반복하는 대신 �
 
 ### 2026년 9월
 
+* [Workfront Fusion 릴리스 활동: 2026년 9월 14일의 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-9-14.md)
 * [Workfront Fusion 릴리스 활동: 2026년 9월 7일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-9-7.md)
 
 ### 2026년 8월

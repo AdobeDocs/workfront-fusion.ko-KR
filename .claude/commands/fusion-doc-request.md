@@ -1,13 +1,11 @@
 ---
 name: fusion-doc-request
-description: null
-source-git-commit: ac9a22b254b591ccf55270df62a85d158bb03697
+description: 에서 Fusion 설명서 요청을 처리합니다. #fusion-documentation Slack template - update the relevant Fusion docs article(s) in this repo, then create a matching task in the Product Documentation Workfront project with the feature description and a formatted release note filled in on the custom form. Use when the user shares a Slack documentation-request thread/message for a Fusion feature, or says something like "please update and create a task" for one.
+source-git-commit: faa0716f7e0a8ce496f8f65085de32288a4b6066
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1454'
 ht-degree: 0%
-
 ---
-
 
 # Fusion 설명서 요청
 
@@ -25,11 +23,11 @@ Slack 링크가 지정된 경우 URL에서 `channel_id` 및 `message_ts`을(를)
 
 요청 템플릿에는 다음 필드가 있습니다. 각 필드를 추출하십시오.
 
-&#x200B;* **기능 제목**
-&#x200B;* **설명**
-&#x200B;* **설명서에 추가될 점** *(경우에 따라 제공 - 요청자가 원하는 특정 섹션/세부 정보. 제공된 경우 선택 사항이 아닌 필수 사항으로 취급)*
-&#x200B;* **릴리스 예상 날짜**
-&#x200B;* **발표가 필요함** *(예/아니요 - 정보 제공용입니다. 위의 메모를 참조하세요. 이 필드에 대해 작업하지 마십시오.)*
+* **기능 제목**
+* **설명**
+* **설명서에 추가될 점** *(경우에 따라 제공 - 요청자가 원하는 특정 섹션/세부 정보. 제공된 경우 선택 사항이 아닌 필수 사항으로 취급)*
+* **릴리스 예상 날짜**
+* **발표가 필요함** *(예/아니요 - 정보 제공용입니다. 위의 메모를 참조하세요. 이 필드에 대해 작업하지 마십시오.)*
 
 요청이 전체 사양이 있는 Confluence Wiki 페이지로 링크되는 경우 설명서를 작성하기 전에 해당 페이지(`get_wiki_content`)를 가져오십시오. 기술 세부 사항(정확한 필드 이름, 단계, UI 레이블)에 Slack 요약만 의존하지 말고, 하나가 연결되어 있을 때 위키 사양에서 가져옵니다.
 
@@ -43,16 +41,19 @@ Slack 링크가 지정된 경우 URL에서 `channel_id` 및 `message_ts`을(를)
 
 작업 트리가 깨끗하지 않은 경우(관련 없는 작업에서 커밋되지 않은 변경) 트리 위로 분기하지 말고 중지한 후 사용자에게 알립니다.
 
+이 스킬은 분기를 만들고 커밋하지만 분기를 푸시하거나 가져오기 요청을 열지 않습니다. 사용자가 별도로 요청하지 않는 한 사용자에게 맡깁니다.
+
 ## 3단계: 설명서 업데이트
 
 이 보고서에서 관련 기존 문서를 찾습니다(관련 모듈 이름, UI 레이블 또는 설정 이름의 경우 grep - 파일을 추측하지 마십시오). 해당 문서의 기존 구조, 제목 수준 및 집 스타일에 따라 변경 사항을 반영하도록 업데이트합니다.
 
-&#x200B;* Slack 요청 또는 연결된 wiki 사양에 없는 기술 세부 사항(정확한 필드 이름, 권한 범위, 구성 단계)을 발명하지 마십시오. 확인되지 않은 내용이 있으면 추측이 아닌 HTML 주석(예: `<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`)으로 인라인으로 플래그를 지정합니다. 표시되는 설명선은 아닙니다. 게시된 페이지에서 렌더링하면 안 됩니다.
-&#x200B;* 새 문서 파일(기존 문서 파일로의 편집뿐만 아니라)이 필요한 경우 이 리포지토리의 일반 규칙을 따릅니다. 즉, 프론트마트에서 조작된 `exl-id`/`TQID`이(가) 없습니다. 파일을 만든 후 CRLF/no-BOM으로 변환합니다(`Write` 도구 기본값은 LF임).
-&#x200B;* 새 페이지를 &quot;목차&quot;에 배선한다는 것은 이 두 가지 모두를 의미하며, 한 페이지만이 아닙니다. 페이지가 여전히 독자에게 보이지 않으면서 하위 인덱스에서 연결될 수 있습니다.
+* Slack 요청 또는 연결된 wiki 사양에 없는 기술 세부 사항(정확한 필드 이름, 권한 범위, 구성 단계)을 발명하지 마십시오. 확인되지 않은 내용이 있으면 추측이 아닌 HTML 주석(예: `<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`)으로 인라인으로 플래그를 지정합니다. 표시되는 설명선은 아닙니다. 게시된 페이지에서 렌더링하면 안 됩니다.
+* 새 문서 파일(기존 문서 파일로의 편집뿐만 아니라)이 필요한 경우 이 리포지토리의 일반 규칙을 따릅니다. 즉, 프론트마트에서 조작된 `exl-id`/`TQID`이(가) 없습니다. 파일을 만든 후 CRLF/no-BOM으로 변환합니다(`Write` 도구 기본값은 LF임).
+* 새 페이지를 &quot;목차&quot;에 배선한다는 것은 이 두 가지 모두를 의미하며, 한 페이지만이 아닙니다. 페이지가 여전히 독자에게 보이지 않으면서 하위 인덱스에서 연결될 수 있습니다.
   - 제품 영역의 마스터 탐색 파일(예: `help/workfront-fusion/TOC.md`) - 이는 실제로 게시된 탐색 트리를 구동하는 것입니다.
   - 이러한 종류의 문서에 연결되는 모든 콘텐츠 내 하위 인덱스/랜딩 페이지(예: 새 커넥터 모듈 페이지의 경우 `apps-and-modules-toc.md`).
     두 항목을 모두 명시적으로 확인하고 새 항목이 각 파일에서 가장 가까운 형제 문서와 동일한 중첩 수준에서 동일한 목록에 있는지 확인합니다. 다른 항목 위에 항목을 추가한다고 가정하지 마십시오.
+* 분기에서 문서 변경 내용을 커밋하지 않은 상태로 둡니다. 이 스킬의 일부로 `git commit`(또는 `git add`)을(를) 실행하지 마십시오. 사용자가 변경 내용을 검토한 후 준비가 되면 커밋합니다. 사용자가 명시적으로 요청해야 하는 경우에만 커밋하십시오.
 
 ## 4단계: Workfront 작업 만들기
 
@@ -78,6 +79,11 @@ Slack 링크가 지정된 경우 URL에서 `channel_id` 및 `message_ts`을(를)
 
 새 작업의 기본값은 가능한 한 빨리 제한으로, 이 제한에서는 `plannedStartDate`/`plannedCompletionDate`이(가) 스케줄러에서 파생되며 두 작업 중 하나에 대한 직접 쓰기가 자동으로 삭제됩니다(오류 없음, 날짜가 변경되지 않음). `taskConstraint: "MFO"`을(를) `constraintDate`(으)로 설정하면 계획된 완료 날짜를 Slack 메시지에 인용된 날짜로 고정할 수 있습니다. 이 쓰기 전에 `workfront://knowledge/task/update`을(를) 읽으십시오. MCP 서버 규칙에 따른 예약/날짜 필드입니다.
 
+`description` 필드에 4,000자로 제한되어 있습니다. 전체 Slack 메시지 텍스트가 맞지 않는 경우:
+
+1. 기능 제목, 예상 릴리스 날짜, 발표 필요, 요청의 한 줄 요약, 전체 요청 텍스트가 작업에 대한 첫 번째 댓글로 게시된다는 메모, 그리고 Slack 스레드 링크와 같이 짧은 `description`(으)로 먼저 작업을 만듭니다.
+1. 그런 다음 `comment-stream_create_comment`(`objectCode` `task`, 새 작업의 ID `objectID`)을(를) 통해 새로 만든 작업에 대한 댓글로 완전한 축어 Slack 메시지 텍스트(모든 템플릿 필드, 패러프레이즈가 아님)를 게시합니다. 이 도구에는 비슷한 길이 제한이 없습니다. `content`(일반 텍스트)과 `contentHTML`(맨 `<p>` 태그뿐만 아니라 제목/목록으로 구조화됨)을 모두 포함합니다.
+
 `DE:Release notes` 필드에 대한 릴리스 노트 형식입니다. `***FUSION***`을(를) 첫 줄로 시작하여 빈 줄로 만든 다음 제목을 입력하면 Fusion에 속하는 것으로 메모가 표시됩니다(핵심 Workfront과 반대).
 
 ```markdown
@@ -96,17 +102,18 @@ For more information, see [{Article title}](/help/workfront-fusion/{path-to-arti
 
 명확하게 보고:
 
-&#x200B;* 생성한 분기입니다.
-&#x200B;* 변경한 문서 파일과 추가한 내용
-&#x200B;* 작업 이름 및 URL.
-&#x200B;* 미리 보기 날짜 필드를 포함하여 사용자가 설정한 정확한 필드 값.
-&#x200B;* 충분히 신뢰하지 않는 모든 항목. 예를 들어, Slack에 연결할 수 없었고 붙여넣은 텍스트로만 작업했거나, 대상 문서 문서가 애매했거나, 기술 세부 정보가 소스 자료에 없고, 예상하지 못한 대신 플래그가 지정되었습니다.
+* 생성한 분기(2단계별로 로컬로 커밋되고 푸시되지 않으며 열린 가져오기 요청이 없음).
+* 변경한 문서 파일과 추가한 내용
+* 변경 사항이 분기에서 커밋되지 않고 사용자의 검토를 기다립니다.
+* 작업 이름 및 URL.
+* 미리 보기 날짜 필드를 포함하여 사용자가 설정한 정확한 필드 값.
+* 충분히 신뢰하지 않는 모든 항목. 예를 들어, Slack에 연결할 수 없었고 붙여넣은 텍스트로만 작업했거나, 대상 문서 문서가 애매했거나, 기술 세부 정보가 소스 자료에 없고, 예상하지 못한 대신 플래그가 지정되었습니다.
 
 ## 알려진 값(이전 실행에서)
 
 이러한 문제가 영구적이라고 가정하지 않고 여전히 해결되는지 확인합니다.
 
-&#x200B;* 프로젝트 &quot;제품 설명서 작업 - 메시지가 필요한 개발 문제에 대한 작업&quot;이 ID `5e69583f00236b9f767c3e3944100ee4`에 매핑됩니다.
-&#x200B;* 상위 작업 &quot;Becky - Fusion-Documentation 채널의 작업&quot;이(가) 동일한 프로젝트의 ID `6a9b065100003a7554832780c2015e93`에 매핑됩니다. 변경되는 경우 하드코딩하지 않고 `insights_find_id_by_name`(엔티티 `task`)로 해결됩니다.
-&#x200B;* 제품 설명서 사용자 정의 양식(`categoryID`)은 `5d7275b9000514604bd969d418725843`입니다.
-&#x200B;* 사용된 사용자 정의 필드: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
+* 프로젝트 &quot;제품 설명서 작업 - 메시지가 필요한 개발 문제에 대한 작업&quot;이 ID `5e69583f00236b9f767c3e3944100ee4`에 매핑됩니다.
+* 상위 작업 &quot;Becky - Fusion-Documentation 채널의 작업&quot;이(가) 동일한 프로젝트의 ID `6a9b065100003a7554832780c2015e93`에 매핑됩니다. 변경되는 경우 하드코딩하지 않고 `insights_find_id_by_name`(엔티티 `task`)로 해결됩니다.
+* 제품 설명서 사용자 정의 양식(`categoryID`)은 `5d7275b9000514604bd969d418725843`입니다.
+* 사용된 사용자 정의 필드: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`

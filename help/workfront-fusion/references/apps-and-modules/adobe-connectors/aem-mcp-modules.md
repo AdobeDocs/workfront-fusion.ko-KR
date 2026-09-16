@@ -5,13 +5,12 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 06271bbe8dd3c5eb7e3c6b45b71e7e0f7fd4d444
+    internal-label: Workfront
+source-git-commit: f39af7ec908c7ae62924635ef2d08584cf79310a
 workflow-type: tm+mt
-source-wordcount: 1020
+source-wordcount: '1020'
 ht-degree: 11%
-
 ---
-
 # Adobe Experience Manager Mcp 모듈
 
 Adobe Experience Manager MCP 커넥터는 Adobe Experience Manager의 자체 MCP(Model Context Protocol) 서버를 위한 전용 Fusion 통합입니다. 각 모듈이 하나의 고정된 작업을 수행하는 일반적인 커넥터와 달리 이 커넥터에는 개방형 일반 영어 지침을 수락하는 단일 모듈이 있어 AI 모델이 사이트, 디지털 에셋, 콘텐츠 조각, 폴더, 콘텐츠 저장소 및 콘텐츠 AI와 같은 영역 전반에서 이를 수행하는 데 필요한 Adobe Experience Manager 작업을 결정할 수 있도록 합니다.
@@ -98,7 +97,7 @@ Workfront Fusion으로 다시 리디렉션되고 새 연결은 모듈에서 사�
 
 각 실행은 독립적이므로 모듈에는 이전 실행의 메모리가 자체적으로 없습니다. 여러 번의 실행에 걸쳐 다중 전환, 대화 경험을 만들려면 이전 질문과 답변을 저장합니다. 이에 대해 데이터 저장소를 사용한 다음 다음 새 질문이 시작될 때 해당 기록을 텍스트로 포함할 수 있습니다.
 
-데이터 저장소에 대한 자세한 내용은 [데이터 저장소](/help/workfront-fusion/create-scenarios/data-stores/data-store-overview.md)를 참조하십시오.
+데이터 저장소에 대한 자세한 내용은 [데이터 저장소](/help/workfront-fusion/create-scenarios/map-data/data-stores.md)를 참조하십시오.
 
 <table style="table-layout:auto"> 
  <col/>

@@ -7,15 +7,15 @@ exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
 TQID: https://experienceleague.adobe.com/P-GPOboH09jZI9dQ5wBfFNV3NNOk-lpSPs7SI4rXHE4
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 6d107dda1c657e7b0b7ae44cfebecc97421ca47e
 workflow-type: tm+mt
-source-wordcount: 3034
-ht-degree: 35%
-
+source-wordcount: '3056'
+ht-degree: 34%
 ---
-
 # [!DNL Salesforce] 모듈
 
 Adobe Workfront Fusion 시나리오에서는 [!DNL Salesforce]을(를) 사용하는 워크플로를 자동화하고 여러 타사 애플리케이션 및 서비스에 연결할 수 있습니다.
@@ -111,7 +111,7 @@ Salesforce 커넥터는 다음을 사용합니다.
 
 ## [!DNL Salesforce]에 연결하기
 
-사용자의 [!DNL Salesforce] 모듈에 연결하려면:
+[!DNL Salesforce] 모듈에 대한 연결을 만들려면 OAuth 2 또는 PKCE를 사용하여 인증할 수 있습니다.
 
 1. 모든 [!DNL Salesforce] 모듈에서 연결 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 
@@ -139,6 +139,12 @@ Salesforce 커넥터는 다음을 사용합니다.
         <td role="rowheader">[!UICONTROL 유형]</td>
         <td>
           <p>서비스 계정에 연결할지 개인 계정에 연결할지 선택합니다.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL 연결 유형]</td>
+        <td>
+          <p>OAuth 2를 사용하여 인증할지 PKCE를 사용하여 인증할지 선택합니다.</p>
         </td>
       </tr>
       <tr>

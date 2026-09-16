@@ -6,17 +6,18 @@ feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+    internal-label: Integrations
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: bb6db3153c3c85ef1df1a0d49d127c3e712dbc3c
+    internal-label: Customer experience
+source-git-commit: 4f637dcb9d7865f73b41faa5b0acf397944bb559
 workflow-type: tm+mt
-source-wordcount: 3631
-ht-degree: 16%
-
+source-wordcount: '5202'
+ht-degree: 11%
 ---
-
 # Adobe Workfront 통합 검토 및 승인 모듈
 
 Adobe Workfront 통합 검토 및 승인 모듈을 사용하면 승인 세부 정보를 가져오고, 에셋에 대한 결정을 내리고, 승인 참가자를 추가 또는 삭제하고, 승인 단계를 추가 또는 업데이트하고, 단계를 잠금 또는 잠금 해제하고, 사용자 지정 API를 호출할 수 있습니다.
@@ -135,16 +136,14 @@ Workfront 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를
 * [참가자 추가 또는 업데이트](#add-or-update-participants)
 * [템플릿 일괄 삭제](#bulk-delete-templates)
 * [템플릿 만들기](#create-a-template)
+* [그룹화된 승인 만들기](#create-grouped-approval)
 * [단계 만들기](#create-stages)
-* [스테이지에서 결정 삭제](#delete-a-decision-on-a-stage)
-* [단계 삭제](#delete-a-stage)
-* [템플릿 삭제](#delete-a-template)
-* [승인 삭제](#delete-an-approval)
-* [결정 삭제](#delete-decisions)
-* [참가자 삭제](#delete-participants)
 * [스테이지 잠금](#lock-a-stage)
 * [결정](#make-a-decision)
 * [스테이지에서 결정](#make-a-decision-on-a-stage)
+* [그룹화된 승인에서 에셋 관리](#manage-assets-on-a-grouped-approval)
+* [스테이지 참가자 관리](#manage-stage-participants)
+* [그룹화된 승인에서 단계 관리](#manage-stages-on-a-grouped-approval)
 * [스테이지의 참가자에게 알림](#remind-a-participant-on-a-stage)
 * [참가자 알림](#remind-participant)
 * [결정되지 않은 참가자에게 알림 전송](#remind-undecided-participants)
@@ -153,6 +152,7 @@ Workfront 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를
 * [단계 업데이트](#update-a-stage)
 * [템플릿 업데이트](#update-a-template)
 * [모든 단계 업데이트](#update-all-stages)
+* [그룹화 승인 업데이트(전체 상태)](#update-grouped-approval-full-state)
 
 
 #### 참가자 추가 또는 업데이트
@@ -240,26 +240,66 @@ Workfront 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를
   </tbody>
 </table>
 
-<!--
+#### 그룹화된 승인 만들기
 
-#### Create Grouped Approval
-
-This action module creates a grouped approval.
+이 작업 모듈은 그룹화된 승인, 즉 하나 이상의 승인 경로를 통해 함께 이동하는 문서 버전 세트를 만듭니다. 각 문서 버전은 자체 참여자가 포함된 순서가 지정된 스테이지 시퀀스를 만듭니다.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+      <td role="rowheader">연결</td>
+      <td>Adobe Workfront 통합 검토 및 승인에 대한 연결을 만드는 방법에 대한 지침은 이 문서의 <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront 통합 검토 및 승인에 연결</a>을 참조하십시오.</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>이름</p></td>
+      <td>그룹화된 승인에 대한 표시 이름을 입력하거나 매핑합니다. 이름은 1~255자 사이여야 합니다.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>자산</p></td>
+      <td>그룹에 포함할 각 문서 버전에 대해 <b>항목 추가</b>를 클릭하고 문서 버전(DOCV) ID를 입력하십시오.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>경로</p></td>
+      <td>추가할 각 승인 경로에 대해 <b>항목 추가</b>를 클릭하고 경로 ID, 이름 및 단계를 입력하십시오. 각 경로에는 순서가 지정된 스테이지 시퀀스가 포함됩니다. 각 단계에 대해 단계 필드에서 <b>항목 추가</b>를 클릭하고 다음 데이터를 입력합니다.
+      <ul>
+      <li><b>단계 ID</b><p>모든 경로에서 고유한 단계에 대해 클라이언트가 할당한 식별자를 입력합니다. 영숫자이고 밑줄 또는 하이픈이 허용되며 64자 이하여야 합니다.</p></li>
+      <li><b>단계 이름</b><p>단계 이름을 입력하거나 매핑합니다.</p></li>
+      <li><b>상위 단계 ID</b><p>단계에 추가하려는 각 상위 단계에 대해 <b>항목 추가</b>를 클릭하고 상위 ID를 입력하십시오.</p></li>
+      <li><b>참가자</b><p>단계에 추가하려는 각 참가자에 대해 <b>항목 추가</b>를 클릭하고 참가자 세부 정보를 입력하십시오.
+      <ul>
+      <li><b>참가자 ID</b><p>참여자의 ID를 입력하거나 매핑합니다.</p></li>
+      <li><b>참가자 유형</b><p>참여자가 사용자인지 팀인지 선택합니다.</p></li>
+      <li><b>참가자 역할</b><p>참여자가 승인자인지 검토자인지 선택합니다.</p></li>
+      </ul>
+      </p></li>
+      <li><b>기한 일자</b><p>기한이 특정 날짜인 경우 날짜를 입력하거나 매핑합니다.</p></li>
+      <li><b>마감까지 영업일</b><p>기한이 특정 영업일 수 이후인 경우 일 수를 입력하거나 매핑합니다.</p></li>
+      <li><b>기한 시간: 시간</b><p>기한(0~23)의 시간을 입력하거나 매핑합니다. 기한 시간과 연결: 분.</p></li>
+      <li><b>기한 시간: 분</b><p>기한(0~59)의 분을 입력하거나 매핑합니다. 기한 시간과 연결: 시간.</p></li>
+      <li><b>사용자 정의 메시지</b><p>단계에 대한 사용자 지정 메시지를 입력하거나 매핑합니다.</p></li>
+      </ul>
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>상위 개체 ID</p></td>
+      <td>그룹화된 승인과 연결할 Workfront 상위 개체(예: 프로젝트 또는 작업)의 ID를 입력하거나 매핑합니다. 이 필드를 사용하는 경우 개체 코드도 입력해야 합니다.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>오브젝트 코드</p></td>
+      <td>부모 개체에 대한 Workfront 개체 유형 코드를 입력하거나 매핑합니다(예: <code>PROJ</code> 또는 <code>TASK</code>). 상위 개체 ID를 입력하는 경우 필수입니다.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>템플릿 ID</p></td>
+      <td>(선택 사항) 추적성을 위해 그룹화된 승인에 기록할 템플릿 ID를 입력하거나 매핑합니다.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>제한</p></td>
+      <td>각 시나리오 실행 주기 동안 모듈에서 작업할 최대 결과 수를 입력하거나 매핑합니다.</td> 
+      </tr>
   </tbody>
 </table>
-
-BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Create Grouped Approval"), without field detail.
-
--->
 
 #### 단계 만들기
 
@@ -291,115 +331,12 @@ BECKY CHECK ME: confirm this module's field-level UI before publishing - the Sla
   </tbody>
 </table>
 
-#### 스테이지에서 결정 삭제
-
-이 모듈은 지정된 단계에서 현재 사용자의 결정을 제거합니다. 현재 사용자는 이 모듈에 사용된 연결에 사용되는 자격 증명의 사용자입니다.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">연결</td>
-      <td>Adobe Workfront 통합 검토 및 승인에 대한 연결을 만드는 방법에 대한 지침은 이 문서의 <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront 통합 검토 및 승인에 연결</a>을 참조하십시오.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>문서 ID</p></td>
-      <td>결정을 삭제할 문서의 ID를 입력하거나 매핑합니다.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader"><p>단계 ID</p></td>
-      <td>삭제하려는 단계의 ID를 입력하거나 매핑합니다.</td> 
-      </tr>
-   </tbody>
-</table>
-
-
-#### 단계 삭제
-
-이 작업 모듈은 승인에서 지정된 단계를 삭제합니다.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">연결</td>
-      <td>Adobe Workfront 통합 검토 및 승인에 대한 연결을 만드는 방법에 대한 지침은 이 문서의 <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront 통합 검토 및 승인에 연결</a>을 참조하십시오.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>문서 ID</p></td>
-      <td>단계를 삭제할 문서의 ID를 입력하거나 매핑합니다.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader"><p>단계 ID</p></td>
-      <td>삭제하려는 단계의 ID를 입력하거나 매핑합니다.</td> 
-      </tr>
-  </tbody>
-</table>
-
-#### 템플릿 삭제
-
-이 모듈은 지정된 승인 템플릿을 삭제합니다.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">연결</td>
-      <td>Adobe Workfront 통합 검토 및 승인에 대한 연결을 만드는 방법에 대한 지침은 이 문서의 <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront 통합 검토 및 승인에 연결</a>을 참조하십시오.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>템플릿 ID</p></td>
-      <td>삭제할 템플릿의 ID를 입력하거나 매핑합니다.</td> 
-      </tr>
-  </tbody>
-</table>
-
-#### 승인 삭제
-
-이 작업 모듈은 특정 문서에 대한 승인을 삭제합니다.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">연결</td>
-      <td>Adobe Workfront 통합 검토 및 승인에 대한 연결을 만드는 방법에 대한 지침은 이 문서의 <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront 통합 검토 및 승인에 연결</a>을 참조하십시오.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>문서 ID</p></td>
-      <td>승인을 삭제할 문서의 ID를 입력하거나 매핑합니다.</td> 
-      </tr>
-  </tbody>
-</table>
-
-#### 결정 삭제
-
-이 모듈은 지정된 단계에서 현재 사용자의 결정을 제거합니다. 현재 사용자는 이 모듈에 사용된 연결에 사용되는 자격 증명의 사용자입니다.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">연결</td>
-      <td>Adobe Workfront 통합 검토 및 승인에 대한 연결을 만드는 방법에 대한 지침은 이 문서의 <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront 통합 검토 및 승인에 연결</a>을 참조하십시오.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>문서 ID</p></td>
-      <td>결정을 삭제할 문서의 ID를 입력하거나 매핑합니다.</td> 
-      </tr>
-  </tbody>
-</table>
-
 <!--
+BECKY CHECK ME: The following block of Delete-prefixed Actions modules (Delete a decision on a stage, Delete a stage, Delete a template, Delete an approval, Delete decisions, Delete grouped approval, Delete participants) is not confirmed to be current in the live connector as of this update - status uncertain. Commented out for now; restore (and remove this comment) once confirmed, or delete for good if confirmed removed.
 
-#### Delete Grouped Approval
+#### Delete a decision on a stage
 
-This action module deletes the specified grouped approval.
+This module removes the current user's decision from the specified stage. The current user is the user whose credentials are used in the connection used in this module.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -409,43 +346,152 @@ This action module deletes the specified grouped approval.
       <td role="rowheader">Connection</td>
       <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
     </tr>
-  </tbody>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the document that you want to delete a decision from.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Stage ID</p></td>
+      <td>Enter or map the ID of the stage that you want to delete.</td> 
+      </tr>
+   </tbody>
 </table>
 
-BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Delete Grouped Approval"), without field detail.
 
--->
+#### Delete a stage
 
-#### 참가자 삭제
-
-이 작업 모듈은 승인에서 참여자를 삭제합니다.
+This action module deletes the specified stage from the approval.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">연결</td>
-      <td>Adobe Workfront 통합 검토 및 승인에 대한 연결을 만드는 방법에 대한 지침은 이 문서의 <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront 통합 검토 및 승인에 연결</a>을 참조하십시오.</td>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
     </tr>
      <tr>
-      <td role="rowheader"><p>문서 ID</p></td>
-      <td>참여자를 삭제할 자산의 ID를 입력하거나 매핑합니다.</td> 
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the document that you want to delete a stage from.</td> 
       </tr>
      <tr>
-      <td role="rowheader">
-        <p>참가자 유형</p>
-      </td>
-      <td>참여자가 사용자인지 팀인지를 선택합니다.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader">
-        <p>참가자 ID</p>
-      </td>
-      <td>참여자의 ID를 입력하거나 매핑합니다.</td> 
+      <td role="rowheader"><p>Stage ID</p></td>
+      <td>Enter or map the ID of the stage that you want to delete.</td> 
       </tr>
   </tbody>
 </table>
+
+#### Delete a template
+
+This module deletes the specified approval template.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Template ID</p></td>
+      <td>Enter or map the ID of the template that you want to delete.</td> 
+      </tr>
+  </tbody>
+</table>
+
+#### Delete an approval
+
+This action module deletes the approval for the given document.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the document that you want to delete an approval from.</td> 
+      </tr>
+  </tbody>
+</table>
+
+#### Delete decisions
+
+This module removes the current user's decision from the specified stage. The current user is the user whose credentials are used in the connection used in this module.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the document that you want to delete a decision from.</td> 
+      </tr>
+  </tbody>
+</table>
+
+#### Delete grouped approval
+
+This action module deletes a grouped approval, cascading to its child asset approvals and paths.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Group GUID</p></td>
+      <td>Enter or map the GUID of the grouped approval that you want to delete.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limit</p></td>
+      <td>Enter or map the maximum number of results you want the module to work with during each scenario execution cycle.</td> 
+      </tr>
+  </tbody>
+</table>
+
+#### Delete participants
+
+This action module deletes participants from an approval.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the asset that you want to delete participants from.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>Participant type</p>
+      </td>
+      <td>Select whether the participants is a user or a team.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>Participant ID</p>
+      </td>
+      <td>Enter or map the ID of the participant.</td> 
+      </tr>
+  </tbody>
+</table>
+-->
 
 #### 스테이지 잠금
 
@@ -528,68 +574,143 @@ BECKY CHECK ME: confirm this module's field-level UI before publishing - the Sla
   </tbody>
 </table>
 
-<!--
+#### 그룹화된 승인에서 에셋 관리
 
-#### Manage Assets on a Grouped Approval
-
-This action module manages which assets are included in a grouped approval.
+이 작업 모듈은 그룹화된 승인에서 문서 버전을 추가 및/또는 제거합니다.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+      <td role="rowheader">연결</td>
+      <td>Adobe Workfront 통합 검토 및 승인에 대한 연결을 만드는 방법에 대한 지침은 이 문서의 <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront 통합 검토 및 승인에 연결</a>을 참조하십시오.</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>그룹화된 승인 ID</p></td>
+      <td>자산을 관리할 그룹화된 승인의 GUID를 입력하거나 매핑합니다.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Assets 추가</p></td>
+      <td>그룹에 추가할 각 문서 버전에 대해 <b>항목 추가</b>를 클릭하고 문서 버전(DOCV) ID를 입력하십시오.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Assets 제거</p></td>
+      <td>그룹에서 제거할 각 문서 버전에 대해 <b>항목 추가</b>를 클릭하고 문서 버전(DOCV) ID를 입력하십시오.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>제한</p></td>
+      <td>각 시나리오 실행 주기 동안 모듈에서 작업할 최대 결과 수를 입력하거나 매핑합니다.</td> 
+      </tr>
   </tbody>
 </table>
 
-BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Manage Assets on a Grouped Approval"), without field detail.
+#### 스테이지 참가자 관리
 
--->
-
-<!--
-
-#### Manage Stage Participants
-
-This action module manages participants on a stage.
+이 작업 모듈은 그룹화된 승인의 특정 단계에서 참가자를 추가, 업데이트 및/또는 제거합니다.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+      <td role="rowheader">연결</td>
+      <td>Adobe Workfront 통합 검토 및 승인에 대한 연결을 만드는 방법에 대한 지침은 이 문서의 <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront 통합 검토 및 승인에 연결</a>을 참조하십시오.</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>그룹화된 승인 ID</p></td>
+      <td>그룹화된 승인의 GUID를 입력하거나 매핑합니다.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>단계 ID</p></td>
+      <td>참가자를 관리할 단계의 ID를 입력하거나 매핑합니다.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>참가자 추가</p></td>
+      <td>단계에 추가하려는 각 참가자에 대해 <b>항목 추가</b>를 클릭하고 다음 세부 정보를 입력하십시오.
+      <ul>
+      <li><b>참가자 유형</b><p>참여자가 사용자인지 팀인지 선택합니다.</p></li>
+      <li><b>참가자</b><p>참여자의 ID를 입력하거나 매핑합니다.</p></li>
+      <li><b>역할</b><p>참여자가 승인자인지 검토자인지 선택합니다.</p></li>
+      </ul>
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>참가자 업데이트</p></td>
+      <td>단계에서 업데이트할 각 참가자에 대해 <b>항목 추가</b>를 클릭하고 다음 세부 정보를 입력하십시오.
+      <ul>
+      <li><b>참가자 유형</b><p>참여자가 사용자인지 팀인지 선택합니다.</p></li>
+      <li><b>참가자</b><p>참여자의 ID를 입력하거나 매핑합니다.</p></li>
+      <li><b>역할</b><p>참여자가 승인자인지 검토자인지 선택합니다.</p></li>
+      </ul>
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>참가자 제거</p></td>
+      <td>단계에서 제거할 각 참가자에 대해 <b>항목 추가</b>를 클릭하고 다음 세부 정보를 입력하십시오.
+      <ul>
+      <li><b>참가자 유형</b><p>참여자가 사용자인지 팀인지 선택합니다.</p></li>
+      <li><b>참가자</b><p>참여자의 ID를 입력하거나 매핑합니다.</p></li>
+      </ul>
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>제한</p></td>
+      <td>각 시나리오 실행 주기 동안 모듈에서 작업할 최대 결과 수를 입력하거나 매핑합니다.</td> 
+      </tr>
   </tbody>
 </table>
 
-BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Manage Stage Participants"), without field detail.
+#### 그룹화된 승인에서 단계 관리
 
--->
-
-<!--
-
-#### Manage Stages on a Grouped Approval
-
-This action module manages the stages on a grouped approval.
+이 작업 모듈은 그룹화된 승인의 단계를 추가, 업데이트 및/또는 제거합니다.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+      <td role="rowheader">연결</td>
+      <td>Adobe Workfront 통합 검토 및 승인에 대한 연결을 만드는 방법에 대한 지침은 이 문서의 <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront 통합 검토 및 승인에 연결</a>을 참조하십시오.</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>그룹화된 승인 ID</p></td>
+      <td>그룹화된 승인의 GUID를 입력하거나 매핑합니다.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>단계 추가</p></td>
+      <td>추가할 각 단계에 대해 <b>항목 추가</b>를 클릭하고 다음 세부 정보를 입력하십시오.
+      <ul>
+      <li><b>단계 ID</b><p>단계에 대한 식별자를 입력하거나 매핑합니다.</p></li>
+      <li><b>단계 이름</b><p>단계 이름을 입력하거나 매핑합니다.</p></li>
+      <li><b>기한 일자</b><p>기한이 특정 날짜인 경우 날짜를 입력하거나 매핑합니다.</p></li>
+      <li><b>마감까지 영업일</b><p>기한이 특정 영업일 수 이후인 경우 일 수를 입력하거나 매핑합니다.</p></li>
+      <li><b>사용자 정의 메시지</b><p>단계에 대한 사용자 지정 메시지를 입력하거나 매핑합니다.</p></li>
+      </ul>
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>단계 업데이트</p></td>
+      <td>업데이트할 각 단계에 대해 <b>항목 추가</b>를 클릭하고 다음 세부 정보를 입력하십시오.
+      <ul>
+      <li><b>단계 ID</b><p>업데이트할 단계의 ID를 입력하거나 매핑합니다.</p></li>
+      <li><b>단계 이름</b><p>단계 이름을 입력하거나 매핑합니다.</p></li>
+      <li><b>기한 일자</b><p>기한이 특정 날짜인 경우 날짜를 입력하거나 매핑합니다.</p></li>
+      <li><b>마감까지 영업일</b><p>기한이 특정 영업일 수 이후인 경우 일 수를 입력하거나 매핑합니다.</p></li>
+      <li><b>사용자 정의 메시지</b><p>단계에 대한 사용자 지정 메시지를 입력하거나 매핑합니다.</p></li>
+      </ul>
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>단계 제거</p></td>
+      <td>제거할 각 단계에 대해 <b>항목 추가</b>를 클릭하고 단계 ID를 입력하십시오.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>제한</p></td>
+      <td>각 시나리오 실행 주기 동안 모듈에서 작업할 최대 결과 수를 입력하거나 매핑합니다.</td> 
+      </tr>
   </tbody>
 </table>
-
-BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Manage Stages on a Grouped Approval"), without field detail.
-
--->
 
 #### 스테이지의 참가자에게 알림
 
@@ -830,37 +951,73 @@ BECKY CHECK ME: confirm this module's field-level UI before publishing - the Sla
   </tbody>
 </table>
 
-<!--
+#### 그룹화 승인 업데이트(전체 상태)
 
-#### Update Grouped Approval (Full State)
-
-This action module replaces the full state of the specified grouped approval.
+이 작업 모듈은 전체 상태 업데이트를 그룹화된 승인에 적용합니다.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+      <td role="rowheader">연결</td>
+      <td>Adobe Workfront 통합 검토 및 승인에 대한 연결을 만드는 방법에 대한 지침은 이 문서의 <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront 통합 검토 및 승인에 연결</a>을 참조하십시오.</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>그룹화된 승인 ID</p></td>
+      <td>업데이트할 그룹화된 승인의 GUID를 입력하거나 매핑합니다. 예: <code>9f8b60820000462ecf66c409d1248fa9</code>.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>경로</p></td>
+      <td>그룹화된 승인을 받을 각 승인 경로에 대해 <b>항목 추가</b>를 클릭하고 경로 ID, 이름 및 단계를 입력하십시오. Fusion은 현재 상태와 비교하여 경로를 추가, 업데이트 및 제거하여 전송한 내용과 일치하도록 합니다. 각 경로에는 순서가 지정된 스테이지 시퀀스가 포함됩니다. 각 단계에 대해 단계 필드에서 <b>항목 추가</b>를 클릭하고 다음 데이터를 입력합니다.
+      <ul>
+      <li><b>단계 ID</b><p>모든 경로에서 고유한 단계에 대해 클라이언트가 할당한 식별자를 입력합니다. 영숫자이고 밑줄 또는 하이픈이 허용되며 64자 이하여야 합니다.</p></li>
+      <li><b>단계 이름</b><p>단계 이름을 입력하거나 매핑합니다.</p></li>
+      <li><b>상위 단계 ID</b><p>단계에 추가하려는 각 상위 단계에 대해 <b>항목 추가</b>를 클릭하고 상위 ID를 입력하십시오.</p></li>
+      <li><b>참가자</b><p>단계에 추가하려는 각 참가자에 대해 <b>항목 추가</b>를 클릭하고 참가자 세부 정보를 입력하십시오.
+      <ul>
+      <li><b>참가자 ID</b><p>참여자의 ID를 입력하거나 매핑합니다.</p></li>
+      <li><b>참가자 유형</b><p>참여자가 사용자인지 팀인지 선택합니다.</p></li>
+      <li><b>참가자 역할</b><p>참여자가 승인자인지 검토자인지 선택합니다.</p></li>
+      </ul>
+      </p></li>
+      <li><b>기한 일자</b><p>기한이 특정 날짜인 경우 날짜를 입력하거나 매핑합니다.</p></li>
+      <li><b>마감까지 영업일</b><p>기한이 특정 영업일 수 이후인 경우 일 수를 입력하거나 매핑합니다.</p></li>
+      <li><b>기한 시간: 시간</b><p>기한(0~23)의 시간을 입력하거나 매핑합니다. 기한 시간과 연결: 분.</p></li>
+      <li><b>기한 시간: 분</b><p>기한(0~59)의 분을 입력하거나 매핑합니다. 기한 시간과 연결: 시간.</p></li>
+      <li><b>사용자 정의 메시지</b><p>단계에 대한 사용자 지정 메시지를 입력하거나 매핑합니다.</p></li>
+      </ul>
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>자산</p></td>
+      <td>(선택 사항) 그룹에 포함할 각 문서 버전에 대해 <b>항목 추가</b>를 클릭하고 문서 버전(DOCV) ID를 입력하십시오. 이 필드를 생략하면 현재 에셋은 변경되지 않습니다.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>관념화 키</p></td>
+      <td>(선택 사항) 재시도 요청을 안전하게 만드는 클라이언트 제공 키(최대 128자)를 입력하거나 매핑합니다. 동일한 키를 다시 보내면 모듈이 업데이트를 두 번 적용하지 않습니다.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>제한</p></td>
+      <td>각 시나리오 실행 주기 동안 모듈에서 작업할 최대 결과 수를 입력하거나 매핑합니다.</td> 
+      </tr>
   </tbody>
 </table>
-
-BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Update Grouped Approval (Full State)"), without field detail.
-
--->
 
 ### 검색 결과
 
 * [템플릿 가져오기](#get-a-template)
 * [승인 세부 정보 가져오기](#get-approval-details)
+* [그룹화된 승인에서 승인 받기](#get-approvals-in-a-grouped-approval)
+* [그룹화된 승인 세부 정보 가져오기](#get-grouped-approval-details)
 * [여러 승인 받기](#get-multiple-approvals)
 * [제안된 승인 받기](#get-suggested-approvals)
 * [제안된 참가자 가져오기](#get-suggested-participants)
 * [보트 나열](#list-bots)
+* [상위 항목별로 그룹화된 승인 나열](#list-grouped-approvals-by-parent)
 * [목록 템플릿](#list-templates)
-* [AI 브랜드 검토자 검색](#search-ai-brand-reviews)
+* [AI 브랜드 리뷰 검색](#search-ai-brand-reviews)
+* [그룹화된 승인 검색](#search-grouped-approvals)
 
 
 #### 템플릿 가져오기
@@ -913,47 +1070,55 @@ BECKY CHECK ME: confirm this module's field-level UI before publishing - the Sla
   </tbody>
 </table>
 
-<!--
+#### 그룹화된 승인에서 승인 받기
 
-#### Get Approvals in a Grouped Approval
-
-This search module returns the individual approvals contained in a grouped approval.
+이 검색 모듈은 그룹화된 승인을 구성하는 개별 자산 승인을 반환합니다.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+      <td role="rowheader">연결</td>
+      <td>Adobe Workfront 통합 검토 및 승인에 대한 연결을 만드는 방법에 대한 지침은 이 문서의 <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront 통합 검토 및 승인에 연결</a>을 참조하십시오.</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>그룹 GUID</p></td>
+      <td>승인을 받을 그룹화된 승인의 GUID를 입력하거나 매핑합니다.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>문서 버전 데이터</p></td>
+      <td>Redrock documentVersion 레코드를 각 문서 버전(DOCV) 승인에 첨부할지 여부를 선택합니다. </td>
+      </tr>
+     <tr>
+      <td role="rowheader"><p>제한</p></td>
+      <td>각 시나리오 실행 주기 동안 모듈에서 작업할 최대 결과 수를 입력하거나 매핑합니다.</td> 
+      </tr>
   </tbody>
 </table>
 
-BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Get Approvals in a Grouped Approval"), without field detail.
+#### 그룹화된 승인 세부 정보 가져오기
 
--->
-
-<!--
-
-#### Get Grouped Approval Details
-
-This search module retrieves details for the specified grouped approval.
+이 검색 모듈은 GUID별로 그룹화된 승인을 반환합니다.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+      <td role="rowheader">연결</td>
+      <td>Adobe Workfront 통합 검토 및 승인에 대한 연결을 만드는 방법에 대한 지침은 이 문서의 <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront 통합 검토 및 승인에 연결</a>을 참조하십시오.</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>그룹 GUID</p></td>
+      <td>세부 정보를 가져올 그룹화된 승인의 GUID를 입력하거나 매핑합니다.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>제한</p></td>
+      <td>각 시나리오 실행 주기 동안 모듈에서 작업할 최대 결과 수를 입력하거나 매핑합니다.</td> 
+      </tr>
   </tbody>
 </table>
-
-BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Get Grouped Approval Details"), without field detail.
-
--->
 
 #### 여러 승인 받기
 
@@ -1063,26 +1228,32 @@ BECKY CHECK ME: confirm this module's field-level UI before publishing - the Sla
   </tbody>
 </table>
 
-<!--
+#### 상위 항목별로 그룹화된 승인 나열
 
-#### List Grouped Approvals by Parent
-
-This search module returns a list of grouped approvals for the specified parent.
+이 검색 모듈은 Workfront 상위 개체와 연결된 그룹화된 승인을 반환합니다.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+      <td role="rowheader">연결</td>
+      <td>Adobe Workfront 통합 검토 및 승인에 대한 연결을 만드는 방법에 대한 지침은 이 문서의 <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront 통합 검토 및 승인에 연결</a>을 참조하십시오.</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>상위 ID</p></td>
+      <td>그룹화된 승인을 받을 Workfront 상위 개체(예: 프로젝트 또는 작업)의 ID를 입력하거나 매핑합니다.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>개체 코드</p></td>
+      <td>(선택 사항) 부모 개체에 대한 Workfront 개체 유형 코드를 입력하거나 매핑합니다(예: <code>PROJ</code> 또는 <code>TASK</code>).</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>제한</p></td>
+      <td>각 시나리오 실행 주기 동안 모듈에서 작업할 최대 결과 수를 입력하거나 매핑합니다.</td> 
+      </tr>
   </tbody>
 </table>
-
-BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("List Grouped Approvals by Parent"), without field detail.
-
--->
 
 #### 목록 템플릿
 
@@ -1144,26 +1315,42 @@ BECKY CHECK ME: confirm this module's field-level UI before publishing - the Sla
   </tbody>
 </table>
 
-<!--
+#### 그룹화된 승인 검색
 
-#### Search Grouped Approvals
-
-This search module searches for grouped approvals matching the specified criteria.
+이 검색 모듈은 명명된 보기를 사용하여 그룹화된 승인을 검색합니다.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+      <td role="rowheader">연결</td>
+      <td>Adobe Workfront 통합 검토 및 승인에 대한 연결을 만드는 방법에 대한 지침은 이 문서의 <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront 통합 검토 및 승인에 연결</a>을 참조하십시오.</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>보기</p></td>
+      <td>(선택 사항) 응답의 모양을 결정하는 명명된 보기를 선택하거나 매핑합니다. 현재 대기 중인 승인만 지원됩니다.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>제한</p></td>
+      <td>(선택 사항) 결과의 첫 페이지에 대한 페이지 크기를 입력하거나 매핑합니다. 최대값은 100이고 기본값은 20입니다.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>커서</p></td>
+      <td>(선택 사항) 이전 응답의 불투명 커서를 입력하거나 매핑하여 다음 결과 페이지를 가져옵니다. 커서를 제공하면 모듈은 제한 필드를 무시합니다.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>팀 ID</p></td>
+      <td>(선택 사항) 그룹화된 승인을 일치시키려는 각 팀에 대해 <b>항목 추가</b>를 클릭하고 팀 ID를 입력합니다.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>제한</p></td>
+      <td>각 시나리오 실행 주기 동안 모듈에서 작업할 최대 결과 수를 입력하거나 매핑합니다.</td> 
+      </tr>
   </tbody>
 </table>
 
-BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Search Grouped Approvals"), without field detail.
-
--->
+<!-- BECKY CHECK ME: the screenshot shows two separate fields both labeled "Limit" - an optional pagination page-size field (max 100, default 20, ignored if Cursor is set) and a required general execution-cycle limit, matching the Limit field used in every other module in this article. Confirm this isn't a UI labeling issue before publishing, and that both rows are needed/correctly distinguished. -->
 
 ### 기타
 
@@ -1284,4 +1471,3 @@ BECKY CHECK ME: confirm this module's field-level UI before publishing - the Sla
       <td>단계에 대한 사용자 지정 메시지를 입력하거나 매핑합니다.</td> 
       </tr>
 </table>
-

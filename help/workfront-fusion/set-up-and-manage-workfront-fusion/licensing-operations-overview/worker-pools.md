@@ -3,13 +3,12 @@ title: 작업자 풀
 description: 작업자 풀은 하나 이상의 특정 조직에 전용되는 Workfront Fusion 처리 리소스의 수량입니다. 모든 Fusion 작업 및 처리는 조직의 할당된 작업자 풀 컨텍스트에서 발생합니다.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: bb94083eb9f58dc3ae9f94a59288da43317b567b
+exl-id: 8bf508a8-d1f9-455f-af89-62f688289137
+source-git-commit: b95974d19c3dcb2fea0d6323c2b747665216a2e7
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '219'
 ht-degree: 0%
-
 ---
-
 # 작업자 풀
 
 작업자 풀은 특정 조직에 전용으로 사용되는 Workfront Fusion 처리 리소스의 수량입니다. 모든 Fusion 작업 및 처리는 조직의 할당된 작업자 풀 컨텍스트에서 발생합니다.

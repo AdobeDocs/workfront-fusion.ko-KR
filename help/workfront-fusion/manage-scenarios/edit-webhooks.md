@@ -3,13 +3,12 @@ title: 웹후크 편집
 description: Workfront 및 Workfront Planning 커넥터에 대한 기존 웹후크를 편집할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 2561c911b9b542a7b143fae745baf4e1de45be38
+exl-id: 86849d21-5a74-43f7-9ccf-dff4421cc981
+source-git-commit: 25ba44b8ab1aab8ad6e2d6a989f55366d48a0575
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 4%
-
 ---
-
 # 웹후크 편집
 
 기존 웹후크를 편집할 수 있습니다. 이러한 웹후크를 사용하는 시나리오에서는 앞으로 새 구성을 사용하게 되므로 웹후크를 새로 만들어 영향을 받는 모든 시나리오에 수동으로 할당할 필요가 없습니다.
@@ -51,4 +50,3 @@ ht-degree: 4%
 1. 화면 하단의 파란색 배너에서 **편집**&#x200B;을 클릭합니다.
 1. 웹후크를 원하는 대로 편집합니다.
 1. 웹후크를 저장하고 웹후크 목록으로 돌아가려면 **저장**&#x200B;을 클릭합니다.
-

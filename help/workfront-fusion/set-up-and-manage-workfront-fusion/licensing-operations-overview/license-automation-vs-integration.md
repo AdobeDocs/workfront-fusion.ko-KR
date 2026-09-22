@@ -7,16 +7,21 @@ exl-id: 6e2df1a0-c1f9-4833-b1c2-65efb3be9657
 TQID: https://experienceleague.adobe.com/t3FcOEcjniaGfX9Ag25kYrcU6-2LKwaIdnRojHRpI5Q
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+source-git-commit: ed2fc06e4c43fe84b5f88792cc24115468059431
 workflow-type: tm+mt
-source-wordcount: 767
-ht-degree: 2%
-
+source-wordcount: '801'
+ht-degree: 3%
 ---
-
 # Adobe Workfront Fusion 라이선스
 
 Workfront Fusion에는 두 개의 라이선스 모델, 새로운 작업 기반 모델 및 레거시 커넥터 기반 모델이 있습니다.
+
+>[!NOTE]
+>
+>Workfront Fusion 시나리오의 대용량 파일 지원은 조직에서 사용하는 Fusion 라이선스 모델에 관계없이 Workfront Ultimate 패키지를 사용하는 조직만 사용할 수 있습니다.
+>
+>자세한 내용은 [대용량 파일 작업](/help/workfront-fusion/references/scenarios/fusion-large-files.md)을 참조하십시오.
 
 ## 운영 기반 라이센스 모델(신규)
 
@@ -60,14 +65,14 @@ Workfront Fusion for Work Automation 라이센스를 사용하면 다음에 액�
 * 웹후크
 * 다음과 같은 도구 및 변환기 모듈
 
-   * 보관
-   * CSV
-   * 데이터 저장소
-   * 이미지
-   * JSON
-   * 수학
-   * MIME
-   * XML
+  * 보관
+  * CSV
+  * 데이터 저장소
+  * 이미지
+  * JSON
+  * 수학
+  * MIME
+  * XML
 
 #### 작업 자동화를 위한 Workfront Fusion의 예
 

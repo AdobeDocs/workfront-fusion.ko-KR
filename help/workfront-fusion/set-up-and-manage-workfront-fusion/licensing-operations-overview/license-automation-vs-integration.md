@@ -8,9 +8,9 @@ TQID: https://experienceleague.adobe.com/t3FcOEcjniaGfX9Ag25kYrcU6-2LKwaIdnRojHR
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
-source-git-commit: 1feb4fce42c7759ca8fc91d4270dd00c0a59da24
+source-git-commit: ed2fc06e4c43fe84b5f88792cc24115468059431
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '801'
 ht-degree: 3%
 ---
 # Adobe Workfront Fusion 라이선스
@@ -19,7 +19,7 @@ Workfront Fusion에는 두 개의 라이선스 모델, 새로운 작업 기반 �
 
 >[!NOTE]
 >
->Workfront Fusion 시나리오의 대용량 파일 지원은 사용하는 Fusion 라이선스 모델에 관계없이 Workfront Ultimate 패키지의 조직만 사용할 수 있습니다.
+>Workfront Fusion 시나리오의 대용량 파일 지원은 조직에서 사용하는 Fusion 라이선스 모델에 관계없이 Workfront Ultimate 패키지를 사용하는 조직만 사용할 수 있습니다.
 >
 >자세한 내용은 [대용량 파일 작업](/help/workfront-fusion/references/scenarios/fusion-large-files.md)을 참조하십시오.
 

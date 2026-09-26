@@ -1,19 +1,21 @@
 ---
 title: 조직 역할
-description: 이 문서에는  [!DNL Adobe] Workfront Fusion의 역할에 대한 액세스 및 권한 정보가 포함되어 있습니다.
+description: 이 문서에는 [!DNL Adobe] Workfront Fusion의 역할에 대한 액세스 및 권한 정보가 포함되어 있습니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: 92f3bb09-0b66-45cd-84ef-88b2aa246be1
-TQID: https://experienceleague.adobe.com/r2AIAgWN-yH4OMHGhjyURrg58H1gJg-o6-QfeIvax7s
+TQID: 'https://experienceleague.adobe.com/r2AIAgWN-yH4OMHGhjyURrg58H1gJg-o6-QfeIvax7s'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 286
+source-wordcount: '287'
 ht-degree: 5%
-
 ---
-
 # 조직 및 팀 역할
 
 이 문서에서는 Workfront Fusion의 다양한 팀 및 조직 역할이 사용할 수 있는 액세스 및 기능에 대해 설명합니다.

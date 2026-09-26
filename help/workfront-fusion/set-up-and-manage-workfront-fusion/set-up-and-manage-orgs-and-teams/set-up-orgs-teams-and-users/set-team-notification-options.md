@@ -4,16 +4,18 @@ description: 이메일 알림 옵션은 팀 수준에서 설정됩니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: 570a09fc-01a9-4952-8a2b-8bfdd86d0bd8
-TQID: https://experienceleague.adobe.com/-HytP4gfrhiiSn-dg5ndg1YC6NTMC-NURYzSFgO5kIo
+TQID: 'https://experienceleague.adobe.com/-HytP4gfrhiiSn-dg5ndg1YC6NTMC-NURYzSFgO5kIo'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 90a58033e240271b88d01b9daef9763f38264056
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 665
+source-wordcount: '665'
 ht-degree: 13%
-
 ---
-
 # 알림 옵션 설정
 
 조직에서 Adobe 통합 쉘을 사용하는 경우 Adobe 알림 영역을 통해 알림을 받습니다.
@@ -32,7 +34,7 @@ ht-degree: 13%
 
 >[!IMPORTANT]
 >
->Workfront Fusion에서 알림을 받으려면 Adobe CX 엔터프라이즈 알림 설정에 Fusion 알림이 활성화되어 있어야 합니다. 화면 오른쪽 상단에 있는 알림 벨을 클릭하고 설정 아이콘을 클릭하여 이러한 설정에 액세스할 수 있습니다.
+>Workfront Fusion에서 알림을 받으려면 Adobe CX Enterprise 알림 설정에 Fusion 알림이 활성화되어 있어야 합니다. 화면 오른쪽 상단에 있는 알림 벨을 클릭하고 설정 아이콘을 클릭하여 이러한 설정에 액세스할 수 있습니다.
 
 ## 액세스 요구 사항
 

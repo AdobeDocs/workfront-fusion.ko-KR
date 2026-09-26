@@ -6,16 +6,23 @@ draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 90659af3-622c-4685-ae09-f117ea81db7d
-TQID: https://experienceleague.adobe.com/GQYrt3ccA6X27E640eW858TtaXa-hcTZbTGSqIRcQuY
+TQID: 'https://experienceleague.adobe.com/GQYrt3ccA6X27E640eW858TtaXa-hcTZbTGSqIRcQuY'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+  - id: d968a1bc-9a90-4926-a531-bcf272c32aad
+    internal-label: Administration
+subfeature_v2:
+  - id: a29813d3-f0cc-4b60-9396-13b558370803
+    internal-label: Product announcements
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 235
+source-wordcount: '235'
 ht-degree: 34%
-
 ---
-
 # Workfront Fusion 릴리스 활동: 2021년 8월 2일 주간
 
 이 페이지에서는 2021년 8월 2일 화요일이 있는 주에 Adobe Workfront Fusion에서 이루어진 모든 개선 사항을 설명합니다.
@@ -39,5 +46,5 @@ Workfront Fusion의 최근 버그 수정 목록을 보려면 [Workfront 유지 �
 
   이 함수는 2개의 배열을 사용하고 새 배열을 반환합니다. 모듈이 반환하는 새 배열의 유형을 선택할 수 있습니다.
 
-   * 다른 배열에 포함되지 않은 한 배열의 요소 배열
-   * 한 배열 또는 다른 배열에 포함되어 있지만 둘 다 포함되지는 않는 요소의 배열입니다.
+  * 다른 배열에 포함되지 않은 한 배열의 요소 배열
+  * 한 배열 또는 다른 배열에 포함되어 있지만 둘 다 포함되지는 않는 요소의 배열입니다.

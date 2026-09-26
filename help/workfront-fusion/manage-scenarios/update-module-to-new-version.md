@@ -4,16 +4,18 @@ description: Workfront Fusion이 연결되는 애플리케이션은 새 버전�
 author: Becky
 feature: Workfront Fusion
 exl-id: b7f07fa5-9d81-48b3-b0ce-7a18b3b44508
-TQID: https://experienceleague.adobe.com/UZ0f1dI1YPiM9C7dYJYyCg0dhd5F025yG10K5-M5YrM
+TQID: 'https://experienceleague.adobe.com/UZ0f1dI1YPiM9C7dYJYyCg0dhd5F025yG10K5-M5YrM'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 373
+source-wordcount: '373'
 ht-degree: 27%
-
 ---
-
 # 모듈을 새 버전으로 업그레이드
 
 Workfront Fusion이 연결되는 애플리케이션은 새 버전을 업데이트하거나 릴리스할 수 있으므로 Fusion에서 해당 애플리케이션에 대해 업데이트된 모듈을 릴리스해야 하는 경우가 있습니다.

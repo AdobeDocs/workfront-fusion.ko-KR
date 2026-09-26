@@ -4,16 +4,18 @@ description: 많은 서비스는 서비스에서 특정 변경 사항이 발생�
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-TQID: https://experienceleague.adobe.com/-z2vSjTR1JJTQl--BHM23CbnlaN9TSS6puFTzqLRAEk
+TQID: 'https://experienceleague.adobe.com/-z2vSjTR1JJTQl--BHM23CbnlaN9TSS6puFTzqLRAEk'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 99a5a892469814f450832dbc4f137fb2c5aa71ee
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1300
+source-wordcount: '1322'
 ht-degree: 9%
-
 ---
-
 # 즉시 트리거(웹후크)
 
 많은 서비스는 서비스에서 특정 변경(이벤트)이 발생할 때마다 즉각적인 알림을 전달하기 위해 웹후크를 제공합니다. 이러한 이벤트를 처리하려면 인스턴트 트리거를 사용하는 것이 좋습니다. 인스턴스 트리거는 지정된 커넥터의 모듈 목록에 `Instant` 태그를 표시합니다.

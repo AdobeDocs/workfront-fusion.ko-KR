@@ -4,16 +4,18 @@ description: Adobe Workfront Fusion 계정 프로필에서 정보를 변경할 �
 author: Becky
 feature: Workfront Fusion
 exl-id: f7d561d8-5189-4c7a-811d-8a2509638f75
-TQID: https://experienceleague.adobe.com/dlFklcRo1ODRq60yjf99cnSoR6wZ06nxGFZx37Av0xA
+TQID: 'https://experienceleague.adobe.com/dlFklcRo1ODRq60yjf99cnSoR6wZ06nxGFZx37Av0xA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 181
+source-wordcount: '181'
 ht-degree: 54%
-
 ---
-
 # 프로필 설정 변경
 
 Adobe Workfront Fusion 계정 프로필에서 정보를 변경할 수 있습니다.
@@ -56,4 +58,4 @@ Adobe Workfront Fusion 계정 프로필에서 정보를 변경할 수 있습니�
 * [!DNL Adobe Experience Cloud]에 대해 **[!UICONTROL 어두운 테마]** 서식을 선택하세요.
 * 기본 및 보조 언어 기본 설정을 포함하여 [!DNL Adobe Experience Cloud]에 대해 **[!UICONTROL 기본 설정]**&#x200B;을 설정합니다.
 * **[!UICONTROL Workfront 프로필]**&#x200B;에 액세스합니다. 프로필에 올라간 후에는 **[!UICONTROL 기타]** 메뉴를 클릭하고 **[!UICONTROL 편집]**&#x200B;을 선택하세요.
-* Adobe Experience Cloud **[!UICONTROL 로그아웃]**
+* Adobe Experience Cloud **[!UICONTROL 로그아웃]**.

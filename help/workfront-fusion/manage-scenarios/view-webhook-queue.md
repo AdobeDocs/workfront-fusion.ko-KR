@@ -4,16 +4,18 @@ description: '많은 서비스는 서비스에서 특정 변경 사항이 발생
 author: Becky
 feature: Workfront Fusion
 exl-id: 04aed0cb-e837-4c81-8eb1-113075d2ada8
-TQID: https://experienceleague.adobe.com/FtTjoNtYNM9kuPDMaHa4883m13pLO2MRat5ohnjXuAM
+TQID: 'https://experienceleague.adobe.com/FtTjoNtYNM9kuPDMaHa4883m13pLO2MRat5ohnjXuAM'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 331
+source-wordcount: '331'
 ht-degree: 29%
-
 ---
-
 # 웹후크의 대기열 보기
 
 많은 서비스는 서비스에서 특정 변경 사항이 발생할 때마다 즉시 알림을 전송할 수 있도록 웹후크를 제공합니다. Webhooks라고도 하는 인스턴스 트리거는 이러한 이벤트를 사용하여 시나리오를 시작할 수 있습니다. 이벤트가 처리를 기다리는 동안(예: 시나리오가 이미 실행 중인 경우) 웹후크의 대기열로 이동합니다. 웹후크의 큐를 볼 수 있습니다.

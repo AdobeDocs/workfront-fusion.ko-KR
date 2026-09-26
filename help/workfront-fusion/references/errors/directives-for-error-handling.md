@@ -5,18 +5,21 @@ description: 이 문서에서는 Adobe Workfront Fusion 시나리오에서 오�
 author: Becky
 feature: Workfront Fusion
 exl-id: d7b0141f-d99d-4ab7-a60f-ed552a76f05d
-TQID: https://experienceleague.adobe.com/4vL9oj7UXeRWQuSzDZP7GJU30oHUg1m75gWGVUkfCfA
+TQID: 'https://experienceleague.adobe.com/4vL9oj7UXeRWQuSzDZP7GJU30oHUg1m75gWGVUkfCfA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: e6873ab923b73175d1889b44df5d7c1baf9d42fb
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 529
+source-wordcount: '529'
 ht-degree: 34%
-
 ---
-
 # 오류 처리를 위한 지시문
 
 오류 처리 지시문을 사용하면 시나리오에 오류가 발생할 때 발생하는 작업을 선택할 수 있습니다.

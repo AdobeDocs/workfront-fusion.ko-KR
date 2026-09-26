@@ -4,16 +4,18 @@ description: 대부분의 앱에서는 특정 시나리오의 설정에 따라 A
 author: Becky
 feature: Workfront Fusion
 exl-id: 01132df7-4cc0-4ff3-b4d7-607a06558735
-TQID: https://experienceleague.adobe.com/WPX-TdEbhwv4bArOp6xwhVFZTmdHznLg4CMiZDeV70s
+TQID: 'https://experienceleague.adobe.com/WPX-TdEbhwv4bArOp6xwhVFZTmdHznLg4CMiZDeV70s'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 318
+source-wordcount: '318'
 ht-degree: 100%
-
 ---
-
 # 연결 개요
 
 Workfront Fusion은 대부분의 애플리케이션에 연결이 필요합니다.  이 연결을 사용하여 지정된 제3자 서비스와 통신합니다.

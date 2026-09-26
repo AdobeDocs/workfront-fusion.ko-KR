@@ -4,20 +4,25 @@ description: FTP 모듈을 사용하면 선택한 폴더의 파일 변경 사항
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e14f778-ab8c-421f-a4b4-c57be66c7cad
-TQID: https://experienceleague.adobe.com/gEM0-dJD4FYvu9TFvxoDtriimtlk001zevih7KnhKJE
+TQID: 'https://experienceleague.adobe.com/gEM0-dJD4FYvu9TFvxoDtriimtlk001zevih7KnhKJE'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Security
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1406
+source-wordcount: '1406'
 ht-degree: 15%
-
 ---
-
 # FTP 모듈
 
 FTP 모듈을 사용하면 선택한 폴더의 파일 변경 사항을 모니터링하고, 새 파일을 원하는 폴더에 업로드하고, 폴더에 이미 있는 기존 파일을 수정하거나 삭제할 수 있습니다.
@@ -191,7 +196,7 @@ FTP 모듈을 사용하려면 FTP 서비스가 있는 계정이 있어야 합니
             <td>[!UICONTROL 권한]</td>
             <td>
                <p>원하는 파일 또는 폴더 권한을 설정합니다. chmod 매개 변수를 사용합니다. 예: <code>777 </code> 또는 <code>-rwxrwxrwx</code>.</p>
-               <p>사용 권한은 <code> /(.?([r-][w-][x-]){3})|[0-7]{3,4}/</code> 패턴과 일치해야 합니다.</p>
+               <p>사용 권한은 <code> /(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3,4}/</code> 패턴과 일치해야 합니다.</p>
             </td>
          </tr>
    </tbody>

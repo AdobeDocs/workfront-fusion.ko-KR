@@ -4,13 +4,17 @@ description: 항목을 매핑할 때 함수를 사용하여 간단하거나 복�
 author: Becky
 feature: Workfront Fusion
 exl-id: dc4e697a-a65c-48bc-99de-8e26fbeb7ba7
-source-git-commit: 314c4535a5ef14794458f40002a53ee529c1a4b6
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 15%
-
 ---
-
 # 사용자 정의 함수를 사용하여 데이터 매핑
 
 Fusion의 [함수] 영역에서 사용자 정의 함수를 만들 수 있습니다. 그런 다음 이러한 함수를 Adobe App Builder 모듈 형태로 시나리오에 추가합니다.

@@ -4,16 +4,18 @@ description: 이 문서에서는 시나리오에 모듈을 추가하는 기본 �
 author: Becky
 feature: Workfront Fusion
 exl-id: f3757468-3e11-4862-a83e-ed447805545b
-TQID: https://experienceleague.adobe.com/R2JCX7aaYzmYHgiLqj1WDlVFHI-s-qanltoOrycQ5JU
+TQID: 'https://experienceleague.adobe.com/R2JCX7aaYzmYHgiLqj1WDlVFHI-s-qanltoOrycQ5JU'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 684
+source-wordcount: '684'
 ht-degree: 18%
-
 ---
-
 # 시나리오에 모듈 추가
 
 시나리오는 앱 내에서 데이터를 변환하거나 앱과 웹 서비스 간에 전송하는 방법을 나타내는 일련의 모듈로 구성됩니다. 모듈을 추가하고 구성하여 모듈을 빌드합니다.

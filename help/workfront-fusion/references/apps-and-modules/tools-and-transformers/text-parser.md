@@ -4,19 +4,28 @@ description: 텍스트 파서 도구를 사용하여 다른 Adobe Workfront Fusi
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-TQID: https://experienceleague.adobe.com/0hUSiU9zD2vHGXsZkhcfuKYQJrdP6CAjjwEn06CDLNM
+TQID: 'https://experienceleague.adobe.com/0hUSiU9zD2vHGXsZkhcfuKYQJrdP6CAjjwEn06CDLNM'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+  - id: e14a7f57-c82c-4874-a495-5d036cbbdc3d
+    internal-label: Resource management
+subfeature_v2:
+  - id: b70a979b-965d-47a9-a360-e7ec2a19b8c1
+    internal-label: Digital content and documents
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Troubleshooting
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1324
+source-wordcount: '1324'
 ht-degree: 11%
-
 ---
-
 # [!UICONTROL 텍스트 구문 분석기]
 
 [!UICONTROL 텍스트 파서 도구]를 사용하여 다른 Adobe Workfront Fusion 시나리오 모듈에서 사용할 텍스트를 구문 분석할 수 있습니다. [!UICONTROL 텍스트 구문 분석기]에는 연결이 필요하지 않습니다.
@@ -173,7 +182,7 @@ HTML 코드에서 원하는 요소를 검색합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Pattern] </td> 
-   <td> <p>정규 표현식 패턴을 입력합니다. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>예: </b></span></span> <code>[+-]?(\d+(\.\d+)?|\.\d+)([eE][+-]?\d+)?</code>은(는) 제공된 텍스트에서 모든 숫자를 추출합니다.</p> <p>메모:  <p>패턴은 괄호 <code>()</code>에 캡처 그룹을 하나 이상 포함해야 합니다. 패턴에 캡처 그룹이 없으면 출력 번들은 비어 있습니다.</p> </p> </td> 
+   <td> <p>정규 표현식 패턴을 입력합니다. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>예: </b></span></span> <code>[+-]?(\d+(\.\d+)?|\.\d+)([eE]&#x200B;[+-]?\d+)?</code>은(는) 제공된 텍스트에서 모든 숫자를 추출합니다.</p> <p>메모:  <p>패턴은 괄호 <code>()</code>에 캡처 그룹을 하나 이상 포함해야 합니다. 패턴에 캡처 그룹이 없으면 출력 번들은 비어 있습니다.</p> </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 전역 일치]</td> 

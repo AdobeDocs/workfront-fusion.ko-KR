@@ -1,21 +1,24 @@
 ---
 title: Google Team Drive 모듈
-description: ' [!DNL Adobe Workfront Fusion Google Team Drive] 모듈을 사용하면  [!DNL Google Shared] 드라이브에서 파일을 모니터링, 업로드, 업데이트, 복사, 삭제 또는 검색하고 폴더를 만들 수 있습니다.'
+description: '[!DNL Adobe Workfront Fusion Google Team Drive] 모듈을 사용하면 파일을 모니터링, 업로드, 업데이트, 복사, 삭제 또는 검색하고 [!DNL Google Shared] 드라이브에서 폴더를 만들 수 있습니다.'
 author: Becky
 feature: Workfront Fusion
 exl-id: 95dd9d23-1df9-40da-8fd0-646cc697bfc8
-TQID: https://experienceleague.adobe.com/NRXOXLNBdwj3Xxf1SiHHyQ-6-DkqYGFexJnyoseVjpk
+TQID: 'https://experienceleague.adobe.com/NRXOXLNBdwj3Xxf1SiHHyQ-6-DkqYGFexJnyoseVjpk'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1384
+source-wordcount: '1386'
 ht-degree: 24%
-
 ---
-
 # [!DNL Google Team Drive] 모듈
 
 Adobe Workfront Fusion [!DNL Google Team Drive] 모듈을 사용하면 파일을 모니터링, 업로드, 업데이트, 복사, 삭제 또는 검색하고 [!DNL Google Shared Drive]에서 폴더를 만들 수 있습니다.

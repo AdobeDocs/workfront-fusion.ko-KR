@@ -4,16 +4,18 @@ description: 시나리오를 만들려면 이 일반 워크플로를 따르십�
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-TQID: https://experienceleague.adobe.com/5j4My9ds8RdA3frEKdRHBFiWpQr-6fI0DfVyWSIgBPc
+TQID: 'https://experienceleague.adobe.com/5j4My9ds8RdA3frEKdRHBFiWpQr-6fI0DfVyWSIgBPc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 782
+source-wordcount: '782'
 ht-degree: 3%
-
 ---
-
 # 시나리오 만들기 워크플로
 
 시나리오는 사용 사례를 처리하는 애플리케이션 및 모듈을 통해 조직의 요구 사항을 충족하도록 구축됩니다. 그러나 시나리오를 만드는 것은 사용 사례에 관계없이 동일한 기본 워크플로우를 따릅니다. 이 문서에서는 시나리오를 만드는 기본 프로세스에 대해 설명합니다.

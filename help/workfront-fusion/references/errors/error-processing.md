@@ -5,20 +5,23 @@ description: 시나리오를 실행하는 동안 오류가 발생하는 경우�
 author: Becky
 feature: Workfront Fusion
 exl-id: abf5f844-d13b-416e-a8b8-2d4ee1786262
-TQID: https://experienceleague.adobe.com/t5chLg0xd7CSUyitvH-NCc-YUbMAEXu111sU497Uspc
+TQID: 'https://experienceleague.adobe.com/t5chLg0xd7CSUyitvH-NCc-YUbMAEXu111sU497Uspc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: d968a1bc-9a90-4926-a531-bcf272c32aad
+    internal-label: Administration
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Administration
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1214
+source-wordcount: '1227'
 ht-degree: 8%
-
 ---
-
 # 오류 유형
 
 시나리오를 실행하는 동안 오류가 발생하는 경우가 있습니다. 이 문제는 일반적으로 서비스에 연결하지 못해서 서비스를 사용할 수 없거나 유효성 검사가 실패하면 발생합니다.
@@ -63,10 +66,10 @@ Adobe Workfront Fusion은 몇 가지 기본 오류 유형을 구별합니다. �
 * 첫 번째 모듈에서 오류가 발생하면 경고 메시지와 함께 시나리오 실행이 종료된다. 그런 다음 Workfront Fusion은 시간 간격을 늘려 시나리오를 다시 실행하려고 반복적으로 시도합니다. 모든 시도가 실패하면 Workfront Fusion은 시나리오를 비활성화합니다.
 * 첫 번째 모듈이 아닌 다른 모듈에서 연결 오류가 발생하는 경우 후속 단계는 시나리오 고급 설정의 불완전 실행 저장 허용 옵션에 따라 다릅니다.
 
-   * 이 옵션을 사용하면 시나리오 실행이 [!UICONTROL 불완전한 실행] 폴더로 이동됩니다. 여기서 Workfront Fusion은 시간 간격을 늘려 시나리오를 다시 실행하려고 반복적으로 시도합니다. 모든 시도가 실패하면, 사용자의 수동 해결을 기다리는 미완료 실행 폴더에 실행이 유지됩니다.
+  * 이 옵션을 사용하면 시나리오 실행이 [!UICONTROL 불완전한 실행] 폴더로 이동됩니다. 여기서 Workfront Fusion은 시간 간격을 늘려 시나리오를 다시 실행하려고 반복적으로 시도합니다. 모든 시도가 실패하면, 사용자의 수동 해결을 기다리는 미완료 실행 폴더에 실행이 유지됩니다.
 
-     불완전한 실행에 대한 자세한 내용은 [불완전한 실행 보기 및 해결](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)을 참조하십시오.
-   * 이 옵션이 비활성화되면 오류 발생 후 롤백 단계가 발생하여 시나리오 실행이 종료됩니다. 그런 다음 Workfront Fusion은 시간 간격을 늘려 시나리오를 다시 실행하려고 반복적으로 시도합니다. 모든 시도가 실패하면 Workfront Fusion은 시나리오를 비활성화합니다.
+    불완전한 실행에 대한 자세한 내용은 [불완전한 실행 보기 및 해결](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)을 참조하십시오.
+  * 이 옵션이 비활성화되면 오류 발생 후 롤백 단계가 발생하여 시나리오 실행이 종료됩니다. 그런 다음 Workfront Fusion은 시간 간격을 늘려 시나리오를 다시 실행하려고 반복적으로 시도합니다. 모든 시도가 실패하면 Workfront Fusion은 시나리오를 비활성화합니다.
 
   불완전 실행 저장 허용 설정에 대한 자세한 내용은 시나리오 설정 구성 문서에서 [불완전 실행 저장 허용](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions)을 참조하십시오.
 

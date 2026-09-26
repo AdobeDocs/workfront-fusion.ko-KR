@@ -4,16 +4,18 @@ description: 대부분의 Adobe Workfront Fusion 커넥터는 연결을 만들 �
 author: Becky
 feature: Workfront Fusion
 exl-id: e47ab4d9-6612-4d9a-a024-da508a8bbfb2
-TQID: https://experienceleague.adobe.com/7wmBBiCK-UBhGs4HvQWu2JbUgBu-5SfVI9yLNCp-2mE
+TQID: 'https://experienceleague.adobe.com/7wmBBiCK-UBhGs4HvQWu2JbUgBu-5SfVI9yLNCp-2mE'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 577
+source-wordcount: '577'
 ht-degree: 20%
-
 ---
-
 # 연결하기 - 기본 지침
 
 대부분의 Adobe Workfront Fusion 커넥터는 연결을 만들 때 사용자 지정 구성이 필요하지 않습니다. 이 문서에서는 기본 연결 생성 프로세스에 대해 설명합니다.

@@ -5,24 +5,30 @@ author: Becky
 feature: System Setup and Administration
 role: Admin
 exl-id: 823aa376-fbfe-4750-82dc-4f34224c1a48
-TQID: https://experienceleague.adobe.com/DtdOS-HFHhcq5lm8LTtc9gdVGgDwtg9tfh9shZPwNDs
+TQID: 'https://experienceleague.adobe.com/DtdOS-HFHhcq5lm8LTtc9gdVGgDwtg9tfh9shZPwNDs'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: d968a1bc-9a90-4926-a531-bcf272c32aad
+    internal-label: Administration
+  - id: d5896d07-2812-5418-8b18-8957a0d7f0fb
+    internal-label: System Setup and Administration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Administration
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 694
+source-wordcount: '694'
 ht-degree: 2%
-
 ---
-
 # 설명서의 액세스 요구 사항
 
 Adobe Workfront Fusion 설명서 방법 문서에는 해당 절차에 필요한 액세스 및 권한 요구 사항을 설명하는 표가 포함되어 있습니다. 이 액세스 요구 사항 테이블을 사용하면 Fusion에서 특정 작업을 수행할 수 있는지 여부 또는 수행할 수 없는 이유를 이해할 수 있습니다. 이 문서에서는 액세스 요구 사항 테이블의 각 요소에 대해 설명하고, 문제 해결 팁과 보다 심층적인 정보에 대한 링크를 제공합니다.

@@ -4,18 +4,21 @@ description: Adobe Workfront Fusion HTTP 앱은 HTTP(Hypertext Transfer Protocol
 author: Becky
 feature: Workfront Fusion
 exl-id: 7db97e6e-262d-4be2-823b-423f56a7d886
-TQID: https://experienceleague.adobe.com/OMMUuYStE-zaML4-bBkPQmq9jTprC-GKYx-yt3tiFzQ
+TQID: 'https://experienceleague.adobe.com/OMMUuYStE-zaML4-bBkPQmq9jTprC-GKYx-yt3tiFzQ'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 633
+source-wordcount: '633'
 ht-degree: 24%
-
 ---
-
 # HTTP > 기타 모듈
 
 Adobe Workfront Fusion [!UICONTROL HTTP] 앱은 HTTP(Hypertext Transfer Protocol) 프로토콜을 기반으로 통신을 위한 다양한 모듈을 제공합니다. HTTP는 World Wide Web을 위한 데이터 통신의 기초입니다. 모듈을 사용하여 웹 페이지 및 파일을 다운로드하고, 웹후크 및 API 엔드포인트를 호출하는 등의 작업을 수행할 수 있습니다.

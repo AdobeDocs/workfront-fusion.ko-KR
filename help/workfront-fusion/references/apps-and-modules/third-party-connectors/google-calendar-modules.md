@@ -4,20 +4,23 @@ description: Adobe Workfront Fusion 시나리오에서는 Google Calendar를 사
 author: Becky
 feature: Workfront Fusion
 exl-id: 6e514204-cd8e-4f30-bbbb-b8fbe48fc670
-TQID: https://experienceleague.adobe.com/Odm53LiZwpv6l-WOLmsvwAdCG1WeyN3CAJfI38o4lXc
+TQID: 'https://experienceleague.adobe.com/Odm53LiZwpv6l-WOLmsvwAdCG1WeyN3CAJfI38o4lXc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+    internal-label: APIs
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 2719
+source-wordcount: '2719'
 ht-degree: 15%
-
 ---
-
 # [!DNL Google Calendar] 모듈
 
 Adobe Workfront Fusion 시나리오에서는 [!UICONTROL Google 달력]을 사용하는 워크플로를 자동화하고 여러 타사 응용 프로그램 및 서비스에 연결할 수 있습니다.

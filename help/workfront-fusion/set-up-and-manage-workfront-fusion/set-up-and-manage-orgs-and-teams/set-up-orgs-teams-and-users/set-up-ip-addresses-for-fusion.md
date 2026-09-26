@@ -4,18 +4,21 @@ description: Fusion은 웹 통신에 특정 IP 주소 및 도메인을 사용합
 author: Becky
 feature: Workfront Fusion
 exl-id: 406dd45c-0863-4270-a80e-c1c115e0b367
-TQID: https://experienceleague.adobe.com/-ogVZgc8Jan8jmPV-l8PzajHzJrZ1np6dS-h7OAYY10
+TQID: 'https://experienceleague.adobe.com/-ogVZgc8Jan8jmPV-l8PzajHzJrZ1np6dS-h7OAYY10'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Security
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 569
-ht-degree: 8%
-
+source-wordcount: '554'
+ht-degree: 6%
 ---
-
 # 조직의 허용 목록에서 Fusion을 위한 IP 주소 구성
 
 Adobe Workfront Fusion은 조직의 네트워크와 통신하므로 해당 통신을 허용하도록 조직의 방화벽을 구성해야 합니다. 방화벽은 인터넷으로부터 조직의 네트워크를 분리하여 기능하는 매우 효과적인 보안 조치입니다. 선택한 데이터 및 네트워크 트래픽만 조직의 네트워크로 이동하거나 네트워크의 외부로 이동할 수 있습니다. 방화벽은 데이터를 전송하거나 수신하는 사이트를 기준으로 데이터를 허용하거나 차단합니다. Fusion 관리자는 Fusion으로 보내거나 받은 데이터가 조직 방화벽을 통과할 수 있는지 확인해야 합니다.

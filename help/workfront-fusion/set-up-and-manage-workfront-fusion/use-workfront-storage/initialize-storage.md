@@ -5,13 +5,15 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: a2632cb3184cd555555136288e78ab1e05e4ea9d
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 216
+source-wordcount: '216'
 ht-degree: 0%
-
 ---
-
 # Workfront Fusion에서 스토리지 초기화
 
 Adobe 클라우드 스토리지에서 저장소, 폴더 및 파일을 보려면 먼저 Fusion Storage 영역을 초기화해야 합니다.

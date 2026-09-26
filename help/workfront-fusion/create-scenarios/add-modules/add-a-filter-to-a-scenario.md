@@ -4,16 +4,18 @@ description: 일부 시나리오에서는 특정 기준을 충족하는 번들�
 author: Becky
 feature: Workfront Fusion
 exl-id: b507dca0-0e85-4ab7-8310-b6e6bcb7ae12
-TQID: https://experienceleague.adobe.com/YMoeIdlzd7omGJoEFHUPTYl3eKayIp0LfbqkohVEXjs
+TQID: 'https://experienceleague.adobe.com/YMoeIdlzd7omGJoEFHUPTYl3eKayIp0LfbqkohVEXjs'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 528
+source-wordcount: '528'
 ht-degree: 19%
-
 ---
-
 # 시나리오에 필터 추가
 
 일부 시나리오에서는 특정 기준을 충족하는 번들로만 작업해야 합니다. 필터를 사용하여 해당 번들을 선택할 수 있습니다.

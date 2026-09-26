@@ -4,16 +4,18 @@ description: 템플릿을 만들면 모든 팀원이 템플릿을 사용할 수 
 author: Becky
 feature: Workfront Fusion
 exl-id: 99a1227d-bff9-479f-b8b9-efcf7cea3708
-TQID: https://experienceleague.adobe.com/dT1gtKfUvcYgtSEAoxelc8kyCjP99SSlDH5QrU8gB1o
+TQID: 'https://experienceleague.adobe.com/dT1gtKfUvcYgtSEAoxelc8kyCjP99SSlDH5QrU8gB1o'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 485
+source-wordcount: '485'
 ht-degree: 20%
-
 ---
-
 # 템플릿 게시 및 공유
 
 템플릿을 만들면 모든 팀원이 템플릿을 사용할 수 있습니다. 템플릿을 팀 외부의 사용자와 공유하려면 먼저 게시해야 합니다.

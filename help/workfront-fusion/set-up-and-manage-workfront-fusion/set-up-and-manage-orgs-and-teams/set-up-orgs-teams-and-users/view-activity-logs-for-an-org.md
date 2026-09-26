@@ -4,16 +4,18 @@ description: 조직의 시나리오 생성 또는 활성화와 같은 활동 로
 author: Becky
 feature: Workfront Fusion
 exl-id: 3cf851e3-50a1-4baa-8318-a24e1f467134
-TQID: https://experienceleague.adobe.com/HzeBJonpCSsEnDAgsfveksA7Xc2EKoeywgol9Vp0KGc
+TQID: 'https://experienceleague.adobe.com/HzeBJonpCSsEnDAgsfveksA7Xc2EKoeywgol9Vp0KGc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 504
+source-wordcount: '504'
 ht-degree: 7%
-
 ---
-
 # 조직에 대한 활동 로그 보기
 
 시나리오를 만들거나 사용자를 조직에 초대하는 것과 같은 활동 로그를 볼 수 있습니다.

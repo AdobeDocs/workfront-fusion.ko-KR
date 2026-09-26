@@ -1,21 +1,24 @@
 ---
 title: Google Forms 모듈
-description: ' [!DNL Adobe Workfront Fusion Google Forms] 모듈을 사용하면 Google Forms에서 응답을 모니터링, 선택, 추가, 업데이트 또는 삭제할 수 있습니다.'
+description: '[!DNL Adobe Workfront Fusion Google Forms] 모듈을 사용하면 Google Forms에서 응답을 모니터링, 선택, 추가, 업데이트 또는 삭제할 수 있습니다.'
 author: Becky
 feature: Workfront Fusion
 exl-id: dc017957-c0f8-4206-916f-21ccda346fb9
-TQID: https://experienceleague.adobe.com/mH7rS7ZCyRcDWv0F6CFvhZ19FL-sNL0liLT53jeZy54
+TQID: 'https://experienceleague.adobe.com/mH7rS7ZCyRcDWv0F6CFvhZ19FL-sNL0liLT53jeZy54'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1434
+source-wordcount: '1435'
 ht-degree: 19%
-
 ---
-
 # [!DNL Google Forms] 모듈
 
 Adobe Workfront Fusion [!DNL Google Forms] 모듈을 사용하면 [!DNL Google Forms]에서 응답을 모니터링, 선택, 추가, 업데이트 또는 삭제할 수 있습니다.

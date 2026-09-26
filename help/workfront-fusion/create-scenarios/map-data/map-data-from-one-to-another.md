@@ -4,18 +4,21 @@ description: 매핑은 항목으로 구조화된 모듈의 출력을 다른 모�
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e3f7729-f48e-451e-a90b-d680c9e3bcbc
-TQID: https://experienceleague.adobe.com/wKSHupk1Gx2g7ydAOilpbfRnqu-TMY5W8zKEyKd8Slk
+TQID: 'https://experienceleague.adobe.com/wKSHupk1Gx2g7ydAOilpbfRnqu-TMY5W8zKEyKd8Slk'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+    internal-label: Troubleshooting
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 777
+source-wordcount: '777'
 ht-degree: 17%
-
 ---
-
 # 한 모듈에서 다른 모듈로 정보 매핑
 
 매핑은 모듈의 출력을 다른 모듈의 입력 필드에 할당하는 프로세스입니다.

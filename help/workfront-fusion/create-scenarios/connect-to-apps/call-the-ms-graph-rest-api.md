@@ -4,20 +4,23 @@ description: Adobe Workfront Fusion HTTP 및> OAuth 2.0 요청 모듈 만들기 
 author: Becky
 feature: Workfront Fusion
 exl-id: f411c807-955d-44fe-98b1-3ebba3fe0861
-TQID: https://experienceleague.adobe.com/EhrbH3ohTVdBxnrbfVI8Uwqq7j8BfCrdWvEn7Y0pe4A
+TQID: 'https://experienceleague.adobe.com/EhrbH3ohTVdBxnrbfVI8Uwqq7j8BfCrdWvEn7Y0pe4A'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+    internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 721
+source-wordcount: '721'
 ht-degree: 23%
-
 ---
-
 # MS Graph REST API 호출
 
 많은 Microsoft 웹 서비스는 Microsoft Graph API를 통해 액세스됩니다. Workfront Fusion HTTP > OAuth 2.0 요청 모듈 만들기를 사용하여 Microsoft Graph API에 대한 연결을 만들 수 있습니다.

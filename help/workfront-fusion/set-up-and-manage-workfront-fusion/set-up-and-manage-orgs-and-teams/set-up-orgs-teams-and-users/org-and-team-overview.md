@@ -4,16 +4,18 @@ description: Adobe Workfront Fusion의 조직 및 팀 기능을 통해 기업은
 author: Becky
 feature: Workfront Fusion
 exl-id: 44e6de2a-b2d3-410d-abc3-10facd258495
-TQID: https://experienceleague.adobe.com/rWg9TitUlX092UIFTY1LUZsR7UlmWwE5dItl6wnlBMA
+TQID: 'https://experienceleague.adobe.com/rWg9TitUlX092UIFTY1LUZsR7UlmWwE5dItl6wnlBMA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 612
+source-wordcount: '612'
 ht-degree: 2%
-
 ---
-
 # Adobe Workfront Fusion 조직 및 팀 개요
 
 Adobe Workfront Fusion의 조직 및 팀 기능을 통해 기업은 Fusion 내의 시나리오 및 기타 기능에 대한 액세스를 제어할 수 있습니다.

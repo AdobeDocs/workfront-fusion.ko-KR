@@ -4,16 +4,18 @@ description: 웹 서비스에 현재 Workfront Fusion의 전용 커넥터가 없
 author: Becky
 feature: Workfront Fusion
 exl-id: 51ef13fb-2978-4927-8d5f-7d83995f11e0
-TQID: https://experienceleague.adobe.com/Ux37ZShkz3kxnJg3Guwqvqt8TISuzV0kAVZ-kKfy0zI
+TQID: 'https://experienceleague.adobe.com/Ux37ZShkz3kxnJg3Guwqvqt8TISuzV0kAVZ-kKfy0zI'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 354
+source-wordcount: '354'
 ht-degree: 27%
-
 ---
-
 # 커넥터 없이 웹 서비스에 대한 웹후크 구성
 
 웹 서비스에 현재 Workfront Fusion의 전용 커넥터가 없지만 웹 후크 전송을 지원하는 경우, 사용자 지정 웹 후크 모듈을 인스턴트 트리거로 사용하여 시나리오에 서비스를 추가할 수 있습니다. 이 프로세스를 웹후크 수신이라고 하며, 연결하려는 응용 프로그램의 측면에 몇 가지 구성이 필요합니다.

@@ -4,16 +4,18 @@ description: 일부 트리거 모듈을 사용하면 번들 검색을 시작할 
 author: Becky
 feature: Workfront Fusion
 exl-id: 83628fa5-82e2-4f67-bfed-70a4c3c19f7f
-TQID: https://experienceleague.adobe.com/Lbl9yIbiWEhwajpe-9EEp513IN9ASXE3PZHP1gAktx4
+TQID: 'https://experienceleague.adobe.com/Lbl9yIbiWEhwajpe-9EEp513IN9ASXE3PZHP1gAktx4'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 330
+source-wordcount: '330'
 ht-degree: 33%
-
 ---
-
 # 트리거 모듈의 시작 위치 선택
 
 일부 트리거 모듈을 사용하면 번들 검색을 시작할 첫 번째 번들을 선택할 수 있습니다.

@@ -4,16 +4,18 @@ description: Fusion을 열면 다양한 액션 옵션이 있습니다. 이 문�
 author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
-TQID: https://experienceleague.adobe.com/95RrU217DFpxtEVaO3FyIx0wNR6p-sJw9J4ZDaqPkXw
+TQID: 'https://experienceleague.adobe.com/95RrU217DFpxtEVaO3FyIx0wNR6p-sJw9J4ZDaqPkXw'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: fac09ae8c8b2e248ef9c0731c38a4be58cea2994
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 895
+source-wordcount: '895'
 ht-degree: 82%
-
 ---
-
 # Adobe Workfront Fusion 탐색
 
 왼쪽 탐색 패널을 사용하여 Adobe Workfront Fusion의 다양한 영역을 탐색할 수 있습니다. 여기에서 Fusion의 모든 주요 영역을 찾을 수 있으며, 한 영역에서 다른 영역으로 빠르게 이동할 수 있습니다.

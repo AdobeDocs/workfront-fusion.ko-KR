@@ -4,16 +4,18 @@ description: 현재 Workfront 및 HTTP 커넥터에서 대용량 파일을 지�
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-TQID: https://experienceleague.adobe.com/VsmLVB07faHfcFVAhOHP3iJ6aV5ZMWMI4lHIm1sqbQc
+TQID: 'https://experienceleague.adobe.com/VsmLVB07faHfcFVAhOHP3iJ6aV5ZMWMI4lHIm1sqbQc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1060
+source-wordcount: '1075'
 ht-degree: 6%
-
 ---
-
 # 대용량 파일 작업
 
 >[!IMPORTANT]
@@ -34,26 +36,26 @@ ht-degree: 6%
 >* 대용량 파일을 지원하지 않는 모듈은 최대 200MB의 파일을 처리할 수 있습니다.
 
 * Workfront
-   * 문서 업로드
-   * 문서 다운로드
+  * 문서 업로드
+  * 문서 다운로드
 * Adobe Experience Manager Assets
-   * 문서 업로드
+  * 문서 업로드
 * Workfront Proof
-   * 파일 업로드
-   * 증명 다운로드
+  * 파일 업로드
+  * 증명 다운로드
 * Adobe Authenticator
-   * 사용자 지정 API 호출 만들기
+  * 사용자 지정 API 호출 만들기
 * Adobe Photoshop
-   * PSD 편집 적용
+  * PSD 편집 적용
 * SharePoint
-   * 파일 만들기
-   * 파일 만들기(이전)
-   * 파일 가져오기
+  * 파일 만들기
+  * 파일 만들기(이전)
+  * 파일 가져오기
 * Salesforce
-   * 파일 업로드
+  * 파일 업로드
 * AWS
-   * 파일 업로드
-   * 파일 가져오기
+  * 파일 업로드
+  * 파일 가져오기
 * HTTP
 
 다른 커넥터는 향후 릴리스에서 지원됩니다.

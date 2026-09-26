@@ -4,18 +4,21 @@ description: 배열 또는 개별 배열 요소를 Adobe Workfront Fusion의 모
 author: Becky
 feature: Workfront Fusion
 exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
-TQID: https://experienceleague.adobe.com/4C5kCTIb-pX7zlMxx0tMHn-0UeMPkunWAlkov-lEqPQ
+TQID: 'https://experienceleague.adobe.com/4C5kCTIb-pX7zlMxx0tMHn-0UeMPkunWAlkov-lEqPQ'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Metadata
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 898
+source-wordcount: '898'
 ht-degree: 10%
-
 ---
-
 # 배열 또는 배열 요소 매핑
 
 배열은 다음을 포함할 수 있는 번들 항목입니다.
@@ -141,28 +144,28 @@ Workfront Fusion의 일부 필드를 사용하면 요소를 배열에 매핑할 
 
 * `map`
 
-   1. `map()` 함수의 첫 번째 매개 변수는 전체 배열 항목입니다.
-   1. 두 번째 매개 변수는 값 항목의 원시 이름입니다. 원시 이름을 얻으려면 [!UICONTROL 매핑] 패널의 항목 위로 마우스를 가져갑니다.
+  1. `map()` 함수의 첫 번째 매개 변수는 전체 배열 항목입니다.
+  1. 두 번째 매개 변수는 값 항목의 원시 이름입니다. 원시 이름을 얻으려면 [!UICONTROL 매핑] 패널의 항목 위로 마우스를 가져갑니다.
 
-      ![원시 이름 가져오기](assets/obtain-raw-name-350x124.png)
+     ![원시 이름 가져오기](assets/obtain-raw-name-350x124.png)
 
-      >[!NOTE]
-      >
-      >모든 매개 변수는 대/소문자를 구분합니다. 이 특정 예에서 항목의 레이블은 대문자로만 원시 이름과 다르지만 원시 이름을 사용해야 합니다.
+     >[!NOTE]
+     >
+     >모든 매개 변수는 대/소문자를 구분합니다. 이 특정 예에서 항목의 레이블은 대문자로만 원시 이름과 다르지만 원시 이름을 사용해야 합니다.
 
-   1. 세 번째 매개 변수는 키 항목의 원시 이름입니다.
+  1. 세 번째 매개 변수는 키 항목의 원시 이름입니다.
 
-      ![세 번째 매개 변수](assets/3rd-parameter-350x166.png)
+     ![세 번째 매개 변수](assets/3rd-parameter-350x166.png)
 
-   1. 네 번째 매개 변수는 지정된 키 값입니다.
+  1. 네 번째 매개 변수는 지정된 키 값입니다.
 
   `map()` 함수는 배열을 반환하므로(지정된 키 값을 가진 요소가 더 있을 수 있으므로) `get()` 함수를 적용하여 첫 번째 요소를 가져와야 합니다.
 
 * `get`
 
-   1. `get()` 함수의 첫 번째 매개 변수는 `map()` 함수의 결과입니다.
+  1. `get()` 함수의 첫 번째 매개 변수는 `map()` 함수의 결과입니다.
 
-   1. 두 번째 매개 변수는 요소의 색인입니다. 이 예제에서 인덱스는 `1`입니다.
+  1. 두 번째 매개 변수는 요소의 색인입니다. 이 예제에서 인덱스는 `1`입니다.
 
 이 예는 다음 출력을 생성합니다.
 

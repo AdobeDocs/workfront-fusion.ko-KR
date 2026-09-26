@@ -1,22 +1,26 @@
 ---
 title: Adobe Journey Optimizer 모듈
-description: Adobe Workfront Fusion 시나리오에서는  [!DNL Adobe Journey Optimizer]를 사용하는 워크플로를 자동화할 수 있으며 여러 제3자 애플리케이션 및 서비스에 연결할 수 있습니다.
+description: Adobe Workfront Fusion 시나리오에서는 [!DNL Adobe Journey Optimizer]를 사용하는 워크플로를 자동화할 수 있으며 여러 제3자 애플리케이션 및 서비스에 연결할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: 1d0ccf4d-9f06-4210-86ec-7da7970f6a47
-TQID: https://experienceleague.adobe.com/fBUiP2f1zw2GMSqvZzoak1mQlnJrBATZw56YazKzuQw
+TQID: 'https://experienceleague.adobe.com/fBUiP2f1zw2GMSqvZzoak1mQlnJrBATZw56YazKzuQw'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 3723
+source-wordcount: '3723'
 ht-degree: 27%
-
 ---
-
 # [!DNL Adobe Journey Optimizer] 모듈
 
 Adobe Workfront Fusion 시나리오에서는 [!DNL Adobe Journey Optimizer]를 사용하는 워크플로를 자동화할 수 있으며 여러 제3자 애플리케이션 및 서비스에 연결할 수 있습니다. [!DNL Adobe Journey Optimizer] 모듈을 사용하면 레코드를 만들거나, 읽거나, 업데이트하거나, 삭제할 수 있으며, [!DNL Adobe Journey Optimizer] API에 대한 사용자 지정 API 호출을 수행할 수 있습니다.

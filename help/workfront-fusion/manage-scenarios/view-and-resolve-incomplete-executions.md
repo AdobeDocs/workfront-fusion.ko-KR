@@ -4,16 +4,18 @@ description: '[!UICONTROL 미완료 실행] 폴더는 오류로 인해 정상적
 author: Becky
 feature: Workfront Fusion
 exl-id: 8891b4d7-a39a-4f14-8521-8c2ca186ca6e
-TQID: https://experienceleague.adobe.com/iTS5K7IjJzZdlqX2kCuPBCKojdmM-Id9xa-lRrY2FKI
+TQID: 'https://experienceleague.adobe.com/iTS5K7IjJzZdlqX2kCuPBCKojdmM-Id9xa-lRrY2FKI'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 584
+source-wordcount: '584'
 ht-degree: 7%
-
 ---
-
 # 불완전한 실행 보기 및 해결
 
 [!UICONTROL 미완료 실행] 폴더는 오류로 인해 정상적으로 완료되지 않은 시나리오 실행을 저장합니다. 저장된 각 불완전한 실행은 수동 또는 자동으로 해결할 수 있습니다.
@@ -98,18 +100,18 @@ ht-degree: 7%
 
 * 자동 재시도가 있는 불완전한 실행 레코드는 다음 오류 유형에 대해 저장됩니다.
 
-   * `ConnectionError`
-   * `RateLimitError`
-   * `OutOfSpaceError`
-   * `ModuleTimeoutError`
+  * `ConnectionError`
+  * `RateLimitError`
+  * `OutOfSpaceError`
+  * `ModuleTimeoutError`
 
 * 다음 오류 유형에 대해 자동 재시도 없이 불완전한 실행 레코드가 저장됩니다.
 
-   * `DataError`
-   * `InvalidConfigurationError`
-   * `InvalidAccessTokenError`
-   * `UnexpectedError`
-   * `MaxFileSizeExceededError`
-   * `MaxResultsExceededError`
+  * `DataError`
+  * `InvalidConfigurationError`
+  * `InvalidAccessTokenError`
+  * `UnexpectedError`
+  * `MaxFileSizeExceededError`
+  * `MaxResultsExceededError`
 
 * 오류 유형이 위와 다른 경우 실행이 실패합니다.

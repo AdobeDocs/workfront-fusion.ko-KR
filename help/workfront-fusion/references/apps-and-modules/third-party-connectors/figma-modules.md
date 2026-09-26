@@ -4,19 +4,23 @@ description: Adobe Workfront Fusion Figure 모듈을 사용하면 주석, 파일
 author: Becky
 feature: Workfront Fusion
 exl-id: 1220460b-1957-4dfc-b7c1-4c97b36ea061
-TQID: https://experienceleague.adobe.com/sr5gzukvb4qLZHn0lszB15dVogIfa-VrLwqEAWd69oA
+TQID: 'https://experienceleague.adobe.com/sr5gzukvb4qLZHn0lszB15dVogIfa-VrLwqEAWd69oA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 2645
+source-wordcount: '2645'
 ht-degree: 19%
-
 ---
-
 # [!DNL Figma]개 모듈
 
 Adobe Workfront Fusion [!DNL Figma] 모듈을 사용하면 주석, 파일, 파일 버전 또는 프로젝트 목록을 검색할 수 있습니다. 댓글을 게시하거나 [!DNL Figma] API를 호출할 수도 있습니다.
@@ -311,7 +315,7 @@ Figure 모듈에 대한 연결을 만들려면:
           <li>
             <p><b>[!UICONTROL 이미지 채우기]</b>
             </p>
-            <p>이 모듈은 문서의 이미지 채우기에 있는 모든 이미지에 대한 다운로드 링크를 반환합니다. 이미지 채우기는 [!DNL Figma]이(가) 사용자가 제공한 이미지를 나타내는 방식입니다. 이미지를 [!DNL Figma] (으)로 드래그하면 [!DNL Figma]에서 이미지를 나타내는 단일 채우기로 사각형을 만들고 사용자는 사각형을 변형할 수 있습니다(및 채우기의 속성).</p>
+            <p>이 모듈은 문서의 이미지 채우기에 있는 모든 이미지에 대한 다운로드 링크를 반환합니다. 이미지 채우기는 [!DNL Figma]이(가) 사용자가 제공한 이미지를 나타내는 방식입니다. 이미지를 [!DNL Figma](으)로 드래그하면 [!DNL Figma]에서 이미지를 나타내는 단일 채우기로 사각형을 만들고 사용자는 사각형을 변형할 수 있습니다(및 채우기의 속성).</p>
             <p>필드의 경우 <a href="#get-a-file-or-image-image-fills" class="MCXref xref" >[!UICONTROL 파일 또는 이미지 가져오기: 이미지 채우기]</a>을(를) 참조하십시오.</p>
           </li>
         </ul>

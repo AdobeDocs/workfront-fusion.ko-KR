@@ -5,13 +5,15 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: a2632cb3184cd555555136288e78ab1e05e4ea9d
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 330
+source-wordcount: '330'
 ht-degree: 1%
-
 ---
-
 # Workfront Fusion의 스토리지 보기 및 관리
 
 Workfront Fusion의 저장소 영역에서 Adobe 클라우드 저장소의 저장소를 보고 상호 작용할 수 있습니다.
@@ -24,7 +26,7 @@ Workfront Fusion의 저장소 영역에서 Adobe 클라우드 저장소의 저�
 
 ## 저장소, 폴더 및 파일 보기
 
-1. Workfront Fusion의 왼쪽 탐색에서 **저장소**&#x200B;를 클릭합니다.
+1. Workfront Fusion의 왼쪽 탐색에서 **저장소**를 클릭합니다.
 저장소 목록이 열립니다.
 
    사용 가능한 저장소가 한 개만 있는 경우 저장소가 바로 열립니다.
@@ -44,7 +46,7 @@ Workfront Fusion의 저장소 영역에서 Adobe 클라우드 저장소의 저�
 
 한 팀에는 여러 Adobe 스토리지 연결이 있을 수 있습니다.
 
-1. Workfront Fusion의 왼쪽 탐색에서 **저장소**&#x200B;를 클릭합니다.
+1. Workfront Fusion의 왼쪽 탐색에서 **저장소**를 클릭합니다.
 접속이 여러 개 있는 경우 스토리지 페이지 상단에 각 접속의 이름으로 레이블이 지정된 탭이 나타납니다.
 1. 다른 연결의 저장소로 전환하려면 해당 연결에 대한 탭을 클릭합니다.
 

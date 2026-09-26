@@ -4,18 +4,21 @@ description: Adobe Workfront Fusion 시나리오에서는 이메일 계정을 �
 author: Becky
 feature: Workfront Fusion
 exl-id: 28a04bad-d3ef-4f3a-be93-8b04761a75e4
-TQID: https://experienceleague.adobe.com/rHcxYxYNQchgOxfpU1Y3jc-sOxHxG3FNAKmbIsp9Dl4
+TQID: 'https://experienceleague.adobe.com/rHcxYxYNQchgOxfpU1Y3jc-sOxHxG3FNAKmbIsp9Dl4'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 2509
+source-wordcount: '2509'
 ht-degree: 10%
-
 ---
-
 # 이메일 모듈
 
 Adobe Workfront Fusion 시나리오에서는 이메일 계정을 여러 서드파티 애플리케이션 및 서비스에 연결할 수 있습니다.이를 통해 IMAP을 통해 이메일을 다운로드하고, SMTP를 통해 이메일을 보내고, 새 초안을 만들고, 한 폴더에서 다른 폴더로 이메일을 이동 및 복사하고, 이메일을 읽음 또는 읽지 않음으로 표시하고, 이메일을 삭제할 수 있습니다.
@@ -313,7 +316,7 @@ IMAP 연결을 사용하면 사서함에 원격으로 액세스하고 사서함�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Exponge]</td> 
-   <td> <p>현재 열려 있는 사서함에서 [!UICONTROL Deleted] (으)로 플래그가 지정된 모든 메시지를 영구적으로 제거하려면 이 옵션을 활성화합니다.</p> <p>참고: [!DNL Gmail]에서 이 동작은 [!UICONTROL 설정] &gt;[!UICONTROL Forwarding POP/IMAP in IMAP access] 섹션의 설정에 의해 결정됩니다.</p> </td> 
+   <td> <p>현재 열려 있는 사서함에서 [!UICONTROL Deleted](으)로 플래그가 지정된 모든 메시지를 영구적으로 제거하려면 이 옵션을 활성화합니다.</p> <p>참고: [!DNL Gmail]에서 이 동작은 [!UICONTROL 설정] &gt;[!UICONTROL Forwarding POP/IMAP in IMAP access] 섹션의 설정에 의해 결정됩니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>

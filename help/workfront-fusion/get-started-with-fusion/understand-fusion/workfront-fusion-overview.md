@@ -4,16 +4,18 @@ description: Adobe Workfront Fusion의 역할은 동일한 작업을 계속해�
 author: Becky
 feature: Workfront Fusion
 exl-id: 49df566f-59e9-469c-9123-27d1e15069e4
-TQID: https://experienceleague.adobe.com/EJVhcQRdvOE03JREhQc-ZIz3oac4XT-QQIRxpfX2AVg
+TQID: 'https://experienceleague.adobe.com/EJVhcQRdvOE03JREhQc-ZIz3oac4XT-QQIRxpfX2AVg'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 386
+source-wordcount: '386'
 ht-degree: 100%
-
 ---
-
 # Adobe Workfront Fusion 개요
 
 Adobe Workfront Fusion의 역할은 사용자가 일상적인 작업에 많은 시간을 할애할 필요가 없도록 프로세스를 자동화하는 것입니다. 데이터를 자동으로 전송하고 변환하는 시나리오를 만들기 위해 앱과 서비스 내에서 그리고 앱과 서비스 간에 액션을 연결하는 방식입니다. 생성한 시나리오는 앱이나 서비스의 데이터를 관찰하고 해당 데이터를 처리하여 원하는 결과를 제공합니다.

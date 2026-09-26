@@ -4,18 +4,26 @@ description: Adobe I/O Events 모듈을 사용하면 Adobe 애플리케이션의
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-TQID: https://experienceleague.adobe.com/w3uQqWnDDc3IcnAvd3UN4O3-m98PPJoez-egpWlH-jA
+TQID: 'https://experienceleague.adobe.com/w3uQqWnDDc3IcnAvd3UN4O3-m98PPJoez-egpWlH-jA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+  - id: e14a7f57-c82c-4874-a495-5d036cbbdc3d
+    internal-label: Resource management
+subfeature_v2:
+  - id: b70a979b-965d-47a9-a360-e7ec2a19b8c1
+    internal-label: Digital content and documents
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1101
+source-wordcount: '1101'
 ht-degree: 44%
-
 ---
-
 # Adobe I/O Events 모듈
 
 Adobe I/O Events 모듈을 사용하면 전용 Adobe Workfront Fusion 커넥터가 없는 Adobe 계정 및 서비스의 이벤트를 기반으로 Workfront Fusion 시나리오를 시작할 수 있습니다.

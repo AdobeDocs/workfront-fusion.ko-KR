@@ -4,16 +4,18 @@ description: 항목을 매핑할 때 함수를 사용하여 간단하거나 복�
 author: Becky
 feature: Workfront Fusion
 exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
-TQID: https://experienceleague.adobe.com/ObsbedalglAtYWQlx0w8vZbvsU7z0ttVIehf8STysvw
+TQID: 'https://experienceleague.adobe.com/ObsbedalglAtYWQlx0w8vZbvsU7z0ttVIehf8STysvw'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 314c4535a5ef14794458f40002a53ee529c1a4b6
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 731
+source-wordcount: '731'
 ht-degree: 23%
-
 ---
-
 # 기본 제공 함수를 사용하여 항목 매핑
 
 Workfront Fusion에는 간단하거나 복잡한 공식을 만들 수 있는 기본 제공 함수가 포함되어 있습니다. 이러한 함수는 배열, 문자열, 숫자 및 이전 모듈의 데이터를 비롯한 다양한 사용 사례를 다룹니다.

@@ -4,16 +4,18 @@ description: Adobe Workfront Fusion의 작업은 모듈에서 수행하는 작�
 author: Becky
 feature: Workfront Fusion
 exl-id: c14e2bb2-1cce-48ff-8bea-acc9829d3cf2
-TQID: https://experienceleague.adobe.com/wkdEgGMzJVgzuiZpNJy4Y8-Fd435VqlQFON-WIRjwmA
+TQID: 'https://experienceleague.adobe.com/wkdEgGMzJVgzuiZpNJy4Y8-Fd435VqlQFON-WIRjwmA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 413
+source-wordcount: '413'
 ht-degree: 1%
-
 ---
-
 # 작업
 
 Adobe Workfront Fusion의 작업은 모듈에서 수행하는 작업입니다. 추적 목적으로 모듈에서 수행된 모든 성공적인 작업은 작업입니다.
@@ -26,10 +28,10 @@ Adobe Workfront Fusion의 작업은 모듈에서 수행하는 작업입니다. �
 * 작업 값이 다를 수 있습니다. 일부는 더 작아지고, 더 단순한 운영을 하고, 다른 일부는 더 복잡해질 것이다. 작업은 얼마나 간단하거나 복잡한지에 관계없이 총계에 계산됩니다.
 * 작업은 시나리오 실행의 [!UICONTROL 완료] 단계에서 계산됩니다.
 * 다음은 작업으로 계산되는 **not**&#x200B;입니다.
-   * 모든 필터 단계
-   * 오류 또는 중지되는 모든 작업입니다.
-   * 대체 경로 또는 비활성화된 경로와 같이 경로의 규칙이 충족되지 않아 실행되지 않는 모든 경로.
-   * 필터에서 데이터 통과를 허용하지 않았거나 오류로 인해 시나리오가 중지되었기 때문에 실행되지 않는 모든 작업입니다.
+  * 모든 필터 단계
+  * 오류 또는 중지되는 모든 작업입니다.
+  * 대체 경로 또는 비활성화된 경로와 같이 경로의 규칙이 충족되지 않아 실행되지 않는 모든 경로.
+  * 필터에서 데이터 통과를 허용하지 않았거나 오류로 인해 시나리오가 중지되었기 때문에 실행되지 않는 모든 작업입니다.
 
 >[!NOTE]
 >

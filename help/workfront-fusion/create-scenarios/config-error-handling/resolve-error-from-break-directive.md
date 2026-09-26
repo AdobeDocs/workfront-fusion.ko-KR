@@ -4,16 +4,18 @@ description: 경우에 따라 실패 사유가 빠르게 해결될 가능성이 
 author: Becky
 feature: Workfront Fusion
 exl-id: d568942c-2cd5-430c-bdbf-e1496da25b50
-TQID: https://experienceleague.adobe.com/2Gw-2VZoILhCB-96exxTRry7S5mgOetJ-lkl-APgypI
+TQID: 'https://experienceleague.adobe.com/2Gw-2VZoILhCB-96exxTRry7S5mgOetJ-lkl-APgypI'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 516
+source-wordcount: '516'
 ht-degree: 20%
-
 ---
-
 # Break 지시문에 의해 처리된 오류 해결
 
 Break 지시문에 의해 오류가 처리되면 미완료 실행 폴더에 레코드가 생성됩니다. 이 레코드에는 이전 모듈의 데이터와 함께 시나리오 실행 상태가 저장됩니다. 레코드는 오류가 발생한 모듈을 참조하고 모듈에 의해 입력으로 수신된 데이터에 대한 정보를 포함합니다. 오류를 일으키는 각 데이터 번들에 대해 별도의 레코드가 만들어집니다.

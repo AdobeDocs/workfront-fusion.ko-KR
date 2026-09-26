@@ -1,21 +1,29 @@
 ---
 title: Adobe Experience Manager Forms 모듈
-description: Adobe Workfront Fusion용  [!DNL Adobe Experience Manager Forms] 커넥터를 사용하면  [!DNL Adobe Experience Manager Forms] 계정의 이벤트를 기반으로 시나리오를 시작하고, 에셋을 만들고, 업로드하고, 업데이트하고, 폴더 및 에셋을 복사하거나 이동할 수 있습니다.
+description: Adobe Workfront Fusion용 [!DNL Adobe Experience Manager Forms] 커넥터를 사용하면 [!DNL Adobe Experience Manager Forms] 계정의 이벤트를 기반으로 시나리오를 시작하고, 에셋을 만들고, 업로드하고, 업데이트하고, 폴더 및 에셋을 복사하거나 이동할 수 있습니다.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: e0d7a655-1353-4d24-83d4-7da73d859a63
-TQID: https://experienceleague.adobe.com/LTNDa0pulA4RE5tG59Fui-5bPlKxqHoQHEsKOp485No
+TQID: 'https://experienceleague.adobe.com/LTNDa0pulA4RE5tG59Fui-5bPlKxqHoQHEsKOp485No'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+  - id: e14a7f57-c82c-4874-a495-5d036cbbdc3d
+    internal-label: Resource management
+subfeature_v2:
+  - id: b70a979b-965d-47a9-a360-e7ec2a19b8c1
+    internal-label: Digital content and documents
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 602
+source-wordcount: '604'
 ht-degree: 49%
-
 ---
-
 # [!DNL Adobe Experience Manager Forms] 모듈
 
 Adobe Workfront Fusion용 [!DNL Adobe Experience Manager Forms] 커넥터를 사용하면 웹후크를 만들어 [!DNL Adobe Experience Manager Forms] 계정의 이벤트를 기반으로 시나리오를 시작할 수 있습니다.

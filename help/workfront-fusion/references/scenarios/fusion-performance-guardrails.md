@@ -4,11 +4,14 @@ description: 작업 자동화에는 빠른 처리가 필요하므로 Adobe Workf
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-TQID: https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U
+TQID: 'https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
-source-git-commit: e9450b468ff8df80286ebd8a0c1aa4070b6cb01b
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
 source-wordcount: '1445'
 ht-degree: 72%
@@ -31,7 +34,7 @@ ht-degree: 72%
   >
   > 체인 기능을 사용하면 40분 이상 워크플로우를 실행할 수 있지만 이는 지원되는 해결 방법이 아니라 디자인 위험 신호로 간주해야 합니다. 여러 장기 실행 하위 시나리오에 걸친 상위 시나리오에는 전체 시간 초과 경계가 없습니다. 하위 시나리오가 중단되거나 플랫폼 문제가 발생하면 상위 시나리오가 오류 없이 자동 복구 없이 무기한 대기합니다.
   >
-  > 40분 제한을 피하기 위해 시나리오 디자인에 체인이 필요한 경우 프로덕션에 배포하기 전에 아키텍처를 검토하십시오. 디자인 지침은 [여러 시나리오 함께 연결](https://experienceleague.adobe.com/ko/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)을 참조하십시오.
+  > 40분 제한을 피하기 위해 시나리오 디자인에 체인이 필요한 경우 프로덕션에 배포하기 전에 아키텍처를 검토하십시오. 디자인 지침은 [여러 시나리오 함께 연결](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)을 참조하십시오.
 * 시나리오 블루프린트의 최대 크기는 **5MB**&#x200B;이지만 시나리오 크기를 **3MB** 미만으로 유지하는 것이 좋습니다.
 
   많은 필드를 가진 데이터를 만들거나 업데이트하는 앱 모듈은 블루프린트가 매우 클 수 있습니다.

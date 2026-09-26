@@ -7,20 +7,23 @@ description: 대부분의 앱에서는 특정 시나리오의 설정에 따라 A
 author: Becky
 feature: Workfront Fusion
 exl-id: 26d7caad-8e12-4f04-ac7c-f71686c90ee6
-TQID: https://experienceleague.adobe.com/P-zEd2tJCk9-uzE1xW6COpTCdFJiIq4NwGRLDdpCSVU
+TQID: 'https://experienceleague.adobe.com/P-zEd2tJCk9-uzE1xW6COpTCdFJiIq4NwGRLDdpCSVU'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+    internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Metadata
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 588
+source-wordcount: '588'
 ht-degree: 27%
-
 ---
-
 # 연결 관리
 
 연결은 Fusion이 애플리케이션에 액세스하는 데 사용하는 인증 및 권한을 나타냅니다. 각 애플리케이션에 대해 하나 이상의 연결을 만들 수 있으며 여러 모듈 또는 시나리오에서 동일한 연결을 사용할 수 있습니다.

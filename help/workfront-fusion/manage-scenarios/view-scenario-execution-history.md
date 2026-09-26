@@ -4,16 +4,18 @@ description: 시나리오의 이벤트 또는 실행에 대한 정보를 표시�
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-TQID: https://experienceleague.adobe.com/V2lG2ns3rokHSCoYYsfjfZiRfsqqOUteLJTD52RcQdQ
+TQID: 'https://experienceleague.adobe.com/V2lG2ns3rokHSCoYYsfjfZiRfsqqOUteLJTD52RcQdQ'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 915
+source-wordcount: '915'
 ht-degree: 12%
-
 ---
-
 # 시나리오의 실행 기록 보기
 
 시나리오의 이벤트 또는 실행에 대한 정보를 표시하거나 시나리오의 모든 실행에서 특정 데이터를 검색할 수 있습니다.
@@ -72,7 +74,7 @@ ht-degree: 12%
 
    시나리오 편집기에서 시나리오 작업을 수행하는 경우 창의 왼쪽 상단 모서리 근처에 있는 왼쪽 화살표 ![편집 종료 화살표](assets/exit-editing-arrow.png)를 클릭합니다.
 
-1. 시나리오 이름 근처에 있는 **기록**&#x200B;을 클릭합니다.
+1. 시나리오 이름 근처에 있는 **기록**을 클릭합니다.
    ![기록 탭](assets/history-tab.png)
 
    시나리오의 모든 실행에 대해 다음 세부 정보가 나열됩니다.
@@ -144,7 +146,7 @@ You can sort the scenario execution history.
    또는
 
    **Ctrl+Shift+F**(Windows) 또는 **Cmd+Shift+F**(Mac) 입력
-[!UICONTROL 내역에서 검색] 창이 열립니다.
+   [!UICONTROL 내역에서 검색] 창이 열립니다.
 
 1. (선택 사항) 특정 텍스트가 포함된 실행을 검색하려면 **[!UICONTROL 내역에서 검색]** 창의 검색 표시줄에 텍스트를 입력하십시오.
 

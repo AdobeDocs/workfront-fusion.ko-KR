@@ -4,16 +4,18 @@ description: 일부 모듈에는 파일을 처리하는 기능이 있습니다. 
 author: Becky
 feature: Workfront Fusion
 exl-id: 25c632f4-169e-4d3c-989a-f57b398bd3f0
-TQID: https://experienceleague.adobe.com/DVCy-0qCEuwZJqbGQPd3Pu9erVaX1wosPUWEtTFLkq4
+TQID: 'https://experienceleague.adobe.com/DVCy-0qCEuwZJqbGQPd3Pu9erVaX1wosPUWEtTFLkq4'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 412
+source-wordcount: '412'
 ht-degree: 24%
-
 ---
-
 # 모듈 간 파일 매핑
 
 일부 모듈은 파일을 처리할 수 있습니다. 이러한 모듈은 추가 처리를 위해 전송할 출력 파일을 반환하거나 처리를 위해 파일을 해당 모듈에 전달해야 합니다. 파일은 매핑될 수 있으므로 한 모듈에서 출력된 파일을 다른 모듈에서 처리할 수 있습니다.

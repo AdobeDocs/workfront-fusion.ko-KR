@@ -1,19 +1,21 @@
 ---
 title: 날짜 및 시간 형식용 토큰
-description: ' [!DNL Adobe Workfront Fusion mapping]  패널에서 날짜 및 시간 형식에 대한 다음 토큰을 사용할 수 있습니다.'
+description: '[!DNL Adobe Workfront Fusion mapping] 패널에서 날짜 및 시간 형식에 대한 다음 토큰을 사용할 수 있습니다.'
 author: Becky
 feature: Workfront Fusion
 exl-id: 4a7f288e-d563-4c37-a8bf-efc7e6b759d4
-TQID: https://experienceleague.adobe.com/PVtZkvmHsxtuAH7fXCoXB07zPRlHPJnG-j0M2lb-hGQ
+TQID: 'https://experienceleague.adobe.com/PVtZkvmHsxtuAH7fXCoXB07zPRlHPJnG-j0M2lb-hGQ'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 253
+source-wordcount: '254'
 ht-degree: 16%
-
 ---
-
 # 날짜 및 시간 형식용 토큰
 
 ## 년, 월, 일 토큰

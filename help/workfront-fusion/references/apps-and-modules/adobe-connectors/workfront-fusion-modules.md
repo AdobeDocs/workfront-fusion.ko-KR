@@ -5,13 +5,15 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 7606f1b15aac0f2baef1b4ef16e3bcaa39dad27c
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1430
+source-wordcount: '1430'
 ht-degree: 20%
-
 ---
-
 # Workfront Fusion 모듈
 
 Workfront Fusion 커넥터를 사용하면 시나리오 내에서 자체 Fusion 조직을 관리할 수 있습니다. Fusion을 서드파티 앱 또는 서비스에 연결하는 다른 커넥터와 달리 이 커넥터를 사용하면 시나리오가 Workfront을 관리하는 방식과 유사한 Adobe Workfront 커넥터를 사용하여 Fusion의 자체 API를 호출할 수 있습니다.

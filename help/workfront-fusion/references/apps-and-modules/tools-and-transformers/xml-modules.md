@@ -4,19 +4,23 @@ description: XML 앱을 사용하면 XML > Parse XML 모듈을 통해 XML 형식
 author: Becky
 feature: Workfront Fusion
 exl-id: ab323361-cd04-4dcc-ab02-0fb468334fdb
-TQID: https://experienceleague.adobe.com/WAXpNvb43E4nAZ8lD4Ch55gwqdgRbG3bhPmZDSvnFx4
+TQID: 'https://experienceleague.adobe.com/WAXpNvb43E4nAZ8lD4Ch55gwqdgRbG3bhPmZDSvnFx4'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Troubleshooting
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1433
+source-wordcount: '1433'
 ht-degree: 8%
-
 ---
-
 # XML
 
 [!UICONTROL XML] 앱을 사용하면 [!UICONTROL XML] > [!UICONTROL XML 구문 분석] 모듈을 통해 XML 형식의 텍스트를 구문 분석하고 번들로 변환하여 다른 모듈에서 데이터를 사용할 수 있도록 할 수 있습니다. [!UICONTROL XML] > [!UICONTROL XML 만들기] 모듈을 통해 번들을 XML 형식의 텍스트로 변환할 수도 있습니다
@@ -180,7 +184,7 @@ ht-degree: 8%
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL XML]</p> </td> 
-   <td> <p>구문 분석할 XML 형식 텍스트를 입력하거나 매핑합니다.</p> <p>수식을 사용하는 경우 결과 값 유형이 [!UICONTROL Text] 데이터 유형인지(또는 자동으로 강제 변환할 수 있는지) 확인합니다. </p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/if-you-use-a-formula-350x164.png" style="width: 350;height: 164;"> </p> <p>결과 값 형식이 [!UICONTROL Buffer] (이진 데이터)이면 <code>toString()</code> 함수를 사용하여 Text 데이터 형식으로 변환합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 강제 변환</a> 및 <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">항목 데이터 형식</a>을 참조하세요.</p> </td> 
+   <td> <p>구문 분석할 XML 형식 텍스트를 입력하거나 매핑합니다.</p> <p>수식을 사용하는 경우 결과 값 유형이 [!UICONTROL Text] 데이터 유형인지(또는 자동으로 강제 변환할 수 있는지) 확인합니다. </p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/if-you-use-a-formula-350x164.png" style="width: 350;height: 164;"> </p> <p>결과 값 형식이 [!UICONTROL Buffer](이진 데이터)이면 <code>toString()</code> 함수를 사용하여 Text 데이터 형식으로 변환합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">형식 강제 변환</a> 및 <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">항목 데이터 형식</a>을 참조하세요.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -224,7 +228,7 @@ URL에서 XML 파일을 다운로드하고 해당 콘텐츠를 구문 분석하�
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL XML]</td> 
-      <td> <p>[!UICONTROL HTTP] &gt; [!UICONTROL 파일 가져오기] 모듈의 출력에서 <code>Data </code>항목을 필드에 매핑합니다. <code>toString()</code> 함수를 사용하여 해당 값을 [!UICONTROL Buffer] (이진 데이터) 형식에서 [!UICONTROL Text] 데이터 형식으로 변환합니다.</p> <p>수식의 코드를 복사하여 필드에 붙여넣을 수 있습니다. <code>&#123;&#123;toString(1.data)&#125;&#125;</code></p> <p>Buffer 및 Text 데이터 형식에 대한 자세한 내용은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">Item 데이터 형식</a>을 참조하십시오.</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/paste-formula-code-350x99.png"> </p> </td> 
+      <td> <p>[!UICONTROL HTTP] &gt; [!UICONTROL 파일 가져오기] 모듈의 출력에서 <code>Data </code>항목을 필드에 매핑합니다. <code>toString()</code> 함수를 사용하여 해당 값을 [!UICONTROL Buffer](이진 데이터) 형식에서 [!UICONTROL Text] 데이터 형식으로 변환합니다.</p> <p>수식의 코드를 복사하여 필드에 붙여넣을 수 있습니다. <code>&#123;&#123;toString(1.data)&#125;&#125;</code></p> <p>Buffer 및 Text 데이터 형식에 대한 자세한 내용은 <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">Item 데이터 형식</a>을 참조하십시오.</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/paste-formula-code-350x99.png"> </p> </td> 
      </tr> 
     </tbody> 
    </table>

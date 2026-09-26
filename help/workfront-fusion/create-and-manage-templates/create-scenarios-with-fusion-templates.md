@@ -4,16 +4,18 @@ description: Adobe Workfront FusionTemplates 기능을 사용하면 기존 템�
 author: Becky
 feature: Workfront Fusion
 exl-id: 560c20b7-155c-40db-9018-5a51b40d6fb0
-TQID: https://experienceleague.adobe.com/U7C1PmiNClfdUnl0qj1j71dKt0eWINJgdwSEFYo7pgQ
+TQID: 'https://experienceleague.adobe.com/U7C1PmiNClfdUnl0qj1j71dKt0eWINJgdwSEFYo7pgQ'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 364
+source-wordcount: '364'
 ht-degree: 27%
-
 ---
-
 # 템플릿으로 시나리오 만들기
 
 Adobe Workfront Fusion 템플릿을 Workfront Fusion 시나리오의 시작점으로 사용할 수 있습니다.

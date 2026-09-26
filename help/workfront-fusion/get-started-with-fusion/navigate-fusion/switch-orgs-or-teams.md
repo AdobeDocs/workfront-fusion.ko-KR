@@ -4,16 +4,18 @@ description: 이메일 알림 옵션은 팀 수준에서 설정됩니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: a70774e6-15ae-406b-b85e-640f9e0e3cc4
-TQID: https://experienceleague.adobe.com/7uzvCLeGJwTiVAEf6JYFfxhNTEYOQpEc714eQQnnZCI
+TQID: 'https://experienceleague.adobe.com/7uzvCLeGJwTiVAEf6JYFfxhNTEYOQpEc714eQQnnZCI'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 289
+source-wordcount: '289'
 ht-degree: 34%
-
 ---
-
 # 조직 또는 팀 간 전환
 
 둘 이상의 조직 또는 팀의 멤버인 경우 Fusion에서 로그아웃하지 않고 조직 간에 전환할 수 있습니다.

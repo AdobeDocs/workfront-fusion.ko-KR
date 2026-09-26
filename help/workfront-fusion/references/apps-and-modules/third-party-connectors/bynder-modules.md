@@ -1,22 +1,26 @@
 ---
 title: Bynder 모듈
-description: Adobe Workfront Fusion 시나리오에서는  [!DNL Bynder]를 사용하는 워크플로를 자동화할 수 있으며 여러 제3자 애플리케이션 및 서비스에 연결할 수 있습니다.
+description: Adobe Workfront Fusion 시나리오에서는 [!DNL Bynder]를 사용하는 워크플로를 자동화할 수 있으며 여러 제3자 애플리케이션 및 서비스에 연결할 수 있습니다.
 author: Becky
 feature: Workfront Fusion
 exl-id: 0a45f8a7-12cc-41cc-9135-92f4779afac0
-TQID: https://experienceleague.adobe.com/2NCbEM8bb0s7m30uCFTWK-wYdhCYKEZC-W01Zr21mRw
+TQID: 'https://experienceleague.adobe.com/2NCbEM8bb0s7m30uCFTWK-wYdhCYKEZC-W01Zr21mRw'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 5f20b0ae5439723dffbc3d2f2ba1f608fbd068b3
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1865
+source-wordcount: '1865'
 ht-degree: 31%
-
 ---
-
 # [!DNL Bynder] 모듈
 
 Adobe Workfront Fusion 시나리오에서는 [!DNL Bynder]를 사용하는 워크플로를 자동화할 수 있으며 여러 제3자 애플리케이션 및 서비스에 연결할 수 있습니다.
@@ -93,7 +97,7 @@ Bynder 커넥터는 다음을 사용합니다.
 >Byender는 인증 코드/새로 고침 토큰 부여 유형을 사용합니다. 이는 Fusion Byender 커넥터가 사용하는 유일한 권한 부여 유형입니다.
 
 * [Workfront Fusion에서  [!DNL Bynder] 에 대한 연결 만들기](#create-a-connection-to-bynder-from-workfront-fusion)
-* [&#x200B; [!DNL Bynder] 에서 [!UICONTROL 클라이언트 ID] 및 [!UICONTROL 클라이언트 암호] 생성(선택 사항)](#generate-a-client-id-and-client-secret-in-bynder-optional)
+* [ [!DNL Bynder] 에서 [!UICONTROL 클라이언트 ID] 및 [!UICONTROL 클라이언트 암호] 생성(선택 사항)](#generate-a-client-id-and-client-secret-in-bynder-optional)
 
 ### Workfront Fusion에서 [!DNL Bynder]에 대한 연결 만들기
 

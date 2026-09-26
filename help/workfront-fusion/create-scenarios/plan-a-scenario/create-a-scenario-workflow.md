@@ -4,16 +4,18 @@ description: 시나리오를 만들려면 이 일반 워크플로를 따르십�
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-TQID: https://experienceleague.adobe.com/5j4My9ds8RdA3frEKdRHBFiWpQr-6fI0DfVyWSIgBPc
+TQID: 'https://experienceleague.adobe.com/5j4My9ds8RdA3frEKdRHBFiWpQr-6fI0DfVyWSIgBPc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 782
+source-wordcount: '782'
 ht-degree: 3%
-
 ---
-
 # 시나리오 만들기 워크플로
 
 시나리오는 사용 사례를 처리하는 애플리케이션 및 모듈을 통해 조직의 요구 사항을 충족하도록 구축됩니다. 그러나 시나리오를 만드는 것은 사용 사례에 관계없이 동일한 기본 워크플로우를 따릅니다. 이 문서에서는 시나리오를 만드는 기본 프로세스에 대해 설명합니다.
@@ -44,7 +46,7 @@ ht-degree: 3%
    >
    >왼쪽 탐색 패널이나 해당 아이콘이 보이지 않으면 메뉴 ![메뉴](assets/main-menu-icon-left-nav.png) 아이콘을 클릭합니다.
 
-1. (선택 사항) [!UICONTROL **폴더**] 패널에서 **[!UICONTROL 폴더 추가]** 아이콘 ![폴더 추가 아이콘](assets/add-folder-icon.png)을 클릭한 다음 첫 번째 폴더에 대해 &quot;연습 시나리오&quot;와 같은 이름을 입력합니다.
+1. (선택 사항)[!UICONTROL **폴더**] 패널에서 **[!UICONTROL 폴더 추가]** 아이콘 ![폴더 추가 아이콘](assets/add-folder-icon.png)을 클릭한 다음 첫 번째 폴더에 대해 &quot;연습 시나리오&quot;와 같은 이름을 입력합니다.
 
 1. (선택 사항) 폴더를 연 다음 페이지의 오른쪽 상단에 있는 **[!UICONTROL 새 시나리오 만들기]**&#x200B;를 클릭합니다.
 

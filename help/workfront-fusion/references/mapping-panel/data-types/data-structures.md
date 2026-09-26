@@ -4,16 +4,18 @@ description: 데이터 구조는 Adobe Workfront Fusion으로 전송되는 데�
 author: Becky
 feature: Workfront Fusion
 exl-id: 93abf8a5-a3a1-448e-834b-1cc81b88036b
-TQID: https://experienceleague.adobe.com/e8cGFEEP3-wxExVZNNRG8bf-6CbpN56xGTGbHSV6MVg
+TQID: 'https://experienceleague.adobe.com/e8cGFEEP3-wxExVZNNRG8bf-6CbpN56xGTGbHSV6MVg'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 242
+source-wordcount: '242'
 ht-degree: 1%
-
 ---
-
 # 데이터 구조
 
 데이터 구조는 Adobe Workfront Fusion에서 처리되는 데이터의 형식을 자세히 설명하는 문서 또는 패턴입니다. 이 문서를 기반으로 시나리오 편집기는 어떤 모듈이 어떤 종류의 데이터를 반환하거나 수신하는지 파악할 수 있습니다. 데이터 구조 문서는 JSON, XML, CSV 및 기타 데이터와 같은 데이터 형식을 직렬화/구문 분석하는 데 가장 일반적으로 사용됩니다.

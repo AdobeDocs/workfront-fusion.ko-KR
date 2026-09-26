@@ -8,18 +8,20 @@ description: 롤백 또는 커밋 단계 다음에 나오는 시나리오 실행
 author: Becky
 feature: Workfront Fusion
 exl-id: 4bf2a6c7-16b2-4545-9adf-be3947a7017d
-TQID: https://experienceleague.adobe.com/zdEDHRJhIt8dc4Ql835IDypV-CM3YRT5w41mjGDVpSE
+TQID: 'https://experienceleague.adobe.com/zdEDHRJhIt8dc4Ql835IDypV-CM3YRT5w41mjGDVpSE'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 367
+source-wordcount: '367'
 ht-degree: 25%
-
 ---
-
 # `throw` 오류 해결 방법 구성
 
 경우에 따라 롤백 또는 커밋 단계 다음에 나오는 시나리오 실행을 강제로 중지하거나, 경로 처리를 중지하고 선택적으로 완료되지 않은 실행 큐에 저장할 수 있습니다.

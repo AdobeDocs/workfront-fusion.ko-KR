@@ -4,16 +4,18 @@ description: Adobe Workfront Fusion 시나리오에서는 Draft.js 모듈을 사
 author: Becky
 feature: Workfront Fusion
 exl-id: 0116e379-cef8-4036-875b-46ca79a9e94d
-TQID: https://experienceleague.adobe.com/pb-FZkt8RBx3uQ2wGuABn5hwXawLvSpC9WGulistNWU
+TQID: 'https://experienceleague.adobe.com/pb-FZkt8RBx3uQ2wGuABn5hwXawLvSpC9WGulistNWU'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 241
+source-wordcount: '241'
 ht-degree: 52%
-
 ---
-
 # [!UICONTROL Draft.js] 모듈
 
 Adobe Workfront Fusion 시나리오에서는 [!UICONTROL Draft.js] 모듈을 사용하여 Draft.js를 HTML으로, HTML을 Draft.js로 변환할 수 있습니다. 이 항목을 Workfront 모듈과 함께 사용하여 Workfront 필드에 서식 있는 텍스트를 추가하거나 필드에서 서식 있는 텍스트를 읽을 수 있습니다.

@@ -5,13 +5,17 @@ description: 이 섹션에는 Adobe Workfront Fusion의 시나리오 관리와 �
 author: Becky
 feature: Workfront Fusion
 exl-id: 4e2f1bbb-fcd6-4724-bd0f-c028f3ea8d69
-source-git-commit: e63ec5927f2844f94fd0c7cd3f9890b7d236aede
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 19%
-
 ---
-
 # 시나리오 영역에서 시나리오 관리
 
 시나리오 영역에서 팀이 소유한 시나리오에 대한 정보를 볼 수 있습니다. 시나리오를 복제, 이동 또는 삭제하거나 특정 작업자 풀에 할당할 수도 있습니다.

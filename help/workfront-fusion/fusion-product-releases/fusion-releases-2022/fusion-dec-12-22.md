@@ -5,23 +5,30 @@ author: Becky
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: aa71be54-f956-438d-a84b-a6e80f6a1431
-TQID: https://experienceleague.adobe.com/ww7bXq4OoYuwkW6wB02papsstb7YHJ8Ow5phkn1OT7w
+TQID: 'https://experienceleague.adobe.com/ww7bXq4OoYuwkW6wB02papsstb7YHJ8Ow5phkn1OT7w'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+  - id: d968a1bc-9a90-4926-a531-bcf272c32aad
+    internal-label: Administration
+subfeature_v2:
+  - id: a29813d3-f0cc-4b60-9396-13b558370803
+    internal-label: Product announcements
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 173
+source-wordcount: '173'
 ht-degree: 36%
-
 ---
-
 # Workfront Fusion 릴리스 활동: 2022년 12월 12일 주간
 
 이 페이지에서는 2022년 12월 12일 화요일이 있는 주에 Adobe Workfront Fusion에서 이루어진 모든 개선 사항을 설명합니다.
 
 최근 모든 변경 사항의 목록은 [Adobe Workfront Fusion 릴리스 활동](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)을 참조하십시오.
 
-Workfront Fusion의 최근 버그 수정 목록을 보려면 [Workfront 유지 관리 업데이트](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=ko) 페이지를 참조하고 Workfront Fusion 유지 관리 업데이트 레이블이 지정된 업데이트를 확인하십시오.
+Workfront Fusion의 최근 버그 수정 목록을 보려면 [Workfront 유지 관리 업데이트](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html) 페이지를 참조하고 Workfront Fusion 유지 관리 업데이트 레이블이 지정된 업데이트를 확인하십시오.
 
 ## 향후 성장을 위한 Fusion 기능 향상
 

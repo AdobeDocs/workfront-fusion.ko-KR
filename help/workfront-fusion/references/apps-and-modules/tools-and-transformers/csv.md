@@ -4,18 +4,21 @@ description: Adobe Workfront Fusion CSV 모듈을 사용하면 CSV 파일을 만
 author: Becky
 feature: Workfront Fusion
 exl-id: bc6d5ddc-93c3-437b-8537-5bece1351c1d
-TQID: https://experienceleague.adobe.com/IhvuQxLno-vVgIWarBZG-EFSeu8shwQpZmce7PRBVQs
+TQID: 'https://experienceleague.adobe.com/IhvuQxLno-vVgIWarBZG-EFSeu8shwQpZmce7PRBVQs'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 941
+source-wordcount: '952'
 ht-degree: 10%
-
 ---
-
 # CSV
 
 Adobe Workfront Fusion [!UICONTROL CSV] 모듈을 사용하면 CSV 파일을 만들고 수신된 텍스트 값 또는 파일에서 CSV 텍스트를 구문 분석할 수 있습니다.
@@ -193,7 +196,7 @@ Adobe Workfront Fusion [!UICONTROL CSV] 모듈을 사용하면 CSV 파일을 만
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL CSV]</td> 
-   <td>구문 분석할 CSV 파일을 입력하거나 매핑합니다.<p>메모: <p>데이터가 이진 형식(일반적으로 파일에서)으로 제공되는 경우 'toString()' 함수를 사용하여 이진 데이터를 [!UICONTROL String] (으)로 변환해야 합니다.</p><p><img src="/help/workfront-fusion/references/apps-and-modules/assets/parse-csv-350x123.png"></p></p></td> 
+   <td>구문 분석할 CSV 파일을 입력하거나 매핑합니다.<p>메모: <p>데이터가 이진 형식(일반적으로 파일에서)으로 제공되는 경우 'toString()' 함수를 사용하여 이진 데이터를 [!UICONTROL String](으)로 변환해야 합니다.</p><p><img src="/help/workfront-fusion/references/apps-and-modules/assets/parse-csv-350x123.png"></p></p></td> 
   </tr> 
  </tbody> 
 </table>

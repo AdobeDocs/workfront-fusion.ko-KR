@@ -1,22 +1,23 @@
 ---
-title: 'Workfront Fusion 릴리스 활동: 2021년 4월 12일 화요일 주간'
-description: 'Workfront Fusion 릴리스 활동: 2021년 4월 12일 화요일 주간'
+title: 'Workfront Fusion 릴리스 활동: 2021년 4월 12일이 있는 주'
+description: 'Workfront Fusion 릴리스 활동: 2021년 4월 12일이 있는 주'
 author: Luke
 draft: Probably
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 66%
-
+source-wordcount: '127'
+ht-degree: 43%
 ---
-
-# Workfront Fusion 릴리스 활동: 2021년 4월 12일 화요일 주간
+# Workfront Fusion 릴리스 활동: 2021년 4월 12일이 있는 주
 
 이 페이지에서는 2021년 4월 12일 화요일이 있는 주에 Adobe Workfront Fusion에서 이루어진 모든 개선 사항을 설명합니다.
 
 최근 모든 변경 사항의 목록은 [Adobe Workfront Fusion 릴리스 활동](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)을 참조하십시오.
 
-Workfront Fusion의 최근 버그 수정 목록을 보려면 [Workfront 유지 관리 업데이트](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=ko) 페이지를 참조하고 Workfront Fusion 유지 관리 업데이트 레이블이 지정된 업데이트를 확인하십시오.
+Workfront Fusion의 최근 버그 수정 목록을 보려면 [Workfront 유지 관리 업데이트](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html) 페이지를 참조하고 Workfront Fusion 유지 관리 업데이트 레이블이 지정된 업데이트를 확인하십시오.
 
 ## NetSuite 앱 및 모듈 사용 가능
 

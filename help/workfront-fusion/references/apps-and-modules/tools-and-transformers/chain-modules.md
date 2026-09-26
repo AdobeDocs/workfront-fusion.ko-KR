@@ -4,16 +4,18 @@ description: 이러한 모듈을 사용하면 시나리오를 서로 연결하�
 author: Becky
 feature: Workfront Fusion
 exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
-TQID: https://experienceleague.adobe.com/AlHUrliXikCc3OVHiBTjLNQFndCf5qLzOLuBvnDTUfA
+TQID: 'https://experienceleague.adobe.com/AlHUrliXikCc3OVHiBTjLNQFndCf5qLzOLuBvnDTUfA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 936fc6b4d5688e42ad6d762d4f43abf8be47e5af
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 913
+source-wordcount: '913'
 ht-degree: 10%
-
 ---
-
 # 체인 모듈
 
 >[!IMPORTANT]
@@ -100,7 +102,7 @@ ht-degree: 10%
 > * **이 모듈을 반복기에 넣을 때 주의하십시오.** 큰 반복기의 각 항목에 대해 하위 시나리오를 발송하면 상당한 플랫폼 로드가 생성됩니다. 하위 시나리오의 논리 또는 반복기 외부에서 공유된 조회를 미리 계산하는 것을 고려하십시오.
 > * **실행 및 삭제**&#x200B;은(는) 부모가 하위 항목을 실행했는지 또는 성공했는지 여부를 볼 수 없음을 의미합니다. 하위 오류가 독립적으로 모니터링되는 경우에만 사용합니다.
 >
-> 전체 디자인 지침을 보려면 [여러 시나리오를 함께 연결](https://experienceleague.adobe.com/ko/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)을 참조하십시오.
+> 전체 디자인 지침을 보려면 [여러 시나리오를 함께 연결](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)을 참조하십시오.
 
 >[!NOTE]
 >

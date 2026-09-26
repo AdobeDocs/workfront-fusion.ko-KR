@@ -4,19 +4,23 @@ description: Adobe Workfront Fusion 시나리오에서는 Box를 사용하는 �
 author: Becky
 feature: Workfront Fusion
 exl-id: 9e741dce-05a6-4e13-8d58-fbe3b4900d7e
-TQID: https://experienceleague.adobe.com/1gzJh1C9Trah5ABH9oSeihxOyA7K2oTXkU021jHpoCI
+TQID: 'https://experienceleague.adobe.com/1gzJh1C9Trah5ABH9oSeihxOyA7K2oTXkU021jHpoCI'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1558
+source-wordcount: '1558'
 ht-degree: 26%
-
 ---
-
 # 확인란 모듈
 
 Adobe Workfront Fusion 시나리오에서는 [!DNL Box]를 사용하는 워크플로를 자동화할 수 있으며 여러 제3자 애플리케이션 및 서비스에 연결할 수 있습니다. 지정된 폴더를 모니터링하여 파일 변경 사항을 확인하거나, 기존 파일을 수정 및 삭제하거나, 새 파일을 폴더에 업로드합니다.

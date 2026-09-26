@@ -5,13 +5,15 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: a7b9f754dfc987330e3a446830f37b004f7b2e4e
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 599
+source-wordcount: '599'
 ht-degree: 16%
-
 ---
-
 # 특정 시나리오 실행 다시 트리거
 
 특정 시나리오 실행을 재시도하여 업데이트된 시나리오 블루프린트를 사용하여 데이터를 처리하거나 해당 데이터 흐름을 볼 수 있습니다. 실행을 재시도할 때 해당 실행의 데이터를 사용하여 시나리오가 실행됩니다.

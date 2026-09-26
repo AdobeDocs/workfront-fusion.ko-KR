@@ -4,19 +4,23 @@ description: Adobe Workfront Fusion JSON 앱은 Adobe Workfront Fusion이 데이
 author: Becky
 feature: Workfront Fusion
 exl-id: f8b281c5-bb63-4412-98c5-d82f45f8eafc
-TQID: https://experienceleague.adobe.com/hyUiO-ocxPsI8Wz0A34ZZ2LyBNbJWGrY5CbquHVQvHI
+TQID: 'https://experienceleague.adobe.com/hyUiO-ocxPsI8Wz0A34ZZ2LyBNbJWGrY5CbquHVQvHI'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Troubleshooting
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1230
+source-wordcount: '1230'
 ht-degree: 14%
-
 ---
-
 # [!UICONTROL JSON] 모듈
 
 Adobe Workfront Fusion [!UICONTROL JSON] 앱은 JSON 형식으로 데이터를 처리하는 모듈을 제공하므로 Adobe Workfront Fusion이 데이터 콘텐츠로 더 이상 작동하거나 새 JSON 콘텐츠를 만들 수 있습니다.
@@ -67,7 +71,7 @@ Adobe Workfront Fusion [!UICONTROL JSON] 앱은 JSON 형식으로 데이터를 �
 1. 수동으로 시나리오를 실행합니다. 이렇게 하면 [!UICONTROL JSON 구문 분석] 모듈이 제공한 JSON에서 JSON 구조를 식별할 수 있습니다.
 1. 이제 다음 모듈을 연결할 수 있습니다. 이제 JSON 구문 분석 모듈의 항목을 매핑에 사용할 수 있습니다.
 
-자세한 내용은 [!UICONTROL Adobe Workfront Fusion][&#128279;](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)의 데이터 구조를 참조하십시오.
+자세한 내용은 [!UICONTROL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)의 [데이터 구조를 참조하십시오.
 
 ### 컬렉션과 배열 비교
 

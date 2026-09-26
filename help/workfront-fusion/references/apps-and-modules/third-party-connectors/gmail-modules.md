@@ -4,20 +4,23 @@ description: Adobe Workfront Fusion 시나리오에서는 Gmail을 사용하는 
 author: Becky
 feature: Workfront Fusion
 exl-id: 62269eca-c3cf-42fe-a866-fb66d2363b8d
-TQID: https://experienceleague.adobe.com/N1oyeO-yNRUKW3u-BPw-yGOI1nCO8XT8pB4Rdg6zycA
+TQID: 'https://experienceleague.adobe.com/N1oyeO-yNRUKW3u-BPw-yGOI1nCO8XT8pB4Rdg6zycA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+    internal-label: APIs
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1876
+source-wordcount: '1873'
 ht-degree: 25%
-
 ---
-
 # [!DNL Gmail] 모듈
 
 Adobe Workfront Fusion 시나리오에서는 [!DNL Gmail]를 사용하는 워크플로를 자동화할 수 있으며 여러 제3자 애플리케이션 및 서비스에 연결할 수 있습니다.
@@ -68,10 +71,10 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 ## [!DNL Gmail]를 Workfront Fusion에 연결 {#connect-gmail-to-workfront-fusion}
 
-* [&#x200B; [!DNL Google Workspace]을(를) 사용하여  [!DNL Gmail] Workfront Fusion 연결](#connect-gmail-to-workfront-fusion-usinggoogle-workspace)
-* [&#x200B; [!DNL gmail.com] or [!DNL googlemail].com을 사용하여  [!DNL Gmail] Workfront Fusion에 연결](#connect-gmail-to-workfront-fusion-using-gmailcom-or-googlemailcom)
+* [ [!DNL Google Workspace]을(를) 사용하여  [!DNL Gmail] Workfront Fusion 연결](#connect-gmail-to-workfront-fusion-usinggoogle-workspace)
+* [ [!DNL gmail.com] or [!DNL googlemail].com을 사용하여  [!DNL Gmail] Workfront Fusion에 연결](#connect-gmail-to-workfront-fusion-using-gmailcom-or-googlemailcom)
 
-### [!DNL &#x200B; Google Workspace]을(를) 사용하여 [!DNL Gmail]을(를) Workfront Fusion에 연결
+### [!DNL  Google Workspace]을(를) 사용하여 [!DNL Gmail]을(를) Workfront Fusion에 연결
 
 [!DNL Google Workspace] 계정을 [!UICONTROL Workfront Fusion]에 연결하는 방법에 대한 지침은 [연결 만들기 - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)을 참조하십시오.
 

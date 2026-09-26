@@ -4,16 +4,18 @@ description: 조직의 팀 목록을 보고 팀 이름을 편집할 수 있습�
 author: Becky
 feature: Workfront Fusion
 exl-id: 80899745-de1e-4fa8-a398-e5e8e35aa6f4
-TQID: https://experienceleague.adobe.com/1cqWKL8dU7DQmLbQz8ig9az1pcDz1AOSE8G0RAOExss
+TQID: 'https://experienceleague.adobe.com/1cqWKL8dU7DQmLbQz8ig9az1pcDz1AOSE8G0RAOExss'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 308
+source-wordcount: '308'
 ht-degree: 34%
-
 ---
-
 # 팀 보기 및 관리
 
 팀은 특정 리소스에 대한 액세스 권한을 공유하는 사용자 그룹입니다. 이러한 리소스에는 다음이 포함될 수 있습니다.

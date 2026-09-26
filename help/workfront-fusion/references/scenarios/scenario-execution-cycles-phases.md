@@ -4,31 +4,33 @@ description: 이 문서에서는 초기화, 작업, 커밋 및 롤백과 같이 
 author: Becky
 feature: Workfront Fusion
 exl-id: abf41be5-df32-4eaf-b3f4-93ddf005bfe3
-TQID: https://experienceleague.adobe.com/QiQVO7jFPtqkI-ZcsG-Cl7slbYmKlY9HHnTW7MyrO7c
+TQID: 'https://experienceleague.adobe.com/QiQVO7jFPtqkI-ZcsG-Cl7slbYmKlY9HHnTW7MyrO7c'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 482
+source-wordcount: '482'
 ht-degree: 2%
-
 ---
-
 # 시나리오 실행, 주기 및 단계
 
 각 시나리오 실행은 초기화 단계로 시작하고, 작업 및 커밋/롤백 단계로 구성된 하나 이상의 주기를 계속하며, 종료 단계로 끝납니다
 
 * 초기화
 * 주기 #1
-   * 작업(읽기 또는 쓰기)
-   * 커밋 또는 롤백
+  * 작업(읽기 또는 쓰기)
+  * 커밋 또는 롤백
 * 주기 #2
-   * 작업(읽기 또는 쓰기)
-   * 커밋 또는 롤백
+  * 작업(읽기 또는 쓰기)
+  * 커밋 또는 롤백
 * ...
 * 주기 #n
-   * 작업(읽기 또는 쓰기)
-   * 커밋 또는 롤백
+  * 작업(읽기 또는 쓰기)
+  * 커밋 또는 롤백
 * 완료
 
 더 작은 규모에서, 각각의 모듈은 또한 이들 단계를 따른다. 모듈 단계에 대한 정보는 시나리오가 실행된 후 각 모듈의 오른쪽 상단에 있는 번호가 매겨진 버블에 있는 처리된 번들 정보에서 찾을 수 있습니다. 처리된 번들 정보를 찾는 방법에 대한 자세한 내용은 시나리오 실행 흐름의 [처리된 번들에 대한 정보](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md#information-about-processed-bundles)를 참조하십시오.

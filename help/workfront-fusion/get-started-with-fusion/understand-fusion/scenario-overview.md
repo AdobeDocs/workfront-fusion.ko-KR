@@ -4,16 +4,18 @@ description: Adobe Workfront Fusion에는 Adobe Workfront 라이선스 외에도
 author: Becky
 feature: Workfront Fusion
 exl-id: de81ad4c-27e5-4b6c-acf0-f01a8c85922e
-TQID: https://experienceleague.adobe.com/3bzje0OOFp4aA6KeWzSGU-hIUHSCBhAerh8GIX3GNWc
+TQID: 'https://experienceleague.adobe.com/3bzje0OOFp4aA6KeWzSGU-hIUHSCBhAerh8GIX3GNWc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 705
+source-wordcount: '705'
 ht-degree: 100%
-
 ---
-
 # 시나리오 개요
 
 Adobe Workfront Fusion의 역할은 사용자가 일상적인 작업에 많은 시간을 할애할 필요가 없도록 프로세스를 자동화하는 것입니다. 데이터를 자동으로 전송하고 변환하는 시나리오를 만들기 위해 앱과 서비스 내에서 그리고 앱과 서비스 간에 액션을 연결하는 방식입니다. 생성한 시나리오는 앱이나 서비스의 데이터를 관찰하고 해당 데이터를 처리하여 원하는 결과를 제공합니다.
@@ -111,5 +113,5 @@ Workfront Fusion은 다른 애플리케이션 및 웹 서비스에 연결할 수
 * Workfront Fusion에 사용되는 용어는 [Adobe Workfront Fusion 용어](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md)를 참조하십시오.
 * 연습 시나리오를 만들려면 [기본 시나리오 만들기](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)를 참조하십시오.
 * 시나리오 만들기 및 관리에 대한 자세한 내용은 아래에 나열된 문서를 참조하십시오.
-   * [시나리오 만들기](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
-   * [시나리오 관리](/help/workfront-fusion/manage-scenarios/manage-scenarios-toc.md)
+  * [시나리오 만들기](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
+  * [시나리오 관리](/help/workfront-fusion/manage-scenarios/manage-scenarios-toc.md)

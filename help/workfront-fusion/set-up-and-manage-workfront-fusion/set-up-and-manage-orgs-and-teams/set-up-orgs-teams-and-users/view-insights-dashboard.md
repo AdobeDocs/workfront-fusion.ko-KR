@@ -4,16 +4,18 @@ description: Fusion 관리자는 조직의 실행 지표를 표시하는 대시�
 author: Becky
 feature: Workfront Fusion
 exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
-TQID: https://experienceleague.adobe.com/tBZCbpImQxY42gOE8e04aQwCJC8EKgrDTIAt6Sw1KaU
+TQID: 'https://experienceleague.adobe.com/tBZCbpImQxY42gOE8e04aQwCJC8EKgrDTIAt6Sw1KaU'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 069ab0fd3d72da3b67d50e4f8e62823c825ef934
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 849
+source-wordcount: '849'
 ht-degree: 4%
-
 ---
-
 # 조직에 대한 인사이트 대시보드 보기
 
 Fusion Insights 대시보드를 사용하면 가장 많이 실행 중인 시나리오, 지연이 발생하는 위치 및 작업자 풀이 얼마나 효과적으로 작동하는지 빠르게 확인할 수 있습니다. 따라서 실행 볼륨, 대기열 길이, 풀 활용도 및 시나리오 수준의 성능을 실시간으로 파악할 수 있습니다.

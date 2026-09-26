@@ -4,18 +4,26 @@ description: Adobe Photoshop 모듈을 사용하면 Adobe Photoshop 계정의 �
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-TQID: https://experienceleague.adobe.com/RratZmko93V0LMxJ6qTy6cNvRqgPNvNgHTflRngE6BI
+TQID: 'https://experienceleague.adobe.com/RratZmko93V0LMxJ6qTy6cNvRqgPNvNgHTflRngE6BI'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+  - id: e14a7f57-c82c-4874-a495-5d036cbbdc3d
+    internal-label: Resource management
+subfeature_v2:
+  - id: b70a979b-965d-47a9-a360-e7ec2a19b8c1
+    internal-label: Digital content and documents
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 7501
+source-wordcount: '7501'
 ht-degree: 11%
-
 ---
-
 # [!DNL Adobe Photoshop] 모듈
 
 Adobe Workfront Fusion 시나리오에서는 [!DNL Adobe Photoshop]를 사용하는 워크플로를 자동화할 수 있으며 여러 제3자 애플리케이션 및 서비스에 연결할 수 있습니다.
@@ -1031,25 +1039,25 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (옵션 &gt; 문서) 해상도]</p>
+        <p>[!UICONTROL(옵션 &gt; 문서) 해상도]</p>
       </td>
    <td> 이미지의 해상도를 인치당 픽셀 단위로 입력하거나 매핑합니다. 72에서 300 사이여야 합니다. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (옵션 &gt; 문서) 모드]</p>
+        <p>[!UICONTROL(옵션 &gt; 문서) 모드]</p>
       </td>
    <td> 이미지 모드를 선택합니다. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (옵션 &gt; 문서) 채우기]</p>
+        <p>[!UICONTROL(옵션 &gt; 문서) 채우기]</p>
       </td>
    <td> 배경 레이어의 채우기를 투명, 흰색 또는 이미지의 배경색으로 할지 여부를 선택합니다. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (옵션 &gt; 문서) 깊이]</p>
+        <p>[!UICONTROL(옵션 &gt; 문서) 깊이]</p>
       </td>
    <td> 이미지의 비트 심도를 선택합니다. </td> 
     </tr>
@@ -1157,7 +1165,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (출력) 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL(출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>
@@ -1401,7 +1409,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (출력) 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL(출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>
@@ -1456,7 +1464,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (출력) 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL(출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>
@@ -1548,7 +1556,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (출력) 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL(출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>
@@ -1628,7 +1636,7 @@ Adobe Photoshop 커넥터는 다음을 사용합니다.
    <td> 편집한 파일의 파일 유형을 선택합니다. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (출력) 덮어쓰기]</td>
+      <td role="rowheader">[!UICONTROL(출력) 덮어쓰기]</td>
       <td>
         <p>새로 편집한 파일이 이미 있는 출력 파일을 덮어쓸지 여부를 선택합니다.</p>
       </td>

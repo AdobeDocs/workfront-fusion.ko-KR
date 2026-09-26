@@ -8,18 +8,20 @@ description: Adobe Admin Console에 사용자를 추가하고 Adobe Workfront Fu
 author: Becky
 feature: Workfront Fusion
 exl-id: 7cb1c1a7-3c7a-459a-818f-d9cefcb9988b
-TQID: https://experienceleague.adobe.com/jo9dNX5czLlg7Wi4iFBR6FlOM-fmM-i3zoEhh5sgsqc
+TQID: 'https://experienceleague.adobe.com/jo9dNX5czLlg7Wi4iFBR6FlOM-fmM-i3zoEhh5sgsqc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 607
+source-wordcount: '607'
 ht-degree: 20%
-
 ---
-
 # Adobe Admin Console을 통해 Adobe Workfront Fusion에 사용자 추가
 
 [!DNL Adobe Admin Console]에 사용자를 추가하고 Adobe Workfront Fusion에 할당하거나 [!DNL Adobe Admin Console]의 기존 사용자를 Workfront Fusion에 할당할 수 있습니다.

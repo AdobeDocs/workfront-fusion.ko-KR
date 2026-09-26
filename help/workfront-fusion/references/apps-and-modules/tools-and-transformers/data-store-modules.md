@@ -4,18 +4,21 @@ description: 데이터베이스 또는 간단한 테이블과 유사한 Adobe Wo
 author: Becky
 feature: Workfront Fusion
 exl-id: 0338b822-b345-429e-850d-3978b692231d
-TQID: https://experienceleague.adobe.com/xxcj73D3UZawazZrK92lAZTYaFTVj92o74zPRsnfFPA
+TQID: 'https://experienceleague.adobe.com/xxcj73D3UZawazZrK92lAZTYaFTVj92o74zPRsnfFPA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Troubleshooting
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1139
+source-wordcount: '1139'
 ht-degree: 30%
-
 ---
-
 # [!UICONTROL 데이터 저장소] 모듈
 
 데이터베이스 또는 간단한 테이블과 유사한 Adobe Workfront Fusion 데이터 저장소는 시나리오의 데이터를 저장할 수 있으므로 개별 시나리오 또는 시나리오 실행 간에 데이터를 전송할 수 있습니다. 동기화 중에 데이터 저장소를 사용하여 다양한 시스템의 새 데이터를 저장할 수 있습니다.

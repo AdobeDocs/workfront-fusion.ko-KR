@@ -97,7 +97,7 @@ Bynder 커넥터는 다음을 사용합니다.
 >Byender는 인증 코드/새로 고침 토큰 부여 유형을 사용합니다. 이는 Fusion Byender 커넥터가 사용하는 유일한 권한 부여 유형입니다.
 
 * [Workfront Fusion에서  [!DNL Bynder] 에 대한 연결 만들기](#create-a-connection-to-bynder-from-workfront-fusion)
-* [ [!DNL Bynder] 에서 [!UICONTROL 클라이언트 ID] 및 [!UICONTROL 클라이언트 암호] 생성(선택 사항)](#generate-a-client-id-and-client-secret-in-bynder-optional)
+* [&#x200B; [!DNL Bynder] 에서 [!UICONTROL 클라이언트 ID] 및 [!UICONTROL 클라이언트 암호] 생성(선택 사항)](#generate-a-client-id-and-client-secret-in-bynder-optional)
 
 ### Workfront Fusion에서 [!DNL Bynder]에 대한 연결 만들기
 

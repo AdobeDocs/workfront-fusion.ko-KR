@@ -566,7 +566,7 @@ ZIP로 출력하면 PDF는 페이지당 하나의 이미지로 변환되고 각 
 
 [!UICONTROL [!DNL Adobe PDF Services]문서 생성] 기능에 대한 자세한 내용은 [!DNL Adobe Document Services] 설명서의 [문서 생성 개요](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html)를 참조하십시오.
 
-* [ [!DNL Microsoft Word] 템플릿](#use-the-generate-document-module-with-a-microsoft-word-template)을 사용하여 [!UICONTROL 문서 생성] 모듈 사용
+* [&#x200B; [!DNL Microsoft Word] 템플릿](#use-the-generate-document-module-with-a-microsoft-word-template)을 사용하여 [!UICONTROL 문서 생성] 모듈 사용
 * [JSON을 사용하여 [!UICONTROL 문서 생성] 모듈 사용](#use-the-generate-document-module-with-json)
 
 #### [!DNL Microsoft Word] 템플릿을 사용하여 [!UICONTROL 문서 생성] 모듈 사용

@@ -71,10 +71,10 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 ## [!DNL Gmail]를 Workfront Fusion에 연결 {#connect-gmail-to-workfront-fusion}
 
-* [ [!DNL Google Workspace]을(를) 사용하여  [!DNL Gmail] Workfront Fusion 연결](#connect-gmail-to-workfront-fusion-usinggoogle-workspace)
-* [ [!DNL gmail.com] or [!DNL googlemail].com을 사용하여  [!DNL Gmail] Workfront Fusion에 연결](#connect-gmail-to-workfront-fusion-using-gmailcom-or-googlemailcom)
+* [&#x200B; [!DNL Google Workspace]을(를) 사용하여  [!DNL Gmail] Workfront Fusion 연결](#connect-gmail-to-workfront-fusion-usinggoogle-workspace)
+* [&#x200B; [!DNL gmail.com] or [!DNL googlemail].com을 사용하여  [!DNL Gmail] Workfront Fusion에 연결](#connect-gmail-to-workfront-fusion-using-gmailcom-or-googlemailcom)
 
-### [!DNL  Google Workspace]을(를) 사용하여 [!DNL Gmail]을(를) Workfront Fusion에 연결
+### [!DNL &#x200B; Google Workspace]을(를) 사용하여 [!DNL Gmail]을(를) Workfront Fusion에 연결
 
 [!DNL Google Workspace] 계정을 [!UICONTROL Workfront Fusion]에 연결하는 방법에 대한 지침은 [연결 만들기 - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)을 참조하십시오.
 

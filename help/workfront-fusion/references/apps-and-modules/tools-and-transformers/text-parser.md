@@ -182,7 +182,7 @@ HTML 코드에서 원하는 요소를 검색합니다.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Pattern] </td> 
-   <td> <p>정규 표현식 패턴을 입력합니다. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>예: </b></span></span> <code>[+-]?(\d+(\.\d+)?|\.\d+)([eE][+-]?\d+)?</code>은(는) 제공된 텍스트에서 모든 숫자를 추출합니다.</p> <p>메모:  <p>패턴은 괄호 <code>()</code>에 캡처 그룹을 하나 이상 포함해야 합니다. 패턴에 캡처 그룹이 없으면 출력 번들은 비어 있습니다.</p> </p> </td> 
+   <td> <p>정규 표현식 패턴을 입력합니다. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>예: </b></span></span> <code>[+-]?(\d+(\.\d+)?|\.\d+)([eE]&#x200B;[+-]?\d+)?</code>은(는) 제공된 텍스트에서 모든 숫자를 추출합니다.</p> <p>메모:  <p>패턴은 괄호 <code>()</code>에 캡처 그룹을 하나 이상 포함해야 합니다. 패턴에 캡처 그룹이 없으면 출력 번들은 비어 있습니다.</p> </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 전역 일치]</td> 

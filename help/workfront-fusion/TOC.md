@@ -3,9 +3,9 @@ user-guide-title: Adobe Workfront Fusion 설명서
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 문서, 튜토리얼 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
 nudge: true
-source-git-commit: 6d107dda1c657e7b0b7ae44cfebecc97421ca47e
+source-git-commit: 8b99d756bfddf8342a4a8cf672b13c3e98879f61
 workflow-type: tm+mt
-source-wordcount: '2678'
+source-wordcount: '2687'
 ht-degree: 49%
 ---
 
@@ -15,6 +15,7 @@ ht-degree: 49%
 * Fusion 릴리스 활동 {#fusion-release-activity}
   * [Adobe Workfront Fusion 릴리스 활동](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
   * Fusion 릴리스 - 2026 {#fusion-releases-2026}
+    * [Workfront Fusion 릴리스 활동: 2026년 9월 28일의 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-9-28.md)
     * [Workfront Fusion 릴리스 활동: 2026년 9월 14일의 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-9-14.md)
     * [Workfront Fusion 릴리스 활동: 2026년 9월 7일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-9-7.md)
     * [Workfront Fusion 릴리스 활동: 2026년 8월 31일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-8-31.md)
@@ -308,7 +309,7 @@ ht-degree: 49%
   * [모듈을 체인으로 이동](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)
   * [실행 중인 시나리오에서 데이터 흐름 보기](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
   * [웹후크의 대기열 보기](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
-  * {hide-from-toc}[Workfront Fusion의 AI 도우미](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
+  * Workfront Fusion의 {hide-from-toc}[AI 도우미](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
   * [시나리오 채점 전문가 실행](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
   * [시나리오 요소 삭제](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
   * [시나리오 영역에서 시나리오 관리](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)

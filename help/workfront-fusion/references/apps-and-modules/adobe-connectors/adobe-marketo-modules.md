@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: e84d0b7b77dd55c6f045c0b8d4d13aa16bfd29e6
 workflow-type: tm+mt
-source-wordcount: '2257'
-ht-degree: 99%
+source-wordcount: '2657'
+ht-degree: 86%
 ---
 # [!DNL Marketo] 모듈
 
@@ -214,9 +214,12 @@ Marketo 커넥터는 다음을 사용합니다.
 
 * [[!UICONTROL 목록에 리드 추가]](#add-leads-to-a-list)
 * [[!UICONTROL 프로그램 복제]](#clone-a-program)
+* [[!UICONTROL 일괄 추출 작업 만들기]](#create-a-bulk-extract-job)
 * [[!UICONTROL 레코드 만들기]](#create-a-record)
 * [[!UICONTROL 사용자 정의 API 호출]](#custom-api-call)
+* [[!UICONTROL 대량 추출 파일 다운로드]](#download-a-bulk-extract-file)
 * [[!UICONTROL 파일 다운로드]](#download-a-file)
+* [[!UICONTROL 일괄 추출 작업 상태 가져오기]](#get-bulk-extract-job-status)
 * [[!UICONTROL 레코드 읽기]](#read-a-record)
 * [[!UICONTROL 목록에서 리드 제거]](#remove-leads-from-a-list)
 * [[!UICONTROL 캠페인 예약]](#schedule-a-campaign)
@@ -269,6 +272,45 @@ Marketo 커넥터는 다음을 사용합니다.
   <tr> 
    <td role="rowheader">[!UICONTROL 폴더 ID]</td> 
    <td>새 프로그램을 배치할 폴더의 ID를 입력하거나 매핑합니다.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL 일괄 추출 작업 만들기]
+
+이 작업 모듈은 가망 고객 및 개인 레코드에 대한 대량 추출 작업을 생성합니다. [!UICONTROL 일괄 추출 작업 상태 가져오기]를 사용하여 작업을 확인한 다음 [!UICONTROL 일괄 추출 파일을 다운로드]하여 완료된 내보내기를 검색하십시오. 이 모듈은 상태 및 다운로드 모듈에서 사용하는 내보내기 ID를 반환합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL 연결]</p> </td> 
+   <td> <p>[!DNL Marketo] 계정을 Workfront Fusion에 연결하는 방법에 대한 자세한 내용은 이 문서의 <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Marketo] 연결</a>을 참조하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 필드]</td> 
+   <td> <p>대량 추출 작업에 추가할 각 필드에 대해 <b>항목 추가</b>를 클릭하고 필드 API 이름을 입력하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 출력 형식]</td> 
+   <td> <p>추출할 파일 형식(CSV, TSV 또는 SSV)을 선택합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 필터 기준]</td> 
+   <td> <p>이 모듈에 대한 필터를 선택한 다음 표시되는 필드에 요청된 정보를 입력합니다.</p>
+   <ul> 
+    <li> <p><strong>[!UICONTROL 스마트 목록]</strong> </p> <p>스마트 목록 ID를 입력하거나 매핑합니다.</p> </li> 
+    <li> <p><strong>[!UICONTROL 만든 날짜 범위]</strong> </p> <p>검색할 시작 및 종료 날짜를 선택합니다.</p> </li> 
+   </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 사용자 지정 열 헤더]</td> 
+   <td> <p>추출 작업에 포함할 각 사용자 지정 열 헤더에 대해 <b>항목 추가</b>를 클릭하고 필드의 API 이름과 열 헤더 텍스트를 입력합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 큐에 넣기 작업을 즉시]</td> 
+   <td> <p>생성 후 즉시 실행할 작업을 대기열에 넣으려면 예를 선택합니다. 별도의 단계를 사용하여 나중에 작업을 대기열에 넣으려면 아니오를 선택합니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -362,6 +404,33 @@ Marketo 커넥터는 다음을 사용합니다.
    <td role="rowheader">[!UICONTROL 필드]</td> 
    <td> <p>API 호출에 추가할 각 필드에 대해 <b>항목 추가</b>를 클릭하고 필드의 키와 값을 입력합니다.</td> 
   </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Body Type]</td> 
+   <td> <p>요청 본문의 형식을 선택하십시오. <b>[!UICONTROL URL-encoded (Fields)]</b> 또는 <b>[!UICONTROL JSON]</b>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 요청 본문(JSON)]</td> 
+   <td> <p>[!UICONTROL Body Type]이(가) [!UICONTROL JSON](으)로 설정된 경우에만 사용됩니다. 원시 JSON 본문을 입력합니다.</p> <p>중요: JSON을 사용하는 경우 위의 [!UICONTROL Content-Type] 헤더를 <code>application/x-www-form-urlencoded</code>에서 <code>application/json</code>(으)로 변경하십시오. 그렇지 않으면 Marketo이 요청을 거부할 수 있습니다.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL 대량 추출 파일 다운로드]
+
+이 작업 모듈은 완료된 대량 추출 작업에 대한 파일을 검색합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL 연결]</p> </td> 
+   <td> <p>[!DNL Marketo] 계정을 Workfront Fusion에 연결하는 방법에 대한 자세한 내용은 이 문서의 <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Marketo] 연결</a>을 참조하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 내보내기 ID]</td> 
+   <td>파일을 다운로드할 대량 추출 작업의 ID를 입력하거나 매핑합니다.</td> 
+  </tr> 
  </tbody> 
 </table>
 
@@ -380,6 +449,25 @@ Marketo 커넥터는 다음을 사용합니다.
   <tr> 
    <td role="rowheader">[!UICONTROL 파일 ID]</td> 
    <td>다운로드할 파일의 ID를 입력하거나 매핑합니다.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL 일괄 추출 작업 상태 가져오기]
+
+이 작업 모듈은 작업 ID를 사용하여 대량 추출 작업의 상태를 검색합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL 연결]</p> </td> 
+   <td> <p>[!DNL Marketo] 계정을 Workfront Fusion에 연결하는 방법에 대한 자세한 내용은 이 문서의 <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Workfront Fusion에 [!DNL Marketo] 연결</a>을 참조하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 내보내기 ID]</td> 
+   <td>상태를 확인할 대량 추출 작업의 ID를 입력하거나 매핑합니다.</td> 
   </tr> 
  </tbody> 
 </table>

@@ -410,7 +410,7 @@ Marketo 커넥터는 다음을 사용합니다.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 요청 본문(JSON)]</td> 
-   <td> <p>[!UICONTROL Body Type]이(가) [!UICONTROL JSON](으)로 설정된 경우에만 사용됩니다. 원시 JSON 본문을 입력합니다.</p> <p>중요: JSON을 사용하는 경우 위의 [!UICONTROL Content-Type] 헤더를 <code>application/x-www-form-urlencoded</code>에서 <code>application/json</code>(으)로 변경하십시오. 그렇지 않으면 Marketo이 요청을 거부할 수 있습니다.</p> </td> 
+   <td> <p>[!UICONTROL Body Type]이(가) [!UICONTROL JSON] (으)로 설정된 경우에만 사용됩니다. 원시 JSON 본문을 입력합니다.</p> <p>중요: JSON을 사용하는 경우 위의 [!UICONTROL Content-Type] 헤더를 <code>application/x-www-form-urlencoded</code>에서 <code>application/json</code>(으)로 변경하십시오. 그렇지 않으면 Marketo이 요청을 거부할 수 있습니다.</p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -23,9 +23,9 @@ feature_v2:
 subfeature_v2:
   - id: a29813d3-f0cc-4b60-9396-13b558370803
     internal-label: Product announcements
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: e84d0b7b77dd55c6f045c0b8d4d13aa16bfd29e6
 workflow-type: tm+mt
-source-wordcount: '1607'
+source-wordcount: '1616'
 ht-degree: 84%
 ---
 # Adobe Workfront Fusion 릴리스 활동 개요
@@ -36,6 +36,7 @@ Adobe Workfront Fusion은 동일한 작업을 계속해서 반복하는 대신 �
 
 ### 2026년 9월
 
+* [Workfront Fusion 릴리스 활동: 2026년 9월 28일의 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-9-28.md)
 * [Workfront Fusion 릴리스 활동: 2026년 9월 14일의 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-9-14.md)
 * [Workfront Fusion 릴리스 활동: 2026년 9월 7일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-9-7.md)
 

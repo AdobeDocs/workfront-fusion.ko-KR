@@ -1,7 +1,7 @@
 ---
 title: Adobe Workfront Fusion MCP 서버 도구
 description: Adobe Workfront Fusion MCP 서버가 AI 에이전트 플랫폼 및 Coworker에 노출하는 도구의 참조 목록
-source-git-commit: 322a34df48a5218bc045e6cac6a5a8b3837e8c2e
+source-git-commit: 5f3bd6b7b8837632af245ea2c172205625e4ecba
 workflow-type: tm+mt
 source-wordcount: '1183'
 ht-degree: 7%
@@ -175,4 +175,5 @@ Claude, ChatGPT, Copilot 또는 자체 에이전트의 사용자 정의 MCP 연�
 ## 도구 업데이트 방법
 
 Adobe이 새로운 버전의 Fusion MCP 서버를 출시하면 연결된 에이전트가 업데이트된 도구 세트를 자동으로 수거합니다. 다시 연결할 필요가 없습니다.
+
 

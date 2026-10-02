@@ -1,7 +1,7 @@
 ---
 title: Adobe Workfront Fusion MCP 서버 구성
 description: Adobe Workfront Fusion을 MCP 호환 AI 에이전트 플랫폼 또는 Coworker(독립 실행형 또는 Fusion 오른쪽 레일)에 연결합니다.
-source-git-commit: 6d447c16d199c69ae670f59bb56cf79464cbe057
+source-git-commit: 5f3bd6b7b8837632af245ea2c172205625e4ecba
 workflow-type: tm+mt
 source-wordcount: '1177'
 ht-degree: 0%
@@ -178,3 +178,4 @@ Fusion을 사용자 지정 MCP 서버로 추가합니다.
 ### 에이전트가 내 연결 비밀을 보나요?
 
 아니요. 연결 및 키 도구는 자격 증명 또는 비밀 값이 아닌 메타데이터(이름, 유형, 범위, 만료)를 반환합니다.
+

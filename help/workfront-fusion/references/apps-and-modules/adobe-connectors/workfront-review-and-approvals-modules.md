@@ -15,10 +15,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: a6430648344a5d02960bac7447331679e8abebe4
 workflow-type: tm+mt
-source-wordcount: '5202'
-ht-degree: 11%
+source-wordcount: '5905'
+ht-degree: 16%
 ---
 # Adobe Workfront 통합 검토 및 승인 모듈
 
@@ -131,6 +131,7 @@ Workfront 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를
 
 * [액션](#actions)
 * [검색 결과](#searches)
+* [트리거](#triggers)
 * [기타](#other)
 
 ### 액션
@@ -1353,6 +1354,89 @@ This action module deletes participants from an approval.
 </table>
 
 <!-- BECKY CHECK ME: the screenshot shows two separate fields both labeled "Limit" - an optional pagination page-size field (max 100, default 20, ignored if Cursor is set) and a required general execution-cycle limit, matching the Limit field used in every other module in this article. Confirm this isn't a UI labeling issue before publishing, and that both rows are needed/correctly distinguished. -->
+
+### 트리거
+
+* [승인 이벤트 보기](#watch-approval-events)
+
+#### 승인 이벤트 보기
+
+이 트리거 모듈은 Adobe Workfront Unified Review and Approvals에서 승인 관련 이벤트가 발생하면 시나리오를 실시간으로 실행합니다.
+
+이 모듈은 연결이 액세스하는 모든 사용자 지정 필드 및 값과 함께 승인 이벤트와 연결된 모든 표준 필드를 반환합니다. 시나리오의 후속 모듈에서 이 정보를 매핑할 수 있습니다.
+
+Watch 승인 이벤트 모듈에 대한 Webhook을 구성하려면 다음을 수행합니다.
+
+1. **웹후크** 상자 오른쪽에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
+
+1. 표시되는 **[!UICONTROL 후크 추가]** 상자에서 웹후크를 구성합니다.
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td>[!UICONTROL 웹후크 이름]</td> 
+      <td>웹후크 이름을 입력합니다.</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL 연결]</td> 
+      <td> <p>Workfront 앱을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref">Adobe Workfront 통합 검토 및 승인에 연결</a>을 참조하십시오.</p> </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL 레코드 유형]</td> 
+      <td>모듈에서 감시할 승인 레코드의 유형을 선택합니다.</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL 구성 유형]</td> 
+      <td>단순 필터를 사용할지 고급 필터를 사용할지 선택합니다.<p>단순 또는 고급 필터에 대한 자세한 내용은 Workfront 모듈 문서에서 <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#using-advanced-filters" class="MCXref xref">고급 필터 사용</a>을 참조하십시오.</p></td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL 이벤트 필터 페이로드]</td> 
+      <td>고급 필터를 사용하는 경우 필터를 설명하는 JSON을 입력합니다.</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Filter Connector]</td> 
+      <td>고급 필터를 사용하는 경우 필터에 사용할 커넥터를 선택합니다.</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL 상태]</td> 
+      <td>단순 필터를 사용하는 경우 이전 상태를 볼 것인지 새 상태를 볼 것인지 선택합니다.<ul><li><p><b>[!UICONTROL 새 상태]</b></p><p>레코드가 지정된 값<b>으로</b> 변경되면 시나리오를 트리거합니다.</p><p>예를 들어, 상태가 [!UICONTROL 새 상태]로 설정되어 있고 필터가 [!UICONTROL 상태] [!UICONTROL 다음과 같음] [!UICONTROL 진행 중]으로 설정된 경우, 웹후크는 이전 상태와 관계없이 [!UICONTROL 상태]가 [!UICONTROL 진행 중]으로 변경되면 시나리오를 트리거합니다.</p></li><li><p><b>[!UICONTROL 이전 상태]</b></p><p>레코드가 지정된 값<b>에서</b> 변경되면 시나리오를 트리거합니다.</p><p>예를 들어, 상태가 [!UICONTROL 이전 상태]로 설정되어 있고 필터가 [!UICONTROL 상태] [!UICONTROL 다음과 같음] [!UICONTROL 진행 중]으로 설정된 경우, 현재 [!UICONTROL 진행 중]인 [!UICONTROL 상태]가 다른 상태로 변경되면 웹후크가 시나리오를 트리거합니다.</p></li></ul></td> 
+     </tr> 
+     <tr data-mc-conditions=""> 
+      <td> <p>[!UICONTROL 이벤트 필터]</p> </td> 
+      <td> <p>단순 필터를 사용하는 경우 필터를 설정합니다.</p> <p>각 필터에 대해 필터가 평가할 필드, 연산자, 필터를 허용하기 원하는 값을 입력합니다. AND 규칙을 추가하여 두 개 이상의 필터를 사용할 수 있습니다.</p> <p><b>메모</b>: 기존 Workfront 웹후크에서는 필터를 편집할 수 없습니다. Workfront 이벤트 구독에 대해 서로 다른 필터를 설정하려면 현재 웹후크를 제거하고 새 웹후크를 만듭니다.</p> <p>이벤트 필터에 대한 자세한 내용은 Workfront 모듈 문서의 Workfront &gt; [!UICONTROL Watch Events] 모듈에서 <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">이벤트 구독 필터</a>를 참조하십시오.</p> </td> 
+     </tr> 
+     <tr data-mc-conditions=""> 
+      <td>이 연결에 의해 만들어진 이벤트 제외</td> 
+      <td>단순 필터를 사용하는 경우 이 옵션을 활성화하여 이 트리거 모듈에서 사용하는 것과 동일한 커넥터를 사용하여 생성되거나 업데이트된 이벤트를 제외합니다. 이렇게 하면 시나리오가 스스로 트리거되어 끝없이 반복되는 상황을 방지할 수 있습니다. 일부 승인 이벤트 유형에는 이 옵션을 사용하지 못할 수 있습니다.</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL 레코드 원본]</td> 
+      <td>
+       <p>시나리오를 [!UICONTROL 새 레코드만], [!UICONTROL 업데이트된 레코드만], [!UICONTROL 새 레코드 및 업데이트된 레코드] 또는 [!DNL Deleted Records Only] 중 어떻게 볼 것인지 선택합니다.</p>
+       <p><b>메모</b>: [!UICONTROL 새 레코드 및 업데이트 레코드]를 선택하면, 웹후크 만들기에서 동일한 웹후크 주소에 대해 두 개의 이벤트 구독을 만듭니다.</p>
+       </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL 보안 후크 활성화]</td> 
+      <td>
+       <p>이 웹후크에 대해 authToken 기반 보안을 활성화할지 여부를 선택합니다.</p><p>
+       <b>참고</b>: 2026년 8월 23일부터 Fusion은 기존 모듈을 포함하여 모든 Workfront &gt; 이벤트 보기 모듈에 대해 기본적으로 authToken 기반 보안을 활성화합니다. 특정 웹후크가 끊기거나 호환성을 위해 이 기능을 비활성화해야 하는 경우 보안 후크 활성화 옵션을 해제할 수 있습니다.</p>
+       </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL 사용자 지정 토큰]</td> 
+      <td>
+       <p>(선택 사항) [!UICONTROL 보안 후크 활성화]가 [!UICONTROL 예]로 설정된 경우 자체 토큰 값을 입력하여 웹 후크를 보호할 수 있습니다. 이 필드를 비워 두면 자동으로 토큰이 생성됩니다.</p>
+       </td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+웹후크가 생성된 후 이벤트가 전송되는 엔드포인트의 주소를 볼 수 있습니다.
+
+자세한 내용은 Workfront 설명서의 이벤트 구독 API 문서에서 [이벤트 페이로드 예제](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) 섹션을 참조하십시오.
 
 ### 기타
 

@@ -10,9 +10,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 5168f8b0baae4201773899f418bdf0c8b5bf3ef1
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '405'
 ht-degree: 0%
 ---
 # 시나리오에 AI 프롬프트 추가
@@ -44,4 +44,9 @@ MCP 에이전트 모듈을 사용하면 언어 모델과 MCP 서버를 사용하
 
 MCP 에이전트 모듈을 사용하여 시나리오에 AI 프롬프트를 추가할 수 있습니다.
 
-자세한 내용은 [MCP 에이전트 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)을 참조하세요.
+지침은 특정 서버에 대한 다음 문서를 참조하십시오.
+
+* [Adobe Experience Manager MCP 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-mcp-modules.md).
+* [Adobe Marketo Engage MCP 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-engage-mcp-module.md).
+* [Adobe Workfront MCP 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-mcp-modules.md).
+* [MCP 에이전트 모듈](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md).

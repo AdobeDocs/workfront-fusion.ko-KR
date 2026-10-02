@@ -243,6 +243,6 @@ AI는 프롬프트가 실제로 작업을 요청한 경우에만 쓰기, 업데�
 ## Reference links used while compiling this
 
 * Adobe Marketo Engage MCP server (developer documentation):
-  https://experienceleague.adobe.com/en/docs/marketo-developer/marketo/mcp-server
+  https://experienceleague.adobe.com/ko/docs/marketo-developer/marketo/mcp-server
 
   -->

@@ -14,9 +14,9 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 08224dc1e04d56e422cb177c65efadf5db71b136
 workflow-type: tm+mt
-source-wordcount: '3056'
+source-wordcount: '3078'
 ht-degree: 34%
 ---
 # [!DNL Salesforce] 모듈
@@ -115,6 +115,13 @@ Salesforce 커넥터는 다음을 사용합니다.
 ## [!DNL Salesforce]에 연결하기
 
 [!DNL Salesforce] 모듈에 대한 연결을 만들려면 OAuth 2 또는 PKCE를 사용하여 인증할 수 있습니다.
+
+>[!NOTE]
+>
+>PKCE로 인증하는 경우 Salesforce에서 다음 범위를 활성화해야 합니다.
+>
+>* 전체 액세스: `full`
+>* 언제든지 요청 수행: `refresh_token`, `offline_access`
 
 1. 모든 [!DNL Salesforce] 모듈에서 연결 상자 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 

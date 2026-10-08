@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 818b14eb26bab6d81f95daf1c8c7ee831402c879
 workflow-type: tm+mt
-source-wordcount: '2406'
-ht-degree: 25%
+source-wordcount: '2675'
+ht-degree: 22%
 ---
 # Jira 모듈
 
@@ -78,10 +78,14 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
 
 ## Jira를 Workfront Fusion에 연결
 
-Jira에 대한 연결을 만드는 절차는 기본 연결을 만드는지 OAuth2 연결을 만드는지에 따라 다릅니다.
+Jira에 대한 연결을 만드는 절차는 사용 중인 계정 유형 및 인증 방법에 따라 다릅니다. 연결이 개별 Jira 사용자와 연결된 경우 개인 계정 연결을 사용합니다. 전용 자동화 또는 비사용자 ID를 사용하여 연결을 실행하려는 경우 서비스 계정 연결을 사용하십시오.
+
+**연결 유형** 필드에서 Jira 계정에 적합한 인증 방법을 선택합니다.
 
 * [Jira에 대한 OAuth2 연결 만들기](#create-an-oauth2-connection-to-jira)
 * [Jira에 대한 기본 연결 만들기](#create-a-basic-connection-to-jira)
+* [Jira에 대한 서비스 계정 API 토큰 연결 만들기](#create-a-service-account-api-token-connection-to-jira)
+* [Jira에 대한 서비스 계정 OAuth2 연결 만들기](#create-a-service-account-oauth2-connection-to-jira)
 
 ### Jira에 대한 OAuth2 연결 만들기
 
@@ -195,7 +199,7 @@ Jira에 대한 기본 연결 만들기는 Jira Cloud에 대한 연결을 만드�
     <tbody> 
      <tr> 
       <td role="rowheader"> <p>연결 유형</p> </td> 
-      <td> <p>기본 연결을 만드는지 OAuth 2 연결을 만드는지 선택합니다.</p> </td> 
+      <td> <p>이 연결에 대해 <b>기본</b>을(를) 선택하십시오.</p></td>
      </tr> 
      <tr> 
       <td role="rowheader"> <p>연결 이름</p> </td> 
@@ -243,7 +247,7 @@ Jira에 대한 기본 연결 만들기는 Jira Cloud에 대한 연결을 만드�
     <tbody> 
      <tr> 
       <td role="rowheader"> <p>연결 유형</p> </td> 
-      <td> <p>기본 연결을 만드는지 OAuth 2 연결을 만드는지 선택합니다.</p> </td> 
+      <td> <p>이 연결에 대해 <b>기본</b>을(를) 선택하십시오.</p></td>
      </tr> 
      <tr> 
       <td role="rowheader"> <p>연결 이름</p> </td> 
@@ -294,6 +298,33 @@ PAT를 사용하려면 `jira-config.properties` 파일의 `jira/bin/WEB-INF/clas
 * `jira.rest.csrf.disabled = true`
 
 이 파일이 없으면 직접 만들어야 합니다.
+
+### Jira에 대한 서비스 계정 API 토큰 연결 만들기
+
+API 토큰으로 인증하는 Jira 서비스 계정에 대해 이 옵션을 사용합니다. **연결 유형** 필드에서 **서비스 계정 API 토큰**&#x200B;을 선택합니다.
+
+1. Jira 모듈에서 **연결** 필드 옆에 있는 **추가**&#x200B;를 클릭합니다.
+1. **연결 유형** 필드에서 **서비스 계정 API 토큰**&#x200B;을 선택합니다.
+1. **연결 이름**&#x200B;을 입력하십시오.
+1. Jira 인스턴스의 **서비스 URL**&#x200B;을(를) 입력하십시오.
+1. 적절한 **Jira 계정 유형**&#x200B;을(를) 선택하십시오.
+1. Jira 서비스 계정에 대한 API 토큰을 입력합니다.
+1. 이 연결에 사용할 **API 버전**&#x200B;을(를) 선택하십시오.
+1. 연결을 만들고 모듈로 돌아가려면 **계속**&#x200B;을 클릭하세요.
+
+### Jira에 대한 서비스 계정 OAuth2 연결 만들기
+
+OAuth 2로 인증하는 Jira 서비스 계정에 대해 이 옵션을 사용합니다. **연결 유형** 필드에서 **서비스 계정 OAuth 2**&#x200B;을(를) 선택합니다.
+
+1. Jira 모듈에서 **연결** 필드 옆에 있는 **추가**&#x200B;를 클릭합니다.
+1. **연결 유형** 필드에서 **서비스 계정 OAuth 2**&#x200B;을(를) 선택합니다.
+1. **연결 이름**&#x200B;을 입력하십시오.
+1. Jira 인스턴스의 **서비스 URL**&#x200B;을(를) 입력하십시오.
+1. 적절한 **Jira 계정 유형**&#x200B;을(를) 선택하십시오.
+1. 서비스 계정과 연결된 Jira OAuth 2 애플리케이션에 대한 **클라이언트 ID** 및 **클라이언트 암호**&#x200B;을(를) 입력하십시오.
+1. 연결에 필요한 **추가 범위**&#x200B;를 입력합니다(선택 사항).
+1. 이 연결에 사용할 **API 버전**&#x200B;을(를) 선택하십시오.
+1. 연결을 만들고 모듈로 돌아가려면 **계속**&#x200B;을 클릭하세요.
 
 ## Jira 모듈 및 해당 필드
 

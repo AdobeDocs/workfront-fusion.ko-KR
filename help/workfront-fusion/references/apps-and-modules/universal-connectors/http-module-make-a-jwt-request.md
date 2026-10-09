@@ -179,11 +179,11 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
    <td><p>재시도 가능한 오류로 인해 요청이 실패할 경우 요청을 재시도해야 하는 횟수를 지정합니다.</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[!UICONTROL 추가 재시도 상태 코드](고급)</p></td>
+   <td role="rowheader"><p>[!UICONTROL 추가 재시도 상태 코드] (고급)</p></td>
    <td><p>다시 시도 가능한 것으로 처리되어야 하는 추가 HTTP 상태 코드를 지정합니다.</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[!UICONTROL 다른 HTTP 모듈과 쿠키 공유](고급)</p></td>
+   <td role="rowheader"><p>[!UICONTROL 다른 HTTP 모듈과 쿠키 공유] (고급)</p></td>
    <td><p>이 옵션을 활성화하면 시나리오의 모든 HTTP 모듈과 서버의 쿠키를 공유할 수 있습니다.</p></td>
   </tr>
   <tr>
@@ -195,19 +195,19 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
    <td><p>확인되지 않은 TLS 인증서를 사용하는 연결을 거부하려면 이 옵션을 활성화합니다.</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[!UICONTROL Follow redirect](고급)</p></td>
+   <td role="rowheader"><p>[!UICONTROL Follow redirect] (고급)</p></td>
    <td><p>3xx 응답이 있는 URL 리디렉션을 따르려면 이 옵션을 활성화하십시오.</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[!UICONTROL 배열과 동일한 쿼리 문자열 키를 여러 개 직렬화할 수 없음](고급)</p></td>
+   <td role="rowheader"><p>[!UICONTROL 배열과 동일한 쿼리 문자열 키를 여러 개 직렬화할 수 없음] (고급)</p></td>
    <td><p>기본적으로 Workfront Fusion은 배열과 동일한 URL 쿼리 문자열 매개 변수 키에 대해 여러 값을 처리합니다. 예를 들어 <code>www.test.com?foo=bar&amp;foo=baz</code>은(는) <code>www.test.com?foo[0]=bar&amp;foo[1]=baz</code>(으)로 변환됩니다. 이 기능을 비활성화하려면 이 옵션을 활성화합니다.</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[!UICONTROL Request compressed content](고급)</p></td>
+   <td role="rowheader"><p>[!UICONTROL Request compressed content] (고급)</p></td>
    <td><p>웹 사이트의 압축된 버전을 요청하려면 이 옵션을 활성화하십시오. 압축된 콘텐츠를 요청하기 위해 <code>[!UICONTROL Accept-Encoding]</code> 헤더를 추가합니다.</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[!UICONTROL Use Mutual TLS](고급)</p></td>
+   <td role="rowheader"><p>[!UICONTROL Use Mutual TLS] (고급)</p></td>
    <td><p>HTTP 요청에서 상호 TLS를 사용하려면 이 옵션을 활성화하십시오.</p></td>
   </tr>
   <tr>
@@ -215,7 +215,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
    <td><p>요청에 추가하려는 각 서명 옵션에 대해 <b>항목 추가</b>를 클릭하고 매개 변수의 이름과 값을 입력하십시오.</p><p>JWT 서명자에게 전달된 추가 옵션(예: <code>expiresIn</code>, <code>issuer</code>, <code>audience</code>, <code>subject</code> 및 <code>keyid</code>). <code>expiresIn</code>과(와) 같은 기간 값은 <code>jsonwebtoken</code> 라이브러리에서 해석됩니다. 일반 숫자는 밀리초로 처리되므로 <code>"1h"</code> 또는 <code>"3600s"</code>과(와) 같은 단위 문자열을 명시적으로 사용하십시오. 알고리즘은 연결에서 가져오며 여기에서 재정의할 수 없습니다.</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[!UICONTROL Header Name](고급)</p></td>
+   <td role="rowheader"><p>[!UICONTROL Header Name] (고급)</p></td>
    <td><p>서명된 JWT를 받는 요청 헤더의 이름을 입력하거나 매핑합니다. 기본값: <code>Authorization</code>. 점선 이름은 거부되고 요청 로그에서 마스킹할 수 없으므로 헤더 이름에는 점(<code>.</code>)을 사용할 수 없습니다.</p></td>
   </tr>
   <tr>

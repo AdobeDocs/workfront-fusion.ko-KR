@@ -3,9 +3,9 @@ user-guide-title: Adobe Workfront Fusion 설명서
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 문서, 튜토리얼 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
 nudge: true
-source-git-commit: 1f81819f3752e48bd4b070b3b3f192dc73c3a499
+source-git-commit: 6fa2ee67919a381e44f703ff29a353585904bf7c
 workflow-type: tm+mt
-source-wordcount: '2724'
+source-wordcount: '2730'
 ht-degree: 48%
 ---
 
@@ -314,7 +314,7 @@ ht-degree: 48%
   * [모듈을 체인으로 이동](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)
   * [실행 중인 시나리오에서 데이터 흐름 보기](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
   * [웹후크의 대기열 보기](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
-  * {hide-from-toc}[Workfront Fusion의 AI 도우미](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
+  * Workfront Fusion의 {hide-from-toc}[AI 도우미](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
   * [시나리오 채점 전문가 실행](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
   * [시나리오 요소 삭제](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
   * [시나리오 영역에서 시나리오 관리](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
@@ -385,6 +385,7 @@ ht-degree: 48%
     * [앱 및 해당 모듈](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)
     * 범용 커넥터 {#universal-connectors}
       * [HTTP > [!UICONTROL 요청하기] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+      * [[!UICONTROL HTTP] > [!UICONTROL JWT 요청 만들기] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-jwt-request.md)
       * [[!UICONTROL HTTP] > [!UICONTROL 기본 인증 요청하기] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
       * [[!UICONTROL HTTP] > [!UICONTROL OAuth 2.0 요청하기] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
       * [[!UICONTROL HTTP] > [!UICONTROL 클라이언트 인증서 인증 요청하기] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)

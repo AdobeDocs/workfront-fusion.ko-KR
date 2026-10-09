@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: e3b9a5e08e78c9ddd4829ab288c353a058409a5c
 workflow-type: tm+mt
-source-wordcount: '991'
-ht-degree: 19%
+source-wordcount: '1194'
+ht-degree: 16%
 ---
 # [!UICONTROL HTTP] > [!UICONTROL 요청] 모듈
 
@@ -128,6 +128,14 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
   <tr> 
    <td role="rowheader">[!UICONTROL 시간 초과] </td> 
    <td> <p>요청 시간 제한(초)을 지정합니다(1-300). 기본값은 40초입니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 재시도 횟수]</td> 
+   <td> <p>연결 오류 시 요청을 다시 시도하는 횟수를 지정합니다(ETIMEDOUT, ECONNRESET, EPROTO). 기본값은 3입니다. 다시 시도를 비활성화하려면 0으로 설정합니다.</p> <p>이 설정은 [!UICONTROL Evaluate all states as errors]가 활성화된 경우에만 적용됩니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 추가 재시도 상태 코드]</td> 
+   <td> <p>[!UICONTROL Evaluate all states as errors]가 활성화된 경우 재시도 가능한 것으로 처리되어야 하는 추가 HTTP 상태 코드를 지정합니다. 기본적으로 408, 429 및 모든 5xx 코드만 재시도할 수 있습니다.</p> <p>이 필드에 상태 코드를 추가하면 다시 시도 가능한 연결 오류가 되고 [!UICONTROL 다시 시도 횟수] 설정에 따라 다시 시도가 트리거됩니다. 여기에 나열되지 않은 상태 코드는 기본 동작을 유지합니다. 404 또는 422와 같이 일반적으로 재시도할 수 없는 코드는 여기에 추가하여 재시도할 수 있도록 할 수 있습니다.</p> <p><b>예:</b> [!UICONTROL 모든 상태를 오류로 평가]를 사용하도록 설정하고 [!UICONTROL 다시 시도 횟수]를 4로 설정한 다음 422를 이 필드에 추가하면 HTTP 422 응답이 다시 시도 가능한 것으로 처리되어 다른 연결 유형 오류처럼 다시 시도됩니다.</p> <p><b>참고:</b> [!UICONTROL Timeout] 설정은 각 시도가 대기하는 시간을 제어합니다. 다시 시도 사이의 일시 중지는 정의하지 않습니다. 이 설정은 [!UICONTROL Evaluate all states as errors]가 활성화된 경우에만 적용됩니다.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 다른 HTTP 모듈과 쿠키 공유]</td> 

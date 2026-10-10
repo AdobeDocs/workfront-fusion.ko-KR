@@ -16,10 +16,10 @@ feature_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 9e08c421a53c7ca499715fa8e32be6c10fbde1d9
+source-git-commit: 50583b23190de0fee568f020722482d8e9aed76b
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 91%
+source-wordcount: '534'
+ht-degree: 90%
 ---
 # Fusion 애플리케이션 및 해당 모듈 참조: 문서 색인
 
@@ -32,6 +32,7 @@ ht-degree: 91%
 이러한 커넥터를 사용하면 공개 API가 있는 모든 앱이나 웹 서비스에 연결할 수 있습니다.
 
 * [http > [!UICONTROL 요청하기] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL JWT 요청 만들기] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-jwt-request.md)
 * [[!UICONTROL HTTP] > [!UICONTROL 기본 인증 요청하기] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
 * [[!UICONTROL HTTP] > [!UICONTROL OAuth 2.0 요청하기] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
 * [[!UICONTROL HTTP] > [!UICONTROL 클라이언트 인증서 인증 요청하기] 모듈](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)

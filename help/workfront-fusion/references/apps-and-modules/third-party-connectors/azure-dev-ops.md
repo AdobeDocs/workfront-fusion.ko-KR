@@ -16,10 +16,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 0922a5503bbeded91ae116849465d0f898ef4686
 workflow-type: tm+mt
-source-wordcount: '2647'
-ht-degree: 23%
+source-wordcount: '3789'
+ht-degree: 17%
 ---
 # [!DNL Azure DevOps] 모듈
 
@@ -92,10 +92,200 @@ Azure DevOps 커넥터는 다음을 사용합니다.
 
 ## [!DNL Azure DevOps]를 Workfront Fusion에 연결 {#connect-azure-devops-to-workfront-fusion}
 
+* [페더레이션 연결을 사용하여 Azure DevOps를 Workfront Fusion에 연결](#connect-azure-devops-to-workfront-fusion-using-a-federated-connection)
 * [EntraApp을 사용하여 Azure DevOps를 Workfront Fusion에 연결](#connect-azure-devops-to-workfront-fusion-using-entraapp)
 * [서비스 주체를 사용하여 Azure DevOps를 Workfront Fusion에 연결](#connect-azure-devops-to-workfront-fusion-using-a-service-principal)
 
+### 페더레이션 연결을 사용하여 Azure DevOps를 Adobe Workfront Fusion에 연결
+
+페더레이션 연결은 클라이언트 암호를 사용하지 않는다는 점을 제외하면 서비스 사용자 연결과 같이 작동합니다.
+
+암호를 저장하는 대신, Microsoft Entra ID에 Workfront Fusion이 한 개의 특정 연결에 대해 발급하는 토큰을 신뢰하도록 지시합니다. 연결이 실행되면 Fusion은 짧은 기간 동안 ID 증명을 제공하고 Microsoft Entra ID는 액세스 토큰을 반환합니다. 클라이언트 암호가 없으므로 만료되는 암호와 회전하거나 저장할 암호가 없습니다.
+
++++ 를 확장하여 페더레이션 연결을 사용하여 Azure DevOps를 Adobe Workfront Fusion에 연결하는 지침을 봅니다.
+
+>[!NOTE]
+>
+>* 이 연결을 설정하려면 Microsoft Entra 관리 센터를 두 번 방문해야 합니다. 먼저 앱을 등록한 다음 Workfront Fusion에서 연결을 만들고 Microsoft Entra ID로 돌아가 페더레이션 자격 증명을 추가합니다. 이는 페더레이션 자격 증명이 하나의 특정 연결을 식별했으며, 연결이 만들어지기 전까지 해당 식별자가 존재하지 않기 때문입니다.
+>* 이 연결에는 서비스 주체 연결과 동일한 제한이 적용됩니다. 사용자 라이선스 관리와 같은 소수의 관리자 수준 작업에는 여전히 개인 계정 연결이 필요합니다.
+
+* [페더레이션 연결을 사용하여 Azure DevOps를 Workfront Fusion에 연결하기 위한 사전 요구 사항](#prerequisites-to-connecting-azure-devops-to-workfront-fusion-using-a-federated-connection)
+* [Microsoft Entra ID(Federated connection)에서 앱 등록 생성](#create-the-app-registration-in-microsoft-entra-id-federated-connection)
+* [연결 세부 정보 수집(페더레이션 연결)](#collect-your-connection-details-federated-connection)
+* [Workfront Fusion(페더레이션 연결)에서 연결 만들기](#create-the-connection-in-workfront-fusion-federated-connection)
+* [Microsoft Entra ID에서 페더레이션 자격 증명 추가](#add-the-federated-credential-in-microsoft-entra-id)
+* [연결 확인(페더레이션 연결)](#verify-the-connection-federated-connection)
+
+#### 페더레이션 연결을 사용하여 Azure DevOps를 Workfront Fusion에 연결하기 위한 사전 요구 사항
+
+
+이 연결을 만들려면 다음이 필요합니다.
+
+* 앱을 등록하고 페더레이션 자격 증명을 추가하기 위해 Microsoft Entra ID에서 글로벌 관리자 또는 애플리케이션 관리자 액세스 권한이 필요합니다. 이 액세스 권한이 없는 경우 IT 또는 ID 팀의 사용자에게 이러한 단계를 완료하도록 요청하십시오.
+* Azure DevOps 조직의 프로젝트 컬렉션 관리자 액세스 권한을 사용하여 서비스 주체를 멤버로 추가합니다. 이 사용자는 Microsoft Entra ID를 관리하는 사용자와 다른 경우가 많습니다.
+* Azure DevOps 조직의 이름입니다. Azure DevOps URL `dev.azure.com/<your organization name>`에서 찾을 수 있습니다.
+
+#### Microsoft Entra ID(Federated connection)에서 앱 등록 생성
+
+1. Microsoft Entra 관리 센터에 로그인합니다.
+1. 앱 등록 > 새 등록으로 이동합니다.
+1. 앱에 인식할 수 있는 명확한 이름을 지정합니다. 예: `Workfront Fusion Azure DevOps Integration`.
+1. 리디렉션 URI를 비워 둡니다. 이 연결은 브라우저를 통한 로그인을 포함하지 않습니다.
+1. 등록을 선택합니다.
+1. 클라이언트 암호를 만들지 마십시오. 페더레이션된 연결은 이를 사용하지 않습니다.
+1. [연결 세부 정보 수집](#collect-your-connection-details-federated-connection)을 계속합니다.
+
+
+#### 연결 세부 정보 수집(페더레이션 연결)
+
+1. 앱 등록의 개요 페이지에서 다음 값을 확인합니다. 모듈에서 연결을 만들 때 이를 입력합니다.
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL 테넌트 ID]</td>
+      <td>개요 페이지에서 <b>디렉터리(테넌트) ID</b> 레이블이 지정되었습니다.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 클라이언트 ID]</td>
+      <td>개요 페이지에서 <b>응용 프로그램(클라이언트) ID</b> 레이블이 지정되었습니다.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 조직]</td>
+      <td>Azure DevOps 조직 이름입니다. 예를 들어 URL이 <code>dev.azure.com/yourorg</code>인 경우 <code>yourorg</code>을(를) 입력하십시오.</td>
+     </tr>
+    </tbody>
+   </table>
+
+1. [Workfront Fusion에서 연결 만들기](#create-the-connection-in-workfront-fusion-federated-connection)를 계속합니다.
+
+>[!NOTE]
+>
+>서비스 사용자 연결과 마찬가지로 앱 등록의 API 권한 영역을 건너뛸 수 있습니다. 다음 절차에서 Azure DevOps에 대한 액세스 권한이 Azure DevOps 내에 부여됩니다.
+
+#### Workfront Fusion(페더레이션 연결)에서 연결 만들기
+
+1. 모듈의 연결 설정 화면에서 통합 연결 유형을 선택합니다.
+1. 다음을 입력하십시오.
+
+   * 임차인 ID
+   * 클라이언트 ID
+   * 조직
+
+1. Select **Create**.
+
+   Workfront Fusion에는 세 가지 값이 표시됩니다. 이 값은 나중에 연결을 만드는 과정에서 필요하므로 이 페이지를 열어 두십시오.
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL 발급자]</td>
+      <td><code>https://oidc.automations.adobe.com</code>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Subject]</td>
+      <td>이렇게 하면 이 연결이 식별됩니다. <code>fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:28964</code>(으)로 보입니다. 만드는 모든 연결에 대해 다릅니다.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 대상]</td>
+      <td><code>api://AzureADTokenExchange</code>.</td>
+     </tr>
+    </tbody>
+   </table>
+
+   >[!IMPORTANT]
+   >
+   >패널을 닫거나 취소를 선택하지 마십시오. 나머지 절차를 완료할 때까지 연결이 완료되지 않습니다. 패널을 닫으면 새 연결에 새 제목 이 표시되므로 연결을 삭제하고 다시 시작해야 합니다.
+
+1. **제목** 값을 복사합니다.
+1. [Microsoft Entra ID에서 페더레이션 자격 증명을 추가](#add-the-federated-credential-in-microsoft-entra-id)합니다.
+
+#### Microsoft Entra ID에서 페더레이션 자격 증명 추가
+
+이 절차는 클라이언트 암호를 대체하는 절차입니다. 이는 Microsoft Entra ID에게 이 하나의 연결에 대해 Workfront Fusion에서 문제가 되는 토큰을 수락하도록 알려줍니다.
+
+1. 새 브라우저 탭에서 Microsoft Entra 관리 센터로 돌아가 앱 등록을 엽니다.
+1. 인증서 및 암호 > 페더레이션 자격 증명으로 이동합니다.
+1. 자격 증명 추가를 선택합니다.
+1. 페더레이션 자격 증명 시나리오에서 기타 발급자를 선택합니다.
+1. 다음을 입력하십시오.
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL 발급자]</td>
+      <td><code>https://oidc.automations.adobe.com</code></td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Subject identifier]</td>
+      <td>Workfront Fusion에서 복사한 제목입니다. 추가된 공백 없이 정확하게 붙여넣습니다.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 이름]</td>
+      <td>나중에 찾을 수 있도록 이 연결을 식별하는 이름입니다. 예: <code>workfront-fusion-connection-28964</code>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 대상]</td>
+      <td><code>api://AzureADTokenExchange</code>. 이것은 보통 당신을 위해 채워집니다. 기본값을 그대로 둡니다.</td>
+     </tr>
+    </tbody>
+   </table>
+
+1. **추가를 클릭합니다**.
+1. [연결 확인](#verify-the-connection-federated-connection)을 계속합니다.
+
+>[!NOTE]
+>
+>Microsoft Entra ID는 단일 앱 등록에서 최대 20개의 페더레이션 자격 증명을 사용할 수 있으며 주체 식별자가 정확히 일치해야 합니다. 와일드카드는 지원되지 않습니다. 각 Workfront Fusion 연결에는 자체 주제가 있으므로 각 연결에는 자체 페더레이션 자격 증명이 필요합니다. 연결이 20개 이상 필요한 경우 앱을 두 개 이상 등록하고 연결을 여러 앱에 분산합니다.
+
+
+#### 연결 확인(페더레이션 연결)
+
+1. 연결 패널이 열려 있는 Workfront Fusion 브라우저 탭으로 돌아갑니다.
+1. **저장**&#x200B;을 클릭합니다.
+
+   * 모든 것이 올바르게 설정된 경우 연결이 성공적으로 검증되고 모듈 구성을 계속할 수 있습니다.
+   * 확인에 실패하면 패널이 열린 상태로 유지되며 오류가 표시됩니다. Microsoft Entra ID 또는 Azure DevOps에서 발생하는 문제를 수정한 후 저장 을 다시 선택합니다. 연결을 다시 만들 필요가 없으며 주제도 변경되지 않습니다.
+
+>[!NOTE]
+>
+>Microsoft Entra ID에 추가하는 통합 자격 증명은 활성화되는 데 시간이 조금 걸릴 수 있습니다. 자격 증명을 추가한 후 바로 확인에 실패하는 경우 잠시 기다린 후 저장 을 다시 선택한 후 추가로 조사합니다.
+
+
+문제 해결
+
+<table style="table-layout:auto">
+ <col>
+ <col>
+ <tbody>
+  <tr>
+   <td role="rowheader">연결이 잘못된 클라이언트 또는 잘못된 요청 오류로 인해 확인에 실패합니다.</td>
+   <td>Microsoft Entra ID가 토큰을 페더레이션 자격 증명과 일치시킬 수 없습니다. 발급자가 슬래시가 없는 정확히 <code>https://oidc.automations.adobe.com</code>이고 제목 식별자가 Workfront Fusion에 표시된 제목과 문자 대 문자인지 확인합니다. 다른 연결에서 복사된 제목 이 가장 일반적인 원인입니다.</td>
+  </tr>
+  <tr>
+   <td role="rowheader">연결은 확인하지만 모듈은 Azure DevOps에서 401 또는 403을 반환합니다</td>
+   <td>ID는 신뢰할 수 있지만 Azure DevOps 데이터에 액세스할 수 없습니다. <a href="#add-the-service-principal-to-your-azure-devops-organization">Azure DevOps 조직에 서비스 주체 추가</a>를 완료했으며 모듈에서 사용하는 특정 프로젝트에 서비스 주체가 할당되었는지 확인합니다.</td>
+  </tr>
+  <tr>
+   <td role="rowheader">다른 페더레이션 자격 증명을 추가할 수 없습니다.</td>
+   <td>해당 앱 등록에 대한 20개의 페더레이션 자격 증명 한도에 도달했습니다. 추가 앱을 등록하고 추가 연결을 만듭니다.</td>
+  </tr>
+ </tbody>
+</table>
+
++++
+
 ### EntraApp을 사용하여 Azure DevOps를 Workfront Fusion에 연결
+
+EntraApp을 사용하여 Azure DevOps를 Workfront Fusion에 연결할 수 있습니다.
+
++++ 를 확장하여 EntraApp을 사용하여 Azure DevOps를 Workfront Fusion에 연결하는 지침을 봅니다
 
 1. 시나리오에 [!DNL Azure DevOps] 모듈을 추가합니다.
 1. [!UICONTROL 연결] 필드 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
@@ -126,12 +316,14 @@ Azure DevOps 커넥터는 다음을 사용합니다.
       </tr>
       <tr>
             <td>[!UICONTROL 모든 범위 요청]</td>
-            <td>[!DNL Azure DevOps] (EntraApp) 연결 유형을 사용하는 경우 이 옵션을 활성화하여 연결에 대한 모든 범위를 요청합니다.</td>
+            <td>[!DNL Azure DevOps](EntraApp) 연결 유형을 사용하는 경우 이 옵션을 활성화하여 연결에 대한 모든 범위를 요청합니다.</td>
       </tr>
    </table>
 
 1. Azure DevOps 앱 ID 또는 클라이언트 암호를 입력하려면 <b>고급 설정 표시</b>를 클릭하고 열려 있는 필드에 해당 ID를 입력합니다.
 1. 연결 설정을 완료하고 시나리오 만들기를 계속하려면 **[!UICONTROL 계속]**&#x200B;을(를) 클릭합니다.
+
++++
 
 ### 서비스 주체를 사용하여 Azure DevOps를 Workfront Fusion에 연결
 
@@ -139,14 +331,17 @@ Azure DevOps 커넥터는 다음을 사용합니다.
 
 이 연결 유형은 모든 Azure DevOps 모듈에서 사용할 수 있습니다.
 
++++ 를 확장하여 서비스 주체를 사용하여 Azure DevOps를 Adobe Workfront Fusion에 연결하는 지침을 확인합니다.
+
+
 >[!NOTE]
 >
 >서비스 주체 인증이 모든 Azure DevOps 기능을 지원하는 것은 아닙니다. 사용자 라이선스 관리와 같은 소수의 관리자 수준 작업에는 여전히 개인 계정 연결이 필요합니다. 작업 항목, 보드, 저장소 또는 파이프라인에 대해서만 필요한 경우 서비스 주체 인증을 사용합니다.
 
 * [서비스 주체를 사용하여 Azure DevOps를 Workfront Fusion에 연결하기 위한 사전 요구 사항](#prerequisites-to-connecting-azure-devops-to-workfront-fusion-using-a-service-principal)
-* [Microsoft Entra ID에서 앱 등록 만들기](#create-the-app-registration-in-microsoft-entra-id)
+* [Microsoft Entra ID에서 앱 등록 만들기](#create-the-app-registration-in-microsoft-entra-id-service-principal)
 * [클라이언트 암호 만들기](#create-a-client-secret)
-* [연결 세부 정보 수집](#collect-your-connection-details)
+* [연결 세부 정보 수집](#collect-your-connection-details-service-principal)
 * [Azure DevOps 조직에 서비스 주체 추가](#add-the-service-principal-to-your-azure-devops-organization)
 * [연결 만들기](#create-the-connection)
 
@@ -158,7 +353,7 @@ Azure DevOps 커넥터는 다음을 사용합니다.
 * **프로젝트 컬렉션 관리자** Azure DevOps 조직의 액세스 권한을 부여하여 서비스 주체를 구성원으로 추가합니다. 이 사용자는 Microsoft Entra ID를 관리하는 사용자와 다른 경우가 많습니다.
 * Azure DevOps 조직의 이름입니다. Azure DevOps URL `dev.azure.com/<your organization name>`에서 찾을 수 있습니다.
 
-#### Microsoft Entra ID에서 앱 등록 만들기
+#### Microsoft Entra ID(서비스 주체)에서 앱 등록을 만듭니다.
 
 1. [!DNL Microsoft Entra] 관리 센터에 로그인합니다.
 1. **[!UICONTROL 앱 등록]** > **[!UICONTROL 새 등록]**(으)로 이동합니다.
@@ -175,7 +370,7 @@ Azure DevOps 커넥터는 다음을 사용합니다.
 1. 암호의 **[!UICONTROL 값]**&#x200B;을(를) 즉시 복사합니다. 한 번만 표시됩니다. 복사하기 전에 다른 곳으로 이동하면 새 파일을 만들어야 합니다.
 1. [연결 세부 정보 수집](#collect-your-connection-details)을 계속합니다.
 
-#### 연결 세부 정보 수집
+#### 연결 세부 정보 수집(서비스 주체)
 
 1. 앱 등록의 **[!UICONTROL 개요]** 페이지에서 다음 값을 참고하십시오. 모듈에서 연결을 만들 때 이를 입력합니다.
 
@@ -223,9 +418,9 @@ Microsoft Entra ID에서 앱을 등록하면 해당 ID만 생성됩니다. 아�
 
 1. 조직의 일반적인 액세스 사례에 따라 필요한 특정 프로젝트 또는 프로젝트에 서비스 사용자를 할당합니다.
 1. **[!UICONTROL 추가]**&#x200B;를 선택합니다.
-1. [연결 만들기](#create-the-connection)를 계속합니다.
+1. [Workfront Fusion에서 연결 만들기](#create-the-connection-in-workfront-fusion-service-principal)를 계속합니다.
 
-#### 연결 만들기
+#### Workfront Fusion에서 연결 만들기(서비스 주체)
 
 1. 모듈의 연결 설정 화면에서 **[!UICONTROL 서비스 사용자]** 연결 유형을 선택합니다.
 1. 다음을 입력하십시오.
@@ -238,6 +433,8 @@ Microsoft Entra ID에서 앱을 등록하면 해당 ID만 생성됩니다. 아�
 1. 연결을 저장합니다.
 
    모든 것이 올바르게 설정되면 연결이 성공적으로 검증됩니다.
+
++++
 
 ## [!UICONTROL Azure DevOps] 모듈 및 해당 필드
 
@@ -306,7 +503,7 @@ Microsoft Entra ID에서 앱을 등록하면 해당 ID만 생성됩니다. 아�
        <li> <p><strong>[!UICONTROL 설명]</strong>: 새 프로젝트에 대한 설명을 입력하거나 매핑합니다. </p> </li> 
        <li> <p><strong>[!UICONTROL Visibility]</strong>: 프로젝트를 public으로 할지 private으로 할지 선택합니다. 비공개 프로젝트와 상호 작용하려면 사용자에게 조직에 로그인하고 프로젝트에 대한 액세스 권한이 부여되어야 합니다. 조직에 로그인하지 않은 사용자가 공개 프로젝트를 볼 수 있습니다.</p> </li> 
        <li> <p><strong>[!UICONTROL Version control]</strong>: 프로젝트에서 버전 제어에 [!DNL Git] 또는 [!UICONTROL Team Foundation Version Control(TFCV)]을(를) 사용할지 여부를 선택합니다.</p> </li> 
-       <li> <p><strong>[!UICONTROL 작업 항목 프로세스]</strong>: 프로젝트에 사용할 작업 프로세스를 선택합니다. 옵션은 [!UICONTROL Basic], [!UICONTROL Scrum], [!UICONTROL Capability Maturity Model Integration(CMMI)] 및 [!UICONTROL Agile]입니다.</p> <p>[!DNL Azure DevOps] 프로세스에 대한 자세한 내용은 [!DNL Azure DevOps] 설명서의 <a href="https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&tabs=basic-process">기본 프로세스 및 프로세스 템플릿</a>을 참조하십시오.</p> </li> 
+       <li> <p><strong>[!UICONTROL 작업 항목 프로세스]</strong>: 프로젝트에 사용할 작업 프로세스를 선택합니다. 옵션은 [!UICONTROL Basic], [!UICONTROL Scrum], [!UICONTROL Capability Maturity Model Integration(CMMI)] 및 [!UICONTROL Agile]입니다.</p> <p>[!DNL Azure DevOps] 프로세스에 대한 자세한 내용은 [!DNL Azure DevOps] 설명서의 <a href="https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&amp;tabs=basic-process">기본 프로세스 및 프로세스 템플릿</a>을 참조하십시오.</p> </li> 
       </ul> </li> 
      <li> <p><strong>[!UICONTROL 작업 항목]</strong> </p> <p>다음 필드를 채웁니다.</p> 
       <ul> 

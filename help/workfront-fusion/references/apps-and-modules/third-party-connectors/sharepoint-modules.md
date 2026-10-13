@@ -18,10 +18,10 @@ topic_v2:
     internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: c9bf5c68e4977027944114c35414fa5f46ea8751
 workflow-type: tm+mt
-source-wordcount: '4846'
-ht-degree: 12%
+source-wordcount: '5853'
+ht-degree: 10%
 ---
 # Microsoft SharePoint Online 모듈
 
@@ -98,16 +98,22 @@ SharePoint 커넥터는 다음을 사용합니다.
 
 ## Microsoft SharePoint Online을 Workfront Fusion에 연결 {#connect-microsoft-sharepoint-online-to-workfront-fusion}
 
-* [&#x200B; [!DNL Microsoft] 계정을 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
+* [ [!DNL Microsoft] 계정을 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [고급 설정을 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
 * [인증서 인증을 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
 * [서비스 주체를 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-service-principal)
 
 ### [!DNL Microsoft] 계정을 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결
 
-[!DNL Microsoft] 계정을 사용하여 Microsoft SharePoint Online에 연결할 수 있습니다. [!DNL Sharepoint] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 [Adobe Workfront Fusion 연결 만들기 - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)을 참조하십시오.
++++ 를 확장하여 Microsoft 계정을 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결하는 지침을 봅니다.
+
+[!DNL Microsoft] 계정을 사용하여 Microsoft SharePoint Online에 연결할 수 있습니다. [!DNL Sharepoint] 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 [Adobe Workfront Fusion에 연결 만들기 - 기본 지침](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)을 참조하십시오.
+
++++
 
 ### 고급 설정을 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결
+
++++ 를 확장하여 고급 설정을 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결하는 지침을 봅니다.
 
 연결에 자격 증명을 포함하려면 고급 설정 표시 옵션을 활성화합니다. 이 유형의 연결에는 클라이언트 ID, 클라이언트 암호 및 테넌트 ID가 필요합니다.
 
@@ -144,7 +150,11 @@ SharePoint 커넥터는 다음을 사용합니다.
 
 1. 연결을 저장하고 모듈로 돌아가려면 **계속**&#x200B;을 클릭합니다.
 
++++
+
 ### 인증서 인증을 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결
+
++++ 를 확장하여 인증서 인증을 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결하는 지침을 봅니다.
 
 인증서 인증을 사용하여 SharePoint에 연결할 수 있습니다.
 
@@ -209,7 +219,11 @@ SharePoint 커넥터는 다음을 사용합니다.
 
 1. 연결을 저장하고 모듈로 돌아가려면 **계속**&#x200B;을 클릭합니다.
 
++++
+
 ### 서비스 주체를 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결
+
++++ 를 확장하여 서비스 주체를 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결하는 지침을 봅니다.
 
 개인 계정 대신 서비스 주체(애플리케이션 API 연결)를 사용하는 연결을 만들 수 있습니다. 이 기능은 연결을 특정 사용자가 아닌 애플리케이션이나 서비스 ID로 실행하려는 경우에 유용합니다. 예를 들어, 해당 사용자가 회사를 떠나거나 암호를 변경할 경우 통합이 중단되지 않습니다.
 
@@ -230,7 +244,7 @@ SharePoint 커넥터는 다음을 사용합니다.
 
 계속해서 [Microsoft Entra ID에서 앱 등록을 만듭니다](#create-the-app-registration-in-microsoft-entra-id).
 
-#### Microsoft Entra ID에서 앱 등록 만들기
+#### Microsoft Entra ID(서비스 주체)에서 앱 등록을 만듭니다.
 
 1. [!DNL Microsoft Entra] 관리 센터에 로그인합니다.
 1. **[!UICONTROL 앱 등록]** > **[!UICONTROL 새 등록]**(으)로 이동합니다.
@@ -239,7 +253,7 @@ SharePoint 커넥터는 다음을 사용합니다.
 1. **[!UICONTROL 등록]**&#x200B;을 선택하세요.
 1. [클라이언트 암호를 만드세요](#create-a-client-secret).
 
-#### 클라이언트 암호 만들기
+#### 클라이언트 암호 만들기(서비스 사용자)
 
 1. 새 앱 등록에서 **[!UICONTROL 인증서 및 암호]**(으)로 이동합니다.
 1. **[!UICONTROL 새 클라이언트 암호]**&#x200B;를 선택하고 설명을 추가한 다음 만료 기간을 선택하십시오.
@@ -247,7 +261,7 @@ SharePoint 커넥터는 다음을 사용합니다.
 1. 암호의 **[!UICONTROL 값]**&#x200B;을(를) 즉시 복사합니다. 한 번만 표시됩니다. 복사하기 전에 다른 곳으로 이동하면 새 파일을 만들어야 합니다.
 1. [API 권한 부여](#grant-api-permissions)를 계속합니다.
 
-#### API 권한 부여
+#### API 권한 부여(서비스 주체)
 
 >[!IMPORTANT]
 >
@@ -260,7 +274,7 @@ SharePoint 커넥터는 다음을 사용합니다.
 1. **[!UICONTROL 조직에 대한 관리자 동의 부여]**&#x200B;를 선택한 다음 확인합니다.
 1. [연결 세부 정보 수집](#collect-your-connection-details)을 계속합니다.
 
-#### 연결 세부 정보 수집
+#### 연결 세부 정보 수집(서비스 주체)
 
 앱 등록의 **[!UICONTROL 개요]** 페이지에서 다음 값을 참고하십시오. 모듈에서 연결을 만들 때 이를 입력합니다.
 
@@ -285,7 +299,7 @@ SharePoint 커넥터는 다음을 사용합니다.
 
 [연결 만들기](#create-the-connection)를 계속합니다.
 
-#### 연결 만들기
+#### 연결 만들기(서비스 주체)
 
 1. [!UICONTROL API 호출 만들기] 모듈에서 연결 필드 옆의 **[!UICONTROL 추가]**&#x200B;를 클릭하여 **[!UICONTROL 연결 만들기]** 상자를 엽니다.
 1. **[!UICONTROL 고급 설정 표시]**&#x200B;를 클릭합니다.
@@ -299,6 +313,186 @@ SharePoint 커넥터는 다음을 사용합니다.
 1. 연결을 저장하고 모듈로 돌아가려면 **계속**&#x200B;을 클릭합니다.
 
    모든 것이 올바르게 설정되면 연결이 성공적으로 검증됩니다.
+
++++
+
+### 페더레이션 연결을 사용하여 Microsoft SharePoint Online을 Adobe Workfront Fusion에 연결
+
++++ 를 확장하여 페더레이션 연결을 사용하여 Microsoft SharePoint Online을 Adobe Workfront Fusion에 연결하는 지침을 봅니다.
+
+페더레이션 연결은 클라이언트 암호를 사용하지 않는다는 점을 제외하면 서비스 사용자 연결과 같이 작동합니다.
+암호를 저장하는 대신, Microsoft Entra ID에 Workfront Fusion이 한 개의 특정 연결에 대해 발급하는 토큰을 신뢰하도록 지시합니다. 연결이 실행되면 Fusion은 짧은 기간 동안 ID 증명을 제공하고 Microsoft Entra ID는 액세스 토큰을 반환합니다. 클라이언트 암호가 없으므로 만료되는 암호와 회전하거나 저장할 암호가 없습니다.
+
+>[!NOTE]
+>
+>이 연결을 설정하려면 Microsoft Entra 관리 센터를 두 번 방문해야 합니다. 먼저 앱을 등록한 다음 Workfront Fusion에서 연결을 만들고 Microsoft Entra ID로 돌아가 페더레이션 자격 증명을 추가합니다. 페더레이션 자격 증명은 하나의 특정 연결을 식별하고, 연결이 만들어져야 해당 식별자가 존재하기 때문입니다.
+
+* [페더레이션 연결을 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결하기 위한 사전 요구 사항](#prerequisites-to-connecting-microsoft-sharepoint-online-to-workfront-fusion-using-a-federated-connection)
+* [Microsoft Entra ID(Federated connection)에서 앱 등록 생성](#create-the-app-registration-in-microsoft-entra-id-federated-connection)
+* [API 권한 부여(페더레이션 연결)](#grant-api-permissions-federated-connection)
+* [연결 세부 정보 수집(페더레이션 연결)](#collect-your-connection-details-federated-connection)
+* [Workfront Fusion(페더레이션 연결)에서 연결 만들기](#create-the-connection-in-workfront-fusion-federated-connection)
+* [Microsoft Entra ID(페더레이션 연결)에서 페더레이션 자격 증명 추가](#add-the-federated-credential-in-microsoft-entra-id-federated-connection)
+* [연결 확인(페더레이션 연결)](#verify-the-connection-federated-connection)
+* [문제 해결](#troubleshooting)
+
+#### 페더레이션 연결을 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결하기 위한 사전 요구 사항
+
+앱을 등록하고, 권한을 부여하고, 통합 자격 증명을 추가하려면 Microsoft Entra ID에서 전역 관리자, 애플리케이션 관리자 또는 권한이 있는 역할 관리자 액세스 권한이 필요합니다. 이 액세스 권한이 없는 경우 IT 또는 ID 팀의 사용자에게 이러한 단계를 완료하도록 요청하십시오.
+
+#### Microsoft Entra ID(Federated connection)에서 앱 등록 생성
+
+1. Microsoft Entra 관리 센터에 로그인합니다.
+1. 앱 등록 > 새 등록으로 이동합니다.
+1. 앱에 인식할 수 있는 명확한 이름을 지정합니다. 예: `Workfront Fusion SharePoint Integration`.
+1. 리디렉션 URI를 비워 둡니다. 이 연결에는 브라우저를 통해 로그인하는 사용자가 포함되지 않습니다.
+1. **등록**을 선택하세요.
+클라이언트 암호를 만들지 마십시오. 페더레이션된 연결은 이를 사용하지 않습니다.
+1. API 권한을 계속 부여합니다.
+
+
+#### API 권한 부여(페더레이션 연결)
+
+1. 앱 등록에서 **API 권한**(으)로 이동합니다.
+1. **권한 추가**&#x200B;를 선택한 다음 **Microsoft 그래프**&#x200B;를 선택합니다.
+1. **응용 프로그램 권한**&#x200B;을 선택하십시오.
+1. API 호출에 필요한 권한을 선택한 다음 **권한 추가**&#x200B;를 선택합니다.
+1. 조직의 **관리자 동의 부여**&#x200B;를 선택한 다음 확인합니다.
+1. [연결 세부 정보 수집](#collect-your-connection-details-federated-connection)을 계속합니다.
+
+
+#### 연결 세부 정보 수집(페더레이션 연결)
+
+1. 앱 등록의 개요 페이지에서 다음 값을 확인합니다. 모듈에서 연결을 만들 때 이를 입력합니다.
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL 테넌트 ID]</td>
+      <td>개요 페이지에서 <b>디렉터리(테넌트) ID</b> 레이블이 지정되었습니다.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 클라이언트 ID]</td>
+      <td>개요 페이지에서 <b>응용 프로그램(클라이언트) ID</b> 레이블이 지정되었습니다.</td>
+     </tr>
+    </tbody>
+   </table>
+
+1. [Workfront Fusion에서 연결 만들기](#create-the-connection-in-workfront-fusion-federated-connection)를 계속합니다.
+
+#### Workfront Fusion(페더레이션 연결)에서 연결 만들기
+
+1. API 호출 만들기 모듈에서 연결 필드 옆의 b를 클릭하여 연결 만들기 상자를 엽니다.
+1. (페더레이션 연결)을 클릭합니다.
+1. 연결 유형 필드에서 연결된 연결 유형을 선택합니다.
+1. 다음을 입력하십시오.
+
+   * 임차인 ID
+   * 클라이언트 ID
+
+1. Select **Create**.
+Workfront Fusion에는 세 가지 값이 표시됩니다. 다음 절차에서 사용합니다.
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL 발급자]</td>
+      <td>항상 <code>https://oidc.automations.adobe.com</code>입니다.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Subject]</td>
+      <td>이 하나의 연결을 식별합니다. <code>fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:28964</code>(으)로 보입니다. 만드는 모든 연결에 대해 다릅니다.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 대상]</td>
+      <td>항상 <code>api://AzureADTokenExchange</code>입니다.</td>
+     </tr>
+    </tbody>
+   </table>
+
+
+1. 이 패널을 연 상태로 두고 **제목** 값을 복사하십시오.
+
+   >[!NOTE]
+   >
+   >패널을 닫거나 취소를 선택하지 마십시오. 나머지 절차를 완료할 때까지 연결이 완료되지 않습니다. 패널을 닫으면 새 연결에 새 제목 이 표시되므로 연결을 삭제하고 다시 시작해야 합니다.
+
+
+1. [Microsoft Entra ID에서 페더레이션 자격 증명을 추가](#add-the-federated-credential-in-microsoft-entra-id-federated-connection)합니다.
+
+#### Microsoft Entra ID(페더레이션 연결)에서 페더레이션 자격 증명 추가
+
+이 절차는 클라이언트 암호를 대체하는 절차입니다. 이는 Microsoft Entra ID에게 이 하나의 연결에 대해 Workfront Fusion에서 문제가 되는 토큰을 수락하도록 알려줍니다.
+
+1. 새 브라우저 탭에서 Microsoft Entra 관리 센터로 돌아가 앱 등록을 엽니다.
+1. **인증서 및 암호** > **페더레이션 자격 증명**(으)로 이동합니다.
+1. **자격 증명 추가**&#x200B;를 선택합니다.
+1. 페더레이션 자격 증명 시나리오에서 **다른 발급자**&#x200B;를 선택하십시오.
+1. 다음을 입력하십시오.
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL 발급자]</td>
+      <td><code>https://oidc.automations.adobe.com</code>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Subject identifier]</td>
+      <td>Workfront Fusion에서 복사한 제목입니다. 추가된 공백 없이 정확하게 붙여넣습니다.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 이름]</td>
+      <td>나중에 찾을 수 있도록 이 연결을 식별하는 이름입니다. 예: <code>workfront-fusion-connection-28964</code>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 대상]</td>
+      <td><code>api://AzureADTokenExchange</code>. 이것은 보통 당신을 위해 채워집니다. 기본값을 그대로 둡니다.</td>
+     </tr>
+    </tbody>
+   </table>
+
+1. **추가**&#x200B;를 선택합니다.
+1. [연결 확인](#verify-the-connection-federated-connection)을 계속합니다.
+
+
+#### 연결 확인(페더레이션 연결)
+
+1. 연결 패널이 열려 있는 Workfront Fusion 브라우저 탭으로 돌아갑니다.
+2. **저장**&#x200B;을 선택합니다.
+
+   * 모든 것이 올바르게 설정된 경우 연결이 성공적으로 검증되고 모듈 설정을 계속할 수 있습니다.
+   * 확인에 실패하면 패널이 열린 상태로 유지되며 오류가 표시됩니다. Microsoft Entra ID에서 문제를 수정한 후 저장을 다시 선택합니다. 연결을 다시 만들 필요가 없으며 주제도 변경되지 않습니다.
+
+
+#### 문제 해결
+
+
+<table style="table-layout:auto">
+ <col>
+ <col>
+ <tbody>
+  <tr>
+   <td role="rowheader">연결이 잘못된 클라이언트 또는 잘못된 요청 오류로 인해 확인에 실패합니다.</td>
+   <td>Microsoft Entra ID가 토큰을 페더레이션 자격 증명과 일치시킬 수 없습니다. 발급자가 슬래시가 없는 정확히 <code>https://oidc.automations.adobe.com</code>이고 제목 식별자가 Workfront Fusion에 표시된 제목과 문자 대 문자인지 확인합니다. 다른 연결에서 복사된 제목 이 가장 일반적인 원인입니다.</td>
+  </tr>
+  <tr>
+   <td role="rowheader">연결은 확인되지만 API 호출은 403을 반환합니다.</td>
+   <td>ID는 신뢰할 수 있지만 앱에는 호출에 필요한 Microsoft Graph 권한이 없습니다. API 권한 부여로 돌아가서 필요한 애플리케이션 권한을 추가하고 관리자 동의를 부여합니다.</td>
+  </tr>
+  <tr>
+   <td role="rowheader">다른 페더레이션 자격 증명을 추가할 수 없습니다.</td>
+   <td>해당 앱 등록에 대한 20개의 페더레이션 자격 증명 한도에 도달했습니다. 추가 앱을 등록하고 추가 연결을 만듭니다.</td>
+  </tr>
+ </tbody>
+</table>
+
++++
 
 ## Microsoft SharePoint 모듈 및 해당 필드
 
@@ -1133,7 +1327,7 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>For instructions about connecting your Microsoft SharePoint Online account to Workfront Fusion, see <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connect Microsoft SharePoint Online to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
-  -->
+-->
   <tr> 
    <td role="rowheader">[!UICONTROL 웹후크]</td> 
    <td> <p>기존 웹후크를 선택하거나 추가 를 클릭하고 연결을 입력하여 새 웹후크를 생성합니다.</p> 

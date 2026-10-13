@@ -18,9 +18,9 @@ topic_v2:
     internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: c9bf5c68e4977027944114c35414fa5f46ea8751
+source-git-commit: be0cf391e02e3f8c2547494aeac0de5b7296c85d
 workflow-type: tm+mt
-source-wordcount: '5853'
+source-wordcount: '5810'
 ht-degree: 10%
 ---
 # Microsoft SharePoint Online 모듈
@@ -98,7 +98,7 @@ SharePoint 커넥터는 다음을 사용합니다.
 
 ## Microsoft SharePoint Online을 Workfront Fusion에 연결 {#connect-microsoft-sharepoint-online-to-workfront-fusion}
 
-* [&#x200B; [!DNL Microsoft] 계정을 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
+* [ [!DNL Microsoft] 계정을 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [고급 설정을 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
 * [인증서 인증을 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
 * [서비스 주체를 사용하여 Microsoft SharePoint Online을 Workfront Fusion에 연결](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-service-principal)
@@ -263,10 +263,6 @@ SharePoint 커넥터는 다음을 사용합니다.
 
 #### API 권한 부여(서비스 주체)
 
->[!IMPORTANT]
->
->BECKY CHECK ME: Azure DevOps와 달리 Microsoft Graph는 이 단계에서 직접 애플리케이션 권한을 지원합니다. 이 섹션을 게시하기 전에 API 호출 만들기 모듈에 필요한 정확한 권한(예: Sites 권한 범위)을 확인하고 아래 단계를 적절하게 업데이트합니다.
-
 1. 앱 등록에서 **[!UICONTROL API 권한]**(으)로 이동합니다.
 1. **[!UICONTROL 권한 추가]**&#x200B;를 선택한 다음 **[!UICONTROL Microsoft 그래프]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 응용 프로그램 권한]**&#x200B;을 선택하십시오.
@@ -346,7 +342,7 @@ SharePoint 커넥터는 다음을 사용합니다.
 1. 앱 등록 > 새 등록으로 이동합니다.
 1. 앱에 인식할 수 있는 명확한 이름을 지정합니다. 예: `Workfront Fusion SharePoint Integration`.
 1. 리디렉션 URI를 비워 둡니다. 이 연결에는 브라우저를 통해 로그인하는 사용자가 포함되지 않습니다.
-1. **등록**&#x200B;을 선택하세요.
+1. **등록**을 선택하세요.
 클라이언트 암호를 만들지 마십시오. 페더레이션된 연결은 이를 사용하지 않습니다.
 1. API 권한을 계속 부여합니다.
 
@@ -1327,7 +1323,7 @@ Microsoft SharePoint Online 모듈을 구성하면 Workfront Fusion에 아래 �
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>For instructions about connecting your Microsoft SharePoint Online account to Workfront Fusion, see <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connect Microsoft SharePoint Online to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
-  -->
+-->
   <tr> 
    <td role="rowheader">[!UICONTROL 웹후크]</td> 
    <td> <p>기존 웹후크를 선택하거나 추가 를 클릭하고 연결을 입력하여 새 웹후크를 생성합니다.</p> 

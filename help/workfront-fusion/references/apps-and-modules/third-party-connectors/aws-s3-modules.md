@@ -16,10 +16,10 @@ topic_v2:
     internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 7c25013f7a94000651e8331199ad985d40651ae3
 workflow-type: tm+mt
-source-wordcount: '1564'
-ht-degree: 26%
+source-wordcount: '2637'
+ht-degree: 16%
 ---
 # AWS S3 모듈
 
@@ -88,6 +88,195 @@ AWS S3 커넥터는 다음을 사용합니다.
 
 ## [!DNL AWS]를 Workfront Fusion에 연결 {#connect-aws-to-workfront-fusion}
 
+* [페더레이션 연결을 사용하여 AWS을 Workfront Fusion에 연결](#connect-aws-to-workfront-fusion-using-a-federated-connection)
+* [API 사용자를 사용하여 AWS을 Workfront Fusion에 연결](#connect-aws-to-workfront-fusion-using-an-api-user)
+
+### 페더레이션 연결을 사용하여 AWS을 Workfront Fusion에 연결
+
++++ 를 확장하여 이 연결 유형에 대한 지침을 봅니다.
+
+* [페더레이션 연결을 사용하여 AWS을 Workfront Fusion에 연결하기 위한 사전 요구 사항](#prerequisites-to-connecting-aws-to-workfront-fusion-using-a-federated-connection)
+* [AWS에서 ID 공급자로 Workfront Fusion 추가](#add-workfront-fusion-as-an-identity-provider-in-aws)
+* [IAM 역할 만들기](#create-the-iam-role)
+* [Workfront Fusion에서 연결 만들기](#create-the-connection-in-workfront-fusion)
+* [역할의 트러스트 정책에 연결 추가](#add-the-connection-to-the-roles-trust-policy)
+* [연결 확인](#verify-the-connection)
+* [문제 해결](#troubleshooting)
+
+페더레이션 연결을 사용하면 IAM 사용자를 생성하거나 Fusion에 액세스 키를 저장하지 않고도 Workfront Fusion이 AWS 계정에 액세스할 수 있습니다.
+대신 Workfront Fusion을 AWS 계정에 신뢰할 수 있는 ID 공급자로 등록하고 특정 IAM 역할을 사용할 수 있는 단일 Fusion 연결을 구성합니다. 연결이 실행되면 Fusion은 짧은 기간 동안 ID 증명을 제공하고 AWS은 자체 만료 예정인 임시 자격 증명을 반환합니다. 오래 지속되는 키를 만들거나 저장하거나 회전시킬 수 없습니다.
+
+>[!NOTE]
+>
+>이 연결을 설정하려면 AWS 콘솔에 대한 두 번의 방문이 필요합니다. 먼저 역할을 만든 다음 Workfront Fusion에서 연결을 만든 다음 AWS으로 돌아가 트러스트 정책을 완료합니다. 이는 트러스트 정책의 일부가 하나의 특정 연결을 식별하며 해당 식별자가 연결을 만들 때까지 존재하지 않기 때문입니다.
+
+#### 페더레이션 연결을 사용하여 AWS을 Workfront Fusion에 연결하기 위한 사전 요구 사항
+
+이 연결을 만들려면 다음이 필요합니다.
+
+* ID 공급자를 만들고 역할을 만들고 편집할 수 있는 AWS IAM의 권한입니다. 이는 일반적으로 정책 또는 이에 준하는 것을 의미합니다. 이 액세스 권한이 없는 경우 클라우드에 있는 사용자에게 질문하거나
+보안 팀이 AWS 단계를 완료합니다.
+* Workfront Fusion에서 연결을 만드는 기능입니다.
+
+
+#### AWS에서 ID 공급자로 Workfront Fusion 추가
+
+이 단계는 AWS에 Workfront Fusion에서 발급한 토큰을 신뢰할 수 있음을 알려줍니다. AWS 계정당 한 번 수행합니다. 조직의 누군가가 이미 이 공급자를 추가한 경우 [IAM 역할 만들기](#create-the-iam-role)로 건너뜁니다.
+
+1. AWS 콘솔에 로그인하고 **IAM** > **ID 공급자**(으)로 이동합니다.
+1. **공급자 추가**&#x200B;를 선택하십시오.
+1. 공급자 형식에는 **OpenID 연결**&#x200B;을 선택하세요.
+1. 공급자 URL에서 다음을 입력한 다음 **지문 가져오기**&#x200B;를 선택합니다.
+
+   ```
+   https://oidc.automations.adobe.com
+   ```
+
+1. Audience에서 다음을 입력합니다.
+
+   ```
+   sts.amazonaws.com
+   ```
+
+1. **공급자 추가**&#x200B;를 선택하십시오.
+1. [IAM 역할 만들기](#create-the-iam-role)를 계속합니다.
+
+#### IAM 역할 만들기
+
+역할은 AWS 계정에서 연결이 수행할 수 있는 작업을 정의합니다. 각 연결의 액세스 권한을 독립적으로 부여하고 취소할 수 있도록 연결당 하나의 역할을 만듭니다.
+
+1. IAM에서 **역할**(으)로 이동하여 **역할 만들기**&#x200B;를 선택합니다.
+1. 신뢰할 수 있는 엔터티 형식의 경우 **웹 ID**&#x200B;을(를) 선택하십시오.
+1. ID 공급자에서 `oidc.automations.adobe.com`을(를) 선택합니다.
+1. 대상자에서 `sts.amazonaws.com`을(를) 선택합니다.
+1. **다음**&#x200B;을 선택한 다음 이 연결에 필요한 권한 정책을 첨부하십시오.
+연결에 실제로 사용하는 권한만 부여합니다. (예: 다음에서만 읽는 연결)
+버킷 하나에 `AmazonS3FullAccess`이(가) 필요하지 않습니다.
+1. 역할에 인식할 수 있는 명확한 이름을 지정합니다. 예: `WorkfrontFusionFederatedConnection`.
+1. **역할 만들기**&#x200B;를 선택합니다.
+1. 방금 생성한 역할을 열고 요약 영역에서 해당 ARN을 복사합니다. 다음과 같습니다. `arn:aws:iam::123456789012:role/WorkfrontFusionFederatedConnection`
+
+1. [Workfront Fusion에서 연결 만들기](#create-the-connection-in-workfront-fusion)를 계속합니다.
+
+#### Workfront Fusion에서 연결 만들기
+
+1. 모듈의 연결 설정 화면에서 통합 연결 유형을 선택합니다.
+1. [IAM 역할 만들기](#create-the-iam-role)에서 복사한 역할 ARN을 입력하십시오.
+1. Select **Create**.
+Workfront Fusion에는 세 가지 값이 표시됩니다. 다음 절차에서 사용합니다.
+
+<table>
+  <tr>
+    <td>발급자</td>
+    <td>항상 <code>https://oidc.automations.adobe.com</code>입니다. AWS에서 추가한 ID 공급자와 일치합니다.</td>
+  </tr>
+  <tr>
+    <td>제목</td>
+    <td>이 하나의 연결을 식별합니다. <code>fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:28964</code>(으)로 보입니다. 만드는 모든 연결에 대해 다릅니다.</td>
+  </tr>
+  <tr>
+    <td>대상자</td>
+    <td>항상 <code>sts.amazonaws.com</code>입니다.</td>
+  </tr>
+</table>
+
+1. 이 패널을 연 상태로 두고 제목 값을 복사합니다.
+
+   >[!NOTE]
+   >
+   >패널을 닫거나 취소를 선택하지 마십시오. 나머지 절차를 완료할 때까지 연결이 완료되지 않습니다. 패널을 닫으면 새 연결에 새 제목 이 표시되므로 연결을 삭제하고 다시 시작해야 합니다.
+
+1. 계속해서 [역할의 트러스트 정책에 연결을 추가](#add-the-connection-to-the-roles-trust-policy)합니다.
+
+#### 역할의 트러스트 정책에 연결 추가
+
+이 절차를 완료할 때까지 이 역할은 일반적으로 Workfront Fusion을 신뢰하지만 아직 이 특정 연결에서 이를 사용할 수는 없습니다.
+
+1. 새 브라우저 탭에서 AWS 콘솔로 돌아가서 만든 역할을 엽니다.
+1. **트러스트 관계** 탭을 선택한 다음 **트러스트 정책 편집**&#x200B;을 선택합니다.
+1. 정책을 고유한 값으로 대체하여 다음과 같이 바꿉니다.
+
+   * `123456789012`을(를) AWS 계정 ID로 바꾸기
+   * `sub` 값을 Workfront Fusion에서 복사한 제목으로 바꿉니다.
+
+
+   ```
+   {
+     "Version": "2012-10-17",
+     "Statement": [
+       {
+         "Effect": "Allow", 
+         "Principal": {
+           "Federated": "arn:aws:iam::123456789012:oidc-provider/oidc.automations.adobe.com"
+       },
+       "Action": "sts:AssumeRoleWithWebIdentity", "Condition": {
+        "StringEquals": {
+          "oidc.automations.adobe.com:sub": "fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:28964", 
+          "oidc.automations.adobe.com:aud": "sts.amazonaws.com"
+        }
+       }
+      }
+    ]
+   }
+   ```
+
+1. **정책 업데이트**&#x200B;를 선택하십시오.
+1. [연결 확인](#verify-the-connection)을 계속합니다.
+
+>[!TIP]
+>
+>두 개 이상의 연결에서 동일한 역할을 사용할 수 있도록 하려면 제목을 배열로 나열합니다. AWS에서는 토큰이 목록의 값과 일치하는 경우 역할을 사용할 수 있습니다.
+>
+>```
+>"oidc.automations.adobe.com:sub": [ "fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:28964", "fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:29011"
+>]
+>```
+>
+>하위 값을 와일드카드로 바꾸지 마십시오. 이렇게 하면 나중에 다른 사용자가 만든 연결을 포함하여 조직의 모든 연결에서 역할을 사용할 수 있습니다
+
+
+#### 연결 확인
+
+1. 연결 패널이 열려 있는 Workfront Fusion 브라우저 탭으로 돌아갑니다.
+1. **저장**&#x200B;을 클릭합니다.
+
+   Workfront Fusion은 AWS에 문의하여 트러스트 정책을 확인하고 임시 자격 증명을 반환합니다. 모든 것이 올바르게 설정된 경우 연결이 성공적으로 검증되고 모듈 설정을 계속할 수 있습니다.
+   확인에 실패하면 패널이 열린 상태로 유지되며 오류가 표시됩니다. AWS에서 문제를 수정하고 [저장]을 다시 선택합니다. 연결을 다시 만들 필요가 없으며 주제도 변경되지 않습니다.
+
+이 시점에서부터 연결은 자체 자격 증명을 갱신합니다. 회전할 키가 없으며 유지 관리해야 하는 만료도 없습니다.
+
+#### 문제 해결
+
+
+<table>
+  <tr>
+    <th>오류</th>
+    <th>의미</th>
+    <th>확인할 사항</th>
+  </tr>
+  <tr>
+    <td>InvalidIdentityToken</td>
+    <td>AWS에서 토큰을 등록된 id 공급자와 일치시킬 수 없습니다.</td>
+    <td>Workfront Fusion 추가에 설명된 ID 공급자를 AWS의 ID 공급자로 추가하고 해당 URL이 정확히 https://oidc.automations.adobe.com이며 뒤에 슬래시가 없는지 확인합니다.</td>
+  </tr>
+  <tr>
+    <td>역할을 가정할 때 AccessDenied</td>
+    <td>ID 공급자가 등록되었지만 트러스트 정책이 이 연결과 일치하지 않습니다.</td>
+    <td>트러스트 정책의 하위 값이 Workfront Fusion에 표시된 주제와 동일한 문자 대 문자이고 aud가 sts.amazonaws.com인지 확인합니다. 다른 연결에서 복사된 제목 이 가장 일반적인 원인입니다.</td>
+  </tr>
+  <tr>
+    <td>연결이 작동하면 나중에 실패합니다</td>
+    <td> </td>
+    <td>역할의 권한 정책이 변경되었는지 또는 역할이 삭제되고 다시 만들어졌는지 확인합니다. 역할을 다시 생성해도 ARN은 변경되지 않지만 트러스트 정책은 재설정됩니다.</td>
+  </tr>
+</table>
+
++++
+
+### API 사용자를 사용하여 AWS을 Workfront Fusion에 연결
+
++++ 를 확장하여 이 연결 유형에 대한 지침을 봅니다.
+
 [!DNL AWS S3]을(를) Workfront Fusion에 연결하려면 [!DNL AWS] 계정을 Workfront Fusion에 연결해야 합니다. 이렇게 하려면 먼저 [!DNL AWS] [!UICONTROL IAM]에서 API 사용자를 만들어야 합니다.
 
 1. [!DNL AWS] [!UICONTROL IAM] 계정에 로그인합니다.
@@ -105,7 +294,12 @@ AWS S3 커넥터는 다음을 사용합니다.
 
 연결이 설정되었습니다. 모듈 설정을 진행할 수 있습니다.
 
++++
+
 ## [!DNL AWS S3] 모듈 및 해당 필드
+
+* [액션](#actions)
+* [검색 결과](#searches)
 
 [!DNL AWS S3] 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를 표시합니다. 이와 함께 앱 또는 서비스의 액세스 레벨과 같은 요인에 따라 추가적인 [!DNL AWS S3] 필드가 표시될 수 있습니다. 모듈의 굵은 글씨 제목은 필수 필드를 나타냅니다.
 

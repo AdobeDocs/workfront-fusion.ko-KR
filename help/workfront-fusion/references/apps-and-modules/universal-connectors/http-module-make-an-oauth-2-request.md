@@ -16,7 +16,7 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 3cd582ee1b763897cbbaba7f2c040897e3581742
 workflow-type: tm+mt
 source-wordcount: '2373'
 ht-degree: 11%
@@ -95,7 +95,7 @@ Adobe Workfront Fusion 라이선스에 대한 자세한 내용은 [Adobe Workfro
    1. 클라이언트를 만들 때 `[!UICONTROL Redirect URL]` 또는 `[!UICONTROL Callback URL]` 필드에 적절한 URL을 입력하십시오.
 
       | 아메리카 / APAC | `https://app.workfrontfusion.com/oauth/cb/oauth2` |
-      |---|---|
+      | --- | --- |
       | **EMEA** | `https://app-eu.workfrontfusion.com/oauth/cb/oauth2` |
 
    1. 클라이언트를 만든 후 해당 서비스에 `[!UICONTROL Client ID]` 및 `[!UICONTROL Client Secret]` 키 2개가 표시됩니다. 일부 서비스에서는 이러한 `[!UICONTROL App Key]` 및 `[!UICONTROL App Secret]`을(를) 호출합니다. Workfront Fusion에서 연결을 만들 때 키 및 암호를 제공할 수 있도록 안전한 위치에 저장합니다.

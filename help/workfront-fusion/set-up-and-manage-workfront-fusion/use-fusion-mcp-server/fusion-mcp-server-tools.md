@@ -1,9 +1,9 @@
 ---
 title: Adobe Workfront Fusion MCP 서버 도구
 description: Adobe Workfront Fusion MCP 서버가 AI 에이전트 플랫폼 및 Coworker에 노출하는 도구의 참조 목록
-source-git-commit: 5f3bd6b7b8837632af245ea2c172205625e4ecba
+source-git-commit: 1bfcdb6abe42eca27d2f3ae5a1a1d2cfd3901d33
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1546'
 ht-degree: 7%
 ---
 
@@ -31,6 +31,25 @@ Claude, ChatGPT, Copilot 또는 자체 에이전트의 사용자 정의 MCP 연�
 | --- | --- | --- | --- |
 | 조직 나열 | `fusion_orgs_list` | 읽기 | ID, 지역(영역) 및 레이블을 사용하여 액세스할 수 있는 Fusion 조직을 나열합니다. |
 | 활성 조직 설정 | `fusion_orgs_set` | Session | 현재 세션에 대한 활성 조직을 전환합니다. Fusion 데이터는 변경되지 않습니다. |
+| 현재 조직 가져오기 | `fusion_organizations_get` | 읽기 | 현재 조직을 반환합니다. |
+| 조직 나열 | `fusion_organizations_list` | 읽기 | 볼 수 있는 모든 조직을 나열합니다. |
+
+## 팀
+
+| 도구 | 이름 | 작업 | 설명 |
+| --- | --- | --- | --- |
+| 팀 나열 | `fusion_teams_list` | 읽기 | 볼 수 있는 조직의 팀을 나열합니다. |
+| 팀 가져오기 | `fusion_teams_get` | 읽기 | 조직의 단일 팀을 반환합니다. |
+| 팀 삭제 | `fusion_teams_delete` | 쓰기 | 팀을 삭제합니다. 또한 시나리오를 중지하고 권한을 제거합니다. API를 통해 실행 취소할 수 없으며 확인이 필요합니다. |
+
+## 사용자
+
+| 도구 | 이름 | 작업 | 설명 |
+| --- | --- | --- | --- |
+| Fusion 영역 가져오기 | `fusion_users_get_regions` | 읽기 | 액세스할 수 있는 Fusion 지역 및 조직을 반환합니다. 유효한 조직 ID를 찾는 데 사용합니다. |
+| 현재 사용자 가져오기 | `fusion_users_get_me` | 읽기 | 조직 및 팀 역할과 함께 프로필을 반환합니다. |
+| 사용자 나열 | `fusion_users_list` | 읽기 | 조직의 사용자를 나열합니다. |
+| 사용자 가져오기 | `fusion_users_get` | 읽기 | 조직의 단일 사용자를 반환합니다. |
 
 ## 시나리오 도구
 
@@ -40,6 +59,7 @@ Claude, ChatGPT, Copilot 또는 자체 에이전트의 사용자 정의 MCP 연�
 | --- | --- | --- | --- |
 | 시나리오 나열 | `fusion_scenarios_list` | 읽기 | 조직의 시나리오를 나열합니다. |
 | 시나리오 가져오기 | `fusion_scenarios_get` | 읽기 | 전체 블루프린트가 포함된 시나리오를 반환합니다. |
+| 시나리오 링크 가져오기 | `fusion_scenarios_get_link` | 읽기 | 브라우저에서 시나리오를 열려면 Fusion UI 링크를 반환합니다. |
 | 시나리오 종속성 가져오기 | `fusion_scenarios_getDependencies` | 읽기 | 시나리오의 블루프린트 참조에 대한 연결, 키, 데이터 저장소, 데이터 구조 및 웹후크를 반환합니다. |
 | 종속 시나리오 찾기 | `fusion_scenarios_dependents` | 읽기 | 주어진 웹후크, 데이터 저장소, 데이터 구조, 연결, 키 또는 시나리오를 참조하는 시나리오를 찾습니다. 리소스를 변경하거나 삭제하기 전에 영향 분석에 유용합니다. |
 | 블루프린트 유효성 검사 | `fusion_scenarios_validate_blueprint` | 읽기 | 아무것도 저장하지 않고 팀(모듈 참조, 연결, 필수 필드)에 대해 블루프린트의 구조를 확인합니다. |
@@ -63,6 +83,7 @@ Claude, ChatGPT, Copilot 또는 자체 에이전트의 사용자 정의 MCP 연�
 | --- | --- | --- | --- |
 | 시나리오 버전 나열 | `fusion_scenario_versions_list` | 읽기 | 시나리오의 저장된 버전을 나열합니다. `version`, `createdAt`, `comment` 기준으로 필터링합니다. |
 | 시나리오 버전 가져오기 | `fusion_scenario_versions_get` | 읽기 | 특정 버전에 대한 블루프린트 및 메타데이터를 반환합니다. |
+| 시나리오 버전 만들기 | `fusion_scenario_versions_create` | 쓰기 | 블루프린트를 새 시나리오 버전으로 게시하면 라이브 블루프린트가 됩니다. 이전 버전은 유지되며 동일한 블루프린트를 게시해도 아무 작업도 수행되지 않습니다. |
 
 프롬프트 예:
 
@@ -109,8 +130,10 @@ Claude, ChatGPT, Copilot 또는 자체 에이전트의 사용자 정의 MCP 연�
 | --- | --- | --- | --- |
 | 연결 검색 | `fusion_connections_search` | 읽기 | 연결을 나열합니다. `name`, `accountName`, `accountType`, `expire`, `teamId`, `scopesCount`, `editable`, `environmentType`, `authenticationType` 기준으로 필터링합니다. |
 | 연결 가져오기 | `fusion_connections_get` | 읽기 | 단일 연결에 대한 세부 사항을 반환합니다. |
+| 연결 삭제 | `fusion_connections_delete` | 쓰기 | 연결을 삭제합니다. 웹후크가 여전히 종속되어 있는 경우 실패합니다. 이를 사용하는 시나리오는 삭제를 차단하지 않고 분리됩니다. |
 | 키 검색 | `fusion_keys_search` | 읽기 | 키를 나열합니다. `name`, `typeName`, `teamId` 기준으로 필터링합니다. |
 | 키 가져오기 | `fusion_keys_get` | 읽기 | 단일 키에 대한 세부 정보를 반환합니다. |
+| 키 삭제 | `fusion_keys_delete` | 쓰기 | 키를 삭제합니다. 이를 사용하는 시나리오는 삭제를 차단하지 않습니다. |
 
 프롬프트 예:
 
@@ -124,6 +147,9 @@ Claude, ChatGPT, Copilot 또는 자체 에이전트의 사용자 정의 MCP 연�
 | --- | --- | --- | --- |
 | 웹 후크 나열 | `fusion_hooks_list` | 읽기 | 웹후크(후크)를 나열합니다. `name`, `teamId`, `type`, `enabled`, `gone`, `typeName`, `scenarioId`, `priority`, `detached` 등을 기준으로 필터링합니다. |
 | Webhook 가져오기 | `fusion_hooks_get` | 읽기 | 웹후크의 구성, 소유자 바인딩 및 외부 참조를 반환합니다. |
+| 웹후크 종속성 가져오기 | `fusion_hooks_dependencies` | 읽기 | 웹후크가 참조하는 연결, 데이터 구조 및 키를 나열합니다. 복제하기 전에 실행하십시오. |
+| Webhook 복제 | `fusion_hooks_clone` | 쓰기 | 웹 후크를 새 URL과 함께 복사합니다. 원할 경우 다른 팀에 복사합니다. 해당 연결, 데이터 구조 또는 키를 바꿀 수 있습니다. |
+| Webhook 삭제 | `fusion_hooks_delete` | 쓰기 | 웹후크 및 대기 중인 이벤트를 삭제합니다. 웹후크 작성자만 삭제할 수 있습니다. |
 | 종속 웹후크 찾기 | `fusion_hooks_dependents` | 읽기 | 주어진 연결을 참조하는 웹후크를 검색합니다. |
 
 ### Webhook 큐
@@ -133,7 +159,7 @@ Claude, ChatGPT, Copilot 또는 자체 에이전트의 사용자 정의 MCP 연�
 | 큐 통계 가져오기 | `fusion_queue_stats` | 읽기 | 대기열에 추가된 이벤트 수, 대기열 제한 및 웹후크의 활성화 여부를 반환합니다. |
 | 목록 큐 | `fusion_queue_list` | 읽기 | 처리 대기 중인 받은 웹후크 이벤트를 나열합니다. |
 | 큐 항목 가져오기 | `fusion_queue_get` | 읽기 | 디코딩된 페이로드를 포함하여 큐에 있는 단일 이벤트를 반환합니다. |
-| 대기열 항목 삭제 | `fusion_queue_delete` | 쓰기 | 대기열에 추가된 특정 이벤트(최대 50개)를 삭제하거나 대기열을 지웁니다(선택 사항). 일부 이벤트는 제외됩니다. 현재 처리 중인 이벤트는 삭제할 수 없습니다. |
+| 대기열 항목 삭제 | `fusion_hook_queue_delete` | 쓰기 | 큐에 있는 웹후크 이벤트를 ID(최대 50개)별로 삭제하거나, 선택적 제외를 사용하여 모두 삭제합니다. 연결된 도구 이름이 `fusion_hook_queue_delete`이고 이전 `fusion_queue_delete` 이름과 일치하지 않습니다. |
 
 프롬프트 예:
 
@@ -146,10 +172,14 @@ Claude, ChatGPT, Copilot 또는 자체 에이전트의 사용자 정의 MCP 연�
 | --- | --- | --- | --- |
 | 데이터 저장소 나열 | `fusion_datastores_list` | 읽기 | 레코드 수, 크기 및 최대 크기로 데이터 저장소를 나열합니다. |
 | 데이터 저장소 가져오기 | `fusion_datastores_get` | 읽기 | 데이터 저장소의 메타데이터와 사용량, 연결된 데이터 구조 및 엄격한 유효성 검사 설정을 반환합니다. |
+| 데이터 저장소 삭제 | `fusion_datastores_delete` | 쓰기 | 데이터 저장소 및 모든 해당 레코드를 삭제합니다. 시나리오가 여전히 이 변수를 사용하는 경우 실패합니다. |
 | 데이터 저장소 레코드 나열 | `fusion_data_list` | 읽기 | 오프셋 페이징을 사용하여 데이터 저장소에서 레코드(키 + JSON 데이터)를 읽습니다. |
+| 데이터 저장소 레코드 삭제 | `fusion_data_stores_data_delete` | 쓰기 | 키별로 여러 레코드를 삭제하거나 선택적 제외가 있는 모든 레코드를 삭제합니다. |
+| 데이터 저장소 레코드 삭제 | `fusion_data_stores_data_key_delete` | 쓰기 | 키로 레코드를 하나씩 삭제합니다. 키가 없는 경우에도 성공합니다. |
 | 종속 데이터 저장소 찾기 | `fusion_datastores_dependents` | 읽기 | 지정된 데이터 구조를 사용하는 데이터 저장소를 찾습니다. |
 | 데이터 구조 검색 | `fusion_data_structures_search` | 읽기 | 데이터 구조를 나열합니다. `name`, `strict`, `teamId` 기준으로 필터링합니다. |
 | 데이터 구조 가져오기 | `fusion_data_structures_get` | 읽기 | 전체 필드 사양을 포함한 데이터 구조를 반환합니다. |
+| 데이터 구조 삭제 | `fusion_data_structures_delete` | 쓰기 | 데이터 구조를 삭제합니다. 데이터 저장소에서 여전히 를 사용하는 경우 실패합니다. |
 
 프롬프트 예:
 
@@ -167,6 +197,12 @@ Claude, ChatGPT, Copilot 또는 자체 에이전트의 사용자 정의 MCP 연�
 
 * _지난 7일 동안 시나리오를 삭제한 사용자는 누구입니까?_
 * _이번 분기의 모든 연결 변경 내용을 Excel로 내보냅니다._
+
+## 피드백
+
+| 도구 | 이름 | 작업 | 설명 |
+| --- | --- | --- | --- |
+| 피드백 제출 | `fusion_feedback_submit` | 쓰기 | 피드백(버그, 잘못된 결과, 기능 요청, 칭찬 또는 기타)을 Fusion 팀에 보냅니다. |
 
 ## 동료
 

@@ -14,9 +14,9 @@ feature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 983b7ab013c49747760da4a22a47715c68555ec0
+source-git-commit: c0d5bb30cb41d9ad8db07c1ea13a533df10bcb43
 workflow-type: tm+mt
-source-wordcount: '3219'
+source-wordcount: '3193'
 ht-degree: 6%
 ---
 # 웹후크
@@ -325,10 +325,6 @@ Fusion에서 사용자 지정 웹후크를 만들거나 편집할 때 허용된 
 ## Webhook 큐
 
 웹후크가 데이터를 받고 해당 데이터를 예상하는 활성 시나리오가 없는 경우 데이터가 큐에 저장됩니다. 시나리오를 활성화하면 큐에서 대기 중인 모든 번들을 순차적으로 처리합니다.
-
->[!IMPORTANT]
->
->웹후크 대기열은 동일한 웹후크를 사용하는 시나리오 간에 공유됩니다. 시나리오 중 하나가 비활성화된 경우 들어오는 모든 데이터가 큐에 보관됩니다.
 
 ## 지원되는 수신 데이터 형식
 

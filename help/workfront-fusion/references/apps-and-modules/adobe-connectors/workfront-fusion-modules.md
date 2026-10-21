@@ -9,10 +9,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: d50909b128b469ef3e25b93c7dbdede5d4226064
 workflow-type: tm+mt
-source-wordcount: '1430'
-ht-degree: 20%
+source-wordcount: '1550'
+ht-degree: 19%
 ---
 # Workfront Fusion 모듈
 
@@ -127,12 +127,12 @@ Workfront Fusion 모듈을 구성하면 Workfront Fusion에 아래 나열된 필
    <td> 복제할 레코드 유형을 선택합니다. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">시나리오 ID</td> 
-   <td> 복제할 시나리오의 ID를 입력하거나 매핑합니다. </td> 
+   <td role="rowheader">시나리오 ID/후크 ID/데이터 구조 ID</td> 
+   <td> 복제할 항목의 ID를 입력하거나 매핑합니다. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">이름</td> 
-   <td> 새 시나리오의 이름을 입력하거나 매핑합니다.</td> 
+   <td> 새 시나리오, 후크 또는 데이터 구조의 이름을 입력하거나 매핑합니다.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -202,6 +202,10 @@ Workfront Fusion 모듈을 구성하면 Workfront Fusion에 아래 나열된 필
   <tr> 
    <td role="rowheader">레코드 유형</td> 
    <td>목록을 반환할 레코드 유형을 선택합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">필드</td> 
+   <td>결과에 포함할 필드를 선택합니다.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">속성</td> 
@@ -380,9 +384,36 @@ Workfront Fusion 모듈을 구성하면 Workfront Fusion에 아래 나열된 필
    <td> 종속성을 검색할 레코드 유형을 선택합니다. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">시나리오 ID</td> 
+   <td role="rowheader">시나리오 ID/후크 ID</td> 
    <td> 종속성을 검색할 레코드의 ID를 입력하거나 매핑합니다. </td> 
   </tr> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 레코드 종속 항목 가져오기
+
+이 모듈은 특정 리소스에 종속된 항목을 식별합니다. 리소스를 삭제하기 전에 이 모듈을 사용하여 어떤 것이 해당 리소스에 따라 달라지고 해당 삭제의 영향을 받을 수 있는지 확인합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
+   <td> <p>Workfront Fusion을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Workfront Fusion을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">레코드 유형</td> 
+   <td>종속 항목을 확인할 레코드 유형을 선택합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">종류</td> 
+   <td>확인할 종속 항목의 종류를 선택합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID</td> 
+   <td>종속 항목을 반환할 레코드의 ID를 입력하거나 매핑합니다.</td> 
   </tr> 
  </tbody> 
 </table>

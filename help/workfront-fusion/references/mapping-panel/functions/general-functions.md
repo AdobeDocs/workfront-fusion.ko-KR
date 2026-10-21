@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 8ea986eb6573bb49accfad312bb0796faa2642ab
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 8%
+source-wordcount: '750'
+ht-degree: 5%
 ---
 # 일반 함수
 
@@ -22,11 +22,39 @@ ht-degree: 8%
 
 다음 일반 변수를 사용하여 실행에 대한 세부 사항을 식별할 수 있습니다.
 
-* `executionID`: 이 시나리오 실행의 ID
-* `triggerTimestamp`: 이 실행이 트리거된 시간
-* `scenarioID`: 현재 열려 있는 시나리오의 ID
+* `executionId`: 이 시나리오 실행의 ID
+* `scenarioId`: 현재 열려 있는 시나리오의 ID
 * `scenarioName`: 현재 실행 중인 시나리오의 이름
+* `scenarioUrl`: Fusion 사용자 인터페이스의 현재 시나리오에 대한 링크
+* `executionUrl`: Fusion 사용자 인터페이스의 현재 시나리오 실행에 대한 링크
+* `scenarioApiUrl`: 현재 시나리오의 Fusion API URL
+* `executionApiUrl`: 현재 실행에 대한 세부 정보의 Fusion API URL
+* `teamId`: 현재 시나리오를 담당하는 Fusion 팀의 ID
+* `organizationId`: 현재 실행과 연결된 Fusion 조직의 ID입니다. Adobe IMS 조직 ID가 아닙니다.
+* `triggerTimestamp`: 이 실행이 트리거된 시간
 * `operationsConsumed`: 시나리오의 해당 지점에서 사용된 작업 수.
+
+변수 이름은 대소문자를 구분합니다. 예를 들어 `scenarioURL`이(가) 아닌 `scenarioUrl`을(를) 사용합니다.
+
+URL을 작성하거나 팀 및 조직 ID를 하드코딩하지 않고 매핑된 필드에서 이러한 변수를 사용할 수 있습니다. 예를 들어 알림의 매핑된 텍스트 필드에 다음을 포함할 수 있습니다.
+
+<pre><code>
+Scenario: &#123;&#123;scenarioName&#125;&#125;
+Open scenario: &#123;&#123;scenarioUrl&#125;&#125;
+Open execution: &#123;&#123;executionUrl&#125;&#125;
+Team: &#123;&#123;teamId&#125;&#125;
+Organization: &#123;&#123;organizationId&#125;&#125;
+</code></pre>
+
+이러한 변수를 사용할 때는 다음 사항에 유의하십시오.
+
+* 이 값은 시나리오가 실행될 때 해결됩니다. 매핑 패널에는 변수가 나열되지만 해당 값은 미리 표시되지 않습니다.
+* `scenarioUrl` 및 `executionUrl` Fusion 사용자 인터페이스에서 시나리오 및 실행에 대한 링크입니다. `scenarioApiUrl` 및 `executionApiUrl`은(는) Fusion 페이지에 대한 링크가 아닌 API 끝점 URL입니다.
+* API URL 변수는 텍스트만 반환합니다. 요청을 하거나 인증 자격 증명을 제공하지 않습니다. 일반 API 인증 및 권한은 계속 적용됩니다.
+* 링크는 추가 액세스 권한을 부여하지 않습니다. 일반 Fusion 권한이 적용됩니다.
+* 샌드박스 실행 또는 기록 동기화가 꺼진 실행과 같이 실행 기록에 저장되지 않은 실행에 대해 `executionUrl`이(가) 생성되지 않습니다. 생성된 링크는 실행 세부 정보를 사용하는 시점에 사용할 수 있다고 보장하지 않습니다.
+* 템플릿 또는 저장되지 않은 시나리오에 대해 `scenarioUrl`을(를) 생성할 수 없습니다.
+* URL을 생성할 수 없는 경우 변수에는 값이 없습니다.
 
 ## [!UICONTROL get(개체 또는 배열, 경로)]
 

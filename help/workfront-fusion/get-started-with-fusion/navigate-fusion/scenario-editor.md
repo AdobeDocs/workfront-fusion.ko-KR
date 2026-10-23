@@ -11,7 +11,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: b800142d824927e5765eed50a831731e6b5d9925
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 16%
@@ -98,7 +98,7 @@ ht-degree: 16%
 ![도구 패널](assets/tools-scenario-editor.png)
 
 | 액션 | 세부 사항 |
-|---------- | ---------- |
+| ---------- | ---------- |
 | 흐름 제어 | 설정을 구성하여 데이터가 이동하는 방식을 제어합니다. 자세한 내용은 [링크 필요]를 참조하세요. |
 | 도구 | 도구 섹션에는 시나리오를 향상시킬 수 있는 몇 가지 유용한 모듈이 포함되어 있습니다. 자세한 내용은 [링크 필요]를 참조하세요. |
 | 텍스트 구문 분석기 | 텍스트 파서 도구를 사용하여 다른 시나리오 모듈에서 사용할 텍스트를 구문 분석합니다. 텍스트 파서는 연결할 필요가 없습니다. 자세한 내용은 [링크 필요]를 참조하세요. |

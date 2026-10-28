@@ -3,10 +3,10 @@ user-guide-title: Adobe Workfront Fusion 설명서
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 문서, 튜토리얼 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
 nudge: true
-source-git-commit: d31db4d825746ac3e7b19cd8f7efcc593bc03bf7
+source-git-commit: e4bc75f0536c96896254f97d276a88b7a1aa18ce
 workflow-type: tm+mt
-source-wordcount: '2752'
-ht-degree: 48%
+source-wordcount: '2791'
+ht-degree: 47%
 ---
 
 # Adobe Workfront Fusion 설명서 {#using}
@@ -15,6 +15,7 @@ ht-degree: 48%
 * Fusion 릴리스 활동 {#fusion-release-activity}
   * [Adobe Workfront Fusion 릴리스 활동](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
   * Fusion 릴리스 - 2026 {#fusion-releases-2026}
+    * [Workfront Fusion 릴리스 활동: 2026년 10월 26일의 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-26.md)
     * [Workfront Fusion 릴리스 활동: 2026년 10월 19일이 있는 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-19.md)
     * [Workfront Fusion 릴리스 활동: 2026년 10월 12일이 있는 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-12.md)
     * [Workfront Fusion 릴리스 활동: 2026년 10월 5일이 있는 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-5.md)
@@ -265,6 +266,7 @@ ht-degree: 48%
     * [시나리오에 AI 프롬프트 추가](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)
     * {hide-from-toc}[AI를 사용하여 시나리오 세그먼트 생성](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md)
     * [모듈 또는 시나리오 복사](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md)
+    * [코드 조각으로 시나리오 섹션 저장 및 재사용](/help/workfront-fusion/create-scenarios/add-modules/use-snippets.md)
     * [Adobe Workfront Fusion 템플릿으로 시나리오 만들기](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md)
     * [cURL을 사용하여 HTTP 모듈 추가](/help/workfront-fusion/create-scenarios/add-modules/use-curl-create-http.md)
     * [커넥터 없이 웹 서비스에 대한 웹후크 구성](/help/workfront-fusion/create-scenarios/add-modules/receive-a-webhook-from-a-web-service.md)
@@ -306,6 +308,8 @@ ht-degree: 48%
   * [연결 관리](/help/workfront-fusion/manage-scenarios/manage-connections.md)
   * [시나리오 활성화 또는 비활성화](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md)
   * [시나리오 디버그](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)
+  * [라이브 추적을 사용하여 시나리오 실행 검토](/help/workfront-fusion/manage-scenarios/live-trail.md)
+  * [시나리오에서 변수, 소스 및 연결 찾기 및 바꾸기](/help/workfront-fusion/manage-scenarios/find-and-replace.md)
   * [시나리오 버전 복원](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md)
   * [모듈을 신규 버전으로 업데이트](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md)
   * [잠긴 시나리오 관리](/help/workfront-fusion/manage-scenarios/view-manage-locked-scenario.md)
@@ -316,7 +320,7 @@ ht-degree: 48%
   * [모듈을 체인으로 이동](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)
   * [실행 중인 시나리오에서 데이터 흐름 보기](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
   * [웹후크의 대기열 보기](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
-  * {hide-from-toc}[Workfront Fusion의 AI 도우미](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
+  * Workfront Fusion의 {hide-from-toc}[AI 도우미](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
   * [시나리오 채점 전문가 실행](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
   * [시나리오 요소 삭제](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
   * [시나리오 영역에서 시나리오 관리](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
@@ -405,6 +409,7 @@ ht-degree: 48%
       * [Adobe Campaign 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-campaign-classic-connector.md)
       * [Adobe Content Tagger 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/content-tagging-modules.md)
       * [Adobe Creative Cloud Libraries 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
+      * [Adobe CX Enterprise Coworker 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-cx-coworker-modules.md)
       * [Adobe Experience Manager Assets 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
       * [Adobe Experience Manager Forms 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
       * [Adobe Experience Manager Mcp 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-mcp-modules.md)

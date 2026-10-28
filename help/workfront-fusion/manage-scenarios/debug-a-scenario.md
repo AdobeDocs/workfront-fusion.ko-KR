@@ -16,10 +16,10 @@ topic_v2:
     internal-label: Metadata
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '1487'
-ht-degree: 6%
+source-wordcount: '1962'
+ht-degree: 5%
 ---
 # 시나리오 디버그
 
@@ -29,10 +29,30 @@ Adobe Workfront Fusion Devtool을 사용하면 시나리오를 이해하고 문�
 >
 >비밀 시나리오, 자동 실행 및 성공적인 작업에 대해 디버거 패널의 로깅이 제한되거나 사용할 수 없습니다.
 
+>[!NOTE]
+>
+>새 경험에서는 몇 가지 DevTool 도구가 시나리오 편집기에 내장되어 있으므로 DevTool을 열지 않고도 사용할 수 있습니다.
+>
+>| 도구 | 새 경험에서 찾을 수 있는 위치 |
+>| ---------- | ---------- |
+>| 앱 메타데이터 가져오기 | 모듈을 마우스 오른쪽 단추로 클릭하고 **앱 메타데이터**&#x200B;를 선택합니다. |
+>| 매핑 복사 | 소스 모듈을 마우스 오른쪽 단추로 클릭하고 **매핑 복사**&#x200B;를 선택한 다음 호환되는 모듈에 붙여넣습니다. |
+>| 필터 복사 | 필터링된 링크를 마우스 오른쪽 단추로 클릭하고 **필터 복사**&#x200B;를 선택한 다음 다른 링크에 붙여 넣습니다. |
+>| 모듈 이름 복사 | 모듈을 마우스 오른쪽 단추로 클릭하고 **모듈 이름 복사** 또는 **모듈 이름 붙여넣기**&#x200B;를 선택합니다. |
+>| 연결 교체 | 찾기 및 바꾸기를 연 다음 **연결** 탭을 사용합니다. |
+>| 변수 교체 | 찾기 및 바꾸기를 연 다음 **변수** 탭을 사용합니다. |
+>| 소스 다시 매핑 | 찾기 및 바꾸기를 연 다음 **Source** 탭을 사용합니다. |
+>
+>이러한 도구는 DevTool의 **도구** 탭에서도 모듈 포커스, 매핑으로 모듈 찾기 및 Base 64와 함께 사용할 수 있습니다. 매핑에서 `base64()` 및 이진 변환 함수를 사용할 수도 있습니다.
+>
+>시나리오 편집기의 [실시간 추적](/help/workfront-fusion/manage-scenarios/live-trail.md)과 실행 기록에서 직접 요청 및 응답 세부 정보를 볼 수도 있습니다. 찾기 및 바꾸기에 대한 자세한 내용은 [시나리오에서 변수, 원본 및 연결 찾기 및 바꾸기](/help/workfront-fusion/manage-scenarios/find-and-replace.md)를 참조하십시오.
+<!-- BECKY CHECK ME: DevTool screenshots (10/27/26) show all ten tools still on the Tools tab, so this note now says the seven built-in tools are available in both places. The release notes implied only Focus a module, Find modules by mapping, and Base 64 would remain. Confirm after release whether the other seven are removed from the DevTool, and update this note and the Tools section if so.  -->
+<!-- BECKY CHECK ME: note added from the 10/23/26 release notes; the DevTool is NOT being removed. This article still needs a fuller restructure (new/classic split for the seven tools, Live Trail section or separate article). Confirm the menu labels. -->
+
 비디오 소개 및 Fusion Devtool에 대한 설명은
 
 * [Fusion 개발 도구](https://video.tv.adobe.com/v/3427031/){target=_blank}
-* [Devtool 연습](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=ko)
+* [Devtool 연습](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=en)
 
 ## 액세스 요구 사항
 
@@ -67,6 +87,26 @@ Adobe Workfront Fusion Devtool을 사용하면 시나리오를 이해하고 문�
 
 Adobe 통합 쉘에서 Fusion을 사용하거나 새 Fusion 경험으로 업데이트한 경우 시나리오 편집기에서 Devtool에 액세스할 수 있습니다.
 
+### 새 경험에서 Devtool에 액세스
+
+1. 디버그하려는 시나리오의 시나리오 편집기로 이동합니다.
+
+   시나리오 편집기를 찾으려면 [시나리오 편집기](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)를 참조하십시오.
+
+1. 컨트롤 영역에서 세 점 아이콘을 클릭한 다음 **DevTool**&#x200B;을 선택합니다.
+
+또는:
+
+1. 디버그하려는 시나리오의 시나리오 편집기로 이동합니다.
+1. 모듈이 아닌 페이지의 빈 영역을 마우스 오른쪽 버튼으로 클릭합니다.
+1. **Devtool 열기**&#x200B;를 선택합니다.
+
+DevTool이 캔버스 아래의 패널에서 열립니다.
+
+<!-- BECKY CHECK ME: new-experience access steps from your 10/27/26 notes (three-dot menu in Controls, or right-click). Confirm the menu label ('DevTool') and the 'panel below the canvas' description, and add a screenshot. I assumed the Helper tools icon steps below apply to the classic experience only; confirm. -->
+
+### 클래식 경험에서 Devtool에 액세스
+
 1. 화면 하단 근처에 있는 **도우미 도구** ![도우미 도구](assets/debugger-icon.png) 아이콘을 클릭합니다.
 
 또는:
@@ -80,15 +120,20 @@ Adobe 통합 쉘에서 Fusion을 사용하거나 새 Fusion 경험으로 업데�
 
 ## Workfront Fusion Devtool 사용
 
-Workfront Fusion Devtool은 3개의 기본 섹션으로 나뉩니다. Devtool 창의 왼쪽 패널에서 찾을 수 있습니다.
+Workfront Fusion Devtool은 3개의 기본 섹션과 도움말 링크로 나뉘어져 있습니다. Devtool 창의 왼쪽 패널에서 찾을 수 있습니다.
 
 * [라이브 스트림](#live-stream)
 * [시나리오 디버거](#scenario-debugger)
 * [도구](#tools)
+* **DevTool 도움말**: 물음표 아이콘을 클릭하여 DevTool에 대한 문서를 엽니다.
+
+<!-- BECKY CHECK ME: the DevTool left panel now has a fourth item, 'DevTool help' (question mark icon), per your 10/27/26 screenshots. Confirm the label, that it opens this article or another one, and whether to apply this to the classic experience too. Retake the left-panel screenshot. -->
 
 ### 라이브 스트림
 
 시나리오에서 한 번 실행 을 클릭하면 백그라운드에서 발생하는 상황이 라이브 스트림에 표시됩니다.
+
+<!-- BECKY CHECK ME: HOLD: in the new experience, Live Stream shows a 'no events available' message even while a scenario is running, which may be a bug. No updates have been made to this section. Re-test after release before changing anything here. If it is intended behavior, this section may need to point to Live Trail instead. -->
 
 1. **[!UICONTROL 라이브 스트림]** 아이콘 ![라이브 스트림 아이콘](assets/live-stream-icon.png)을 클릭하여 라이브 스트림 섹션을 엽니다.
 1. 다음 중 하나를 수행합니다.
@@ -149,18 +194,42 @@ Workfront Fusion Devtool은 3개의 기본 섹션으로 나뉩니다. Devtool �
 시나리오 디버거는 보다 복잡한 시나리오에 유용합니다. 시나리오 실행 기록이 표시되며, 이를 사용하여 모듈 이름이나 ID로 모듈을 검색할 수 있습니다.
 
 1. **[!UICONTROL 시나리오 디버거]** 아이콘 ![디버거 아이콘](assets/scenario-debugger-icon.png)을 클릭하여 시나리오 디버거를 엽니다.
-1. (선택 사항) 검색 필드에 검색어(이름 또는 모듈 ID)를 입력합니다.
+
+   시나리오 디버거에는 시나리오의 모듈이 나열됩니다. 각 모듈에는 해당 이름, 앱 및 작업, 모듈 ID와 함께 번호가 매겨진 배지가 표시됩니다.
+
+1. (선택 사항) **이름 또는 ID별 검색 모듈** 필드에 검색어(이름 또는 모듈 ID)를 입력합니다.
 1. 모듈 이름을 클릭합니다.
-1. 요청 세부 사항을 보려면 작업을 클릭합니다.
+
+   모듈의 가장 최근 실행 주기가 모듈 목록 옆에 나열됩니다. 모듈에 실행 데이터가 없으면 시나리오 디버거가 **결과를 찾을 수 없음**&#x200B;을 표시합니다.
+
+1. 주기를 확장한 다음 작업을 클릭합니다.
+
+   각 작업에는 성공 여부와 소요 시간이 표시됩니다(예: **작업 1**, 기간 0ms).
+
+1. 요청의 세부 사항을 검토합니다. 탭을 사용하여 다음을 확인합니다.
+
+   * **요청 헤더**: API 끝점 URL, 요청이 호출된 HTTP 메서드, 요청 헤더입니다.
+   * **요청 본문**
+   * **응답 헤더**
+   * **응답 본문**
+
+1. (선택 사항) 요청을 복사하려면 **RAW 복사** 또는 **cURL 복사**&#x200B;를 클릭합니다.
+
+<!-- BECKY CHECK ME: Scenario Debugger steps expanded from your 10/27/26 new-experience DevTool screenshots. Confirm: (1) the 'Search modules by Name or ID' label; (2) that the module list sub-labels, badge (module ID), cycle/operation layout, and 'No Result found' state are described correctly; (3) the tab names, since Response Body was partly hidden behind the Copy buttons in the screenshot; (4) whether Copy RAW and Copy cURL copy the request only or the request and response; (5) whether the classic experience's Scenario Debugger looks the same, or this needs a new/classic split. The screenshot also shows a collapsed 'Live trail' tab with an event count on the right edge of the editor; see the Live Trail article. Retake the Scenario Debugger screenshots. -->
 
 ### 도구
 
 Workfront Fusion Devtool에는 시나리오를 보다 쉽게 설정할 수 있는 도구가 포함되어 있습니다.
 
 1. **[!UICONTROL 도구]** 아이콘 ![콘솔 도구 아이콘](assets/console-tools-icon.png)을 클릭하여 도구를 엽니다.
+1. (선택 사항) 도구를 찾으려면 **이름별 검색 도구** 필드에 도구 이름을 입력하십시오.
 1. 사용할 도구를 선택합니다
 1. 아래에 자세히 설명된 대로 필드를 구성합니다.
 1. **[!UICONTROL 실행]**&#x200B;을 클릭합니다.
+
+도구를 선택할 때까지 패널 오른쪽에서 도구를 선택하라는 메시지가 표시됩니다. 도구 탭 아래에 있는 링크를 클릭하면 DevTool에 대한 문서로 이동합니다.
+
+<!-- BECKY CHECK ME: added from your 10/27/26 screenshots: the 'Search tool by name' field, the select-a-tool prompt, and the link to the DevTool article. Confirm the field label and link destination; retake the Tools screenshot. -->
 
 도구 및 해당 필드:
 

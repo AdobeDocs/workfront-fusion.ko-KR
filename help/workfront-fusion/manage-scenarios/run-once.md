@@ -9,9 +9,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '370'
 ht-degree: 0%
 ---
 # 한 번 실행을 사용하여 시나리오 테스트
@@ -23,6 +23,10 @@ ht-degree: 0%
 >[!TIP]
 >
 >시나리오를 만들고 세분화할 때 자주 테스트하는 것이 좋습니다.
+
+>[!NOTE]
+>
+>새 경험에서 한 번 실행은 항상 요청 및 응답 세부 사항을 유지합니다. 시나리오의 일반 실행의 경우 시나리오 설정에서 임시 디버그 로그를 켜서 이를 수집할 수 있습니다. 자세한 내용은 [시나리오 설정 구성](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#temporary-debug-logs)을 참조하십시오.
 
 ## 한 번 실행 기능 사용
 

@@ -16,15 +16,18 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '926'
-ht-degree: 98%
+source-wordcount: '976'
+ht-degree: 93%
 ---
 # Adobe Workfront Fusion 용어
 
 다음 용어집은 Adobe Workfront Fusion의 몇 가지 일반적인 용어를 설명합니다.
 
+>[!NOTE]
+>
+>Workfront Fusion에서 시나리오 편집기를 새 경험으로 전환합니다. 이 전환 중에 클래식 경험과 새 경험을 모두 사용할 수 있으며 언제든지 전환할 수 있습니다. 새 경험을 사용하는 것이 좋습니다. 자세한 내용은 문서 시나리오 편집기에서 [새 경험 및 클래식 경험](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)을 참조하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -88,7 +91,7 @@ ht-degree: 98%
   </tr> 
   <tr> 
    <td role="rowheader"> <p>모듈</p> </td> 
-   <td> <p>관련 앱이나 서비스 내에서 레코드를 생성하는 등의 기능을 수행하는 시나리오 내의 단일 단계입니다.</p> <p>각 앱이나 서비스에는 요청에 대한 응답 방식을 정의하는 다양한 모듈이 있습니다.</p>  <p> <img src="assets/module.png"> </p> <p>자세한 내용은 <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md" class="MCXref xref">모듈 개요</a>를 참조하십시오.</p> </td> 
+   <td> <p>관련 앱이나 서비스 내에서 레코드를 생성하는 등의 기능을 수행하는 시나리오 내의 단일 단계입니다.</p> <p>각 앱이나 서비스에는 요청에 대한 응답 방식을 정의하는 다양한 모듈이 있습니다.</p>  <p> <img src="assets/new-module.png"> </p> <p>자세한 내용은 <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md" class="MCXref xref">모듈 개요</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>작업</p> </td> 
@@ -104,7 +107,7 @@ ht-degree: 98%
   </tr> 
   <tr> 
    <td role="rowheader"> <p>시나리오</p> </td> 
-   <td> <p>사용자가 만든 일련의 자동화된 단계로, 각 모듈에 의해 표현되고 수행됩니다. 시나리오의 목적은 데이터를 이동하고 조작하는 것입니다.</p> <p> <img src="assets/entire-scenario-blank.png" style="width: 350;height: 178;"> </p> <p> 자세한 내용은 <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md" class="MCXref xref">시나리오 개요</a>를 참조하십시오.</p> </td> 
+   <td> <p>사용자가 만든 일련의 자동화된 단계로, 각 모듈에 의해 표현되고 수행됩니다. 시나리오의 목적은 데이터를 이동하고 조작하는 것입니다.</p> <p> <img src="assets/new-scenario-example-unmarked.png" style="width: 350;height: 92;"> </p> <p> 자세한 내용은 <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md" class="MCXref xref">시나리오 개요</a>를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>시나리오 세그먼트</p> </td> 

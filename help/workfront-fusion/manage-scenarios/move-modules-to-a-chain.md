@@ -9,10 +9,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 17%
+source-wordcount: '563'
+ht-degree: 16%
 ---
 # 모듈을 체인으로 이동
 
@@ -21,6 +21,10 @@ ht-degree: 17%
 >이 기능은 Beta에 있으며 미션 크리티컬 프로덕션 워크플로우에는 권장되지 않습니다. Beta 기능에서는 동작이 변경되고 극단적 사례는 완전히 처리되지 않을 수 있습니다.
 
 매핑이나 데이터 구조를 수동으로 다시 만들지 않고도 시나리오에서 모듈 그룹을 선택하고 새 체인 시나리오로 이동할 수 있습니다. 이렇게 하면 대규모 시나리오를 모듈화할 수 있는 손쉬운 방법이 제공됩니다.
+
+>[!NOTE]
+>
+>Workfront Fusion에서 시나리오 편집기를 새 경험으로 전환합니다. 이 전환 중에 클래식 경험과 새 경험을 모두 사용할 수 있으며 언제든지 전환할 수 있습니다. 새 경험을 사용하는 것이 좋습니다. 자세한 내용은 문서 시나리오 편집기에서 [새 경험 및 클래식 경험](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)을 참조하십시오.
 
 모듈 그룹을 체인으로 이동하면 Workfront Fusion은
 

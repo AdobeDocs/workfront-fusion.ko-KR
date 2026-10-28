@@ -11,22 +11,38 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 36%
+source-wordcount: '392'
+ht-degree: 26%
 ---
 # 실행 중인 시나리오에서 데이터 흐름 보기
 
 실행 중인 시나리오를 보고 데이터가 어떻게 이동하는지 확인할 수 있습니다.
 
-시나리오가 실행되는 동안 활성 모듈은 모듈 주위에 늘어나는 링이 표시됩니다. 고리에는 모듈이 실행 중이지 진행 중임이 아닙니다. 빠르게 실행되는 모듈은 링의 작은 부분만 표시할 수 있습니다.
+>[!NOTE]
+>
+>Workfront Fusion에서 시나리오 편집기를 새 경험으로 전환합니다. 이 전환 중에 클래식 경험과 새 경험을 모두 사용할 수 있으며 언제든지 전환할 수 있습니다. 새 경험을 사용하는 것이 좋습니다. 자세한 내용은 문서 시나리오 편집기에서 [새 경험 및 클래식 경험](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)을 참조하십시오.
 
-![모듈 주위에 연결](assets/ring-around-module.png)
+시나리오가 실행되는 동안 활성 모듈은 새 경험에서 모듈 아이콘에 회전하는 고리나 클래식 경험에서 모듈 주위에 늘어나는 고리로 표시됩니다. 고리에는 모듈이 실행 중이지 진행 중임이 아닙니다. 빠르게 실행되는 모듈은 링의 작은 부분만 표시할 수 있습니다.
+
+새 경험
+
+![새 경험에서 모듈 아이콘에 링 회전](assets/new-spinning-icon.png)
+
+클래식 경험
+
+![클래식 환경에서 모듈을 둘러봅니다](assets/ring-around-module.png)
 
 모듈이 실행되면 출력 표시기가 나타납니다.
 
-![출력 표시기](assets/data-flow-output.png)
+새 경험
+
+![새 경험의 출력 표시기](assets/new-output-indicator.png)
+
+클래식 경험
+
+![클래식 경험의 출력 표시기](assets/data-flow-output.png)
 
 모듈이 둘 이상의 번들을 처리하는 경우 처리된 각 번들에 대해 링이 나타나고 출력되는 각 번들에 대해 출력 표시기가 카운트됩니다.
 
@@ -65,6 +81,7 @@ ht-degree: 36%
 
 1. 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭합니다.
 1. 데이터 흐름을 보려는 시나리오를 선택합니다.
+1. 시나리오의 아무 곳이나 클릭하여 시나리오 편집기를 입력합니다.
 1. 시나리오가 실행되고 있지 않으면 활성화하거나 **한 번 실행**&#x200B;을 클릭하여 시나리오 실행을 시작합니다.
 1. 실행 기록 패널의 현재 실행 중 섹션에서 보려는 실행을 선택합니다.
 

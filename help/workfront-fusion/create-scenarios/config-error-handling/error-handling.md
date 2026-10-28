@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 9%
+source-wordcount: '1677'
+ht-degree: 6%
 ---
 # 오류 처리 추가
 
@@ -39,6 +39,10 @@ ht-degree: 9%
 >
 >Workfront Fusion은 경로 수준 오류 처리를 지원하므로 각 개별 모듈에 오류 처리기를 연결하는 대신 경로당 한 번 오류 처리 논리를 정의할 수 있습니다.
 >경로 수준 오류 처리는 특히 고급 다중 분기 자동화에서 오류를 보다 확장 가능하고, 일관되고, 구조적으로 깔끔하게 관리하는 방법이므로 경로 수준 오류 처리를 모범 사례로 사용하는 것이 좋습니다.
+
+>[!NOTE]
+>
+>Workfront Fusion에서 시나리오 편집기를 새 경험으로 전환합니다. 이 전환 중에 클래식 경험과 새 경험을 모두 사용할 수 있으며 언제든지 전환할 수 있습니다. 새 경험을 사용하는 것이 좋습니다. 자세한 내용은 문서 시나리오 편집기에서 [새 경험 및 클래식 경험](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)을 참조하십시오.
 
 ## 액세스 요구 사항
 
@@ -88,9 +92,9 @@ ht-degree: 9%
 
 ### 예
 
-다음 예제 시나리오를 고려하십시오.
+가독성을 위해 여기에 작은 보기로 표시된 다음 예제 시나리오를 고려하십시오.
 
-![경로 및 오류 처리기를 보여 주는 예제 시나리오](assets/error-handling-route-example-with-numbers.png)
+![경로 및 오류 처리기를 보여 주는 예제 시나리오](assets/new-error-handler-examples-with-numbers.png)
 
 1. 이 모듈에는 오류 처리기가 있습니다. 이 모듈의 모든 오류는 Commit 지시문에 의해 처리됩니다.
 1. 이 모듈에는 오류 처리기가 없습니다. 이 모듈에 오류가 발생하면 이 오류는 모듈의 경로를 만든 라우터의 핸들러에 의해 처리됩니다. 이 모듈의 모든 오류는 Rollback 지시문에 의해 처리됩니다.
@@ -113,7 +117,41 @@ ht-degree: 9%
 
 ### 모듈에 오류 처리기 추가
 
-모듈에 오류 핸들러를 추가하려면 다음을 수행하십시오.
+* [새 경험의 모듈에 오류 처리기 추가(권장)](#add-an-error-handler-to-a-module-in-the-new-experience-recommended)
+* [클래식 경험의 모듈에 오류 처리기 추가](#add-an-error-handler-to-a-module-in-the-classic-experience)
+
+#### 새 경험의 모듈에 오류 처리기 추가(권장)
+
+1. 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭합니다.
+1. 오류 처리 경로를 추가할 시나리오를 선택합니다.
+1. 시나리오의 아무 곳이나 클릭하여 시나리오 편집기를 입력합니다.
+1. 오류 처리기 경로를 추가할 모듈을 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 오류 처리기 추가]**&#x200B;를 선택합니다.
+
+   ![메뉴에 오류 처리기 추가](assets/new-add-error-handler-in-menu.png)
+
+   오류 처리기 경로가 모듈에 추가됩니다. 모듈이 경로의 마지막 모듈인 경우 오류 핸들러는 모듈 바로 뒤에 옵니다. 모듈 뒤에 모듈이 더 있으면 별도의 오류 핸들러 경로가 추가됩니다.
+
+   오류 처리 모듈에는 시나리오에 사용 중인 앱과 디렉티브 목록이 표시됩니다.
+
+   ![지시문을 처리하는 동안 오류가 발생했습니다](assets/new-error-handling-directives.png)
+
+1. 지시어 중 하나를 선택합니다.
+
+   또는
+
+   하나 이상의 모듈을 오류 처리기 경로에 추가합니다.
+
+   경로에 모듈을 더 추가하면 기본적으로 Ignore 지시문이 적용됩니다. 오류가 발생하면 해당 경로의 후속 모듈이 처리됩니다.
+
+   지시문에 대한 자세한 내용은 이 문서에서 [오류 처리 지시문](#error-handling-directives)을 참조하십시오.
+
+1. (선택 사항) 오류 처리 경로에 필터를 추가합니다. 자세한 내용은 [오류 처리 경로에 필터링 및 중첩 추가](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md)를 참조하십시오.
+
+>[!NOTE]
+>
+>오류 처리기 경로가 빨간색 **[!UICONTROL 오류 처리기]** 레이블로 점선으로 표시되어 있습니다.
+
+#### 클래식 경험의 모듈에 오류 처리기 추가
 
 1. 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭합니다.
 1. 오류 처리 경로를 추가할 시나리오를 선택합니다.
@@ -145,6 +183,40 @@ ht-degree: 9%
 >오류 처리기 경로는 투명한 원으로 구성되고 일반 경로는 실선 원으로 구성됩니다.
 
 ### 라우터에 오류 처리기 추가
+
+* [새 경험의 라우터에 오류 처리기 추가(권장)](#add-an-error-handler-to-a-router-in-the-new-experience-recommended)
+* [클래식 경험의 라우터에 오류 처리기 추가](#add-an-error-handler-to-a-router-in-the-classic-experience)
+
+#### 새 경험의 라우터에 오류 처리기 추가(권장)
+
+1. 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭합니다.
+1. 오류 처리 경로를 추가할 시나리오를 선택합니다.
+1. 시나리오의 아무 곳이나 클릭하여 시나리오 편집기를 입력합니다.
+1. 오류 처리기 경로를 추가할 라우터를 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 오류 처리기 추가]**&#x200B;를 선택합니다.
+
+   오류 처리기 경로가 라우터에 추가됩니다.
+
+   오류 처리 모듈에는 시나리오에 사용 중인 앱과 디렉티브 목록이 표시됩니다.
+
+   ![지시문을 처리하는 동안 오류가 발생했습니다](assets/new-error-handling-directives.png)
+
+1. 지시어 중 하나를 선택합니다.
+
+   또는
+
+   하나 이상의 모듈을 오류 처리기 경로에 추가합니다.
+
+   경로에 모듈을 더 추가하면 기본적으로 Ignore 지시문이 적용됩니다. 오류가 발생하면 해당 경로의 후속 모듈이 처리됩니다.
+
+   지시문에 대한 자세한 내용은 이 문서에서 [오류 처리 지시문](#error-handling-directives)을 참조하십시오.
+
+1. (선택 사항) 오류 처리 경로에 필터를 추가합니다. 자세한 내용은 [오류 처리 경로에 필터링 및 중첩 추가](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md)를 참조하십시오.
+
+>[!NOTE]
+>
+>오류 처리기 경로가 빨간색 **[!UICONTROL 오류 처리기]** 레이블로 점선으로 표시되어 있습니다.
+
+#### 클래식 경험의 라우터에 오류 처리기 추가
 
 1. 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭합니다.
 1. 오류 처리 경로를 추가할 시나리오를 선택합니다.

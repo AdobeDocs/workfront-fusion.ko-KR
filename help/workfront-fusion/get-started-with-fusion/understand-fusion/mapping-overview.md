@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 96%
+source-wordcount: '488'
+ht-degree: 75%
 ---
 # 매핑 개요
 
@@ -23,6 +23,10 @@ ht-degree: 96%
 모듈의 작동은 출력으로 0개, 1개 또는 그 이상의 번들을 생성합니다. 번들은 하나 이상의 항목으로 구성됩니다.
 
 이러한 항목을 이후 모듈의 필드에 매핑할 수 있습니다.
+
+>[!NOTE]
+>
+>Workfront Fusion에서 시나리오 편집기를 새 경험으로 전환합니다. 이 전환 중에 클래식 경험과 새 경험을 모두 사용할 수 있으며 언제든지 전환할 수 있습니다. 새 경험을 사용하는 것이 좋습니다. 자세한 내용은 문서 시나리오 편집기에서 [새 경험 및 클래식 경험](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)을 참조하십시오.
 
 시나리오에서 이전 모듈에서 출력된 값을 삽입할 수 있는 필드를 클릭하면 매핑 패널이 표시됩니다. 여기에서 매핑할 항목을 선택할 수 있습니다. 매핑에는 다음 중 하나 이상이 포함될 수 있습니다.
 
@@ -37,15 +41,15 @@ ht-degree: 96%
 
 단일 항목
 
-![단일 항목 매핑](assets/map-single.png)
+![단일 항목 매핑](assets/new-map-single.png)
 
 텍스트가 있는 여러 항목
 
-![여러 항목 매핑](assets/map-multiple-with-text.png)
+![여러 항목 매핑](assets/new-map-multiple-with-text.png)
 
 여러 항목 및 텍스트가 있는 함수
 
-![텍스트로 수식 매핑](assets/map-formula-with-text.png)
+![텍스트로 수식 매핑](assets/new-map-formula-with-text.png)
 
 
 >[!ENDSHADEBOX]
@@ -61,11 +65,11 @@ ht-degree: 96%
 
 데이터를 매핑할 수 있는 필드를 클릭하면 매핑 패널이 열립니다.
 
-첫 번째 탭 ![다른 모듈에서 매핑](assets/toolbar-icon-functions-you-map-from-other-modules.png)은 다른 모듈에서 매핑할 수 있는 항목이 표시합니다.
+첫 번째 탭에는 다른 모듈에서 매핑할 수 있는 항목이 표시됩니다.
 
 다른 탭에는 수식을 만드는 데 사용할 수 있는 함수, 연산자 및 키워드가 포함되어 있습니다. 이들은 취급하는 데이터 유형에 따라 서로 다른 탭으로 정렬됩니다.
 
-![매핑 패널](assets/mapping-panel-blank.png)
+![매핑 패널](assets/new-mapping-panel-blank.png)
 
 
 함수 탭에 대한 자세한 내용은 [함수 개요](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)를 참조하십시오.
@@ -78,13 +82,13 @@ ht-degree: 96%
 
 컬렉션 유형 번들은 모듈 출력의 번들 레이블 옆에 `(Collection)`을 표시합니다.
 
-![컬렉션](assets/collection.png)
+![컬렉션](assets/new-collection.png)
 
 대부분의 경우, 전체 컬렉션을 나타내는 항목을 매핑하는 대신 컬렉션의 요소를 매핑합니다.
 
 매핑 패널에서 컬렉션 요소를 찾으려면 컬렉션 옆에 있는 화살표를 클릭합니다.
 
-![컬렉션 드롭다운](assets/collection-dropdown.png)
+![컬렉션 드롭다운](assets/new-collection-dropdown.png)
 
 컬렉션에 대한 자세한 내용은 [항목 데이터 유형](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)을 참조하십시오.
 
@@ -96,8 +100,8 @@ ht-degree: 96%
 
 배열 유형 번들은 모듈 출력의 번들 레이블 옆에 `(Array)`을 표시합니다.
 
-매핑 패널에서 배열은 대괄호로 표시됩니다. 배열 유형 항목은 항목 레이블 끝에 있는 대괄호로 식별할 수 있습니다. 매핑 패널에서 특정 배열 요소를 찾으려면 배열 옆에 있는 화살표를 클릭합니다.
+매핑 패널에서 배열은 대괄호로 표시됩니다. 항목 레이블 끝에 있는 대괄호로 배열 유형 항목을 식별할 수 있습니다. 매핑 패널에서 특정 배열 요소를 찾으려면 배열 옆에 있는 화살표를 클릭합니다.
 
-![배열](assets/array.png)
+![배열](assets/new-array.png)
 
 배열 및 배열 요소 매핑에 대한 정보 및 지침은 [배열 및 배열 요소 매핑](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)을 참조하십시오.

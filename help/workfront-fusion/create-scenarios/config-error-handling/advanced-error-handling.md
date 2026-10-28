@@ -11,14 +11,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 12%
+source-wordcount: '950'
+ht-degree: 11%
 ---
 # 오류 처리 경로에 필터링 및 중첩 추가
 
 필터링 및 중첩을 포함하여 오류 처리 경로에 고급 오류 처리 기술을 추가할 수 있습니다.
+
+>[!NOTE]
+>
+>Workfront Fusion에서 시나리오 편집기를 새 경험으로 전환합니다. 이 전환 중에 클래식 경험과 새 경험을 모두 사용할 수 있으며 언제든지 전환할 수 있습니다. 새 경험을 사용하는 것이 좋습니다. 자세한 내용은 문서 시나리오 편집기에서 [새 경험 및 클래식 경험](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)을 참조하십시오.
 
 ## 액세스 요구 사항
 
@@ -74,7 +78,13 @@ Fusion에서 다양한 데이터 형식을 평가하고 처리하는 방법에 �
 
 ### 예: 필터를 사용한 오류 처리
 
+<!-- BECKY CHECK ME: this example scenario (through the end of the Nesting example below) is built and illustrated entirely in the classic experience. It needs a new example scenario built in the new experience (recommend using Workfront modules instead of Dropbox, consistent with other rebuilt articles) - not just new screenshots of this same Dropbox scenario. Flagging only, not editing - see tracking spreadsheet. -->
+
 >[!BEGINSHADEBOX]
+
+>[!NOTE]
+>
+>이 예에서는 클래식 시나리오 편집기를 사용합니다.
 
 이 예제 시나리오는 오류 처리에 대해 이러한 필터가 작동하는 방식을 보여 줍니다.
 
@@ -122,7 +132,13 @@ Dropbox > 폴더 모듈의 모든 파일 나열 모듈은 대상 폴더의 모�
 
 오류 처리기 경로는 라우터를 제외한 모든 모듈에서 만들고 구성할 수 있습니다. 따라서 기존 오류 처리기 경로에 이미 속해 있는 모듈에 대한 오류 처리기 경로를 만들 수 있습니다.
 
+<!-- BECKY CHECK ME: this example scenario is built and illustrated entirely in the classic experience. It needs a new example scenario built in the new experience - see the flag on the "Example: Error handling with filters" example above. -->
+
 >[!BEGINSHADEBOX]
+
+>[!NOTE]
+>
+>이 예에서는 클래식 시나리오 편집기를 사용합니다.
 
 예:
 

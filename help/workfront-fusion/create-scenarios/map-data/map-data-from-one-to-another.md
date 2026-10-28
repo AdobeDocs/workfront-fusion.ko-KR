@@ -14,7 +14,7 @@ feature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 17%
@@ -75,7 +75,7 @@ ht-degree: 17%
    검색 결과에는 검색어가 포함되며 대/소문자를 구분하지 않습니다.
 1. 컬렉션의 요소인 값을 선택하려면 해당 컬렉션 옆에 있는 화살표를 클릭한 다음, 표시될 때 요소를 선택합니다.
 
-   ![컬렉션 요소](assets/collection-dropdown.png)
+   ![컬렉션 요소](/help/workfront-fusion/get-started-with-fusion/understand-fusion/assets/new-collection-dropdown.png)
 
 1. 매핑 패널에서 항목을 클릭하여 필드에 삽입합니다.
 

@@ -11,14 +11,16 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '60'
-ht-degree: 21%
+source-wordcount: '67'
+ht-degree: 19%
 ---
 # 비디오 개요
 
 이러한 비디오는 Adobe Workfront Fusion의 기능 중 일부를 숙지하는 데 도움이 됩니다.
+
+이 비디오는 클래식 시나리오 편집기를 보여 줍니다.
 
 ## 탐색
 

@@ -10,9 +10,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '554'
 ht-degree: 16%
 ---
 # 체인 시나리오 관계 보기 및 관리
@@ -64,21 +64,17 @@ ht-degree: 16%
 
 현재 시나리오와 해당 상위 또는 하위 시나리오의 맵을 볼 수 있습니다. 맵에는 체인 시나리오 전체에 걸쳐 데이터 흐름 다이어그램이 표시됩니다.
 
-![연결된 시나리오 관계](assets/chained-scenario-relationships-2.png)
-
-<!--get a better picture-->
-
 체인 시나리오에 대한 관계 맵을 보려면 다음과 같이 하십시오.
 
 1. 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭한 다음 시나리오를 클릭합니다.
 
    또는
 
-   시나리오 편집기에서 시나리오 작업을 수행하는 경우 창의 왼쪽 상단 모서리 근처에 있는 왼쪽 화살표 ![편집 종료 화살표](assets/exit-editing-arrow.png)를 클릭합니다.
+   시나리오 편집기에서 시나리오 작업을 수행하는 경우 창의 왼쪽 상단 모서리 근처에 있는 왼쪽 화살표 ![편집 종료 화살표](/help/workfront-fusion/manage-scenarios/assets/new-exit-editing-arrow.png)를 클릭합니다.
 
 1. **관계** 탭을 클릭합니다.
 
-   ![관계 탭](assets/relations-tab.png)
+   ![관계 탭](assets/new-relationships-tab.png)
 
 1. 각 체인 시나리오에 대한 일반적인 세부 사항은 태그를 확인하십시오.
 

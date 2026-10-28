@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '583'
 ht-degree: 18%
 ---
 # 시나리오 세부 정보 개요
@@ -59,11 +59,11 @@ ht-degree: 18%
 
    또는
 
-   시나리오 편집기에서 시나리오 작업을 수행하는 경우 창의 왼쪽 상단 모서리 근처에 있는 왼쪽 화살표 ![편집 종료 화살표](assets/exit-editing-arrow.png)를 클릭합니다.
+   시나리오 편집기에서 시나리오 작업을 수행하는 경우 창의 왼쪽 상단 모서리 근처에 있는 왼쪽 화살표 ![편집 종료 화살표](/help/workfront-fusion/manage-scenarios/assets/new-exit-editing-arrow.png)를 클릭합니다.
 
 1. 표시되는 페이지에서 아래 표에 나열된 요소를 검토할 수 있습니다.
 
-   ![시나리오 세부 정보](assets/scenario-detail-350x207.png)
+   ![시나리오 세부 정보](assets/new-scenario-detail.png)
 
    <table style="table-layout:auto"> 
     <col> 
@@ -100,7 +100,7 @@ ht-degree: 18%
        </ul> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Activate scenario] (켜기/끄기 단추)</td> 
+      <td role="rowheader">[!UICONTROL Activate scenario](켜기/끄기 단추)</td> 
       <td>시나리오가 만들어지면 스케줄에 따라 실행하려면 시나리오가 활성화되어야 합니다. 오른쪽 상단 모서리 근처에 있는 켜기/끄기 버튼을 클릭하면 시나리오를 활성화하거나 비활성화할 수 있습니다. 시나리오가 켜지면 스케줄에 따라 실행됩니다.</td> 
      </tr> 
      <tr> 
@@ -111,9 +111,11 @@ ht-degree: 18%
       <td role="rowheader">[!UICONTROL 선택 사항]</td> 
       <td> <p>이 메뉴는 시나리오 편집기를 열지 않고도 추가 옵션을 제공합니다. 여기에는 다음이 포함됩니다.</p> 
        <ul> 
+        <li>[!UICONTROL 잠금 해제 실행]</li> 
         <li>[!UICONTROL 예약]</li> 
         <li>[!UICONTROL 이름 바꾸기]</li> 
         <li>[!UICONTROL 복제]</li> 
+        <li>[!UICONTROL Clone as template]</li> 
         <li>[!UICONTROL Delete]</li> 
        </ul> </td> 
      </tr> 

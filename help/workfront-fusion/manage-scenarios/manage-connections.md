@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 25%
+source-wordcount: '446'
+ht-degree: 22%
 ---
 # 연결 관리
 
@@ -71,6 +71,10 @@ ht-degree: 25%
 1. (선택 사항) 연결을 다시 승인하려면 해당 연결에 대한 행에서 **다시 승인**&#x200B;을 클릭합니다.
 1. (선택 사항) 서비스에 대한 연결이 작동하는지 확인하려면 해당 연결에 대한 행에서 **확인**&#x200B;을 클릭합니다.
 1. (선택 사항) 연결을 삭제하려면 해당 연결의 행에서 **삭제**&#x200B;를 클릭한 다음 **정말?**&#x200B;를 클릭합니다.
+
+>[!NOTE]
+>
+>시나리오 모듈에서 다른 연결을 사용하려면 시나리오 편집기의 동일한 앱에서 호환되는 모듈 하나 또는 모두에 연결을 복사할 수 있습니다. 자세한 내용은 [시나리오에서 변수, 원본 및 연결 찾기 및 바꾸기](/help/workfront-fusion/manage-scenarios/find-and-replace.md)를 참조하십시오.
 
 ## 연결 갱신
 

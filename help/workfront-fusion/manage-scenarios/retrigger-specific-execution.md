@@ -9,7 +9,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 16%
@@ -82,7 +82,7 @@ Webhook 트리거가 있는 시나리오와 연결된 시나리오에서 검색�
 1. 페이지 오른쪽의 실행 목록에서 재시도할 실행을 찾습니다.
 1. 해당 시나리오에 대해 **다시 시도**&#x200B;를 클릭합니다.
 
-![다이어그램에서 검색기](assets/retrigger-from-diagram.png)
+![다이어그램에서 검색기](assets/new-retrigger-from-diagram.png)
 
 ### 시나리오 기록에서 실행 다시 트리거
 
@@ -95,7 +95,7 @@ Webhook 트리거가 있는 시나리오와 연결된 시나리오에서 검색�
 1. 다시 시도할 실행을 찾습니다. 필요한 경우 전체 텍스트 검색을 사용하여 찾을 수 있습니다.
 1. 해당 시나리오에 대해 **다시 시도**&#x200B;를 클릭합니다.
 
-![기록에서 다시 트리거](assets/retrigger-from-history.png)
+![기록에서 다시 트리거](assets/new-retrigger-from-history.png)
 
 ### 시나리오 실행 페이지에서 시나리오 재트리거
 
@@ -108,7 +108,7 @@ Webhook 트리거가 있는 시나리오와 연결된 시나리오에서 검색�
 1. 실행 페이지에서 **다시 시도**&#x200B;를 클릭합니다.
 
 
-![실행에서 다시 트리거](assets/retrigger-from-execution.png)
+![실행에서 다시 트리거](assets/new-retrigger-from-execution.png)
 
 
 

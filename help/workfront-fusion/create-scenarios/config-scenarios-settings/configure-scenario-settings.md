@@ -12,14 +12,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 850372a59529141a31a1a55035c55a3e506e69fb
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '1389'
-ht-degree: 6%
+source-wordcount: '1757'
+ht-degree: 5%
 ---
 # 시나리오 설정 구성
 
 시나리오 설정 패널에서 시나리오에 대한 특정 설정을 구성할 수 있습니다.
+
+>[!NOTE]
+>
+>Workfront Fusion에서 시나리오 편집기를 새 경험으로 전환합니다. 이 전환 중에 클래식 경험과 새 경험을 모두 사용할 수 있으며 언제든지 전환할 수 있습니다. 새 경험을 사용하는 것이 좋습니다. 자세한 내용은 문서 시나리오 편집기에서 [새 경험 및 클래식 경험](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)을 참조하십시오.
 
 ## 액세스 요구 사항
 
@@ -51,6 +55,23 @@ ht-degree: 6%
 +++
 
 ## 시나리오 설정을 엽니다.
+
+* [새 경험에서 시나리오 설정을 엽니다(권장)](#open-the-scenario-settings-in-the-new-experience-recommended)
+* [클래식 경험에서 시나리오 설정을 엽니다.](#open-the-scenario-settings-in-the-classic-experience)
+
+### 새 경험에서 시나리오 설정을 엽니다(권장)
+
+1. 왼쪽 패널에서 **시나리오**&#x200B;를 클릭합니다.
+1. 원하는 시나리오를 찾은 다음 이름을 클릭합니다.
+1. 시나리오의 아무 곳이나 클릭하여 시나리오 편집기를 입력합니다.
+1. 컨트롤 영역에서 **시나리오 설정** 아이콘 ![시나리오 설정 아이콘](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scenario-settings-icon-new.png)을 클릭합니다.
+
+   먼저 컨트롤 영역에서 점 3개를 클릭하여 볼 수 있습니다.
+
+   표시되는 [!UICONTROL 시나리오 설정] 패널에서 시나리오에 대한 다양한 고급 설정을 구성할 수 있습니다.
+1. 필요에 따라 시나리오 설정을 활성화하거나 비활성화합니다. 아래의 [시나리오 설정 옵션](#scenario-settings-options)을 참조하세요.
+
+### 클래식 경험에서 시나리오 설정을 엽니다.
 
 1. 왼쪽 패널에서 **시나리오**&#x200B;를 클릭합니다.
 1. 원하는 시나리오를 찾은 다음 이름을 클릭합니다.
@@ -150,13 +171,13 @@ ht-degree: 6%
 
 **예:** Workfront > [!UICONTROL 레코드 보기] 들어오는 새 문제에 대해 감시하고 Workfront >[!UICONTROL 개체 변환]에서 새 요청을 프로젝트로 변환하고 적절한 템플릿을 할당합니다.
 
-![시나리오 설정](assets/scenario-settings-ex-1-350x157.png)
+![시나리오 설정](assets/new-scenario-settings-ex-1.png)
 
 시나리오 실행을 예약하는 경우에만 [!UICONTROL 주기 더] 설정이 적용됩니다. [!UICONTROL 한 번 실행] 단추를 사용하면 주기 설정이 고려됩니다.
 
 #### 최대 주기 수가 1(기본값)로 설정됩니다.
 
-![최대 주기 수](assets/max-number-cycles-1-350x201.png)
+![최대 주기 수](assets/new-max-number-cycles.png)
 
 Workfront > 레코드 보기 모듈의 최대 주기 수가 `10`(으)로 설정되어 있습니다.
 100개의 요청이 Workfront에 제출되고 최대 주기 필드가 10으로 설정된 경우 한 시나리오가 실행된 후 90개의 파일이 처리되지 않은 상태로 남게 됩니다. 다음 10개의 파일이 다음에 예약된 시나리오 실행에서 처리됩니다.
@@ -169,9 +190,7 @@ Dropbox 폴더에 100개의 파일이 추가되고 최대 주기 옵션이 10으
 
 모든 파일은 시나리오 실행 1개 내에서 처리됩니다.
 
-시나리오 세부 정보에서 이미 실행된 주기를 확인할 수 있습니다.
-
-![시나리오 세부 정보](assets/scenario-detail-350x207.png)
+시나리오 세부 정보 페이지의 기록 영역에서 이미 실행된 주기를 확인할 수 있습니다.
 
 이 페이지에 대한 자세한 내용은 [시나리오 세부 정보](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md)를 참조하세요.
 
@@ -192,6 +211,34 @@ Dropbox 폴더에 100개의 파일이 추가되고 최대 주기 옵션이 10으
 알림 유형에 대한 시나리오 레벨 대체를 설정하려면 알림 유형 옆의 확인란을 선택하거나 선택 취소합니다.
 
 시나리오 수준 재정의를 포함하여 알림 설정에 대한 자세한 내용은 [알림 옵션 설정](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md)을 참조하세요.
+
+### 임시 디버그 로그
+
+>[!NOTE]
+>
+>* 임시 디버그 로그는 새 시나리오 디자이너에서만 사용할 수 있으며, 조직에 대해 이 기능이 활성화되어 있을 경우에만 사용할 수 있습니다.
+>* 설정을 변경하려면 시나리오를 편집할 수 있는 권한이 필요합니다.
+
+요청 및 응답 세부 정보는 많은 저장 공간을 차지하기 때문에 예약되거나 트리거되는 모든 실행에 대해 유지되지 않습니다. 한 번 뛰면 항상 유지가 돼.
+
+시나리오의 일반 실행에 대한 요청 및 응답 세부 정보를 수집하려면 수집 기간을 선택합니다.
+
+* 앞으로 1시간 동안
+* 앞으로 1일 동안
+* 다음 실행 시
+* 다음 10회 실행
+
+변경사항이 바로 적용됩니다. 시나리오를 저장할 필요가 없습니다.
+
+임시 디버그 로그가 켜져 있는 동안 설정은 디버그 로그가 작동 중지 시간이나 남아 있는 실행 수를 표시합니다. 그 전에 요청 및 응답 세부 정보 수집을 중지하려면 **해제**&#x200B;를 클릭하십시오.
+
+시간 또는 실행 수가 모두 사용되면 디버그 로그가 자동으로 꺼집니다. 새 데이터를 찾지 못하는 예약된 실행을 포함하여 모든 실행이 계산됩니다.
+
+>[!NOTE]
+>
+>임시 디버그 로그는 새 경험에서만 사용할 수 있으며 조직에 대해 기능이 활성화된 경우에만 사용할 수 있습니다. 이 설정을 변경하려면 시나리오를 편집할 권한이 있어야 합니다.
+
+<!-- BECKY CHECK ME: section added from the 10/23/26 release notes. Confirm the exact option labels, where the setting sits in the panel (I placed it before Worker pool), and the access requirement wording. Add a screenshot. -->
 
 ### 작업자 풀
 

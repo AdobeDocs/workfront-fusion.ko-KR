@@ -11,7 +11,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 13%
@@ -115,7 +115,7 @@ Break 지시문이 실행되면 시나리오 실행 상태가 불완전한 실�
 
 이 샘플 시나리오에서는 [!UICONTROL HTTP] > [!UICONTROL 요청 만들기] 모듈이 실패할 수 있는 모듈을 나타냅니다.
 
-![HTTP 요청 만들기](assets/http-make-request.png)
+![HTTP 요청 만들기](assets/new-http-make-request.png)
 
 >[!ENDSHADEBOX]
 

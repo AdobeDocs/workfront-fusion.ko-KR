@@ -11,7 +11,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 33%
@@ -64,7 +64,7 @@ ht-degree: 33%
 
    트리거 모듈의 아이콘을 마우스 오른쪽 단추로 클릭하고 **시작할 위치 선택**&#x200B;을 선택합니다.
 
-   ![시작할 위치 선택](assets/choose-where-to-start.png)
+   ![시작할 위치 선택](assets/new-choose-where-to-start.png)
 
 1. 표시되는 **[!UICONTROL 시작 위치 선택]** 상자에서 옵션을 선택합니다.
 

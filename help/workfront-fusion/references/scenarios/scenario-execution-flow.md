@@ -12,14 +12,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 1%
+source-wordcount: '821'
+ht-degree: 0%
 ---
 # 시나리오 실행 흐름
 
 이 문서에서는 시나리오가 실행되는 방식과 그 사이로 데이터가 흐르는 방식, 각 모듈에서 처리된 데이터를 보는 방법에 대해 설명합니다.
+
+>[!NOTE]
+>
+>Workfront Fusion에서 시나리오 편집기를 새 경험으로 전환합니다. 이 전환 중에 클래식 경험과 새 경험을 모두 사용할 수 있으며 언제든지 전환할 수 있습니다. 새 경험을 사용하는 것이 좋습니다. 자세한 내용은 문서 시나리오 편집기에서 [새 경험 및 클래식 경험](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)을 참조하십시오.
 
 활성 시나리오의 데이터 흐름을 보려면 [실행 중인 시나리오의 데이터 흐름 보기](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)를 참조하십시오.
 
@@ -43,7 +47,7 @@ ht-degree: 1%
 
 첫 번째 모듈이 번들을 반환하는 경우 번들은 나머지 시나리오를 통과합니다. 이 예에서 번들은 요청을 프로젝트로 변환하는 두 번째 모듈로 이동합니다.
 
-![Workfront 시나리오의 실행 흐름](assets/example-execution-flow-wf-only.png)
+![Workfront 시나리오의 실행 흐름](assets/new-example-execution-flow-wf-only.png)
 
 >[!ENDSHADEBOX]
 
@@ -57,7 +61,7 @@ ht-degree: 1%
 
 번들이 반환되면 번들은 나머지 시나리오를 통과합니다. 이 예제에서 시나리오의 나머지 부분은 두 번째 모듈로 구성되어 있으며, 두 번째 모듈은 번들을 [!DNL Dropbox] 폴더로 업로드합니다.
 
-![통합 시나리오의 실행 흐름](assets/example-execution-flow-wf-dropbox.png)
+![통합 시나리오의 실행 흐름](assets/new-example-execution-flow-wf-dropbox.png)
 
 첫 번째 모듈이 여러 번들을 반환하는 경우 두 번째 번들을 업로드하기 전에 첫 번째 번들이 [!DNL Dropbox]에 업로드됩니다. 그런 다음 두 번째 번들이 업로드되고, 세 번째 번들이 업로드되는 방식입니다.
 
@@ -78,7 +82,7 @@ ht-degree: 1%
 
 시나리오 실행이 완료되면 각 모듈에 수행된 작업 수를 보여 주는 아이콘이 표시됩니다. 이 아이콘을 클릭하면 프로세스의 각 단계에 대해 처리된 번들에 대한 세부 정보가 표시됩니다. 사용된 모듈 설정과 각 모듈에서 반환된 번들을 확인할 수 있습니다.
 
-![처리된 번들](assets/Info-processed-bundles.png)
+![처리된 번들](assets/new-Info-processed-bundles.png)
 
 이 예에서 모듈은 다음과 같은 입력 정보를 수신했습니다.
 

@@ -10,15 +10,15 @@ exl-id: cd8ac958-b7a6-4536-89d8-c79a2f8940a6
 TQID: https://experienceleague.adobe.com/xepLecibr9U6FpQM0neDy15DbFGF55rR6gVYvo644H4
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Integrations
+source-git-commit: 347280547bea92c0ee498da519495569a3cac661
 workflow-type: tm+mt
-source-wordcount: 600
-ht-degree: 18%
-
+source-wordcount: '1022'
+ht-degree: 11%
 ---
-
 # 기본 시나리오에 트리거 모듈 추가
 
 트리거 모듈은 시나리오의 시작 부분에 배치됩니다. 이러한 모듈은 지정된 서비스가 변경되면 시나리오 실행을 시작합니다. 새 레코드 만들기, 레코드 삭제, 레코드 업데이트 등이 변경 내용이 될 수 있습니다. 시나리오를 시작하는 변경 사항에 대한 기준을 지정합니다.
@@ -28,6 +28,10 @@ ht-degree: 18%
 이 예에서는 15분마다 실행되고 요청이 특정 대기열에 제출된 경우 시나리오를 시작하는 트리거 모듈을 추가합니다. 그런 다음 시나리오에서는 해당 요청을 프로젝트로 전환합니다.
 
 이 예제에서는 [기본 시나리오 만들기](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)에서 만든 시나리오를 수정합니다.
+
+>[!NOTE]
+>
+>Workfront Fusion에서 시나리오 편집기를 새 경험으로 전환합니다. 이 전환 중에 클래식 경험과 새 경험을 모두 사용할 수 있으며 언제든지 전환할 수 있습니다. 새 경험을 사용하는 것이 좋습니다. 자세한 내용은 문서 시나리오 편집기에서 [새 경험 및 클래식 경험](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)을 참조하십시오.
 
 ## 액세스 요구 사항
 
@@ -62,9 +66,87 @@ ht-degree: 18%
 
 이 절차를 수행하기 전에 [기본 시나리오 만들기](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)에 설명된 시나리오를 만들어야 합니다.
 
-## 트리거 모듈 추가 및 구성
+## 새 경험에서 트리거 모듈을 추가 및 구성합니다(권장)
+
+* [트리거 모듈 추가](#add-the-trigger-module)
+* [트리거 모듈 예약](#schedule-the-trigger-module)
+* [두 번째 모듈 업데이트](#update-the-second-module)
+* [테스트 및 활성화](#test-and-activate)
 
 ### 트리거 모듈 추가
+
+1. 시나리오 편집기에서 시나리오를 엽니다.
+1. 첫 번째(검색) 모듈을 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 모듈 삭제]**&#x200B;를 선택합니다.
+
+   모듈이 삭제되고 빈 자리 표시자가 남습니다.
+
+1. 빈 모듈을 클릭하여 앱 및 서비스 목록을 엽니다.
+
+   ![앱 및 서비스 선택기](/help/workfront-fusion/build-practice-scenarios/assets/new-connector-picker.png)
+
+1. **Adobe Workfront**&#x200B;을(를) 선택합니다.
+1. **레코드 보기**&#x200B;를 선택하십시오.
+1. 모듈이 시나리오의 나머지 모듈과 동일한 연결을 사용하는지 확인합니다.
+1. 레코드 유형 필드에서 **문제**&#x200B;를 선택합니다.
+1. 필터 필드에서 **새 레코드만**&#x200B;을(를) 선택합니다.
+1. 출력 상자에서 `ID`, `Name` 및 `Project ID`을(를) 선택합니다.
+1. **확인**&#x200B;을 클릭하여 모듈 설정을 저장합니다.
+
+   시작 위치 선택 창이 나타납니다.
+
+1. **지금부터**&#x200B;을(를) 선택합니다.
+
+### 트리거 모듈 예약
+
+1. 녹화 보기 모듈에서 시계 아이콘을 클릭합니다.
+
+   시계 레코드 모듈의 ![시계 아이콘](assets/clock-icon-on-watch-record.png)
+
+   스케줄 설정 창이 열립니다.
+
+1. 실행 시나리오 필드에서 **일정한 간격으로**&#x200B;을(를) 선택합니다.
+
+1. **확인**&#x200B;을 클릭합니다.
+
+### 두 번째 모듈 업데이트
+
+첫 번째 모듈이 대체되었으므로 두 번째 모듈은 새 첫 번째 모듈에 매핑되어야 합니다.
+
+1. Convert 개체 모듈을 엽니다.
+1. Issue ID 필드에서 검정색 ID 블록을 삭제합니다. 블록이 매핑된 모듈을 더 이상 사용할 수 없으므로 블록은 검정색입니다.
+1. 첫 번째 모듈(레코드 보기) 아래에서 ID 블록을 선택하여 두 번째 모듈에 매핑합니다.
+1. **확인**&#x200B;을 클릭합니다.
+
+### 테스트 및 활성화
+
+1. Fusion이 연결 중인 Workfront 환경으로 이동하여 문제를 추가합니다.
+1. **[!UICONTROL 한 번 실행]** 아이콘을 클릭합니다.
+
+   한 번 실행은 새 경험에서 아이콘 전용입니다. 아이콘 위로 마우스를 가져가면 **[!UICONTROL 한 번 실행]** 도구 설명을 볼 수 있습니다.
+
+   ![시나리오 실행 단추](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/run-once-new.png)
+
+1. 출력을 검사하여 시나리오가 예상대로 실행되었는지 확인합니다.
+1. 시나리오가 예상대로 작동하는 경우 **예약** 전환을 클릭하여 **켜기**&#x200B;로 전환합니다.
+
+   이렇게 하면 시나리오가 활성화됩니다.
+
+   ![예약 전환](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scheduling-new.png)
+
+1. 시나리오에 대한 진행률을 저장하려면 컨트롤 영역에서 **저장** 아이콘 ![저장 아이콘](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/save-icon-new.png)을 클릭합니다.
+
+   >[!IMPORTANT]
+   >
+   >원하는 만큼 자주 저장하고 시나리오를 테스트합니다.
+
+## 클래식 경험에서 트리거 모듈 추가 및 구성
+
+* [트리거 모듈 추가(클래식)](#add-the-trigger-module-classic)
+* [트리거 모듈 예약(Classic)](#schedule-the-trigger-module-classic)
+* [두 번째 모듈 업데이트(Classic)](#update-the-second-module-classic)
+* [테스트 및 활성화(클래식)](#test-and-activate-classic)
+
+### 트리거 모듈 추가(클래식)
 
 1. 시나리오 편집기에서 시나리오를 엽니다.
 1. 첫 번째(검색) 모듈을 마우스 오른쪽 단추로 클릭하고 **모듈 삭제**&#x200B;를 선택합니다.
@@ -83,9 +165,9 @@ ht-degree: 18%
 
 1. **지금부터**&#x200B;을(를) 선택합니다.
 
-### 트리거 모듈 예약
+### 트리거 모듈 예약(Classic)
 
-1. Watch Records 모듈에서 시계를 클릭합니다.
+1. 시계 레코드 모듈에서 시계를 클릭합니다.
 
    스케줄 설정 창이 열립니다.
 
@@ -93,7 +175,7 @@ ht-degree: 18%
 
 1. **확인**&#x200B;을 클릭합니다.
 
-### 두 번째 모듈 업데이트
+### 두 번째 모듈 업데이트(Classic)
 
 첫 번째 모듈이 대체되었으므로 두 번째 모듈은 새 첫 번째 모듈에 매핑되어야 합니다.
 
@@ -102,7 +184,7 @@ ht-degree: 18%
 1. 첫 번째 모듈(레코드 보기) 아래에서 ID 블록을 선택하여 두 번째 모듈에 매핑합니다.
 1. **확인**&#x200B;을 클릭합니다.
 
-### 테스트 및 활성화
+### 테스트 및 활성화(클래식)
 
 1. Fusion이 연결 중인 Workfront 환경으로 이동하여 문제를 추가합니다.
 1. 시나리오 편집기의 왼쪽 아래에서 **[!UICONTROL 한 번 실행]**&#x200B;을 클릭합니다.

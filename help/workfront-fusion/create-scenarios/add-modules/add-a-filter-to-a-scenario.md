@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 19%
+source-wordcount: '942'
+ht-degree: 11%
 ---
 # 시나리오에 필터 추가
 
@@ -26,6 +26,10 @@ ht-degree: 19%
 
 * 번들이 그러한 경우 시나리오의 다음 모듈로 전달됩니다.
 * 그렇지 않으면 번들 처리가 종료됩니다.
+
+>[!NOTE]
+>
+>Workfront Fusion에서 시나리오 편집기를 새 경험으로 전환합니다. 이 전환 중에 클래식 경험과 새 경험을 모두 사용할 수 있으며 언제든지 전환할 수 있습니다. 새 경험을 사용하는 것이 좋습니다. 자세한 내용은 문서 시나리오 편집기에서 [새 경험 및 클래식 경험](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)을 참조하십시오.
 
 ## 액세스 요구 사항
 
@@ -60,7 +64,37 @@ ht-degree: 19%
 
 두 모듈 사이에 필터를 추가하려면 먼저 두 모듈을 시나리오에 추가해야 합니다.
 
-## 다음 두 모듈 사이에 필터를 추가합니다.
+## 두 모듈 사이에 필터 추가
+
+* [새 경험에서 두 모듈 사이에 필터 추가(권장)](#add-a-filter-between-two-modules-in-the-new-experience-recommended)
+* [클래식 경험에서 두 모듈 사이에 필터 추가](#add-a-filter-between-two-modules-in-the-classic-experience)
+
+### 새 경험에서 두 모듈 사이에 필터 추가(권장)
+
+1. 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭합니다.
+1. 필터를 추가할 시나리오를 선택합니다.
+1. 시나리오의 아무 곳이나 클릭하여 시나리오 편집기를 입력합니다.
+1. 필터를 추가할 모듈 사이의 경로를 마우스 왼쪽 단추로 클릭합니다.
+
+   **[!UICONTROL 필터 설정]** 창이 바로 열립니다. 경로를 마우스 오른쪽 버튼으로 클릭하면 다른 메뉴가 대신 열립니다.
+
+1. 표시되는 상자에 필터에 대한 **[!UICONTROL 레이블]**&#x200B;을 입력합니다.
+1. 필터 **[!UICONTROL 조건]**&#x200B;을(를) 정의합니다.
+
+   첫 번째 필드, 연산자 및 (필요한 경우) 필드를 비교할 값을 기준으로 필터링할 필드를 입력합니다.
+
+   >[!TIP]
+   >
+   >매핑 패널에서 필터 필드에 값을 입력할 수 있습니다
+   >매핑에 대한 자세한 내용은 [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)을 참조하십시오.
+
+   예를 들어 필터가 XML로 끝나는 Adobe Workfront의 파일을 전달하게 하려면 첫 번째 상자에 **[!UICONTROL 파일 이름]**&#x200B;을 입력하고 두 번째 상자에 .**[!UICONTROL xml]**&#x200B;을 입력합니다. 이 두 메뉴 사이의 드롭다운 메뉴에서 **[!UICONTROL 다음으로 끝남(대/소문자 구분 안 함)]**&#x200B;을 선택합니다. 이 필터는 첫 번째 모듈(Workfront)에서 들어오는 번들에 적용됩니다. XML 파일이 포함된 번들만 다음 모듈로 전달됩니다.
+
+   ![필터 설정](assets/new-filter-setup-xml-example.png)
+
+1. **[!DNL OK]**&#x200B;을(를) 클릭합니다.
+
+### 클래식 경험에서 두 모듈 사이에 필터 추가
 
 1. 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭합니다.
 1. 필터를 추가할 시나리오를 선택합니다.
@@ -86,6 +120,22 @@ ht-degree: 19%
 
 기존 필터를 복사하여 시나리오의 다른 곳에 붙여넣을 수 있습니다.
 
+* [새 경험에서 필터 복사(권장)](#copy-a-filter-in-the-new-experience-recommended)
+* [클래식 경험에서 필터 복사](#copy-a-filter-in-the-classic-experience)
+
+### 새 경험에서 필터 복사(권장)
+
+1. 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭합니다.
+1. 필터를 추가할 시나리오를 선택합니다.
+1. 시나리오의 아무 곳이나 클릭하여 시나리오 편집기를 입력합니다.
+1. 필터가 있는 모듈 사이의 경로를 마우스 오른쪽 단추로 클릭합니다.
+1. **필터 복사**&#x200B;를 선택합니다.
+1. 필터를 붙여넣을 모듈 간의 경로를 마우스 오른쪽 단추로 클릭합니다.
+1. **필터 붙여넣기**&#x200B;를 선택합니다.
+1. (선택 사항) 필터를 조정하려면 필터 아이콘이나 레이블을 클릭하고 [새 경험의 두 모듈 사이에 필터 추가](#add-a-filter-between-two-modules-in-the-new-experience-recommended)에 설명된 대로 값을 입력합니다.
+
+### 클래식 경험에서 필터 복사
+
 1. 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭합니다.
 1. 필터를 추가할 시나리오를 선택합니다.
 1. 시나리오의 아무 곳이나 클릭하여 시나리오 편집기를 입력합니다.
@@ -93,7 +143,7 @@ ht-degree: 19%
 1. **필터 복사**&#x200B;를 선택합니다.
 1. 필터를 붙여넣을 모듈 간의 연결 점을 마우스 오른쪽 버튼으로 클릭합니다.
 1. **붙여넣기** 필터 선택
-1. (선택 사항) 필터를 조정하려면 필터 아이콘이나 레이블을 클릭하고 이 문서의 [두 모듈 사이에 필터 추가](#add-a-filter-between-two-modules)에 설명된 대로 값을 입력하십시오.
+1. (선택 사항) 필터를 조정하려면 필터 아이콘이나 레이블을 클릭하고 [클래식 경험의 두 모듈 사이에 필터 추가](#add-a-filter-between-two-modules-in-the-classic-experience)에 설명된 대로 값을 입력합니다.
 
 
 

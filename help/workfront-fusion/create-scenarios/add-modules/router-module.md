@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 11%
+source-wordcount: '1869'
+ht-degree: 6%
 ---
 # 라우터 모듈 추가 및 경로 구성
 
@@ -22,6 +22,9 @@ ht-degree: 11%
 
 경로는 병렬로 처리되지 않고 순차적으로 처리됩니다. 이전 경로에서 완전히 처리될 때까지 번들이 다음 경로로 전송되지 않습니다.
 
+>[!NOTE]
+>
+>Workfront Fusion에서 시나리오 편집기를 새 경험으로 전환합니다. 이 전환 중에 클래식 경험과 새 경험을 모두 사용할 수 있으며 언제든지 전환할 수 있습니다. 새 경험을 사용하는 것이 좋습니다. 자세한 내용은 문서 시나리오 편집기에서 [새 경험 및 클래식 경험](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)을 참조하십시오.
 
 ## 액세스 요구 사항
 
@@ -55,6 +58,45 @@ ht-degree: 11%
 ## 시나리오에 라우터 모듈 추가
 
 라우터를 구성하기 전에 라우터 모듈을 추가해야 합니다.
+
+* [새 환경의 시나리오에 라우터 모듈 추가(권장)](#add-a-router-module-to-a-scenario-in-the-new-experience-recommended)
+* [클래식 경험의 시나리오에 라우터 모듈 추가](#add-a-router-module-to-a-scenario-in-the-classic-experience)
+
+### 새 환경의 시나리오에 라우터 모듈 추가(권장)
+
+1. 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭합니다.
+1. 라우터를 추가할 시나리오를 선택합니다.
+1. 시나리오의 아무 곳이나 클릭하여 시나리오 편집기를 입력합니다.
+1. 라우터를 추가할 모듈의 오른쪽 가장자리를 마우스로 가리킨 다음, 해당 모듈이 나타나면 **[!UICONTROL 다른 모듈 추가]**&#x200B;를 클릭합니다. 열리는 목록에서 **[!UICONTROL 기본 제공]** 범주를 선택한 다음 **[!UICONTROL 흐름 제어]** > **[!UICONTROL 라우터]**&#x200B;를 선택합니다.
+
+   또는
+
+   두 모듈 사이에 라우터 모듈을 삽입하려면 두 모듈을 연결하는 경로를 마우스 오른쪽 단추로 클릭한 다음 **[!UICONTROL 라우터 추가]**&#x200B;를 선택하십시오.
+
+   ![두 모듈 사이에 라우터 추가](assets/add-a-module-between-modules.png)
+
+1. 모듈을 추가하는 것과 유사하게 라우터의 오른쪽 가장자리를 마우스로 가리키고 모듈을 추가하여 라우터에 첫 번째 경로를 추가합니다.
+1. 다른 경로를 추가하려면 라우터 모듈을 클릭합니다. 경로가 나타납니다. 원하는 대로 이 경로에 모듈을 추가합니다.
+
+   원하는 만큼 경로를 추가할 수 있습니다.
+
+1. 경로의 순서를 확인하려면 각 경로의 레이블을 확인합니다. 먼저 경로 1이 실행된 다음 경로 2가 실행됩니다.
+
+   또는
+
+   컨트롤 영역에서 **자동 정렬** 아이콘 ![자동 정렬 아이콘](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/auto-align-icon-new.png)을 클릭합니다.
+
+   경로는 실행되는 순서대로 배열됩니다. 상위 경로가 먼저 실행됩니다.
+
+1. (선택 사항) 경로 순서를 변경하려면 라우터 모듈을 마우스 오른쪽 단추로 클릭하고 **경로 순서 지정**&#x200B;을 선택합니다. 실행하려는 순서대로 경로를 드래그하여 놓습니다. 라우터는 라우터를 따르는 첫 번째 모듈(경로의 첫 번째 모듈)로 표시됩니다.
+1. (선택 사항) 경로를 사용하지 않으려면 라우터에서 해당 경로로 이어지는 경로를 마우스 오른쪽 단추로 클릭하고 **경로 사용 안 함**&#x200B;을 선택합니다.
+
+   비활성화된 경로는 라우터에서 경로의 첫 번째 모듈로 이어지는 회색 점을 표시하며 레이블에 비활성화된 경로 아이콘 ![비활성화된 경로 아이콘](assets/disabled-route-icon.png)을(를) 표시합니다.
+
+1. (선택 사항 및 조건부) 비활성화된 경로를 활성화하려면 경로의 레이블에서 비활성화된 경로 아이콘 ![비활성화된 경로 아이콘](assets/disabled-route-icon.png)을(를) 클릭합니다.
+1. [새 경험의 경로에 필터 추가](#add-a-filter-to-a-route-in-the-new-experience-recommended)를 계속합니다.
+
+### 클래식 경험의 시나리오에 라우터 모듈 추가
 
 1. 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭합니다.
 1. 라우터를 추가할 시나리오를 선택합니다.
@@ -90,7 +132,7 @@ ht-degree: 11%
    비활성화된 경로는 라우터에서 경로의 첫 번째 모듈로 이어지는 회색 점을 표시하며 레이블에 비활성화된 경로 아이콘 ![비활성화된 경로 아이콘](assets/disabled-route-icon.png)을(를) 표시합니다.
 
 1. (선택 사항 및 조건부) 비활성화된 경로를 활성화하려면 경로의 레이블에서 비활성화된 경로 아이콘 ![비활성화된 경로 아이콘](assets/disabled-route-icon.png)을(를) 클릭합니다.
-1. [경로에 필터 추가](#add-a-filter-to-a-route)를 계속합니다.
+1. [클래식 경험의 경로에 필터 추가](#add-a-filter-to-a-route-in-the-classic-experience)를 계속합니다.
 
 ## 경로에 필터 추가
 
@@ -99,6 +141,32 @@ ht-degree: 11%
 데이터가 두 개 이상의 경로 필터를 통과한 경우 데이터는 두 경로 모두에서 처리됩니다. 상위 경로는 먼저 데이터를 처리합니다.
 
 필터가 있는 라우터는 경로 레이블에 필터 아이콘 ![필터 아이콘](assets/fusion-scenario-filter-icon.png)을 표시합니다.
+
+* [새 경험에서 경로에 필터 추가(권장)](#add-a-filter-to-a-route-in-the-new-experience-recommended)
+* [클래식 경험에서 경로에 필터 추가](#add-a-filter-to-a-route-in-the-classic-experience)
+
+### 새 경험에서 경로에 필터 추가(권장)
+
+1. 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭합니다.
+1. 필터를 추가할 시나리오를 선택합니다.
+1. 시나리오의 아무 곳이나 클릭하여 시나리오 편집기를 입력합니다.
+1. 필터를 설정할 경로를 마우스 왼쪽 단추로 클릭합니다. 라우터 모듈과 경로의 첫 번째 모듈 사이의 경로입니다.
+
+   **[!UICONTROL 필터 설정]** 창이 바로 열립니다.
+
+1. 표시되는 패널의 레이블 필드에 레이블을 추가합니다. 이 레이블은 시나리오에 표시됩니다.
+1. 필터 조건을 구성합니다.
+
+   자세한 내용은 [시나리오에 필터 추가](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md)를 참조하십시오.
+
+   ![경로에서 필터 설정](assets/new-filter-specific-user.png)
+
+1. **[!UICONTROL 확인]**&#x200B;을 클릭하여 필터 설정을 저장합니다.
+1. (조건부) 필터 이름이 너무 길어 레이블에 맞지 않으면 레이블 위로 마우스를 가져가 전체 이름을 표시합니다.
+
+1. [새 경험에서 대체 경로를 계속 구성](#configure-a-fallback-route-in-the-new-experience-recommended)합니다.
+
+### 클래식 경험에서 경로에 필터 추가
 
 1. 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭합니다.
 1. 필터를 추가할 시나리오를 선택합니다.
@@ -113,7 +181,7 @@ ht-degree: 11%
 1. **[!UICONTROL 확인]**&#x200B;을 클릭하여 필터 설정을 저장합니다.
 1. (조건부) 필터 이름이 너무 길어 레이블에 맞지 않으면 레이블 위로 마우스를 가져가 전체 이름을 표시합니다.
 
-1. [대체 경로 구성](#configure-a-fallback-route)을 계속합니다.
+1. [클래식 경험에서 대체 경로를 계속 구성](#configure-a-fallback-route-in-the-classic-experience)합니다.
 
 ## 대체 경로 구성
 
@@ -122,6 +190,29 @@ ht-degree: 11%
 대체 경로는 레이블에 &quot;대체&quot;로 표시됩니다.
 
 필터 패널에서 대체 경로를 활성화할 수 있습니다.
+
+* [새 경험에서 대체 경로 구성(권장)](#configure-a-fallback-route-in-the-new-experience-recommended)
+* [클래식 경험에서 대체 경로 구성](#configure-a-fallback-route-in-the-classic-experience)
+
+### 새 경험에서 대체 경로 구성(권장)
+
+1. 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭합니다.
+1. 대체 경로를 추가할 시나리오를 선택합니다.
+1. 시나리오의 아무 곳이나 클릭하여 시나리오 편집기를 입력합니다.
+1. 필터를 설정할 경로를 마우스 왼쪽 단추로 클릭합니다. 라우터 모듈과 경로의 첫 번째 모듈 사이의 경로입니다.
+
+   **[!UICONTROL 필터 설정]** 창이 바로 열립니다.
+
+1. 표시되는 패널의 레이블 필드에 레이블을 추가합니다. 이 레이블은 시나리오에 표시됩니다.
+1. 대체 경로 확인란을 활성화합니다.
+
+   ![대체 경로](assets/fallback-route-new.png)
+
+1. **[!UICONTROL 확인]**&#x200B;을 클릭하여 필터 설정을 저장합니다.
+
+대체 경로의 레이블에는 녹색으로 **대체**&#x200B;이(가) 표시됩니다.
+
+### 클래식 경험에서 대체 경로 구성
 
 1. 왼쪽 패널의 **[!UICONTROL 시나리오]** 탭을 클릭합니다.
 1. 대체 경로를 추가할 시나리오를 선택합니다.
@@ -139,6 +230,25 @@ ht-degree: 11%
 
 ![라우터에서 화살표 로그인](assets/arrow-sign-in-router-module-350x361.png)
 
+## 라우터 접기
+
+>[!NOTE]
+>
+>이 기능은 새 시나리오 편집기 경험에서만 사용할 수 있습니다.
+
+새 경험에서는 라우터를 접어 일시적으로 경로를 숨길 수 있습니다. 이 기능은 큰 시나리오에서 유용합니다.
+
+1. 시나리오 편집기의 편집 모드에서 시나리오를 엽니다.
+1. 접을 라우터를 마우스 오른쪽 단추로 클릭한 다음 **접기 경로**&#x200B;을 선택합니다.
+
+폴딩된 라우터는 숨겨진 경고나 오류의 심각도를 포함하여 숨겨진 라우터와 모듈의 수를 표시합니다.
+
+![접힌 라우터](assets/fold-router.png)
+
+라우터를 접어도 어떤 것도 제거되거나 비활성화되지 않습니다. 검색, 유효성 검사, 라이브 트레일 및 실행 기록은 그 안에 있는 모듈을 표시해야 할 때 접힌 라우터를 자동으로 확장합니다.
+
+접힌 상태는 시나리오와 함께 저장되고 실행 취소 및 재실행과 함께 작동합니다. 시나리오 실행을 검토할 때 항상 전체 시나리오가 표시됩니다.
+
 ## 예: `if/else` 사용 사례
 
 >[!BEGINSHADEBOX]
@@ -147,10 +257,10 @@ ht-degree: 11%
 
 이 예제에서 첫 번째 경로는 필터로 구성됩니다. `if` 구성 요소를 나타냅니다.
 
-![경로에서 필터 설정](assets/set-up-a-filter-2-350x242.png)
+![경로에서 필터 설정](assets/new-filter-specific-user-unmarked.png)
 
 두 번째 경로는 폴백 경로로 구성됩니다. `else` 구성 요소를 나타냅니다.
 
-![대체 옵션 사용](assets/enable-fallback-route-option-350x238.png)
+![대체 옵션 사용](assets/new-not-specific-user-unmarked.png)
 
 >[!ENDSHADEBOX]

@@ -11,14 +11,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 15%
+source-wordcount: '684'
+ht-degree: 14%
 ---
 # 흐름 제어
 
 시나리오를 만들거나 편집할 때 설정을 구성하여 데이터가 시나리오를 통과하는 방식을 제어할 수 있습니다.
+
+>[!NOTE]
+>
+>Workfront Fusion에서 시나리오 편집기를 새 경험으로 전환합니다. 이 전환 중에 클래식 경험과 새 경험을 모두 사용할 수 있으며 언제든지 전환할 수 있습니다. 새 경험을 사용하는 것이 좋습니다. 자세한 내용은 문서 시나리오 편집기에서 [새 경험 및 클래식 경험](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)을 참조하십시오.
 
 ## 액세스 요구 사항
 
@@ -75,7 +79,7 @@ ht-degree: 15%
 
 예를 들어 [!UICONTROL Repeater] 모듈을 사용하여 **[!UICONTROL Email] >[!UICONTROL Email 보내기]** 모듈을 [!UICONTROL Repeater] 모듈에 연결하여 제목 &quot;Hello 1&quot;, &quot;Hello 2&quot; 등이 포함된 5개의 이메일을 보낼 수 있습니다.
 
-1. 화면 하단의 [!UICONTROL 흐름 제어] 아이콘 ![흐름 제어 아이콘](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif)을 클릭한 다음 표시되는 메뉴에서 **[!UICONTROL 반복]**&#x200B;을 클릭합니다.
+1. 화면 하단의 [!UICONTROL 흐름 제어] 아이콘 ![흐름 제어 아이콘](/help/workfront-fusion/references/apps-and-modules/assets/new-flow-control-icon.png)을 클릭한 다음 표시되는 메뉴에서 **[!UICONTROL 반복]**&#x200B;을 클릭합니다.
 1. [!UICONTROL 반복] 모듈을 클릭한 다음 표시되는 상자에서 **[!UICONTROL 자동으로 연결]**&#x200B;을 클릭합니다.
 
    Repeater 모듈이 열립니다.
@@ -84,7 +88,7 @@ ht-degree: 15%
 
    이 예제에서는 5를 입력합니다.
 
-   ![반복](/help/workfront-fusion/references/apps-and-modules/assets/repeater-2-350x207.png)
+   ![반복](/help/workfront-fusion/references/apps-and-modules/assets/new-repeater.png)
 
    항목의 값이 각 반복에서 **[!UICONTROL 단계]** 필드에 지정된 값만큼 증가합니다. 이 값은 **[!UICONTROL 고급 설정 표시]**&#x200B;를 선택하여 볼 수 있습니다. 이 숫자는 기본적으로 1입니다.
 
@@ -95,7 +99,7 @@ ht-degree: 15%
 
    전자 메일 예제에서는 [!UICONTROL 제목] 상자에 Hello를 입력한 다음 반복 모듈에서 `i`을(를) 매핑합니다.
 
-   ![반복](/help/workfront-fusion/references/apps-and-modules/assets/repeater-3-350x207.png)
+   ![반복](/help/workfront-fusion/references/apps-and-modules/assets/new-repeater-3.png)
 
 
 

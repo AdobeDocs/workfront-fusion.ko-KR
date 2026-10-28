@@ -13,7 +13,7 @@ feature_v2:
     internal-label: APIs
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 59%
@@ -44,7 +44,7 @@ Workfront Fusion에는 간단하거나 복잡한 공식을 만들 수 있는 기
 | **날짜 및 시간** <br> ![날짜 및 시간 함수](assets/toolbar-icon-date-time-functions.png) | <ul><li>[날짜 및 시간 함수](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)</li><li>[날짜 및 시간 형식용 토큰](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)</li><li> [날짜 및 시간 구문 분석용 토큰](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)</li></ul> |
 | **배열 작업용 함수**<br> ![배열 함수](assets/toolbar-icon-functions-for-arrays.png) | [배열 함수](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md) |
 
-![함수 도구 모음](assets/functions-toolbar-350x189.png)
+![함수 도구 모음](assets/new-functions-toolbar.png)
 
 ## 사용자 정의 함수
 
@@ -52,4 +52,4 @@ Fusion의 [함수] 영역에서 사용자 정의 함수를 만들 수 있습니�
 
 사용자 지정 기능은 Adobe App Builder을 통해 작동하므로 이를 사용하려면 조직에 Adobe App Builder 라이선스가 있어야 합니다.
 
-사용자 지정 함수에 대한 정보 및 지침은 사용자 지정 함수를 사용한 ap 데이터를 참조하십시오.
+사용자 지정 함수에 대한 자세한 내용과 지침은 [사용자 지정 함수를 사용하여 데이터 매핑](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)을 참조하십시오.

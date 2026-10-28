@@ -11,7 +11,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 2%
@@ -67,6 +67,8 @@ ht-degree: 2%
 ### Rollback
 
 모듈에서 작업 또는 커밋 단계 중에 오류가 발생하면 단계가 중단되고 롤백 단계가 시작되므로 주어진 주기 동안 모든 작업이 무효화됩니다.
+
+<!-- BECKY CHECK ME: acid-modules.png shows the classic module list with ACID badges (Watch Events, Watch Field, Watch Record). Retake it from the new module browser, and confirm the ACID badge still displays there (the release notes mention badges for private, premium, and beta apps only). -->
 
 >[!IMPORTANT]
 >

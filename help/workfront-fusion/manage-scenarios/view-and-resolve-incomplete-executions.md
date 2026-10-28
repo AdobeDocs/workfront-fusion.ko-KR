@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '580'
 ht-degree: 7%
 ---
 # 불완전한 실행 보기 및 해결
@@ -26,9 +26,11 @@ ht-degree: 7%
 >
 >시나리오 설정에 대한 자세한 내용은 [시나리오 설정 구성](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)을 참조하십시오.
 
-## 전체 문서에 대해 강조 표시된 미리 보기 {#highlighted-preview-article-level}
+전체 문서 {#highlighted-preview-article-level}에 대해 강조 표시된 미리 보기
 
-<span class="preview">이 페이지의 정보는 아직 일반적으로 사용할 수 없는 기능을 참조합니다. 미리 보기 샌드박스 환경에서만 사용할 수 있습니다.</span>## 불완전한 실행 보기
+<span class="preview">이 페이지의 정보는 아직 일반적으로 사용할 수 없는 기능을 참조합니다. 미리 보기 샌드박스 환경에서만 사용할 수 있습니다.</span>
+
+## 미완료 실행 보기
 
 작업 중 모듈에 오류가 발생하면 미완료 실행 폴더에 새로운 미완료 실행이 추가됩니다. 각 불완전한 실행에는 시나리오의 블루프린트와 실패한 모듈에 매핑할 수 있는 모든 번들이 포함됩니다. 시나리오 세부 정보 페이지에서 [!UICONTROL 불완전 실행] 탭을 클릭하여 불완전 실행 목록을 열 수 있습니다.
 
@@ -61,7 +63,7 @@ ht-degree: 7%
 1. 모든 모듈의 작업이 표시되는 모듈의 로그를 엽니다.
 1. 실패한 작업을 찾은 다음 **[!UICONTROL 해결]**&#x200B;을 클릭합니다.
 
-   ![확인 단추](assets/resolve-btn-350x188.png)
+   <!--![Resolve button](assets/resolve-btn-350x188.png)-->
 
 
 
@@ -75,7 +77,7 @@ ht-degree: 7%
 1. 모든 모듈의 작업이 표시되는 모듈의 로그를 엽니다.
 1. 실패한 작업을 찾은 다음 **[!UICONTROL 해결]**&#x200B;을 클릭합니다.
 
-   ![확인 단추](assets/resolve-btn-350x188.png)
+   <!--![Resolve button](assets/resolve-btn-350x188.png)-->
 
 ## 불완전한 실행과 관련된 옵션
 

@@ -17,7 +17,7 @@ feature_v2:
     internal-label: Integrations
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 25%
@@ -67,7 +67,7 @@ ht-degree: 25%
 
 오류를 조건부로 발생시키려면 작업 중에 모듈을 의도적으로 실패하도록 구성할 수 있습니다. 선택적으로 오류(`BundleValidationError`)를 발생시키도록 구성된 [!UICONTROL JSON] > [!UICONTROL JSON 구문 분석] 모듈을 사용할 수 있습니다.
 
-![JSON 오류](assets/json-parse-json.png)
+![JSON 오류](assets/new-json-parse-json.png)
 
 그런 다음 오류 처리 지시문 중 하나를 오류 처리 경로에 첨부할 수 있습니다.
 
@@ -78,4 +78,4 @@ ht-degree: 25%
 
 다음 예제에서는 [!DNL Rollback] 지시문을 사용하는 방법을 보여 줍니다.
 
-![Rollback 지시문](assets/rollback-directive.png)
+![Rollback 지시문](assets/new-rollback-directive.png)

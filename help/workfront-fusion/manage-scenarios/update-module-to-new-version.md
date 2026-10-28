@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '371'
 ht-degree: 27%
 ---
 # 모듈을 새 버전으로 업그레이드
@@ -74,7 +74,7 @@ Workfront Fusion이 연결되는 애플리케이션은 새 버전을 업데이�
 ## Workfront이 아닌 모듈을 새 버전으로 업그레이드
 
 1. 새 버전으로 업그레이드하려는 모듈에서 **업그레이드 모듈** 아이콘 ![업그레이드 아이콘](assets/upgrade-icon.png)을 클릭합니다.
-   ![업데이트 아이콘](assets/update-indicator.png)
+   <!--![Update icon](assets/update-indicator.png)-->
 1. **새로 선택**&#x200B;을 클릭합니다.
 1. 이전 모듈을 바꿀 모듈을 선택합니다.
 1. 기존 모듈과 동일한 설정으로 모듈을 구성합니다.

@@ -113,7 +113,7 @@ Adobe Workfront Fusion의 역할은 동일한 작업을 계속해서 반복하�
    1. [!UICONTROL 검색 조건] 아래의 첫 번째 상자에서 검색에 포함할 필드를 선택합니다. 이 예제에서는 **[!UICONTROL 이름]**&#x200B;을(를) 선택합니다.
 
       단어 &quot;[!UICONTROL 이름]&quot;을(를) 입력하면 목록에서 **[!UICONTROL 이름]**&#x200B;을(를) 찾을 수 있습니다.
-   1. 연산자의 경우 **존재** 옆에 있는 드롭다운 화살표를 클릭하고 [!UICONTROL **포함(대/소문자 구분 안 함)**](으)로 변경합니다.
+   1. 연산자의 경우 **존재** 옆에 있는 드롭다운 화살표를 클릭하고 [!UICONTROL **포함(대/소문자 구분 안 함)**] (으)로 변경합니다.
 
       이렇게 하면 전체 이름을 입력하지 않거나 대/소문자가 잘못된 이름(예: 모두 대문자)을 입력하더라도 모듈이 이름에 선택한 단어가 포함된 프로젝트를 찾을 수 있습니다.
    1. [!UICONTROL 검색 조건]의 마지막 필드에 검색 중인 작업 이름에 있는 단어 또는 구를 입력하십시오.
@@ -204,7 +204,7 @@ Adobe Workfront Fusion의 역할은 동일한 작업을 계속해서 반복하�
 >
 >1. **[!UICONTROL 메모]** 영역을 닫습니다.
 >
->     시나리오에 메모를 추가하면 컨트롤 영역의 **[!UICONTROL 메모]** 아이콘 ![메모 아이콘 ](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/notes-icon-new.png)에 점이 표시됩니다.
+>     시나리오에 메모를 추가하면 컨트롤 영역의 **[!UICONTROL 메모]** 아이콘 ![메모 아이콘 &#x200B;](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/notes-icon-new.png)에 점이 표시됩니다.
 >
 >1. **[!UICONTROL 메모]** 아이콘 ![점이 있는 메모 아이콘](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/notes-icon-new.png)을 클릭하여 메모를 봅니다. 메모가 열려 있으면 메모 아이콘 주위에 원이 나타납니다.
 >
@@ -267,7 +267,7 @@ Adobe Workfront Fusion의 역할은 동일한 작업을 계속해서 반복하�
    1. [!UICONTROL 검색 조건] 아래의 첫 번째 상자에서 검색에 포함할 필드를 선택합니다. 이 예제에서는 **[!UICONTROL 이름]**&#x200B;을(를) 선택합니다.
 
       단어 &quot;[!UICONTROL 이름]&quot;을(를) 입력하면 목록에서 **[!UICONTROL 이름]**&#x200B;을(를) 찾을 수 있습니다.
-   1. 연산자의 경우 **존재** 옆에 있는 드롭다운 화살표를 클릭하고 [!UICONTROL **포함(대/소문자 구분 안 함)**](으)로 변경합니다.
+   1. 연산자의 경우 **존재** 옆에 있는 드롭다운 화살표를 클릭하고 [!UICONTROL **포함(대/소문자 구분 안 함)**] (으)로 변경합니다.
 
       이렇게 하면 전체 이름을 입력하지 않거나 대/소문자가 잘못된 이름(예: 모두 대문자)을 입력하더라도 모듈이 이름에 선택한 단어가 포함된 프로젝트를 찾을 수 있습니다.
    1. [!UICONTROL 검색 조건]의 마지막 필드에 검색 중인 작업 이름에 있는 단어 또는 구를 입력하십시오.
@@ -351,7 +351,7 @@ Adobe Workfront Fusion의 역할은 동일한 작업을 계속해서 반복하�
 >
 >1. **[!UICONTROL 메모]** 영역을 닫습니다.
 >
->     시나리오에 메모를 추가하면 시나리오 편집기 하단의 **[!UICONTROL 메모]** 아이콘 ![메모 아이콘 ](assets/notes-icon-w-dot.png)에 점이 표시됩니다.
+>     시나리오에 메모를 추가하면 시나리오 편집기 하단의 **[!UICONTROL 메모]** 아이콘 ![메모 아이콘 &#x200B;](assets/notes-icon-w-dot.png)에 점이 표시됩니다.
 >
 >1. **[!UICONTROL 메모]** 아이콘 ![점이 있는 메모 아이콘](assets/notes-icon-w-dot.png)을 클릭하여 메모를 봅니다. 메모가 열려 있으면 메모 아이콘 주위에 원이 나타납니다.
 >

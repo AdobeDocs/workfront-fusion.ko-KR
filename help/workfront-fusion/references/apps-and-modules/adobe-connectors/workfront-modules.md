@@ -25,9 +25,9 @@ topic_v2:
     internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 36bcfdbb0e88a4c742f7c3d0a6c9295a8e64b99a
 workflow-type: tm+mt
-source-wordcount: '7725'
+source-wordcount: '7804'
 ht-degree: 92%
 ---
 # Adobe Workfront 모듈
@@ -312,6 +312,13 @@ Workfront 모듈을 구성할 때 Workfront Fusion은 아래 나열된 필드를
 자세한 내용은 Workfront 설명서의 이벤트 구독 API 문서에서 [이벤트 페이로드 예제](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) 섹션을 참조하십시오.
 
 [각 Workfront 모듈에서 사용할 수 있는 Workfront 오브젝트 유형](#workfront-object-types-available-for-each-workfront-module)에서 이 모듈을 사용할 수 있는 Workfront 오브젝트 유형 목록을 확인하십시오.
+
+>[!NOTE]
+>
+>중복 검색은 `x-event-id` 헤더를 포함하고 해당 `User-Agent`을(를) `Workfront Event Subscription`(으)로 식별하는 알림에 적용됩니다.
+>
+>Fusion은 적합한 알림을 받으면 해당 웹후크에 대한 이벤트 ID를 **1시간** 동안 기록합니다. 이 기간 동안 동일한 이벤트 ID를 가진 다른 알림이 동일한 웹후크에 도착하는 경우 Fusion은 시나리오 처리를 위해 이를 전달하지 않고 이를 확인합니다.
+>중복 검색은 각 웹후크에 따라 다릅니다. 동일한 이벤트를 다른 웹후크에서 독립적으로 처리할 수 있습니다. 복제본을 수신해도 1시간 동안은 다시 시작되지 않습니다.
 
 #### [!UICONTROL 필드 보기]
 
@@ -1055,7 +1062,7 @@ Workfront는 최근 이벤트 구독 서비스의 신규 버전을 출시했습�
 
 새 이벤트 구독 버전에 대한 자세한 내용은 Workfront 설명서의 [이벤트 구독 버전 관리](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)를 참조하십시오.
 
-웨비나 녹화를 포함한 이벤트 구독 업그레이드 중 Workfront Fusion 시나리오 유지에 대한 리소스는 [이벤트 구독 V2 업그레이드 중 Fusion 시나리오 유지](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=ko)를 참조하십시오.
+웨비나 녹화를 포함한 이벤트 구독 업그레이드 중 Workfront Fusion 시나리오 유지에 대한 리소스는 [이벤트 구독 V2 업그레이드 중 Fusion 시나리오 유지](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)를 참조하십시오.
 
 <table style="table-layout:auto">
  <col> 
@@ -2371,7 +2378,7 @@ See a list of the Workfront object types for which you can use this module in [W
 >
 >   새 이벤트 구독 버전에 대한 자세한 내용은 Workfront 설명서의 [이벤트 구독 버전 관리](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)를 참조하십시오.
 >
->   웨비나 녹화를 포함한 이벤트 구독 업그레이드 중 Workfront Fusion 시나리오 유지에 대한 리소스는 [이벤트 구독 V2 업그레이드 중 Fusion 시나리오 유지](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=ko)를 참조하십시오.
+>   웨비나 녹화를 포함한 이벤트 구독 업그레이드 중 Workfront Fusion 시나리오 유지에 대한 리소스는 [이벤트 구독 V2 업그레이드 중 Fusion 시나리오 유지](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)를 참조하십시오.
 
 Workfront [!UICONTROL 이벤트 보기] 모듈은 Workfront API에서 이벤트 구독을 만드는 웹후크를 기반으로 시나리오를 트리거합니다. 이벤트 구독은 웹후크로 전송되는 이벤트를 결정하는 데이터 세트입니다. 예를 들어, 문제를 확인하는 [!UICONTROL 이벤트 보기] 모듈을 설정하면 이벤트 구독은 문제와 관련된 이벤트만 전송합니다.
 

@@ -9,7 +9,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 6e900ea61e12b9e5adfd6bc374479aeeff0408d5
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
@@ -59,6 +59,4 @@ ht-degree: 0%
    * **수동으로 입력**: 시나리오 입력에 대한 웹후크 페이로드를 제공해야 합니다. JSON 형식이어야 합니다.
 
      입력을 제공하려면 **Webhook 페이로드** 상자에 텍스트를 입력하고 **실행**&#x200B;을 클릭합니다.
-
-
 

@@ -3,9 +3,9 @@ user-guide-title: Adobe Workfront Fusion 설명서
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 문서, 튜토리얼 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
 nudge: true
-source-git-commit: e4bc75f0536c96896254f97d276a88b7a1aa18ce
+source-git-commit: 628fb65a2bd3aa7ed434cde26a55077d176f67f6
 workflow-type: tm+mt
-source-wordcount: '2791'
+source-wordcount: '2797'
 ht-degree: 47%
 ---
 
@@ -308,6 +308,7 @@ ht-degree: 47%
   * [연결 관리](/help/workfront-fusion/manage-scenarios/manage-connections.md)
   * [시나리오 활성화 또는 비활성화](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md)
   * [시나리오 디버그](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)
+  * [AI로 시나리오 오류 설명](/help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md)
   * [라이브 추적을 사용하여 시나리오 실행 검토](/help/workfront-fusion/manage-scenarios/live-trail.md)
   * [시나리오에서 변수, 소스 및 연결 찾기 및 바꾸기](/help/workfront-fusion/manage-scenarios/find-and-replace.md)
   * [시나리오 버전 복원](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md)
@@ -320,7 +321,7 @@ ht-degree: 47%
   * [모듈을 체인으로 이동](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)
   * [실행 중인 시나리오에서 데이터 흐름 보기](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
   * [웹후크의 대기열 보기](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
-  * {hide-from-toc}[Workfront Fusion의 AI 도우미](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
+  * Workfront Fusion의 {hide-from-toc}[AI 도우미](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
   * [시나리오 채점 전문가 실행](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
   * [시나리오 요소 삭제](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
   * [시나리오 영역에서 시나리오 관리](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)

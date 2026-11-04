@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 78612057a0bfc76a7c9bf9d0efd6fc632a152369
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1538'
 ht-degree: 8%
 ---
 # 시나리오에 모듈 추가
@@ -84,7 +84,7 @@ ht-degree: 8%
 
 1. 모듈을 구성합니다.
 
-   모듈의 설정이 캔버스의 오른쪽에 있는 패널에서 열립니다.
+   모듈의 설정이 캔버스의 오른쪽에 있는 패널에서 열립니다. 왼쪽 가장자리를 끌어서 패널의 크기를 조정할 수 있습니다.
 
    특정 모듈 구성에 대한 지침은 [Fusion 응용 프로그램 및 해당 모듈 참조에 나열된 선택한 응용 프로그램에 대한 문서를 참조하십시오. 문서 인덱스](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
 
@@ -139,7 +139,7 @@ ht-degree: 8%
 
 1. 모듈을 구성합니다.
 
-   모듈의 설정이 캔버스의 오른쪽에 있는 패널에서 열립니다.
+   모듈의 설정이 캔버스의 오른쪽에 있는 패널에서 열립니다. 왼쪽 가장자리를 끌어서 패널의 크기를 조정할 수 있습니다.
 
    특정 모듈 구성에 대한 지침은 [Fusion 응용 프로그램 및 해당 모듈 참조에 나열된 선택한 응용 프로그램에 대한 문서를 참조하십시오. 문서 인덱스](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
 
@@ -180,7 +180,7 @@ ht-degree: 8%
 
 1. 모듈을 구성합니다.
 
-   모듈의 설정이 캔버스의 오른쪽에 있는 패널에서 열립니다.
+   모듈의 설정이 캔버스의 오른쪽에 있는 패널에서 열립니다. 왼쪽 가장자리를 끌어서 패널의 크기를 조정할 수 있습니다.
 
    특정 모듈 구성에 대한 지침은 [Fusion 응용 프로그램 및 해당 모듈 참조에 나열된 선택한 응용 프로그램에 대한 문서를 참조하십시오. 문서 인덱스](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
 

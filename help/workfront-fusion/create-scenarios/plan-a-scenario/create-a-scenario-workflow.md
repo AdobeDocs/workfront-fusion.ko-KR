@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '810'
 ht-degree: 3%
 ---
 # 시나리오 만들기 워크플로
@@ -46,7 +46,7 @@ ht-degree: 3%
    >
    >왼쪽 탐색 패널이나 해당 아이콘이 보이지 않으면 메뉴 ![메뉴](assets/main-menu-icon-left-nav.png) 아이콘을 클릭합니다.
 
-1. (선택 사항) [!UICONTROL **폴더**] 패널에서 **[!UICONTROL 폴더 추가]** 아이콘 ![폴더 추가 아이콘](assets/add-folder-icon.png)을 클릭한 다음 첫 번째 폴더에 대해 &quot;연습 시나리오&quot;와 같은 이름을 입력합니다.
+1. (선택 사항)[!UICONTROL **폴더**] 패널에서 **[!UICONTROL 폴더 추가]** 아이콘 ![폴더 추가 아이콘](assets/add-folder-icon.png)을 클릭한 다음 첫 번째 폴더에 대해 &quot;연습 시나리오&quot;와 같은 이름을 입력합니다.
 
 1. (선택 사항) 폴더를 연 다음 페이지의 오른쪽 상단에 있는 **[!UICONTROL 새 시나리오 만들기]**&#x200B;를 클릭합니다.
 
@@ -185,6 +185,10 @@ Google, Microsoft 또는 전용 커넥터가 없는 응용 프로그램과 관�
   </tr> 
  </tbody> 
 </table>
+
+>[!NOTE]
+>
+>새 시나리오 편집기에는 패널을 확인 또는 닫고, 모듈 간에 이동하고, 모든 단축키의 목록을 여는 단축키를 비롯한 추가 키보드 단축키가 있습니다. 자세한 내용은 문서 시나리오 편집기에서 [키보드 단축키](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#keyboard-shortcuts)를 참조하십시오.
 
 
 

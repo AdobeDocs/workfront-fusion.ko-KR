@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 11%
+source-wordcount: '1012'
+ht-degree: 10%
 ---
 # 시나리오에 필터 추가
 
@@ -77,6 +77,10 @@ ht-degree: 11%
 1. 필터를 추가할 모듈 사이의 경로를 마우스 왼쪽 단추로 클릭합니다.
 
    **[!UICONTROL 필터 설정]** 창이 바로 열립니다. 경로를 마우스 오른쪽 버튼으로 클릭하면 다른 메뉴가 대신 열립니다.
+
+   필터 패널에는 필터가 있는 두 모듈이 표시됩니다. 패널 제목 옆에 모듈 ID가 표시됩니다(예: **#12 → {#13}).**&#x200B;필터 설정 위에 **Between ● Router #12 → ● HTTP #13**&#x200B;과(와) 같은 줄에 각 모듈의 색과 이름이 표시됩니다. 모듈 이름을 마우스로 가리키면 해당 작업이 표시됩니다. 패널이 열려 있는 동안 연결의 필터 레이블에 움직이는 파선 윤곽선이 있습니다.
+
+   ![필터 패널](/help/workfront-fusion/fusion-product-releases/assets/04-filter-panel-light.png)
 
 1. 표시되는 상자에 필터에 대한 **[!UICONTROL 레이블]**&#x200B;을 입력합니다.
 1. 필터 **[!UICONTROL 조건]**&#x200B;을(를) 정의합니다.

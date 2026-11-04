@@ -19,15 +19,16 @@ feature_v2:
     internal-label: Integrations
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 740f7e0e96d0eb4e6290f42f52b75eb64de791dc
+source-git-commit: 8f8ecad04a66f3859bba69460b316e8ba20984e6
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 63%
+source-wordcount: '77'
+ht-degree: 59%
 ---
 # Workfront Fusion 설정 및 관리: 문서 색인
 
 * [라이선스 및 운영 개요](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/licensing-operations-overviews.md)
 * [조직 및 팀 설정 및 관리](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
+* [시간대 보기 및 관리](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/view-and-manage-time-zones.md)
 * [사용자 정의 UI 확장 구성](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-00-readme.md)
 * [템플릿 관리](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/manage-templates-toc.md)
 * [Fusion MCP 서버 사용](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-fusion-mcp-server/use-fusion-mcp-server-toc.md)

@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 8f8ecad04a66f3859bba69460b316e8ba20984e6
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 2%
+source-wordcount: '616'
+ht-degree: 1%
 ---
 # 항목 데이터 유형
 
@@ -47,7 +47,7 @@ Workfront Fusion에서 서로 변환할 수 있는 항목 유형에 대한 자�
   </tr> 
   <tr> 
    <td role="rowheader"> <p>일자</p> </td> 
-   <td> <p>날짜는 ISO 8601 날짜 형식(예: <code>2015-09-18T11:58Z</code>)으로 입력됩니다. 프로필 설정에서 시간대를 변경할 수 있습니다. </p> <p>날짜가 필요한 필드를 클릭하면 모듈 설정에 팝업 캘린더가 표시됩니다. 일부 항목에는 시간이 필요하지 않습니다.</p> <p>날짜 항목의 값은 프로필에서 선택한 로컬 및 웹 시간대를 사용하여 형식이 지정됩니다. 마우스로 항목을 가리키면 날짜 항목의 ISO 8601 버전 값을 표시할 수 있습니다.</p> <p>참고: ISO 값이 표시되지 않으면 항목은 날짜가 아닌 텍스트일 수 있습니다.</p> <p>시간은 <code>hours:minutes:seconds</code> 형식으로 입력되었습니다(예: <code>14:03:52</code>).</p> </td> 
+   <td> <p>날짜는 ISO 8601 날짜 형식(예: <code>2015-09-18T11:58Z</code>)으로 입력됩니다. 프로필 설정에서 시간대를 변경할 수 있습니다. </p> <p>날짜가 필요한 필드를 클릭하면 모듈 설정에 팝업 캘린더가 표시됩니다. 일부 항목에는 시간이 필요하지 않습니다.</p> <p>날짜 항목의 값은 프로필에서 선택한 로컬 및 웹 시간대를 사용하여 형식이 지정됩니다. 마우스로 항목을 가리키면 날짜 항목의 ISO 8601 버전 값을 표시할 수 있습니다.</p> <p>Fusion 프로필의 표준 시간대 설정을 보고 관리하는 방법에 대한 자세한 내용은 [표준 시간대 보기 및 관리](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/view-and-manage-time-zones.md)를 참조하십시오.</p> <p>참고: ISO 값이 표시되지 않으면 항목은 날짜가 아닌 텍스트일 수 있습니다.</p> <p>시간은 <code>hours:minutes:seconds</code> 형식으로 입력되었습니다(예: <code>14:03:52</code>).</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>버퍼(이진 데이터)</p> </td> 

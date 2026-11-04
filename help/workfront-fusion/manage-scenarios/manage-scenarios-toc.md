@@ -13,16 +13,17 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 628fb65a2bd3aa7ed434cde26a55077d176f67f6
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 44%
+source-wordcount: '139'
+ht-degree: 42%
 ---
 # 시나리오 관리: 문서 색인
 
 * [연결 관리](/help/workfront-fusion/manage-scenarios/manage-connections.md)
 * [시나리오 활성화 또는 비활성화](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md)
 * [시나리오 디버그](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)
+* [AI로 시나리오 오류 설명](/help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md)
 * [라이브 추적을 사용하여 시나리오 실행 검토](/help/workfront-fusion/manage-scenarios/live-trail.md)
 * [시나리오에서 변수, 소스 및 연결 찾기 및 바꾸기](/help/workfront-fusion/manage-scenarios/find-and-replace.md)
 * [시나리오 버전 복원](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md)

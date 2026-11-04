@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 45c755a2f6152b6e230864e4c840d0334705bd22
+source-git-commit: 628fb65a2bd3aa7ed434cde26a55077d176f67f6
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1334'
 ht-degree: 2%
 ---
 # 조직에 대한 인사이트 대시보드 보기
@@ -208,6 +208,7 @@ Insights 대시보드 및 해당 위젯은 자동으로 다크 모드 설정을 
    대부분의 필터에서 선택한 값만 일치시키거나 해당 값을 제외한 모든 값을 일치시키도록 선택할 수 있습니다.
 
 1. 오류에 대한 자세한 내용을 보려면 실행을 클릭하십시오.
+1. 오류에 대한 일반 언어 설명을 보려면 실패한 실행을 마우스로 가리킨 다음 **[!UICONTROL 설명]**&#x200B;을 클릭하세요. 자세한 내용은 [AI로 시나리오 오류 설명](/help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md)을 참조하세요.
 1. 반복 실패 후 자동으로 비활성화되는 하나 이상의 시나리오를 다시 활성화하려면 실행을 선택한 다음 **활성화**&#x200B;를 클릭합니다.
 
    >[!NOTE]

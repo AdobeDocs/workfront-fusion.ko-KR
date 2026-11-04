@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 6e900ea61e12b9e5adfd6bc374479aeeff0408d5
+source-git-commit: 628fb65a2bd3aa7ed434cde26a55077d176f67f6
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 11%
+source-wordcount: '980'
+ht-degree: 10%
 ---
 # 특정 시나리오 실행 보기
 
@@ -85,6 +85,7 @@ ht-degree: 11%
    필터에서 처리한 특정 번들을 보려면 필터의 검색 창을 사용하거나 특정 상태(예: 통과 또는 실패)의 번들을 필터링할 수 있습니다.
 1. 실행 패널에서 특정 모듈이나 이벤트를 검색하려면 **실행 이벤트 검색** 상자에 검색어를 입력하십시오. 입력한 대로 결과가 표시됩니다.
 1. [성공] 또는 [경고] 등의 상태별로 실행 패널 검색 결과를 제한하려면 **상태 필터** 드롭다운을 클릭하고 상태를 선택합니다.
+1. 실행 시 오류에 대한 일반 언어 설명을 보려면 오류 아래의 **[!UICONTROL 설명]**&#x200B;을 클릭하세요. 자세한 내용은 [AI로 시나리오 오류 설명](/help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md)을 참조하세요.
 
 
 

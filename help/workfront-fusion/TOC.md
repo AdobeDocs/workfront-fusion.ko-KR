@@ -3,10 +3,10 @@ user-guide-title: Adobe Workfront Fusion 설명서
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 문서, 튜토리얼 및 추가 리소스를 활용하여 조직에서 Adobe Workfront Fusion을 구현하고 효과적으로 사용하는 방법에 대해 알아봅니다.
 nudge: true
-source-git-commit: e4bc75f0536c96896254f97d276a88b7a1aa18ce
+source-git-commit: 41ba069a36eeddbadbd993602a3b5f7ede60cefa
 workflow-type: tm+mt
-source-wordcount: '2791'
-ht-degree: 47%
+source-wordcount: '2821'
+ht-degree: 46%
 ---
 
 # Adobe Workfront Fusion 설명서 {#using}
@@ -15,6 +15,7 @@ ht-degree: 47%
 * Fusion 릴리스 활동 {#fusion-release-activity}
   * [Adobe Workfront Fusion 릴리스 활동](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
   * Fusion 릴리스 - 2026 {#fusion-releases-2026}
+    * [Workfront Fusion 릴리스 활동: 2026년 11월 2일 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-11-2.md)
     * [Workfront Fusion 릴리스 활동: 2026년 10월 26일의 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-26.md)
     * [Workfront Fusion 릴리스 활동: 2026년 10월 19일이 있는 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-19.md)
     * [Workfront Fusion 릴리스 활동: 2026년 10월 12일이 있는 주](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-12.md)
@@ -195,7 +196,6 @@ ht-degree: 47%
     * [시나리오 편집기 개요](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)
     * [시나리오 세부 정보 개요](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md)
     * [조직 또는 팀 간 전환](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/switch-orgs-or-teams.md)
-    * [프로필 설정 변경](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/change-profile-settings.md)
 * Workfront Fusion 설정 및 관리 {#set-up-and-manage-fusion}
   * [Workfront Fusion 설정 및 관리](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-workfront-fusion-toc.md)
   * 라이선스 및 운영 개요 {#licensing-and-operations-overviews}
@@ -203,6 +203,10 @@ ht-degree: 47%
     * [Adobe Workfront Fusion 라이선스](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
     * [작업](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
     * [작업자 풀](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)
+  * Fusion 계정 구성 {#configure-fusion-account}
+    * [Fusion 계정 구성: 문서 색인](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/configure-fusion-account-toc.md)
+    * [프로필 설정 변경](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/change-profile-settings.md)
+    * [시간대 보기 및 관리](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/view-and-manage-time-zones.md)
   * 조직 및 팀 설정 및 관리 {#set-up-and-manage-orgs-and-teams}
     * [조직 및 팀 설정 및 관리: 문서 색인](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
     * 조직 및 팀 설정 {#set-up-orgs-teams-and-users}
@@ -308,6 +312,7 @@ ht-degree: 47%
   * [연결 관리](/help/workfront-fusion/manage-scenarios/manage-connections.md)
   * [시나리오 활성화 또는 비활성화](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md)
   * [시나리오 디버그](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)
+  * [AI로 시나리오 오류 설명](/help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md)
   * [라이브 추적을 사용하여 시나리오 실행 검토](/help/workfront-fusion/manage-scenarios/live-trail.md)
   * [시나리오에서 변수, 소스 및 연결 찾기 및 바꾸기](/help/workfront-fusion/manage-scenarios/find-and-replace.md)
   * [시나리오 버전 복원](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md)

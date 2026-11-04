@@ -14,12 +14,14 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 8f8ecad04a66f3859bba69460b316e8ba20984e6
 workflow-type: tm+mt
-source-wordcount: '2392'
+source-wordcount: '2413'
 ht-degree: 2%
 ---
 # 날짜 및 시간 함수
+
+Fusion 프로필에서 사용하는 표준 시간대 설정을 보고 관리하는 방법에 대한 자세한 내용은 [표준 시간대 보기 및 관리](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/view-and-manage-time-zones.md)를 참조하십시오.
 
 ## 변수
 

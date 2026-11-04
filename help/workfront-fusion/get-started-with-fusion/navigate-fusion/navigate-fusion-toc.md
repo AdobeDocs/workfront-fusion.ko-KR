@@ -15,9 +15,9 @@ feature_v2:
     internal-label: APIs
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 8f8ecad04a66f3859bba69460b316e8ba20984e6
 workflow-type: tm+mt
-source-wordcount: '37'
+source-wordcount: '34'
 ht-degree: 100%
 ---
 # Fusion 탐색: 문서 색인
@@ -26,4 +26,3 @@ ht-degree: 100%
 * [시나리오 편집기 개요](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)
 * [시나리오 세부 정보 개요](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md)
 * [조직 또는 팀 간 전환](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/switch-orgs-or-teams.md)
-* [프로필 설정 변경](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/change-profile-settings.md)

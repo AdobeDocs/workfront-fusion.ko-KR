@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 8f8ecad04a66f3859bba69460b316e8ba20984e6
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 54%
+source-wordcount: '208'
+ht-degree: 47%
 ---
 # 프로필 설정 변경
 
@@ -59,3 +59,5 @@ Adobe Workfront Fusion 계정 프로필에서 정보를 변경할 수 있습니�
 * 기본 및 보조 언어 기본 설정을 포함하여 [!DNL Adobe Experience Cloud]에 대해 **[!UICONTROL 기본 설정]**&#x200B;을 설정합니다.
 * **[!UICONTROL Workfront 프로필]**&#x200B;에 액세스합니다. 프로필에 올라간 후에는 **[!UICONTROL 기타]** 메뉴를 클릭하고 **[!UICONTROL 편집]**&#x200B;을 선택하세요.
 * Adobe Experience Cloud **[!UICONTROL 로그아웃]**.
+
+Fusion 프로필에는 날짜 및 시간이 표시되고 해석되는 방식에 영향을 주는 시간대 설정도 포함됩니다. 자세한 내용은 [표준 시간대 보기 및 관리](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/view-and-manage-time-zones.md)를 참조하십시오.

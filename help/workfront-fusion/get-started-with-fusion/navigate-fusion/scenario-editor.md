@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 78612057a0bfc76a7c9bf9d0efd6fc632a152369
 workflow-type: tm+mt
-source-wordcount: '2357'
+source-wordcount: '2755'
 ht-degree: 5%
 ---
 # 시나리오 편집기
@@ -72,6 +72,7 @@ Workfront Fusion에서 시나리오 편집기를 새 경험으로 전환합니�
 * 시나리오 실행을 보여주는 패널인 [실시간 추적](/help/workfront-fusion/manage-scenarios/live-trail.md).
 * 이제 시나리오 편집기에 빌드된 여러 개발자 도구입니다.
 * 시나리오 설정에서 켤 수 있는 임시 디버그 로그.
+* 일반적인 패널 작업에 대한 모듈 이름, 매핑된 값, 모듈 설정, 필터 조건 및 키보드 단축키를 찾는 검색입니다.
 
 클래식 경험과 새 경험 간을 전환하려면 다음을 수행하십시오.
 
@@ -110,6 +111,7 @@ Workfront Fusion에서 시나리오 편집기를 새 경험으로 전환합니�
 * [AI에 묻기](#ask-ai)
 * [캔버스 탐색](#canvas-navigation)
 * [캔버스 표시](#canvas-display)
+* [키보드 단축키](#keyboard-shortcuts)
 
 #### 작업 편집
 
@@ -148,7 +150,7 @@ Workfront Fusion에서 시나리오 편집기를 새 경험으로 전환합니�
 | 시나리오 설정 <p>![시나리오 설정 아이콘](assets/scenario-settings-icon-new.png)</p> | 시나리오 설정 패널에는 시나리오에 대한 고급 설정이 포함되어 있습니다. 사용 가능한 설정에 대한 자세한 내용은 [시나리오 설정 구성](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)을 참조하십시오. 요청 및 응답 세부 사항은 실행될 때마다 유지되지 않습니다. 시나리오의 일반 실행에 대해 수집하려면 임시 디버그 로그를 켭니다. 자세한 내용은 [임시 디버그 로그](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#temporary-debug-logs)를 참조하십시오. |
 | 참고 <p>![메모 아이콘](assets/notes-icon-new.png)</p> | 시나리오에 대해 메모를 합니다. 다른 사용자는 시나리오에 있을 때 이러한 메모를 볼 수 있습니다. 자세한 내용은 [시나리오에 메모 추가](/help/workfront-fusion/create-scenarios/config-scenarios-settings/add-notes-to-scenario.md)를 참조하십시오. |
 | 자동 정렬 <p>![자동 정렬 아이콘](assets/auto-align-icon-new.png)</p> | 시나리오에서 모듈을 자동 정렬합니다. |
-| 검색 모듈 <p>![모듈 검색 아이콘](assets/search-modules-icon-new.png)</p> | 해당 목록에서 모듈을 선택하여 시나리오의 해당 모듈로 이동하거나 검색어를 입력하여 모듈을 찾은 다음 해당 모듈로 가져올 검색 결과를 누릅니다. 모듈 이름, ID, 유형 또는 애플리케이션별로 검색할 수 있습니다. |
+| 검색 <p>![검색 아이콘](assets/search-modules-icon-new.png)</p> | 검색을 엽니다(Windows의 경우 **Ctrl + K** 또는 Mac의 경우 **⌘K** 누름). 이름 또는 ID로 모듈을 검색합니다. 또한 시나리오의 모든 매핑된 값, 모든 모듈 설정 및 모든 필터 조건을 찾습니다. 각 결과는 일치하는 텍스트가 강조 표시된 _Mapper · 승인 ID_&#x200B;와 같이 일치하는 위치를 보여 줍니다. 필터는 자체 섹션에 나열됩니다. 값을 사용하는 모든 위치를 찾으려면 `{{1.name}}` 등의 참조를 붙여 넣으십시오. 검색은 정확히 해당 참조를 찾지만 `{{21.name}}` 또는 `{{1.names}}`은(는) 찾지 않습니다. 결과를 클릭하여 모듈 또는 필터를 엽니다. 일치하는 필드는 간단히 강조 표시되고 스크롤되어 표시됩니다. 화살표 키를 사용하여 필터 결과를 이동할 때 캔버스에 필터와 연결되는 두 모듈이 표시됩니다. <!-- BECKY CHECK ME: Search row rewritten from the 11/2/26 release note (fusion-2026-11-2.md) (renamed from 'Search modules' to 'Search'). The old text also said you can search by module type or application; the release note does not mention that, so I removed it. Confirm, and confirm the icon and the tool tip label. --> |
 | 찾기 및 바꾸기 <p>![찾기 및 바꾸기 아이콘](assets/find-and-replace-icon-new.png)</p> | <p>시나리오 모듈에서 변수, 매핑된 값 소스 또는 연결을 검색하고 바꿉니다. 탭을 사용하여 다음을 수행합니다.</p><ul><li>전체 시나리오 또는 하나의 모듈에서 매핑된 변수를 바꿉니다.</li><li>한 소스 모듈에서 다른 소스 모듈로 참조를 다시 매핑합니다.</li><li>동일한 앱에서 호환되는 모듈 하나 또는 모두에 연결을 복사합니다.</li></ul><p>패널은 변경하기 전에 영향을 받을 모듈을 미리 봅니다. 미리 보기에서 행을 선택하여 캔버스의 해당 모듈로 이동합니다.</p> <p>자세한 내용은 [시나리오에서 변수, 원본 및 연결 찾기 및 바꾸기](/help/workfront-fusion/manage-scenarios/find-and-replace.md)를 참조하십시오.</p> |
 | 스니펫 <p>![코드 조각 아이콘](assets/snippets-icon-new.png)</p> | <p>스니펫은 단위로 저장되는 시나리오 섹션입니다. 모듈을 만들려면 모듈을 선택하고 코드 조각으로 저장합니다. [코드 조각] 패널에서 검색, 태그 지정, 미리 보기, 고정, 정렬 및 드래그하여 놓기 작업을 수행하고 가져올 수 있습니다. 팀이나 조직과 스니펫을 공유하거나 다른 사용자에게 직접 복사본을 보낼 수 있습니다. 공유 스니펫은 자체 탭에 표시됩니다.</p> <p>자세한 내용은 [코드 조각과 함께 시나리오 섹션 저장 및 재사용](/help/workfront-fusion/create-scenarios/add-modules/use-snippets.md)을 참조하십시오.</p> |
 | 흐름 설명 <p>![흐름 설명 아이콘](assets/explain-flow-icon-new.png)</p> | 움직이는 점이 시나리오를 통해 데이터가 이동하는 방식을 보여 주는 애니메이션을 봅니다. |
@@ -208,7 +210,25 @@ Adobe의 AI 도우미를 열려면 **AI에게 묻기**&#x200B;를 클릭하십�
 | 확대/축소 세부 정보 | 카드 세부 정보는 확대할 때 표시됩니다. 축소하면 모듈이 아이콘으로 간소화되므로 전체 시나리오를 계속 볼 수 있습니다. |
 | 라우터 접기 | 편집 모드에서 라우터를 접어 경로를 숨길 수 있습니다. 자세한 내용은 [라우터 접기](/help/workfront-fusion/create-scenarios/add-modules/router-module.md#fold-a-router)를 참조하십시오. |
 | 다크 모드 | 캔버스는 Adobe 환경 설정 아래의 모듈 카드, 링크, 패널, 컨트롤 및 상태 정보를 포함한 어두운 모양 설정을 따릅니다. |
-| 오른쪽 패널 | 모듈 설정, 모듈 검사, 모듈 브라우저, 찾기 및 바꾸기, 코드 조각, [라이브 추적](/help/workfront-fusion/manage-scenarios/live-trail.md) 및 요청 및 응답 세부 정보가 캔버스 오른쪽의 같은 패널에서 열립니다. |
+| 모듈 또는 필터 열기 | 모듈을 열면 캔버스가 더 이상 이동하지 않습니다. 대신 모듈은 움직이는 파선 윤곽선을 가져옵니다. 필터를 열면 연결의 해당 레이블이 동일한 아웃라인을 받습니다. 윤곽선 색상은 모듈의 색상과 일치하며 밝은 모드와 어두운 모드에서 계속 보이도록 자동으로 조정됩니다. |
+| 오른쪽 패널 | 모듈 설정, 모듈 검사, 모듈 브라우저, 찾기 및 바꾸기, 코드 조각, [라이브 추적](/help/workfront-fusion/manage-scenarios/live-trail.md) 및 요청 및 응답 세부 정보가 캔버스 오른쪽의 같은 패널에서 열립니다. </br>패널의 크기를 조정하려면 왼쪽 가장자리를 끌어서 더 넓거나 좁게 만들거나 가장자리를 두 번 클릭하여 기본 폭으로 돌아갑니다. 다른 브라우저에서 로그인할 때를 포함하여 너비가 기억됩니다. 더 작은 화면에서는 패널이 자동으로 창에 맞습니다. 패널이 최대화되는 동안에는 패널의 너비를 변경할 수 없습니다. |
+
+#### 키보드 단축키
+
+이러한 단축키를 사용하면 마우스를 이동하지 않고도 패널에서 작업할 수 있습니다.
+
+| 바로 가기(Mac / Windows) | 기능 |
+| ---------- | ---------- |
+| **⌘Enter** / **Ctrl + Enter** | 열려 있는 패널(**OK**&#x200B;와 동일)을 확인합니다. 입력하는 동안 작동합니다. 패널을 열지 않은 상태에서 시나리오가 한 번 실행됩니다. |
+| **Esc** | 저장하지 않고 열려 있는 패널을 닫습니다. 매핑 패널이 열려 있으면 해당 패널만 닫습니다. |
+| **⌥←** / **⌥→**(Mac), **Alt + ←** / **Alt + →**(Windows) | 패널을 확인하고 이전 또는 다음 모듈을 엽니다. 패널 헤더의 **‹ ›** 단추로도 사용할 수 있습니다. 커서가 텍스트 필드에 없는 경우에 작동합니다. |
+| **⌘Shift + Enter** / **Ctrl + Shift + Enter** | 열린 패널을 확인하고 시나리오를 한 번 실행합니다. 패널에 오류가 있으면 아무 것도 실행되지 않습니다. |
+| **⌘K** / **Ctrl + K** | 검색을 엽니다. |
+| **?** | 모든 시나리오 디자이너 바로 가기 목록을 표시합니다. 점 3개 메뉴의 **키보드 단축키**&#x200B;에서도 사용할 수 있습니다. |
+
+* 넓은 패널에는 확인 및 취소 단축키가 맨 아래에 표시됩니다.
+* **한 번 실행** 및 **저장** 단추는 도구 설명에 바로 가기를 표시합니다.
+* 다음 또는 이전 모듈로 이동하여 패널이나 화면 외부에 숨겨두면 캔버스가 표시될 만큼 충분히 이동합니다.
 
 ## 클래식 경험에서 시나리오 편집기 사용
 

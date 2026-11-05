@@ -9,9 +9,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: e2420c8a25fd9e38c4b0300b00560fe1837a5e43
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '577'
 ht-degree: 15%
 ---
 # AI로 시나리오 오류 설명
@@ -27,6 +27,8 @@ Workfront Fusion의 다음 영역에서 오류를 설명할 수 있습니다.
 >[!NOTE]
 >
 >**[!UICONTROL 설명]** 단추는 새 시나리오 디자이너에서만 사용할 수 있습니다. 기존 시나리오 디자이너에서는 사용할 수 없습니다.
+>
+>이 기능을 사용하려면 조직에 AI 라이선스가 있어야 합니다.
 
 ## 액세스 요구 사항
 

@@ -14,7 +14,7 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 2e3a811de0e4336305997cbf46e86db3553f4770
 workflow-type: tm+mt
 source-wordcount: '2241'
 ht-degree: 14%
@@ -258,7 +258,7 @@ SFTP 커넥터는 연결을 만들 때 다음을 지원합니다.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL 권한]</p> </td> 
-   <td> <p>원하는 폴더 권한을 설정합니다. chmod 매개 변수를 사용합니다. 예: <code>777</code> 또는 <code>-rwxrwxrwx</code>.</p> <p>이러한 권한은 패턴과 일치해야 합니다. <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>chmod에 대한 자세한 내용은 <a href="https://ss64.com/bash/chmod.html">chmod 설명서</a>를 참조하세요.</p> </td> 
+   <td> <p>원하는 폴더 권한을 설정합니다. chmod 매개 변수를 사용합니다. 예: <code>777</code> 또는 <code>-rwxrwxrwx</code>.</p> <p>이러한 권한은 패턴과 일치해야 합니다. <code>/(.?(&#91;r-&#93;&#91;w-&#93;&#91;x-&#93;){3})|&#91;0-7&#93;{3}/.</code></p> <p>chmod에 대한 자세한 내용은 <a href="https://ss64.com/bash/chmod.html">chmod 설명서</a>를 참조하세요.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -466,7 +466,7 @@ SFTP 커넥터는 연결을 만들 때 다음을 지원합니다.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL 권한]</p> </td> 
-   <td> <p>원하는 파일 권한을 설정합니다. chmod 매개 변수를 사용합니다. 예: <code>777</code> 또는 <code>-rwxrwxrwx</code>.</p> <p>이러한 권한은 패턴과 일치해야 합니다. <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>chmod에 대한 자세한 내용은 <a href="https://ss64.com/bash/chmod.html">chmod 설명서</a>를 참조하세요.</p> </td> 
+   <td> <p>원하는 파일 권한을 설정합니다. chmod 매개 변수를 사용합니다. 예: <code>777</code> 또는 <code>-rwxrwxrwx</code>.</p> <p>이러한 권한은 패턴과 일치해야 합니다. <code>/(.?(&#91;r-&#93;&#91;w-&#93;&#91;x-&#93;){3})|&#91;0-7&#93;{3}/.</code></p> <p>chmod에 대한 자세한 내용은 <a href="https://ss64.com/bash/chmod.html">chmod 설명서</a>를 참조하세요.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -493,7 +493,7 @@ SFTP 커넥터는 연결을 만들 때 다음을 지원합니다.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL 권한]</p> </td> 
-   <td> <p>파일 또는 폴더에 대해 원하는 권한을 설정합니다. chmod 매개 변수를 사용합니다. 예: <code>777</code> 또는 <code>-rwxrwxrwx</code>.</p> <p>이러한 권한은 패턴과 일치해야 합니다. <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>chmod에 대한 자세한 내용은 <a href="https://ss64.com/bash/chmod.html">chmod 설명서</a>를 참조하세요.</p> </td> 
+   <td> <p>파일 또는 폴더에 대해 원하는 권한을 설정합니다. chmod 매개 변수를 사용합니다. 예: <code>777</code> 또는 <code>-rwxrwxrwx</code>.</p> <p>이러한 권한은 패턴과 일치해야 합니다. <code>/(.?(&#91;r-&#93;&#91;w-&#93;&#91;x-&#93;){3})|&#91;0-7&#93;{3}/.</code></p> <p>chmod에 대한 자세한 내용은 <a href="https://ss64.com/bash/chmod.html">chmod 설명서</a>를 참조하세요.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL 버퍼 크기(B)]</p> </td> 

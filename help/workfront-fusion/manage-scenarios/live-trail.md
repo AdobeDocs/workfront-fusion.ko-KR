@@ -6,9 +6,9 @@ feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
-source-git-commit: 94449f8511d7480f1a4fc0ac6e8db9b067977abd
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '539'
 ht-degree: 17%
 ---
 
@@ -58,7 +58,7 @@ Live Trail에서 시나리오 실행 상황을 표시합니다. 모듈 요청과
 
 
 
-라이브 트레일이 캔버스의 오른쪽에 있는 패널에서 열립니다. 실행 중에 패널을 닫으면 화면 오른쪽에 있는 작은 탭에서 캡처한 이벤트를 손실하지 않고 다시 열 수 있습니다.
+라이브 트레일이 캔버스의 오른쪽에 있는 패널에서 열립니다. 왼쪽 가장자리를 끌어서 패널의 크기를 조정할 수 있습니다. 실행 중에 패널을 닫으면 화면 오른쪽에 있는 작은 탭에서 캡처한 이벤트를 손실하지 않고 다시 열 수 있습니다.
 
 ## Live Trail에서 이벤트 검토
 

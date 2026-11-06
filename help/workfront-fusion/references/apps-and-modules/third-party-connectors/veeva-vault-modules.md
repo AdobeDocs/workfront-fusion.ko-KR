@@ -16,10 +16,10 @@ topic_v2:
     internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cb90aa39325068566e17bbb102969a537e527dc2
 workflow-type: tm+mt
-source-wordcount: '4127'
-ht-degree: 13%
+source-wordcount: '4353'
+ht-degree: 14%
 ---
 # Veeva Vault 모듈
 
@@ -1152,13 +1152,65 @@ Veeva Vault 모듈을 구성하면 Workfront Fusion에 아래 나열된 필드�
 
 ### 기타
 
-* [사용자 정의 API 호출하기](#make-a-custom-api-call)
+* [사용자 지정 API 호출 만들기](#make-a-custom-api-call)
+* [사용자 지정 API 호출 만들기(이전)](#make-a-custom-api-call-legacy)
 * [VQL 쿼리 만들기](#make-a-vql-query)
 * [로그 읽기](#read-logs)
 
-#### 사용자 정의 API 호출하기
+#### 사용자 지정 API 호출 만들기
 
-이 작업 모듈은 Veeva Vault API에 대한 사용자 정의 호출을 수행합니다.
+이 작업 모듈은 Veeva Vault API에 대한 사용자 정의 호출을 수행합니다. 여러 요청 본문 유형을 지원합니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">연결</td> 
+   <td> <p>Veeva Vault 계정을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Veeva Vault를 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">URL</td> 
+   <td><code>baseurl/api/v</code>과 관련된 경로를 입력합니다.  예: <code>/objects/documents</code>. <code>baseurl/api/v/</code>은(는) 이미 포함되어 있으므로 포함하지 마십시오.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">메서드</td> 
+   <td> <p>API 호출을 구성하는 데 필요한 HTTP 요청 메서드를 선택합니다. 자세한 내용은 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP 요청 메서드</a>를 참조하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">헤더</td> 
+   <td> <p>표준 JSON 오브젝트 형태로 요청의 헤더를 추가합니다.</p> <p>예: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion은 사용자에게 권한 부여 헤더를 추가합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">쿼리 문자열</td> 
+   <td> <p>표준 JSON 오브젝트 형식으로 API 호출에 대한 쿼리를 추가합니다.</p> <p>예: <code>{"name":"something-urgent"}</code></p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">본문 유형</td> 
+   <td> <p>요청과 함께 보낼 본문 유형을 선택합니다.</p>
+     <ul>
+       <li><code>urlencoded</code></li>
+       <li><code>multipart_form_data</code></li>
+       <li><code>raw</code></li>
+       <li><code>binary</code></li>
+     </ul>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">콘텐츠 요청</td> 
+   <td> <p>원시 또는 이진 본문 유형을 사용하는 경우 API 호출에 대한 본문 컨텐츠를 입력하거나 매핑합니다.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">필드</td> 
+   <td> <p>데이터를 추가할 각 필드에 대해 urlencoded 또는 multipart 양식 데이터 본문 형식 또는 binary 본문 형식을 사용하는 경우 <b>항목 추가</b>를 클릭하고 필드의 키와 값을 입력합니다.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
+#### 사용자 지정 API 호출 만들기(이전)
+
+이 작업 모듈은 Veeva Vault API에 대한 사용자 정의 호출을 수행합니다. 이 모듈은 `raw` 본문 형식만 지원합니다. 다른 본문 형식을 사용하려면 [사용자 지정 API 호출 만들기](#make-a-custom-api-call) 모듈을 사용하십시오.
 
 <table style="table-layout:auto"> 
  <col> 

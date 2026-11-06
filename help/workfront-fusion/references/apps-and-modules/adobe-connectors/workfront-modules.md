@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 36bcfdbb0e88a4c742f7c3d0a6c9295a8e64b99a
+source-git-commit: 4d64f865dd3e826daef02abaaf3c68daa7ed363e
 workflow-type: tm+mt
-source-wordcount: '7804'
-ht-degree: 92%
+source-wordcount: '7761'
+ht-degree: 90%
 ---
 # Adobe Workfront 모듈
 
@@ -84,14 +84,15 @@ Adobe Workfront Fusion Adobe Workfront 커넥터를 사용하여 Workfront 내�
 
 ## Workfront를 Workfront Fusion에 연결
 
-Workfront 커넥터는 OAuth 2.0을 사용하여 Workfront에 연결합니다.
-
 Workfront Fusion 모듈 내에서 직접 Workfront 계정에 대한 연결을 만들 수 있습니다.
 
-* [클라이언트 ID 및 클라이언트 암호를 사용하여 Workfront에 연결](#connect-to-workfront-using-client-id-and-client-secret)
+새 연결 및 재인증한 연결은 Adobe 계정(Adobe IMS 또는 Experience Cloud 로그인)으로 로그인합니다. Workfront OAuth2 애플리케이션은 사용하지 않습니다.
+
+* [Adobe 계정을 사용하여 Workfront에 연결](#connect-to-workfront-using-your-adobe-account)
+* [기존 연결 재인증](#reauthorize-an-existing-connection)
 * [서버 간 연결을 사용하여 Workfront에 연결](#connect-to-workfront-using-a-server-to-server-connection)
 
-### 클라이언트 ID 및 클라이언트 암호를 사용하여 Workfront에 연결
+### Adobe 계정을 사용하여 Workfront에 연결
 
 1. 모든 Adobe Workfront 모듈에서 연결 필드 옆에 있는 **추가**&#x200B;를 클릭합니다.
 1. 다음 필드를 채웁니다.
@@ -115,32 +116,38 @@ Workfront Fusion 모듈 내에서 직접 Workfront 계정에 대한 연결을 �
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL 클라이언트 ID]</td>
-        <td>Workfront 클라이언트 ID를 입력합니다. 이는 Workfront의 설정 영역에 있는 OAuth2 애플리케이션 영역에서 찾을 수 있습니다. 연결할 특정 애플리케이션을 열어 클라이언트 ID를 확인합니다.</td>
+        <td role="rowheader">[!UICONTROL 인스턴스 이름]</td>
+        <td>
+          <p>인스턴스 이름(도메인이라고도 함)을 입력합니다.</p><p>예: URL이 <code>https://example.my.workfront.com</code>인 경우 <code>example</code>을(를) 입력합니다.</p>
+        </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL 클라이언트 암호]</td>
-        <td>Workfront 클라이언트 암호를 입력합니다. 이는 Workfront의 설정 영역에 있는 OAuth2 애플리케이션 영역에서 찾을 수 있습니다. Workfront에 OAuth2 애플리케이션에 대한 클라이언트 암호가 없는 경우 다른 애플리케이션을 생성할 수 있습니다. 자세한 내용은 Workfront 설명서를 참조하십시오.</td>
+        <td role="rowheader">[!UICONTROL 인스턴스 레인]</td>
+        <td>
+          <p>이 연결이 연결될 환경 유형을 입력합니다.</p><p>예: URL이 <code>https://example.my.workfront.com</code>인 경우 <code>my</code>을(를) 입력합니다.</p>
+        </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL 인증 URL]</td>
-        <td>이 값은 기본값으로 유지되거나 Workfront 인스턴스의 URL을 입력한 다음 <code>/integrations/oauth2</code>를 입력할 수 있습니다. <p>예: <code>https://mydomain.my.workfront.com/integrations/oauth2</code></p></td>
+        <td role="rowheader">[!UICONTROL 범위] <i>(선택 사항)</i></td>
+        <td>이 연결에 대한 추가 범위를 입력하십시오. 기본 범위를 사용하려면 이 필드를 비워 둡니다.</td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL 호스트 접두사]</td>
-        <td>대부분의 경우 이 값은 <code>origin</code>이어야 합니다.
+        <td>대부분의 경우 이 값은 <code>origin</code>이어야 합니다.</td>
       </tr>
     </tbody>
     </table>
 
 1. 연결을 저장하고 모듈로 돌아가려면 **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
 
-   Workfront에 로그인하지 않은 경우 로그인 화면으로 이동합니다. 로그인한 후 연결을 허용할 수 있습니다.
+   Adobe 계정에 로그인하지 않은 경우 Adobe 로그인 페이지로 이동합니다. 로그인 후 연결을 허용할 수 있습니다.
 
 >[!NOTE]
 >
->* OAuth 2.0의 Workfront API에 대한 연결은 더 이상 API 키에 사용하지 않습니다.
->* Workfront 샌드박스 환경에 연결하려면 해당 환경에서 OAuth2 애플리케이션을 만든 다음 해당 애플리케이션에서 생성한 클라이언트 ID와 클라이언트 암호를 연결에 사용해야 합니다.
+>2026년 11월 5일 이전에 만든 연결은 계속 작동합니다. 기존 연결을 Adobe 로그인으로 전환하려면 다시 승인하십시오.
+
+연결을 다시 승인하려면 [연결 관리](/help/workfront-fusion/manage-scenarios/manage-connections.md)를 참조하십시오.
+
 
 ### 서버 간 연결을 사용하여 Workfront에 연결
 

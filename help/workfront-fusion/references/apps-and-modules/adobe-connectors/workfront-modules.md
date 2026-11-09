@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 4d64f865dd3e826daef02abaaf3c68daa7ed363e
+source-git-commit: d3bb4ef202fd92ab7663ad5c2816c70e8bab6685
 workflow-type: tm+mt
-source-wordcount: '7761'
-ht-degree: 90%
+source-wordcount: '7773'
+ht-degree: 89%
 ---
 # Adobe Workfront 모듈
 
@@ -2403,11 +2403,11 @@ Workfront > 이벤트 보기 필터에서 다음 연산자를 사용할 수 있�
 * 다음보다 작거나 같음
 * 다음 포함
 * 있음
-  * 이 연산자는 값이 필요하지 않으며, 값 필드가 없습니다.
+  * 이 연산자는 값이 필요하지 않으므로 값 필드는 필터에 포함되지 않습니다.
 * 존재하지 않음
-  * 이 연산자는 값이 필요하지 않으며, 값 필드가 없습니다.
+  * 이 연산자는 값이 필요하지 않으므로 값 필드는 필터에 포함되지 않습니다.
 * 변경됨
-  * 이 연산자는 값이 필요하지 않으며, 값 필드가 없습니다.
+  * 이 연산자는 값이 필요하지 않으므로 값 필드는 필터에 포함되지 않습니다.
   * 이 연산자는 상태 필드를 무시합니다.
   * `Changed`를 사용할 때, **레코드 원본** 필드에서 **업데이트된 이벤트만** 선택합니다.
 

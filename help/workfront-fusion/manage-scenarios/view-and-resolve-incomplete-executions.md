@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: ddf7d3e48a5aee72d8f39b5b6746d1e3e884a7d0
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '554'
 ht-degree: 7%
 ---
 # 불완전한 실행 보기 및 해결
@@ -25,10 +25,6 @@ ht-degree: 7%
 >기본적으로 미완료 실행 저장은 비활성화되어 있습니다. 활성화하려면 시나리오 고급 설정에서 [!UICONTROL 불완전한 실행 저장 허용] 옵션을 활성화하십시오.
 >
 >시나리오 설정에 대한 자세한 내용은 [시나리오 설정 구성](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)을 참조하십시오.
-
-전체 문서 {#highlighted-preview-article-level}에 대해 강조 표시된 미리 보기
-
-<span class="preview">이 페이지의 정보는 아직 일반적으로 사용할 수 없는 기능을 참조합니다. 미리 보기 샌드박스 환경에서만 사용할 수 있습니다.</span>
 
 ## 미완료 실행 보기
 

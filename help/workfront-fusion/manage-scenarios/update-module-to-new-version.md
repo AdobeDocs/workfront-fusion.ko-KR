@@ -11,7 +11,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 1eeb0f543b77b52c18c45ebc773e0322391d2042
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 27%
@@ -22,7 +22,7 @@ Workfront Fusion이 연결되는 애플리케이션은 새 버전을 업데이�
 
 시나리오의 모듈에 녹색 업그레이드 모듈 아이콘이 표시되면 Workfront Fusion에서 해당 모듈의 새 버전을 릴리스한 것입니다.
 
-![업데이트 아이콘](assets/update-indicator-workfront.png)
+![업데이트 아이콘](assets/new-update-indicator-workfront.png)
 
 새 시나리오를 만들지 않고 모듈을 업데이트할 수 있습니다.
 
@@ -57,8 +57,8 @@ Workfront Fusion이 연결되는 애플리케이션은 새 버전을 업데이�
 
 ## Workfront 모듈을 새 버전으로 업그레이드
 
-1. 새 버전으로 업그레이드하려는 모듈에서 **업그레이드 모듈** 아이콘 ![업그레이드 아이콘](assets/upgrade-icon.png)을 클릭합니다.
-   ![업데이트 아이콘](assets/update-indicator-workfront.png)
+1. 새 버전으로 업그레이드하려는 모듈에서 **업그레이드 모듈** 아이콘 ![업그레이드 아이콘](assets/new-upgrade-icon.png)을 클릭합니다.
+   ![업데이트 아이콘](assets/new-update-indicator-workfront.png)
 1. 다음 중 하나를 선택합니다.
 
    * 모듈을 업그레이드하지 않고 이 모듈을 대체할 새 모듈을 선택하려면 **새로 선택**&#x200B;을 클릭한 다음 [Workfront이 아닌 모듈을 새 버전으로 업그레이드](#upgrade-a-non-workfront-module-to-a-new-version)의 설명에 따라 계속 진행하십시오.
@@ -73,7 +73,7 @@ Workfront Fusion이 연결되는 애플리케이션은 새 버전을 업데이�
 
 ## Workfront이 아닌 모듈을 새 버전으로 업그레이드
 
-1. 새 버전으로 업그레이드하려는 모듈에서 **업그레이드 모듈** 아이콘 ![업그레이드 아이콘](assets/upgrade-icon.png)을 클릭합니다.
+1. 새 버전으로 업그레이드하려는 모듈에서 **업그레이드 모듈** 아이콘 ![업그레이드 아이콘](assets/new-upgrade-icon.png)을 클릭합니다.
    <!--![Update icon](assets/update-indicator.png)-->
 1. **새로 선택**&#x200B;을 클릭합니다.
 1. 이전 모듈을 바꿀 모듈을 선택합니다.

@@ -186,7 +186,7 @@ ht-degree: 9%
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL 액션]</td> 
-      <td> <p>역할 작업 예를 들어 <b>[!UICONTROL을 기존 역할에 복사]</b>은(는) 원본 역할의 권한을 대상 팀에 이미 있는 역할에 복사합니다.</p> </td> 
+      <td> <p>역할 작업 예를 들어 <b>[!UICONTROL 을 기존 역할에 복사]</b>은(는) 원본 역할의 권한을 대상 팀에 이미 있는 역할에 복사합니다.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Target]</td> 
@@ -194,7 +194,7 @@ ht-degree: 9%
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Changes]</td> 
-      <td> <p>대상 역할이 소스 역할과 다른지 여부. 예를 들어 <b>[!UICONTROL이 이미 동기화 중]</b>은(는) 대상 역할에 이미 원본 역할과 동일한 권한이 있음을 의미합니다.</p> </td> 
+      <td> <p>대상 역할이 소스 역할과 다른지 여부. 예를 들어 <b>[!UICONTROL 이 이미 동기화 중]</b>은(는) 대상 역할에 이미 원본 역할과 동일한 권한이 있음을 의미합니다.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL 사용자]</td> 

@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: f9cdbcf936fc6b022f6513f47b9b377424731419
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 5%
+source-wordcount: '324'
+ht-degree: 4%
 ---
 # 조직 및 팀 역할
 
@@ -82,6 +82,10 @@ ht-degree: 5%
 
 
 ## 팀 역할
+
+>[!NOTE]
+>
+>다음 표는 사전 정의된 팀 역할의 권한을 보여 줍니다. 이러한 역할 외에도 팀에 대한 사용자 정의 역할을 만들 수 있습니다. 자세한 내용은 [사용자 지정 팀 역할](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md#custom-team-roles) 및 [팀 역할 보기 및 관리](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md)를 참조하십시오.
 
 ### 시나리오
 

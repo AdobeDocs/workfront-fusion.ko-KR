@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: f9cdbcf936fc6b022f6513f47b9b377424731419
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 31%
+source-wordcount: '347'
+ht-degree: 29%
 ---
 # 팀에 사용자 추가
 
@@ -66,3 +66,7 @@ Fusion에 사용자를 추가하려면 [Adobe Admin Console을 통해 Adobe Work
 1. 사용자 이름 오른쪽에 있는 **없음**&#x200B;을 클릭한 다음 팀에 부여할 역할을 선택하십시오.
 
    사용자가 선택한 역할이 있는 팀에 추가됩니다.
+
+   >[!NOTE]
+   >
+   >팀에는 사전 정의된 역할 외에도 사용자 정의 역할이 있을 수 있습니다. 사용자 지정 역할 만들기에 대한 자세한 내용은 [팀 역할 보기 및 관리](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md)를 참조하세요.

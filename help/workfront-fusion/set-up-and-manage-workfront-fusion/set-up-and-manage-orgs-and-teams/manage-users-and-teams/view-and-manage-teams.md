@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: f9cdbcf936fc6b022f6513f47b9b377424731419
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 34%
+source-wordcount: '323'
+ht-degree: 32%
 ---
 # 팀 보기 및 관리
 
@@ -29,6 +29,8 @@ ht-degree: 34%
 * 이메일 알림 설정
 
 조직의 팀 목록을 보고 팀 이름을 편집할 수 있습니다.
+
+팀에서 역할을 만들고 관리하려면 [팀 역할 보기 및 관리](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md)를 참조하세요.
 
 팀에 사용자를 추가하려면 [팀에 사용자 추가](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md)를 참조하십시오.
 

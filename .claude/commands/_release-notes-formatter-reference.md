@@ -1,9 +1,8 @@
 ---
-source-git-commit: 4d32e8aab5b3b8a12dbc23e61f517fc4fd6dc9e5
+source-git-commit: 873d91ff9db954bfad835ccb4d8f423ea7f46102
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '295'
 ht-degree: 0%
-
 ---
 # 릴리스 노트 참조 템플릿
 
@@ -144,8 +143,7 @@ The enhancements on this page are available in the Preview environment. This pag
 - 기능 셀: `class="MCXref xref" xrefformat="{para}"` 뒤에 `<p>` 설명이 있는 `<a>` 태그
 - `href` 링크는 제품 영역 페이지로 연결됩니다(특정 앵커 아님)
 - 날짜 셀: `<p>`개 태그로 래핑됨
-- 일정 외 항목의 경우 링크 뒤에 `<p>[!BADGE Off schedule]{type=Neutral}</p>`을(를) 추가하십시오.
-- 배지가 필요하지 않은 경우 링크 뒤에 빈 `<p></p>`을(를) 사용할 수 있습니다.
+- 일정 외 항목의 경우, `<p>[!BADGE Off schedule]{type=Neutral}</p>`을(를) 링크 단락 바로 아래에 있는 자신의 단락으로 추가합니다. 설명 단락- 배지가 필요하지 않으면 링크를 사용할 수 있게 한 후 `<p></p>` 비움
 - HTML 들여쓰기를 기존 파일과 일관되게 유지
 
 ### 개요 후행 섹션

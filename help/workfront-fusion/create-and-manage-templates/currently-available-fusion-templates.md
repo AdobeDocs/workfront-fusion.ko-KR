@@ -16,9 +16,9 @@ feature_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 29913d8252c39b66cfe4688d760bffb074dbf56c
 workflow-type: tm+mt
-source-wordcount: '2436'
+source-wordcount: '2732'
 ht-degree: 0%
 ---
 # 현재 사용 가능한 Adobe Workfront Fusion 템플릿
@@ -34,8 +34,6 @@ ht-degree: 0%
 이러한 템플릿은 Workfront 프로세스 및 워크플로를 자동화합니다.
 
 ### Workfront - 작업이 일찍 완료되면 프로젝트 타임라인을 자동으로 조정
-
-<!--New June 10, 2025-->
 
 이 템플릿은 프로젝트 관리를 위한 엄격한 PMI 기반 방법론보다는 보다 유연한 &quot;계획대로 진행&quot; 접근 방식을 따르는 조직을 지원하기 위해 설계되었습니다.
 
@@ -165,13 +163,41 @@ ht-degree: 0%
 
 이 템플릿은 문제에 대해 순차적으로 번호를 매깁니다. 이 안내서에서는 Workfront - 일련 번호 시리즈: 개체 사용자 정의 양식 및 필드 만들기 템플릿을 사용하여 사용자 정의 양식 및 필드를 만들었다고 가정하지만, 기존 양식 및 필드를 사용할 수 있습니다.
 
+### Workfront - AEM 워크플로우로 프로젝트 만들기
+
+[!BADGE 새로 만들기!]{type=Informative}
+
+<!--New November 11, 2026-->
+
+<!-- BECKY CHECK ME: The request is titled "Automation New Templates" and lists the fields of two templates, "Create project with AEM workflow" and "Create multiple records". It does not give the exact template names, the trigger, or a description of what each template does. I wrote the descriptions from the field list. Confirm the template names as they appear in the Templates area, the trigger for each template, and the descriptions. -->
+
+이 템플릿은 프로젝트 템플릿에서 프로젝트를 만들며, 프로젝트 템플릿에 대해 구성된 AEM 연결 폴더를 만들고 새 프로젝트에 연결할 수 있습니다.
+
+>[!TIP]
+>
+>* AEM 연결 폴더는 선택한 프로젝트 템플릿에 하나 이상의 폴더 트리가 있는 활성화된 [AEM 워크플로](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/configure-integrations/configure-aacs-integration#set-up-workflows-optional)가 있는 경우에만 만들어집니다. 그렇지 않으면 연결된 폴더 없이 프로젝트가 만들어집니다.
+>* 자동화를 저장할 때 프로젝트 템플릿에서 폴더 트리를 가져옵니다. 나중에 프로젝트 템플릿에서 폴더 트리를 추가하거나 제거하는 경우 변경 사항을 포함하도록 자동화를 다시 편집하고 저장해야 합니다.
+
+### Workfront - 여러 레코드 만들기
+
+[!BADGE 새로 만들기!]{type=Informative}
+
+<!--New November 11, 2026-->
+
+이 템플릿은 현재 레코드의 필드에 있는 선택 사항을 기반으로 레코드 종류에 하나 이상의 레코드를 만듭니다.
+
+>[!TIP]
+>
+>* 현재 레코드에 있고 필드 매핑이 있는 각 선택에 대해 하나의 레코드가 만들어집니다. 매핑이 없는 선택 항목은 건너뛰고 해당 항목에 대한 레코드가 생성되지 않습니다.
+>* 생성된 레코드의 이름을 지정하려면 소스 필드를 새 레코드 유형의 기본(이름) 필드에 매핑합니다. 그러면 각 레코드의 이름이 *[현재 레코드 이름] 선택 값*&#x200B;으로 지정됩니다. 기본 필드를 매핑하지 않으면 레코드 이름이 비어 있습니다.
+>* 선택한 레코드 중 선택된 필드에서 매핑된 선택 사항이 들어 있는 레코드가 없으면 레코드가 만들어지지 않으며 빈 필드가 표시됩니다.
+>* 자동화를 저장할 때 현재 레코드 유형에서 필드 선택 사항 및 매핑을 읽습니다. 나중에 필드나 선택 항목을 추가하거나 변경하는 경우 변경 사항을 포함하도록 자동화를 다시 편집하고 저장해야 합니다.
+
 ## Workfront - Workfront Proof 템플릿
 
 이러한 템플릿은 Workfront과 Workfront Proof을 결합하는 워크플로를 자동화합니다.
 
 ### Workfront > Workfront Proof - 증명 사용자 역할을 읽기 전용으로 변경하고 프로젝트 종료 시 증명 잠금
-
-<!--New March 12, 2025-->
 
 이 템플릿은 프로젝트가 거부됨, 완료됨 또는 정지됨 상태와 같은 상태로 업데이트되는지 감시합니다. 그런 다음 보류 중인 증명 결정을 가진 모든 사용자가 읽기 전용으로 변경됩니다. 마지막으로 증명을 잠그고 문서에 대한 업데이트를 전송합니다.
 
@@ -244,7 +270,7 @@ ht-degree: 0%
 
 이러한 템플릿은 Workfront-Anaplan 통합을 지원하며 Workfront의 두 Anaplan 모두에서 특정 구성을 예상합니다. 이러한 템플릿 및 필수 구성에 대한 자세한 내용은 개별 템플릿 문서를 참조하십시오.
 
-Workfront-Anaplan 통합에 대한 자세한 내용은 Workfront 설명서에서 [Anaplan을 사용한 Adobe Workfront](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration)을(를) 참조하십시오.
+Workfront-Anaplan 통합에 대한 자세한 내용은 Workfront 설명서에서 [Anaplan을 사용한 Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration)을(를) 참조하십시오.
 
 >[!NOTE]
 >
@@ -252,19 +278,19 @@ Workfront-Anaplan 통합에 대한 자세한 내용은 Workfront 설명서에서
 
 ### 지출 최적화 워크플로우
 
-* [&#x200B; [!DNL Anaplan] 목록 항목으로 Adobe Workfront 프로젝트 업데이트 보내기](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
-* [&#x200B; [!DNL Anaplan] 목록 항목으로 Adobe Workfront 경비 보내기](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
-* [&#x200B; [!DNL Anaplan] 목록 항목에 대한 Adobe Workfront 실제 시간 업데이트 보내기](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
+* [ [!DNL Anaplan] 목록 항목으로 Adobe Workfront 프로젝트 업데이트 보내기](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
+* [ [!DNL Anaplan] 목록 항목으로 Adobe Workfront 경비 보내기](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
+* [ [!DNL Anaplan] 목록 항목에 대한 Adobe Workfront 실제 시간 업데이트 보내기](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
 
 ### 예산 요청 연결을 위한 워크플로
 
-* [Adobe Workfront 예산 요청에서  [!DNL Anaplan] 목록 항목 만들기](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
-* [Adobe Workfront 프로젝트에  [!DNL Anaplan] 예산 할당 적용](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
+* [Adobe Workfront 예산 요청에서  [!DNL Anaplan] 목록 항목 만들기](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
+* [Adobe Workfront 프로젝트에  [!DNL Anaplan] 예산 할당 적용](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
 
 ### 캠페인 요청 연결을 위한 워크플로우
 
-* [Adobe Workfront 캠페인 요청에서  [!DNL Anaplan] 목록 항목 만들기](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
-* [Adobe Workfront 캠페인 요청 또는 캠페인 프로젝트에  [!DNL Anaplan] 예산 할당 적용](https://experienceleague.adobe.com/ko/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
+* [Adobe Workfront 캠페인 요청에서  [!DNL Anaplan] 목록 항목 만들기](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
+* [Adobe Workfront 캠페인 요청 또는 캠페인 프로젝트에  [!DNL Anaplan] 예산 할당 적용](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
 
 ## Workfront - Jira 템플릿
 

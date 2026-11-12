@@ -1,13 +1,11 @@
 ---
 name: release-notes-formatter
 description: Workfront 릴리스 정보의 일관성, 올바른 구조 및 적절한 링크에 대한 형식과 유효성을 검사합니다. 제품 릴리스 디렉토리의 릴리스 노트 파일에 대해서만 사용하거나 사용자가 릴리스 노트, 제품 릴리스 또는 분기별 릴리스에 대해 언급할 때만 사용합니다. 방법 문서 또는 일반 설명서에는 적용되지 않습니다.
-source-git-commit: 4d32e8aab5b3b8a12dbc23e61f517fc4fd6dc9e5
+source-git-commit: 873d91ff9db954bfad835ccb4d8f423ea7f46102
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 2%
-
+source-wordcount: '1013'
+ht-degree: 1%
 ---
-
 
 # 릴리스 노트 포맷터
 
@@ -73,7 +71,7 @@ exl-id: <existing UUID — never generate or change>
 >Production for everyone: {Month Day, Year}
 ```
 
-&#x200B;5. **본문**: 기능 설명, 도움말 설명서 링크
+5. **본문**: 기능 설명, 도움말 설명서 링크
 
 #### 개요 페이지
 
@@ -90,16 +88,19 @@ exl-id: <existing UUID — never generate or change>
 * [Document enhancements](#document-enhancements)
 ```
 
-&#x200B;5. HTML 기능 테이블이 포함된 **제품 영역당 H3**(.claude/commands/_release-notes-formatter-reference.md#overview-feature-table 참조)
-   - 각 테이블 내에서 **최신 기능 먼저** — 가장 최근 행이 테이블의 맨 위(머리글 행 뒤)에 나타납니다.
+- 제품 영역 섹션을 주석 처리하면 이 목록에서 해당 링크를 완전히 제거합니다. 링크를 주석 처리하지 마십시오.
 
-&#x200B;6. **후행 섹션**(H2): 다른 영역에 대한 릴리스 정보, 바탕 화면 교정 뷰어 업데이트, 알림, API 버전, 유지 관리 업데이트, 교육 업데이트
+5. HTML 기능 테이블이 포함된 **제품 영역당 H3**(.claude/commands/_release-notes-formatter-reference.md#overview-feature-table 참조)
+   - 각 테이블 내에서 **최신 기능 먼저** — 가장 최근 행이 테이블의 맨 위(머리글 행 뒤)에 나타납니다.
+   - 기능에 배지가 있는 경우(`[!BADGE Off schedule]{type=Neutral}` 등), 해당 배지를 기능 링크 단락 바로 아래의 설명 단락 앞에 있는 자체 `<p>`에 넣으십시오.
+
+6. **후행 섹션**(H2): 다른 영역에 대한 릴리스 정보, 바탕 화면 교정 뷰어 업데이트, 알림, API 버전, 유지 관리 업데이트, 교육 업데이트
 
 ### 3단계: 링크 유효성 검사
 
 - **제품 영역 페이지의 개요 링크**: 같은 분기를 가리켜야 합니다.
-   - 올바른 값: `26-q2-release-activity/26-q2-release-overview.md`
-   - 잘못됨: `26-q1-release-activity/26-q1-release-overview.md`
+  - 올바른 값: `26-q2-release-activity/26-q2-release-overview.md`
+  - 잘못됨: `26-q1-release-activity/26-q1-release-overview.md`
 - **개요의 앵커 링크**: H3 ID(소문자, 하이픈)와 일치해야 합니다.
 - **개요 테이블의 기능 링크**: `class="MCXref xref" xrefformat="{para}"`을(를) 사용해야 합니다.
 - **도움말 문서 링크**: `/help/quicksilver/`(으)로 시작해야 함
@@ -124,6 +125,9 @@ exl-id: <existing UUID — never generate or change>
 | 콜아웃 라인의 추가 공백 | 후행 공백 트리밍 |
 | 제품 영역 페이지의 HTML | Markdown으로 유지(HTML은 개요 테이블에만 해당) |
 | `exl-id` 누락 | 제외합니다. 생성하지 마십시오. |
+| 개요 테이블의 설명 뒤에 배치된 배지 | 기능 링크 바로 아래에 있는 자체 `<p>`(으)로 이동 |
+| 주석 처리된 섹션에 대한 미니 TOC 링크 | 목록에서 링크를 제거합니다. 주석 달지 마십시오. |
+| 미니 TOC 링크가 없는 개요의 개선 사항 표 | 표와 동일한 순서로 Adobe Workfront 개선 사항 목록에 링크를 추가합니다. |
 
 ### 6단계: TOC 업데이트
 
@@ -133,9 +137,9 @@ exl-id: <existing UUID — never generate or change>
 
 - TOC에는 `* 2026 Q3 Release {#release-26-q3}`과(와) 같은 제목 아래에 분기별 섹션이 있습니다. 분기 머리글이 아직 존재하지 않는 경우(새 분기의 첫 페이지) 이전 분기 위에 추가하여 최신 분기가 상단에 있도록 합니다.
 - 해당 분기 제목 아래에서 다음 순서로 페이지를 나열합니다.
-   1. **개요** 먼저(`Third Quarter 2026 release overview`).
-   2. **제품 영역 페이지** 영역 이름(관리자, 문서, 엔터프라이즈 작업, 프로젝트, 보고, 요청)별로 알파벳순으로 정렬합니다.
-   3. **기타 개선 사항**&#x200B;이 마지막으로 적용됩니다(항상 알파벳 제품 영역 뒤에 있음).
+  1. **개요** 먼저(`Third Quarter 2026 release overview`).
+  2. **제품 영역 페이지** 영역 이름(관리자, 문서, 엔터프라이즈 작업, 프로젝트, 보고, 요청)별로 알파벳순으로 정렬합니다.
+  3. **기타 개선 사항**&#x200B;이 마지막으로 적용됩니다(항상 알파벳 제품 영역 뒤에 있음).
 
 각 목차 항목은 페이지 제목과 절대 저장소 경로를 사용하는 Markdown 링크입니다.
 
@@ -184,6 +188,8 @@ exl-id: <existing UUID — never generate or change>
 - [ 개요의 ] 기능 테이블 행이 제품 영역 페이지 콘텐츠와 일치합니다.
 - [ ] 끊어진 내부 링크가 없습니다.
 - [ 개요의 ] 앵커 링크가 H3 섹션 ID와 일치합니다.
+- [ ] 개요에서 주석 처리되지 않은 모든 개선 사항 테이블에는 미니 TOC에 일치하는 링크가 있으므로 주석 처리되지 않았을 때 다시 추가된 섹션이 없습니다
+- [ ] 개요 미니 TOC에는 주석 처리된 섹션에 대한 링크가 없으며 기능 링크 바로 아래에 배지가 있습니다
 - [ ] 기능은 가장 최신 순으로 정렬됩니다(제품 영역 페이지와 개요 테이블 모두).
 - [ ]개의 새 릴리스 정보 페이지가 올바른 분기 아래의 `help/quicksilver/TOC.md`에 나열되며, 개요는 첫 번째 및 제품 영역을 알파벳순으로(기타 마지막) 나열합니다.
 

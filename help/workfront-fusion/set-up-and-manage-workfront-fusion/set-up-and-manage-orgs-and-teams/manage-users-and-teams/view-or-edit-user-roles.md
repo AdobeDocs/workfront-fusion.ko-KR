@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 62dff65d6de1c2301ca8e99f5aaeda05e6a34ffe
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 18%
+source-wordcount: '542'
+ht-degree: 17%
 ---
 # 사용자 역할 보기 또는 편집
 
@@ -87,7 +87,12 @@ Adobe Workfront Fusion 관리자는 조직의 사용자 역할을 보고 업데�
 
 Adobe Workfront Fusion 관리자와 팀 관리자는 사용자 역할을 보고 업데이트할 수 있습니다.
 
+>[!NOTE]
+>
+>팀에는 사전 정의된 역할 외에도 사용자 정의 역할이 있을 수 있습니다. 사용자 지정 역할을 만들고 관리하는 방법에 대한 자세한 내용은 [팀 역할 보기 및 관리](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md)를 참조하십시오.
+
 1. Workfront Fusion 관리자로 로그인하는 동안 왼쪽 탐색에서 **[!UICONTROL 모든 사용자]**&#x200B;를 선택합니다.
 1. 보려는 사용자 행에서 **[!UICONTROL 세부 정보]**&#x200B;를 클릭합니다.
 1. 사용자의 역할을 보거나 편집할 팀이 포함된 조직 행의 **[!DNL Role]** 열에서 팀 아이콘을 클릭합니다.
 1. (선택 사항) 팀에서 사용자 역할을 업데이트하려면 사용자 역할을 변경할 팀의 행에서 **[!DNL Role]** 열의 드롭다운을 클릭한 다음 새 역할을 선택합니다.
+

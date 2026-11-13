@@ -38,7 +38,7 @@ Workfront Fusion에는 간단하거나 복잡한 공식을 만들 수 있는 기
 | 함수 유형 | 자세한 내용은 다음 문서를 참조하십시오. |
 | --- | --- |
 | **다른 모듈에서 매핑**<br>![&#x200B;다른 모듈에서 매핑](assets/toolbar-icon-functions-you-map-from-other-modules.png) | [한 모듈에서 다른 모듈로 정보 매핑](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) |
-| **AI별로 채우기**<br>![ AI별로 채우기](assets/toolbar-icon-fill-by-ai.png) | [AI로 식 생성](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md#generate-an-expression-with-ai) |
+| **AI별로 채우기**<br>![&#x200B; AI별로 채우기](assets/toolbar-icon-fill-by-ai.png) | [AI로 식 생성](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md#generate-an-expression-with-ai) |
 | **일반 함수**<br>![&#x200B;일반 함수](assets/toolbar-icon-general-function.png) | [일반 함수](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md) |
 | **수학 함수**<br>![&#x200B;수학 함수](assets/toolbar-icon-math-functions.png) | [수학 함수](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md) |
 | **텍스트 및 이진 함수**<br>![&#x200B;문자열 함수](assets/toolbar-icon-text-binary-functions.png) | [문자열 함수](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md) |

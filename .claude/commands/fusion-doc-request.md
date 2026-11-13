@@ -1,9 +1,9 @@
 ---
 name: fusion-doc-request
 description: 에서 Fusion 설명서 요청을 처리합니다. #fusion-documentation Slack template - update the relevant Fusion docs article(s) in this repo, then create a matching task in the Product Documentation Workfront project with the feature description and a formatted release note filled in on the custom form. Use when the user shares a Slack documentation-request thread/message for a Fusion feature, or says something like "please update and create a task" for one.
-source-git-commit: 535a10407766d054b00d31869e511753bf07a9b7
+source-git-commit: 17a2d521197e676e41b4b899f7be142430a18c2f
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1704'
 ht-degree: 0%
 ---
 
@@ -36,6 +36,8 @@ Slack 링크가 지정된 경우 URL에서 `channel_id` 및 `message_ts`을(를)
 ## 2단계: 요청에 대한 분기 만들기
 
 파일을 터치하기 전에 이 요청에 대한 새 git 분기를 만들고 확인하십시오. 현재 기본 분기(`main`)의 분기이며, 체크 아웃되는 분기가 없습니다.
+
+사용자가 이미 분기를 만들고 이름을 지정한 경우 새 분기를 만드는 대신 해당 분기를 사용하고 4단계에서 작업의 `Documentation Branch` 필드에 해당 이름을 기록하십시오.
 
 **기능 제목**&#x200B;에서 파생된 `becky-{short-kebab-case-description}` 분기의 이름을 지정합니다. 첫 번째 단어는 `becky`이어야 하며 이 리포지토리의 기존 분기 규칙(예: `becky-webhook-update`, `becky-storage-beta-sos`)과 일치해야 합니다. 짧게 유지하십시오. 전체 제목 축어가 아닌 몇 단어입니다.
 
@@ -74,9 +76,12 @@ Slack 링크가 지정된 경우 URL에서 `channel_id` 및 `message_ts`을(를)
 | `DE:Preview Date` | 기본적으로 원래 Slack 메시지에 인용된 날짜(요청의 **예상 릴리스 날짜**) |
 | `taskConstraint` + `constraintDate` | `taskConstraint`을(를) `MFO`(완료일 기준)로 설정합니다. `constraintDate` = 원래 Slack 메시지에 인용된 날짜(요청의 **예상 릴리스 날짜**)이므로 작업의 계획된 완료 날짜도 이와 일치합니다. |
 | `DE:Articles to update` | 이 요청에 대해 만들거나 업데이트한 문서 목록(아래 참조) |
+| `DE:Documentation Branch` | 문서 변경 사항이 적용된 git 분기의 이름(아래 참조) |
 | 제품/영역 | `Fusion`(제품 설명서 양식의 열거형 필드)을(를) 선택합니다. 불분명한 경우 `insights_search_fields`을(를) 사용하여 정확한 필드 이름을 확인하십시오. |
 
 `DE:Articles to update`(제품 설명서 양식의 텍스트 필드)은 3단계에서 만들거나 변경한 모든 문서 파일을 나열하며 줄당 하나의 저장소 상대 경로(예: `help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md`)입니다. 새 문서(경로 뒤에 `(new)` 추가)와 편집한 TOC 또는 인덱스 파일을 포함합니다. 문서 편집은 3단계에서 수행되므로 목록을 작업을 만들 때 알 수 있으므로 동일한 만들기 호출에서 설정하십시오. 문서를 편집하지 않고 작업을 만들라는 메시지가 표시되면 필드를 비워 두고 나중에 문서가 편집된 경우 업데이트하십시오.
+
+`DE:Documentation Branch`(제품 설명서 양식의 텍스트 필드)에는 문서 편집 시 사용하는 git 분기의 정확한 이름이 저장됩니다(예: `becky-explain-errors-with-ai`). 사용자가 이름을 지정한 분기 또는 편집한 리포지토리에서 현재 체크 아웃된 분기를 사용합니다. 이름을 발명하지 마십시오. 다른 필드와 동일한 생성 호출에서 설정합니다. 문서를 편집하지 않고 작업을 만들라는 메시지가 표시되고 아직 분기가 없으면 필드를 비워 두고 나중에 업데이트합니다.
 
 미리 보기 날짜 필드와 계획된 완료 날짜를 이 동일한 만들기 호출의 일부로 설정합니다. 나중에 남겨두거나 요청을 기다리지 마십시오. 사용자가 나중에 다른 날짜를 제공하거나 날짜가 실제로 아직 알려져 있지 않다고 말하는 경우 그에 따라 업데이트하지만 매번 채우도록 기본값이 설정됩니다.
 
@@ -108,6 +113,7 @@ For more information, see [{Article title}](/help/workfront-fusion/{path-to-arti
 * 생성한 분기(2단계별로 로컬로 커밋되고 푸시되지 않으며 열린 가져오기 요청이 없음).
 * 변경한 문서 파일과 추가한 내용
 * 변경된 문서가 작업의 `Articles to update` 필드에 나열되어 있습니다.
+* 작업의 `Documentation Branch` 필드에 입력한 분기 이름입니다.
 * 변경 사항이 분기에서 커밋되지 않고 사용자의 검토를 기다립니다.
 * 작업 이름 및 URL.
 * 미리 보기 날짜 필드를 포함하여 사용자가 설정한 정확한 필드 값.
@@ -120,4 +126,4 @@ For more information, see [{Article title}](/help/workfront-fusion/{path-to-arti
 * 프로젝트 &quot;제품 설명서 작업 - 메시지가 필요한 개발 문제에 대한 작업&quot;이 ID `5e69583f00236b9f767c3e3944100ee4`에 매핑됩니다.
 * 상위 작업 &quot;Becky - Fusion-Documentation 채널의 작업&quot;이(가) 동일한 프로젝트의 ID `6a9b065100003a7554832780c2015e93`에 매핑됩니다. 변경되는 경우 하드코딩하지 않고 `insights_find_id_by_name`(엔티티 `task`)로 해결됩니다.
 * 제품 설명서 사용자 정의 양식(`categoryID`)은 `5d7275b9000514604bd969d418725843`입니다.
-* 사용된 사용자 정의 필드: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
+* 사용된 사용자 정의 필드: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`, `DE:Articles to update`, `DE:Documentation Branch`

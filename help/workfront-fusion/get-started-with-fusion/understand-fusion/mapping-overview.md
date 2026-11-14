@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 9396113bb466ef309e8fcdb06e423a100b6fb271
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 75%
+source-wordcount: '522'
+ht-degree: 70%
 ---
 # 매핑 개요
 
@@ -68,6 +68,9 @@ ht-degree: 75%
 첫 번째 탭에는 다른 모듈에서 매핑할 수 있는 항목이 표시됩니다.
 
 다른 탭에는 수식을 만드는 데 사용할 수 있는 함수, 연산자 및 키워드가 포함되어 있습니다. 이들은 취급하는 데이터 유형에 따라 서로 다른 탭으로 정렬됩니다.
+
+**[!UICONTROL AI별 채우기]** 탭을 사용하면 필드에 포함할 내용을 일반 언어로 설명할 수 있으며 AI가 표현식을 생성합니다. 자세한 내용은 [AI로 식 생성](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md#generate-an-expression-with-ai)을 참조하세요.
+
 
 ![매핑 패널](assets/new-mapping-panel-blank.png)
 

@@ -22,10 +22,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 231f1c67031a396b8752fb84a5ff6d017df94267
 workflow-type: tm+mt
-source-wordcount: '1415'
-ht-degree: 25%
+source-wordcount: '1542'
+ht-degree: 23%
 ---
 # Adobe Storage 모듈
 
@@ -366,4 +366,35 @@ Adobe 사용자 관리 모듈을 구성하면 Workfront Fusion에 아래 나열�
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
   </tbody>
+</table>
+
+#### 파일 업로드
+
+이 작업 모듈은 한 단계로 Adobe 스토리지에 파일을 업로드합니다. 대상 파일을 만들고, 업로드를 초기화하고, 사전 서명된 URL을 통해 파일 컨텐츠를 전송하고, 업로드를 완료합니다. 별도의 전송 및 확정 단계를 구성할 필요가 없습니다.
+
+모듈이 대형 파일을 지원합니다.
+
+<!-- BECKY CHECK ME: Add the module's output (the screenshot shows only the setup fields). Confirm what the Project and Folder fields list, whether Folder is required, what the File Content field accepts (the hint says binary or text data), and whether the Limit field applies to this module, since the module uploads one file. Also confirm whether the Show advanced settings option contains any fields, and whether the request's comparison to "Generate Presigned Upload URL" should be mentioned here. That module is not documented in this article. -->
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">연결</td> 
+   <td>Adobe 저장소에 대한 연결 만들기에 대한 지침은 이 문서의 <a href="#create-a-connection-to-adobe-storage" class="MCXref xref" >Adobe 저장소에 대한 연결 만들기</a>를 참조하십시오.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">프로젝트</td> 
+   <td>파일을 업로드할 폴더가 포함된 프로젝트를 선택합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">폴더</td> 
+   <td>파일을 업로드할 폴더를 선택합니다. 파일을 프로젝트의 루트에 업로드하려면 <code>/</code>을(를) 선택합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">소스 파일</td> 
+   <td>이전 모듈에서 파일을 선택하거나 파일의 이름, 컨텐츠 및 컨텐츠 유형을 매핑합니다.</td> 
+  </tr> 
+ </tbody> 
 </table>

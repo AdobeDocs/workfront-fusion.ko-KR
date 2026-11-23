@@ -9,10 +9,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: d50909b128b469ef3e25b93c7dbdede5d4226064
+source-git-commit: 06b6c3b3a37d2b66eae61951ffc0aaf558d1b180
 workflow-type: tm+mt
-source-wordcount: '1550'
-ht-degree: 19%
+source-wordcount: '1806'
+ht-degree: 17%
 ---
 # Workfront Fusion 모듈
 
@@ -97,9 +97,53 @@ Workfront Fusion 모듈을 구성하면 Workfront Fusion에 아래 나열된 필
 
 ![토글 매핑](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
+* [트리거](#triggers)
 * [액션](#actions)
 * [내보내기](#export)
 * [기타](#misc)
+
+### 트리거
+
+* [레코드 보기](#watch-records)
+
+#### 레코드 보기
+
+이 트리거 모듈은 Workfront Fusion 레코드가 생성, 업데이트 또는 둘 다에 따라 시나리오를 시작합니다. 필터를 사용하여 팀에 중요한 변경 사항에 집중할 수 있으므로 Workfront Fusion을 수동으로 확인할 필요가 없습니다.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 연결]</td> 
+   <td> <p>Workfront Fusion을 Workfront Fusion에 연결하는 방법에 대한 지침은 이 문서의 <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Workfront Fusion을 Workfront Fusion에 연결</a>을 참조하십시오.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">시청</td> 
+   <td>모듈에서 조사할 변경 유형을 선택합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">레코드 유형</td> 
+   <td>보려는 레코드 종류를 선택하십시오. <b>시나리오</b> 또는 <b>실행</b>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">시나리오 ID</td> 
+   <td><p>실행을 보는 경우 실행을 보려는 시나리오를 선택하거나 매핑합니다.</p><p>이 필드는 선택 사항입니다. 비워 두면 모듈은 조직 전체에서 실행을 검색합니다.</p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">확인 실행 표시</td> 
+   <td><p>실행을 감시하는 경우 결과에 검사 실행이 포함되는지 여부를 선택합니다.</p><ul><li><b>예</b>: 검사 실행을 포함합니다.</li><li><b>아니요</b>: 검사 실행을 포함하지 않습니다.</li><li><b>정의되지 않음</b>: 검사 실행별로 결과를 필터링하지 마십시오.</li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">필터링</td> 
+   <td><b>속성</b>에서 사용할 각 속성 필터에 대해 <b>항목 추가</b>를 클릭하고 필드와 연산자를 선택한 다음 필터링할 값을 입력하거나 매핑합니다. 값 필드는 값 필드가 필요한 연산자에 대해서만 표시됩니다. 예를 들어 <b>존재</b>와 같은 연산자는 값이 필요하지 않습니다. 속성 필터는 시나리오 및 실행 레코드 유형에 대해 동일합니다.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">제한</td> 
+   <td>한 실행 주기 동안 Workfront Fusion이 작동하는 최대 결과 수를 입력하거나 매핑합니다. 기본값은 200입니다.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 ### 액션
 
@@ -471,8 +515,3 @@ Workfront Fusion 모듈을 구성하면 Workfront Fusion에 아래 나열된 필
   </tr> 
  </tbody> 
 </table>
-
-
-
-
-

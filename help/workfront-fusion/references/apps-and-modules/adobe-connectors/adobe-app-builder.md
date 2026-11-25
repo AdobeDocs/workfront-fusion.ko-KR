@@ -4,10 +4,10 @@ description: Adobe App Builder 커넥터를 사용하면 시나리오에서 사�
 author: Becky
 feature: Workfront Fusion
 exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
-source-git-commit: 02c396f33b6398635462bac8741f446eb82bf5a9
+source-git-commit: c716296d771974ffdb59e916f9865c9efb2ad5a9
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 16%
+source-wordcount: '787'
+ht-degree: 15%
 ---
 # Adobe App Builder 모듈
 
@@ -63,6 +63,8 @@ Fusion의 [함수] 영역에서 사용자 정의 함수를 만들 수 있습니�
    >Adobe I/O CLI에서 `aio runtime namespace get` 또는 `aio app use`을(를) 실행하여 네임스페이스 및 인증 값을 찾을 수도 있습니다.
 
 ### 연결 만들기
+
+이미 존재하는 App Builder 프로젝트에 연결하려면 다음 단계를 사용하십시오. 이 연결을 사용하여 Fusion에서 사용자 지정 기능을 설정하는 단계는 [기존 App Builder 프로젝트 연결](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md#connect-an-existing-app-builder-project)을 참조하십시오.
 
 1. 모듈에서 **연결** 필드 옆에 있는 **추가**&#x200B;를 클릭합니다.
 1. 다음 필드를 채웁니다.

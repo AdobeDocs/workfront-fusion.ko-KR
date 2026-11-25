@@ -9,9 +9,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: c716296d771974ffdb59e916f9865c9efb2ad5a9
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2064'
 ht-degree: 5%
 ---
 
@@ -79,6 +79,8 @@ ht-degree: 5%
    * 기존 프로젝트를 선택하려면 프로젝트 이름을 입력한 다음 표시될 때 선택합니다.
    * 새 프로젝트를 만들려면 존재하지 않는 이름을 입력하고 **새로 만들기**&#x200B;를 클릭합니다.
    * 이 항목을 비워 두면 Fusion은 기본 프로젝트를 사용합니다.
+
+   기존 프로젝트가 **런타임 초기화**&#x200B;에서 작동하지 않는 경우 수동으로 연결하십시오. 지침은 [기존 App Builder 프로젝트 연결](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md#connect-an-existing-app-builder-project)을 참조하십시오.
 
 1. **계속**&#x200B;을 선택합니다.
 

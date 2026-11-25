@@ -11,7 +11,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: f9cdbcf936fc6b022f6513f47b9b377424731419
+source-git-commit: bf67d1764395a48715cd8a5f665318857d0bdff1
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 1%
@@ -89,8 +89,6 @@ Workfront Fusion 사용자는 조직에 속합니다.
 각 팀 역할의 사용자가 사용할 수 있는 특정 작업에 대한 자세한 내용은 [조직 및 팀 역할](/help/workfront-fusion/references/licenses-and-roles/organization-roles.md)을 참조하세요.
 
 ### 사용자 지정 팀 역할
-
-<!-- BECKY CHECK ME: The source material (the Slack announcement) says flexible permissions are live in QA and for internal customers, with a limited pilot with paid customers next, then general availability. Confirm availability at the 2026-11-12 release before publishing, and whether this section should say that the feature is available only to some organizations. -->
 
 미리 정의된 팀 역할 외에도 각 팀에는 고유한 역할을 만들 수 있는 **[!UICONTROL 역할]** 탭이 있습니다. 역할을 만들고, 업데이트하고, 삭제할 수 있으며 각 역할에 포함되는 권한을 정확하게 선택할 수 있습니다. 더 이상 고정된 역할 세트로 제한되지 않습니다.
 

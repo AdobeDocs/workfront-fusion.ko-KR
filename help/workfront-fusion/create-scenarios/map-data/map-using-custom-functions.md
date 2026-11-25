@@ -10,10 +10,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: c716296d771974ffdb59e916f9865c9efb2ad5a9
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 15%
+source-wordcount: '930'
+ht-degree: 11%
 ---
 # 사용자 정의 함수를 사용하여 데이터 매핑
 
@@ -72,6 +72,7 @@ Workfront Fusion에는 간단하거나 복잡한 공식을 만들 수 있는 기
 여러 시나리오에서 사용할 수 있는 사용자 정의 함수는 Workfront Fusion의 함수 영역에서 구성합니다. 함수가 구성된 후 Adobe App Builder 커넥터를 사용하여 시나리오에 해당 함수를 추가할 수 있습니다.
 
 * [런타임 환경 초기화](#initialize-your-runtime-environment)
+* [기존 App Builder 프로젝트 연결](#connect-an-existing-app-builder-project)
 * [함수 영역에서 사용자 지정 함수 만들기](#create-a-custom-function-in-the-functions-area)
 
 #### 런타임 환경 초기화
@@ -90,6 +91,30 @@ Workfront Fusion에는 간단하거나 복잡한 공식을 만들 수 있는 기
 1. **런타임 초기화**&#x200B;를 클릭합니다.
 
    잠시 후 두 개의 샘플 함수가 있는 함수 목록이 나타납니다.
+
+#### 기존 App Builder 프로젝트 연결
+
+Fusion은 App Builder 프로젝트를 만들 때 런타임 설정을 처리합니다. Fusion을 사용하기 전에 만들어진 App Builder 프로젝트가 이미 팀에 있는 경우 해당 프로젝트의 런타임 네임스페이스와 자격 증명을 사용하는 App Builder 연결을 만들어 수동으로 연결해야 합니다. 프로젝트를 다시 만들 필요는 없습니다.
+
+>[!NOTE]
+>
+>Fusion에 입력하는 자격 증명은 런타임 자격 증명입니다. Adobe 로그인 세부 정보가 아닙니다. 다운로드한 구성 파일을 안전하게 유지하고 해당 `auth` 값을 공유하지 마십시오.
+
+1. Fusion에서 연결이 필요한 팀을 선택합니다.
+1. 왼쪽 패널에서 **연결** 탭을 클릭한 다음 **연결 만들기**&#x200B;를 클릭합니다.
+1. 연결 유형으로 **Adobe App Builder**&#x200B;을(를) 선택하고 기존 프로젝트를 식별하는 이름을 입력하십시오.
+1. [Adobe Developer Console](https://developer.adobe.com/console)에서 기존 프로젝트를 연 다음 연결할 작업 영역을 선택합니다.
+1. 프로젝트 개요에서 **모두 다운로드**&#x200B;를 클릭하여 작업 영역 구성 JSON 파일을 다운로드하고 텍스트 편집기에서 파일을 엽니다.
+1. 파일의 `runtime` 섹션에서 `namespace` 값을 찾습니다. Fusion에서 **네임스페이스** 필드에 값을 입력합니다.
+1. `runtime` 섹션에서 `auth` 값을 찾습니다. 형식은 `username:password`입니다.
+
+   * Fusion에서 **사용자 이름** 필드에 콜론 앞에 부분을 입력합니다.
+   * Fusion에서 **암호** 필드에 콜론 뒤에 부분을 입력합니다.
+
+1. 연결을 저장하려면 **계속**&#x200B;을 클릭하세요.
+1. Fusion의 **함수** 탭으로 돌아가서 필요한 경우 페이지를 새로 고칩니다.
+
+연결 필드에 대한 자세한 내용은 [Adobe App Builder 모듈](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md#create-a-connection-to-adobe-app-builder)을 참조하세요.
 
 #### 함수 영역에서 사용자 지정 함수 만들기
 
